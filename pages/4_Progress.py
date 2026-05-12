@@ -3,8 +3,6 @@ WIB CFA — Progress tracker page.
 Radar chart, score history, mastery bars, weak areas, readiness estimate.
 """
 
-import json
-
 import plotly.graph_objects as go
 import streamlit as st
 

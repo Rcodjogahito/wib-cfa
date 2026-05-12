@@ -5,7 +5,6 @@ Login → Diagnostic (first time) → Dashboard.
 
 import random
 import time
-from datetime import date, timedelta
 
 import plotly.graph_objects as go
 import streamlit as st
@@ -57,7 +56,6 @@ _sidebar()
 # ── Auth gate ─────────────────────────────────────────────────────────────────
 
 if not require_auth():
-    render_hero()
     st.stop()
 
 user = get_current_user()

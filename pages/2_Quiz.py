@@ -114,28 +114,39 @@ if _show_results:
     st.markdown(f"**{correct_count} / {total}** correctes · {duration // 60}m {duration % 60}s")
     st.markdown("---")
 
-    # Save session + progress
-    topic_results: dict = {}
-    for r in results:
-        t = r["topic"]
-        topic_results.setdefault(t, {"correct": 0, "total": 0})
-        topic_results[t]["total"] += 1
-        if r["correct"]:
-            topic_results[t]["correct"] += 1
-
-    domain_scores = {t: round(v["correct"] / v["total"] * 100, 1)
-                     for t, v in topic_results.items()}
-    db.save_session(
-        user_id=user["id"],
-        session_type="quiz",
-        topic=state.get("quiz_topic", "All"),
-        total=total,
-        correct=correct_count,
-        duration_sec=duration,
-        domain_scores=domain_scores,
-    )
-    for t, v in topic_results.items():
-        db.update_progress(user["id"], t, v["correct"], v["total"])
+    # Save session + progress (once only)
+    if not state.get("quiz_saved"):
+        topic_results: dict = {}
+        for r in results:
+            t = r["topic"]
+            topic_results.setdefault(t, {"correct": 0, "total": 0})
+            topic_results[t]["total"] += 1
+            if r["correct"]:
+                topic_results[t]["correct"] += 1
+        domain_scores = {t: round(v["correct"] / v["total"] * 100, 1)
+                         for t, v in topic_results.items()}
+        db.save_session(
+            user_id=user["id"],
+            session_type="quiz",
+            topic=state.get("quiz_topic", "All"),
+            total=total,
+            correct=correct_count,
+            duration_sec=duration,
+            domain_scores=domain_scores,
+        )
+        for t, v in topic_results.items():
+            db.update_progress(user["id"], t, v["correct"], v["total"])
+        state["quiz_saved"] = True
+    else:
+        topic_results = {}
+        for r in results:
+            t = r["topic"]
+            topic_results.setdefault(t, {"correct": 0, "total": 0})
+            topic_results[t]["total"] += 1
+            if r["correct"]:
+                topic_results[t]["correct"] += 1
+        domain_scores = {t: round(v["correct"] / v["total"] * 100, 1)
+                         for t, v in topic_results.items()}
 
     # Per-topic breakdown
     st.subheader("Résultats par topic")
@@ -167,7 +178,7 @@ if _show_results:
     if col1.button("Nouveau quiz", use_container_width=True):
         for k in ["quiz_active", "quiz_questions", "quiz_idx", "quiz_results",
                   "quiz_start", "quiz_q_start", "quiz_answered", "quiz_selected",
-                  "quiz_use_timer", "quiz_topic"]:
+                  "quiz_use_timer", "quiz_topic", "quiz_saved"]:
             state.pop(k, None)
         st.rerun()
     if col2.button("Voir la progression", use_container_width=True):

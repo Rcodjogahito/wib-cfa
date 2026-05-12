@@ -51,46 +51,31 @@ if note.get("overview"):
 
 st.markdown("---")
 
-# Tab layout: EN content | FR content
-tab_en, tab_fr, tab_formulas = st.tabs(["Content (EN)", "Résumé (FR)", "Formulas & Key Points"])
+# Tab layout
+tab_content, tab_tips = st.tabs(["Contenu", "Exam Tips"])
 
-with tab_en:
-    for section in note.get("sections_en", []):
+with tab_content:
+    for section in note.get("sections", []):
         st.markdown(f"### {section['title']}")
-        st.markdown(section["body"])
+        body = section.get("content") or section.get("body", "")
+        st.markdown(body)
         if section.get("example"):
             with st.expander("Example"):
                 st.markdown(section["example"])
+        st.markdown("")
 
-with tab_fr:
-    for section in note.get("sections_fr", []):
-        st.markdown(f"### {section['title']}")
-        st.markdown(section["body"])
-        if section.get("exemple"):
-            with st.expander("Exemple"):
-                st.markdown(section["exemple"])
-
-with tab_formulas:
-    formulas = note.get("formulas", [])
-    if formulas:
-        for f in formulas:
-            st.markdown(f"**{f['name']}**")
+with tab_tips:
+    exam_tips = note.get("exam_tips") or note.get("key_points", [])
+    if exam_tips:
+        st.markdown("#### Points clés pour l'examen")
+        for tip in exam_tips:
             st.markdown(
-                f'<div class="formula-box">{f["formula"]}</div>',
+                f'<div class="wib-card" style="padding:0.7rem 1rem;margin-bottom:0.5rem;">'
+                f'{tip}</div>',
                 unsafe_allow_html=True,
             )
-            if f.get("note"):
-                st.caption(f["note"])
-            st.markdown("")
     else:
-        st.info("Pas de formules spécifiques pour ce topic.")
-
-    key_points = note.get("key_points", [])
-    if key_points:
-        st.markdown("---")
-        st.markdown("#### Key Points to Remember")
-        for pt in key_points:
-            st.markdown(f"- {pt}")
+        st.info("Aucun exam tip disponible pour ce topic.")
 
 st.markdown("---")
 

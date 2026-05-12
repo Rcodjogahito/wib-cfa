@@ -126,20 +126,22 @@ if state.get("exam_submitted"):
     score_pct = round(correct_count / total * 100, 2) if total else 0
     duration = int(time.time() - state.get("exam_start", time.time()))
 
-    # Save
+    # Save once only
     domain_scores = {t: round(v["correct"] / v["total"] * 100, 1)
                      for t, v in topic_results.items()}
-    db.save_session(
-        user_id=user["id"],
-        session_type=cfg["session_type"],
-        topic="All",
-        total=total,
-        correct=correct_count,
-        duration_sec=duration,
-        domain_scores=domain_scores,
-    )
-    for t, v in topic_results.items():
-        db.update_progress(user["id"], t, v["correct"], v["total"])
+    if not state.get("exam_saved"):
+        db.save_session(
+            user_id=user["id"],
+            session_type=cfg["session_type"],
+            topic="All",
+            total=total,
+            correct=correct_count,
+            duration_sec=duration,
+            domain_scores=domain_scores,
+        )
+        for t, v in topic_results.items():
+            db.update_progress(user["id"], t, v["correct"], v["total"])
+        state["exam_saved"] = True
 
     # Pass / Fail banner
     passed = score_pct >= PASS_THRESHOLD
@@ -223,7 +225,7 @@ if state.get("exam_submitted"):
     if st.button("Nouvel examen", use_container_width=True):
         for k in ["exam_active", "exam_config", "exam_name", "exam_questions",
                   "exam_idx", "exam_answers", "exam_flagged", "exam_start",
-                  "exam_submitted"]:
+                  "exam_submitted", "exam_saved"]:
             state.pop(k, None)
         st.rerun()
     st.stop()
@@ -256,7 +258,7 @@ st.markdown(
     unsafe_allow_html=True,
 )
 
-if remaining == 0:
+if remaining <= 0 and not state.get("exam_submitted"):
     state["exam_submitted"] = True
     st.rerun()
 
