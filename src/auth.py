@@ -4,6 +4,18 @@ No password required — email + first name is the identifier.
 
 Session persistence: st.context.cookies (read, synchronous) + hidden JS
 component (write/clear). Zero new dependencies, works on Streamlit Cloud.
+
+Cookie timing note: st.context.cookies reads the cookies from the HTTP
+request that established the WebSocket session. It does NOT update mid-
+session on st.rerun(). Writing cookies via JS (st.components.v1.html)
+takes effect in the browser immediately, but the updated value is only
+visible to st.context.cookies on the NEXT full page load (new HTTP GET).
+This means:
+  - Login: session_state carries the auth within the session; cookie
+    carries it across server restarts / browser tab closures.
+  - Logout: we suppress cookie-based restore via a session_state flag
+    because st.context.cookies still holds the old cookie value until
+    the browser makes a new HTTP request.
 """
 
 import streamlit as st
@@ -70,10 +82,21 @@ def _load_session(user: dict) -> None:
 
 
 def _try_restore_from_cookie() -> bool:
-    """Check browser cookie and restore session if valid. Returns True if restored."""
+    """Check browser cookie and restore session if valid. Returns True if restored.
+
+    Skips restore if the user explicitly logged out this session — needed because
+    st.context.cookies still holds the old HTTP-request value after logout until
+    the browser makes a new GET request.
+    """
     uid = _read_cookie()
     if not uid:
         return False
+
+    # Logout guard: if this uid was explicitly logged out in this session,
+    # don't restore it (the JS erase hasn't been seen by st.context.cookies yet).
+    if uid == st.session_state.get("_logged_out_uid"):
+        return False
+
     db = get_db()
     user = db.get_user_by_id(uid)
     if not user:
@@ -131,14 +154,21 @@ def _render_login_form() -> None:
         db = get_db()
         user = db.get_or_create_user(email.strip().lower(), first_name.strip())
         _load_session(user)
+        st.session_state.pop("_logged_out_uid", None)  # clear any prior logout guard
         _write_cookie(user["id"])  # persist across server restarts
         st.rerun()
 
 
 def logout() -> None:
+    uid = st.session_state.get("user_id", "")
     _erase_cookie()
     for key in ["user_id", "user_email", "user_first_name", "diagnostic_done", "diagnostic_score"]:
         st.session_state.pop(key, None)
+    # Prevent _try_restore_from_cookie from immediately re-logging in using
+    # the stale st.context.cookies value (which won't reflect the JS erase
+    # until the browser makes a new HTTP request).
+    if uid:
+        st.session_state["_logged_out_uid"] = uid
     st.rerun()
 
 
