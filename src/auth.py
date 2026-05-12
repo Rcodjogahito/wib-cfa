@@ -1,9 +1,14 @@
 """
 WIB CFA — Authentication helpers.
 No password required — email + first name is the identifier.
+
+Session persistence: st.context.cookies (read, synchronous) + hidden JS
+component (write/clear). Zero new dependencies, works on Streamlit Cloud.
 """
 
 import streamlit as st
+import streamlit.components.v1 as _components
+
 from src.database import get_db
 
 
@@ -20,16 +25,82 @@ CFA_TOPICS = [
     "Portfolio Management",
 ]
 
+_COOKIE = "wib_uid"
+_MAX_AGE = 60 * 60 * 24 * 90  # 90 days
+
+
+# ── Cookie helpers ────────────────────────────────────────────────────────────
+
+def _write_cookie(user_id: str) -> None:
+    """Inject a JS snippet that sets a persistent auth cookie in the browser."""
+    _components.html(
+        f"""<script>
+        document.cookie = "{_COOKIE}={user_id}; max-age={_MAX_AGE}; path=/; SameSite=Strict";
+        </script>""",
+        height=0,
+    )
+
+
+def _erase_cookie() -> None:
+    """Inject a JS snippet that expires the auth cookie."""
+    _components.html(
+        f"""<script>
+        document.cookie = "{_COOKIE}=; max-age=0; path=/; SameSite=Strict";
+        </script>""",
+        height=0,
+    )
+
+
+def _read_cookie() -> str | None:
+    """Read the auth cookie synchronously from the HTTP request context."""
+    try:
+        return st.context.cookies.get(_COOKIE)
+    except Exception:
+        return None
+
+
+# ── Session helpers ───────────────────────────────────────────────────────────
+
+def _load_session(user: dict) -> None:
+    st.session_state["user_id"] = user["id"]
+    st.session_state["user_email"] = user["email"]
+    st.session_state["user_first_name"] = user["first_name"]
+    st.session_state["diagnostic_done"] = bool(user.get("diagnostic_done", False))
+    st.session_state["diagnostic_score"] = user.get("diagnostic_score")
+
+
+def _try_restore_from_cookie() -> bool:
+    """Check browser cookie and restore session if valid. Returns True if restored."""
+    uid = _read_cookie()
+    if not uid:
+        return False
+    db = get_db()
+    user = db.get_user_by_id(uid)
+    if not user:
+        return False
+    _load_session(user)
+    return True
+
+
+# ── Public API ────────────────────────────────────────────────────────────────
 
 def require_auth() -> bool:
-    """Return True if user is authenticated; show login form and return False otherwise."""
+    """Return True if authenticated; show login form and return False otherwise.
+
+    Check order:
+    1. session_state (fast path — already authenticated in this server process)
+    2. browser cookie (auto-restore after server restart / tab refresh)
+    3. Show login form
+    """
     if st.session_state.get("user_id"):
+        return True
+    if _try_restore_from_cookie():
         return True
     _render_login_form()
     return False
 
 
-def _render_login_form():
+def _render_login_form() -> None:
     st.markdown(
         """
         <div style="max-width:440px; margin:3rem auto;">
@@ -58,15 +129,13 @@ def _render_login_form():
             return
         db = get_db()
         user = db.get_or_create_user(email.strip().lower(), first_name.strip())
-        st.session_state["user_id"] = user["id"]
-        st.session_state["user_email"] = user["email"]
-        st.session_state["user_first_name"] = user["first_name"]
-        st.session_state["diagnostic_done"] = bool(user.get("diagnostic_done", False))
-        st.session_state["diagnostic_score"] = user.get("diagnostic_score")
+        _load_session(user)
+        _write_cookie(user["id"])  # persist across server restarts
         st.rerun()
 
 
-def logout():
+def logout() -> None:
+    _erase_cookie()
     for key in ["user_id", "user_email", "user_first_name", "diagnostic_done", "diagnostic_score"]:
         st.session_state.pop(key, None)
     st.rerun()

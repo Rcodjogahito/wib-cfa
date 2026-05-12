@@ -211,6 +211,18 @@ class Database:
             conn.close()
             return result
 
+    def get_user_by_id(self, user_id: str) -> Optional[Dict]:
+        """Fetch a user by primary key (used by cookie-based session restore)."""
+        if self.sb:
+            res = self.sb.table("users").select("*").eq("id", user_id).execute()
+            return res.data[0] if res.data else None
+        conn = _get_sqlite()
+        cur = conn.cursor()
+        cur.execute("SELECT * FROM users WHERE id=?", (user_id,))
+        row = cur.fetchone()
+        conn.close()
+        return dict(row) if row else None
+
     def update_user(self, user_id: str, **kwargs):
         if self.sb:
             self.sb.table("users").update(kwargs).eq("id", user_id).execute()
