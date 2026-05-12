@@ -1,0 +1,338 @@
+"""
+WIB CFA — Main entry point.
+Login → Diagnostic (first time) → Dashboard.
+"""
+
+import random
+import time
+from datetime import date, timedelta
+
+import plotly.graph_objects as go
+import streamlit as st
+
+from src.auth import CFA_TOPICS, get_current_user, logout, require_auth
+from src.database import get_db
+from src.progress import compute_mastery_map, readiness_score, weak_topics
+from src.styles import inject_styles, metric_card, render_hero, render_ticker
+
+st.set_page_config(
+    page_title="WIB – CFA Level 1",
+    page_icon="📊",
+    layout="wide",
+    initial_sidebar_state="expanded",
+)
+
+inject_styles()
+
+
+# ── Sidebar ───────────────────────────────────────────────────────────────────
+
+def _sidebar():
+    with st.sidebar:
+        st.markdown(
+            '<div style="font-family:\'Playfair Display\',serif;font-size:1.6rem;'
+            'font-weight:700;color:#C9A84C;letter-spacing:2px;margin-bottom:4px;">WIB</div>',
+            unsafe_allow_html=True,
+        )
+        st.caption("Who Wants to Be an Investment Banker?")
+        st.divider()
+        if st.session_state.get("user_id"):
+            user = get_current_user()
+            st.markdown(f"**{user['first_name']}**")
+            st.caption(user["email"])
+            st.divider()
+            st.page_link("streamlit_app.py", label="Home", icon="🏠")
+            st.page_link("pages/1_Study.py", label="Study Notes", icon="📖")
+            st.page_link("pages/2_Quiz.py", label="Quiz", icon="🎯")
+            st.page_link("pages/3_Flashcards.py", label="Flashcards", icon="🃏")
+            st.page_link("pages/4_Progress.py", label="Progress", icon="📈")
+            st.page_link("pages/5_Exam_Simulator.py", label="Exam Simulator", icon="⏱️")
+            st.divider()
+            if st.button("Sign out", use_container_width=True):
+                logout()
+
+
+_sidebar()
+
+# ── Auth gate ─────────────────────────────────────────────────────────────────
+
+if not require_auth():
+    render_hero()
+    st.stop()
+
+user = get_current_user()
+db = get_db()
+
+
+# ── Diagnostic test ───────────────────────────────────────────────────────────
+
+def _run_diagnostic():
+    st.markdown('<div class="section-header">Diagnostic Initial</div>', unsafe_allow_html=True)
+    st.caption("30 questions · 3 per topic · ~20 minutes — évaluons votre niveau de départ.")
+
+    state = st.session_state
+
+    if "diag_questions" not in state:
+        qs: list = []
+        for topic in CFA_TOPICS:
+            pool = db.get_questions(topic=topic, n=3)
+            qs.extend(pool[:3])
+        random.shuffle(qs)
+        state["diag_questions"] = qs
+        state["diag_idx"] = 0
+        state["diag_answers"] = []
+        state["diag_start"] = time.time()
+
+    qs = state["diag_questions"]
+    idx = state["diag_idx"]
+    total = len(qs)
+
+    if idx >= total:
+        _finish_diagnostic(qs, state["diag_answers"])
+        return
+
+    q = qs[idx]
+    st.progress(idx / total, text=f"Question {idx + 1} / {total}")
+
+    topic_badge = f'<span class="topic-badge">{q["topic"]}</span>'
+    diff = q.get("difficulty", "medium")
+    diff_badge = f'<span class="difficulty-{diff}">{diff.capitalize()}</span>'
+    st.markdown(f"{topic_badge} {diff_badge}", unsafe_allow_html=True)
+    st.markdown(f"**{q['question_en']}**")
+
+    col1, col2, col3 = st.columns(3)
+    answered = None
+    if col1.button(f"A. {q['option_a']}", key=f"d_a_{idx}", use_container_width=True):
+        answered = "A"
+    if col2.button(f"B. {q['option_b']}", key=f"d_b_{idx}", use_container_width=True):
+        answered = "B"
+    if col3.button(f"C. {q['option_c']}", key=f"d_c_{idx}", use_container_width=True):
+        answered = "C"
+
+    if answered:
+        correct = answered == q["correct_answer"]
+        state["diag_answers"].append({
+            "question_id": q["id"],
+            "topic": q["topic"],
+            "selected": answered,
+            "correct": correct,
+        })
+        db.save_attempt(
+            user_id=user["id"],
+            question_id=q["id"],
+            selected=answered,
+            is_correct=correct,
+            time_sec=0,
+            session_type="diagnostic",
+        )
+        state["diag_idx"] += 1
+        st.rerun()
+
+
+def _finish_diagnostic(qs, answers):
+    duration = int(time.time() - st.session_state.get("diag_start", time.time()))
+    correct = sum(1 for a in answers if a["correct"])
+    total = len(answers) or 1
+    score = round(correct / total * 100, 1)
+
+    # Per-topic breakdown
+    topic_results: dict = {}
+    for a in answers:
+        t = a["topic"]
+        if t not in topic_results:
+            topic_results[t] = {"correct": 0, "total": 0}
+        topic_results[t]["total"] += 1
+        if a["correct"]:
+            topic_results[t]["correct"] += 1
+
+    domain_scores = {t: round(v["correct"] / v["total"] * 100, 1)
+                     for t, v in topic_results.items() if v["total"]}
+
+    # Save session + progress
+    db.save_session(
+        user_id=user["id"],
+        session_type="diagnostic",
+        topic="All",
+        total=total,
+        correct=correct,
+        duration_sec=duration,
+        domain_scores=domain_scores,
+    )
+    for t, v in topic_results.items():
+        db.update_progress(user["id"], t, v["correct"], v["total"])
+
+    db.update_user(user["id"], diagnostic_done=1, diagnostic_score=score)
+    st.session_state["diagnostic_done"] = True
+    st.session_state["diagnostic_score"] = score
+
+    # Clean up diagnostic state
+    for k in ["diag_questions", "diag_idx", "diag_answers", "diag_start"]:
+        st.session_state.pop(k, None)
+
+    # Display result
+    banner_cls = "pass-banner" if score >= 60 else "fail-banner"
+    label = "Bon point de départ !" if score >= 60 else "Du travail en perspective !"
+    st.markdown(
+        f'<div class="{banner_cls}">{score:.1f}% — {label}</div>',
+        unsafe_allow_html=True,
+    )
+    st.markdown("---")
+    st.subheader("Résultats par topic")
+    for t in CFA_TOPICS:
+        pct = domain_scores.get(t, 0)
+        st.markdown(f"**{t}**")
+        st.progress(pct / 100, text=f"{pct:.0f}%")
+
+    if st.button("Aller au dashboard →", use_container_width=True):
+        st.rerun()
+
+
+if not st.session_state.get("diagnostic_done"):
+    render_hero("Diagnostic Initial")
+    _run_diagnostic()
+    st.stop()
+
+
+# ── Dashboard ─────────────────────────────────────────────────────────────────
+
+render_ticker()
+render_hero(f"Bienvenue, {user['first_name']} !")
+
+progress_rows = db.get_progress(user["id"])
+mastery = compute_mastery_map(progress_rows)
+readiness = readiness_score(mastery)
+sessions = db.get_sessions(user["id"])
+diag_score = st.session_state.get("diagnostic_score") or 0
+
+# ── KPI row ───────────────────────────────────────────────────────────────────
+
+k1, k2, k3, k4 = st.columns(4)
+total_attempts = sum(r.get("total_attempted", 0) for r in progress_rows)
+total_correct = sum(r.get("total_correct", 0) for r in progress_rows)
+overall_acc = round(total_correct / total_attempts * 100, 1) if total_attempts else 0
+mastered_count = sum(1 for v in mastery.values() if v >= 70)
+
+k1.markdown(metric_card(f"{readiness:.0f}%", "Readiness Score"), unsafe_allow_html=True)
+k2.markdown(metric_card(f"{overall_acc:.0f}%", "Accuracy globale"), unsafe_allow_html=True)
+k3.markdown(metric_card(f"{mastered_count}/10", "Topics maîtrisés"), unsafe_allow_html=True)
+k4.markdown(metric_card(str(len(sessions)), "Sessions complétées"), unsafe_allow_html=True)
+
+st.markdown("---")
+
+# ── Two-column layout: radar + weak areas ────────────────────────────────────
+
+col_left, col_right = st.columns([3, 2])
+
+with col_left:
+    st.markdown('<div class="section-header">Maîtrise par topic</div>', unsafe_allow_html=True)
+    topics = list(mastery.keys())
+    values = [mastery[t] for t in topics]
+    short = [t.split(" ")[0] for t in topics]
+
+    fig = go.Figure(go.Scatterpolar(
+        r=values + [values[0]],
+        theta=short + [short[0]],
+        fill="toself",
+        line_color="#C9A84C",
+        fillcolor="rgba(201,168,76,0.25)",
+    ))
+    fig.update_layout(
+        polar=dict(
+            radialaxis=dict(visible=True, range=[0, 100], tickfont_size=9, gridcolor="#ddd"),
+            angularaxis=dict(tickfont_size=11),
+            bgcolor="#F8F9FB",
+        ),
+        paper_bgcolor="#F8F9FB",
+        margin=dict(l=40, r=40, t=20, b=20),
+        height=360,
+    )
+    st.plotly_chart(fig, use_container_width=True)
+
+with col_right:
+    st.markdown('<div class="section-header">Points faibles prioritaires</div>', unsafe_allow_html=True)
+    weak = weak_topics(mastery, threshold=50)
+    medium = weak_topics(mastery, threshold=70)
+    if weak:
+        for t in weak[:5]:
+            pct = mastery[t]
+            st.markdown(
+                f'<div class="wib-card"><b>{t}</b><br>'
+                f'<span style="color:#B52B2B;font-size:1.1rem;font-weight:700;">{pct:.0f}%</span>'
+                f' — Priorité haute</div>',
+                unsafe_allow_html=True,
+            )
+    else:
+        medium_only = [t for t in medium if t not in weak]
+        if medium_only:
+            for t in medium_only[:5]:
+                pct = mastery[t]
+                st.markdown(
+                    f'<div class="wib-card"><b>{t}</b><br>'
+                    f'<span style="color:#856404;font-size:1.1rem;font-weight:700;">{pct:.0f}%</span>'
+                    f' — À renforcer</div>',
+                    unsafe_allow_html=True,
+                )
+        else:
+            st.success("Excellent ! Tous les topics sont au-dessus de 50%.")
+
+st.markdown("---")
+
+# ── Topic mastery bars ────────────────────────────────────────────────────────
+
+st.markdown('<div class="section-header">Progression détaillée</div>', unsafe_allow_html=True)
+
+TOPIC_WEIGHTS = {
+    "Ethics & Professional Standards": "15–20%",
+    "Quantitative Methods": "6–9%",
+    "Economics": "6–9%",
+    "Financial Statement Analysis": "11–14%",
+    "Corporate Issuers": "6–9%",
+    "Equity Investments": "11–14%",
+    "Fixed Income": "11–14%",
+    "Derivatives": "5–8%",
+    "Alternative Investments": "7–10%",
+    "Portfolio Management": "8–12%",
+}
+
+col_a, col_b = st.columns(2)
+for i, topic in enumerate(CFA_TOPICS):
+    pct = mastery[topic]
+    col = col_a if i % 2 == 0 else col_b
+    with col:
+        label = f"{topic} ({TOPIC_WEIGHTS.get(topic, '')})"
+        color = "#1B7F4F" if pct >= 70 else ("#C9A84C" if pct >= 50 else "#B52B2B")
+        st.markdown(
+            f'<div style="margin-bottom:0.3rem;"><b>{label}</b> '
+            f'<span style="color:{color};font-weight:700;">{pct:.0f}%</span></div>',
+            unsafe_allow_html=True,
+        )
+        st.progress(pct / 100)
+
+st.markdown("---")
+
+# ── 30-day study plan ─────────────────────────────────────────────────────────
+
+st.markdown('<div class="section-header">Programme 30 jours</div>', unsafe_allow_html=True)
+
+plan = [
+    ("Semaine 1", "Diagnostic + Ethics, Quant, Economics, FSA"),
+    ("Semaine 2", "Corporate Issuers, Equity, Fixed Income + révision faibles S1"),
+    ("Semaine 3", "Derivatives, Alternatives, Portfolio Mgmt + Mock Partial"),
+    ("Semaine 4", "Mock Full ×3 + révision ciblée points faibles"),
+]
+p1, p2, p3, p4 = st.columns(4)
+for col, (week, desc) in zip([p1, p2, p3, p4], plan):
+    col.markdown(
+        f'<div class="wib-card"><b style="color:#C9A84C;">{week}</b><br>'
+        f'<span style="font-size:0.88rem;">{desc}</span></div>',
+        unsafe_allow_html=True,
+    )
+
+# ── Quick-action buttons ──────────────────────────────────────────────────────
+
+st.markdown("---")
+qa1, qa2, qa3, qa4 = st.columns(4)
+qa1.page_link("pages/2_Quiz.py", label="Lancer un Quiz", icon="🎯")
+qa2.page_link("pages/3_Flashcards.py", label="Réviser Flashcards", icon="🃏")
+qa3.page_link("pages/5_Exam_Simulator.py", label="Simuler l'examen", icon="⏱️")
+qa4.page_link("pages/4_Progress.py", label="Voir la progression", icon="📈")
