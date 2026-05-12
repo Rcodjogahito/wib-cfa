@@ -171,6 +171,69 @@ def _seed_flashcards(conn: sqlite3.Connection):
 
 # ── Public API ────────────────────────────────────────────────────────────────
 
+_QUESTION_PATCHES = [
+    # Fix 1: annuity PV — $11,872 was wrong, correct value is $11,943
+    {
+        "match": "%annuity that pays $2,000 per year for 8 years%",
+        "fields": {
+            "option_b": "$11,943",
+            "explanation_en": "PV = PMT × [1 - (1+r)^-n] / r = 2,000 × [1 - (1.07)^-8] / 0.07 = 2,000 × 5.9713 = $11,943.",
+        },
+    },
+    # Fix 2: put-call parity — option A was identical to option B
+    {
+        "match": "%Put-call parity states that for European options on a non-dividend-paying stock%",
+        "fields": {
+            "option_a": "Call + Stock Price = Put + PV(Strike).",
+            "explanation_en": (
+                "Put-call parity: P + S = C + PV(X). "
+                "Option A is incorrect — it inverts the positions of S and PV(X), which are not interchangeable. "
+                "Option C omits discounting the strike."
+            ),
+        },
+    },
+    # Fix 3: capitalise BEST in straddle question
+    {
+        "match": "%short a call option and short a put option on the same stock with the same strike and expiry. This is best%",
+        "fields": {
+            "question_en": (
+                "An investor is short a call option and short a put option on the same stock "
+                "with the same strike and expiry. This is BEST described as a:"
+            ),
+        },
+    },
+    # Fix 4: capitalise BEST in IRR question
+    {
+        "match": "%internal rate of return (IRR) of a private equity fund is best described%",
+        "fields": {
+            "question_en": "The internal rate of return (IRR) of a private equity fund is BEST described as:",
+        },
+    },
+]
+
+
+def _apply_question_patches(sb) -> None:
+    """Apply targeted corrections to seeded question records. Idempotent."""
+    if sb:
+        for patch in _QUESTION_PATCHES:
+            try:
+                sb.table("questions").update(patch["fields"]).ilike(
+                    "question_en", patch["match"]
+                ).execute()
+            except Exception:
+                pass
+    else:
+        conn = _get_sqlite()
+        for patch in _QUESTION_PATCHES:
+            sets = ", ".join(f"{k}=?" for k in patch["fields"])
+            vals = list(patch["fields"].values()) + [patch["match"]]
+            conn.execute(
+                f"UPDATE questions SET {sets} WHERE question_en LIKE ?", vals
+            )
+        conn.commit()
+        conn.close()
+
+
 class Database:
     """Thin wrapper that routes calls to Supabase or SQLite."""
 
@@ -178,6 +241,7 @@ class Database:
         self.sb = _get_supabase_client()
         if not self.sb:
             init_sqlite()
+        _apply_question_patches(self.sb)
 
     # ── Users ──────────────────────────────────────────────────────────────
 
