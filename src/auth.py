@@ -37,7 +37,7 @@ def _write_cookie(user_id: str) -> None:
         f"""<script>
         document.cookie = "{_COOKIE}={user_id}; max-age={_MAX_AGE}; path=/; SameSite=Strict";
         </script>""",
-        height=0,
+        height=1,
     )
 
 
@@ -47,7 +47,7 @@ def _erase_cookie() -> None:
         f"""<script>
         document.cookie = "{_COOKIE}=; max-age=0; path=/; SameSite=Strict";
         </script>""",
-        height=0,
+        height=1,
     )
 
 
@@ -79,6 +79,7 @@ def _try_restore_from_cookie() -> bool:
     if not user:
         return False
     _load_session(user)
+    _write_cookie(uid)  # reset 90-day timer on every successful restore
     return True
 
 
