@@ -5,6 +5,9 @@
 *.db
 *.sqlite
 
+# Extracted data (large files, seeded to Supabase)
+data/
+
 # Python
 __pycache__/
 *.py[cod]
