@@ -1,6 +1,8 @@
 """
 WIB CFA — Authentication helpers.
-No password required — email + first name is the identifier.
+Login with a unique pseudo (username) — no email, no password required.
+One pseudo = one account. Case-insensitive matching (stored lowercase),
+displayed as typed.
 
 Session persistence: st.context.cookies (read, synchronous) + hidden JS
 component (write/clear). Zero new dependencies, works on Streamlit Cloud.
@@ -10,12 +12,6 @@ request that established the WebSocket session. It does NOT update mid-
 session on st.rerun(). Writing cookies via JS (st.components.v1.html)
 takes effect in the browser immediately, but the updated value is only
 visible to st.context.cookies on the NEXT full page load (new HTTP GET).
-This means:
-  - Login: session_state carries the auth within the session; cookie
-    carries it across server restarts / browser tab closures.
-  - Logout: we suppress cookie-based restore via a session_state flag
-    because st.context.cookies still holds the old cookie value until
-    the browser makes a new HTTP request.
 """
 
 import streamlit as st
