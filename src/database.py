@@ -510,6 +510,92 @@ class Database:
         conn.close()
         return data
 
+    # ── Diagnostic progress (in-progress persistence) ─────────────────────
+
+    def save_diagnostic_progress(self, user_id: str, diag_idx: int,
+                                  diag_questions: list, diag_answers: list,
+                                  diag_start: float) -> None:
+        """Persist in-progress diagnostic state using the user_sessions table."""
+        payload = json.dumps({
+            "diag_idx": diag_idx,
+            "diag_questions": diag_questions,
+            "diag_answers": diag_answers,
+            "diag_start": diag_start,
+        })
+        now = datetime.now(timezone.utc).isoformat()
+        if self.sb:
+            try:
+                self.sb.table("user_sessions").delete().eq(
+                    "user_id", user_id).eq("session_type", "diag_progress").execute()
+                self.sb.table("user_sessions").insert({
+                    "id": str(uuid.uuid4()),
+                    "user_id": user_id,
+                    "session_type": "diag_progress",
+                    "topic": "progress",
+                    "total_questions": len(diag_questions),
+                    "correct_answers": len(diag_answers),
+                    "score_pct": 0,
+                    "duration_sec": 0,
+                    "domain_scores_json": payload,
+                    "completed_at": now,
+                }).execute()
+            except Exception:
+                pass
+        else:
+            conn = _get_sqlite()
+            conn.execute(
+                "DELETE FROM user_sessions WHERE user_id=? AND session_type='diag_progress'",
+                (user_id,),
+            )
+            conn.execute(
+                """INSERT INTO user_sessions (id,user_id,session_type,topic,total_questions,
+                   correct_answers,score_pct,duration_sec,domain_scores_json,completed_at)
+                   VALUES (?,?,?,?,?,?,?,?,?,?)""",
+                (str(uuid.uuid4()), user_id, "diag_progress", "progress",
+                 len(diag_questions), len(diag_answers), 0, 0, payload, now),
+            )
+            conn.commit()
+            conn.close()
+
+    def load_diagnostic_progress(self, user_id: str) -> Optional[Dict]:
+        """Restore in-progress diagnostic state. Returns None if not found."""
+        if self.sb:
+            try:
+                res = (self.sb.table("user_sessions").select("domain_scores_json")
+                       .eq("user_id", user_id).eq("session_type", "diag_progress")
+                       .execute())
+                if res.data:
+                    return json.loads(res.data[0]["domain_scores_json"])
+            except Exception:
+                pass
+            return None
+        conn = _get_sqlite()
+        cur = conn.cursor()
+        cur.execute(
+            "SELECT domain_scores_json FROM user_sessions WHERE user_id=? AND session_type='diag_progress'",
+            (user_id,),
+        )
+        row = cur.fetchone()
+        conn.close()
+        return json.loads(row[0]) if row else None
+
+    def clear_diagnostic_progress(self, user_id: str) -> None:
+        """Remove in-progress diagnostic state (after completion or reset)."""
+        if self.sb:
+            try:
+                self.sb.table("user_sessions").delete().eq(
+                    "user_id", user_id).eq("session_type", "diag_progress").execute()
+            except Exception:
+                pass
+        else:
+            conn = _get_sqlite()
+            conn.execute(
+                "DELETE FROM user_sessions WHERE user_id=? AND session_type='diag_progress'",
+                (user_id,),
+            )
+            conn.commit()
+            conn.close()
+
 
 @st.cache_resource
 def get_db() -> Database:

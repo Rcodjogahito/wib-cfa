@@ -37,8 +37,7 @@ def _sidebar():
         st.divider()
         if st.session_state.get("user_id"):
             user = get_current_user()
-            st.markdown(f"**{user['first_name']}**")
-            st.caption(user["email"])
+            st.markdown(f"**{user['username']}**")
             st.divider()
             st.page_link("streamlit_app.py", label="Home", icon="🏠")
             st.page_link("pages/1_Study.py", label="Study Notes", icon="📖")
@@ -64,6 +63,15 @@ db = get_db()
 
 # ── Diagnostic test ───────────────────────────────────────────────────────────
 
+def _reset_diagnostic():
+    """Clear all diagnostic state from session and DB, then rerun."""
+    db.clear_diagnostic_progress(user["id"])
+    for k in ["diag_questions", "diag_idx", "diag_answers", "diag_start",
+              "diag_reset_confirm"]:
+        st.session_state.pop(k, None)
+    st.rerun()
+
+
 def _run_diagnostic():
     st.markdown('<div class="section-header">Diagnostic Initial</div>', unsafe_allow_html=True)
     st.caption("30 questions · 3 per topic · ~20 minutes — évaluons votre niveau de départ.")
@@ -71,15 +79,26 @@ def _run_diagnostic():
     state = st.session_state
 
     if "diag_questions" not in state:
-        qs: list = []
-        for topic in CFA_TOPICS:
-            pool = db.get_questions(topic=topic, n=3)
-            qs.extend(pool[:3])
-        random.shuffle(qs)
-        state["diag_questions"] = qs
-        state["diag_idx"] = 0
-        state["diag_answers"] = []
-        state["diag_start"] = time.time()
+        # Try to restore in-progress state from DB (survives server restarts)
+        saved = db.load_diagnostic_progress(user["id"])
+        if saved and saved.get("diag_questions") and saved.get("diag_idx", 0) > 0:
+            state["diag_questions"] = saved["diag_questions"]
+            state["diag_idx"] = saved["diag_idx"]
+            state["diag_answers"] = saved["diag_answers"]
+            state["diag_start"] = saved.get("diag_start", time.time())
+        else:
+            qs: list = []
+            for topic in CFA_TOPICS:
+                pool = db.get_questions(topic=topic, n=3)
+                qs.extend(pool[:3])
+            random.shuffle(qs)
+            state["diag_questions"] = qs
+            state["diag_idx"] = 0
+            state["diag_answers"] = []
+            state["diag_start"] = time.time()
+            db.save_diagnostic_progress(
+                user["id"], 0, state["diag_questions"], [], state["diag_start"]
+            )
 
     qs = state["diag_questions"]
     idx = state["diag_idx"]
@@ -124,7 +143,28 @@ def _run_diagnostic():
             session_type="diagnostic",
         )
         state["diag_idx"] += 1
+        # Persist progress after every answer
+        db.save_diagnostic_progress(
+            user["id"], state["diag_idx"],
+            state["diag_questions"], state["diag_answers"],
+            state["diag_start"],
+        )
         st.rerun()
+
+    # ── Reset section ──────────────────────────────────────────────────────
+    st.markdown("---")
+    if state.get("diag_reset_confirm"):
+        st.warning("Es-tu sûr(e) de vouloir recommencer le test depuis le début ? Toute ta progression sera perdue.")
+        rc1, rc2 = st.columns(2)
+        if rc1.button("Annuler", key="diag_reset_cancel", use_container_width=True):
+            state.pop("diag_reset_confirm", None)
+            st.rerun()
+        if rc2.button("Recommencer", key="diag_reset_yes", type="primary", use_container_width=True):
+            _reset_diagnostic()
+    else:
+        if st.button("↺ Recommencer le test depuis le début", key="diag_reset_btn"):
+            state["diag_reset_confirm"] = True
+            st.rerun()
 
 
 def _finish_diagnostic(qs, answers):
@@ -163,8 +203,10 @@ def _finish_diagnostic(qs, answers):
     st.session_state["diagnostic_done"] = True
     st.session_state["diagnostic_score"] = score
 
-    # Clean up diagnostic state
-    for k in ["diag_questions", "diag_idx", "diag_answers", "diag_start"]:
+    # Clean up diagnostic state (session + DB)
+    db.clear_diagnostic_progress(user["id"])
+    for k in ["diag_questions", "diag_idx", "diag_answers", "diag_start",
+              "diag_reset_confirm"]:
         st.session_state.pop(k, None)
 
     # Display result

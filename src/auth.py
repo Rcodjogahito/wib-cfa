@@ -75,8 +75,10 @@ def _read_cookie() -> str | None:
 
 def _load_session(user: dict) -> None:
     st.session_state["user_id"] = user["id"]
-    st.session_state["user_email"] = user["email"]
-    st.session_state["user_first_name"] = user["first_name"]
+    st.session_state["user_email"] = user.get("email", "")
+    st.session_state["user_first_name"] = user.get("first_name", "")
+    # username is stored in first_name (display) and email (unique key)
+    st.session_state["user_username"] = user.get("first_name") or user.get("email", "")
     st.session_state["diagnostic_done"] = bool(user.get("diagnostic_done", False))
     st.session_state["diagnostic_score"] = user.get("diagnostic_score")
 
@@ -138,31 +140,38 @@ def _render_login_form() -> None:
         unsafe_allow_html=True,
     )
     with st.form("login_form"):
-        st.subheader("Sign in / Register")
-        st.caption("Enter your email and first name. No password required.")
-        email = st.text_input("Email address", placeholder="your@email.com")
-        first_name = st.text_input("First name", placeholder="Alex")
-        submitted = st.form_submit_button("Enter WIB", use_container_width=True)
+        st.subheader("Connexion")
+        st.caption("Choisis un pseudo unique. Pas de mot de passe requis. Ton pseudo = ton compte.")
+        username = st.text_input("Pseudo", placeholder="ex: AlexFinance, JeanDupont…")
+        submitted = st.form_submit_button("Entrer dans WIB", use_container_width=True)
 
     if submitted:
-        if not email or "@" not in email:
-            st.error("Please enter a valid email address.")
+        raw = username.strip()
+        if len(raw) < 3:
+            st.error("Le pseudo doit contenir au moins 3 caractères.")
             return
-        if not first_name.strip():
-            st.error("Please enter your first name.")
+        if len(raw) > 30:
+            st.error("Le pseudo ne peut pas dépasser 30 caractères.")
             return
+        import re as _re
+        if not _re.match(r"^[A-Za-z0-9_À-ÿ]+$", raw):
+            st.error("Le pseudo ne peut contenir que des lettres, chiffres et underscores (pas d'espace ni de caractères spéciaux).")
+            return
+        # Normalize: lowercase for unique key, preserve case for display
+        uid_key = raw.lower()
         db = get_db()
-        user = db.get_or_create_user(email.strip().lower(), first_name.strip())
+        user = db.get_or_create_user(uid_key, raw)
         _load_session(user)
-        st.session_state.pop("_logged_out_uid", None)  # clear any prior logout guard
-        _write_cookie(user["id"])  # persist across server restarts
+        st.session_state.pop("_logged_out_uid", None)
+        _write_cookie(user["id"])
         st.rerun()
 
 
 def logout() -> None:
     uid = st.session_state.get("user_id", "")
     _erase_cookie()
-    for key in ["user_id", "user_email", "user_first_name", "diagnostic_done", "diagnostic_score"]:
+    for key in ["user_id", "user_email", "user_first_name", "user_username",
+                "diagnostic_done", "diagnostic_score"]:
         st.session_state.pop(key, None)
     # Prevent _try_restore_from_cookie from immediately re-logging in using
     # the stale st.context.cookies value (which won't reflect the JS erase
@@ -173,10 +182,17 @@ def logout() -> None:
 
 
 def get_current_user() -> dict:
+    username = (
+        st.session_state.get("user_username")
+        or st.session_state.get("user_first_name")
+        or st.session_state.get("user_email")
+        or ""
+    )
     return {
         "id": st.session_state.get("user_id"),
         "email": st.session_state.get("user_email"),
-        "first_name": st.session_state.get("user_first_name"),
+        "first_name": username,   # display name throughout the app
+        "username": username,
         "diagnostic_done": st.session_state.get("diagnostic_done", False),
         "diagnostic_score": st.session_state.get("diagnostic_score"),
     }

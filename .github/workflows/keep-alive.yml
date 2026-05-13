@@ -1,0 +1,17 @@
+name: Keep-alive WIB CFA
+
+# Pings the Streamlit app daily to prevent dormancy (apps sleep after ~7 days).
+
+on:
+  schedule:
+    - cron: "0 7 * * *"   # 07:00 UTC every day
+  workflow_dispatch:
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Ping WIB CFA
+        run: |
+          STATUS=$(curl -s -o /dev/null -w "%{http_code}" https://wib-cfa.streamlit.app/)
+          echo "HTTP status: $STATUS"
