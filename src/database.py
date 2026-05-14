@@ -343,6 +343,23 @@ class Database:
         conn.close()
         return dict(row) if row else None
 
+    def get_questions_by_ids(self, question_ids: List[str]) -> List[Dict]:
+        """Fetch questions by ID list, preserving the given order."""
+        if not question_ids:
+            return []
+        if self.sb:
+            res = self.sb.table("questions").select("*").in_("id", question_ids).execute()
+            data = res.data or []
+        else:
+            conn = _get_sqlite()
+            placeholders = ",".join("?" * len(question_ids))
+            cur = conn.cursor()
+            cur.execute(f"SELECT * FROM questions WHERE id IN ({placeholders})", question_ids)
+            data = [dict(r) for r in cur.fetchall()]
+            conn.close()
+        id_to_q = {q["id"]: q for q in data}
+        return [id_to_q[qid] for qid in question_ids if qid in id_to_q]
+
     # ── Flashcards ─────────────────────────────────────────────────────────
 
     def get_flashcards(self, topic: Optional[str] = None) -> List[Dict]:
@@ -515,20 +532,25 @@ class Database:
     def save_diagnostic_progress(self, user_id: str, diag_idx: int,
                                   diag_questions: list, diag_answers: list,
                                   diag_start: float) -> None:
-        """Persist in-progress diagnostic state using the user_sessions table."""
+        """Persist in-progress diagnostic state.
+
+        Stores question IDs only (not full objects) to keep the payload small.
+        Uses insert-first-then-delete so a failed write never erases the previous
+        save (avoids the delete→insert race condition).
+        """
         payload = json.dumps({
             "diag_idx": diag_idx,
-            "diag_questions": diag_questions,
+            "question_ids": [q["id"] for q in diag_questions],
             "diag_answers": diag_answers,
             "diag_start": diag_start,
         })
         now = datetime.now(timezone.utc).isoformat()
+        new_id = str(uuid.uuid4())
         if self.sb:
             try:
-                self.sb.table("user_sessions").delete().eq(
-                    "user_id", user_id).eq("session_type", "diag_progress").execute()
+                # INSERT first — old record stays safe if this call fails
                 self.sb.table("user_sessions").insert({
-                    "id": str(uuid.uuid4()),
+                    "id": new_id,
                     "user_id": user_id,
                     "session_type": "diag_progress",
                     "topic": "progress",
@@ -539,8 +561,12 @@ class Database:
                     "domain_scores_json": payload,
                     "completed_at": now,
                 }).execute()
-            except Exception:
-                pass
+                # DELETE old records only after the new one is safely stored
+                self.sb.table("user_sessions").delete().eq(
+                    "user_id", user_id
+                ).eq("session_type", "diag_progress").neq("id", new_id).execute()
+            except Exception as e:
+                print(f"[WIB] save_diagnostic_progress error: {e}")
         else:
             conn = _get_sqlite()
             conn.execute(
@@ -551,33 +577,71 @@ class Database:
                 """INSERT INTO user_sessions (id,user_id,session_type,topic,total_questions,
                    correct_answers,score_pct,duration_sec,domain_scores_json,completed_at)
                    VALUES (?,?,?,?,?,?,?,?,?,?)""",
-                (str(uuid.uuid4()), user_id, "diag_progress", "progress",
+                (new_id, user_id, "diag_progress", "progress",
                  len(diag_questions), len(diag_answers), 0, 0, payload, now),
             )
             conn.commit()
             conn.close()
 
     def load_diagnostic_progress(self, user_id: str) -> Optional[Dict]:
-        """Restore in-progress diagnostic state. Returns None if not found."""
+        """Restore in-progress diagnostic state. Returns None if not found.
+
+        Handles both the legacy format (full question objects embedded) and the
+        current format (question IDs only — re-fetches from DB).
+        Orders by completed_at DESC so the most recent save wins when multiple
+        records exist (can happen if the old delete failed).
+        """
+        raw = None
         if self.sb:
             try:
-                res = (self.sb.table("user_sessions").select("domain_scores_json")
-                       .eq("user_id", user_id).eq("session_type", "diag_progress")
+                res = (self.sb.table("user_sessions")
+                       .select("domain_scores_json")
+                       .eq("user_id", user_id)
+                       .eq("session_type", "diag_progress")
+                       .order("completed_at", desc=True)
+                       .limit(1)
                        .execute())
                 if res.data:
-                    return json.loads(res.data[0]["domain_scores_json"])
-            except Exception:
-                pass
+                    raw = res.data[0]["domain_scores_json"]
+            except Exception as e:
+                print(f"[WIB] load_diagnostic_progress error: {e}")
+                return None
+        else:
+            conn = _get_sqlite()
+            cur = conn.cursor()
+            cur.execute(
+                """SELECT domain_scores_json FROM user_sessions
+                   WHERE user_id=? AND session_type='diag_progress'
+                   ORDER BY completed_at DESC LIMIT 1""",
+                (user_id,),
+            )
+            row = cur.fetchone()
+            conn.close()
+            if row:
+                raw = row[0]
+
+        if not raw:
             return None
-        conn = _get_sqlite()
-        cur = conn.cursor()
-        cur.execute(
-            "SELECT domain_scores_json FROM user_sessions WHERE user_id=? AND session_type='diag_progress'",
-            (user_id,),
-        )
-        row = cur.fetchone()
-        conn.close()
-        return json.loads(row[0]) if row else None
+        try:
+            saved = json.loads(raw)
+        except Exception:
+            return None
+
+        # Current format: question IDs only — re-fetch full objects
+        if "question_ids" in saved:
+            question_ids = saved["question_ids"]
+            if not question_ids:
+                return None
+            questions = self.get_questions_by_ids(question_ids)
+            if len(questions) != len(question_ids):
+                return None  # Some questions missing — unsafe to restore
+            saved["diag_questions"] = questions
+
+        # Legacy format: full question objects already embedded — use as-is
+        if not saved.get("diag_questions"):
+            return None
+
+        return saved
 
     def clear_diagnostic_progress(self, user_id: str) -> None:
         """Remove in-progress diagnostic state (after completion or reset)."""

@@ -81,10 +81,10 @@ def _run_diagnostic():
     if "diag_questions" not in state:
         # Try to restore in-progress state from DB (survives server restarts)
         saved = db.load_diagnostic_progress(user["id"])
-        if saved and saved.get("diag_questions") and saved.get("diag_idx", 0) > 0:
+        if saved and saved.get("diag_questions"):
             state["diag_questions"] = saved["diag_questions"]
-            state["diag_idx"] = saved["diag_idx"]
-            state["diag_answers"] = saved["diag_answers"]
+            state["diag_idx"] = saved.get("diag_idx", 0)
+            state["diag_answers"] = saved.get("diag_answers", [])
             state["diag_start"] = saved.get("diag_start", time.time())
         else:
             qs: list = []
