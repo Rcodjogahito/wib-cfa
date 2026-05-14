@@ -4,10 +4,11 @@ Topic filter, flip animation, Leitner scoring (knew it / study more).
 """
 
 import random
+import time
 
 import streamlit as st
 
-from src.auth import CFA_TOPICS, require_auth
+from src.auth import CFA_TOPICS, get_current_user, require_auth
 from src.database import get_db
 from src.styles import inject_styles, render_hero
 
@@ -31,6 +32,7 @@ with st.sidebar:
 if not require_auth():
     st.stop()
 
+user = get_current_user()
 db = get_db()
 state = st.session_state
 
@@ -45,9 +47,15 @@ with col2:
     mode = st.selectbox("Mode", ["Révision libre", "Mode Leitner (adaptatif)"], key="fc_mode")
 with col3:
     if st.button("Nouvelle session", use_container_width=True):
-        for k in ["fc_cards", "fc_idx", "fc_flipped", "fc_knew", "fc_study"]:
+        for k in ["fc_cards", "fc_idx", "fc_flipped", "fc_knew", "fc_study",
+                  "fc_saved", "fc_session_start", "fc_topic_saved", "fc_outcomes"]:
             state.pop(k, None)
         st.rerun()
+
+# Load Leitner state from DB if not already in session
+if "fc_study_ids" not in state:
+    state["fc_study_ids"] = db.load_leitner_ids(user["id"])
+    state["fc_session_start"] = time.time()
 
 # Load cards if needed
 if "fc_cards" not in state:
@@ -71,16 +79,45 @@ if "fc_cards" not in state:
     state["fc_flipped"] = False
     state["fc_knew"] = 0
     state["fc_study"] = 0
+    state["fc_outcomes"] = {}  # {card_id: True/False} for this session
 
 cards = state["fc_cards"]
 idx = state["fc_idx"]
 total = len(cards)
 
 if idx >= total:
-    # Session complete
+    # Session complete — save to DB once
     knew = state["fc_knew"]
     study = state["fc_study"]
     pct = round(knew / total * 100) if total else 0
+
+    if not state.get("fc_saved"):
+        duration = int(time.time() - state.get("fc_session_start", time.time()))
+        outcomes = state.get("fc_outcomes", {})
+        topic_results: dict = {}
+        for c in cards:
+            t = c["topic"]
+            topic_results.setdefault(t, {"correct": 0, "total": 0})
+            topic_results[t]["total"] += 1
+            if outcomes.get(c["id"]) is True:
+                topic_results[t]["correct"] += 1
+
+        domain_scores = {t: round(v["correct"] / v["total"] * 100, 1)
+                         for t, v in topic_results.items()}
+        fc_topic = state.get("fc_topic_saved", "All")
+        db.save_session(
+            user_id=user["id"],
+            session_type="flashcard",
+            topic=fc_topic,
+            total=total,
+            correct=knew,
+            duration_sec=duration,
+            domain_scores=domain_scores,
+        )
+        for t, v in topic_results.items():
+            db.update_progress(user["id"], t, v["correct"], v["total"])
+        state["fc_saved"] = True
+
     st.markdown(
         f'<div class="pass-banner">Session terminée — {pct}% ({knew}/{total} su)</div>'
         if pct >= 70 else
@@ -89,13 +126,17 @@ if idx >= total:
     )
     st.markdown(f"**{knew}** cartes sues · **{study}** à retravailler")
     if st.button("Recommencer", use_container_width=True):
-        for k in ["fc_cards", "fc_idx", "fc_flipped", "fc_knew", "fc_study"]:
+        for k in ["fc_cards", "fc_idx", "fc_flipped", "fc_knew", "fc_study",
+                  "fc_saved", "fc_session_start", "fc_topic_saved", "fc_outcomes"]:
             state.pop(k, None)
         st.rerun()
     st.stop()
 
 card = cards[idx]
 flipped = state["fc_flipped"]
+
+# Track the topic filter used for this session (for save_session)
+state["fc_topic_saved"] = topic_filter
 
 st.progress(idx / total, text=f"Carte {idx + 1} / {total}")
 st.markdown(f'<span class="topic-badge">{card["topic"]}</span>', unsafe_allow_html=True)
@@ -135,19 +176,21 @@ else:
         state["fc_knew"] += 1
         state["fc_idx"] += 1
         state["fc_flipped"] = False
-        # Remove from study-more list if present
+        state.setdefault("fc_outcomes", {})[card["id"]] = True
         study_ids = set(state.get("fc_study_ids", []))
         study_ids.discard(card["id"])
         state["fc_study_ids"] = list(study_ids)
+        db.save_leitner_ids(user["id"], state["fc_study_ids"])
         st.rerun()
     if col_study.button("À retravailler", use_container_width=True):
         state["fc_study"] += 1
         state["fc_idx"] += 1
         state["fc_flipped"] = False
-        # Mark card for Leitner priority
+        state.setdefault("fc_outcomes", {})[card["id"]] = False
         study_ids = set(state.get("fc_study_ids", []))
         study_ids.add(card["id"])
         state["fc_study_ids"] = list(study_ids)
+        db.save_leitner_ids(user["id"], state["fc_study_ids"])
         st.rerun()
 
 # ── Stats bar ─────────────────────────────────────────────────────────────────

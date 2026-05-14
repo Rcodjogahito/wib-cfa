@@ -141,6 +141,17 @@ if state.get("exam_submitted"):
         )
         for t, v in topic_results.items():
             db.update_progress(user["id"], t, v["correct"], v["total"])
+        # Save individual attempts for adaptive algorithm
+        for i, r in enumerate(results_detail):
+            if r["selected"] is not None:
+                db.save_attempt(
+                    user_id=user["id"],
+                    question_id=r["q"]["id"],
+                    selected=r["selected"],
+                    is_correct=r["correct"],
+                    time_sec=0,
+                    session_type=cfg["session_type"],
+                )
         state["exam_saved"] = True
 
     # Pass / Fail banner

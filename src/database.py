@@ -706,6 +706,85 @@ class Database:
             conn.commit()
             conn.close()
 
+    # ── Leitner state (flashcard Leitner tracking) ────────────────────────
+
+    def save_leitner_ids(self, user_id: str, card_ids: list) -> None:
+        """Persist the set of flashcard IDs marked 'study more'. Insert-then-delete."""
+        payload = json.dumps({"card_ids": list(card_ids)})
+        now = datetime.now(timezone.utc).isoformat()
+        new_id = str(uuid.uuid4())
+        if self.sb:
+            try:
+                self.sb.table("user_sessions").insert({
+                    "id": new_id,
+                    "user_id": user_id,
+                    "session_type": "leitner_state",
+                    "topic": "flashcards",
+                    "total_questions": len(card_ids),
+                    "correct_answers": 0,
+                    "score_pct": 0,
+                    "duration_sec": 0,
+                    "domain_scores_json": payload,
+                    "completed_at": now,
+                }).execute()
+                self.sb.table("user_sessions").delete().eq(
+                    "user_id", user_id
+                ).eq("session_type", "leitner_state").neq("id", new_id).execute()
+            except Exception as e:
+                print(f"[WIB] save_leitner_ids error: {e}")
+        else:
+            conn = _get_sqlite()
+            conn.execute(
+                "DELETE FROM user_sessions WHERE user_id=? AND session_type='leitner_state'",
+                (user_id,),
+            )
+            conn.execute(
+                """INSERT INTO user_sessions (id,user_id,session_type,topic,total_questions,
+                   correct_answers,score_pct,duration_sec,domain_scores_json,completed_at)
+                   VALUES (?,?,?,?,?,?,?,?,?,?)""",
+                (new_id, user_id, "leitner_state", "flashcards",
+                 len(card_ids), 0, 0, 0, payload, now),
+            )
+            conn.commit()
+            conn.close()
+
+    def load_leitner_ids(self, user_id: str) -> list:
+        """Return the list of flashcard IDs marked 'study more', or [] if none."""
+        raw = None
+        if self.sb:
+            try:
+                res = (self.sb.table("user_sessions")
+                       .select("domain_scores_json")
+                       .eq("user_id", user_id)
+                       .eq("session_type", "leitner_state")
+                       .order("completed_at", desc=True)
+                       .limit(1)
+                       .execute())
+                if res.data:
+                    raw = res.data[0]["domain_scores_json"]
+            except Exception:
+                return []
+        else:
+            conn = _get_sqlite()
+            cur = conn.cursor()
+            cur.execute(
+                """SELECT domain_scores_json FROM user_sessions
+                   WHERE user_id=? AND session_type='leitner_state'
+                   ORDER BY completed_at DESC LIMIT 1""",
+                (user_id,),
+            )
+            row = cur.fetchone()
+            conn.close()
+            if row:
+                raw = row[0]
+
+        if not raw:
+            return []
+        try:
+            return json.loads(raw).get("card_ids", [])
+        except Exception:
+            return []
+
 
 @st.cache_resource
 def get_db() -> Database:
