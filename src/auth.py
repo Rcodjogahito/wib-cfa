@@ -14,6 +14,8 @@ takes effect in the browser immediately, but the updated value is only
 visible to st.context.cookies on the NEXT full page load (new HTTP GET).
 """
 
+from __future__ import annotations
+
 import streamlit as st
 import streamlit.components.v1 as _components
 
