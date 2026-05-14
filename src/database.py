@@ -390,19 +390,33 @@ class Database:
     def get_question_stats(self) -> Dict:
         """Return total question count and per-source breakdown. Admin use only."""
         if self.sb:
-            res = self.sb.table("questions").select("source").execute()
-            rows = res.data or []
+            # Use count='exact' for total; paginate source field to handle 5k+ rows
+            count_res = self.sb.table("questions").select("id", count="exact").limit(1).execute()
+            total = count_res.count or 0
+            by_source: Dict[str, int] = {}
+            page, page_size = 0, 1000
+            while True:
+                rows = (self.sb.table("questions")
+                        .select("source")
+                        .range(page * page_size, (page + 1) * page_size - 1)
+                        .execute().data or [])
+                for r in rows:
+                    s = r.get("source") or "Unknown"
+                    by_source[s] = by_source.get(s, 0) + 1
+                if len(rows) < page_size:
+                    break
+                page += 1
         else:
             conn = _get_sqlite()
             cur = conn.cursor()
             cur.execute("SELECT source FROM questions")
             rows = [{"source": r[0]} for r in cur.fetchall()]
             conn.close()
-        total = len(rows)
-        by_source: Dict[str, int] = {}
-        for r in rows:
-            s = r.get("source") or "Unknown"
-            by_source[s] = by_source.get(s, 0) + 1
+            total = len(rows)
+            by_source = {}
+            for r in rows:
+                s = r.get("source") or "Unknown"
+                by_source[s] = by_source.get(s, 0) + 1
         return {"total": total, "by_source": by_source}
 
     # ── Questions ──────────────────────────────────────────────────────────
