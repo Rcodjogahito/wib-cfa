@@ -5,14 +5,10 @@ Login → Diagnostic (first time) → Dashboard.
 
 import random
 import time
+import traceback as _tb
 
 import plotly.graph_objects as go
 import streamlit as st
-
-from src.auth import CFA_TOPICS, get_current_user, logout, require_auth
-from src.database import get_db
-from src.progress import compute_mastery_map, readiness_score, weak_topics
-from src.styles import inject_styles, metric_card, render_hero, render_ticker, render_question
 
 st.set_page_config(
     page_title="WIB – CFA Level 1",
@@ -20,6 +16,16 @@ st.set_page_config(
     layout="wide",
     initial_sidebar_state="expanded",
 )
+
+try:
+    from src.auth import CFA_TOPICS, get_current_user, logout, require_auth
+    from src.database import get_db
+    from src.progress import compute_mastery_map, readiness_score, weak_topics
+    from src.styles import inject_styles, metric_card, render_hero, render_ticker, render_question
+except Exception as _e:
+    st.error(f"**Erreur d'import — {type(_e).__name__}:** `{_e}`")
+    st.code(_tb.format_exc())
+    st.stop()
 
 inject_styles()
 
