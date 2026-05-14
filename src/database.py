@@ -421,20 +421,36 @@ class Database:
 
     # ── Questions ──────────────────────────────────────────────────────────
 
+    # All 10 CFA Level 1 topics in canonical order
+    _ALL_TOPICS = [
+        "Quantitative Methods", "Economics", "Portfolio Management",
+        "Corporate Issuers", "Financial Statement Analysis", "Equity Investments",
+        "Fixed Income", "Derivatives", "Alternative Investments",
+        "Ethics & Professional Standards",
+    ]
+
     def get_questions(self, topic: Optional[str] = None,
                       difficulty: Optional[str] = None,
                       n: Optional[int] = None) -> List[Dict]:
         import random
-        fetch_n = max(n * 4, 200) if n else 500  # over-fetch then shuffle for variety
         if self.sb:
-            q = self.sb.table("questions").select("*")
             if topic and topic != "All":
-                q = q.eq("topic", topic)
-            if difficulty and difficulty != "All":
-                q = q.eq("difficulty", difficulty.lower())
-            # Fetch a capped pool, shuffle in Python for randomness
-            res = q.limit(fetch_n).execute()
-            data = res.data or []
+                # Single topic: fetch a pool and shuffle
+                fetch_n = max(n * 4, 200) if n else 500
+                q = self.sb.table("questions").select("*").eq("topic", topic)
+                if difficulty and difficulty != "All":
+                    q = q.eq("difficulty", difficulty.lower())
+                data = q.limit(fetch_n).execute().data or []
+            else:
+                # No topic filter: fetch proportionally from every topic to avoid
+                # insertion-order bias (Supabase has no ORDER BY random() support).
+                per_topic = max(min((n or 30) // len(self._ALL_TOPICS) * 4, 60), 20)
+                data = []
+                for t in self._ALL_TOPICS:
+                    q = self.sb.table("questions").select("*").eq("topic", t)
+                    if difficulty and difficulty != "All":
+                        q = q.eq("difficulty", difficulty.lower())
+                    data.extend(q.limit(per_topic).execute().data or [])
         else:
             conn = _get_sqlite()
             sql = "SELECT * FROM questions WHERE 1=1"
@@ -453,7 +469,8 @@ class Database:
             data = [dict(r) for r in cur.fetchall()]
             conn.close()
             return data
-        random.shuffle(data)
+        import random as _r
+        _r.shuffle(data)
         return data[:n] if n else data
 
     def get_question_by_id(self, qid: str) -> Optional[Dict]:
