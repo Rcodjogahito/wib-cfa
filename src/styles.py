@@ -10,8 +10,10 @@ import streamlit as st
 
 def render_question(question_text: str) -> None:
     """Render question with full Markdown support (enables table rendering)."""
-    if '\n' in question_text:
-        parts = question_text.split('\n', 1)
+    # Escape $ to prevent Streamlit treating pairs as LaTeX delimiters
+    safe = question_text.replace('$', r'\$')
+    if '\n' in safe:
+        parts = safe.split('\n', 1)
         first = parts[0].strip()
         rest = parts[1].strip()
         if first:
@@ -19,7 +21,7 @@ def render_question(question_text: str) -> None:
         if rest:
             st.markdown(rest)
     else:
-        st.markdown(f"**{question_text}**")
+        st.markdown(f"**{safe}**")
 
 
 def question_first_line(question_text: str, max_chars: int = 120) -> str:
