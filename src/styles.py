@@ -6,6 +6,30 @@ Call inject_styles() at the top of every page.
 import streamlit as st
 
 
+# ── Question rendering helpers (defined first for easy import) ────────────────
+
+def render_question(question_text: str) -> None:
+    """Render question with full Markdown support (enables table rendering)."""
+    if '\n' in question_text:
+        parts = question_text.split('\n', 1)
+        first = parts[0].strip()
+        rest = parts[1].strip()
+        if first:
+            st.markdown(f"**{first}**")
+        if rest:
+            st.markdown(rest)
+    else:
+        st.markdown(f"**{question_text}**")
+
+
+def question_first_line(question_text: str, max_chars: int = 120) -> str:
+    """Return only the first prose line of a question for compact displays."""
+    first = question_text.split('\n')[0].strip()
+    return (first[:max_chars] + "…") if len(first) > max_chars else first
+
+
+# ── CSS injection ─────────────────────────────────────────────────────────────
+
 def inject_styles():
     st.markdown(
         """
@@ -367,27 +391,3 @@ def metric_card(value: str, label: str):
     """
 
 
-def render_question(question_text: str) -> None:
-    """Render question text with full Markdown support.
-
-    Single-line questions → displayed bold (classic look).
-    Multi-line questions (containing tables, code blocks, lists) →
-    first prose line is bold; the structured block renders as raw Markdown
-    so tables, formatting and math display correctly.
-    """
-    if '\n' in question_text:
-        parts = question_text.split('\n', 1)
-        first = parts[0].strip()
-        rest = parts[1].strip()
-        if first:
-            st.markdown(f"**{first}**")
-        if rest:
-            st.markdown(rest)
-    else:
-        st.markdown(f"**{question_text}**")
-
-
-def question_first_line(question_text: str, max_chars: int = 120) -> str:
-    """Return only the first prose line of a question (for compact review displays)."""
-    first = question_text.split('\n')[0].strip()
-    return first[:max_chars] + "…" if len(first) > max_chars else first
