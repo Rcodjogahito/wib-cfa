@@ -333,9 +333,11 @@ class Database:
             try:
                 sess_res = (self.sb.table("user_sessions")
                             .select("user_id,completed_at,session_type")
-                            .not_.in_("session_type", ["diag_progress", "leitner_state"])
                             .execute())
-                sessions = sess_res.data or []
+                sessions = [
+                    s for s in (sess_res.data or [])
+                    if s.get("session_type") not in ("diag_progress", "leitner_state")
+                ]
             except Exception:
                 sessions = []
         else:
