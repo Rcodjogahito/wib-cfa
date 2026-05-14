@@ -50,7 +50,13 @@ with st.sidebar:
 
 render_hero("Administration")
 
-users = db.get_all_users()
+import traceback as _tb
+try:
+    users = db.get_all_users()
+except Exception as _e:
+    st.error(f"**Erreur get_all_users() — {type(_e).__name__}:** `{_e}`")
+    st.code(_tb.format_exc())
+    st.stop()
 total = len(users)
 
 diag_done = sum(1 for u in users if u.get("diagnostic_done"))
