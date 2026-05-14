@@ -134,29 +134,54 @@ def inject_styles():
             background-color: var(--white) !important;
             color: var(--gray-800) !important;
             border: 1px solid var(--gray-200) !important;
+            border-left: 3px solid transparent !important;
             border-radius: var(--radius) !important;
             font-family: 'Inter', sans-serif !important;
-            font-size: 0.875rem !important;
+            font-size: 0.9rem !important;
             font-weight: 500 !important;
             letter-spacing: 0.005em !important;
             text-align: left !important;
-            padding: 0.65rem 1.1rem !important;
-            min-height: 44px !important;
+            justify-content: flex-start !important;
+            padding: 0.7rem 1.25rem !important;
+            min-height: 48px !important;
+            width: 100% !important;
             transition: border-color 0.15s, background-color 0.15s, box-shadow 0.15s !important;
             box-shadow: var(--shadow-xs) !important;
         }
+        /* Force left-align on ALL inner Streamlit button elements */
+        .stButton > button p,
+        .stButton > button span,
+        .stButton > button div {
+            text-align: left !important;
+            color: inherit !important;
+            justify-content: flex-start !important;
+        }
         .stButton > button:hover {
-            border-color: var(--gold-500) !important;
-            border-left-width: 3px !important;
+            border-left-color: var(--gold-500) !important;
             background-color: var(--gold-100) !important;
             color: var(--navy-800) !important;
             box-shadow: var(--shadow-sm) !important;
+        }
+        .stButton > button:hover p,
+        .stButton > button:hover span,
+        .stButton > button:hover div {
+            color: var(--navy-800) !important;
+        }
+        /* Kill Streamlit's gold focus-color on non-primary buttons */
+        .stButton > button:focus,
+        .stButton > button:focus-visible,
+        .stButton > button:focus p,
+        .stButton > button:focus span {
+            color: var(--gray-800) !important;
+            outline: 2px solid var(--gold-300) !important;
+            outline-offset: 2px !important;
+            box-shadow: none !important;
         }
         .stButton > button:active {
             transform: translateY(1px) !important;
         }
         .stButton > button:disabled {
-            opacity: 0.40 !important;
+            opacity: 0.38 !important;
             cursor: not-allowed !important;
         }
 
@@ -165,18 +190,26 @@ def inject_styles():
         .stButton > button[kind="primary"] {
             background-color: var(--navy-800) !important;
             color: var(--gold-500) !important;
-            border: 1px solid var(--navy-700) !important;
+            border: none !important;
+            border-left: 3px solid transparent !important;
             font-weight: 600 !important;
             letter-spacing: 0.06em !important;
             text-transform: uppercase !important;
-            font-size: 0.75rem !important;
+            font-size: 0.76rem !important;
             text-align: center !important;
+            justify-content: center !important;
             box-shadow: var(--shadow-sm) !important;
+        }
+        [data-testid="baseButton-primary"] p,
+        [data-testid="baseButton-primary"] span,
+        .stButton > button[kind="primary"] p,
+        .stButton > button[kind="primary"] span {
+            color: var(--gold-500) !important;
+            text-align: center !important;
         }
         [data-testid="baseButton-primary"]:hover,
         .stButton > button[kind="primary"]:hover {
             background-color: var(--navy-700) !important;
-            border-color: var(--gold-500) !important;
             color: var(--gold-400) !important;
             box-shadow: var(--shadow-md) !important;
         }
@@ -343,6 +376,44 @@ def inject_styles():
         /* ── Progress bar ─────────────────────────────────────────────── */
         .stProgress > div > div > div > div {
             background: linear-gradient(90deg, var(--navy-700), var(--gold-500)) !important;
+        }
+
+        /* ── Question card wrapper ────────────────────────────────────── */
+        .question-card {
+            background: var(--white);
+            border: 1px solid var(--gray-100);
+            border-radius: var(--radius-lg);
+            padding: 1.5rem 1.75rem 1.25rem 1.75rem;
+            margin-bottom: 1rem;
+            box-shadow: var(--shadow-xs);
+            font-size: 0.95rem;
+            line-height: 1.7;
+            color: var(--gray-800);
+        }
+        .question-card strong, .question-card b {
+            color: var(--navy-800);
+            font-weight: 600;
+        }
+
+        /* ── Answer section label ──────────────────────────────────────── */
+        .answer-label {
+            font-size: 0.68rem;
+            font-weight: 700;
+            color: var(--gray-400);
+            text-transform: uppercase;
+            letter-spacing: 0.12em;
+            margin-bottom: 0.5rem;
+            margin-top: 0.25rem;
+        }
+
+        /* ── Progress label ────────────────────────────────────────────── */
+        .progress-label {
+            font-family: 'IBM Plex Mono', monospace;
+            font-size: 0.78rem;
+            font-weight: 500;
+            color: var(--gray-400);
+            letter-spacing: 0.04em;
+            margin-bottom: 0.4rem;
         }
 
         /* ── Answer feedback ──────────────────────────────────────────── */

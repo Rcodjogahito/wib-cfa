@@ -5,7 +5,7 @@ Weak topics (mastery < threshold) are weighted 3x in selection.
 
 import random
 from typing import Optional, List, Dict
-from src.database import Database
+from src.database import Database, _question_is_usable
 
 
 def get_weighted_questions(
@@ -31,9 +31,10 @@ def get_weighted_questions(
     if topic and topic != "All":
         return db.get_questions(topic=topic, n=n)
 
-    # Fetch a single mixed pool (larger than needed for shuffle variety)
+    # Fetch a large mixed pool — get_questions() already filters incomplete questions
     pool_size = min(n * 10, 600)
     all_qs = db.get_questions(n=pool_size)
+    all_qs = [q for q in all_qs if _question_is_usable(q)]
 
     if not all_qs:
         return []

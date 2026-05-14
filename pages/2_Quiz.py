@@ -203,17 +203,24 @@ if state.get("quiz_use_timer"):
         state["quiz_answered"] = True
         state["quiz_selected"] = None
 
-st.progress((idx) / total, text=f"Question {idx + 1} / {total}")
+st.markdown(f'<div class="progress-label">Question {idx + 1} / {total}</div>', unsafe_allow_html=True)
+st.progress((idx) / total)
 
 topic_badge = f'<span class="topic-badge">{q["topic"]}</span>'
 diff = q.get("difficulty", "medium")
 diff_badge = f'<span class="difficulty-{diff}">{diff.capitalize()}</span>'
 source = q.get("source", "")
-src_badge = (f'<span style="background:#2d5016;color:#a8d05a;border-radius:12px;'
-             f'padding:2px 9px;font-size:0.72rem;font-weight:600;margin-left:4px;">'
-             f'{source}</span>') if source else ""
+src_badge = (
+    f'<span style="background:var(--navy-100);color:var(--navy-700);border:1px solid '
+    f'rgba(12,29,58,0.12);border-radius:3px;padding:2px 8px;font-size:0.70rem;'
+    f'font-weight:700;letter-spacing:0.04em;margin-left:4px;">{source}</span>'
+) if source else ""
 st.markdown(f"{topic_badge} {diff_badge}{src_badge}", unsafe_allow_html=True)
+st.markdown('<div class="question-card">', unsafe_allow_html=True)
 render_question(q["question_en"])
+st.markdown('</div>', unsafe_allow_html=True)
+
+st.markdown('<div class="answer-label">Select your answer</div>', unsafe_allow_html=True)
 
 # Answer buttons (disabled after answer)
 answered = state["quiz_answered"]
@@ -224,7 +231,7 @@ for letter, option in [
     ("B", q["option_b"]),
     ("C", q["option_c"]),
 ]:
-    if st.button(f"{letter}. {option}", key=f"q_{idx}_{letter}",
+    if st.button(f"{letter}.  {option}", key=f"q_{idx}_{letter}",
                  use_container_width=True, disabled=answered):
         state["quiz_selected"] = letter
         state["quiz_answered"] = True

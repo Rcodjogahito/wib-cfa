@@ -116,20 +116,24 @@ def _run_diagnostic():
         return
 
     q = qs[idx]
-    st.progress(idx / total, text=f"Question {idx + 1} / {total}")
+    st.markdown(f'<div class="progress-label">Question {idx + 1} / {total}</div>', unsafe_allow_html=True)
+    st.progress(idx / total)
 
     topic_badge = f'<span class="topic-badge">{q["topic"]}</span>'
     diff = q.get("difficulty", "medium")
     diff_badge = f'<span class="difficulty-{diff}">{diff.capitalize()}</span>'
     st.markdown(f"{topic_badge} {diff_badge}", unsafe_allow_html=True)
+    st.markdown('<div class="question-card">', unsafe_allow_html=True)
     render_question(q["question_en"])
+    st.markdown('</div>', unsafe_allow_html=True)
 
+    st.markdown('<div class="answer-label">Select your answer</div>', unsafe_allow_html=True)
     answered = None
-    if st.button(f"A. {q['option_a']}", key=f"d_a_{idx}", use_container_width=True):
+    if st.button(f"A.  {q['option_a']}", key=f"d_a_{idx}", use_container_width=True):
         answered = "A"
-    if st.button(f"B. {q['option_b']}", key=f"d_b_{idx}", use_container_width=True):
+    if st.button(f"B.  {q['option_b']}", key=f"d_b_{idx}", use_container_width=True):
         answered = "B"
-    if st.button(f"C. {q['option_c']}", key=f"d_c_{idx}", use_container_width=True):
+    if st.button(f"C.  {q['option_c']}", key=f"d_c_{idx}", use_container_width=True):
         answered = "C"
 
     if answered:

@@ -297,17 +297,27 @@ if nav_cols[3].button(flag_label):
 
 q = questions[idx]
 topic_badge = f'<span class="topic-badge">{q["topic"]}</span>'
-flag_star = " ★" if idx in flagged else ""
+flag_star = (
+    ' <span style="color:var(--gold-500);font-size:0.9rem;">&#9733;</span>'
+    if idx in flagged else ""
+)
 st.markdown(f"{topic_badge}{flag_star}", unsafe_allow_html=True)
-st.markdown(f"**Q{idx + 1}.**")
+st.markdown(
+    f'<div class="progress-label">Q{idx + 1} / {total}</div>',
+    unsafe_allow_html=True,
+)
+st.markdown('<div class="question-card">', unsafe_allow_html=True)
 render_question(q["question_en"])
+st.markdown('</div>', unsafe_allow_html=True)
 
+st.markdown('<div class="answer-label">Select your answer</div>', unsafe_allow_html=True)
 current_answer = answers.get(idx)
 options = [("A", q["option_a"]), ("B", q["option_b"]), ("C", q["option_c"])]
 
 for letter, text in options:
+    prefix = "✓  " if current_answer == letter else ""
     if st.button(
-        f"{'→ ' if current_answer == letter else ''}{letter}. {text}",
+        f"{prefix}{letter}.  {text}",
         key=f"exam_{idx}_{letter}",
         use_container_width=True,
     ):
