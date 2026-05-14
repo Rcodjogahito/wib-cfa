@@ -321,6 +321,48 @@ class Database:
             conn.close()
             return result
 
+    def get_all_users(self) -> List[Dict]:
+        """Fetch all registered users with basic activity stats. Admin use only."""
+        from collections import defaultdict
+        if self.sb:
+            res = (self.sb.table("users")
+                   .select("id,email,first_name,created_at,diagnostic_done,diagnostic_score")
+                   .order("created_at", desc=False)
+                   .execute())
+            users = res.data or []
+            try:
+                sess_res = (self.sb.table("user_sessions")
+                            .select("user_id,completed_at,session_type")
+                            .not_.in_("session_type", ["diag_progress", "leitner_state"])
+                            .execute())
+                sessions = sess_res.data or []
+            except Exception:
+                sessions = []
+        else:
+            conn = _get_sqlite()
+            cur = conn.cursor()
+            cur.execute(
+                "SELECT id,email,first_name,created_at,diagnostic_done,diagnostic_score "
+                "FROM users ORDER BY created_at ASC"
+            )
+            users = [dict(r) for r in cur.fetchall()]
+            cur.execute(
+                "SELECT user_id,completed_at,session_type FROM user_sessions "
+                "WHERE session_type NOT IN ('diag_progress','leitner_state')"
+            )
+            sessions = [dict(r) for r in cur.fetchall()]
+            conn.close()
+
+        user_sessions: dict = defaultdict(list)
+        for s in sessions:
+            user_sessions[s["user_id"]].append(s["completed_at"])
+        for u in users:
+            uid = u["id"]
+            u_sess = user_sessions.get(uid, [])
+            u["session_count"] = len(u_sess)
+            u["last_active"] = max(u_sess) if u_sess else None
+        return users
+
     def get_user_by_id(self, user_id: str) -> Optional[Dict]:
         """Fetch a user by primary key (used by cookie-based session restore)."""
         if self.sb:

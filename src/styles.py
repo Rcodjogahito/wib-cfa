@@ -65,6 +65,11 @@ def inject_styles():
             color: var(--navy);
         }
 
+        /* ── Hide auto-generated page nav (custom sidebar links used instead) */
+        [data-testid="stSidebarNav"] {
+            display: none !important;
+        }
+
         /* ── Sidebar ──────────────────────────────────────────────────── */
         section[data-testid="stSidebar"] {
             background-color: var(--navy) !important;
