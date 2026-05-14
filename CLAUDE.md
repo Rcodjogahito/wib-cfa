@@ -90,3 +90,15 @@ git push origin master   # triggers auto-redeploy on Streamlit Cloud (~1 min)
 - After logout, suppress cookie restore with `_logged_out_uid` in session_state
 - Windows console (cp1252) rejects Greek/math chars (β, ×) in question text — use ASCII equivalents
 - `bypassPermissions` is set in `~/.claude/settings.json` — no permission prompts needed
+- Do NOT use `runtime.txt` — not supported by Streamlit Cloud Community tier
+
+## Streamlit Cloud stale cache — known issue + fix
+
+**Symptom:** `ImportError: cannot import name 'X' from 'src.styles'` on the live app even though GitHub has the correct file.
+
+**Diagnosis:** Wrap the failing imports in try/except + `st.error()` + `st.code(traceback.format_exc())` in `streamlit_app.py` to bypass Streamlit's redacted error page.
+
+**Fix (in order):**
+1. Move the missing function to the **top of the file** (right after `import streamlit as st`) — first lines are less likely to be stale-cached
+2. Modify `requirements.txt` (any change, e.g. add a version upper bound) → forces Streamlit Cloud to rebuild venv AND re-clone code
+3. Push and wait ~3 min for full rebuild
