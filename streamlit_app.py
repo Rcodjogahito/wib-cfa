@@ -12,7 +12,7 @@ import streamlit as st
 from src.auth import CFA_TOPICS, get_current_user, logout, require_auth
 from src.database import get_db
 from src.progress import compute_mastery_map, readiness_score, weak_topics
-from src.styles import inject_styles, metric_card, render_hero, render_ticker
+from src.styles import inject_styles, metric_card, render_hero, render_ticker, render_question
 
 st.set_page_config(
     page_title="WIB – CFA Level 1",
@@ -115,7 +115,7 @@ def _run_diagnostic():
     diff = q.get("difficulty", "medium")
     diff_badge = f'<span class="difficulty-{diff}">{diff.capitalize()}</span>'
     st.markdown(f"{topic_badge} {diff_badge}", unsafe_allow_html=True)
-    st.markdown(f"**{q['question_en']}**")
+    render_question(q["question_en"])
 
     col1, col2, col3 = st.columns(3)
     answered = None

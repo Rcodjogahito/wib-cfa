@@ -12,7 +12,7 @@ import streamlit as st
 
 from src.auth import CFA_TOPICS, get_current_user, require_auth
 from src.database import get_db
-from src.styles import inject_styles, metric_card, render_hero
+from src.styles import inject_styles, metric_card, render_hero, render_question, question_first_line
 
 st.set_page_config(
     page_title="Exam Simulator — WIB CFA",
@@ -205,9 +205,10 @@ if state.get("exam_submitted"):
         icon = "✓" if r["correct"] else "✗"
         cls = "answer-correct" if r["correct"] else "answer-wrong"
         selected_label = r["selected"] or "—"
+        preview = question_first_line(q["question_en"])
         st.markdown(
             f'<div class="{cls}">'
-            f'{icon} Q{i+1}. [{q["topic"]}] {q["question_en"]}<br>'
+            f'{icon} Q{i+1}. [{q["topic"]}] {preview}<br>'
             f'Votre réponse: <b>{selected_label}</b> · '
             f'Correcte: <b>{q["correct_answer"]}</b>'
             f'</div>',
@@ -289,7 +290,8 @@ q = questions[idx]
 topic_badge = f'<span class="topic-badge">{q["topic"]}</span>'
 flag_star = " ★" if idx in flagged else ""
 st.markdown(f"{topic_badge}{flag_star}", unsafe_allow_html=True)
-st.markdown(f"**Q{idx + 1}. {q['question_en']}**")
+st.markdown(f"**Q{idx + 1}.**")
+render_question(q["question_en"])
 
 current_answer = answers.get(idx)
 options = [("A", q["option_a"]), ("B", q["option_b"]), ("C", q["option_c"])]

@@ -209,6 +209,52 @@ _QUESTION_PATCHES = [
             "question_en": "The internal rate of return (IRR) of a private equity fund is BEST described as:",
         },
     },
+    # Fix 5: FSA D/E + coverage — convert inline data to Markdown table
+    {
+        "match": "%A company has total debt of $400M, total equity of $600M%",
+        "fields": {
+            "question_en": (
+                "A company reports the following financial data:\n\n"
+                "| Metric | Value |\n"
+                "|---|---|\n"
+                "| Total Debt | $400M |\n"
+                "| Total Equity | $600M |\n"
+                "| EBIT | $100M |\n"
+                "| Interest Expense | $20M |\n\n"
+                "Its debt-to-equity ratio and interest coverage ratio are closest to:"
+            ),
+        },
+    },
+    # Fix 6: CAPM — convert inline parameters to Markdown table
+    {
+        "match": "%A stock with a beta of 1.5 and a market risk premium of 6%%",
+        "fields": {
+            "question_en": (
+                "Using CAPM, the expected return of a stock with the following characteristics is closest to:\n\n"
+                "| Parameter | Value |\n"
+                "|---|---|\n"
+                "| Beta | 1.5 |\n"
+                "| Market Risk Premium | 6% |\n"
+                "| Risk-Free Rate (Rf) | 3% |"
+            ),
+        },
+    },
+    # Fix 7: Equity EV/EBITDA per share — convert inline data to Markdown table
+    {
+        "match": "%A company has an EV/EBITDA multiple of 8x and EBITDA of $50 million%",
+        "fields": {
+            "question_en": (
+                "A company reports the following data:\n\n"
+                "| Metric | Value |\n"
+                "|---|---|\n"
+                "| EV/EBITDA Multiple | 8x |\n"
+                "| EBITDA | $50M |\n"
+                "| Net Debt | $100M |\n"
+                "| Shares Outstanding | 20M |\n\n"
+                "The equity value per share is closest to:"
+            ),
+        },
+    },
 ]
 
 

@@ -10,7 +10,7 @@ import streamlit as st
 from src.adaptive import get_weighted_questions
 from src.auth import CFA_TOPICS, get_current_user, require_auth
 from src.database import get_db
-from src.styles import inject_styles, render_hero
+from src.styles import inject_styles, render_hero, render_question, question_first_line
 
 st.set_page_config(page_title="Quiz — WIB CFA", page_icon="🎯", layout="wide")
 inject_styles()
@@ -161,8 +161,9 @@ if _show_results:
         for i, r in enumerate(results):
             icon = "✓" if r["correct"] else "✗"
             cls = "answer-correct" if r["correct"] else "answer-wrong"
+            preview = question_first_line(r["question"])
             st.markdown(
-                f'<div class="{cls}">{icon} Q{i+1}. {r["question"]}</div>',
+                f'<div class="{cls}">{icon} Q{i+1}. {preview}</div>',
                 unsafe_allow_html=True,
             )
             if not r["correct"]:
@@ -210,7 +211,7 @@ topic_badge = f'<span class="topic-badge">{q["topic"]}</span>'
 diff = q.get("difficulty", "medium")
 diff_badge = f'<span class="difficulty-{diff}">{diff.capitalize()}</span>'
 st.markdown(f"{topic_badge} {diff_badge}", unsafe_allow_html=True)
-st.markdown(f"### {q['question_en']}")
+render_question(q["question_en"])
 
 # Answer buttons (disabled after answer)
 answered = state["quiz_answered"]

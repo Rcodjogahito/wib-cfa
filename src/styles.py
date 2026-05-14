@@ -227,13 +227,42 @@ def inject_styles():
             margin-top: 0.8rem;
         }
 
-        /* ── Tables ───────────────────────────────────────────────────── */
+        /* ── Tables (dataframe + markdown) ───────────────────────────── */
         .dataframe thead tr th {
             background-color: var(--navy) !important;
             color: var(--gold) !important;
             font-family: 'Inter', sans-serif;
         }
         .dataframe tbody tr:nth-child(even) {
+            background-color: var(--bg2);
+        }
+
+        /* Markdown tables inside st.markdown() — question data tables */
+        [data-testid="stMarkdownContainer"] table {
+            border-collapse: collapse;
+            width: auto;
+            margin: 0.7rem 0 0.9rem 0;
+            font-family: 'Inter', sans-serif;
+            font-size: 0.9rem;
+            border-radius: 6px;
+            overflow: hidden;
+            box-shadow: 0 1px 4px rgba(11,37,69,0.10);
+        }
+        [data-testid="stMarkdownContainer"] table th {
+            background-color: var(--navy) !important;
+            color: var(--gold) !important;
+            padding: 7px 16px;
+            text-align: left;
+            font-weight: 600;
+            letter-spacing: 0.3px;
+        }
+        [data-testid="stMarkdownContainer"] table td {
+            border: 1px solid #dde0e8;
+            padding: 7px 16px;
+            background-color: var(--white);
+            color: var(--text);
+        }
+        [data-testid="stMarkdownContainer"] table tr:nth-child(even) td {
             background-color: var(--bg2);
         }
 
@@ -336,3 +365,29 @@ def metric_card(value: str, label: str):
         <div class="metric-label">{label}</div>
     </div>
     """
+
+
+def render_question(question_text: str) -> None:
+    """Render question text with full Markdown support.
+
+    Single-line questions → displayed bold (classic look).
+    Multi-line questions (containing tables, code blocks, lists) →
+    first prose line is bold; the structured block renders as raw Markdown
+    so tables, formatting and math display correctly.
+    """
+    if '\n' in question_text:
+        parts = question_text.split('\n', 1)
+        first = parts[0].strip()
+        rest = parts[1].strip()
+        if first:
+            st.markdown(f"**{first}**")
+        if rest:
+            st.markdown(rest)
+    else:
+        st.markdown(f"**{question_text}**")
+
+
+def question_first_line(question_text: str, max_chars: int = 120) -> str:
+    """Return only the first prose line of a question (for compact review displays)."""
+    first = question_text.split('\n')[0].strip()
+    return first[:max_chars] + "…" if len(first) > max_chars else first
