@@ -4,43 +4,12 @@ Uses Supabase when credentials are available, falls back to SQLite.
 """
 
 import json
-import re as _re
 import sqlite3
 import os
 import uuid
 from datetime import datetime, timezone
 from typing import Optional, List, Dict, Any
 
-
-# ── Incomplete-question filter ────────────────────────────────────────────────
-# Questions that reference an exhibit / table from the original PDF that
-# pdfplumber could not extract are unanswerable — filter them out at query time.
-
-_MISSING_EXHIBIT_RE = _re.compile(
-    r'the following\s+(?:data|exhibit|table|figure|chart|financial|statements?|information)',
-    _re.IGNORECASE,
-)
-_NAME_ONLY_OPT_RE = _re.compile(
-    r'^(?:Company|Portfolio|Fund|Firm|Manager|Account)\s+[A-C]$',
-    _re.IGNORECASE,
-)
-
-
-def _question_is_usable(q: dict) -> bool:
-    """Return False for questions whose exhibit data is missing from the text."""
-    text = q.get('question_en', '') or ''
-    # Pattern 1: explicitly says "following data/exhibit" but no markdown table embedded
-    if _MISSING_EXHIBIT_RE.search(text) and '|' not in text:
-        return False
-    # Pattern 2: all three options are generic "Company/Portfolio X" names
-    #            and question references comparison data that should be in a table
-    opts = [(q.get(f'option_{k}') or '').strip() for k in ('a', 'b', 'c')]
-    if (
-        all(_NAME_ONLY_OPT_RE.match(o) for o in opts if o)
-        and _re.search(r'following|exhibit|table|data', text, _re.IGNORECASE)
-    ):
-        return False
-    return True
 
 import streamlit as st
 
@@ -476,15 +445,14 @@ class Database:
             else:
                 # No topic filter: fetch proportionally from every topic to avoid
                 # insertion-order bias (Supabase has no ORDER BY random() support).
-                per_topic = max(min((n or 30) // len(self._ALL_TOPICS) * 6, 80), 30)
+                per_topic = max(min((n or 30) // len(self._ALL_TOPICS) * 4, 60), 20)
                 data = []
                 for t in self._ALL_TOPICS:
                     q = self.sb.table("questions").select("*").eq("topic", t)
                     if difficulty and difficulty != "All":
                         q = q.eq("difficulty", difficulty.lower())
                     data.extend(q.limit(per_topic).execute().data or [])
-            # Filter out questions that reference missing exhibits/tables
-            data = [q for q in data if _question_is_usable(q)]
+            # All questions now have their tables embedded as markdown
         else:
             conn = _get_sqlite()
             sql = "SELECT * FROM questions WHERE 1=1"
