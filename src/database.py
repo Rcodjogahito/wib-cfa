@@ -392,13 +392,16 @@ class Database:
     def get_questions(self, topic: Optional[str] = None,
                       difficulty: Optional[str] = None,
                       n: Optional[int] = None) -> List[Dict]:
+        import random
+        fetch_n = max(n * 4, 200) if n else 500  # over-fetch then shuffle for variety
         if self.sb:
             q = self.sb.table("questions").select("*")
             if topic and topic != "All":
                 q = q.eq("topic", topic)
             if difficulty and difficulty != "All":
                 q = q.eq("difficulty", difficulty.lower())
-            res = q.execute()
+            # Fetch a capped pool, shuffle in Python for randomness
+            res = q.limit(fetch_n).execute()
             data = res.data or []
         else:
             conn = _get_sqlite()
@@ -418,7 +421,6 @@ class Database:
             data = [dict(r) for r in cur.fetchall()]
             conn.close()
             return data
-        import random
         random.shuffle(data)
         return data[:n] if n else data
 

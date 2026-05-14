@@ -226,11 +226,13 @@ if state.get("exam_submitted"):
             unsafe_allow_html=True,
         )
         if not r["correct"]:
+            _expl_en = q.get("explanation_en", "")
+            _expl_fr = q.get("explanation_fr", "")
+            _expl_html = f'<b>[EN]</b> {_expl_en}'
+            if _expl_fr:
+                _expl_html += f'<br><br><b>[FR]</b> {_expl_fr}'
             st.markdown(
-                f'<div class="explanation-box">'
-                f'<b>[EN]</b> {q.get("explanation_en", "")}<br><br>'
-                f'<b>[FR]</b> {q.get("explanation_fr", "")}'
-                f'</div>',
+                f'<div class="explanation-box">{_expl_html}</div>',
                 unsafe_allow_html=True,
             )
 

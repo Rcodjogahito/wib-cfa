@@ -167,13 +167,15 @@ if _show_results:
                 unsafe_allow_html=True,
             )
             if not r["correct"]:
-                st.markdown(
-                    f'<div class="explanation-box">'
-                    f'<b>[EN]</b> {r["explanation_en"]}<br><br>'
-                    f'<b>[FR]</b> {r["explanation_fr"]}'
-                    f'</div>',
-                    unsafe_allow_html=True,
-                )
+                    expl_en = r.get("explanation_en", "")
+                    expl_fr = r.get("explanation_fr", "")
+                    expl_html = f'<b>[EN]</b> {expl_en}'
+                    if expl_fr:
+                        expl_html += f'<br><br><b>[FR]</b> {expl_fr}'
+                    st.markdown(
+                        f'<div class="explanation-box">{expl_html}</div>',
+                        unsafe_allow_html=True,
+                    )
 
     col1, col2 = st.columns(2)
     if col1.button("Nouveau quiz", use_container_width=True):
@@ -262,13 +264,12 @@ if answered and selected:
             f'<div class="answer-wrong">Incorrect — La bonne réponse est <b>{q["correct_answer"]}</b></div>',
             unsafe_allow_html=True,
         )
-    st.markdown(
-        f'<div class="explanation-box">'
-        f'<b>[EN]</b> {q.get("explanation_en", "")}<br><br>'
-        f'<b>[FR]</b> {q.get("explanation_fr", "")}'
-        f'</div>',
-        unsafe_allow_html=True,
-    )
+    expl_en = q.get("explanation_en", "")
+    expl_fr = q.get("explanation_fr", "")
+    expl_html = f'<b>[EN]</b> {expl_en}'
+    if expl_fr:
+        expl_html += f'<br><br><b>[FR]</b> {expl_fr}'
+    st.markdown(f'<div class="explanation-box">{expl_html}</div>', unsafe_allow_html=True)
     if st.button("Question suivante →", use_container_width=True):
         state["quiz_idx"] += 1
         state["quiz_answered"] = False

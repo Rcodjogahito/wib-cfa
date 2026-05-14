@@ -17,38 +17,39 @@ def get_weighted_questions(
     """
     Return `n` questions weighted by user weakness.
     Topics where mastery < 50% get 3x weight; others 1x.
+    Single DB call for the full pool (efficient with large question banks).
     """
     if db is None:
         from src.database import get_db
         db = get_db()
 
-    # Fetch mastery per topic
     progress = db.get_progress(user_id)
-    mastery_map: Dict[str, float] = {r["topic"]: float(r.get("mastery_pct") or 0) for r in progress}
+    mastery_map: Dict[str, float] = {
+        r["topic"]: float(r.get("mastery_pct") or 0) for r in progress
+    }
 
     if topic and topic != "All":
-        # Single topic requested — return randomly from that topic
-        all_qs = db.get_questions(topic=topic)
-        random.shuffle(all_qs)
-        return all_qs[:n]
+        return db.get_questions(topic=topic, n=n)
 
-    # Multi-topic weighted selection
-    from src.auth import CFA_TOPICS
-    pools: Dict[str, List[Dict]] = {}
-    for t in CFA_TOPICS:
-        qs = db.get_questions(topic=t)
-        if qs:
-            pools[t] = qs
+    # Fetch a single mixed pool (larger than needed for shuffle variety)
+    pool_size = min(n * 10, 600)
+    all_qs = db.get_questions(n=pool_size)
 
+    if not all_qs:
+        return []
+
+    # Build weighted list: weak topics 3x, strong topics 1x
     weighted: List[Dict] = []
-    for t, qs in pools.items():
-        mastery = mastery_map.get(t, 0.0)
+    for q in all_qs:
+        mastery = mastery_map.get(q.get("topic", ""), 0.0)
         weight = 3 if mastery < 50 else 1
-        weighted.extend(qs * weight)
+        for _ in range(weight):
+            weighted.append(q)
 
     random.shuffle(weighted)
-    # Deduplicate by id while preserving shuffle order
-    seen = set()
+
+    # Deduplicate while preserving weighted shuffle order
+    seen: set = set()
     unique: List[Dict] = []
     for q in weighted:
         qid = q.get("id")
@@ -58,16 +59,12 @@ def get_weighted_questions(
         if len(unique) >= n:
             break
 
-    # Pad with random if not enough
+    # Pad if under target (rare with large banks)
     if len(unique) < n:
-        all_ids = seen
-        for t, qs in pools.items():
-            for q in qs:
-                if q.get("id") not in all_ids:
-                    unique.append(q)
-                    all_ids.add(q.get("id"))
-                if len(unique) >= n:
-                    break
+        for q in all_qs:
+            if q.get("id") not in seen:
+                unique.append(q)
+                seen.add(q.get("id"))
             if len(unique) >= n:
                 break
 
