@@ -223,14 +223,13 @@ render_question(q["question_en"])
 answered = state["quiz_answered"]
 selected = state["quiz_selected"]
 
-col_a, col_b, col_c = st.columns(3)
-for col, letter, option in [
-    (col_a, "A", q["option_a"]),
-    (col_b, "B", q["option_b"]),
-    (col_c, "C", q["option_c"]),
+for letter, option in [
+    ("A", q["option_a"]),
+    ("B", q["option_b"]),
+    ("C", q["option_c"]),
 ]:
-    if col.button(f"{letter}. {option}", key=f"q_{idx}_{letter}",
-                  use_container_width=True, disabled=answered):
+    if st.button(f"{letter}. {option}", key=f"q_{idx}_{letter}",
+                 use_container_width=True, disabled=answered):
         state["quiz_selected"] = letter
         state["quiz_answered"] = True
         correct = letter == q["correct_answer"]

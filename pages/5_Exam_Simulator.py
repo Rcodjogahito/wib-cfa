@@ -309,14 +309,8 @@ render_question(q["question_en"])
 current_answer = answers.get(idx)
 options = [("A", q["option_a"]), ("B", q["option_b"]), ("C", q["option_c"])]
 
-c1, c2, c3 = st.columns(3)
-for col, (letter, text) in zip([c1, c2, c3], options):
-    selected_style = (
-        "background:#0B2545;color:#C9A84C;border:2px solid #C9A84C;"
-        if current_answer == letter
-        else ""
-    )
-    if col.button(
+for letter, text in options:
+    if st.button(
         f"{'→ ' if current_answer == letter else ''}{letter}. {text}",
         key=f"exam_{idx}_{letter}",
         use_container_width=True,

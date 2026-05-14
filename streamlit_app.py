@@ -125,13 +125,12 @@ def _run_diagnostic():
     st.markdown(f"{topic_badge} {diff_badge}", unsafe_allow_html=True)
     render_question(q["question_en"])
 
-    col1, col2, col3 = st.columns(3)
     answered = None
-    if col1.button(f"A. {q['option_a']}", key=f"d_a_{idx}", use_container_width=True):
+    if st.button(f"A. {q['option_a']}", key=f"d_a_{idx}", use_container_width=True):
         answered = "A"
-    if col2.button(f"B. {q['option_b']}", key=f"d_b_{idx}", use_container_width=True):
+    if st.button(f"B. {q['option_b']}", key=f"d_b_{idx}", use_container_width=True):
         answered = "B"
-    if col3.button(f"C. {q['option_c']}", key=f"d_c_{idx}", use_container_width=True):
+    if st.button(f"C. {q['option_c']}", key=f"d_c_{idx}", use_container_width=True):
         answered = "C"
 
     if answered:
