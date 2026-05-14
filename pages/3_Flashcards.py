@@ -8,7 +8,7 @@ import time
 
 import streamlit as st
 
-from src.auth import CFA_TOPICS, get_current_user, require_auth
+from src.auth import CFA_TOPICS, get_current_user, logout, require_auth
 from src.database import get_db
 from src.styles import inject_styles, render_page_header, render_sidebar_brand
 
@@ -18,12 +18,23 @@ inject_styles()
 with st.sidebar:
     render_sidebar_brand()
     st.divider()
+    if st.session_state.get("user_id"):
+        st.markdown(
+            f'<div style="font-size:0.82rem;font-weight:600;color:rgba(255,255,255,0.85);'
+            f'letter-spacing:0.03em;">{get_current_user()["username"]}</div>',
+            unsafe_allow_html=True,
+        )
+        st.divider()
     st.page_link("streamlit_app.py", label="Home", icon="🏠")
     st.page_link("pages/1_Study.py", label="Study Notes", icon="📖")
     st.page_link("pages/2_Quiz.py", label="Quiz", icon="🎯")
     st.page_link("pages/3_Flashcards.py", label="Flashcards", icon="🃏")
     st.page_link("pages/4_Progress.py", label="Progress", icon="📈")
     st.page_link("pages/5_Exam_Simulator.py", label="Exam Simulator", icon="⏱️")
+    st.divider()
+    if st.session_state.get("user_id"):
+        if st.button("Sign out", use_container_width=True):
+            logout()
 
 if not require_auth():
     st.stop()
@@ -36,17 +47,17 @@ render_page_header("Flashcards", "Leitner spaced-repetition system")
 
 # ── Setup ─────────────────────────────────────────────────────────────────────
 
-col1, col2, col3 = st.columns([2, 2, 2])
+col1, col2 = st.columns([1, 1])
 with col1:
     topic_filter = st.selectbox("Topic", ["All"] + CFA_TOPICS, key="fc_topic")
 with col2:
     mode = st.selectbox("Mode", ["Révision libre", "Mode Leitner (adaptatif)"], key="fc_mode")
-with col3:
-    if st.button("Nouvelle session", use_container_width=True):
-        for k in ["fc_cards", "fc_idx", "fc_flipped", "fc_knew", "fc_study",
-                  "fc_saved", "fc_session_start", "fc_topic_saved", "fc_outcomes"]:
-            state.pop(k, None)
-        st.rerun()
+
+if st.button("Nouvelle session", use_container_width=True, type="secondary"):
+    for k in ["fc_cards", "fc_idx", "fc_flipped", "fc_knew", "fc_study",
+              "fc_saved", "fc_session_start", "fc_topic_saved", "fc_outcomes"]:
+        state.pop(k, None)
+    st.rerun()
 
 # Load Leitner state from DB if not already in session
 if "fc_study_ids" not in state:

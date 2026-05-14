@@ -10,7 +10,7 @@ import time
 import plotly.graph_objects as go
 import streamlit as st
 
-from src.auth import CFA_TOPICS, get_current_user, require_auth
+from src.auth import CFA_TOPICS, get_current_user, logout, require_auth
 from src.database import get_db
 from src.styles import inject_styles, metric_card, render_page_header, render_sidebar_brand, render_question, question_first_line
 
@@ -24,12 +24,23 @@ inject_styles()
 with st.sidebar:
     render_sidebar_brand()
     st.divider()
+    if st.session_state.get("user_id"):
+        st.markdown(
+            f'<div style="font-size:0.82rem;font-weight:600;color:rgba(255,255,255,0.85);'
+            f'letter-spacing:0.03em;">{get_current_user()["username"]}</div>',
+            unsafe_allow_html=True,
+        )
+        st.divider()
     st.page_link("streamlit_app.py", label="Home", icon="🏠")
     st.page_link("pages/1_Study.py", label="Study Notes", icon="📖")
     st.page_link("pages/2_Quiz.py", label="Quiz", icon="🎯")
     st.page_link("pages/3_Flashcards.py", label="Flashcards", icon="🃏")
     st.page_link("pages/4_Progress.py", label="Progress", icon="📈")
     st.page_link("pages/5_Exam_Simulator.py", label="Exam Simulator", icon="⏱️")
+    st.divider()
+    if st.session_state.get("user_id"):
+        if st.button("Sign out", use_container_width=True):
+            logout()
 
 if not require_auth():
     st.stop()
@@ -272,6 +283,16 @@ if remaining <= 0 and not state.get("exam_submitted"):
     state["exam_submitted"] = True
     st.rerun()
 
+answered_count = sum(1 for v in answers.values() if v)
+
+# ── Quick submit (shown once ≥ 50% answered) ─────────────────────────────────
+
+if answered_count >= total // 2:
+    if st.button("Soumettre l'examen", key="submit_top", type="primary", use_container_width=True):
+        state["exam_submitted"] = True
+        st.rerun()
+    st.markdown("")
+
 # ── Navigation ────────────────────────────────────────────────────────────────
 
 st.progress(idx / total, text=f"Question {idx + 1} / {total}")
@@ -334,7 +355,6 @@ if flagged:
 # ── Submit button ─────────────────────────────────────────────────────────────
 
 st.markdown("---")
-answered_count = sum(1 for v in answers.values() if v)
 unanswered = total - answered_count
 
 if unanswered > 0:

@@ -8,7 +8,7 @@ import time
 import streamlit as st
 
 from src.adaptive import get_weighted_questions
-from src.auth import CFA_TOPICS, get_current_user, require_auth
+from src.auth import CFA_TOPICS, get_current_user, logout, require_auth
 from src.database import get_db
 from src.styles import inject_styles, render_page_header, render_sidebar_brand, render_question, question_first_line
 
@@ -18,12 +18,23 @@ inject_styles()
 with st.sidebar:
     render_sidebar_brand()
     st.divider()
+    if st.session_state.get("user_id"):
+        st.markdown(
+            f'<div style="font-size:0.82rem;font-weight:600;color:rgba(255,255,255,0.85);'
+            f'letter-spacing:0.03em;">{get_current_user()["username"]}</div>',
+            unsafe_allow_html=True,
+        )
+        st.divider()
     st.page_link("streamlit_app.py", label="Home", icon="🏠")
     st.page_link("pages/1_Study.py", label="Study Notes", icon="📖")
     st.page_link("pages/2_Quiz.py", label="Quiz", icon="🎯")
     st.page_link("pages/3_Flashcards.py", label="Flashcards", icon="🃏")
     st.page_link("pages/4_Progress.py", label="Progress", icon="📈")
     st.page_link("pages/5_Exam_Simulator.py", label="Exam Simulator", icon="⏱️")
+    st.divider()
+    if st.session_state.get("user_id"):
+        if st.button("Sign out", use_container_width=True):
+            logout()
 
 if not require_auth():
     st.stop()
@@ -43,9 +54,13 @@ if "quiz_active" not in state:
 if not state["quiz_active"]:
     st.markdown('<div class="section-header">Configuration du quiz</div>', unsafe_allow_html=True)
 
+    topic_options = ["All (Adaptatif)"] + CFA_TOPICS
+    _preselect = state.pop("quiz_preselect_topic", None)
+    _default_idx = topic_options.index(_preselect) if _preselect in topic_options else 0
+
     col1, col2, col3 = st.columns(3)
     with col1:
-        topic_choice = st.selectbox("Topic", ["All (Adaptatif)"] + CFA_TOPICS)
+        topic_choice = st.selectbox("Topic", topic_options, index=_default_idx)
     with col2:
         difficulty = st.selectbox("Difficulté", ["All", "Easy", "Medium", "Hard"])
     with col3:

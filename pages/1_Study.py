@@ -5,7 +5,7 @@ Browse course summaries by topic with key formulas and examples.
 
 import streamlit as st
 
-from src.auth import CFA_TOPICS, get_current_user, require_auth
+from src.auth import CFA_TOPICS, get_current_user, logout, require_auth
 from src.content.study_notes import STUDY_NOTES
 from src.styles import inject_styles, render_page_header, render_sidebar_brand
 
@@ -15,12 +15,23 @@ inject_styles()
 with st.sidebar:
     render_sidebar_brand()
     st.divider()
+    if st.session_state.get("user_id"):
+        st.markdown(
+            f'<div style="font-size:0.82rem;font-weight:600;color:rgba(255,255,255,0.85);'
+            f'letter-spacing:0.03em;">{get_current_user()["username"]}</div>',
+            unsafe_allow_html=True,
+        )
+        st.divider()
     st.page_link("streamlit_app.py", label="Home", icon="🏠")
     st.page_link("pages/1_Study.py", label="Study Notes", icon="📖")
     st.page_link("pages/2_Quiz.py", label="Quiz", icon="🎯")
     st.page_link("pages/3_Flashcards.py", label="Flashcards", icon="🃏")
     st.page_link("pages/4_Progress.py", label="Progress", icon="📈")
     st.page_link("pages/5_Exam_Simulator.py", label="Exam Simulator", icon="⏱️")
+    st.divider()
+    if st.session_state.get("user_id"):
+        if st.button("Sign out", use_container_width=True):
+            logout()
 
 if not require_auth():
     st.stop()
@@ -75,10 +86,12 @@ with tab_tips:
 
 st.markdown("---")
 
-# CTA: go to quiz
+# CTA: go to quiz pre-filtered on this topic
 st.markdown(
     f'<div class="wib-card"><b>Prêt à tester vos connaissances ?</b><br>'
     f'Lancez un quiz sur <em>{selected_topic}</em></div>',
     unsafe_allow_html=True,
 )
-st.page_link("pages/2_Quiz.py", label=f"Quiz — {selected_topic}", icon="🎯")
+if st.button(f"🎯  Quiz — {selected_topic}", use_container_width=True, type="primary"):
+    st.session_state["quiz_preselect_topic"] = selected_topic
+    st.switch_page("pages/2_Quiz.py")

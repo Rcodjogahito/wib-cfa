@@ -6,7 +6,7 @@ Radar chart, score history, mastery bars, weak areas, readiness estimate.
 import plotly.graph_objects as go
 import streamlit as st
 
-from src.auth import CFA_TOPICS, get_current_user, require_auth
+from src.auth import CFA_TOPICS, get_current_user, logout, require_auth
 from src.database import get_db
 from src.progress import compute_mastery_map, readiness_score, weak_topics
 from src.styles import inject_styles, metric_card, render_page_header, render_sidebar_brand
@@ -17,12 +17,23 @@ inject_styles()
 with st.sidebar:
     render_sidebar_brand()
     st.divider()
+    if st.session_state.get("user_id"):
+        st.markdown(
+            f'<div style="font-size:0.82rem;font-weight:600;color:rgba(255,255,255,0.85);'
+            f'letter-spacing:0.03em;">{get_current_user()["username"]}</div>',
+            unsafe_allow_html=True,
+        )
+        st.divider()
     st.page_link("streamlit_app.py", label="Home", icon="🏠")
     st.page_link("pages/1_Study.py", label="Study Notes", icon="📖")
     st.page_link("pages/2_Quiz.py", label="Quiz", icon="🎯")
     st.page_link("pages/3_Flashcards.py", label="Flashcards", icon="🃏")
     st.page_link("pages/4_Progress.py", label="Progress", icon="📈")
     st.page_link("pages/5_Exam_Simulator.py", label="Exam Simulator", icon="⏱️")
+    st.divider()
+    if st.session_state.get("user_id"):
+        if st.button("Sign out", use_container_width=True):
+            logout()
 
 if not require_auth():
     st.stop()
@@ -206,3 +217,12 @@ if sessions:
             st.markdown(f"| {dt} | {tp} | {topic} | {color} {score:.1f}% | {total_q} |")
 else:
     st.info("Aucune session enregistrée. Lancez un quiz ou le simulateur d'examen pour commencer.")
+
+# ── Quick actions ─────────────────────────────────────────────────────────────
+
+st.markdown("---")
+st.markdown('<div class="section-header">Continuer l\'entraînement</div>', unsafe_allow_html=True)
+cta1, cta2, cta3 = st.columns(3)
+cta1.page_link("pages/2_Quiz.py", label="Lancer un Quiz", icon="🎯", use_container_width=True)
+cta2.page_link("pages/5_Exam_Simulator.py", label="Simuler l'examen", icon="⏱️", use_container_width=True)
+cta3.page_link("pages/1_Study.py", label="Réviser les fiches", icon="📖", use_container_width=True)
