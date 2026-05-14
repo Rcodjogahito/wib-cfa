@@ -387,6 +387,24 @@ class Database:
             conn.commit()
             conn.close()
 
+    def get_question_stats(self) -> Dict:
+        """Return total question count and per-source breakdown. Admin use only."""
+        if self.sb:
+            res = self.sb.table("questions").select("source").execute()
+            rows = res.data or []
+        else:
+            conn = _get_sqlite()
+            cur = conn.cursor()
+            cur.execute("SELECT source FROM questions")
+            rows = [{"source": r[0]} for r in cur.fetchall()]
+            conn.close()
+        total = len(rows)
+        by_source: Dict[str, int] = {}
+        for r in rows:
+            s = r.get("source") or "Unknown"
+            by_source[s] = by_source.get(s, 0) + 1
+        return {"total": total, "by_source": by_source}
+
     # ── Questions ──────────────────────────────────────────────────────────
 
     def get_questions(self, topic: Optional[str] = None,

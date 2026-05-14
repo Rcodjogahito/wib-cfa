@@ -212,7 +212,11 @@ st.progress((idx) / total, text=f"Question {idx + 1} / {total}")
 topic_badge = f'<span class="topic-badge">{q["topic"]}</span>'
 diff = q.get("difficulty", "medium")
 diff_badge = f'<span class="difficulty-{diff}">{diff.capitalize()}</span>'
-st.markdown(f"{topic_badge} {diff_badge}", unsafe_allow_html=True)
+source = q.get("source", "")
+src_badge = (f'<span style="background:#2d5016;color:#a8d05a;border-radius:12px;'
+             f'padding:2px 9px;font-size:0.72rem;font-weight:600;margin-left:4px;">'
+             f'{source}</span>') if source else ""
+st.markdown(f"{topic_badge} {diff_badge}{src_badge}", unsafe_allow_html=True)
 render_question(q["question_en"])
 
 # Answer buttons (disabled after answer)

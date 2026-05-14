@@ -62,10 +62,27 @@ total = len(users)
 diag_done = sum(1 for u in users if u.get("diagnostic_done"))
 with_activity = sum(1 for u in users if u.get("session_count", 0) > 0)
 
+# ── User metrics ──────────────────────────────────────────────────────────────
+st.markdown('<div class="section-header">Utilisateurs</div>', unsafe_allow_html=True)
 cols = st.columns(3)
 cols[0].markdown(metric_card(str(total), "Utilisateurs inscrits"), unsafe_allow_html=True)
 cols[1].markdown(metric_card(str(diag_done), "Diagnostics complétés"), unsafe_allow_html=True)
 cols[2].markdown(metric_card(str(with_activity), "Utilisateurs actifs"), unsafe_allow_html=True)
+
+# ── Question bank metrics ─────────────────────────────────────────────────────
+st.markdown('<div class="section-header" style="margin-top:1.5rem;">Banque de questions</div>',
+            unsafe_allow_html=True)
+try:
+    q_stats = db.get_question_stats()
+    q_total = q_stats["total"]
+    by_src  = q_stats["by_source"]
+    src_cols = st.columns(max(len(by_src) + 1, 2))
+    src_cols[0].markdown(metric_card(f"{q_total:,}", "Total questions"), unsafe_allow_html=True)
+    for i, (src, cnt) in enumerate(sorted(by_src.items()), start=1):
+        if i < len(src_cols):
+            src_cols[i].markdown(metric_card(f"{cnt:,}", src), unsafe_allow_html=True)
+except Exception:
+    st.info("Stats questions non disponibles.")
 
 st.divider()
 st.subheader("Liste des utilisateurs")
