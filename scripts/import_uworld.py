@@ -69,6 +69,10 @@ def get_supabase_client():
 
 # ── PDF helpers ───────────────────────────────────────────────────────────────
 
+def _sanitize(s: str) -> str:
+    return s.replace(chr(0), "") if isinstance(s, str) else str(s)
+
+
 def _pdf_text(path: Path) -> str:
     """Concatenate text from all pages of a PDF."""
     chunks = []
@@ -240,14 +244,14 @@ def process_topic(topic_folder: Path, topic_name: str) -> list:
             results.append({
                 "id":             str(uuid.uuid4()),
                 "topic":          topic_name,
-                "subtopic":       subtopic,
+                "subtopic":       _sanitize(subtopic),
                 "difficulty":     "hard",
-                "question_en":    q["question"],
-                "option_a":       q["option_a"],
-                "option_b":       q["option_b"],
-                "option_c":       opt_c,
+                "question_en":    _sanitize(q["question"]),
+                "option_a":       _sanitize(q["option_a"]),
+                "option_b":       _sanitize(q["option_b"]),
+                "option_c":       _sanitize(opt_c),
                 "correct_answer": ans["correct"],
-                "explanation_en": ans["explanation"],
+                "explanation_en": _sanitize(ans["explanation"]),
                 "explanation_fr": "",
                 "source":         "UWorld",
             })

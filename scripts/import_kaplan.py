@@ -71,6 +71,10 @@ _STOPS = {
 }
 
 
+def _sanitize(s: str) -> str:
+    return s.replace(chr(0), "") if isinstance(s, str) else str(s)
+
+
 def _tokenize(text: str) -> list:
     words = re.findall(r'[a-z]+', text.lower())
     return [w for w in words if w not in _STOPS and len(w) > 2]
@@ -199,10 +203,10 @@ def parse_kaplan_pdf(path: Path) -> list:
         if not m:
             continue
 
-        q_text  = " ".join(m.group(1).split())
-        opt_a   = " ".join(m.group(2).split())
-        opt_b   = " ".join(m.group(3).split())
-        opt_c   = " ".join(m.group(4).split())
+        q_text  = _sanitize(" ".join(m.group(1).split()))
+        opt_a   = _sanitize(" ".join(m.group(2).split()))
+        opt_b   = _sanitize(" ".join(m.group(3).split()))
+        opt_c   = _sanitize(" ".join(m.group(4).split()))
         expl    = m.group(5).strip()
 
         # Extract module number before stripping
@@ -211,7 +215,7 @@ def parse_kaplan_pdf(path: Path) -> list:
 
         # Strip "(Module X.Y, LOS Z.a)" and beyond
         expl = re.split(r"\(Module\s+\d+|\nQuestion\s+#", expl)[0].strip()
-        expl = " ".join(expl.split())
+        expl = _sanitize(" ".join(expl.split()))
 
         if len(q_text) < 10 or len(opt_a) < 2 or len(opt_b) < 2 or len(opt_c) < 2:
             continue

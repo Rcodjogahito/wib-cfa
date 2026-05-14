@@ -8,6 +8,11 @@
 # Extracted data (large files, seeded to Supabase)
 data/
 
+# Generated SQL imports (large, already inserted into Supabase)
+scripts/*.sql
+scripts/cleanup_imports.py
+scripts/dry_run_output.txt
+
 # Python
 __pycache__/
 *.py[cod]
