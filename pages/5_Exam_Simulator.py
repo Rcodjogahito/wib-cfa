@@ -12,7 +12,7 @@ import streamlit as st
 
 from src.auth import CFA_TOPICS, get_current_user, require_auth
 from src.database import get_db
-from src.styles import inject_styles, metric_card, render_hero, render_question, question_first_line
+from src.styles import inject_styles, metric_card, render_page_header, render_sidebar_brand, render_question, question_first_line
 
 st.set_page_config(
     page_title="Exam Simulator — WIB CFA",
@@ -22,11 +22,7 @@ st.set_page_config(
 inject_styles()
 
 with st.sidebar:
-    st.markdown(
-        '<div style="font-family:\'Playfair Display\',serif;font-size:1.4rem;'
-        'font-weight:700;color:#C9A84C;">WIB</div>',
-        unsafe_allow_html=True,
-    )
+    render_sidebar_brand()
     st.divider()
     st.page_link("streamlit_app.py", label="Home", icon="🏠")
     st.page_link("pages/1_Study.py", label="Study Notes", icon="📖")
@@ -41,7 +37,7 @@ if not require_auth():
 user = get_current_user()
 db = get_db()
 
-render_hero("Simulateur d'examen")
+render_page_header("Exam Simulator", "Mock Partial (45Q) · Mock Full (180Q)")
 
 state = st.session_state
 PASS_THRESHOLD = 70.0
@@ -72,7 +68,7 @@ if not state["exam_active"]:
                 f'</div>',
                 unsafe_allow_html=True,
             )
-            if st.button(f"Lancer {name}", key=f"start_{name}", use_container_width=True):
+            if st.button(f"Lancer {name}", key=f"start_{name}", use_container_width=True, type="primary"):
                 questions = db.get_questions(n=cfg["n"])
                 if not questions:
                     st.error("Pas assez de questions en base.")
@@ -236,7 +232,7 @@ if state.get("exam_submitted"):
                 unsafe_allow_html=True,
             )
 
-    if st.button("Nouvel examen", use_container_width=True):
+    if st.button("Nouvel examen", use_container_width=True, type="primary"):
         for k in ["exam_active", "exam_config", "exam_name", "exam_questions",
                   "exam_idx", "exam_answers", "exam_flagged", "exam_start",
                   "exam_submitted", "exam_saved"]:

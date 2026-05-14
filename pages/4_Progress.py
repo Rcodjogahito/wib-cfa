@@ -9,17 +9,13 @@ import streamlit as st
 from src.auth import CFA_TOPICS, get_current_user, require_auth
 from src.database import get_db
 from src.progress import compute_mastery_map, readiness_score, weak_topics
-from src.styles import inject_styles, metric_card, render_hero
+from src.styles import inject_styles, metric_card, render_page_header, render_sidebar_brand
 
 st.set_page_config(page_title="Progress — WIB CFA", page_icon="📈", layout="wide")
 inject_styles()
 
 with st.sidebar:
-    st.markdown(
-        '<div style="font-family:\'Playfair Display\',serif;font-size:1.4rem;'
-        'font-weight:700;color:#C9A84C;">WIB</div>',
-        unsafe_allow_html=True,
-    )
+    render_sidebar_brand()
     st.divider()
     st.page_link("streamlit_app.py", label="Home", icon="🏠")
     st.page_link("pages/1_Study.py", label="Study Notes", icon="📖")
@@ -34,7 +30,7 @@ if not require_auth():
 user = get_current_user()
 db = get_db()
 
-render_hero("Progression")
+render_page_header("Progress", "Mastery tracker — CFA Level I topics")
 
 progress_rows = db.get_progress(user["id"])
 sessions = db.get_sessions(user["id"])

@@ -7,17 +7,13 @@ import streamlit as st
 
 from src.auth import CFA_TOPICS, get_current_user, require_auth
 from src.content.study_notes import STUDY_NOTES
-from src.styles import inject_styles, render_hero
+from src.styles import inject_styles, render_page_header, render_sidebar_brand
 
 st.set_page_config(page_title="Study Notes — WIB CFA", page_icon="📖", layout="wide")
 inject_styles()
 
 with st.sidebar:
-    st.markdown(
-        '<div style="font-family:\'Playfair Display\',serif;font-size:1.4rem;'
-        'font-weight:700;color:#C9A84C;">WIB</div>',
-        unsafe_allow_html=True,
-    )
+    render_sidebar_brand()
     st.divider()
     st.page_link("streamlit_app.py", label="Home", icon="🏠")
     st.page_link("pages/1_Study.py", label="Study Notes", icon="📖")
@@ -29,7 +25,7 @@ with st.sidebar:
 if not require_auth():
     st.stop()
 
-render_hero("Study Notes")
+render_page_header("Study Notes", "CFA Level I — Course summaries & key formulas")
 
 # ── Topic selector ────────────────────────────────────────────────────────────
 

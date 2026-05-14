@@ -11,7 +11,7 @@ from datetime import datetime
 
 from src.auth import get_current_user, require_auth
 from src.database import get_db
-from src.styles import inject_styles, metric_card, render_hero
+from src.styles import inject_styles, metric_card, render_page_header, render_sidebar_brand
 
 inject_styles()
 
@@ -31,11 +31,7 @@ db = get_db()
 # ── Sidebar ───────────────────────────────────────────────────────────────────
 
 with st.sidebar:
-    st.markdown(
-        '<div style="font-family:\'Playfair Display\',serif;font-size:1.4rem;'
-        'font-weight:700;color:#C9A84C;">WIB</div>',
-        unsafe_allow_html=True,
-    )
+    render_sidebar_brand()
     st.divider()
     st.page_link("streamlit_app.py", label="Home", icon="🏠")
     st.page_link("pages/1_Study.py", label="Study Notes", icon="📖")
@@ -48,7 +44,7 @@ with st.sidebar:
 
 # ── Content ───────────────────────────────────────────────────────────────────
 
-render_hero("Administration")
+render_page_header("Administration", "Platform analytics — restricted access")
 
 import traceback as _tb
 try:

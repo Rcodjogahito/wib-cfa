@@ -10,17 +10,13 @@ import streamlit as st
 from src.adaptive import get_weighted_questions
 from src.auth import CFA_TOPICS, get_current_user, require_auth
 from src.database import get_db
-from src.styles import inject_styles, render_hero, render_question, question_first_line
+from src.styles import inject_styles, render_page_header, render_sidebar_brand, render_question, question_first_line
 
 st.set_page_config(page_title="Quiz — WIB CFA", page_icon="🎯", layout="wide")
 inject_styles()
 
 with st.sidebar:
-    st.markdown(
-        '<div style="font-family:\'Playfair Display\',serif;font-size:1.4rem;'
-        'font-weight:700;color:#C9A84C;">WIB</div>',
-        unsafe_allow_html=True,
-    )
+    render_sidebar_brand()
     st.divider()
     st.page_link("streamlit_app.py", label="Home", icon="🏠")
     st.page_link("pages/1_Study.py", label="Study Notes", icon="📖")
@@ -35,7 +31,7 @@ if not require_auth():
 user = get_current_user()
 db = get_db()
 
-render_hero("Quiz")
+render_page_header("Quiz", "Adaptive practice — 5,614 questions")
 
 # ── Quiz configuration ────────────────────────────────────────────────────────
 
@@ -57,7 +53,7 @@ if not state["quiz_active"]:
 
     use_timer = st.checkbox("Timer (1 min 30 s / question)", value=False)
 
-    if st.button("Lancer le quiz", use_container_width=True):
+    if st.button("Lancer le quiz", use_container_width=True, type="primary"):
         topic = None if topic_choice == "All (Adaptatif)" else topic_choice
         diff = None if difficulty == "All" else difficulty
 
@@ -178,7 +174,7 @@ if _show_results:
                     )
 
     col1, col2 = st.columns(2)
-    if col1.button("Nouveau quiz", use_container_width=True):
+    if col1.button("Nouveau quiz", use_container_width=True, type="primary"):
         for k in ["quiz_active", "quiz_questions", "quiz_idx", "quiz_results",
                   "quiz_start", "quiz_q_start", "quiz_answered", "quiz_selected",
                   "quiz_use_timer", "quiz_topic", "quiz_saved"]:

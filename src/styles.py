@@ -6,11 +6,10 @@ Call inject_styles() at the top of every page.
 import streamlit as st
 
 
-# ── Question rendering helpers (defined first for easy import) ────────────────
+# ── Question rendering helpers ────────────────────────────────────────────────
 
 def render_question(question_text: str) -> None:
     """Render question with full Markdown support (enables table rendering)."""
-    # Escape $ to prevent Streamlit treating pairs as LaTeX delimiters
     safe = question_text.replace('$', r'\$')
     if '\n' in safe:
         parts = safe.split('\n', 1)
@@ -36,320 +35,510 @@ def inject_styles():
     st.markdown(
         """
         <style>
-        /* ── Google Fonts ─────────────────────────────────────────────── */
-        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap');
+        /* ── Fonts ─────────────────────────────────────────────────────── */
+        @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap');
 
-        /* ── CSS Variables ────────────────────────────────────────────── */
+        /* ── Design tokens ─────────────────────────────────────────────── */
         :root {
-            --navy:   #0B2545;
-            --gold:   #C9A84C;
-            --gold-light: #E8C97A;
-            --bg:     #F8F9FB;
-            --bg2:    #EEF0F5;
-            --text:   #1A1A2E;
-            --white:  #FFFFFF;
-            --green:  #1B7F4F;
-            --red:    #B52B2B;
-            --green-bg: #E8F5EE;
-            --red-bg:   #FDECEC;
-            --shadow: 0 2px 12px rgba(11,37,69,0.10);
+            /* Brand navy */
+            --navy-950:  #04101F;
+            --navy-900:  #071426;
+            --navy-800:  #0C1D3A;
+            --navy-700:  #142E58;
+            --navy-600:  #1C3F78;
+            --navy-100:  #EEF3FA;
+            /* Brand gold */
+            --gold-500:  #C9A84C;
+            --gold-400:  #DFC06E;
+            --gold-300:  #EDD08E;
+            --gold-100:  #F9F0D6;
+            /* Neutrals */
+            --white:     #FFFFFF;
+            --gray-25:   #FAFBFC;
+            --gray-50:   #F4F6FA;
+            --gray-100:  #E8ECF3;
+            --gray-200:  #CDD3DE;
+            --gray-400:  #8A95A8;
+            --gray-600:  #4A5568;
+            --gray-800:  #1A2337;
+            /* Semantic */
+            --success:        #0D5E35;
+            --success-bg:     #EBF7F2;
+            --success-border: #1B9E5C;
+            --error:          #8B1C1C;
+            --error-bg:       #FDF0F0;
+            --error-border:   #CC3333;
+            /* Shape */
+            --radius-sm: 3px;
+            --radius:    6px;
+            --radius-lg: 10px;
+            /* Shadows */
+            --shadow-xs: 0 1px 3px rgba(7,20,38,0.07);
+            --shadow-sm: 0 2px 8px rgba(7,20,38,0.10);
+            --shadow-md: 0 4px 18px rgba(7,20,38,0.14);
         }
 
         /* ── Base ─────────────────────────────────────────────────────── */
         html, body, [class*="css"] {
-            font-family: 'Inter', sans-serif;
-            color: var(--text);
-            background-color: var(--bg);
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            color: var(--gray-800);
+            background-color: var(--gray-25);
         }
-
+        .main .block-container {
+            padding-top: 1.75rem;
+            padding-bottom: 3rem;
+        }
         h1, h2, h3 {
-            font-family: 'Playfair Display', serif;
-            color: var(--navy);
+            font-family: 'Cormorant Garamond', Georgia, serif;
+            color: var(--navy-800);
+            letter-spacing: -0.01em;
         }
 
-        /* ── Hide auto-generated page nav (custom sidebar links used instead) */
-        [data-testid="stSidebarNav"] {
-            display: none !important;
-        }
+        /* ── Hide Streamlit auto-nav ───────────────────────────────────── */
+        [data-testid="stSidebarNav"] { display: none !important; }
 
         /* ── Sidebar ──────────────────────────────────────────────────── */
         section[data-testid="stSidebar"] {
-            background-color: var(--navy) !important;
+            background-color: var(--navy-900) !important;
+            border-right: 1px solid rgba(201,168,76,0.12) !important;
         }
         section[data-testid="stSidebar"] * {
-            color: var(--white) !important;
+            color: rgba(255,255,255,0.82) !important;
+        }
+        section[data-testid="stSidebar"] a {
+            color: rgba(255,255,255,0.65) !important;
+            font-size: 0.85rem !important;
+            font-weight: 500 !important;
+            letter-spacing: 0.02em !important;
+            transition: color 0.15s !important;
+            text-decoration: none !important;
+        }
+        section[data-testid="stSidebar"] a:hover {
+            color: var(--gold-400) !important;
+        }
+        section[data-testid="stSidebar"] hr {
+            border-color: rgba(255,255,255,0.08) !important;
+            margin: 0.75rem 0 !important;
         }
         section[data-testid="stSidebar"] .stSelectbox label,
-        section[data-testid="stSidebar"] .stRadio label,
-        section[data-testid="stSidebar"] .stSlider label {
-            color: var(--gold) !important;
-            font-weight: 600;
+        section[data-testid="stSidebar"] .stRadio label {
+            color: var(--gold-300) !important;
+            font-size: 0.72rem !important;
+            font-weight: 600 !important;
+            text-transform: uppercase !important;
+            letter-spacing: 0.08em !important;
         }
 
-        /* ── Buttons ──────────────────────────────────────────────────── */
+        /* ── Buttons — default (answer panels + secondary actions) ───── */
         .stButton > button {
-            background-color: var(--navy) !important;
-            color: var(--gold) !important;
-            border: 2px solid var(--gold) !important;
-            border-radius: 6px !important;
+            background-color: var(--white) !important;
+            color: var(--gray-800) !important;
+            border: 1px solid var(--gray-200) !important;
+            border-radius: var(--radius) !important;
             font-family: 'Inter', sans-serif !important;
-            font-weight: 600 !important;
-            letter-spacing: 0.5px;
-            transition: background-color 0.2s, color 0.2s;
-            padding: 0.45rem 1.2rem;
+            font-size: 0.875rem !important;
+            font-weight: 500 !important;
+            letter-spacing: 0.005em !important;
+            text-align: left !important;
+            padding: 0.65rem 1.1rem !important;
+            min-height: 44px !important;
+            transition: border-color 0.15s, background-color 0.15s, box-shadow 0.15s !important;
+            box-shadow: var(--shadow-xs) !important;
         }
         .stButton > button:hover {
-            background-color: var(--gold) !important;
-            color: var(--navy) !important;
+            border-color: var(--gold-500) !important;
+            border-left-width: 3px !important;
+            background-color: var(--gold-100) !important;
+            color: var(--navy-800) !important;
+            box-shadow: var(--shadow-sm) !important;
         }
         .stButton > button:active {
-            transform: scale(0.98);
+            transform: translateY(1px) !important;
+        }
+        .stButton > button:disabled {
+            opacity: 0.40 !important;
+            cursor: not-allowed !important;
+        }
+
+        /* ── Buttons — primary (CTA actions) ─────────────────────────── */
+        [data-testid="baseButton-primary"],
+        .stButton > button[kind="primary"] {
+            background-color: var(--navy-800) !important;
+            color: var(--gold-500) !important;
+            border: 1px solid var(--navy-700) !important;
+            font-weight: 600 !important;
+            letter-spacing: 0.06em !important;
+            text-transform: uppercase !important;
+            font-size: 0.75rem !important;
+            text-align: center !important;
+            box-shadow: var(--shadow-sm) !important;
+        }
+        [data-testid="baseButton-primary"]:hover,
+        .stButton > button[kind="primary"]:hover {
+            background-color: var(--navy-700) !important;
+            border-color: var(--gold-500) !important;
+            color: var(--gold-400) !important;
+            box-shadow: var(--shadow-md) !important;
+        }
+
+        /* ── Form inputs ──────────────────────────────────────────────── */
+        .stSelectbox [data-baseweb="select"] > div,
+        .stTextInput > div > div > input {
+            border-color: var(--gray-200) !important;
+            border-radius: var(--radius) !important;
+            background-color: var(--white) !important;
+            font-size: 0.875rem !important;
+            color: var(--gray-800) !important;
+        }
+        .stSelectbox [data-baseweb="select"] > div:focus-within,
+        .stTextInput > div > div > input:focus {
+            border-color: var(--gold-500) !important;
+            box-shadow: 0 0 0 3px rgba(201,168,76,0.15) !important;
+        }
+        .stCheckbox label {
+            font-size: 0.875rem !important;
+            color: var(--gray-600) !important;
         }
 
         /* ── Cards ────────────────────────────────────────────────────── */
         .wib-card {
             background: var(--white);
-            border-left: 4px solid var(--gold);
-            border-radius: 8px;
-            padding: 1.4rem 1.6rem;
-            box-shadow: var(--shadow);
+            border: 1px solid var(--gray-100);
+            border-top: 3px solid var(--gold-500);
+            border-radius: var(--radius-lg);
+            padding: 1.5rem 1.75rem;
+            box-shadow: var(--shadow-sm);
             margin-bottom: 1rem;
         }
         .wib-card h3 {
             margin-top: 0;
             font-size: 1.1rem;
-            color: var(--navy);
+            color: var(--navy-800);
         }
 
         /* ── Metric cards ─────────────────────────────────────────────── */
         .metric-card {
-            background: var(--navy);
-            color: var(--white);
-            border-radius: 10px;
-            padding: 1.2rem 1.4rem;
+            background: var(--navy-800);
+            border: 1px solid rgba(201,168,76,0.18);
+            border-radius: var(--radius-lg);
+            padding: 1.25rem 1.5rem;
             text-align: center;
-            box-shadow: var(--shadow);
+            box-shadow: var(--shadow-sm);
+            position: relative;
+            overflow: hidden;
+        }
+        .metric-card::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0;
+            height: 2px;
+            background: linear-gradient(90deg, var(--gold-500), var(--gold-300));
         }
         .metric-card .metric-value {
-            font-family: 'Playfair Display', serif;
-            font-size: 2.4rem;
-            font-weight: 700;
-            color: var(--gold);
+            font-family: 'IBM Plex Mono', 'Courier New', monospace;
+            font-size: 2.1rem;
+            font-weight: 500;
+            color: var(--gold-500);
             line-height: 1.1;
+            letter-spacing: -0.02em;
         }
         .metric-card .metric-label {
-            font-size: 0.82rem;
-            color: rgba(255,255,255,0.75);
+            font-size: 0.68rem;
+            color: rgba(255,255,255,0.50);
             text-transform: uppercase;
-            letter-spacing: 0.8px;
-            margin-top: 4px;
+            letter-spacing: 0.12em;
+            margin-top: 6px;
+            font-weight: 600;
         }
 
-        /* ── Hero banner ──────────────────────────────────────────────── */
-        .wib-hero {
-            background: linear-gradient(135deg, var(--navy) 0%, #163a6b 100%);
-            border-radius: 12px;
-            padding: 2rem 2.5rem;
+        /* ── Page header (inner pages) ────────────────────────────────── */
+        .wib-page-header {
+            padding: 0.75rem 0 1.25rem 0;
             margin-bottom: 1.5rem;
-            color: var(--white);
+            border-bottom: 1px solid var(--gray-100);
+        }
+        .wib-page-header .brand-mark {
+            font-size: 0.68rem;
+            font-weight: 700;
+            color: var(--gold-500);
+            letter-spacing: 0.22em;
+            text-transform: uppercase;
+            margin-bottom: 4px;
+        }
+        .wib-page-header .page-title {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 2.1rem;
+            font-weight: 600;
+            color: var(--navy-800);
+            line-height: 1.1;
+            letter-spacing: -0.02em;
+        }
+        .wib-page-header .page-subtitle {
+            font-size: 0.82rem;
+            color: var(--gray-400);
+            margin-top: 5px;
+            font-weight: 400;
+            letter-spacing: 0.01em;
+        }
+
+        /* ── Hero (home page) ─────────────────────────────────────────── */
+        .wib-hero {
+            background: var(--navy-900);
+            border-radius: var(--radius-lg);
+            padding: 2rem 2.5rem;
+            margin-bottom: 1.75rem;
+            position: relative;
+            overflow: hidden;
+        }
+        .wib-hero::after {
+            content: '';
+            position: absolute;
+            bottom: 0; left: 0; right: 0;
+            height: 2px;
+            background: linear-gradient(90deg, var(--gold-500) 0%, transparent 70%);
         }
         .wib-hero .brand {
-            font-family: 'Playfair Display', serif;
-            font-size: 2.8rem;
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 3.2rem;
             font-weight: 700;
-            color: var(--gold);
-            letter-spacing: 2px;
+            color: var(--gold-500);
+            letter-spacing: 6px;
+            line-height: 1;
         }
         .wib-hero .tagline {
-            font-size: 1.05rem;
-            color: rgba(255,255,255,0.85);
-            margin-top: 4px;
+            font-size: 0.75rem;
+            color: rgba(255,255,255,0.45);
+            margin-top: 8px;
+            font-weight: 500;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
         }
 
         /* ── Ticker ───────────────────────────────────────────────────── */
         .ticker-wrapper {
-            background: var(--navy);
-            color: var(--gold);
-            padding: 6px 0;
+            background: var(--navy-950);
+            border: 1px solid rgba(201,168,76,0.14);
+            padding: 7px 0;
             overflow: hidden;
-            border-radius: 6px;
+            border-radius: var(--radius);
             margin-bottom: 1.5rem;
-            font-family: 'Inter', monospace;
-            font-size: 0.82rem;
-            font-weight: 500;
+            font-family: 'IBM Plex Mono', monospace;
+            font-size: 0.76rem;
+            font-weight: 400;
         }
         .ticker-inner {
             display: inline-block;
             white-space: nowrap;
-            animation: ticker-scroll 28s linear infinite;
+            animation: ticker-scroll 34s linear infinite;
         }
         @keyframes ticker-scroll {
             0%   { transform: translateX(100%); }
             100% { transform: translateX(-100%); }
         }
-        .ticker-item { margin-right: 3rem; }
-        .ticker-up   { color: #5DDE91; }
-        .ticker-down { color: #FF6B6B; }
+        .ticker-item { margin-right: 3.5rem; color: rgba(255,255,255,0.55); }
+        .ticker-item strong { color: var(--white); font-weight: 500; }
+        .ticker-up   { color: #4ADE80; }
+        .ticker-down { color: #F87171; }
 
-        /* ── Progress bars ────────────────────────────────────────────── */
+        /* ── Progress bar ─────────────────────────────────────────────── */
         .stProgress > div > div > div > div {
-            background-color: var(--gold) !important;
+            background: linear-gradient(90deg, var(--navy-700), var(--gold-500)) !important;
         }
 
         /* ── Answer feedback ──────────────────────────────────────────── */
         .answer-correct {
-            background-color: var(--green-bg);
-            border-left: 4px solid var(--green);
-            border-radius: 6px;
-            padding: 1rem 1.2rem;
-            color: var(--green);
+            background: var(--success-bg);
+            border: 1px solid rgba(27,158,92,0.25);
+            border-left: 4px solid var(--success);
+            border-radius: var(--radius);
+            padding: 0.85rem 1.2rem;
+            color: var(--success);
             font-weight: 600;
+            font-size: 0.875rem;
         }
         .answer-wrong {
-            background-color: var(--red-bg);
-            border-left: 4px solid var(--red);
-            border-radius: 6px;
-            padding: 1rem 1.2rem;
-            color: var(--red);
+            background: var(--error-bg);
+            border: 1px solid rgba(204,51,51,0.20);
+            border-left: 4px solid var(--error);
+            border-radius: var(--radius);
+            padding: 0.85rem 1.2rem;
+            color: var(--error);
             font-weight: 600;
+            font-size: 0.875rem;
         }
         .explanation-box {
-            background: var(--bg2);
-            border-radius: 6px;
-            padding: 1rem 1.2rem;
-            margin-top: 0.8rem;
-            font-size: 0.93rem;
-            line-height: 1.6;
+            background: var(--gray-50);
+            border: 1px solid var(--gray-100);
+            border-radius: var(--radius);
+            padding: 1rem 1.25rem;
+            margin-top: 0.75rem;
+            font-size: 0.86rem;
+            line-height: 1.68;
+            color: var(--gray-600);
         }
+
+        /* ── Section header ───────────────────────────────────────────── */
+        .section-header {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.35rem;
+            font-weight: 600;
+            color: var(--navy-800);
+            letter-spacing: -0.01em;
+            padding-bottom: 8px;
+            border-bottom: 1px solid var(--gray-100);
+            margin-bottom: 1.25rem;
+            position: relative;
+        }
+        .section-header::after {
+            content: '';
+            display: block;
+            width: 36px;
+            height: 2px;
+            background: var(--gold-500);
+            position: absolute;
+            bottom: -1px;
+            left: 0;
+        }
+
+        /* ── Badges ───────────────────────────────────────────────────── */
+        .topic-badge {
+            display: inline-block;
+            background: var(--navy-100);
+            color: var(--navy-800);
+            border: 1px solid rgba(12,29,58,0.10);
+            border-radius: var(--radius-sm);
+            padding: 2px 8px;
+            font-size: 0.70rem;
+            font-weight: 700;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            margin-right: 5px;
+        }
+        .difficulty-easy   { background: var(--success-bg);  color: var(--success); border-radius: var(--radius-sm); padding: 2px 8px; font-size: 0.70rem; font-weight: 600; border: 1px solid rgba(13,94,53,0.15); }
+        .difficulty-medium { background: #FFF8E8; color: #7A5C00; border-radius: var(--radius-sm); padding: 2px 8px; font-size: 0.70rem; font-weight: 600; border: 1px solid rgba(122,92,0,0.15); }
+        .difficulty-hard   { background: var(--error-bg);    color: var(--error);   border-radius: var(--radius-sm); padding: 2px 8px; font-size: 0.70rem; font-weight: 600; border: 1px solid rgba(139,28,28,0.15); }
 
         /* ── Flashcard ────────────────────────────────────────────────── */
         .flashcard-front {
-            background: linear-gradient(135deg, var(--navy) 0%, #1a4a8a 100%);
-            color: var(--white);
-            border-radius: 12px;
+            background: var(--navy-800);
+            border-radius: var(--radius-lg);
             padding: 2.5rem 2rem;
             min-height: 180px;
             display: flex;
             align-items: center;
             justify-content: center;
             text-align: center;
-            box-shadow: var(--shadow);
+            box-shadow: var(--shadow-md);
+            position: relative;
+            overflow: hidden;
+        }
+        .flashcard-front::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0;
+            height: 2px;
+            background: linear-gradient(90deg, var(--gold-500), var(--gold-300));
         }
         .flashcard-front .concept {
-            font-family: 'Playfair Display', serif;
-            font-size: 1.6rem;
-            font-weight: 700;
-            color: var(--gold);
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.8rem;
+            font-weight: 600;
+            color: var(--gold-500);
+            line-height: 1.2;
         }
         .flashcard-back {
             background: var(--white);
-            border: 2px solid var(--gold);
-            border-radius: 12px;
-            padding: 1.8rem 2rem;
-            box-shadow: var(--shadow);
+            border: 1px solid var(--gray-100);
+            border-top: 3px solid var(--gold-500);
+            border-radius: var(--radius-lg);
+            padding: 1.75rem 2rem;
+            box-shadow: var(--shadow-sm);
         }
         .formula-box {
-            background: var(--navy);
-            color: var(--gold);
-            font-family: 'Courier New', monospace;
-            border-radius: 6px;
-            padding: 0.7rem 1rem;
-            font-size: 0.95rem;
-            margin-top: 0.8rem;
+            background: var(--gray-50);
+            border: 1px solid var(--gray-100);
+            color: var(--navy-800);
+            font-family: 'IBM Plex Mono', monospace;
+            border-radius: var(--radius);
+            padding: 0.75rem 1rem;
+            font-size: 0.9rem;
+            margin-top: 0.75rem;
+            letter-spacing: -0.01em;
         }
 
-        /* ── Tables (dataframe + markdown) ───────────────────────────── */
+        /* ── Data tables (dataframe) ──────────────────────────────────── */
         .dataframe thead tr th {
-            background-color: var(--navy) !important;
-            color: var(--gold) !important;
-            font-family: 'Inter', sans-serif;
+            background-color: var(--navy-800) !important;
+            color: var(--gold-500) !important;
+            font-size: 0.72rem;
+            font-weight: 700;
+            letter-spacing: 0.07em;
+            text-transform: uppercase;
         }
-        .dataframe tbody tr:nth-child(even) {
-            background-color: var(--bg2);
-        }
+        .dataframe tbody tr:nth-child(even) { background-color: var(--gray-25); }
+        .dataframe tbody tr:hover { background-color: var(--gold-100) !important; }
 
-        /* Markdown tables inside st.markdown() — question data tables */
+        /* Markdown tables in question text */
         [data-testid="stMarkdownContainer"] table {
             border-collapse: collapse;
             width: auto;
-            margin: 0.7rem 0 0.9rem 0;
+            margin: 0.75rem 0 1rem 0;
             font-family: 'Inter', sans-serif;
-            font-size: 0.9rem;
-            border-radius: 6px;
+            font-size: 0.84rem;
+            border-radius: var(--radius);
             overflow: hidden;
-            box-shadow: 0 1px 4px rgba(11,37,69,0.10);
+            border: 1px solid var(--gray-200);
+            box-shadow: var(--shadow-xs);
         }
         [data-testid="stMarkdownContainer"] table th {
-            background-color: var(--navy) !important;
-            color: var(--gold) !important;
-            padding: 7px 16px;
-            text-align: left;
-            font-weight: 600;
-            letter-spacing: 0.3px;
+            background-color: var(--navy-800) !important;
+            color: var(--gold-500) !important;
+            padding: 8px 16px;
+            font-weight: 700;
+            font-size: 0.75rem;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
         }
         [data-testid="stMarkdownContainer"] table td {
-            border: 1px solid #dde0e8;
+            border-bottom: 1px solid var(--gray-100);
             padding: 7px 16px;
             background-color: var(--white);
-            color: var(--text);
+            color: var(--gray-800);
         }
-        [data-testid="stMarkdownContainer"] table tr:nth-child(even) td {
-            background-color: var(--bg2);
-        }
+        [data-testid="stMarkdownContainer"] table tr:last-child td { border-bottom: none; }
+        [data-testid="stMarkdownContainer"] table tr:nth-child(even) td { background-color: var(--gray-25); }
 
-        /* ── Section headers ──────────────────────────────────────────── */
-        .section-header {
-            border-bottom: 2px solid var(--gold);
-            padding-bottom: 6px;
-            margin-bottom: 1rem;
-            font-family: 'Playfair Display', serif;
-            color: var(--navy);
-            font-size: 1.3rem;
-            font-weight: 700;
-        }
-
-        /* ── Topic badge ──────────────────────────────────────────────── */
-        .topic-badge {
-            display: inline-block;
-            background: var(--navy);
-            color: var(--gold);
-            border-radius: 20px;
-            padding: 3px 12px;
-            font-size: 0.78rem;
-            font-weight: 600;
-            letter-spacing: 0.4px;
-            margin-right: 4px;
-        }
-        .difficulty-easy   { background: #d4edda; color: #155724; border-radius: 4px; padding: 2px 8px; font-size: 0.75rem; }
-        .difficulty-medium { background: #fff3cd; color: #856404; border-radius: 4px; padding: 2px 8px; font-size: 0.75rem; }
-        .difficulty-hard   { background: #f8d7da; color: #721c24; border-radius: 4px; padding: 2px 8px; font-size: 0.75rem; }
-
-        /* ── Pass/Fail banners ────────────────────────────────────────── */
+        /* ── Pass / Fail banners ──────────────────────────────────────── */
         .pass-banner {
-            background: linear-gradient(135deg, #1B7F4F, #2ecc71);
-            color: white;
+            background: var(--success-bg);
+            border: 1px solid rgba(27,158,92,0.25);
+            border-top: 3px solid var(--success);
+            color: var(--success);
             text-align: center;
-            padding: 1.5rem;
-            border-radius: 10px;
-            font-family: 'Playfair Display', serif;
+            padding: 1.5rem 2rem;
+            border-radius: var(--radius-lg);
+            font-family: 'Cormorant Garamond', serif;
             font-size: 1.8rem;
             font-weight: 700;
         }
         .fail-banner {
-            background: linear-gradient(135deg, #B52B2B, #e74c3c);
-            color: white;
+            background: var(--error-bg);
+            border: 1px solid rgba(204,51,51,0.20);
+            border-top: 3px solid var(--error);
+            color: var(--error);
             text-align: center;
-            padding: 1.5rem;
-            border-radius: 10px;
-            font-family: 'Playfair Display', serif;
+            padding: 1.5rem 2rem;
+            border-radius: var(--radius-lg);
+            font-family: 'Cormorant Garamond', serif;
             font-size: 1.8rem;
             font-weight: 700;
         }
 
         /* ── Responsive ───────────────────────────────────────────────── */
         @media (max-width: 768px) {
-            .wib-hero .brand { font-size: 2rem; }
-            .metric-card .metric-value { font-size: 1.8rem; }
+            .wib-hero .brand { font-size: 2.4rem; }
+            .metric-card .metric-value { font-size: 1.7rem; }
+            .wib-page-header .page-title { font-size: 1.65rem; }
         }
         </style>
         """,
@@ -357,27 +546,21 @@ def inject_styles():
     )
 
 
-def render_ticker():
-    st.markdown(
-        """
-        <div class="ticker-wrapper">
-          <div class="ticker-inner">
-            <span class="ticker-item">CAC 40 &nbsp;<strong>5,234</strong>&nbsp;<span class="ticker-up">▲ 1.2%</span></span>
-            <span class="ticker-item">S&amp;P 500 &nbsp;<strong>5,678</strong>&nbsp;<span class="ticker-up">▲ 0.8%</span></span>
-            <span class="ticker-item">EUR/USD &nbsp;<strong>1.0823</strong>&nbsp;<span class="ticker-down">▼ 0.1%</span></span>
-            <span class="ticker-item">Brent Crude &nbsp;<strong>$82.4</strong>&nbsp;<span class="ticker-down">▼ 0.3%</span></span>
-            <span class="ticker-item">10Y UST &nbsp;<strong>4.35%</strong>&nbsp;<span class="ticker-up">▲ 2bp</span></span>
-            <span class="ticker-item">Gold &nbsp;<strong>$2,318</strong>&nbsp;<span class="ticker-up">▲ 0.5%</span></span>
-            <span class="ticker-item">USD/JPY &nbsp;<strong>154.2</strong>&nbsp;<span class="ticker-down">▼ 0.2%</span></span>
-            <span class="ticker-item">DAX &nbsp;<strong>18,450</strong>&nbsp;<span class="ticker-up">▲ 0.6%</span></span>
-          </div>
-        </div>
-        """,
-        unsafe_allow_html=True,
-    )
+# ── Component helpers ─────────────────────────────────────────────────────────
+
+_SIDEBAR_BRAND = """
+<div style="font-family:'Cormorant Garamond',Georgia,serif;font-size:1.9rem;font-weight:700;color:#C9A84C;letter-spacing:5px;line-height:1;">WIB</div>
+<div style="font-size:0.63rem;color:rgba(255,255,255,0.38);letter-spacing:0.20em;text-transform:uppercase;margin-top:4px;font-weight:600;">CFA Level I</div>
+"""
+
+
+def render_sidebar_brand():
+    """Inject the WIB brand mark inside st.sidebar context."""
+    st.markdown(_SIDEBAR_BRAND, unsafe_allow_html=True)
 
 
 def render_hero(subtitle: str = "Who Wants to Be an Investment Banker?"):
+    """Full hero banner — home page only."""
     st.markdown(
         f"""
         <div class="wib-hero">
@@ -389,12 +572,45 @@ def render_hero(subtitle: str = "Who Wants to Be an Investment Banker?"):
     )
 
 
-def metric_card(value: str, label: str):
+def render_page_header(title: str, subtitle: str = ""):
+    """Refined page header for inner pages."""
+    sub_html = f'<div class="page-subtitle">{subtitle}</div>' if subtitle else ""
+    st.markdown(
+        f"""
+        <div class="wib-page-header">
+            <div class="brand-mark">WIB &mdash; CFA Level I</div>
+            <div class="page-title">{title}</div>
+            {sub_html}
+        </div>
+        """,
+        unsafe_allow_html=True,
+    )
+
+
+def render_ticker():
+    st.markdown(
+        """
+        <div class="ticker-wrapper">
+          <div class="ticker-inner">
+            <span class="ticker-item">CAC 40 &nbsp;<strong>5,234</strong>&nbsp;<span class="ticker-up">&#9650; 1.2%</span></span>
+            <span class="ticker-item">S&amp;P 500 &nbsp;<strong>5,678</strong>&nbsp;<span class="ticker-up">&#9650; 0.8%</span></span>
+            <span class="ticker-item">EUR/USD &nbsp;<strong>1.0823</strong>&nbsp;<span class="ticker-down">&#9660; 0.1%</span></span>
+            <span class="ticker-item">Brent Crude &nbsp;<strong>$82.4</strong>&nbsp;<span class="ticker-down">&#9660; 0.3%</span></span>
+            <span class="ticker-item">10Y UST &nbsp;<strong>4.35%</strong>&nbsp;<span class="ticker-up">&#9650; 2bp</span></span>
+            <span class="ticker-item">Gold &nbsp;<strong>$2,318</strong>&nbsp;<span class="ticker-up">&#9650; 0.5%</span></span>
+            <span class="ticker-item">USD/JPY &nbsp;<strong>154.2</strong>&nbsp;<span class="ticker-down">&#9660; 0.2%</span></span>
+            <span class="ticker-item">DAX &nbsp;<strong>18,450</strong>&nbsp;<span class="ticker-up">&#9650; 0.6%</span></span>
+          </div>
+        </div>
+        """,
+        unsafe_allow_html=True,
+    )
+
+
+def metric_card(value: str, label: str) -> str:
     return f"""
     <div class="metric-card">
         <div class="metric-value">{value}</div>
         <div class="metric-label">{label}</div>
     </div>
     """
-
-

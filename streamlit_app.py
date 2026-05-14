@@ -21,7 +21,7 @@ try:
     from src.auth import CFA_TOPICS, get_current_user, logout, require_auth
     from src.database import get_db
     from src.progress import compute_mastery_map, readiness_score, weak_topics
-    from src.styles import inject_styles, metric_card, render_hero, render_ticker, render_question
+    from src.styles import inject_styles, metric_card, render_hero, render_page_header, render_sidebar_brand, render_ticker, render_question
 except Exception as _e:
     st.error(f"**Erreur d'import — {type(_e).__name__}:** `{_e}`")
     st.code(_tb.format_exc())
@@ -34,16 +34,15 @@ inject_styles()
 
 def _sidebar():
     with st.sidebar:
-        st.markdown(
-            '<div style="font-family:\'Playfair Display\',serif;font-size:1.6rem;'
-            'font-weight:700;color:#C9A84C;letter-spacing:2px;margin-bottom:4px;">WIB</div>',
-            unsafe_allow_html=True,
-        )
-        st.caption("Who Wants to Be an Investment Banker?")
+        render_sidebar_brand()
         st.divider()
         if st.session_state.get("user_id"):
             user = get_current_user()
-            st.markdown(f"**{user['username']}**")
+            st.markdown(
+                f'<div style="font-size:0.82rem;font-weight:600;color:rgba(255,255,255,0.85);'
+                f'letter-spacing:0.03em;">{user["username"]}</div>',
+                unsafe_allow_html=True,
+            )
             st.divider()
             st.page_link("streamlit_app.py", label="Home", icon="🏠")
             st.page_link("pages/1_Study.py", label="Study Notes", icon="📖")
@@ -230,12 +229,12 @@ def _finish_diagnostic(qs, answers):
         st.markdown(f"**{t}**")
         st.progress(pct / 100, text=f"{pct:.0f}%")
 
-    if st.button("Aller au dashboard →", use_container_width=True):
+    if st.button("Aller au dashboard →", use_container_width=True, type="primary"):
         st.rerun()
 
 
 if not st.session_state.get("diagnostic_done"):
-    render_hero("Diagnostic Initial")
+    render_page_header("Diagnostic Initial", "30 questions · évaluons votre niveau de départ")
     _run_diagnostic()
     st.stop()
 
