@@ -17,10 +17,20 @@ import streamlit as st
 # ── Connection helpers ────────────────────────────────────────────────────────
 
 def _get_supabase_client():
-    """Return a Supabase client if credentials exist, else None."""
+    """Return a Supabase client if credentials exist, else None.
+
+    Prefers the service key (bypasses RLS, needed for DELETE/UPDATE) and falls
+    back to the anon key. Anon key can SELECT and INSERT but RLS silently blocks
+    DELETE, causing clear_diagnostic_progress / save_leitner_ids cleanup to fail.
+    """
     try:
         url = st.secrets.get("supabase", {}).get("SUPABASE_URL") or os.environ.get("SUPABASE_URL")
-        key = st.secrets.get("supabase", {}).get("SUPABASE_ANON_KEY") or os.environ.get("SUPABASE_ANON_KEY")
+        key = (
+            st.secrets.get("supabase", {}).get("SUPABASE_SERVICE_KEY")
+            or os.environ.get("SUPABASE_SERVICE_KEY")
+            or st.secrets.get("supabase", {}).get("SUPABASE_ANON_KEY")
+            or os.environ.get("SUPABASE_ANON_KEY")
+        )
         if url and key:
             from supabase import create_client
             return create_client(url, key)

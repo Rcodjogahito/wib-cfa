@@ -76,6 +76,9 @@ def _reset_diagnostic():
     for k in ["diag_questions", "diag_idx", "diag_answers", "diag_start",
               "diag_reset_confirm"]:
         st.session_state.pop(k, None)
+    # Safety flag: skip DB restore even if clear_diagnostic_progress failed
+    # (RLS may block deletes when using anon key without service key configured)
+    st.session_state["diag_skip_restore"] = True
     st.rerun()
 
 
@@ -86,8 +89,10 @@ def _run_diagnostic():
     state = st.session_state
 
     if "diag_questions" not in state:
+        # Skip restore if an explicit reset was just triggered
+        skip = state.pop("diag_skip_restore", False)
         # Try to restore in-progress state from DB (survives server restarts)
-        saved = db.load_diagnostic_progress(user["id"])
+        saved = None if skip else db.load_diagnostic_progress(user["id"])
         if saved and saved.get("diag_questions"):
             state["diag_questions"] = saved["diag_questions"]
             state["diag_idx"] = saved.get("diag_idx", 0)
