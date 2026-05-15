@@ -42,7 +42,7 @@ if not require_auth():
 user = get_current_user()
 db = get_db()
 
-render_page_header("Quiz", "Adaptive practice — 5,614 questions")
+render_page_header("Quiz", "Adaptive practice — 7,249 questions")
 
 # ── Quiz configuration ────────────────────────────────────────────────────────
 
@@ -62,7 +62,11 @@ if not state["quiz_active"]:
     with col1:
         topic_choice = st.selectbox("Topic", topic_options, index=_default_idx)
     with col2:
-        difficulty = st.selectbox("Difficulté", ["All", "Easy", "Medium", "Hard"])
+        if topic_choice == "All (Adaptatif)":
+            difficulty = "All"
+            st.caption("Mode adaptatif — toutes difficultés, topics faibles prioritaires")
+        else:
+            difficulty = st.selectbox("Difficulté", ["All", "Easy", "Medium", "Hard"])
     with col3:
         n_questions = st.selectbox("Nombre de questions", [10, 20, 30], index=1)
 
@@ -180,13 +184,16 @@ if _show_results:
             if not r["correct"]:
                     expl_en = r.get("explanation_en", "")
                     expl_fr = r.get("explanation_fr", "")
-                    expl_html = f'<b>[EN]</b> {expl_en}'
+                    expl_parts = []
+                    if expl_en:
+                        expl_parts.append(f'<b>[EN]</b> {expl_en}')
                     if expl_fr:
-                        expl_html += f'<br><br><b>[FR]</b> {expl_fr}'
-                    st.markdown(
-                        f'<div class="explanation-box">{expl_html}</div>',
-                        unsafe_allow_html=True,
-                    )
+                        expl_parts.append(f'<b>[FR]</b> {expl_fr}')
+                    if expl_parts:
+                        st.markdown(
+                            f'<div class="explanation-box">{"<br><br>".join(expl_parts)}</div>',
+                            unsafe_allow_html=True,
+                        )
 
     col1, col2 = st.columns(2)
     if col1.button("Nouveau quiz", use_container_width=True, type="primary"):
@@ -287,10 +294,13 @@ if answered and selected:
         )
     expl_en = q.get("explanation_en", "")
     expl_fr = q.get("explanation_fr", "")
-    expl_html = f'<b>[EN]</b> {expl_en}'
+    expl_parts = []
+    if expl_en:
+        expl_parts.append(f'<b>[EN]</b> {expl_en}')
     if expl_fr:
-        expl_html += f'<br><br><b>[FR]</b> {expl_fr}'
-    st.markdown(f'<div class="explanation-box">{expl_html}</div>', unsafe_allow_html=True)
+        expl_parts.append(f'<b>[FR]</b> {expl_fr}')
+    if expl_parts:
+        st.markdown(f'<div class="explanation-box">{"<br><br>".join(expl_parts)}</div>', unsafe_allow_html=True)
     if st.button("Question suivante →", use_container_width=True):
         state["quiz_idx"] += 1
         state["quiz_answered"] = False

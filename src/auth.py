@@ -129,7 +129,7 @@ def _render_login_form() -> None:
         """
         <div style="max-width:440px; margin:3rem auto;">
             <div style="text-align:center; margin-bottom:2rem;">
-                <span style="font-family:'Playfair Display',serif; font-size:3rem;
+                <span style="font-family:'Cormorant Garamond',Georgia,serif; font-size:3rem;
                              font-weight:700; color:#0B2545; letter-spacing:3px;">WIB</span><br>
                 <span style="color:#555; font-size:1rem;">Who Wants to Be an Investment Banker?</span>
             </div>

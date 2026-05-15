@@ -235,13 +235,16 @@ if state.get("exam_submitted"):
         if not r["correct"]:
             _expl_en = q.get("explanation_en", "")
             _expl_fr = q.get("explanation_fr", "")
-            _expl_html = f'<b>[EN]</b> {_expl_en}'
+            _expl_parts = []
+            if _expl_en:
+                _expl_parts.append(f'<b>[EN]</b> {_expl_en}')
             if _expl_fr:
-                _expl_html += f'<br><br><b>[FR]</b> {_expl_fr}'
-            st.markdown(
-                f'<div class="explanation-box">{_expl_html}</div>',
-                unsafe_allow_html=True,
-            )
+                _expl_parts.append(f'<b>[FR]</b> {_expl_fr}')
+            if _expl_parts:
+                st.markdown(
+                    f'<div class="explanation-box">{"<br><br>".join(_expl_parts)}</div>',
+                    unsafe_allow_html=True,
+                )
 
     if st.button("Nouvel examen", use_container_width=True, type="primary"):
         for k in ["exam_active", "exam_config", "exam_name", "exam_questions",

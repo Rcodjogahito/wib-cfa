@@ -436,8 +436,7 @@ class Database:
         import random as _r
         if self.sb:
             if topic and topic != "All":
-                # Over-fetch 6x to absorb incomplete-question filtering
-                fetch_n = max(n * 6, 300) if n else 600
+                fetch_n = max(n * 4, 200) if n else 400
                 q = self.sb.table("questions").select("*").eq("topic", topic)
                 if difficulty and difficulty != "All":
                     q = q.eq("difficulty", difficulty.lower())
@@ -452,7 +451,6 @@ class Database:
                     if difficulty and difficulty != "All":
                         q = q.eq("difficulty", difficulty.lower())
                     data.extend(q.limit(per_topic).execute().data or [])
-            # All questions now have their tables embedded as markdown
         else:
             conn = _get_sqlite()
             sql = "SELECT * FROM questions WHERE 1=1"
