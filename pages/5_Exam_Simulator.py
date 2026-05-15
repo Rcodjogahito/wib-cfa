@@ -72,10 +72,12 @@ if not state["exam_active"]:
         with col:
             n = cfg["n"]
             mins = cfg["duration_sec"] // 60
+            spq = cfg["duration_sec"] // n
+            mpq, spq_rem = divmod(spq, 60)
             st.markdown(
                 f'<div class="wib-card">'
                 f'<b style="font-size:1.1rem;">{name}</b><br>'
-                f'{n} questions · {mins // 60}h{mins % 60:02d} · 1m{cfg["duration_sec"] // n // 60}s/question'
+                f'{n} questions · {mins // 60}h{mins % 60:02d} · {mpq}m{spq_rem:02d}s/question'
                 f'</div>',
                 unsafe_allow_html=True,
             )
@@ -248,12 +250,15 @@ if state.get("exam_submitted"):
                     unsafe_allow_html=True,
                 )
 
-    if st.button("Nouvel examen", use_container_width=True, type="primary"):
+    btn1, btn2 = st.columns(2)
+    if btn1.button("Nouvel examen", use_container_width=True, type="primary"):
         for k in ["exam_active", "exam_config", "exam_name", "exam_questions",
                   "exam_idx", "exam_answers", "exam_flagged", "exam_start",
                   "exam_submitted", "exam_saved"]:
             state.pop(k, None)
         st.rerun()
+    if btn2.button("Voir la progression", use_container_width=True):
+        st.switch_page("pages/4_Progress.py")
     st.stop()
 
 # ── Active exam ───────────────────────────────────────────────────────────────

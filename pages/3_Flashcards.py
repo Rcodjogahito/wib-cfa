@@ -133,11 +133,14 @@ if idx >= total:
         unsafe_allow_html=True,
     )
     st.markdown(f"**{knew}** cartes sues · **{study}** à retravailler")
-    if st.button("Recommencer", use_container_width=True):
+    btn1, btn2 = st.columns(2)
+    if btn1.button("Recommencer", use_container_width=True):
         for k in ["fc_cards", "fc_idx", "fc_flipped", "fc_knew", "fc_study",
                   "fc_saved", "fc_session_start", "fc_topic_saved", "fc_outcomes"]:
             state.pop(k, None)
         st.rerun()
+    if btn2.button("Voir la progression", use_container_width=True):
+        st.switch_page("pages/4_Progress.py")
     st.stop()
 
 card = cards[idx]
