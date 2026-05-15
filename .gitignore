@@ -13,6 +13,13 @@ scripts/*.sql
 scripts/cleanup_imports.py
 scripts/dry_run_output.txt
 
+# Vision import cache + debug assets (generated, large)
+scripts/_cache_cfaweb_qb/
+scripts/_cache_cfaweb_mocks/
+scripts/_*.png
+scripts/debug_*.py
+scripts/test_db.py
+
 # Python
 __pycache__/
 *.py[cod]
