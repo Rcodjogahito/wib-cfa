@@ -169,9 +169,11 @@ if state.get("exam_submitted"):
         f'<div class="{banner_cls}">{result_text} — {score_pct:.1f}%</div>',
         unsafe_allow_html=True,
     )
-    st.markdown(f"**{correct_count} / {total}** correctes · {duration // 60}m {duration % 60}s")
+    _h, _rem = divmod(duration, 3600); _m, _s = divmod(_rem, 60)
+    _dur_str = f"{_h}h {_m:02d}m {_s:02d}s" if _h else f"{_m}m {_s:02d}s"
+    st.markdown(f"**{correct_count} / {total}** correctes · {_dur_str}")
     st.markdown(f"Seuil de passage : **{PASS_THRESHOLD:.0f}%** — {'+' if passed else '-'}"
-                f"{abs(score_pct - PASS_THRESHOLD):.1f} points")
+                f"{abs(score_pct - PASS_THRESHOLD):.1f} pp")
 
     st.markdown("---")
 

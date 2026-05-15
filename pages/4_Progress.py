@@ -174,13 +174,18 @@ st.markdown("---")
 if sessions:
     st.markdown('<div class="section-header">Historique des sessions</div>', unsafe_allow_html=True)
 
+    _TYPE_LABELS = {
+        "quiz": "Quiz", "diagnostic": "Diagnostic", "flashcard": "Flashcards",
+        "mock_partial": "Exam partiel", "mock_full": "Exam complet",
+    }
+
     dates = []
     scores = []
     types = []
     for s in reversed(sessions[:30]):
         dates.append(s.get("completed_at", "")[:10])
         scores.append(s.get("score_pct", 0))
-        types.append(s.get("session_type", "quiz"))
+        types.append(_TYPE_LABELS.get(s.get("session_type", "quiz"), s.get("session_type", "quiz")))
 
     fig_hist = go.Figure()
     fig_hist.add_trace(go.Scatter(
@@ -208,7 +213,7 @@ if sessions:
         rows = ["| Date | Type | Topic | Score | Questions |", "|------|------|-------|-------|-----------|"]
         for s in sessions[:20]:
             dt = s.get("completed_at", "")[:16].replace("T", " ")
-            tp = s.get("session_type", "")
+            tp = _TYPE_LABELS.get(s.get("session_type", ""), s.get("session_type", ""))
             topic = s.get("topic", "")
             score = s.get("score_pct", 0)
             total_q = s.get("total_questions", 0)
