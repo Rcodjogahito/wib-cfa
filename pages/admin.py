@@ -9,7 +9,7 @@ st.set_page_config(page_title="WIB Admin", page_icon="📊", layout="wide")
 import pandas as pd
 from datetime import datetime
 
-from src.auth import get_current_user, require_auth
+from src.auth import get_current_user, logout, require_auth
 from src.database import get_db
 from src.styles import inject_styles, metric_card, render_page_header, render_sidebar_brand
 
@@ -33,13 +33,12 @@ db = get_db()
 with st.sidebar:
     render_sidebar_brand()
     st.divider()
-    if st.session_state.get("user_id"):
-        st.markdown(
-            f'<div style="font-size:0.82rem;font-weight:600;color:rgba(255,255,255,0.85);'
-            f'letter-spacing:0.03em;">{get_current_user()["username"]}</div>',
-            unsafe_allow_html=True,
-        )
-        st.divider()
+    st.markdown(
+        f'<div style="font-size:0.82rem;font-weight:600;color:rgba(255,255,255,0.85);'
+        f'letter-spacing:0.03em;">{user["username"]}</div>',
+        unsafe_allow_html=True,
+    )
+    st.divider()
     st.page_link("streamlit_app.py", label="Home", icon="🏠")
     st.page_link("pages/1_Study.py", label="Study Notes", icon="📖")
     st.page_link("pages/2_Quiz.py", label="Quiz", icon="🎯")
@@ -49,10 +48,8 @@ with st.sidebar:
     st.divider()
     st.page_link("pages/admin.py", label="Admin", icon="🔐")
     st.divider()
-    if st.session_state.get("user_id"):
-        from src.auth import logout
-        if st.button("Sign out", use_container_width=True):
-            logout()
+    if st.button("Sign out", use_container_width=True):
+        logout()
 
 # ── Content ───────────────────────────────────────────────────────────────────
 
