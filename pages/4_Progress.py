@@ -177,7 +177,7 @@ if sessions:
     dates = []
     scores = []
     types = []
-    for s in reversed(sessions[-30:]):
+    for s in reversed(sessions[:30]):
         dates.append(s.get("completed_at", "")[:10])
         scores.append(s.get("score_pct", 0))
         types.append(s.get("session_type", "quiz"))

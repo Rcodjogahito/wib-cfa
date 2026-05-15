@@ -375,8 +375,9 @@ with st.expander("Naviguer entre les questions"):
         col = grid_cols[i % 10]
         ans = answers.get(i)
         is_flagged = i in flagged
-        color = "#C9A84C" if ans else "#ccc"
-        label = f"{'★' if is_flagged else ''}{i+1}"
+        flag_mark = "★" if is_flagged else ""
+        done_mark = "✓" if ans else ""
+        label = f"{flag_mark}{done_mark}{i+1}"
         if col.button(label, key=f"nav_{i}",
                       help=f"Q{i+1}: {'Répondu' if ans else 'Non répondu'}"):
             state["exam_idx"] = i

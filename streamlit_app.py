@@ -252,20 +252,22 @@ progress_rows = db.get_progress(user["id"])
 mastery = compute_mastery_map(progress_rows)
 readiness = readiness_score(mastery)
 sessions = db.get_sessions(user["id"])
-diag_score = st.session_state.get("diagnostic_score") or 0
 
 # ── KPI row ───────────────────────────────────────────────────────────────────
 
-k1, k2, k3, k4 = st.columns(4)
+k1, k2, k3, k4, k5 = st.columns(5)
 total_attempts = sum(r.get("total_attempted", 0) for r in progress_rows)
 total_correct = sum(r.get("total_correct", 0) for r in progress_rows)
 overall_acc = round(total_correct / total_attempts * 100, 1) if total_attempts else 0
 mastered_count = sum(1 for v in mastery.values() if v >= 70)
+_diag_score = st.session_state.get("diagnostic_score")
+diag_display = f"{_diag_score:.0f}%" if _diag_score is not None else "—"
 
 k1.markdown(metric_card(f"{readiness:.0f}%", "Readiness Score"), unsafe_allow_html=True)
 k2.markdown(metric_card(f"{overall_acc:.0f}%", "Accuracy globale"), unsafe_allow_html=True)
 k3.markdown(metric_card(f"{mastered_count}/10", "Topics maîtrisés"), unsafe_allow_html=True)
 k4.markdown(metric_card(str(len(sessions)), "Sessions complétées"), unsafe_allow_html=True)
+k5.markdown(metric_card(diag_display, "Score diagnostic"), unsafe_allow_html=True)
 
 st.markdown("---")
 
