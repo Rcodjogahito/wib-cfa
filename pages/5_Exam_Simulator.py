@@ -336,6 +336,17 @@ st.markdown('</div>', unsafe_allow_html=True)
 
 st.markdown('<div class="answer-label">Select your answer</div>', unsafe_allow_html=True)
 current_answer = answers.get(idx)
+
+if current_answer:
+    st.markdown(
+        f'<div style="background:var(--navy-100);border:1px solid rgba(12,29,58,0.12);'
+        f'border-left:3px solid var(--gold-500);border-radius:var(--radius);'
+        f'padding:0.5rem 1rem;margin-bottom:0.6rem;font-size:0.85rem;color:var(--navy-700);">'
+        f'Réponse sélectionnée : <b>{current_answer}</b> — cliquez une autre option pour modifier'
+        f'</div>',
+        unsafe_allow_html=True,
+    )
+
 options = [("A", q["option_a"]), ("B", q["option_b"]), ("C", q["option_c"])]
 
 for letter, text in options:

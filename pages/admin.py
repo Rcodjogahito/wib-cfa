@@ -33,6 +33,13 @@ db = get_db()
 with st.sidebar:
     render_sidebar_brand()
     st.divider()
+    if st.session_state.get("user_id"):
+        st.markdown(
+            f'<div style="font-size:0.82rem;font-weight:600;color:rgba(255,255,255,0.85);'
+            f'letter-spacing:0.03em;">{get_current_user()["username"]}</div>',
+            unsafe_allow_html=True,
+        )
+        st.divider()
     st.page_link("streamlit_app.py", label="Home", icon="🏠")
     st.page_link("pages/1_Study.py", label="Study Notes", icon="📖")
     st.page_link("pages/2_Quiz.py", label="Quiz", icon="🎯")
@@ -41,6 +48,11 @@ with st.sidebar:
     st.page_link("pages/5_Exam_Simulator.py", label="Exam Simulator", icon="⏱️")
     st.divider()
     st.page_link("pages/admin.py", label="Admin", icon="🔐")
+    st.divider()
+    if st.session_state.get("user_id"):
+        from src.auth import logout
+        if st.button("Sign out", use_container_width=True):
+            logout()
 
 # ── Content ───────────────────────────────────────────────────────────────────
 

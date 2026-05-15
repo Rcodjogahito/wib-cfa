@@ -205,16 +205,16 @@ if sessions:
 
     # Session table
     with st.expander("Toutes les sessions"):
-        st.markdown("| Date | Type | Topic | Score | Questions |")
-        st.markdown("|------|------|-------|-------|-----------|")
+        rows = ["| Date | Type | Topic | Score | Questions |", "|------|------|-------|-------|-----------|"]
         for s in sessions[:20]:
             dt = s.get("completed_at", "")[:16].replace("T", " ")
             tp = s.get("session_type", "")
             topic = s.get("topic", "")
             score = s.get("score_pct", 0)
             total_q = s.get("total_questions", 0)
-            color = "🟢" if score >= 70 else ("🟡" if score >= 50 else "🔴")
-            st.markdown(f"| {dt} | {tp} | {topic} | {color} {score:.1f}% | {total_q} |")
+            dot = "🟢" if score >= 70 else ("🟡" if score >= 50 else "🔴")
+            rows.append(f"| {dt} | {tp} | {topic} | {dot} {score:.1f}% | {total_q} |")
+        st.markdown("\n".join(rows))
 else:
     st.info("Aucune session enregistrée. Lancez un quiz ou le simulateur d'examen pour commencer.")
 
