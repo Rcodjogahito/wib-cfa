@@ -120,6 +120,29 @@ def inject_styles():
             border-color: rgba(255,255,255,0.08) !important;
             margin: 0.75rem 0 !important;
         }
+        /* ── Sidebar buttons (Sign out, etc.) ────────────────────────── */
+        section[data-testid="stSidebar"] .stButton > button {
+            background-color: rgba(255,255,255,0.07) !important;
+            color: rgba(255,255,255,0.80) !important;
+            border: 1px solid rgba(255,255,255,0.15) !important;
+            border-left: 3px solid transparent !important;
+            box-shadow: none !important;
+        }
+        section[data-testid="stSidebar"] .stButton > button p,
+        section[data-testid="stSidebar"] .stButton > button span,
+        section[data-testid="stSidebar"] .stButton > button div {
+            color: rgba(255,255,255,0.80) !important;
+        }
+        section[data-testid="stSidebar"] .stButton > button:hover {
+            background-color: rgba(201,168,76,0.18) !important;
+            color: var(--gold-400) !important;
+            border-left-color: var(--gold-500) !important;
+        }
+        section[data-testid="stSidebar"] .stButton > button:hover p,
+        section[data-testid="stSidebar"] .stButton > button:hover span {
+            color: var(--gold-400) !important;
+        }
+
         section[data-testid="stSidebar"] .stSelectbox label,
         section[data-testid="stSidebar"] .stRadio label {
             color: var(--gold-300) !important;
