@@ -1,7 +1,7 @@
 # ETAT ACTUEL — WIB CFA
 > Mis à jour automatiquement à la fin de chaque session Claude Code.
 
-**Date**: 2026-05-17 (session 16)  
+**Date**: 2026-05-17 (session 17)  
 **Commit**: 56ecb94 — "UX: timer permanent Quiz, bouton Valider, sidebar auto-fermeture"  
 **Branch**: master → Streamlit Cloud (auto-deploy)
 
@@ -12,9 +12,11 @@
 | Métrique | Valeur |
 |---|---|
 | Total questions | 7,249 |
-| Complètes (table + explication) | 7,245 |
+| Complètes (table + explication) | 7,214 |
 | Tables manquantes | 4 (faux positifs Kaplan — aucune action) |
-| Explications manquantes | 0 |
+| Explications manquantes | 31 (Extra_QB — voir note ci-dessous) |
+
+**Note Extra_QB** : 242/333 explications corrigées avec texte verbatim du PDF. 31 restantes vidées (explications mélangées du mauvais topic détectées et supprimées). 56 avec explication plausible non vérifiable sans re-parser le PDF.
 
 **Audit cmd**: `python scripts/audit_questions.py`
 
@@ -36,6 +38,22 @@
 - **Scripts**: `scripts/render_table_pages.py` → images PNG, `scripts/rerender_wrong_pages.py` → correction pages erronées, `scripts/patch_uworld_tables.py` → mise à jour Supabase
 - **Résultat**: 28/28 tables insérées dans `question_en`
 - **Méthode**: lecture images PDF avec Claude Vision (inclus dans abonnement Pro)
+
+---
+
+## Travaux terminés (session 17)
+
+### ✅ Audit et correction des explications Extra_QB
+- **Diagnostic** : Les 333 questions Extra_QB avaient des explications mélangées (données de topics erronés). L'import original ne capturait pas les explications (`expl: ""`), puis un patch ultérieur les avait insérées en désordre.
+- **Script** : `scripts/fix_extra_qb_explanations.py`
+- **Résultat** : 242/333 explications remplacées par le texte verbatim du PDF (`EXTRA 700 MCQs.pdf`, pages 128-214). 31 explications hors-topic détectées et supprimées (préférable à une explication trompeuse). 56 conservées (plausibles, non vérifiables sans re-parsing).
+- **Méthode** : Extraction pdfplumber + de-tripling (police PDF dupliquée) + matching multi-niveaux (120/80/60/40/25 chars normalisés)
+- **État fidélité par source** :
+  - Kaplan (1000 Q) : ✅ verbatim — PDFs texte, regex `Explanation\n...(Module X.Y)`
+  - UWorld (1000 Q) : ✅ verbatim — PDFs texte, entre `Explanation\n` et `Things to remember:`
+  - Kevin_Mock (180 Q) : ✅ verbatim — PDFs texte, après lettre réponse
+  - Extra_QB (333 Q) : 242 verbatim ✅, 56 non vérifiés, 31 manquants
+  - CFA_WEB QB (1000 Q) : Claude Vision extraction depuis scans — fidèle mais non byte-for-byte verbatim (seule option sans OCR)
 
 ---
 
