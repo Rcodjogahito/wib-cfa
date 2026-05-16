@@ -16,8 +16,8 @@ jobs:
     steps:
       - name: Install Playwright
         run: |
-          pip install playwright --quiet
-          playwright install chromium --with-deps --quiet
+          pip install playwright -q
+          playwright install chromium --with-deps
 
       - name: Check and wake up WIB CFA
         run: |
