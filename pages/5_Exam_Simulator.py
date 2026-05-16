@@ -293,7 +293,7 @@ def _exam_timer():
     _name = _s.get("exam_name", "")
     _ans_count = sum(1 for v in _answers.values() if v)
 
-    _color = "#B52B2B" if _remaining < 600 else ("#C9A84C" if _remaining < 1800 else "#0B2545")
+    _color = "#B52B2B" if _remaining < 600 else ("#C9A84C" if _remaining < 1800 else "#FFFFFF")
     _h = int(_remaining // 3600)
     _m = int((_remaining % 3600) // 60)
     _sec = int(_remaining % 60)
@@ -329,23 +329,6 @@ if answered_count >= total // 2:
 
 st.progress(idx / total, text=f"Question {idx + 1} / {total}")
 
-nav_cols = st.columns([1, 4, 1, 1])
-if nav_cols[0].button("← Préc", disabled=(idx == 0)):
-    state["exam_idx"] = idx - 1
-    st.rerun()
-if nav_cols[2].button("Suiv →", disabled=(idx >= total - 1)):
-    state["exam_idx"] = idx + 1
-    st.rerun()
-
-flag_label = "Marquée ★" if idx in flagged else "Marquer"
-if nav_cols[3].button(flag_label):
-    if idx in flagged:
-        flagged.discard(idx)
-    else:
-        flagged.add(idx)
-    state["exam_flagged"] = flagged
-    st.rerun()
-
 # ── Question ──────────────────────────────────────────────────────────────────
 
 q = questions[idx]
@@ -359,9 +342,7 @@ st.markdown(
     f'<div class="progress-label">Q{idx + 1} / {total}</div>',
     unsafe_allow_html=True,
 )
-st.markdown('<div class="question-card">', unsafe_allow_html=True)
 render_question(q["question_en"])
-st.markdown('</div>', unsafe_allow_html=True)
 
 st.markdown('<div class="answer-label">Select your answer</div>', unsafe_allow_html=True)
 current_answer = answers.get(idx)
@@ -387,6 +368,23 @@ for letter, text in options:
     ):
         state["exam_answers"][idx] = letter
         st.rerun()
+
+nav_cols = st.columns([1, 4, 1, 1])
+if nav_cols[0].button("← Préc", disabled=(idx == 0)):
+    state["exam_idx"] = idx - 1
+    st.rerun()
+if nav_cols[2].button("Suiv →", disabled=(idx >= total - 1)):
+    state["exam_idx"] = idx + 1
+    st.rerun()
+
+flag_label = "Marquée ★" if idx in flagged else "Marquer"
+if nav_cols[3].button(flag_label):
+    if idx in flagged:
+        flagged.discard(idx)
+    else:
+        flagged.add(idx)
+    state["exam_flagged"] = flagged
+    st.rerun()
 
 # ── Flagged questions mini-map ────────────────────────────────────────────────
 

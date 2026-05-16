@@ -149,20 +149,7 @@ def _run_diagnostic():
     diff = q.get("difficulty", "medium")
     diff_badge = f'<span class="difficulty-{diff}">{diff.capitalize()}</span>'
     st.markdown(f"{topic_badge} {diff_badge}", unsafe_allow_html=True)
-    st.markdown('<div class="question-card">', unsafe_allow_html=True)
     render_question(q["question_en"])
-    st.markdown('</div>', unsafe_allow_html=True)
-
-    # Navigation bar
-    dnav1, _dmid, dnav3 = st.columns([1, 4, 1])
-    with dnav1:
-        if st.button("← Préc", disabled=(idx == 0), use_container_width=True, key="dnav_prev"):
-            state["diag_view_idx"] -= 1
-            st.rerun()
-    with dnav3:
-        if st.button("Suiv →", disabled=(idx >= total - 1), use_container_width=True, key="dnav_next"):
-            state["diag_view_idx"] += 1
-            st.rerun()
 
     st.markdown('<div class="answer-label">Select your answer</div>', unsafe_allow_html=True)
 
@@ -216,6 +203,17 @@ def _run_diagnostic():
             next_q = next((i for i in range(total) if i not in answered_set), None)
             if next_q is not None:
                 state["diag_view_idx"] = next_q
+            st.rerun()
+
+    # Navigation bar
+    dnav1, _dmid, dnav3 = st.columns([1, 4, 1])
+    with dnav1:
+        if st.button("← Préc", disabled=(idx == 0), use_container_width=True, key="dnav_prev"):
+            state["diag_view_idx"] -= 1
+            st.rerun()
+    with dnav3:
+        if st.button("Suiv →", disabled=(idx >= total - 1), use_container_width=True, key="dnav_next"):
+            state["diag_view_idx"] += 1
             st.rerun()
 
     # ── Reset section ──────────────────────────────────────────────────────

@@ -71,7 +71,7 @@ if not state["quiz_active"]:
     with col3:
         n_questions = st.selectbox("Nombre de questions", [10, 20, 30], index=1)
 
-    use_timer = st.checkbox("Timer (1 min 30 s / question)", value=False)
+    use_timer = st.checkbox("Chronomètre global (1 min 30 s / question)", value=False)
 
     if st.button("Lancer le quiz", use_container_width=True, type="primary"):
         topic = None if topic_choice == "All (Adaptatif)" else topic_choice
@@ -88,10 +88,11 @@ if not state["quiz_active"]:
             state["quiz_active"] = True
             state["quiz_questions"] = questions
             state["quiz_idx"] = 0
-            state["quiz_answers"] = {}      # {idx: {"selected": letter, "correct": bool}}
-            state["quiz_q_starts"] = {}     # {idx: first_view_timestamp}
+            state["quiz_answers"] = {}
+            state["quiz_q_starts"] = {}
             state["quiz_start"] = time.time()
             state["quiz_use_timer"] = use_timer
+            state["quiz_total_duration"] = len(questions) * 90 if use_timer else 0
             state["quiz_topic"] = topic_choice
             st.rerun()
     st.stop()
@@ -198,6 +199,7 @@ if idx >= total:
         state["quiz_idx"] = 0
         state["quiz_answers"] = {}
         state["quiz_q_starts"] = {0: time.time()}
+        state["quiz_start"] = time.time()
         state.pop("quiz_saved", None)
         st.rerun()
     if col2.button("Nouveau quiz", use_container_width=True, type="primary"):
@@ -215,27 +217,29 @@ q = questions[idx]
 current = answers.get(idx)   # None or {"selected": letter, "correct": bool}
 answered = current is not None
 
-# Timer (unanswered questions only — live countdown via fragment)
-if state.get("quiz_use_timer") and not answered:
+# Chronomètre global de session (fragment live, toujours visible quand actif)
+if state.get("quiz_use_timer"):
     @st.fragment(run_every=1)
-    def _quiz_timer():
-        _idx = st.session_state.get("quiz_idx", 0)
-        if _idx in st.session_state.get("quiz_answers", {}):
+    def _quiz_session_timer():
+        _total_dur = st.session_state.get("quiz_total_duration", 0)
+        if _total_dur <= 0:
             return
-        _starts = st.session_state.get("quiz_q_starts", {})
-        _elapsed = time.time() - _starts.get(_idx, time.time())
-        _remaining = max(0, 90 - _elapsed)
-        _color = "#B52B2B" if _remaining < 20 else "#0B2545"
+        _start = st.session_state.get("quiz_start", time.time())
+        _elapsed = time.time() - _start
+        _remaining = max(0, _total_dur - _elapsed)
+        _color = "#B52B2B" if _remaining < 60 else ("#C9A84C" if _remaining < 300 else "#0B2545")
+        _m = int(_remaining // 60)
+        _s = int(_remaining % 60)
         st.markdown(
-            f'<div style="text-align:right;font-family:monospace;font-size:1.2rem;'
-            f'color:{_color};font-weight:700;">'
-            f'⏱ {int(_remaining // 60):02d}:{int(_remaining % 60):02d}</div>',
+            f'<div style="text-align:right;font-family:monospace;font-size:1.1rem;'
+            f'color:{_color};font-weight:700;margin-bottom:0.4rem;">'
+            f'⏱ {_m:02d}:{_s:02d} restantes</div>',
             unsafe_allow_html=True,
         )
         if _remaining == 0:
-            st.session_state["quiz_idx"] += 1
+            st.session_state["quiz_idx"] = len(st.session_state.get("quiz_questions", []))
             st.rerun()
-    _quiz_timer()
+    _quiz_session_timer()
 
 # Progress
 st.markdown(
@@ -257,21 +261,7 @@ src_badge = (
 ) if source else ""
 st.markdown(f"{topic_badge} {diff_badge}{src_badge}", unsafe_allow_html=True)
 
-st.markdown('<div class="question-card">', unsafe_allow_html=True)
 render_question(q["question_en"])
-st.markdown('</div>', unsafe_allow_html=True)
-
-# ── Navigation bar ────────────────────────────────────────────────────────────
-nav1, _nav_mid, nav3 = st.columns([1, 4, 1])
-with nav1:
-    if st.button("← Préc", disabled=(idx == 0), use_container_width=True, key="qnav_prev"):
-        state["quiz_idx"] -= 1
-        st.rerun()
-with nav3:
-    next_label = "Résultats →" if idx == total - 1 else "Suiv →"
-    if st.button(next_label, use_container_width=True, key="qnav_next"):
-        state["quiz_idx"] += 1
-        st.rerun()
 
 # ── Answer buttons ────────────────────────────────────────────────────────────
 st.markdown('<div class="answer-label">Select your answer</div>', unsafe_allow_html=True)
@@ -313,6 +303,18 @@ if answered:
     if expl_parts:
         st.markdown(f'<div class="explanation-box">{"<br><br>".join(expl_parts)}</div>', unsafe_allow_html=True)
 
+# ── Navigation bar ────────────────────────────────────────────────────────────
+nav1, _nav_mid, nav3 = st.columns([1, 4, 1])
+with nav1:
+    if st.button("← Préc", disabled=(idx == 0), use_container_width=True, key="qnav_prev"):
+        state["quiz_idx"] -= 1
+        st.rerun()
+with nav3:
+    next_label = "Résultats →" if idx == total - 1 else "Suiv →"
+    if st.button(next_label, use_container_width=True, key="qnav_next"):
+        state["quiz_idx"] += 1
+        st.rerun()
+
 # ── Bottom actions ────────────────────────────────────────────────────────────
 st.markdown("---")
 _tcol, _rcol = st.columns([3, 1])
@@ -331,5 +333,6 @@ with _rcol:
         state["quiz_idx"] = 0
         state["quiz_answers"] = {}
         state["quiz_q_starts"] = {0: time.time()}
+        state["quiz_start"] = time.time()
         state.pop("quiz_saved", None)
         st.rerun()
