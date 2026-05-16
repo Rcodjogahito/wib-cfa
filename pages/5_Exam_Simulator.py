@@ -277,31 +277,43 @@ questions = state["exam_questions"]
 cfg = state["exam_config"]
 idx = state.get("exam_idx", 0)
 total = len(questions)
-elapsed = time.time() - state["exam_start"]
-remaining = max(0, cfg["duration_sec"] - elapsed)
 answers = state["exam_answers"]
 flagged = state["exam_flagged"]
 
-# ── Timer bar ─────────────────────────────────────────────────────────────────
+# ── Timer bar — live countdown via fragment ───────────────────────────────────
 
-timer_color = "#B52B2B" if remaining < 600 else ("#C9A84C" if remaining < 1800 else "#0B2545")
-h = int(remaining // 3600)
-m = int((remaining % 3600) // 60)
-s = int(remaining % 60)
-st.markdown(
-    f'<div style="display:flex;justify-content:space-between;align-items:center;'
-    f'background:#0B2545;padding:0.6rem 1.2rem;border-radius:8px;margin-bottom:1rem;">'
-    f'<span style="color:#C9A84C;font-weight:700;">{state["exam_name"]}</span>'
-    f'<span style="font-family:monospace;font-size:1.4rem;color:{timer_color};font-weight:700;">'
-    f'⏱ {h:02d}:{m:02d}:{s:02d}</span>'
-    f'<span style="color:rgba(255,255,255,0.7);">{sum(1 for v in answers.values() if v)} / {total} répondues</span>'
-    f'</div>',
-    unsafe_allow_html=True,
-)
+@st.fragment(run_every=1)
+def _exam_timer():
+    _s = st.session_state
+    _cfg = _s.get("exam_config", {})
+    _elapsed = time.time() - _s.get("exam_start", time.time())
+    _remaining = max(0, _cfg.get("duration_sec", 0) - _elapsed)
+    _answers = _s.get("exam_answers", {})
+    _total = len(_s.get("exam_questions", []))
+    _name = _s.get("exam_name", "")
+    _ans_count = sum(1 for v in _answers.values() if v)
 
-if remaining <= 0 and not state.get("exam_submitted"):
-    state["exam_submitted"] = True
-    st.rerun()
+    _color = "#B52B2B" if _remaining < 600 else ("#C9A84C" if _remaining < 1800 else "#0B2545")
+    _h = int(_remaining // 3600)
+    _m = int((_remaining % 3600) // 60)
+    _sec = int(_remaining % 60)
+
+    st.markdown(
+        f'<div style="display:flex;justify-content:space-between;align-items:center;'
+        f'background:#0B2545;padding:0.6rem 1.2rem;border-radius:8px;margin-bottom:1rem;">'
+        f'<span style="color:#C9A84C;font-weight:700;">{_name}</span>'
+        f'<span style="font-family:monospace;font-size:1.4rem;color:{_color};font-weight:700;">'
+        f'⏱ {_h:02d}:{_m:02d}:{_sec:02d}</span>'
+        f'<span style="color:rgba(255,255,255,0.7);">{_ans_count} / {_total} répondues</span>'
+        f'</div>',
+        unsafe_allow_html=True,
+    )
+
+    if _remaining <= 0 and not _s.get("exam_submitted"):
+        _s["exam_submitted"] = True
+        st.rerun()
+
+_exam_timer()
 
 answered_count = sum(1 for v in answers.values() if v)
 

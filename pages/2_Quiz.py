@@ -215,20 +215,27 @@ q = questions[idx]
 current = answers.get(idx)   # None or {"selected": letter, "correct": bool}
 answered = current is not None
 
-# Timer (unanswered questions only)
+# Timer (unanswered questions only — live countdown via fragment)
 if state.get("quiz_use_timer") and not answered:
-    elapsed = time.time() - q_starts.get(idx, time.time())
-    remaining = max(0, 90 - elapsed)
-    timer_color = "#B52B2B" if remaining < 20 else "#0B2545"
-    st.markdown(
-        f'<div style="text-align:right;font-family:monospace;font-size:1.2rem;'
-        f'color:{timer_color};font-weight:700;">'
-        f'⏱ {int(remaining // 60):02d}:{int(remaining % 60):02d}</div>',
-        unsafe_allow_html=True,
-    )
-    if remaining == 0:
-        state["quiz_idx"] += 1
-        st.rerun()
+    @st.fragment(run_every=1)
+    def _quiz_timer():
+        _idx = st.session_state.get("quiz_idx", 0)
+        if _idx in st.session_state.get("quiz_answers", {}):
+            return
+        _starts = st.session_state.get("quiz_q_starts", {})
+        _elapsed = time.time() - _starts.get(_idx, time.time())
+        _remaining = max(0, 90 - _elapsed)
+        _color = "#B52B2B" if _remaining < 20 else "#0B2545"
+        st.markdown(
+            f'<div style="text-align:right;font-family:monospace;font-size:1.2rem;'
+            f'color:{_color};font-weight:700;">'
+            f'⏱ {int(_remaining // 60):02d}:{int(_remaining % 60):02d}</div>',
+            unsafe_allow_html=True,
+        )
+        if _remaining == 0:
+            st.session_state["quiz_idx"] += 1
+            st.rerun()
+    _quiz_timer()
 
 # Progress
 st.markdown(
