@@ -836,7 +836,7 @@ QUESTIONS = [
         "option_b": "9%",
         "option_c": "15%",
         "correct_answer": "A",
-        "explanation_en": "CAPM: E(R) = 3% + 1.5 × 6% = 3% + 9% = 12%.",
+        "explanation_en": "CAPM: E(R) = Rf + Beta x MRP = 3% + 1.5 x 6% = 3% + 9% = 12%. Option B (9%) omits the risk-free rate. Option C (15%) incorrectly uses 1.5 x (6%+3%) instead of applying beta only to the market risk premium.",
         "source": "WIB Internal",
     },
     {
@@ -1234,6 +1234,49 @@ QUESTIONS = [
         "option_c": "The lower of the two individual standard deviations.",
         "correct_answer": "B",
         "explanation_en": "When correlation = -1, two assets can be combined in specific proportions to eliminate all portfolio risk (variance = 0), achieving a risk-free portfolio.",
+        "source": "WIB Internal",
+    },
+    # ══════════════════════════════════════════════════════════
+    # ADDITIONAL QUANTITATIVE METHODS — TWR vs MWR
+    # ══════════════════════════════════════════════════════════
+    {
+        "topic": "Quantitative Methods",
+        "subtopic": "Time Value of Money",
+        "difficulty": "hard",
+        "question_en": (
+            "A charity foundation invests donations it has received at the beginning of each year."
+            " The foundation invested exactly $1 million at the start of each of four consecutive years."
+            " The fund had the following annual returns:\n\n"
+            "| Year | Annual Return |\n"
+            "|---|---|\n"
+            "| Year 1 | +8% |\n"
+            "| Year 2 | +8% |\n"
+            "| Year 3 | +7% |\n"
+            "| Year 4 | +8% |\n\n"
+            "Over the four years, the fund most likely had an annual:"
+        ),
+        "option_a": "time-weighted return of 7.75%.",
+        "option_b": "money-weighted return of 7.27%.",
+        "option_c": "money-weighted return of 7.70%.",
+        "correct_answer": "A",
+        "explanation_en": (
+            "Time-Weighted Return (TWR) is the geometric mean of each year's holding-period return, "
+            "making it independent of the timing and size of external cash flows (donations):\n\n"
+            "TWR = [(1.08)(1.08)(1.07)(1.08)]^(1/4) - 1 = (1.3475)^(0.25) - 1 = 7.75%\n\n"
+            "The actual Money-Weighted Return (IRR of cash flows) is approximately 7.70% (option C), "
+            "not 7.27% (option B). However, the CFA curriculum specifies that TWR is the correct "
+            "measure of investment manager performance because it eliminates the distorting effect "
+            "of the timing of external cash flows (here, the annual $1M donations). "
+            "Portfolio managers are judged on their investment decisions, not on when clients "
+            "contribute funds. Option A correctly states the TWR of 7.75%, computed as:\n\n"
+            "| Year | Start Value | Return | End Value |\n"
+            "|---|---|---|---|\n"
+            "| 1 | $1.0000M | +8% | $1.0800M |\n"
+            "| 2 | $2.0800M* | +8% | $2.2464M |\n"
+            "| 3 | $3.2464M* | +7% | $3.4736M |\n"
+            "| 4 | $4.4736M* | +8% | $4.8315M |\n\n"
+            "*Includes the new $1M donation at the start of each year."
+        ),
         "source": "WIB Internal",
     },
 ]
