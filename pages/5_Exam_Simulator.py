@@ -240,9 +240,10 @@ if state.get("exam_submitted"):
         if not r["correct"]:
             _expl_en = q.get("explanation_en", "")
             _expl_fr = q.get("explanation_fr", "")
+            _has_both = bool(_expl_en) and bool(_expl_fr)
             _expl_parts = []
             if _expl_en:
-                _expl_parts.append(f'<b>[EN]</b> {_expl_en}')
+                _expl_parts.append(f'<b>[EN]</b> {_expl_en}' if _has_both else _expl_en)
             if _expl_fr:
                 _expl_parts.append(f'<b>[FR]</b> {_expl_fr}')
             if _expl_parts:

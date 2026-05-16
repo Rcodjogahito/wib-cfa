@@ -177,7 +177,7 @@ else:
         f'<div class="flashcard-back">'
         f'<div style="font-size:1.2rem;font-weight:700;color:#0B2545;margin-bottom:0.8rem;">'
         f'{card["concept_en"]}</div>'
-        f'<div style="margin-bottom:0.6rem;"><b>[EN]</b> {card["definition_en"]}</div>'
+        f'<div style="margin-bottom:0.6rem;">{"<b>[EN]</b> " if card.get("definition_fr") else ""}{card["definition_en"]}</div>'
         + (f'<div style="color:#555;"><b>[FR]</b> {card["definition_fr"]}</div>' if card.get("definition_fr") else "")
         + (f'<div style="margin-top:0.8rem;color:#1A7F4B;font-style:italic;">'
            f'<b>Example:</b> {card["example_en"]}</div>' if card.get("example_en") else "")

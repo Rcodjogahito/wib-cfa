@@ -187,8 +187,9 @@ if idx >= total:
             st.markdown(f'<div class="{cls}">{icon} Q{i+1}. {preview}</div>', unsafe_allow_html=True)
             if not r["correct"]:
                 expl_parts = []
+                _has_both = r.get("explanation_en") and r.get("explanation_fr")
                 if r.get("explanation_en"):
-                    expl_parts.append(f'<b>[EN]</b> {r["explanation_en"]}')
+                    expl_parts.append(f'<b>[EN]</b> {r["explanation_en"]}' if _has_both else r["explanation_en"])
                 if r.get("explanation_fr"):
                     expl_parts.append(f'<b>[FR]</b> {r["explanation_fr"]}')
                 if expl_parts:
@@ -296,8 +297,9 @@ if answered:
             unsafe_allow_html=True,
         )
     expl_parts = []
+    _has_both = q.get("explanation_en") and q.get("explanation_fr")
     if q.get("explanation_en"):
-        expl_parts.append(f'<b>[EN]</b> {q["explanation_en"]}')
+        expl_parts.append(f'<b>[EN]</b> {q["explanation_en"]}' if _has_both else q["explanation_en"])
     if q.get("explanation_fr"):
         expl_parts.append(f'<b>[FR]</b> {q["explanation_fr"]}')
     if expl_parts:
