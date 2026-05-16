@@ -151,7 +151,7 @@ def _run_diagnostic():
     st.markdown(f"{topic_badge} {diff_badge}", unsafe_allow_html=True)
     render_question(q["question_en"])
 
-    st.markdown('<div class="answer-label">Select your answer</div>', unsafe_allow_html=True)
+    st.markdown('<div class="answer-label">Sélectionnez votre réponse</div>', unsafe_allow_html=True)
 
     if is_answered and prev:
         # Read-only: show selected answer highlighted
@@ -166,6 +166,8 @@ def _run_diagnostic():
                 f'<div class="answer-wrong">Incorrect — La bonne réponse est <b>{q["correct_answer"]}</b></div>',
                 unsafe_allow_html=True,
             )
+        if q.get("explanation_en"):
+            st.markdown(f'<div class="explanation-box">{q["explanation_en"]}</div>', unsafe_allow_html=True)
     else:
         answered = None
         if st.button(f"A.  {q['option_a']}", key=f"d_a_{idx}", use_container_width=True):

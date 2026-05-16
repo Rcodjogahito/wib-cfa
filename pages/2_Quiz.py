@@ -265,7 +265,7 @@ st.markdown(f"{topic_badge} {diff_badge}{src_badge}", unsafe_allow_html=True)
 render_question(q["question_en"])
 
 # ── Answer buttons ────────────────────────────────────────────────────────────
-st.markdown('<div class="answer-label">Select your answer</div>', unsafe_allow_html=True)
+st.markdown('<div class="answer-label">Sélectionnez votre réponse</div>', unsafe_allow_html=True)
 for letter, option in [("A", q["option_a"]), ("B", q["option_b"]), ("C", q["option_c"])]:
     prefix = "✓  " if answered and current["selected"] == letter else ""
     if st.button(
