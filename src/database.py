@@ -597,13 +597,17 @@ class Database:
         if self.sb:
             res = (self.sb.table("user_sessions").select("*")
                    .eq("user_id", user_id)
+                   .neq("session_type", "diag_progress")
+                   .neq("session_type", "leitner_state")
                    .order("completed_at", desc=True)
                    .execute())
             return res.data or []
         conn = _get_sqlite()
         cur = conn.cursor()
         cur.execute(
-            "SELECT * FROM user_sessions WHERE user_id=? ORDER BY completed_at DESC",
+            "SELECT * FROM user_sessions WHERE user_id=? "
+            "AND session_type NOT IN ('diag_progress','leitner_state') "
+            "ORDER BY completed_at DESC",
             (user_id,)
         )
         data = [dict(r) for r in cur.fetchall()]
