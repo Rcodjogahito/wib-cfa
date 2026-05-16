@@ -1,17 +1,73 @@
 name: Keep-alive WIB CFA
 
-# Pings the Streamlit app daily to prevent dormancy (apps sleep after ~7 days).
+# Runs every 6 hours. When the app is awake, registers real traffic.
+# When sleeping, uses Playwright to click "Yes, get this app back up!".
 
 on:
   schedule:
-    - cron: "0 7 * * *"   # 07:00 UTC every day
-  workflow_dispatch:
+    - cron: "0 */6 * * *"   # 00:00 / 06:00 / 12:00 / 18:00 UTC
+  workflow_dispatch:          # Manual trigger from GitHub Actions tab
 
 jobs:
-  ping:
+  wake-up:
     runs-on: ubuntu-latest
+    timeout-minutes: 10
+
     steps:
-      - name: Ping WIB CFA
+      - name: Install Playwright
         run: |
-          STATUS=$(curl -s -o /dev/null -w "%{http_code}" https://wib-cfa.streamlit.app/)
-          echo "HTTP status: $STATUS"
+          pip install playwright --quiet
+          playwright install chromium --with-deps --quiet
+
+      - name: Check and wake up WIB CFA
+        run: |
+          python3 - <<'PYEOF'
+          import asyncio, sys
+          from playwright.async_api import async_playwright, TimeoutError as PwTimeout
+
+          APP_URL = "https://wib-cfa.streamlit.app/"
+
+          async def main():
+              async with async_playwright() as p:
+                  browser = await p.chromium.launch(args=["--no-sandbox", "--disable-dev-shm-usage"])
+                  page = await browser.new_page(
+                      user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+                                 "AppleWebKit/537.36 (KHTML, like Gecko) "
+                                 "Chrome/124.0.0.0 Safari/537.36"
+                  )
+
+                  print(f"Visiting {APP_URL} ...")
+                  try:
+                      await page.goto(APP_URL, timeout=60_000, wait_until="domcontentloaded")
+                  except PwTimeout:
+                      print("Timeout on initial load — app may be starting up.")
+                      await browser.close()
+                      sys.exit(0)
+
+                  content = await page.content()
+
+                  if "Zzzz" in content or "gone to sleep" in content:
+                      print("App is sleeping — clicking wake button ...")
+                      try:
+                          btn = page.get_by_text("Yes, get this app back up!")
+                          await btn.wait_for(timeout=10_000)
+                          await btn.click()
+                          print("Wake button clicked. Waiting 60 s for boot ...")
+                          await page.wait_for_timeout(60_000)
+                          content2 = await page.content()
+                          if "Zzzz" in content2 or "gone to sleep" in content2:
+                              print("ERROR: app still sleeping after wake attempt.")
+                              await browser.close()
+                              sys.exit(1)
+                          else:
+                              print("SUCCESS: app is now awake!")
+                      except PwTimeout:
+                          print("Wake button not found; retrying with reload ...")
+                          await page.reload(timeout=60_000)
+                  else:
+                      print("App is awake and responding — no action needed.")
+
+                  await browser.close()
+
+          asyncio.run(main())
+          PYEOF
