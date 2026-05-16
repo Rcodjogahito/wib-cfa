@@ -193,13 +193,19 @@ if idx >= total:
                 if expl_parts:
                     st.markdown(f'<div class="explanation-box">{"<br><br>".join(expl_parts)}</div>', unsafe_allow_html=True)
 
-    col1, col2 = st.columns(2)
-    if col1.button("Nouveau quiz", use_container_width=True, type="primary"):
+    col1, col2, col3 = st.columns(3)
+    if col1.button("Recommencer", use_container_width=True):
+        state["quiz_idx"] = 0
+        state["quiz_answers"] = {}
+        state["quiz_q_starts"] = {0: time.time()}
+        state.pop("quiz_saved", None)
+        st.rerun()
+    if col2.button("Nouveau quiz", use_container_width=True, type="primary"):
         for k in ["quiz_active", "quiz_questions", "quiz_idx", "quiz_answers",
                   "quiz_q_starts", "quiz_start", "quiz_use_timer", "quiz_topic", "quiz_saved"]:
             state.pop(k, None)
         st.rerun()
-    if col2.button("Voir la progression", use_container_width=True):
+    if col3.button("Voir la progression", use_container_width=True):
         st.switch_page("pages/4_Progress.py")
     st.stop()
 
@@ -300,14 +306,23 @@ if answered:
     if expl_parts:
         st.markdown(f'<div class="explanation-box">{"<br><br>".join(expl_parts)}</div>', unsafe_allow_html=True)
 
-# ── End quiz button ───────────────────────────────────────────────────────────
-if answered_count > 0:
-    st.markdown("---")
-    all_done = answered_count == total
-    if st.button(
-        "Terminer le quiz" if all_done else f"Terminer le quiz ({answered_count}/{total} répondue(s))",
-        use_container_width=True,
-        type="primary" if all_done else "secondary",
-    ):
-        state["quiz_idx"] = total
+# ── Bottom actions ────────────────────────────────────────────────────────────
+st.markdown("---")
+_tcol, _rcol = st.columns([3, 1])
+with _tcol:
+    if answered_count > 0:
+        all_done = answered_count == total
+        if st.button(
+            "Terminer le quiz" if all_done else f"Terminer le quiz ({answered_count}/{total} répondues)",
+            use_container_width=True,
+            type="primary" if all_done else "secondary",
+        ):
+            state["quiz_idx"] = total
+            st.rerun()
+with _rcol:
+    if st.button("Recommencer", use_container_width=True, key="quiz_restart"):
+        state["quiz_idx"] = 0
+        state["quiz_answers"] = {}
+        state["quiz_q_starts"] = {0: time.time()}
+        state.pop("quiz_saved", None)
         st.rerun()

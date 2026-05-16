@@ -251,14 +251,23 @@ if state.get("exam_submitted"):
                     unsafe_allow_html=True,
                 )
 
-    btn1, btn2 = st.columns(2)
-    if btn1.button("Nouvel examen", use_container_width=True, type="primary"):
+    btn1, btn2, btn3 = st.columns(3)
+    if btn1.button("Recommencer le même examen", use_container_width=True):
+        state["exam_idx"] = 0
+        state["exam_answers"] = {}
+        state["exam_flagged"] = set()
+        state["exam_start"] = time.time()
+        state["exam_submitted"] = False
+        state.pop("exam_saved", None)
+        state.pop("exam_restart_confirm", None)
+        st.rerun()
+    if btn2.button("Nouvel examen", use_container_width=True, type="primary"):
         for k in ["exam_active", "exam_config", "exam_name", "exam_questions",
                   "exam_idx", "exam_answers", "exam_flagged", "exam_start",
-                  "exam_submitted", "exam_saved"]:
+                  "exam_submitted", "exam_saved", "exam_restart_confirm"]:
             state.pop(k, None)
         st.rerun()
-    if btn2.button("Voir la progression", use_container_width=True):
+    if btn3.button("Voir la progression", use_container_width=True):
         st.switch_page("pages/4_Progress.py")
     st.stop()
 
@@ -385,6 +394,26 @@ if unanswered > 0:
 if st.button("Soumettre l'examen", type="primary", use_container_width=True):
     state["exam_submitted"] = True
     st.rerun()
+
+if state.get("exam_restart_confirm"):
+    st.warning("Recommencer effacera toutes vos réponses et remettra le chronomètre à zéro.")
+    rc1, rc2 = st.columns(2)
+    if rc1.button("Annuler", use_container_width=True, key="exam_restart_cancel"):
+        state.pop("exam_restart_confirm", None)
+        st.rerun()
+    if rc2.button("Oui, recommencer", use_container_width=True, type="primary", key="exam_restart_yes"):
+        state["exam_idx"] = 0
+        state["exam_answers"] = {}
+        state["exam_flagged"] = set()
+        state["exam_start"] = time.time()
+        state["exam_submitted"] = False
+        state.pop("exam_saved", None)
+        state.pop("exam_restart_confirm", None)
+        st.rerun()
+else:
+    if st.button("Recommencer l'examen", use_container_width=True, key="exam_restart_btn"):
+        state["exam_restart_confirm"] = True
+        st.rerun()
 
 # ── Question grid navigator ───────────────────────────────────────────────────
 
