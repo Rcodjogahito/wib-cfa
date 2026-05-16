@@ -32,15 +32,15 @@ with st.sidebar:
             unsafe_allow_html=True,
         )
         st.divider()
-    st.page_link("streamlit_app.py", label="Home", icon="🏠")
-    st.page_link("pages/1_Study.py", label="Study Notes", icon="📖")
+    st.page_link("streamlit_app.py", label="Accueil", icon="🏠")
+    st.page_link("pages/1_Study.py", label="Fiches de cours", icon="📖")
     st.page_link("pages/2_Quiz.py", label="Quiz", icon="🎯")
     st.page_link("pages/3_Flashcards.py", label="Flashcards", icon="🃏")
-    st.page_link("pages/4_Progress.py", label="Progress", icon="📈")
-    st.page_link("pages/5_Exam_Simulator.py", label="Exam Simulator", icon="⏱️")
+    st.page_link("pages/4_Progress.py", label="Progression", icon="📈")
+    st.page_link("pages/5_Exam_Simulator.py", label="Simulateur d'examen", icon="⏱️")
     st.divider()
     if st.session_state.get("user_id"):
-        if st.button("Sign out", use_container_width=True):
+        if st.button("Déconnexion", use_container_width=True):
             logout()
 
 if not require_auth():
