@@ -164,8 +164,13 @@ if not flipped:
         f'</div>',
         unsafe_allow_html=True,
     )
-    if st.button("Révéler", use_container_width=True):
+    fc1, fc2 = st.columns([3, 1])
+    if fc1.button("Révéler", use_container_width=True):
         state["fc_flipped"] = True
+        st.rerun()
+    if fc2.button("Passer →", use_container_width=True):
+        state["fc_idx"] += 1
+        state["fc_flipped"] = False
         st.rerun()
 else:
     st.markdown(
@@ -182,7 +187,7 @@ else:
     )
 
     st.markdown("---")
-    col_knew, col_study = st.columns(2)
+    col_knew, col_study, col_skip = st.columns(3)
     if col_knew.button("Je savais", use_container_width=True):
         state["fc_knew"] += 1
         state["fc_idx"] += 1
@@ -202,6 +207,10 @@ else:
         study_ids.add(card["id"])
         state["fc_study_ids"] = list(study_ids)
         db.save_leitner_ids(user["id"], state["fc_study_ids"])
+        st.rerun()
+    if col_skip.button("Passer →", use_container_width=True):
+        state["fc_idx"] += 1
+        state["fc_flipped"] = False
         st.rerun()
 
 # ── Stats bar ─────────────────────────────────────────────────────────────────

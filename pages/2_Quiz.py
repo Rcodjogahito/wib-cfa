@@ -1,6 +1,7 @@
 """
 WIB CFA — Quiz page.
 Topic selection, difficulty filter, immediate bilingual feedback, saves attempts.
+Free navigation between questions — answer in any order.
 """
 
 import time
@@ -87,11 +88,9 @@ if not state["quiz_active"]:
             state["quiz_active"] = True
             state["quiz_questions"] = questions
             state["quiz_idx"] = 0
-            state["quiz_results"] = []
+            state["quiz_answers"] = {}      # {idx: {"selected": letter, "correct": bool}}
+            state["quiz_q_starts"] = {}     # {idx: first_view_timestamp}
             state["quiz_start"] = time.time()
-            state["quiz_q_start"] = time.time()
-            state["quiz_answered"] = False
-            state["quiz_selected"] = None
             state["quiz_use_timer"] = use_timer
             state["quiz_topic"] = topic_choice
             st.rerun()
@@ -102,51 +101,68 @@ if not state["quiz_active"]:
 questions = state["quiz_questions"]
 idx = state["quiz_idx"]
 total = len(questions)
+answers = state.setdefault("quiz_answers", {})
+q_starts = state.setdefault("quiz_q_starts", {})
+
+# Track first view time for this question
+if 0 <= idx < total and idx not in q_starts:
+    q_starts[idx] = time.time()
+
+answered_count = len(answers)
+
+# ── Results screen ────────────────────────────────────────────────────────────
 
 if idx >= total:
-    _show_results = True
-else:
-    _show_results = False
+    results = []
+    for i, q in enumerate(questions):
+        ans = answers.get(i)
+        if ans:
+            results.append({
+                "question_id": questions[i]["id"],
+                "question": questions[i]["question_en"],
+                "topic": questions[i]["topic"],
+                "selected": ans["selected"],
+                "correct_answer": questions[i]["correct_answer"],
+                "correct": ans["correct"],
+                "explanation_en": questions[i].get("explanation_en", ""),
+                "explanation_fr": questions[i].get("explanation_fr", ""),
+            })
 
-if _show_results:
-    # ── Results screen ────────────────────────────────────────────────────────
-    results = state["quiz_results"]
+    total_answered = len(results)
     correct_count = sum(1 for r in results if r["correct"])
-    score_pct = round(correct_count / total * 100, 1) if total else 0
+    score_pct = round(correct_count / total_answered * 100, 1) if total_answered else 0
+    skipped = total - total_answered
     duration = int(time.time() - state["quiz_start"])
 
     if score_pct >= 70:
-        st.markdown(
-            f'<div class="pass-banner">Score : {score_pct:.0f}% — Réussi !</div>',
-            unsafe_allow_html=True,
-        )
+        st.markdown(f'<div class="pass-banner">Score : {score_pct:.0f}% — Réussi !</div>', unsafe_allow_html=True)
     else:
-        st.markdown(
-            f'<div class="fail-banner">Score : {score_pct:.0f}% — À retravailler</div>',
-            unsafe_allow_html=True,
-        )
+        st.markdown(f'<div class="fail-banner">Score : {score_pct:.0f}% — À retravailler</div>', unsafe_allow_html=True)
 
-    _h, _rem = divmod(duration, 3600); _m, _s = divmod(_rem, 60)
+    _h, _rem = divmod(duration, 3600)
+    _m, _s = divmod(_rem, 60)
     _dur_str = f"{_h}h {_m:02d}m {_s:02d}s" if _h else f"{_m}m {_s:02d}s"
-    st.markdown(f"**{correct_count} / {total}** correctes · {_dur_str}")
+    skip_note = f" · {skipped} ignorée(s)" if skipped else ""
+    st.markdown(f"**{correct_count} / {total_answered}** correctes · {_dur_str}{skip_note}")
     st.markdown("---")
 
-    # Save session + progress (once only)
-    if not state.get("quiz_saved"):
-        topic_results: dict = {}
-        for r in results:
-            t = r["topic"]
-            topic_results.setdefault(t, {"correct": 0, "total": 0})
-            topic_results[t]["total"] += 1
-            if r["correct"]:
-                topic_results[t]["correct"] += 1
-        domain_scores = {t: round(v["correct"] / v["total"] * 100, 1)
-                         for t, v in topic_results.items()}
+    # Build per-topic stats
+    topic_results: dict = {}
+    for r in results:
+        t = r["topic"]
+        topic_results.setdefault(t, {"correct": 0, "total": 0})
+        topic_results[t]["total"] += 1
+        if r["correct"]:
+            topic_results[t]["correct"] += 1
+
+    # Save once only
+    if not state.get("quiz_saved") and total_answered > 0:
+        domain_scores = {t: round(v["correct"] / v["total"] * 100, 1) for t, v in topic_results.items()}
         db.save_session(
             user_id=user["id"],
             session_type="quiz",
             topic=state.get("quiz_topic", "All"),
-            total=total,
+            total=total_answered,
             correct=correct_count,
             duration_sec=duration,
             domain_scores=domain_scores,
@@ -154,18 +170,7 @@ if _show_results:
         for t, v in topic_results.items():
             db.update_progress(user["id"], t, v["correct"], v["total"])
         state["quiz_saved"] = True
-    else:
-        topic_results = {}
-        for r in results:
-            t = r["topic"]
-            topic_results.setdefault(t, {"correct": 0, "total": 0})
-            topic_results[t]["total"] += 1
-            if r["correct"]:
-                topic_results[t]["correct"] += 1
-        domain_scores = {t: round(v["correct"] / v["total"] * 100, 1)
-                         for t, v in topic_results.items()}
 
-    # Per-topic breakdown
     st.subheader("Résultats par topic")
     for t, v in topic_results.items():
         pct = round(v["correct"] / v["total"] * 100)
@@ -173,35 +178,25 @@ if _show_results:
         st.markdown(f'<b>{t}</b> — <span style="color:{color};font-weight:700;">{pct}%</span>', unsafe_allow_html=True)
         st.progress(pct / 100)
 
-    # Detailed review
     with st.expander("Revoir toutes les questions"):
         for i, r in enumerate(results):
             icon = "✓" if r["correct"] else "✗"
             cls = "answer-correct" if r["correct"] else "answer-wrong"
             preview = question_first_line(r["question"])
-            st.markdown(
-                f'<div class="{cls}">{icon} Q{i+1}. {preview}</div>',
-                unsafe_allow_html=True,
-            )
+            st.markdown(f'<div class="{cls}">{icon} Q{i+1}. {preview}</div>', unsafe_allow_html=True)
             if not r["correct"]:
-                    expl_en = r.get("explanation_en", "")
-                    expl_fr = r.get("explanation_fr", "")
-                    expl_parts = []
-                    if expl_en:
-                        expl_parts.append(f'<b>[EN]</b> {expl_en}')
-                    if expl_fr:
-                        expl_parts.append(f'<b>[FR]</b> {expl_fr}')
-                    if expl_parts:
-                        st.markdown(
-                            f'<div class="explanation-box">{"<br><br>".join(expl_parts)}</div>',
-                            unsafe_allow_html=True,
-                        )
+                expl_parts = []
+                if r.get("explanation_en"):
+                    expl_parts.append(f'<b>[EN]</b> {r["explanation_en"]}')
+                if r.get("explanation_fr"):
+                    expl_parts.append(f'<b>[FR]</b> {r["explanation_fr"]}')
+                if expl_parts:
+                    st.markdown(f'<div class="explanation-box">{"<br><br>".join(expl_parts)}</div>', unsafe_allow_html=True)
 
     col1, col2 = st.columns(2)
     if col1.button("Nouveau quiz", use_container_width=True, type="primary"):
-        for k in ["quiz_active", "quiz_questions", "quiz_idx", "quiz_results",
-                  "quiz_start", "quiz_q_start", "quiz_answered", "quiz_selected",
-                  "quiz_use_timer", "quiz_topic", "quiz_saved"]:
+        for k in ["quiz_active", "quiz_questions", "quiz_idx", "quiz_answers",
+                  "quiz_q_starts", "quiz_start", "quiz_use_timer", "quiz_topic", "quiz_saved"]:
             state.pop(k, None)
         st.rerun()
     if col2.button("Voir la progression", use_container_width=True):
@@ -211,10 +206,12 @@ if _show_results:
 # ── Current question ──────────────────────────────────────────────────────────
 
 q = questions[idx]
+current = answers.get(idx)   # None or {"selected": letter, "correct": bool}
+answered = current is not None
 
-# Timer
-if state.get("quiz_use_timer"):
-    elapsed = time.time() - state.get("quiz_q_start", time.time())
+# Timer (unanswered questions only)
+if state.get("quiz_use_timer") and not answered:
+    elapsed = time.time() - q_starts.get(idx, time.time())
     remaining = max(0, 90 - elapsed)
     timer_color = "#B52B2B" if remaining < 20 else "#0B2545"
     st.markdown(
@@ -223,13 +220,19 @@ if state.get("quiz_use_timer"):
         f'⏱ {int(remaining // 60):02d}:{int(remaining % 60):02d}</div>',
         unsafe_allow_html=True,
     )
-    if remaining == 0 and not state["quiz_answered"]:
-        state["quiz_answered"] = True
-        state["quiz_selected"] = None
+    if remaining == 0:
+        state["quiz_idx"] += 1
+        st.rerun()
 
-st.markdown(f'<div class="progress-label">Question {idx + 1} / {total}</div>', unsafe_allow_html=True)
-st.progress((idx) / total)
+# Progress
+st.markdown(
+    f'<div class="progress-label">Question {idx + 1} / {total}'
+    f'{"  ·  " + str(answered_count) + " répondue(s)" if answered_count else ""}</div>',
+    unsafe_allow_html=True,
+)
+st.progress(idx / total)
 
+# Badges
 topic_badge = f'<span class="topic-badge">{q["topic"]}</span>'
 diff = q.get("difficulty", "medium")
 diff_badge = f'<span class="difficulty-{diff}">{diff.capitalize()}</span>'
@@ -240,27 +243,35 @@ src_badge = (
     f'font-weight:700;letter-spacing:0.04em;margin-left:4px;">{source}</span>'
 ) if source else ""
 st.markdown(f"{topic_badge} {diff_badge}{src_badge}", unsafe_allow_html=True)
+
 st.markdown('<div class="question-card">', unsafe_allow_html=True)
 render_question(q["question_en"])
 st.markdown('</div>', unsafe_allow_html=True)
 
+# ── Navigation bar ────────────────────────────────────────────────────────────
+nav1, _nav_mid, nav3 = st.columns([1, 4, 1])
+with nav1:
+    if st.button("← Préc", disabled=(idx == 0), use_container_width=True, key="qnav_prev"):
+        state["quiz_idx"] -= 1
+        st.rerun()
+with nav3:
+    next_label = "Résultats →" if idx == total - 1 else "Suiv →"
+    if st.button(next_label, use_container_width=True, key="qnav_next"):
+        state["quiz_idx"] += 1
+        st.rerun()
+
+# ── Answer buttons ────────────────────────────────────────────────────────────
 st.markdown('<div class="answer-label">Select your answer</div>', unsafe_allow_html=True)
-
-# Answer buttons (disabled after answer)
-answered = state["quiz_answered"]
-selected = state["quiz_selected"]
-
-for letter, option in [
-    ("A", q["option_a"]),
-    ("B", q["option_b"]),
-    ("C", q["option_c"]),
-]:
-    if st.button(f"{letter}.  {option}", key=f"q_{idx}_{letter}",
-                 use_container_width=True, disabled=answered):
-        state["quiz_selected"] = letter
-        state["quiz_answered"] = True
+for letter, option in [("A", q["option_a"]), ("B", q["option_b"]), ("C", q["option_c"])]:
+    prefix = "✓  " if answered and current["selected"] == letter else ""
+    if st.button(
+        f"{prefix}{letter}.  {option}",
+        key=f"q_{idx}_{letter}",
+        use_container_width=True,
+        disabled=answered,
+    ):
         correct = letter == q["correct_answer"]
-        time_sec = int(time.time() - state.get("quiz_q_start", time.time()))
+        time_sec = int(time.time() - q_starts.get(idx, time.time()))
         db.save_attempt(
             user_id=user["id"],
             question_id=q["id"],
@@ -269,51 +280,34 @@ for letter, option in [
             time_sec=time_sec,
             session_type="quiz",
         )
-        state["quiz_results"].append({
-            "question_id": q["id"],
-            "question": q["question_en"],
-            "topic": q["topic"],
-            "selected": letter,
-            "correct_answer": q["correct_answer"],
-            "correct": correct,
-            "explanation_en": q.get("explanation_en", ""),
-            "explanation_fr": q.get("explanation_fr", ""),
-        })
+        state["quiz_answers"][idx] = {"selected": letter, "correct": correct}
         st.rerun()
 
-# Feedback after answer
-if answered and selected:
-    correct = selected == q["correct_answer"]
-    if correct:
-        st.markdown(
-            '<div class="answer-correct">Correct !</div>',
-            unsafe_allow_html=True,
-        )
+# ── Feedback ──────────────────────────────────────────────────────────────────
+if answered:
+    if current["correct"]:
+        st.markdown('<div class="answer-correct">Correct !</div>', unsafe_allow_html=True)
     else:
         st.markdown(
             f'<div class="answer-wrong">Incorrect — La bonne réponse est <b>{q["correct_answer"]}</b></div>',
             unsafe_allow_html=True,
         )
-    expl_en = q.get("explanation_en", "")
-    expl_fr = q.get("explanation_fr", "")
     expl_parts = []
-    if expl_en:
-        expl_parts.append(f'<b>[EN]</b> {expl_en}')
-    if expl_fr:
-        expl_parts.append(f'<b>[FR]</b> {expl_fr}')
+    if q.get("explanation_en"):
+        expl_parts.append(f'<b>[EN]</b> {q["explanation_en"]}')
+    if q.get("explanation_fr"):
+        expl_parts.append(f'<b>[FR]</b> {q["explanation_fr"]}')
     if expl_parts:
         st.markdown(f'<div class="explanation-box">{"<br><br>".join(expl_parts)}</div>', unsafe_allow_html=True)
-    if st.button("Question suivante →", use_container_width=True):
-        state["quiz_idx"] += 1
-        state["quiz_answered"] = False
-        state["quiz_selected"] = None
-        state["quiz_q_start"] = time.time()
-        st.rerun()
-elif answered and selected is None:
-    st.warning("Temps écoulé — question ignorée.")
-    if st.button("Question suivante →", use_container_width=True):
-        state["quiz_idx"] += 1
-        state["quiz_answered"] = False
-        state["quiz_selected"] = None
-        state["quiz_q_start"] = time.time()
+
+# ── End quiz button ───────────────────────────────────────────────────────────
+if answered_count > 0:
+    st.markdown("---")
+    all_done = answered_count == total
+    if st.button(
+        "Terminer le quiz" if all_done else f"Terminer le quiz ({answered_count}/{total} répondue(s))",
+        use_container_width=True,
+        type="primary" if all_done else "secondary",
+    ):
+        state["quiz_idx"] = total
         st.rerun()

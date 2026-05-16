@@ -74,7 +74,7 @@ def _reset_diagnostic():
     """Clear all diagnostic state from session and DB, then rerun."""
     db.clear_diagnostic_progress(user["id"])
     for k in ["diag_questions", "diag_idx", "diag_answers", "diag_start",
-              "diag_reset_confirm"]:
+              "diag_reset_confirm", "diag_view_idx", "diag_answered_set"]:
         st.session_state.pop(k, None)
     # Safety flag: skip DB restore even if clear_diagnostic_progress failed
     # (RLS may block deletes when using anon key without service key configured)
@@ -113,16 +113,37 @@ def _run_diagnostic():
             )
 
     qs = state["diag_questions"]
-    idx = state["diag_idx"]
     total = len(qs)
 
-    if idx >= total:
+    # Free navigation state (session-only; reconstructed on restore from answered count)
+    if "diag_answered_set" not in state:
+        state["diag_answered_set"] = set(range(state["diag_idx"]))
+    if "diag_view_idx" not in state:
+        # Start at first unanswered question
+        answered_set = state["diag_answered_set"]
+        first_unanswered = next((i for i in range(total) if i not in answered_set), total - 1)
+        state["diag_view_idx"] = first_unanswered
+
+    answered_set = state["diag_answered_set"]
+    idx = state["diag_view_idx"]
+
+    if len(answered_set) >= total:
         _finish_diagnostic(qs, state["diag_answers"])
         return
 
     q = qs[idx]
-    st.markdown(f'<div class="progress-label">Question {idx + 1} / {total}</div>', unsafe_allow_html=True)
-    st.progress(idx / total)
+    is_answered = idx in answered_set
+
+    # Look up the answer previously given for this question (if any)
+    prev = next((a for a in state["diag_answers"] if a["question_id"] == q["id"]), None)
+
+    answered_count = len(answered_set)
+    st.markdown(
+        f'<div class="progress-label">Question {idx + 1} / {total}'
+        f'{"  ·  " + str(answered_count) + "/" + str(total) + " répondues" if answered_count else ""}</div>',
+        unsafe_allow_html=True,
+    )
+    st.progress(answered_count / total)
 
     topic_badge = f'<span class="topic-badge">{q["topic"]}</span>'
     diff = q.get("difficulty", "medium")
@@ -132,39 +153,70 @@ def _run_diagnostic():
     render_question(q["question_en"])
     st.markdown('</div>', unsafe_allow_html=True)
 
-    st.markdown('<div class="answer-label">Select your answer</div>', unsafe_allow_html=True)
-    answered = None
-    if st.button(f"A.  {q['option_a']}", key=f"d_a_{idx}", use_container_width=True):
-        answered = "A"
-    if st.button(f"B.  {q['option_b']}", key=f"d_b_{idx}", use_container_width=True):
-        answered = "B"
-    if st.button(f"C.  {q['option_c']}", key=f"d_c_{idx}", use_container_width=True):
-        answered = "C"
+    # Navigation bar
+    dnav1, _dmid, dnav3 = st.columns([1, 4, 1])
+    with dnav1:
+        if st.button("← Préc", disabled=(idx == 0), use_container_width=True, key="dnav_prev"):
+            state["diag_view_idx"] -= 1
+            st.rerun()
+    with dnav3:
+        if st.button("Suiv →", disabled=(idx >= total - 1), use_container_width=True, key="dnav_next"):
+            state["diag_view_idx"] += 1
+            st.rerun()
 
-    if answered:
-        correct = answered == q["correct_answer"]
-        state["diag_answers"].append({
-            "question_id": q["id"],
-            "topic": q["topic"],
-            "selected": answered,
-            "correct": correct,
-        })
-        db.save_attempt(
-            user_id=user["id"],
-            question_id=q["id"],
-            selected=answered,
-            is_correct=correct,
-            time_sec=0,
-            session_type="diagnostic",
-        )
-        state["diag_idx"] += 1
-        # Persist progress after every answer
-        db.save_diagnostic_progress(
-            user["id"], state["diag_idx"],
-            state["diag_questions"], state["diag_answers"],
-            state["diag_start"],
-        )
-        st.rerun()
+    st.markdown('<div class="answer-label">Select your answer</div>', unsafe_allow_html=True)
+
+    if is_answered and prev:
+        # Read-only: show selected answer highlighted
+        for letter, opt_key in [("A", "option_a"), ("B", "option_b"), ("C", "option_c")]:
+            prefix = "✓  " if letter == prev["selected"] else ""
+            st.button(f"{prefix}{letter}.  {q[opt_key]}", key=f"d_{letter}_{idx}",
+                      use_container_width=True, disabled=True)
+        if prev["correct"]:
+            st.markdown('<div class="answer-correct">Correct !</div>', unsafe_allow_html=True)
+        else:
+            st.markdown(
+                f'<div class="answer-wrong">Incorrect — La bonne réponse est <b>{q["correct_answer"]}</b></div>',
+                unsafe_allow_html=True,
+            )
+    else:
+        answered = None
+        if st.button(f"A.  {q['option_a']}", key=f"d_a_{idx}", use_container_width=True):
+            answered = "A"
+        if st.button(f"B.  {q['option_b']}", key=f"d_b_{idx}", use_container_width=True):
+            answered = "B"
+        if st.button(f"C.  {q['option_c']}", key=f"d_c_{idx}", use_container_width=True):
+            answered = "C"
+
+        if answered:
+            correct = answered == q["correct_answer"]
+            state["diag_answers"].append({
+                "question_id": q["id"],
+                "topic": q["topic"],
+                "selected": answered,
+                "correct": correct,
+            })
+            db.save_attempt(
+                user_id=user["id"],
+                question_id=q["id"],
+                selected=answered,
+                is_correct=correct,
+                time_sec=0,
+                session_type="diagnostic",
+            )
+            answered_set.add(idx)
+            state["diag_answered_set"] = answered_set
+            state["diag_idx"] = len(state["diag_answers"])
+            db.save_diagnostic_progress(
+                user["id"], state["diag_idx"],
+                state["diag_questions"], state["diag_answers"],
+                state["diag_start"],
+            )
+            # Auto-advance to next unanswered
+            next_q = next((i for i in range(total) if i not in answered_set), None)
+            if next_q is not None:
+                state["diag_view_idx"] = next_q
+            st.rerun()
 
     # ── Reset section ──────────────────────────────────────────────────────
     st.markdown("---")
@@ -221,7 +273,7 @@ def _finish_diagnostic(qs, answers):
     # Clean up diagnostic state (session + DB)
     db.clear_diagnostic_progress(user["id"])
     for k in ["diag_questions", "diag_idx", "diag_answers", "diag_start",
-              "diag_reset_confirm"]:
+              "diag_reset_confirm", "diag_view_idx", "diag_answered_set"]:
         st.session_state.pop(k, None)
 
     # Display result
