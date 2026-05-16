@@ -638,6 +638,41 @@ def inject_styles():
         """,
         unsafe_allow_html=True,
     )
+    # Auto-collapse sidebar after clicking a nav link
+    st.markdown(
+        """
+        <script>
+        (function() {
+            function closeSidebar() {
+                var btn = document.querySelector('[data-testid="stSidebarCollapseButton"]');
+                if (btn) { btn.click(); return true; }
+                var sidebar = document.querySelector('[data-testid="stSidebar"]');
+                if (sidebar) {
+                    var btns = sidebar.querySelectorAll('button');
+                    for (var i = 0; i < btns.length; i++) {
+                        if (btns[i].querySelector('svg')) { btns[i].click(); return true; }
+                    }
+                }
+                return false;
+            }
+            function setupAutoClose() {
+                var sidebar = document.querySelector('[data-testid="stSidebar"]');
+                if (!sidebar) { setTimeout(setupAutoClose, 400); return; }
+                sidebar.addEventListener('click', function(e) {
+                    var link = e.target.closest('a');
+                    if (link) {
+                        setTimeout(function() {
+                            if (!closeSidebar()) setTimeout(closeSidebar, 350);
+                        }, 250);
+                    }
+                }, true);
+            }
+            setTimeout(setupAutoClose, 600);
+        })();
+        </script>
+        """,
+        unsafe_allow_html=True,
+    )
 
 
 # ── Component helpers ─────────────────────────────────────────────────────────

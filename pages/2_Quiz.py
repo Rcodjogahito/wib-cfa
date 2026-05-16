@@ -104,6 +104,7 @@ idx = state["quiz_idx"]
 total = len(questions)
 answers = state.setdefault("quiz_answers", {})
 q_starts = state.setdefault("quiz_q_starts", {})
+pending = state.setdefault("quiz_pending", {})
 
 # Track first view time for this question
 if 0 <= idx < total and idx not in q_starts:
@@ -202,10 +203,12 @@ if idx >= total:
         state["quiz_q_starts"] = {0: time.time()}
         state["quiz_start"] = time.time()
         state.pop("quiz_saved", None)
+        state.pop("quiz_pending", None)
         st.rerun()
     if col2.button("Nouveau quiz", use_container_width=True, type="primary"):
         for k in ["quiz_active", "quiz_questions", "quiz_idx", "quiz_answers",
-                  "quiz_q_starts", "quiz_start", "quiz_use_timer", "quiz_topic", "quiz_saved"]:
+                  "quiz_q_starts", "quiz_start", "quiz_use_timer", "quiz_topic",
+                  "quiz_saved", "quiz_pending"]:
             state.pop(k, None)
         st.rerun()
     if col3.button("Voir la progression", use_container_width=True):
@@ -218,29 +221,43 @@ q = questions[idx]
 current = answers.get(idx)   # None or {"selected": letter, "correct": bool}
 answered = current is not None
 
-# Chronomètre global de session (fragment live, toujours visible quand actif)
-if state.get("quiz_use_timer"):
-    @st.fragment(run_every=1)
-    def _quiz_session_timer():
-        _total_dur = st.session_state.get("quiz_total_duration", 0)
-        if _total_dur <= 0:
-            return
-        _start = st.session_state.get("quiz_start", time.time())
-        _elapsed = time.time() - _start
+# ── Timer bar — toujours visible (temps écoulé, ou décompte si activé) ─────────
+@st.fragment(run_every=1)
+def _quiz_timer():
+    _use_countdown = st.session_state.get("quiz_use_timer", False)
+    _start = st.session_state.get("quiz_start", time.time())
+    _elapsed = int(time.time() - _start)
+    _total_dur = st.session_state.get("quiz_total_duration", 0)
+    _topic = st.session_state.get("quiz_topic", "All (Adaptatif)")
+    _q_total = len(st.session_state.get("quiz_questions", []))
+    _ans_count = len(st.session_state.get("quiz_answers", {}))
+
+    if _use_countdown and _total_dur > 0:
         _remaining = max(0, _total_dur - _elapsed)
-        _color = "#B52B2B" if _remaining < 60 else ("#C9A84C" if _remaining < 300 else "#0B2545")
-        _m = int(_remaining // 60)
-        _s = int(_remaining % 60)
-        st.markdown(
-            f'<div style="text-align:right;font-family:monospace;font-size:1.1rem;'
-            f'color:{_color};font-weight:700;margin-bottom:0.4rem;">'
-            f'⏱ {_m:02d}:{_s:02d} restantes</div>',
-            unsafe_allow_html=True,
-        )
+        _color = "#B52B2B" if _remaining < 60 else ("#C9A84C" if _remaining < 300 else "#FFFFFF")
+        _m, _s = divmod(int(_remaining), 60)
+        _time_str = f"⏱ {_m:02d}:{_s:02d} restantes"
         if _remaining == 0:
-            st.session_state["quiz_idx"] = len(st.session_state.get("quiz_questions", []))
+            st.session_state["quiz_idx"] = _q_total
             st.rerun()
-    _quiz_session_timer()
+    else:
+        _color = "#C9A84C"
+        _m, _s = divmod(_elapsed, 60)
+        _time_str = f"⏱ {_m:02d}:{_s:02d}"
+
+    st.markdown(
+        f'<div style="display:flex;justify-content:space-between;align-items:center;'
+        f'background:#0B2545;padding:0.5rem 1.2rem;border-radius:8px;margin-bottom:1rem;">'
+        f'<span style="color:#C9A84C;font-weight:700;">'
+        f'Quiz{(" — " + _topic) if _topic != "All (Adaptatif)" else ""}</span>'
+        f'<span style="font-family:monospace;font-size:1.1rem;color:{_color};font-weight:700;">'
+        f'{_time_str}</span>'
+        f'<span style="color:rgba(255,255,255,0.7);">{_ans_count} / {_q_total} répondues</span>'
+        f'</div>',
+        unsafe_allow_html=True,
+    )
+
+_quiz_timer()
 
 # Progress
 st.markdown(
@@ -264,28 +281,48 @@ st.markdown(f"{topic_badge} {diff_badge}{src_badge}", unsafe_allow_html=True)
 
 render_question(q["question_en"])
 
-# ── Answer buttons ────────────────────────────────────────────────────────────
+# ── Answer buttons — deux étapes : sélection → validation ────────────────────
 st.markdown('<div class="answer-label">Sélectionnez votre réponse</div>', unsafe_allow_html=True)
-for letter, option in [("A", q["option_a"]), ("B", q["option_b"]), ("C", q["option_c"])]:
-    prefix = "✓  " if answered and current["selected"] == letter else ""
-    if st.button(
-        f"{prefix}{letter}.  {option}",
-        key=f"q_{idx}_{letter}",
-        use_container_width=True,
-        disabled=answered,
-    ):
-        correct = letter == q["correct_answer"]
-        time_sec = int(time.time() - q_starts.get(idx, time.time()))
-        db.save_attempt(
-            user_id=user["id"],
-            question_id=q["id"],
-            selected=letter,
-            is_correct=correct,
-            time_sec=time_sec,
-            session_type="quiz",
+
+pending_letter = pending.get(idx)
+
+if not answered:
+    if pending_letter:
+        st.markdown(
+            f'<div style="background:var(--navy-100);border:1px solid rgba(12,29,58,0.12);'
+            f'border-left:3px solid var(--gold-500);border-radius:var(--radius);'
+            f'padding:0.5rem 1rem;margin-bottom:0.6rem;font-size:0.85rem;color:var(--navy-700);">'
+            f'Réponse sélectionnée : <b>{pending_letter}</b>'
+            f' — cliquez une autre option pour modifier'
+            f'</div>',
+            unsafe_allow_html=True,
         )
-        state["quiz_answers"][idx] = {"selected": letter, "correct": correct}
-        st.rerun()
+    for letter, option in [("A", q["option_a"]), ("B", q["option_b"]), ("C", q["option_c"])]:
+        prefix = "✓  " if pending_letter == letter else ""
+        if st.button(f"{prefix}{letter}.  {option}", key=f"q_{idx}_{letter}", use_container_width=True):
+            pending[idx] = letter
+            st.rerun()
+    if pending_letter:
+        st.markdown("")
+        if st.button("Valider ma réponse", key="quiz_validate", type="primary", use_container_width=True):
+            correct = pending_letter == q["correct_answer"]
+            time_sec = int(time.time() - q_starts.get(idx, time.time()))
+            db.save_attempt(
+                user_id=user["id"],
+                question_id=q["id"],
+                selected=pending_letter,
+                is_correct=correct,
+                time_sec=time_sec,
+                session_type="quiz",
+            )
+            state["quiz_answers"][idx] = {"selected": pending_letter, "correct": correct}
+            pending.pop(idx, None)
+            st.rerun()
+else:
+    for letter, option in [("A", q["option_a"]), ("B", q["option_b"]), ("C", q["option_c"])]:
+        prefix = "✓  " if current["selected"] == letter else ""
+        st.button(f"{prefix}{letter}.  {option}", key=f"q_{idx}_{letter}",
+                  use_container_width=True, disabled=True)
 
 # ── Feedback ──────────────────────────────────────────────────────────────────
 if answered:
@@ -337,4 +374,5 @@ with _rcol:
         state["quiz_q_starts"] = {0: time.time()}
         state["quiz_start"] = time.time()
         state.pop("quiz_saved", None)
+        state.pop("quiz_pending", None)
         st.rerun()

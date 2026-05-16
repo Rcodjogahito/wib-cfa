@@ -74,7 +74,7 @@ def _reset_diagnostic():
     """Clear all diagnostic state from session and DB, then rerun."""
     db.clear_diagnostic_progress(user["id"])
     for k in ["diag_questions", "diag_idx", "diag_answers", "diag_start",
-              "diag_reset_confirm", "diag_view_idx", "diag_answered_set"]:
+              "diag_reset_confirm", "diag_view_idx", "diag_answered_set", "diag_pending"]:
         st.session_state.pop(k, None)
     # Safety flag: skip DB restore even if clear_diagnostic_progress failed
     # (RLS may block deletes when using anon key without service key configured)
@@ -169,43 +169,57 @@ def _run_diagnostic():
         if q.get("explanation_en"):
             st.markdown(f'<div class="explanation-box">{q["explanation_en"]}</div>', unsafe_allow_html=True)
     else:
-        answered = None
-        if st.button(f"A.  {q['option_a']}", key=f"d_a_{idx}", use_container_width=True):
-            answered = "A"
-        if st.button(f"B.  {q['option_b']}", key=f"d_b_{idx}", use_container_width=True):
-            answered = "B"
-        if st.button(f"C.  {q['option_c']}", key=f"d_c_{idx}", use_container_width=True):
-            answered = "C"
+        diag_pending = state.setdefault("diag_pending", {})
+        pending_letter = diag_pending.get(idx)
 
-        if answered:
-            correct = answered == q["correct_answer"]
-            state["diag_answers"].append({
-                "question_id": q["id"],
-                "topic": q["topic"],
-                "selected": answered,
-                "correct": correct,
-            })
-            db.save_attempt(
-                user_id=user["id"],
-                question_id=q["id"],
-                selected=answered,
-                is_correct=correct,
-                time_sec=0,
-                session_type="diagnostic",
+        if pending_letter:
+            st.markdown(
+                f'<div style="background:var(--navy-100);border:1px solid rgba(12,29,58,0.12);'
+                f'border-left:3px solid var(--gold-500);border-radius:var(--radius);'
+                f'padding:0.5rem 1rem;margin-bottom:0.6rem;font-size:0.85rem;color:var(--navy-700);">'
+                f'Réponse sélectionnée : <b>{pending_letter}</b>'
+                f' — cliquez une autre option pour modifier'
+                f'</div>',
+                unsafe_allow_html=True,
             )
-            answered_set.add(idx)
-            state["diag_answered_set"] = answered_set
-            state["diag_idx"] = len(state["diag_answers"])
-            db.save_diagnostic_progress(
-                user["id"], state["diag_idx"],
-                state["diag_questions"], state["diag_answers"],
-                state["diag_start"],
-            )
-            # Auto-advance to next unanswered
-            next_q = next((i for i in range(total) if i not in answered_set), None)
-            if next_q is not None:
-                state["diag_view_idx"] = next_q
-            st.rerun()
+        for letter, opt_key in [("A", "option_a"), ("B", "option_b"), ("C", "option_c")]:
+            prefix = "✓  " if pending_letter == letter else ""
+            if st.button(f"{prefix}{letter}.  {q[opt_key]}", key=f"d_{letter}_{idx}", use_container_width=True):
+                diag_pending[idx] = letter
+                st.rerun()
+
+        if pending_letter:
+            st.markdown("")
+            if st.button("Valider ma réponse", key="diag_validate", type="primary", use_container_width=True):
+                correct = pending_letter == q["correct_answer"]
+                state["diag_answers"].append({
+                    "question_id": q["id"],
+                    "topic": q["topic"],
+                    "selected": pending_letter,
+                    "correct": correct,
+                })
+                db.save_attempt(
+                    user_id=user["id"],
+                    question_id=q["id"],
+                    selected=pending_letter,
+                    is_correct=correct,
+                    time_sec=0,
+                    session_type="diagnostic",
+                )
+                answered_set.add(idx)
+                state["diag_answered_set"] = answered_set
+                state["diag_idx"] = len(state["diag_answers"])
+                db.save_diagnostic_progress(
+                    user["id"], state["diag_idx"],
+                    state["diag_questions"], state["diag_answers"],
+                    state["diag_start"],
+                )
+                diag_pending.pop(idx, None)
+                # Auto-advance to next unanswered
+                next_q = next((i for i in range(total) if i not in answered_set), None)
+                if next_q is not None:
+                    state["diag_view_idx"] = next_q
+                st.rerun()
 
     # Navigation bar
     dnav1, _dmid, dnav3 = st.columns([1, 4, 1])
@@ -273,7 +287,7 @@ def _finish_diagnostic(qs, answers):
     # Clean up diagnostic state (session + DB)
     db.clear_diagnostic_progress(user["id"])
     for k in ["diag_questions", "diag_idx", "diag_answers", "diag_start",
-              "diag_reset_confirm", "diag_view_idx", "diag_answered_set"]:
+              "diag_reset_confirm", "diag_view_idx", "diag_answered_set", "diag_pending"]:
         st.session_state.pop(k, None)
 
     # Display result
