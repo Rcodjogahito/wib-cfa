@@ -1,8 +1,8 @@
 # ETAT ACTUEL — WIB CFA
 > Mis à jour automatiquement à la fin de chaque session Claude Code.
 
-**Date**: 2026-05-16 (session 15)  
-**Commit**: bfa83f7 — "UX: translate sidebar navigation to French across all pages"  
+**Date**: 2026-05-17 (session 16)  
+**Commit**: 56ecb94 — "UX: timer permanent Quiz, bouton Valider, sidebar auto-fermeture"  
 **Branch**: master → Streamlit Cloud (auto-deploy)
 
 ---
@@ -40,6 +40,12 @@
 ---
 
 ## Travaux terminés (session 15)
+
+### ✅ UX — Timer permanent, bouton Valider, sidebar auto-fermeture (session 16)
+- **Quiz** : barre timer toujours visible en haut (temps écoulé ou décompte). L'ancien timer n'était visible que si l'option countdown était cochée.
+- **Quiz + Diagnostic** : validation en deux étapes. Clic option → surbrillance + indicateur "Réponse sélectionnée". Bouton **"Valider ma réponse"** (primary) → feedback/explication. Identique à l'Exam Simulator.
+- **Sidebar** : JS injecté dans `inject_styles()` ferme automatiquement la sidebar après un clic sur un lien de navigation.
+- **Fichiers modifiés** : `pages/2_Quiz.py`, `streamlit_app.py`, `src/styles.py`
 
 ### ✅ UX — Localisation complète en français
 - `"Select your answer"` → `"Sélectionnez votre réponse"` dans Quiz, Exam Simulator, Diagnostic
