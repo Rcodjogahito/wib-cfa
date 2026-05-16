@@ -4,7 +4,7 @@ WIB CFA — Admin panel. Access restricted.
 
 import streamlit as st
 
-st.set_page_config(page_title="WIB Admin", page_icon="📊", layout="wide")
+st.set_page_config(page_title="WIB Admin", page_icon="📊", layout="wide", initial_sidebar_state="collapsed")
 
 import pandas as pd
 from datetime import datetime

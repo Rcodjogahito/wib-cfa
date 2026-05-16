@@ -12,7 +12,7 @@ from src.auth import CFA_TOPICS, get_current_user, logout, require_auth
 from src.database import get_db
 from src.styles import inject_styles, render_page_header, render_sidebar_brand
 
-st.set_page_config(page_title="Flashcards — WIB CFA", page_icon="🃏", layout="wide")
+st.set_page_config(page_title="Flashcards — WIB CFA", page_icon="🃏", layout="wide", initial_sidebar_state="collapsed")
 inject_styles()
 
 with st.sidebar:
