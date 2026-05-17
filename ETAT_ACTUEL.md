@@ -1,8 +1,8 @@
 # ETAT ACTUEL — WIB CFA
 > Mis à jour automatiquement à la fin de chaque session Claude Code.
 
-**Date**: 2026-05-17 (session 22)  
-**Commit**: d3426cb — "Rewrite Exam Simulator to comply with CFA Level 1 official standards"  
+**Date**: 2026-05-17 (session 23)  
+**Commit**: d6e8b01 — "feat: two-field composite-key auth, admin English, quiz UX fixes"  
 **Branch**: master → Streamlit Cloud (auto-deploy)
 
 ---
@@ -40,6 +40,35 @@
 - **Scripts**: `scripts/render_table_pages.py` → images PNG, `scripts/rerender_wrong_pages.py` → correction pages erronées, `scripts/patch_uworld_tables.py` → mise à jour Supabase
 - **Résultat**: 28/28 tables insérées dans `question_en`
 - **Méthode**: lecture images PDF avec Claude Vision (inclus dans abonnement Pro)
+
+---
+
+## Travaux terminés (session 23)
+
+### ✅ Authentification — clé composite pseudo + suffix nom (`src/auth.py`)
+
+Refonte du système de connexion : l'identifiant unique n'est plus le pseudo seul, mais la combinaison `pseudo.lower() + suffix.lower()` (2 dernières lettres du nom de famille). Stocké dans le champ `email` de la table `users` ; le pseudo (tel que saisi) est stocké dans `first_name` pour l'affichage.
+
+- Formulaire 2 champs : "Pseudo" + "Last 2 letters of your surname" (max 2 chars)
+- Validation : pseudo 3-30 chars `[A-Za-z0-9_À-ÿ]`, suffix exactement 2 lettres
+- Admin : pseudo "Sam" + suffix "to" → clé "samto"
+- Nettoyage Supabase : tous les anciens comptes effacés (12 users, 218 attempts, 18 sessions, 40 progress rows)
+- Cookie 90j inchangé — persistance session fonctionnelle
+
+### ✅ Admin — traduction anglaise + clé admin (`pages/admin.py`)
+
+- `_ADMIN_EMAIL = "samto"` (était "sam")
+- Toutes les sections, colonnes et métriques traduites en anglais
+- Colonnes DataFrame : "Pseudo", "Registered", "Diagnostic", "Diag. score", "Sessions", "Last active"
+
+### ✅ Quiz UX — difficulté "Easy" + expander résultats (`pages/2_Quiz.py`)
+
+- Filtre difficulté complété : ajout de "Easy" → `{"All": None, "Easy": "easy", "Medium": "medium", "Hard": "hard"}`
+- Expander "Review all questions" maintenant `expanded=True` par défaut
+
+### ✅ Flashcards UX — séparateur avant "New session" (`pages/3_Flashcards.py`)
+
+- `st.divider()` ajouté entre les sélecteurs topic/mode et le bouton "New session" pour une hiérarchie visuelle plus claire
 
 ---
 
