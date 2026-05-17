@@ -701,25 +701,10 @@ def render_sidebar_brand():
 
 
 def render_sidebar_user(username: str) -> None:
-    """Gold avatar circle + pseudo — call inside st.sidebar context."""
-    initial = (username[0].upper()) if username else "?"
+    """Display pseudo in sidebar — call inside st.sidebar context."""
     st.markdown(
-        f"""
-        <div style="display:flex;align-items:center;gap:10px;padding:6px 0 4px;">
-          <div style="width:30px;height:30px;border-radius:50%;
-                      background:linear-gradient(135deg,#C9A84C,#E8CC7A);
-                      display:flex;align-items:center;justify-content:center;
-                      font-size:0.88rem;font-weight:700;color:#0B2545;
-                      flex-shrink:0;box-shadow:0 2px 6px rgba(0,0,0,0.30);">
-            {initial}
-          </div>
-          <div style="font-size:0.85rem;font-weight:600;
-                      color:rgba(255,255,255,0.90);letter-spacing:0.02em;
-                      overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">
-            {username}
-          </div>
-        </div>
-        """,
+        f'<div style="font-size:0.85rem;font-weight:600;color:rgba(255,255,255,0.90);'
+        f'letter-spacing:0.02em;">{username}</div>',
         unsafe_allow_html=True,
     )
 
