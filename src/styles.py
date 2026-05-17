@@ -37,7 +37,7 @@ def inject_styles():
         """
         <style>
         /* ── Fonts ─────────────────────────────────────────────────────── */
-        @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap');
 
         /* ── Design tokens ─────────────────────────────────────────────── */
         :root {
@@ -315,25 +315,26 @@ def inject_styles():
             border-bottom: 1px solid var(--gray-100);
         }
         .wib-page-header .brand-mark {
-            font-size: 0.68rem;
-            font-weight: 700;
+            font-size: 0.60rem;
+            font-weight: 600;
             color: var(--gold-500);
-            letter-spacing: 0.22em;
+            letter-spacing: 0.26em;
             text-transform: uppercase;
-            margin-bottom: 4px;
+            margin-bottom: 6px;
+            opacity: 0.80;
         }
         .wib-page-header .page-title {
             font-family: 'Cormorant Garamond', serif;
             font-size: 2.1rem;
-            font-weight: 600;
+            font-weight: 400;
             color: var(--navy-800);
             line-height: 1.1;
-            letter-spacing: -0.02em;
+            letter-spacing: -0.01em;
         }
         .wib-page-header .page-subtitle {
-            font-size: 0.82rem;
+            font-size: 0.80rem;
             color: var(--gray-400);
-            margin-top: 5px;
+            margin-top: 6px;
             font-weight: 400;
             letter-spacing: 0.01em;
         }
@@ -342,32 +343,50 @@ def inject_styles():
         .wib-hero {
             background: var(--navy-900);
             border-radius: var(--radius-lg);
-            padding: 2rem 2.5rem;
+            padding: 2.25rem 2.5rem 2rem;
             margin-bottom: 1.75rem;
             position: relative;
             overflow: hidden;
         }
+        /* Bottom accent line */
         .wib-hero::after {
             content: '';
             position: absolute;
             bottom: 0; left: 0; right: 0;
-            height: 2px;
-            background: linear-gradient(90deg, var(--gold-500) 0%, transparent 70%);
+            height: 1px;
+            background: linear-gradient(90deg, var(--gold-500) 0%, transparent 60%);
+        }
+        /* Top accent line — mirrors bottom, frames the mark */
+        .wib-hero::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0;
+            height: 1px;
+            background: linear-gradient(90deg, rgba(201,168,76,0.55) 0%, transparent 50%);
+        }
+        /* Thin rule above the wordmark */
+        .wib-hero .brand-rule {
+            height: 1px;
+            width: 40px;
+            background: linear-gradient(90deg, var(--gold-500), transparent);
+            margin-bottom: 14px;
         }
         .wib-hero .brand {
             font-family: 'Cormorant Garamond', serif;
-            font-size: 3.2rem;
-            font-weight: 700;
-            color: var(--gold-500);
-            letter-spacing: 6px;
+            font-size: 3.1rem;
+            font-weight: 300;
+            color: var(--gold-400);
+            letter-spacing: 0.40em;
+            text-indent: 0.40em;
             line-height: 1;
         }
         .wib-hero .tagline {
-            font-size: 0.75rem;
-            color: rgba(255,255,255,0.45);
-            margin-top: 8px;
+            font-size: 0.68rem;
+            color: rgba(255,255,255,0.38);
+            margin-top: 12px;
             font-weight: 500;
-            letter-spacing: 0.15em;
+            letter-spacing: 0.22em;
+            text-indent: 0.22em;
             text-transform: uppercase;
         }
 
@@ -716,9 +735,24 @@ def inject_styles():
 
 # ── Component helpers ─────────────────────────────────────────────────────────
 
-_SIDEBAR_BRAND = """
+# Original logo — kept verbatim, referenced as "logo initial" if rollback needed.
+_SIDEBAR_BRAND_ORIGINAL = """
 <div style="font-family:'Cormorant Garamond',Georgia,serif;font-size:1.9rem;font-weight:700;color:#C9A84C;letter-spacing:5px;line-height:1;">WIB</div>
 <div style="font-size:0.63rem;color:rgba(255,255,255,0.38);letter-spacing:0.20em;text-transform:uppercase;margin-top:4px;font-weight:600;">CFA Level I</div>
+"""
+
+# Refined logo — Cormorant Garamond Light (300), investment-bank register.
+# Wide relative tracking (0.38em) with compensating text-indent — each letter
+# breathes. Hairline gold rule above frames the mark; short separator rule
+# divides logotype from descriptor. Descriptor at near-invisible opacity:
+# present but subordinate, as in Lazard / Rothschild / Evercore branding.
+_SIDEBAR_BRAND = """
+<div style="padding:2px 0 12px 0;">
+  <div style="height:1px;background:linear-gradient(90deg,rgba(201,168,76,0.65) 0%,transparent 85%);margin-bottom:14px;"></div>
+  <div style="font-family:'Cormorant Garamond',Georgia,serif;font-size:1.60rem;font-weight:300;color:#DFC06E;letter-spacing:0.38em;text-indent:0.38em;line-height:1;">WIB</div>
+  <div style="height:1px;background:rgba(255,255,255,0.10);margin:10px 0 8px 0;width:26px;"></div>
+  <div style="font-family:'Inter',sans-serif;font-size:0.53rem;color:rgba(255,255,255,0.30);letter-spacing:0.24em;text-indent:0.24em;text-transform:uppercase;font-weight:500;">CFA &middot; Level I</div>
+</div>
 """
 
 
@@ -741,6 +775,7 @@ def render_hero(subtitle: str = "Who Wants to Be an Investment Banker?"):
     st.markdown(
         f"""
         <div class="wib-hero">
+            <div class="brand-rule"></div>
             <div class="brand">WIB</div>
             <div class="tagline">{subtitle}</div>
         </div>
