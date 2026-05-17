@@ -106,82 +106,81 @@ def require_auth() -> bool:
 
 
 def _render_login_form() -> None:
-    # ── Branding ──────────────────────────────────────────────────────────────
-    st.markdown(
-        """
-        <div style="max-width:460px;margin:3rem auto 0;">
-          <div style="text-align:center;margin-bottom:2.5rem;">
-            <span style="font-family:'Cormorant Garamond',Georgia,serif;font-size:3.2rem;
-                         font-weight:700;color:#0B2545;letter-spacing:4px;">WIB</span><br>
-            <span style="color:#555;font-size:0.95rem;letter-spacing:0.02em;">
-              CFA Level 1 — Your personal prep space
-            </span>
-          </div>
-        </div>
-        """,
-        unsafe_allow_html=True,
-    )
+    # Center in a narrow column for clean form layout on wide screens
+    _, col, _ = st.columns([1, 1.1, 1])
 
-    # ── Login form ────────────────────────────────────────────────────────────
-    with st.form("login_form", border=True):
+    with col:
+        # ── Branding ──────────────────────────────────────────────────────────
         st.markdown(
-            '<p style="font-size:1.05rem;font-weight:600;color:#0B2545;margin-bottom:0.2rem;">'
-            'Access your space</p>'
-            '<p style="font-size:0.82rem;color:#666;margin-top:0;margin-bottom:1rem;">'
-            'Your pseudo + the last 2 letters of your surname unlock your personal profile.</p>',
+            """
+            <div style="text-align:center;margin:2.5rem 0 2rem;">
+              <span style="font-family:'Cormorant Garamond',Georgia,serif;font-size:3.2rem;
+                           font-weight:700;color:#0B2545;letter-spacing:4px;">WIB</span><br>
+              <span style="color:#666;font-size:0.92rem;letter-spacing:0.02em;">
+                CFA Level 1 — Your personal prep space
+              </span>
+            </div>
+            """,
             unsafe_allow_html=True,
         )
 
-        pseudo = st.text_input(
-            "Pseudo",
-            placeholder="e.g. AlexFinance, JeanDupont…",
-            help="3–30 characters, letters / numbers / underscores",
-        )
-        suffix = st.text_input(
-            "Last 2 letters of your surname",
-            placeholder='e.g. "nt" for Dupont · "on" for Johnson',
-            max_chars=2,
-            help="Case-insensitive — only the last 2 letters of your family name",
-        )
+        # ── Login form ────────────────────────────────────────────────────────
+        with st.form("login_form", border=True):
+            st.markdown(
+                '<p style="font-size:1.05rem;font-weight:600;color:#0B2545;margin-bottom:0.1rem;">'
+                'Access your space</p>'
+                '<p style="font-size:0.81rem;color:#666;margin-top:0;margin-bottom:1.1rem;">'
+                'Your pseudo + the last 2 letters of your surname '
+                'form your unique personal key.</p>',
+                unsafe_allow_html=True,
+            )
 
-        submitted = st.form_submit_button(
-            "Enter WIB →",
-            use_container_width=True,
-            type="primary",
-        )
+            pseudo = st.text_input(
+                "Pseudo",
+                placeholder="e.g. AlexFinance, JeanDupont…",
+                help="3–30 characters · letters, numbers, underscores",
+            )
+            suffix = st.text_input(
+                "Last 2 letters of your surname",
+                placeholder='e.g. "nt" for Dupont · "on" for Johnson',
+                max_chars=2,
+                help="Only letters · case-insensitive",
+            )
 
-    # ── Validation & login ────────────────────────────────────────────────────
-    if submitted:
-        raw_pseudo = pseudo.strip()
-        raw_suffix = suffix.strip()
+            submitted = st.form_submit_button(
+                "Enter WIB →",
+                use_container_width=True,
+                type="primary",
+            )
 
-        # Pseudo validation
-        if len(raw_pseudo) < 3:
-            st.error("Your pseudo must be at least 3 characters.")
-            return
-        if len(raw_pseudo) > 30:
-            st.error("Your pseudo cannot exceed 30 characters.")
-            return
-        if not _re.match(r"^[A-Za-z0-9_À-ÿ]+$", raw_pseudo):
-            st.error("Your pseudo can only contain letters, numbers and underscores (no spaces).")
-            return
+        # ── Validation & login (inside col for aligned error messages) ────────
+        if submitted:
+            raw_pseudo = pseudo.strip()
+            raw_suffix = suffix.strip()
 
-        # Suffix validation
-        if len(raw_suffix) != 2:
-            st.error("Please enter exactly 2 letters from your surname.")
-            return
-        if not _re.match(r"^[A-Za-zÀ-ÿ]{2}$", raw_suffix):
-            st.error("The surname letters must be letters only (no numbers or symbols).")
-            return
+            if len(raw_pseudo) < 3:
+                st.error("Your pseudo must be at least 3 characters.")
+                return
+            if len(raw_pseudo) > 30:
+                st.error("Your pseudo cannot exceed 30 characters.")
+                return
+            if not _re.match(r"^[A-Za-z0-9_À-ÿ]+$", raw_pseudo):
+                st.error("Your pseudo can only contain letters, numbers and underscores.")
+                return
+            if len(raw_suffix) != 2:
+                st.error("Please enter exactly 2 letters from your surname.")
+                return
+            if not _re.match(r"^[A-Za-zÀ-ÿ]{2}$", raw_suffix):
+                st.error("The surname letters must be letters only (no numbers or symbols).")
+                return
 
-        # Build composite key (both lowercased)
-        composite_key = raw_pseudo.lower() + raw_suffix.lower()
-        db = get_db()
-        user = db.get_or_create_user(composite_key, raw_pseudo)
-        _load_session(user)
-        st.session_state.pop("_logged_out_uid", None)
-        _write_cookie(user["id"])
-        st.rerun()
+            composite_key = raw_pseudo.lower() + raw_suffix.lower()
+            db = get_db()
+            user = db.get_or_create_user(composite_key, raw_pseudo)
+            _load_session(user)
+            st.session_state.pop("_logged_out_uid", None)
+            _write_cookie(user["id"])
+            st.rerun()
 
 
 def logout() -> None:

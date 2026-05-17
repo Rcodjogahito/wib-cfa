@@ -62,7 +62,7 @@ if not state["quiz_active"]:
     col1, col2, col3 = st.columns(3)
     with col1:
         topic_choice = st.selectbox("Topic", topic_options, index=_default_idx)
-    _DIFF_LABELS = {"All": None, "Medium": "medium", "Hard": "hard"}
+    _DIFF_LABELS = {"All": None, "Easy": "easy", "Medium": "medium", "Hard": "hard"}
     with col2:
         if topic_choice == "All (Adaptive)":
             difficulty = None
@@ -181,7 +181,7 @@ if idx >= total:
         st.markdown(f'<b>{t}</b> — <span style="color:{color};font-weight:700;">{pct}%</span>', unsafe_allow_html=True)
         st.progress(pct / 100)
 
-    with st.expander("Review all questions"):
+    with st.expander("Review all questions", expanded=True):
         _show_all_expls = st.checkbox("Show explanations for correct answers too", value=False)
         for i, r in enumerate(results):
             icon = "✓" if r["correct"] else "✗"

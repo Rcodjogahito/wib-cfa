@@ -53,7 +53,7 @@ with col1:
 with col2:
     mode = st.selectbox("Mode", ["Free review", "Leitner mode (adaptive)"], key="fc_mode")
 st.caption("Topic/mode changes apply from the next session.")
-
+st.divider()
 if st.button("New session", use_container_width=True, type="secondary"):
     for k in ["fc_cards", "fc_idx", "fc_flipped", "fc_knew", "fc_study",
               "fc_saved", "fc_session_start", "fc_topic_saved", "fc_outcomes"]:

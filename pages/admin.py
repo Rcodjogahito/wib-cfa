@@ -1,5 +1,5 @@
 """
-WIB CFA — Admin panel. Access restricted.
+WIB CFA — Admin panel. Access restricted to Sam.
 """
 
 import streamlit as st
@@ -39,16 +39,16 @@ with st.sidebar:
         unsafe_allow_html=True,
     )
     st.divider()
-    st.page_link("streamlit_app.py", label="Accueil", icon="🏠")
-    st.page_link("pages/1_Study.py", label="Fiches de cours", icon="📖")
+    st.page_link("streamlit_app.py", label="Home", icon="🏠")
+    st.page_link("pages/1_Study.py", label="Study Notes", icon="📖")
     st.page_link("pages/2_Quiz.py", label="Quiz", icon="🎯")
     st.page_link("pages/3_Flashcards.py", label="Flashcards", icon="🃏")
-    st.page_link("pages/4_Progress.py", label="Progression", icon="📈")
-    st.page_link("pages/5_Exam_Simulator.py", label="Simulateur d'examen", icon="⏱️")
+    st.page_link("pages/4_Progress.py", label="Progress", icon="📈")
+    st.page_link("pages/5_Exam_Simulator.py", label="Exam Simulator", icon="⏱️")
     st.divider()
     st.page_link("pages/admin.py", label="Admin", icon="🔐")
     st.divider()
-    if st.button("Déconnexion", use_container_width=True):
+    if st.button("Sign out", use_container_width=True):
         logout()
 
 # ── Content ───────────────────────────────────────────────────────────────────
@@ -59,23 +59,25 @@ import traceback as _tb
 try:
     users = db.get_all_users()
 except Exception as _e:
-    st.error(f"**Erreur get_all_users() — {type(_e).__name__}:** `{_e}`")
+    st.error(f"**get_all_users() error — {type(_e).__name__}:** `{_e}`")
     st.code(_tb.format_exc())
     st.stop()
-total = len(users)
 
+total = len(users)
 diag_done = sum(1 for u in users if u.get("diagnostic_done"))
 with_activity = sum(1 for u in users if u.get("session_count", 0) > 0)
 
 # ── User metrics ──────────────────────────────────────────────────────────────
-st.markdown('<div class="section-header">Utilisateurs</div>', unsafe_allow_html=True)
+
+st.markdown('<div class="section-header">Users</div>', unsafe_allow_html=True)
 cols = st.columns(3)
-cols[0].markdown(metric_card(str(total), "Utilisateurs inscrits"), unsafe_allow_html=True)
-cols[1].markdown(metric_card(str(diag_done), "Diagnostics complétés"), unsafe_allow_html=True)
-cols[2].markdown(metric_card(str(with_activity), "Utilisateurs actifs"), unsafe_allow_html=True)
+cols[0].markdown(metric_card(str(total), "Registered users"), unsafe_allow_html=True)
+cols[1].markdown(metric_card(str(diag_done), "Diagnostics completed"), unsafe_allow_html=True)
+cols[2].markdown(metric_card(str(with_activity), "Active users"), unsafe_allow_html=True)
 
 # ── Question bank metrics ─────────────────────────────────────────────────────
-st.markdown('<div class="section-header" style="margin-top:1.5rem;">Banque de questions</div>',
+
+st.markdown('<div class="section-header" style="margin-top:1.5rem;">Question bank</div>',
             unsafe_allow_html=True)
 try:
     q_stats = db.get_question_stats()
@@ -87,10 +89,10 @@ try:
         if i < len(src_cols):
             src_cols[i].markdown(metric_card(f"{cnt:,}", src), unsafe_allow_html=True)
 except Exception:
-    st.info("Stats questions non disponibles.")
+    st.info("Question stats unavailable.")
 
 st.divider()
-st.subheader("Liste des utilisateurs")
+st.subheader("User list")
 
 rows = []
 for u in users:
@@ -115,11 +117,11 @@ for u in users:
 
     rows.append({
         "Pseudo": u.get("first_name") or u.get("email", ""),
-        "Inscrit le": created or "—",
-        "Diagnostic": "Oui" if u.get("diagnostic_done") else "Non",
-        "Score diag.": score_str,
+        "Registered": created or "—",
+        "Diagnostic": "Yes" if u.get("diagnostic_done") else "No",
+        "Diag. score": score_str,
         "Sessions": u.get("session_count", 0),
-        "Dernière activité": last_active or "—",
+        "Last active": last_active or "—",
     })
 
 df = pd.DataFrame(rows)
