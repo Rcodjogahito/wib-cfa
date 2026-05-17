@@ -1,8 +1,8 @@
 # ETAT ACTUEL — WIB CFA
 > Mis à jour automatiquement à la fin de chaque session Claude Code.
 
-**Date**: 2026-05-17 (session 17)  
-**Commit**: 56ecb94 — "UX: timer permanent Quiz, bouton Valider, sidebar auto-fermeture"  
+**Date**: 2026-05-17 (session 18)  
+**Commit**: 7808f03 — "UX overhaul: French localization, explanation formatting, grid highlighting"  
 **Branch**: master → Streamlit Cloud (auto-deploy)
 
 ---
@@ -16,7 +16,9 @@
 | Tables manquantes | 4 (faux positifs Kaplan — aucune action) |
 | Explications manquantes | 31 (Extra_QB — voir note ci-dessous) |
 
-**Note Extra_QB** : 242/333 explications corrigées avec texte verbatim du PDF. 31 restantes vidées (explications mélangées du mauvais topic détectées et supprimées). 56 avec explication plausible non vérifiable sans re-parser le PDF.
+**Note Extra_QB** : 296/333 explications couvertes (242 verbatim session 17 + 54 nouvelles corrections session 18). 31 restantes vidées. 6 sans correspondance PDF.
+
+**Note Kaplan** : 68 explications corrigées en session 18 (verbatim PDF, matching 100%). 3649 déjà correctes.
 
 **Audit cmd**: `python scripts/audit_questions.py`
 
@@ -38,6 +40,27 @@
 - **Scripts**: `scripts/render_table_pages.py` → images PNG, `scripts/rerender_wrong_pages.py` → correction pages erronées, `scripts/patch_uworld_tables.py` → mise à jour Supabase
 - **Résultat**: 28/28 tables insérées dans `question_en`
 - **Méthode**: lecture images PDF avec Claude Vision (inclus dans abonnement Pro)
+
+---
+
+## Travaux terminés (session 18)
+
+### ✅ Audit explications — Kaplan + Extra_QB (script `audit_fix_all_explanations.py`)
+- **Kaplan** : 68/3717 explications corrigées (verbatim PDF). 100% des questions matchées (0 non-trouvées).
+- **Extra_QB** : 54/333 explications corrigées (verbatim PDF). 242/333 matchées.
+- **UWorld/Kevin_Mock** : SKIP délibéré — faux-positifs de matching détectés en dry-run (ex. explication "impact of inflation" liée à une question "cross rate"). Risque de dégradation > risque de conserver l'existant.
+- **Script** : `scripts/audit_fix_all_explanations.py [--dry-run] [--source kaplan|extra|all]`
+
+### ✅ UX overhaul — Session 18
+- **Bouton "Valider"** : remplace "VALIDER MA REPONSE" (déjà fait en session précédente, confirmé)
+- **Difficulté en français** : "Easy/Medium/Hard" → "Facile/Moyen/Difficile" partout (Quiz, Diagnostic)
+- **Selects en français** : "All (Adaptatif)" → "Tous (Adaptatif)", "All" → "Tous" (Flashcards)
+- **Boîte explication** : ajout `white-space: pre-wrap` (préserve les sauts de ligne PDF), bordure gauche dorée, label "EXPLICATION" au-dessus
+- **Navigation quiz/exam** : bouton de la question courante en style "primary" (navy) dans la grille
+- **Flashcard** : "Example:" → "Exemple :"
+- **Diagnostic** : "3 per topic" → "3 par topic"
+- **Navigation quiz** : bouton inline "Question suivante →" après feedback, grille de navigation
+- **Fichiers modifiés** : `pages/2_Quiz.py`, `pages/3_Flashcards.py`, `pages/5_Exam_Simulator.py`, `streamlit_app.py`, `src/styles.py`
 
 ---
 
