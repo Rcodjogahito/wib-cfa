@@ -652,16 +652,14 @@ def inject_styles():
         """,
         unsafe_allow_html=True,
     )
-    # Mobile sidebar — full-page-reload, touchend-first approach.
-    # iOS Safari dispatches: touchstart → touchend → (300ms) → click.
-    # React/Streamlit intercepts touchend (via its synthetic event system) and calls
-    # history.pushState() for SPA navigation BEFORE click ever fires.
-    # So a click-only listener is always too late on iOS.
-    # Fix: intercept touchend in capture phase with {passive:false} so we can call
-    # preventDefault() — this cancels the SPA navigation AND suppresses the synthetic
-    # click. Then force window.parent.location.href for a full page reload.
-    # Each target page starts with initial_sidebar_state="collapsed" → sidebar closed
-    # natively, zero React manipulation needed.
+    # Mobile sidebar — URL-polling + full-page-reload.
+    # All touch/click interception approaches failed on iOS Safari:
+    # - click fires after React already did pushState
+    # - touchend with passive:false blocked all navigation
+    # Safe approach: don't intercept anything. Let React navigate normally.
+    # Poll the URL every 100ms. When it changes on mobile, replace() the new URL
+    # with a full-page reload — the target page starts with initial_sidebar_state=
+    # "collapsed", so the sidebar is closed natively. No React fighting needed.
     _components.html(
         """
         <script>
@@ -669,71 +667,23 @@ def inject_styles():
             function isMobile() {
                 try { return window.parent.innerWidth < 768; } catch(e) { return false; }
             }
-
-            function sidebarHref(doc, target) {
-                var sb = doc.querySelector('section[data-testid="stSidebar"]');
-                if (!sb || !sb.contains(target)) return null;
-                var a = target.closest('a[href]');
-                if (!a) return null;
-                var href = a.href;
-                if (!href || href === '#' || href.indexOf('javascript:') === 0) return null;
-                return href;
-            }
-
             function setup() {
                 try {
                     var par = window.parent;
-                    var doc = par.document;
                     if (par._wibInit) return;
                     par._wibInit = true;
-
-                    var pending = null;
-                    var startX = 0, startY = 0;
-
-                    // Record which sidebar link the finger landed on.
-                    doc.addEventListener('touchstart', function(e) {
-                        pending = null;
-                        if (!isMobile() || !e.touches || e.touches.length !== 1) return;
-                        startX = e.touches[0].clientX;
-                        startY = e.touches[0].clientY;
-                        pending = sidebarHref(doc, e.target);
-                    }, {capture: true, passive: true});
-
-                    // Scroll cancels the pending navigation.
-                    doc.addEventListener('touchmove', function() {
-                        pending = null;
-                    }, {capture: true, passive: true});
-
-                    // passive:false is required so preventDefault() is honoured on iOS.
-                    doc.addEventListener('touchend', function(e) {
-                        if (!pending) return;
-                        if (!isMobile() || !e.changedTouches || e.changedTouches.length !== 1) {
-                            pending = null; return;
-                        }
-                        var dx = Math.abs(e.changedTouches[0].clientX - startX);
-                        var dy = Math.abs(e.changedTouches[0].clientY - startY);
-                        if (dx > 10 || dy > 10) { pending = null; return; }
-                        // Genuine tap on a sidebar nav link.
-                        e.preventDefault();           // cancel SPA nav + suppress synthetic click
-                        e.stopImmediatePropagation(); // stop React's touchend handler
-                        var href = pending;
-                        pending = null;
-                        par.location.href = href;     // full-page reload → sidebar starts collapsed
-                    }, {capture: true, passive: false});
-
-                    // Desktop / non-touch fallback.
-                    doc.addEventListener('click', function(e) {
-                        if (!isMobile()) return;
-                        var href = sidebarHref(doc, e.target);
-                        if (!href) return;
-                        e.preventDefault();
-                        e.stopImmediatePropagation();
-                        par.location.href = href;
-                    }, true);
-
+                    var lastHref = par.location.href;
+                    setInterval(function() {
+                        try {
+                            var cur = par.location.href;
+                            if (cur !== lastHref) {
+                                lastHref = cur;
+                                if (isMobile()) par.location.replace(cur);
+                            }
+                        } catch(e) {}
+                    }, 100);
                 } catch(e) {}
             }
-
             setTimeout(setup, 400);
         })();
         </script>
