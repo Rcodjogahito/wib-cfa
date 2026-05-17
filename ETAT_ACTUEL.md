@@ -1,8 +1,8 @@
 # ETAT ACTUEL — WIB CFA
 > Mis à jour automatiquement à la fin de chaque session Claude Code.
 
-**Date**: 2026-05-17 (session 23)  
-**Commit**: d6e8b01 — "feat: two-field composite-key auth, admin English, quiz UX fixes"  
+**Date**: 2026-05-17 (session 24)  
+**Commit**: 17f3335 — "fix: remove avatar circle, show pseudo only in sidebar; DB first_name corrected"  
 **Branch**: master → Streamlit Cloud (auto-deploy)
 
 ---
@@ -40,6 +40,30 @@
 - **Scripts**: `scripts/render_table_pages.py` → images PNG, `scripts/rerender_wrong_pages.py` → correction pages erronées, `scripts/patch_uworld_tables.py` → mise à jour Supabase
 - **Résultat**: 28/28 tables insérées dans `question_en`
 - **Méthode**: lecture images PDF avec Claude Vision (inclus dans abonnement Pro)
+
+---
+
+## Travaux terminés (session 24)
+
+### ✅ Fix affichage pseudo dans la sidebar — toutes les pages
+
+**Problème** : la sidebar affichait "Samto" au lieu de "Sam". Cause : lors de la restauration depuis cookie, `get_user_by_id` retournait le `first_name` stocké en DB (`"Samto"` issu de l'ancienne interface mono-champ) sans jamais le mettre à jour.
+
+**Corrections appliquées :**
+
+1. **`src/database.py` — `get_or_create_user`** : si l'utilisateur existe et que son `first_name` diffère du pseudo saisi, mise à jour immédiate en DB (Supabase + SQLite). Garantit la synchronisation à chaque login.
+
+2. **Supabase — correction directe** : `first_name` mis à jour de `"Samto"` → `"Sam"` pour `email="samto"` via script Python + service key.
+
+3. **Compte orphelin supprimé** : ancien compte `email="sam"` (créé sur l'ancienne interface mono-champ, vide de données utiles) supprimé (1 session + user).
+
+4. **`src/styles.py` — `render_sidebar_user(username)`** : nouvelle fonction centralisée pour afficher le pseudo dans la sidebar. Remplace le `st.markdown(...)` dupliqué sur les 7 pages (streamlit_app + 5 inner pages + admin).
+
+5. **Cache Streamlit Cloud** : `pytz>=2024.2` dans `requirements.txt` pour forcer un rebuild complet de l'environnement.
+
+**Vérification composite key** : testé que `"Sam" + "ab"` → clé `"samab"` → compte distinct. La collision n'est possible que si deux utilisateurs choisissent exactement le même pseudo ET les mêmes 2 lettres de nom — ce qui est la définition de l'identifiant.
+
+**Commits** : `1b14bd1`, `ef2ec08`, `5d40f87`, `17f3335`
 
 ---
 
