@@ -62,12 +62,14 @@ if not state["quiz_active"]:
     col1, col2, col3 = st.columns(3)
     with col1:
         topic_choice = st.selectbox("Topic", topic_options, index=_default_idx)
+    _DIFF_LABELS = {"Toutes": None, "Facile": "easy", "Moyen": "medium", "Difficile": "hard"}
     with col2:
         if topic_choice == "All (Adaptatif)":
-            difficulty = "All"
+            difficulty = None
             st.caption("Mode adaptatif — toutes difficultés, topics faibles prioritaires")
         else:
-            difficulty = st.selectbox("Difficulté", ["All", "Easy", "Medium", "Hard"])
+            _diff_label = st.selectbox("Difficulté", list(_DIFF_LABELS.keys()))
+            difficulty = _DIFF_LABELS[_diff_label]
     with col3:
         n_questions = st.selectbox("Nombre de questions", [10, 20, 30], index=1)
 
@@ -75,12 +77,11 @@ if not state["quiz_active"]:
 
     if st.button("Lancer le quiz", use_container_width=True, type="primary"):
         topic = None if topic_choice == "All (Adaptatif)" else topic_choice
-        diff = None if difficulty == "All" else difficulty
 
         if topic_choice == "All (Adaptatif)":
             questions = get_weighted_questions(user["id"], topic=None, n=n_questions, db=db)
         else:
-            questions = db.get_questions(topic=topic, difficulty=diff, n=n_questions)
+            questions = db.get_questions(topic=topic, difficulty=difficulty, n=n_questions)
 
         if not questions:
             st.error("Aucune question trouvée avec ces filtres.")
