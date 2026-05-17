@@ -43,7 +43,7 @@ user = get_current_user()
 db = get_db()
 state = st.session_state
 
-render_page_header("Flashcards", "Leitner spaced-repetition system")
+render_page_header("Flashcards", "Système de répétition espacée — méthode Leitner")
 
 # ── Setup ─────────────────────────────────────────────────────────────────────
 

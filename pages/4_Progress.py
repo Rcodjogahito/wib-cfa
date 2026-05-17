@@ -41,7 +41,7 @@ if not require_auth():
 user = get_current_user()
 db = get_db()
 
-render_page_header("Progress", "Mastery tracker — CFA Level I topics")
+render_page_header("Progression", "Suivi de maîtrise — CFA Niveau I")
 
 progress_rows = db.get_progress(user["id"])
 sessions = db.get_sessions(user["id"])
@@ -56,8 +56,8 @@ acc = round(total_cor / total_att * 100, 1) if total_att else 0
 mastered = sum(1 for v in mastery.values() if v >= 70)
 
 k1, k2, k3, k4 = st.columns(4)
-k1.markdown(metric_card(f"{readiness:.0f}%", "Readiness"), unsafe_allow_html=True)
-k2.markdown(metric_card(f"{acc:.0f}%", "Accuracy"), unsafe_allow_html=True)
+k1.markdown(metric_card(f"{readiness:.0f}%", "Préparation"), unsafe_allow_html=True)
+k2.markdown(metric_card(f"{acc:.0f}%", "Précision"), unsafe_allow_html=True)
 k3.markdown(metric_card(f"{mastered}/10", "Topics ≥ 70%"), unsafe_allow_html=True)
 k4.markdown(metric_card(str(len(sessions)), "Sessions"), unsafe_allow_html=True)
 
@@ -113,7 +113,7 @@ with col_gauge:
                 "value": 70,
             },
         },
-        title={"text": "Objectif: 70%", "font": {"size": 14}},
+        title={"text": "Cible : 70%", "font": {"size": 14}},
     ))
     fig_gauge.update_layout(
         paper_bgcolor="#F8F9FB",
@@ -197,7 +197,7 @@ if sessions:
         hovertemplate="%{x}: %{y:.1f}% (%{text})<extra></extra>",
     ))
     fig_hist.add_hline(y=70, line_dash="dash", line_color="#1B7F4F",
-                       annotation_text="70% target", annotation_position="right")
+                       annotation_text="Objectif 70%", annotation_position="right")
     fig_hist.update_layout(
         yaxis=dict(range=[0, 105], title="Score (%)"),
         xaxis=dict(title="Date"),

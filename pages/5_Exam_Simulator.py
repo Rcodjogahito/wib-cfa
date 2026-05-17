@@ -49,7 +49,7 @@ if not require_auth():
 user = get_current_user()
 db = get_db()
 
-render_page_header("Exam Simulator", "Mock Partial (45Q) · Mock Full (180Q)")
+render_page_header("Simulateur d'examen", "Partiel (45Q — 1h15) · Complet (180Q — 4h30)")
 
 state = st.session_state
 PASS_THRESHOLD = 70.0
@@ -195,7 +195,7 @@ if state.get("exam_submitted"):
         textposition="outside",
     ))
     fig.add_hline(y=70, line_dash="dash", line_color="#0B2545",
-                  annotation_text="70% threshold")
+                  annotation_text="Seuil 70%")
     fig.update_layout(
         yaxis=dict(range=[0, 110], title="Score (%)"),
         xaxis=dict(tickangle=-30),
@@ -429,9 +429,10 @@ else:
 # ── Question grid navigator ───────────────────────────────────────────────────
 
 with st.expander("Naviguer entre les questions"):
-    grid_cols = st.columns(10)
+    _ncols = 15
+    grid_cols = st.columns(_ncols)
     for i in range(total):
-        col = grid_cols[i % 10]
+        col = grid_cols[i % _ncols]
         ans = answers.get(i)
         is_flagged = i in flagged
         flag_mark = "★" if is_flagged else ""

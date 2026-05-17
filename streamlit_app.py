@@ -334,8 +334,8 @@ mastered_count = sum(1 for v in mastery.values() if v >= 70)
 _diag_score = st.session_state.get("diagnostic_score")
 diag_display = f"{_diag_score:.0f}%" if _diag_score is not None else "—"
 
-k1.markdown(metric_card(f"{readiness:.0f}%", "Readiness Score"), unsafe_allow_html=True)
-k2.markdown(metric_card(f"{overall_acc:.0f}%", "Accuracy globale"), unsafe_allow_html=True)
+k1.markdown(metric_card(f"{readiness:.0f}%", "Score de préparation"), unsafe_allow_html=True)
+k2.markdown(metric_card(f"{overall_acc:.0f}%", "Précision globale"), unsafe_allow_html=True)
 k3.markdown(metric_card(f"{mastered_count}/10", "Topics maîtrisés"), unsafe_allow_html=True)
 k4.markdown(metric_card(str(len(sessions)), "Sessions complétées"), unsafe_allow_html=True)
 k5.markdown(metric_card(diag_display, "Score diagnostic"), unsafe_allow_html=True)

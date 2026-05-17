@@ -43,7 +43,7 @@ if not require_auth():
 user = get_current_user()
 db = get_db()
 
-render_page_header("Quiz", "Adaptive practice — 7,249 questions")
+render_page_header("Quiz", "Pratique adaptative — 7 249 questions")
 
 # ── Quiz configuration ────────────────────────────────────────────────────────
 
@@ -341,6 +341,11 @@ if answered:
         expl_parts.append(f'<b>[FR]</b> {q["explanation_fr"]}')
     if expl_parts:
         st.markdown(f'<div class="explanation-box">{"<br><br>".join(expl_parts)}</div>', unsafe_allow_html=True)
+    st.markdown("")
+    _next_label_inline = "Voir les résultats →" if idx == total - 1 else "Question suivante →"
+    if st.button(_next_label_inline, key="qnav_next_inline", type="primary", use_container_width=True):
+        state["quiz_idx"] += 1
+        st.rerun()
 
 # ── Navigation bar ────────────────────────────────────────────────────────────
 nav1, _nav_mid, nav3 = st.columns([1, 4, 1])
@@ -353,6 +358,18 @@ with nav3:
     if st.button(next_label, use_container_width=True, key="qnav_next"):
         state["quiz_idx"] += 1
         st.rerun()
+
+# ── Question grid navigator ──────────────────────────────────────────────────
+with st.expander("Naviguer entre les questions"):
+    _gcols = st.columns(10)
+    for _gi in range(total):
+        _gc = _gcols[_gi % 10]
+        _ga = answers.get(_gi)
+        _label = f"{'✓' if _ga else ''}{_gi+1}"
+        if _gc.button(_label, key=f"qnav_grid_{_gi}",
+                      help=f"Q{_gi+1}: {'Répondu' if _ga else 'Non répondu'}"):
+            state["quiz_idx"] = _gi
+            st.rerun()
 
 # ── Bottom actions ────────────────────────────────────────────────────────────
 st.markdown("---")
