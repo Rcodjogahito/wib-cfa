@@ -651,46 +651,72 @@ def inject_styles():
         """,
         unsafe_allow_html=True,
     )
-    # Auto-collapse sidebar on mobile after clicking a nav link.
-    # Must use _components.html() — st.markdown() strips <script> tags.
-    # JS runs inside an iframe, so window.parent.document reaches the real DOM.
+    # Auto-collapse sidebar on mobile after navigation.
+    # Two-layer strategy:
+    #   1. Document-level click listener (immediate, survives React DOM updates)
+    #   2. URL polling (catches navigations that bypass click interception)
+    # Both guards are stored on window.parent so they survive iframe re-creation
+    # across page transitions. JS runs in a srcdoc iframe — same-origin as parent.
     _components.html(
         """
         <script>
         (function() {
             function collapse(doc) {
-                // Primary: Streamlit's official collapse button
-                var btn = doc.querySelector('[data-testid="stSidebarCollapseButton"]');
-                if (btn) { btn.click(); return true; }
-                // Fallback: first button with an SVG inside the sidebar (mobile close icon)
                 var sb = doc.querySelector('section[data-testid="stSidebar"]');
-                if (sb) {
-                    var btns = sb.querySelectorAll('button');
-                    for (var i = 0; i < btns.length; i++) {
-                        if (btns[i].querySelector('svg')) { btns[i].click(); return true; }
-                    }
+                if (!sb) return false;
+                var btn = sb.querySelector('[data-testid="stSidebarCollapseButton"]');
+                if (btn) { btn.click(); return true; }
+                var btns = sb.querySelectorAll('button');
+                for (var i = 0; i < btns.length; i++) {
+                    if (btns[i].querySelector('svg')) { btns[i].click(); return true; }
                 }
                 return false;
             }
 
+            function isMobile() {
+                try { return window.parent.innerWidth < 768; } catch(e) { return false; }
+            }
+
+            function closeOnMobile(doc) {
+                if (!isMobile()) return;
+                if (!collapse(doc)) {
+                    setTimeout(function() {
+                        if (!collapse(doc)) setTimeout(function() { collapse(doc); }, 350);
+                    }, 200);
+                }
+            }
+
             function setup() {
                 try {
-                    var doc = window.parent.document;
-                    var sb = doc.querySelector('section[data-testid="stSidebar"]');
-                    if (!sb) { setTimeout(setup, 400); return; }
-                    // Dedup guard — attach only once per sidebar element lifetime
-                    if (sb.dataset.wibAutoclose) return;
-                    sb.dataset.wibAutoclose = '1';
-                    sb.addEventListener('click', function(e) {
-                        // Only auto-close on mobile viewports (< 768 px)
-                        if (window.parent.innerWidth >= 768) return;
-                        if (e.target.closest('a')) {
-                            setTimeout(function() {
-                                if (!collapse(doc)) setTimeout(function() { collapse(doc); }, 350);
-                            }, 80);
-                        }
-                    }, true);
-                } catch (_) { /* cross-origin safety */ }
+                    var par = window.parent;
+                    var doc = par.document;
+
+                    // Layer 1: document-level click listener (registered once on parent window).
+                    // Stored on par so it survives iframe teardown between page navigations.
+                    if (!par._wibSidebarClick) {
+                        par._wibSidebarClick = true;
+                        doc.addEventListener('click', function(e) {
+                            if (!isMobile()) return;
+                            var sb = doc.querySelector('section[data-testid="stSidebar"]');
+                            if (sb && sb.contains(e.target) && e.target.closest('a')) {
+                                setTimeout(function() { closeOnMobile(doc); }, 80);
+                            }
+                        }, true);
+                    }
+
+                    // Layer 2: URL polling — catches navigations that don't bubble
+                    // cleanly (e.g. React Router synthetic events, programmatic nav).
+                    if (!par._wibNavWatch) {
+                        var lastHref = par.location.href;
+                        par._wibNavWatch = setInterval(function() {
+                            try {
+                                var cur = par.location.href;
+                                if (cur !== lastHref) { lastHref = cur; closeOnMobile(doc); }
+                            } catch(e) {}
+                        }, 300);
+                    }
+
+                } catch(e) {}
             }
 
             setTimeout(setup, 600);
