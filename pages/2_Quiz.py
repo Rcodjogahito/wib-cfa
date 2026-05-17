@@ -11,7 +11,7 @@ import streamlit as st
 from src.adaptive import get_weighted_questions
 from src.auth import CFA_TOPICS, get_current_user, logout, require_auth
 from src.database import get_db
-from src.styles import inject_styles, render_page_header, render_sidebar_brand, render_question, question_first_line
+from src.styles import inject_styles, render_page_header, render_sidebar_brand, render_sidebar_user, render_question, question_first_line
 
 st.set_page_config(page_title="Quiz — WIB CFA", page_icon="🎯", layout="wide", initial_sidebar_state="collapsed")
 inject_styles()
@@ -20,11 +20,7 @@ with st.sidebar:
     render_sidebar_brand()
     st.divider()
     if st.session_state.get("user_id"):
-        st.markdown(
-            f'<div style="font-size:0.82rem;font-weight:600;color:rgba(255,255,255,0.85);'
-            f'letter-spacing:0.03em;">{get_current_user()["username"]}</div>',
-            unsafe_allow_html=True,
-        )
+        render_sidebar_user(get_current_user()["username"])
         st.divider()
     st.page_link("streamlit_app.py", label="Home", icon="🏠")
     st.page_link("pages/1_Study.py", label="Study Notes", icon="📖")

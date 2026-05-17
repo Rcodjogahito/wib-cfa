@@ -21,7 +21,7 @@ try:
     from src.auth import CFA_TOPICS, get_current_user, logout, require_auth
     from src.database import get_db
     from src.progress import compute_mastery_map, readiness_score, weak_topics
-    from src.styles import inject_styles, metric_card, render_hero, render_page_header, render_sidebar_brand, render_ticker, render_question
+    from src.styles import inject_styles, metric_card, render_hero, render_page_header, render_sidebar_brand, render_sidebar_user, render_ticker, render_question
 except Exception as _e:
     st.error(f"**Erreur d'import — {type(_e).__name__}:** `{_e}`")
     st.code(_tb.format_exc())
@@ -38,11 +38,7 @@ def _sidebar():
         st.divider()
         if st.session_state.get("user_id"):
             user = get_current_user()
-            st.markdown(
-                f'<div style="font-size:0.82rem;font-weight:600;color:rgba(255,255,255,0.85);'
-                f'letter-spacing:0.03em;">{user["username"]}</div>',
-                unsafe_allow_html=True,
-            )
+            render_sidebar_user(user["username"])
             st.divider()
             st.page_link("streamlit_app.py", label="Home", icon="🏠")
             st.page_link("pages/1_Study.py", label="Study Notes", icon="📖")
