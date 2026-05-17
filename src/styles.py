@@ -647,14 +647,27 @@ def inject_styles():
             .metric-card .metric-value { font-size: 1.7rem; }
             .wib-page-header .page-title { font-size: 1.65rem; }
         }
+
+        /* ── Mobile sidebar force-close during navigation ─────────────── */
+        /* Applied via JS (body[data-wib-closing]) immediately on nav click,
+           kept for 2 s so Streamlit's own state restoration can't reopen it. */
+        @media (max-width: 767px) {
+            body[data-wib-closing] section[data-testid="stSidebar"] {
+                transform: translateX(-110%) !important;
+                box-shadow: none !important;
+                transition: transform 0.15s ease-out !important;
+            }
+        }
         </style>
         """,
         unsafe_allow_html=True,
     )
-    # Mobile sidebar auto-close after navigation.
-    # Key invariant: stSidebarCollapseButton is only in the DOM when sidebar is OPEN.
-    # We check this before every close attempt so retries never accidentally reopen it.
-    # stSidebarCollapsedControl = EXPAND button (shown when closed) — never click it here.
+    # Mobile sidebar: triple-layer close to beat Streamlit's state restoration.
+    # Layer 1 — CSS: body[data-wib-closing] slides sidebar off-screen immediately,
+    #   held 2 s so the page re-render can't visually restore it.
+    # Layer 2 — React: click collapse button / overlay to update component state.
+    # Layer 3 — MutationObserver: if Streamlit's rerender reopens the sidebar,
+    #   we close it again instantly. Runs for 2.5 s then stops.
     _components.html(
         """
         <script>
@@ -663,63 +676,77 @@ def inject_styles():
                 try { return window.parent.innerWidth < 768; } catch(e) { return false; }
             }
 
-            // True only while the sidebar drawer is actually visible
             function isOpen(doc) {
-                return !!doc.querySelector('[data-testid="stSidebarCollapseButton"]');
+                var btn = doc.querySelector('[data-testid="stSidebarCollapseButton"]');
+                if (btn && btn.offsetParent !== null) return true;
+                var sb = doc.querySelector('section[data-testid="stSidebar"]');
+                try { return !!sb && sb.getBoundingClientRect().left > -50; } catch(e) { return false; }
             }
 
-            function doClose(doc) {
-                if (!isOpen(doc)) return;  // guard: stop if already closed
-
-                // stSidebarOverlay = dark backdrop shown beside sidebar when open
+            function clickClose(doc) {
                 var overlay = doc.querySelector('[data-testid="stSidebarOverlay"]');
                 if (overlay) { overlay.click(); return; }
-
-                // Collapse button inside sidebar header
                 var btn = doc.querySelector('[data-testid="stSidebarCollapseButton"]');
-                if (btn) { btn.click(); return; }
-
-                // Last resort: first SVG button inside sidebar
-                var sb = doc.querySelector('section[data-testid="stSidebar"]');
-                if (sb) {
-                    var btns = sb.querySelectorAll('button');
-                    for (var i = 0; i < btns.length; i++) {
-                        if (btns[i].querySelector('svg')) { btns[i].click(); return; }
-                    }
-                }
+                if (btn) btn.click();
             }
 
-            function scheduleClose(doc) {
-                // Three attempts — each guarded by isOpen() so no accidental reopen
-                doClose(doc);
-                setTimeout(function() { doClose(doc); }, 350);
-                setTimeout(function() { doClose(doc); }, 800);
+            var watcher = null, watchTimer = null, cssTimer = null;
+
+            function closeFully(doc) {
+                if (!isMobile()) return;
+
+                // Layer 1: CSS override — instant visual close, survives React re-render
+                doc.body.setAttribute('data-wib-closing', '1');
+                if (cssTimer) clearTimeout(cssTimer);
+                cssTimer = setTimeout(function() {
+                    doc.body.removeAttribute('data-wib-closing');
+                }, 2000);
+
+                // Layer 2: React state — click button with retries
+                clickClose(doc);
+                setTimeout(function() { if (isOpen(doc)) clickClose(doc); }, 350);
+                setTimeout(function() { if (isOpen(doc)) clickClose(doc); }, 800);
+
+                // Layer 3: MutationObserver — re-close if Streamlit restores state
+                if (watcher) { watcher.disconnect(); watcher = null; }
+                if (watchTimer) { clearTimeout(watchTimer); }
+                var sb = doc.querySelector('section[data-testid="stSidebar"]');
+                if (sb) {
+                    watcher = new MutationObserver(function() {
+                        if (isOpen(doc)) clickClose(doc);
+                    });
+                    watcher.observe(sb, { attributes: true, childList: true });
+                    if (sb.parentElement) {
+                        watcher.observe(sb.parentElement, { childList: true });
+                    }
+                }
+                watchTimer = setTimeout(function() {
+                    if (watcher) { watcher.disconnect(); watcher = null; }
+                }, 2500);
             }
 
             function setup() {
                 try {
                     var par = window.parent;
                     var doc = par.document;
-                    if (par._wibSidebarInit) return;
-                    par._wibSidebarInit = true;
+                    if (par._wibInit) return;
+                    par._wibInit = true;
 
-                    // Capture-phase: fires before React, survives DOM swaps
                     doc.addEventListener('click', function(e) {
                         if (!isMobile()) return;
                         var sb = doc.querySelector('section[data-testid="stSidebar"]');
                         if (sb && sb.contains(e.target) && e.target.closest('a')) {
-                            setTimeout(function() { scheduleClose(doc); }, 80);
+                            setTimeout(function() { closeFully(doc); }, 60);
                         }
                     }, true);
 
-                    // URL polling as belt-and-suspenders
                     var lastHref = par.location.href;
                     setInterval(function() {
                         try {
                             var cur = par.location.href;
                             if (cur !== lastHref) {
                                 lastHref = cur;
-                                if (isMobile()) scheduleClose(doc);
+                                if (isMobile()) closeFully(doc);
                             }
                         } catch(e) {}
                     }, 300);
