@@ -652,14 +652,14 @@ def inject_styles():
         """,
         unsafe_allow_html=True,
     )
-    # Mobile sidebar — URL-polling + full-page-reload.
-    # All touch/click interception approaches failed on iOS Safari:
-    # - click fires after React already did pushState
-    # - touchend with passive:false blocked all navigation
-    # Safe approach: don't intercept anything. Let React navigate normally.
-    # Poll the URL every 100ms. When it changes on mobile, replace() the new URL
-    # with a full-page reload — the target page starts with initial_sidebar_state=
-    # "collapsed", so the sidebar is closed natively. No React fighting needed.
+    # Mobile sidebar — URL polling + reload() + instant CSS hide.
+    # Why location.replace(cur) failed: React calls history.pushState('/Quiz')
+    # BEFORE our poll fires. The browser is already at /Quiz, so replace('/Quiz')
+    # is treated as a same-URL navigation (soft reload or no-op in some browsers).
+    # Fix: use location.reload() which always forces a true server round-trip
+    # regardless of how the current URL was set.
+    # Anti-flash: hide sidebar via CSS the instant we detect the URL change —
+    # before the 50ms delay — so the user never sees the brief open state.
     _components.html(
         """
         <script>
@@ -676,15 +676,37 @@ def inject_styles():
                     setInterval(function() {
                         try {
                             var cur = par.location.href;
-                            if (cur !== lastHref) {
-                                lastHref = cur;
-                                if (isMobile()) par.location.replace(cur);
-                            }
+                            if (cur === lastHref) return;
+                            lastHref = cur;
+                            if (!isMobile()) return;
+                            // 1. Instant visual hide — eliminates the open-sidebar flash
+                            try {
+                                var sb = par.document.querySelector(
+                                    'section[data-testid="stSidebar"]'
+                                );
+                                if (sb) {
+                                    sb.style.setProperty('transform', 'translateX(-110%)', 'important');
+                                    sb.style.setProperty('transition', 'none', 'important');
+                                }
+                            } catch(ignore) {}
+                            // 2. Clear any Streamlit localStorage sidebar state
+                            try {
+                                var ls = par.localStorage;
+                                var rm = [];
+                                for (var i = 0; i < ls.length; i++) {
+                                    var k = ls.key(i);
+                                    if (k && /sidebar/i.test(k)) rm.push(k);
+                                }
+                                rm.forEach(function(k) { ls.removeItem(k); });
+                            } catch(ignore) {}
+                            // 3. reload() — forces a real server round-trip, unlike
+                            //    replace(cur) which is a no-op when already at cur
+                            setTimeout(function() { par.location.reload(); }, 50);
                         } catch(e) {}
                     }, 100);
                 } catch(e) {}
             }
-            setTimeout(setup, 400);
+            setTimeout(setup, 200);
         })();
         </script>
         """,
