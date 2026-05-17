@@ -314,14 +314,33 @@ def inject_styles():
             margin-bottom: 1.5rem;
             border-bottom: 1px solid var(--gray-100);
         }
-        .wib-page-header .brand-mark {
-            font-size: 0.60rem;
+        /* Brand identity row: WIB · Who Wants to Be an Investment Banker? */
+        .wib-page-header .brand-identity {
+            display: flex;
+            align-items: baseline;
+            flex-wrap: wrap;
+            gap: 0 0.40rem;
+            margin-bottom: 8px;
+        }
+        .wib-page-header .brand-mark-word {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 0.82rem;
             font-weight: 600;
             color: var(--gold-500);
-            letter-spacing: 0.26em;
-            text-transform: uppercase;
-            margin-bottom: 6px;
-            opacity: 0.80;
+            letter-spacing: 0.12em;
+        }
+        .wib-page-header .brand-sep {
+            font-size: 0.72rem;
+            color: rgba(201,168,76,0.42);
+            font-weight: 400;
+        }
+        .wib-page-header .brand-fullname {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 0.88rem;
+            font-weight: 400;
+            font-style: italic;
+            color: var(--gray-600);
+            letter-spacing: 0.005em;
         }
         .wib-page-header .page-title {
             font-family: 'Cormorant Garamond', serif;
@@ -386,15 +405,17 @@ def inject_styles():
             text-indent: 0.16em;
             line-height: 1;
         }
-        /* Tagline: gold-tinted, uppercase — accent colour for supporting text */
+        /* Tagline: Cormorant italic — matches page-header brand-fullname register */
         .wib-hero .tagline {
-            font-size: 0.66rem;
-            color: rgba(201,168,76,0.62);
-            margin-top: 14px;
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.05rem;
+            font-style: italic;
+            color: rgba(255,255,255,0.60);
+            margin-top: 12px;
             font-weight: 400;
-            letter-spacing: 0.20em;
-            text-indent: 0.20em;
-            text-transform: uppercase;
+            letter-spacing: 0.01em;
+            text-transform: none;
+            text-indent: 0;
         }
 
         /* ── Ticker ───────────────────────────────────────────────────── */
@@ -670,8 +691,10 @@ def inject_styles():
         /* ── Responsive ───────────────────────────────────────────────── */
         @media (max-width: 768px) {
             .wib-hero .brand { font-size: 2.4rem; }
+            .wib-hero .tagline { font-size: 0.92rem; }
             .metric-card .metric-value { font-size: 1.7rem; }
             .wib-page-header .page-title { font-size: 1.65rem; }
+            .wib-page-header .brand-fullname { font-size: 0.80rem; }
         }
 
         </style>
@@ -801,7 +824,11 @@ def render_page_header(title: str, subtitle: str = ""):
     st.markdown(
         f"""
         <div class="wib-page-header">
-            <div class="brand-mark">WIB &mdash; CFA Level I</div>
+            <div class="brand-identity">
+                <span class="brand-mark-word">WIB</span>
+                <span class="brand-sep">&middot;</span>
+                <span class="brand-fullname">Who Wants to Be an Investment Banker?</span>
+            </div>
             <div class="page-title">{title}</div>
             {sub_html}
         </div>
