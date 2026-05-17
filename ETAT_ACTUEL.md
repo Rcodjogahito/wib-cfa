@@ -1,8 +1,8 @@
 # ETAT ACTUEL — WIB CFA
 > Mis à jour automatiquement à la fin de chaque session Claude Code.
 
-**Date**: 2026-05-17 (session 18)  
-**Commit**: 7808f03 — "UX overhaul: French localization, explanation formatting, grid highlighting"  
+**Date**: 2026-05-17 (session 20)  
+**Commit**: c7d6218 — "UI/UX improvements and explanation audit corrections"  
 **Branch**: master → Streamlit Cloud (auto-deploy)
 
 ---
@@ -40,6 +40,47 @@
 - **Scripts**: `scripts/render_table_pages.py` → images PNG, `scripts/rerender_wrong_pages.py` → correction pages erronées, `scripts/patch_uworld_tables.py` → mise à jour Supabase
 - **Résultat**: 28/28 tables insérées dans `question_en`
 - **Méthode**: lecture images PDF avec Claude Vision (inclus dans abonnement Pro)
+
+---
+
+## Travaux terminés (session 20)
+
+### ✅ Audit complet explications — toutes sources (script `audit_fix_all_explanations.py`)
+- **UWorld** : 6 explications corrigées (sim=1.00 ou 0.81 à 120 chars). 3 PDFs ignorés (hang pdfplumber : 1.03, 5.12, 11.03). min_length relevé 60→120 pour éliminer faux-positifs.
+- **Kaplan** : 0 correction — 3717/3717 déjà correctes à 100%.
+- **Extra_QB** : 0 correction — 242/333 matchées, toutes déjà correctes.
+- **Kevin_Mock** : 41 explications corrigées (sim=1.00, 176/180 matchées).
+- **Résultat** : 47 corrections appliquées au total (verbatim PDF).
+
+### ✅ Améliorations UI/UX (session 20)
+- **Quiz** : textes de résultats corrigés ("Réussi !" → "Passed!", "À retravailler" → "Needs work")
+- **Quiz** : boutons réponses désactivés montrent maintenant ✓ sur la bonne réponse et ✗ sur le mauvais choix
+- **Quiz** : barre de progression basée sur les questions répondues (pas la position)
+- **Quiz** : grille navigation dépliée par défaut (expanded=True)
+- **Quiz** : review final — toggle "Show explanations for correct answers too"
+- **Exam Simulator** : grille navigation "Naviguer entre les questions" → "Navigate questions"
+- **Exam Simulator** : quand "Show incorrect only" = False, les explications s'affichent aussi pour les bonnes réponses
+- **Flashcards** : warning "Aucune flashcard disponible." → "No flashcards available."
+- **Flashcards** : bouton "Skip →" → "Next →" sur la face avant de la carte
+
+---
+
+## Travaux terminés (session 19)
+
+### ✅ Traduction UI complète en anglais
+- **Fichiers modifiés (7)** : `streamlit_app.py`, `pages/1_Study.py`, `pages/2_Quiz.py`, `pages/3_Flashcards.py`, `pages/4_Progress.py`, `pages/5_Exam_Simulator.py`, `src/auth.py`
+- **Scope** : uniquement les paramètres UI (boutons, labels, titres, captions, messages d'erreur, KPIs, annotations graphiques). Les questions/options/explications QCM **non modifiées** (déjà en anglais).
+- **Commit** : `5ab55cb`
+- **Traductions clés** :
+  - Sidebar : "Home", "Study Notes", "Quiz", "Flashcards", "Progress", "Exam Simulator", "Sign out"
+  - Auth : "Sign in", "Username", "Enter WIB"
+  - Diagnostic : "Initial Diagnostic", "Select your answer", "Confirm", "Correct!", "Incorrect — Correct answer:", "Explanation"
+  - KPIs : "Readiness score", "Global accuracy", "Mastered topics", "Completed sessions", "Diagnostic score"
+  - Quiz : "All (Adaptive)", "Medium/Hard", "Confirm", "Select your answer", difficulty badges "Easy/Medium/Hard"
+  - Flashcards : "All", "Free review", "Leitner mode (adaptive)", "Reveal", "Skip →", "I knew it", "Study more", "Knew", "Remaining", "Session complete"
+  - Progress : "Readiness", "Accuracy", "Mastery by topic", "Target: 70%", "Session history", "Partial exam", "Full exam"
+  - Exam Simulator : "Exam Simulator", "Start {name}", "Submit exam", "Flag/Flagged ★", "PASSED/FAILED", "Results by topic", "Detailed review"
+  - Study Notes : "Study Notes", "Choose a topic", "Content/Exam Tips" tabs, "Example", "Key Points"
 
 ---
 
