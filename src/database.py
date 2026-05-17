@@ -307,7 +307,12 @@ class Database:
         if self.sb:
             res = self.sb.table("users").select("*").eq("email", email).execute()
             if res.data:
-                return res.data[0]
+                user = res.data[0]
+                # Always sync first_name to the pseudo the user just typed (correct casing)
+                if user.get("first_name") != first_name:
+                    self.sb.table("users").update({"first_name": first_name}).eq("email", email).execute()
+                    user["first_name"] = first_name
+                return user
             new = {"id": str(uuid.uuid4()), "email": email, "first_name": first_name,
                    "diagnostic_done": False, "diagnostic_score": None}
             self.sb.table("users").insert(new).execute()
@@ -319,6 +324,10 @@ class Database:
             row = cur.fetchone()
             if row:
                 result = dict(row)
+                if result.get("first_name") != first_name:
+                    cur.execute("UPDATE users SET first_name=? WHERE email=?", (first_name, email))
+                    conn.commit()
+                    result["first_name"] = first_name
                 conn.close()
                 return result
             uid = str(uuid.uuid4())
