@@ -62,7 +62,7 @@ if not state["quiz_active"]:
     col1, col2, col3 = st.columns(3)
     with col1:
         topic_choice = st.selectbox("Topic", topic_options, index=_default_idx)
-    _DIFF_LABELS = {"Toutes": None, "Facile": "easy", "Moyen": "medium", "Difficile": "hard"}
+    _DIFF_LABELS = {"Toutes": None, "Moyen": "medium", "Difficile": "hard"}
     with col2:
         if topic_choice == "Tous (Adaptatif)":
             difficulty = None
