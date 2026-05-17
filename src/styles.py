@@ -662,16 +662,15 @@ def inject_styles():
         """,
         unsafe_allow_html=True,
     )
-    # Mobile sidebar close strategy:
-    # Root cause: Streamlit restores sidebar state during page re-render (~400-700 ms
-    # after the nav click), overriding any early React state change.
-    # Fix:
-    #   1. CSS cover: hide sidebar immediately and keep it hidden (body[data-wib-closing]).
-    #   2. React close: attempt AFTER Streamlit finishes re-rendering (starting at 700 ms).
-    #   3. CSS removal: only once we confirm React state is closed (collapse btn gone).
-    #      Safety fallback: remove CSS at 3 s regardless.
-    # reactSidebarOpen() checks DOM presence (button only rendered when React state=open),
-    # NOT the visual state, so our own CSS cover doesn't fool the check.
+    # Mobile sidebar — definitive approach.
+    # Root cause: Streamlit restores React sidebar state ~400-700 ms after navigation,
+    # overriding our earlier close attempts.
+    # Strategy:
+    #  - Inline style on the sidebar element itself (max specificity, survives React
+    #    reconciliation because Emotion/styled-components never touches element.style).
+    #  - React close fired AFTER Streamlit finishes re-rendering (700 ms+).
+    #  - Inline style removed only once React DOM confirms sidebar is closed
+    #    (collapse button disappears from DOM — it is conditionally rendered).
     _components.html(
         """
         <script>
@@ -680,9 +679,30 @@ def inject_styles():
                 try { return window.parent.innerWidth < 768; } catch(e) { return false; }
             }
 
-            // Reflects React state only — button absent when sidebar closed in React
-            function reactSidebarOpen(doc) {
+            function getSb(doc) {
+                return doc.querySelector('section[data-testid="stSidebar"]');
+            }
+
+            // stSidebarCollapseButton is conditionally rendered — absent when closed.
+            // Checks React state, NOT visual state, so our own cover doesn't fool it.
+            function reactOpen(doc) {
                 return !!doc.querySelector('[data-testid="stSidebarCollapseButton"]');
+            }
+
+            function cover(doc) {
+                var sb = getSb(doc);
+                if (!sb) return;
+                // Inline styles override every CSS rule including Streamlit's own.
+                // They survive React reconciliation (React/Emotion never sets element.style).
+                sb.style.setProperty('transform', 'translateX(-110%)', 'important');
+                sb.style.setProperty('transition', 'transform 0.15s ease-out', 'important');
+            }
+
+            function uncover(doc) {
+                var sb = getSb(doc);
+                if (!sb) return;
+                sb.style.removeProperty('transform');
+                sb.style.removeProperty('transition');
             }
 
             function clickClose(doc) {
@@ -692,37 +712,26 @@ def inject_styles():
                 if (btn) btn.click();
             }
 
-            var cssTimer = null;
+            var safetyT = null;
 
-            function removeCss(doc) {
-                if (cssTimer) { clearTimeout(cssTimer); cssTimer = null; }
-                doc.body.removeAttribute('data-wib-closing');
-            }
-
-            // Try React close at `delay` ms, check 300 ms later.
-            // If closed: remove CSS cover. If still open: recurse with next delay.
+            // Attempt React close at delays[i] ms, verify 300 ms later.
+            // Uncover only after React confirms closed. Safety uncover at 3 s.
             function tryAt(doc, delays, i) {
-                if (i >= delays.length) { removeCss(doc); return; }
+                if (i >= delays.length) { uncover(doc); return; }
                 setTimeout(function() {
                     clickClose(doc);
                     setTimeout(function() {
-                        if (!reactSidebarOpen(doc)) {
-                            removeCss(doc);        // React confirmed closed
-                        } else {
-                            tryAt(doc, delays, i + 1);  // still open, try later
-                        }
+                        if (!reactOpen(doc)) { uncover(doc); }
+                        else { tryAt(doc, delays, i + 1); }
                     }, 300);
                 }, delays[i]);
             }
 
             function closeFully(doc) {
                 if (!isMobile()) return;
-                // Immediately apply CSS cover (sidebar visually gone from t=0)
-                doc.body.setAttribute('data-wib-closing', '1');
-                if (cssTimer) clearTimeout(cssTimer);
-                cssTimer = setTimeout(function() { removeCss(doc); }, 3000); // safety
-
-                // React close: start AFTER Streamlit finishes re-rendering the new page
+                cover(doc);
+                if (safetyT) clearTimeout(safetyT);
+                safetyT = setTimeout(function() { uncover(doc); }, 3000);
                 tryAt(doc, [700, 1100, 1600, 2200], 0);
             }
 
@@ -735,7 +744,7 @@ def inject_styles():
 
                     doc.addEventListener('click', function(e) {
                         if (!isMobile()) return;
-                        var sb = doc.querySelector('section[data-testid="stSidebar"]');
+                        var sb = getSb(doc);
                         if (sb && sb.contains(e.target) && e.target.closest('a')) {
                             closeFully(doc);
                         }
