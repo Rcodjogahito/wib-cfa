@@ -304,7 +304,7 @@ if not answered:
             st.rerun()
     if pending_letter:
         st.markdown("")
-        if st.button("Valider ma réponse", key="quiz_validate", type="primary", use_container_width=True):
+        if st.button("Valider", key="quiz_validate", type="primary", use_container_width=True):
             correct = pending_letter == q["correct_answer"]
             time_sec = int(time.time() - q_starts.get(idx, time.time()))
             db.save_attempt(

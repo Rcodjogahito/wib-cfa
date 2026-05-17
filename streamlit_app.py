@@ -190,7 +190,7 @@ def _run_diagnostic():
 
         if pending_letter:
             st.markdown("")
-            if st.button("Valider ma réponse", key="diag_validate", type="primary", use_container_width=True):
+            if st.button("Valider", key="diag_validate", type="primary", use_container_width=True):
                 correct = pending_letter == q["correct_answer"]
                 state["diag_answers"].append({
                     "question_id": q["id"],
