@@ -652,9 +652,9 @@ def inject_styles():
         unsafe_allow_html=True,
     )
     # Mobile sidebar auto-close after navigation.
-    # On mobile, Streamlit exposes an overlay element alongside the sidebar.
-    # Clicking that overlay (or the collapse button) closes the drawer.
-    # All guards on window.parent survive SPA page transitions.
+    # Key invariant: stSidebarCollapseButton is only in the DOM when sidebar is OPEN.
+    # We check this before every close attempt so retries never accidentally reopen it.
+    # stSidebarCollapsedControl = EXPAND button (shown when closed) — never click it here.
     _components.html(
         """
         <script>
@@ -663,71 +663,64 @@ def inject_styles():
                 try { return window.parent.innerWidth < 768; } catch(e) { return false; }
             }
 
+            // True only while the sidebar drawer is actually visible
+            function isOpen(doc) {
+                return !!doc.querySelector('[data-testid="stSidebarCollapseButton"]');
+            }
+
             function doClose(doc) {
-                // 1. Mobile overlay/backdrop (primary mechanism on Streamlit mobile)
-                var overlay = doc.querySelector('[data-testid="stSidebarCollapsedControl"]')
-                           || doc.querySelector('[data-testid="stSidebarOverlay"]');
-                if (overlay) { overlay.click(); return true; }
+                if (!isOpen(doc)) return;  // guard: stop if already closed
 
-                // 2. Close button inside sidebar
+                // stSidebarOverlay = dark backdrop shown beside sidebar when open
+                var overlay = doc.querySelector('[data-testid="stSidebarOverlay"]');
+                if (overlay) { overlay.click(); return; }
+
+                // Collapse button inside sidebar header
                 var btn = doc.querySelector('[data-testid="stSidebarCollapseButton"]');
-                if (btn) { btn.click(); return true; }
+                if (btn) { btn.click(); return; }
 
-                // 3. Any SVG-icon button inside sidebar
+                // Last resort: first SVG button inside sidebar
                 var sb = doc.querySelector('section[data-testid="stSidebar"]');
                 if (sb) {
                     var btns = sb.querySelectorAll('button');
                     for (var i = 0; i < btns.length; i++) {
-                        if (btns[i].querySelector('svg')) { btns[i].click(); return true; }
+                        if (btns[i].querySelector('svg')) { btns[i].click(); return; }
                     }
                 }
-
-                // 4. Keyboard shortcut [ — Streamlit's built-in sidebar toggle
-                try {
-                    doc.dispatchEvent(new KeyboardEvent('keydown', {
-                        key: '[', code: 'BracketLeft', which: 219, keyCode: 219,
-                        bubbles: true, cancelable: true
-                    }));
-                    return true;
-                } catch(e) {}
-
-                return false;
             }
 
-            function closeSidebar() {
-                if (!isMobile()) return;
-                try {
-                    var doc = window.parent.document;
-                    // Retry across 1 s to survive React re-render timing
-                    doClose(doc);
-                    setTimeout(function() { doClose(doc); }, 300);
-                    setTimeout(function() { doClose(doc); }, 700);
-                } catch(e) {}
+            function scheduleClose(doc) {
+                // Three attempts — each guarded by isOpen() so no accidental reopen
+                doClose(doc);
+                setTimeout(function() { doClose(doc); }, 350);
+                setTimeout(function() { doClose(doc); }, 800);
             }
 
             function setup() {
                 try {
                     var par = window.parent;
                     var doc = par.document;
-
                     if (par._wibSidebarInit) return;
                     par._wibSidebarInit = true;
 
-                    // Capture-phase listener on document (survives React DOM swaps)
+                    // Capture-phase: fires before React, survives DOM swaps
                     doc.addEventListener('click', function(e) {
                         if (!isMobile()) return;
                         var sb = doc.querySelector('section[data-testid="stSidebar"]');
                         if (sb && sb.contains(e.target) && e.target.closest('a')) {
-                            setTimeout(closeSidebar, 80);
+                            setTimeout(function() { scheduleClose(doc); }, 80);
                         }
                     }, true);
 
-                    // URL polling — catches navigations React handles without bubbling
+                    // URL polling as belt-and-suspenders
                     var lastHref = par.location.href;
-                    par._wibNavPoll = setInterval(function() {
+                    setInterval(function() {
                         try {
                             var cur = par.location.href;
-                            if (cur !== lastHref) { lastHref = cur; closeSidebar(); }
+                            if (cur !== lastHref) {
+                                lastHref = cur;
+                                if (isMobile()) scheduleClose(doc);
+                            }
                         } catch(e) {}
                     }, 300);
 
