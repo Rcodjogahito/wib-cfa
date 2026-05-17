@@ -339,7 +339,7 @@ def inject_styles():
             letter-spacing: 0.01em;
         }
 
-        /* ── Hero (home page) ─────────────────────────────────────────── */
+        /* ── Hero (home page) — Ares Management register ──────────────── */
         .wib-hero {
             background: var(--navy-900);
             border-radius: var(--radius-lg);
@@ -348,45 +348,52 @@ def inject_styles():
             position: relative;
             overflow: hidden;
         }
-        /* Bottom accent line */
+        /* Single bottom accent — Ares uses a clean bottom rule, not a framed box */
         .wib-hero::after {
             content: '';
             position: absolute;
             bottom: 0; left: 0; right: 0;
-            height: 1px;
-            background: linear-gradient(90deg, var(--gold-500) 0%, transparent 60%);
+            height: 1.5px;
+            background: linear-gradient(90deg, var(--gold-500) 0%, transparent 55%);
         }
-        /* Top accent line — mirrors bottom, frames the mark */
-        .wib-hero::before {
-            content: '';
-            position: absolute;
-            top: 0; left: 0; right: 0;
-            height: 1px;
-            background: linear-gradient(90deg, rgba(201,168,76,0.55) 0%, transparent 50%);
-        }
-        /* Thin rule above the wordmark */
+        /* Double-bar geometric mark above wordmark — Ares signature device */
         .wib-hero .brand-rule {
-            height: 1px;
-            width: 40px;
-            background: linear-gradient(90deg, var(--gold-500), transparent);
-            margin-bottom: 14px;
+            margin-bottom: 16px;
         }
+        .wib-hero .brand-rule::before,
+        .wib-hero .brand-rule::after {
+            content: '';
+            display: block;
+        }
+        .wib-hero .brand-rule::before {
+            height: 2.5px;
+            width: 24px;
+            background: var(--gold-500);
+            margin-bottom: 5px;
+        }
+        .wib-hero .brand-rule::after {
+            height: 1px;
+            width: 38px;
+            background: rgba(201,168,76,0.38);
+        }
+        /* Wordmark: white — Ares keeps wordmark in white, gold as accent only */
         .wib-hero .brand {
             font-family: 'Cormorant Garamond', serif;
             font-size: 3.1rem;
-            font-weight: 300;
-            color: var(--gold-400);
-            letter-spacing: 0.40em;
-            text-indent: 0.40em;
+            font-weight: 600;
+            color: #FFFFFF;
+            letter-spacing: 0.16em;
+            text-indent: 0.16em;
             line-height: 1;
         }
+        /* Tagline: gold-tinted, uppercase — accent colour for supporting text */
         .wib-hero .tagline {
-            font-size: 0.68rem;
-            color: rgba(255,255,255,0.38);
-            margin-top: 12px;
-            font-weight: 500;
-            letter-spacing: 0.22em;
-            text-indent: 0.22em;
+            font-size: 0.66rem;
+            color: rgba(201,168,76,0.62);
+            margin-top: 14px;
+            font-weight: 400;
+            letter-spacing: 0.20em;
+            text-indent: 0.20em;
             text-transform: uppercase;
         }
 
@@ -741,17 +748,21 @@ _SIDEBAR_BRAND_ORIGINAL = """
 <div style="font-size:0.63rem;color:rgba(255,255,255,0.38);letter-spacing:0.20em;text-transform:uppercase;margin-top:4px;font-weight:600;">CFA Level I</div>
 """
 
-# Refined logo — Cormorant Garamond Light (300), investment-bank register.
-# Wide relative tracking (0.38em) with compensating text-indent — each letter
-# breathes. Hairline gold rule above frames the mark; short separator rule
-# divides logotype from descriptor. Descriptor at near-invisible opacity:
-# present but subordinate, as in Lazard / Rothschild / Evercore branding.
+# Ares Management-inspired logo.
+# Design DNA: double-bar geometric mark (Ares signature device) + white wordmark
+# (Ares keeps wordmark in white on dark backgrounds; gold reserved for accents) +
+# SemiBold weight (institutional authority) + tight measured tracking (0.16em,
+# precision not luxury) + gold-tinted descriptor (accent colour for supporting
+# text, subordinate to mark).
 _SIDEBAR_BRAND = """
-<div style="padding:2px 0 12px 0;">
-  <div style="height:1px;background:linear-gradient(90deg,rgba(201,168,76,0.65) 0%,transparent 85%);margin-bottom:14px;"></div>
-  <div style="font-family:'Cormorant Garamond',Georgia,serif;font-size:1.60rem;font-weight:300;color:#DFC06E;letter-spacing:0.38em;text-indent:0.38em;line-height:1;">WIB</div>
-  <div style="height:1px;background:rgba(255,255,255,0.10);margin:10px 0 8px 0;width:26px;"></div>
-  <div style="font-family:'Inter',sans-serif;font-size:0.53rem;color:rgba(255,255,255,0.30);letter-spacing:0.24em;text-indent:0.24em;text-transform:uppercase;font-weight:500;">CFA &middot; Level I</div>
+<div style="padding:4px 0 12px 0;">
+  <div style="margin-bottom:13px;">
+    <div style="height:2.5px;width:18px;background:#C9A84C;"></div>
+    <div style="height:1px;width:30px;background:rgba(201,168,76,0.35);margin-top:4px;"></div>
+  </div>
+  <div style="font-family:'Cormorant Garamond',Georgia,serif;font-size:1.72rem;font-weight:600;color:#FFFFFF;letter-spacing:0.16em;text-indent:0.16em;line-height:1;">WIB</div>
+  <div style="height:1px;background:linear-gradient(90deg,rgba(201,168,76,0.50) 0%,transparent 80%);margin:10px 0 8px 0;"></div>
+  <div style="font-family:'Inter',sans-serif;font-size:0.52rem;color:rgba(201,168,76,0.62);letter-spacing:0.22em;text-indent:0.22em;text-transform:uppercase;font-weight:500;">CFA &middot; Level I</div>
 </div>
 """
 
