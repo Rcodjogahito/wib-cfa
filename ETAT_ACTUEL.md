@@ -1,8 +1,8 @@
 # ETAT ACTUEL — WIB CFA
 > Mis à jour automatiquement à la fin de chaque session Claude Code.
 
-**Date**: 2026-05-18 (session 26)  
-**Commit**: b4f98a1 — "fix(mobile): sidebar closes via full-page reload on nav click"  
+**Date**: 2026-05-18 (session 27)  
+**Commit**: 2445eb8 — "design: Ares Management-inspired WIB logotype"  
 **Branch**: master → Streamlit Cloud (auto-deploy)
 
 ---
@@ -40,6 +40,23 @@
 - **Scripts**: `scripts/render_table_pages.py` → images PNG, `scripts/rerender_wrong_pages.py` → correction pages erronées, `scripts/patch_uworld_tables.py` → mise à jour Supabase
 - **Résultat**: 28/28 tables insérées dans `question_en`
 - **Méthode**: lecture images PDF avec Claude Vision (inclus dans abonnement Pro)
+
+---
+
+## Travaux terminés (session 27)
+
+### ✅ Refonte logo WIB — inspiré Ares Management
+
+**Commits** : `16fa58f` (v1 Cormorant Light) → `2445eb8` (Ares-inspired, actif)
+
+**Design DNA Ares** implémenté dans `src/styles.py` :
+- **Double-barre géométrique** (2.5px or plein + 1px or/35%) au-dessus du wordmark — signature mark d'Ares
+- **Wordmark WIB en blanc** (#FFFFFF) — Ares réserve le blanc pour le wordmark principal sur fond sombre, l'or pour les accents
+- **Poids SemiBold (600)** — autorité institutionnelle (vs 700 trop blog, 300 trop fashion)
+- **Tracking mesuré 0.16em** — précision institutionnelle (vs 0.38em trop luxe)
+- **Descripteur "CFA · Level I"** en or atténué (rgba gold 62%) — accent couleur subordonné
+- **Logo initial conservé** dans `_SIDEBAR_BRAND_ORIGINAL` pour rollback
+- **Hero** : même double-barre via CSS `::before`/`::after` sur `.brand-rule`, tagline gold-tinted, règle bottom unique 1.5px
 
 ---
 
