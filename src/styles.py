@@ -4,6 +4,7 @@ Call inject_styles() at the top of every page.
 """
 
 import streamlit as st
+import streamlit.components.v1 as _components
 
 
 # ── Question rendering helpers ────────────────────────────────────────────────
@@ -650,40 +651,53 @@ def inject_styles():
         """,
         unsafe_allow_html=True,
     )
-    # Auto-collapse sidebar after clicking a nav link
-    st.markdown(
+    # Auto-collapse sidebar on mobile after clicking a nav link.
+    # Must use _components.html() — st.markdown() strips <script> tags.
+    # JS runs inside an iframe, so window.parent.document reaches the real DOM.
+    _components.html(
         """
         <script>
         (function() {
-            function closeSidebar() {
-                var btn = document.querySelector('[data-testid="stSidebarCollapseButton"]');
+            function collapse(doc) {
+                // Primary: Streamlit's official collapse button
+                var btn = doc.querySelector('[data-testid="stSidebarCollapseButton"]');
                 if (btn) { btn.click(); return true; }
-                var sidebar = document.querySelector('[data-testid="stSidebar"]');
-                if (sidebar) {
-                    var btns = sidebar.querySelectorAll('button');
+                // Fallback: first button with an SVG inside the sidebar (mobile close icon)
+                var sb = doc.querySelector('section[data-testid="stSidebar"]');
+                if (sb) {
+                    var btns = sb.querySelectorAll('button');
                     for (var i = 0; i < btns.length; i++) {
                         if (btns[i].querySelector('svg')) { btns[i].click(); return true; }
                     }
                 }
                 return false;
             }
-            function setupAutoClose() {
-                var sidebar = document.querySelector('[data-testid="stSidebar"]');
-                if (!sidebar) { setTimeout(setupAutoClose, 400); return; }
-                sidebar.addEventListener('click', function(e) {
-                    var link = e.target.closest('a');
-                    if (link) {
-                        setTimeout(function() {
-                            if (!closeSidebar()) setTimeout(closeSidebar, 350);
-                        }, 250);
-                    }
-                }, true);
+
+            function setup() {
+                try {
+                    var doc = window.parent.document;
+                    var sb = doc.querySelector('section[data-testid="stSidebar"]');
+                    if (!sb) { setTimeout(setup, 400); return; }
+                    // Dedup guard — attach only once per sidebar element lifetime
+                    if (sb.dataset.wibAutoclose) return;
+                    sb.dataset.wibAutoclose = '1';
+                    sb.addEventListener('click', function(e) {
+                        // Only auto-close on mobile viewports (< 768 px)
+                        if (window.parent.innerWidth >= 768) return;
+                        if (e.target.closest('a')) {
+                            setTimeout(function() {
+                                if (!collapse(doc)) setTimeout(function() { collapse(doc); }, 350);
+                            }, 80);
+                        }
+                    }, true);
+                } catch (_) { /* cross-origin safety */ }
             }
-            setTimeout(setupAutoClose, 600);
+
+            setTimeout(setup, 600);
         })();
         </script>
         """,
-        unsafe_allow_html=True,
+        height=0,
     )
 
 
