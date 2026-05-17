@@ -36,7 +36,7 @@ with st.sidebar:
 if not require_auth():
     st.stop()
 
-render_page_header("Study Notes", "CFA Level I — Course summaries & key formulas")
+render_page_header("Fiches de cours", "CFA Niveau I — Résumés & formules clés")
 
 # ── Topic selector ────────────────────────────────────────────────────────────
 
@@ -59,7 +59,7 @@ if note.get("overview"):
 st.markdown("---")
 
 # Tab layout
-tab_content, tab_tips = st.tabs(["Contenu", "Exam Tips"])
+tab_content, tab_tips = st.tabs(["Contenu", "Conseils d'examen"])
 
 with tab_content:
     for section in note.get("sections", []):
@@ -67,14 +67,14 @@ with tab_content:
         body = section.get("content") or section.get("body", "")
         st.markdown(body)
         if section.get("example"):
-            with st.expander("Example"):
+            with st.expander("Exemple"):
                 st.markdown(section["example"])
         st.markdown("")
 
 with tab_tips:
     exam_tips = note.get("exam_tips") or note.get("key_points", [])
     if exam_tips:
-        st.markdown("#### Points clés pour l'examen")
+        st.markdown("#### Points clés")
         for tip in exam_tips:
             st.markdown(
                 f'<div class="wib-card" style="padding:0.7rem 1rem;margin-bottom:0.5rem;">'
