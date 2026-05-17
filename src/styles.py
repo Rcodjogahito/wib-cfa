@@ -651,39 +651,58 @@ def inject_styles():
         """,
         unsafe_allow_html=True,
     )
-    # Auto-collapse sidebar on mobile after navigation.
-    # Two-layer strategy:
-    #   1. Document-level click listener (immediate, survives React DOM updates)
-    #   2. URL polling (catches navigations that bypass click interception)
-    # Both guards are stored on window.parent so they survive iframe re-creation
-    # across page transitions. JS runs in a srcdoc iframe — same-origin as parent.
+    # Mobile sidebar auto-close after navigation.
+    # On mobile, Streamlit exposes an overlay element alongside the sidebar.
+    # Clicking that overlay (or the collapse button) closes the drawer.
+    # All guards on window.parent survive SPA page transitions.
     _components.html(
         """
         <script>
         (function() {
-            function collapse(doc) {
-                var sb = doc.querySelector('section[data-testid="stSidebar"]');
-                if (!sb) return false;
-                var btn = sb.querySelector('[data-testid="stSidebarCollapseButton"]');
-                if (btn) { btn.click(); return true; }
-                var btns = sb.querySelectorAll('button');
-                for (var i = 0; i < btns.length; i++) {
-                    if (btns[i].querySelector('svg')) { btns[i].click(); return true; }
-                }
-                return false;
-            }
-
             function isMobile() {
                 try { return window.parent.innerWidth < 768; } catch(e) { return false; }
             }
 
-            function closeOnMobile(doc) {
-                if (!isMobile()) return;
-                if (!collapse(doc)) {
-                    setTimeout(function() {
-                        if (!collapse(doc)) setTimeout(function() { collapse(doc); }, 350);
-                    }, 200);
+            function doClose(doc) {
+                // 1. Mobile overlay/backdrop (primary mechanism on Streamlit mobile)
+                var overlay = doc.querySelector('[data-testid="stSidebarCollapsedControl"]')
+                           || doc.querySelector('[data-testid="stSidebarOverlay"]');
+                if (overlay) { overlay.click(); return true; }
+
+                // 2. Close button inside sidebar
+                var btn = doc.querySelector('[data-testid="stSidebarCollapseButton"]');
+                if (btn) { btn.click(); return true; }
+
+                // 3. Any SVG-icon button inside sidebar
+                var sb = doc.querySelector('section[data-testid="stSidebar"]');
+                if (sb) {
+                    var btns = sb.querySelectorAll('button');
+                    for (var i = 0; i < btns.length; i++) {
+                        if (btns[i].querySelector('svg')) { btns[i].click(); return true; }
+                    }
                 }
+
+                // 4. Keyboard shortcut [ — Streamlit's built-in sidebar toggle
+                try {
+                    doc.dispatchEvent(new KeyboardEvent('keydown', {
+                        key: '[', code: 'BracketLeft', which: 219, keyCode: 219,
+                        bubbles: true, cancelable: true
+                    }));
+                    return true;
+                } catch(e) {}
+
+                return false;
+            }
+
+            function closeSidebar() {
+                if (!isMobile()) return;
+                try {
+                    var doc = window.parent.document;
+                    // Retry across 1 s to survive React re-render timing
+                    doClose(doc);
+                    setTimeout(function() { doClose(doc); }, 300);
+                    setTimeout(function() { doClose(doc); }, 700);
+                } catch(e) {}
             }
 
             function setup() {
@@ -691,30 +710,26 @@ def inject_styles():
                     var par = window.parent;
                     var doc = par.document;
 
-                    // Layer 1: document-level click listener (registered once on parent window).
-                    // Stored on par so it survives iframe teardown between page navigations.
-                    if (!par._wibSidebarClick) {
-                        par._wibSidebarClick = true;
-                        doc.addEventListener('click', function(e) {
-                            if (!isMobile()) return;
-                            var sb = doc.querySelector('section[data-testid="stSidebar"]');
-                            if (sb && sb.contains(e.target) && e.target.closest('a')) {
-                                setTimeout(function() { closeOnMobile(doc); }, 80);
-                            }
-                        }, true);
-                    }
+                    if (par._wibSidebarInit) return;
+                    par._wibSidebarInit = true;
 
-                    // Layer 2: URL polling — catches navigations that don't bubble
-                    // cleanly (e.g. React Router synthetic events, programmatic nav).
-                    if (!par._wibNavWatch) {
-                        var lastHref = par.location.href;
-                        par._wibNavWatch = setInterval(function() {
-                            try {
-                                var cur = par.location.href;
-                                if (cur !== lastHref) { lastHref = cur; closeOnMobile(doc); }
-                            } catch(e) {}
-                        }, 300);
-                    }
+                    // Capture-phase listener on document (survives React DOM swaps)
+                    doc.addEventListener('click', function(e) {
+                        if (!isMobile()) return;
+                        var sb = doc.querySelector('section[data-testid="stSidebar"]');
+                        if (sb && sb.contains(e.target) && e.target.closest('a')) {
+                            setTimeout(closeSidebar, 80);
+                        }
+                    }, true);
+
+                    // URL polling — catches navigations React handles without bubbling
+                    var lastHref = par.location.href;
+                    par._wibNavPoll = setInterval(function() {
+                        try {
+                            var cur = par.location.href;
+                            if (cur !== lastHref) { lastHref = cur; closeSidebar(); }
+                        } catch(e) {}
+                    }, 300);
 
                 } catch(e) {}
             }
@@ -723,7 +738,7 @@ def inject_styles():
         })();
         </script>
         """,
-        height=0,
+        height=1,
     )
 
 
