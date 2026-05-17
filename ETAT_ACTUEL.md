@@ -1,8 +1,8 @@
 # ETAT ACTUEL — WIB CFA
 > Mis à jour automatiquement à la fin de chaque session Claude Code.
 
-**Date**: 2026-05-17 (session 21)  
-**Commit**: deea871 — "Add options+answers audit script and apply 1051 corrections"  
+**Date**: 2026-05-17 (session 22)  
+**Commit**: d3426cb — "Rewrite Exam Simulator to comply with CFA Level 1 official standards"  
 **Branch**: master → Streamlit Cloud (auto-deploy)
 
 ---
@@ -40,6 +40,44 @@
 - **Scripts**: `scripts/render_table_pages.py` → images PNG, `scripts/rerender_wrong_pages.py` → correction pages erronées, `scripts/patch_uworld_tables.py` → mise à jour Supabase
 - **Résultat**: 28/28 tables insérées dans `question_en`
 - **Méthode**: lecture images PDF avec Claude Vision (inclus dans abonnement Pro)
+
+---
+
+## Travaux terminés (session 22)
+
+### ✅ Exam Simulator — conformité CFA Level 1 officielle (`pages/5_Exam_Simulator.py`)
+
+Réécriture complète pour respecter les standards officiels du CFA Institute (2026).
+
+**Changements apportés :**
+
+| Aspect | Avant | Après |
+|---|---|---|
+| Sélection des questions | Aléatoire uniforme | Pondérée par topic (poids officiels CFA) |
+| Structure full exam | 1 session × 180Q × 270min | 2 sessions × 90Q × 135min |
+| Timer | 1 timer global | Timer par session (remise à zéro entre sessions) |
+| Transition S1→S2 | N/A | Écran de pause inter-session (réponses S1 verrouillées) |
+| Navigation | Libre sur toutes les questions | Cloisonnée à la session en cours |
+| Pass/fail | "70% threshold" (officiel) | "70% benchmark (indicatif — MPS réel non publié)" |
+| Résultats full | Score global uniquement | Score S1 + Score S2 + Score global |
+| Setup screen | Aucune info sur les topics | Table officielle des pondérations CFA 2026 |
+
+**Topic allocation (180Q full exam) :**
+
+| Topic | Q | % |
+|---|---|---|
+| Ethics & Professional Standards | 27 | 15.0% |
+| Quantitative Methods | 14 | 7.8% |
+| Economics | 14 | 7.8% |
+| Financial Statement Analysis | 21 | 11.7% |
+| Corporate Issuers | 14 | 7.8% |
+| Equity Investments | 21 | 11.7% |
+| Fixed Income | 21 | 11.7% |
+| Derivatives | 12 | 6.7% |
+| Alternative Investments | 15 | 8.3% |
+| Portfolio Management | 21 | 11.7% |
+
+Toutes les valeurs rentrent dans les fourchettes officielles CFA. Même logique proportionnelle pour le partiel (45Q).
 
 ---
 
