@@ -2,7 +2,7 @@
 > Mis à jour automatiquement à la fin de chaque session Claude Code.
 
 **Date**: 2026-05-17 (session 21)  
-**Commit**: (à venir — script audit + corrections DB)  
+**Commit**: deea871 — "Add options+answers audit script and apply 1051 corrections"  
 **Branch**: master → Streamlit Cloud (auto-deploy)
 
 ---
