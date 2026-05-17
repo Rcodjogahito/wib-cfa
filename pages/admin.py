@@ -15,7 +15,7 @@ from src.styles import inject_styles, metric_card, render_page_header, render_si
 
 inject_styles()
 
-_ADMIN_EMAIL = "sam"
+_ADMIN_EMAIL = "samto"
 
 # ── Auth gate — silent rejection for non-admin ────────────────────────────────
 

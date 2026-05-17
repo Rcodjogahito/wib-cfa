@@ -50,7 +50,7 @@ def _sidebar():
             st.page_link("pages/3_Flashcards.py", label="Flashcards", icon="🃏")
             st.page_link("pages/4_Progress.py", label="Progress", icon="📈")
             st.page_link("pages/5_Exam_Simulator.py", label="Exam Simulator", icon="⏱️")
-            if st.session_state.get("user_email") == "sam":
+            if st.session_state.get("user_email") == "samto":
                 st.page_link("pages/admin.py", label="Admin", icon="🔐")
             st.divider()
             if st.button("Sign out", use_container_width=True):
