@@ -70,7 +70,7 @@ if "fc_cards" not in state:
     topic = None if topic_filter == "All" else topic_filter
     cards = db.get_flashcards(topic=topic)
     if not cards:
-        st.warning("Aucune flashcard disponible.")
+        st.warning("No flashcards available.")
         st.stop()
     if mode == "Leitner mode (adaptive)":
         # Put "study more" cards first if tracked
@@ -168,7 +168,7 @@ if not flipped:
     if fc1.button("Reveal", use_container_width=True):
         state["fc_flipped"] = True
         st.rerun()
-    if fc2.button("Skip →", use_container_width=True):
+    if fc2.button("Next →", use_container_width=True):
         state["fc_idx"] += 1
         state["fc_flipped"] = False
         st.rerun()

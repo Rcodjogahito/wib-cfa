@@ -237,7 +237,7 @@ if state.get("exam_submitted"):
             f'</div>',
             unsafe_allow_html=True,
         )
-        if not r["correct"]:
+        if not r["correct"] or not wrong_only:
             _expl_en = q.get("explanation_en", "")
             _expl_fr = q.get("explanation_fr", "")
             _has_both = bool(_expl_en) and bool(_expl_fr)
@@ -429,7 +429,7 @@ else:
 
 # ── Question grid navigator ───────────────────────────────────────────────────
 
-with st.expander("Naviguer entre les questions"):
+with st.expander("Navigate questions"):
     _ncols = 15
     grid_cols = st.columns(_ncols)
     for i in range(total):

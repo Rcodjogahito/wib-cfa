@@ -138,9 +138,9 @@ if idx >= total:
     duration = int(time.time() - state["quiz_start"])
 
     if score_pct >= 70:
-        st.markdown(f'<div class="pass-banner">Score : {score_pct:.0f}% — Réussi !</div>', unsafe_allow_html=True)
+        st.markdown(f'<div class="pass-banner">Score: {score_pct:.0f}% — Passed!</div>', unsafe_allow_html=True)
     else:
-        st.markdown(f'<div class="fail-banner">Score : {score_pct:.0f}% — À retravailler</div>', unsafe_allow_html=True)
+        st.markdown(f'<div class="fail-banner">Score: {score_pct:.0f}% — Needs work</div>', unsafe_allow_html=True)
 
     _h, _rem = divmod(duration, 3600)
     _m, _s = divmod(_rem, 60)
@@ -182,12 +182,20 @@ if idx >= total:
         st.progress(pct / 100)
 
     with st.expander("Review all questions"):
+        _show_all_expls = st.checkbox("Show explanations for correct answers too", value=False)
         for i, r in enumerate(results):
             icon = "✓" if r["correct"] else "✗"
             cls = "answer-correct" if r["correct"] else "answer-wrong"
             preview = question_first_line(r["question"])
-            st.markdown(f'<div class="{cls}">{icon} Q{i+1}. {preview}</div>', unsafe_allow_html=True)
-            if not r["correct"]:
+            selected = r["selected"]
+            correct_ans = r["correct_answer"]
+            st.markdown(
+                f'<div class="{cls}">{icon} Q{i+1}. {preview}'
+                + (f' — <b>Your answer: {selected}</b> · Correct: <b>{correct_ans}</b>' if not r["correct"] else "")
+                + f'</div>',
+                unsafe_allow_html=True,
+            )
+            if not r["correct"] or _show_all_expls:
                 expl_parts = []
                 _has_both = r.get("explanation_en") and r.get("explanation_fr")
                 if r.get("explanation_en"):
@@ -267,7 +275,7 @@ st.markdown(
     f'{"  ·  " + str(answered_count) + " answered" if answered_count else ""}</div>',
     unsafe_allow_html=True,
 )
-st.progress(idx / total)
+st.progress(answered_count / total if total else 0)
 
 # Badges
 topic_badge = f'<span class="topic-badge">{q["topic"]}</span>'
@@ -323,7 +331,14 @@ if not answered:
             st.rerun()
 else:
     for letter, option in [("A", q["option_a"]), ("B", q["option_b"]), ("C", q["option_c"])]:
-        prefix = "✓  " if current["selected"] == letter else ""
+        is_selected = current["selected"] == letter
+        is_correct_ans = letter == q["correct_answer"]
+        if is_selected and not is_correct_ans:
+            prefix = "✗  "
+        elif is_correct_ans:
+            prefix = "✓  "
+        else:
+            prefix = ""
         st.button(f"{prefix}{letter}.  {option}", key=f"q_{idx}_{letter}",
                   use_container_width=True, disabled=True)
 
@@ -364,7 +379,7 @@ with nav3:
         st.rerun()
 
 # ── Question grid navigator ──────────────────────────────────────────────────
-with st.expander("Navigate questions"):
+with st.expander("Navigate questions", expanded=True):
     _gcols = st.columns(10)
     for _gi in range(total):
         _gc = _gcols[_gi % 10]
