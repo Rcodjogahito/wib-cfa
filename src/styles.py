@@ -648,29 +648,17 @@ def inject_styles():
             .wib-page-header .page-title { font-size: 1.65rem; }
         }
 
-        /* ── Mobile sidebar force-close during navigation ─────────────── */
-        /* Applied via JS (body[data-wib-closing]) immediately on nav click,
-           kept for 2 s so Streamlit's own state restoration can't reopen it. */
-        @media (max-width: 767px) {
-            body[data-wib-closing] section[data-testid="stSidebar"] {
-                transform: translateX(-110%) !important;
-                box-shadow: none !important;
-                transition: transform 0.15s ease-out !important;
-            }
-        }
         </style>
         """,
         unsafe_allow_html=True,
     )
-    # Mobile sidebar — definitive approach.
-    # Root cause: Streamlit restores React sidebar state ~400-700 ms after navigation,
-    # overriding our earlier close attempts.
-    # Strategy:
-    #  - Inline style on the sidebar element itself (max specificity, survives React
-    #    reconciliation because Emotion/styled-components never touches element.style).
-    #  - React close fired AFTER Streamlit finishes re-rendering (700 ms+).
-    #  - Inline style removed only once React DOM confirms sidebar is closed
-    #    (collapse button disappears from DOM — it is conditionally rendered).
+    # Mobile sidebar — full-page-reload approach.
+    # Root cause of all previous failures: Streamlit SPA navigation preserves React state,
+    # so the sidebar React state stays OPEN across page transitions, and btn.click() on iOS
+    # Safari does not reliably trigger React event handlers.
+    # Fix: on mobile, intercept sidebar nav link clicks and force a hard reload via
+    # window.parent.location.href. The new page starts fresh with initial_sidebar_state=
+    # "collapsed", so the sidebar is closed by default — no React fighting needed.
     _components.html(
         """
         <script>
@@ -678,92 +666,26 @@ def inject_styles():
             function isMobile() {
                 try { return window.parent.innerWidth < 768; } catch(e) { return false; }
             }
-
-            function getSb(doc) {
-                return doc.querySelector('section[data-testid="stSidebar"]');
-            }
-
-            // stSidebarCollapseButton is conditionally rendered — absent when closed.
-            // Checks React state, NOT visual state, so our own cover doesn't fool it.
-            function reactOpen(doc) {
-                return !!doc.querySelector('[data-testid="stSidebarCollapseButton"]');
-            }
-
-            function cover(doc) {
-                var sb = getSb(doc);
-                if (!sb) return;
-                // Inline styles override every CSS rule including Streamlit's own.
-                // They survive React reconciliation (React/Emotion never sets element.style).
-                sb.style.setProperty('transform', 'translateX(-110%)', 'important');
-                sb.style.setProperty('transition', 'transform 0.15s ease-out', 'important');
-            }
-
-            function uncover(doc) {
-                var sb = getSb(doc);
-                if (!sb) return;
-                sb.style.removeProperty('transform');
-                sb.style.removeProperty('transition');
-            }
-
-            function clickClose(doc) {
-                var overlay = doc.querySelector('[data-testid="stSidebarOverlay"]');
-                if (overlay) { overlay.click(); return; }
-                var btn = doc.querySelector('[data-testid="stSidebarCollapseButton"]');
-                if (btn) btn.click();
-            }
-
-            var safetyT = null;
-
-            // Attempt React close at delays[i] ms, verify 300 ms later.
-            // Uncover only after React confirms closed. Safety uncover at 3 s.
-            function tryAt(doc, delays, i) {
-                if (i >= delays.length) { uncover(doc); return; }
-                setTimeout(function() {
-                    clickClose(doc);
-                    setTimeout(function() {
-                        if (!reactOpen(doc)) { uncover(doc); }
-                        else { tryAt(doc, delays, i + 1); }
-                    }, 300);
-                }, delays[i]);
-            }
-
-            function closeFully(doc) {
-                if (!isMobile()) return;
-                cover(doc);
-                if (safetyT) clearTimeout(safetyT);
-                safetyT = setTimeout(function() { uncover(doc); }, 3000);
-                tryAt(doc, [700, 1100, 1600, 2200], 0);
-            }
-
             function setup() {
                 try {
                     var par = window.parent;
                     var doc = par.document;
                     if (par._wibInit) return;
                     par._wibInit = true;
-
                     doc.addEventListener('click', function(e) {
                         if (!isMobile()) return;
-                        var sb = getSb(doc);
-                        if (sb && sb.contains(e.target) && e.target.closest('a')) {
-                            closeFully(doc);
-                        }
+                        var sb = doc.querySelector('section[data-testid="stSidebar"]');
+                        if (!sb || !sb.contains(e.target)) return;
+                        var a = e.target.closest('a[href]');
+                        if (!a) return;
+                        var href = a.href;
+                        if (!href || href.charAt(href.length - 1) === '#') return;
+                        e.preventDefault();
+                        e.stopImmediatePropagation();
+                        par.location.href = href;
                     }, true);
-
-                    var lastHref = par.location.href;
-                    setInterval(function() {
-                        try {
-                            var cur = par.location.href;
-                            if (cur !== lastHref) {
-                                lastHref = cur;
-                                if (isMobile()) closeFully(doc);
-                            }
-                        } catch(e) {}
-                    }, 300);
-
                 } catch(e) {}
             }
-
             setTimeout(setup, 600);
         })();
         </script>
