@@ -463,12 +463,24 @@ def inject_styles():
         .explanation-box {
             background: var(--gray-50);
             border: 1px solid var(--gray-100);
+            border-left: 3px solid var(--gold-500);
             border-radius: var(--radius);
             padding: 1rem 1.25rem;
             margin-top: 0.75rem;
             font-size: 0.86rem;
             line-height: 1.68;
             color: var(--gray-600);
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+        .explanation-label {
+            font-size: 0.68rem;
+            font-weight: 700;
+            color: var(--gold-500);
+            text-transform: uppercase;
+            letter-spacing: 0.12em;
+            margin-top: 0.75rem;
+            margin-bottom: 0.15rem;
         }
 
         /* ── Section header ───────────────────────────────────────────── */

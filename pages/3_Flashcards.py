@@ -49,7 +49,7 @@ render_page_header("Flashcards", "Système de répétition espacée — méthode
 
 col1, col2 = st.columns([1, 1])
 with col1:
-    topic_filter = st.selectbox("Topic", ["All"] + CFA_TOPICS, key="fc_topic")
+    topic_filter = st.selectbox("Topic", ["Tous"] + CFA_TOPICS, key="fc_topic")
 with col2:
     mode = st.selectbox("Mode", ["Révision libre", "Mode Leitner (adaptatif)"], key="fc_mode")
 st.caption("Les changements de topic/mode s'appliquent à la prochaine session.")
@@ -67,7 +67,7 @@ if "fc_study_ids" not in state:
 # Load cards if needed
 if "fc_cards" not in state:
     state["fc_session_start"] = time.time()
-    topic = None if topic_filter == "All" else topic_filter
+    topic = None if topic_filter == "Tous" else topic_filter
     cards = db.get_flashcards(topic=topic)
     if not cards:
         st.warning("Aucune flashcard disponible.")
@@ -112,7 +112,7 @@ if idx >= total:
 
         domain_scores = {t: round(v["correct"] / v["total"] * 100, 1)
                          for t, v in topic_results.items()}
-        fc_topic = state.get("fc_topic_saved", "All")
+        fc_topic = state.get("fc_topic_saved", "Tous")
         db.save_session(
             user_id=user["id"],
             session_type="flashcard",
@@ -180,7 +180,7 @@ else:
         f'<div style="margin-bottom:0.6rem;">{"<b>[EN]</b> " if card.get("definition_fr") else ""}{card["definition_en"]}</div>'
         + (f'<div style="color:#555;"><b>[FR]</b> {card["definition_fr"]}</div>' if card.get("definition_fr") else "")
         + (f'<div style="margin-top:0.8rem;color:#1A7F4B;font-style:italic;">'
-           f'<b>Example:</b> {card["example_en"]}</div>' if card.get("example_en") else "")
+           f'<b>Exemple :</b> {card["example_en"]}</div>' if card.get("example_en") else "")
         + (f'<div class="formula-box">{card["formula"]}</div>' if card.get("formula") else "")
         + f'</div>',
         unsafe_allow_html=True,

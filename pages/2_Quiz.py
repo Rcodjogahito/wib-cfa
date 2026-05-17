@@ -55,7 +55,7 @@ if "quiz_active" not in state:
 if not state["quiz_active"]:
     st.markdown('<div class="section-header">Configuration du quiz</div>', unsafe_allow_html=True)
 
-    topic_options = ["All (Adaptatif)"] + CFA_TOPICS
+    topic_options = ["Tous (Adaptatif)"] + CFA_TOPICS
     _preselect = state.pop("quiz_preselect_topic", None)
     _default_idx = topic_options.index(_preselect) if _preselect in topic_options else 0
 
@@ -64,7 +64,7 @@ if not state["quiz_active"]:
         topic_choice = st.selectbox("Topic", topic_options, index=_default_idx)
     _DIFF_LABELS = {"Toutes": None, "Facile": "easy", "Moyen": "medium", "Difficile": "hard"}
     with col2:
-        if topic_choice == "All (Adaptatif)":
+        if topic_choice == "Tous (Adaptatif)":
             difficulty = None
             st.caption("Mode adaptatif — toutes difficultés, topics faibles prioritaires")
         else:
@@ -76,9 +76,9 @@ if not state["quiz_active"]:
     use_timer = st.checkbox("Chronomètre global (1 min 30 s / question)", value=False)
 
     if st.button("Lancer le quiz", use_container_width=True, type="primary"):
-        topic = None if topic_choice == "All (Adaptatif)" else topic_choice
+        topic = None if topic_choice == "Tous (Adaptatif)" else topic_choice
 
-        if topic_choice == "All (Adaptatif)":
+        if topic_choice == "Tous (Adaptatif)":
             questions = get_weighted_questions(user["id"], topic=None, n=n_questions, db=db)
         else:
             questions = db.get_questions(topic=topic, difficulty=difficulty, n=n_questions)
@@ -94,7 +94,7 @@ if not state["quiz_active"]:
             state["quiz_start"] = time.time()
             state["quiz_use_timer"] = use_timer
             state["quiz_total_duration"] = len(questions) * 90 if use_timer else 0
-            state["quiz_topic"] = topic_choice
+            state["quiz_topic"] = topic_choice if topic_choice != "Tous (Adaptatif)" else "All (Adaptatif)"
             st.rerun()
     st.stop()
 
@@ -191,11 +191,12 @@ if idx >= total:
                 expl_parts = []
                 _has_both = r.get("explanation_en") and r.get("explanation_fr")
                 if r.get("explanation_en"):
-                    expl_parts.append(f'<b>[EN]</b> {r["explanation_en"]}' if _has_both else r["explanation_en"])
+                    expl_parts.append(f'<b>[EN]</b>\n{r["explanation_en"]}' if _has_both else r["explanation_en"])
                 if r.get("explanation_fr"):
-                    expl_parts.append(f'<b>[FR]</b> {r["explanation_fr"]}')
+                    expl_parts.append(f'<b>[FR]</b>\n{r["explanation_fr"]}')
                 if expl_parts:
-                    st.markdown(f'<div class="explanation-box">{"<br><br>".join(expl_parts)}</div>', unsafe_allow_html=True)
+                    st.markdown('<div class="explanation-label">Explication</div>', unsafe_allow_html=True)
+                    st.markdown(f'<div class="explanation-box">{chr(10).join(expl_parts)}</div>', unsafe_allow_html=True)
 
     col1, col2, col3 = st.columns(3)
     if col1.button("Recommencer", use_container_width=True):
@@ -250,7 +251,7 @@ def _quiz_timer():
         f'<div style="display:flex;justify-content:space-between;align-items:center;'
         f'background:#0B2545;padding:0.5rem 1.2rem;border-radius:8px;margin-bottom:1rem;">'
         f'<span style="color:#C9A84C;font-weight:700;">'
-        f'Quiz{(" — " + _topic) if _topic != "All (Adaptatif)" else ""}</span>'
+        f'Quiz{(" — " + _topic) if _topic not in ("All (Adaptatif)", "Tous (Adaptatif)") else ""}</span>'
         f'<span style="font-family:monospace;font-size:1.1rem;color:{_color};font-weight:700;">'
         f'{_time_str}</span>'
         f'<span style="color:rgba(255,255,255,0.7);">{_ans_count} / {_q_total} répondues</span>'
@@ -271,7 +272,8 @@ st.progress(idx / total)
 # Badges
 topic_badge = f'<span class="topic-badge">{q["topic"]}</span>'
 diff = q.get("difficulty", "medium")
-diff_badge = f'<span class="difficulty-{diff}">{diff.capitalize()}</span>'
+_DIFF_FR = {"easy": "Facile", "medium": "Moyen", "hard": "Difficile"}
+diff_badge = f'<span class="difficulty-{diff}">{_DIFF_FR.get(diff, diff.capitalize())}</span>'
 source = q.get("source", "")
 src_badge = (
     f'<span style="background:var(--navy-100);color:var(--navy-700);border:1px solid '
@@ -337,11 +339,12 @@ if answered:
     expl_parts = []
     _has_both = q.get("explanation_en") and q.get("explanation_fr")
     if q.get("explanation_en"):
-        expl_parts.append(f'<b>[EN]</b> {q["explanation_en"]}' if _has_both else q["explanation_en"])
+        expl_parts.append(f'<b>[EN]</b>\n{q["explanation_en"]}' if _has_both else q["explanation_en"])
     if q.get("explanation_fr"):
-        expl_parts.append(f'<b>[FR]</b> {q["explanation_fr"]}')
+        expl_parts.append(f'<b>[FR]</b>\n{q["explanation_fr"]}')
     if expl_parts:
-        st.markdown(f'<div class="explanation-box">{"<br><br>".join(expl_parts)}</div>', unsafe_allow_html=True)
+        st.markdown('<div class="explanation-label">Explication</div>', unsafe_allow_html=True)
+        st.markdown(f'<div class="explanation-box">{chr(10).join(expl_parts)}</div>', unsafe_allow_html=True)
     st.markdown("")
     _next_label_inline = "Voir les résultats →" if idx == total - 1 else "Question suivante →"
     if st.button(_next_label_inline, key="qnav_next_inline", type="primary", use_container_width=True):
@@ -366,8 +369,10 @@ with st.expander("Naviguer entre les questions"):
     for _gi in range(total):
         _gc = _gcols[_gi % 10]
         _ga = answers.get(_gi)
+        _is_current = (_gi == idx)
         _label = f"{'✓' if _ga else ''}{_gi+1}"
-        if _gc.button(_label, key=f"qnav_grid_{_gi}",
+        _btn_type = "primary" if _is_current else "secondary"
+        if _gc.button(_label, key=f"qnav_grid_{_gi}", type=_btn_type,
                       help=f"Q{_gi+1}: {'Répondu' if _ga else 'Non répondu'}"):
             state["quiz_idx"] = _gi
             st.rerun()

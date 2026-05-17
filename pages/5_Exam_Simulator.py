@@ -243,12 +243,13 @@ if state.get("exam_submitted"):
             _has_both = bool(_expl_en) and bool(_expl_fr)
             _expl_parts = []
             if _expl_en:
-                _expl_parts.append(f'<b>[EN]</b> {_expl_en}' if _has_both else _expl_en)
+                _expl_parts.append(f'<b>[EN]</b>\n{_expl_en}' if _has_both else _expl_en)
             if _expl_fr:
-                _expl_parts.append(f'<b>[FR]</b> {_expl_fr}')
+                _expl_parts.append(f'<b>[FR]</b>\n{_expl_fr}')
             if _expl_parts:
+                st.markdown('<div class="explanation-label">Explication</div>', unsafe_allow_html=True)
                 st.markdown(
-                    f'<div class="explanation-box">{"<br><br>".join(_expl_parts)}</div>',
+                    f'<div class="explanation-box">{chr(10).join(_expl_parts)}</div>',
                     unsafe_allow_html=True,
                 )
 
@@ -435,10 +436,12 @@ with st.expander("Naviguer entre les questions"):
         col = grid_cols[i % _ncols]
         ans = answers.get(i)
         is_flagged = i in flagged
+        is_current = (i == idx)
         flag_mark = "★" if is_flagged else ""
         done_mark = "✓" if ans else ""
         label = f"{flag_mark}{done_mark}{i+1}"
-        if col.button(label, key=f"nav_{i}",
+        _btn_type = "primary" if is_current else "secondary"
+        if col.button(label, key=f"nav_{i}", type=_btn_type,
                       help=f"Q{i+1}: {'Répondu' if ans else 'Non répondu'}"):
             state["exam_idx"] = i
             st.rerun()

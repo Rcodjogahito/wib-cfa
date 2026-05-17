@@ -84,7 +84,7 @@ def _reset_diagnostic():
 
 def _run_diagnostic():
     st.markdown('<div class="section-header">Diagnostic Initial</div>', unsafe_allow_html=True)
-    st.caption("30 questions · 3 per topic · ~20 minutes — évaluons votre niveau de départ.")
+    st.caption("30 questions · 3 par topic · ~20 minutes — évaluons votre niveau de départ.")
 
     state = st.session_state
 
@@ -147,7 +147,8 @@ def _run_diagnostic():
 
     topic_badge = f'<span class="topic-badge">{q["topic"]}</span>'
     diff = q.get("difficulty", "medium")
-    diff_badge = f'<span class="difficulty-{diff}">{diff.capitalize()}</span>'
+    _DIFF_FR = {"easy": "Facile", "medium": "Moyen", "hard": "Difficile"}
+    diff_badge = f'<span class="difficulty-{diff}">{_DIFF_FR.get(diff, diff.capitalize())}</span>'
     st.markdown(f"{topic_badge} {diff_badge}", unsafe_allow_html=True)
     render_question(q["question_en"])
 
@@ -167,6 +168,7 @@ def _run_diagnostic():
                 unsafe_allow_html=True,
             )
         if q.get("explanation_en"):
+            st.markdown('<div class="explanation-label">Explication</div>', unsafe_allow_html=True)
             st.markdown(f'<div class="explanation-box">{q["explanation_en"]}</div>', unsafe_allow_html=True)
     else:
         diag_pending = state.setdefault("diag_pending", {})
@@ -309,7 +311,7 @@ def _finish_diagnostic(qs, answers):
 
 
 if not st.session_state.get("diagnostic_done"):
-    render_page_header("Diagnostic Initial", "30 questions · évaluons votre niveau de départ")
+    render_page_header("Diagnostic Initial", "30 questions · 3 par topic · ~20 minutes")
     _run_diagnostic()
     st.stop()
 
