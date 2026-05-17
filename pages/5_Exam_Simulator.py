@@ -15,7 +15,7 @@ from src.database import get_db
 from src.styles import inject_styles, metric_card, render_page_header, render_sidebar_brand, render_question, question_first_line
 
 st.set_page_config(
-    page_title="Simulateur d'examen — WIB CFA",
+    page_title="Exam Simulator — WIB CFA",
     page_icon="⏱️",
     layout="wide",
     initial_sidebar_state="collapsed",
@@ -32,15 +32,15 @@ with st.sidebar:
             unsafe_allow_html=True,
         )
         st.divider()
-    st.page_link("streamlit_app.py", label="Accueil", icon="🏠")
-    st.page_link("pages/1_Study.py", label="Fiches de cours", icon="📖")
+    st.page_link("streamlit_app.py", label="Home", icon="🏠")
+    st.page_link("pages/1_Study.py", label="Study Notes", icon="📖")
     st.page_link("pages/2_Quiz.py", label="Quiz", icon="🎯")
     st.page_link("pages/3_Flashcards.py", label="Flashcards", icon="🃏")
-    st.page_link("pages/4_Progress.py", label="Progression", icon="📈")
-    st.page_link("pages/5_Exam_Simulator.py", label="Simulateur d'examen", icon="⏱️")
+    st.page_link("pages/4_Progress.py", label="Progress", icon="📈")
+    st.page_link("pages/5_Exam_Simulator.py", label="Exam Simulator", icon="⏱️")
     st.divider()
     if st.session_state.get("user_id"):
-        if st.button("Déconnexion", use_container_width=True):
+        if st.button("Sign out", use_container_width=True):
             logout()
 
 if not require_auth():
@@ -49,7 +49,7 @@ if not require_auth():
 user = get_current_user()
 db = get_db()
 
-render_page_header("Simulateur d'examen", "Partiel (45Q — 1h15) · Complet (180Q — 4h30)")
+render_page_header("Exam Simulator", "Partial (45Q — 1h15) · Full (180Q — 4h30)")
 
 state = st.session_state
 PASS_THRESHOLD = 70.0
@@ -65,7 +65,7 @@ if "exam_active" not in state:
     state["exam_active"] = False
 
 if not state["exam_active"]:
-    st.markdown('<div class="section-header">Choisir le mode d\'examen</div>', unsafe_allow_html=True)
+    st.markdown('<div class="section-header">Choose exam mode</div>', unsafe_allow_html=True)
     st.markdown("")
 
     col1, col2 = st.columns(2)
@@ -82,10 +82,10 @@ if not state["exam_active"]:
                 f'</div>',
                 unsafe_allow_html=True,
             )
-            if st.button(f"Lancer {name}", key=f"start_{name}", use_container_width=True, type="primary"):
+            if st.button(f"Start {name}", key=f"start_{name}", use_container_width=True, type="primary"):
                 questions = db.get_questions(n=cfg["n"])
                 if not questions:
-                    st.error("Pas assez de questions en base.")
+                    st.error("Not enough questions in database.")
                     st.stop()
                 state["exam_active"] = True
                 state["exam_config"] = cfg
@@ -100,8 +100,8 @@ if not state["exam_active"]:
 
     st.markdown("---")
     st.info(
-        "**Conditions d'examen réelles** — pas de feedback pendant l'examen. "
-        "Les résultats détaillés s'affichent après soumission."
+        "**Real exam conditions** — no feedback during the exam. "
+        "Detailed results are shown after submission."
     )
     st.stop()
 
@@ -167,21 +167,21 @@ if state.get("exam_submitted"):
     # Pass / Fail banner
     passed = score_pct >= PASS_THRESHOLD
     banner_cls = "pass-banner" if passed else "fail-banner"
-    result_text = "RÉUSSI" if passed else "ÉCHEC"
+    result_text = "PASSED" if passed else "FAILED"
     st.markdown(
         f'<div class="{banner_cls}">{result_text} — {score_pct:.1f}%</div>',
         unsafe_allow_html=True,
     )
     _h, _rem = divmod(duration, 3600); _m, _s = divmod(_rem, 60)
     _dur_str = f"{_h}h {_m:02d}m {_s:02d}s" if _h else f"{_m}m {_s:02d}s"
-    st.markdown(f"**{correct_count} / {total}** correctes · {_dur_str}")
-    st.markdown(f"Seuil de passage : **{PASS_THRESHOLD:.0f}%** — {'+' if passed else '-'}"
+    st.markdown(f"**{correct_count} / {total}** correct · {_dur_str}")
+    st.markdown(f"Pass threshold: **{PASS_THRESHOLD:.0f}%** — {'+' if passed else '-'}"
                 f"{abs(score_pct - PASS_THRESHOLD):.1f} pp")
 
     st.markdown("---")
 
     # Per-topic breakdown
-    st.markdown('<div class="section-header">Résultats par topic</div>', unsafe_allow_html=True)
+    st.markdown('<div class="section-header">Results by topic</div>', unsafe_allow_html=True)
 
     topics = list(topic_results.keys())
     scores_vals = [domain_scores.get(t, 0) for t in topics]
@@ -195,7 +195,7 @@ if state.get("exam_submitted"):
         textposition="outside",
     ))
     fig.add_hline(y=70, line_dash="dash", line_color="#0B2545",
-                  annotation_text="Seuil 70%")
+                  annotation_text="70% threshold")
     fig.update_layout(
         yaxis=dict(range=[0, 110], title="Score (%)"),
         xaxis=dict(tickangle=-30),
@@ -219,8 +219,8 @@ if state.get("exam_submitted"):
     st.markdown("---")
 
     # Detailed question review
-    st.markdown('<div class="section-header">Revue détaillée</div>', unsafe_allow_html=True)
-    wrong_only = st.checkbox("Afficher uniquement les erreurs", value=True)
+    st.markdown('<div class="section-header">Detailed review</div>', unsafe_allow_html=True)
+    wrong_only = st.checkbox("Show incorrect only", value=True)
     for i, r in enumerate(results_detail):
         q = r["q"]
         if wrong_only and r["correct"]:
@@ -232,8 +232,8 @@ if state.get("exam_submitted"):
         st.markdown(
             f'<div class="{cls}">'
             f'{icon} Q{i+1}. [{q["topic"]}] {preview}<br>'
-            f'Votre réponse: <b>{selected_label}</b> · '
-            f'Correcte: <b>{q["correct_answer"]}</b>'
+            f'Your answer: <b>{selected_label}</b> · '
+            f'Correct: <b>{q["correct_answer"]}</b>'
             f'</div>',
             unsafe_allow_html=True,
         )
@@ -247,14 +247,14 @@ if state.get("exam_submitted"):
             if _expl_fr:
                 _expl_parts.append(f'<b>[FR]</b>\n{_expl_fr}')
             if _expl_parts:
-                st.markdown('<div class="explanation-label">Explication</div>', unsafe_allow_html=True)
+                st.markdown('<div class="explanation-label">Explanation</div>', unsafe_allow_html=True)
                 st.markdown(
                     f'<div class="explanation-box">{chr(10).join(_expl_parts)}</div>',
                     unsafe_allow_html=True,
                 )
 
     btn1, btn2, btn3 = st.columns(3)
-    if btn1.button("Recommencer le même examen", use_container_width=True):
+    if btn1.button("Restart same exam", use_container_width=True):
         state["exam_idx"] = 0
         state["exam_answers"] = {}
         state["exam_flagged"] = set()
@@ -263,13 +263,13 @@ if state.get("exam_submitted"):
         state.pop("exam_saved", None)
         state.pop("exam_restart_confirm", None)
         st.rerun()
-    if btn2.button("Nouvel examen", use_container_width=True, type="primary"):
+    if btn2.button("New exam", use_container_width=True, type="primary"):
         for k in ["exam_active", "exam_config", "exam_name", "exam_questions",
                   "exam_idx", "exam_answers", "exam_flagged", "exam_start",
                   "exam_submitted", "exam_saved", "exam_restart_confirm"]:
             state.pop(k, None)
         st.rerun()
-    if btn3.button("Voir la progression", use_container_width=True):
+    if btn3.button("View progress", use_container_width=True):
         st.switch_page("pages/4_Progress.py")
     st.stop()
 
@@ -306,7 +306,7 @@ def _exam_timer():
         f'<span style="color:#C9A84C;font-weight:700;">{_name}</span>'
         f'<span style="font-family:monospace;font-size:1.4rem;color:{_color};font-weight:700;">'
         f'⏱ {_h:02d}:{_m:02d}:{_sec:02d}</span>'
-        f'<span style="color:rgba(255,255,255,0.7);">{_ans_count} / {_total} répondues</span>'
+        f'<span style="color:rgba(255,255,255,0.7);">{_ans_count} / {_total} answered</span>'
         f'</div>',
         unsafe_allow_html=True,
     )
@@ -322,7 +322,7 @@ answered_count = sum(1 for v in answers.values() if v)
 # ── Quick submit (shown once ≥ 50% answered) ─────────────────────────────────
 
 if answered_count >= total // 2:
-    if st.button("Soumettre l'examen", key="submit_top", type="primary", use_container_width=True):
+    if st.button("Submit exam", key="submit_top", type="primary", use_container_width=True):
         state["exam_submitted"] = True
         st.rerun()
     st.markdown("")
@@ -346,7 +346,7 @@ st.markdown(
 )
 render_question(q["question_en"])
 
-st.markdown('<div class="answer-label">Sélectionnez votre réponse</div>', unsafe_allow_html=True)
+st.markdown('<div class="answer-label">Select your answer</div>', unsafe_allow_html=True)
 current_answer = answers.get(idx)
 
 if current_answer:
@@ -354,7 +354,7 @@ if current_answer:
         f'<div style="background:var(--navy-100);border:1px solid rgba(12,29,58,0.12);'
         f'border-left:3px solid var(--gold-500);border-radius:var(--radius);'
         f'padding:0.5rem 1rem;margin-bottom:0.6rem;font-size:0.85rem;color:var(--navy-700);">'
-        f'Réponse sélectionnée : <b>{current_answer}</b> — cliquez une autre option pour modifier'
+        f'Selected: <b>{current_answer}</b> — click another option to change'
         f'</div>',
         unsafe_allow_html=True,
     )
@@ -372,14 +372,14 @@ for letter, text in options:
         st.rerun()
 
 nav_cols = st.columns([1, 4, 1, 1])
-if nav_cols[0].button("← Préc", disabled=(idx == 0)):
+if nav_cols[0].button("← Prev", disabled=(idx == 0)):
     state["exam_idx"] = idx - 1
     st.rerun()
-if nav_cols[2].button("Suiv →", disabled=(idx >= total - 1)):
+if nav_cols[2].button("Next →", disabled=(idx >= total - 1)):
     state["exam_idx"] = idx + 1
     st.rerun()
 
-flag_label = "Marquée ★" if idx in flagged else "Marquer"
+flag_label = "Flagged ★" if idx in flagged else "Flag"
 if nav_cols[3].button(flag_label):
     if idx in flagged:
         flagged.discard(idx)
@@ -392,7 +392,7 @@ if nav_cols[3].button(flag_label):
 
 if flagged:
     st.markdown("---")
-    st.caption(f"Questions marquées ({len(flagged)}) : " +
+    st.caption(f"Flagged questions ({len(flagged)}): " +
                ", ".join(f"Q{i+1}" for i in sorted(flagged)))
 
 # ── Submit button ─────────────────────────────────────────────────────────────
@@ -401,19 +401,19 @@ st.markdown("---")
 unanswered = total - answered_count
 
 if unanswered > 0:
-    st.warning(f"{unanswered} question(s) sans réponse.")
+    st.warning(f"{unanswered} unanswered question(s).")
 
-if st.button("Soumettre l'examen", type="primary", use_container_width=True):
+if st.button("Submit exam", type="primary", use_container_width=True):
     state["exam_submitted"] = True
     st.rerun()
 
 if state.get("exam_restart_confirm"):
-    st.warning("Recommencer effacera toutes vos réponses et remettra le chronomètre à zéro.")
+    st.warning("Restarting will clear all your answers and reset the timer.")
     rc1, rc2 = st.columns(2)
-    if rc1.button("Annuler", use_container_width=True, key="exam_restart_cancel"):
+    if rc1.button("Cancel", use_container_width=True, key="exam_restart_cancel"):
         state.pop("exam_restart_confirm", None)
         st.rerun()
-    if rc2.button("Oui, recommencer", use_container_width=True, type="primary", key="exam_restart_yes"):
+    if rc2.button("Yes, restart", use_container_width=True, type="primary", key="exam_restart_yes"):
         state["exam_idx"] = 0
         state["exam_answers"] = {}
         state["exam_flagged"] = set()
@@ -423,7 +423,7 @@ if state.get("exam_restart_confirm"):
         state.pop("exam_restart_confirm", None)
         st.rerun()
 else:
-    if st.button("Recommencer l'examen", use_container_width=True, key="exam_restart_btn"):
+    if st.button("Restart exam", use_container_width=True, key="exam_restart_btn"):
         state["exam_restart_confirm"] = True
         st.rerun()
 
@@ -442,6 +442,6 @@ with st.expander("Naviguer entre les questions"):
         label = f"{flag_mark}{done_mark}{i+1}"
         _btn_type = "primary" if is_current else "secondary"
         if col.button(label, key=f"nav_{i}", type=_btn_type,
-                      help=f"Q{i+1}: {'Répondu' if ans else 'Non répondu'}"):
+                      help=f"Q{i+1}: {'Answered' if ans else 'Not answered'}"):
             state["exam_idx"] = i
             st.rerun()

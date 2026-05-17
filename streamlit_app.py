@@ -44,16 +44,16 @@ def _sidebar():
                 unsafe_allow_html=True,
             )
             st.divider()
-            st.page_link("streamlit_app.py", label="Accueil", icon="🏠")
-            st.page_link("pages/1_Study.py", label="Fiches de cours", icon="📖")
+            st.page_link("streamlit_app.py", label="Home", icon="🏠")
+            st.page_link("pages/1_Study.py", label="Study Notes", icon="📖")
             st.page_link("pages/2_Quiz.py", label="Quiz", icon="🎯")
             st.page_link("pages/3_Flashcards.py", label="Flashcards", icon="🃏")
-            st.page_link("pages/4_Progress.py", label="Progression", icon="📈")
-            st.page_link("pages/5_Exam_Simulator.py", label="Simulateur d'examen", icon="⏱️")
+            st.page_link("pages/4_Progress.py", label="Progress", icon="📈")
+            st.page_link("pages/5_Exam_Simulator.py", label="Exam Simulator", icon="⏱️")
             if st.session_state.get("user_email") == "sam":
                 st.page_link("pages/admin.py", label="Admin", icon="🔐")
             st.divider()
-            if st.button("Déconnexion", use_container_width=True):
+            if st.button("Sign out", use_container_width=True):
                 logout()
 
 
@@ -83,8 +83,8 @@ def _reset_diagnostic():
 
 
 def _run_diagnostic():
-    st.markdown('<div class="section-header">Diagnostic Initial</div>', unsafe_allow_html=True)
-    st.caption("30 questions · 3 par topic · ~20 minutes — évaluons votre niveau de départ.")
+    st.markdown('<div class="section-header">Initial Diagnostic</div>', unsafe_allow_html=True)
+    st.caption("30 questions · 3 per topic · ~20 minutes — let's assess your baseline.")
 
     state = st.session_state
 
@@ -140,19 +140,19 @@ def _run_diagnostic():
     answered_count = len(answered_set)
     st.markdown(
         f'<div class="progress-label">Question {idx + 1} / {total}'
-        f'{"  ·  " + str(answered_count) + "/" + str(total) + " répondues" if answered_count else ""}</div>',
+        f'{"  ·  " + str(answered_count) + "/" + str(total) + " answered" if answered_count else ""}</div>',
         unsafe_allow_html=True,
     )
     st.progress(answered_count / total)
 
     topic_badge = f'<span class="topic-badge">{q["topic"]}</span>'
     diff = q.get("difficulty", "medium")
-    _DIFF_FR = {"easy": "Facile", "medium": "Moyen", "hard": "Difficile"}
+    _DIFF_FR = {"easy": "Easy", "medium": "Medium", "hard": "Hard"}
     diff_badge = f'<span class="difficulty-{diff}">{_DIFF_FR.get(diff, diff.capitalize())}</span>'
     st.markdown(f"{topic_badge} {diff_badge}", unsafe_allow_html=True)
     render_question(q["question_en"])
 
-    st.markdown('<div class="answer-label">Sélectionnez votre réponse</div>', unsafe_allow_html=True)
+    st.markdown('<div class="answer-label">Select your answer</div>', unsafe_allow_html=True)
 
     if is_answered and prev:
         # Read-only: show selected answer highlighted
@@ -161,14 +161,14 @@ def _run_diagnostic():
             st.button(f"{prefix}{letter}.  {q[opt_key]}", key=f"d_{letter}_{idx}",
                       use_container_width=True, disabled=True)
         if prev["correct"]:
-            st.markdown('<div class="answer-correct">Correct !</div>', unsafe_allow_html=True)
+            st.markdown('<div class="answer-correct">Correct!</div>', unsafe_allow_html=True)
         else:
             st.markdown(
-                f'<div class="answer-wrong">Incorrect — La bonne réponse est <b>{q["correct_answer"]}</b></div>',
+                f'<div class="answer-wrong">Incorrect — Correct answer: <b>{q["correct_answer"]}</b></div>',
                 unsafe_allow_html=True,
             )
         if q.get("explanation_en"):
-            st.markdown('<div class="explanation-label">Explication</div>', unsafe_allow_html=True)
+            st.markdown('<div class="explanation-label">Explanation</div>', unsafe_allow_html=True)
             st.markdown(f'<div class="explanation-box">{q["explanation_en"]}</div>', unsafe_allow_html=True)
     else:
         diag_pending = state.setdefault("diag_pending", {})
@@ -179,8 +179,8 @@ def _run_diagnostic():
                 f'<div style="background:var(--navy-100);border:1px solid rgba(12,29,58,0.12);'
                 f'border-left:3px solid var(--gold-500);border-radius:var(--radius);'
                 f'padding:0.5rem 1rem;margin-bottom:0.6rem;font-size:0.85rem;color:var(--navy-700);">'
-                f'Réponse sélectionnée : <b>{pending_letter}</b>'
-                f' — cliquez une autre option pour modifier'
+                f'Selected: <b>{pending_letter}</b>'
+                f' — click another option to change'
                 f'</div>',
                 unsafe_allow_html=True,
             )
@@ -192,7 +192,7 @@ def _run_diagnostic():
 
         if pending_letter:
             st.markdown("")
-            if st.button("Valider", key="diag_validate", type="primary", use_container_width=True):
+            if st.button("Confirm", key="diag_validate", type="primary", use_container_width=True):
                 correct = pending_letter == q["correct_answer"]
                 state["diag_answers"].append({
                     "question_id": q["id"],
@@ -226,26 +226,26 @@ def _run_diagnostic():
     # Navigation bar
     dnav1, _dmid, dnav3 = st.columns([1, 4, 1])
     with dnav1:
-        if st.button("← Préc", disabled=(idx == 0), use_container_width=True, key="dnav_prev"):
+        if st.button("← Prev", disabled=(idx == 0), use_container_width=True, key="dnav_prev"):
             state["diag_view_idx"] -= 1
             st.rerun()
     with dnav3:
-        if st.button("Suiv →", disabled=(idx >= total - 1), use_container_width=True, key="dnav_next"):
+        if st.button("Next →", disabled=(idx >= total - 1), use_container_width=True, key="dnav_next"):
             state["diag_view_idx"] += 1
             st.rerun()
 
     # ── Reset section ──────────────────────────────────────────────────────
     st.markdown("---")
     if state.get("diag_reset_confirm"):
-        st.warning("Es-tu sûr(e) de vouloir recommencer le test depuis le début ? Toute ta progression sera perdue.")
+        st.warning("Are you sure you want to restart from the beginning? All progress will be lost.")
         rc1, rc2 = st.columns(2)
-        if rc1.button("Annuler", key="diag_reset_cancel", use_container_width=True):
+        if rc1.button("Cancel", key="diag_reset_cancel", use_container_width=True):
             state.pop("diag_reset_confirm", None)
             st.rerun()
-        if rc2.button("Recommencer", key="diag_reset_yes", type="primary", use_container_width=True):
+        if rc2.button("Restart", key="diag_reset_yes", type="primary", use_container_width=True):
             _reset_diagnostic()
     else:
-        if st.button("↺ Recommencer le test depuis le début", key="diag_reset_btn"):
+        if st.button("↺ Restart from the beginning", key="diag_reset_btn"):
             state["diag_reset_confirm"] = True
             st.rerun()
 
@@ -294,24 +294,24 @@ def _finish_diagnostic(qs, answers):
 
     # Display result
     banner_cls = "pass-banner" if score >= 60 else "fail-banner"
-    label = "Bon point de départ !" if score >= 60 else "Du travail en perspective !"
+    label = "Good starting point!" if score >= 60 else "Room for improvement!"
     st.markdown(
         f'<div class="{banner_cls}">{score:.1f}% — {label}</div>',
         unsafe_allow_html=True,
     )
     st.markdown("---")
-    st.subheader("Résultats par topic")
+    st.subheader("Results by topic")
     for t in CFA_TOPICS:
         pct = domain_scores.get(t, 0)
         st.markdown(f"**{t}**")
         st.progress(pct / 100, text=f"{pct:.0f}%")
 
-    if st.button("Aller au dashboard →", use_container_width=True, type="primary"):
+    if st.button("Go to dashboard →", use_container_width=True, type="primary"):
         st.rerun()
 
 
 if not st.session_state.get("diagnostic_done"):
-    render_page_header("Diagnostic Initial", "30 questions · 3 par topic · ~20 minutes")
+    render_page_header("Initial Diagnostic", "30 questions · 3 per topic · ~20 minutes")
     _run_diagnostic()
     st.stop()
 
@@ -319,7 +319,7 @@ if not st.session_state.get("diagnostic_done"):
 # ── Dashboard ─────────────────────────────────────────────────────────────────
 
 render_ticker()
-render_hero(f"Bienvenue, {user['first_name']} !")
+render_hero(f"Welcome, {user['first_name']}!")
 
 progress_rows = db.get_progress(user["id"])
 mastery = compute_mastery_map(progress_rows)
@@ -336,11 +336,11 @@ mastered_count = sum(1 for v in mastery.values() if v >= 70)
 _diag_score = st.session_state.get("diagnostic_score")
 diag_display = f"{_diag_score:.0f}%" if _diag_score is not None else "—"
 
-k1.markdown(metric_card(f"{readiness:.0f}%", "Score de préparation"), unsafe_allow_html=True)
-k2.markdown(metric_card(f"{overall_acc:.0f}%", "Précision globale"), unsafe_allow_html=True)
-k3.markdown(metric_card(f"{mastered_count}/10", "Topics maîtrisés"), unsafe_allow_html=True)
-k4.markdown(metric_card(str(len(sessions)), "Sessions complétées"), unsafe_allow_html=True)
-k5.markdown(metric_card(diag_display, "Score diagnostic"), unsafe_allow_html=True)
+k1.markdown(metric_card(f"{readiness:.0f}%", "Readiness score"), unsafe_allow_html=True)
+k2.markdown(metric_card(f"{overall_acc:.0f}%", "Global accuracy"), unsafe_allow_html=True)
+k3.markdown(metric_card(f"{mastered_count}/10", "Mastered topics"), unsafe_allow_html=True)
+k4.markdown(metric_card(str(len(sessions)), "Completed sessions"), unsafe_allow_html=True)
+k5.markdown(metric_card(diag_display, "Diagnostic score"), unsafe_allow_html=True)
 
 st.markdown("---")
 
@@ -349,7 +349,7 @@ st.markdown("---")
 col_left, col_right = st.columns([3, 2])
 
 with col_left:
-    st.markdown('<div class="section-header">Maîtrise par topic</div>', unsafe_allow_html=True)
+    st.markdown('<div class="section-header">Mastery by topic</div>', unsafe_allow_html=True)
     topics = list(mastery.keys())
     values = [mastery[t] for t in topics]
     short = [t.split(" ")[0] for t in topics]
@@ -374,7 +374,7 @@ with col_left:
     st.plotly_chart(fig, use_container_width=True)
 
 with col_right:
-    st.markdown('<div class="section-header">Points faibles prioritaires</div>', unsafe_allow_html=True)
+    st.markdown('<div class="section-header">Priority weak areas</div>', unsafe_allow_html=True)
     weak = weak_topics(mastery, threshold=50)
     medium = weak_topics(mastery, threshold=70)
     if weak:
@@ -383,7 +383,7 @@ with col_right:
             st.markdown(
                 f'<div class="wib-card"><b>{t}</b><br>'
                 f'<span style="color:#B52B2B;font-size:1.1rem;font-weight:700;">{pct:.0f}%</span>'
-                f' — Priorité haute</div>',
+                f' — High priority</div>',
                 unsafe_allow_html=True,
             )
     else:
@@ -394,17 +394,17 @@ with col_right:
                 st.markdown(
                     f'<div class="wib-card"><b>{t}</b><br>'
                     f'<span style="color:#856404;font-size:1.1rem;font-weight:700;">{pct:.0f}%</span>'
-                    f' — À renforcer</div>',
+                    f' — Needs work</div>',
                     unsafe_allow_html=True,
                 )
         else:
-            st.success("Excellent ! Tous les topics sont au-dessus de 50%.")
+            st.success("Excellent! All topics are above 50%.")
 
 st.markdown("---")
 
 # ── Topic mastery bars ────────────────────────────────────────────────────────
 
-st.markdown('<div class="section-header">Progression détaillée</div>', unsafe_allow_html=True)
+st.markdown('<div class="section-header">Detailed progress</div>', unsafe_allow_html=True)
 
 TOPIC_WEIGHTS = {
     "Ethics & Professional Standards": "15–20%",
@@ -437,13 +437,13 @@ st.markdown("---")
 
 # ── 30-day study plan ─────────────────────────────────────────────────────────
 
-st.markdown('<div class="section-header">Programme 30 jours</div>', unsafe_allow_html=True)
+st.markdown('<div class="section-header">30-day program</div>', unsafe_allow_html=True)
 
 plan = [
-    ("Semaine 1", "Diagnostic + Ethics, Quant, Economics, FSA"),
-    ("Semaine 2", "Corporate Issuers, Equity, Fixed Income + révision faibles S1"),
-    ("Semaine 3", "Derivatives, Alternatives, Portfolio Mgmt + Mock Partial"),
-    ("Semaine 4", "Mock Full ×3 + révision ciblée points faibles"),
+    ("Week 1", "Diagnostic + Ethics, Quant, Economics, FSA"),
+    ("Week 2", "Corporate Issuers, Equity, Fixed Income + review weak areas from W1"),
+    ("Week 3", "Derivatives, Alternatives, Portfolio Mgmt + Mock Partial"),
+    ("Week 4", "Mock Full ×3 + targeted weak area review"),
 ]
 p1, p2, p3, p4 = st.columns(4)
 for col, (week, desc) in zip([p1, p2, p3, p4], plan):
@@ -457,7 +457,7 @@ for col, (week, desc) in zip([p1, p2, p3, p4], plan):
 
 st.markdown("---")
 qa1, qa2, qa3, qa4 = st.columns(4)
-qa1.page_link("pages/2_Quiz.py", label="Lancer un Quiz", icon="🎯")
-qa2.page_link("pages/3_Flashcards.py", label="Réviser Flashcards", icon="🃏")
-qa3.page_link("pages/5_Exam_Simulator.py", label="Simuler l'examen", icon="⏱️")
-qa4.page_link("pages/4_Progress.py", label="Voir la progression", icon="📈")
+qa1.page_link("pages/2_Quiz.py", label="Start Quiz", icon="🎯")
+qa2.page_link("pages/3_Flashcards.py", label="Review Flashcards", icon="🃏")
+qa3.page_link("pages/5_Exam_Simulator.py", label="Simulate exam", icon="⏱️")
+qa4.page_link("pages/4_Progress.py", label="View progress", icon="📈")

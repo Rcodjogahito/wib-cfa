@@ -11,7 +11,7 @@ from src.database import get_db
 from src.progress import compute_mastery_map, readiness_score, weak_topics
 from src.styles import inject_styles, metric_card, render_page_header, render_sidebar_brand
 
-st.set_page_config(page_title="Progression — WIB CFA", page_icon="📈", layout="wide", initial_sidebar_state="collapsed")
+st.set_page_config(page_title="Progress — WIB CFA", page_icon="📈", layout="wide", initial_sidebar_state="collapsed")
 inject_styles()
 
 with st.sidebar:
@@ -24,15 +24,15 @@ with st.sidebar:
             unsafe_allow_html=True,
         )
         st.divider()
-    st.page_link("streamlit_app.py", label="Accueil", icon="🏠")
-    st.page_link("pages/1_Study.py", label="Fiches de cours", icon="📖")
+    st.page_link("streamlit_app.py", label="Home", icon="🏠")
+    st.page_link("pages/1_Study.py", label="Study Notes", icon="📖")
     st.page_link("pages/2_Quiz.py", label="Quiz", icon="🎯")
     st.page_link("pages/3_Flashcards.py", label="Flashcards", icon="🃏")
-    st.page_link("pages/4_Progress.py", label="Progression", icon="📈")
-    st.page_link("pages/5_Exam_Simulator.py", label="Simulateur d'examen", icon="⏱️")
+    st.page_link("pages/4_Progress.py", label="Progress", icon="📈")
+    st.page_link("pages/5_Exam_Simulator.py", label="Exam Simulator", icon="⏱️")
     st.divider()
     if st.session_state.get("user_id"):
-        if st.button("Déconnexion", use_container_width=True):
+        if st.button("Sign out", use_container_width=True):
             logout()
 
 if not require_auth():
@@ -41,7 +41,7 @@ if not require_auth():
 user = get_current_user()
 db = get_db()
 
-render_page_header("Progression", "Suivi de maîtrise — CFA Niveau I")
+render_page_header("Progress", "Mastery tracking — CFA Level I")
 
 progress_rows = db.get_progress(user["id"])
 sessions = db.get_sessions(user["id"])
@@ -56,8 +56,8 @@ acc = round(total_cor / total_att * 100, 1) if total_att else 0
 mastered = sum(1 for v in mastery.values() if v >= 70)
 
 k1, k2, k3, k4 = st.columns(4)
-k1.markdown(metric_card(f"{readiness:.0f}%", "Préparation"), unsafe_allow_html=True)
-k2.markdown(metric_card(f"{acc:.0f}%", "Précision"), unsafe_allow_html=True)
+k1.markdown(metric_card(f"{readiness:.0f}%", "Readiness"), unsafe_allow_html=True)
+k2.markdown(metric_card(f"{acc:.0f}%", "Accuracy"), unsafe_allow_html=True)
 k3.markdown(metric_card(f"{mastered}/10", "Topics ≥ 70%"), unsafe_allow_html=True)
 k4.markdown(metric_card(str(len(sessions)), "Sessions"), unsafe_allow_html=True)
 
@@ -68,7 +68,7 @@ st.markdown("---")
 col_radar, col_gauge = st.columns([3, 2])
 
 with col_radar:
-    st.markdown('<div class="section-header">Maîtrise par topic</div>', unsafe_allow_html=True)
+    st.markdown('<div class="section-header">Mastery by topic</div>', unsafe_allow_html=True)
     labels = [t.split(" ")[0] for t in CFA_TOPICS]
     values = [mastery[t] for t in CFA_TOPICS]
 
@@ -93,7 +93,7 @@ with col_radar:
     st.plotly_chart(fig_radar, use_container_width=True)
 
 with col_gauge:
-    st.markdown('<div class="section-header">Score de préparation</div>', unsafe_allow_html=True)
+    st.markdown('<div class="section-header">Readiness score</div>', unsafe_allow_html=True)
     fig_gauge = go.Figure(go.Indicator(
         mode="gauge+number",
         value=readiness,
@@ -113,7 +113,7 @@ with col_gauge:
                 "value": 70,
             },
         },
-        title={"text": "Cible : 70%", "font": {"size": 14}},
+        title={"text": "Target: 70%", "font": {"size": 14}},
     ))
     fig_gauge.update_layout(
         paper_bgcolor="#F8F9FB",
@@ -125,7 +125,7 @@ with col_gauge:
     # Weak areas
     weak = weak_topics(mastery, threshold=50)
     if weak:
-        st.markdown("**Priorités :**")
+        st.markdown("**Priorities:**")
         for t in weak[:3]:
             st.markdown(f"- {t} ({mastery[t]:.0f}%)")
 
@@ -133,7 +133,7 @@ st.markdown("---")
 
 # ── Per-topic mastery bars ────────────────────────────────────────────────────
 
-st.markdown('<div class="section-header">Détail par topic</div>', unsafe_allow_html=True)
+st.markdown('<div class="section-header">Topic breakdown</div>', unsafe_allow_html=True)
 
 WEIGHTS = {
     "Ethics & Professional Standards": "15–20%",
@@ -172,11 +172,11 @@ st.markdown("---")
 # ── Score history ─────────────────────────────────────────────────────────────
 
 if sessions:
-    st.markdown('<div class="section-header">Historique des sessions</div>', unsafe_allow_html=True)
+    st.markdown('<div class="section-header">Session history</div>', unsafe_allow_html=True)
 
     _TYPE_LABELS = {
         "quiz": "Quiz", "diagnostic": "Diagnostic", "flashcard": "Flashcards",
-        "mock_partial": "Exam partiel", "mock_full": "Exam complet",
+        "mock_partial": "Partial exam", "mock_full": "Full exam",
     }
 
     dates = []
@@ -197,7 +197,7 @@ if sessions:
         hovertemplate="%{x}: %{y:.1f}% (%{text})<extra></extra>",
     ))
     fig_hist.add_hline(y=70, line_dash="dash", line_color="#1B7F4F",
-                       annotation_text="Objectif 70%", annotation_position="right")
+                       annotation_text="70% target", annotation_position="right")
     fig_hist.update_layout(
         yaxis=dict(range=[0, 105], title="Score (%)"),
         xaxis=dict(title="Date"),
@@ -209,7 +209,7 @@ if sessions:
     st.plotly_chart(fig_hist, use_container_width=True)
 
     # Session table
-    with st.expander("Toutes les sessions"):
+    with st.expander("All sessions"):
         rows = ["| Date | Type | Topic | Score | Questions |", "|------|------|-------|-------|-----------|"]
         for s in sessions[:20]:
             dt = s.get("completed_at", "")[:16].replace("T", " ")
@@ -221,13 +221,13 @@ if sessions:
             rows.append(f"| {dt} | {tp} | {topic} | {dot} {score:.1f}% | {total_q} |")
         st.markdown("\n".join(rows))
 else:
-    st.info("Aucune session enregistrée. Lancez un quiz ou le simulateur d'examen pour commencer.")
+    st.info("No sessions recorded. Start a quiz or the exam simulator to begin.")
 
 # ── Quick actions ─────────────────────────────────────────────────────────────
 
 st.markdown("---")
-st.markdown('<div class="section-header">Continuer l\'entraînement</div>', unsafe_allow_html=True)
+st.markdown('<div class="section-header">Continue training</div>', unsafe_allow_html=True)
 cta1, cta2, cta3 = st.columns(3)
-cta1.page_link("pages/2_Quiz.py", label="Lancer un Quiz", icon="🎯", use_container_width=True)
-cta2.page_link("pages/5_Exam_Simulator.py", label="Simuler l'examen", icon="⏱️", use_container_width=True)
-cta3.page_link("pages/1_Study.py", label="Réviser les fiches", icon="📖", use_container_width=True)
+cta1.page_link("pages/2_Quiz.py", label="Start a Quiz", icon="🎯", use_container_width=True)
+cta2.page_link("pages/5_Exam_Simulator.py", label="Simulate exam", icon="⏱️", use_container_width=True)
+cta3.page_link("pages/1_Study.py", label="Review notes", icon="📖", use_container_width=True)

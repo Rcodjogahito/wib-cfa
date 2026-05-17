@@ -138,22 +138,22 @@ def _render_login_form() -> None:
         unsafe_allow_html=True,
     )
     with st.form("login_form"):
-        st.subheader("Connexion")
-        st.caption("Choisis un pseudo unique. Pas de mot de passe requis. Ton pseudo = ton compte.")
-        username = st.text_input("Pseudo", placeholder="ex: AlexFinance, JeanDupont…")
-        submitted = st.form_submit_button("Entrer dans WIB", use_container_width=True)
+        st.subheader("Sign in")
+        st.caption("Choose a unique username. No password required. Your username = your account.")
+        username = st.text_input("Username", placeholder="ex: AlexFinance, JeanDupont…")
+        submitted = st.form_submit_button("Enter WIB", use_container_width=True)
 
     if submitted:
         raw = username.strip()
         if len(raw) < 3:
-            st.error("Le pseudo doit contenir au moins 3 caractères.")
+            st.error("Username must be at least 3 characters.")
             return
         if len(raw) > 30:
-            st.error("Le pseudo ne peut pas dépasser 30 caractères.")
+            st.error("Username cannot exceed 30 characters.")
             return
         import re as _re
         if not _re.match(r"^[A-Za-z0-9_À-ÿ]+$", raw):
-            st.error("Le pseudo ne peut contenir que des lettres, chiffres et underscores (pas d'espace ni de caractères spéciaux).")
+            st.error("Username can only contain letters, numbers and underscores (no spaces or special characters).")
             return
         # Normalize: lowercase for unique key, preserve case for display
         uid_key = raw.lower()

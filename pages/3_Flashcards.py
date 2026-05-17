@@ -25,15 +25,15 @@ with st.sidebar:
             unsafe_allow_html=True,
         )
         st.divider()
-    st.page_link("streamlit_app.py", label="Accueil", icon="🏠")
-    st.page_link("pages/1_Study.py", label="Fiches de cours", icon="📖")
+    st.page_link("streamlit_app.py", label="Home", icon="🏠")
+    st.page_link("pages/1_Study.py", label="Study Notes", icon="📖")
     st.page_link("pages/2_Quiz.py", label="Quiz", icon="🎯")
     st.page_link("pages/3_Flashcards.py", label="Flashcards", icon="🃏")
-    st.page_link("pages/4_Progress.py", label="Progression", icon="📈")
-    st.page_link("pages/5_Exam_Simulator.py", label="Simulateur d'examen", icon="⏱️")
+    st.page_link("pages/4_Progress.py", label="Progress", icon="📈")
+    st.page_link("pages/5_Exam_Simulator.py", label="Exam Simulator", icon="⏱️")
     st.divider()
     if st.session_state.get("user_id"):
-        if st.button("Déconnexion", use_container_width=True):
+        if st.button("Sign out", use_container_width=True):
             logout()
 
 if not require_auth():
@@ -43,18 +43,18 @@ user = get_current_user()
 db = get_db()
 state = st.session_state
 
-render_page_header("Flashcards", "Système de répétition espacée — méthode Leitner")
+render_page_header("Flashcards", "Spaced repetition system — Leitner method")
 
 # ── Setup ─────────────────────────────────────────────────────────────────────
 
 col1, col2 = st.columns([1, 1])
 with col1:
-    topic_filter = st.selectbox("Topic", ["Tous"] + CFA_TOPICS, key="fc_topic")
+    topic_filter = st.selectbox("Topic", ["All"] + CFA_TOPICS, key="fc_topic")
 with col2:
-    mode = st.selectbox("Mode", ["Révision libre", "Mode Leitner (adaptatif)"], key="fc_mode")
-st.caption("Les changements de topic/mode s'appliquent à la prochaine session.")
+    mode = st.selectbox("Mode", ["Free review", "Leitner mode (adaptive)"], key="fc_mode")
+st.caption("Topic/mode changes apply from the next session.")
 
-if st.button("Nouvelle session", use_container_width=True, type="secondary"):
+if st.button("New session", use_container_width=True, type="secondary"):
     for k in ["fc_cards", "fc_idx", "fc_flipped", "fc_knew", "fc_study",
               "fc_saved", "fc_session_start", "fc_topic_saved", "fc_outcomes"]:
         state.pop(k, None)
@@ -67,12 +67,12 @@ if "fc_study_ids" not in state:
 # Load cards if needed
 if "fc_cards" not in state:
     state["fc_session_start"] = time.time()
-    topic = None if topic_filter == "Tous" else topic_filter
+    topic = None if topic_filter == "All" else topic_filter
     cards = db.get_flashcards(topic=topic)
     if not cards:
         st.warning("Aucune flashcard disponible.")
         st.stop()
-    if mode == "Mode Leitner (adaptatif)":
+    if mode == "Leitner mode (adaptive)":
         # Put "study more" cards first if tracked
         study_ids = set(state.get("fc_study_ids", []))
         priority = [c for c in cards if c["id"] in study_ids]
@@ -112,7 +112,7 @@ if idx >= total:
 
         domain_scores = {t: round(v["correct"] / v["total"] * 100, 1)
                          for t, v in topic_results.items()}
-        fc_topic = state.get("fc_topic_saved", "Tous")
+        fc_topic = state.get("fc_topic_saved", "All")
         db.save_session(
             user_id=user["id"],
             session_type="flashcard",
@@ -127,19 +127,19 @@ if idx >= total:
         state["fc_saved"] = True
 
     st.markdown(
-        f'<div class="pass-banner">Session terminée — {pct}% ({knew}/{total} su)</div>'
+        f'<div class="pass-banner">Session complete — {pct}% ({knew}/{total} known)</div>'
         if pct >= 70 else
-        f'<div class="fail-banner">Session terminée — {pct}% ({knew}/{total} su)</div>',
+        f'<div class="fail-banner">Session complete — {pct}% ({knew}/{total} known)</div>',
         unsafe_allow_html=True,
     )
-    st.markdown(f"**{knew}** cartes sues · **{study}** à retravailler")
+    st.markdown(f"**{knew}** known · **{study}** to review")
     btn1, btn2 = st.columns(2)
-    if btn1.button("Recommencer", use_container_width=True):
+    if btn1.button("Restart", use_container_width=True):
         for k in ["fc_cards", "fc_idx", "fc_flipped", "fc_knew", "fc_study",
                   "fc_saved", "fc_session_start", "fc_topic_saved", "fc_outcomes"]:
             state.pop(k, None)
         st.rerun()
-    if btn2.button("Voir la progression", use_container_width=True):
+    if btn2.button("View progress", use_container_width=True):
         st.switch_page("pages/4_Progress.py")
     st.stop()
 
@@ -149,7 +149,7 @@ flipped = state["fc_flipped"]
 # Track the topic filter used for this session (for save_session)
 state["fc_topic_saved"] = topic_filter
 
-st.progress(idx / total, text=f"Carte {idx + 1} / {total}")
+st.progress(idx / total, text=f"Card {idx + 1} / {total}")
 st.markdown(f'<span class="topic-badge">{card["topic"]}</span>', unsafe_allow_html=True)
 st.markdown("")
 
@@ -160,15 +160,15 @@ if not flipped:
         f'<div class="flashcard-front">'
         f'<div><div class="concept">{card["concept_en"]}</div>'
         f'<div style="margin-top:0.8rem;color:rgba(255,255,255,0.65);font-size:0.9rem;">'
-        f'Cliquez pour révéler la définition</div></div>'
+        f'Click to reveal the definition</div></div>'
         f'</div>',
         unsafe_allow_html=True,
     )
     fc1, fc2 = st.columns([3, 1])
-    if fc1.button("Révéler", use_container_width=True):
+    if fc1.button("Reveal", use_container_width=True):
         state["fc_flipped"] = True
         st.rerun()
-    if fc2.button("Passer →", use_container_width=True):
+    if fc2.button("Skip →", use_container_width=True):
         state["fc_idx"] += 1
         state["fc_flipped"] = False
         st.rerun()
@@ -180,7 +180,7 @@ else:
         f'<div style="margin-bottom:0.6rem;">{"<b>[EN]</b> " if card.get("definition_fr") else ""}{card["definition_en"]}</div>'
         + (f'<div style="color:#555;"><b>[FR]</b> {card["definition_fr"]}</div>' if card.get("definition_fr") else "")
         + (f'<div style="margin-top:0.8rem;color:#1A7F4B;font-style:italic;">'
-           f'<b>Exemple :</b> {card["example_en"]}</div>' if card.get("example_en") else "")
+           f'<b>Example:</b> {card["example_en"]}</div>' if card.get("example_en") else "")
         + (f'<div class="formula-box">{card["formula"]}</div>' if card.get("formula") else "")
         + f'</div>',
         unsafe_allow_html=True,
@@ -188,7 +188,7 @@ else:
 
     st.markdown("---")
     col_knew, col_study, col_skip = st.columns(3)
-    if col_knew.button("Je savais", use_container_width=True):
+    if col_knew.button("I knew it", use_container_width=True):
         state["fc_knew"] += 1
         state["fc_idx"] += 1
         state["fc_flipped"] = False
@@ -198,7 +198,7 @@ else:
         state["fc_study_ids"] = list(study_ids)
         db.save_leitner_ids(user["id"], state["fc_study_ids"])
         st.rerun()
-    if col_study.button("À retravailler", use_container_width=True):
+    if col_study.button("Study more", use_container_width=True):
         state["fc_study"] += 1
         state["fc_idx"] += 1
         state["fc_flipped"] = False
@@ -208,7 +208,7 @@ else:
         state["fc_study_ids"] = list(study_ids)
         db.save_leitner_ids(user["id"], state["fc_study_ids"])
         st.rerun()
-    if col_skip.button("Passer →", use_container_width=True):
+    if col_skip.button("Skip →", use_container_width=True):
         state["fc_idx"] += 1
         state["fc_flipped"] = False
         st.rerun()
@@ -216,6 +216,6 @@ else:
 # ── Stats bar ─────────────────────────────────────────────────────────────────
 st.markdown("---")
 c1, c2, c3 = st.columns(3)
-c1.metric("Sues", state["fc_knew"])
-c2.metric("À retravailler", state["fc_study"])
-c3.metric("Restantes", total - idx)
+c1.metric("Knew", state["fc_knew"])
+c2.metric("Study more", state["fc_study"])
+c3.metric("Remaining", total - idx)

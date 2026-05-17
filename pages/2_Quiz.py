@@ -26,15 +26,15 @@ with st.sidebar:
             unsafe_allow_html=True,
         )
         st.divider()
-    st.page_link("streamlit_app.py", label="Accueil", icon="🏠")
-    st.page_link("pages/1_Study.py", label="Fiches de cours", icon="📖")
+    st.page_link("streamlit_app.py", label="Home", icon="🏠")
+    st.page_link("pages/1_Study.py", label="Study Notes", icon="📖")
     st.page_link("pages/2_Quiz.py", label="Quiz", icon="🎯")
     st.page_link("pages/3_Flashcards.py", label="Flashcards", icon="🃏")
-    st.page_link("pages/4_Progress.py", label="Progression", icon="📈")
-    st.page_link("pages/5_Exam_Simulator.py", label="Simulateur d'examen", icon="⏱️")
+    st.page_link("pages/4_Progress.py", label="Progress", icon="📈")
+    st.page_link("pages/5_Exam_Simulator.py", label="Exam Simulator", icon="⏱️")
     st.divider()
     if st.session_state.get("user_id"):
-        if st.button("Déconnexion", use_container_width=True):
+        if st.button("Sign out", use_container_width=True):
             logout()
 
 if not require_auth():
@@ -43,7 +43,7 @@ if not require_auth():
 user = get_current_user()
 db = get_db()
 
-render_page_header("Quiz", "Pratique adaptative — 7 249 questions")
+render_page_header("Quiz", "Adaptive practice — 7,249 questions")
 
 # ── Quiz configuration ────────────────────────────────────────────────────────
 
@@ -53,38 +53,38 @@ if "quiz_active" not in state:
     state["quiz_active"] = False
 
 if not state["quiz_active"]:
-    st.markdown('<div class="section-header">Configuration du quiz</div>', unsafe_allow_html=True)
+    st.markdown('<div class="section-header">Quiz configuration</div>', unsafe_allow_html=True)
 
-    topic_options = ["Tous (Adaptatif)"] + CFA_TOPICS
+    topic_options = ["All (Adaptive)"] + CFA_TOPICS
     _preselect = state.pop("quiz_preselect_topic", None)
     _default_idx = topic_options.index(_preselect) if _preselect in topic_options else 0
 
     col1, col2, col3 = st.columns(3)
     with col1:
         topic_choice = st.selectbox("Topic", topic_options, index=_default_idx)
-    _DIFF_LABELS = {"Toutes": None, "Moyen": "medium", "Difficile": "hard"}
+    _DIFF_LABELS = {"All": None, "Medium": "medium", "Hard": "hard"}
     with col2:
-        if topic_choice == "Tous (Adaptatif)":
+        if topic_choice == "All (Adaptive)":
             difficulty = None
-            st.caption("Mode adaptatif — toutes difficultés, topics faibles prioritaires")
+            st.caption("Adaptive mode — all difficulties, weak topics prioritized")
         else:
-            _diff_label = st.selectbox("Difficulté", list(_DIFF_LABELS.keys()))
+            _diff_label = st.selectbox("Difficulty", list(_DIFF_LABELS.keys()))
             difficulty = _DIFF_LABELS[_diff_label]
     with col3:
-        n_questions = st.selectbox("Nombre de questions", [10, 20, 30], index=1)
+        n_questions = st.selectbox("Number of questions", [10, 20, 30], index=1)
 
-    use_timer = st.checkbox("Chronomètre global (1 min 30 s / question)", value=False)
+    use_timer = st.checkbox("Global timer (1 min 30 s / question)", value=False)
 
-    if st.button("Lancer le quiz", use_container_width=True, type="primary"):
-        topic = None if topic_choice == "Tous (Adaptatif)" else topic_choice
+    if st.button("Start quiz", use_container_width=True, type="primary"):
+        topic = None if topic_choice == "All (Adaptive)" else topic_choice
 
-        if topic_choice == "Tous (Adaptatif)":
+        if topic_choice == "All (Adaptive)":
             questions = get_weighted_questions(user["id"], topic=None, n=n_questions, db=db)
         else:
             questions = db.get_questions(topic=topic, difficulty=difficulty, n=n_questions)
 
         if not questions:
-            st.error("Aucune question trouvée avec ces filtres.")
+            st.error("No questions found with these filters.")
         else:
             state["quiz_active"] = True
             state["quiz_questions"] = questions
@@ -94,7 +94,7 @@ if not state["quiz_active"]:
             state["quiz_start"] = time.time()
             state["quiz_use_timer"] = use_timer
             state["quiz_total_duration"] = len(questions) * 90 if use_timer else 0
-            state["quiz_topic"] = topic_choice if topic_choice != "Tous (Adaptatif)" else "All (Adaptatif)"
+            state["quiz_topic"] = topic_choice if topic_choice != "All (Adaptive)" else "All (Adaptive)"
             st.rerun()
     st.stop()
 
@@ -145,8 +145,8 @@ if idx >= total:
     _h, _rem = divmod(duration, 3600)
     _m, _s = divmod(_rem, 60)
     _dur_str = f"{_h}h {_m:02d}m {_s:02d}s" if _h else f"{_m}m {_s:02d}s"
-    skip_note = f" · {skipped} ignorée(s)" if skipped else ""
-    st.markdown(f"**{correct_count} / {total_answered}** correctes · {_dur_str}{skip_note}")
+    skip_note = f" · {skipped} skipped" if skipped else ""
+    st.markdown(f"**{correct_count} / {total_answered}** correct · {_dur_str}{skip_note}")
     st.markdown("---")
 
     # Build per-topic stats
@@ -174,14 +174,14 @@ if idx >= total:
             db.update_progress(user["id"], t, v["correct"], v["total"])
         state["quiz_saved"] = True
 
-    st.subheader("Résultats par topic")
+    st.subheader("Results by topic")
     for t, v in topic_results.items():
         pct = round(v["correct"] / v["total"] * 100)
         color = "#1B7F4F" if pct >= 70 else ("#856404" if pct >= 50 else "#B52B2B")
         st.markdown(f'<b>{t}</b> — <span style="color:{color};font-weight:700;">{pct}%</span>', unsafe_allow_html=True)
         st.progress(pct / 100)
 
-    with st.expander("Revoir toutes les questions"):
+    with st.expander("Review all questions"):
         for i, r in enumerate(results):
             icon = "✓" if r["correct"] else "✗"
             cls = "answer-correct" if r["correct"] else "answer-wrong"
@@ -195,11 +195,11 @@ if idx >= total:
                 if r.get("explanation_fr"):
                     expl_parts.append(f'<b>[FR]</b>\n{r["explanation_fr"]}')
                 if expl_parts:
-                    st.markdown('<div class="explanation-label">Explication</div>', unsafe_allow_html=True)
+                    st.markdown('<div class="explanation-label">Explanation</div>', unsafe_allow_html=True)
                     st.markdown(f'<div class="explanation-box">{chr(10).join(expl_parts)}</div>', unsafe_allow_html=True)
 
     col1, col2, col3 = st.columns(3)
-    if col1.button("Recommencer", use_container_width=True):
+    if col1.button("Restart", use_container_width=True):
         state["quiz_idx"] = 0
         state["quiz_answers"] = {}
         state["quiz_q_starts"] = {0: time.time()}
@@ -207,13 +207,13 @@ if idx >= total:
         state.pop("quiz_saved", None)
         state.pop("quiz_pending", None)
         st.rerun()
-    if col2.button("Nouveau quiz", use_container_width=True, type="primary"):
+    if col2.button("New quiz", use_container_width=True, type="primary"):
         for k in ["quiz_active", "quiz_questions", "quiz_idx", "quiz_answers",
                   "quiz_q_starts", "quiz_start", "quiz_use_timer", "quiz_topic",
                   "quiz_saved", "quiz_pending"]:
             state.pop(k, None)
         st.rerun()
-    if col3.button("Voir la progression", use_container_width=True):
+    if col3.button("View progress", use_container_width=True):
         st.switch_page("pages/4_Progress.py")
     st.stop()
 
@@ -230,7 +230,7 @@ def _quiz_timer():
     _start = st.session_state.get("quiz_start", time.time())
     _elapsed = int(time.time() - _start)
     _total_dur = st.session_state.get("quiz_total_duration", 0)
-    _topic = st.session_state.get("quiz_topic", "All (Adaptatif)")
+    _topic = st.session_state.get("quiz_topic", "All (Adaptive)")
     _q_total = len(st.session_state.get("quiz_questions", []))
     _ans_count = len(st.session_state.get("quiz_answers", {}))
 
@@ -251,10 +251,10 @@ def _quiz_timer():
         f'<div style="display:flex;justify-content:space-between;align-items:center;'
         f'background:#0B2545;padding:0.5rem 1.2rem;border-radius:8px;margin-bottom:1rem;">'
         f'<span style="color:#C9A84C;font-weight:700;">'
-        f'Quiz{(" — " + _topic) if _topic not in ("All (Adaptatif)", "Tous (Adaptatif)") else ""}</span>'
+        f'Quiz{(" — " + _topic) if _topic not in ("All (Adaptive)",) else ""}</span>'
         f'<span style="font-family:monospace;font-size:1.1rem;color:{_color};font-weight:700;">'
         f'{_time_str}</span>'
-        f'<span style="color:rgba(255,255,255,0.7);">{_ans_count} / {_q_total} répondues</span>'
+        f'<span style="color:rgba(255,255,255,0.7);">{_ans_count} / {_q_total} answered</span>'
         f'</div>',
         unsafe_allow_html=True,
     )
@@ -264,7 +264,7 @@ _quiz_timer()
 # Progress
 st.markdown(
     f'<div class="progress-label">Question {idx + 1} / {total}'
-    f'{"  ·  " + str(answered_count) + " répondue(s)" if answered_count else ""}</div>',
+    f'{"  ·  " + str(answered_count) + " answered" if answered_count else ""}</div>',
     unsafe_allow_html=True,
 )
 st.progress(idx / total)
@@ -272,7 +272,7 @@ st.progress(idx / total)
 # Badges
 topic_badge = f'<span class="topic-badge">{q["topic"]}</span>'
 diff = q.get("difficulty", "medium")
-_DIFF_FR = {"easy": "Facile", "medium": "Moyen", "hard": "Difficile"}
+_DIFF_FR = {"easy": "Easy", "medium": "Medium", "hard": "Hard"}
 diff_badge = f'<span class="difficulty-{diff}">{_DIFF_FR.get(diff, diff.capitalize())}</span>'
 source = q.get("source", "")
 src_badge = (
@@ -285,7 +285,7 @@ st.markdown(f"{topic_badge} {diff_badge}{src_badge}", unsafe_allow_html=True)
 render_question(q["question_en"])
 
 # ── Answer buttons — deux étapes : sélection → validation ────────────────────
-st.markdown('<div class="answer-label">Sélectionnez votre réponse</div>', unsafe_allow_html=True)
+st.markdown('<div class="answer-label">Select your answer</div>', unsafe_allow_html=True)
 
 pending_letter = pending.get(idx)
 
@@ -295,8 +295,8 @@ if not answered:
             f'<div style="background:var(--navy-100);border:1px solid rgba(12,29,58,0.12);'
             f'border-left:3px solid var(--gold-500);border-radius:var(--radius);'
             f'padding:0.5rem 1rem;margin-bottom:0.6rem;font-size:0.85rem;color:var(--navy-700);">'
-            f'Réponse sélectionnée : <b>{pending_letter}</b>'
-            f' — cliquez une autre option pour modifier'
+            f'Selected: <b>{pending_letter}</b>'
+            f' — click another option to change'
             f'</div>',
             unsafe_allow_html=True,
         )
@@ -307,7 +307,7 @@ if not answered:
             st.rerun()
     if pending_letter:
         st.markdown("")
-        if st.button("Valider", key="quiz_validate", type="primary", use_container_width=True):
+        if st.button("Confirm", key="quiz_validate", type="primary", use_container_width=True):
             correct = pending_letter == q["correct_answer"]
             time_sec = int(time.time() - q_starts.get(idx, time.time()))
             db.save_attempt(
@@ -330,10 +330,10 @@ else:
 # ── Feedback ──────────────────────────────────────────────────────────────────
 if answered:
     if current["correct"]:
-        st.markdown('<div class="answer-correct">Correct !</div>', unsafe_allow_html=True)
+        st.markdown('<div class="answer-correct">Correct!</div>', unsafe_allow_html=True)
     else:
         st.markdown(
-            f'<div class="answer-wrong">Incorrect — La bonne réponse est <b>{q["correct_answer"]}</b></div>',
+            f'<div class="answer-wrong">Incorrect — Correct answer: <b>{q["correct_answer"]}</b></div>',
             unsafe_allow_html=True,
         )
     expl_parts = []
@@ -343,10 +343,10 @@ if answered:
     if q.get("explanation_fr"):
         expl_parts.append(f'<b>[FR]</b>\n{q["explanation_fr"]}')
     if expl_parts:
-        st.markdown('<div class="explanation-label">Explication</div>', unsafe_allow_html=True)
+        st.markdown('<div class="explanation-label">Explanation</div>', unsafe_allow_html=True)
         st.markdown(f'<div class="explanation-box">{chr(10).join(expl_parts)}</div>', unsafe_allow_html=True)
     st.markdown("")
-    _next_label_inline = "Voir les résultats →" if idx == total - 1 else "Question suivante →"
+    _next_label_inline = "View results →" if idx == total - 1 else "Next question →"
     if st.button(_next_label_inline, key="qnav_next_inline", type="primary", use_container_width=True):
         state["quiz_idx"] += 1
         st.rerun()
@@ -354,17 +354,17 @@ if answered:
 # ── Navigation bar ────────────────────────────────────────────────────────────
 nav1, _nav_mid, nav3 = st.columns([1, 4, 1])
 with nav1:
-    if st.button("← Préc", disabled=(idx == 0), use_container_width=True, key="qnav_prev"):
+    if st.button("← Prev", disabled=(idx == 0), use_container_width=True, key="qnav_prev"):
         state["quiz_idx"] -= 1
         st.rerun()
 with nav3:
-    next_label = "Résultats →" if idx == total - 1 else "Suiv →"
+    next_label = "Results →" if idx == total - 1 else "Next →"
     if st.button(next_label, use_container_width=True, key="qnav_next"):
         state["quiz_idx"] += 1
         st.rerun()
 
 # ── Question grid navigator ──────────────────────────────────────────────────
-with st.expander("Naviguer entre les questions"):
+with st.expander("Navigate questions"):
     _gcols = st.columns(10)
     for _gi in range(total):
         _gc = _gcols[_gi % 10]
@@ -373,7 +373,7 @@ with st.expander("Naviguer entre les questions"):
         _label = f"{'✓' if _ga else ''}{_gi+1}"
         _btn_type = "primary" if _is_current else "secondary"
         if _gc.button(_label, key=f"qnav_grid_{_gi}", type=_btn_type,
-                      help=f"Q{_gi+1}: {'Répondu' if _ga else 'Non répondu'}"):
+                      help=f"Q{_gi+1}: {'Answered' if _ga else 'Not answered'}"):
             state["quiz_idx"] = _gi
             st.rerun()
 
@@ -384,14 +384,14 @@ with _tcol:
     if answered_count > 0:
         all_done = answered_count == total
         if st.button(
-            "Terminer le quiz" if all_done else f"Terminer le quiz ({answered_count}/{total} répondues)",
+            "Finish quiz" if all_done else f"Finish quiz ({answered_count}/{total} answered)",
             use_container_width=True,
             type="primary" if all_done else "secondary",
         ):
             state["quiz_idx"] = total
             st.rerun()
 with _rcol:
-    if st.button("Recommencer", use_container_width=True, key="quiz_restart"):
+    if st.button("Restart", use_container_width=True, key="quiz_restart"):
         state["quiz_idx"] = 0
         state["quiz_answers"] = {}
         state["quiz_q_starts"] = {0: time.time()}
