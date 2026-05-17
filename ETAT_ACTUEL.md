@@ -1,8 +1,8 @@
 # ETAT ACTUEL — WIB CFA
 > Mis à jour automatiquement à la fin de chaque session Claude Code.
 
-**Date**: 2026-05-17 (session 25)  
-**Commit**: e9031f8 — "fix: robust mobile sidebar auto-collapse — doc-level click + URL polling"  
+**Date**: 2026-05-18 (session 26)  
+**Commit**: b4f98a1 — "fix(mobile): sidebar closes via full-page reload on nav click"  
 **Branch**: master → Streamlit Cloud (auto-deploy)
 
 ---
@@ -43,23 +43,22 @@
 
 ---
 
-## Travaux terminés (session 25)
+## Travaux terminés (sessions 25–26)
 
-### ✅ Sidebar mobile — fermeture automatique après navigation (refonte JS)
+### ✅ Sidebar mobile — fermeture automatique après navigation (solution définitive)
 
-**Problème** : la sidebar ne se refermait pas sur mobile après avoir cliqué sur une page. L'implémentation précédente avait deux failles :
-1. Le listener était attaché à l'élément `sb` — si React recrée cet élément lors d'une navigation, le listener disparaît
-2. Pas de fallback si le clic n'est pas intercepté (React Router synthetic events)
+**Problème persistant** : après 7 tentatives (React btn.click, CSS translateX, polling URL, inline styles), la sidebar disparaissait l'espace d'un instant puis réapparaissait systématiquement sur iPhone.
 
-**Solution — double couche** (`src/styles.py`) :
+**Cause racine** : Streamlit restaure le state React de la sidebar ~400-700 ms après chaque navigation SPA. Sur iOS Safari, `btn.click()` ne déclenche pas les event handlers React. Impossible de fermer la sidebar React depuis JS sans race condition.
 
-1. **Listener document-level** : attaché à `window.parent.document` (pas à `sb`), stocké sous `par._wibSidebarClick` pour survivre aux recreations d'iframe. Intercepte tous les clics sur `<a>` dans la sidebar.
+**Solution finale — full-page reload** (`src/styles.py`, commit b4f98a1) :
+- Sur mobile, intercepter les clics sur `<a href>` dans la sidebar (capture phase)
+- `e.preventDefault()` + `e.stopImmediatePropagation()` — annule la navigation SPA
+- `par.location.href = href` — force un rechargement complet de la page
+- La page cible se charge avec `initial_sidebar_state="collapsed"` → sidebar fermée nativement
+- Aucune manipulation React, aucune course de timing, fonctionne sur tous les navigateurs
 
-2. **Polling URL** (`setInterval` 300ms) : surveille `window.parent.location.href`. Dès que l'URL change (= navigation Streamlit), ferme la sidebar. Stocké sous `par._wibNavWatch` — se crée une seule fois même si l'iframe est recréé à chaque page.
-
-Les deux guards sont sur `window.parent` (persiste entre les rechargements de page), pas sur `window` (iframe éphémère). La fonction `collapse` garde les 2 sélecteurs CSS (`stSidebarCollapseButton` + bouton SVG en fallback).
-
-**Commit** : `e9031f8`
+**Commits** : `e9031f8` (tentatives précédentes) → `b4f98a1` (solution finale)
 
 ---
 
