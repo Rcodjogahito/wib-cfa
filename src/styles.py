@@ -662,12 +662,16 @@ def inject_styles():
         """,
         unsafe_allow_html=True,
     )
-    # Mobile sidebar: triple-layer close to beat Streamlit's state restoration.
-    # Layer 1 — CSS: body[data-wib-closing] slides sidebar off-screen immediately,
-    #   held 2 s so the page re-render can't visually restore it.
-    # Layer 2 — React: click collapse button / overlay to update component state.
-    # Layer 3 — MutationObserver: if Streamlit's rerender reopens the sidebar,
-    #   we close it again instantly. Runs for 2.5 s then stops.
+    # Mobile sidebar close strategy:
+    # Root cause: Streamlit restores sidebar state during page re-render (~400-700 ms
+    # after the nav click), overriding any early React state change.
+    # Fix:
+    #   1. CSS cover: hide sidebar immediately and keep it hidden (body[data-wib-closing]).
+    #   2. React close: attempt AFTER Streamlit finishes re-rendering (starting at 700 ms).
+    #   3. CSS removal: only once we confirm React state is closed (collapse btn gone).
+    #      Safety fallback: remove CSS at 3 s regardless.
+    # reactSidebarOpen() checks DOM presence (button only rendered when React state=open),
+    # NOT the visual state, so our own CSS cover doesn't fool the check.
     _components.html(
         """
         <script>
@@ -676,11 +680,9 @@ def inject_styles():
                 try { return window.parent.innerWidth < 768; } catch(e) { return false; }
             }
 
-            function isOpen(doc) {
-                var btn = doc.querySelector('[data-testid="stSidebarCollapseButton"]');
-                if (btn && btn.offsetParent !== null) return true;
-                var sb = doc.querySelector('section[data-testid="stSidebar"]');
-                try { return !!sb && sb.getBoundingClientRect().left > -50; } catch(e) { return false; }
+            // Reflects React state only — button absent when sidebar closed in React
+            function reactSidebarOpen(doc) {
+                return !!doc.querySelector('[data-testid="stSidebarCollapseButton"]');
             }
 
             function clickClose(doc) {
@@ -690,39 +692,38 @@ def inject_styles():
                 if (btn) btn.click();
             }
 
-            var watcher = null, watchTimer = null, cssTimer = null;
+            var cssTimer = null;
+
+            function removeCss(doc) {
+                if (cssTimer) { clearTimeout(cssTimer); cssTimer = null; }
+                doc.body.removeAttribute('data-wib-closing');
+            }
+
+            // Try React close at `delay` ms, check 300 ms later.
+            // If closed: remove CSS cover. If still open: recurse with next delay.
+            function tryAt(doc, delays, i) {
+                if (i >= delays.length) { removeCss(doc); return; }
+                setTimeout(function() {
+                    clickClose(doc);
+                    setTimeout(function() {
+                        if (!reactSidebarOpen(doc)) {
+                            removeCss(doc);        // React confirmed closed
+                        } else {
+                            tryAt(doc, delays, i + 1);  // still open, try later
+                        }
+                    }, 300);
+                }, delays[i]);
+            }
 
             function closeFully(doc) {
                 if (!isMobile()) return;
-
-                // Layer 1: CSS override — instant visual close, survives React re-render
+                // Immediately apply CSS cover (sidebar visually gone from t=0)
                 doc.body.setAttribute('data-wib-closing', '1');
                 if (cssTimer) clearTimeout(cssTimer);
-                cssTimer = setTimeout(function() {
-                    doc.body.removeAttribute('data-wib-closing');
-                }, 2000);
+                cssTimer = setTimeout(function() { removeCss(doc); }, 3000); // safety
 
-                // Layer 2: React state — click button with retries
-                clickClose(doc);
-                setTimeout(function() { if (isOpen(doc)) clickClose(doc); }, 350);
-                setTimeout(function() { if (isOpen(doc)) clickClose(doc); }, 800);
-
-                // Layer 3: MutationObserver — re-close if Streamlit restores state
-                if (watcher) { watcher.disconnect(); watcher = null; }
-                if (watchTimer) { clearTimeout(watchTimer); }
-                var sb = doc.querySelector('section[data-testid="stSidebar"]');
-                if (sb) {
-                    watcher = new MutationObserver(function() {
-                        if (isOpen(doc)) clickClose(doc);
-                    });
-                    watcher.observe(sb, { attributes: true, childList: true });
-                    if (sb.parentElement) {
-                        watcher.observe(sb.parentElement, { childList: true });
-                    }
-                }
-                watchTimer = setTimeout(function() {
-                    if (watcher) { watcher.disconnect(); watcher = null; }
-                }, 2500);
+                // React close: start AFTER Streamlit finishes re-rendering the new page
+                tryAt(doc, [700, 1100, 1600, 2200], 0);
             }
 
             function setup() {
@@ -736,7 +737,7 @@ def inject_styles():
                         if (!isMobile()) return;
                         var sb = doc.querySelector('section[data-testid="stSidebar"]');
                         if (sb && sb.contains(e.target) && e.target.closest('a')) {
-                            setTimeout(function() { closeFully(doc); }, 60);
+                            closeFully(doc);
                         }
                     }, true);
 
