@@ -1,8 +1,8 @@
 # ETAT ACTUEL — WIB CFA
 > Mis à jour automatiquement à la fin de chaque session Claude Code.
 
-**Date**: 2026-05-17 (session 20)  
-**Commit**: c7d6218 — "UI/UX improvements and explanation audit corrections"  
+**Date**: 2026-05-17 (session 21)  
+**Commit**: (à venir — script audit + corrections DB)  
 **Branch**: master → Streamlit Cloud (auto-deploy)
 
 ---
@@ -40,6 +40,29 @@
 - **Scripts**: `scripts/render_table_pages.py` → images PNG, `scripts/rerender_wrong_pages.py` → correction pages erronées, `scripts/patch_uworld_tables.py` → mise à jour Supabase
 - **Résultat**: 28/28 tables insérées dans `question_en`
 - **Méthode**: lecture images PDF avec Claude Vision (inclus dans abonnement Pro)
+
+---
+
+## Travaux terminés (session 21)
+
+### ✅ Audit options + réponses — toutes sources (script `audit_fix_options_answers.py`)
+
+Vérification rigoureuse que chaque proposition de réponse (option_a/b/c) et bonne réponse (correct_answer) correspondent exactement aux documents source originaux dans `D:\CLAUDE\Projet CFA\CFA L1`.
+
+| Source | Matchées | Options fausses | Réponses fausses | Corrigées |
+|---|---|---|---|---|
+| UWorld | 1882/1897 | 1 | 3 | **3** |
+| Kaplan | 3717/3717 | 39 | 1030 | **1048** |
+| Extra_QB | 331/333 | 0 | 0 | 0 |
+| Kevin_Mock | 180/180 | 1 (faux-positif) | 0 | 0 |
+
+- **UWorld** : 3 questions corrigées (1 lot d'options, 2 bonnes réponses). 103 bonnes réponses non vérifiables (3 PDFs `Answers` hangent pdfplumber : 1.03, 5.12, 11.03). Timeout threading 60s ajouté.
+- **Kaplan** : 1048 corrections appliquées (39 options + 1030 bonnes réponses, sim=1.00 pour toutes). L'algorithme `_detect_v2_kaplan` lit le texte d'explication du PDF pour déduire la bonne réponse (même algo que fix_kaplan_v2.py session 14, mais appliqué à toutes les questions).
+- **Extra_QB** : Aucun problème — 331/333 matchées, toutes correctes.
+- **Kevin_Mock** : 1 faux-positif détecté et NON appliqué. Deux questions partagent le même stem générique ("Which of the following statements is most likely accurate?"). Les deux sont correctement stockées en DB. Faux-positif résolu par amélioration du LUT (voir ci-dessous).
+- **Amélioration script** : `_build_lookup`/`_lookup` modifiés pour stocker plusieurs candidats par clé et sélectionner celui avec la meilleure similarité d'options vers la question DB (évite les faux-positifs sur stems courts/génériques).
+
+**Script** : `scripts/audit_fix_options_answers.py [--dry-run] [--source uworld|kaplan|extra|kevin|all]`
 
 ---
 
