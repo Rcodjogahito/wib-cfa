@@ -1,8 +1,8 @@
 # ETAT ACTUEL — WIB CFA
 > Mis à jour automatiquement à la fin de chaque session Claude Code.
 
-**Date**: 2026-05-17 (session 24)  
-**Commit**: 17f3335 — "fix: remove avatar circle, show pseudo only in sidebar; DB first_name corrected"  
+**Date**: 2026-05-17 (session 25)  
+**Commit**: e9031f8 — "fix: robust mobile sidebar auto-collapse — doc-level click + URL polling"  
 **Branch**: master → Streamlit Cloud (auto-deploy)
 
 ---
@@ -40,6 +40,26 @@
 - **Scripts**: `scripts/render_table_pages.py` → images PNG, `scripts/rerender_wrong_pages.py` → correction pages erronées, `scripts/patch_uworld_tables.py` → mise à jour Supabase
 - **Résultat**: 28/28 tables insérées dans `question_en`
 - **Méthode**: lecture images PDF avec Claude Vision (inclus dans abonnement Pro)
+
+---
+
+## Travaux terminés (session 25)
+
+### ✅ Sidebar mobile — fermeture automatique après navigation (refonte JS)
+
+**Problème** : la sidebar ne se refermait pas sur mobile après avoir cliqué sur une page. L'implémentation précédente avait deux failles :
+1. Le listener était attaché à l'élément `sb` — si React recrée cet élément lors d'une navigation, le listener disparaît
+2. Pas de fallback si le clic n'est pas intercepté (React Router synthetic events)
+
+**Solution — double couche** (`src/styles.py`) :
+
+1. **Listener document-level** : attaché à `window.parent.document` (pas à `sb`), stocké sous `par._wibSidebarClick` pour survivre aux recreations d'iframe. Intercepte tous les clics sur `<a>` dans la sidebar.
+
+2. **Polling URL** (`setInterval` 300ms) : surveille `window.parent.location.href`. Dès que l'URL change (= navigation Streamlit), ferme la sidebar. Stocké sous `par._wibNavWatch` — se crée une seule fois même si l'iframe est recréé à chaque page.
+
+Les deux guards sont sur `window.parent` (persiste entre les rechargements de page), pas sur `window` (iframe éphémère). La fonction `collapse` garde les 2 sélecteurs CSS (`stSidebarCollapseButton` + bouton SVG en fallback).
+
+**Commit** : `e9031f8`
 
 ---
 
