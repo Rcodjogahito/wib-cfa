@@ -341,6 +341,7 @@ def inject_styles():
             font-style: italic;
             color: var(--gray-600);
             letter-spacing: 0.005em;
+            text-transform: none !important;
         }
         .wib-page-header .page-title {
             font-family: 'Cormorant Garamond', serif;
@@ -414,7 +415,7 @@ def inject_styles():
             margin-top: 12px;
             font-weight: 400;
             letter-spacing: 0.01em;
-            text-transform: none;
+            text-transform: none !important;
             text-indent: 0;
         }
 
