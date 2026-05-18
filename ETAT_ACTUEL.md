@@ -1,8 +1,8 @@
 # ETAT ACTUEL — WIB CFA
 > Mis à jour automatiquement à la fin de chaque session Claude Code.
 
-**Date**: 2026-05-18 (session 29)  
-**Commit**: 535cb60 — "feat(adaptive): graduated weights + wrong-question boost + exam personalization"  
+**Date**: 2026-05-18 (session 30)  
+**Commit**: 849452a — "feat: true 5-box Leitner spaced repetition + CFA-compliant exam simulator"  
 **Branch**: master → Streamlit Cloud (auto-deploy)
 
 ---
@@ -40,6 +40,57 @@
 - **Scripts**: `scripts/render_table_pages.py` → images PNG, `scripts/rerender_wrong_pages.py` → correction pages erronées, `scripts/patch_uworld_tables.py` → mise à jour Supabase
 - **Résultat**: 28/28 tables insérées dans `question_en`
 - **Méthode**: lecture images PDF avec Claude Vision (inclus dans abonnement Pro)
+
+---
+
+## Travaux terminés (session 30)
+
+### ✅ Flashcards — vrai système Leitner 5 boîtes avec spaced repetition (commit 849452a)
+
+**Table Supabase créée** : `user_flashcard_state (id, user_id, card_id, box, next_review_at, times_correct, times_wrong, updated_at)` + index `idx_ufs_user_review` + RLS.
+
+**Intervalles de révision** :
+- Box 1 (rouge) → revu immédiatement (0 jour)
+- Box 2 (orange) → +1 jour
+- Box 3 (jaune) → +3 jours
+- Box 4 (vert) → +7 jours
+- Box 5 (vert foncé) → +14 jours (maîtrisé)
+
+**Logique de session** : cartes dues (next_review_at ≤ now) en priorité, puis nouvelles cartes. Cartes non encore dues exclues de la session.
+
+**UI** :
+- Avant session : compteur "X due · Y new · Z mastered"
+- Sur chaque carte : indicateur ●●●○○ + label boîte + prévisualisation next-box
+- "I knew it" → boîte +1, next_review_at planifié
+- "Study more" → retour boîte 1, revu immédiatement
+- Fin de session : distribution visuelle par boîte (colonnes colorées)
+
+**DB methods ajoutées** :
+- `get_leitner_states(user_id)` → dict {card_id: state}
+- `update_leitner_card(user_id, card_id, knew_it)` → upsert avec calcul automatique next_review_at
+- `timedelta` ajouté à l'import datetime
+
+### ✅ Exam Simulator — 100% conforme CFA Institute 2026 (commit 849452a)
+
+**Bug corrigé** : _TOPIC_COUNTS_45 — Portfolio Management était à 7 (15.6%, hors range officiel 8-12%). Corrigé à 4 (8.9%). Tous les topics du partiel 45Q sont maintenant dans les ranges officiels CFA.
+
+**Timing partiel corrigé** : 75 min → 67 min (45 questions × 90 sec/question = 67.5 min, conforme au rythme officiel CFA).
+
+**Standards officiels ajoutés dans l'expander** :
+- Format : 180 MCQ · 3 choix · 2 sessions × 90Q × 135 min · ~90 sec/question
+- Scoring : equally weighted · no negative marking
+- Pass rate : ~41% historique, ~43-45% récent
+- MPS : ~67-69% empiriquement (non publié par le CFA Institute)
+- Tableau complet des pondérations avec % réels vs ranges officiels
+
+**Message résultat** : "CFA benchmark: ~67–69% empiriquement (MPS set by CFA Institute, not published)"
+
+### ✅ Informations CFA confirmées (recherche officielle)
+
+- MPS non publié, ~67-69% empiriquement (300Hours, 20k+ candidats)
+- Toutes les questions également pondérées, pas de pénalité pour mauvaise réponse
+- Format 2026 inchangé vs 2025 : 180Q, 2×90Q×135min, mêmes 10 topics
+- Taux de réussite Feb 2026 : 43-45% (first-time ~49-52%)
 
 ---
 
