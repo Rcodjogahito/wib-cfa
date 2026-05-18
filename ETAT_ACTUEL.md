@@ -1,8 +1,8 @@
 # ETAT ACTUEL — WIB CFA
 > Mis à jour automatiquement à la fin de chaque session Claude Code.
 
-**Date**: 2026-05-18 (session 31)  
-**Commit**: 937e759 — "Fix UX audit issues: N+1 queries, navigation, mobile CSS, timer label"  
+**Date**: 2026-05-18 (session 32)  
+**Commit**: 0d7ef5d — "redesign WIB logo — cascading slashes device, refined Cormorant tracking"  
 **Branch**: master → Streamlit Cloud (auto-deploy)
 
 ---
@@ -40,6 +40,32 @@
 - **Scripts**: `scripts/render_table_pages.py` → images PNG, `scripts/rerender_wrong_pages.py` → correction pages erronées, `scripts/patch_uworld_tables.py` → mise à jour Supabase
 - **Résultat**: 28/28 tables insérées dans `question_en`
 - **Méthode**: lecture images PDF avec Claude Vision (inclus dans abonnement Pro)
+
+---
+
+## Travaux terminés (session 32)
+
+### ✅ Refonte logo WIB — device "///", Cormorant 600, tracking affiné (commit 0d7ef5d)
+
+**Inspiration** : Ares Management (autorité institutionnelle) + Rothschild (Five Arrows abstrait).
+
+**Device** : trois barres obliques `///` en Cormorant Garamond 300 avec opacité en cascade (25%→58%→100%), référençant les Five Arrows de Rothschild de façon abstraite et contemporaine.
+
+**Sidebar brand** :
+- Device `///` en Cormorant 300, or en cascade
+- "WIB" en Cormorant 600, or `#C9A84C`, taille 2.1rem, tracking 0.32em
+- "CFA Level I" en Inter 300, blanc 30%, tracking 0.18em, uppercase
+
+**Hero (homepage)** :
+- Device `///` scaled up (1.15rem) avec mêmes opacités
+- "WIB" en Cormorant 600, 3.5rem, tracking 0.35em (vs. weight 700 + 6px fixe avant)
+- Tagline en Inter 300, blanc 38%, tracking 0.18em
+
+**Changements techniques** :
+- `.wib-hero .brand-rule` : `display: none` → `display: block` + typographie définie
+- `.wib-hero .brand` : `font-weight: 700; letter-spacing: 6px` → `font-weight: 600; letter-spacing: 0.35em`
+- Breakpoints responsive mis à jour (768px: 2.6rem/0.28em, 480px: 2.1rem/0.22em)
+- `_SIDEBAR_BRAND` entièrement refondu avec structure padding + device + wordmark + descriptor
 
 ---
 
