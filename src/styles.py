@@ -325,32 +325,28 @@ def inject_styles():
             display: flex;
             align-items: baseline;
             flex-wrap: wrap;
-            gap: 0 0.38rem;
-            margin-bottom: 10px;
+            gap: 0 0.40rem;
+            margin-bottom: 8px;
         }
-        /* WIB as a crisp editorial "stamp" — Inter Bold contrasts with the
-           flowing Cormorant italic of the full name, like a house mark */
         .wib-page-header .brand-mark-word {
-            font-family: 'Inter', 'Helvetica Neue', sans-serif;
-            font-size: 0.68rem;
-            font-weight: 700;
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 0.82rem;
+            font-weight: 600;
             color: var(--gold-500);
-            letter-spacing: 0.18em;
-            text-transform: uppercase;
+            letter-spacing: 0.12em;
         }
         .wib-page-header .brand-sep {
-            font-family: 'Inter', sans-serif;
-            font-size: 0.60rem;
-            color: rgba(201,168,76,0.32);
-            font-weight: 300;
+            font-size: 0.72rem;
+            color: rgba(201,168,76,0.42);
+            font-weight: 400;
         }
         .wib-page-header .brand-fullname {
             font-family: 'Cormorant Garamond', serif;
-            font-size: 0.86rem;
+            font-size: 0.88rem;
             font-weight: 400;
             font-style: italic;
-            color: var(--gray-500);
-            letter-spacing: 0.01em;
+            color: var(--gray-600);
+            letter-spacing: 0.005em;
             text-transform: none !important;
         }
         .wib-page-header .page-title {
@@ -373,37 +369,33 @@ def inject_styles():
         .wib-hero {
             background: var(--navy-900);
             border-radius: var(--radius-lg);
-            padding: 2.4rem 2.6rem 2.1rem;
+            padding: 2rem 2.5rem;
             margin-bottom: 1.75rem;
             position: relative;
             overflow: hidden;
         }
-        /* Thin gold rule — left-anchored editorial baseline, fades right */
         .wib-hero::after {
             content: '';
             position: absolute;
             bottom: 0; left: 0; right: 0;
-            height: 1px;
-            background: linear-gradient(90deg, rgba(201,168,76,0.60) 0%, rgba(201,168,76,0.10) 40%, transparent 65%);
+            height: 2px;
+            background: linear-gradient(90deg, var(--gold-500) 0%, transparent 70%);
         }
         .wib-hero .brand-rule { display: none; }
         .wib-hero .brand {
             font-family: 'Cormorant Garamond', serif;
             font-size: 3.2rem;
-            font-weight: 600;
-            color: #FFFFFF;
-            letter-spacing: 0.34em;
-            text-indent: 0.34em;
+            font-weight: 700;
+            color: var(--gold-500);
+            letter-spacing: 6px;
             line-height: 1;
-            margin-bottom: 16px;
         }
         .wib-hero .tagline {
-            font-family: 'Cormorant Garamond', serif;
-            font-size: 1.06rem;
-            font-style: italic;
-            color: rgba(255,255,255,0.65);
-            font-weight: 400;
-            letter-spacing: 0.01em;
+            font-size: 0.75rem;
+            color: rgba(255,255,255,0.45);
+            margin-top: 8px;
+            font-weight: 500;
+            letter-spacing: 0.15em;
             text-transform: none !important;
         }
 
@@ -825,22 +817,10 @@ _SIDEBAR_BRAND_ORIGINAL = """
 <div style="font-size:0.63rem;color:rgba(255,255,255,0.38);letter-spacing:0.20em;text-transform:uppercase;margin-top:4px;font-weight:600;">CFA Level I</div>
 """
 
-# Ares + Rothschild-inspired identity system.
-# Device: three ascending vertical bars — Ares geometric precision (sharp corners,
-# exact spacing) + Rothschild directional arrow energy (ascending momentum).
-# Heights 8 / 13 / 18 px, gold cascade 36 % → 65 % → 100 %.
-# Wordmark: Cormorant SemiBold, white, tracking 0.34 em — old-money serif authority.
-# Descriptor: Inter Light, uppercase, gold 55 % — metadata, never branding.
+# Original logo — restored to initial design (rollback from redesign sessions 27-31).
 _SIDEBAR_BRAND = """
-<div style="padding:6px 0 22px 0;">
-  <div style="display:flex;align-items:flex-end;gap:3px;margin-bottom:16px;line-height:0;">
-    <div style="width:3px;height:8px;background:rgba(201,168,76,0.36);"></div>
-    <div style="width:3px;height:13px;background:rgba(201,168,76,0.65);"></div>
-    <div style="width:3px;height:18px;background:#C9A84C;"></div>
-  </div>
-  <div style="font-family:'Cormorant Garamond',Georgia,serif;font-size:2.05rem;font-weight:600;color:#FFFFFF;letter-spacing:0.34em;text-indent:0.34em;line-height:1;margin-bottom:11px;">WIB</div>
-  <div style="font-family:'Inter','Helvetica Neue',sans-serif;font-size:0.57rem;font-weight:300;color:rgba(201,168,76,0.56);letter-spacing:0.26em;text-indent:0.26em;text-transform:uppercase;line-height:1;">CFA &middot; Level I</div>
-</div>
+<div style="font-family:'Cormorant Garamond',Georgia,serif;font-size:1.9rem;font-weight:700;color:#C9A84C;letter-spacing:5px;line-height:1;">WIB</div>
+<div style="font-size:0.63rem;color:rgba(255,255,255,0.38);letter-spacing:0.20em;text-transform:uppercase;margin-top:4px;font-weight:600;">CFA Level I</div>
 """
 
 
@@ -863,13 +843,8 @@ def render_hero(subtitle: str = "Who wants to be an Investment Banker?"):
     st.markdown(
         f"""
         <div class="wib-hero">
-          <div style="display:flex;align-items:flex-end;gap:4px;margin-bottom:20px;line-height:0;">
-            <div style="width:4px;height:12px;background:rgba(201,168,76,0.36);"></div>
-            <div style="width:4px;height:19px;background:rgba(201,168,76,0.65);"></div>
-            <div style="width:4px;height:26px;background:#C9A84C;"></div>
-          </div>
-          <div class="brand">WIB</div>
-          <div class="tagline" style="text-transform:none!important">{subtitle}</div>
+            <div class="brand">WIB</div>
+            <div class="tagline" style="text-transform:none!important">{subtitle}</div>
         </div>
         """,
         unsafe_allow_html=True,
