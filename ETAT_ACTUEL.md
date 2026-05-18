@@ -1,8 +1,8 @@
 # ETAT ACTUEL — WIB CFA
 > Mis à jour automatiquement à la fin de chaque session Claude Code.
 
-**Date**: 2026-05-18 (session 30)  
-**Commit**: 849452a — "feat: true 5-box Leitner spaced repetition + CFA-compliant exam simulator"  
+**Date**: 2026-05-18 (session 31)  
+**Commit**: 937e759 — "Fix UX audit issues: N+1 queries, navigation, mobile CSS, timer label"  
 **Branch**: master → Streamlit Cloud (auto-deploy)
 
 ---
@@ -40,6 +40,30 @@
 - **Scripts**: `scripts/render_table_pages.py` → images PNG, `scripts/rerender_wrong_pages.py` → correction pages erronées, `scripts/patch_uworld_tables.py` → mise à jour Supabase
 - **Résultat**: 28/28 tables insérées dans `question_en`
 - **Méthode**: lecture images PDF avec Claude Vision (inclus dans abonnement Pro)
+
+---
+
+## Travaux terminés (session 31)
+
+### ✅ Audit UX + fixes techniques (commit 937e759)
+
+**Bugs critiques corrigés :**
+
+1. **Variable shadowing `weak_topics`** (`streamlit_app.py:321`) — `weak_list = sorted(...)` remplace la variable locale qui écrasait la fonction importée `weak_topics()` de `src/progress.py`. Causait un `TypeError: 'list' object is not callable` au chargement du dashboard.
+
+2. **Bouton "Start training →"** (`streamlit_app.py:338`) — `st.rerun()` → `st.switch_page("pages/2_Quiz.py")`. Le bouton post-diagnostic naviguait nulle part au lieu d'ouvrir le quiz.
+
+3. **Timer label** (`pages/2_Quiz.py:245`) — `"restantes"` → `"remaining"`. Seul terme en français restant dans l'UI.
+
+**Performance :**
+
+4. **N+1 Supabase queries éliminé** (`src/database.py`) — `get_questions(topic=None)` faisait 10 appels série (1 par topic). Remplacé par 1 seul appel + groupement client-side par topic + shuffle. Réduction de latence ~9x sur le chargement quiz "All (Adaptive)".
+
+**UX mobile :**
+
+5. **Quiz grid navigator** (`pages/2_Quiz.py`) — 10 colonnes → 5 colonnes. Sur mobile 320px, les 10 mini-boutons étaient inutilisables (~30px chacun). Maintenant 5 boutons confortables.
+
+6. **CSS responsive étendu** (`src/styles.py`) — Ajout de breakpoints manquants pour flashcard-front/back, question-option, pass/fail banner, topic-badge, study-content. Ajout breakpoint `480px` pour les très petits écrans.
 
 ---
 
