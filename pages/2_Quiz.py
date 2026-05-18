@@ -242,7 +242,7 @@ def _quiz_timer():
         _remaining = max(0, _total_dur - _elapsed)
         _color = "#B52B2B" if _remaining < 60 else ("#C9A84C" if _remaining < 300 else "#FFFFFF")
         _m, _s = divmod(int(_remaining), 60)
-        _time_str = f"⏱ {_m:02d}:{_s:02d} restantes"
+        _time_str = f"⏱ {_m:02d}:{_s:02d} remaining"
         if _remaining == 0:
             st.session_state["quiz_idx"] = _q_total
             st.rerun()
@@ -376,9 +376,9 @@ with nav3:
 
 # ── Question grid navigator ──────────────────────────────────────────────────
 with st.expander("Navigate questions", expanded=True):
-    _gcols = st.columns(10)
+    _gcols = st.columns(5)
     for _gi in range(total):
-        _gc = _gcols[_gi % 10]
+        _gc = _gcols[_gi % 5]
         _ga = answers.get(_gi)
         _is_current = (_gi == idx)
         _label = f"{'✓' if _ga else ''}{_gi+1}"

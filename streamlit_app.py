@@ -318,12 +318,12 @@ def _finish_diagnostic(qs, answers):
         st.progress(pct / 100, text=f"{pct:.0f}%")
 
     # Identify weak topics (< 50%) to guide next steps
-    weak_topics = sorted(
+    weak_list = sorted(
         [(t, domain_scores.get(t, 0)) for t in CFA_TOPICS if domain_scores.get(t, 0) < 50],
         key=lambda x: x[1]
     )
-    if weak_topics:
-        weak_names = ", ".join(f"**{t}** ({pct:.0f}%)" for t, pct in weak_topics[:3])
+    if weak_list:
+        weak_names = ", ".join(f"**{t}** ({pct:.0f}%)" for t, pct in weak_list[:3])
         st.markdown(
             f'<div style="background:rgba(201,168,76,0.08);border-left:3px solid #C9A84C;'
             f'border-radius:6px;padding:0.9rem 1.1rem;margin:1rem 0;">'
@@ -336,7 +336,7 @@ def _finish_diagnostic(qs, answers):
         )
 
     if st.button("Start training →", use_container_width=True, type="primary"):
-        st.rerun()
+        st.switch_page("pages/2_Quiz.py")
 
 
 if not st.session_state.get("diagnostic_done"):

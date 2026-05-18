@@ -473,15 +473,22 @@ class Database:
                     q = q.eq("difficulty", difficulty.lower())
                 data = q.limit(fetch_n).execute().data or []
             else:
-                # No topic filter: fetch proportionally from every topic to avoid
-                # insertion-order bias (Supabase has no ORDER BY random() support).
+                # Single query, then group by topic for proportional sampling.
+                # Avoids N+1 (10 serial calls). Fetch a generous pool then sample.
                 per_topic = max(min((n or 30) // len(self._ALL_TOPICS) * 4, 60), 20)
+                q = self.sb.table("questions").select("*")
+                if difficulty and difficulty != "All":
+                    q = q.eq("difficulty", difficulty.lower())
+                pool = q.limit(min(per_topic * len(self._ALL_TOPICS) * 2, 2000)).execute().data or []
+                from collections import defaultdict as _dd
+                by_topic: dict = _dd(list)
+                for row in pool:
+                    by_topic[row["topic"]].append(row)
                 data = []
                 for t in self._ALL_TOPICS:
-                    q = self.sb.table("questions").select("*").eq("topic", t)
-                    if difficulty and difficulty != "All":
-                        q = q.eq("difficulty", difficulty.lower())
-                    data.extend(q.limit(per_topic).execute().data or [])
+                    rows = by_topic.get(t, [])
+                    _r.shuffle(rows)
+                    data.extend(rows[:per_topic])
         else:
             conn = _get_sqlite()
             sql = "SELECT * FROM questions WHERE 1=1"

@@ -674,8 +674,44 @@ def inject_styles():
             .wib-hero .brand { font-size: 2.4rem; }
             .wib-hero .tagline { font-size: 0.92rem; }
             .metric-card .metric-value { font-size: 1.7rem; }
+            .metric-card { padding: 0.85rem 0.7rem; }
             .wib-page-header .page-title { font-size: 1.65rem; }
             .wib-page-header .brand-fullname { font-size: 0.80rem; }
+
+            /* Quiz / question options — full width stacked on mobile */
+            .question-option {
+                padding: 0.75rem 0.9rem;
+                font-size: 0.9rem;
+            }
+
+            /* Flashcard front/back — tighter padding */
+            .flashcard-front, .flashcard-back {
+                padding: 1.4rem 1.1rem;
+                min-height: 160px;
+            }
+
+            /* Pass/fail banner — fit on small screen */
+            .pass-banner, .fail-banner {
+                font-size: 1.2rem;
+                padding: 1rem 1.2rem;
+            }
+
+            /* Topic badge wraps gracefully */
+            .topic-badge {
+                font-size: 0.68rem;
+                padding: 0.22rem 0.55rem;
+            }
+
+            /* Study content — reduce side padding */
+            .study-content {
+                padding: 1rem 0.9rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .wib-hero .brand { font-size: 2rem; }
+            .metric-card .metric-value { font-size: 1.5rem; }
+            .metric-card .metric-label { font-size: 0.65rem; }
         }
 
         </style>
