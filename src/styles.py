@@ -781,7 +781,7 @@ def render_sidebar_user(username: str) -> None:
     )
 
 
-def render_hero(subtitle: str = "Who Wants to Be an Investment Banker?"):
+def render_hero(subtitle: str = "Who wants to be an Investment Banker?"):
     """Full hero banner — home page only."""
     st.markdown(
         f"""
@@ -803,7 +803,7 @@ def render_page_header(title: str, subtitle: str = ""):
             <div class="brand-identity">
                 <span class="brand-mark-word">WIB</span>
                 <span class="brand-sep">&middot;</span>
-                <span class="brand-fullname" style="text-transform:none!important">Who Wants to Be an Investment Banker?</span>
+                <span class="brand-fullname" style="text-transform:none!important">Who wants to be an Investment Banker?</span>
             </div>
             <div class="page-title">{title}</div>
             {sub_html}
