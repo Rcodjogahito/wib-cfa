@@ -9,6 +9,7 @@ import time
 import plotly.graph_objects as go
 import streamlit as st
 
+from src.adaptive import get_exam_questions
 from src.auth import get_current_user, logout, require_auth
 from src.database import get_db
 from src.styles import (
@@ -101,12 +102,8 @@ PASS_THRESHOLD = 70.0
 
 
 def _fetch_questions(topic_counts: dict) -> list:
-    """Fetch questions matching CFA topic weights, then shuffle."""
-    all_qs: list = []
-    for topic, n in topic_counts.items():
-        all_qs.extend(db.get_questions(topic=topic, n=n))
-    random.shuffle(all_qs)
-    return all_qs
+    """Fetch questions with CFA topic weights, prioritizing user's previously wrong answers."""
+    return get_exam_questions(user["id"], topic_counts, db=db)
 
 
 # ── Setup screen ──────────────────────────────────────────────────────────────

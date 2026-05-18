@@ -317,7 +317,25 @@ def _finish_diagnostic(qs, answers):
         st.markdown(f"**{t}**")
         st.progress(pct / 100, text=f"{pct:.0f}%")
 
-    if st.button("Go to dashboard →", use_container_width=True, type="primary"):
+    # Identify weak topics (< 50%) to guide next steps
+    weak_topics = sorted(
+        [(t, domain_scores.get(t, 0)) for t in CFA_TOPICS if domain_scores.get(t, 0) < 50],
+        key=lambda x: x[1]
+    )
+    if weak_topics:
+        weak_names = ", ".join(f"**{t}** ({pct:.0f}%)" for t, pct in weak_topics[:3])
+        st.markdown(
+            f'<div style="background:rgba(201,168,76,0.08);border-left:3px solid #C9A84C;'
+            f'border-radius:6px;padding:0.9rem 1.1rem;margin:1rem 0;">'
+            f'<div style="font-size:0.78rem;font-weight:600;color:#C9A84C;letter-spacing:0.06em;'
+            f'text-transform:uppercase;margin-bottom:0.4rem;">Recommended focus areas</div>'
+            f'<div style="font-size:0.92rem;color:var(--navy-800);">Your weakest topics: {weak_names}. '
+            f'The adaptive quiz will automatically prioritize these areas in every session.</div>'
+            f'</div>',
+            unsafe_allow_html=True,
+        )
+
+    if st.button("Start training →", use_container_width=True, type="primary"):
         st.rerun()
 
 

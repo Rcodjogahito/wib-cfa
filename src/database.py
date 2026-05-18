@@ -690,6 +690,32 @@ class Database:
         conn.close()
         return data
 
+    def get_wrong_question_ids(self, user_id: str, limit: int = 400) -> List[str]:
+        """Return IDs of questions the user has answered incorrectly (most recent first)."""
+        if self.sb:
+            try:
+                res = (self.sb.table("user_attempts")
+                       .select("question_id")
+                       .eq("user_id", user_id)
+                       .eq("is_correct", False)
+                       .order("attempted_at", desc=True)
+                       .limit(limit)
+                       .execute())
+                return [r["question_id"] for r in (res.data or [])]
+            except Exception:
+                return []
+        conn = _get_sqlite()
+        cur = conn.cursor()
+        cur.execute(
+            """SELECT question_id FROM user_attempts
+               WHERE user_id=? AND is_correct=0
+               ORDER BY attempted_at DESC LIMIT ?""",
+            (user_id, limit),
+        )
+        rows = cur.fetchall()
+        conn.close()
+        return [r[0] for r in rows]
+
     # ── Diagnostic progress (in-progress persistence) ─────────────────────
 
     def save_diagnostic_progress(self, user_id: str, diag_idx: int,
