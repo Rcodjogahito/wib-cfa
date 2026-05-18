@@ -378,24 +378,37 @@ def inject_styles():
             content: '';
             position: absolute;
             bottom: 0; left: 0; right: 0;
-            height: 2px;
-            background: linear-gradient(90deg, var(--gold-500) 0%, transparent 70%);
+            height: 1.5px;
+            background: linear-gradient(90deg, var(--gold-500) 0%, transparent 55%);
         }
-        .wib-hero .brand-rule { display: none; }
+        /* Double-bar geometric mark above wordmark — Ares signature device */
+        .wib-hero .brand-rule { margin-bottom: 16px; }
+        .wib-hero .brand-rule::before,
+        .wib-hero .brand-rule::after { content: ''; display: block; }
+        .wib-hero .brand-rule::before {
+            height: 2.5px; width: 24px;
+            background: var(--gold-500); margin-bottom: 5px;
+        }
+        .wib-hero .brand-rule::after {
+            height: 1px; width: 38px;
+            background: rgba(201,168,76,0.38);
+        }
         .wib-hero .brand {
             font-family: 'Cormorant Garamond', serif;
-            font-size: 3.2rem;
-            font-weight: 700;
-            color: var(--gold-500);
-            letter-spacing: 6px;
+            font-size: 3.1rem;
+            font-weight: 600;
+            color: #FFFFFF;
+            letter-spacing: 0.16em;
+            text-indent: 0.16em;
             line-height: 1;
         }
         .wib-hero .tagline {
-            font-size: 0.75rem;
-            color: rgba(255,255,255,0.45);
-            margin-top: 8px;
-            font-weight: 500;
-            letter-spacing: 0.15em;
+            font-size: 0.66rem;
+            color: rgba(201,168,76,0.62);
+            margin-top: 14px;
+            font-weight: 400;
+            letter-spacing: 0.20em;
+            text-indent: 0.20em;
             text-transform: none !important;
         }
 
@@ -700,7 +713,7 @@ def inject_styles():
 
         /* ── Responsive ───────────────────────────────────────────────── */
         @media (max-width: 768px) {
-            .wib-hero .brand { font-size: 2.4rem; }
+            .wib-hero .brand { font-size: 2.4rem; letter-spacing: 0.12em; text-indent: 0.12em; }
             .wib-hero .tagline { font-size: 0.70rem; }
             .metric-card .metric-value { font-size: 1.7rem; }
             .metric-card { padding: 0.85rem 0.7rem; }
@@ -818,8 +831,15 @@ _SIDEBAR_BRAND_ORIGINAL = """
 """
 
 _SIDEBAR_BRAND = """
-<div style="font-family:'Cormorant Garamond',Georgia,serif;font-size:1.9rem;font-weight:700;color:#C9A84C;letter-spacing:5px;line-height:1;">WIB</div>
-<div style="font-size:0.63rem;color:rgba(255,255,255,0.38);letter-spacing:0.20em;text-transform:uppercase;margin-top:4px;font-weight:600;">CFA Level I</div>
+<div style="padding:4px 0 12px 0;">
+  <div style="margin-bottom:13px;">
+    <div style="height:2.5px;width:18px;background:#C9A84C;"></div>
+    <div style="height:1px;width:30px;background:rgba(201,168,76,0.35);margin-top:4px;"></div>
+  </div>
+  <div style="font-family:'Cormorant Garamond',Georgia,serif;font-size:1.72rem;font-weight:600;color:#FFFFFF;letter-spacing:0.16em;text-indent:0.16em;line-height:1;">WIB</div>
+  <div style="height:1px;background:linear-gradient(90deg,rgba(201,168,76,0.50) 0%,transparent 80%);margin:10px 0 8px 0;"></div>
+  <div style="font-family:'Inter',sans-serif;font-size:0.52rem;color:rgba(201,168,76,0.62);letter-spacing:0.22em;text-indent:0.22em;text-transform:uppercase;font-weight:500;">CFA &middot; Level I</div>
+</div>
 """
 
 
@@ -842,6 +862,7 @@ def render_hero(subtitle: str = "Who wants to be an Investment Banker?"):
     st.markdown(
         f"""
         <div class="wib-hero">
+            <div class="brand-rule"></div>
             <div class="brand">WIB</div>
             <div class="tagline" style="text-transform:none!important">{subtitle}</div>
         </div>
