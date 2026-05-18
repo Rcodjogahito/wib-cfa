@@ -371,20 +371,20 @@ def inject_styles():
 
         /* ── Hero (home page) ────────────────────────────────────────── */
         .wib-hero {
-            /* Subtle warm halo from top-left — barely perceptible, adds document depth */
-            background: radial-gradient(ellipse at 8% 0%, rgba(201,168,76,0.09) 0%, var(--navy-900) 62%);
+            background: var(--navy-900);
             border-radius: var(--radius-lg);
             padding: 2.4rem 2.6rem 2.1rem;
             margin-bottom: 1.75rem;
             position: relative;
             overflow: hidden;
         }
+        /* Thin gold rule — left-anchored editorial baseline, fades right */
         .wib-hero::after {
             content: '';
             position: absolute;
             bottom: 0; left: 0; right: 0;
             height: 1px;
-            background: linear-gradient(90deg, rgba(201,168,76,0.40) 0%, transparent 55%);
+            background: linear-gradient(90deg, rgba(201,168,76,0.60) 0%, rgba(201,168,76,0.10) 40%, transparent 65%);
         }
         .wib-hero .brand-rule { display: none; }
         .wib-hero .brand {
@@ -392,22 +392,19 @@ def inject_styles():
             font-size: 3.2rem;
             font-weight: 600;
             color: #FFFFFF;
-            letter-spacing: 0.36em;
-            text-indent: 0.36em;
+            letter-spacing: 0.34em;
+            text-indent: 0.34em;
             line-height: 1;
-            padding-bottom: 20px;
-            /* No border-bottom — whitespace alone establishes the hierarchy */
+            margin-bottom: 16px;
         }
         .wib-hero .tagline {
             font-family: 'Cormorant Garamond', serif;
             font-size: 1.06rem;
             font-style: italic;
-            color: rgba(255,255,255,0.68);
-            margin-top: 0;
+            color: rgba(255,255,255,0.65);
             font-weight: 400;
             letter-spacing: 0.01em;
             text-transform: none !important;
-            text-indent: 0;
         }
 
         /* ── Ticker ───────────────────────────────────────────────────── */
@@ -828,16 +825,21 @@ _SIDEBAR_BRAND_ORIGINAL = """
 <div style="font-size:0.63rem;color:rgba(255,255,255,0.38);letter-spacing:0.20em;text-transform:uppercase;margin-top:4px;font-weight:600;">CFA Level I</div>
 """
 
-# Goldman / Rothschild-inspired wordmark.
-# Design DNA: pure typographic hierarchy — no decorative separators, no rules.
-# Prestige comes from the letterform itself, not from ornament.
-# WIB: Cormorant SemiBold, wide tracking (0.36em), pure white — the mark IS the identity.
-# Descriptor: Inter Regular, uppercase, gold-tinted at 60% — reads as metadata, not branding.
-# The space between the two lines IS the hierarchy.
+# Ares + Rothschild-inspired identity system.
+# Device: three ascending vertical bars — Ares geometric precision (sharp corners,
+# exact spacing) + Rothschild directional arrow energy (ascending momentum).
+# Heights 8 / 13 / 18 px, gold cascade 36 % → 65 % → 100 %.
+# Wordmark: Cormorant SemiBold, white, tracking 0.34 em — old-money serif authority.
+# Descriptor: Inter Light, uppercase, gold 55 % — metadata, never branding.
 _SIDEBAR_BRAND = """
-<div style="padding:2px 0 22px 0;">
-  <div style="font-family:'Cormorant Garamond',Georgia,serif;font-size:2.15rem;font-weight:600;color:#FFFFFF;letter-spacing:0.36em;text-indent:0.36em;line-height:1;margin-bottom:11px;">WIB</div>
-  <div style="font-family:'Inter','Helvetica Neue',sans-serif;font-size:0.59rem;font-weight:400;color:rgba(201,168,76,0.60);letter-spacing:0.24em;text-indent:0.24em;text-transform:uppercase;line-height:1;">CFA &middot; Level I</div>
+<div style="padding:6px 0 22px 0;">
+  <div style="display:flex;align-items:flex-end;gap:3px;margin-bottom:16px;line-height:0;">
+    <div style="width:3px;height:8px;background:rgba(201,168,76,0.36);"></div>
+    <div style="width:3px;height:13px;background:rgba(201,168,76,0.65);"></div>
+    <div style="width:3px;height:18px;background:#C9A84C;"></div>
+  </div>
+  <div style="font-family:'Cormorant Garamond',Georgia,serif;font-size:2.05rem;font-weight:600;color:#FFFFFF;letter-spacing:0.34em;text-indent:0.34em;line-height:1;margin-bottom:11px;">WIB</div>
+  <div style="font-family:'Inter','Helvetica Neue',sans-serif;font-size:0.57rem;font-weight:300;color:rgba(201,168,76,0.56);letter-spacing:0.26em;text-indent:0.26em;text-transform:uppercase;line-height:1;">CFA &middot; Level I</div>
 </div>
 """
 
@@ -861,8 +863,13 @@ def render_hero(subtitle: str = "Who wants to be an Investment Banker?"):
     st.markdown(
         f"""
         <div class="wib-hero">
-            <div class="brand">WIB</div>
-            <div class="tagline" style="text-transform:none!important">{subtitle}</div>
+          <div style="display:flex;align-items:flex-end;gap:4px;margin-bottom:20px;line-height:0;">
+            <div style="width:4px;height:12px;background:rgba(201,168,76,0.36);"></div>
+            <div style="width:4px;height:19px;background:rgba(201,168,76,0.65);"></div>
+            <div style="width:4px;height:26px;background:#C9A84C;"></div>
+          </div>
+          <div class="brand">WIB</div>
+          <div class="tagline" style="text-transform:none!important">{subtitle}</div>
         </div>
         """,
         unsafe_allow_html=True,
