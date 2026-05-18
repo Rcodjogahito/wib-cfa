@@ -787,7 +787,7 @@ def render_hero(subtitle: str = "Who Wants to Be an Investment Banker?"):
         f"""
         <div class="wib-hero">
             <div class="brand">WIB</div>
-            <div class="tagline">{subtitle}</div>
+            <div class="tagline" style="text-transform:none!important">{subtitle}</div>
         </div>
         """,
         unsafe_allow_html=True,
@@ -803,7 +803,7 @@ def render_page_header(title: str, subtitle: str = ""):
             <div class="brand-identity">
                 <span class="brand-mark-word">WIB</span>
                 <span class="brand-sep">&middot;</span>
-                <span class="brand-fullname">Who Wants to Be an Investment Banker?</span>
+                <span class="brand-fullname" style="text-transform:none!important">Who Wants to Be an Investment Banker?</span>
             </div>
             <div class="page-title">{title}</div>
             {sub_html}
