@@ -1,8 +1,8 @@
 # ETAT ACTUEL — WIB CFA
 > Mis à jour automatiquement à la fin de chaque session Claude Code.
 
-**Date**: 2026-05-18 (session 28)  
-**Commit**: 79985bb — "fix: enforce text-transform none !important on brand fullname and hero tagline"  
+**Date**: 2026-05-18 (session 29)  
+**Commit**: 535cb60 — "feat(adaptive): graduated weights + wrong-question boost + exam personalization"  
 **Branch**: master → Streamlit Cloud (auto-deploy)
 
 ---
@@ -40,6 +40,28 @@
 - **Scripts**: `scripts/render_table_pages.py` → images PNG, `scripts/rerender_wrong_pages.py` → correction pages erronées, `scripts/patch_uworld_tables.py` → mise à jour Supabase
 - **Résultat**: 28/28 tables insérées dans `question_en`
 - **Méthode**: lecture images PDF avec Claude Vision (inclus dans abonnement Pro)
+
+---
+
+## Travaux terminés (session 29)
+
+### ✅ Système d'apprentissage adaptatif — refonte complète (commit 535cb60)
+
+**Audit préalable** : 4 lacunes identifiées.
+
+**Fix 1 — `src/database.py`** : nouvelle méthode `get_wrong_question_ids(user_id, limit=400)` — requête `user_attempts WHERE is_correct=False ORDER BY attempted_at DESC`.
+
+**Fix 2 — `src/adaptive.py`** : algorithme entièrement réécrit.
+- Poids gradués par mastery (binaire 50% → 4 paliers) :
+  - 0-30% → 5x | 30-50% → 3x | 50-70% → 2x | 70%+ → 1x
+- **Boost 2x supplémentaire** sur chaque question déjà ratée par l'utilisateur
+- Nouvelle fonction `get_exam_questions(user_id, topic_counts, db)` : respecte les poids CFA officiels par topic, mais au sein de chaque topic priorise les questions ratées
+
+**Fix 3 — `pages/5_Exam_Simulator.py`** : `_fetch_questions()` utilise maintenant `get_exam_questions()` — l'examen d'entraînement est personnalisé par profil utilisateur tout en respectant la répartition CFA officielle.
+
+**Fix 4 — `streamlit_app.py`** : après le diagnostic, affiche les topics faibles (< 50%) avec un encadré "Recommended focus areas" et un bouton "Start training →" (remplace "Go to dashboard"). Les 3 topics les plus faibles sont listés explicitement.
+
+**Lacune restante (non traitée)** : Leitner binaire → vraies boîtes 1-5 avec spaced repetition. Nécessite migration de schéma DB (nouvelle table `user_flashcard_state`).
 
 ---
 
