@@ -1,8 +1,8 @@
 # ETAT ACTUEL — WIB CFA
 > Mis à jour automatiquement à la fin de chaque session Claude Code.
 
-**Date**: 2026-05-18 (session 27)  
-**Commit**: 2445eb8 — "design: Ares Management-inspired WIB logotype"  
+**Date**: 2026-05-18 (session 28)  
+**Commit**: 79985bb — "fix: enforce text-transform none !important on brand fullname and hero tagline"  
 **Branch**: master → Streamlit Cloud (auto-deploy)
 
 ---
@@ -40,6 +40,22 @@
 - **Scripts**: `scripts/render_table_pages.py` → images PNG, `scripts/rerender_wrong_pages.py` → correction pages erronées, `scripts/patch_uworld_tables.py` → mise à jour Supabase
 - **Résultat**: 28/28 tables insérées dans `question_en`
 - **Méthode**: lecture images PDF avec Claude Vision (inclus dans abonnement Pro)
+
+---
+
+## Travaux terminés (session 28)
+
+### ✅ Fix capitalisation — "Who Wants to Be an Investment Banker?"
+
+**Problème** : Le texte s'affichait "Who wants to be an Investment Banker?" (minuscules) à cause d'une règle Streamlit base qui surchargait nos styles CSS.
+
+**Correction** : Ajout de `text-transform: none !important` sur deux sélecteurs dans `src/styles.py` :
+- `.wib-page-header .brand-fullname` (en-tête toutes les pages)
+- `.wib-hero .tagline` (hero de la homepage)
+
+**Cache bust** : `pytz>=2024.7` dans `requirements.txt` pour forcer un rebuild Streamlit Cloud complet.
+
+**Commit** : `79985bb`
 
 ---
 
