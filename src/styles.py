@@ -359,7 +359,7 @@ def inject_styles():
             letter-spacing: 0.01em;
         }
 
-        /* ── Hero (home page) — Ares Management register ──────────────── */
+        /* ── Hero (home page) ────────────────────────────────────────── */
         .wib-hero {
             background: var(--navy-900);
             border-radius: var(--radius-lg);
@@ -368,51 +368,31 @@ def inject_styles():
             position: relative;
             overflow: hidden;
         }
-        /* Single bottom accent — Ares uses a clean bottom rule, not a framed box */
         .wib-hero::after {
             content: '';
             position: absolute;
             bottom: 0; left: 0; right: 0;
-            height: 1.5px;
-            background: linear-gradient(90deg, var(--gold-500) 0%, transparent 55%);
-        }
-        /* Double-bar geometric mark above wordmark — Ares signature device */
-        .wib-hero .brand-rule {
-            margin-bottom: 16px;
-        }
-        .wib-hero .brand-rule::before,
-        .wib-hero .brand-rule::after {
-            content: '';
-            display: block;
-        }
-        .wib-hero .brand-rule::before {
-            height: 2.5px;
-            width: 24px;
-            background: var(--gold-500);
-            margin-bottom: 5px;
-        }
-        .wib-hero .brand-rule::after {
             height: 1px;
-            width: 38px;
-            background: rgba(201,168,76,0.38);
+            background: linear-gradient(90deg, rgba(201,168,76,0.45) 0%, transparent 60%);
         }
-        /* Wordmark: white — Ares keeps wordmark in white, gold as accent only */
+        .wib-hero .brand-rule { display: none; }
         .wib-hero .brand {
             font-family: 'Cormorant Garamond', serif;
-            font-size: 3.1rem;
+            font-size: 3.2rem;
             font-weight: 600;
             color: #FFFFFF;
-            letter-spacing: 0.16em;
-            text-indent: 0.16em;
+            letter-spacing: 0.22em;
+            text-indent: 0.22em;
             line-height: 1;
+            padding-bottom: 16px;
+            border-bottom: 0.5px solid rgba(201,168,76,0.16);
         }
-        /* Tagline: Cormorant italic — matches page-header brand-fullname register */
         .wib-hero .tagline {
             font-family: 'Cormorant Garamond', serif;
             font-size: 1.05rem;
             font-style: italic;
-            color: rgba(255,255,255,0.60);
-            margin-top: 12px;
+            color: rgba(255,255,255,0.62);
+            margin-top: 14px;
             font-weight: 400;
             letter-spacing: 0.01em;
             text-transform: none !important;
@@ -779,14 +759,10 @@ _SIDEBAR_BRAND_ORIGINAL = """
 # precision not luxury) + gold-tinted descriptor (accent colour for supporting
 # text, subordinate to mark).
 _SIDEBAR_BRAND = """
-<div style="padding:4px 0 12px 0;">
-  <div style="margin-bottom:13px;">
-    <div style="height:2.5px;width:18px;background:#C9A84C;"></div>
-    <div style="height:1px;width:30px;background:rgba(201,168,76,0.35);margin-top:4px;"></div>
-  </div>
-  <div style="font-family:'Cormorant Garamond',Georgia,serif;font-size:1.72rem;font-weight:600;color:#FFFFFF;letter-spacing:0.16em;text-indent:0.16em;line-height:1;">WIB</div>
-  <div style="height:1px;background:linear-gradient(90deg,rgba(201,168,76,0.50) 0%,transparent 80%);margin:10px 0 8px 0;"></div>
-  <div style="font-family:'Inter',sans-serif;font-size:0.52rem;color:rgba(201,168,76,0.62);letter-spacing:0.22em;text-indent:0.22em;text-transform:uppercase;font-weight:500;">CFA &middot; Level I</div>
+<div style="padding:8px 0 16px 0;">
+  <div style="font-family:'Cormorant Garamond',Georgia,serif;font-size:1.82rem;font-weight:600;color:#FFFFFF;letter-spacing:0.22em;text-indent:0.22em;line-height:1;">WIB</div>
+  <div style="height:0.5px;background:rgba(201,168,76,0.16);margin:12px 0 10px 0;"></div>
+  <div style="font-family:'Inter','Helvetica Neue',sans-serif;font-size:0.48rem;color:rgba(201,168,76,0.48);letter-spacing:0.32em;text-indent:0.32em;text-transform:uppercase;font-weight:400;">CFA &middot; Level I</div>
 </div>
 """
 
@@ -810,7 +786,6 @@ def render_hero(subtitle: str = "Who Wants to Be an Investment Banker?"):
     st.markdown(
         f"""
         <div class="wib-hero">
-            <div class="brand-rule"></div>
             <div class="brand">WIB</div>
             <div class="tagline">{subtitle}</div>
         </div>
