@@ -381,21 +381,30 @@ def inject_styles():
             height: 2px;
             background: linear-gradient(90deg, var(--gold-500) 0%, transparent 70%);
         }
-        .wib-hero .brand-rule { display: none; }
+        .wib-hero .brand-rule {
+            display: block;
+            font-family: 'Cormorant Garamond', Georgia, serif;
+            font-size: 1.15rem;
+            font-weight: 300;
+            letter-spacing: 0.10em;
+            line-height: 1;
+            margin-bottom: 0.5rem;
+        }
         .wib-hero .brand {
             font-family: 'Cormorant Garamond', serif;
-            font-size: 3.2rem;
-            font-weight: 700;
+            font-size: 3.5rem;
+            font-weight: 600;
             color: var(--gold-500);
-            letter-spacing: 6px;
+            letter-spacing: 0.35em;
             line-height: 1;
+            text-indent: 0.35em;
         }
         .wib-hero .tagline {
-            font-size: 0.75rem;
-            color: rgba(255,255,255,0.45);
-            margin-top: 8px;
-            font-weight: 500;
-            letter-spacing: 0.15em;
+            font-size: 0.72rem;
+            color: rgba(255,255,255,0.38);
+            margin-top: 10px;
+            font-weight: 300;
+            letter-spacing: 0.18em;
             text-transform: none !important;
         }
 
@@ -700,8 +709,8 @@ def inject_styles():
 
         /* ── Responsive ───────────────────────────────────────────────── */
         @media (max-width: 768px) {
-            .wib-hero .brand { font-size: 2.4rem; }
-            .wib-hero .tagline { font-size: 0.92rem; }
+            .wib-hero .brand { font-size: 2.6rem; letter-spacing: 0.28em; text-indent: 0.28em; }
+            .wib-hero .tagline { font-size: 0.70rem; }
             .metric-card .metric-value { font-size: 1.7rem; }
             .metric-card { padding: 0.85rem 0.7rem; }
             .wib-page-header .page-title { font-size: 1.65rem; }
@@ -738,7 +747,8 @@ def inject_styles():
         }
 
         @media (max-width: 480px) {
-            .wib-hero .brand { font-size: 2rem; }
+            .wib-hero .brand { font-size: 2.1rem; letter-spacing: 0.22em; text-indent: 0.22em; }
+            .wib-hero .brand-rule { font-size: 0.95rem; }
             .metric-card .metric-value { font-size: 1.5rem; }
             .metric-card .metric-label { font-size: 0.65rem; }
         }
@@ -817,10 +827,14 @@ _SIDEBAR_BRAND_ORIGINAL = """
 <div style="font-size:0.63rem;color:rgba(255,255,255,0.38);letter-spacing:0.20em;text-transform:uppercase;margin-top:4px;font-weight:600;">CFA Level I</div>
 """
 
-# Original logo — restored to initial design (rollback from redesign sessions 27-31).
 _SIDEBAR_BRAND = """
-<div style="font-family:'Cormorant Garamond',Georgia,serif;font-size:1.9rem;font-weight:700;color:#C9A84C;letter-spacing:5px;line-height:1;">WIB</div>
-<div style="font-size:0.63rem;color:rgba(255,255,255,0.38);letter-spacing:0.20em;text-transform:uppercase;margin-top:4px;font-weight:600;">CFA Level I</div>
+<div style="padding:0.2rem 0 0.4rem 0;">
+  <div style="font-family:'Cormorant Garamond',Georgia,serif;font-size:0.9rem;font-weight:300;letter-spacing:0.10em;line-height:1;margin-bottom:0.4rem;">
+    <span style="color:rgba(201,168,76,0.25);">/</span><span style="color:rgba(201,168,76,0.58);">/</span><span style="color:rgba(201,168,76,1.0);">/</span>
+  </div>
+  <div style="font-family:'Cormorant Garamond',Georgia,serif;font-size:2.1rem;font-weight:600;color:#C9A84C;letter-spacing:0.32em;line-height:1;text-indent:0.32em;">WIB</div>
+  <div style="font-family:'Inter',sans-serif;font-size:0.58rem;color:rgba(255,255,255,0.30);letter-spacing:0.18em;text-transform:uppercase;margin-top:0.35rem;font-weight:300;">CFA Level I</div>
+</div>
 """
 
 
@@ -843,6 +857,7 @@ def render_hero(subtitle: str = "Who wants to be an Investment Banker?"):
     st.markdown(
         f"""
         <div class="wib-hero">
+            <div class="brand-rule"><span style="color:rgba(201,168,76,0.22);">/</span><span style="color:rgba(201,168,76,0.55);">/</span><span style="color:rgba(201,168,76,1.0);">/</span></div>
             <div class="brand">WIB</div>
             <div class="tagline" style="text-transform:none!important">{subtitle}</div>
         </div>
