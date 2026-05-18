@@ -36,6 +36,12 @@ def inject_styles():
     st.markdown(
         """
         <style>
+        /* ── Hide Streamlit Cloud toolbar (Fork / Share / ⋮) ──────────── */
+        header[data-testid="stHeader"]   { display: none !important; }
+        [data-testid="stDecoration"]     { display: none !important; }
+        #MainMenu                        { display: none !important; }
+        footer                           { display: none !important; }
+
         /* ── Fonts ─────────────────────────────────────────────────────── */
         @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap');
 
