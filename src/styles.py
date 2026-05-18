@@ -320,33 +320,37 @@ def inject_styles():
             margin-bottom: 1.5rem;
             border-bottom: 1px solid var(--gray-100);
         }
-        /* Brand identity row: WIB · Who Wants to Be an Investment Banker? */
+        /* Brand identity row: WIB · Who wants to be an Investment Banker? */
         .wib-page-header .brand-identity {
             display: flex;
             align-items: baseline;
             flex-wrap: wrap;
-            gap: 0 0.40rem;
-            margin-bottom: 8px;
+            gap: 0 0.38rem;
+            margin-bottom: 10px;
         }
+        /* WIB as a crisp editorial "stamp" — Inter Bold contrasts with the
+           flowing Cormorant italic of the full name, like a house mark */
         .wib-page-header .brand-mark-word {
-            font-family: 'Cormorant Garamond', serif;
-            font-size: 0.82rem;
-            font-weight: 600;
+            font-family: 'Inter', 'Helvetica Neue', sans-serif;
+            font-size: 0.68rem;
+            font-weight: 700;
             color: var(--gold-500);
-            letter-spacing: 0.12em;
+            letter-spacing: 0.18em;
+            text-transform: uppercase;
         }
         .wib-page-header .brand-sep {
-            font-size: 0.72rem;
-            color: rgba(201,168,76,0.42);
-            font-weight: 400;
+            font-family: 'Inter', sans-serif;
+            font-size: 0.60rem;
+            color: rgba(201,168,76,0.32);
+            font-weight: 300;
         }
         .wib-page-header .brand-fullname {
             font-family: 'Cormorant Garamond', serif;
-            font-size: 0.88rem;
+            font-size: 0.86rem;
             font-weight: 400;
             font-style: italic;
-            color: var(--gray-600);
-            letter-spacing: 0.005em;
+            color: var(--gray-500);
+            letter-spacing: 0.01em;
             text-transform: none !important;
         }
         .wib-page-header .page-title {
@@ -367,9 +371,10 @@ def inject_styles():
 
         /* ── Hero (home page) ────────────────────────────────────────── */
         .wib-hero {
-            background: var(--navy-900);
+            /* Subtle warm halo from top-left — barely perceptible, adds document depth */
+            background: radial-gradient(ellipse at 8% 0%, rgba(201,168,76,0.09) 0%, var(--navy-900) 62%);
             border-radius: var(--radius-lg);
-            padding: 2.25rem 2.5rem 2rem;
+            padding: 2.4rem 2.6rem 2.1rem;
             margin-bottom: 1.75rem;
             position: relative;
             overflow: hidden;
@@ -379,7 +384,7 @@ def inject_styles():
             position: absolute;
             bottom: 0; left: 0; right: 0;
             height: 1px;
-            background: linear-gradient(90deg, rgba(201,168,76,0.45) 0%, transparent 60%);
+            background: linear-gradient(90deg, rgba(201,168,76,0.40) 0%, transparent 55%);
         }
         .wib-hero .brand-rule { display: none; }
         .wib-hero .brand {
@@ -387,18 +392,18 @@ def inject_styles():
             font-size: 3.2rem;
             font-weight: 600;
             color: #FFFFFF;
-            letter-spacing: 0.22em;
-            text-indent: 0.22em;
+            letter-spacing: 0.36em;
+            text-indent: 0.36em;
             line-height: 1;
-            padding-bottom: 16px;
-            border-bottom: 0.5px solid rgba(201,168,76,0.16);
+            padding-bottom: 20px;
+            /* No border-bottom — whitespace alone establishes the hierarchy */
         }
         .wib-hero .tagline {
             font-family: 'Cormorant Garamond', serif;
-            font-size: 1.05rem;
+            font-size: 1.06rem;
             font-style: italic;
-            color: rgba(255,255,255,0.62);
-            margin-top: 14px;
+            color: rgba(255,255,255,0.68);
+            margin-top: 0;
             font-weight: 400;
             letter-spacing: 0.01em;
             text-transform: none !important;
@@ -823,17 +828,16 @@ _SIDEBAR_BRAND_ORIGINAL = """
 <div style="font-size:0.63rem;color:rgba(255,255,255,0.38);letter-spacing:0.20em;text-transform:uppercase;margin-top:4px;font-weight:600;">CFA Level I</div>
 """
 
-# Ares Management-inspired logo.
-# Design DNA: double-bar geometric mark (Ares signature device) + white wordmark
-# (Ares keeps wordmark in white on dark backgrounds; gold reserved for accents) +
-# SemiBold weight (institutional authority) + tight measured tracking (0.16em,
-# precision not luxury) + gold-tinted descriptor (accent colour for supporting
-# text, subordinate to mark).
+# Goldman / Rothschild-inspired wordmark.
+# Design DNA: pure typographic hierarchy — no decorative separators, no rules.
+# Prestige comes from the letterform itself, not from ornament.
+# WIB: Cormorant SemiBold, wide tracking (0.36em), pure white — the mark IS the identity.
+# Descriptor: Inter Regular, uppercase, gold-tinted at 60% — reads as metadata, not branding.
+# The space between the two lines IS the hierarchy.
 _SIDEBAR_BRAND = """
-<div style="padding:8px 0 16px 0;">
-  <div style="font-family:'Cormorant Garamond',Georgia,serif;font-size:1.82rem;font-weight:600;color:#FFFFFF;letter-spacing:0.22em;text-indent:0.22em;line-height:1;">WIB</div>
-  <div style="height:0.5px;background:rgba(201,168,76,0.16);margin:12px 0 10px 0;"></div>
-  <div style="font-family:'Inter','Helvetica Neue',sans-serif;font-size:0.48rem;color:rgba(201,168,76,0.48);letter-spacing:0.32em;text-indent:0.32em;text-transform:uppercase;font-weight:400;">CFA &middot; Level I</div>
+<div style="padding:2px 0 22px 0;">
+  <div style="font-family:'Cormorant Garamond',Georgia,serif;font-size:2.15rem;font-weight:600;color:#FFFFFF;letter-spacing:0.36em;text-indent:0.36em;line-height:1;margin-bottom:11px;">WIB</div>
+  <div style="font-family:'Inter','Helvetica Neue',sans-serif;font-size:0.59rem;font-weight:400;color:rgba(201,168,76,0.60);letter-spacing:0.24em;text-indent:0.24em;text-transform:uppercase;line-height:1;">CFA &middot; Level I</div>
 </div>
 """
 
