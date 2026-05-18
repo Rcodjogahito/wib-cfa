@@ -153,7 +153,16 @@ def _run_diagnostic():
     if is_answered and prev:
         # Read-only: show selected answer highlighted
         for letter, opt_key in [("A", "option_a"), ("B", "option_b"), ("C", "option_c")]:
-            prefix = "✓  " if letter == prev["selected"] else ""
+            is_correct_opt = letter == q["correct_answer"]
+            is_selected = letter == prev["selected"]
+            if is_selected and prev["correct"]:
+                prefix = "✓  "
+            elif is_selected and not prev["correct"]:
+                prefix = "✗  "
+            elif is_correct_opt and not prev["correct"]:
+                prefix = "✓  "
+            else:
+                prefix = ""
             st.button(f"{prefix}{letter}.  {q[opt_key]}", key=f"d_{letter}_{idx}",
                       use_container_width=True, disabled=True)
         if prev["correct"]:
@@ -166,6 +175,15 @@ def _run_diagnostic():
         if q.get("explanation_en"):
             st.markdown('<div class="explanation-label">Explanation</div>', unsafe_allow_html=True)
             st.markdown(f'<div class="explanation-box">{q["explanation_en"]}</div>', unsafe_allow_html=True)
+        st.markdown("")
+        next_q = next((i for i in range(total) if i not in answered_set), None)
+        if next_q is not None:
+            if st.button("Next question →", key="diag_next_q", type="primary", use_container_width=True):
+                state["diag_view_idx"] = next_q
+                st.rerun()
+        else:
+            if st.button("See my results →", key="diag_see_results", type="primary", use_container_width=True):
+                st.rerun()
     else:
         diag_pending = state.setdefault("diag_pending", {})
         pending_letter = diag_pending.get(idx)
@@ -213,10 +231,7 @@ def _run_diagnostic():
                     state["diag_start"],
                 )
                 diag_pending.pop(idx, None)
-                # Auto-advance to next unanswered
-                next_q = next((i for i in range(total) if i not in answered_set), None)
-                if next_q is not None:
-                    state["diag_view_idx"] = next_q
+                # Stay on current question — user will see feedback then click Next
                 st.rerun()
 
     # Navigation bar
