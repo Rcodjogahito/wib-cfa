@@ -7,7 +7,7 @@ import json
 import sqlite3
 import os
 import uuid
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from typing import Optional, List, Dict, Any
 
 
@@ -126,6 +126,18 @@ def init_sqlite():
             mastery_pct REAL DEFAULT 0,
             last_attempted TEXT,
             UNIQUE(user_id, topic)
+        );
+
+        CREATE TABLE IF NOT EXISTS user_flashcard_state (
+            id TEXT PRIMARY KEY,
+            user_id TEXT NOT NULL,
+            card_id TEXT NOT NULL,
+            box INTEGER NOT NULL DEFAULT 1,
+            next_review_at TEXT NOT NULL,
+            times_correct INTEGER NOT NULL DEFAULT 0,
+            times_wrong INTEGER NOT NULL DEFAULT 0,
+            updated_at TEXT NOT NULL,
+            UNIQUE(user_id, card_id)
         );
     """)
     conn.commit()
@@ -927,6 +939,97 @@ class Database:
             return json.loads(raw).get("card_ids", [])
         except Exception:
             return []
+
+    # ── Leitner v2 — 5-box spaced repetition ─────────────────────────────
+
+    # Days until next review per box
+    _LEITNER_DAYS: Dict[int, int] = {1: 0, 2: 1, 3: 3, 4: 7, 5: 14}
+
+    def get_leitner_states(self, user_id: str) -> Dict[str, Dict]:
+        """Return {card_id: {box, next_review_at, times_correct, times_wrong}}."""
+        if self.sb:
+            try:
+                res = (self.sb.table("user_flashcard_state")
+                       .select("card_id,box,next_review_at,times_correct,times_wrong")
+                       .eq("user_id", user_id)
+                       .execute())
+                return {r["card_id"]: r for r in (res.data or [])}
+            except Exception:
+                return {}
+        conn = _get_sqlite()
+        cur = conn.cursor()
+        cur.execute(
+            """SELECT card_id,box,next_review_at,times_correct,times_wrong
+               FROM user_flashcard_state WHERE user_id=?""",
+            (user_id,),
+        )
+        rows = cur.fetchall()
+        conn.close()
+        return {r[0]: {"card_id": r[0], "box": r[1], "next_review_at": r[2],
+                       "times_correct": r[3], "times_wrong": r[4]} for r in rows}
+
+    def update_leitner_card(self, user_id: str, card_id: str, knew_it: bool) -> None:
+        """Advance (knew_it=True) or reset (knew_it=False) a card's Leitner box."""
+        existing = self.get_leitner_states(user_id).get(card_id)
+        now = datetime.now(timezone.utc)
+        if existing:
+            current_box = existing["box"]
+            tc = existing["times_correct"]
+            tw = existing["times_wrong"]
+        else:
+            current_box = 1
+            tc = 0
+            tw = 0
+
+        new_box = min(current_box + 1, 5) if knew_it else 1
+        delta_days = self._LEITNER_DAYS[new_box]
+        next_review = (now + timedelta(days=delta_days)).isoformat()
+        now_iso = now.isoformat()
+        new_tc = tc + (1 if knew_it else 0)
+        new_tw = tw + (0 if knew_it else 1)
+
+        if self.sb:
+            try:
+                if existing:
+                    self.sb.table("user_flashcard_state").update({
+                        "box": new_box,
+                        "next_review_at": next_review,
+                        "times_correct": new_tc,
+                        "times_wrong": new_tw,
+                        "updated_at": now_iso,
+                    }).eq("user_id", user_id).eq("card_id", card_id).execute()
+                else:
+                    self.sb.table("user_flashcard_state").insert({
+                        "id": str(uuid.uuid4()),
+                        "user_id": user_id,
+                        "card_id": card_id,
+                        "box": new_box,
+                        "next_review_at": next_review,
+                        "times_correct": new_tc,
+                        "times_wrong": new_tw,
+                        "updated_at": now_iso,
+                    }).execute()
+            except Exception as e:
+                print(f"[WIB] update_leitner_card error: {e}")
+        else:
+            conn = _get_sqlite()
+            if existing:
+                conn.execute(
+                    """UPDATE user_flashcard_state SET box=?,next_review_at=?,
+                       times_correct=?,times_wrong=?,updated_at=?
+                       WHERE user_id=? AND card_id=?""",
+                    (new_box, next_review, new_tc, new_tw, now_iso, user_id, card_id),
+                )
+            else:
+                conn.execute(
+                    """INSERT INTO user_flashcard_state
+                       (id,user_id,card_id,box,next_review_at,times_correct,times_wrong,updated_at)
+                       VALUES (?,?,?,?,?,?,?,?)""",
+                    (str(uuid.uuid4()), user_id, card_id, new_box,
+                     next_review, new_tc, new_tw, now_iso),
+                )
+            conn.commit()
+            conn.close()
 
 
 @st.cache_resource

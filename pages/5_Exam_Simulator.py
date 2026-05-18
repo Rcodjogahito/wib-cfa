@@ -51,53 +51,54 @@ state = st.session_state
 
 render_page_header("Exam Simulator", "CFA Level 1 — Official exam conditions")
 
-# ── CFA Level 1 official topic allocations (2026) ────────────────────────────
-# Ranges: Ethics 15-20% | Quant 6-9% | Econ 6-9% | FSA 11-14% | Corp 6-9%
-#         Equity 11-14% | FI 11-14% | Deriv 5-8% | AI 7-10% | PM 8-12%
+# ── CFA Level 1 official topic allocations — source: CFA Institute 2026 ──────
+# Official weight ranges (all questions free-standing, equally weighted, A/B/C)
+# Ethics 15-20% | Quant 6-9% | Econ 6-9% | FSA 11-14% | Corp 6-9%
+# Equity 11-14% | FI 11-14% | Deriv 5-8% | AI 7-10%   | PM 8-12%
 _TOPIC_COUNTS_180 = {
-    "Ethics & Professional Standards": 27,  # 15.0%
-    "Quantitative Methods":            14,  # 7.8%
-    "Economics":                       14,  # 7.8%
-    "Financial Statement Analysis":    21,  # 11.7%
-    "Corporate Issuers":               14,  # 7.8%
-    "Equity Investments":              21,  # 11.7%
-    "Fixed Income":                    21,  # 11.7%
-    "Derivatives":                     12,  # 6.7%
-    "Alternative Investments":         15,  # 8.3%
-    "Portfolio Management":            21,  # 11.7%
+    "Ethics & Professional Standards": 27,  # 15.0% — within 15-20% ✓
+    "Quantitative Methods":            14,  # 7.8%  — within 6-9%  ✓
+    "Economics":                       14,  # 7.8%  — within 6-9%  ✓
+    "Financial Statement Analysis":    21,  # 11.7% — within 11-14% ✓
+    "Corporate Issuers":               14,  # 7.8%  — within 6-9%  ✓
+    "Equity Investments":              21,  # 11.7% — within 11-14% ✓
+    "Fixed Income":                    21,  # 11.7% — within 11-14% ✓
+    "Derivatives":                     12,  # 6.7%  — within 5-8%  ✓
+    "Alternative Investments":         15,  # 8.3%  — within 7-10% ✓
+    "Portfolio Management":            21,  # 11.7% — within 8-12% ✓
 }  # total = 180
 
 _TOPIC_COUNTS_45 = {
-    "Ethics & Professional Standards":  7,  # 15.6%
-    "Quantitative Methods":             3,  # 6.7%
-    "Economics":                        3,  # 6.7%
-    "Financial Statement Analysis":     5,  # 11.1%
-    "Corporate Issuers":                3,  # 6.7%
-    "Equity Investments":               5,  # 11.1%
-    "Fixed Income":                     5,  # 11.1%
-    "Derivatives":                      3,  # 6.7%
-    "Alternative Investments":          4,  # 8.9%
-    "Portfolio Management":             7,  # 15.6%
-}  # total = 45
+    "Ethics & Professional Standards":  8,  # 17.8% — within 15-20% ✓
+    "Quantitative Methods":             4,  # 8.9%  — within 6-9%  ✓
+    "Economics":                        4,  # 8.9%  — within 6-9%  ✓
+    "Financial Statement Analysis":     5,  # 11.1% — within 11-14% ✓
+    "Corporate Issuers":                3,  # 6.7%  — within 6-9%  ✓
+    "Equity Investments":               5,  # 11.1% — within 11-14% ✓
+    "Fixed Income":                     5,  # 11.1% — within 11-14% ✓
+    "Derivatives":                      3,  # 6.7%  — within 5-8%  ✓
+    "Alternative Investments":          4,  # 8.9%  — within 7-10% ✓
+    "Portfolio Management":             4,  # 8.9%  — within 8-12% ✓
+}  # total = 45 — all topics within official CFA ranges
 
 MOCK_CONFIGS = {
-    "Mock Partial (45Q — 1h15)": {
+    "Mock Partial (45Q — 1h07)": {
         "n": 45,
         "sessions": 1,
-        "session_duration_sec": 75 * 60,
+        "session_duration_sec": 67 * 60,   # 45 × 90 sec = 67.5 min
         "session_type": "mock_partial",
         "topic_counts": _TOPIC_COUNTS_45,
     },
     "Mock Full (180Q — 4h30)": {
         "n": 180,
         "sessions": 2,
-        "session_duration_sec": 135 * 60,  # 135 min per session
+        "session_duration_sec": 135 * 60,  # official: 135 min per session
         "session_type": "mock_full",
         "topic_counts": _TOPIC_COUNTS_180,
     },
 }
 
-# Reference benchmark; actual CFA MPS set by psychometric methods (not published)
+# MPS ~67-69% empirically (CFA Institute does not publish the exact score)
 PASS_THRESHOLD = 70.0
 
 
@@ -171,23 +172,28 @@ if not state["exam_active"]:
                 st.rerun()
 
     st.markdown("---")
-    with st.expander("CFA Level 1 topic weights — official 2026 curriculum"):
+    with st.expander("CFA Level 1 — Official exam standards (2026 curriculum)"):
         st.markdown("""
-| Topic | CFA Range | Full exam (180Q) | Partial (45Q) |
-|---|---|---|---|
-| Ethics & Professional Standards | 15–20% | 27 | 7 |
-| Quantitative Methods | 6–9% | 14 | 3 |
-| Economics | 6–9% | 14 | 3 |
-| Financial Statement Analysis | 11–14% | 21 | 5 |
-| Corporate Issuers | 6–9% | 14 | 3 |
-| Equity Investments | 11–14% | 21 | 5 |
-| Fixed Income | 11–14% | 21 | 5 |
-| Derivatives | 5–8% | 12 | 3 |
-| Alternative Investments | 7–10% | 15 | 4 |
-| Portfolio Management | 8–12% | 21 | 7 |
+**Format** — 180 MCQ · 3 choices (A/B/C) · 2 sessions × 90Q × 135 min · ~90 sec/question
+**Scoring** — All questions equally weighted · No negative marking · No penalty for guessing
+**Pass rate** — ~41% historical average · ~43–45% recent administrations
+**MPS** — ~67–69% empirically (CFA Institute sets it via psychometric analysis, not published)
 
-*3 answer choices (A/B/C). No negative marking. All questions equal weight.*
-*Pass benchmark: 70% (indicative — actual CFA MPS set by psychometric analysis).*
+| Topic | Official Range | Full (180Q) | Partial (45Q) |
+|---|---|---|---|
+| Ethics & Professional Standards | 15–20% | 27 (15.0%) | 8 (17.8%) |
+| Quantitative Methods | 6–9% | 14 (7.8%) | 4 (8.9%) |
+| Economics | 6–9% | 14 (7.8%) | 4 (8.9%) |
+| Financial Statement Analysis | 11–14% | 21 (11.7%) | 5 (11.1%) |
+| Corporate Issuers | 6–9% | 14 (7.8%) | 3 (6.7%) |
+| Equity Investments | 11–14% | 21 (11.7%) | 5 (11.1%) |
+| Fixed Income | 11–14% | 21 (11.7%) | 5 (11.1%) |
+| Derivatives | 5–8% | 12 (6.7%) | 3 (6.7%) |
+| Alternative Investments | 7–10% | 15 (8.3%) | 4 (8.9%) |
+| Portfolio Management | 8–12% | 21 (11.7%) | 4 (8.9%) |
+
+*All simulated counts are within the official CFA Institute weight ranges.*
+*Once Session 1 is submitted, you cannot return to it. Session 2 starts immediately after.*
         """)
 
     st.info(
@@ -272,8 +278,8 @@ if state.get("exam_submitted"):
     st.markdown(f"**{correct_count} / {total}** correct · {_dur_str}")
     st.markdown(
         f'<span style="color:rgba(11,37,69,0.6);font-size:0.82rem;">'
-        f'Benchmark: 70% (indicative — actual CFA MPS not published) · '
-        f'{"+" if passed else "-"}{abs(score_pct - PASS_THRESHOLD):.1f} pp</span>',
+        f'CFA benchmark: ~67–69% empirically (MPS set by CFA Institute, not published) · '
+        f'{"+" if passed else ""}{score_pct - PASS_THRESHOLD:.1f} pp vs 70% reference</span>',
         unsafe_allow_html=True,
     )
 
