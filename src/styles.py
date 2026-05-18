@@ -669,6 +669,35 @@ def inject_styles():
             font-weight: 700;
         }
 
+        /* ── Help button (? popover) ──────────────────────────────────── */
+        .wib-help-wrap {
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-start;
+            padding-top: 1.5rem;
+        }
+        .wib-help-wrap button[kind="secondary"],
+        .wib-help-wrap button {
+            border-radius: 50% !important;
+            width: 2rem !important;
+            height: 2rem !important;
+            min-height: 2rem !important;
+            padding: 0 !important;
+            font-size: 0.82rem !important;
+            font-weight: 700 !important;
+            background: var(--navy-100) !important;
+            color: var(--navy-600) !important;
+            border: 1.5px solid rgba(12,29,58,0.18) !important;
+            line-height: 1 !important;
+            box-shadow: none !important;
+            transition: background 0.15s, color 0.15s, border-color 0.15s !important;
+        }
+        .wib-help-wrap button:hover {
+            background: var(--navy-700) !important;
+            color: #fff !important;
+            border-color: var(--navy-700) !important;
+        }
+
         /* ── Responsive ───────────────────────────────────────────────── */
         @media (max-width: 768px) {
             .wib-hero .brand { font-size: 2.4rem; }
@@ -830,11 +859,10 @@ def render_hero(subtitle: str = "Who wants to be an Investment Banker?"):
     )
 
 
-def render_page_header(title: str, subtitle: str = ""):
-    """Refined page header for inner pages."""
+def render_page_header(title: str, subtitle: str = "", help_text: str = ""):
+    """Refined page header for inner pages. Pass help_text to show a ? popover."""
     sub_html = f'<div class="page-subtitle">{subtitle}</div>' if subtitle else ""
-    st.markdown(
-        f"""
+    header_html = f"""
         <div class="wib-page-header">
             <div class="brand-identity">
                 <span class="brand-mark-word">WIB</span>
@@ -844,9 +872,18 @@ def render_page_header(title: str, subtitle: str = ""):
             <div class="page-title">{title}</div>
             {sub_html}
         </div>
-        """,
-        unsafe_allow_html=True,
-    )
+        """
+    if help_text:
+        col_h, col_btn = st.columns([20, 1])
+        with col_h:
+            st.markdown(header_html, unsafe_allow_html=True)
+        with col_btn:
+            st.markdown('<div class="wib-help-wrap">', unsafe_allow_html=True)
+            with st.popover("?"):
+                st.markdown(help_text)
+            st.markdown('</div>', unsafe_allow_html=True)
+    else:
+        st.markdown(header_html, unsafe_allow_html=True)
 
 
 def render_ticker():

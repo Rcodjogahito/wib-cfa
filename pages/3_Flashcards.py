@@ -45,7 +45,36 @@ user = get_current_user()
 db = get_db()
 state = st.session_state
 
-render_page_header("Flashcards", "Leitner spaced repetition — 5 boxes")
+render_page_header(
+    "Flashcards",
+    "Leitner spaced repetition — 5 boxes",
+    help_text="""
+**Flashcards — Leitner Spaced Repetition**
+
+Each card is sorted into one of 5 boxes based on how well you know it:
+
+| Box | Colour | Next review |
+|---|---|---|
+| Box 1 | 🔴 | Every session (new / forgotten) |
+| Box 2 | 🟠 | +1 day |
+| Box 3 | 🟡 | +3 days |
+| Box 4 | 🟢 | +7 days |
+| Box 5 | 🟩 | +14 days (mastered) |
+
+**Modes:**
+- **Leitner mode** *(recommended)*: shows only cards due today — the most efficient way to study
+- **Free review**: review all cards regardless of schedule
+
+**Session flow:**
+1. Read the concept on the front
+2. Click **Reveal** to see the definition + example
+3. **I knew it ✓** → card moves up one box
+4. **Study more** → card goes back to Box 1
+5. **Skip →** → skip without recording an answer
+
+The header shows **●●●○○** — filled dots = current box level.
+""",
+)
 
 _BOX_LABELS = {1: "Box 1 — Daily", 2: "Box 2 — 1 day", 3: "Box 3 — 3 days",
                4: "Box 4 — 7 days", 5: "Box 5 — 14 days (mastered)"}

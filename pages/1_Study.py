@@ -32,7 +32,24 @@ with st.sidebar:
 if not require_auth():
     st.stop()
 
-render_page_header("Study Notes", "CFA Level I — Summaries & key formulas")
+render_page_header(
+    "Study Notes",
+    "CFA Level I — Summaries & key formulas",
+    help_text="""
+**Study Notes**
+
+Concise summaries of all 10 CFA Level I topics — your revision reference.
+
+**How to use:**
+- Use the **topic selector** to switch between subjects
+- **Content tab**: key concepts, definitions, formulas
+- **Exam Tips tab**: what the CFA exam specifically tests on this topic, common traps, high-frequency formulas
+- Click **"Practice this topic →"** at the bottom to launch an adaptive quiz focused on the selected topic
+
+**10 topics covered:**
+Ethics · Quant Methods · Economics · FSA · Corporate Issuers · Equity · Fixed Income · Derivatives · Alternatives · Portfolio Management
+""",
+)
 
 # ── Topic selector ────────────────────────────────────────────────────────────
 

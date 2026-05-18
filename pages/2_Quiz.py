@@ -39,7 +39,31 @@ if not require_auth():
 user = get_current_user()
 db = get_db()
 
-render_page_header("Quiz", "Adaptive practice — 7,249 questions")
+render_page_header(
+    "Quiz",
+    "Adaptive practice — 7,249 questions",
+    help_text="""
+**Adaptive Quiz**
+
+**Modes:**
+- **All (Adaptive)**: questions weighted by your weakest topics — areas below 50% mastery appear up to 5× more often; previously wrong questions get an extra 2× boost
+- **Specific topic**: drill one subject at a chosen difficulty level (Easy / Medium / Hard)
+
+**Timer** (optional): global countdown at 90 s per question — time runs out → quiz auto-submits.
+
+**Flow per question:**
+1. Select an answer option
+2. Click **Confirm** to validate
+3. Read the feedback and explanation
+4. Click **Next question →** to advance
+
+**Navigation grid**: jump to any question directly. Answered questions show ✓.
+
+**Finish early**: click **Finish quiz** at the bottom — skipped questions are not counted.
+
+Results and progress are saved automatically after each session.
+""",
+)
 
 # ── Quiz configuration ────────────────────────────────────────────────────────
 

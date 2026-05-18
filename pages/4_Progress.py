@@ -37,7 +37,31 @@ if not require_auth():
 user = get_current_user()
 db = get_db()
 
-render_page_header("Progress", "Mastery tracking — CFA Level I")
+render_page_header(
+    "Progress",
+    "Mastery tracking — CFA Level I",
+    help_text="""
+**Progress Tracker**
+
+All your performance data in one view.
+
+**KPI cards (top row):**
+- **Readiness**: weighted preparation score across all 10 topics (target: 70%+)
+- **Accuracy**: global correct-answer rate across all sessions
+- **Topics ≥ 70%**: number of topics you've mastered
+- **Sessions**: total completed quiz, flashcard and exam sessions
+
+**Radar chart**: visual overview of your mastery per topic — the fuller the shape, the better.
+
+**Priority weak areas**: topics below 50% mastery, ranked by urgency. These are automatically prioritised in the adaptive quiz.
+
+**Detailed progress bars**: per-topic score with the official CFA exam weight range (%) shown next to each topic name.
+
+**Session history**: timeline of all past sessions — score, duration, type (quiz / flashcard / exam).
+
+> All data comes from every answered question across every module. The more you practice, the more accurate the picture.
+""",
+)
 
 progress_rows = db.get_progress(user["id"])
 sessions = db.get_sessions(user["id"])

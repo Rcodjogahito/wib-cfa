@@ -49,7 +49,37 @@ user = get_current_user()
 db = get_db()
 state = st.session_state
 
-render_page_header("Exam Simulator", "CFA Level 1 — Official exam conditions")
+render_page_header(
+    "Exam Simulator",
+    "CFA Level 1 — Official exam conditions",
+    help_text="""
+**Exam Simulator — CFA Level I Standards**
+
+Replicates the real exam format as closely as possible.
+
+| Format | Structure | Time |
+|---|---|---|
+| Full exam | 2 sessions × 90 questions | 2 × 135 min |
+| Partial exam | 1 session × 45 questions | 67 min |
+
+**Question selection**: weighted by official CFA topic ranges, personalised to your weak areas (more questions on topics you score below 50%).
+
+**During the exam:**
+- No feedback shown — just like the real exam
+- Flag questions with ★ to review before submitting
+- Navigate freely within your current session
+- The timer counts down in the header
+- **Submit session** ends the current session (irreversible)
+
+**After submission:**
+- Score per session + global score
+- Results by topic
+- Detailed review of all questions + explanations
+
+**Passing benchmark**: ~67–69% empirically (the CFA Institute does not publish the MPS)
+**Pass rate** (CFA 2026): ~41% overall · ~49–52% for first-time candidates
+""",
+)
 
 # ── CFA Level 1 official topic allocations — source: CFA Institute 2026 ──────
 # Official weight ranges (all questions free-standing, equally weighted, A/B/C)

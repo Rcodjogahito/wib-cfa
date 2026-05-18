@@ -340,7 +340,29 @@ def _finish_diagnostic(qs, answers):
 
 
 if not st.session_state.get("diagnostic_done"):
-    render_page_header("Initial Diagnostic", "30 questions · 3 per topic · ~20 minutes")
+    render_page_header(
+        "Initial Diagnostic",
+        "30 questions · 3 per topic · ~20 minutes",
+        help_text="""
+**Initial Diagnostic**
+
+A one-time 30-question baseline assessment — 3 questions per CFA topic.
+
+**How it works:**
+- Select your answer → click **Confirm** to validate
+- Immediate feedback (correct/incorrect) + explanation shown
+- Click **Next question →** to advance
+- Navigate freely with ← Prev / Next → at the bottom
+- Your progress is saved — you can close and resume anytime
+
+**After completion:**
+- Per-topic score breakdown
+- Your 3 weakest topics are highlighted
+- The adaptive quiz is immediately calibrated to your level
+
+You only take this once. It cannot be redone (unless you restart from the beginning).
+""",
+    )
     _run_diagnostic()
     st.stop()
 
@@ -349,6 +371,30 @@ if not st.session_state.get("diagnostic_done"):
 
 render_ticker()
 render_hero(f"Welcome, {user['first_name']}!")
+
+_help_col, _btn_col = st.columns([20, 1])
+with _btn_col:
+    st.markdown('<div class="wib-help-wrap">', unsafe_allow_html=True)
+    with st.popover("?"):
+        st.markdown("""
+**Your CFA Dashboard**
+
+Your personal preparation hub — everything adapts to your progress.
+
+- **Readiness score**: weighted average across all 10 topics (target: 70%+)
+- **Global accuracy**: your overall correct answer rate
+- **Mastered topics**: number of topics at or above 70% mastery
+- **Mastery radar**: visual overview of all 10 CFA topics
+- **Priority weak areas**: topics below 50% mastery — ranked by urgency
+- **Topic progress bars**: per-topic score with official CFA exam weight
+
+**30-day program**: suggested study calendar from diagnostic to full mock exams
+
+**Quick actions** at the bottom link directly to each module.
+
+> Tip: complete the Initial Diagnostic first if you haven't — it calibrates the adaptive quiz to your actual level.
+""")
+    st.markdown('</div>', unsafe_allow_html=True)
 
 progress_rows = db.get_progress(user["id"])
 mastery = compute_mastery_map(progress_rows)
