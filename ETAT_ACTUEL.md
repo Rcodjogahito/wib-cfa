@@ -1,8 +1,8 @@
 # ETAT ACTUEL — WIB CFA
 > Mis à jour automatiquement à la fin de chaque session Claude Code.
 
-**Date**: 2026-05-18 (session 32)  
-**Commit**: 0d7ef5d — "redesign WIB logo — cascading slashes device, refined Cormorant tracking"  
+**Date**: 2026-05-19 (session 33)  
+**Commit**: 45bbc10 — "fix(sidebar): restore sidebar visibility on all pages"  
 **Branch**: master → Streamlit Cloud (auto-deploy)
 
 ---
@@ -40,6 +40,42 @@
 - **Scripts**: `scripts/render_table_pages.py` → images PNG, `scripts/rerender_wrong_pages.py` → correction pages erronées, `scripts/patch_uworld_tables.py` → mise à jour Supabase
 - **Résultat**: 28/28 tables insérées dans `question_en`
 - **Méthode**: lecture images PDF avec Claude Vision (inclus dans abonnement Pro)
+
+---
+
+## Travaux terminés (session 33)
+
+### ✅ Fix sidebar invisible — toutes les pages (commit 45bbc10)
+
+**Cause racine** : `header[data-testid="stHeader"] { display: none !important; }` dans `src/styles.py` masquait le bouton toggle de la sidebar, rendant celle-ci inaccessible.
+
+**Corrections** :
+1. **`src/styles.py`** : suppression de la règle CSS `header[data-testid="stHeader"]`. La suppression des boutons Fork/Share/Star est assurée par `toolbarMode = "minimal"` dans `.streamlit/config.toml` (suffisant).
+2. **Toutes les pages** (`1_Study`, `2_Quiz`, `3_Flashcards`, `4_Progress`, `5_Exam_Simulator`, `admin.py`) : `initial_sidebar_state="collapsed"` → `"expanded"`.
+
+### ✅ Audit complet de l'application (session 33)
+
+Audit de tous les fichiers — aucun problème trouvé :
+- `streamlit_app.py` — dashboard, diagnostic, imports, cookie auth : OK
+- `pages/1_Study.py` — lecteur notes, topic selector, CTA quiz : OK
+- `pages/2_Quiz.py` — timer fragment, save_attempt/save_session/update_progress, nav grid 5 cols : OK
+- `pages/3_Flashcards.py` — Leitner 5 boîtes, get_leitner_states/update_leitner_card, save_session : OK
+- `pages/4_Progress.py` — radar chart, gauge, bars, session history : OK
+- `pages/5_Exam_Simulator.py` — 2 sessions, timer fragment, save on submit, topic-weighted selection : OK
+- `pages/admin.py` — gate `user["email"] == "samto"`, get_all_users, get_question_stats : OK
+- `src/auth.py` — cookie 90j, composite key, require_auth, logout : OK
+- `src/database.py` — Supabase/SQLite dual-path, toutes les méthodes appelées par les pages existent : OK
+- `src/adaptive.py` — poids gradués 5x/3x/2x/1x + boost 2x wrong, get_exam_questions : OK
+- `src/progress.py` — compute_mastery_map, readiness_score, weak_topics : OK
+
+### ✅ Logo WIB — thin bar + EB Garamond (sessions 32-33)
+
+Logo "initial" (commit 2445eb8) modifié :
+- Suppression de la barre épaisse (2.5px), conservation de la barre fine (1px, rgba gold 45%)
+- Police "WIB" : Cormorant Garamond → **EB Garamond** (font-weight 500)
+- Sidebar : `font-family:'EB Garamond','Cormorant Garamond',Georgia,serif;font-size:1.72rem;font-weight:500`
+- Hero : idem + `font-size:3.1rem`
+- Import Google Fonts : `EB Garamond:ital,wght@0,400;0,500;0,600;1,400` ajouté
 
 ---
 
