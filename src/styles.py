@@ -4,7 +4,6 @@ Call inject_styles() at the top of every page.
 """
 
 import streamlit as st
-import streamlit.components.v1 as _components
 
 
 # ── Question rendering helpers ────────────────────────────────────────────────
@@ -36,11 +35,24 @@ def inject_styles():
     st.markdown(
         """
         <style>
-        /* ── Hide Streamlit chrome (keep header for sidebar toggle) ────── */
+        /* ── Hide Streamlit chrome ─────────────────────────────────────── */
         [data-testid="stDecoration"]     { display: none !important; }
         #MainMenu                        { display: none !important; }
         footer                           { display: none !important; }
         /* toolbarMode=minimal in config.toml suppresses Fork/Share/Star */
+
+        /* ── Keep header visible — sidebar toggle lives here ───────────── */
+        header[data-testid="stHeader"] {
+            display: flex !important;
+            visibility: visible !important;
+            opacity: 1 !important;
+        }
+        /* Keep sidebar expand control visible when sidebar is collapsed */
+        button[data-testid="stSidebarCollapsedControl"] {
+            display: flex !important;
+            visibility: visible !important;
+            opacity: 1 !important;
+        }
 
         /* ── Fonts ─────────────────────────────────────────────────────── */
         @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap');
@@ -754,66 +766,6 @@ def inject_styles():
         </style>
         """,
         unsafe_allow_html=True,
-    )
-    # Mobile sidebar — URL polling + reload() + instant CSS hide.
-    # Why location.replace(cur) failed: React calls history.pushState('/Quiz')
-    # BEFORE our poll fires. The browser is already at /Quiz, so replace('/Quiz')
-    # is treated as a same-URL navigation (soft reload or no-op in some browsers).
-    # Fix: use location.reload() which always forces a true server round-trip
-    # regardless of how the current URL was set.
-    # Anti-flash: hide sidebar via CSS the instant we detect the URL change —
-    # before the 50ms delay — so the user never sees the brief open state.
-    _components.html(
-        """
-        <script>
-        (function() {
-            function isMobile() {
-                try { return window.parent.innerWidth < 768; } catch(e) { return false; }
-            }
-            function setup() {
-                try {
-                    var par = window.parent;
-                    if (par._wibInit) return;
-                    par._wibInit = true;
-                    var lastHref = par.location.href;
-                    setInterval(function() {
-                        try {
-                            var cur = par.location.href;
-                            if (cur === lastHref) return;
-                            lastHref = cur;
-                            if (!isMobile()) return;
-                            // 1. Instant visual hide — eliminates the open-sidebar flash
-                            try {
-                                var sb = par.document.querySelector(
-                                    'section[data-testid="stSidebar"]'
-                                );
-                                if (sb) {
-                                    sb.style.setProperty('transform', 'translateX(-110%)', 'important');
-                                    sb.style.setProperty('transition', 'none', 'important');
-                                }
-                            } catch(ignore) {}
-                            // 2. Clear any Streamlit localStorage sidebar state
-                            try {
-                                var ls = par.localStorage;
-                                var rm = [];
-                                for (var i = 0; i < ls.length; i++) {
-                                    var k = ls.key(i);
-                                    if (k && /sidebar/i.test(k)) rm.push(k);
-                                }
-                                rm.forEach(function(k) { ls.removeItem(k); });
-                            } catch(ignore) {}
-                            // 3. reload() — forces a real server round-trip, unlike
-                            //    replace(cur) which is a no-op when already at cur
-                            setTimeout(function() { par.location.reload(); }, 50);
-                        } catch(e) {}
-                    }, 100);
-                } catch(e) {}
-            }
-            setTimeout(setup, 200);
-        })();
-        </script>
-        """,
-        height=1,
     )
 
 
