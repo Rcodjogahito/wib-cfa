@@ -21,7 +21,7 @@ st.set_page_config(
     page_title="Exam Simulator — WIB CFA",
     page_icon="⏱️",
     layout="wide",
-    initial_sidebar_state="collapsed",
+    initial_sidebar_state="expanded",
 )
 inject_styles()
 
