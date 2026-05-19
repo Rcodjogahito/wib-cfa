@@ -43,7 +43,7 @@ def inject_styles():
         footer                           { display: none !important; }
 
         /* ── Fonts ─────────────────────────────────────────────────────── */
-        @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap');
 
         /* ── Design tokens ─────────────────────────────────────────────── */
         :root {
@@ -381,22 +381,17 @@ def inject_styles():
             height: 1.5px;
             background: linear-gradient(90deg, var(--gold-500) 0%, transparent 55%);
         }
-        /* Double-bar geometric mark above wordmark — Ares signature device */
+        /* Single thin gold rule above wordmark */
         .wib-hero .brand-rule { margin-bottom: 16px; }
-        .wib-hero .brand-rule::before,
-        .wib-hero .brand-rule::after { content: ''; display: block; }
-        .wib-hero .brand-rule::before {
-            height: 2.5px; width: 24px;
-            background: var(--gold-500); margin-bottom: 5px;
-        }
         .wib-hero .brand-rule::after {
+            content: ''; display: block;
             height: 1px; width: 38px;
-            background: rgba(201,168,76,0.38);
+            background: rgba(201,168,76,0.45);
         }
         .wib-hero .brand {
-            font-family: 'Cormorant Garamond', serif;
+            font-family: 'EB Garamond', 'Cormorant Garamond', serif;
             font-size: 3.1rem;
-            font-weight: 600;
+            font-weight: 500;
             color: #FFFFFF;
             letter-spacing: 0.16em;
             text-indent: 0.16em;
@@ -832,11 +827,8 @@ _SIDEBAR_BRAND_ORIGINAL = """
 
 _SIDEBAR_BRAND = """
 <div style="padding:4px 0 12px 0;">
-  <div style="margin-bottom:13px;">
-    <div style="height:2.5px;width:18px;background:#C9A84C;"></div>
-    <div style="height:1px;width:30px;background:rgba(201,168,76,0.35);margin-top:4px;"></div>
-  </div>
-  <div style="font-family:'Cormorant Garamond',Georgia,serif;font-size:1.72rem;font-weight:600;color:#FFFFFF;letter-spacing:0.16em;text-indent:0.16em;line-height:1;">WIB</div>
+  <div style="height:1px;width:30px;background:rgba(201,168,76,0.45);margin-bottom:13px;"></div>
+  <div style="font-family:'EB Garamond','Cormorant Garamond',Georgia,serif;font-size:1.72rem;font-weight:500;color:#FFFFFF;letter-spacing:0.16em;text-indent:0.16em;line-height:1;">WIB</div>
   <div style="height:1px;background:linear-gradient(90deg,rgba(201,168,76,0.50) 0%,transparent 80%);margin:10px 0 8px 0;"></div>
   <div style="font-family:'Inter',sans-serif;font-size:0.52rem;color:rgba(201,168,76,0.62);letter-spacing:0.22em;text-indent:0.22em;text-transform:uppercase;font-weight:500;">CFA &middot; Level I</div>
 </div>
