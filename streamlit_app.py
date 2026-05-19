@@ -79,7 +79,6 @@ def _reset_diagnostic():
 
 
 def _run_diagnostic():
-    st.markdown('<div class="section-header">Initial Diagnostic</div>', unsafe_allow_html=True)
     st.caption("30 questions · 3 per topic · ~20 minutes — let's assess your baseline.")
 
     state = st.session_state
