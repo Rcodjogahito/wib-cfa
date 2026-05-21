@@ -39,19 +39,19 @@ def inject_styles():
         [data-testid="stDecoration"]     { display: none !important; }
         #MainMenu                        { display: none !important; }
         footer                           { display: none !important; }
-        [data-testid="stToolbar"]        { display: none !important; }
 
-        /* ── Keep header visible — sidebar toggle lives here ───────────── */
+        /* Hide the top toolbar (Fork / Star / Share / Manage app).
+           visibility:hidden on the header makes the entire bar invisible
+           but preserves its layout space, so nothing shifts.
+           The sidebar toggle uses visibility:visible which overrides the
+           parent's hidden — this is the only child that stays interactive. */
         header[data-testid="stHeader"] {
-            display: flex !important;
-            visibility: visible !important;
-            opacity: 1 !important;
+            visibility: hidden !important;
         }
-        /* Keep sidebar expand control visible when sidebar is collapsed */
-        button[data-testid="stSidebarCollapsedControl"] {
-            display: flex !important;
+        button[data-testid="stSidebarCollapsedControl"],
+        button[data-testid="collapsedControl"] {
             visibility: visible !important;
-            opacity: 1 !important;
+            display: flex !important;
         }
 
         /* ── Fonts ─────────────────────────────────────────────────────── */
