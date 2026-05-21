@@ -1,0 +1,32 @@
+name: Monthly Heartbeat
+
+# Runs on the 1st of every month at 08:00 UTC.
+# Makes a tiny timestamp commit to reset GitHub's 60-day inactivity timer,
+# which would otherwise disable all scheduled workflows (including keep-alive).
+# This ensures the app stays awake indefinitely, even with no manual commits.
+
+on:
+  schedule:
+    - cron: '0 8 1 * *'   # 1st of every month at 08:00 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  heartbeat:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Update heartbeat timestamp
+        run: |
+          echo "Last heartbeat: $(date -u '+%Y-%m-%d %H:%M UTC')" > .github/heartbeat.txt
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add .github/heartbeat.txt
+          git commit -m "chore: monthly heartbeat $(date -u '+%Y-%m')"
+          git push

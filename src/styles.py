@@ -66,6 +66,7 @@ def inject_styles():
             --navy-700:  #142E58;
             --navy-600:  #1C3F78;
             --navy-100:  #EEF3FA;
+            --navy-50:   #F4F8FF;
             /* Brand gold */
             --gold-500:  #C9A84C;
             --gold-400:  #DFC06E;
