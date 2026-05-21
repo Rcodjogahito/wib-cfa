@@ -39,7 +39,7 @@ def inject_styles():
         [data-testid="stDecoration"]     { display: none !important; }
         #MainMenu                        { display: none !important; }
         footer                           { display: none !important; }
-        /* toolbarMode=minimal in config.toml suppresses Fork/Share/Star */
+        [data-testid="stToolbar"]        { display: none !important; }
 
         /* ── Keep header visible — sidebar toggle lives here ───────────── */
         header[data-testid="stHeader"] {
