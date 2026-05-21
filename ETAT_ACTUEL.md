@@ -1,8 +1,8 @@
 # ETAT ACTUEL — WIB CFA
 > Mis à jour automatiquement à la fin de chaque session Claude Code.
 
-**Date**: 2026-05-21 (session 35)  
-**Commit**: ba7c57d — "chore: monthly heartbeat 2026-05"  
+**Date**: 2026-05-22 (session 36)  
+**Commit**: 01d4a48 — "fix(ci): ping every 3h staggered, fix 200=sleeping false-positive"  
 **Branch**: master → Streamlit Cloud (auto-deploy)
 
 ---
@@ -24,23 +24,33 @@
 
 ---
 
+## Travaux terminés (session 36)
+
+### ✅ 2 bugs critiques anti-veille corrigés + fréquence augmentée (commit 01d4a48)
+
+**Bug 4 — corrigé** : `keep_alive.yml` — HTTP 200 (page Zzzz = app endormie) était accepté comme "app vivante" (`"2" || "3"`). L'app endormie renvoyait 200 et le workflow reportait SUCCESS alors que l'app dormait → faux positif permanent. Fix : seul le 3xx (redirect auth = app active) est accepté. Le 200 provoque `exit 1` + message d'erreur.
+
+**Bug 5 — corrigé** : Les deux workflows pingaient aux **mêmes horaires** (00:00/06:00/12:00/18:00 UTC). Si GitHub rate un slot (cron non garanti), les deux ratent → gap jusqu'à 12h → app s'endort. Fix : schedules décalés + fréquence doublée.
+
+### ✅ Architecture anti-veille finale (3 niveaux)
+
+| Mécanisme | Fréquence | Horaires UTC | Action | Fichier |
+|---|---|---|---|---|
+| Playwright (Chromium) | Toutes les 3h | 00:00/03:00/06:00/.../21:00 | Charge la page, clique "Wake up" si endormie | `keep-alive.yml` |
+| curl ping | Toutes les 3h | 01:30/04:30/07:30/.../22:30 | Ping HTTP — 303=vivante, 200=endormie→exit 1 | `keep_alive.yml` |
+| Heartbeat commit | 1er du mois | 08:00 UTC | Commit timestamp → réinitialise timer 60j GitHub | `heartbeat.yml` |
+
+**Gap maximal entre deux pings : 1h30** (Playwright et curl alternent décalés de 1h30).
+
 ## Travaux terminés (session 35)
 
 ### ✅ Audit complet + 3 bugs corrigés + protection permanente anti-veille
 
-**Bug 1 — corrigé** : `keep_alive.yml` — `curl -L` causait exit code 47 (CURLE_TOO_MANY_REDIRECTS sur la chaîne auth Streamlit). Suppression du flag `-L`, détection 2xx/3xx comme "app vivante". Commit `62fa2e6`.
+**Bug 1 — corrigé** : `keep_alive.yml` — `curl -L` causait exit code 47 (CURLE_TOO_MANY_REDIRECTS). Commit `62fa2e6`.
 
-**Bug 2 — corrigé** : `src/styles.py` — variable CSS `--navy-50` utilisée dans Flashcards (panneau stats Leitner) mais jamais définie → fond transparent. Ajout `--navy-50: #F4F8FF`. Commit `c36f2c3`.
+**Bug 2 — corrigé** : `src/styles.py` — CSS `--navy-50` non défini → fond transparent dans Flashcards. Commit `c36f2c3`.
 
-**Bug 3 — résolu** : GitHub désactive les workflows `schedule` après 60 jours sans commit → les keep-alive auraient fini par s'arrêter. Solution : `.github/workflows/heartbeat.yml` — commit automatique mensuel (1er du mois) pour réinitialiser le timer. Testé et fonctionnel : commit `ba7c57d` créé par le bot. La protection est maintenant **permanente et autonome**.
-
-### ✅ Architecture anti-veille complète (3 niveaux)
-
-| Mécanisme | Fréquence | Action | Fichier |
-|---|---|---|---|
-| Playwright keep-alive | Toutes les 6h | Charge la page avec vrai Chromium, clique "Wake up" si endormie | `keep-alive.yml` |
-| curl ping | Toutes les 6h | Ping HTTP léger (303 = vivante) | `keep_alive.yml` |
-| Heartbeat commit | 1er du mois | Commit timestamp → réinitialise timer 60j GitHub | `heartbeat.yml` |
+**Bug 3 — résolu** : GitHub désactive les workflows `schedule` après 60j sans commit. Fix : `heartbeat.yml` commit mensuel autonome. Commit `ba7c57d`.
 
 ---
 
