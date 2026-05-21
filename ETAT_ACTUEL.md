@@ -1,8 +1,8 @@
 # ETAT ACTUEL — WIB CFA
 > Mis à jour automatiquement à la fin de chaque session Claude Code.
 
-**Date**: 2026-05-21 (session 34)  
-**Commit**: 8bfcffd — "ci: add GitHub Actions keep-alive ping every 6h"  
+**Date**: 2026-05-21 (session 35)  
+**Commit**: ba7c57d — "chore: monthly heartbeat 2026-05"  
 **Branch**: master → Streamlit Cloud (auto-deploy)
 
 ---
@@ -24,13 +24,27 @@
 
 ---
 
-## Travaux terminés (session 34)
+## Travaux terminés (session 35)
 
-### ✅ Keep-alive GitHub Actions — anti-veille Streamlit Cloud
-- **Fichier**: `.github/workflows/keep_alive.yml`
-- **Résultat**: workflow qui ping `https://wib-cfa.streamlit.app/` toutes les 6h via `curl`
-- **Raison**: Streamlit Cloud (plan gratuit) endort les apps après inactivité — ce cron empêche définitivement la mise en veille
-- **Commit**: `8bfcffd` — pushé sur `master`
+### ✅ Audit complet + 3 bugs corrigés + protection permanente anti-veille
+
+**Bug 1 — corrigé** : `keep_alive.yml` — `curl -L` causait exit code 47 (CURLE_TOO_MANY_REDIRECTS sur la chaîne auth Streamlit). Suppression du flag `-L`, détection 2xx/3xx comme "app vivante". Commit `62fa2e6`.
+
+**Bug 2 — corrigé** : `src/styles.py` — variable CSS `--navy-50` utilisée dans Flashcards (panneau stats Leitner) mais jamais définie → fond transparent. Ajout `--navy-50: #F4F8FF`. Commit `c36f2c3`.
+
+**Bug 3 — résolu** : GitHub désactive les workflows `schedule` après 60 jours sans commit → les keep-alive auraient fini par s'arrêter. Solution : `.github/workflows/heartbeat.yml` — commit automatique mensuel (1er du mois) pour réinitialiser le timer. Testé et fonctionnel : commit `ba7c57d` créé par le bot. La protection est maintenant **permanente et autonome**.
+
+### ✅ Architecture anti-veille complète (3 niveaux)
+
+| Mécanisme | Fréquence | Action | Fichier |
+|---|---|---|---|
+| Playwright keep-alive | Toutes les 6h | Charge la page avec vrai Chromium, clique "Wake up" si endormie | `keep-alive.yml` |
+| curl ping | Toutes les 6h | Ping HTTP léger (303 = vivante) | `keep_alive.yml` |
+| Heartbeat commit | 1er du mois | Commit timestamp → réinitialise timer 60j GitHub | `heartbeat.yml` |
+
+---
+
+## Travaux terminés (session 34)
 
 ---
 
