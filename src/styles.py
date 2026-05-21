@@ -41,17 +41,20 @@ def inject_styles():
         footer                           { display: none !important; }
 
         /* Hide the top toolbar (Fork / Star / Share / Manage app).
-           visibility:hidden on the header makes the entire bar invisible
-           but preserves its layout space, so nothing shifts.
-           The sidebar toggle uses visibility:visible which overrides the
-           parent's hidden — this is the only child that stays interactive. */
+           visibility:hidden on the header hides everything but preserves
+           layout space. Any <button> inside the header is the sidebar
+           toggle — Fork/Star/Share are <a> or custom elements, not buttons.
+           All <button> children get visibility:visible to restore the toggle
+           regardless of which data-testid Streamlit uses for it. */
         header[data-testid="stHeader"] {
             visibility: hidden !important;
         }
-        button[data-testid="stSidebarCollapsedControl"],
-        button[data-testid="collapsedControl"] {
+        header[data-testid="stHeader"] button,
+        [data-testid="stSidebarCollapsedControl"],
+        [data-testid="collapsedControl"] {
             visibility: visible !important;
             display: flex !important;
+            pointer-events: auto !important;
         }
 
         /* ── Fonts ─────────────────────────────────────────────────────── */
