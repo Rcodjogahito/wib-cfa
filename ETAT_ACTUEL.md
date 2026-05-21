@@ -1,8 +1,8 @@
 # ETAT ACTUEL — WIB CFA
 > Mis à jour automatiquement à la fin de chaque session Claude Code.
 
-**Date**: 2026-05-19 (session 33)  
-**Commit**: 45bbc10 — "fix(sidebar): restore sidebar visibility on all pages"  
+**Date**: 2026-05-21 (session 34)  
+**Commit**: 8bfcffd — "ci: add GitHub Actions keep-alive ping every 6h"  
 **Branch**: master → Streamlit Cloud (auto-deploy)
 
 ---
@@ -21,6 +21,16 @@
 **Note Kaplan** : 68 explications corrigées en session 18 (verbatim PDF, matching 100%). 3649 déjà correctes.
 
 **Audit cmd**: `python scripts/audit_questions.py`
+
+---
+
+## Travaux terminés (session 34)
+
+### ✅ Keep-alive GitHub Actions — anti-veille Streamlit Cloud
+- **Fichier**: `.github/workflows/keep_alive.yml`
+- **Résultat**: workflow qui ping `https://wib-cfa.streamlit.app/` toutes les 6h via `curl`
+- **Raison**: Streamlit Cloud (plan gratuit) endort les apps après inactivité — ce cron empêche définitivement la mise en veille
+- **Commit**: `8bfcffd` — pushé sur `master`
 
 ---
 
