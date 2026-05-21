@@ -2,8 +2,10 @@ name: Keep App Alive
 
 on:
   schedule:
-    # Ping every 6 hours — well under Streamlit Cloud's inactivity threshold
-    - cron: '0 */6 * * *'
+    # Offset by 1h30 from the Playwright workflow (0 */3 * * *) so both never miss the same slot.
+    # Fires at 01:30 / 04:30 / 07:30 / 10:30 / 13:30 / 16:30 / 19:30 / 22:30 UTC.
+    # Combined with keep-alive.yml, max gap between any ping is 1h30.
+    - cron: '30 1,4,7,10,13,16,19,22 * * *'
   workflow_dispatch:
 
 jobs:
@@ -12,13 +14,14 @@ jobs:
     steps:
       - name: Ping WIB CFA app
         run: |
-          # No -L: Streamlit auth redirects indefinitely; a 303 response means the app is alive.
+          # Streamlit returns 303 (auth redirect) when the app is AWAKE.
+          # It returns 200 (static "Zzzz" HTML) when the app is SLEEPING.
+          # -L is omitted: Streamlit auth creates an infinite redirect loop (exit 47).
           response=$(curl -s -o /dev/null -w "%{http_code}" --max-time 60 https://wib-cfa.streamlit.app/)
           echo "HTTP status: $response"
-          # Any 2xx or 3xx means the app is reachable and awake
-          if [ "${response:0:1}" = "2" ] || [ "${response:0:1}" = "3" ]; then
+          if [ "${response:0:1}" = "3" ]; then
             echo "App is alive (status $response)."
           else
-            echo "ERROR: App may be down (status $response)."
+            echo "ERROR: App is sleeping or unreachable (status $response). Playwright workflow will wake it at next run."
             exit 1
           fi
