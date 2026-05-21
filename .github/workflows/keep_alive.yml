@@ -1,0 +1,21 @@
+name: Keep App Alive
+
+on:
+  schedule:
+    # Ping every 6 hours — well under Streamlit Cloud's inactivity threshold
+    - cron: '0 */6 * * *'
+  workflow_dispatch:
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Ping WIB CFA app
+        run: |
+          response=$(curl -s -o /dev/null -w "%{http_code}" --max-time 60 https://wib-cfa.streamlit.app/)
+          echo "HTTP status: $response"
+          if [ "$response" = "200" ] || [ "$response" = "302" ]; then
+            echo "App is alive."
+          else
+            echo "Warning: unexpected status $response"
+          fi
