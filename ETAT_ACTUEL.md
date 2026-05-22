@@ -2,7 +2,7 @@
 > Mis à jour automatiquement à la fin de chaque session Claude Code.
 
 **Date**: 2026-05-22 (session 38)  
-**Commit**: 0903933 — "fix(ui): replace overlay with JS to hide toolbar and reposition toggle"  
+**Commit**: 5c1b372 — "fix(ui): remove ancestor walk that leaked visibility to Fork/Share buttons"  
 **Branch**: master → Streamlit Cloud (auto-deploy)
 
 ---
@@ -26,7 +26,7 @@
 
 ## Travaux terminés (session 38)
 
-### ✅ Toggle sidebar repositionné + Fork/Share/Favourite masqués (commit 0903933)
+### ✅ Toggle sidebar repositionné + Fork/Share/Favourite masqués — VÉRIFIÉ Playwright (commits 0903933 + 5c1b372)
 
 **Problème** : Le toggle sidebar apparaissait mais les boutons Fork/Share/Favourite étaient aussi visibles.
 
@@ -35,8 +35,18 @@
 - Fonction `_hide_toolbar_js()` dans `styles.py` injecte un script via `st.components.v1.html` (iframe same-origin)
 - Le script récupère `header.querySelectorAll('button')[0]` (premier bouton = toggle) sans dépendre de `data-testid`
 - Toggle repositionné en `position:fixed; top:6rem; left:3.5rem; z-index:2147483647` — plus bas et plus vers le centre de la sidebar
-- Tous les descendants du toggle et ses ancêtres remontent à `visibility:visible`
+- Tous les descendants du toggle remontent à `visibility:visible` (sans walk ancestor — bug corrigé commit 5c1b372)
 - `pytz>=2025.3` (cache bust) force la reconstruction complète de l'environnement Streamlit Cloud
+
+**Bug corrigé (commit 5c1b372)** : La boucle ancestor walk rendait les conteneurs parents `visibility:visible`, propageant la visibilité par héritage CSS aux boutons Fork/Share siblings. Suppression du walk — un enfant avec `visibility:visible` override déjà un parent `visibility:hidden` en CSS.
+
+**Résultats vérification Playwright (2026-05-22)** :
+- Header `visibility:hidden` ✅
+- btn[0] (toggle) : `pos=fixed top=96px left=58px vis=visible z=2147483647` ✅
+- btn[1] (Fork/GitHub) : `vis=hidden` ✅
+- Login Sam/to → Initial Diagnostic ✅
+- Toutes les pages : Study Notes, Quiz, Flashcards, Progress, Exam Simulator ✅
+- Aucun bouton toolbar visible dans aucun screenshot ✅
 
 ---
 
