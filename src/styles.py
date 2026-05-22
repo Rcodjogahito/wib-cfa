@@ -805,18 +805,14 @@ def _hide_toolbar_js():
                     toggle.style.setProperty('visibility', 'visible', 'important');
                     toggle.style.setProperty('pointer-events', 'auto', 'important');
 
-                    // Make all descendants visible too (visibility is inherited)
+                    // Make all descendants visible too (visibility is inherited).
+                    // Do NOT walk up ancestors — sibling toolbar buttons (Fork/Share)
+                    // share the same parent; making the parent visible would expose them.
+                    // A child visibility:visible already overrides a parent visibility:hidden.
                     var desc = toggle.querySelectorAll('*');
                     for (var i = 0; i < desc.length; i++) {
                         desc[i].style.setProperty('visibility', 'visible', 'important');
                         desc[i].style.setProperty('pointer-events', 'auto', 'important');
-                    }
-                    // Walk up from toggle to header and un-hide each ancestor
-                    var node = toggle.parentElement;
-                    while (node && node !== header) {
-                        node.style.setProperty('visibility', 'visible', 'important');
-                        node.style.setProperty('pointer-events', 'auto', 'important');
-                        node = node.parentElement;
                     }
                 } catch(e) { plog('[WIB] error:', e.message); }
             }
