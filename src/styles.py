@@ -4,6 +4,7 @@ Call inject_styles() at the top of every page.
 """
 
 import streamlit as st
+import streamlit.components.v1 as _components
 
 
 # ── Question rendering helpers ────────────────────────────────────────────────
@@ -47,12 +48,13 @@ def inject_styles():
             visibility: hidden !important;
         }
 
-        /* Restore the sidebar collapse/expand toggle.
-           In Streamlit 1.38 the data-testid is on a <div> wrapper,
-           NOT on the <button> inside — selector has no element-type prefix.
-           The `* {}` rule re-shows the button and any inner svg/span. */
+        /* Restore sidebar toggle — shotgun selectors across Streamlit versions */
         [data-testid="stSidebarCollapsedControl"],
-        [data-testid="stSidebarCollapsedControl"] * {
+        [data-testid="stSidebarCollapsedControl"] *,
+        [data-testid="stSidebarCollapseButton"],
+        [data-testid="stSidebarCollapseButton"] *,
+        [data-testid="collapsedControl"],
+        [data-testid="collapsedControl"] * {
             visibility: visible !important;
             pointer-events: auto !important;
         }
@@ -770,6 +772,98 @@ def inject_styles():
         </style>
         """,
         unsafe_allow_html=True,
+    )
+    _hide_toolbar_js()
+
+
+def _hide_toolbar_js():
+    """Re-show sidebar toggle hidden by the header visibility:hidden rule.
+
+    Logs all data-testid values found inside the header to the browser
+    console ([WIB] prefix) so we can identify the correct selector if
+    the current ones don't match.
+    """
+    _components.html(
+        """
+        <script>
+        (function () {
+            var SELECTORS = [
+                '[data-testid="stSidebarCollapsedControl"]',
+                '[data-testid="stSidebarCollapseButton"]',
+                '[data-testid="collapsedControl"]',
+                'button[aria-expanded]',
+                'button[aria-label*="sidebar"]',
+                'button[aria-label*="Sidebar"]',
+                'button[aria-label*="open"]',
+                'button[aria-label*="Open"]'
+            ];
+
+            function fix() {
+                try {
+                    var doc = window.parent.document;
+                    var header = doc.querySelector('header[data-testid="stHeader"]');
+                    if (!header) return;
+
+                    /* Log every data-testid inside the header */
+                    var withId = header.querySelectorAll('[data-testid]');
+                    var ids = [];
+                    for (var k = 0; k < withId.length; k++) {
+                        ids.push(withId[k].getAttribute('data-testid'));
+                    }
+                    console.log('[WIB] header testids:', ids.length ? ids.join(' | ') : 'NONE');
+                    if (!ids.length) {
+                        var ch = header.children;
+                        for (var c = 0; c < ch.length; c++) {
+                            console.log('[WIB] header.child[' + c + ']:', ch[c].tagName,
+                                ch[c].className.slice(0, 80));
+                        }
+                    }
+
+                    /* Find the sidebar toggle */
+                    var toggle = null;
+                    for (var i = 0; i < SELECTORS.length; i++) {
+                        var el = header.querySelector(SELECTORS[i]);
+                        if (el) {
+                            toggle = el;
+                            console.log('[WIB] toggle via:', SELECTORS[i]);
+                            break;
+                        }
+                    }
+                    if (!toggle) {
+                        toggle = header.querySelector('button');
+                        if (toggle) console.log('[WIB] toggle = first button fallback');
+                    }
+                    if (!toggle) { console.log('[WIB] toggle NOT found'); return; }
+
+                    /* Make toggle + all its descendants visible */
+                    toggle.style.setProperty('visibility', 'visible', 'important');
+                    toggle.style.setProperty('pointer-events', 'auto', 'important');
+                    var desc = toggle.querySelectorAll('*');
+                    for (var j = 0; j < desc.length; j++) {
+                        desc[j].style.setProperty('visibility', 'visible', 'important');
+                        desc[j].style.setProperty('pointer-events', 'auto', 'important');
+                    }
+                    /* Walk ancestors up to (but not including) header */
+                    var node = toggle.parentElement;
+                    while (node && node !== header) {
+                        node.style.setProperty('visibility', 'visible', 'important');
+                        node.style.setProperty('pointer-events', 'auto', 'important');
+                        node = node.parentElement;
+                    }
+                } catch (e) { console.log('[WIB] err:', e.message); }
+            }
+
+            [100, 400, 900, 2000, 4000].forEach(function (d) { setTimeout(fix, d); });
+            try {
+                new MutationObserver(function () { setTimeout(fix, 80); }).observe(
+                    window.parent.document.body, { childList: true, subtree: true }
+                );
+            } catch (e) {}
+        })();
+        </script>
+        """,
+        height=0,
+        scrolling=False,
     )
 
 
