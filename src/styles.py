@@ -875,6 +875,23 @@ def _hide_toolbar_js():
                         }
                     }
                 } catch(e) {}
+
+                // Hide Streamlit Cloud viewer badge + fork link in the outer page.
+                // These are rendered outside ~/+/ so visibility:hidden on the header
+                // doesn't reach them. window.top = the outer wib-cfa.streamlit.app page.
+                try {
+                    var topDoc = window.top.document;
+                    if (!topDoc.getElementById('wib-outer-css')) {
+                        var outerStyle = topDoc.createElement('style');
+                        outerStyle.id = 'wib-outer-css';
+                        outerStyle.textContent =
+                            '[class*="viewerBadge"],[class*="ViewerBadge"]' +
+                            '{display:none!important}' +
+                            'a[href*="share.streamlit"],a[href*="/app/fork"]' +
+                            '{display:none!important}';
+                        topDoc.head.appendChild(outerStyle);
+                    }
+                } catch(e2) {}
             }
 
             // Two-timer scheduler: runs fix() at 100ms (instant changes) AND
