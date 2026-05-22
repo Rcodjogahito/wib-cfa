@@ -4,6 +4,7 @@ Call inject_styles() at the top of every page.
 """
 
 import streamlit as st
+import streamlit.components.v1 as _components
 
 
 # ── Question rendering helpers ────────────────────────────────────────────────
@@ -40,17 +41,11 @@ def inject_styles():
         #MainMenu                        { display: none !important; }
         footer                           { display: none !important; }
 
-        /* Hide the top toolbar (Fork / Star / Share / Manage app).
-           The header first child holds the sidebar toggle (left side);
-           the last child holds the action toolbar (right side).
-           We make the entire first section visible and hide the last. */
+        /* Hide top toolbar via JS (see _hide_toolbar_js below).
+           CSS hides the header immediately to avoid flash; JS restores
+           only the sidebar toggle by walking its ancestor chain. */
         header[data-testid="stHeader"] {
             visibility: hidden !important;
-        }
-        header[data-testid="stHeader"] > *:first-child,
-        header[data-testid="stHeader"] > *:first-child * {
-            visibility: visible !important;
-            pointer-events: auto !important;
         }
 
         /* ── Fonts ─────────────────────────────────────────────────────── */
@@ -766,6 +761,70 @@ def inject_styles():
         </style>
         """,
         unsafe_allow_html=True,
+    )
+    _hide_toolbar_js()
+
+
+def _hide_toolbar_js():
+    """Inject JS that hides the Streamlit Cloud toolbar while restoring the sidebar toggle.
+
+    The JS runs inside a component iframe (same origin) and walks up from the
+    sidebar toggle button to the header, making each ancestor visible.  This
+    handles any DOM nesting depth without guessing CSS selectors.
+    """
+    _components.html(
+        """
+        <script>
+        (function () {
+            var SELECTORS = [
+                '[data-testid="stSidebarCollapsedControl"]',
+                '[data-testid="collapsedControl"]'
+            ];
+
+            function run() {
+                try {
+                    var doc = window.parent.document;
+                    var header = doc.querySelector('header[data-testid="stHeader"]');
+                    if (!header) return;
+
+                    // Hide entire header (fast — matches CSS already applied)
+                    header.style.setProperty('visibility', 'hidden', 'important');
+
+                    // Find the sidebar toggle inside the header
+                    var toggle = null;
+                    for (var i = 0; i < SELECTORS.length; i++) {
+                        var el = header.querySelector(SELECTORS[i]);
+                        if (el) { toggle = el; break; }
+                    }
+                    if (!toggle) return;   // sidebar is expanded — no toggle in header
+
+                    // Walk from toggle up to header, making each ancestor visible
+                    var node = toggle;
+                    while (node && node !== header) {
+                        node.style.setProperty('visibility', 'visible', 'important');
+                        node.style.setProperty('pointer-events', 'auto', 'important');
+                        node = node.parentElement;
+                    }
+                } catch (e) { /* cross-origin guard */ }
+            }
+
+            // Run immediately and after Streamlit re-renders
+            [100, 300, 600, 1200, 2500].forEach(function (d) {
+                setTimeout(run, d);
+            });
+
+            // Re-run whenever the DOM changes (sidebar expand/collapse)
+            try {
+                new MutationObserver(run).observe(
+                    window.parent.document.body,
+                    { childList: true, subtree: true }
+                );
+            } catch (e) {}
+        })();
+        </script>
+        """,
+        height=0,
+        scrolling=False,
     )
 
 
