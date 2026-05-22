@@ -1,8 +1,8 @@
 # ETAT ACTUEL — WIB CFA
 > Mis à jour automatiquement à la fin de chaque session Claude Code.
 
-**Date**: 2026-05-22 (session 36)  
-**Commit**: 01d4a48 — "fix(ci): ping every 3h staggered, fix 200=sleeping false-positive"  
+**Date**: 2026-05-22 (session 37)  
+**Commit**: 7a55f7d — "fix: restore sidebar toggle with pure CSS (remove broken JS approach)"  
 **Branch**: master → Streamlit Cloud (auto-deploy)
 
 ---
@@ -21,6 +21,28 @@
 **Note Kaplan** : 68 explications corrigées en session 18 (verbatim PDF, matching 100%). 3649 déjà correctes.
 
 **Audit cmd**: `python scripts/audit_questions.py`
+
+---
+
+## Travaux terminés (session 37)
+
+### ✅ Fix toggle sidebar — CSS pur, sélecteur corrigé (commit 7a55f7d)
+
+**Problème** : Après avoir masqué le header avec `visibility: hidden`, le bouton toggle de la sidebar (affiché quand la sidebar est fermée) restait invisible. Plusieurs tentatives JavaScript avaient échoué (potentiellement bloquées par la CSP de Streamlit Cloud).
+
+**Cause racine identifiée** : Dans Streamlit 1.38, le `data-testid="stSidebarCollapsedControl"` est sur un **div wrapper**, pas sur le `<button>`. Toutes les tentatives précédentes utilisaient `button[data-testid="stSidebarCollapsedControl"]` — sélecteur qui ne correspondait jamais.
+
+**Corrections** :
+1. **`src/styles.py`** — Suppression de `_hide_toolbar_js()` (et import `streamlit.components.v1`) — l'approche JS est moins fiable que CSS dans ce contexte.
+2. **CSS ajouté** : sélecteur sans préfixe d'élément + règle `*` pour les descendants :
+```css
+[data-testid="stSidebarCollapsedControl"],
+[data-testid="stSidebarCollapsedControl"] * {
+    visibility: visible !important;
+    pointer-events: auto !important;
+}
+```
+Le sélecteur `*` est crucial : il rétablit la visibilité du `<button>` et du SVG intérieur qui héritaient `visibility: hidden` du header.
 
 ---
 
