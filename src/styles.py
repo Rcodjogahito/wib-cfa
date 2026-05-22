@@ -767,60 +767,99 @@ def inject_styles():
 
 def _hide_toolbar_js():
     """
-    Hide the Streamlit Cloud toolbar (Fork / Favourite / Share) and re-inject
-    the sidebar toggle at a user-facing position via same-origin iframe JS.
+    Hide the Streamlit Cloud toolbar (Fork / Favourite / Share) and expose
+    the sidebar reopen toggle at a fixed position below the toolbar zone.
 
-    Strategy: make the entire header invisible (visibility:hidden, not
-    display:none so the layout slot is preserved), then pull out the first
-    button inside the header — that is the sidebar collapse/expand toggle —
-    and re-attach it as a position:fixed element below the header zone.
+    Key invariant: the sidebar reopen toggle only exists in the header when
+    the sidebar is CLOSED. When the sidebar is OPEN the toggle lives inside
+    the sidebar itself, and btn[0] in the header becomes a Fork/Share button.
+    We must check sidebar state before touching any button, otherwise the
+    MutationObserver re-fires after every sidebar interaction and repositions
+    the wrong button.
     """
     _components.html(
         """
         <script>
         (function() {
-            var plog = function() {
-                try { window.parent.console.log.apply(window.parent.console, arguments); } catch(e) {}
-            };
+            var _timer = null;
+
             function fix() {
                 try {
                     var doc = window.parent.document;
                     var header = doc.querySelector('header[data-testid="stHeader"]');
-                    if (!header) { plog('[WIB] no header yet'); return; }
+                    if (!header) return;
 
-                    // Ensure the whole header stays invisible
+                    // Step 1 — always keep the whole header invisible.
                     header.style.setProperty('visibility', 'hidden', 'important');
 
-                    // First button inside the header = sidebar collapse/expand toggle
-                    var buttons = header.querySelectorAll('button');
-                    plog('[WIB] buttons in header:', buttons.length);
-                    if (buttons.length === 0) return;
+                    // Step 2 — determine whether the sidebar is currently open.
+                    // The sidebar element is always in the DOM; its width collapses to 0
+                    // (or near 0) when it is closed.
+                    var sidebar = doc.querySelector('section[data-testid="stSidebar"]');
+                    var sidebarOpen = sidebar && sidebar.getBoundingClientRect().width > 80;
 
-                    var toggle = buttons[0];
-                    // Re-position the toggle below the toolbar area, toward sidebar center
-                    toggle.style.setProperty('position', 'fixed', 'important');
-                    toggle.style.setProperty('top', '6rem', 'important');
-                    toggle.style.setProperty('left', '3.5rem', 'important');
-                    toggle.style.setProperty('z-index', '2147483647', 'important');
-                    toggle.style.setProperty('visibility', 'visible', 'important');
-                    toggle.style.setProperty('pointer-events', 'auto', 'important');
+                    if (sidebarOpen) {
+                        // Sidebar is open: the reopen toggle is inside the sidebar, NOT in
+                        // the header. btn[0] in the header is a Fork/Share button — do not
+                        // touch it. Nothing more to do.
+                        return;
+                    }
 
-                    // Make all descendants visible too (visibility is inherited).
-                    // Do NOT walk up ancestors — sibling toolbar buttons (Fork/Share)
-                    // share the same parent; making the parent visible would expose them.
-                    // A child visibility:visible already overrides a parent visibility:hidden.
-                    var desc = toggle.querySelectorAll('*');
+                    // Step 3 — sidebar is closed: find the reopen toggle.
+                    // Priority 1: look for the Streamlit-specific container testid.
+                    var toggleEl = null;
+                    var container = header.querySelector('[data-testid="stSidebarCollapsedControl"]');
+                    if (container) {
+                        toggleEl = container.querySelector('button') || container;
+                    }
+
+                    // Priority 2: leftmost button in the header (toggle is always left-
+                    // aligned; Fork/Share buttons are right-aligned at x > 500px).
+                    if (!toggleEl) {
+                        var btns = header.querySelectorAll('button');
+                        var best = null, bestX = Infinity;
+                        for (var i = 0; i < btns.length; i++) {
+                            var x = btns[i].getBoundingClientRect().left;
+                            if (x < bestX) { bestX = x; best = btns[i]; }
+                        }
+                        // Only accept a button that is genuinely on the left side.
+                        if (best && bestX < 300) toggleEl = best;
+                    }
+
+                    if (!toggleEl) return;  // No toggle found — leave as-is.
+
+                    // Step 4 — reposition the toggle to a visible, usable location.
+                    toggleEl.style.setProperty('position', 'fixed', 'important');
+                    toggleEl.style.setProperty('top', '6rem', 'important');
+                    toggleEl.style.setProperty('left', '3.5rem', 'important');
+                    toggleEl.style.setProperty('z-index', '2147483647', 'important');
+                    toggleEl.style.setProperty('visibility', 'visible', 'important');
+                    toggleEl.style.setProperty('pointer-events', 'auto', 'important');
+
+                    // Make all descendants visible (visibility is inherited from header).
+                    // We do NOT walk up to ancestors — siblings (Fork/Share) share the
+                    // same parent and would inherit visibility:visible from it.
+                    var desc = toggleEl.querySelectorAll('*');
                     for (var i = 0; i < desc.length; i++) {
                         desc[i].style.setProperty('visibility', 'visible', 'important');
                         desc[i].style.setProperty('pointer-events', 'auto', 'important');
                     }
-                } catch(e) { plog('[WIB] error:', e.message); }
+                } catch(e) {}
             }
-            // Run at several delays to catch Streamlit's deferred rendering
+
+            // Debounced wrapper — coalesces rapid MutationObserver callbacks
+            // that occur during sidebar open/close animations.
+            function schedule() {
+                if (_timer) clearTimeout(_timer);
+                _timer = setTimeout(fix, 150);
+            }
+
+            // Initial runs to catch Streamlit's deferred rendering.
             [100, 400, 900, 2000, 4000].forEach(function(d) { setTimeout(fix, d); });
-            // Also re-run on any DOM mutation (re-renders)
+
+            // Re-run on every DOM mutation (sidebar toggles, page navigations).
             try {
-                new MutationObserver(function() { setTimeout(fix, 80); }).observe(
+                new MutationObserver(schedule).observe(
                     window.parent.document.body, { childList: true, subtree: true }
                 );
             } catch(e) {}
