@@ -781,8 +781,6 @@ def _hide_toolbar_js():
         """
         <script>
         (function() {
-            var _timer = null;
-
             function fix() {
                 try {
                     var doc = window.parent.document;
@@ -847,21 +845,29 @@ def _hide_toolbar_js():
                 } catch(e) {}
             }
 
-            // Debounced wrapper — coalesces rapid MutationObserver callbacks
-            // that occur during sidebar open/close animations.
+            // Two-timer scheduler: runs fix() at 100ms (instant changes) AND
+            // 600ms (after the ~300ms sidebar CSS transition finishes).
+            // A single debounce at 150ms fires mid-animation and sees the
+            // sidebar as still-open, so the toggle never gets repositioned.
             function schedule() {
-                if (_timer) clearTimeout(_timer);
-                _timer = setTimeout(fix, 150);
+                if (_t1) clearTimeout(_t1);
+                if (_t2) clearTimeout(_t2);
+                _t1 = setTimeout(fix, 100);
+                _t2 = setTimeout(fix, 600);
             }
+            var _t1 = null, _t2 = null;
 
             // Initial runs to catch Streamlit's deferred rendering.
             [100, 400, 900, 2000, 4000].forEach(function(d) { setTimeout(fix, d); });
 
-            // Re-run on every DOM mutation (sidebar toggles, page navigations).
+            // Watch for DOM mutations (buttons appear/disappear, page navigations).
             try {
-                new MutationObserver(schedule).observe(
-                    window.parent.document.body, { childList: true, subtree: true }
-                );
+                var obs = new MutationObserver(schedule);
+                obs.observe(window.parent.document.body, { childList: true, subtree: true });
+                // Also watch sidebar attributes — catches class/style changes at the
+                // end of the CSS open/close transition (no childList event fires then).
+                var sbEl = window.parent.document.querySelector('section[data-testid="stSidebar"]');
+                if (sbEl) obs.observe(sbEl, { attributes: true });
             } catch(e) {}
         })();
         </script>
