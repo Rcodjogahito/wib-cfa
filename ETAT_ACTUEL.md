@@ -1,8 +1,8 @@
 # ETAT ACTUEL — WIB CFA
 > Mis à jour automatiquement à la fin de chaque session Claude Code.
 
-**Date**: 2026-05-22 (session 38)  
-**Commit**: ca7341d — "fix(ui): two-timer schedule to survive sidebar CSS transition"  
+**Date**: 2026-05-22 (session 39)  
+**Commit**: f591aab — "chore: cache bust — force Streamlit Cloud redeploy (mobile FAB)"  
 **Branch**: master → Streamlit Cloud (auto-deploy)
 
 ---
@@ -21,6 +21,33 @@
 **Note Kaplan** : 68 explications corrigées en session 18 (verbatim PDF, matching 100%). 3649 déjà correctes.
 
 **Audit cmd**: `python scripts/audit_questions.py`
+
+---
+
+## Travaux terminés (session 39)
+
+### ✅ Toggle sidebar — FAB mobile ergonomique (commits c745716 + f591aab)
+
+**Problème** : Sur mobile, le toggle sidebar se superposait au texte lorsque l'utilisateur scrollait (position fixe dans la zone de lecture, `top:6rem left:3.5rem`).
+
+**Solution — FAB (Floating Action Button)** :
+- Détection viewport : `window.parent.innerWidth < 768` dans le JS de `_hide_toolbar_js()`
+- **Mobile** (`< 768px`) : toggle repositionné en bas à gauche, hors de la zone de lecture :
+  - `position:fixed; bottom:1.75rem; left:1rem`
+  - Circulaire : `width:44px; height:44px; border-radius:50%`
+  - Style navy/or : `background:#0C1D3A; color:#C9A84C`
+  - Box-shadow pour profondeur : `0 4px 14px rgba(7,20,38,0.22)`
+  - Touch target Apple HIG : 44×44px minimum
+- **Desktop** (`≥ 768px`) : inchangé — `top:6rem; left:3.5rem`
+
+**Bug déploiement** : Streamlit Cloud ne redéployait pas malgré le push de `c745716`. Cache bust `pytz>=2025.2` (commit `f591aab`) a forcé le rebuild.
+
+**Résultats vérification Playwright — Mobile iPhone 14 Pro (393×852) et Desktop (1440×900)** :
+- Desktop : toggle `top=96px left=58px` = 6rem×3.5rem ✅
+- Mobile FAB : `top=780px bottom=824px left=18px w=44px h=44px radius=50%` ✅
+- Scroll mobile : toggle reste fixe (`diff=0px`) ✅
+- Sidebar cycle : toggle disparaît à l'ouverture, réapparaît à la fermeture ✅
+- Fork/Share/Favourite : cachés sur les deux viewports ✅
 
 ---
 
