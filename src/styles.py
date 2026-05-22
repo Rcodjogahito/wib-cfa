@@ -804,17 +804,20 @@ def _hide_toolbar_js():
                     var header = doc.querySelector('header[data-testid="stHeader"]');
                     if (!header) return;
 
+                    /* Log to PARENT window console (not iframe console) */
+                    var plog = window.parent.console.log.bind(window.parent.console);
+
                     /* Log every data-testid inside the header */
                     var withId = header.querySelectorAll('[data-testid]');
                     var ids = [];
                     for (var k = 0; k < withId.length; k++) {
                         ids.push(withId[k].getAttribute('data-testid'));
                     }
-                    console.log('[WIB] header testids:', ids.length ? ids.join(' | ') : 'NONE');
+                    plog('[WIB] header testids:', ids.length ? ids.join(' | ') : 'NONE');
                     if (!ids.length) {
                         var ch = header.children;
                         for (var c = 0; c < ch.length; c++) {
-                            console.log('[WIB] header.child[' + c + ']:', ch[c].tagName,
+                            plog('[WIB] header.child[' + c + ']:', ch[c].tagName,
                                 ch[c].className.slice(0, 80));
                         }
                     }
@@ -825,15 +828,15 @@ def _hide_toolbar_js():
                         var el = header.querySelector(SELECTORS[i]);
                         if (el) {
                             toggle = el;
-                            console.log('[WIB] toggle via:', SELECTORS[i]);
+                            plog('[WIB] toggle via:', SELECTORS[i]);
                             break;
                         }
                     }
                     if (!toggle) {
                         toggle = header.querySelector('button');
-                        if (toggle) console.log('[WIB] toggle = first button fallback');
+                        if (toggle) plog('[WIB] toggle = first button fallback');
                     }
-                    if (!toggle) { console.log('[WIB] toggle NOT found'); return; }
+                    if (!toggle) { plog('[WIB] toggle NOT found'); return; }
 
                     /* Make toggle + all its descendants visible */
                     toggle.style.setProperty('visibility', 'visible', 'important');
@@ -850,7 +853,7 @@ def _hide_toolbar_js():
                         node.style.setProperty('pointer-events', 'auto', 'important');
                         node = node.parentElement;
                     }
-                } catch (e) { console.log('[WIB] err:', e.message); }
+                } catch (e) { try { window.parent.console.log('[WIB] err:', e.message); } catch (_) {} }
             }
 
             [100, 400, 900, 2000, 4000].forEach(function (d) { setTimeout(fix, d); });
