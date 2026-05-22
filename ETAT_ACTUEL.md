@@ -1,8 +1,8 @@
 # ETAT ACTUEL — WIB CFA
 > Mis à jour automatiquement à la fin de chaque session Claude Code.
 
-**Date**: 2026-05-22 (session 37)  
-**Commit**: 6a9322e — "fix: replace header visibility:hidden with positioned overlay div"  
+**Date**: 2026-05-22 (session 38)  
+**Commit**: 0903933 — "fix(ui): replace overlay with JS to hide toolbar and reposition toggle"  
 **Branch**: master → Streamlit Cloud (auto-deploy)
 
 ---
@@ -21,6 +21,22 @@
 **Note Kaplan** : 68 explications corrigées en session 18 (verbatim PDF, matching 100%). 3649 déjà correctes.
 
 **Audit cmd**: `python scripts/audit_questions.py`
+
+---
+
+## Travaux terminés (session 38)
+
+### ✅ Toggle sidebar repositionné + Fork/Share/Favourite masqués (commit 0903933)
+
+**Problème** : Le toggle sidebar apparaissait mais les boutons Fork/Share/Favourite étaient aussi visibles.
+
+**Solution** :
+- CSS `header[data-testid="stHeader"] { visibility: hidden !important; }` masque tout le toolbar
+- Fonction `_hide_toolbar_js()` dans `styles.py` injecte un script via `st.components.v1.html` (iframe same-origin)
+- Le script récupère `header.querySelectorAll('button')[0]` (premier bouton = toggle) sans dépendre de `data-testid`
+- Toggle repositionné en `position:fixed; top:6rem; left:3.5rem; z-index:2147483647` — plus bas et plus vers le centre de la sidebar
+- Tous les descendants du toggle et ses ancêtres remontent à `visibility:visible`
+- `pytz>=2025.3` (cache bust) force la reconstruction complète de l'environnement Streamlit Cloud
 
 ---
 
