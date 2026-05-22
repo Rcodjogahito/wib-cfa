@@ -40,6 +40,24 @@ def inject_styles():
         #MainMenu                        { display: none !important; }
         footer                           { display: none !important; }
 
+        /* Sidebar toggle — pulled out of the header stacking context and
+           repositioned below the toolbar row, slightly inset from the edge.
+           z-index 2147483647 (CSS max) places it above the toolbar mask. */
+        [data-testid="stSidebarCollapsedControl"],
+        [data-testid="stSidebarCollapseButton"],
+        [data-testid="collapsedControl"] {
+            position: fixed !important;
+            top: 4.25rem !important;
+            left: 1.5rem !important;
+            z-index: 2147483647 !important;
+        }
+        [data-testid="stSidebarCollapsedControl"] *,
+        [data-testid="stSidebarCollapseButton"] *,
+        [data-testid="collapsedControl"] * {
+            visibility: visible !important;
+            pointer-events: auto !important;
+        }
+
         /* ── Fonts ─────────────────────────────────────────────────────── */
         @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap');
 
@@ -764,11 +782,11 @@ def inject_styles():
         <div id="wib-toolbar-mask" style="
             position:fixed;
             top:0;
-            left:3rem;
+            left:0;
             right:0;
-            height:3.75rem;
+            height:4rem;
             background:#FAFBFC;
-            z-index:99999;
+            z-index:2147483646;
         "></div>
         """,
         unsafe_allow_html=True,
