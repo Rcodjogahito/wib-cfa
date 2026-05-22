@@ -826,13 +826,42 @@ def _hide_toolbar_js():
 
                     if (!toggleEl) return;  // No toggle found — leave as-is.
 
-                    // Step 4 — reposition the toggle to a visible, usable location.
+                    // Step 4 — reposition the toggle.
+                    // On mobile (viewport < 768 px) the toggle sits at the bottom-left
+                    // as a FAB: it stays below the readable content and is reachable
+                    // with the thumb.  On desktop it stays just below the toolbar zone.
+                    var isMobile = window.parent.innerWidth < 768;
                     toggleEl.style.setProperty('position', 'fixed', 'important');
-                    toggleEl.style.setProperty('top', '6rem', 'important');
-                    toggleEl.style.setProperty('left', '3.5rem', 'important');
                     toggleEl.style.setProperty('z-index', '2147483647', 'important');
                     toggleEl.style.setProperty('visibility', 'visible', 'important');
                     toggleEl.style.setProperty('pointer-events', 'auto', 'important');
+
+                    if (isMobile) {
+                        toggleEl.style.setProperty('top',    'auto',    'important');
+                        toggleEl.style.setProperty('bottom', '1.75rem', 'important');
+                        toggleEl.style.setProperty('left',   '1rem',    'important');
+                        toggleEl.style.setProperty('right',  'auto',    'important');
+                        // FAB styling: circular, elevated — matches standard mobile UX
+                        toggleEl.style.setProperty('width',         '44px',   'important');
+                        toggleEl.style.setProperty('height',        '44px',   'important');
+                        toggleEl.style.setProperty('min-height',    '44px',   'important');
+                        toggleEl.style.setProperty('border-radius', '50%',    'important');
+                        toggleEl.style.setProperty('box-shadow',
+                            '0 4px 14px rgba(7,20,38,0.22), 0 1px 4px rgba(7,20,38,0.14)',
+                            'important');
+                        toggleEl.style.setProperty('background', '#0C1D3A', 'important');
+                        toggleEl.style.setProperty('border',     'none',    'important');
+                        toggleEl.style.setProperty('padding',    '0',       'important');
+                        toggleEl.style.setProperty('display',    'flex',    'important');
+                        toggleEl.style.setProperty('align-items',     'center', 'important');
+                        toggleEl.style.setProperty('justify-content', 'center', 'important');
+                        toggleEl.style.setProperty('color', '#C9A84C', 'important');
+                    } else {
+                        toggleEl.style.setProperty('top',    '6rem',   'important');
+                        toggleEl.style.setProperty('bottom', 'auto',   'important');
+                        toggleEl.style.setProperty('left',   '3.5rem', 'important');
+                        toggleEl.style.setProperty('right',  'auto',   'important');
+                    }
 
                     // Make all descendants visible (visibility is inherited from header).
                     // We do NOT walk up to ancestors — siblings (Fork/Share) share the
@@ -841,6 +870,9 @@ def _hide_toolbar_js():
                     for (var i = 0; i < desc.length; i++) {
                         desc[i].style.setProperty('visibility', 'visible', 'important');
                         desc[i].style.setProperty('pointer-events', 'auto', 'important');
+                        if (isMobile) {
+                            desc[i].style.setProperty('color', '#C9A84C', 'important');
+                        }
                     }
                 } catch(e) {}
             }
