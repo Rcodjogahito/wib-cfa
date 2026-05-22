@@ -2,7 +2,7 @@
 > Mis à jour automatiquement à la fin de chaque session Claude Code.
 
 **Date**: 2026-05-22 (session 37)  
-**Commit**: 7a55f7d — "fix: restore sidebar toggle with pure CSS (remove broken JS approach)"  
+**Commit**: 6a9322e — "fix: replace header visibility:hidden with positioned overlay div"  
 **Branch**: master → Streamlit Cloud (auto-deploy)
 
 ---
@@ -32,17 +32,21 @@
 
 **Cause racine identifiée** : Dans Streamlit 1.38, le `data-testid="stSidebarCollapsedControl"` est sur un **div wrapper**, pas sur le `<button>`. Toutes les tentatives précédentes utilisaient `button[data-testid="stSidebarCollapsedControl"]` — sélecteur qui ne correspondait jamais.
 
-**Corrections** :
-1. **`src/styles.py`** — Suppression de `_hide_toolbar_js()` (et import `streamlit.components.v1`) — l'approche JS est moins fiable que CSS dans ce contexte.
-2. **CSS ajouté** : sélecteur sans préfixe d'élément + règle `*` pour les descendants :
-```css
-[data-testid="stSidebarCollapsedControl"],
-[data-testid="stSidebarCollapsedControl"] * {
-    visibility: visible !important;
-    pointer-events: auto !important;
-}
+**Diagnostique** : La console du navigateur a montré que le JS de l'iframe est bloqué par SES (Secure EcmaScript, injecté par une extension navigateur). Aucune ligne `[WIB]` visible → l'approche JS est impossible dans cet environnement.
+
+**Solution définitive (commit 6a9322e)** — Approche overlay sans CSS de header, sans JS, sans data-testid :
+1. **Supprimer** toute manipulation `visibility` sur le header
+2. **Injecter une div fixe** via `st.markdown` qui recouvre la zone toolbar :
+```html
+<div id="wib-toolbar-mask" style="
+    position:fixed; top:0; left:3rem; right:0; height:3.75rem;
+    background:#FAFBFC; z-index:99999;
+"></div>
 ```
-Le sélecteur `*` est crucial : il rétablit la visibilité du `<button>` et du SVG intérieur qui héritaient `visibility: hidden` du header.
+- `left:3rem` : laisse les ~48px du toggle visible à gauche
+- `background:#FAFBFC` : couleur identique au fond de l'app → overlay invisible pour l'utilisateur  
+- `z-index:99999` : au-dessus du header de Streamlit Cloud
+- Le toggle sidebar (extrême gauche) reste naturellement visible et cliquable
 
 ---
 
