@@ -2,7 +2,7 @@
 > Mis à jour automatiquement à la fin de chaque session Claude Code.
 
 **Date**: 2026-05-22 (session 38)  
-**Commit**: 5c1b372 — "fix(ui): remove ancestor walk that leaked visibility to Fork/Share buttons"  
+**Commit**: ca7341d — "fix(ui): two-timer schedule to survive sidebar CSS transition"  
 **Branch**: master → Streamlit Cloud (auto-deploy)
 
 ---
@@ -40,13 +40,13 @@
 
 **Bug corrigé (commit 5c1b372)** : La boucle ancestor walk rendait les conteneurs parents `visibility:visible`, propageant la visibilité par héritage CSS aux boutons Fork/Share siblings. Suppression du walk — un enfant avec `visibility:visible` override déjà un parent `visibility:hidden` en CSS.
 
-**Résultats vérification Playwright (2026-05-22)** :
-- Header `visibility:hidden` ✅
-- btn[0] (toggle) : `pos=fixed top=96px left=58px vis=visible z=2147483647` ✅
-- btn[1] (Fork/GitHub) : `vis=hidden` ✅
-- Login Sam/to → Initial Diagnostic ✅
-- Toutes les pages : Study Notes, Quiz, Flashcards, Progress, Exam Simulator ✅
-- Aucun bouton toolbar visible dans aucun screenshot ✅
+**Bug supplémentaire (ca7341d)** : debounce 150ms trop court — fix() se déclenchait pendant l'animation CSS (~300ms), voyait sidebar encore "ouverte" et retournait sans repositionner. Fix : deux timers (100ms + 600ms) + observation attributs sidebar.
+
+**Résultats vérification Playwright — 6 cycles open/close (2026-05-22)** :
+- Header `visibility:hidden` dans tous les états ✅
+- Sidebar OPEN : btn[0] (Fork) `vis=hidden`, toolbar zone vide ✅
+- Sidebar CLOSED : toggle `vis=visible top=96px left=58px`, Fork/GitHub `vis=hidden` ✅
+- Cycles répétés (open/closed ×3, pages Quiz + Flashcards) : tous PASS ✅
 
 ---
 
