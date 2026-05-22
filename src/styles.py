@@ -4,7 +4,6 @@ Call inject_styles() at the top of every page.
 """
 
 import streamlit as st
-import streamlit.components.v1 as _components
 
 
 # ── Question rendering helpers ────────────────────────────────────────────────
@@ -40,24 +39,6 @@ def inject_styles():
         [data-testid="stDecoration"]     { display: none !important; }
         #MainMenu                        { display: none !important; }
         footer                           { display: none !important; }
-
-        /* Hide Streamlit Cloud toolbar (Fork / Star / Share bar).
-           visibility:hidden is used instead of display:none so that
-           child elements can override it with visibility:visible. */
-        header[data-testid="stHeader"] {
-            visibility: hidden !important;
-        }
-
-        /* Restore sidebar toggle — shotgun selectors across Streamlit versions */
-        [data-testid="stSidebarCollapsedControl"],
-        [data-testid="stSidebarCollapsedControl"] *,
-        [data-testid="stSidebarCollapseButton"],
-        [data-testid="stSidebarCollapseButton"] *,
-        [data-testid="collapsedControl"],
-        [data-testid="collapsedControl"] * {
-            visibility: visible !important;
-            pointer-events: auto !important;
-        }
 
         /* ── Fonts ─────────────────────────────────────────────────────── */
         @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap');
@@ -773,100 +754,24 @@ def inject_styles():
         """,
         unsafe_allow_html=True,
     )
-    _hide_toolbar_js()
-
-
-def _hide_toolbar_js():
-    """Re-show sidebar toggle hidden by the header visibility:hidden rule.
-
-    Logs all data-testid values found inside the header to the browser
-    console ([WIB] prefix) so we can identify the correct selector if
-    the current ones don't match.
-    """
-    _components.html(
+    # Overlay that covers the Streamlit Cloud toolbar (Fork/Favourite/Share)
+    # while leaving the sidebar toggle (leftmost ~3rem) untouched.
+    # This approach is data-testid-agnostic and requires no JavaScript.
+    # The overlay is position:fixed above the header (z-index:99999) and
+    # matches the app background so it is visually seamless.
+    st.markdown(
         """
-        <script>
-        (function () {
-            var SELECTORS = [
-                '[data-testid="stSidebarCollapsedControl"]',
-                '[data-testid="stSidebarCollapseButton"]',
-                '[data-testid="collapsedControl"]',
-                'button[aria-expanded]',
-                'button[aria-label*="sidebar"]',
-                'button[aria-label*="Sidebar"]',
-                'button[aria-label*="open"]',
-                'button[aria-label*="Open"]'
-            ];
-
-            function fix() {
-                try {
-                    var doc = window.parent.document;
-                    var header = doc.querySelector('header[data-testid="stHeader"]');
-                    if (!header) return;
-
-                    /* Log to PARENT window console (not iframe console) */
-                    var plog = window.parent.console.log.bind(window.parent.console);
-
-                    /* Log every data-testid inside the header */
-                    var withId = header.querySelectorAll('[data-testid]');
-                    var ids = [];
-                    for (var k = 0; k < withId.length; k++) {
-                        ids.push(withId[k].getAttribute('data-testid'));
-                    }
-                    plog('[WIB] header testids:', ids.length ? ids.join(' | ') : 'NONE');
-                    if (!ids.length) {
-                        var ch = header.children;
-                        for (var c = 0; c < ch.length; c++) {
-                            plog('[WIB] header.child[' + c + ']:', ch[c].tagName,
-                                ch[c].className.slice(0, 80));
-                        }
-                    }
-
-                    /* Find the sidebar toggle */
-                    var toggle = null;
-                    for (var i = 0; i < SELECTORS.length; i++) {
-                        var el = header.querySelector(SELECTORS[i]);
-                        if (el) {
-                            toggle = el;
-                            plog('[WIB] toggle via:', SELECTORS[i]);
-                            break;
-                        }
-                    }
-                    if (!toggle) {
-                        toggle = header.querySelector('button');
-                        if (toggle) plog('[WIB] toggle = first button fallback');
-                    }
-                    if (!toggle) { plog('[WIB] toggle NOT found'); return; }
-
-                    /* Make toggle + all its descendants visible */
-                    toggle.style.setProperty('visibility', 'visible', 'important');
-                    toggle.style.setProperty('pointer-events', 'auto', 'important');
-                    var desc = toggle.querySelectorAll('*');
-                    for (var j = 0; j < desc.length; j++) {
-                        desc[j].style.setProperty('visibility', 'visible', 'important');
-                        desc[j].style.setProperty('pointer-events', 'auto', 'important');
-                    }
-                    /* Walk ancestors up to (but not including) header */
-                    var node = toggle.parentElement;
-                    while (node && node !== header) {
-                        node.style.setProperty('visibility', 'visible', 'important');
-                        node.style.setProperty('pointer-events', 'auto', 'important');
-                        node = node.parentElement;
-                    }
-                } catch (e) { try { window.parent.console.log('[WIB] err:', e.message); } catch (_) {} }
-            }
-
-            [100, 400, 900, 2000, 4000].forEach(function (d) { setTimeout(fix, d); });
-            try {
-                new MutationObserver(function () { setTimeout(fix, 80); }).observe(
-                    window.parent.document.body, { childList: true, subtree: true }
-                );
-            } catch (e) {}
-        })();
-        </script>
+        <div id="wib-toolbar-mask" style="
+            position:fixed;
+            top:0;
+            left:3rem;
+            right:0;
+            height:3.75rem;
+            background:#FAFBFC;
+            z-index:99999;
+        "></div>
         """,
-        height=0,
-        scrolling=False,
+        unsafe_allow_html=True,
     )
 
 
