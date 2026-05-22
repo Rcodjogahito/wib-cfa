@@ -4,6 +4,7 @@ Call inject_styles() at the top of every page.
 """
 
 import streamlit as st
+import streamlit.components.v1 as _components
 
 
 # ── Question rendering helpers ────────────────────────────────────────────────
@@ -40,22 +41,11 @@ def inject_styles():
         #MainMenu                        { display: none !important; }
         footer                           { display: none !important; }
 
-        /* Sidebar toggle — pulled out of the header stacking context and
-           repositioned below the toolbar row, slightly inset from the edge.
-           z-index 2147483647 (CSS max) places it above the toolbar mask. */
-        [data-testid="stSidebarCollapsedControl"],
-        [data-testid="stSidebarCollapseButton"],
-        [data-testid="collapsedControl"] {
-            position: fixed !important;
-            top: 4.25rem !important;
-            left: 1.5rem !important;
-            z-index: 2147483647 !important;
-        }
-        [data-testid="stSidebarCollapsedControl"] *,
-        [data-testid="stSidebarCollapseButton"] *,
-        [data-testid="collapsedControl"] * {
-            visibility: visible !important;
-            pointer-events: auto !important;
+        /* Hide the entire header (Fork / Favourite / Share toolbar).
+           visibility:hidden keeps the layout space so children can override.
+           The JS below extracts the sidebar toggle and re-positions it. */
+        header[data-testid="stHeader"] {
+            visibility: hidden !important;
         }
 
         /* ── Fonts ─────────────────────────────────────────────────────── */
@@ -772,24 +762,77 @@ def inject_styles():
         """,
         unsafe_allow_html=True,
     )
-    # Overlay that covers the Streamlit Cloud toolbar (Fork/Favourite/Share)
-    # while leaving the sidebar toggle (leftmost ~3rem) untouched.
-    # This approach is data-testid-agnostic and requires no JavaScript.
-    # The overlay is position:fixed above the header (z-index:99999) and
-    # matches the app background so it is visually seamless.
-    st.markdown(
+    _hide_toolbar_js()
+
+
+def _hide_toolbar_js():
+    """
+    Hide the Streamlit Cloud toolbar (Fork / Favourite / Share) and re-inject
+    the sidebar toggle at a user-facing position via same-origin iframe JS.
+
+    Strategy: make the entire header invisible (visibility:hidden, not
+    display:none so the layout slot is preserved), then pull out the first
+    button inside the header — that is the sidebar collapse/expand toggle —
+    and re-attach it as a position:fixed element below the header zone.
+    """
+    _components.html(
         """
-        <div id="wib-toolbar-mask" style="
-            position:fixed;
-            top:0;
-            left:0;
-            right:0;
-            height:4rem;
-            background:#FAFBFC;
-            z-index:2147483646;
-        "></div>
+        <script>
+        (function() {
+            var plog = function() {
+                try { window.parent.console.log.apply(window.parent.console, arguments); } catch(e) {}
+            };
+            function fix() {
+                try {
+                    var doc = window.parent.document;
+                    var header = doc.querySelector('header[data-testid="stHeader"]');
+                    if (!header) { plog('[WIB] no header yet'); return; }
+
+                    // Ensure the whole header stays invisible
+                    header.style.setProperty('visibility', 'hidden', 'important');
+
+                    // First button inside the header = sidebar collapse/expand toggle
+                    var buttons = header.querySelectorAll('button');
+                    plog('[WIB] buttons in header:', buttons.length);
+                    if (buttons.length === 0) return;
+
+                    var toggle = buttons[0];
+                    // Re-position the toggle below the toolbar area, toward sidebar center
+                    toggle.style.setProperty('position', 'fixed', 'important');
+                    toggle.style.setProperty('top', '6rem', 'important');
+                    toggle.style.setProperty('left', '3.5rem', 'important');
+                    toggle.style.setProperty('z-index', '2147483647', 'important');
+                    toggle.style.setProperty('visibility', 'visible', 'important');
+                    toggle.style.setProperty('pointer-events', 'auto', 'important');
+
+                    // Make all descendants visible too (visibility is inherited)
+                    var desc = toggle.querySelectorAll('*');
+                    for (var i = 0; i < desc.length; i++) {
+                        desc[i].style.setProperty('visibility', 'visible', 'important');
+                        desc[i].style.setProperty('pointer-events', 'auto', 'important');
+                    }
+                    // Walk up from toggle to header and un-hide each ancestor
+                    var node = toggle.parentElement;
+                    while (node && node !== header) {
+                        node.style.setProperty('visibility', 'visible', 'important');
+                        node.style.setProperty('pointer-events', 'auto', 'important');
+                        node = node.parentElement;
+                    }
+                } catch(e) { plog('[WIB] error:', e.message); }
+            }
+            // Run at several delays to catch Streamlit's deferred rendering
+            [100, 400, 900, 2000, 4000].forEach(function(d) { setTimeout(fix, d); });
+            // Also re-run on any DOM mutation (re-renders)
+            try {
+                new MutationObserver(function() { setTimeout(fix, 80); }).observe(
+                    window.parent.document.body, { childList: true, subtree: true }
+                );
+            } catch(e) {}
+        })();
+        </script>
         """,
-        unsafe_allow_html=True,
+        height=0,
+        scrolling=False,
     )
 
 
