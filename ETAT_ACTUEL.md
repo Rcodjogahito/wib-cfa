@@ -1,8 +1,8 @@
 # ETAT ACTUEL — WIB CFA
 > Mis à jour automatiquement à la fin de chaque session Claude Code.
 
-**Date**: 2026-05-23 (session 41)  
-**Commit**: 6211be02 — feat: quiz persistence, question diversity, streak & exam date  
+**Date**: 2026-05-23 (session 42)  
+**Commit**: 0852e38e — fix: prevent mobile disconnect — SameSite=Lax + 60s keepalive fragment + CDN health ping  
 **Branch**: master → Streamlit Cloud (auto-deploy)
 
 ---
@@ -24,6 +24,28 @@
 **Note correct_answer** : 126 incohérences détectées par audit NLP (session 40) et corrigées directement dans Supabase.
 
 **Audit cmd**: `python scripts/audit_questions.py`
+
+---
+
+## Travaux terminés (session 42)
+
+### ✅ Fix déconnexion mobile — SameSite=Lax + keepalive fragment (commit 0852e38e)
+
+**Problème** : Utilisateur déconnecté après quelques secondes/minutes d'inactivité sur mobile — ramené sur la page de login.
+
+**Causes racines identifiées :**
+1. **`SameSite=Strict`** sur le cookie `wib_uid` — bloque la transmission du cookie lors d'une navigation cross-site (ex. lien depuis email → `wib-cfa.streamlit.app`). La nouvelle session WebSocket ne voyait pas le cookie → login form.
+2. **Idle timeout WebSocket** — Streamlit Cloud ferme les connexions WebSocket inactives. Sur mobile, les navigateurs (iOS Safari, Chrome Android) suspendent JS aggressivement, arrêtant le heartbeat Streamlit natif.
+
+**Corrections apportées — `src/auth.py` :**
+- `SameSite=Strict` → **`SameSite=Lax`** dans `_write_cookie()` et `_erase_cookie()`. `Lax` permet le cookie sur les navigations top-level cross-site (clicks de liens), tout en bloquant les requests tiers (sécurité préservée).
+- Cookie écrit dans **deux contextes** : `window.parent.document.cookie` (page principale Streamlit) ET `document.cookie` (iframe composant) — couvre les cas où l'iframe est ou n'est pas de même origine.
+- **`@st.fragment(run_every=60)`** : fragment keepalive déclenché toutes les 60 secondes, envoie un message sur le WebSocket → maintient la session côté serveur Streamlit Cloud vivante. Jamais plus de 60s de silence côté serveur. Déclenché une seule fois par session (`_ka_started` flag) depuis `require_auth()`.
+
+**Correction apportée — `src/styles.py` :**
+- **Health ping toutes les 4 minutes** : `setInterval fetch('/_stcore/health')` injecté dans `_hide_toolbar_js()` — empêche les proxies/CDN de fermer la connexion HTTP idle.
+
+**Résultat attendu** : Aucune déconnexion tant que la page est active (fragment keepalive actif). Sur reconnexion après mise en background, le cookie `SameSite=Lax` est correctement lu → restauration silencieuse.
 
 ---
 
