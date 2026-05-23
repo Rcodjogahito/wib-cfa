@@ -368,7 +368,9 @@ class Database:
                             .execute())
                 sessions = [
                     s for s in (sess_res.data or [])
-                    if s.get("session_type") not in ("diag_progress", "leitner_state")
+                    if s.get("session_type") not in (
+                        "diag_progress", "leitner_state", "quiz_progress", "exam_date_pref"
+                    )
                 ]
             except Exception:
                 sessions = []
@@ -471,22 +473,30 @@ class Database:
                 q = self.sb.table("questions").select("*").eq("topic", topic)
                 if difficulty and difficulty != "All":
                     q = q.eq("difficulty", difficulty.lower())
-                data = q.limit(fetch_n).execute().data or []
+                rand_off = _r.randint(0, 100)
+                data = q.range(rand_off, rand_off + fetch_n - 1).execute().data or []
+                if not data:
+                    q2 = self.sb.table("questions").select("*").eq("topic", topic)
+                    if difficulty and difficulty != "All":
+                        q2 = q2.eq("difficulty", difficulty.lower())
+                    data = q2.range(0, fetch_n - 1).execute().data or []
             else:
-                # Single query, then group by topic for proportional sampling.
-                # Avoids N+1 (10 serial calls). Fetch a generous pool then sample.
+                # Per-topic queries with random offsets — covers the full 7k+ question bank,
+                # not just the first insertion-order batch.
                 per_topic = max(min((n or 30) // len(self._ALL_TOPICS) * 4, 60), 20)
-                q = self.sb.table("questions").select("*")
-                if difficulty and difficulty != "All":
-                    q = q.eq("difficulty", difficulty.lower())
-                pool = q.limit(min(per_topic * len(self._ALL_TOPICS) * 2, 2000)).execute().data or []
-                from collections import defaultdict as _dd
-                by_topic: dict = _dd(list)
-                for row in pool:
-                    by_topic[row["topic"]].append(row)
+                fetch_per = per_topic * 3
                 data = []
                 for t in self._ALL_TOPICS:
-                    rows = by_topic.get(t, [])
+                    rand_off = _r.randint(0, 100)
+                    _q = self.sb.table("questions").select("*").eq("topic", t)
+                    if difficulty and difficulty != "All":
+                        _q = _q.eq("difficulty", difficulty.lower())
+                    rows = _q.range(rand_off, rand_off + fetch_per - 1).execute().data or []
+                    if not rows:
+                        _q2 = self.sb.table("questions").select("*").eq("topic", t)
+                        if difficulty and difficulty != "All":
+                            _q2 = _q2.eq("difficulty", difficulty.lower())
+                        rows = _q2.range(0, fetch_per - 1).execute().data or []
                     _r.shuffle(rows)
                     data.extend(rows[:per_topic])
         else:
@@ -622,11 +632,14 @@ class Database:
         return sid
 
     def get_sessions(self, user_id: str) -> List[Dict]:
+        _HIDDEN = ("diag_progress", "leitner_state", "quiz_progress", "exam_date_pref")
         if self.sb:
             res = (self.sb.table("user_sessions").select("*")
                    .eq("user_id", user_id)
                    .neq("session_type", "diag_progress")
                    .neq("session_type", "leitner_state")
+                   .neq("session_type", "quiz_progress")
+                   .neq("session_type", "exam_date_pref")
                    .order("completed_at", desc=True)
                    .execute())
             return res.data or []
@@ -634,7 +647,7 @@ class Database:
         cur = conn.cursor()
         cur.execute(
             "SELECT * FROM user_sessions WHERE user_id=? "
-            "AND session_type NOT IN ('diag_progress','leitner_state') "
+            "AND session_type NOT IN ('diag_progress','leitner_state','quiz_progress','exam_date_pref') "
             "ORDER BY completed_at DESC",
             (user_id,)
         )
@@ -867,6 +880,199 @@ class Database:
             )
             conn.commit()
             conn.close()
+
+    # ── Quiz progress (in-progress persistence) ───────────────────────────
+
+    def save_quiz_progress(self, user_id: str, quiz_idx: int, question_ids: list,
+                           quiz_answers: dict, quiz_start: float,
+                           quiz_topic: str, quiz_use_timer: bool) -> None:
+        """Persist in-progress quiz state. Insert-then-delete pattern."""
+        payload = json.dumps({
+            "quiz_idx": quiz_idx,
+            "question_ids": question_ids,
+            "quiz_answers": quiz_answers,
+            "quiz_start": quiz_start,
+            "quiz_topic": quiz_topic,
+            "quiz_use_timer": quiz_use_timer,
+        })
+        now = datetime.now(timezone.utc).isoformat()
+        new_id = str(uuid.uuid4())
+        if self.sb:
+            try:
+                self.sb.table("user_sessions").insert({
+                    "id": new_id,
+                    "user_id": user_id,
+                    "session_type": "quiz_progress",
+                    "topic": quiz_topic,
+                    "total_questions": len(question_ids),
+                    "correct_answers": len(quiz_answers),
+                    "score_pct": 0,
+                    "duration_sec": 0,
+                    "domain_scores_json": payload,
+                    "completed_at": now,
+                }).execute()
+                self.sb.table("user_sessions").delete().eq(
+                    "user_id", user_id
+                ).eq("session_type", "quiz_progress").neq("id", new_id).execute()
+            except Exception as e:
+                print(f"[WIB] save_quiz_progress error: {e}")
+        else:
+            conn = _get_sqlite()
+            conn.execute(
+                "DELETE FROM user_sessions WHERE user_id=? AND session_type='quiz_progress'",
+                (user_id,),
+            )
+            conn.execute(
+                """INSERT INTO user_sessions (id,user_id,session_type,topic,total_questions,
+                   correct_answers,score_pct,duration_sec,domain_scores_json,completed_at)
+                   VALUES (?,?,?,?,?,?,?,?,?,?)""",
+                (new_id, user_id, "quiz_progress", quiz_topic,
+                 len(question_ids), len(quiz_answers), 0, 0, payload, now),
+            )
+            conn.commit()
+            conn.close()
+
+    def load_quiz_progress(self, user_id: str) -> Optional[Dict]:
+        """Restore in-progress quiz. Returns None if no saved state."""
+        raw = None
+        if self.sb:
+            try:
+                res = (self.sb.table("user_sessions")
+                       .select("domain_scores_json")
+                       .eq("user_id", user_id)
+                       .eq("session_type", "quiz_progress")
+                       .order("completed_at", desc=True)
+                       .limit(1)
+                       .execute())
+                if res.data:
+                    raw = res.data[0]["domain_scores_json"]
+            except Exception as e:
+                print(f"[WIB] load_quiz_progress error: {e}")
+                return None
+        else:
+            conn = _get_sqlite()
+            cur = conn.cursor()
+            cur.execute(
+                """SELECT domain_scores_json FROM user_sessions
+                   WHERE user_id=? AND session_type='quiz_progress'
+                   ORDER BY completed_at DESC LIMIT 1""",
+                (user_id,),
+            )
+            row = cur.fetchone()
+            conn.close()
+            if row:
+                raw = row[0]
+
+        if not raw:
+            return None
+        try:
+            saved = json.loads(raw)
+        except Exception:
+            return None
+
+        question_ids = saved.get("question_ids", [])
+        if not question_ids:
+            return None
+        questions = self.get_questions_by_ids(question_ids)
+        if not questions:
+            return None
+        saved["quiz_questions"] = questions
+        return saved
+
+    def clear_quiz_progress(self, user_id: str) -> None:
+        """Remove saved quiz state (after completion or explicit discard)."""
+        if self.sb:
+            try:
+                self.sb.table("user_sessions").delete().eq(
+                    "user_id", user_id).eq("session_type", "quiz_progress").execute()
+            except Exception:
+                pass
+        else:
+            conn = _get_sqlite()
+            conn.execute(
+                "DELETE FROM user_sessions WHERE user_id=? AND session_type='quiz_progress'",
+                (user_id,),
+            )
+            conn.commit()
+            conn.close()
+
+    # ── Exam date preference ──────────────────────────────────────────────
+
+    def save_exam_date_pref(self, user_id: str, exam_date_str: str) -> None:
+        """Persist the user's target exam date (YYYY-MM-DD or '' to clear)."""
+        payload = json.dumps({"exam_date": exam_date_str})
+        now = datetime.now(timezone.utc).isoformat()
+        new_id = str(uuid.uuid4())
+        if self.sb:
+            try:
+                self.sb.table("user_sessions").insert({
+                    "id": new_id,
+                    "user_id": user_id,
+                    "session_type": "exam_date_pref",
+                    "topic": "prefs",
+                    "total_questions": 0,
+                    "correct_answers": 0,
+                    "score_pct": 0,
+                    "duration_sec": 0,
+                    "domain_scores_json": payload,
+                    "completed_at": now,
+                }).execute()
+                self.sb.table("user_sessions").delete().eq(
+                    "user_id", user_id
+                ).eq("session_type", "exam_date_pref").neq("id", new_id).execute()
+            except Exception as e:
+                print(f"[WIB] save_exam_date_pref error: {e}")
+        else:
+            conn = _get_sqlite()
+            conn.execute(
+                "DELETE FROM user_sessions WHERE user_id=? AND session_type='exam_date_pref'",
+                (user_id,),
+            )
+            conn.execute(
+                """INSERT INTO user_sessions (id,user_id,session_type,topic,total_questions,
+                   correct_answers,score_pct,duration_sec,domain_scores_json,completed_at)
+                   VALUES (?,?,?,?,?,?,?,?,?,?)""",
+                (new_id, user_id, "exam_date_pref", "prefs", 0, 0, 0, 0, payload, now),
+            )
+            conn.commit()
+            conn.close()
+
+    def load_exam_date_pref(self, user_id: str) -> Optional[str]:
+        """Return target exam date (YYYY-MM-DD) or None."""
+        raw = None
+        if self.sb:
+            try:
+                res = (self.sb.table("user_sessions")
+                       .select("domain_scores_json")
+                       .eq("user_id", user_id)
+                       .eq("session_type", "exam_date_pref")
+                       .order("completed_at", desc=True)
+                       .limit(1)
+                       .execute())
+                if res.data:
+                    raw = res.data[0]["domain_scores_json"]
+            except Exception:
+                return None
+        else:
+            conn = _get_sqlite()
+            cur = conn.cursor()
+            cur.execute(
+                """SELECT domain_scores_json FROM user_sessions
+                   WHERE user_id=? AND session_type='exam_date_pref'
+                   ORDER BY completed_at DESC LIMIT 1""",
+                (user_id,),
+            )
+            row = cur.fetchone()
+            conn.close()
+            if row:
+                raw = row[0]
+
+        if not raw:
+            return None
+        try:
+            return json.loads(raw).get("exam_date") or None
+        except Exception:
+            return None
 
     # ── Leitner state (flashcard Leitner tracking) ────────────────────────
 

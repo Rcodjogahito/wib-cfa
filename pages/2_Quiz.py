@@ -72,8 +72,55 @@ state = st.session_state
 if "quiz_active" not in state:
     state["quiz_active"] = False
 
+# ── Restore in-progress quiz (once per page load) ────────────────────────────
+if not state.get("quiz_active") and not state.get("_quiz_restore_checked"):
+    state["_quiz_restore_checked"] = True
+    _saved = db.load_quiz_progress(user["id"])
+    if _saved and _saved.get("quiz_questions"):
+        state["_quiz_restore_candidate"] = _saved
+
 if not state["quiz_active"]:
     st.markdown('<div class="section-header">Quiz configuration</div>', unsafe_allow_html=True)
+
+    # ── Resume banner ─────────────────────────────────────────────────────
+    if state.get("_quiz_restore_candidate"):
+        _cand = state["_quiz_restore_candidate"]
+        _c_total = len(_cand["quiz_questions"])
+        _c_ans = len(_cand.get("quiz_answers", {}))
+        _c_topic = _cand.get("quiz_topic", "All (Adaptive)")
+        st.markdown(
+            f'<div style="background:rgba(201,168,76,0.10);border:1px solid rgba(201,168,76,0.35);'
+            f'border-left:4px solid #C9A84C;border-radius:8px;padding:0.9rem 1.2rem;margin-bottom:1rem;">'
+            f'<b style="color:#0B2545;">Unfinished quiz</b>'
+            f'<span style="color:rgba(11,37,69,0.65);font-size:0.88rem;"> — '
+            f'{_c_ans}/{_c_total} answered · {_c_topic}</span>'
+            f'</div>',
+            unsafe_allow_html=True,
+        )
+        _rb1, _rb2 = st.columns(2)
+        if _rb1.button("Resume →", type="primary", use_container_width=True, key="quiz_resume"):
+            _ans_r = {int(k): v for k, v in _cand.get("quiz_answers", {}).items()}
+            state.update({
+                "quiz_active": True,
+                "quiz_questions": _cand["quiz_questions"],
+                "quiz_idx": _cand.get("quiz_idx", len(_ans_r)),
+                "quiz_answers": _ans_r,
+                "quiz_q_starts": {int(k): time.time() for k in _ans_r},
+                "quiz_pending": {},
+                "quiz_start": _cand.get("quiz_start", time.time()),
+                "quiz_use_timer": _cand.get("quiz_use_timer", False),
+                "quiz_total_duration": 0,
+                "quiz_topic": _cand.get("quiz_topic", "All (Adaptive)"),
+            })
+            state.pop("_quiz_restore_candidate", None)
+            state.pop("_quiz_restore_checked", None)
+            st.rerun()
+        if _rb2.button("Start new quiz", use_container_width=True, key="quiz_discard"):
+            db.clear_quiz_progress(user["id"])
+            state.pop("_quiz_restore_candidate", None)
+            state.pop("_quiz_restore_checked", None)
+            st.rerun()
+        st.markdown("---")
 
     topic_options = ["All (Adaptive)"] + CFA_TOPICS
     _preselect = state.pop("quiz_preselect_topic", None)
@@ -192,6 +239,7 @@ if idx >= total:
         )
         for t, v in topic_results.items():
             db.update_progress(user["id"], t, v["correct"], v["total"])
+        db.clear_quiz_progress(user["id"])
         state["quiz_saved"] = True
 
     st.subheader("Results by topic")
@@ -236,9 +284,11 @@ if idx >= total:
         state.pop("quiz_pending", None)
         st.rerun()
     if col2.button("New quiz", use_container_width=True, type="primary"):
+        db.clear_quiz_progress(user["id"])
         for k in ["quiz_active", "quiz_questions", "quiz_idx", "quiz_answers",
                   "quiz_q_starts", "quiz_start", "quiz_use_timer", "quiz_topic",
-                  "quiz_saved", "quiz_pending"]:
+                  "quiz_saved", "quiz_pending", "_quiz_restore_checked",
+                  "_quiz_restore_candidate"]:
             state.pop(k, None)
         st.rerun()
     if col3.button("View progress", use_container_width=True):
@@ -348,6 +398,15 @@ if not answered:
             )
             state["quiz_answers"][idx] = {"selected": pending_letter, "correct": correct}
             pending.pop(idx, None)
+            db.save_quiz_progress(
+                user_id=user["id"],
+                quiz_idx=idx,
+                question_ids=[q["id"] for q in questions],
+                quiz_answers={str(k): v for k, v in state["quiz_answers"].items()},
+                quiz_start=state["quiz_start"],
+                quiz_topic=state.get("quiz_topic", "All (Adaptive)"),
+                quiz_use_timer=state.get("quiz_use_timer", False),
+            )
             st.rerun()
 else:
     for letter, option in [("A", q["option_a"]), ("B", q["option_b"]), ("C", q["option_c"])]:

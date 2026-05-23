@@ -395,10 +395,13 @@ Your personal preparation hub — everything adapts to your progress.
 """)
     st.markdown('</div>', unsafe_allow_html=True)
 
+from datetime import date as _date, timedelta as _timedelta
+
 progress_rows = db.get_progress(user["id"])
 mastery = compute_mastery_map(progress_rows)
 readiness = readiness_score(mastery)
 sessions = db.get_sessions(user["id"])
+exam_date_str = db.load_exam_date_pref(user["id"])
 
 # ── KPI row ───────────────────────────────────────────────────────────────────
 
@@ -415,6 +418,105 @@ k2.markdown(metric_card(f"{overall_acc:.0f}%", "Global accuracy"), unsafe_allow_
 k3.markdown(metric_card(f"{mastered_count}/10", "Mastered topics"), unsafe_allow_html=True)
 k4.markdown(metric_card(str(len(sessions)), "Completed sessions"), unsafe_allow_html=True)
 k5.markdown(metric_card(diag_display, "Diagnostic score"), unsafe_allow_html=True)
+
+# ── Context bar: streak · last session · exam countdown ──────────────────────
+
+def _compute_streak(sess_list: list) -> int:
+    if not sess_list:
+        return 0
+    sess_dates = set()
+    for s in sess_list:
+        d = (s.get("completed_at") or "")[:10]
+        if d:
+            sess_dates.add(d)
+    today = str(_date.today())
+    yesterday = str(_date.today() - _timedelta(days=1))
+    if today not in sess_dates and yesterday not in sess_dates:
+        return 0
+    streak = 0
+    check = _date.today()
+    while str(check) in sess_dates:
+        streak += 1
+        check -= _timedelta(days=1)
+    return streak
+
+_streak = _compute_streak(sessions)
+_last = sessions[0] if sessions else None
+_ctx_parts = []
+
+if _streak > 0:
+    _flame = "🔥"
+    _ctx_parts.append(
+        f'<span style="font-weight:700;color:#C9A84C;">{_flame} {_streak} day{"s" if _streak > 1 else ""} streak</span>'
+    )
+
+if _last:
+    _l_date = (_last.get("completed_at") or "")[:10]
+    _l_score = _last.get("score_pct", 0)
+    _L_LABELS = {"quiz": "Quiz", "diagnostic": "Diagnostic", "flashcard": "Flashcards",
+                 "mock_partial": "Partial exam", "mock_full": "Full exam"}
+    _l_type = _L_LABELS.get(_last.get("session_type", ""), "Session")
+    if _l_date:
+        _days_ago = (_date.today() - _date.fromisoformat(_l_date)).days
+        _when = "today" if _days_ago == 0 else ("yesterday" if _days_ago == 1 else f"{_days_ago}d ago")
+    else:
+        _when = ""
+    _sc = "#1B7F4F" if _l_score >= 70 else ("#C9A84C" if _l_score >= 50 else "#B52B2B")
+    _ctx_parts.append(
+        f'Last session: <span style="color:rgba(11,37,69,0.6);">{_when}</span>'
+        f' · {_l_type}'
+        f' · <span style="color:{_sc};font-weight:700;">{_l_score:.0f}%</span>'
+    )
+
+if exam_date_str:
+    try:
+        _exam_dt = _date.fromisoformat(exam_date_str)
+        _dl = (_exam_dt - _date.today()).days
+        if _dl > 0:
+            _uc = "#B52B2B" if _dl < 14 else ("#C9A84C" if _dl < 45 else "#1B7F4F")
+            _ctx_parts.append(
+                f'<span style="font-weight:700;color:{_uc};">📅 J−{_dl}</span>'
+                f'<span style="color:rgba(11,37,69,0.6);"> until exam</span>'
+            )
+        elif _dl == 0:
+            _ctx_parts.append('<span style="font-weight:700;color:#B52B2B;">📅 Exam day!</span>')
+    except Exception:
+        pass
+
+_SEP = '<span style="color:rgba(11,37,69,0.18);margin:0 0.75rem;">|</span>'
+
+_ctx_col, _date_col = st.columns([8, 1])
+with _ctx_col:
+    if _ctx_parts:
+        st.markdown(
+            f'<div style="background:var(--navy-50);border:1px solid rgba(12,29,58,0.08);'
+            f'border-radius:8px;padding:0.5rem 1rem;font-size:0.87rem;margin-top:0.4rem;">'
+            f'{_SEP.join(_ctx_parts)}'
+            f'</div>',
+            unsafe_allow_html=True,
+        )
+with _date_col:
+    with st.popover("📅", use_container_width=True):
+        st.markdown("**Exam date**")
+        _default_dt = (
+            _date.fromisoformat(exam_date_str)
+            if exam_date_str else (_date.today() + _timedelta(days=90))
+        )
+        _new_dt = st.date_input(
+            "Target date",
+            value=_default_dt,
+            min_value=_date.today(),
+            max_value=_date.today() + _timedelta(days=730),
+            label_visibility="collapsed",
+        )
+        _dc1, _dc2 = st.columns(2)
+        if _dc1.button("Save", type="primary", use_container_width=True, key="save_exam_date"):
+            db.save_exam_date_pref(user["id"], str(_new_dt))
+            st.rerun()
+        if _dc2.button("Clear", use_container_width=True, key="clear_exam_date",
+                       disabled=not bool(exam_date_str)):
+            db.save_exam_date_pref(user["id"], "")
+            st.rerun()
 
 st.markdown("---")
 
