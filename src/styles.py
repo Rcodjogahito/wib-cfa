@@ -97,7 +97,13 @@ def inject_styles():
             font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
             color: var(--gray-800);
             background-color: var(--gray-25);
-            font-variant-ligatures: no-common-ligatures !important;
+            font-variant-ligatures: none !important;
+            font-feature-settings: "liga" 0, "clig" 0 !important;
+        }
+        /* Belt-and-suspenders: disable ligatures on every element */
+        * {
+            font-variant-ligatures: none !important;
+            font-feature-settings: "liga" 0, "clig" 0 !important;
         }
         .main .block-container {
             padding-top: 1.75rem;
