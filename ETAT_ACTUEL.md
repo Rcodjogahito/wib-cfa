@@ -1,8 +1,8 @@
 # ETAT ACTUEL — WIB CFA
 > Mis à jour automatiquement à la fin de chaque session Claude Code.
 
-**Date**: 2026-05-23 (session 40)  
-**Commit**: (voir ci-dessous)  
+**Date**: 2026-05-23 (session 41)  
+**Commit**: 6211be02 — feat: quiz persistence, question diversity, streak & exam date  
 **Branch**: master → Streamlit Cloud (auto-deploy)
 
 ---
@@ -24,6 +24,35 @@
 **Note correct_answer** : 126 incohérences détectées par audit NLP (session 40) et corrigées directement dans Supabase.
 
 **Audit cmd**: `python scripts/audit_questions.py`
+
+---
+
+## Travaux terminés (session 41)
+
+### ✅ Profils personnalisés — 4 améliorations UX/progression (commit 6211be02)
+
+**1. Diversité des questions en mode "All (Adaptive)"**
+- **Problème** : `get_questions()` fetait toujours les mêmes ~400 premières questions (ordre d'insertion Supabase). Sur 7 249 questions, 6 849 n'étaient jamais vues en mode "All".
+- **Fix** : 10 requêtes per-topic avec offset aléatoire (0–100). Chaque topic sample une portion différente de la banque à chaque session. Mode single-topic idem.
+
+**2. Persistance quiz en cours**
+- **Problème** : Naviguer hors de la page Quiz en plein milieu perdait toutes les réponses (contrairement au Diagnostic qui persistait déjà).
+- **Fix** : `save_quiz_progress()` appelée après chaque "Confirm". Stockée dans `user_sessions` (session_type=`quiz_progress`). À la prochaine visite, bannière "Unfinished quiz — 7/20 answered · Economics → Resume / Start new". `clear_quiz_progress()` à la fin du quiz ou sur "New quiz".
+
+**3. Barre contextuelle dashboard (streak + dernière session + countdown)**
+- Streak : jours consécutifs avec au moins une session (s'arrête si > 1 jour d'inactivité).
+- Dernière session : "3d ago · Quiz · 68%" avec code couleur vert/or/rouge selon le score.
+- Countdown J-N en couleur urgente si date d'examen définie (<14j rouge, <45j or, ≥45j vert).
+
+**4. Date d'examen cible**
+- Stockée dans `user_sessions` (session_type=`exam_date_pref`) — aucun changement de schéma.
+- Popover 📅 sur le dashboard → `st.date_input` + Save/Clear.
+- Compte à rebours visible dans la barre contextuelle du dashboard.
+
+**Nouveaux fichiers/méthodes :**
+- `database.py` : `save_quiz_progress()`, `load_quiz_progress()`, `clear_quiz_progress()`, `save_exam_date_pref()`, `load_exam_date_pref()`. Filtre `quiz_progress`/`exam_date_pref` hors de `get_sessions()` et `get_all_users()`.
+- `pages/2_Quiz.py` : check restore au chargement, bannière resume, save après Confirm, clear à la fin.
+- `streamlit_app.py` : `_compute_streak()`, barre contextuelle, popover date d'examen.
 
 ---
 
