@@ -918,6 +918,11 @@ def _hide_toolbar_js():
                 var sbEl = window.parent.document.querySelector('section[data-testid="stSidebar"]');
                 if (sbEl) obs.observe(sbEl, { attributes: true });
             } catch(e) {}
+
+            // Health ping every 4 min — keeps CDN/proxy from dropping idle connections
+            setInterval(function() {
+                try { fetch('/_stcore/health').catch(function(){}); } catch(e) {}
+            }, 240000);
         })();
         </script>
         """,

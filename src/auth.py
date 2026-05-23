@@ -43,20 +43,30 @@ _MAX_AGE = 60 * 60 * 24 * 90  # 90 days
 # ── Cookie helpers ────────────────────────────────────────────────────────────
 
 def _write_cookie(user_id: str) -> None:
+    c = f"{_COOKIE}={user_id}; max-age={_MAX_AGE}; path=/; SameSite=Lax"
     _components.html(
         f"""<script>
-        document.cookie = "{_COOKIE}={user_id}; max-age={_MAX_AGE}; path=/; SameSite=Strict";
+        (function(){{
+            var c="{c}";
+            try{{window.parent.document.cookie=c;}}catch(e){{}}
+            try{{document.cookie=c;}}catch(e){{}}
+        }})();
         </script>""",
-        height=1,
+        height=0,
     )
 
 
 def _erase_cookie() -> None:
+    c = f"{_COOKIE}=; max-age=0; path=/; SameSite=Lax"
     _components.html(
         f"""<script>
-        document.cookie = "{_COOKIE}=; max-age=0; path=/; SameSite=Strict";
+        (function(){{
+            var c="{c}";
+            try{{window.parent.document.cookie=c;}}catch(e){{}}
+            try{{document.cookie=c;}}catch(e){{}}
+        }})();
         </script>""",
-        height=1,
+        height=0,
     )
 
 
@@ -95,11 +105,25 @@ def _try_restore_from_cookie() -> bool:
 
 # ── Public API ────────────────────────────────────────────────────────────────
 
+@st.fragment(run_every=60)
+def _keepalive_fragment() -> None:
+    """Fires every 60 s — prevents Streamlit Cloud from closing idle WebSocket sessions."""
+    st.session_state["_ka"] = st.session_state.get("_ka", 0) + 1
+
+
+def _start_keepalive() -> None:
+    if not st.session_state.get("_ka_started"):
+        st.session_state["_ka_started"] = True
+        _keepalive_fragment()
+
+
 def require_auth() -> bool:
     """Return True if authenticated; show login form and return False otherwise."""
     if st.session_state.get("user_id"):
+        _start_keepalive()
         return True
     if _try_restore_from_cookie():
+        _start_keepalive()
         return True
     _render_login_form()
     return False
