@@ -2,7 +2,7 @@
 > Mis à jour automatiquement à la fin de chaque session Claude Code.
 
 **Date**: 2026-05-24 (session 44c)  
-**Commit**: à venir — audit correct_answer final (4 corrections totales)  
+**Commit**: a19cdb3 — audit correct_answer final (4 corrections totales)  
 **Branch**: master → Streamlit Cloud (auto-deploy)
 
 ---
