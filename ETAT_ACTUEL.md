@@ -12,13 +12,16 @@
 | Métrique | Valeur |
 |---|---|
 | Total questions | 7,249 |
-| Complètes (table + explication) | 7,214 |
-| Tables manquantes | 4 (faux positifs Kaplan — aucune action) |
-| Explications manquantes | 31 (Extra_QB — voir note ci-dessous) |
+| Complètes (table + explication) | **7,249** (100%) |
+| Tables manquantes | 0 |
+| Explications manquantes | **0** |
+| correct_answer incohérents | **0** |
 
-**Note Extra_QB** : 296/333 explications couvertes (242 verbatim session 17 + 54 nouvelles corrections session 18). 31 restantes vidées. 6 sans correspondance PDF.
+**Note Extra_QB** : 333/333 complètes. 31 dernières explications vides retrouvées et insérées depuis le PDF (session 40). 25 de ces questions avaient aussi un topic erroné (ex. "Ethics" pour des questions Fixed Income/Quant) — corrigés simultanément.
 
 **Note Kaplan** : 68 explications corrigées en session 18 (verbatim PDF, matching 100%). 3649 déjà correctes.
+
+**Note correct_answer** : 126 incohérences détectées par audit NLP (session 40) et corrigées directement dans Supabase.
 
 **Audit cmd**: `python scripts/audit_questions.py`
 
