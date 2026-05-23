@@ -79,12 +79,16 @@ def detect_correct(q_text: str, opt_a: str, opt_b: str, opt_c: str,
     }
 
     # Pass 1: explicit letter mention
+    # Note: "option/choice/answer + space + letter" is intentionally excluded —
+    # too many false positives ("option C shows", "option A for X") in CFA explanations.
+    # Only colon-delimited forms ("option: A") and unambiguous verb forms are matched.
     for letter in ("A", "B", "C"):
         if re.search(
             rf'\b(correct\s+answer\s+is\s+{letter}|answer\s+is\s+{letter}|'
             rf'{letter}\s+is\s+(the\s+)?(correct|right|best|answer)|'
-            rf'(choose|select|answer|option|choice)\s*[:\s]+{letter}|'
-            rf'{letter}\s+is\s+correct|correctly\s+{letter})\b',
+            rf'(choose|select)\s+{letter}\b|'
+            rf'(answer|option|choice)\s*:\s*{letter}\b|'
+            rf'{letter}\s+is\s+correct)\b',
             expl, re.IGNORECASE,
         ):
             return letter, 1, 1.0
