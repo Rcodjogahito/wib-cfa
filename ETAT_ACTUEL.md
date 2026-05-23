@@ -2,7 +2,7 @@
 > Mis à jour automatiquement à la fin de chaque session Claude Code.
 
 **Date**: 2026-05-23 (session 44)  
-**Commit**: d8be187 — UX/UI audit — implement all 11 fixes (session 44)  
+**Commit**: 444b78a — ligature fix fully deployed (pytz 2025.4 cache bust)  
 **Branch**: master → Streamlit Cloud (auto-deploy)
 
 ---
@@ -35,7 +35,7 @@
 
 | # | Sévérité | Fix | Fichier(s) |
 |---|---|---|---|
-| 1 | 🔴 Bug | **Ligature `fl` invisible** — police Inter + Chrome appliquaient U+FB02 manquant → "Inflation"→"Ination". Fix : `font-variant-ligatures: no-common-ligatures` sur base CSS | `styles.py` |
+| 1 | 🔴 Bug | **Ligature `fl` invisible** — voir détail ci-dessous | `styles.py` + `streamlit_app.py` + `pages/2_Quiz.py` + `pages/5_Exam_Simulator.py` |
 | 2 | 🔴 Bug | **Sidebar couvre login sur mobile** — `initial_sidebar_state="expanded"` → `"auto"` | `streamlit_app.py` |
 | 3 | 🟠 Bug | **Boutons Prev/Next coupés sur tablette** — wrapper `<div class="nav-row">` + CSS `white-space: nowrap` | `streamlit_app.py` + `styles.py` |
 | 4 | 🟠 Bug | **Utilisateurs récurrents revoient le diagnostic** — `session_state["diagnostic_done"]` non synchronisé depuis DB au reconnect WebSocket. Fix : sync `user.get("diagnostic_done")` → `session_state` juste après `get_current_user()` | `streamlit_app.py` |
@@ -46,6 +46,39 @@
 | 9 | 🟡 UX | **Lien Admin non séparé** — `st.divider()` avant le lien Admin dans la sidebar | `streamlit_app.py` |
 | 10 | 🟡 UX | **Zones de toucher trop petites sur mobile** — `min-height: 52px`, padding augmenté dans `@media (max-width: 768px)` | `styles.py` |
 | 11 | 🟢 UX | **Pas d'animation de transition** — `@keyframes wib-fadein` (0.28s ease-out) sur `.main .block-container` | `styles.py` |
+
+### ✅ Fix #1 — Ligature `fl` : investigation complète + correctif données (commits 51e9f11, 9a8a7c9, 444b78a)
+
+**Hypothèse initiale (CSS)** : Inter + Chrome convertissait "fl" en glyphe ligature U+FB02 → rendu impossible. Fix tenté : `font-variant-ligatures: none` + `font-feature-settings: "liga" 0` sur `html, body, *`. Confirmé appliqué par Playwright (`computed="clig" 0, "liga" 0`). Résultat : "Deation" / "Ination" toujours présents. ❌
+
+**Cause racine réelle (données)** : `textContent` JavaScript sur les boutons réponses confirme que 'f' et 'l' sont **physiquement absents** du DOM. Le problème est dans Supabase, pas dans le navigateur. Lors de l'import PDF avec pdfplumber, les glyphes ligature `fl` encodés en custom glyph (sans mapping Unicode standard) ont été importés comme chaîne vide → stockés sans 'f' ni 'l' dans la DB.
+
+**Solution : correctif render-time** dans `src/styles.py` :
+```python
+_LIGA_FIXES = {
+    'Deation': 'Deflation', 'Ination': 'Inflation', 'Stagation': 'Stagflation',
+    'Reation': 'Reflation', 'Disination': 'Disinflation', 'Hyperination': 'Hyperinflation',
+    'cash ow': 'cash flow', 'cashow': 'cashflow', 'outow': 'outflow', 'inow': 'inflow',
+    'overow': 'overflow', 'underow': 'underflow', 'workow': 'workflow',
+    'oating-rate': 'floating-rate', 'oating rate': 'floating rate', 'oor': 'floor', ...
+}
+def fix_ligature_artifacts(text: str) -> str: ...
+```
+
+`fix_ligature_artifacts()` appelée au moment du rendu dans :
+- `streamlit_app.py` : boutons réponses du diagnostic (read-only + interactive)
+- `pages/2_Quiz.py` : boutons réponses quiz (actif + désactivé)
+- `pages/5_Exam_Simulator.py` : boutons réponses simulateur
+
+**Cache busts Streamlit Cloud** :
+- `pytz>=2025.3` (commit `51e9f11`) → force rebuild après ImportError sur `fix_ligature_artifacts`
+- `pytz>=2025.4` (commit `444b78a`) → deuxième rebuild confirmant déploiement complet
+
+**Vérification finale (Playwright desktop)** :
+- Options affichées : `['A. Deflation.', 'B. Inflation.', 'C. Stagflation.']` ✅
+- Label : "Choose your answer" (lowercase) ✅
+
+**Note** : La solution render-time est un workaround. Un bulk UPDATE Supabase sur tous les champs `option_a/b/c/question_en/explanation_en` affectés serait plus robuste mais non encore appliqué.
 
 ---
 
