@@ -1,8 +1,8 @@
 # ETAT ACTUEL — WIB CFA
 > Mis à jour automatiquement à la fin de chaque session Claude Code.
 
-**Date**: 2026-05-23 (session 43)  
-**Commit**: 0852e38e — fix: prevent mobile disconnect — SameSite=Lax + 60s keepalive fragment + CDN health ping  
+**Date**: 2026-05-23 (session 44)  
+**Commit**: d8be187 — UX/UI audit — implement all 11 fixes (session 44)  
 **Branch**: master → Streamlit Cloud (auto-deploy)
 
 ---
@@ -24,6 +24,28 @@
 **Note correct_answer** : 126 incohérences détectées par audit NLP (session 40) et corrigées directement dans Supabase.
 
 **Audit cmd**: `python scripts/audit_questions.py`
+
+---
+
+## Travaux terminés (session 44)
+
+### ✅ Audit UX/UI complet — 11 corrections multi-device (commit d8be187)
+
+**Contexte** : Audit Playwright sur mobile (390×844), tablette (820×1180) et desktop (1440×900). 11 problèmes identifiés et corrigés dans `src/styles.py`, `streamlit_app.py`, `pages/5_Exam_Simulator.py`.
+
+| # | Sévérité | Fix | Fichier(s) |
+|---|---|---|---|
+| 1 | 🔴 Bug | **Ligature `fl` invisible** — police Inter + Chrome appliquaient U+FB02 manquant → "Inflation"→"Ination". Fix : `font-variant-ligatures: no-common-ligatures` sur base CSS | `styles.py` |
+| 2 | 🔴 Bug | **Sidebar couvre login sur mobile** — `initial_sidebar_state="expanded"` → `"auto"` | `streamlit_app.py` |
+| 3 | 🟠 Bug | **Boutons Prev/Next coupés sur tablette** — wrapper `<div class="nav-row">` + CSS `white-space: nowrap` | `streamlit_app.py` + `styles.py` |
+| 4 | 🟠 Bug | **Utilisateurs récurrents revoient le diagnostic** — `session_state["diagnostic_done"]` non synchronisé depuis DB au reconnect WebSocket. Fix : sync `user.get("diagnostic_done")` → `session_state` juste après `get_current_user()` | `streamlit_app.py` |
+| 5 | 🟠 UX | **Contenu trop large sur desktop** — `max-width: 820px` sur `.question-card` | `styles.py` |
+| 6 | 🟡 A11y | **FAB sans label** — `aria-label="Open navigation menu"` + `title="Menu"` injectés par JS | `styles.py` |
+| 7 | 🟡 UX | **Whitespace excessif Study Notes** — `.stTabs { margin-top: 0.5rem }` | `styles.py` |
+| 8 | 🟡 UX | **"SELECT YOUR ANSWER" agressif** — suppression `text-transform: uppercase`, style plus doux, texte → "Choose your answer" | `styles.py` + `streamlit_app.py` + `pages/5_Exam_Simulator.py` |
+| 9 | 🟡 UX | **Lien Admin non séparé** — `st.divider()` avant le lien Admin dans la sidebar | `streamlit_app.py` |
+| 10 | 🟡 UX | **Zones de toucher trop petites sur mobile** — `min-height: 52px`, padding augmenté dans `@media (max-width: 768px)` | `styles.py` |
+| 11 | 🟢 UX | **Pas d'animation de transition** — `@keyframes wib-fadein` (0.28s ease-out) sur `.main .block-container` | `styles.py` |
 
 ---
 
