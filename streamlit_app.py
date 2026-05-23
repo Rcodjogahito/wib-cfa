@@ -14,7 +14,7 @@ st.set_page_config(
     page_title="WIB – CFA Level 1",
     page_icon="📊",
     layout="wide",
-    initial_sidebar_state="expanded",
+    initial_sidebar_state="auto",
 )
 
 try:
@@ -47,6 +47,7 @@ def _sidebar():
             st.page_link("pages/4_Progress.py", label="Progress", icon="📈")
             st.page_link("pages/5_Exam_Simulator.py", label="Exam Simulator", icon="⏱️")
             if st.session_state.get("user_email") == "samto":
+                st.divider()
                 st.page_link("pages/admin.py", label="Admin", icon="🔐")
             st.divider()
             if st.button("Sign out", use_container_width=True):
@@ -62,6 +63,13 @@ if not require_auth():
 
 user = get_current_user()
 db = get_db()
+
+# Sync diagnostic completion from DB to session_state so returning users
+# don't see the diagnostic again after a WebSocket reconnect
+if user.get("diagnostic_done") and not st.session_state.get("diagnostic_done"):
+    st.session_state["diagnostic_done"] = True
+    if user.get("diagnostic_score") is not None:
+        st.session_state["diagnostic_score"] = user["diagnostic_score"]
 
 
 # ── Diagnostic test ───────────────────────────────────────────────────────────
@@ -147,7 +155,7 @@ def _run_diagnostic():
     st.markdown(f"{topic_badge} {diff_badge}", unsafe_allow_html=True)
     render_question(q["question_en"])
 
-    st.markdown('<div class="answer-label">Select your answer</div>', unsafe_allow_html=True)
+    st.markdown('<div class="answer-label">Choose your answer</div>', unsafe_allow_html=True)
 
     if is_answered and prev:
         # Read-only: show selected answer highlighted
@@ -234,6 +242,7 @@ def _run_diagnostic():
                 st.rerun()
 
     # Navigation bar
+    st.markdown('<div class="nav-row">', unsafe_allow_html=True)
     dnav1, _dmid, dnav3 = st.columns([1, 4, 1])
     with dnav1:
         if st.button("← Prev", disabled=(idx == 0), use_container_width=True, key="dnav_prev"):
@@ -243,6 +252,7 @@ def _run_diagnostic():
         if st.button("Next →", disabled=(idx >= total - 1), use_container_width=True, key="dnav_next"):
             state["diag_view_idx"] += 1
             st.rerun()
+    st.markdown('</div>', unsafe_allow_html=True)
 
     # ── Reset section ──────────────────────────────────────────────────────
     st.markdown("---")

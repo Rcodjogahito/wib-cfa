@@ -97,10 +97,22 @@ def inject_styles():
             font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
             color: var(--gray-800);
             background-color: var(--gray-25);
+            font-variant-ligatures: no-common-ligatures !important;
         }
         .main .block-container {
             padding-top: 1.75rem;
             padding-bottom: 3rem;
+        }
+        /* Reduce gap between topic selector and tabs on Study Notes */
+        .stTabs { margin-top: 0.5rem !important; }
+
+        /* Page fade-in on load */
+        @keyframes wib-fadein {
+            from { opacity: 0; transform: translateY(6px); }
+            to   { opacity: 1; transform: translateY(0); }
+        }
+        .main .block-container {
+            animation: wib-fadein 0.28s ease-out both;
         }
         h1, h2, h3 {
             font-family: 'Cormorant Garamond', Georgia, serif;
@@ -220,6 +232,15 @@ def inject_styles():
         .stButton > button:disabled {
             opacity: 0.38 !important;
             cursor: not-allowed !important;
+        }
+
+        /* ── Nav row — Prev/Next keep text on one line on all breakpoints */
+        .nav-row .stButton > button {
+            white-space: nowrap !important;
+            text-align: center !important;
+            justify-content: center !important;
+            padding: 0.5rem 0.75rem !important;
+            font-size: 0.84rem !important;
         }
 
         /* ── Buttons — primary (CTA actions) ─────────────────────────── */
@@ -451,6 +472,7 @@ def inject_styles():
             border: 1px solid var(--gray-100);
             border-radius: var(--radius-lg);
             padding: 1.5rem 1.75rem 1.25rem 1.75rem;
+            max-width: 820px;
             margin-bottom: 1rem;
             box-shadow: var(--shadow-xs);
             font-size: 0.95rem;
@@ -464,11 +486,10 @@ def inject_styles():
 
         /* ── Answer section label ──────────────────────────────────────── */
         .answer-label {
-            font-size: 0.68rem;
-            font-weight: 700;
-            color: var(--gray-400);
-            text-transform: uppercase;
-            letter-spacing: 0.12em;
+            font-size: 0.75rem;
+            font-weight: 600;
+            color: var(--gray-500);
+            letter-spacing: 0.03em;
             margin-bottom: 0.5rem;
             margin-top: 0.25rem;
         }
@@ -750,6 +771,13 @@ def inject_styles():
             .study-content {
                 padding: 1rem 0.9rem;
             }
+
+            /* Larger touch targets for all buttons on mobile */
+            .stButton > button {
+                min-height: 52px !important;
+                padding: 0.8rem 1.1rem !important;
+                font-size: 0.95rem !important;
+            }
         }
 
         @media (max-width: 480px) {
@@ -856,6 +884,8 @@ def _hide_toolbar_js():
                         toggleEl.style.setProperty('align-items',     'center', 'important');
                         toggleEl.style.setProperty('justify-content', 'center', 'important');
                         toggleEl.style.setProperty('color', '#C9A84C', 'important');
+                        toggleEl.setAttribute('aria-label', 'Open navigation menu');
+                        toggleEl.setAttribute('title', 'Menu');
                     } else {
                         toggleEl.style.setProperty('top',    '6rem',   'important');
                         toggleEl.style.setProperty('bottom', 'auto',   'important');

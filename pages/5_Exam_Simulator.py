@@ -576,7 +576,7 @@ st.markdown(
 )
 render_question(q["question_en"])
 
-st.markdown('<div class="answer-label">Select your answer</div>', unsafe_allow_html=True)
+st.markdown('<div class="answer-label">Choose your answer</div>', unsafe_allow_html=True)
 current_answer = answers.get(idx)
 
 if current_answer:
