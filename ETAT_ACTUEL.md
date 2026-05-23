@@ -25,6 +25,11 @@
 
 **Audit cmd**: `python scripts/audit_questions.py`
 
+**Audit correct_answer (session 44b)** : 3 corrections supplémentaires appliquées après audit NLP + revue manuelle des 657 flags P3 :
+1. UWorld — Q. distribution unimodale skewness 0.8, plus grande mesure de tendance centrale → A(mode) **→ C(mean)** (distribution à droite : mode < médiane < mean)
+2. UWorld — Q. différence fondamentale actions préférentielles vs communes → A(plus de droits de vote) **→ C(dividendes prioritaires)** (les ordinaires ont les droits de vote)
+3. UWorld — Q. IRR sur projets mutuellement exclusifs → C(hypothèse de réinvestissement réaliste) **→ B(pas de contexte d'échelle)** (l'explication confirme que l'hypothèse de réinvestissement de l'IRR est irréaliste)
+
 ---
 
 ## Travaux terminés (session 44)
