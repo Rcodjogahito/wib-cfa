@@ -21,7 +21,7 @@ try:
     from src.auth import CFA_TOPICS, get_current_user, logout, require_auth
     from src.database import get_db
     from src.progress import compute_mastery_map, readiness_score, weak_topics
-    from src.styles import inject_styles, metric_card, render_hero, render_page_header, render_sidebar_brand, render_sidebar_user, render_ticker, render_question
+    from src.styles import inject_styles, metric_card, render_hero, render_page_header, render_sidebar_brand, render_sidebar_user, render_ticker, render_question, fix_ligature_artifacts
 except Exception as _e:
     st.error(f"**Erreur d'import — {type(_e).__name__}:** `{_e}`")
     st.code(_tb.format_exc())
@@ -170,7 +170,8 @@ def _run_diagnostic():
                 prefix = "✓  "
             else:
                 prefix = ""
-            st.button(f"{prefix}{letter}.  {q[opt_key]}", key=f"d_{letter}_{idx}",
+            opt_text = fix_ligature_artifacts(q[opt_key])
+            st.button(f"{prefix}{letter}.  {opt_text}", key=f"d_{letter}_{idx}",
                       use_container_width=True, disabled=True)
         if prev["correct"]:
             st.markdown('<div class="answer-correct">Correct!</div>', unsafe_allow_html=True)
@@ -207,7 +208,8 @@ def _run_diagnostic():
             )
         for letter, opt_key in [("A", "option_a"), ("B", "option_b"), ("C", "option_c")]:
             prefix = "✓  " if pending_letter == letter else ""
-            if st.button(f"{prefix}{letter}.  {q[opt_key]}", key=f"d_{letter}_{idx}", use_container_width=True):
+            opt_text = fix_ligature_artifacts(q[opt_key])
+            if st.button(f"{prefix}{letter}.  {opt_text}", key=f"d_{letter}_{idx}", use_container_width=True):
                 diag_pending[idx] = letter
                 st.rerun()
 

@@ -15,6 +15,7 @@ from src.database import get_db
 from src.styles import (
     inject_styles, metric_card, question_first_line,
     render_page_header, render_question, render_sidebar_brand, render_sidebar_user,
+    fix_ligature_artifacts,
 )
 
 st.set_page_config(
@@ -591,7 +592,7 @@ if current_answer:
 
 for letter, text in [("A", q["option_a"]), ("B", q["option_b"]), ("C", q["option_c"])]:
     prefix = "✓  " if current_answer == letter else ""
-    if st.button(f"{prefix}{letter}.  {text}", key=f"exam_{idx}_{letter}",
+    if st.button(f"{prefix}{letter}.  {fix_ligature_artifacts(text)}", key=f"exam_{idx}_{letter}",
                  use_container_width=True):
         state["exam_answers"][idx] = letter
         st.rerun()

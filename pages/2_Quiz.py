@@ -11,7 +11,7 @@ import streamlit as st
 from src.adaptive import get_weighted_questions
 from src.auth import CFA_TOPICS, get_current_user, logout, require_auth
 from src.database import get_db
-from src.styles import inject_styles, render_page_header, render_sidebar_brand, render_sidebar_user, render_question, question_first_line
+from src.styles import inject_styles, render_page_header, render_sidebar_brand, render_sidebar_user, render_question, question_first_line, fix_ligature_artifacts
 
 st.set_page_config(page_title="Quiz — WIB CFA", page_icon="🎯", layout="wide", initial_sidebar_state="expanded")
 inject_styles()
@@ -380,7 +380,7 @@ if not answered:
         )
     for letter, option in [("A", q["option_a"]), ("B", q["option_b"]), ("C", q["option_c"])]:
         prefix = "✓  " if pending_letter == letter else ""
-        if st.button(f"{prefix}{letter}.  {option}", key=f"q_{idx}_{letter}", use_container_width=True):
+        if st.button(f"{prefix}{letter}.  {fix_ligature_artifacts(option)}", key=f"q_{idx}_{letter}", use_container_width=True):
             pending[idx] = letter
             st.rerun()
     if pending_letter:
@@ -418,7 +418,7 @@ else:
             prefix = "✓  "
         else:
             prefix = ""
-        st.button(f"{prefix}{letter}.  {option}", key=f"q_{idx}_{letter}",
+        st.button(f"{prefix}{letter}.  {fix_ligature_artifacts(option)}", key=f"q_{idx}_{letter}",
                   use_container_width=True, disabled=True)
 
 # ── Feedback ──────────────────────────────────────────────────────────────────

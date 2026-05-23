@@ -7,10 +7,50 @@ import streamlit as st
 import streamlit.components.v1 as _components
 
 
+# ── Ligature artifact fix (PDF import data issue) ─────────────────────────────
+
+_LIGA_FIXES = {
+    # 'fl' ligature glyph had no Unicode mapping in pdfplumber → stored as ""
+    # Restore known CFA finance vocabulary affected by the missing fl sequence
+    'Deation': 'Deflation',       'deation': 'deflation',
+    'Ination': 'Inflation',       'ination': 'inflation',
+    'Stagation': 'Stagflation',   'stagation': 'stagflation',
+    'Reation': 'Reflation',       'reation': 'reflation',
+    'Disination': 'Disinflation', 'disination': 'disinflation',
+    'Hyperination': 'Hyperinflation', 'hyperination': 'hyperinflation',
+    # cash flow compounds
+    'cash ow': 'cash flow',       'Cash ow': 'Cash flow',
+    'cashow': 'cashflow',         'Cashow': 'Cashflow',
+    'outow': 'outflow',           'Outow': 'Outflow',
+    'inow': 'inflow',             'Inow': 'Inflow',
+    'overow': 'overflow',         'Overow': 'Overflow',
+    'underow': 'underflow',       'Underow': 'Underflow',
+    'workow': 'workflow',         'Workow': 'Workflow',
+    # floating-rate finance
+    'oating-rate': 'floating-rate', 'Oating-rate': 'Floating-rate',
+    'oating rate': 'floating rate', 'Oating rate': 'Floating rate',
+    'oating exchange': 'floating exchange', 'Oating exchange': 'Floating exchange',
+    'oor': 'floor',               'Oor': 'Floor',
+    # fl at start of word — only unambiguous cases
+    'uctuat': 'fluctuat',         'Uctuat': 'Fluctuat',
+    'uctuati': 'fluctuati',
+}
+
+def fix_ligature_artifacts(text: str) -> str:
+    """Replace broken fl-ligature sequences caused by PDF glyph extraction gaps."""
+    if not text:
+        return text
+    for broken, correct in _LIGA_FIXES.items():
+        if broken in text:
+            text = text.replace(broken, correct)
+    return text
+
+
 # ── Question rendering helpers ────────────────────────────────────────────────
 
 def render_question(question_text: str) -> None:
     """Render question with full Markdown support (enables table rendering)."""
+    question_text = fix_ligature_artifacts(question_text)
     safe = question_text.replace('$', r'\$')
     if '\n' in safe:
         parts = safe.split('\n', 1)
