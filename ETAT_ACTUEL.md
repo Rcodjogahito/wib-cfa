@@ -1,8 +1,8 @@
 # ETAT ACTUEL — WIB CFA
 > Mis à jour automatiquement à la fin de chaque session Claude Code.
 
-**Date**: 2026-05-22 (session 39)  
-**Commit**: 5a15229 — "chore: cache bust — force redeploy (outer badge fix)"  
+**Date**: 2026-05-23 (session 40)  
+**Commit**: (voir ci-dessous)  
 **Branch**: master → Streamlit Cloud (auto-deploy)
 
 ---
@@ -21,6 +21,41 @@
 **Note Kaplan** : 68 explications corrigées en session 18 (verbatim PDF, matching 100%). 3649 déjà correctes.
 
 **Audit cmd**: `python scripts/audit_questions.py`
+
+---
+
+## Travaux terminés (session 40)
+
+### ✅ Outil d'audit qualité des réponses — admin page + module data_quality
+
+**Problème** : `correct_answer` stocké (A/B/C) parfois incohérent avec l'explication de la question — l'utilisateur sélectionnait la bonne réponse mais le système la notait fausse (et vice versa).
+
+**Diagnostic** : Le code UI `2_Quiz.py` est correct (jamais de shuffle des options). Le problème est dans les données : la lettre `correct_answer` ne correspond pas toujours à l'option réellement correcte d'après l'explication.
+
+**Blocage réseau local** : SSL/TLS handshake impossible depuis cette machine vers Supabase/Cloudflare (TCP ok, TLS fail). Ni httpx, requests, http.client, ni curl ne peuvent compléter le handshake. Workaround : l'outil tourne directement dans l'app déployée sur Streamlit Cloud.
+
+**Solution — 3 fichiers créés/modifiés :**
+
+1. **`src/data_quality.py`** (nouveau module) :
+   - `detect_correct(q_text, opt_a, opt_b, opt_c, explanation)` → `(letter, pass_num, confidence)`
+   - Pass 1 (conf=1.0) : lettre explicitement mentionnée dans l'explication ("correct answer is B", "B is correct", etc.)
+   - Pass 2 (conf=0.9) : texte exact de l'option dans la première phrase de l'explication (len > 8)
+   - Pass 3 (conf=0.5-0.8) : overlap stemmed/fuzzy — advisory uniquement, pas d'auto-correction
+   - Pass 4 (conf=0.4) : match numérique — advisory uniquement
+   - `audit_questions(questions)` → dict `{p1_fixes, p2_fixes, p3_flags, no_signal, ok}`
+
+2. **`pages/admin.py`** (section ajoutée en bas) :
+   - Fetch paginé de toutes les questions depuis Supabase
+   - Bouton "Run Answer Consistency Audit" → métriques + détail des corrections
+   - Bouton "Apply Fixes" → patch `correct_answer` via `sb.table("questions").update()` pour P1+P2
+   - Pass 3 flags affichés séparément (advisory, non auto-appliqués)
+
+3. **`scripts/fix_answers_consistency.py`** (nouveau script standalone) :
+   - Alternative locale via REST API direct (requests library)
+   - `--dry-run` et `--source` args
+   - Bloqué localement par SSL — utilisable depuis une machine avec accès Supabase
+
+**Utilisation** : Se connecter sur https://wib-cfa.streamlit.app/ en tant que Sam → page Admin → "Run Answer Consistency Audit" → "Apply Fixes".
 
 ---
 
