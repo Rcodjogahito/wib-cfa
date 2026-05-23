@@ -55,7 +55,9 @@
    - `--dry-run` et `--source` args
    - Bloqué localement par SSL — utilisable depuis une machine avec accès Supabase
 
-**Utilisation** : Se connecter sur https://wib-cfa.streamlit.app/ en tant que Sam → page Admin → "Run Answer Consistency Audit" → "Apply Fixes".
+**Corrections appliquées (2026-05-23)** : 126 questions corrigées (P1: 2, P2: 124). Distribution: B→A:41, C→A:38, C→B:17, A→B:14, A→C:9, B→C:7. Audit post-correction : 4543 ok, 0 P1, 0 P2, 650 advisory P3, 2056 sans signal. Banque maintenant parfaitement cohérente sur les haute confiance.
+
+**Utilisation future** : Se connecter sur https://wib-cfa.streamlit.app/ en tant que Sam → page Admin → "Run Answer Consistency Audit" → "Apply Fixes".
 
 ---
 
