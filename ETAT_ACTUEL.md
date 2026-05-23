@@ -1,8 +1,8 @@
 # ETAT ACTUEL — WIB CFA
 > Mis à jour automatiquement à la fin de chaque session Claude Code.
 
-**Date**: 2026-05-24 (session 44d)  
-**Commit**: à venir — audit correct_answer exhaustif (6 corrections totales)  
+**Date**: 2026-05-24 (session 44e)  
+**Commit**: 6d5c539 — audit correct_answer exhaustif (24 corrections totales à ce jour)  
 **Branch**: master → Streamlit Cloud (auto-deploy)
 
 ---
@@ -25,20 +25,38 @@
 
 **Audit cmd**: `python scripts/audit_questions.py`
 
-**Audit correct_answer (sessions 44b–44d)** : audit NLP exhaustif sur 7 249 questions (dump Supabase frais + analyse des 655 flags P3 + pattern-matching "(Choice X) is wrong/violation" sur tous les flags) → **6 corrections totales appliquées** :
+**Audit correct_answer (sessions 44b–44e)** : audit NLP exhaustif + vérification PDF source sur 7 249 questions → **24 corrections totales appliquées** :
 
 | # | Session | ID | Source | Question (résumé) | Stocké → Correct | Raison |
 |---|---|---|---|---|---|---|
-| 1 | 44b | 0be639e0 | UWorld | Distribution unimodale skewness 0.8 — plus grande mesure de tendance centrale | A(mode) → **C(mean)** | Distribution droite : mode < médiane < mean |
-| 2 | 44b | 1efd6989 | UWorld | Différence fondamentale actions préférentielles vs communes | A(plus de droits de vote) → **C(dividendes prioritaires)** | Ce sont les actionnaires ordinaires qui ont les droits de vote |
-| 3 | 44b | 0c6d9963 | UWorld | IRR sur projets mutuellement exclusifs | C(hypothèse de réinvestissement réaliste) → **B** | L'explication confirme que l'hypothèse de réinvestissement de l'IRR est irréaliste, pas un avantage |
-| 4 | 44c | 0e41b1e8 | UWorld | NPV — taux d'actualisation pour investissement financé par emprunt | C(coût de la dette) → **B(coût d'opportunité des fonds)** | L'explication dit explicitement "discounted by the opportunity cost of funds" |
-| 5 | 44d | f8c1f2ef | UWorld | Distribution normale, excess kurtosis = −0.6 | C(plus de valeurs négatives) → **B(queues plus fines)** | Kurtosis < 0 = platykurtique = queues plus fines. L'explication : "(Choice C) Kurtosis does not affect the symmetry." |
-| 6 | 44d | 0413fff5 | UWorld | Standard IV(B) — Patel/Eclipse, offre de dîners trimestriels | B(accepter puis divulguer) → **C(divulguer ET obtenir approbation avant)** | L'explication : "(Choice B) Informing Eclipse after accepting is a violation of the Standard." |
+| 1 | 44b | 0be639e0 | UWorld | Distribution unimodale skewness 0.8 — plus grande mesure de tendance centrale | A→**C** | Mode < médiane < mean sur distribution droite |
+| 2 | 44b | 1efd6989 | UWorld | Différence fondamentale actions préférentielles vs communes | A→**C** | Actionnaires ordinaires ont les droits de vote |
+| 3 | 44b | 0c6d9963 | UWorld | IRR sur projets mutuellement exclusifs | C→**B** | Hypothèse de réinvestissement IRR irréaliste |
+| 4 | 44c | 0e41b1e8 | UWorld | NPV — taux d'actualisation, investissement financé par emprunt | C→**B** | Explication : "discounted by the opportunity cost of funds" |
+| 5 | 44d | f8c1f2ef | UWorld | Excess kurtosis = −0.6 | C→**B** | Platykurtique = queues plus fines |
+| 6 | 44d | 0413fff5 | UWorld | Standard IV(B) — Patel/Eclipse, dîners trimestriels | B→**C** | "(Choice B) Informing Eclipse after accepting is a violation" |
+| 7 | 44e | 02848d98 | Extra_QB | IFRS general features — "least likely" | B→**A** | "Matching" n'est pas un general feature IFRS (c'est un vieux concept US GAAP) |
+| 8 | 44e | e42260c3 | Extra_QB | Risk tolerance : ability above avg, willingness below avg | B→**C** | La contrainte la plus restrictive s'impose → below average |
+| 9 | 44e | c52c3582 | Extra_QB | Capital budgeting : plus incertitude | C→**B** | Nouveau produit > expansion > remplacement |
+| 10 | 44e | 0f38eb99 | Extra_QB | Financial risk least likely affected by | A→**B** | Dividendes = discrétionnaires, pas de levier financier |
+| 11 | 44e | 1e90379f | Extra_QB | Derivative price least likely depends on | A→**B** | Pricing risque-neutre ne dépend pas de l'aversion au risque |
+| 12 | 44e | 1510e937 | Extra_QB | Accelerated vs SL depreciation + DTL degree | B→**A** | Amortissement accéléré → charges fixes plus élevées → DTL augmente |
+| 13 | 44e | 8cc808a0 | Extra_QB | GIPS least likely resolves misleading practices | A→**C** | Ajustements d'analystes hors scope GIPS |
+| 14 | 44e | 62868f2c | Extra_QB | IFRS cash receipt of interest — cannot be classified as | C→**B** | Intérêts reçus : opérating ou investing (IFRS), jamais financing |
+| 15 | 44e | 513fb693 | Extra_QB | IFRS CF fundamental qualitative characteristics | A→**B** | Materiality = aspect de Relevance, pas une caractéristique fondamentale autonome |
+| 16 | 44e | e5acfe4f | Extra_QB | Gross profit margin — perpetual vs periodic | A→**C** | LIFO donne des résultats différents en perpétuel vs périodique |
+| 17 | 44e | ce495e66 | Extra_QB | Capitalize vs expense — which measure initially decreases | A→**C** | Cash outflows from operations diminuent (reclassés en investing) |
+| 18 | 44e | 2d4eb637 | Kevin_Mock | Which is restricted from issuing bonds? | A→**C** | Ni World Bank ni EIB ne sont restreints → Neither A nor B |
+| 19 | 44e | c1e03783 | Kevin_Mock | Ownership rights on DLT represented by | A→**C** | Token = droits de propriété sur DLT, pas blockchain |
+| 20 | 44e | 879a3d09 | Kevin_Mock | Haseeb Ahmed ESG — renewable energy constraint | B→**C** | Énergie renouvelable = facteur Environmental |
+| 21 | 44e | de0b302d | Kevin_Mock | Financial assets least likely at cost/amortized cost | A→**C** | Dérivés toujours en fair value, jamais amortized cost |
+| 22 | 44e | 33986486 | Kevin_Mock | IOSCO — least likely core objective | A→**B** | "Reducing unsystematic risk" n'est pas un objectif IOSCO |
+| 23 | 44e | e47aa6d7 | Kevin_Mock | Equity securities greatest risk for company | A→**C** | Putable shares forcent le rachat → risque maximal pour la société |
+| 24 | 44e | 4ad675de | Kevin_Mock | Book value 31.12.2023 (actifs − passifs) | A→**C** | 12M − 7,5M = 4,5M = option C |
 
-**Méthode audit session 44d** : dump frais Supabase (7 249 lignes, paginé PowerShell) → NLP complet (P1=0, P2=0) → classification P3 par signaux neg/aff/inv → analyse CFA domain logic des 26 flags à neg_score ≥ 4 → pattern "(Choice X) incorrect/violation/is not" sur 112+64 flags. 2 erreurs supplémentaires trouvées et corrigées.
+**Méthode audit session 44e** : vérification PDF source directe — `scripts/pdf_audit_local.py` lit les PDFs originaux dans `D:\CLAUDE\Projet CFA\CFA L1`, compare avec le dump Supabase local (7 249 lignes). Résultats : UWorld=0 (checkmarks non détectés — erreurs déjà trouvées via NLP), Extra_QB=11/333, Kevin_Mock=7/180. Kaplan en cours. 1 faux positif Extra_QB écarté (real estate homogeneity, DB=B déjà correct).
 
-**Scripts d'audit** : `scripts/rigorous_audit.py` → `scripts/classify_p3_flags.py` → `scripts/verify_real_errors.py`
+**Scripts** : `scripts/pdf_audit_local.py` → `scripts/apply_pdf_fixes.py` → PowerShell PATCH Supabase
 
 ---
 
