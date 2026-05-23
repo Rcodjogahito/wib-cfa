@@ -1,8 +1,8 @@
 # ETAT ACTUEL — WIB CFA
 > Mis à jour automatiquement à la fin de chaque session Claude Code.
 
-**Date**: 2026-05-24 (session 44c)  
-**Commit**: a19cdb3 — audit correct_answer final (4 corrections totales)  
+**Date**: 2026-05-24 (session 44d)  
+**Commit**: à venir — audit correct_answer exhaustif (6 corrections totales)  
 **Branch**: master → Streamlit Cloud (auto-deploy)
 
 ---
@@ -25,18 +25,20 @@
 
 **Audit cmd**: `python scripts/audit_questions.py`
 
-**Audit correct_answer (sessions 44b–44c)** : audit NLP complet sur 7 249 questions + revue manuelle des 657 flags P3 → **4 corrections totales appliquées** :
+**Audit correct_answer (sessions 44b–44d)** : audit NLP exhaustif sur 7 249 questions (dump Supabase frais + analyse des 655 flags P3 + pattern-matching "(Choice X) is wrong/violation" sur tous les flags) → **6 corrections totales appliquées** :
 
-| # | Session | Source | Question (résumé) | Stocké → Correct | Raison |
-|---|---|---|---|---|---|
-| 1 | 44b | UWorld | Distribution unimodale skewness 0.8 — plus grande mesure de tendance centrale | A(mode) → **C(mean)** | Distribution droite : mode < médiane < mean |
-| 2 | 44b | UWorld | Différence fondamentale actions préférentielles vs communes | A(plus de droits de vote) → **C(dividendes prioritaires)** | Ce sont les actionnaires ordinaires qui ont les droits de vote |
-| 3 | 44b | UWorld | IRR sur projets mutuellement exclusifs | C(hypothèse de réinvestissement réaliste) → **B** | L'explication confirme que l'hypothèse de réinvestissement de l'IRR est irréaliste, pas un avantage |
-| 4 | 44c | UWorld | NPV — taux d'actualisation pour investissement financé par emprunt | C(coût de la dette) → **B(coût d'opportunité des fonds)** | L'explication dit explicitement "discounted by the opportunity cost of funds" |
+| # | Session | ID | Source | Question (résumé) | Stocké → Correct | Raison |
+|---|---|---|---|---|---|---|
+| 1 | 44b | 0be639e0 | UWorld | Distribution unimodale skewness 0.8 — plus grande mesure de tendance centrale | A(mode) → **C(mean)** | Distribution droite : mode < médiane < mean |
+| 2 | 44b | 1efd6989 | UWorld | Différence fondamentale actions préférentielles vs communes | A(plus de droits de vote) → **C(dividendes prioritaires)** | Ce sont les actionnaires ordinaires qui ont les droits de vote |
+| 3 | 44b | 0c6d9963 | UWorld | IRR sur projets mutuellement exclusifs | C(hypothèse de réinvestissement réaliste) → **B** | L'explication confirme que l'hypothèse de réinvestissement de l'IRR est irréaliste, pas un avantage |
+| 4 | 44c | 0e41b1e8 | UWorld | NPV — taux d'actualisation pour investissement financé par emprunt | C(coût de la dette) → **B(coût d'opportunité des fonds)** | L'explication dit explicitement "discounted by the opportunity cost of funds" |
+| 5 | 44d | f8c1f2ef | UWorld | Distribution normale, excess kurtosis = −0.6 | C(plus de valeurs négatives) → **B(queues plus fines)** | Kurtosis < 0 = platykurtique = queues plus fines. L'explication : "(Choice C) Kurtosis does not affect the symmetry." |
+| 6 | 44d | 0413fff5 | UWorld | Standard IV(B) — Patel/Eclipse, offre de dîners trimestriels | B(accepter puis divulguer) → **C(divulguer ET obtenir approbation avant)** | L'explication : "(Choice B) Informing Eclipse after accepting is a violation of the Standard." |
 
-**Résultat P1/P2** : 0 — aucune incohérence haute confiance (identique à la session 44b).  
-**Scripts d'audit** : `scripts/rigorous_audit.py` → `scripts/classify_p3_flags.py` → `scripts/verify_real_errors.py`  
-**Faux positifs vérifiés** : 2 cas CHECK résolus manuellement (GMV portfolio : stored=A correct ; portfolio SD=10% : stored=C correct, NLP avait capté "Choices A and B" comme lettre de réponse).
+**Méthode audit session 44d** : dump frais Supabase (7 249 lignes, paginé PowerShell) → NLP complet (P1=0, P2=0) → classification P3 par signaux neg/aff/inv → analyse CFA domain logic des 26 flags à neg_score ≥ 4 → pattern "(Choice X) incorrect/violation/is not" sur 112+64 flags. 2 erreurs supplémentaires trouvées et corrigées.
+
+**Scripts d'audit** : `scripts/rigorous_audit.py` → `scripts/classify_p3_flags.py` → `scripts/verify_real_errors.py`
 
 ---
 
