@@ -1,8 +1,8 @@
 # ETAT ACTUEL — WIB CFA
 > Mis à jour automatiquement à la fin de chaque session Claude Code.
 
-**Date**: 2026-05-23 (session 44)  
-**Commit**: 444b78a — ligature fix fully deployed (pytz 2025.4 cache bust)  
+**Date**: 2026-05-24 (session 44c)  
+**Commit**: à venir — audit correct_answer final (4 corrections totales)  
 **Branch**: master → Streamlit Cloud (auto-deploy)
 
 ---
@@ -25,10 +25,18 @@
 
 **Audit cmd**: `python scripts/audit_questions.py`
 
-**Audit correct_answer (session 44b)** : 3 corrections supplémentaires appliquées après audit NLP + revue manuelle des 657 flags P3 :
-1. UWorld — Q. distribution unimodale skewness 0.8, plus grande mesure de tendance centrale → A(mode) **→ C(mean)** (distribution à droite : mode < médiane < mean)
-2. UWorld — Q. différence fondamentale actions préférentielles vs communes → A(plus de droits de vote) **→ C(dividendes prioritaires)** (les ordinaires ont les droits de vote)
-3. UWorld — Q. IRR sur projets mutuellement exclusifs → C(hypothèse de réinvestissement réaliste) **→ B(pas de contexte d'échelle)** (l'explication confirme que l'hypothèse de réinvestissement de l'IRR est irréaliste)
+**Audit correct_answer (sessions 44b–44c)** : audit NLP complet sur 7 249 questions + revue manuelle des 657 flags P3 → **4 corrections totales appliquées** :
+
+| # | Session | Source | Question (résumé) | Stocké → Correct | Raison |
+|---|---|---|---|---|---|
+| 1 | 44b | UWorld | Distribution unimodale skewness 0.8 — plus grande mesure de tendance centrale | A(mode) → **C(mean)** | Distribution droite : mode < médiane < mean |
+| 2 | 44b | UWorld | Différence fondamentale actions préférentielles vs communes | A(plus de droits de vote) → **C(dividendes prioritaires)** | Ce sont les actionnaires ordinaires qui ont les droits de vote |
+| 3 | 44b | UWorld | IRR sur projets mutuellement exclusifs | C(hypothèse de réinvestissement réaliste) → **B** | L'explication confirme que l'hypothèse de réinvestissement de l'IRR est irréaliste, pas un avantage |
+| 4 | 44c | UWorld | NPV — taux d'actualisation pour investissement financé par emprunt | C(coût de la dette) → **B(coût d'opportunité des fonds)** | L'explication dit explicitement "discounted by the opportunity cost of funds" |
+
+**Résultat P1/P2** : 0 — aucune incohérence haute confiance (identique à la session 44b).  
+**Scripts d'audit** : `scripts/rigorous_audit.py` → `scripts/classify_p3_flags.py` → `scripts/verify_real_errors.py`  
+**Faux positifs vérifiés** : 2 cas CHECK résolus manuellement (GMV portfolio : stored=A correct ; portfolio SD=10% : stored=C correct, NLP avait capté "Choices A and B" comme lettre de réponse).
 
 ---
 
