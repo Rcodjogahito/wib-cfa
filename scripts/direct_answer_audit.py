@@ -191,7 +191,9 @@ def parse_extra_qb():
         a_text = a_sections[topic]
 
         # Parse stems: "N. stem ... A. opt B. opt C. opt"
-        q_blocks = re.split(r'\n(?=\d+\.[ \t])', q_text)
+        # Apply de-triple to Q-section too: ECON Q1-6 are triple-encoded in Extra_QB
+        q_text_decoded = _de_triple(q_text)
+        q_blocks = re.split(r'\n(?=\d+\.[ \t])', q_text_decoded)
         stems = {}
         for block in q_blocks:
             m = re.match(r'^(\d+)\.\s+(.+)', block, re.DOTALL)

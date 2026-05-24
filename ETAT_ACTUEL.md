@@ -1,8 +1,8 @@
 # ETAT ACTUEL — WIB CFA
 > Mis à jour automatiquement à la fin de chaque session Claude Code.
 
-**Date**: 2026-05-24 (session 44g)  
-**Commit**: 35b3a9b → en cours — +1 correction Kevin_Mock + fix audit Extra_QB CORP/AI  
+**Date**: 2026-05-24 (session 44h)  
+**Commit**: 35b3a9b → en cours — audit complet toutes sources terminé (0 nouvelles corrections)  
 **Branch**: master → Streamlit Cloud (auto-deploy)
 
 ---
@@ -25,7 +25,43 @@
 
 **Audit cmd**: `python scripts/audit_questions.py`
 
-**Audit correct_answer (sessions 44b–44g)** : audit NLP + ligature + PDF checkmark sur 7 249 questions → **270 corrections totales appliquées** (24 sessions précédentes + 245 session 44f + 1 session 44g) :
+**Audit correct_answer (sessions 44b–44h)** : audit NLP + ligature + PDF checkmark sur 7 249 questions → **270 corrections totales appliquées** (24 sessions précédentes + 245 session 44f + 1 session 44g + 0 session 44h) :
+
+---
+
+## Travaux terminés (session 44h)
+
+### ✅ Audit PDF source complet — toutes sources vérifiées (0 nouvelle correction)
+
+**Fix 3 : Q-section triple-encoding dans `direct_answer_audit.py`** :
+- Cause : ECON Q1–6 dans le Q-section d'Extra_QB sont triple-encodés (`111... AAAnnn...`). `_de_triple` était appliqué uniquement à l'A-section, pas au Q-section → Q-stems 1-6 non extraits, couverture ECON = 2/8 au lieu de 8/8.
+- Fix : `q_text_decoded = _de_triple(q_text)` avant `re.split(...)` dans `parse_extra_qb()`.
+
+**Résultats audit final Extra_QB + Kevin_Mock** :
+| Topic | Q pairs (avant) | Q pairs (après) | Corrections |
+|---|---|---|---|
+| ECON | 2/8 | **8/8** | 0 |
+| Tous topics | 128 | **130** | 0 |
+| Kevin_Mock | 180/180 | 180/180 | 0 |
+
+**Faux positif confirmé à nouveau** : `6fa7070c` (Extra_QB AI Q14) — PDF answer key dit A, mais l'explication PDF dit "homogeneity is NOT a feature of real estate" → **B est correct**. DB stocke B. Non modifié. (Erreur dans l'answer key PDF, pas dans la DB.)
+
+**Audit Kaplan Mock complet** (script `kaplan_mock_audit.py`) :
+- 1 057 questions Kaplan Mock (Mocks 1–6) vérifiées contre les PDFs Answers originaux
+- P1 (lettre explicite) : **0 hits** — Kaplan ne met jamais "Answer: X" dans les PDFs
+- P2 (texte option dans explication) : 554 vérifiés, 211 "mismatches" → **tous faux positifs** (triple-confirmation = 0)
+- Cause : options multilignes dans Kaplan → le parser capture des fragments de ligne au lieu du texte complet
+- Conclusion : les 3 717 questions Kaplan sont correctes en DB
+
+**Bilan audit complet par source** :
+| Source | Q total | Méthode audit | Corrections totales |
+|---|---|---|---|
+| Kaplan | 3 717 | NLP (sessions 40–44e) + Mock PDF P2 (44h) | ~1 156 NLP (40–44f) |
+| UWorld | 1 897 | Checkmark PDF (44f) | 238 |
+| CFA_WEB | 1 122 | PDFs scannés — non auditable | 0 |
+| Extra_QB | 333 | PDF direct (44e–44h) | 12 |
+| Kevin_Mock | 180 | PDF direct (44e–44g) | 8 |
+| **Total** | **7 249** | — | **270** |
 
 ---
 
