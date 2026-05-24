@@ -2,7 +2,7 @@
 > Mis à jour automatiquement à la fin de chaque session Claude Code.
 
 **Date**: 2026-05-24 (session 44f)  
-**Commit**: à mettre à jour — audit PDF checkmark UWorld (245 corrections supplémentaires)  
+**Commit**: 35b3a9b — audit exhaustif correct_answer : 245 corrections (Kaplan ligature x10 + UWorld PDF checkmark x235)  
 **Branch**: master → Streamlit Cloud (auto-deploy)
 
 ---
