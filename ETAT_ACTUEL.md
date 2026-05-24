@@ -1,8 +1,8 @@
 # ETAT ACTUEL — WIB CFA
 > Mis à jour automatiquement à la fin de chaque session Claude Code.
 
-**Date**: 2026-05-24 (session 44i)  
-**Commit**: en cours — 21 corrections Kaplan QB régulières vérifiées manuellement contre PDFs  
+**Date**: 2026-05-24 (session 44j)  
+**Commit**: en cours — audit CFA_WEB 753/1122 questions, 3 corrections + 369 restantes (Vision manquant)  
 **Branch**: master → Streamlit Cloud (auto-deploy)
 
 ---
@@ -25,7 +25,57 @@
 
 **Audit cmd**: `python scripts/audit_questions.py`
 
-**Audit correct_answer (sessions 44b–44i)** : audit NLP + ligature + PDF checkmark + audit manuel Kaplan QB sur 7 249 questions → **291 corrections totales appliquées** (24 sessions précédentes + 245 session 44f + 1 session 44g + 0 session 44h + 21 session 44i) :
+**Audit correct_answer (sessions 44b–44j)** : audit NLP + ligature + PDF checkmark + audit manuel Kaplan QB + audit CFA_WEB Vision sur 7 249 questions → **294 corrections totales appliquées** (24 sessions précédentes + 245 session 44f + 1 session 44g + 0 session 44h + 21 session 44i + 3 session 44j) :
+
+---
+
+## Travaux terminés (session 44j)
+
+### ✅ Audit CFA_WEB (scans) — Vision cache + P2 validation — 3 corrections (en cours: 369 Q restantes)
+
+**Méthode** : `scripts/cfaweb_full_audit.py` — chargement des caches Vision existants (QB AI/Corp/Deriv/Eco + Equity/Ethics, Mocks 1/3SS2/4/5), jointure Q+A pages par (topic, n), matching par similarité de texte (SequenceMatcher ≥ 0.82), déduplication par UUID DB, validation P2 sur `explanation_en` DB.
+
+**Résultats (caches partiels)** :
+| Stat | Valeur |
+|---|---|
+| Q+A pairs extraits des caches | 912 |
+| Questions DB matchées | 753/1 122 (67%) |
+| Mismatches bruts | 8 |
+| Faux positifs éliminés par P2 | 5 |
+| **Corrections appliquées** | **3** |
+
+**3 corrections appliquées** :
+| ID | Stored→Correct | Sujet |
+|---|---|---|
+| 442186e6 | C→**A** | Markowitz efficient frontier: rate of return increase DIMINISHES (not increases) |
+| 29f53894 | A→**C** | OTC derivatives: lower transparency (not privacy) vs exchange-traded |
+| 8a2d5561 | A→**B** | Top-down revenue driver: GDP-relative growth (not same-store sales) |
+
+**Faux positifs détectés et éliminés (P2 confirme DB correct)** :
+- d16db20d: stored=A (trailing P/E négatif = non-significatif) ✓
+- e2e6a9a3: stored=C (sophistication = N'EST PAS une procédure recommandée = réponse à "which is NOT") ✓
+- 2b1cfa17: stored=C (explication dit explicitement "30% is the correct return") ✓
+- 93e5fd73: stored=A (AUD apprécie vs USD ET EUR → réponse = AUD only) ✓
+- 774d263e: ambigu (explication contradictoire, skip) ✓
+
+**Caches Vision manquants** (369 Q non vérifiées) :
+- QB: `Fixed income, FSA.pdf`, `Portfolio, Quants.pdf`
+- Mocks: `MOCK 2 SS1`, `MOCK 2 SS2`, `MOCK 3 SS1`, `MOCK 6 SS1`, `MOCK 6 SS2`
+- **Pour compléter** : `set ANTHROPIC_API_KEY=sk-ant-...` puis `python scripts/cfaweb_reextract_missing.py` puis `python scripts/cfaweb_full_audit.py`
+
+**Scripts produits** :
+- `D:\CLAUDE\Projet CFA\wib-cfa\scripts\cfaweb_full_audit.py` — audit complet + P2 validation + génère PS1
+- `D:\CLAUDE\Projet CFA\wib-cfa\scripts\cfaweb_reextract_missing.py` — re-extraction Vision des caches vides
+
+**Bilan audit complet mis à jour** :
+| Source | Q total | Méthode audit | Corrections totales |
+|---|---|---|---|
+| Kaplan | 3 717 | NLP + ligature + QSTN ANS PDF | ~1 177 |
+| UWorld | 1 897 | Checkmark PDF | 238 |
+| CFA_WEB | 1 122 | Vision cache + P2 (753 vérifiées, 369 pending) | 3 |
+| Extra_QB | 333 | PDF direct | 12 |
+| Kevin_Mock | 180 | PDF direct | 8 |
+| **Total** | **7 249** | — | **294** |
 
 ---
 
