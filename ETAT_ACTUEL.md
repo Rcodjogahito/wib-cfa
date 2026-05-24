@@ -1,9 +1,9 @@
 # ETAT ACTUEL — WIB CFA
 > Mis à jour automatiquement à la fin de chaque session Claude Code.
 
-**Date**: 2026-05-24 (session 44n)  
+**Date**: 2026-05-25 (session 44o — vérification déploiement)  
 **Commit**: CFA_WEB OCR audit complet — 15 corrections appliquées (Windows OCR free, 775 pages)  
-**Branch**: master → Streamlit Cloud (auto-deploy)
+**Branch**: master → Streamlit Cloud (auto-deploy) ✅ opérationnelle
 
 ---
 
