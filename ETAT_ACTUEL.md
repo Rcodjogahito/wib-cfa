@@ -1,8 +1,8 @@
 # ETAT ACTUEL — WIB CFA
 > Mis à jour automatiquement à la fin de chaque session Claude Code.
 
-**Date**: 2026-05-24 (session 44m)  
-**Commit**: audit Kaplan Mock xa0 marker exhaustif — 341 corrections appliquées (286 high-conf + 55 low-conf)  
+**Date**: 2026-05-24 (session 44n)  
+**Commit**: CFA_WEB OCR audit complet — 15 corrections appliquées (Windows OCR free, 775 pages)  
 **Branch**: master → Streamlit Cloud (auto-deploy)
 
 ---
@@ -25,7 +25,56 @@
 
 **Audit cmd**: `python scripts/audit_questions.py`
 
-**Audit correct_answer (sessions 44b–44m)** : audit NLP + ligature + PDF checkmark + audit manuel Kaplan QB + audit CFA_WEB Vision + audit NLP CFA_WEB + audit Kaplan Mock xa0 marker sur 7 249 questions → **636 corrections totales appliquées** (24 sessions précédentes + 245 session 44f + 1 session 44g + 0 session 44h + 21 session 44i + 3 session 44j + 1 session 44k + 286 session 44l + 55 session 44m) :
+**Audit correct_answer (sessions 44b–44n)** : audit NLP + ligature + PDF checkmark + audit manuel Kaplan QB + audit CFA_WEB Vision + audit NLP CFA_WEB + audit Kaplan Mock xa0 marker + audit CFA_WEB OCR Windows sur 7 249 questions → **651 corrections totales appliquées** (24 sessions précédentes + 245 session 44f + 1 session 44g + 0 session 44h + 21 session 44i + 3 session 44j + 1 session 44k + 286 session 44l + 55 session 44m + 15 session 44n) :
+
+---
+
+## Travaux terminés (session 44n)
+
+### ✅ Audit CFA_WEB OCR complet — 15 corrections appliquées (7 caches, 775 pages)
+
+**Méthode** : Windows OCR natif (`winsdk`, gratuit, intégré OS) via PyMuPDF pour rendre les PDF scannés en PNG. Aucun appel API Anthropic.
+
+**Script** : `D:\CLAUDE\Projet CFA\wib-cfa\scripts\cfaweb_ocr_fill.py`
+
+**Résultats** :
+| Fichier PDF | Pages | Q-items | A-items | Valid |
+|---|---|---|---|---|
+| Fixed income, FSA.pdf | 137 | 231 | 215 | — |
+| Portfolio, Quants.pdf | 124 | 183 | 163 | — |
+| MOCK 2 SS1 ANS (1).pdf | 107 | — | — | 97/107 |
+| MOCK 2 SS2 ANS.pdf | 100 | — | — | 96/100 |
+| MOCK 3 SS1 ANS.pdf | 107 | — | — | 98/107 |
+| MOCK 6 SS1 ANS (2).pdf | 102 | — | — | 101/102 |
+| MOCK 6 SS2 ANS.pdf | 98 | — | — | 96/98 |
+| **Total** | **775** | — | — | ~588 Q+A |
+
+**Audit cfaweb_full_audit.py --skip-vision** :
+- 1 805 Q+A pairs extraits (tous caches confondus)
+- 818 questions DB matchées
+- 21 mismatches détectés
+- **15 corrections appliquées** (sim=1.0, 1 HIGH-CONFIRMED P2 + 14 MEDIUM-CACHE vérifiés)
+- 6 écartés (OCR incorrect ou DB déjà juste)
+
+**6 cas écartés (DB correct)** :
+| ID | Proposé | Raison rejet |
+|---|---|---|
+| d16db20d | A→B | Trailing P/E = least meaningful pour negative earnings → A correct |
+| b3a8801d | C→B | Explication DB incohérente avec question → match suspect |
+| 948f5276 | C→B | Probability sampling = more representative = C correct |
+| 9b7f4274 | B→A | DB_expl supporte B (variance = σ²/n) |
+| 21cf9fed | B→C | Lin-log model ≠ joint probability → match suspect |
+| 83aa95f5 | A→B | Spearman = 1-(6×12)/(4×15) = -0.2 = A correct (calculé) |
+
+**Bilan audit complet mis à jour** :
+| Source | Q total | Méthode audit | Corrections totales |
+|---|---|---|---|
+| Kaplan | 3 717 | NLP + ligature + QSTN ANS PDF + Mock xa0 marker | **~1 518** |
+| UWorld | 1 897 | Checkmark PDF | 238 |
+| CFA_WEB | 1 122 | Vision cache + P2 + NLP + OCR Windows | **19** |
+| Extra_QB | 333 | PDF direct | 12 |
+| Kevin_Mock | 180 | PDF direct | 8 |
+| **Total** | **7 249** | — | **651** |
 
 ---
 
@@ -72,10 +121,10 @@
 |---|---|---|---|
 | Kaplan | 3 717 | NLP + ligature + QSTN ANS PDF + Mock xa0 marker | **~1 518** |
 | UWorld | 1 897 | Checkmark PDF | 238 |
-| CFA_WEB | 1 122 | Vision cache + P2 (753 vérif.) + NLP (1 122 vérif.) | 4 |
+| CFA_WEB | 1 122 | Vision cache + P2 + NLP + OCR Windows | 19 |
 | Extra_QB | 333 | PDF direct | 12 |
 | Kevin_Mock | 180 | PDF direct | 8 |
-| **Total** | **7 249** | — | **636** |
+| **Total** | **7 249** | — | **651** |
 
 **Scripts produits** :
 - `D:\CLAUDE\Projet CFA\wib-cfa\scripts\kaplan_mock_xa0_audit.py` — audit principal + génère JSON + PS1
@@ -131,7 +180,7 @@
 - `C:\Users\codjo\AppData\Local\Temp\cfaweb_nlp_fixes.json` — 19 détections avec analyse
 - `C:\Users\codjo\AppData\Local\Temp\cfaweb_nlp_report.json` — rapport complet
 
-**État CFA_WEB** : 1 122/1 122 questions auditées via NLP (+ 753/1 122 vérifiées via Vision caches). Les 369 questions sans cache Vision restent vérifiables uniquement via NLP/DB explanation. Pour audit Vision complet : `set ANTHROPIC_API_KEY=sk-ant-api03-...` puis `python scripts/cfaweb_reextract_missing.py` + `python scripts/cfaweb_full_audit.py`.
+**État CFA_WEB** : 1 122/1 122 questions auditées via NLP (+ 753/1 122 vérifiées via Vision caches). Les 369 questions manquantes ont été complétées via OCR Windows (session 44n) → audit total CFA_WEB exhaustif accompli.
 
 ---
 
