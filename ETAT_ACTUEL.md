@@ -1,8 +1,8 @@
 # ETAT ACTUEL — WIB CFA
 > Mis à jour automatiquement à la fin de chaque session Claude Code.
 
-**Date**: 2026-05-24 (session 44j)  
-**Commit**: en cours — audit CFA_WEB 753/1122 questions, 3 corrections + 369 restantes (Vision manquant)  
+**Date**: 2026-05-24 (session 44k)  
+**Commit**: audit CFA_WEB NLP 19 détections → 1 correction confirmée (d138d5de), 16 faux positifs éliminés  
 **Branch**: master → Streamlit Cloud (auto-deploy)
 
 ---
@@ -25,7 +25,57 @@
 
 **Audit cmd**: `python scripts/audit_questions.py`
 
-**Audit correct_answer (sessions 44b–44j)** : audit NLP + ligature + PDF checkmark + audit manuel Kaplan QB + audit CFA_WEB Vision sur 7 249 questions → **294 corrections totales appliquées** (24 sessions précédentes + 245 session 44f + 1 session 44g + 0 session 44h + 21 session 44i + 3 session 44j) :
+**Audit correct_answer (sessions 44b–44k)** : audit NLP + ligature + PDF checkmark + audit manuel Kaplan QB + audit CFA_WEB Vision + audit NLP CFA_WEB sur 7 249 questions → **295 corrections totales appliquées** (24 sessions précédentes + 245 session 44f + 1 session 44g + 0 session 44h + 21 session 44i + 3 session 44j + 1 session 44k) :
+
+---
+
+## Travaux terminés (session 44k)
+
+### ✅ Audit NLP CFA_WEB — vérification exhaustive des 19 détections → 1 correction confirmée
+
+**Méthode** : `scripts/cfaweb_nlp_audit.py` (améliorations P2 session 44j) appliqué sur dump frais (7 249 lignes). 19 mismatches détectés. Vérification manuelle complète : options A/B/C lues depuis le dump pour chaque UUID → analyse domaine CFA L1.
+
+**Résultats — 19 détections analysées** :
+
+| Catégorie | Count | Détail |
+|---|---|---|
+| Faux positifs confirmés | 16 | stored correct, P2/EXPLICIT mal tiré |
+| Faux positifs connus (sessions précédentes) | 2 | 29f53894 (déjà corrigé), 39201c37 (expl. dit B) |
+| **Correction genuine** | **1** | d138d5de A→B |
+
+**Correction appliquée** :
+| ID | Stored→Correct | Sujet |
+|---|---|---|
+| d138d5de | A→**B** | Méthode alternative investments nécessitant **le moins** d'expertise → Fund investing (B), pas Co-investing (A). Explication : "Fund investing...without requiring high degree of expertise, whereas co-investing demands more active involvement." |
+
+**Causes des 16 faux positifs** (taxonomie) :
+
+1. **Questions "A only / B only / Both A+B"** (7 cas) : P2 détecte le texte de l'option "A only" ou "B only" dans l'explication, mais la bonne réponse est "Both" (option C). Ex: 0cc067a4 (régulation marchés), 79332423 (infrastructure), 408e406f (expansion projects), 7c85eed4 (open-end funds), 7d9e9aea (private equity), 92b786a7 (bitcoin), bcc67b8a (OTC counterparty risk).
+
+2. **Texte option courte non détectable** (2 cas) : Option correcte trop courte (≤4 chars, filtrée par P2). Ex: 0770617c (Mode=4 chars, P2 score 0 pour B), 764fc908 (sector à la tête de la hiérarchie GICS, "industry" scoré à tort).
+
+3. **Mauvaise réponse décrite dans l'explication** (5 cas) : L'explication mentionne les options incorrectes pour expliquer pourquoi elles sont fausses, P2 les capte. Ex: 4bd4b291 (putable=lowest div, "callable" apparaît dans expl), 5183c42a (€8M correct, "10 million" apparaît aussi), 60168cac (mode<median<mean positif), a3983c4f (risk-free rate, "exercise price" apparaît), dbe024f6 (putable bond highest price, "callable" apparaît).
+
+4. **EXPLICIT regex faux positif** (1 cas) : 5ffa116a — "are **a** correct example" → regex `\ba...correct` détecte l'article indéfini "a" comme la lettre option "A". Stored=B (thematic risk) est correct.
+
+5. **Autres** (1 cas) : 319e1f6d — option C ajoute "non-discretionary" (faux per GIPS), stored=B correct.
+
+**Bilan audit complet mis à jour** :
+| Source | Q total | Méthode audit | Corrections totales |
+|---|---|---|---|
+| Kaplan | 3 717 | NLP + ligature + QSTN ANS PDF | ~1 177 |
+| UWorld | 1 897 | Checkmark PDF | 238 |
+| CFA_WEB | 1 122 | Vision cache + P2 (753 vérif.) + NLP (1 122 vérif.) | 4 |
+| Extra_QB | 333 | PDF direct | 12 |
+| Kevin_Mock | 180 | PDF direct | 8 |
+| **Total** | **7 249** | — | **295** |
+
+**Scripts produits** :
+- `D:\CLAUDE\Projet CFA\wib-cfa\scripts\cfaweb_nlp_audit.py` — audit NLP 1 122 questions CFA_WEB
+- `C:\Users\codjo\AppData\Local\Temp\cfaweb_nlp_fixes.json` — 19 détections avec analyse
+- `C:\Users\codjo\AppData\Local\Temp\cfaweb_nlp_report.json` — rapport complet
+
+**État CFA_WEB** : 1 122/1 122 questions auditées via NLP (+ 753/1 122 vérifiées via Vision caches). Les 369 questions sans cache Vision restent vérifiables uniquement via NLP/DB explanation. Pour audit Vision complet : `set ANTHROPIC_API_KEY=sk-ant-api03-...` puis `python scripts/cfaweb_reextract_missing.py` + `python scripts/cfaweb_full_audit.py`.
 
 ---
 
@@ -72,10 +122,10 @@
 |---|---|---|---|
 | Kaplan | 3 717 | NLP + ligature + QSTN ANS PDF | ~1 177 |
 | UWorld | 1 897 | Checkmark PDF | 238 |
-| CFA_WEB | 1 122 | Vision cache + P2 (753 vérifiées, 369 pending) | 3 |
+| CFA_WEB | 1 122 | Vision cache + P2 (753 vérif.) + NLP (tous) | 4 |
 | Extra_QB | 333 | PDF direct | 12 |
 | Kevin_Mock | 180 | PDF direct | 8 |
-| **Total** | **7 249** | — | **294** |
+| **Total** | **7 249** | — | **295** |
 
 ---
 
