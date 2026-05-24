@@ -1,8 +1,8 @@
 # ETAT ACTUEL — WIB CFA
 > Mis à jour automatiquement à la fin de chaque session Claude Code.
 
-**Date**: 2026-05-24 (session 44e)  
-**Commit**: 6d5c539 — audit correct_answer exhaustif (24 corrections totales à ce jour)  
+**Date**: 2026-05-24 (session 44f)  
+**Commit**: à mettre à jour — audit PDF checkmark UWorld (245 corrections supplémentaires)  
 **Branch**: master → Streamlit Cloud (auto-deploy)
 
 ---
@@ -25,7 +25,49 @@
 
 **Audit cmd**: `python scripts/audit_questions.py`
 
-**Audit correct_answer (sessions 44b–44e)** : audit NLP exhaustif + vérification PDF source sur 7 249 questions → **24 corrections totales appliquées** :
+**Audit correct_answer (sessions 44b–44f)** : audit NLP + ligature + PDF checkmark sur 7 249 questions → **269 corrections totales appliquées** (24 sessions précédentes + 245 session 44f) :
+
+---
+
+## Travaux terminés (session 44f)
+
+### ✅ Audit exhaustif correct_answer — Kaplan ligature + UWorld PDF checkmark (245 corrections)
+
+**Problème Kaplan — ligature NLP (10 corrections)** :
+- Cause : la détection `_detect_v2_kaplan` requiert `len(opt) > 8` pour le pass 2. Les options corrompues par ligature (ex. "Deation" = 7 chars, "Ination" = 7 chars) échouaient ce seuil → réponse non corrigée par l'audit NLP précédent.
+- Fix : `kaplan_ligature_audit.py` applique `fix_ligature_artifacts()` **avant** la détection, puis compare la réponse détectée vs stockée.
+- **10 corrections Kaplan** (toutes vérifiées via explanation + calcul) :
+
+| ID | stored→correct | Résumé |
+|---|---|---|
+| eb9e5cfb | C→A | Deflation — monetary policy |
+| ebbf0fb6 | C→B | Unsustainable growth → inflation |
+| add0e23e | C→A | Primary CB objective |
+| d7861bd5 | A→C | Crawling bands most like floating |
+| 9a526336 | A→B | Common-size CFS |
+| e6387a61 | C→A | Floating rate payer FRAs |
+| f07ef2e7 | A→B | Inflation affects return obj not risk |
+| 16a98577 | B→C | Crawling bands transitioning |
+| 5e46040f | C→A | Nominal vs real FX |
+| 4f929d65 | A→B | Macaulay duration |
+
+**Problème UWorld — checkmark PDF (235 corrections uniques)** :
+- Cause : audit NLP (session 40) ne pouvait pas lire les checkmarks FontAwesome des PDFs UWorld. 1030 corrections Kaplan avaient été appliquées, mais UWorld restait non audité par PDF.
+- Méthode : `uworld_answer_audit_v2.py` — 92 paires QSTN/Answers PDFs, alignement par index (Q1..QN ↔ checkmark 1..N), validation count match. 45s timeout par PDF (0 skip).
+- **Résultats** : 92/92 topics traités, 1843 questions vérifiées, 1605 correctes, **238 patches (235 UUIDs uniques)** :
+  - A→B: 58 | A→C: 40 | B→A: 43 | B→C: 31 | C→A: 34 | C→B: 29
+- Distribution aléatoire (pas de biais systématique) → erreurs individuelles de l'import original.
+- Spot-check manuel confirmé : EAR→SAR (7.44% = A ✓), PE performance fee catch-up (2%=C ✓), 5/5 vérifiés en Supabase post-patch.
+
+**Scripts produits** :
+- `D:\CLAUDE\Projet CFA\wib-cfa\scripts\kaplan_ligature_audit.py`
+- `D:\CLAUDE\Projet CFA\wib-cfa\scripts\uworld_answer_audit_v2.py`
+- `C:\Users\codjo\AppData\Local\Temp\apply_kaplan_liga_fixes.ps1` (appliqué)
+- `C:\Users\codjo\AppData\Local\Temp\apply_uworld_v2_fixes.ps1` (appliqué, 238 OK 0 ERR)
+
+---
+
+**Audit correct_answer (sessions 44b–44e)** : audit NLP exhaustif + vérification PDF source sur 7 249 questions → **24 corrections** :
 
 | # | Session | ID | Source | Question (résumé) | Stocké → Correct | Raison |
 |---|---|---|---|---|---|---|
