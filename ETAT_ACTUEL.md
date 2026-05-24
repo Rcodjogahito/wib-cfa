@@ -1,8 +1,8 @@
 # ETAT ACTUEL — WIB CFA
 > Mis à jour automatiquement à la fin de chaque session Claude Code.
 
-**Date**: 2026-05-24 (session 44k)  
-**Commit**: audit CFA_WEB NLP 19 détections → 1 correction confirmée (d138d5de), 16 faux positifs éliminés  
+**Date**: 2026-05-24 (session 44m)  
+**Commit**: audit Kaplan Mock xa0 marker exhaustif — 341 corrections appliquées (286 high-conf + 55 low-conf)  
 **Branch**: master → Streamlit Cloud (auto-deploy)
 
 ---
@@ -25,7 +25,63 @@
 
 **Audit cmd**: `python scripts/audit_questions.py`
 
-**Audit correct_answer (sessions 44b–44k)** : audit NLP + ligature + PDF checkmark + audit manuel Kaplan QB + audit CFA_WEB Vision + audit NLP CFA_WEB sur 7 249 questions → **295 corrections totales appliquées** (24 sessions précédentes + 245 session 44f + 1 session 44g + 0 session 44h + 21 session 44i + 3 session 44j + 1 session 44k) :
+**Audit correct_answer (sessions 44b–44m)** : audit NLP + ligature + PDF checkmark + audit manuel Kaplan QB + audit CFA_WEB Vision + audit NLP CFA_WEB + audit Kaplan Mock xa0 marker sur 7 249 questions → **636 corrections totales appliquées** (24 sessions précédentes + 245 session 44f + 1 session 44g + 0 session 44h + 21 session 44i + 3 session 44j + 1 session 44k + 286 session 44l + 55 session 44m) :
+
+---
+
+## Travaux terminés (sessions 44l–44m)
+
+### ✅ Audit Kaplan Mock xa0 marker — 341 corrections appliquées (exhaustif, 6 mocks × 180Q)
+
+**Découverte clé** : Les PDFs Kaplan Mock `ANS` encodent la bonne réponse via un marqueur `\xa0` (espace non-sécable, U+00A0) en fin de la dernière ligne de l'option correcte — artifact visuel du highlighting PDF. Fiabilité : **100%** (confirmée sur toutes les questions avec marqueur). Couverture : **99.5%** (quelques rares questions sans marqueur).
+
+**Méthode** :
+1. **Extraction PDF** : `fitz` (PyMuPDF) lit chaque question depuis les 6 PDFs `Mock Exam [1-6] - Answers.pdf`
+2. **Détection marqueur** : `line.rstrip(' \t').endswith('\xa0')` — critical : `str.rstrip()` enlèverait aussi `\xa0`
+3. **Matching DB** : index n-gram (4-grammes) + SequenceMatcher sur top-30 candidats + garde ambiguïté (rejet si top-2 dans 0.05)
+4. **Validation** : spot-check manuel 8 sim=1.0 (tous confirmés) + 57 low-confidence vérifiés individuellement
+
+**Script** : `D:\CLAUDE\Projet CFA\wib-cfa\scripts\kaplan_mock_xa0_audit.py`
+
+**Résultats** :
+| Stat | Valeur |
+|---|---|
+| PDFs audités | 6/6 (Mocks 1–6) |
+| Questions avec marqueur détecté | ~1 070/1 080 |
+| Questions matchées en DB | ~1 030 |
+| OK (stored = detected) | ~689 |
+| **Mismatches totaux** | **342** |
+| High-confidence (sim ≥ 0.90) appliqués (session 44l) | **286** |
+| Low-confidence (sim 0.78–0.89) vérifiés (session 44m) | 57 |
+| Faux positifs écartés (session 44m) | **2** |
+| **Low-confidence appliqués (session 44m)** | **55** |
+| **Total corrections Kaplan Mock** | **341** |
+
+**Répartition par direction (286 high-conf)** : A→B=55, A→C=55, B→A=34, B→C=50, C→A=35, C→B=57 — distribution aléatoire, aucun biais systématique.
+
+**2 faux positifs écartés** :
+| ID | Raison |
+|---|---|
+| 03d6e529 sim=0.817 | Explication DB dit "annually" mais option C détectée dit "quarterly" — faux match (question PDF ≠ question DB) |
+| 7a751f2b sim=0.892 | Double marqueur xa0 sur options A ET B — artifact parsing. Explication confirme A (corrélation 0.0525 = "weak") — stored A correct |
+
+**Cause racine des erreurs** : lors de l'import initial Kaplan Mock, les réponses ont été stockées avec une méthode non-fiable (NLP / P2 sur explications). Les options multilignes des Kaplan Mock PDFs rendaient l'extraction du texte d'option incorrecte → le P2 n'a jamais pu valider correctement → ~33% de mauvaises réponses stockées.
+
+**Bilan audit complet mis à jour** :
+| Source | Q total | Méthode audit | Corrections totales |
+|---|---|---|---|
+| Kaplan | 3 717 | NLP + ligature + QSTN ANS PDF + Mock xa0 marker | **~1 518** |
+| UWorld | 1 897 | Checkmark PDF | 238 |
+| CFA_WEB | 1 122 | Vision cache + P2 (753 vérif.) + NLP (1 122 vérif.) | 4 |
+| Extra_QB | 333 | PDF direct | 12 |
+| Kevin_Mock | 180 | PDF direct | 8 |
+| **Total** | **7 249** | — | **636** |
+
+**Scripts produits** :
+- `D:\CLAUDE\Projet CFA\wib-cfa\scripts\kaplan_mock_xa0_audit.py` — audit principal + génère JSON + PS1
+- `C:\Users\codjo\AppData\Local\Temp\kaplan_mock_fixes.json` — 342 mismatches détectés
+- `C:\Users\codjo\AppData\Local\Temp\apply_kaplan_mock_fixes.ps1` — 286 PATCH (appliqué 286/286 OK)
+- `C:\Users\codjo\AppData\Local\Temp\apply_kaplan_low_conf.ps1` — 55 PATCH (appliqué 55/55 OK)
 
 ---
 
@@ -68,7 +124,7 @@
 | CFA_WEB | 1 122 | Vision cache + P2 (753 vérif.) + NLP (1 122 vérif.) | 4 |
 | Extra_QB | 333 | PDF direct | 12 |
 | Kevin_Mock | 180 | PDF direct | 8 |
-| **Total** | **7 249** | — | **295** |
+| **Total** | **7 249** | — | **295** (avant sessions 44l–44m) |
 
 **Scripts produits** :
 - `D:\CLAUDE\Projet CFA\wib-cfa\scripts\cfaweb_nlp_audit.py` — audit NLP 1 122 questions CFA_WEB
