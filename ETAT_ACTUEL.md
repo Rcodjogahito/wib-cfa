@@ -1,8 +1,8 @@
 # ETAT ACTUEL — WIB CFA
 > Mis à jour automatiquement à la fin de chaque session Claude Code.
 
-**Date**: 2026-05-24 (session 44f)  
-**Commit**: 35b3a9b — audit exhaustif correct_answer : 245 corrections (Kaplan ligature x10 + UWorld PDF checkmark x235)  
+**Date**: 2026-05-24 (session 44g)  
+**Commit**: 35b3a9b → en cours — +1 correction Kevin_Mock + fix audit Extra_QB CORP/AI  
 **Branch**: master → Streamlit Cloud (auto-deploy)
 
 ---
@@ -25,7 +25,40 @@
 
 **Audit cmd**: `python scripts/audit_questions.py`
 
-**Audit correct_answer (sessions 44b–44f)** : audit NLP + ligature + PDF checkmark sur 7 249 questions → **269 corrections totales appliquées** (24 sessions précédentes + 245 session 44f) :
+**Audit correct_answer (sessions 44b–44g)** : audit NLP + ligature + PDF checkmark sur 7 249 questions → **270 corrections totales appliquées** (24 sessions précédentes + 245 session 44f + 1 session 44g) :
+
+---
+
+## Travaux terminés (session 44g)
+
+### ✅ Kevin_Mock S2Q1 corrigé + audit Extra_QB CORP/AI complété (1 correction)
+
+**Correction appliquée** :
+| ID | stored→correct | Question |
+|---|---|---|
+| 67d01b4a | A→**B** | Jonathan Wood MWR — `$50,000` investi, calcul money-weighted return (Kevin Mock S2Q1) |
+
+**Fix `direct_answer_audit.py`** — 2 bugs corrigés dans l'audit Extra_QB :
+
+1. **Bug topic attribution** (page 177 `CORPORATE FINANCE` + `ECONOMICS` sur même page) :
+   - Cause : `_split_by_topic` prenait le **dernier** topic vu sur chaque page → CORP recevait 0 lignes car ECON apparaissait juste après sur p.177 (artifact PDF footer du Q-section précédent)
+   - Fix : attribution ligne par ligne + `seen_topics` set → une fois un topic vu, les occurrences ultérieures du même topic sont ignorées (forward-only progression)
+
+2. **Bug triple-encoding** (sections CORP + AI dans A-section) :
+   - Cause : le PDF encode en triple certains blocs de texte (`111... AAAnnnssswwweeerrr::: CCC` = "1. Answer: C"). Le regex `r'(\d+)\.\s+Answer:\s+([ABC])'` ne matche pas le texte triple-encodé
+   - Fix : `_de_triple(a_text)` appliqué au texte de la section avant le regex
+
+**Résultats audit mis à jour** :
+| Source | Q vérifiées | Nouvelles corrections |
+|---|---|---|
+| Extra_QB CORP | 7 (était 0) | 0 (toutes déjà correctes) |
+| Extra_QB AI | 12 (confirmé) | 0 (toutes déjà correctes) |
+| Kevin_Mock | 180/180 | 1 (67d01b4a) |
+| **Total audit 278 Q** | 277 correctes | **1 correction session 44g** |
+
+**Faux positif confirmé** : `6fa7070c` (Extra_QB) — PDF answer key dit A, mais l'explication PDF dit "homogeneity is not a feature of real estate" → B. DB correctement stocke B. Non modifié.
+
+**Dump Supabase** : `wib_dump_fresh.json` rafraîchi (7 249 lignes, post-session-44f fixes).
 
 ---
 
