@@ -1,8 +1,8 @@
 # ETAT ACTUEL — WIB CFA
 > Mis à jour automatiquement à la fin de chaque session Claude Code.
 
-**Date**: 2026-05-24 (session 44h)  
-**Commit**: 35b3a9b → en cours — audit complet toutes sources terminé (0 nouvelles corrections)  
+**Date**: 2026-05-24 (session 44i)  
+**Commit**: en cours — 21 corrections Kaplan QB régulières vérifiées manuellement contre PDFs  
 **Branch**: master → Streamlit Cloud (auto-deploy)
 
 ---
@@ -25,7 +25,61 @@
 
 **Audit cmd**: `python scripts/audit_questions.py`
 
-**Audit correct_answer (sessions 44b–44h)** : audit NLP + ligature + PDF checkmark sur 7 249 questions → **270 corrections totales appliquées** (24 sessions précédentes + 245 session 44f + 1 session 44g + 0 session 44h) :
+**Audit correct_answer (sessions 44b–44i)** : audit NLP + ligature + PDF checkmark + audit manuel Kaplan QB sur 7 249 questions → **291 corrections totales appliquées** (24 sessions précédentes + 245 session 44f + 1 session 44g + 0 session 44h + 21 session 44i) :
+
+---
+
+## Travaux terminés (session 44i)
+
+### ✅ Audit Kaplan QB réguliers (QSTN WITH ANS PDFs) — 21 corrections appliquées
+
+**Méthode** : `scripts/kaplan_qb_full_audit.py` — lecture des 84 PDFs `QSTN WITH ANS` (Readings 1–91), détection P1 (lettre explicite) + P2 (texte option dans explication), triple-confirmation (P2 sur PDF + P2 sur DB explanation_en). 2433 questions skippées (P2 non-concluant), 228 matchées sans écart, 41 triple-confirmés → vérification manuelle → 21 genuine / 20 faux positifs.
+
+**Bilan** :
+| Stat | Valeur |
+|---|---|
+| PDFs Answers audités | 84/84 |
+| Q Kaplan vérifiées | 228 matchées, 41 flaggées |
+| Faux positifs écartés | 20 (stored correct d'après PDF) |
+| Corrections appliquées | **21** |
+
+**21 corrections appliquées** :
+
+| ID | Stored→Correct | Sujet |
+|---|---|---|
+| 7f44f089 | C→**A** | neutral rate=5.0%=policy rate → NEUTRAL (ECON) |
+| 8a568a83 | A→**B** | CB contrôle taux courts uniquement (ECON) |
+| 387a88e0 | A→**C** | risques géopolitiques > impacts en récession (ECON) |
+| 8cdfb023 | B→**A** | EMH forme faible — analyse technique (Equity) |
+| 59b27025 | B→**C** | hôtels haut de gamme — expérience client (Corp) |
+| de5ac030 | A→**B** | Gwangwa Gold net value = R70M (Equity) |
+| 2994c5cb | B→**C** | P/E augmente quand g augmente (Equity) |
+| 20fb40d6 | A→**B** | P/E augmente avec ROE (Equity) |
+| 6512d4fe | B→**C** | Wade viole V(B) pas III(B) (Ethics) |
+| a6ab9c26 | B→**A** | lois belges les plus strictes — Standard I(A) (Ethics) |
+| 12f82361 | C→**B** | seul le bonus nécessite divulgation écrite — IV(B) (Ethics) |
+| 59c4ab91 | C→**B** | croissance future incertaine comme fait — V(B) (Ethics) |
+| d6a1bc79 | A→**C** | diluted EPS : actions conv. + intérêts*(1-t) (FSA) |
+| 65313987 | A→**B** | direct=sales IS; indirect=net income (FSA) |
+| 714a472a | B→**A** | net income unique à la méthode indirecte (FSA) |
+| 7b49c916 | B→**A** | quick ratio exclut stocks; titres inclus dans les deux (FSA) |
+| 84c9bc47 | C→**B** | traitement préférentiel equity > dette high-yield (FI) |
+| 6247bee7 | C→**B** | ABS : overcollateralization non nécessaire pour excess spread (FI) |
+| d3781bb7 | A→**C** | P&C insurance horizon le plus court (PM) |
+| 3572b0c2 | C→**A** | probabilité erreur Type I = niveau de significativité (Quant) |
+| eecc013f | A→**C** | ROE ≠ coût des fonds propres (Equity) |
+
+**Note** : certains `pdf_detected` différaient du `correct` appliqué (3 cas : 7f44f089 pdf=B→A, 7b49c916 pdf=C→A, 6247bee7 pdf=A→B). La bonne réponse a été déterminée par lecture de l'explication PDF, pas uniquement par détection automatique.
+
+**Bilan audit complet mis à jour** :
+| Source | Q total | Méthode audit | Corrections totales |
+|---|---|---|---|
+| Kaplan | 3 717 | NLP (40–44f) + ligature (44f) + QSTN ANS PDF (44h–44i) | ~1 177 |
+| UWorld | 1 897 | Checkmark PDF (44f) | 238 |
+| CFA_WEB | 1 122 | PDFs scannés — non auditable | 0 |
+| Extra_QB | 333 | PDF direct (44e–44h) | 12 |
+| Kevin_Mock | 180 | PDF direct (44e–44g) | 8 |
+| **Total** | **7 249** | — | **291** |
 
 ---
 
