@@ -1,13 +1,14 @@
 name: Keep-alive WIB CFA
 
-# Runs every hour. When the app is awake, registers real browser traffic.
-# When sleeping, uses Playwright to find and click the "back up" wake button.
-# Always exits 0 so consecutive "failures" never cause GitHub to disable the cron.
+# Runs every hour. Visits the app with a real Chromium browser, waits for
+# React to fully render (networkidle), then detects sleeping via rendered
+# body text (not raw HTML which is always just <div id="root"></div>).
+# Always exits 0 so GitHub never disables the cron.
 
 on:
   schedule:
-    - cron: "0 * * * *"   # every hour, on the hour, UTC
-  workflow_dispatch:          # Manual trigger from GitHub Actions tab
+    - cron: "0 * * * *"   # every hour UTC
+  workflow_dispatch:
 
 jobs:
   wake-up:
@@ -27,47 +28,63 @@ jobs:
           from playwright.async_api import async_playwright, TimeoutError as PwTimeout
 
           APP_URL = "https://wib-cfa.streamlit.app/"
-          SLEEP_MARKERS = ("Zzzz", "gone to sleep", "get this app back up", "back up")
 
-          def is_sleeping(html: str) -> bool:
-              low = html.lower()
-              return ("zzzz" in low) or ("gone to sleep" in low) or ("get this app back up" in low)
+          def is_sleeping(text: str) -> bool:
+              low = text.lower()
+              return ("zzzz" in low) or ("gone to sleep" in low) or ("get this app back up" in low) or ("back up" in low)
+
+          async def wait_for_render(page):
+              """Wait for React to render sleeping modal OR app content — whichever comes first."""
+              try:
+                  # Sleeping modal button OR iframe (app awake) OR any data-testid element
+                  await page.wait_for_selector(
+                      'button, iframe, [data-testid], [class*="sleep"], [class*="wake"]',
+                      timeout=30_000
+                  )
+              except PwTimeout:
+                  pass  # proceed with whatever is rendered
 
           async def try_wake(page) -> bool:
-              """Find any wake button and click it. Returns True if a click happened."""
-              # Strategy 1: button containing "back up"
               for selector in (
                   'button:has-text("back up")',
                   'button:has-text("get this app")',
+                  'button:has-text("Yes")',
                   '[data-testid="wakeup-button-viewer"]',
               ):
                   try:
                       loc = page.locator(selector).first
                       if await loc.count() > 0:
                           await loc.click(timeout=10_000)
-                          print(f"Clicked wake button via selector: {selector}")
+                          print(f"Clicked wake button via: {selector}")
                           return True
                   except Exception as e:
-                      print(f"Selector {selector} failed: {e}")
-              # Strategy 2: text fallback
+                      print(f"  {selector} → {e}")
               try:
                   btn = page.get_by_text("Yes, get this app back up!")
                   if await btn.count() > 0:
                       await btn.first.click(timeout=10_000)
-                      print("Clicked wake button via exact text.")
+                      print("Clicked via exact text.")
                       return True
-              except Exception as e:
-                  print(f"Text fallback failed: {e}")
-              # Strategy 3: first visible button on the sleep page
+              except Exception:
+                  pass
+              # Last resort: click the first visible button
               try:
                   any_btn = page.get_by_role("button").first
                   if await any_btn.count() > 0:
+                      txt = await any_btn.inner_text()
+                      print(f"Last resort: clicking first button (text='{txt}')")
                       await any_btn.click(timeout=10_000)
-                      print("Clicked first available button as last resort.")
                       return True
-              except Exception as e:
-                  print(f"Role-button fallback failed: {e}")
+              except Exception:
+                  pass
               return False
+
+          async def get_body_text(page) -> str:
+              """Return fully-rendered body text (after JS execution)."""
+              try:
+                  return await page.evaluate("document.body.innerText")
+              except Exception:
+                  return await page.content()
 
           async def main():
               async with async_playwright() as p:
@@ -80,50 +97,62 @@ jobs:
 
                   print(f"Visiting {APP_URL} ...")
                   try:
-                      await page.goto(APP_URL, timeout=60_000, wait_until="domcontentloaded")
+                      # networkidle: waits until no network requests for 500ms
+                      # This gives React time to render sleeping modal or app content
+                      await page.goto(APP_URL, timeout=90_000, wait_until="networkidle")
                   except PwTimeout:
                       print("Timeout on initial load — app may be starting up. Treating as OK.")
                       await browser.close()
                       return
 
-                  content = await page.content()
+                  print(f"Final URL after redirects: {page.url}")
 
-                  if not is_sleeping(content):
-                      print("App is awake and responding — real traffic registered, no action needed.")
+                  # Wait for React to render content
+                  await wait_for_render(page)
+
+                  # Read RENDERED text (not raw HTML shell)
+                  body_text = await get_body_text(page)
+                  sleeping = is_sleeping(body_text)
+                  print(f"Sleeping detected: {sleeping}")
+                  if body_text:
+                      preview = body_text[:200].replace('\n', ' ')
+                      print(f"Body preview: {preview}")
+
+                  if not sleeping:
+                      print("App is awake — real browser traffic registered.")
                       await browser.close()
                       return
 
-                  # App is sleeping — attempt up to 2 wake passes.
-                  print("App appears to be sleeping — attempting wake ...")
+                  # App is sleeping — up to 2 wake attempts
+                  print("App is SLEEPING — attempting wake ...")
                   for attempt in (1, 2):
-                      print(f"Wake attempt {attempt} ...")
+                      print(f"--- Wake attempt {attempt} ---")
                       clicked = await try_wake(page)
                       if clicked:
-                          print("Waiting 60 s for boot ...")
+                          print("Waiting 60 s for app to boot ...")
                           await page.wait_for_timeout(60_000)
                       else:
-                          print("No wake button found on this pass.")
+                          print("No wake button found — reloading.")
                       try:
-                          await page.reload(timeout=60_000, wait_until="domcontentloaded")
+                          await page.goto(APP_URL, timeout=90_000, wait_until="networkidle")
+                          await wait_for_render(page)
                       except PwTimeout:
                           print("Reload timed out — app likely booting.")
-                      content = await page.content()
-                      if not is_sleeping(content):
+                      body_text = await get_body_text(page)
+                      if not is_sleeping(body_text):
                           print("SUCCESS: app is now awake!")
                           break
                       if attempt == 1:
                           print("Still sleeping — waiting 30 s before retry ...")
                           await page.wait_for_timeout(30_000)
                   else:
-                      print("WARNING: app still reported sleeping after retries. "
-                            "Will be retried next hour / by curl trigger. Exiting 0 to keep cron alive.")
+                      print("WARNING: still sleeping after 2 attempts. Next run in 30 min.")
 
                   await browser.close()
 
-          # Never fail the job: a non-zero exit can lead GitHub to disable the schedule.
           try:
               asyncio.run(main())
           except Exception as e:
-              print(f"Unhandled error (suppressed to keep cron alive): {e}")
+              print(f"Unhandled error (suppressed): {e}")
           sys.exit(0)
           PYEOF

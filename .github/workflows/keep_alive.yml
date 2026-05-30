@@ -1,37 +1,34 @@
 name: Keep App Alive
 
+# Runs every hour at :30 (offset from the Playwright workflow at :00).
+# Always dispatches the Playwright workflow — HTTP-level checks cannot
+# distinguish sleeping from awake (Streamlit Cloud ALWAYS returns 303
+# on first hop regardless of app state — it's the auth redirect layer).
+# Only Playwright (real browser + JS) can detect and wake a sleeping app.
+
 on:
   schedule:
-    # Every hour at :30, offset from the Playwright workflow (0 * * * *)
-    # so a missed slot on one workflow is covered by the other within 30 min.
-    - cron: '30 * * * *'
+    - cron: '30 * * * *'   # every hour at :30 UTC
   workflow_dispatch:
 
 permissions:
-  actions: write   # needed to dispatch the Playwright workflow when sleeping
+  actions: write
 
 jobs:
   ping:
     runs-on: ubuntu-latest
     steps:
-      - name: Ping WIB CFA app and wake if sleeping
+      - name: Dispatch Playwright keep-alive
         run: |
-          # Streamlit returns 303 (auth redirect) when the app is AWAKE.
-          # It returns 200 (static "Zzzz" HTML) when the app is SLEEPING.
-          # -L is omitted: Streamlit auth creates an infinite redirect loop.
-          response=$(curl -s -o /dev/null -w "%{http_code}" --max-time 60 https://wib-cfa.streamlit.app/)
-          echo "HTTP status: $response"
-          if [ "${response:0:1}" = "3" ]; then
-            echo "App is alive (status $response). No action needed."
-          else
-            echo "App is sleeping or unreachable (status $response)."
-            echo "Dispatching the Playwright keep-alive workflow to wake it ..."
-            curl -s -X POST \
-              -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
-              -H "Accept: application/vnd.github.v3+json" \
-              https://api.github.com/repos/${{ github.repository }}/actions/workflows/keep-alive.yml/dispatches \
-              -d '{"ref":"master"}'
-            echo "Playwright workflow dispatched."
-          fi
-          # Always succeed: a non-zero exit can cause GitHub to disable the schedule.
+          # Always trigger the Playwright workflow so it runs every 30 min
+          # (alternating with its own :00 schedule).
+          # Note: HTTP 303 on the root URL is the Streamlit Cloud auth redirect
+          # and appears for BOTH sleeping and awake apps — it cannot be used
+          # to detect sleeping state. Only a real browser can detect sleep.
+          curl -s -X POST \
+            -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
+            -H "Accept: application/vnd.github.v3+json" \
+            https://api.github.com/repos/${{ github.repository }}/actions/workflows/keep-alive.yml/dispatches \
+            -d '{"ref":"master"}'
+          echo "Playwright keep-alive dispatched — will run in ~30s."
           exit 0
