@@ -25,8 +25,10 @@ Objectif : empêcher définitivement la mise en veille Streamlit Cloud via une d
 - Quand veille détectée (HTTP non-3xx), **déclenche désormais le workflow Playwright** via l'API GitHub (`workflows/keep-alive.yml/dispatches`, `permissions: actions: write`). Avant : ne faisait que `exit 1` sans action de réveil.
 - Sort toujours en exit 0.
 
-**Couche 3 — Supabase pg_net + pg_cron (24/7, indépendant de GitHub)** :
-- ⚠️ **SQL à exécuter manuellement** par l'utilisateur dans le SQL editor Supabase (MCP nécessite OAuth interactif). SQL fourni dans le rapport de session — ping `https://wib-cfa.streamlit.app/` toutes les 20 min via `net.http_get`, job cron `ping-wib-cfa`.
+**Couche 3 — Supabase pg_net + pg_cron (24/7, indépendant de GitHub)** ✅ ACTIF :
+- Extensions `pg_cron` + `pg_net` activées sur le projet Supabase (`qlcakqtrambahrofnhho`) via MCP.
+- Job cron `ping-wib-cfa` (jobid=1) : schedule `*/20 * * * *` — ping `https://wib-cfa.streamlit.app/` toutes les **20 minutes** via `net.http_get`. Tourne 24/7 sur l'infrastructure Supabase, **indépendant de GitHub Actions**.
+- Vérifier : `SELECT jobid, jobname, schedule, active FROM cron.job WHERE jobname = 'ping-wib-cfa';`
 
 **Couche 4 — self-ping in-app (`src/styles.py`)** :
 - Health ping JS `fetch('/_stcore/health')` : intervalle réduit de **240000 ms (4 min) → 120000 ms (2 min)**. Actif tant qu'une page est ouverte.
