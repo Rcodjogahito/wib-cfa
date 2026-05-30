@@ -166,6 +166,12 @@ def inject_styles():
             letter-spacing: -0.01em;
         }
 
+        /* Keyboard-navigation focus ring — visible only for keyboard users */
+        :focus-visible {
+            outline: 2px solid var(--gold-400) !important;
+            outline-offset: 2px !important;
+        }
+
         /* ── Hide Streamlit auto-nav ───────────────────────────────────── */
         [data-testid="stSidebarNav"] { display: none !important; }
 
@@ -173,6 +179,24 @@ def inject_styles():
         section[data-testid="stSidebar"] {
             background-color: var(--navy-900) !important;
             border-right: 1px solid rgba(201,168,76,0.12) !important;
+            transition: transform 0.25s ease-out !important;
+        }
+        /* Active page link — gold highlight + left rule so users always know
+           which module they're on. Streamlit marks the active link with
+           aria-current="page". */
+        section[data-testid="stSidebar"] [data-testid="stPageLink"] a[aria-current="page"],
+        section[data-testid="stSidebar"] [data-testid="stPageLink"] a.active {
+            color: var(--gold-400) !important;
+            font-weight: 700 !important;
+            border-left: 2px solid var(--gold-500) !important;
+            padding-left: 8px !important;
+            background: rgba(201,168,76,0.08) !important;
+            border-radius: 0 var(--radius-sm) var(--radius-sm) 0 !important;
+        }
+        section[data-testid="stSidebar"] [data-testid="stPageLink"] a[aria-current="page"] span,
+        section[data-testid="stSidebar"] [data-testid="stPageLink"] a[aria-current="page"] p {
+            color: var(--gold-400) !important;
+            font-weight: 700 !important;
         }
         section[data-testid="stSidebar"] * {
             color: rgba(255,255,255,0.82) !important;
@@ -683,6 +707,50 @@ def inject_styles():
             letter-spacing: -0.01em;
         }
 
+        /* ── Flashcard rating buttons — colour-coded outcome ──────────────
+           The .fc-rate-row marker wraps the next horizontal block (3 columns):
+           col1 = "I knew it" (green), col2 = "Study more" (amber), col3 = Skip.
+           Centred labels + semantic colours give an instant visual read. */
+        .fc-rate-row + div [data-testid="stHorizontalBlock"] .stButton > button {
+            text-align: center !important;
+            justify-content: center !important;
+            font-weight: 600 !important;
+        }
+        .fc-rate-row + div [data-testid="stHorizontalBlock"] .stButton > button p {
+            text-align: center !important;
+            justify-content: center !important;
+        }
+        /* col 1 — I knew it → success green */
+        .fc-rate-row + div [data-testid="stHorizontalBlock"]
+            > [data-testid="stColumn"]:nth-of-type(1) .stButton > button {
+            background: var(--success-bg) !important;
+            color: var(--success) !important;
+            border: 1px solid rgba(27,158,92,0.35) !important;
+            border-left: 3px solid var(--success-border) !important;
+        }
+        .fc-rate-row + div [data-testid="stHorizontalBlock"]
+            > [data-testid="stColumn"]:nth-of-type(1) .stButton > button:hover {
+            background: #DCF1E7 !important;
+            color: var(--success) !important;
+        }
+        .fc-rate-row + div [data-testid="stHorizontalBlock"]
+            > [data-testid="stColumn"]:nth-of-type(1) .stButton > button p { color: var(--success) !important; }
+        /* col 2 — Study more → amber / needs-work */
+        .fc-rate-row + div [data-testid="stHorizontalBlock"]
+            > [data-testid="stColumn"]:nth-of-type(2) .stButton > button {
+            background: #FFF8E8 !important;
+            color: #8A6400 !important;
+            border: 1px solid rgba(122,92,0,0.30) !important;
+            border-left: 3px solid #E0A800 !important;
+        }
+        .fc-rate-row + div [data-testid="stHorizontalBlock"]
+            > [data-testid="stColumn"]:nth-of-type(2) .stButton > button:hover {
+            background: #FBEFD0 !important;
+            color: #8A6400 !important;
+        }
+        .fc-rate-row + div [data-testid="stHorizontalBlock"]
+            > [data-testid="stColumn"]:nth-of-type(2) .stButton > button p { color: #8A6400 !important; }
+
         /* ── Data tables (dataframe) ──────────────────────────────────── */
         .dataframe thead tr th {
             background-color: var(--navy-800) !important;
@@ -823,6 +891,20 @@ def inject_styles():
                 min-height: 52px !important;
                 padding: 0.8rem 1.1rem !important;
                 font-size: 0.95rem !important;
+            }
+
+            /* Metric cards: 5-across is unreadable on a phone. Reflow any
+               horizontal block that holds metric cards to 2 per row so the
+               value stays legible. We target the block via :has(). */
+            [data-testid="stHorizontalBlock"]:has(.metric-card) {
+                flex-wrap: wrap !important;
+                gap: 0.5rem !important;
+            }
+            [data-testid="stHorizontalBlock"]:has(.metric-card)
+                > [data-testid="stColumn"] {
+                flex: 0 0 calc(50% - 0.25rem) !important;
+                min-width: calc(50% - 0.25rem) !important;
+                width: calc(50% - 0.25rem) !important;
             }
         }
 
@@ -969,6 +1051,55 @@ def _hide_toolbar_js():
                     }
                 } catch(e2) {}
             }
+
+            // ── Auto-close sidebar on page navigation ──────────────────────
+            // st.page_link renders an <a> tag. When the sidebar is open and the
+            // user taps a nav link, close the sidebar first so the destination
+            // page (initial_sidebar_state="collapsed") doesn't keep it pinned
+            // open. We click Streamlit's own collapse control inside the sidebar.
+            function closeSidebarIfOpen() {
+                try {
+                    var doc = window.parent.document;
+                    var sidebar = doc.querySelector('section[data-testid="stSidebar"]');
+                    if (!sidebar) return;
+                    var isOpen = sidebar.getBoundingClientRect().width > 80;
+                    if (!isOpen) return;
+                    // Streamlit's collapse button lives inside the open sidebar.
+                    var closeBtn = sidebar.querySelector(
+                        '[data-testid="stSidebarCollapseButton"] button, '
+                        + 'button[data-testid="stSidebarCollapseButton"], '
+                        + 'button[aria-label*="lose"], button[aria-label*="ollapse"]'
+                    );
+                    if (closeBtn) { closeBtn.click(); return; }
+                    // Fallback: leftmost button in the header zone (the toggle).
+                    var header = doc.querySelector('header[data-testid="stHeader"]');
+                    if (header) {
+                        var btns = header.querySelectorAll('button');
+                        for (var i = 0; i < btns.length; i++) {
+                            if (btns[i].getBoundingClientRect().left < 300) {
+                                btns[i].click();
+                                return;
+                            }
+                        }
+                    }
+                    // Last resort: first button inside the sidebar.
+                    var sbBtns = sidebar.querySelectorAll('button');
+                    if (sbBtns.length > 0) sbBtns[0].click();
+                } catch(e) {}
+            }
+
+            try {
+                var navDoc = window.parent.document;
+                if (!navDoc._wibNavClose) {
+                    navDoc._wibNavClose = true;
+                    navDoc.addEventListener('click', function(e) {
+                        var link = e.target.closest(
+                            '[data-testid="stPageLink"] a, a[data-testid="stPageLink-NavLink"]'
+                        );
+                        if (link) { closeSidebarIfOpen(); }
+                    }, true);
+                }
+            } catch(e) {}
 
             // Two-timer scheduler: runs fix() at 100ms (instant changes) AND
             // 600ms (after the ~300ms sidebar CSS transition finishes).

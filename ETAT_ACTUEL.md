@@ -1,9 +1,30 @@
 # ETAT ACTUEL — WIB CFA
 > Mis à jour automatiquement à la fin de chaque session Claude Code.
 
-**Date**: 2026-05-30 (session 44p — anti-veille permanent)  
-**Commit**: CFA_WEB OCR audit complet — 15 corrections appliquées (Windows OCR free, 775 pages)  
+**Date**: 2026-05-30 (session 44q — UX/UI audit + sidebar auto-close)  
+**Commit**: fix sidebar persistante + polish UX/UI (active page indicator, flashcard buttons, timers, mobile)  
 **Branch**: master → Streamlit Cloud (auto-deploy) ✅ opérationnelle
+
+---
+
+## Session 44q — UX/UI audit + sidebar fix (2026-05-30)
+
+Diagnostic complet de l'app (8 fichiers) + corrections d'ergonomie, fluidité, professionnalisme.
+
+**Problème 1 — Sidebar persistante (PRIORITÉ, résolu) :**
+- `initial_sidebar_state` : `"expanded"` → `"collapsed"` sur les 6 pages internes (1_Study, 2_Quiz, 3_Flashcards, 4_Progress, 5_Exam_Simulator, admin). La sidebar ne s'ouvre plus de force à chaque navigation.
+- `src/styles.py` `_hide_toolbar_js()` : ajout d'un intercepteur de clics (capture phase, listener unique via flag `_wibNavClose`) sur `[data-testid="stPageLink"] a`. Quand la sidebar est ouverte et qu'on clique un lien de nav, `closeSidebarIfOpen()` clique le bouton collapse de Streamlit avant la navigation → la page de destination reste fermée (collapsed).
+
+**Problème 2 — Polish UX/UI :**
+- **Indicateur de page active** (sidebar) : CSS sur `a[aria-current="page"]` → texte gold-400, gras, barre verticale gold-500, fond léger. L'utilisateur sait toujours sur quel module il est.
+- **Transition sidebar** : `transition: transform 0.25s ease-out` pour une ouverture/fermeture fluide.
+- **Focus ring clavier** : `:focus-visible { outline: 2px solid gold-400 }` — accessibilité navigation au clavier.
+- **Boutons flashcards** : "I knew it" (vert success) vs "Study more" (ambre) désormais distincts visuellement via `.fc-rate-row` + CSS nth-of-type sur les colonnes ; labels centrés.
+- **Metric cards mobile** : reflow 2-par-ligne sous 768px (`stHorizontalBlock:has(.metric-card)` flex-wrap) — fini l'écrasement des 5 KPI sur téléphone.
+- **Timer Quiz** : police `IBM Plex Mono`, 1.15rem, letter-spacing — lisibilité accrue.
+- **Timer Exam Simulator** : `IBM Plex Mono` 1.5rem ; rouge (#FF5A5A) + halo quand < 15 min restantes (seuil relevé de 10 → 15 min).
+
+Fichiers modifiés : `src/styles.py`, `pages/1_Study.py`, `pages/2_Quiz.py`, `pages/3_Flashcards.py`, `pages/4_Progress.py`, `pages/5_Exam_Simulator.py`, `pages/admin.py`. `streamlit_app.py` (home) inchangé — sidebar reste `auto`. Auth (cookie wib_uid), keepalive JS et persistance Supabase intacts.
 
 ---
 

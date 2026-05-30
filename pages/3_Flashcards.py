@@ -17,7 +17,7 @@ st.set_page_config(
     page_title="Flashcards — WIB CFA",
     page_icon="🃏",
     layout="wide",
-    initial_sidebar_state="expanded",
+    initial_sidebar_state="collapsed",
 )
 inject_styles()
 
@@ -364,6 +364,7 @@ else:
             unsafe_allow_html=True,
         )
 
+    st.markdown('<div class="fc-rate-row">', unsafe_allow_html=True)
     col_knew, col_study, col_skip = st.columns(3)
     if col_knew.button("I knew it ✓", use_container_width=True):
         state["fc_knew"] += 1
@@ -387,6 +388,7 @@ else:
         state["fc_idx"] += 1
         state["fc_flipped"] = False
         st.rerun()
+    st.markdown('</div>', unsafe_allow_html=True)
 
 # ── Stats bar ─────────────────────────────────────────────────────────────────
 st.markdown("---")

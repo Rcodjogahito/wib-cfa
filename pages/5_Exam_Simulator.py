@@ -22,7 +22,7 @@ st.set_page_config(
     page_title="Exam Simulator — WIB CFA",
     page_icon="⏱️",
     layout="wide",
-    initial_sidebar_state="expanded",
+    initial_sidebar_state="collapsed",
 )
 inject_styles()
 
@@ -516,7 +516,7 @@ def _exam_timer():
         _stotal = len(_qs)
 
     _remaining = max(0.0, _cfg.get("session_duration_sec", 0) - (time.time() - _start))
-    _color = "#B52B2B" if _remaining < 600 else ("#C9A84C" if _remaining < 1800 else "#FFFFFF")
+    _color = "#FF5A5A" if _remaining < 900 else ("#C9A84C" if _remaining < 1800 else "#FFFFFF")
     _h = int(_remaining // 3600)
     _m = int((_remaining % 3600) // 60)
     _sec = int(_remaining % 60)
@@ -525,7 +525,9 @@ def _exam_timer():
         f'<div style="display:flex;justify-content:space-between;align-items:center;'
         f'background:#0B2545;padding:0.6rem 1.2rem;border-radius:8px;margin-bottom:1rem;">'
         f'<span style="color:#C9A84C;font-weight:700;">{_label}</span>'
-        f'<span style="font-family:monospace;font-size:1.4rem;color:{_color};font-weight:700;">'
+        f'<span style="font-family:\'IBM Plex Mono\',monospace;font-size:1.5rem;'
+        f'letter-spacing:0.06em;color:{_color};font-weight:700;'
+        f'{"text-shadow:0 0 8px rgba(255,90,90,0.45);" if _remaining < 900 else ""}">'
         f'⏱ {_h:02d}:{_m:02d}:{_sec:02d}</span>'
         f'<span style="color:rgba(255,255,255,0.7);">{_ans} / {_stotal} answered</span>'
         f'</div>',

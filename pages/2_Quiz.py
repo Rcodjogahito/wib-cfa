@@ -13,7 +13,7 @@ from src.auth import CFA_TOPICS, get_current_user, logout, require_auth
 from src.database import get_db
 from src.styles import inject_styles, render_page_header, render_sidebar_brand, render_sidebar_user, render_question, question_first_line, fix_ligature_artifacts
 
-st.set_page_config(page_title="Quiz — WIB CFA", page_icon="🎯", layout="wide", initial_sidebar_state="expanded")
+st.set_page_config(page_title="Quiz — WIB CFA", page_icon="🎯", layout="wide", initial_sidebar_state="collapsed")
 inject_styles()
 
 with st.sidebar:
@@ -330,7 +330,8 @@ def _quiz_timer():
         f'background:#0B2545;padding:0.5rem 1.2rem;border-radius:8px;margin-bottom:1rem;">'
         f'<span style="color:#C9A84C;font-weight:700;">'
         f'Quiz{(" — " + _topic) if _topic not in ("All (Adaptive)",) else ""}</span>'
-        f'<span style="font-family:monospace;font-size:1.1rem;color:{_color};font-weight:700;">'
+        f'<span style="font-family:\'IBM Plex Mono\',monospace;font-size:1.15rem;'
+        f'letter-spacing:0.04em;color:{_color};font-weight:700;">'
         f'{_time_str}</span>'
         f'<span style="color:rgba(255,255,255,0.7);">{_ans_count} / {_q_total} answered</span>'
         f'</div>',

@@ -11,7 +11,7 @@ from src.database import get_db
 from src.progress import compute_mastery_map, readiness_score, weak_topics
 from src.styles import inject_styles, metric_card, render_page_header, render_sidebar_brand, render_sidebar_user
 
-st.set_page_config(page_title="Progress — WIB CFA", page_icon="📈", layout="wide", initial_sidebar_state="expanded")
+st.set_page_config(page_title="Progress — WIB CFA", page_icon="📈", layout="wide", initial_sidebar_state="collapsed")
 inject_styles()
 
 with st.sidebar:
