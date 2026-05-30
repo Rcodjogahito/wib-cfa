@@ -25,10 +25,12 @@ Objectif : empêcher définitivement la mise en veille Streamlit Cloud via une d
 - Quand veille détectée (HTTP non-3xx), **déclenche désormais le workflow Playwright** via l'API GitHub (`workflows/keep-alive.yml/dispatches`, `permissions: actions: write`). Avant : ne faisait que `exit 1` sans action de réveil.
 - Sort toujours en exit 0.
 
-**Couche 3 — Supabase pg_net + pg_cron (24/7, indépendant de GitHub)** ✅ ACTIF :
-- Extensions `pg_cron` + `pg_net` activées sur le projet Supabase (`qlcakqtrambahrofnhho`) via MCP.
-- Job cron `ping-wib-cfa` (jobid=1) : schedule `*/20 * * * *` — ping `https://wib-cfa.streamlit.app/` toutes les **20 minutes** via `net.http_get`. Tourne 24/7 sur l'infrastructure Supabase, **indépendant de GitHub Actions**.
-- Vérifier : `SELECT jobid, jobname, schedule, active FROM cron.job WHERE jobname = 'ping-wib-cfa';`
+**Couche 3 — Supabase Edge Function + pg_cron (24/7, indépendant de GitHub)** ✅ ACTIF + VÉRIFIÉ :
+- Extensions `pg_cron 1.6.4` + `pg_net 0.20.0` activées via MCP.
+- **Edge Function** `keepalive-ping` déployée (id `ef0152f5`, `verify_jwt: false`) : appelle `https://wib-cfa.streamlit.app/_stcore/health` avec `redirect: 'manual'` (Deno fetch) → retourne `{"ok":true,"status":303}` — app vivante confirmée.
+- **Job cron** `ping-wib-cfa` (jobid=3) : `*/20 * * * *` → appelle `https://qlcakqtrambahrofnhho.supabase.co/functions/v1/keepalive-ping`. Premier run automatique confirmé (15:40 UTC, `status: succeeded`).
+- Architecture : pg_cron → pg_net → Edge Function → Streamlit. Aucun redirect loop, réponse < 2s.
+- Vérifier runs : `SELECT jobid, status, start_time FROM cron.job_run_details ORDER BY start_time DESC LIMIT 5;`
 
 **Couche 4 — self-ping in-app (`src/styles.py`)** :
 - Health ping JS `fetch('/_stcore/health')` : intervalle réduit de **240000 ms (4 min) → 120000 ms (2 min)**. Actif tant qu'une page est ouverte.
