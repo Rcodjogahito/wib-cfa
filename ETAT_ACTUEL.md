@@ -1,9 +1,38 @@
 # ETAT ACTUEL — WIB CFA
 > Mis à jour automatiquement à la fin de chaque session Claude Code.
 
-**Date**: 2026-05-25 (session 44o — vérification déploiement)  
+**Date**: 2026-05-30 (session 44p — anti-veille permanent)  
 **Commit**: CFA_WEB OCR audit complet — 15 corrections appliquées (Windows OCR free, 775 pages)  
 **Branch**: master → Streamlit Cloud (auto-deploy) ✅ opérationnelle
+
+---
+
+## Anti-veille — session 44p (2026-05-30)
+
+Objectif : empêcher définitivement la mise en veille Streamlit Cloud via une défense en 4 couches indépendantes.
+
+**App réveillée** : `/healthz` = `{"status":"ok"}` (200) et racine = 303 (redirect auth = éveillée). Workflow Playwright aussi déclenché manuellement (`gh workflow run`).
+
+**Couche 1 — `keep-alive.yml` (Playwright, GitHub Actions)** :
+- Fréquence portée à **toutes les heures** (`cron: "0 * * * *"`, avant : toutes les 3 h).
+- Détection de veille robuste : `Zzzz` / `gone to sleep` / `get this app back up` (insensible à la casse).
+- Clic du bouton réveil multi-stratégies : `button:has-text("back up")`, `button:has-text("get this app")`, `[data-testid="wakeup-button-viewer"]`, texte exact, puis premier bouton de la page en dernier recours.
+- **Retry** : 2 passes avec `page.reload()` + attente 30 s entre les deux.
+- **Sort toujours en exit 0** (try/except global) → évite que GitHub désactive le cron après échecs consécutifs.
+
+**Couche 2 — `keep_alive.yml` (curl ping, GitHub Actions)** :
+- Fréquence portée à **toutes les heures à :30** (`cron: "30 * * * *"`), décalée de la couche 1.
+- Quand veille détectée (HTTP non-3xx), **déclenche désormais le workflow Playwright** via l'API GitHub (`workflows/keep-alive.yml/dispatches`, `permissions: actions: write`). Avant : ne faisait que `exit 1` sans action de réveil.
+- Sort toujours en exit 0.
+
+**Couche 3 — Supabase pg_net + pg_cron (24/7, indépendant de GitHub)** :
+- ⚠️ **SQL à exécuter manuellement** par l'utilisateur dans le SQL editor Supabase (MCP nécessite OAuth interactif). SQL fourni dans le rapport de session — ping `https://wib-cfa.streamlit.app/` toutes les 20 min via `net.http_get`, job cron `ping-wib-cfa`.
+
+**Couche 4 — self-ping in-app (`src/styles.py`)** :
+- Health ping JS `fetch('/_stcore/health')` : intervalle réduit de **240000 ms (4 min) → 120000 ms (2 min)**. Actif tant qu'une page est ouverte.
+
+**Heartbeat — `heartbeat.yml`** :
+- Passé de **mensuel (1er du mois) à hebdomadaire (lundi 08:00 UTC)** (`cron: "0 8 * * 1"`). Marge de sécurité de 7 j au lieu de 30 j avant désactivation des crons par GitHub. Renommé "Weekly Heartbeat".
 
 ---
 

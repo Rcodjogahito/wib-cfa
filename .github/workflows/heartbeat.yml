@@ -1,13 +1,13 @@
-name: Monthly Heartbeat
+name: Weekly Heartbeat
 
-# Runs on the 1st of every month at 08:00 UTC.
+# Runs every Monday at 08:00 UTC.
 # Makes a tiny timestamp commit to reset GitHub's 60-day inactivity timer,
 # which would otherwise disable all scheduled workflows (including keep-alive).
-# This ensures the app stays awake indefinitely, even with no manual commits.
+# Weekly cadence gives a 7-day safety margin instead of 30 days.
 
 on:
   schedule:
-    - cron: '0 8 1 * *'   # 1st of every month at 08:00 UTC
+    - cron: '0 8 * * 1'   # every Monday at 08:00 UTC
   workflow_dispatch:
 
 permissions:
@@ -28,5 +28,5 @@ jobs:
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add .github/heartbeat.txt
-          git commit -m "chore: monthly heartbeat $(date -u '+%Y-%m')"
+          git commit -m "chore: weekly heartbeat $(date -u '+%Y-%m-%d')"
           git push
