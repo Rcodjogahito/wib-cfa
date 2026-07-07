@@ -1,9 +1,37 @@
 # ETAT ACTUEL — WIB CFA
 > Mis à jour automatiquement à la fin de chaque session Claude Code.
 
-**Date**: 2026-07-07 (session 45 — audit "conclusion finale" correct_answer + reformatage tableaux/listes)  
-**Commit**: fix 129 correct_answer errors (bug Oregon Corp + 128 autres) + reformatage 28 questions data squashed → bullet/table  
+**Date**: 2026-07-07 (session 46 — reconstruction tableaux manquants résiduels, 31 corrections)  
+**Commit**: reconstruct 31 missing data tables (visual transcription via Fable 5) + document 18 residuals + flag 12 explanation_en mismatches (new bug)  
 **Branch**: master → Streamlit Cloud (auto-deploy) ✅ opérationnelle
+
+---
+
+## Session 46 — Reconstruction visuelle des tableaux manquants résiduels (2026-07-07)
+
+**Contexte** : reprise du point "en attente" laissé par la session 45 — une passe affinée de détection (héritée, jamais finalisée/documentée) avait identifié **49 candidats** avec un vrai tableau/données manquant (au-delà des ~437-849 simples mentions de "the following table/data/exhibit", dont la majorité sont déjà correctes ou ne référencent pas un vrai tableau). Infrastructure de rendu PDF→PNG déjà construite pour 35/49 candidats ; complétée pour les 14 restants.
+
+**Méthode** : 4 agents **Fable 5** en parallèle (arrière-plan), chacun recevant un lot de candidats avec image PNG de la page PDF source rendue + `question_en`/options/`correct_answer`/`explanation_en` de contexle. Consigne stricte : transcrire le tableau **exactement** depuis l'image (pas de confiance dans une éventuelle extraction texte automatique antérieure), vérifier que la page rendue correspond bien à la question (sinon marquer non résolu plutôt que d'inventer), reconstruire `question_en` en préservant le préambule/postambule mot-à-mot, et confirmer qu'au moins une valeur du tableau apparaît dans `explanation_en`.
+
+**Résultat : 31/49 résolus et appliqués à Supabase (31/31 PATCH OK, vérifié en direct)** :
+| Lot | Résolus | Détail |
+|---|---|---|
+| A | 6/9 | Fixed Income, Portfolio Mgmt, FSA, Corporate, Quant |
+| B | 6/8 | Portfolio Mgmt, Fixed Income, FSA, Corporate |
+| C | 5/8 | Corporate, Fixed Income, Derivatives |
+| D | 14/14 | Mix — 4 pages mal rendues re-localisées et re-rendues par l'agent lui-même, 3 extractions automatiques antérieures corrigées (lignes/colonnes mal alignées) |
+
+Vérification de préservation de contenu (bag-of-mots) sur les 31 reconstructions : **0 perte de mot** dans le préambule/postambule (seul le tableau est du contenu nouveau).
+
+**18 résiduels non résolus (documentés, aucune donnée inventée)** :
+- **8 candidats** : mauvaise page PDF rendue par le pipeline automatique et le vrai tableau non re-localisé (077e56dc, 1596531e, 2e954a34, 8cee0973, 9faa70ab, ded06d8a, f01d947d — nécessitent une recherche manuelle dans le PDF), + 1 cas (b79911c1) où l'enregistrement Supabase mélange visiblement l'énoncé/options d'une question avec le tableau/l'explication d'une autre — insertion refusée pour ne pas aggraver la corruption.
+- **10 candidats** : aucune page source localisable du tout (pas de PDF Answers résolu ou signature texte introuvable) — résiduel déjà connu depuis les sessions 5+12.
+
+**Bug de données découvert en sous-produit (NOUVEAU, non corrigé ce soir)** : sur 9 des 31 questions corrigées, `explanation_en` stocké en base correspond en réalité à une **autre question** que celle affichée (ex. `67a46a96-ad68-433d-a186-ea06ad66bf95` : question Portfolio A/B mais explication sur les limites de la corrélation). Dans les 9 cas, `correct_answer` reste validé indépendamment via la page source (l'explication *sur la page PDF*, pas celle en base, confirme la bonne réponse) — donc l'utilisateur final reçoit la bonne réponse mais une explication non pertinente. IDs : `67a46a96`, `82465e33`, `93f2290c`, `ed2f7b60`, `2567f1c8`, `2b989992`, `6f8c5031`, `83355a10`, `a855d557`. 2 résiduels non résolus (`077e56dc`, `2e954a34`) portent probablement le même défaut. **Nécessite une session dédiée** (transcrire la bonne explication depuis la page PDF, comme fait ici pour les tableaux) — non traité maintenant faute de temps, mais les images PDF sources ont déjà été localisées pour la plupart de ces IDs.
+
+**Scripts** (untracked, non committés — usage ponctuel) : `scripts/_count_incomplete_rest.py`, `scripts/_fetch_49_full.py`, `scripts/render_missing_pages.py`, `scripts/fix_remaining_missing_tables.py`, `scripts/_batch_png_{1,2,3}.json`, `scripts/_batch_extracted_only.json`, `scripts/_verified_batch_{A,B,C,D}.json`, `scripts/_all_verified_49subset.json`.
+
+**Audit large (849 mentions / 744 sans tableau Markdown) NON classifié en détail** : seul le sous-ensemble affiné des 49 candidats (vrais manques structurels) a été traité. Une classification complète des 744 pour en extraire d'éventuels résiduels cachés n'a pas été faite — à faire si l'utilisateur le demande.
 
 ---
 
