@@ -1,9 +1,73 @@
 # ETAT ACTUEL — WIB CFA
 > Mis à jour automatiquement à la fin de chaque session Claude Code.
 
-**Date**: 2026-05-30 (session 44q — UX/UI audit + sidebar auto-close)  
-**Commit**: fix sidebar persistante + polish UX/UI (active page indicator, flashcard buttons, timers, mobile)  
+**Date**: 2026-07-07 (session 45 — audit "conclusion finale" correct_answer + reformatage tableaux/listes)  
+**Commit**: fix 129 correct_answer errors (bug Oregon Corp + 128 autres) + reformatage 28 questions data squashed → bullet/table  
 **Branch**: master → Streamlit Cloud (auto-deploy) ✅ opérationnelle
+
+---
+
+## Session 45 — Audit "conclusion finale" (correct_answer) + reformatage tableaux/listes (2026-07-07)
+
+**Déclencheur** : utilisateur signale que la question Oregon Corp (weighted average shares) accepte la réponse C (250 000) alors que l'explication calcule explicitement 197 500 (= option A). Vérifié en base : `correct_answer="C"` stocké, explication se terminant par "...= 2,370,000 / 12 = 197,500." → confirmé, bug réel malgré les 651 corrections des sessions précédentes ("Kaplan FULLY AUDITED").
+
+**Root cause du blind spot** : tous les audits NLP précédents (P1 = lettre explicite, P2 = texte d'option dans la **première** phrase de l'explication) ne vérifiaient jamais la **conclusion finale** de l'explication (la valeur numérique calculée en dernier). C'est exactement ce pattern qui échappait à la détection.
+
+### Nouvelle passe d'audit "P_final" — 671 candidats détectés, 129 corrections appliquées
+
+**Méthode** (heuristique Python, aucun appel API) :
+1. Dump complet des 7 249 questions via REST Supabase (pagination 1000/page).
+2. Pour chaque question : extraction du dernier token numérique de `explanation_en` (regex fin de chaîne) OU de la dernière phrase complète, comparaison normalisée avec `option_a/b/c`.
+3. Si la lettre détectée par la conclusion diffère de `correct_answer` stocké → candidat.
+4. **671 candidats** : Kaplan 364, UWorld 266, Kevin_Mock 15, Extra_QB 13, CFA_WEB 13.
+
+**Vérification indépendante par Claude (Fable 5)**, demandée explicitement par l'utilisateur pour cet audit — 17 lots de ~40 candidats traités en parallèle (agents en arrière-plan), chaque candidat re-calculé/re-raisonné intégralement à partir de zéro (pas de confiance aveugle dans l'heuristique), avec consigne explicite de repérer le principal mode de faux positif : l'explication qui réfute un distracteur en fin de texte (ex. "si vous divisez au lieu de multiplier par 101%, vous obtenez 13 130 obligations" — ce nombre final n'est PAS la réponse).
+
+**Résultat** : 541 faux positifs écartés, 129 corrections génuines confirmées (1 cas "uncertain" laissé de côté — explication visiblement mal appariée à la question, nécessiterait relecture PDF), 0 entrée invalide.
+
+| Source | Corrections appliquées |
+|---|---|
+| Kaplan | 124 |
+| CFA_WEB | 5 |
+| UWorld / Extra_QB / Kevin_Mock | 0 (candidats = 100% faux positifs — cohérent avec les audits exhaustifs déjà faits sur ces sources) |
+| **Total** | **129** |
+
+**129/129 PATCH Supabase appliqués avec succès** (`correct_answer` uniquement). Vérifié en direct : Oregon Corp (`26fc6e68…`) retourne désormais `correct_answer: "A"` ✅.
+
+**Exemples de corrections** (spot-check qualité) :
+- `26fc6e68` (Oregon Corp, le bug signalé) : C→**A** (197 500)
+- `3cc67bbd` (HalfPass diluted EPS) : A→**B** ($1.77 recalculé vs $1.66 stocké)
+- `0d1be197` (ratios de Sharpe 3 fonds) : A→**B** (Fund R, Sharpe=0.54 > Fund P=0.44)
+- `c826e42b` (Standard III(C) — trade non sollicité) : B→**C** (discuter la mise à jour de l'IPS)
+
+**Nouveau total cumulé audit correct_answer** : 651 (sessions 40–44n) + 129 (session 45) = **780 corrections**.
+
+**Bilan audit complet mis à jour** :
+| Source | Q total | Corrections totales (toutes sessions) |
+|---|---|---|
+| Kaplan | 3 717 | ~1 642 |
+| UWorld | 1 897 | 238 |
+| CFA_WEB | 1 122 | 24 |
+| Extra_QB | 333 | 12 |
+| Kevin_Mock | 180 | 8 |
+| **Total** | **7 249** | **780** |
+
+**Script produit** : `scripts/final_conclusion_audit.py` — réutilisable pour ré-auditer la banque après tout nouvel import (détecte le pattern "conclusion finale ≠ correct_answer stocké").
+
+### Reformatage tableaux/listes — 28 questions "data squashée" corrigées
+
+**Problème signalé** : questions avec données financières (états financiers, taux spot, flux de trésorerie) collées en une seule phrase sans retour à la ligne (ex. "Net Income: $122,000 Preferred Stock Dividends Paid: $35,000 Common Stock Dividends Paid: $42,000..."), dégradant la lisibilité sur l'app.
+
+**Méthode** :
+1. Scan des 7 249 `question_en` : recherche de blocs "Label: Valeur" répétés ≥3 fois sans aucun `\n` → **28 candidats** (Kaplan 17, CFA_WEB 7, Kevin_Mock 2, UWorld 1, Extra_QB 1).
+2. Reformatage par Claude (Fable 5) : restructuration en intro + liste à puces Markdown (`- **Label:** Valeur`) ou tableau Markdown quand la donnée est naturellement multi-colonnes (ex. comparaison 3 sociétés/3 actions) + question finale — **règle absolue : aucun mot ni chiffre ajouté/modifié/reformulé**, uniquement insertion de structure (`\n`, `-`, `**`, `|`).
+3. **Vérification indépendante** (bag-of-words/chiffres, avant/après) : 26/28 identiques à l'unité, 2/28 avec écart attendu et vérifié manuellement (consolidation légitime des en-têtes répétés "Company 1/2/3" et "Stock A/B/C" en colonnes de tableau — toutes les valeurs présentes, juste dédupliquées en en-tête).
+
+**28/28 PATCH Supabase appliqués** (`question_en` uniquement). Le rendu app (`render_question()` dans `src/styles.py`) traite tout ce qui suit le premier `\n` comme Markdown brut — les tableaux et listes s'affichent donc correctement sans changement de code.
+
+**Note sur le reste des ~437 questions "mention table/exhibit"** : la majorité sont soit déjà correctement formatées (169 ont déjà des `|` markdown), soit des questions courtes sans données inline (le mot-clé "as follows:" apparaît sans bloc de données à mettre en forme — rien à corriger), soit des cas déjà couverts par les sessions "Missing table fix" / "Incomplete question fix" (46+59 corrigées, 32 résiduels connus nécessitant l'accès aux PDF sources originaux — non résolus, nécessitent extraction Vision/PDF si prioritaire).
+
+**Fichiers non modifiés** : aucun changement de code (`src/`, `pages/`) — uniquement des données Supabase (`correct_answer`, `question_en`). Pas de déploiement Streamlit Cloud nécessaire, les changements sont visibles immédiatement (lecture DB à chaque chargement de question).
 
 ---
 
