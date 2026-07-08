@@ -1,9 +1,41 @@
 # ETAT ACTUEL — WIB CFA
 > Mis à jour automatiquement à la fin de chaque session Claude Code.
 
-**Date**: 2026-07-08 (session 46 suite 3 — TOUS les résiduels de l'audit ciblé résolus, 0 restant)  
-**Commit**: resolve final 17 residuals (tables + explanations + 2 more corrupted correct_answer cases) — audit ciblé terminé, 0 IDs résiduels connus  
+**Date**: 2026-07-08 (session 47 — audit EXHAUSTIF en cours : 121 reformatages + 3 correct_answer + 1 stem, matching PDF texte intégral en tâche de fond ~8-10h)  
+**Commit**: broad reformat pass (121 questions) + 3 more correct_answer fixes via CFA_WEB cache cross-check + 1 stem label fix — full 7249-question PDF text-match audit running in background, not yet complete  
 **Branch**: master → Streamlit Cloud (auto-deploy) ✅ opérationnelle
+
+---
+
+## Session 47 — Audit EXHAUSTIF ligne-par-ligne demandé (2026-07-08, EN COURS)
+
+**Contexte** : après la clôture complète de l'audit ciblé (session 46, 0 résiduel), l'utilisateur demande explicitement l'audit **exhaustif** des 7249 questions contre les PDF sources (pas seulement les candidats détectés heuristiquement), avec **Sonnet 5** pour le reformatage. Ampleur assumée comme disproportionnée le 2026-07-07 mais désormais explicitement demandée.
+
+### Infrastructure construite pour l'audit exhaustif
+- **Résolveur PDF générique** (`scripts/_full_audit_resolver.py`) : couverture désormais complète pour Kaplan (mapping générique "Reading N" via glob, plus dossier Mock Exam — 100% des 3717 questions Kaplan résolvables, vs 13 hardcodées avant), UWorld (100%, déjà bon), Extra_QB (PDF unique + décodage triple-encodage), Kevin_Mock (2 fichiers).
+- **CFA_WEB** : PAS de PDF texte (scanné) — utilise les **caches Vision de session 44j déjà sur disque** (`scripts/_cache_cfaweb_qb/*.json`, `_cache_cfaweb_mocks/*.json`, 447 entrées Q+A fusionnées).
+- **Matcher texte** (`scripts/_full_audit_match.py`) : pour chaque question, localise la meilleure page PDF par recouvrement de mots significatifs (avec cache par page pour la performance), calcule un score de confiance. **Tourne en tâche de fond** (`nohup`, PID détaché) — rythme observé ~10-13 questions/minute, soit **~8-10h pour couvrir les 7249** (pdfplumber lent sur certains PDF Kaplan avec polices corrompues). Non terminé à la fin de cette session — à reprendre/vérifier à la prochaine session (fichier de sortie : `scripts/_audit_match_report.json`, log : `scripts/_audit_match_log.txt`).
+
+### Résultats déjà obtenus pendant que le matching tourne
+
+**Audit CFA_WEB via cache Vision (fiable, cross-vérifié)** : 632 questions matchées au départ, mais un bug de scoring (ne comparait que le stem, pas les options) donnait un taux de désaccord de 43% — clairement un artefact. Corrigé (exige un ratio de similarité ≥0.8 sur les 3 options) → **160 matches fiables, seulement 3 désaccords réels**, tous vérifiés indépendamment (connaissance du domaine + logique interne du cache) et corrigés :
+- `9dd3a4b5` (A→C) : growth capital = minority equity investing, pas venture capital.
+- `637e6cd3` (C→B) : correctional facility = infrastructure sociale, pas telecom tower.
+- `6adcf002` (C→A) : gate = restriction temporaire "si besoin", pas lockup (durée fixe).
+
+**Total `correct_answer` corrompus trouvés et corrigés cette session : 7** (les 4 de la reprise précédente + ces 3 nouveaux via CFA_WEB).
+
+**Reformatage élargi (au-delà du pattern "the following table/data")** : nouvelle heuristique détectant TOUTE énumération/liste/tableau squashé (ex. "Statement 1: ... Statement 2: ...", carnets d'ordres, listes de faits) sans exiger la formulation spécifique "the following X:". **181 candidats détectés**, 4 agents **Sonnet 5** en parallèle → **121/181 reformatés et appliqués** (0 perte de contenu réelle vérifiée — les "pertes" détectées automatiquement étaient uniquement la consolidation attendue des en-têtes de tableau, ex. "Mean"/"Standard deviation" apparaissant une fois en en-tête au lieu de répété par ligne).
+
+**1 stem corrigé (bug d'étiquette confirmé par calcul)** : `e0eb752b-ca6a-4126-b613-cd9e83fb09a7` — le compte de résultat common-size affichait "Interest income" mais l'arithmétique (100-50-16-4=30 ✓ seulement si soustrait) et l'explication elle-même ("interest expense") confirment que c'est une dépense. Corrigé.
+
+**~20 nouveaux IDs "donnée réellement manquante"** détectés en sous-produit des 4 lots de reformatage (agents ont refusé de deviner plutôt que fabriquer) — liste complète non encore consolidée, voir les fichiers `scripts/_broad_reformat_result_{1,2,3,4}.json` (non committés, à consolider à la prochaine session) pour les IDs exacts.
+
+### État à la reprise de la prochaine session
+1. **Vérifier si `scripts/_audit_match_report.json` existe** (le job tâche de fond a peut-être terminé entretemps) — si oui, analyser les mismatches texte détectés.
+2. **Si le job tourne encore ou a été tué** (fermeture de session) : le relancer avec `python scripts/_full_audit_match.py` (nécessite `scripts/_full_dump_audit.json` — refaire un dump frais si absent).
+3. **Consolider les ~20 IDs "donnée manquante"** des 4 fichiers `_broad_reformat_result_*.json` et lancer la pipeline de reconstruction habituelle (localisation PDF + image + Fable5/Sonnet).
+4. **Re-vérification `correct_answer` à grande échelle** : passe fraîche de l'heuristique "conclusion finale" a détecté 588 candidats (`scripts/_final_conclusion_candidates.json`), mais échantillon de 5 montre un taux de faux positifs élevé (~60-100%, cohérent avec les 19% de vrai-positif de la session 45) — nécessiterait une vérification par agents en parallèle (façon session 45, ~15 lots) avant tout patch, non fait cette session.
 
 ---
 
