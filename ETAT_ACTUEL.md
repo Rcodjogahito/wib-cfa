@@ -1,9 +1,49 @@
 # ETAT ACTUEL — WIB CFA
 > Mis à jour automatiquement à la fin de chaque session Claude Code.
 
-**Date**: 2026-07-08 (session 46 suite — audit complet ciblé : 124 reformatages + 12 explications corrigées)  
-**Commit**: reformat 124 squashed-data questions + fix 12 swapped explanations (Fable 5) + document ~40 residuals across 3 bug classes  
+**Date**: 2026-07-08 (session 46 suite 2 — poursuite de l'audit ciblé : 17 tableaux + 13 explications + 2 correct_answer/stem corrigés)  
+**Commit**: fix 17 more missing tables + 13 more explanations + 2 corrupted correct_answer/stem cases (Fable 5 + manual PDF verification) — residuals down from ~40 to ~13  
 **Branch**: master → Streamlit Cloud (auto-deploy) ✅ opérationnelle
+
+---
+
+## Session 46 (suite 2) — Poursuite de l'audit : résiduels réduits de ~40 à ~13 (2026-07-08)
+
+**Contexte** : à la demande "poursuis avec ce qu'il reste", reprise des 3 chantiers ouverts laissés par la session précédente (16 explications swappées non résolues, 11 tableaux réellement perdus, 18 résiduels de tableaux de la veille) + les 2 anomalies signalées (`24fd91bb`, `ef6d6cf6`) + `cee8c779` (topic mal étiqueté).
+
+### Corrections rapides
+- **`cee8c779`** : topic corrigé "Ethics & Professional Standards" → "Corporate Issuers" / "4.06 Capital Structure" (question de breakeven analysis mal étiquetée).
+- **`24fd91bb`** : **`correct_answer` corrigé A → C**. Page source localisée et vérifiée (7.16 Credit Analysis, Q10) : le tableau stocké est exact (Company Z 67%/1.20/6.04 vs Company Y 73%/1.30/4.71) mais l'explication stockée avait la logique inversée. Recalcul vérifié : Company Z a un levier plus faible ET une couverture plus élevée que Y sur les 3 mesures → qualité de crédit **supérieure**, pas inférieure. Explication réécrite en conséquence.
+
+### Reconstruction de tableaux (29 candidats : 18 résiduels veille + 11 nouveaux)
+Localisation des pages PDF sources (`find_answers_pdf` + recherche signature texte) → 25/29 pages trouvées, 3 agents Fable 5 en parallèle pour transcription + vérification anti-fabrication.
+
+**17/25 résolus et appliqués à Supabase** (17/17 PATCH OK, 0 perte de mot vérifiée programmatiquement) : `085bfb88`, `0aab092e`, `1596531e`, `4742b649`, `5d975bed`, `6a490e28`, `7952b270`, `8c26359a`, `8cee0973`, `9a22d2ad`, `9faa70ab`, `acfee345`, `cfe85b85`, `d4f4ed98`, `e8c79ef2`, `f01d947d`, `61cf6d82`.
+
+**8 non résolus** (mauvaise page rendue, texte non relocalisé) : `077e56dc`, `2e954a34`, `37908a75`, `3ed21d97`, `ae4fe1ca`, `b79911c1`, `ded06d8a`, `f36d2bf6`. **4 sans PDF localisable du tout** (Extra_QB/Kaplan sans mapping par sujet) : `148b923b`, `1cf0d06f`, `258b48f9`, `83877977`.
+
+### Bug explanation_en swappé — 16 résiduels traités, 9 corrigés
+Nouvelle stratégie de localisation de page basée sur les **valeurs numériques des options** (plus discriminantes que le texte du stem dans des séquences de questions très similaires) → 8/16 pages relocalisées avec succès, vérifiées et corrigées par Fable 5 :
+`077e56dc`, `17e887d4`, `3d950279`, `3dd022f4`, `8cee0973`, `ef6d6cf6`, `f36d2bf6` (explication) + `cf241f9a`.
+
+**⚠️ `cf241f9a` — 2e cas de `correct_answer` corrompu confirmé et corrigé** : B → C. La page source (Q86) calcule sans ambiguïté g = 0.09 − 0.45/30 = 7.5 % (= C) et identifie explicitement B (7.0 %) comme le distracteur "ratio de rétention au lieu du ratio de distribution". Corrigé.
+
+**⚠️ 2 cas où c'est le STEM (tableau de la question), pas l'explication, qui était corrompu** — corrigés après vérification mathématique complète que les nouvelles valeurs reproduisent exactement l'option stockée :
+- `3d950279` : tableau remplacé (croissance 9 %/3 ans 1-4, 3 %/an 5+, r=7 %) → TV calculée = 36.35 = option B stockée ✅ (vérifié par calcul Python avant application).
+- `8cee0973` : tableau **totalement absent** du stem, ajouté (rétention 40 %, croissance div. 4 %, croissance éco. 3 %, WACC 7 %, P/E 12) → r = 0.60/12+0.04 = 9 % = option C stockée ✅.
+- `ef6d6cf6` : tableau remplacé (Bond X 5.2 %/97/semestriel, Bond Y 5.4 %/95/trimestriel, 4 ans) → 84 bps = option B stockée ✅.
+- `3dd022f4` : correction mineure d'un chiffre du stem (Cash equivalents 1 → 3, artefact OCR) → 21.44 = option B stockée ✅ (avec 1 aussi proche mais moins précis).
+
+**3 explications corrigées en sous-produit du volet tableaux** (pages déjà rendues et confirmées, lues directement) : `6a490e28` (cash flow financing = 65), `9a22d2ad` (EBITDA interest coverage = 5.36), `cfe85b85` (ROE si R&D capitalisé = 13.4 %) — toutes vérifiées par recalcul manuel avant application.
+
+**Total explications corrigées cette reprise : 12** (7 round2 + `cf241f9a` + 3 bonus + 1 déjà comptée) → cumulé avec les 12 de la veille = **24 explications swappées corrigées au total**.
+
+### Résiduels restants après cette reprise (~13, en baisse depuis ~40)
+- **Explication swap non résolue** (7) : `2b989992`, `2e954a34`, `96b2e751`, `b79911c1`, `f01d947d`, `a478ab32`, `b3a8801d` (2 derniers = CFA_WEB non localisables).
+- **Tableau non résolu** (8, cf. ci-dessus) + **4 sans PDF localisable**.
+- **`b79911c1`** : cas le plus corrompu — l'enregistrement Supabase mélange le stem/options d'une question avec l'explication/tableau d'une autre. Nécessite une reconstruction complète manuelle, pas un simple patch.
+
+**Non fait** : reconstruction du tableau pour `077e56dc` et `f36d2bf6` bien que leur page source ait été identifiée (données visibles dans les notes d'agent) — non appliqué sans image de vérification directe, pour éviter tout risque de fabrication de structure de tableau.
 
 ---
 
