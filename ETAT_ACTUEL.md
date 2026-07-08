@@ -1,9 +1,43 @@
 # ETAT ACTUEL — WIB CFA
 > Mis à jour automatiquement à la fin de chaque session Claude Code.
 
-**Date**: 2026-07-08 (session 46 suite 2 — poursuite de l'audit ciblé : 17 tableaux + 13 explications + 2 correct_answer/stem corrigés)  
-**Commit**: fix 17 more missing tables + 13 more explanations + 2 corrupted correct_answer/stem cases (Fable 5 + manual PDF verification) — residuals down from ~40 to ~13  
+**Date**: 2026-07-08 (session 46 suite 3 — TOUS les résiduels de l'audit ciblé résolus, 0 restant)  
+**Commit**: resolve final 17 residuals (tables + explanations + 2 more corrupted correct_answer cases) — audit ciblé terminé, 0 IDs résiduels connus  
 **Branch**: master → Streamlit Cloud (auto-deploy) ✅ opérationnelle
+
+---
+
+## Session 46 (suite 3) — Résolution complète des 17 derniers résiduels (2026-07-08)
+
+**Contexte** : à la demande "continue", reprise des 17 IDs résiduels restants (7 explications + 8 tableaux + 4 sans PDF localisable, avec recouvrement). **Tous résolus** — la méthode qui a débloqué la majorité : recherche directe des pages PDF sources par **valeurs numériques d'options très distinctives** (ex. "83.3833", "150,030") au lieu du texte du stem, ce qui contourne le problème des séquences de questions au stem quasi-identique. Lecture directe des images par Claude (pas de délégation Fable 5 pour ce lot — volume gérable, lecture directe plus rapide).
+
+**8 questions UWorld (tableau + parfois explication)** entièrement reconstruites et vérifiées page-par-page : `2e954a34`, `b79911c1` (le cas dit "le plus corrompu" — en réalité une simple mauvaise page, résolu normalement), `ded06d8a`, `ae4fe1ca`, `f36d2bf6`, `077e56dc`, `96b2e751`, `3ed21d97`.
+
+**2 explications UWorld corrigées** (tableaux déjà bons) : `2b989992` (bug EAR obligations), `f01d947d` (P/E justifié vs pairs — trouvé via recherche élargie hors du PDF habituel, page 43 au lieu de la page attendue).
+
+**1 box-and-whisker UWorld** (`37908a75`) : graphique décrit en liste à puces (5 statistiques : extrêmes, quartiles, médiane) plutôt qu'un tableau, puisqu'un box-plot n'est pas une grille de données.
+
+**⚠️ 2 NOUVEAUX cas de `correct_answer` corrompu trouvés et corrigés (3e et 4e de la session)** :
+- **`1cf0d06f`** (Kaplan, box-and-whisker IQR) : stocké "B", page source montre sans ambiguïté que "A" est correct (coché ✓ sur la page, B et C marqués faux). Corrigé B→A.
+- **`b3a8801d`** (CFA_WEB, intervalle de prédiction régression) : stocké "C", la page source ("Answer 2 of 90") démontre explicitement que B est correct et que C "neglects the critical t-value". Corrigé C→B. Vérifié aussi par calcul indépendant (Yf=4.7%, IC=4.7%±2.032×1.4%=[1.9%,7.5%]=B).
+
+**3 questions Extra_QB résolues** via un contournement du blocage habituel : le PDF combiné `EXTRA 700 MCQs.pdf` a des nombres triple-encodés (ex. "555,,,888900" → doit être décodé caractère par caractère répété 3x) — fonction `_de_triple()` déjà existante dans `direct_answer_audit.py`, réappliquée pour retrouver les pages : `148b923b` (FIFO/LIFO inventaire), `258b48f9` (change FX), `83877977` (variance échantillon portefeuille). Les 3 `correct_answer` stockées confirmées exactes par recalcul indépendant.
+
+**2 questions CFA_WEB résolues** via les **caches Vision de sessions antérieures** (`scripts/_cache_cfaweb_qb/*.json`, déjà présents sur disque depuis la session 44j, jamais nettoyés — contiennent le texte des questions ET réponses déjà extrait par Vision) : `a478ab32` (explication seule), `b3a8801d` (voir ci-dessus, correct_answer + explication).
+
+### Bilan final cumulé de l'audit ciblé (2026-07-07 → 08, les 3 vagues)
+| Catégorie | Total corrigé |
+|---|---|
+| Tableaux manquants reconstruits | **56** (31 + 17 + 8) |
+| Explications swappées corrigées | **39** (12 + 13 + 14) |
+| `correct_answer` corrompu trouvé et corrigé | **4** (`24fd91bb`, `cf241f9a`, `1cf0d06f`, `b3a8801d`) |
+| Stems corrompus corrigés (hors tableaux manquants) | **2** (`3d950279`, `ef6d6cf6`) |
+| Questions reformatées (données squashées) | **124** |
+| Topic mal étiqueté corrigé | **1** (`cee8c779`) |
+
+**Résiduels connus restants : 0.** L'audit ciblé (détection + vérification rigoureuse, par opposition à une relecture exhaustive ligne-par-ligne des 7249 questions contre les PDF sources, jugée disproportionnée le 2026-07-07) est maintenant complet sur tout le périmètre identifié.
+
+**Enseignement clé pour une future session** : la découverte répétée de bugs `correct_answer` (4 au total, tous sur des questions par ailleurs "auditées" par les 10+ passes précédentes) confirme que ces bugs se cachent spécifiquement dans les questions ayant subi une réparation post-import (tableau/explication insérés a posteriori via un script de matching de page PDF) — un nouvel audit ciblé sur CE sous-ensemble spécifique (si de nouvelles réparations sont faites à l'avenir) serait plus rentable qu'un balayage aléatoire des 7249.
 
 ---
 
