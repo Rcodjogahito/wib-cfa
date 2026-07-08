@@ -1,8 +1,8 @@
 # ETAT ACTUEL — WIB CFA
 > Mis à jour automatiquement à la fin de chaque session Claude Code.
 
-**Date**: 2026-07-08 (session 47 — audit EXHAUSTIF en cours : 121 reformatages + 3 correct_answer + 1 stem, matching PDF texte intégral en tâche de fond ~8-10h)  
-**Commit**: broad reformat pass (121 questions) + 3 more correct_answer fixes via CFA_WEB cache cross-check + 1 stem label fix — full 7249-question PDF text-match audit running in background, not yet complete  
+**Date**: 2026-07-08 (session 47 — job de fond terminé : matching PDF texte intégral 7249/7249, 173 candidats score<0.8 à examiner ; 121 reformatages + 3 correct_answer + 1 stem déjà appliqués)  
+**Commit**: broad reformat pass (121 questions) + 3 more correct_answer fixes via CFA_WEB cache cross-check + 1 stem label fix — full 7249-question PDF page-location pass complete (6127 matched + 1122 CFA_WEB skipped by design), 173 low-confidence candidates flagged for manual content review (not yet examined)  
 **Branch**: master → Streamlit Cloud (auto-deploy) ✅ opérationnelle
 
 ---
@@ -31,11 +31,34 @@
 
 **~20 nouveaux IDs "donnée réellement manquante"** détectés en sous-produit des 4 lots de reformatage (agents ont refusé de deviner plutôt que fabriquer) — liste complète non encore consolidée, voir les fichiers `scripts/_broad_reformat_result_{1,2,3,4}.json` (non committés, à consolider à la prochaine session) pour les IDs exacts.
 
+### ✅ Mise à jour — job de fond terminé (2026-07-08, même session, vérifié a posteriori)
+
+Le matching texte (`scripts/_full_audit_match.py`) **a terminé**, bien plus vite que l'ETA initiale (~1h42 réel : 11:13→12:55, vs ~8-10h estimées — le cache par page a probablement amorti le coût une fois les PDF Kaplan lents traités une première fois). `scripts/_audit_match_report.json` contient les 7249 résultats.
+
+**⚠️ Important — nature du résultat** : ce script ne fait que **localiser la page source la plus probable et calculer un score de recouvrement de mots** entre la DB et cette page. Il ne compare PAS le contenu ligne par ligne pour détecter un `correct_answer` erroné, un stem tronqué, etc. — c'est une étape de repérage (phase 1), pas une vérification de fidélité de contenu (phase 2, qui reste à faire sur les cas suspects identifiés ci-dessous).
+
+**Répartition** :
+| Statut | Nombre | Détail |
+|---|---|---|
+| `matched` | 6127 | Kaplan 3717, UWorld 1897, Extra_QB 333, Kevin_Mock 180 |
+| `skip_cfaweb` | 1122 | CFA_WEB — scanné, pas de texte PDF (traité séparément via cache Vision, voir plus haut) |
+| `mismatch` | 0 | ce statut n'existe pas dans ce script — aucune détection auto de désaccord de contenu |
+
+**Score de confiance parmi les 6127 `matched`** : médiane = 1.0 (recouvrement parfait). Distribution :
+- ≥0.95 : 5515 (90%) — page trouvée avec quasi-certitude
+- 0.8-0.95 : 439
+- 0.6-0.8 : 164
+- 0.4-0.6 : 8
+- <0.4 : 1
+
+**173 candidats à score <0.8** (Kaplan 110, UWorld 46, Extra_QB 17) sont les seuls dignes d'investigation manuelle — score bas signifie soit mauvaise page trouvée (PDF avec questions très similaires), soit vraie divergence de contenu. **Non encore examinés individuellement** — c'est la vraie prochaine étape de "l'audit ligne par ligne" (la phase 1 ne fait que les pré-qualifier).
+
 ### État à la reprise de la prochaine session
-1. **Vérifier si `scripts/_audit_match_report.json` existe** (le job tâche de fond a peut-être terminé entretemps) — si oui, analyser les mismatches texte détectés.
-2. **Si le job tourne encore ou a été tué** (fermeture de session) : le relancer avec `python scripts/_full_audit_match.py` (nécessite `scripts/_full_dump_audit.json` — refaire un dump frais si absent).
+1. ~~Vérifier si le job de fond a terminé~~ **FAIT — terminé, voir ci-dessus.**
+2. **Examiner les 173 candidats score<0.8** un par un (page rendue en image + comparaison visuelle avec la DB) — c'est le sous-ensemble qui vaut la peine d'un vrai audit ligne par ligne, pas les 7249 en entier (les 5515 à score≥0.95 sont déjà confirmés fidèles au mot près).
 3. **Consolider les ~20 IDs "donnée manquante"** des 4 fichiers `_broad_reformat_result_*.json` et lancer la pipeline de reconstruction habituelle (localisation PDF + image + Fable5/Sonnet).
 4. **Re-vérification `correct_answer` à grande échelle** : passe fraîche de l'heuristique "conclusion finale" a détecté 588 candidats (`scripts/_final_conclusion_candidates.json`), mais échantillon de 5 montre un taux de faux positifs élevé (~60-100%, cohérent avec les 19% de vrai-positif de la session 45) — nécessiterait une vérification par agents en parallèle (façon session 45, ~15 lots) avant tout patch, non fait cette session.
+5. **CFA_WEB (1122 questions)** : seulement 160/1122 vérifiées de façon fiable jusqu'ici via cache Vision (voir ci-dessus) — les ~962 restantes non couvertes par le cache Vision de session 44j resteraient à traiter si l'utilisateur veut une vraie couverture à 100% de CFA_WEB.
 
 ---
 
