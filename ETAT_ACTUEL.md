@@ -1,9 +1,56 @@
 # ETAT ACTUEL — WIB CFA
 > Mis à jour automatiquement à la fin de chaque session Claude Code.
 
-**Date**: 2026-07-07 (session 46 — reconstruction tableaux manquants résiduels, 31 corrections)  
-**Commit**: reconstruct 31 missing data tables (visual transcription via Fable 5) + document 18 residuals + flag 12 explanation_en mismatches (new bug)  
+**Date**: 2026-07-08 (session 46 suite — audit complet ciblé : 124 reformatages + 12 explications corrigées)  
+**Commit**: reformat 124 squashed-data questions + fix 12 swapped explanations (Fable 5) + document ~40 residuals across 3 bug classes  
 **Branch**: master → Streamlit Cloud (auto-deploy) ✅ opérationnelle
+
+---
+
+## Session 46 (suite) — Audit ciblé complet : reformatage + bug explication swappée (2026-07-08)
+
+**Contexte** : à la demande de l'utilisateur ("audit complet de conformité + assure-toi que tableaux/schémas/énumérations soient bien reproduits"), poursuite du travail de la veille avec deux volets approuvés : (1) finir les chantiers déjà identifiés (bug explanation_en swappé + résiduels de tableaux), (2) détection heuristique ciblée sur l'ensemble des 7 249 questions + vérification Fable 5 rigoureuse des candidats détectés.
+
+### Volet 1 — Reformatage des données "squashées" (124/138 corrigés)
+
+Classification heuristique locale (sans appel API) de toutes les mentions "the following data/table/exhibit/information" sur les 7 249 questions : 849 mentions totales, dont 138 candidats fiables où les données sont bien présentes dans le texte mais collées en une phrase continue sans mise en forme (ex. "Debt outstanding, market value $10 million Common stock outstanding, market value $30 million..."). 4 agents **Fable 5** en parallèle ont reformaté chaque cas en liste à puces ou tableau Markdown, avec vérification programmatique de préservation stricte du contenu (comparaison de multiset mots+chiffres avant/après).
+
+**Résultat : 124/138 appliqués à Supabase (124/124 PATCH OK)**, 0 perte de contenu détectée (1 seul écart, une correction d'espace volontaire déjà documentée par l'agent). 14 non résolus par prudence (trop courts, ou tableau réellement perdu — voir volet 3).
+
+### Volet 2 — Bug explanation_en swappé : détection étendue + 12 corrections
+
+Hypothèse testée : le bug découvert la veille (11 IDs où `explanation_en` appartient à une autre question) est concentré dans la cohorte des questions ayant subi une réparation de tableau par le passé (pages PDF mal appariées lors des sessions 5/12/hier). Extraction des IDs historiques depuis git (`patch_uworld_tables.py`, `patch_explanations.py`, `batch3_explanations.py`, `rerender_wrong_pages.py` — commits `6a76f5c`/`eb24ad7`) + les 49 d'hier = cohorte de 124 questions vérifiées.
+
+**Criblage sémantique (texte seul, 4 agents Fable 5 en parallèle)** : 25 nouveaux mismatches confirmés sur 124 (~20% — hypothèse validée). Combinés aux 11 connus + 3 trouvés en sous-produit du reformatage (volet 1) = **28 IDs confirmés** au total.
+
+**Correction (localisation PDF + transcription Fable 5)** : pages sources localisées et rendues pour 26/28 (2 CFA_WEB non localisables, PDF combiné sans mapping par sujet). Fable 5 a lu chaque page et transcrit la vraie explication, avec double vérification (page correspond bien à la question ; la conclusion de l'explication correspond au `correct_answer` stocké).
+
+**Résultat : 12/26 corrigés et appliqués à Supabase (12/12 PATCH OK)** :
+`0aab092e`, `2567f1c8`, `67a46a96`, `6f8c5031`, `82465e33`, `83355a10` (lot 1) + `93f2290c`, `974f206c`, `a855d557`, `a9796bb6`, `ae4fe1ca`, `ed2f7b60` (lot 2).
+
+**14 non résolus** (mauvaise page rendue — le texte signature n'a pas retrouvé la bonne page dans le PDF ; certains pointent explicitement vers l'AUTRE question qui porte la vraie explication actuellement stockée ici, ce qui facilitera une reprise ciblée) : `077e56dc`, `17e887d4`, `24fd91bb`, `2b989992`, `2e954a34`, `3d950279`, `3dd022f4`, `8cee0973`, `96b2e751`, `b79911c1`, `cf241f9a`, `ef6d6cf6`, `f01d947d`, `f36d2bf6`.
+**2 non localisables** (CFA_WEB, pas de PDF par sujet) : `a478ab32`, `b3a8801d`.
+
+**⚠️ Alerte distincte trouvée en cours de route — possible `correct_answer` corrompu** : `24fd91bb` (Fixed Income, comparaison notation crédit) — les données de la question en base donnent un résultat qui contredit la réponse stockée "A". Non corrigé (nécessite vérification manuelle dédiée, ne pas patcher sans confirmation supplémentaire).
+**⚠️ Stem incohérent** : `ef6d6cf6` — le tableau de la question en base (coupons 4.25%/6.50%, prix 98.50/99.75) ne correspond à aucune page source retrouvée et son propre calcul ne matche aucune option.
+
+### Volet 3 — Résiduels supplémentaires découverts en sous-produit
+
+En reformatant/criblant, les agents ont signalé des cas où la donnée référencée est **réellement absente** du texte (pas juste mal formatée) — **11 nouveaux IDs** distincts des 18 résiduels d'hier : `6a490e28`, `cfe85b85`, `acfee345`, `9a22d2ad`, `085bfb88`, `3ed21d97`, `61cf6d82`, `d4f4ed98`, `8c26359a`, `7952b270`, `5d975bed`. Ces questions sont actuellement inutilisables telles quelles (données manquantes) — nécessitent une passe de reconstruction identique à celle de la veille.
+
+Autres anomalies ponctuelles signalées (non corrigées, à surveiller) :
+- `fbef96f0` / `be428262` (DOH/DSO) : le tableau ne reproduit pas les valeurs des options — bug de copie de tableau, distinct du swap d'explication.
+- `cee8c779` : topic mal étiqueté "Ethics & Professional Standards" pour une question Corporate Issuers.
+
+### Bilan cumulé de l'audit ciblé (2026-07-07 → 08)
+| Chantier | Résolu | Résiduel |
+|---|---|---|
+| Tableaux manquants (session 46, veille) | 31/49 | 18 |
+| Reformatage données squashées | 124/138 | 14 |
+| Explication swappée | 12/28 | 16 (+1 answer_conflict, +1 stem incohérent) |
+| Tableau réellement perdu (nouveau) | 0/11 | 11 (non traité, découvert seulement) |
+
+**Non fait** : la classification complète des 7 249 questions pour d'autres classes de bugs (fidélité texte intégral vs PDF pour tout le fonds, au-delà des tableaux/explications) n'a pas été tentée — coût jugé disproportionné pour une session, cf. décision utilisateur du 2026-07-07 (détection ciblée + finition des chantiers connus, pas audit exhaustif ligne par ligne).
 
 ---
 
