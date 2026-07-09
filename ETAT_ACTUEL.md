@@ -1,9 +1,45 @@
 # ETAT ACTUEL — WIB CFA
 > Mis à jour automatiquement à la fin de chaque session Claude Code.
 
-**Date**: 2026-07-08 (session 47 — job de fond terminé : matching PDF texte intégral 7249/7249, 173 candidats score<0.8 à examiner ; 121 reformatages + 3 correct_answer + 1 stem déjà appliqués)  
-**Commit**: broad reformat pass (121 questions) + 3 more correct_answer fixes via CFA_WEB cache cross-check + 1 stem label fix — full 7249-question PDF page-location pass complete (6127 matched + 1122 CFA_WEB skipped by design), 173 low-confidence candidates flagged for manual content review (not yet examined)  
+**Date**: 2026-07-09 (session 48 — 173 candidats à faible score examinés un par un : 26 `correct_answer` corrompus corrigés et appliqués ; 52 corruptions de contenu identifiées et documentées, non corrigées ; 24 mauvaises pages localisées)  
+**Commit**: 26 corrections `correct_answer` appliquées en direct sur Supabase via PATCH REST (26/26 OK, vérifié) ; bug systémique de "bleed" de champs découvert (texte décalé entre question_en/option_a/b/c sur ~37 questions, concentré Kaplan Ethics + UWorld)  
 **Branch**: master → Streamlit Cloud (auto-deploy) ✅ opérationnelle
+
+---
+
+## Session 48 — Vérification ligne par ligne des 173 candidats à faible score (2026-07-09)
+
+**Contexte** : suite de la session 47 — le job de fond avait localisé une page source + score de confiance pour les 7249 questions, mais sans comparaison de contenu. Cette session traite le vrai travail de vérification ligne par ligne sur les 173 candidats à score <0.8 (Kaplan 110, UWorld 46, Extra_QB 17).
+
+**Méthode** : 8 lots d'agents **Sonnet 5** (le modèle explicitement demandé pour ce chantier), chaque agent lisant l'image PNG rendue de la page PDF source pour chaque question + comparant aux champs DB (`question_en`/`option_a/b/c`/`correct_answer`/`explanation_en`). Verdict par question : `ok` / `wrong_page` (erreur de localisation, pas de la DB) / `correct_answer_wrong` (preuve page : coche/calcul) / `content_wrong` (divergence substantielle de contenu) / `unclear` (jamais forcé).
+
+**Incident technique** : le lancement initial en 8 agents parallèles a saturé le quota de session (6 échecs simultanés "session limit"). Reprise en série (1 agent à la fois) — fonctionne, mais 1 lot (batch 7, contenu Ethics + FSA) a déclenché à répétition le classifieur de sécurité automatique Anthropic ("Usage Policy") sur du contenu pourtant bénin (question de stats standard). Isolé par bissection jusqu'à 2 items ; les 2 se sont révélés être des faux positifs sur du contenu totalement anodin (vérifiés manuellement par Claude en lisant directement les images, sans agent) — aucune cause de contenu identifiable, probablement un faux positif intermittent du classifieur.
+
+**Résultat — 173/173 examinés** (taux de détection ~59%, très supérieur aux passes heuristiques précédentes ~19%) :
+| Verdict | Nombre | Action |
+|---|---|---|
+| `ok` | 71 | Aucune action — contenu confirmé fidèle |
+| `correct_answer_wrong` | 26 | **Corrigés et appliqués** (PATCH Supabase, 26/26 OK, vérifié par GET sur 3 échantillons) |
+| `content_wrong` | 52 | **Identifiés, NON corrigés** — nécessitent une reconstruction manuelle par question (pas un simple PATCH de lettre), voir détail ci-dessous |
+| `wrong_page` | 24 | **NON traités** — erreur du localisateur automatique, pas nécessairement une erreur DB ; 24 IDs consignés pour relocalisation future si besoin |
+
+**26 `correct_answer` corrigés** (tous confirmés par coche/évidence explicite sur la page + cohérence avec `explanation_en` stockée) — total cumulé toutes sessions : 780+7+26 = **813**. IDs et lettres dans `scripts/_lowconf_all_results.json`.
+
+**Découverte majeure — bug d'import systémique "field bleed"** : sur 37 des 52 `content_wrong` (71%), le texte de la question/des options est décalé d'une position à travers les limites `question_en`/`option_a`/`option_b`/`option_c` (ex. `option_a` contient la fin de l'option précédente + le début de la vraie option A). Concentré sur les questions Kaplan Ethics multi-lignes et certaines UWorld FSA. C'est un bug de **pipeline d'import**, pas un cas isolé — mériterait une passe dédiée de détection systématique (chercher toutes les questions du même sous-ensemble PDF) plutôt qu'un traitement question par question.
+
+**Autres motifs de `content_wrong`** (15 restants) :
+- **Explications échangées** (`explanation_en` d'une question totalement différente) : 3 cas confirmés (`fa41d2f1`, `e7b5b9ab`, `ed9b85e7`) + plusieurs autres suspectés dans le lot "other".
+- **Tableaux étrangers collés dans le stem** : 3 cas (`a200c036`, `3f91a49c`, `a3cc7477`) — un second tableau sans rapport copié depuis une question voisine du même PDF.
+- **1 cas sévère** (`b0c24553`) : bleed + `correct_answer` lui-même faux (B→C) — nécessite réécriture complète.
+- **2 cas de contamination croisée totale** (`0c0c9b36`, `ca9a9953`) — options/explication d'une question entièrement différente.
+
+**Détail complet** : `scripts/_lowconf_all_results.json` (173 verdicts) + `scripts/_lowconf_items.json` (données sources + chemins image).
+
+### Prochaine session — décision à prendre avec l'utilisateur
+1. **52 `content_wrong`** : reconstruction manuelle nécessaire (texte + parfois `correct_answer`). Prioriser les 37 "field bleed" (bug identifié, patron réutilisable) avant les cas isolés.
+2. **24 `wrong_page`** : relocaliser la vraie page source (plusieurs pistes déjà données par les agents — pages voisines identifiées pour certains).
+3. **Sweep systématique "field bleed"** : vu la concentration sur Kaplan Ethics multi-lignes, envisager de scanner TOUTES les questions Kaplan Ethics (pas seulement les 37 trouvées ici) pour ce bug précis — pourrait révéler bien plus de cas au-delà des 173 candidats à faible score.
+4. Chantiers encore ouverts des sessions précédentes (non traités cette session) : 588 candidats `correct_answer` "conclusion finale" (fort taux de faux positifs, à vérifier par agents avant tout patch), ~20 IDs "donnée manquante", ~962 questions CFA_WEB non couvertes par le cache Vision.
 
 ---
 
