@@ -1,8 +1,8 @@
 # ETAT ACTUEL — WIB CFA
 > Mis à jour automatiquement à la fin de chaque session Claude Code.
 
-**Date**: 2026-07-09 (session 48 — 173 candidats à faible score examinés un par un : 26 `correct_answer` corrompus corrigés et appliqués ; 52 corruptions de contenu identifiées et documentées, non corrigées ; 24 mauvaises pages localisées)  
-**Commit**: 26 corrections `correct_answer` appliquées en direct sur Supabase via PATCH REST (26/26 OK, vérifié) ; bug systémique de "bleed" de champs découvert (texte décalé entre question_en/option_a/b/c sur ~37 questions, concentré Kaplan Ethics + UWorld)  
+**Date**: 2026-07-09 (session 48 — 173 candidats à faible score examinés un par un ET corrigés : 26+52=78 questions patchées sur Supabase ; reste 24 mauvaises pages non relocalisées)  
+**Commit**: **78 corrections appliquées en direct sur Supabase** — 26 `correct_answer` (PATCH simple) + 52 reconstructions de contenu complètes (question_en/option_a/b/c/correct_answer/explanation_en selon le champ touché), toutes vérifiées 204 + spot-check GET. Bug systémique de "bleed" de champs résolu sur les 37 cas trouvés (texte décalé entre question_en/option_a/b/c, concentré Kaplan Ethics + UWorld)  
 **Branch**: master → Streamlit Cloud (auto-deploy) ✅ opérationnelle
 
 ---
@@ -35,11 +35,25 @@
 
 **Détail complet** : `scripts/_lowconf_all_results.json` (173 verdicts) + `scripts/_lowconf_items.json` (données sources + chemins image).
 
+### ✅ Suite (même session) — les 52 `content_wrong` reconstruits et appliqués
+
+**Méthode** : 5 lots d'agents Sonnet 5 en série (leçon de l'incident quota respectée), chacun relisant l'image de la page source (+ pages adjacentes via PyMuPDF si la page pré-rendue était coupée/incomplète) et retranscrivant **verbatim** les champs corrompus (`question_en`/`option_a`/`option_b`/`option_c`/`correct_answer`/`explanation_en` selon le cas). Règle anti-fabrication stricte : transcription uniquement depuis une page lisible, sinon `needs_manual_review` — **0 cas en revue manuelle sur 52**, tous résolus avec preuve page.
+
+**Résultat — 52/52 corrigés et patchés sur Supabase (52/52 PATCH OK, spot-check GET vérifié)** :
+- 33 `question_en` corrigés (bleed de champs ou tableau étranger retiré)
+- 35 `option_b`, 34 `option_c`, 29 `option_a` re-scindés proprement
+- 12 `explanation_en` remplacés (appartenaient à une autre question)
+- **10 `correct_answer` supplémentaires corrigés** en sous-produit de la reconstruction (la vraie lettre n'apparaissait clairement qu'une fois le texte des options correctement re-scindé) : `99b27036`, `0c0c9b36`, `9d54c4b2`, `e12d2003`, `2d6987c2`, `d18d3f90`, `32417474`, `29752b63`, `b0c24553`, `f839d9f1`.
+
+**Total `correct_answer` corrigés cette session : 26 + 10 = 36. Cumul toutes sessions : 780+7+36 = 823.**
+**Total questions patchées cette session (tous champs confondus) : 26 + 52 = 78.**
+
+**Détail complet** : `scripts/_reconstruct_all_results.json` (52 reconstructions avec justification) + corps des PATCH dans `%TEMP%\wib_patch_bodies\` (non versionné).
+
 ### Prochaine session — décision à prendre avec l'utilisateur
-1. **52 `content_wrong`** : reconstruction manuelle nécessaire (texte + parfois `correct_answer`). Prioriser les 37 "field bleed" (bug identifié, patron réutilisable) avant les cas isolés.
-2. **24 `wrong_page`** : relocaliser la vraie page source (plusieurs pistes déjà données par les agents — pages voisines identifiées pour certains).
-3. **Sweep systématique "field bleed"** : vu la concentration sur Kaplan Ethics multi-lignes, envisager de scanner TOUTES les questions Kaplan Ethics (pas seulement les 37 trouvées ici) pour ce bug précis — pourrait révéler bien plus de cas au-delà des 173 candidats à faible score.
-4. Chantiers encore ouverts des sessions précédentes (non traités cette session) : 588 candidats `correct_answer` "conclusion finale" (fort taux de faux positifs, à vérifier par agents avant tout patch), ~20 IDs "donnée manquante", ~962 questions CFA_WEB non couvertes par le cache Vision.
+1. **24 `wrong_page`** : relocaliser la vraie page source (plusieurs pistes déjà données par les agents — pages voisines identifiées pour certains : `e73b325d`→page 1, `3233fefb`→page 18, `ff223d3b`→page 52 du même PDF, etc.).
+2. **Sweep systématique "field bleed"** : vu la concentration sur Kaplan Ethics multi-lignes (confirmée sur ~15 des 37 cas corrigés), ce bug touche très probablement bien plus de questions que les 37 trouvées dans cet échantillon de 173 — un scan dédié sur tout Kaplan Ethics multi-lignes serait rentable.
+3. Chantiers encore ouverts des sessions précédentes (non traités cette session) : 588 candidats `correct_answer` "conclusion finale" (fort taux de faux positifs, à vérifier par agents avant tout patch), ~20 IDs "donnée manquante", ~962 questions CFA_WEB non couvertes par le cache Vision.
 
 ---
 
