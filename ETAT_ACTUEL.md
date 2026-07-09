@@ -1,8 +1,8 @@
 # ETAT ACTUEL — WIB CFA
 > Mis à jour automatiquement à la fin de chaque session Claude Code.
 
-**Date**: 2026-07-09 (session 48 — 173 candidats à faible score examinés un par un ET corrigés : 26+52=78 questions patchées sur Supabase ; reste 24 mauvaises pages non relocalisées)  
-**Commit**: **78 corrections appliquées en direct sur Supabase** — 26 `correct_answer` (PATCH simple) + 52 reconstructions de contenu complètes (question_en/option_a/b/c/correct_answer/explanation_en selon le champ touché), toutes vérifiées 204 + spot-check GET. Bug systémique de "bleed" de champs résolu sur les 37 cas trouvés (texte décalé entre question_en/option_a/b/c, concentré Kaplan Ethics + UWorld)  
+**Date**: 2026-07-09 (session 48 — les 173 candidats à faible score TOUS traités : 94 questions patchées sur Supabase, 23/24 mauvaises pages relocalisées, 1 cas restant genuinement irrésolu)  
+**Commit**: **94 corrections appliquées en direct sur Supabase** — 26 `correct_answer` + 52 reconstructions de contenu (dont 10 `correct_answer` en sous-produit) + 16 relocalisations de page avec reconstruction associée. Bug systémique de "bleed" de champs résolu sur tous les cas trouvés (Kaplan Ethics + UWorld). **Chantier des 173 candidats à faible score maintenant CLOS** (1 seul résiduel : `7d98d9b9`, donnée manquante — voir détail).  
 **Branch**: master → Streamlit Cloud (auto-deploy) ✅ opérationnelle
 
 ---
@@ -50,9 +50,31 @@
 
 **Détail complet** : `scripts/_reconstruct_all_results.json` (52 reconstructions avec justification) + corps des PATCH dans `%TEMP%\wib_patch_bodies\` (non versionné).
 
+### ✅ Suite (même session) — les 24 `wrong_page` relocalisés
+
+**Méthode** : 5 cas avaient déjà une page candidate identifiée par les agents précédents — vérifiés et corrigés directement (2 nécessitaient un nettoyage de `question_en`, 3 confirmés déjà fidèles une fois la bonne page consultée, aucun changement DB nécessaire). Pour les **19 restants** (page non trouvée dans le budget de recherche adjacente initial) : script de **recherche plein-texte sur l'intégralité du PDF source** (`scripts/_wrongpage_fulltext_search.py`) utilisant les valeurs numériques distinctives des options DB comme signature (au lieu du texte du stem, plus fiable — méthode déjà validée en session 46), puis 2 lots d'agents Sonnet 5 en série pour vérifier visuellement chaque page candidate et reconstruire si besoin.
+
+**Résultat — 24/24 traités** :
+- **7 confirmés sans changement** (page relocalisée, contenu DB déjà fidèle — l'erreur était uniquement dans le pointeur de page interne à l'audit, jamais stocké en DB).
+- **16 corrigés et patchés** (`question_en` et/ou `explanation_en`, un cas avec les 3 options) — motif dominant : tableaux/données bled-in d'une question voisine, ou explication appartenant à une autre question.
+- **1 cas génuinement irrésolu** : `7d98d9b9` (UWorld Equity Valuation, question P/E trailing vs. justified-forward) — le stem/les 2 premières sociétés (X, Y) correspondent verbatim à la page 7 du PDF source, mais cette page ne pose PAS la question stockée en DB (qui référence une "Company Z" et une réponse basée sur ROE/taux de rétention absents de cette page). Recherche exhaustive (top 3 candidats + recherche de phrases/combinaisons numériques distinctives) n'a trouvé aucune page du PDF contenant la combinaison stem+options+réponse stockée en DB. **Hypothèse : donnée fabriquée ou fusionnée lors d'un import antérieur, pas un simple problème de page** — nécessiterait une investigation dédiée (vérifier si Company Z existe dans un tout autre PDF/topic) si l'utilisateur veut creuser.
+
+**Total corrections cette phase : 16 questions patchées** (0 `correct_answer` supplémentaire cette fois — uniquement contenu).
+
+### 🏁 Bilan complet — chantier des 173 candidats à faible score (session 48, CLOS)
+
+| Catégorie initiale | Nombre | Issue finale |
+|---|---|---|
+| `ok` | 71 | Aucune action |
+| `correct_answer_wrong` | 26 | Corrigé |
+| `content_wrong` | 52 | Corrigé (dont 10 `correct_answer` en plus) |
+| `wrong_page` | 24 | 16 corrigés, 7 confirmés déjà bons, **1 irrésolu** (`7d98d9b9`) |
+
+**Total questions patchées sur Supabase cette session : 94** (26+52+16). **Total `correct_answer` corrigés cette session : 36** (26+10). **Cumul `correct_answer` toutes sessions : 823.**
+
 ### Prochaine session — décision à prendre avec l'utilisateur
-1. **24 `wrong_page`** : relocaliser la vraie page source (plusieurs pistes déjà données par les agents — pages voisines identifiées pour certains : `e73b325d`→page 1, `3233fefb`→page 18, `ff223d3b`→page 52 du même PDF, etc.).
-2. **Sweep systématique "field bleed"** : vu la concentration sur Kaplan Ethics multi-lignes (confirmée sur ~15 des 37 cas corrigés), ce bug touche très probablement bien plus de questions que les 37 trouvées dans cet échantillon de 173 — un scan dédié sur tout Kaplan Ethics multi-lignes serait rentable.
+1. **`7d98d9b9`** : investigation dédiée sur la donnée manquante "Company Z" (pas résolu par la recherche plein-texte standard).
+2. **Sweep systématique "field bleed"** : vu la concentration sur Kaplan Ethics multi-lignes (confirmée sur de nombreux cas corrigés cette session), ce bug touche très probablement bien plus de questions que cet échantillon de 173 — un scan dédié sur tout Kaplan Ethics multi-lignes serait rentable.
 3. Chantiers encore ouverts des sessions précédentes (non traités cette session) : 588 candidats `correct_answer` "conclusion finale" (fort taux de faux positifs, à vérifier par agents avant tout patch), ~20 IDs "donnée manquante", ~962 questions CFA_WEB non couvertes par le cache Vision.
 
 ---
