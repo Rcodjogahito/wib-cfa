@@ -1,0 +1,376 @@
+[
+ {
+  "id": "5c50a3e1-876a-48b0-b0ca-9844fff35c1b",
+  "reasons": [
+   "compound_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\2. QB KAPLAN-3000 MCQs\\QSTN WITH ANS\\Quantitative Method\\Reading 1 Rates and Returns - Answers.pdf",
+  "page_idx": 7,
+  "png": "scripts\\_kaplan108_png\\5c50a3e1-876a-48b0-b0ca-9844fff35c1b.png",
+  "topic": "Quantitative Methods",
+  "subtopic": "Reading 1 Rates and Returns",
+  "question_en": "An investor buys a stock on March 24 for $63.25. The stock pays quarterly dividends of $0.54 on May 1 and August 1. On September 27, the investor sells the stock for $62.80. The investor's holding period return is closest to:",
+  "option_a": "2.5%.",
+  "option_b": "1.0%.",
+  "option_c": "2.0%.",
+  "correct_answer": "A",
+  "explanation_en": "62.80+0.54+0.54 −1 = 0.01 = 1%. Because we are asked for the HPR, the 63.25 beginning and ending dates are irrelevant. If we had been asked to annualize the return, we would need to know the length of the holding period."
+ },
+ {
+  "id": "0c2eaf35-ed5f-4d9c-9d25-bdd7b54933d0",
+  "reasons": [
+   "compound_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\2. QB KAPLAN-3000 MCQs\\QSTN WITH ANS\\Equity Investments\\Reading 48 Equity Valuation- Concepts and Basic Tools - Answers.pdf",
+  "page_idx": 72,
+  "png": "scripts\\_kaplan108_png\\0c2eaf35-ed5f-4d9c-9d25-bdd7b54933d0.png",
+  "topic": "Equity Investments",
+  "subtopic": "Reading 48 Equity Valuation- Concepts and Basic Tools",
+  "question_en": "The earnings multiplier model, derived from the dividend discount model, expresses a stock's P/E ratio (P /E ) as the : 0 1 expected dividend in one year divided by the dierence between the required",
+  "option_a": "return on equity and the expected dividend growth rate. expected dividend payout ratio divided by the dierence between the required",
+  "option_b": "return on equity and the expected dividend growth rate. expected dividend payout ratio divided by the sum of the expected dividend",
+  "option_c": "growth rate and the required return on equity.",
+  "correct_answer": "A",
+  "explanation_en": "Starting with the dividend discount model P = D /(k – g), and dividing both sides by E 0 1 e 1 yields: P /E = (D /E )/(k – g) 0 1 1 1 e Thus, the P/E ratio is determined by: The expected dividend payout ratio (D /E ). 1 1 The required rate of return on the stock (k ). e The expected growth rate of dividends (g)."
+ },
+ {
+  "id": "01e792e4-023b-4624-b636-d3926432018d",
+  "reasons": [
+   "compound_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\2. QB KAPLAN-3000 MCQs\\QSTN WITH ANS\\Fixed income\\Reading 61 Curve-Based and Empirical Fixed-Income Risk Measures - Answers.pdf",
+  "page_idx": 8,
+  "png": "scripts\\_kaplan108_png\\01e792e4-023b-4624-b636-d3926432018d.png",
+  "topic": "Fixed Income",
+  "subtopic": "Reading 61 Curve-Based and Empirical Fixed-Income Risk Measures",
+  "question_en": "Jayce Arnold, a CFA candidate, considers a $1,000 face value, option-free bond issued at par. Which of the following statements about the bond's dollar price behavior is most likely accurate when yields rise and fall by 200 basis points, respectively? Price will:",
+  "option_a": "decrease by $124, price will increase by $149.",
+  "option_b": "decrease by $149, price will increase by $124.",
+  "option_c": "increase by $149, price will decrease by $124.",
+  "correct_answer": "C",
+  "explanation_en": "As yields increase, bond prices fall, the price curve gets flatter, and changes in yield have a smaller effect on bond prices. As yields decrease, bond prices rise, the price curve gets steeper, and changes in yield have a larger effect on bond prices. Thus, the price increase when interest rates decline must be greater than the price decrease when interest rates rise (for the same basis point change). Remember that this applies to percentage changes as well."
+ },
+ {
+  "id": "9c501526-1189-4a85-a8c6-4c63c9ac76da",
+  "reasons": [
+   "compound_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\2. QB KAPLAN-3000 MCQs\\QSTN WITH ANS\\Ethical and professional standard\\Reading 91.8 Guidance for Standard VI - Answers.pdf",
+  "page_idx": 6,
+  "png": "scripts\\_kaplan108_png\\9c501526-1189-4a85-a8c6-4c63c9ac76da.png",
+  "topic": "Ethics & Professional Standards",
+  "subtopic": "Reading 91.8 Guidance for Standard VI",
+  "question_en": "Will Lambert, CFA, is a financial analyst for Offshore Investments. He is preparing a purchase recommendation on Burch Corporation. According to the Standards of Professional Conduct, which of the following relationships with Burch is Lambert least likely required to disclose?",
+  "option_a": "Oshore is an OTC market maker for Burch Corporation's stock. he is a beneciary of a pension plan of his former employer that owns a large",
+  "option_b": "number of shares of Burch's stock.",
+  "option_c": "his wife owns 2,000 shares of Burch Corporation.",
+  "correct_answer": "B",
+  "explanation_en": "Standard VI(A), Disclosure of Conflicts, requires members to disclose to their employer all matters, including beneficial ownership of securities, that reasonably could be expected to interfere with their duty to their employer or ability to make unbiased and objective recommendations. Disclosure of an employer's own involvement with the security is not necessary in this instance. If the report had been for external use, it would have been necessary to make all of the disclosures given as choices."
+ },
+ {
+  "id": "2895404c-0da7-45aa-bdaf-4d776aa17d19",
+  "reasons": [
+   "compound_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\2. QB KAPLAN-3000 MCQs\\QSTN WITH ANS\\Fixed income\\Reading 54 Fixed-Income Bond Valuation- Prices and Yields - Answers.pdf",
+  "page_idx": 5,
+  "png": "scripts\\_kaplan108_png\\2895404c-0da7-45aa-bdaf-4d776aa17d19.png",
+  "topic": "Fixed Income",
+  "subtopic": "Reading 54 Fixed-Income Bond Valuation- Prices and Yields",
+  "question_en": "Consider a 6-year $1,000 par bond priced at $1,011. The coupon rate is 7.5% paid semiannually. Six-year bonds with comparable credit quality have a yield to maturity (YTM) of 6%. Should an investor purchase this bond?",
+  "option_a": "No, the bond is overvalued by $64.",
+  "option_b": "Yes, the bond is undervalued by $38.",
+  "option_c": "Yes, the bond is undervalued by $64.",
+  "correct_answer": "A",
+  "explanation_en": "FV = 1,000 PMT = 37.5 N = 12 I/Y = 3% CPT PV = –1,074.66 1,074.66 – 1,011 = 64"
+ },
+ {
+  "id": "100be2a8-a39e-4922-8d5c-2058fc476044",
+  "reasons": [
+   "compound_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\2. QB KAPLAN-3000 MCQs\\QSTN WITH ANS\\Financial statement analysis\\Reading 39 Financial Analysis Techniques - Answers.pdf",
+  "page_idx": 2,
+  "png": "scripts\\_kaplan108_png\\100be2a8-a39e-4922-8d5c-2058fc476044.png",
+  "topic": "Financial Statement Analysis",
+  "subtopic": "Reading 39 Financial Analysis Techniques",
+  "question_en": "An analyst has gathered the following information about a company:\n\n| Balance Sheet | |\n| --- | --- |\n| Assets | |\n| Cash | 100 |\n| Accounts Receivable | 750 |\n| Marketable Securities | 300 |\n| Inventory | 850 |\n| Property, Plant & Equip | 900 |\n| Accumulated Depreciation | (150) |\n| Total Assets | 2750 |\n| Liabilities and Equity | |\n| Accounts Payable | 300 |\n| Short-Term Debt | 130 |\n| Long-Term Debt | 700 |\n| Common Stock | 1000 |\n| Retained Earnings | 620 |\n| Total Liab. and Stockholder's equity | 2750 |\n\n| Income Statement | |\n| --- | --- |\n| Sales | 1500 |\n| COGS | 1100 |\n| Gross Profit | 400 |\n| SG&A | 150 |\n| Operating Profit | 250 |\n| Interest Expense | 25 |\n| Taxes | 75 |\n| Net Income | 150 |\n\nWhat is the receivables collection period?",
+  "option_a": "0.62.",
+  "option_b": "1.53.",
+  "option_c": "2.67.",
+  "correct_answer": "C",
+  "explanation_en": "Quick ratio = [100(cash) + 750(AR) + 300(marketable securities)] / [300(AP) + 130(short- term debt)] = (1,150 / 430) = 2.67"
+ },
+ {
+  "id": "87a91569-a156-4e09-9f36-1f007a58be01",
+  "reasons": [
+   "compound_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\2. QB KAPLAN-3000 MCQs\\QSTN WITH ANS\\Financial statement analysis\\Reading 39 Financial Analysis Techniques - Answers.pdf",
+  "page_idx": 34,
+  "png": "scripts\\_kaplan108_png\\87a91569-a156-4e09-9f36-1f007a58be01.png",
+  "topic": "Financial Statement Analysis",
+  "subtopic": "Reading 39 Financial Analysis Techniques",
+  "question_en": "An analyst is most likely to calculate companies' net interest margin when evaluating:",
+  "option_a": "banks.",
+  "option_b": "subscription services.",
+  "option_c": "property and casualty insurance companies.",
+  "correct_answer": "B",
+  "explanation_en": "Net interest margin (interest income / interest-earning assets) is a ratio typically used to analyze lending institutions."
+ },
+ {
+  "id": "9bc6ddcf-4249-4307-ada1-04b8a805111d",
+  "reasons": [
+   "compound_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\2. QB KAPLAN-3000 MCQs\\QSTN WITH ANS\\Financial statement analysis\\Reading 39 Financial Analysis Techniques - Answers.pdf",
+  "page_idx": 22,
+  "png": "scripts\\_kaplan108_png\\9bc6ddcf-4249-4307-ada1-04b8a805111d.png",
+  "topic": "Financial Statement Analysis",
+  "subtopic": "Reading 39 Financial Analysis Techniques",
+  "question_en": "Given the following income statement and balance sheet for a company: Balance Sheet Assets Year 2003 Year 2004 Cash 500 450 Accounts Receivable 600 660 Inventory 500 550 Total CA 1300 1660 Plant, prop. equip 1000 1250 Total Assets 2600 2910 Liabilities Accounts Payable 500 550 Long term debt 700 700 Total liabilities 1200 1652 Equity Common Stock 400 400 Retained Earnings 1260 1260 Total Liabilities & Equity 2600 2910 Income Statement Sales 3000 Cost of Goods Sold (1000) Gross Profit 2000 SG&A 500 Interest Expense 151 EBT 1349 Taxes (30%) 405 Net Income 944 What is the operating profit margin?",
+  "option_a": "0.331.",
+  "option_b": "2.018.",
+  "option_c": "3.018.",
+  "correct_answer": "C",
+  "explanation_en": "Current ratio = (CA / CL) = (1,660 / 550) = 3.018"
+ },
+ {
+  "id": "bdf94667-4fa7-4732-a19e-0c5dea16eda0",
+  "reasons": [
+   "compound_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\2. QB KAPLAN-3000 MCQs\\QSTN WITH ANS\\Financial statement analysis\\Reading 39 Financial Analysis Techniques - Answers.pdf",
+  "page_idx": 18,
+  "png": "scripts\\_kaplan108_png\\bdf94667-4fa7-4732-a19e-0c5dea16eda0.png",
+  "topic": "Financial Statement Analysis",
+  "subtopic": "Reading 39 Financial Analysis Techniques",
+  "question_en": "Given the following income statement and balance sheet for a company: Balance Sheet Assets Year 2003 Year 2004 Cash 500 450 Accounts Receivable 600 660 Inventory 500 550 Total CA 1300 1660 Plant, prop. equip 1000 1250 Total Assets 2600 2,910 Liabilities Accounts Payable 500 550 Long term debt 700 1102 Total liabilities 1200 1652 Equity Common Stock 400 538 Retained Earnings 1000 720 Total Liabilities & Equity 2600 2,910 Income Statement Sales 3000 Cost of Goods Sold (1000) Gross Profit 2000 SG&A 500 Interest Expense 151 EBT 1349 Taxes (30%) 405 Net Income 944 What is the average receivables collection period?",
+  "option_a": "0.331.",
+  "option_b": "2.018.",
+  "option_c": "3.018.",
+  "correct_answer": "C",
+  "explanation_en": "Current ratio = (CA / CL) = (1,660 / 550) = 3.018"
+ },
+ {
+  "id": "a686fa5f-edd1-42d6-aa86-9463ab6f53a6",
+  "reasons": [
+   "compound_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\2. QB KAPLAN-3000 MCQs\\QSTN WITH ANS\\Economics\\Reading 18 Capital Flows and the FX Market - Answers.pdf",
+  "page_idx": 7,
+  "png": "scripts\\_kaplan108_png\\a686fa5f-edd1-42d6-aa86-9463ab6f53a6.png",
+  "topic": "Economics",
+  "subtopic": "Reading 18 Capital Flows and the FX Market",
+  "question_en": "Akor is a country that has chosen to use a conventional fixed peg arrangement as the country's exchange rate regime. Under this arrangement, Akor's exchange rate against the currency to which it pegs:",
+  "option_a": "will be equal to the peg rate.",
+  "option_b": "is market-determined.",
+  "option_c": "may uctuate around the peg rate.",
+  "correct_answer": "B",
+  "explanation_en": "In a conventional fixed peg arrangement, a country pegs its currency within a margin of ±1% versus another currency or a basket that includes the currencies of its major trading or financial partners. Market-determined exchange rates are a characteristic of an independently floating exchange rate regime."
+ },
+ {
+  "id": "e9d7808e-ed8c-420f-82b3-3795de15ad26",
+  "reasons": [
+   "compound_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\2. QB KAPLAN-3000 MCQs\\QSTN WITH ANS\\Ethical and professional standard\\Reading 91.6 Guidance for Standard IV - Answers.pdf",
+  "page_idx": 13,
+  "png": "scripts\\_kaplan108_png\\e9d7808e-ed8c-420f-82b3-3795de15ad26.png",
+  "topic": "Ethics & Professional Standards",
+  "subtopic": "Reading 91.6 Guidance for Standard IV",
+  "question_en": "John Hill, CFA, has been working for Advisors, Inc., for eight years. Hill is about to start his own money management business and has given his two weeks' notice of his resignation from Advisors. A few days before his resignation takes effect, Rod Bright, a former client of Advisors, calls Hill at his home about his new firm. Bright says that he is very happy that Hill is leaving Advisors because now he and Hill can resume a professional relationship. Bright says that he would never become a client of Advisors again. Hill promises to call Bright back after he has left Advisors but takes no further action. Hill does not tell Advisors about the call. Hill has most likely:",
+  "option_a": "go into a competitive business.",
+  "option_b": "neither taking out the loan nor buying the equipment. preparing to undertake independent practice before giving notice to his current",
+  "option_c": "employer of his intent to resign.",
+  "correct_answer": "A",
+  "explanation_en": "The Standards of Practice under IV(A) states that a departing employee is \"generally free to make arrangements or preparations to go into a competitive business before terminating the relationship with the employee's employer provided that such preparations do not breach the employee's duty of loyalty.\" Neither of these actions are in conflict with the interests of Advisors, and Hill performed them on his own time."
+ },
+ {
+  "id": "4333b46f-6ec2-4ff4-b335-7d53d76bb8e6",
+  "reasons": [
+   "compound_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\2. QB KAPLAN-3000 MCQs\\QSTN WITH ANS\\Quantitative Method\\Reading 8 Hypothesis Testing - Answers.pdf",
+  "page_idx": 9,
+  "png": "scripts\\_kaplan108_png\\4333b46f-6ec2-4ff4-b335-7d53d76bb8e6.png",
+  "topic": "Quantitative Methods",
+  "subtopic": "Reading 8 Hypothesis Testing",
+  "question_en": "An analyst calculates that the mean of a sample of 200 observations is 5. The analyst wants to determine whether the calculated mean, which has a standard error of the sample statistic of 1, is significantly different from 7 at the 5% level of significance. Which of the following statements is least accurate?:",
+  "option_a": "The null hypothesis would be: H : mean = 7. 0",
+  "option_b": "The alternative hypothesis would be H a : mean > 7. The mean observation is signicantly dierent from 7, because the calculated Z-",
+  "option_c": "statistic is less than the critical Z-statistic.",
+  "correct_answer": "C",
+  "explanation_en": "The way the question is worded, this is a two tailed test. The alternative hypothesis is not H : M > 7 because in a two-tailed test the alternative is =, while < and > indicate one-tailed a tests. A test statistic is calculated by subtracting the hypothesized parameter from the parameter that has been estimated and dividing the difference by the standard error of the sample statistic. Here, the test statistic = (sample mean – hypothesized mean) / (standard error of the sample statistic) = (5 - 7) / (1) = -2. The calculated Z is -2, while the critical value is -1.96. The calculated test statistic of -2 falls to the left of the critical Z- statistic of -1.96, and is in the rejection region. Thus, the null hypothesis is rejected and the conclusion is that the sample mean of 5 is significantly different than 7. What the negative sign shows is that the mean is less than 7; a positive sign would indicate that the mean is more than 7. The way the null hypothesis is written, it makes no difference whether the mean is more or less than 7, just that it is not 7."
+ },
+ {
+  "id": "13f95e3d-f37a-49c7-89d9-d2e9546c4bd2",
+  "reasons": [
+   "compound_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\2. QB KAPLAN-3000 MCQs\\QSTN WITH ANS\\Fixed income\\Reading 57 The Term Structure of Interest Rates- Spot, Par, and Forward Curves - Answers.pdf",
+  "page_idx": 19,
+  "png": "scripts\\_kaplan108_png\\13f95e3d-f37a-49c7-89d9-d2e9546c4bd2.png",
+  "topic": "Fixed Income",
+  "subtopic": "Reading 57 The Term Structure of Interest Rates- Spot, Par, and Forward Curves",
+  "question_en": "Which of the following statements regarding zero-coupon bonds and spot interest rates is CORRECT? If the yield to maturity on a 2-year zero coupon bond is 6%, then the 2-year spot",
+  "option_a": "rate is 3%.",
+  "option_b": "Price appreciation creates all of the zero-coupon bond's return.",
+  "option_c": "Spot interest rates will never vary across the term structure.",
+  "correct_answer": "A",
+  "explanation_en": "Zero-coupon bonds are quite special. Because zero-coupon bonds have no coupons (all of the bond's return comes from price appreciation), investors have no uncertainty about the rate at which coupons will be invested. Spot rates are defined as interest rates used to discount a single cash flow to be received in the future. If the yield to maturity on a 2-year zero is 6%, we can say that the 2-year spot rate is 6%."
+ },
+ {
+  "id": "7936fcb2-a408-476a-b05d-0f3a67cf0188",
+  "reasons": [
+   "compound_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\2. QB KAPLAN-3000 MCQs\\QSTN WITH ANS\\Fixed income\\Reading 57 The Term Structure of Interest Rates- Spot, Par, and Forward Curves - Answers.pdf",
+  "page_idx": 5,
+  "png": "scripts\\_kaplan108_png\\7936fcb2-a408-476a-b05d-0f3a67cf0188.png",
+  "topic": "Fixed Income",
+  "subtopic": "Reading 57 The Term Structure of Interest Rates- Spot, Par, and Forward Curves",
+  "question_en": "The 3-year spot rate is 10%, and the 4-year spot rate is 10.5%. What is the 1-year forward rate 3 years from now?",
+  "option_a": "10.0%.",
+  "option_b": "11.0%.",
+  "option_c": "12.0%.",
+  "correct_answer": "C",
+  "explanation_en": "[(1 + S )4 / (1 + S )3] – 1 = 12.01% = 12%. 4 3"
+ },
+ {
+  "id": "5934bdd3-417e-4087-a7a8-b7f0d0599c38",
+  "reasons": [
+   "compound_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\2. QB KAPLAN-3000 MCQs\\QSTN WITH ANS\\Fixed income\\Reading 60 Yield-Based Bond Convexity and Portfolio Properties - Answers.pdf",
+  "page_idx": 6,
+  "png": "scripts\\_kaplan108_png\\5934bdd3-417e-4087-a7a8-b7f0d0599c38.png",
+  "topic": "Fixed Income",
+  "subtopic": "Reading 60 Yield-Based Bond Convexity and Portfolio Properties",
+  "question_en": "A bond is currently priced at 92.35. If the calculated modified duration is 3.27 and the convexity is 15.74, the expected new price of the bond due to a 50 basis point increase in yields is closest to:",
+  "option_a": "0.8126%.",
+  "option_b": "0.8028%.",
+  "option_c": "0.8224%.",
+  "correct_answer": "C",
+  "explanation_en": "The change in bond price can be calculated using the following formula: price change = –annual modified duration (Δ YTM) + ½ annual convexity (Δ YTM) squared For a 50 basis point increase in yields, the calculation is equal to (–3.27 × 0.005) + (0.5 × 15.74 × 0.0052) = –1.615%. The expected new price will, therefore, be equal to 92.35 × (1 – 0.01615, or .98385) = 90.859."
+ },
+ {
+  "id": "27c5dcd6-5080-4b32-b298-3f12f49df5b0",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\8. KAPLAN MOCK-1100 MCQs\\Mock Exam 4 - Answers.pdf",
+  "page_idx": 64,
+  "png": "scripts\\_kaplan108_png\\27c5dcd6-5080-4b32-b298-3f12f49df5b0.png",
+  "topic": "Fixed Income",
+  "subtopic": "Mock Exam 4",
+  "question_en": "Consider a one-year USD floating-rate note that pays quarterly based on a 180-day MRR with: Face value 1,000 Discount margin 80 bps Quoted margin 90 bps 180-day MMR 4.2% The note is trading at:",
+  "option_a": "par.",
+  "option_b": "a discount.",
+  "option_c": "a premium.",
+  "correct_answer": "C",
+  "explanation_en": "Because the discount margin is less than the quoted margin, the note will be trading at a premium."
+ },
+ {
+  "id": "29709773-dfa5-4e1e-b79e-245f069b2c73",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\8. KAPLAN MOCK-1100 MCQs\\Mock Exam 4 - Answers.pdf",
+  "page_idx": 4,
+  "png": "scripts\\_kaplan108_png\\29709773-dfa5-4e1e-b79e-245f069b2c73.png",
+  "topic": "Economics",
+  "subtopic": "Mock Exam 4",
+  "question_en": "A country's central bank is concerned about inflation and the economy overheating. To help reduce this risk, the central bank is most likely to implement which of the following combinations of monetary policy tools?",
+  "option_a": "Sell government securities and increase the policy rate.",
+  "option_b": "Decrease the policy rate and increase reserve requirements.",
+  "option_c": "Decrease reserve requirements and buy government securities.",
+  "correct_answer": "A",
+  "explanation_en": "If the concern is that the economy is overheating and faces the risk of increasing inflation, the central bank will take a contractionary monetary policy stance. This may include selling government securities (which reduces cash in investor accounts), increasing the policy rate, and increasing reserve requirements. Expansionary monetary policy may include buying government securities, decreasing the policy rate, and decreasing reserve requirements."
+ },
+ {
+  "id": "45808ab3-0aa4-4ae5-9e3e-f1ca28556491",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\8. KAPLAN MOCK-1100 MCQs\\Mock Exam 4 - Answers.pdf",
+  "page_idx": 2,
+  "png": "scripts\\_kaplan108_png\\45808ab3-0aa4-4ae5-9e3e-f1ca28556491.png",
+  "topic": "Quantitative Methods",
+  "subtopic": "Mock Exam 4",
+  "question_en": "An analyst is testing the hypothesis that the variance of monthly returns for Index L equals the variance of monthly returns for Index M based on samples of 50 monthly observations. The sample variance of Index L returns is 0.085, whereas the sample variance of Index M returns is 0.084. Assuming the samples are independent and the returns are normally distributed, which of the following represents the most appropriate test statistic? sample variance of Index L",
+  "option_a": ". sample variance of Index M variance of Index L−variance of Index M",
+  "option_b": ". standard error of squared differences (degrees of freedom)×(Index L sample variance)",
+  "option_c": ". Index M sample variance",
+  "correct_answer": "A",
+  "explanation_en": "The appropriate test is an F-test, where the larger sample variance (Index L) is placed in the numerator."
+ },
+ {
+  "id": "48856857-3264-4322-8cc0-c95bb477b258",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\8. KAPLAN MOCK-1100 MCQs\\Mock Exam 4 - Answers.pdf",
+  "page_idx": 19,
+  "png": "scripts\\_kaplan108_png\\48856857-3264-4322-8cc0-c95bb477b258.png",
+  "topic": "Quantitative Methods",
+  "subtopic": "Mock Exam 4",
+  "question_en": "An investor is considering three new portfolios for her holdings. The details on the three portfolios are:\n\n| Portfolio | Expected Annual Return | Standard Deviation of Returns |\n|---|---|---|\n| Portfolio 1 | 17% | 15% |\n| Portfolio 2 | 12% | 10% |\n| Portfolio 3 | 8% | 6% |\n\nAccording to Roy's Safety-First criterion, the portfolio she would prefer is:",
+  "option_a": "Portfolio 1.",
+  "option_b": "Portfolio 2.",
+  "option_c": "Portfolio 3.",
+  "correct_answer": "A",
+  "explanation_en": "17−5 SFRatio = = 0.8 1 15 12−5 SFRatio = = 0.7 2 10 8−5 SFRatio = = 0.5 3 6 The SFRatio is the number of standard deviations that the minimum return is below the mean (expected) return. The optimal portfolio is the one with the greatest SFRatio as it has the lowest probability of a return below the minimum. Based on the SFRatio, the investor would prefer Portfolio 1."
+ },
+ {
+  "id": "82594029-471c-4f39-9698-e08c913e2eb1",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\8. KAPLAN MOCK-1100 MCQs\\Mock Exam 4 - Answers.pdf",
+  "page_idx": 72,
+  "png": "scripts\\_kaplan108_png\\82594029-471c-4f39-9698-e08c913e2eb1.png",
+  "topic": "Fixed Income",
+  "subtopic": "Mock Exam 4",
+  "question_en": "A credit analyst determines the following selected financial ratios for three firms in an industry after making all appropriate adjustments:\n\n| Ratio | Johnson | Knight | Lawrence |\n|---|---|---|---|\n| EBIT/revenue | 0.25 | 0.30 | 0.35 |\n| EBIT/interest | 12.5 | 14.0 | 10.5 |\n| Debt/capital | 0.55 | 0.70 | 0.35 |\n| Revenue/assets | 0.20 | 0.15 | 0.10 |\n\nIn evaluating the creditworthiness of these firms, the analyst should conclude that:",
+  "option_a": "Knight has the most favorable leverage and Johnson has the most favorable coverage. Lawrence has the most favorable leverage and Knight has the most favorable",
+  "option_b": "coverage. Johnson has the most favorable leverage and Lawrence has the most favorable",
+  "option_c": "coverage.",
+  "correct_answer": "B",
+  "explanation_en": "EBIT / interest is a coverage ratio and debt / capital is a leverage ratio. Higher interest coverage and lower leverage are favorable for creditworthiness. Of the three companies given, Knight has the highest interest coverage and Lawrence has the lowest leverage. EBIT / revenue (operating profit margin) is a profitability ratio and revenue / assets (asset turnover) is an operating ratio."
+ },
+ {
+  "id": "dc36ba7d-add9-4a4b-8380-e0c14559b5d9",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\8. KAPLAN MOCK-1100 MCQs\\Mock Exam 4 - Answers.pdf",
+  "page_idx": 69,
+  "png": "scripts\\_kaplan108_png\\dc36ba7d-add9-4a4b-8380-e0c14559b5d9.png",
+  "topic": "Ethics & Professional Standards",
+  "subtopic": "Mock Exam 4",
+  "question_en": "Non-financial sources of risk for an organization most likely include:",
+  "option_a": "credit risk.",
+  "option_b": "liquidity risk.",
+  "option_c": "solvency risk.",
+  "correct_answer": "C",
+  "explanation_en": "Non-financial risks are those that arise from an organization's operations and from outside sources other than financial markets. Solvency risk is classified as a non- financial risk."
+ },
+ {
+  "id": "ca6b6f1b-c0c0-467c-bb54-9db38617d1e4",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\2. QB KAPLAN-3000 MCQs\\QSTN WITH ANS\\Quantitative Method\\Reading 1 Rates and Returns - Answers.pdf",
+  "page_idx": 15,
+  "png": "scripts\\_kaplan108_png\\ca6b6f1b-c0c0-467c-bb54-9db38617d1e4.png",
+  "topic": "Quantitative Methods",
+  "subtopic": "Reading 1 Rates and Returns",
+  "question_en": "A dataset contains six values, none of which are equal. The arithmetic mean of the data is 13.25, and the geometric mean of the data is 12.75. The harmonic mean will be:",
+  "option_a": "less than 12.75.",
+  "option_b": "between 12.75 and 13.25.",
+  "option_c": "greater than 13.25.",
+  "correct_answer": "A",
+  "explanation_en": "For any dataset where the values are not equal, the harmonic mean will be less than the geometric mean (which, in turn, will be less than the arithmetic mean). Here, the arithmetic mean is 13.25, and the geometric mean is 12.75—so the harmonic mean must be less than 12.75. It is worth noting that all three means are equal if every value in the dataset is the same."
+ }
+]

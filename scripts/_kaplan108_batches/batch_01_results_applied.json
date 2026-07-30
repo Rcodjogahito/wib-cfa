@@ -1,0 +1,77 @@
+[
+ {
+  "id": "6a49f6ab-2acc-42c0-830b-873b56a24ae0",
+  "field": "explanation_en",
+  "verified": true
+ },
+ {
+  "id": "aa901e07-1c25-44e8-839c-47fb6cc396fe",
+  "field": "explanation_en",
+  "verified": true
+ },
+ {
+  "id": "1c5879a0-176c-48ab-aa72-936567af0e09",
+  "field": "explanation_en",
+  "verified": true
+ },
+ {
+  "id": "3b4d518a-e774-4fc8-b8a3-d8bf42bc890a",
+  "field": "explanation_en",
+  "verified": true
+ },
+ {
+  "id": "142e2870-7eee-443e-a5ae-15ec96ef520f",
+  "field": "question_en",
+  "verified": true
+ },
+ {
+  "id": "142e2870-7eee-443e-a5ae-15ec96ef520f",
+  "field": "explanation_en",
+  "verified": true
+ },
+ {
+  "id": "71389f10-02dd-4e98-a139-9ab71acf13c5",
+  "field": "question_en",
+  "verified": true
+ },
+ {
+  "id": "71389f10-02dd-4e98-a139-9ab71acf13c5",
+  "field": "explanation_en",
+  "verified": true
+ },
+ {
+  "id": "a8608ed3-4984-48dc-9c24-800046292c37",
+  "field": "question_en",
+  "verified": true
+ },
+ {
+  "id": "c305356c-35b2-4d64-ae5d-d617bf7ea9dc",
+  "field": "option_b",
+  "verified": true
+ },
+ {
+  "id": "c305356c-35b2-4d64-ae5d-d617bf7ea9dc",
+  "field": "option_c",
+  "verified": true
+ },
+ {
+  "id": "c305356c-35b2-4d64-ae5d-d617bf7ea9dc",
+  "field": "explanation_en",
+  "verified": true
+ },
+ {
+  "id": "4323659a-a585-4d93-907b-738782f8f7ff",
+  "field": "question_en",
+  "verified": true
+ },
+ {
+  "id": "4323659a-a585-4d93-907b-738782f8f7ff",
+  "field": "explanation_en",
+  "verified": true
+ },
+ {
+  "id": "99acd9e3-8ed0-4c19-b754-ab69c13dcd0d",
+  "field": "explanation_en",
+  "verified": true
+ }
+]

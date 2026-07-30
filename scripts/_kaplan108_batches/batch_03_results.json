@@ -1,0 +1,152 @@
+[
+ {
+  "id": "c36f6ba8-ada6-4335-a594-dcbdbf811621",
+  "verdict": "formatting_missing",
+  "field": "question_en",
+  "new_value": "Use the following probability distribution.\n\n| State of the Economy | Probability | Return on Portfolio |\n|---|---|---|\n| Boom | 0.30 | 15% |\n| Bust | 0.70 | 3% |\n\nThe expected return for the portfolio is:",
+  "evidence": "PDF page (Question #8 of 31) shows the distribution as a rendered table; correct_answer B and explanation_en both match the page exactly, only question_en was squashed into a run-on sentence."
+ },
+ {
+  "id": "cb2fbfb2-719d-4956-a7ac-7cfabead2a39",
+  "verdict": "ok",
+  "evidence": "PDF page (Question #9 of 31) presents the Portfolio X/Y/Z mean and standard deviation data as three sentences (not a table); the DB's markdown table reproduces the same values correctly, correct_answer C matches the green checkmark, and explanation_en matches verbatim."
+ },
+ {
+  "id": "c1b0b0bb-bc6b-48f6-bc50-8d3f544f0907",
+  "verdict": "ok",
+  "evidence": "PDF page (Question #3 of 8) shows the df/critical-value table already reproduced correctly as markdown in question_en; correct_answer A matches the green checkmark and explanation_en matches verbatim."
+ },
+ {
+  "id": "4ee9a811-2da1-47a1-9aa5-a348af103401",
+  "verdict": "formatting_missing",
+  "field": "question_en",
+  "new_value": "Which of the following possible portfolios cannot lie on the efficient frontier?\n\n| Portfolio | Expected Return | Standard Deviation |\n|---|---|---|\n| 1 | 8% | 6% |\n| 2 | 10% | 6% |\n| 3 | 14% | 12% |\n| 4 | 14% | 16% |",
+  "evidence": "PDF page (Question #103 of 180, Mock Exam 4) renders a 4-row Portfolio/Return/SD table; correct_answer B and explanation_en match the page, only question_en lacked table structure."
+ },
+ {
+  "id": "0d1be197-082c-46a3-8dba-df4241790029",
+  "verdict": "formatting_missing",
+  "field": "question_en",
+  "new_value": "Over a sample period, an investor gathers the following data about three mutual funds.\n\n| Mutual Fund | Portfolio Return | Portfolio Standard Deviation | Portfolio Beta |\n|---|---|---|---|\n| P | 13% | 18% | 1.2 |\n| Q | 15% | 20% | 1.4 |\n| R | 18% | 24% | 1.8 |\n\nThe risk-free rate is 5%. Based solely on the Sharpe measure, an investor would prefer:",
+  "evidence": "PDF page (Question #19 of 92) renders a Mutual Fund/Return/SD/Beta table for P, Q, R; correct_answer B and explanation_en match the page, only question_en needed table structure."
+ },
+ {
+  "id": "5b1a978d-0e60-4b63-990d-fa30d85b0118",
+  "verdict": "formatting_missing",
+  "field": "question_en",
+  "new_value": "Current-year sales for ABC Co. are $20 million. Although Annie Mann, CFA, forecasts overall growth of 5% heading into next year, she would like to further refine her estimates by assigning the following probabilities based on actions she thinks the competition may take.\n\n| Growth | Probability |\n|---|---|\n| 6 percent | 30% |\n| 5 percent | 20% |\n| 4 percent | 50% |\n\nUsing these probabilities, what is Mann's forecasted sales total for next year?",
+  "evidence": "PDF page (Question #12 of 23) renders a Growth/Probability table; correct_answer A and explanation_en match the page, only question_en needed table structure."
+ },
+ {
+  "id": "f7dbd05c-a982-4e27-9be7-8568dbd918a7",
+  "verdict": "formatting_missing",
+  "field": "question_en",
+  "new_value": "Spot and one-month forward exchange rates are as follows:\n\n| | Spot | 1-month forward |\n|---|---|---|\n| EUR/DEF | 2.5675 | 2.5925 |\n| EUR/GHI | 4.3250 | 4.2800 |\n| EUR/JKL | 7.0625 | 7.0075 |\n\nBased on these exchange rates, the EUR is closest to a 1-month forward:",
+  "evidence": "PDF page (Question #2 of 22) renders a Spot/1-month forward table for three currency pairs; correct_answer C and explanation_en match the page, only question_en needed table structure."
+ },
+ {
+  "id": "84799931-78f7-45a3-95a0-c3597128c4a7",
+  "verdict": "formatting_missing",
+  "field": "question_en",
+  "new_value": "Assuming, US GAAP is applied, determine the cash flow from financing given the following table.\n\n| Item | Amount |\n|---|---|\n| Cash payment of dividends | $30 |\n| Sale of equipment | $10 |\n| Net income | $25 |\n| Purchase of land | $15 |\n| Increase in accounts payable | $20 |\n| Sale of preferred stock | $25 |\n| Increase in deferred taxes | $5 |\n| Profit on sale of equipment | $4 |",
+  "evidence": "PDF page (Question #43 of 55) renders an Item/Amount table with 8 line items; correct_answer A (-$5) and explanation_en (CFF = 25 - 30 = -$5) match the page, only question_en needed table structure."
+ },
+ {
+  "id": "a7850d95-3b71-4940-b31f-a446ddfb335a",
+  "verdict": "formatting_missing",
+  "field": "question_en",
+  "new_value": "Determine the cash flow from operations given the following table.\n\n| Item | Amount |\n|---|---|\n| Cash payment of dividends | $30 |\n| Sale of equipment | $25 |\n| Net income | $25 |\n| Purchase of land | $15 |\n| Increase in accounts payable | $20 |\n| Sale of preferred stock | $25 |\n| Increase in deferred taxes | $5 |\n| Profit on sale of equipment | $15 |",
+  "evidence": "PDF page (Question #34 of 55) renders an Item/Amount table with 8 line items; correct_answer A ($35) and explanation_en match the page, only question_en needed table structure."
+ },
+ {
+  "id": "084372e7-2adb-45b8-b81e-52997de06bfd",
+  "verdict": "formatting_missing",
+  "field": "question_en",
+  "new_value": "A firm had the following numbers of shares outstanding during the year:\n\n| Event | Shares |\n|---|---|\n| Beginning of year | 8,000,000 shares |\n| Issued on April 1 | 750,000 shares |\n| Paid stock dividend of 20% on July 1 | |\n| Issued on October 1 | 100,000 shares |\n| Purchased Treasury stock November 1 | 1,000,000 shares |\n| Split 2 for 1 on December 31 | |\n\nBased on this information, what is the weighted number of shares outstanding for the year?",
+  "evidence": "PDF page (Question #102 of 130) renders a two-column event/shares table; correct_answer A (20,266,667) and explanation_en match the page, only question_en needed table structure."
+ },
+ {
+  "id": "08b367e7-272b-4e7c-ba89-fa21c555330e",
+  "verdict": "formatting_missing",
+  "field": "question_en",
+  "new_value": "A firm's financial statements reflect the following:\n\n| Item | Amount |\n|---|---|\n| Net income | $1,700,000 |\n| EBIT | $2,900,000 |\n| Effective tax rate | 35% |\n| Interest payments | $285,000 |\n| Common equity | $3,100,000 |\n| Total assets | $6,600,000 |\n| Preferred dividends paid | $1,100,000 |\n| Weighted avg. shares outstanding | 523,000 |\n\nBased on this information, what is the firm's basic EPS?",
+  "evidence": "PDF page (Question #122 of 130, bottom of page shown continues from prior page) renders Total assets/Preferred dividends/Weighted avg shares as a table, and all figures in the DB question_en (Net income, EBIT, tax rate, interest, common equity) match the page's Explanation formula; correct_answer A ($1.15) matches. Only question_en needed table structure."
+ },
+ {
+  "id": "1f33dcd6-1642-461a-9efe-2c1a0158368f",
+  "verdict": "formatting_missing",
+  "field": "question_en",
+  "new_value": "A firm has had the following numbers of shares outstanding during the year:\n\n| Event | Shares |\n|---|---|\n| Beginning of year | 10,000,000 shares |\n| Issued on April 1 | 500,000 shares |\n| Split 2 for 1 on July 1 | |\n| Issued on October 1 | 100,000 shares |\n| Split 2 for 1 on December 31 | |\n\nBased on this information, what is the weighted number of shares outstanding for the year?",
+  "evidence": "PDF page (Question #102 of 130, Reading 30) renders a two-column event/shares table; correct_answer C (41,550,000) and explanation_en match the page, only question_en needed table structure."
+ },
+ {
+  "id": "91d5062a-a8d4-4525-933d-1309f1df7b75",
+  "verdict": "formatting_missing",
+  "field": "question_en",
+  "new_value": "A corporate bond portfolio manager has a mandate to invest only in investment-grade bonds. Recently, three of the bonds in the portfolio have been downgraded by Moody's and S&P to the following ratings:\n\n| Bond | Rating |\n|---|---|\n| Bond 1 | BB+ |\n| Bond 2 | Baa3 |\n| Bond 3 | Ba1 |\n\nAs a result of the downgrades, the manager must sell Bond(s):",
+  "evidence": "PDF page (Question #120 of 180, Mock Exam 2) renders a Bond/Rating table; correct_answer B (1 and 3 only) and explanation_en match the page, only question_en needed table structure."
+ },
+ {
+  "id": "b20b643d-f2f4-4a1f-9c3f-ad673f4a64bd",
+  "verdict": "formatting_missing",
+  "field": "question_en",
+  "new_value": "Given the following correlation matrix, a risk-averse investor would least prefer which of the following 2-stock portfolios (all else equal)?\n\n| Stock | W | X | Y | Z |\n|---|---|---|---|---|\n| W | +1 | | | |\n| X | –0.2 | +1 | | |\n| Y | +0.6 | –0.1 | +1 | |\n| Z | +0.8 | –0.3 | +0.5 | +1 |",
+  "evidence": "PDF page (Question #102 of 180, Mock Exam 2) renders the correlation matrix as a table; correct_answer A (W and Y) and explanation_en match the page, only question_en needed table structure."
+ },
+ {
+  "id": "5acbf4ef-f931-423f-95f2-6f19fc0fb8a1",
+  "verdict": "formatting_missing",
+  "field": "question_en",
+  "new_value": "Consider the following analysis of variance (ANOVA) table:\n\n| Source | Sum of squares | Degrees of freedom | Mean sum of squares |\n|---|---|---|---|\n| Regression | 556 | 1 | 556 |\n| Error | 679 | 50 | 13.5 |\n| Total | 1,235 | 51 | |\n\nThe R2 for this regression is closest to:",
+  "evidence": "PDF page (Question #4 of 13) renders the ANOVA table; correct_answer A (0.45) and explanation_en match the page, only question_en needed table structure."
+ },
+ {
+  "id": "07ccbc8e-6744-4861-9c87-58f85e7c556e",
+  "verdict": "formatting_missing",
+  "field": "question_en",
+  "new_value": "Which of the following portfolios falls below the Markowitz efficient frontier?\n\n| Portfolio | Expected Return | Expected Standard Deviation |\n|---|---|---|\n| A | 7% | 14% |\n| B | 9% | 26% |\n| C | 15% | 30% |\n| D | 12% | 22% |",
+  "evidence": "PDF page (start of a page, prior to Question #6 of 66) renders the Portfolio/Return/SD table; correct_answer A (option_a 'B.') and explanation_en match the page, only question_en needed table structure."
+ },
+ {
+  "id": "5c64ef90-089c-49a3-bfc0-899bd75f7e10",
+  "verdict": "formatting_missing",
+  "field": "question_en",
+  "new_value": "An analyst is forecasting market shares for the top three firms (which make up 90% of the market share) in a given market\n\n| Scenario | Firm | Market Share | Firm | Market Share | Firm | Market Share |\n|---|---|---|---|---|---|---|\n| 1 | Smith | 40% | Jones | 30% | Adams | 20% |\n| 2 | Smith | 35% | Jones | 40% | Adams | 15% |\n| 3 | Smith | 30% | Jones | 30% | Adams | 30% |\n\nWhich scenario produces the highest Herfindahl-Hirschman Index?",
+  "evidence": "PDF page (start of a page, prior to Question #41 of 180, Mock Exam 1) renders the Scenario/Firm/Market Share table; correct_answer B (Scenario 2) and explanation_en match the page, only question_en needed table structure."
+ },
+ {
+  "id": "ed122262-30c6-40a8-9c11-2819288d9c8d",
+  "verdict": "formatting_missing",
+  "field": "question_en",
+  "new_value": "A simple linear regression model produces the following outputs:\n\n| Item | Value |\n|---|---|\n| Total sum of squares | 9,575.81 |\n| Mean regression sum of squares | 7,115.74 |\n| Mean squared error | 1,663.46 |\n\nThe F-statistic for this regression is closest to:",
+  "evidence": "PDF page (Question #43 of 180, Mock Exam 1) renders a vertical key/value table for the three regression outputs; correct_answer B (4.3) and explanation_en match the page, only question_en needed table structure."
+ },
+ {
+  "id": "b147243d-1847-4038-bbc0-eab3daf75cb6",
+  "verdict": "formatting_missing",
+  "field": "question_en",
+  "new_value": "An economist finds the following characteristics for the market for two products, S and T:\n\n| Product | Firm's Pricing Power | Concentration Ratio |\n|---|---|---|\n| S | Considerable | High |\n| T | Some | Low |\n\nBased on the above characteristics, the economist could conclude that the industry for Product S is:",
+  "evidence": "PDF page (Question #81 of 180, Mock Exam 5) renders the Product/Pricing Power/Concentration Ratio table; correct_answer B and explanation_en match the page, only question_en needed table structure."
+ },
+ {
+  "id": "1a1886c1-54ad-4414-a7c8-eb4b55883140",
+  "verdict": "formatting_missing",
+  "field": "question_en",
+  "new_value": "The table below lists information on price per share and shares outstanding for three stocks.\n\n| Stock | Price per Share ($) — Beginning of Year | # Shares Outstanding — Beginning of Year | Price per Share ($) — End of Year | # Shares Outstanding — End of Year |\n|---|---|---|---|---|\n| Mertz | 10 | 10,000 | 15 | 10,000 |\n| Norton | 50 | 5,000 | 50 | 5,000 |\n| Rubble | 100 | 500 | 85 | 500 |\n\nAt the beginning of the year, the value of a market-cap weighted index of these three stocks was 100. The index value at year-end is closest to:",
+  "evidence": "PDF page (Question #23 of 49) renders a two-tier Beginning/End of Year table with Price per Share and # Shares Outstanding for Mertz, Norton, Rubble; correct_answer C (110.6) and explanation_en match the page, only question_en needed table structure."
+ },
+ {
+  "id": "3f2ef4b8-8d96-48b7-ac9c-65c22281465b",
+  "verdict": "formatting_missing",
+  "field": "question_en",
+  "new_value": "What is the price-weighted index of the following three stocks?\n\n**As of December 31, 2001**\n\n| Company | Stock Price | Shares Outstanding |\n|---|---|---|\n| A | $50 | 10,000 |\n| B | $35 | 20,000 |\n| C | $110 | 30,000 |",
+  "evidence": "PDF page (Question #10 of 49) renders a Company/Stock Price/Shares Outstanding table headed 'As of December 31, 2001'; correct_answer C (65) and explanation_en match the page, only question_en needed table structure."
+ },
+ {
+  "id": "953a79be-295b-4e6f-a3bb-b8d3afe64925",
+  "verdict": "formatting_missing",
+  "field": "question_en",
+  "new_value": "What is the market-cap weighted index of the following three stocks assuming the beginning index value is 100 and a base value of $150,000?\n\n**As of December 31**\n\n| Company | Stock Price | Shares Outstanding |\n|---|---|---|\n| X | $1 | 5,000 |\n| Y | $20 | 2,500 |\n| Z | $60 | 1,000 |",
+  "evidence": "PDF page (Question #32 of 49) renders a Company/Stock Price/Shares Outstanding table headed 'As of December 31' for X, Y, Z; correct_answer B (77) and explanation_en match the page, only question_en needed table structure."
+ }
+]

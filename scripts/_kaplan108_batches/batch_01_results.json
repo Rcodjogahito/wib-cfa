@@ -1,0 +1,167 @@
+[
+  {
+    "id": "006f4bc5-19b9-4764-8ddb-933b2a3569d8",
+    "verdict": "ok",
+    "evidence": "Question spans PDF pages 36-37 (Mark Industries CFO). Table, correct_answer B, and explanation all match the PDF exactly once the continuation page is read; the automated matcher just anchored on page 36 which cuts off before the answer/explanation."
+  },
+  {
+    "id": "6a49f6ab-2acc-42c0-830b-873b56a24ae0",
+    "verdict": "explanation_wrong",
+    "field": "explanation_en",
+    "new_value": "Cash flow from operations (CFO) calculated using the indirect method is: net income (100) + depreciation (50) - increase in accounts receivable (10) + decrease in inventory (20) + increase in accounts payable (50) = $210.",
+    "evidence": "PDF page 13 shows the explanation with a proper minus sign before 'increase in accounts receivable'; the DB text has a mojibake replacement-character (�) in its place. All figures and the rest of the wording match verbatim."
+  },
+  {
+    "id": "aa901e07-1c25-44e8-839c-47fb6cc396fe",
+    "verdict": "explanation_wrong",
+    "field": "explanation_en",
+    "new_value": "Cash collections are $202,400 ($200,000 sales + $2,400 increase in unearned revenue). Cash expenses are $119,900 (-$89,000 wages expense - $1,200 decrease in wages payable - $17,000 insurance expense - $1,200 increase in prepaid insurance - $10,400 interest expense - $1,100 decrease in interest payable). Depreciation expense is a non-cash expense.",
+    "evidence": "PDF page 25 shows six minus signs inside the cash-expenses parenthetical; the DB text has mojibake replacement-characters (�) in place of each one. All figures/wording otherwise match verbatim."
+  },
+  {
+    "id": "18594955-10f4-42c5-975f-bd58b9f66985",
+    "verdict": "ok",
+    "evidence": "Diluted EPS (JME Corp) question, options, correct_answer C, and explanation all match the PDF (page 20) verbatim, including the numerator/denominator/diluted EPS lines."
+  },
+  {
+    "id": "1c5879a0-176c-48ab-aa72-936567af0e09",
+    "verdict": "explanation_wrong",
+    "field": "explanation_en",
+    "new_value": "Basic EPS = [53,000,000 − (0.07 × 30,000,000)] / 3,000,000 = $16.97. The options are not dilutive because the exercise price is greater than the average price over the period. Diluted EPS = [53,000,000 − (0.07 × 30,000,000) + (10,000,000 × 0.06 × (1 − 0.30))] / (3,000,000 + 200,000) = $16.04.",
+    "evidence": "PDF page 40 renders these as vertical fractions (numerator over denominator = result). The DB text flattened them into 'numerator = result denominator' order (e.g. '...= = $16.97 3,000,000'), which reads as a broken equation. All numbers/values are correct; only the equation structure needed restoring. correct_answer B and the rest of the content verified against the PDF."
+  },
+  {
+    "id": "3b4d518a-e774-4fc8-b8a3-d8bf42bc890a",
+    "verdict": "explanation_wrong",
+    "field": "explanation_en",
+    "new_value": "Diluted EPS = [NI − preferred dividends + convertible interest (1 − t)] / [weighted average shares + convertible debt shares]. 100(1,000)(6%)(1 − 0.4) = $3,600; convertible debt shares = 50(100) = 5,000. ($15,000 − $10,000 + $3,600) / (2,000 + 5,000) = $1.23.",
+    "evidence": "PDF page 24 shows the final fraction as numerator over denominator = $1.23. The DB text flattened it to '...= $1.23 2,000+5,000', putting the denominator after the result. Values match; only equation ordering needed correcting. correct_answer B verified."
+  },
+  {
+    "id": "ee15b91d-283d-4e08-bc3c-249924cb15ee",
+    "verdict": "ok",
+    "evidence": "Quad Associates diluted EPS question (PDF page 74/Reading 30): question, options, correct_answer C, and explanation all match the PDF verbatim."
+  },
+  {
+    "id": "cc30f3a5-9a14-42ec-b5e5-1ab1dfb6249d",
+    "verdict": "ok",
+    "evidence": "Forward contract value question (Mock Exam 2, page 71): matches PDF exactly, correct_answer B, explanation verbatim."
+  },
+  {
+    "id": "142e2870-7eee-443e-a5ae-15ec96ef520f",
+    "verdict": "formatting_missing",
+    "field": "question_en",
+    "new_value": "An investor has a two-stock portfolio (Stocks A and B) with the following characteristics:\n\n- σ_A = 55%\n- σ_B = 85%\n- Covariance_A,B = 0.09\n- W_A = 70%\n- W_B = 30%\n\nThe variance of the portfolio is closest to:",
+    "evidence": "PDF page 20/21 (Reading 20) shows this as a bulleted list with subscripted variables (sigma_A, sigma_B, Covariance_A,B, W_A, W_B). The DB text squashed it into a run-on with subscript letters trailing after each value (e.g. 'sigma = 55% A'), which is confusing/misleading. Values are correct; only structure needed restoring."
+  },
+  {
+    "id": "142e2870-7eee-443e-a5ae-15ec96ef520f",
+    "verdict": "explanation_wrong",
+    "field": "explanation_en",
+    "new_value": "The formula for the variance of a 2-stock portfolio is: s² = [W_A²σ_A² + W_B²σ_B² + 2W_AW_Bσ_Aσ_Br_A,B]. Since σ_Aσ_Br_A,B = Cov_A,B, then s² = [(0.7² × 0.55²) + (0.3² × 0.85²) + (2 × 0.7 × 0.3 × 0.09)] = [0.1482 + 0.0650 + 0.0378] = 0.2511.",
+    "evidence": "Same subscript-trailing garbling as the question stem (PDF page 21). correct_answer B and all numeric values verified against the PDF; only word order/structure needed fixing."
+  },
+  {
+    "id": "71389f10-02dd-4e98-a139-9ab71acf13c5",
+    "verdict": "formatting_missing",
+    "field": "question_en",
+    "new_value": "An analyst gathers the following data about the returns for two stocks.\n\n| | Stock A | Stock B |\n|---|---|---|\n| E(R) | 0.04 | 0.09 |\n| σ² | 0.0025 | 0.0064 |\n\nCov_A,B = 0.001\n\nThe correlation between the returns of Stock A and Stock B is closest to:",
+    "evidence": "PDF page 28 (Reading 20) shows a 2-column data table plus a Cov_A,B line. The DB text squashed the table into a run-on ('Stock A Stock B E(R) 0.04 0.09 sigma2 0.0025 0.0064 Cov = 0.001 A,B'). Values are correct; only table structure needed restoring."
+  },
+  {
+    "id": "71389f10-02dd-4e98-a139-9ab71acf13c5",
+    "verdict": "explanation_wrong",
+    "field": "explanation_en",
+    "new_value": "The correlation between the two stocks is: ρ_A,B = COV_A,B / (σ_A × σ_B) = 0.001 / (0.05 × 0.08) = 0.001 / (0.004) = 0.25. Note that the formula uses the standard deviations, not the variances, of the returns on the two securities.",
+    "evidence": "Same subscript-trailing garbling as the stem (PDF page 28). correct_answer A and all numeric values verified against the PDF."
+  },
+  {
+    "id": "d4ab669b-fe82-4a72-8424-264fb6aa60d0",
+    "verdict": "ok",
+    "evidence": "Portfolio standard deviation question (perfectly correlated assets, PDF page 21/22, Reading 20): correct_answer C and explanation match the PDF's own flattened-exponent notation (e.g. '(0.25)0.5(0.4)0.5' is exactly how the PDF's superscripts extract); no genuine error, values read in correct left-to-right order."
+  },
+  {
+    "id": "093ac317-5986-49cf-ab81-42eb39ac0d5f",
+    "verdict": "ok",
+    "evidence": "Financial reporting quality limitations question (Mock Exam 1, page 27): matches PDF verbatim, correct_answer B, explanation verbatim."
+  },
+  {
+    "id": "5b63788d-cb32-4a53-8b1a-ecf27c657f90",
+    "verdict": "ok",
+    "evidence": "Sponsored depository receipt question (Mock Exam 1, spans pages 73-74): matches PDF verbatim, correct_answer B, explanation verbatim."
+  },
+  {
+    "id": "a8608ed3-4984-48dc-9c24-800046292c37",
+    "verdict": "formatting_missing",
+    "field": "question_en",
+    "new_value": "Partial table of Student's t-distribution: Level of Significance for a Two-Tailed Test\n\n| df | 0.20 | 0.10 | 0.05 | 0.02 | 0.01 | 0.001 |\n|---|---|---|---|---|---|---|\n| 23 | 1.319 | 1.714 | 2.069 | 2.500 | 2.807 | 3.768 |\n| 24 | 1.318 | 1.711 | 2.064 | 2.492 | 2.797 | 3.745 |\n| 25 | 1.316 | 1.708 | 2.060 | 2.485 | 2.787 | 3.725 |\n\nFrom a sample of 25 paired observations, an analyst generates the simple linear regression line Ŷ_i = −25 + 49X_i. The standard error of the forecast is 16. For an observed value of X equal to 5, a 95% confidence interval for the predicted value of Y is closest to:",
+    "evidence": "PDF page 41/42 (Mock Exam 1) shows the regression line as Y-hat_i = -25 + 49X_i (hat over Y, subscript i). The DB text had a stray hat character before 'regression line' and a stray 'i i' fragment inserted mid-sentence ('For an i i observed value'), breaking the sentence. The table itself was already correctly formatted in the DB. correct_answer B and explanation_en verified as already matching the PDF verbatim, no fix needed there."
+  },
+  {
+    "id": "f147dfb5-8aae-4377-8b31-509f67ddb2c8",
+    "verdict": "ok",
+    "evidence": "Liquidity/current ratio question (Mock Exam 1, page 20): matches PDF verbatim, correct_answer A, explanation verbatim."
+  },
+  {
+    "id": "3d19ca94-2dcf-4b0e-9db7-5671d3a2282a",
+    "verdict": "ok",
+    "evidence": "Equal-weighted index question (Mock Exam 5, page 88/89): table, correct_answer A, and explanation all match the PDF verbatim."
+  },
+  {
+    "id": "5cf2df6b-f6e3-4915-8ebe-4d3fa9a649d0",
+    "verdict": "ok",
+    "evidence": "Putable/callable/floating-rate bond volatility question (Mock Exam 5, page 61/62): matches PDF verbatim, correct_answer A, explanation verbatim."
+  },
+  {
+    "id": "c305356c-35b2-4d64-ae5d-d617bf7ea9dc",
+    "verdict": "option_bleed",
+    "field": "option_b",
+    "new_value": "is more financially leveraged than Brevis Company.",
+    "evidence": "PDF page 16 (Reading 31) shows 'is more financially leveraged than Brevis Company.' The DB text dropped the 'fi' ligature, reading 'is more nancially leveraged...'."
+  },
+  {
+    "id": "c305356c-35b2-4d64-ae5d-d617bf7ea9dc",
+    "verdict": "option_bleed",
+    "field": "option_c",
+    "new_value": "uses relatively more fixed assets then Brevis Company.",
+    "evidence": "PDF page 16 shows 'uses relatively more fixed assets then Brevis Company.' (the PDF itself uses 'then' rather than 'than' - preserved verbatim). The DB text dropped the 'fi' ligature, reading 'uses relatively more xed assets then Brevis Company.'."
+  },
+  {
+    "id": "c305356c-35b2-4d64-ae5d-d617bf7ea9dc",
+    "verdict": "explanation_wrong",
+    "field": "explanation_en",
+    "new_value": "Common-size balance sheets for the two firms are as follows:\n\n| Line Item | Amplus, Inc. | Brevis, Inc. |\n|---|---|---|\n| Cash and equivalents | 10.3% | 5.7% |\n| Accounts receivable | 6.5% | 8.0% |\n| Inventories | 15.7% | 12.5% |\n| Current assets | 32.4% | 26.1% |\n| Land | 1.1% | 1.1% |\n| Property, plant and equipment | 66.5% | 72.7% |\n| Noncurrent assets | 67.6% | 73.9% |\n| Total assets | 100.0% | 100.0% |\n| Accounts payable | 4.9% | 4.5% |\n| Unearned revenue | 1.6% | 1.1% |\n| Current liabilities | 6.5% | 5.7% |\n| Long-term borrowing | 25.9% | 37.5% |\n| Total liabilities | 32.4% | 43.2% |\n| Common stock | 4.1% | 3.4% |\n| Retained earnings | 63.5% | 53.4% |\n| Total equity | 67.6% | 56.8% |\n| Total liabilities and equity | 100.0% | 100.0% |\n\nWorking capital (current assets minus current liabilities) is 32.4% – 6.5% = 25.9% of assets for Amplus and 26.1% – 5.7% = 20.4% of assets for Brevis. Fixed assets (property, plant, and equipment) are relatively larger for Brevis than for Amplus. Based on long-term borrowing and total liabilities, Brevis is significantly more leveraged than Amplus.",
+    "evidence": "PDF page 17 shows this as a clean common-size balance sheet table followed by three sentences of analysis. The DB text squashed the entire table into a run-on of labels and percentages, making it very hard to read. All figures verified against the PDF; correct_answer A confirmed."
+  },
+  {
+    "id": "0926ab85-879c-4c0e-b3df-586957160fe1",
+    "verdict": "ok",
+    "evidence": "3-year dividend + terminal price DCF question (Reading 48, page 3): matches PDF verbatim including correct_answer B; explanation's squashed exponents (1.162, 1.163) read in correct left-to-right order matching the PDF's own extraction pattern, not a genuine error."
+  },
+  {
+    "id": "12127edc-2e37-405c-b411-bba37f704481",
+    "verdict": "ok",
+    "evidence": "Gordon growth model / dividend payout question (Reading 48, page 29/30): matches PDF verbatim, correct_answer B, explanation verbatim."
+  },
+  {
+    "id": "4323659a-a585-4d93-907b-738782f8f7ff",
+    "verdict": "formatting_missing",
+    "field": "question_en",
+    "new_value": "An analyst gathered the following data for the Parker Corp. for the year ended December 31, 2005:\n\n- EPS_2005 = $1.75\n- Dividends_2005 = $1.40\n- Beta_Parker = 1.17\n- Long-term bond rate = 6.75%\n- Rate of return S&P 500 = 12.00%\n\nThe firm is expected to continue their dividend policy in future. If the long-term growth rate in earnings and dividends is expected to be 6%, the forward P/E ratio for Parker Corp. will be:",
+    "evidence": "PDF page 34 (Reading 48) shows EPS_2005, Dividends_2005, and Beta_Parker as subscripted labels, with a plain 'Long-term bond rate' line. The DB text scrambled the subscripts across lines ('2005 Beta = 1.17' and 'Parker Long-term bond rate = 6.75%'), which misattributes 'Parker' to the bond-rate line and drops it from Beta. Restored the correct subscript-to-line mapping; all numeric values unchanged."
+  },
+  {
+    "id": "4323659a-a585-4d93-907b-738782f8f7ff",
+    "verdict": "explanation_wrong",
+    "field": "explanation_en",
+    "new_value": "The required rate of return on equity for Parker will be 12.89% = 6.75% + 1.17(12.00% – 6.75%) and the firm pays 80% (1.40 / 1.75) of its earnings as dividends. Forward P/E ratio = 0.80 / (0.1289 - 0.0600) = 11.61. Where r = required rate of return on equity, g_n = growth rate in dividends (forever).",
+    "evidence": "PDF page 34 shows 'g_n' (subscript n) in the closing legend. The DB text stranded the 'n' as a floating character after the final period ('...(forever). n'). correct_answer C and all values verified against the PDF."
+  },
+  {
+    "id": "99acd9e3-8ed0-4c19-b754-ab69c13dcd0d",
+    "verdict": "explanation_wrong",
+    "field": "explanation_en",
+    "new_value": "D_0 (1 + g) / P_0 + g = k. 1.00 (1.05) / 20 + 0.05 = 10.25%.",
+    "evidence": "PDF page 23/24 (Reading 48) shows D_0 and P_0 with subscript zeros. The DB text trailed both subscripts after 'k' ('D (1 + g) / P + g = k 0 0 ...'), which is confusing. correct_answer B verified against the PDF."
+  }
+]

@@ -1,0 +1,376 @@
+[
+ {
+  "id": "006f4bc5-19b9-4764-8ddb-933b2a3569d8",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\2. QB KAPLAN-3000 MCQs\\QSTN WITH ANS\\Financial statement analysis\\Reading 32 Analyzing Statements of Cash Flows I - Answers.pdf",
+  "page_idx": 36,
+  "png": "scripts\\_kaplan108_png\\006f4bc5-19b9-4764-8ddb-933b2a3569d8.png",
+  "topic": "Financial Statement Analysis",
+  "subtopic": "Reading 32 Analyzing Statements of Cash Flows I",
+  "question_en": "Mark Industries' income statement and related notes for the year ended December 31 are as follows (in $):\n\n| Line Item | Amount |\n|---|---|\n| Sales | 42,000,000 |\n| Cost of Goods Sold | (32,000,000) |\n| Wages Expense | (1,500,000) |\n| Depreciation Expense | (2,500,000) |\n| Interest Expense | (1,000,000) |\n| Income Tax Expense | (2,000,000) |\n| Net Income | 3,000,000 |\n\nDuring the year:\n\n- Wages Payable increased $100,000.\n- Accumulated Depreciation increased $2,500,000.\n- Interest Payable decreased $200,000.\n- Income Taxes Payable increased $500,000.\n- Dividends of $100,000 were declared and paid.\n\nUnder U.S. GAAP, Mark Industries' cash flow from operations (CFO) for the year ended December 31 was:",
+  "option_a": "$4,400,000.",
+  "option_b": "$5,900,000.",
+  "option_c": "$4,800,000.",
+  "correct_answer": "B",
+  "explanation_en": "Using the indirect method, net income is adjusted by adding back depreciation (a non-cash expense) and changes in working capital: the increase in wages payable and the increase in income taxes payable are sources of cash, and the decrease in interest payable is a use of cash. Dividends paid are financing cash flows under U.S. GAAP. CFO = $3,000,000 + $2,500,000 + $100,000 + $500,000 - $200,000 = $5,900,000."
+ },
+ {
+  "id": "6a49f6ab-2acc-42c0-830b-873b56a24ae0",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\2. QB KAPLAN-3000 MCQs\\QSTN WITH ANS\\Financial statement analysis\\Reading 32 Analyzing Statements of Cash Flows I - Answers.pdf",
+  "page_idx": 12,
+  "png": "scripts\\_kaplan108_png\\6a49f6ab-2acc-42c0-830b-873b56a24ae0.png",
+  "topic": "Financial Statement Analysis",
+  "subtopic": "Reading 32 Analyzing Statements of Cash Flows I",
+  "question_en": "The Beeline Company has the following balance sheet and income statement.\n\n**Beeline Company Balance Sheet As of December 31, 20X4**\n\n| Assets | 2003 | 2004 |\n|---|---|---|\n| Cash | $50 | $60 |\n| Accounts receivable | 100 | 110 |\n| Inventory | 200 | 180 |\n| Fixed assets (gross) | 800 | 900 |\n| Less: Accumulated depreciation | 200 | 250 |\n| Fixed assets (net) | 600 | 650 |\n| Total assets | $950 | $1,000 |\n\n| Liabilities and Equity | 2003 | 2004 |\n|---|---|---|\n| Accounts payable | $100 | $150 |\n| Long-term debt | 400 | 300 |\n| Common stock | 50 | 50 |\n| Retained earnings | 400 | 500 |\n| Total liabilities and equity | $950 | $1,000 |\n\n**Beeline Company Income Statement For year ended December 31, 20X4**\n\n- Sales: $1,000\n- Less: COGS: 600\n- Depreciation: 50\n- Selling, general, and administrative expenses: 160\n- Interest expense: 23\n- Income before taxes: $167\n- Less tax: 67\n- Net income: $100\n\nThe cash flow from operations for 2004 is:",
+  "option_a": "$260.",
+  "option_b": "$210.",
+  "option_c": "$150.",
+  "correct_answer": "B",
+  "explanation_en": "Cash flow from operations (CFO) calculated using the indirect method is: net income (100) + depreciation (50) – increase in accounts receivable (10) + decrease in inventory (20) + increase in accounts payable (50) = $210."
+ },
+ {
+  "id": "aa901e07-1c25-44e8-839c-47fb6cc396fe",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\2. QB KAPLAN-3000 MCQs\\QSTN WITH ANS\\Financial statement analysis\\Reading 32 Analyzing Statements of Cash Flows I - Answers.pdf",
+  "page_idx": 24,
+  "png": "scripts\\_kaplan108_png\\aa901e07-1c25-44e8-839c-47fb6cc396fe.png",
+  "topic": "Financial Statement Analysis",
+  "subtopic": "Reading 32 Analyzing Statements of Cash Flows I",
+  "question_en": "Murray Company reported the following revenues and expenses for the year ended 2007:\n\n- Sales revenue: $200,000\n- Wage expense: 89,000\n- Insurance expense: 17,000\n- Interest expense: 10,400\n- Depreciation expense: 50,000\n\nFollowing are the related balance sheet accounts:\n\n| Account | 2007 | 2006 |\n|---|---|---|\n| Unearned revenue | $15,600 | $13,200 |\n| Wages payable | 5,400 | 6,600 |\n| Prepaid insurance | 1,200 | 0 |\n| Interest payable | 500 | 1,600 |\n| Accumulated depreciation | 95,000 | 45,000 |\n\nCalculate cash collections and cash expenses.\n\nCash collections Cash expenses",
+  "option_a": "$197,600 $119,900",
+  "option_b": "$202,400 $58,100",
+  "option_c": "$202,400 $119,900",
+  "correct_answer": "C",
+  "explanation_en": "Cash collections are $202,400 ($200,000 sales + $2,400 increase in unearned revenue). Cash expenses are $119,900 (–$89,000 wages expense – $1,200 decrease in wages payable – $17,000 insurance expense – $1,200 increase in prepaid insurance – $10,400 interest expense – $1,100 decrease in interest payable). Depreciation expense is a non-cash expense."
+ },
+ {
+  "id": "18594955-10f4-42c5-975f-bd58b9f66985",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\2. QB KAPLAN-3000 MCQs\\QSTN WITH ANS\\Financial statement analysis\\Reading 30 Analyzing Income Statements - Answers.pdf",
+  "page_idx": 20,
+  "png": "scripts\\_kaplan108_png\\18594955-10f4-42c5-975f-bd58b9f66985.png",
+  "topic": "Financial Statement Analysis",
+  "subtopic": "Reading 30 Analyzing Income Statements",
+  "question_en": "On December 31, 2004, JME Corporation had 350,000 shares of common stock outstanding. On September 1, 2005, an additional 150,000 shares of common stock were issued. In addition, JME had $10 million of 8% convertible bonds outstanding at December 31, 2004, which are convertible into 200,000 shares of common stock. Net income for 2005 was $3 million. Assuming an income tax rate of 40%, what amount should be reported as the diluted earnings per share for 2005?",
+  "option_a": "$5.00.",
+  "option_b": "$6.00.",
+  "option_c": "$5.80.",
+  "correct_answer": "C",
+  "explanation_en": "If bonds are converted, then net income will increase by 480,000 [10 million × 0.08 × (1 − 0.4)] and shares outstanding will increase by 200,000. numerator = 3,000,000 + 480,000 = 3,480,000 denominator = 350,000 + (150,000 × 4/12) + 200,000 = 600,000 diluted EPS = 3,480,000 / 600,000 = 5.80"
+ },
+ {
+  "id": "1c5879a0-176c-48ab-aa72-936567af0e09",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\2. QB KAPLAN-3000 MCQs\\QSTN WITH ANS\\Financial statement analysis\\Reading 30 Analyzing Income Statements - Answers.pdf",
+  "page_idx": 40,
+  "png": "scripts\\_kaplan108_png\\1c5879a0-176c-48ab-aa72-936567af0e09.png",
+  "topic": "Financial Statement Analysis",
+  "subtopic": "Reading 30 Analyzing Income Statements",
+  "question_en": "Using the following information for Boxes, Inc.:\n\n- Net income: $53,000,000\n- Outstanding 7% preferred stock, par value: $30,000,000\n- Outstanding convertible bonds, face value of $10,000,000, Issued on January 1 at par with a coupon rate of 6% and convertible at the rate of 20 shares per 1,000 of face value\n- 100,000 options at 55 outstanding all year\n- Tax rate: 30%\n- 3,000,000 common shares outstanding all year\n- Stock price 60 at year-end, average stock price over the year 50.\n\nDiluted EPS is closest to:",
+  "option_a": "$15.00.",
+  "option_b": "$16.00.",
+  "option_c": "$17.00.",
+  "correct_answer": "B",
+  "explanation_en": "53,000,000−(0.07×30,000,000) Basic EPS = = $16.97 3,000,000 The options are not dilutive because the exercise price is greater than the average price over the period. Diluted EPS = 53,000,000−(0.07×30,000,000)+[10,000,000×0.06×(1−0.30)] = $16.04 3,000,000+200,000"
+ },
+ {
+  "id": "3b4d518a-e774-4fc8-b8a3-d8bf42bc890a",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\2. QB KAPLAN-3000 MCQs\\QSTN WITH ANS\\Financial statement analysis\\Reading 30 Analyzing Income Statements - Answers.pdf",
+  "page_idx": 24,
+  "png": "scripts\\_kaplan108_png\\3b4d518a-e774-4fc8-b8a3-d8bf42bc890a.png",
+  "topic": "Financial Statement Analysis",
+  "subtopic": "Reading 30 Analyzing Income Statements",
+  "question_en": "During 20X3, Rory, Inc., reported net income of $15,000 and had 2,000 shares of common stock outstanding for the entire year. Rory also had 2,000 shares of 10%, $50 par value preferred stock outstanding during 20X3. During 20X1, Rory issued 100, $1,000 par, 6% bonds for $100,000. Each of the bonds is convertible to 50 shares of common stock. Rory's tax rate is 40%. Assuming these bonds are dilutive, 20X3 diluted EPS for Rory is closest to:",
+  "option_a": "$2.50.",
+  "option_b": "$1.23.",
+  "option_c": "$0.71.",
+  "correct_answer": "B",
+  "explanation_en": "Diluted EPS = [NI − preferred dividends + convertible interest (1 − t)] / [weighted average shares + convertible debt shares] 100(1,000)(6%)(1 − 0.4) = $3,600; convertible debt shares = 50(100) = 5,000 $15,000−$10,000+$3,600 = $1.23 2,000+5,000"
+ },
+ {
+  "id": "ee15b91d-283d-4e08-bc3c-249924cb15ee",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\2. QB KAPLAN-3000 MCQs\\QSTN WITH ANS\\Financial statement analysis\\Reading 30 Analyzing Income Statements - Answers.pdf",
+  "page_idx": 73,
+  "png": "scripts\\_kaplan108_png\\ee15b91d-283d-4e08-bc3c-249924cb15ee.png",
+  "topic": "Financial Statement Analysis",
+  "subtopic": "Reading 30 Analyzing Income Statements",
+  "question_en": "Quad Associates, Inc.'s net income for 2005 was $892,000 with 400,000 shares outstanding. The tax rate was 40 percent. Quad had 2,000 six percent $1,000 par value convertible bonds that were issued in 2004. Each bond was convertible into 40 shares of common stock. Quad, Inc.'s diluted earnings per share (Diluted EPS) for 2005 was closest to:",
+  "option_a": "$2.23.",
+  "option_b": "$2.41.",
+  "option_c": "$2.01.",
+  "correct_answer": "C",
+  "explanation_en": "Quad's basic EPS (net income / weighted average common shares outstanding) was $892,000 / 400,000 = $2.23. Diluted EPS is calculated under the assumption that the convertible bonds are converted into common stock, the bond interest net of tax is restored to net income, and the additional common shares are added to the denominator of the equation. Quad's diluted EPS was [$892,000 + (2,000 × $1,000 × 0.06)(1 − 0.40)] / [400,000 + (2,000 × 40)] = $2.01. Since diluted EPS is less than basic EPS, we know that the bonds are dilutive and should be considered in calculating diluted EPS."
+ },
+ {
+  "id": "cc30f3a5-9a14-42ec-b5e5-1ab1dfb6249d",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\8. KAPLAN MOCK-1100 MCQs\\Mock Exam 2 - Answers.pdf",
+  "page_idx": 71,
+  "png": "scripts\\_kaplan108_png\\cc30f3a5-9a14-42ec-b5e5-1ab1dfb6249d.png",
+  "topic": "Derivatives",
+  "subtopic": "Mock Exam 2",
+  "question_en": "Under which of the following conditions does a forward contract have a positive value to the short party at expiration?",
+  "option_a": "The forward price is less than the value of the forward contract.",
+  "option_b": "The spot price of the underlying asset is less than the forward price.",
+  "option_c": "The value of the forward contract is less than the spot price of the underlying asset.",
+  "correct_answer": "B",
+  "explanation_en": "At expiration, a forward contract has positive value to the short party (and an equal negative value to the long party) if the spot price of the underlying asset is less than the price specified in the forward contract."
+ },
+ {
+  "id": "142e2870-7eee-443e-a5ae-15ec96ef520f",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\2. QB KAPLAN-3000 MCQs\\QSTN WITH ANS\\Portofolio management part 1\\Reading 20 Portfolio Risk and Return Part I - Answers.pdf",
+  "page_idx": 20,
+  "png": "scripts\\_kaplan108_png\\142e2870-7eee-443e-a5ae-15ec96ef520f.png",
+  "topic": "Portfolio Management",
+  "subtopic": "Reading 20 Portfolio Risk and Return Part I",
+  "question_en": "An investor has a two-stock portfolio (Stocks A and B) with the following characteristics: σ = 55% A σ = 85% B Covariance = 0.09 A,B W = 70% A W = 30% B The variance of the portfolio is closest to:",
+  "option_a": "0.39.",
+  "option_b": "0.25.",
+  "option_c": "0.54.",
+  "correct_answer": "B",
+  "explanation_en": "The formula for the variance of a 2-stock portfolio is: s2 = [W 2σ 2 + W 2σ 2 + 2W W σ σ r ] A A B B A B A B A,B Since σ σ r = Cov , then A B A,B A,B s2 = [(0.72 × 0.552) + (0.32 × 0.852) + (2 × 0.7 × 0.3 × 0.09)] = [0.1482 + 0.0650 + 0.0378] = 0.2511."
+ },
+ {
+  "id": "71389f10-02dd-4e98-a139-9ab71acf13c5",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\2. QB KAPLAN-3000 MCQs\\QSTN WITH ANS\\Portofolio management part 1\\Reading 20 Portfolio Risk and Return Part I - Answers.pdf",
+  "page_idx": 28,
+  "png": "scripts\\_kaplan108_png\\71389f10-02dd-4e98-a139-9ab71acf13c5.png",
+  "topic": "Portfolio Management",
+  "subtopic": "Reading 20 Portfolio Risk and Return Part I",
+  "question_en": "An analyst gathers the following data about the returns for two stocks. Stock A Stock B E(R) 0.04 0.09 σ2 0.0025 0.0064 Cov = 0.001 A,B The correlation between the returns of Stock A and Stock B is closest to:",
+  "option_a": "0.25.",
+  "option_b": "0.50.",
+  "option_c": "0.63.",
+  "correct_answer": "A",
+  "explanation_en": "The correlation between the two stocks is: ρ = COV / (σ × σ ) = 0.001 / (0.05 × 0.08) = 0.001 / (0.004) = 0.25 A,B A,B A B Note that the formula uses the standard deviations, not the variances, of the returns on the two securities."
+ },
+ {
+  "id": "d4ab669b-fe82-4a72-8424-264fb6aa60d0",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\2. QB KAPLAN-3000 MCQs\\QSTN WITH ANS\\Portofolio management part 1\\Reading 20 Portfolio Risk and Return Part I - Answers.pdf",
+  "page_idx": 21,
+  "png": "scripts\\_kaplan108_png\\d4ab669b-fe82-4a72-8424-264fb6aa60d0.png",
+  "topic": "Portfolio Management",
+  "subtopic": "Reading 20 Portfolio Risk and Return Part I",
+  "question_en": "Assets A (with a variance of 0.25) and B (with a variance of 0.40) are perfectly positively correlated. If an investor creates a portfolio using only these two assets with 40% invested in A, the portfolio standard deviation is closest to:",
+  "option_a": "0.3400.",
+  "option_b": "0.3742.",
+  "option_c": "0.5795.",
+  "correct_answer": "C",
+  "explanation_en": "The portfolio standard deviation = [(0.4)2(0.25) + (0.6)2(0.4) + 2(0.4)(0.6)1(0.25)0.5(0.4)0.5]0.5 = 0.5795"
+ },
+ {
+  "id": "093ac317-5986-49cf-ab81-42eb39ac0d5f",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\8. KAPLAN MOCK-1100 MCQs\\Mock Exam 1 - Answers.pdf",
+  "page_idx": 27,
+  "png": "scripts\\_kaplan108_png\\093ac317-5986-49cf-ab81-42eb39ac0d5f.png",
+  "topic": "Financial Statement Analysis",
+  "subtopic": "Mock Exam 1",
+  "question_en": "Which of the following is least likely a limitation of mechanisms used to discipline financial reporting quality?",
+  "option_a": "An unqualified audit opinion offers reasonable assurance rather than a guarantee.",
+  "option_b": "Securities regulators may require public disclosure of the results of disciplinary proceedings.",
+  "option_c": "Loan covenants may give the borrowing company an incentive to manipulate reported results.",
+  "correct_answer": "B",
+  "explanation_en": "All three statements are accurate, but public disclosure of the results of disciplinary proceedings is seen as a deterrent to poor financial reporting quality rather than a limitation. It can be seen as a limitation that audit opinions only offer reasonable assurance rather than guarantees with regards to the financial statements. Private contracts often contain clauses such as loan covenants to protect the lender from default. However, this could create an incentive for the borrowing firm to produce low quality financial reports that technically do not breach covenants, and so can be seen as a limitation."
+ },
+ {
+  "id": "5b63788d-cb32-4a53-8b1a-ecf27c657f90",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\8. KAPLAN MOCK-1100 MCQs\\Mock Exam 1 - Answers.pdf",
+  "page_idx": 73,
+  "png": "scripts\\_kaplan108_png\\5b63788d-cb32-4a53-8b1a-ecf27c657f90.png",
+  "topic": "Equity Investments",
+  "subtopic": "Mock Exam 1",
+  "question_en": "The type of equity depository receipt that gives its owners the right to vote and receive dividends from a company's shares is best described as:",
+  "option_a": "a global depository receipt.",
+  "option_b": "a sponsored depository receipt.",
+  "option_c": "a fully-owned depository receipt.",
+  "correct_answer": "B",
+  "explanation_en": "The owner of a sponsored DR share has the same voting rights and receives the same dividends as the owner of a common share of the firm. With an unsponsored DR, the depository bank retains the voting rights. A global depository receipt may be sponsored or unsponsored."
+ },
+ {
+  "id": "a8608ed3-4984-48dc-9c24-800046292c37",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\8. KAPLAN MOCK-1100 MCQs\\Mock Exam 1 - Answers.pdf",
+  "page_idx": 41,
+  "png": "scripts\\_kaplan108_png\\a8608ed3-4984-48dc-9c24-800046292c37.png",
+  "topic": "Quantitative Methods",
+  "subtopic": "Mock Exam 1",
+  "question_en": "Partial table of Student's t-distribution: Level of Significance for a Two-Tailed Test\n\n| df | 0.20 | 0.10 | 0.05 | 0.02 | 0.01 | 0.001 |\n|---|---|---|---|---|---|---|\n| 23 | 1.319 | 1.714 | 2.069 | 2.500 | 2.807 | 3.768 |\n| 24 | 1.318 | 1.711 | 2.064 | 2.492 | 2.797 | 3.745 |\n| 25 | 1.316 | 1.708 | 2.060 | 2.485 | 2.787 | 3.725 |\n\nFrom a sample of 25 paired observations, an analyst generates the simple linear ˆ regression line Y = −25+49X . The standard error of the forecast is 16. For an i i observed value of X equal to 5, a 95% confidence interval for the predicted value of Y is closest to:",
+  "option_a": "16 to 82.",
+  "option_b": "187 to 253.",
+  "option_c": "218 to 272.",
+  "correct_answer": "B",
+  "explanation_en": "The predicted value of Y is –25 + 49(5) = 220. With n – 2 = 23 degrees of freedom, the critical t-value for a 95% confidence interval is 2.069. The confidence interval is 220 ± 2.069(16) = 186.9 to 253.1."
+ },
+ {
+  "id": "f147dfb5-8aae-4377-8b31-509f67ddb2c8",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\8. KAPLAN MOCK-1100 MCQs\\Mock Exam 1 - Answers.pdf",
+  "page_idx": 20,
+  "png": "scripts\\_kaplan108_png\\f147dfb5-8aae-4377-8b31-509f67ddb2c8.png",
+  "topic": "Corporate Issuers",
+  "subtopic": "Mock Exam 1",
+  "question_en": "A company is most likely to be viewed as having poor liquidity, compared to its industry, if it has a:",
+  "option_a": "low current ratio.",
+  "option_b": "low days of payables.",
+  "option_c": "high debt-to-equity ratio.",
+  "correct_answer": "A",
+  "explanation_en": "The current ratio, CA/CL, is a primary measure of liquidity. The debt-to-equity ratio is primarily a measure of a company's solvency and financial risk, not liquidity. Low days of payables indicate the company pays it suppliers sooner than other firms, not necessarily that is has poor liquidity."
+ },
+ {
+  "id": "3d19ca94-2dcf-4b0e-9db7-5671d3a2282a",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\8. KAPLAN MOCK-1100 MCQs\\Mock Exam 5 - Answers.pdf",
+  "page_idx": 88,
+  "png": "scripts\\_kaplan108_png\\3d19ca94-2dcf-4b0e-9db7-5671d3a2282a.png",
+  "topic": "Equity Investments",
+  "subtopic": "Mock Exam 5",
+  "question_en": "An index is composed of the following three stocks:\n\n| Stock | Dec 31, 20X1 Price | Dec 31, 20X1 Shares | Dec 31, 20X2 Price | Dec 31, 20X2 Shares |\n|---|---|---|---|---|\n| Perez | $140 | 1,000,000 | $154 | 1,000,000 |\n| Quinton | $70 | 1,500,000 | $70 | 2,000,000 |\n| Ranovich | $90 | 2,000,000 | $81 | 2,000,000 |\n\nAn equal-weighted index of the three stocks has a value on December 31, 20X1 = 100. The index value on December 31, 20X2 is closest to:",
+  "option_a": "100.",
+  "option_b": "102.",
+  "option_c": "107.",
+  "correct_answer": "A",
+  "explanation_en": "Percentage price changes were +10% for Perez, 0% for Quinton, and −10% for Ranovich. The change in an equal-weighted index is (10% + 0% −10%) / 3 = 0% and the index value remains equal to 100."
+ },
+ {
+  "id": "5cf2df6b-f6e3-4915-8ebe-4d3fa9a649d0",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\8. KAPLAN MOCK-1100 MCQs\\Mock Exam 5 - Answers.pdf",
+  "page_idx": 61,
+  "png": "scripts\\_kaplan108_png\\5cf2df6b-f6e3-4915-8ebe-4d3fa9a649d0.png",
+  "topic": "Fixed Income",
+  "subtopic": "Mock Exam 5",
+  "question_en": "For three otherwise identical bonds, which feature would result in the largest increase in value during a period of rising interest rate volatility?",
+  "option_a": "Put feature.",
+  "option_b": "Call feature.",
+  "option_c": "Floating rate coupon.",
+  "correct_answer": "A",
+  "explanation_en": "The price of a putable bond equals the price of an otherwise identical, yet non- putable, bond plus the price of the bond put option. The price of the bond put option increases when interest rate volatility increases. Therefore, the price of the putable bond will rise. The price of a callable bond equals the price of an otherwise identical, yet non-callable, bond minus the price of the bond call option. The price of the bond call option increases when interest rate volatility increases. Therefore, the price of the callable bond will fall. The price of a floating rate bond will not change significantly, especially if the coupon reset dates are not far apart."
+ },
+ {
+  "id": "c305356c-35b2-4d64-ae5d-d617bf7ea9dc",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\2. QB KAPLAN-3000 MCQs\\QSTN WITH ANS\\Financial statement analysis\\Reading 31 Analyzing Balance Sheets - Answers.pdf",
+  "page_idx": 16,
+  "png": "scripts\\_kaplan108_png\\c305356c-35b2-4d64-ae5d-d617bf7ea9dc.png",
+  "topic": "Financial Statement Analysis",
+  "subtopic": "Reading 31 Analyzing Balance Sheets",
+  "question_en": "Balance sheet data for two comparable firms are presented below:\n\n| Line Item | Amplus, Inc. | Brevis, Inc. |\n|---|---|---|\n| Cash and equivalents | 3,800 | 500 |\n| Accounts receivable | 2,400 | 700 |\n| Inventories | 5,800 | 1,100 |\n| Current assets | 12,000 | 2,300 |\n| Land | 400 | 100 |\n| Property, plant and equipment | 24,600 | 6,400 |\n| Noncurrent assets | 25,000 | 6,500 |\n| Total assets | 37,000 | 8,800 |\n| Accounts payable | 1,800 | 400 |\n| Unearned revenue | 600 | 100 |\n| Current liabilities | 2,400 | 500 |\n| Long-term borrowing | 9,600 | 3,300 |\n| Total liabilities | 12,000 | 3,800 |\n| Common stock | 1,500 | 300 |\n| Retained earnings | 23,500 | 4,700 |\n| Total equity | 25,000 | 5,000 |\n| Total liabilities and equity | 37,000 | 8,800 |\n\nBased on common-size analysis of the two firms' balance sheets, Amplus Company:",
+  "option_a": "has a greater investment in working capital than Brevis Company.",
+  "option_b": "is more nancially leveraged than Brevis Company.",
+  "option_c": "uses relatively more xed assets then Brevis Company.",
+  "correct_answer": "A",
+  "explanation_en": "Common-size balance sheets for the two firms are as follows: Amplus, Inc. Brevis, Inc. Cash and equivalents 10.3% 5.7% Accounts receivable 6.5% 8.0% Inventories 15.7% 12.5% Current assets 32.4% 26.1% Land 1.1% 1.1% Property, plant and equipment 66.5% 72.7% Noncurrent assets 67.6% 73.9% Total assets 100.0% 100.0% Accounts payable 4.9% 4.5% Unearned revenue 1.6% 1.1% Current liabilities 6.5% 5.7% Long-term borrowing 25.9% 37.5% Total liabilities 32.4% 43.2% Common stock 4.1% 3.4% Retained earnings 63.5% 53.4% Total equity 67.6% 56.8% Total liabilities and equity 100.0% 100.0% Working capital (current assets minus current liabilities) is 32.4% – 6.5% = 25.9% of assets for Amplus and 26.1% – 5.7% = 20.4% of assets for Brevis. Fixed assets (property, plant, and equipment) are relatively larger for Brevis than for Amplus. Based on long-term borrowing and total liabilities, Brevis is significantly more leveraged than Amplus."
+ },
+ {
+  "id": "0926ab85-879c-4c0e-b3df-586957160fe1",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\2. QB KAPLAN-3000 MCQs\\QSTN WITH ANS\\Equity Investments\\Reading 48 Equity Valuation- Concepts and Basic Tools - Answers.pdf",
+  "page_idx": 3,
+  "png": "scripts\\_kaplan108_png\\0926ab85-879c-4c0e-b3df-586957160fe1.png",
+  "topic": "Equity Investments",
+  "subtopic": "Reading 48 Equity Valuation- Concepts and Basic Tools",
+  "question_en": "A stock is expected to pay a dividend of $1.50 at the end of each of the next three years. At the end of three years the stock price is expected to be $25. The equity discount rate is 16 percent. What is the current stock price?",
+  "option_a": "$24.92.",
+  "option_b": "$19.39.",
+  "option_c": "$17.18.",
+  "correct_answer": "B",
+  "explanation_en": "The value of the stock today is the present value of the dividends and the expected stock price, discounted at the equity discount rate: $1.50/1.16 + $1.50/1.162 + $1.50/1.163 + $25.00/1.163 = $19.39"
+ },
+ {
+  "id": "12127edc-2e37-405c-b411-bba37f704481",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\2. QB KAPLAN-3000 MCQs\\QSTN WITH ANS\\Equity Investments\\Reading 48 Equity Valuation- Concepts and Basic Tools - Answers.pdf",
+  "page_idx": 29,
+  "png": "scripts\\_kaplan108_png\\12127edc-2e37-405c-b411-bba37f704481.png",
+  "topic": "Equity Investments",
+  "subtopic": "Reading 48 Equity Valuation- Concepts and Basic Tools",
+  "question_en": "A firm has an expected dividend payout ratio of 50%, a required rate of return of 12% and a constant growth rate of 6%. If earnings for the next year are expected to be $4.50, the value of the stock today is closest to:",
+  "option_a": "$33.50.",
+  "option_b": "$37.50.",
+  "option_c": "$39.75.",
+  "correct_answer": "B",
+  "explanation_en": "Expected dividend = $4.50 × 0.50 = $2.25 Value today = $2.25 / (0.12 – 0.06) = $37.50"
+ },
+ {
+  "id": "4323659a-a585-4d93-907b-738782f8f7ff",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\2. QB KAPLAN-3000 MCQs\\QSTN WITH ANS\\Equity Investments\\Reading 48 Equity Valuation- Concepts and Basic Tools - Answers.pdf",
+  "page_idx": 34,
+  "png": "scripts\\_kaplan108_png\\4323659a-a585-4d93-907b-738782f8f7ff.png",
+  "topic": "Equity Investments",
+  "subtopic": "Reading 48 Equity Valuation- Concepts and Basic Tools",
+  "question_en": "An analyst gathered the following data for the Parker Corp. for the year ended December 31, 2005:\n\n- EPS = $1.75\n- 2005 Dividends = $1.40\n- 2005 Beta = 1.17\n- Parker Long-term bond rate = 6.75%\n- Rate of return S&P 500 = 12.00%\n\nThe firm is expected to continue their dividend policy in future. If the long-term growth rate in earnings and dividends is expected to be 6%, the forward P/E ratio for Parker Corp. will be:",
+  "option_a": "12.31.",
+  "option_b": "21.54.",
+  "option_c": "11.61.",
+  "correct_answer": "C",
+  "explanation_en": "The required rate of return on equity for Parker will be 12.89% = 6.75% + 1.17(12.00% – 6.75%) and the firm pays 80% (1.40 / 1.75) of its earnings as dividends. Forward P/E ratio = 0.80 / (0.1289 - 0.0600) = 11.61 Where r = required rate of return on equity, g = growth rate in dividends (forever). n"
+ },
+ {
+  "id": "99acd9e3-8ed0-4c19-b754-ab69c13dcd0d",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\2. QB KAPLAN-3000 MCQs\\QSTN WITH ANS\\Equity Investments\\Reading 48 Equity Valuation- Concepts and Basic Tools - Answers.pdf",
+  "page_idx": 23,
+  "png": "scripts\\_kaplan108_png\\99acd9e3-8ed0-4c19-b754-ab69c13dcd0d.png",
+  "topic": "Equity Investments",
+  "subtopic": "Reading 48 Equity Valuation- Concepts and Basic Tools",
+  "question_en": "A company last paid a $1.00 dividend, the current market price of the stock is $20 per share and the dividends are expected to grow at 5 percent forever. What is the required rate of return on the stock?",
+  "option_a": "10.00%.",
+  "option_b": "10.25%.",
+  "option_c": "9.78%.",
+  "correct_answer": "B",
+  "explanation_en": "D (1 + g) / P + g = k 0 0 1.00 (1.05) / 20 + 0.05 = 10.25%."
+ }
+]

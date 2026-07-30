@@ -1,0 +1,331 @@
+[
+ {
+  "id": "5c50a3e1-876a-48b0-b0ca-9844fff35c1b",
+  "verdict": "correct_answer_wrong",
+  "field": "correct_answer",
+  "new_value": "B",
+  "evidence": "PDF page (Question #16) shows the green checkmark on option B (1.0%), which also matches the explanation's computed value of 62.80+0.54+0.54 over 63.25 minus 1 = 1%. DB had correct_answer = A."
+ },
+ {
+  "id": "0c2eaf35-ed5f-4d9c-9d25-bdd7b54933d0",
+  "verdict": "stem_wrong",
+  "field": "question_en",
+  "new_value": "The earnings multiplier model, derived from the dividend discount model, expresses a stock's P/E ratio (P0/E1) as the:",
+  "evidence": "DB stem had option A's text bled into the end of the stem. PDF (Question #138) shows the stem ends at 'as the:' with the answer choices separate."
+ },
+ {
+  "id": "0c2eaf35-ed5f-4d9c-9d25-bdd7b54933d0",
+  "verdict": "option_bleed",
+  "field": "option_a",
+  "new_value": "expected dividend in one year divided by the difference between the required return on equity and the expected dividend growth rate.",
+  "evidence": "PDF option A text, previously concatenated with the stem and bled into option B in the DB record."
+ },
+ {
+  "id": "0c2eaf35-ed5f-4d9c-9d25-bdd7b54933d0",
+  "verdict": "option_bleed",
+  "field": "option_b",
+  "new_value": "expected dividend payout ratio divided by the difference between the required return on equity and the expected dividend growth rate.",
+  "evidence": "PDF option B text; DB record had the tail of option A concatenated with the start of option B."
+ },
+ {
+  "id": "0c2eaf35-ed5f-4d9c-9d25-bdd7b54933d0",
+  "verdict": "option_bleed",
+  "field": "option_c",
+  "new_value": "expected dividend payout ratio divided by the sum of the expected dividend growth rate and the required return on equity.",
+  "evidence": "PDF option C text; DB record only contained the tail fragment of this option after the option B bleed."
+ },
+ {
+  "id": "0c2eaf35-ed5f-4d9c-9d25-bdd7b54933d0",
+  "verdict": "correct_answer_wrong",
+  "field": "correct_answer",
+  "new_value": "B",
+  "evidence": "PDF (Question #138) shows the checkmark on option B (expected dividend payout ratio / (ke - g)), matching the DDM derivation in the explanation. DB had correct_answer = A."
+ },
+ {
+  "id": "01e792e4-023b-4624-b636-d3926432018d",
+  "verdict": "correct_answer_wrong",
+  "field": "correct_answer",
+  "new_value": "A",
+  "evidence": "PDF (Question #18, Jayce Arnold) shows the checkmark on option A ('decrease by $124, price will increase by $149'), consistent with convexity making the price gain from a yield decrease larger than the price loss from an equal yield increase. DB had correct_answer = C."
+ },
+ {
+  "id": "9c501526-1189-4a85-a8c6-4c63c9ac76da",
+  "verdict": "stem_wrong",
+  "field": "question_en",
+  "new_value": "Will Lambert, CFA, is a financial analyst for Offshore Investments. He is preparing a purchase recommendation on Burch Corporation for internal use. According to the CFA Institute Standards of Professional Conduct, which of the following statements about disclosure of conflicts is not required? Lambert would NOT need to disclose to his employer that:",
+  "evidence": "PDF (Question #12) stem includes 'for internal use,' a fact material to the explanation's internal-vs-external-use distinction, which was omitted from the DB stem."
+ },
+ {
+  "id": "9c501526-1189-4a85-a8c6-4c63c9ac76da",
+  "verdict": "option_bleed",
+  "field": "option_a",
+  "new_value": "Offshore is an OTC market maker for Burch Corporation's stock.",
+  "evidence": "PDF option A text; DB record had the start of option B's text bled onto the end of option A."
+ },
+ {
+  "id": "9c501526-1189-4a85-a8c6-4c63c9ac76da",
+  "verdict": "option_bleed",
+  "field": "option_b",
+  "new_value": "he is a beneficiary of a pension plan of his former employer that owns a large number of shares of Burch's stock.",
+  "evidence": "PDF option B text; DB record only had the tail fragment ('number of shares of Burch's stock.') after the bleed into option A."
+ },
+ {
+  "id": "9c501526-1189-4a85-a8c6-4c63c9ac76da",
+  "verdict": "correct_answer_wrong",
+  "field": "correct_answer",
+  "new_value": "A",
+  "evidence": "PDF (Question #12) shows the checkmark on option A ('Offshore is an OTC market maker...'). DB had correct_answer = B."
+ },
+ {
+  "id": "2895404c-0da7-45aa-bdaf-4d776aa17d19",
+  "verdict": "correct_answer_wrong",
+  "field": "correct_answer",
+  "new_value": "C",
+  "evidence": "PDF (Question #13) shows the checkmark on option C ('Yes, the bond is undervalued by $64'), matching the explanation's PV of 1,074.66 vs price 1,011 = 64 undervaluation. DB had correct_answer = A."
+ },
+ {
+  "id": "100be2a8-a39e-4922-8d5c-2058fc476044",
+  "verdict": "option_bleed",
+  "field": "option_a",
+  "new_value": "365.",
+  "evidence": "PDF page shows the actual options for 'What is the receivables collection period?' are 365 / 183 / 243; the DB record's options (0.62/1.53/2.67) and explanation belong to a different, unrelated quick-ratio question sharing the same balance sheet data."
+ },
+ {
+  "id": "100be2a8-a39e-4922-8d5c-2058fc476044",
+  "verdict": "option_bleed",
+  "field": "option_b",
+  "new_value": "183.",
+  "evidence": "PDF shows option B = 183, marked correct (checkmark)."
+ },
+ {
+  "id": "100be2a8-a39e-4922-8d5c-2058fc476044",
+  "verdict": "option_bleed",
+  "field": "option_c",
+  "new_value": "243.",
+  "evidence": "PDF shows option C = 243, marked wrong."
+ },
+ {
+  "id": "100be2a8-a39e-4922-8d5c-2058fc476044",
+  "verdict": "correct_answer_wrong",
+  "field": "correct_answer",
+  "new_value": "B",
+  "evidence": "PDF shows checkmark on option B (183). DB had correct_answer = C, consistent with the mismatched quick-ratio content."
+ },
+ {
+  "id": "100be2a8-a39e-4922-8d5c-2058fc476044",
+  "verdict": "explanation_wrong",
+  "field": "explanation_en",
+  "new_value": "Receivables turnover = 1,500(sales) / 750(receivables) = 2.0. Average receivables collection period = 365 / 2 = 182.5 or 183.",
+  "evidence": "DB explanation computed a quick ratio (1,150/430=2.67) which does not answer the actual question about receivables collection period; the correct explanation is on the PDF page directly following the question."
+ },
+ {
+  "id": "87a91569-a156-4e09-9f36-1f007a58be01",
+  "verdict": "correct_answer_wrong",
+  "field": "correct_answer",
+  "new_value": "A",
+  "evidence": "PDF (Question #42) shows the checkmark on option A ('banks'), consistent with the explanation describing net interest margin as used for 'lending institutions.' DB had correct_answer = B."
+ },
+ {
+  "id": "9bc6ddcf-4249-4307-ada1-04b8a805111d",
+  "verdict": "option_bleed",
+  "field": "option_a",
+  "new_value": "0.50.",
+  "evidence": "PDF page for 'What is the operating profit margin?' shows actual options 0.50/0.45/0.67; the DB record's options (0.331/2.018/3.018) and explanation belong to an unrelated current-ratio question sharing the same balance sheet dataset."
+ },
+ {
+  "id": "9bc6ddcf-4249-4307-ada1-04b8a805111d",
+  "verdict": "option_bleed",
+  "field": "option_b",
+  "new_value": "0.45.",
+  "evidence": "PDF shows option B = 0.45, marked wrong."
+ },
+ {
+  "id": "9bc6ddcf-4249-4307-ada1-04b8a805111d",
+  "verdict": "option_bleed",
+  "field": "option_c",
+  "new_value": "0.67.",
+  "evidence": "PDF shows option C = 0.67, marked wrong."
+ },
+ {
+  "id": "9bc6ddcf-4249-4307-ada1-04b8a805111d",
+  "verdict": "correct_answer_wrong",
+  "field": "correct_answer",
+  "new_value": "A",
+  "evidence": "PDF shows checkmark on option A (0.50). DB had correct_answer = C."
+ },
+ {
+  "id": "9bc6ddcf-4249-4307-ada1-04b8a805111d",
+  "verdict": "explanation_wrong",
+  "field": "explanation_en",
+  "new_value": "Operating profit margin = (EBIT / sales) = (1,500 / 3,000) = 0.5.",
+  "evidence": "DB explanation computed a current ratio (1,660/550=3.018), unrelated to operating profit margin; correct explanation found directly on the PDF page."
+ },
+ {
+  "id": "bdf94667-4fa7-4732-a19e-0c5dea16eda0",
+  "verdict": "option_bleed",
+  "field": "option_a",
+  "new_value": "60.6 days.",
+  "evidence": "PDF page for 'What is the average receivables collection period?' (with LTD 700/1102 balance sheet variant) shows actual options 60.6/76.7/80.3 days; DB record's options (0.331/2.018/3.018) and explanation belong to an unrelated current-ratio question."
+ },
+ {
+  "id": "bdf94667-4fa7-4732-a19e-0c5dea16eda0",
+  "verdict": "option_bleed",
+  "field": "option_b",
+  "new_value": "76.7 days.",
+  "evidence": "PDF shows option B = 76.7 days, marked correct (checkmark)."
+ },
+ {
+  "id": "bdf94667-4fa7-4732-a19e-0c5dea16eda0",
+  "verdict": "option_bleed",
+  "field": "option_c",
+  "new_value": "80.3 days.",
+  "evidence": "PDF shows option C = 80.3 days, marked wrong."
+ },
+ {
+  "id": "bdf94667-4fa7-4732-a19e-0c5dea16eda0",
+  "verdict": "correct_answer_wrong",
+  "field": "correct_answer",
+  "new_value": "B",
+  "evidence": "PDF shows checkmark on option B (76.7 days). DB had correct_answer = C."
+ },
+ {
+  "id": "bdf94667-4fa7-4732-a19e-0c5dea16eda0",
+  "verdict": "explanation_wrong",
+  "field": "explanation_en",
+  "new_value": "Average collection period = 365 / receivables turnover. Receivables turnover = sales / average receivables = 3,000 / 630 = 4.76. Average receivables collection period = 365 / 4.76 = 76.65.",
+  "evidence": "DB explanation computed an unrelated current ratio; correct explanation found directly on the PDF page below the question."
+ },
+ {
+  "id": "a686fa5f-edd1-42d6-aa86-9463ab6f53a6",
+  "verdict": "correct_answer_wrong",
+  "field": "correct_answer",
+  "new_value": "C",
+  "evidence": "PDF (Question #17, Akor) shows the checkmark on option C ('may fluctuate around the peg rate'). The DB explanation itself notes the ±1% margin and that market-determined rates characterize floating regimes (i.e. not option B), consistent with C being correct. DB had correct_answer = B."
+ },
+ {
+  "id": "e9d7808e-ed8c-420f-82b3-3795de15ad26",
+  "verdict": "option_bleed",
+  "field": "option_a",
+  "new_value": "violated the Standard concerning loyalty to employer.",
+  "evidence": "The real PDF question (Question #25, John Hill/Rod Bright) has options about which Standard Hill violated; the DB's options/explanation were bled from an unrelated, earlier question about a departing employee (Thompson) preparing to go into competitive business."
+ },
+ {
+  "id": "e9d7808e-ed8c-420f-82b3-3795de15ad26",
+  "verdict": "option_bleed",
+  "field": "option_b",
+  "new_value": "violated the Standard concerning disclosure of conflicts.",
+  "evidence": "PDF option B for the actual John Hill question."
+ },
+ {
+  "id": "e9d7808e-ed8c-420f-82b3-3795de15ad26",
+  "verdict": "option_bleed",
+  "field": "option_c",
+  "new_value": "not violated the Standards.",
+  "evidence": "PDF option C, marked correct (checkmark), for the actual John Hill question."
+ },
+ {
+  "id": "e9d7808e-ed8c-420f-82b3-3795de15ad26",
+  "verdict": "correct_answer_wrong",
+  "field": "correct_answer",
+  "new_value": "C",
+  "evidence": "PDF shows checkmark on 'not violated the Standards.' DB had correct_answer = A, an option that does not even exist among the real choices for this question."
+ },
+ {
+  "id": "e9d7808e-ed8c-420f-82b3-3795de15ad26",
+  "verdict": "explanation_wrong",
+  "field": "explanation_en",
+  "new_value": "Based on the information here, Hill has not violated the Standards. The phone call was not with a current client of Advisors, and the individual made it clear that he would not become a client of Advisors again. Therefore, there was no breach of loyalty to Advisors by Hill for not acting in his employer's interests, nor is there a conflict of interest.",
+  "evidence": "DB explanation ('generally free to make arrangements...to go into a competitive business...') is verbatim from the preceding Thompson question's explanation, not from the John Hill question."
+ },
+ {
+  "id": "4333b46f-6ec2-4ff4-b335-7d53d76bb8e6",
+  "verdict": "correct_answer_wrong",
+  "field": "correct_answer",
+  "new_value": "B",
+  "evidence": "PDF (Question #22) shows the checkmark on option B ('The alternative hypothesis would be Ha: mean > 7'), matching the DB's own explanation that a two-tailed test's alternative uses '=' not '>', making B the least accurate (correct) choice. DB had correct_answer = C."
+ },
+ {
+  "id": "13f95e3d-f37a-49c7-89d9-d2e9546c4bd2",
+  "verdict": "correct_answer_wrong",
+  "field": "correct_answer",
+  "new_value": "B",
+  "evidence": "PDF shows the checkmark on option B ('Price appreciation creates all of the zero-coupon bond's return'), matching the explanation verbatim. DB had correct_answer = A."
+ },
+ {
+  "id": "7936fcb2-a408-476a-b05d-0f3a67cf0188",
+  "verdict": "ok",
+  "evidence": "The stated page_idx (5) did not contain this question; located it at page_idx 15 of the same PDF via text search. There, options, correct_answer (C), and explanation all match the DB record exactly."
+ },
+ {
+  "id": "5934bdd3-417e-4087-a7a8-b7f0d0599c38",
+  "verdict": "stem_wrong",
+  "field": "question_en",
+  "new_value": "A bond is currently priced at 92.35. If the calculated modified duration is 3.27 and the convexity is 15.74, the expected price change due to a 25 basis point decrease in yields is closest to:",
+  "evidence": "PDF (Question #15) asks for the price change from a 25bp decrease, not the new price from a 50bp increase as in the DB stem. The DB's options (0.8126%/0.8028%/0.8224%) and correct_answer (C) actually match this real 25bp-decrease question, not the 50bp scenario described in the DB stem/explanation."
+ },
+ {
+  "id": "5934bdd3-417e-4087-a7a8-b7f0d0599c38",
+  "verdict": "explanation_wrong",
+  "field": "explanation_en",
+  "new_value": "The change in bond price can be calculated using the following formula: price change = -annual modified duration (Delta YTM) + 1/2 annual convexity (Delta YTM) squared. For a 25 basis point decrease in yields, the calculation is equal to (-3.27 x -0.0025) + (0.5 x 15.74 x -0.0025^2) = .008224, or 0.8224%.",
+  "evidence": "DB explanation computes a 50bp-increase scenario yielding -1.615% and a new price of 90.859, which is inconsistent with the DB's own options and correct_answer (0.8224%). The correct 25bp-decrease derivation is on the PDF page and matches option C exactly."
+ },
+ {
+  "id": "27c5dcd6-5080-4b32-b298-3f12f49df5b0",
+  "verdict": "ok",
+  "evidence": "PDF (Question #145, Mock Exam 4) options, correct_answer (C, premium), and explanation all match the DB record exactly."
+ },
+ {
+  "id": "29709773-dfa5-4e1e-b79e-245f069b2c73",
+  "verdict": "ok",
+  "evidence": "PDF shows checkmark on option A ('Sell government securities and increase the policy rate'), matching DB's correct_answer = A; options and explanation match exactly."
+ },
+ {
+  "id": "45808ab3-0aa4-4ae5-9e3e-f1ca28556491",
+  "verdict": "stem_wrong",
+  "field": "question_en",
+  "new_value": "An analyst is testing the hypothesis that the variance of monthly returns for Index L equals the variance of monthly returns for Index M based on samples of 50 monthly observations. The sample variance of Index L returns is 0.085, whereas the sample variance of Index M returns is 0.084. Assuming the samples are independent and the returns are normally distributed, which of the following represents the most appropriate test statistic?",
+  "evidence": "DB stem had a fraction from option A ('sample variance of Index L') bled onto the end of the actual stem, caused by the PDF's stacked-fraction formatting."
+ },
+ {
+  "id": "45808ab3-0aa4-4ae5-9e3e-f1ca28556491",
+  "verdict": "option_bleed",
+  "field": "option_a",
+  "new_value": "Sample variance of Index L / sample variance of Index M.",
+  "evidence": "PDF renders option A as a fraction (numerator/denominator); DB record had it split and interleaved with options B and C due to reading-order issues on the stacked fractions."
+ },
+ {
+  "id": "45808ab3-0aa4-4ae5-9e3e-f1ca28556491",
+  "verdict": "option_bleed",
+  "field": "option_b",
+  "new_value": "(Variance of Index L - variance of Index M) / standard error of squared differences.",
+  "evidence": "Reconstructed from the PDF's fraction for option B, previously interleaved with options A and C in the DB record."
+ },
+ {
+  "id": "45808ab3-0aa4-4ae5-9e3e-f1ca28556491",
+  "verdict": "option_bleed",
+  "field": "option_c",
+  "new_value": "(Degrees of freedom) x (Index L sample variance) / Index M sample variance.",
+  "evidence": "Reconstructed from the PDF's fraction for option C. Correct_answer (A) already matches the PDF checkmark and was left unchanged."
+ },
+ {
+  "id": "48856857-3264-4322-8cc0-c95bb477b258",
+  "verdict": "ok",
+  "evidence": "PDF (Question #41, Roy's Safety-First) table, options, correct_answer (A, Portfolio 1), and explanation all match the DB record; only the OCR subscript placement in the explanation's formulas differs cosmetically."
+ },
+ {
+  "id": "82594029-471c-4f39-9698-e08c913e2eb1",
+  "verdict": "ok",
+  "evidence": "PDF (Question #163, Johnson/Knight/Lawrence credit table) table, options, correct_answer (B), and explanation all match the DB record exactly."
+ },
+ {
+  "id": "dc36ba7d-add9-4a4b-8380-e0c14559b5d9",
+  "verdict": "ok",
+  "evidence": "PDF (Question #155, non-financial risk) options, correct_answer (C, solvency risk), and explanation all match the DB record exactly."
+ },
+ {
+  "id": "ca6b6f1b-c0c0-467c-bb54-9db38617d1e4",
+  "verdict": "ok",
+  "evidence": "PDF (harmonic mean question) options, correct_answer (A), and explanation all match the DB record exactly."
+ }
+]

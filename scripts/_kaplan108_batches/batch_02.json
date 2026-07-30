@@ -1,0 +1,376 @@
+[
+ {
+  "id": "9f27f605-3c5e-4db6-93aa-676d0acf4470",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\2. QB KAPLAN-3000 MCQs\\QSTN WITH ANS\\Equity Investments\\Reading 48 Equity Valuation- Concepts and Basic Tools - Answers.pdf",
+  "page_idx": 44,
+  "png": "scripts\\_kaplan108_png\\9f27f605-3c5e-4db6-93aa-676d0acf4470.png",
+  "topic": "Equity Investments",
+  "subtopic": "Reading 48 Equity Valuation- Concepts and Basic Tools",
+  "question_en": "All of the following factors affects the firm's P/E ratio EXCEPT:",
+  "option_a": "the expected interest rate on the bonds of the rm.",
+  "option_b": "the required rate of return.",
+  "option_c": "growth rates of dividends.",
+  "correct_answer": "A",
+  "explanation_en": "The factors that affect the P/E ratio are the same factors that affect the value of a firm in the infinite growth dividend discount model. The expected interest rate on the bonds is not a significant factor affecting the P/E ratio."
+ },
+ {
+  "id": "a9a89bf3-79b9-4dc2-bc2c-ca94ac584132",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\2. QB KAPLAN-3000 MCQs\\QSTN WITH ANS\\Equity Investments\\Reading 48 Equity Valuation- Concepts and Basic Tools - Answers.pdf",
+  "page_idx": 33,
+  "png": "scripts\\_kaplan108_png\\a9a89bf3-79b9-4dc2-bc2c-ca94ac584132.png",
+  "topic": "Equity Investments",
+  "subtopic": "Reading 48 Equity Valuation- Concepts and Basic Tools",
+  "question_en": "A stock has the following elements:\n\n- Last year's dividend = $1.\n- Next year's dividend is 10% higher.\n- The price will be $25 at year-end.\n- The risk-free rate is 5%.\n- The market risk premium is 5%.\n- The stock's beta is 1.5.\n\nThe stock's price is closest to:",
+  "option_a": "$20.20.",
+  "option_b": "$23.20.",
+  "option_c": "$23.50.",
+  "correct_answer": "B",
+  "explanation_en": "Cost of equity capital = 5% + 1.5(5%) = 12.5% P = (1.1 / 1.125) + (25 / 1.125) = $23.20. 0"
+ },
+ {
+  "id": "b34cc831-35ee-462f-9ff5-588c5014bf32",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\2. QB KAPLAN-3000 MCQs\\QSTN WITH ANS\\Equity Investments\\Reading 48 Equity Valuation- Concepts and Basic Tools - Answers.pdf",
+  "page_idx": 41,
+  "png": "scripts\\_kaplan108_png\\b34cc831-35ee-462f-9ff5-588c5014bf32.png",
+  "topic": "Equity Investments",
+  "subtopic": "Reading 48 Equity Valuation- Concepts and Basic Tools",
+  "question_en": "An analyst gathered the following data for the Parker Corp. for the year ended December 31, 2005:\n\n- EPS = $1.75\n- 2005 Dividends = $1.40\n- 2005 Beta = 1.17\n- Parker Long-term bond rate = 6.75%\n- Rate of return S&P = 12.00% 500\n\nThe firm has changed its dividend policy and now plans to pay out 60% of its earnings as dividends in the future. If the long-term growth rate in earnings and dividends is expected to be 5%, the appropriate price to earnings (P/E) ratio for Parker will be:",
+  "option_a": "12.31.",
+  "option_b": "21.54.",
+  "option_c": "11.61.",
+  "correct_answer": "C",
+  "explanation_en": "The required rate of return on equity for Parker will be 12.89% = 6.75% + 1.17(12.00% – 6.75%) and the firm pays 80% (1.40 / 1.75) of its earnings as dividends. Forward P/E ratio = 0.80 / (0.1289 - 0.0600) = 11.61 Where r = required rate of return on equity, g = growth rate in dividends (forever). n"
+ },
+ {
+  "id": "5e357349-d828-47db-924b-57c8871ce9fa",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\8. KAPLAN MOCK-1100 MCQs\\Mock Exam 6 - Answers.pdf",
+  "page_idx": 37,
+  "png": "scripts\\_kaplan108_png\\5e357349-d828-47db-924b-57c8871ce9fa.png",
+  "topic": "Financial Statement Analysis",
+  "subtopic": "Mock Exam 6",
+  "question_en": "An analyst prepared the following selected horizontal common-size balance sheet data for Spider Corporation:\n\n| | 20X5 | 20X6 | 20X7 |\n|---|---|---|---|\n| Current assets | 113.6 | 106.1 | 101.4 |\n| Current liabilities | 130.7 | 128.9 | 131.0 |\n\nIn the base year, Spider's current ratio was 1.5. Spider's current ratio as of December 31, 20X7, is closest to:",
+  "option_a": "0.77.",
+  "option_b": "1.16.",
+  "option_c": "1.29.",
+  "correct_answer": "B",
+  "explanation_en": "Because 20X7 current assets were 1.014 times base year current assets and 20X7 current liabilities were 1.31 times base year current liabilities, the 20X7 current ratio is (1.014 / 1.31)(1.5) = 1.161."
+ },
+ {
+  "id": "a233dedd-6332-4739-b630-6e71bc03a1e4",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\8. KAPLAN MOCK-1100 MCQs\\Mock Exam 6 - Answers.pdf",
+  "page_idx": 19,
+  "png": "scripts\\_kaplan108_png\\a233dedd-6332-4739-b630-6e71bc03a1e4.png",
+  "topic": "Corporate Issuers",
+  "subtopic": "Mock Exam 6",
+  "question_en": "Taking a private company public in the United States and at the same time raising capital for company growth would be best achieved through:",
+  "option_a": "an IPO.",
+  "option_b": "a SPAC.",
+  "option_c": "a direct listing.",
+  "correct_answer": "A",
+  "explanation_en": "In an IPO (initial public offering), typically shares are sold to raise equity for the company. With a SPAC (special acquisition company), a company is purchase by the SPAC. With a direct listing, existing shares are traded on an exchange but no additional shares are issued to raise capital."
+ },
+ {
+  "id": "c3d530dd-56d5-41bf-92f0-22a5f215f190",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\8. KAPLAN MOCK-1100 MCQs\\Mock Exam 6 - Answers.pdf",
+  "page_idx": 75,
+  "png": "scripts\\_kaplan108_png\\c3d530dd-56d5-41bf-92f0-22a5f215f190.png",
+  "topic": "Portfolio Management",
+  "subtopic": "Mock Exam 6",
+  "question_en": "James Franklin, CFA, has high risk tolerance and seeks high returns. Based on capital market theory, Franklin would most appropriately hold:",
+  "option_a": "free rate.",
+  "option_b": "a high risk biotech stock, as it will have high expected returns in equilibrium.",
+  "option_c": "the market portfolio as his only risky asset.",
+  "correct_answer": "C",
+  "explanation_en": "According to capital market theory, all investors will choose a combination of the market portfolio and borrowing or lending at the risk-free rate; that is, a portfolio on the CML. An investor with high risk tolerance will choose a position in the market portfolio, partially funded by borrowing at the risk-free rate."
+ },
+ {
+  "id": "c3d8fc5d-9f89-45ec-bcd9-6fa8fee73da7",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\8. KAPLAN MOCK-1100 MCQs\\Mock Exam 6 - Answers.pdf",
+  "page_idx": 84,
+  "png": "scripts\\_kaplan108_png\\c3d8fc5d-9f89-45ec-bcd9-6fa8fee73da7.png",
+  "topic": "Derivatives",
+  "subtopic": "Mock Exam 6",
+  "question_en": "The price of an interest rate swap is equal to:",
+  "option_a": "zero at initiation.",
+  "option_b": "its par swap rate.",
+  "option_c": "its value to the xed-rate payer.",
+  "correct_answer": "B",
+  "explanation_en": "The par swap rate, or fixed rate specified in the contract, is the price of an interest rate swap."
+ },
+ {
+  "id": "c826e42b-63ac-4d9f-9af7-3e0aa6f92fd2",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\8. KAPLAN MOCK-1100 MCQs\\Mock Exam 6 - Answers.pdf",
+  "page_idx": 38,
+  "png": "scripts\\_kaplan108_png\\c826e42b-63ac-4d9f-9af7-3e0aa6f92fd2.png",
+  "topic": "Ethics & Professional Standards",
+  "subtopic": "Mock Exam 6",
+  "question_en": "Sue Denny, CFA, manages a portfolio for a client. The client calls Denny and requests a trade that Denny believes is unsuitable according to the client's IPS. Denny determines that this trade would have a material impact on the risk characteristics of the client's overall portfolio. According to the Code and Standards, Denny's most appropriate action is to:",
+  "option_a": "follow her rm’s policies for obtaining client approval for this trade.",
+  "option_b": "open an unmanaged account in which the client may execute this trade. discuss with the client whether this trade indicates a need to update the",
+  "option_c": "IPS.",
+  "correct_answer": "C",
+  "explanation_en": "According to the guidance for Standard III(C) Suitability, an advisor who receives an unsolicited trade request that is unsuitable should discuss the trade with the client before carrying it out. If the trade would have a material effect on the client's portfolio, the advisor should discuss with the client whether the IPS needs to be updated (e.g., to reflect a change in the client's goals or risk tolerance). If the client does not modify the IPS but still insists on making the trade, the advisor may follow her firm's policies (e.g., the firm might allow the trade to be executed in a new, unmanaged account) but may need to evaluate whether to continue her advisory relationship with this client."
+ },
+ {
+  "id": "a402c30a-1e12-4aff-97ef-d6234a4ef8d1",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\2. QB KAPLAN-3000 MCQs\\QSTN WITH ANS\\Fixed income\\Reading 61 Curve-Based and Empirical Fixed-Income Risk Measures - Answers.pdf",
+  "page_idx": 11,
+  "png": "scripts\\_kaplan108_png\\a402c30a-1e12-4aff-97ef-d6234a4ef8d1.png",
+  "topic": "Fixed Income",
+  "subtopic": "Reading 61 Curve-Based and Empirical Fixed-Income Risk Measures",
+  "question_en": "Consider a bond with modified duration of 5.61 and convexity of 43.84. Which of the following is closest to the estimated percentage price change in the bond for a 75 basis point decrease in interest rates?",
+  "option_a": "4.12%.",
+  "option_b": "4.21%.",
+  "option_c": "4.33%.",
+  "correct_answer": "C",
+  "explanation_en": "The estimated percentage price change is equal to the duration effect plus the convexity effect. The formula is: [–duration × (ΔYTM)] + ½[convexity × (ΔYTM)2]. Therefore, the estimated percentage price change is: [–(5.61)(–0.0075)] + [(½)(43.84)(-0.0075)2] = 0.042075 + 0.001233 = 0.043308 = 4.33%."
+ },
+ {
+  "id": "263785f8-a434-443d-a09b-2673decde11b",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\2. QB KAPLAN-3000 MCQs\\QSTN WITH ANS\\Financial statement analysis\\Reading 39 Financial Analysis Techniques - Answers.pdf",
+  "page_idx": 54,
+  "png": "scripts\\_kaplan108_png\\263785f8-a434-443d-a09b-2673decde11b.png",
+  "topic": "Financial Statement Analysis",
+  "subtopic": "Reading 39 Financial Analysis Techniques",
+  "question_en": "Kellen Harris is a credit analyst with the First National Bank. Harris has been asked to evaluate Longhorn Supply Company's cash needs. Harris began by calculating Longhorn's turnover ratios for 2007. After a discussion with Longhorn's management, Harris decides to adjust the turnover ratios for 2008 as follows:\n\n| Item | 2007 Actual Turnover | Expected Increase / (Decrease) |\n|---|---|---|\n| Accounts receivable | 5.0 | 10% |\n| Fixed asset | 3.0 | 7% |\n| Accounts payable | 6.0 | (20%) |\n| Inventory | 4.0 | (5%) |\n| Equity | 5.5 | — |\n| Total asset | 2.3 | 8% |\n\nLonghorn's expected cash conversion cycle for 2008, based on the expected changes in turnover and assuming a 365 day year, is closest to:",
+  "option_a": "46 days.",
+  "option_b": "82 days.",
+  "option_c": "86 days.",
+  "correct_answer": "C",
+  "explanation_en": "2008 expected days of sales outstanding is 66 [365 / (5.0 × 1.1)], 2008 days of inventory on hand is 96 [365 / (4.0 × 0.95)], and 2008 days of payables is 76 [365 / (6.0 × 0.8)]. Expected cash conversion cycle is 86 days [66 days of sales outstanding + 96 days of inventory on hand – 76 days of payables]."
+ },
+ {
+  "id": "80039035-fb86-465b-a250-5f8dcf2f6542",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\2. QB KAPLAN-3000 MCQs\\QSTN WITH ANS\\Financial statement analysis\\Reading 39 Financial Analysis Techniques - Answers.pdf",
+  "page_idx": 46,
+  "png": "scripts\\_kaplan108_png\\80039035-fb86-465b-a250-5f8dcf2f6542.png",
+  "topic": "Financial Statement Analysis",
+  "subtopic": "Reading 39 Financial Analysis Techniques",
+  "question_en": "Given the following income statement and balance sheet for a company: Balance Sheet Assets Year 2003 Year 2004 Cash 500 450 Accounts Receivable 600 660 Inventory 500 550 Total CA 1300 1660 Plant, prop. equip 1000 1250 Total Assets 2600 2910 Liabilities Accounts Payable 500 550 Long term debt 700 1102 Total liabilities 1200 1652 Equity Common Stock 400 538 Retained Earnings 1000 720 Total Liabilities & Equity 2600 2,910 Income Statement Sales 3000 Cost of Goods Sold (1000) Gross Profit 2000 SG&A 500 Interest Expense 151 EBT 1349 Taxes (30%) 405 Net Income 944 What is the gross profit margin?",
+  "option_a": "0.331.",
+  "option_b": "2.018.",
+  "option_c": "3.018.",
+  "correct_answer": "C",
+  "explanation_en": "Current ratio = (CA / CL) = (1,660 / 550) = 3.018"
+ },
+ {
+  "id": "924d3864-9f0e-4d69-96db-353b62b8e38b",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\2. QB KAPLAN-3000 MCQs\\QSTN WITH ANS\\Financial statement analysis\\Reading 39 Financial Analysis Techniques - Answers.pdf",
+  "page_idx": 49,
+  "png": "scripts\\_kaplan108_png\\924d3864-9f0e-4d69-96db-353b62b8e38b.png",
+  "topic": "Financial Statement Analysis",
+  "subtopic": "Reading 39 Financial Analysis Techniques",
+  "question_en": "Ratio analysis is most useful for comparing companies:",
+  "option_a": "in dierent industries that use the same accounting standards.",
+  "option_b": "of dierent size in the same industry.",
+  "option_c": "that operate in multiple lines of business.",
+  "correct_answer": "B",
+  "explanation_en": "Ratio analysis is a useful way of comparing companies that are similar in operations but different in size. Ratios of companies that operate in different industries are often not directly comparable. For companies that operate in several industries, ratio analysis is limited by the difficulty of determining appropriate industry benchmarks."
+ },
+ {
+  "id": "1cf0d06f-50de-4519-9645-af5685f9187c",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\2. QB KAPLAN-3000 MCQs\\QSTN WITH ANS\\Quantitative Method\\Reading 3 Statistical Measures of Asset Returns - Answers.pdf",
+  "page_idx": 11,
+  "png": "scripts\\_kaplan108_png\\1cf0d06f-50de-4519-9645-af5685f9187c.png",
+  "topic": "Quantitative Methods",
+  "subtopic": "Reading 3 Statistical Measures of Asset Returns",
+  "question_en": "Given the following box-and-whisker plot:\n\n- Upper extreme: 14.4%\n- Upper quartile (Q3): 5.2%\n- Median: 3.1%\n- Lower quartile (Q1): 0.5%\n- Lower extreme: -3.7%\n\nThe interquartile range is:",
+  "option_a": "0.5% to 5.2%.",
+  "option_b": "3.1% to 5.2%.",
+  "option_c": "0.5% to 3.1%.",
+  "correct_answer": "A",
+  "explanation_en": "The interquartile range is from the first quartile (25th percentile) to the third quartile (75th percentile) and is represented as the box in a box-and-whisker plot. The horizontal line within the box represents the median (50th percentile).\n\nHere, the box spans from Q1 = 0.5% to Q3 = 5.2%, so the interquartile range is 0.5% to 5.2%."
+ },
+ {
+  "id": "81f437ba-9a80-43db-9b80-81f2e7c4708e",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\2. QB KAPLAN-3000 MCQs\\QSTN WITH ANS\\Fixed income\\Reading 59 Yield-Based Bond Duration Measures and Properties - Answers.pdf",
+  "page_idx": 9,
+  "png": "scripts\\_kaplan108_png\\81f437ba-9a80-43db-9b80-81f2e7c4708e.png",
+  "topic": "Fixed Income",
+  "subtopic": "Reading 59 Yield-Based Bond Duration Measures and Properties",
+  "question_en": "An investor finds that for a 1% increase in yield to maturity, a bond's price will decrease by 4.21% compared to a 4.45% increase in value for a 1% decline in YTM. If the bond is currently trading at par value, the bond's approximate modified duration is closest to:",
+  "option_a": "43.30.",
+  "option_b": "4.33.",
+  "option_c": "8.66.",
+  "correct_answer": "B",
+  "explanation_en": "Modified duration is a measure of a bond's sensitivity to changes in interest rates. Approximate modified duration = (V – V ) / [2V (change in required - + 0 yield)] where: V = estimated price if yield decreases by a given amount - V = estimated price if yield increases by a given amount + V = initial observed bond price 0 Thus, duration = (104.45 – 95.79)/(2 × 100 × 0.01) = 4.33. Remember that the change in interest rates must be in decimal form."
+ },
+ {
+  "id": "cefdb207-cc71-42a5-b482-6c5b2f1cf139",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\2. QB KAPLAN-3000 MCQs\\QSTN WITH ANS\\Fixed income\\Reading 57 The Term Structure of Interest Rates- Spot, Par, and Forward Curves - Answers.pdf",
+  "page_idx": 5,
+  "png": "scripts\\_kaplan108_png\\cefdb207-cc71-42a5-b482-6c5b2f1cf139.png",
+  "topic": "Fixed Income",
+  "subtopic": "Reading 57 The Term Structure of Interest Rates- Spot, Par, and Forward Curves",
+  "question_en": "Given the one-year spot rate S = 0.06 and the implied 1-year forward rates one, two, and 1 three years from now of: 1 1 = 0.062; 2 1 = 0.063; 3 1 = 0.065, what is the theoretical 4- y y y y y y year spot rate?",
+  "option_a": "6.25%.",
+  "option_b": "6.75%.",
+  "option_c": "6.00%.",
+  "correct_answer": "A",
+  "explanation_en": "S = [ (1.06) (1.062) (1.063) (1.065) ].25 – 1 = 6.25%. 4"
+ },
+ {
+  "id": "7393e5f7-70ad-49cf-b8b3-1e6365398bad",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\2. QB KAPLAN-3000 MCQs\\QSTN WITH ANS\\Corporate issuers\\Reading 25 Working Capital and Liquidity - Answers.pdf",
+  "page_idx": 6,
+  "png": "scripts\\_kaplan108_png\\7393e5f7-70ad-49cf-b8b3-1e6365398bad.png",
+  "topic": "Corporate Issuers",
+  "subtopic": "Reading 25 Working Capital and Liquidity",
+  "question_en": "Which of the following scenarios is most consistent with an aggressive approach to working capital management?",
+  "option_a": "A company nances working capital using short-term funds.",
+  "option_b": "A company nances working capital using long-term funds.",
+  "option_c": "A company nances working capital using equity instead of debt.",
+  "correct_answer": "A",
+  "explanation_en": "Companies with an aggressive approach to working capital management favor using cheaper, short-term financing to fund their working capital needs."
+ },
+ {
+  "id": "6c629a1b-b715-4e1e-802e-593e1b0cfbd1",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\8. KAPLAN MOCK-1100 MCQs\\Mock Exam 3 - Answers.pdf",
+  "page_idx": 71,
+  "png": "scripts\\_kaplan108_png\\6c629a1b-b715-4e1e-802e-593e1b0cfbd1.png",
+  "topic": "Ethics & Professional Standards",
+  "subtopic": "Mock Exam 3",
+  "question_en": "An investor who would only sell shares he owns for $58 or more, but would not buy the same shares for more than $53, is exhibiting:",
+  "option_a": "status quo bias.",
+  "option_b": "endowment bias.",
+  "option_c": "conservatism bias.",
+  "correct_answer": "B",
+  "explanation_en": "The tendency to value something already owned more than the same thing if it were not already owned is referred to as endowment bias."
+ },
+ {
+  "id": "1937cb1d-9448-4ed4-b9f7-5d3b5f6580cd",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\2. QB KAPLAN-3000 MCQs\\QSTN WITH ANS\\Quantitative Method\\Reading 2 The Time Value of Money in Finance - Answers.pdf",
+  "page_idx": 8,
+  "png": "scripts\\_kaplan108_png\\1937cb1d-9448-4ed4-b9f7-5d3b5f6580cd.png",
+  "topic": "Quantitative Methods",
+  "subtopic": "Reading 2 The Time Value of Money in Finance",
+  "question_en": "An investor looks at her monthly brokerage statement and notices that the yield to maturity on her 5-year corporate bond with a 4% annual coupon rate has gone from 4.2% last month to 3.8% this month. The statement will reflect a bond price that, over the last month, has:",
+  "option_a": "decreased.",
+  "option_b": "remained at.",
+  "option_c": "increased.",
+  "correct_answer": "C",
+  "explanation_en": "Bond prices and yields move in opposite directions, such that if the yield has dropped from 4.2% to 3.8%, it must be a case that the price of the bond has increased. A decrease in price would align with an increase in yield to maturity. If the price had remained flat, the yield would be unchanged."
+ },
+ {
+  "id": "c190879e-c0ab-4c7e-95e3-f2b35aefe2c0",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\2. QB KAPLAN-3000 MCQs\\QSTN WITH ANS\\Quantitative Method\\Reading 2 The Time Value of Money in Finance - Answers.pdf",
+  "page_idx": 17,
+  "png": "scripts\\_kaplan108_png\\c190879e-c0ab-4c7e-95e3-f2b35aefe2c0.png",
+  "topic": "Quantitative Methods",
+  "subtopic": "Reading 2 The Time Value of Money in Finance",
+  "question_en": "An investment product promises to pay a lump sum of $25,458 at the end of 9 years. If an investor feels this investment should produce a rate of return of 14%, compounded annually, the present value is closest to:",
+  "option_a": "$9,426.00.",
+  "option_b": "$7,618.00.",
+  "option_c": "$7,829.00.",
+  "correct_answer": "C",
+  "explanation_en": "25,458 / 1.149 = 7,828.54 Alternatively, N = 9; I/Y = 14; FV = -25,458; PMT = 0; CPT → PV = $7,828.54."
+ },
+ {
+  "id": "262d13fa-1c67-494f-a58f-fab9d3c257f9",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\2. QB KAPLAN-3000 MCQs\\QSTN WITH ANS\\Quantitative Method\\Reading 5 Portfolio Mathematics - Answers.pdf",
+  "page_idx": 0,
+  "png": "scripts\\_kaplan108_png\\262d13fa-1c67-494f-a58f-fab9d3c257f9.png",
+  "topic": "Quantitative Methods",
+  "subtopic": "Reading 5 Portfolio Mathematics",
+  "question_en": "For two random variables, P(X = 2, Y = 10) = 0.3, P(X = 6, Y = 2.5) = 0.4, and P(X = 10, Y = 0) = 0.3. Given that E(X) is 6 and E(Y) is 4, the covariance of X and Y is:",
+  "option_a": "-12.0.",
+  "option_b": "24.0.",
+  "option_c": "6.0.",
+  "correct_answer": "A",
+  "explanation_en": "The covariance is COV(XY) = ((0.3 × ((2 – 6) × (10 – 4))) + ((0.4 × ((6 – 6) × (2.5 – 4))) + (0.3 × ((10 – 6) × (0 – 4))) = –12."
+ },
+ {
+  "id": "bd0f3984-a8a4-432b-8d12-9b6e9328b1e5",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\2. QB KAPLAN-3000 MCQs\\QSTN WITH ANS\\Quantitative Method\\Reading 5 Portfolio Mathematics - Answers.pdf",
+  "page_idx": 11,
+  "png": "scripts\\_kaplan108_png\\bd0f3984-a8a4-432b-8d12-9b6e9328b1e5.png",
+  "topic": "Quantitative Methods",
+  "subtopic": "Reading 5 Portfolio Mathematics",
+  "question_en": "Use the following probability distribution to calculate the standard deviation for the portfolio. State of the Economy Probability Return on Portfolio Boom 0.30 15% Bust 0.70 3%",
+  "option_a": "5.5%.",
+  "option_b": "6.0%.",
+  "option_c": "6.5%.",
+  "correct_answer": "A",
+  "explanation_en": "[0.30 × (0.15 – 0.066)2 + 0.70 × (0.03 – 0.066)2]1/2 = 5.5%."
+ },
+ {
+  "id": "c2b6887d-d756-44ec-a8ec-fc8d184972fa",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\2. QB KAPLAN-3000 MCQs\\QSTN WITH ANS\\Quantitative Method\\Reading 5 Portfolio Mathematics - Answers.pdf",
+  "page_idx": 13,
+  "png": "scripts\\_kaplan108_png\\c2b6887d-d756-44ec-a8ec-fc8d184972fa.png",
+  "topic": "Quantitative Methods",
+  "subtopic": "Reading 5 Portfolio Mathematics",
+  "question_en": "Tully Advisers, Inc., has determined four possible economic scenarios and has projected the portfolio returns for two portfolios for their client under each scenario. Tully's economist has estimated the probability of each scenario, as shown in the table below. Given this information, what is the standard deviation of returns on portfolio A? Scenario Probability Return on Portfolio A Return on Portfolio B A 15% 18% 19% B 20% 17% 18% C 25% 11% 10% D 40% 7% 9%",
+  "option_a": "12.55%.",
+  "option_b": "12.75%.",
+  "option_c": "11.55%.",
+  "correct_answer": "C",
+  "explanation_en": "The expected return on Portfolio A is a probability-weighted average of 17%, 14%, 12%, and 8%. Expected return = (0.15)(0.17) + (0.20)(0.14) + (0.25)(0.12) + (0.40)(0.08) = 0.1155 or 11.55%. Scenario Probability Return on Portfolio A Portfolio × Weight A 15% 17% 15 × 17% B 20% 14% 20% × 14% C 25% 12% 25% × 12% D 40% 8% 40% × 8% Probability Weighted Average Return 11.55% ∑ Probability × Weight"
+ }
+]

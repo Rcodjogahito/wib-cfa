@@ -1,0 +1,161 @@
+[
+ {
+  "id": "b97f844d-e229-46c0-ad8f-52bfd7505768",
+  "verdict": "formatting_missing",
+  "field": "question_en",
+  "new_value": "James Investments is calculating an equally weighted index on a four stock portfolio.\n\n| Stock | Number of Shares | Initial Cost | Current Cost |\n|---|---|---|---|\n| W | 100 | 5.00 | 5.00 |\n| X | 1,000 | 10.00 | 12.50 |\n| Y | 500 | 7.50 | 10.00 |\n| Z | 1500 | 5.00 | 8.00 |\n\nIf the initial index value is 100, the current index is closest to:",
+  "evidence": "PDF page (Q#4 of 49) confirms correct_answer B and options are right; the stem's table is squashed into a run-on sentence in the DB record."
+ },
+ {
+  "id": "2a1cbce6-39db-45ac-8ef2-80555740e07c",
+  "verdict": "formatting_missing",
+  "field": "explanation_en",
+  "new_value": "Each of the remaining cash flows on the bond is discounted at the annual rate of 4.5%.\n\n| Period | Payment | Discount | PV |\n|---|---|---|---|\n| 1 | $1,000 × 7% = $70 | (1.045)^1 | $66.99 |\n| 2 | $1,000 × 7% = $70 | (1.045)^2 | $64.10 |\n| 3 | $1,000 × 7% = $70 | (1.045)^3 | $61.34 |\n| 3 | $1,000 principal | (1.045)^3 | $876.30 |\n| Total Present Value of Cash Flows | | | $1,068.73 |\n\nThe present value can also be determined with a financial calculator. N = 3, I = 4.5%, PMT = $1,000 × 7%, FV = $1,000. Solve for PV = $1,068.724.",
+  "evidence": "PDF page (Q#20 of 50) confirms correct_answer B and options match; explanation's discounting table is squashed into a run-on sentence."
+ },
+ {
+  "id": "0b933829-5e86-4fec-9a51-80666b1a7bfc",
+  "verdict": "formatting_missing",
+  "field": "question_en",
+  "new_value": "Wells Incorporated reported the following common size data for the year ended December 31, 20X7:\n\n**Income Statement**\n\n| | % |\n|---|---|\n| Sales | 100.0 |\n| Cost of goods sold | 58.2 |\n| Operating expenses | 30.2 |\n| Interest expense | 0.7 |\n| Income tax | 5.7 |\n| Net income | 5.2 |\n\n**Balance sheet**\n\n| | % | | % |\n|---|---|---|---|\n| Cash | 4.8 | Accounts payable | 15.0 |\n| Accounts receivable | 14.9 | Accrued liabilities | 13.8 |\n| Inventory | 49.4 | Long-term debt | 23.2 |\n| Net fixed assets | 30.9 | Common equity | 48.0 |\n| Total assets | 100.00 | Total liabilities & equity | 100.0 |\n\nFor 20X6, Wells reported sales of $183,100,000 and for 20X7, sales of $215,600,000. At the end of 20X6, Wells' total assets were $75,900,000 and common equity was $37,800,000. At the end of 20X7, total assets were $95,300,000. Calculate Wells' current ratio and return on equity ratio for 20X7.\n\n**Current ratio** | **Return on equity**",
+  "evidence": "PDF page confirms correct_answer B and options match; the two common-size tables (income statement, balance sheet) are squashed into a run-on sentence in the DB record."
+ },
+ {
+  "id": "23ac8eb1-1000-4ea8-a1f3-b3f32bcdd7dd",
+  "verdict": "formatting_missing",
+  "field": "question_en",
+  "new_value": "A firm's financial statements reflect the following:\n\n| | |\n|---|---|\n| Current liabilities | $4,000,000 |\n| Cash | $400,000 |\n| Inventory | $1,200,000 |\n| Accounts receivable | $800,000 |\n| Short-term investments | $2,000,000 |\n| Long-term investments | $800,000 |\n| Accounts payable | $2,500,000 |\n\nWhat are the firm's current ratio, quick ratio, and cash ratio?\n\n**Current Ratio** | **Quick Ratio** | **Cash Ratio**",
+  "evidence": "PDF page (Q#44 of 90) confirms correct_answer A and options/explanation match; the financial statement table is squashed into a run-on sentence."
+ },
+ {
+  "id": "51e0a76f-0235-4b0c-b3cc-102f0bd2fc10",
+  "verdict": "ok",
+  "evidence": "PDF page (Q#56 of 90) confirms correct_answer B, options, and explanation all match; question_en already uses a proper markdown bullet list for the table data, no fix needed."
+ },
+ {
+  "id": "fa5555fc-ddce-4d58-a9db-c976f083db88",
+  "verdict": "formatting_missing",
+  "field": "question_en",
+  "new_value": "Selected financial information gathered from the Matador Corporation follows:\n\n| | 2007 | 2006 | 2005 |\n|---|---|---|---|\n| Average debt | $792,000 | $800,000 | $820,000 |\n| Average equity | $215,000 | $294,000 | $364,000 |\n| Return on assets | 5.9% | 6.6% | 7.2% |\n| Quick ratio | 0.3 | 0.5 | 0.6 |\n| Sales | $1,650,000 | $1,452,000 | $1,304,000 |\n| Cost of goods sold | $1,345,000 | $1,176,000 | $1,043,000 |\n\nUsing only the data presented, which of the following statements is most correct?",
+  "evidence": "PDF page confirms correct_answer C and options/explanation match verbatim; the 3-year comparative table is squashed into a run-on sentence."
+ },
+ {
+  "id": "3986cfeb-8f6c-4473-810c-f4f4dc665e53",
+  "verdict": "formatting_missing",
+  "field": "question_en",
+  "new_value": "Consider the asset-backed security (ABS) structure in the table below, including the various tranches and collateral. If the market reference rate (MRR) is 3%, determine whether credit risk is fully mitigated by this structure.\n\n| Tranche Name | Face Value ($ mil) | Interest Rate |\n|---|---|---|\n| Tranche A senior notes | $120 | MRR + 0.25% |\n| Tranche B subordinated notes | $20 | MRR + 1.25% |\n| Tranche C equity tranche | $10 | – |\n| Collateral | $150 | MRR + 0.75% |",
+  "evidence": "PDF page (Q#6 of 14) confirms correct_answer B and options match; the ABS structure table is squashed into a run-on sentence."
+ },
+ {
+  "id": "3986cfeb-8f6c-4473-810c-f4f4dc665e53",
+  "verdict": "formatting_missing",
+  "field": "explanation_en",
+  "new_value": "The excess spread is positive, and therefore there is a built-in safety margin that protects the ABS from credit losses.\n\n| Tranche Name | Face Value ($ mil) | Interest Rate | Interest (paid)/earned |\n|---|---|---|---|\n| Tranche A senior notes | $120 | MRR + 0.25% | ($3.90) |\n| Tranche B subordinated notes | $20 | MRR + 1.25% | ($0.85) |\n| Tranche C equity tranche | $10 | – | |\n| Collateral | $150 | MRR + 0.75% | $5.63 |\n| MRR = 3% | | | $0.88 |\n| | | | Excess spread |",
+  "evidence": "Same page; the excess-spread breakdown table in the explanation is also squashed into a run-on sentence."
+ },
+ {
+  "id": "b2c6f313-59ea-4496-a46d-aebfd724d4eb",
+  "verdict": "formatting_missing",
+  "field": "question_en",
+  "new_value": "Based on the table below illustrating an asset-backed security (ABS) structure, what is the value of the equity tranche (in $ millions)?\n\n| Tranche Name | Face Value ($ mil) | Interest Rate |\n|---|---|---|\n| Tranche A senior notes | $120 | SOFR + 0.25% |\n| Tranche B subordinated notes | $20 | SOFR + 1.25% |\n| Tranche C equity tranche | $10 | Variable |\n| Total | $150 | |",
+  "evidence": "PDF page (Q#10 of 14) confirms correct_answer C and options/explanation match; the ABS structure table is squashed into a run-on sentence."
+ },
+ {
+  "id": "1f5104a7-129d-40eb-a78d-928a8e26c748",
+  "verdict": "formatting_missing",
+  "field": "question_en",
+  "new_value": "The respective arithmetic mean and geometric mean returns of the following series of stock market returns are:\n\n| Year 1 | 14% |\n|---|---|\n| Year 2 | 6% |\n| Year 3 | −5% |\n| Year 4 | 20% |",
+  "evidence": "PDF page (Q#35 of 61) confirms correct_answer C and options/explanation match; the year-return table is squashed into a run-on sentence."
+ },
+ {
+  "id": "62cfe44e-14e0-47e9-88f3-b41b10e75a08",
+  "verdict": "formatting_missing",
+  "field": "question_en",
+  "new_value": "Returns for a portfolio over the last four years are shown below. Treating these returns as a sample, what is their coefficient of variation (CV)?\n\n| Year | Return |\n|---|---|\n| 1 | 17.0% |\n| 2 | 12.2% |\n| 3 | 3.9% |\n| 4 | –8.4% |",
+  "evidence": "PDF page (Q#54 of 61) confirms correct_answer A and options match; the returns table is squashed into a run-on sentence."
+ },
+ {
+  "id": "62cfe44e-14e0-47e9-88f3-b41b10e75a08",
+  "verdict": "formatting_missing",
+  "field": "explanation_en",
+  "new_value": "The coefficient of variation is equal to the standard deviation of returns divided by the mean return.\n\nMean return = (17.0% + 12.2% + 3.9% – 8.4%) / 4 = 6.175%\n\n| Year | Return | (R – 6.175%)^2 |\n|---|---|---|\n| 1 | 17.0% | 117.18 |\n| 2 | 12.2% | 36.30 |\n| 3 | 3.9% | 5.18 |\n| 4 | –8.4% | 212.43 |\n| Sum | | 371.09 |\n\nSample standard deviation = [371.09 / (4 – 1)]^0.5 = 11.12%\nCoefficient of variation = 11.12% / 6.175% = 1.80",
+  "evidence": "Same page; the deviation-squared calculation table in the explanation is also squashed into a run-on sentence."
+ },
+ {
+  "id": "82802dce-7a26-475d-9e81-7f17a9d0fc49",
+  "verdict": "formatting_missing",
+  "field": "question_en",
+  "new_value": "The annual returns on 5 portfolio investments for the last year are shown in the following table. What is the return on the portfolio and the geometric mean of the returns on the portfolio investments?\n\n| Investment | Invested Amount | Return (%) |\n|---|---|---|\n| A | 10,000 | 12 |\n| B | 10,000 | 14 |\n| C | 10,000 | 9 |\n| D | 10,000 | 13 |\n| E | 10,000 | 7 |",
+  "evidence": "PDF page confirms correct_answer B and options/explanation match; the investment table is squashed into a run-on sentence."
+ },
+ {
+  "id": "ac874475-23b0-40bd-b554-b3ce77738773",
+  "verdict": "formatting_missing",
+  "field": "question_en",
+  "new_value": "Given the following annual returns, what are the geometric and arithmetic mean returns, respectively?\n\n| 2002 | 2003 | 2004 | 2005 | 2006 |\n|---|---|---|---|---|\n| 15% | 2% | 5% | -7% | 0% |",
+  "evidence": "PDF page (Q#22 of 61) confirms correct_answer B and options/explanation match; the year-return table is squashed into a run-on sentence."
+ },
+ {
+  "id": "b160f9f5-e9e3-4b67-b15e-5d378aefe5fe",
+  "verdict": "formatting_missing",
+  "field": "explanation_en",
+  "new_value": "Here we need to multiply the returns by the proportion that each stock represents in the portfolio then sum.\n\n| Stock | Return | Invested | Proportion of Portfolio | Return × Proportion |\n|---|---|---|---|---|\n| P | 20% | $7,000 | 7/12 | 20% × 7/12 |\n| Q | 10% | $5,000 | 5/12 | 10% × 5/12 |\n| Total | | $12,000 | | 15.83% |",
+  "evidence": "PDF page (Q#33 of 61) confirms correct_answer A and options match and question stem has no table (prose only, needs no fix); the explanation's weighting table is squashed into a run-on sentence."
+ },
+ {
+  "id": "d864af14-fde3-4179-ad5b-a0a7f9d229a2",
+  "verdict": "formatting_missing",
+  "field": "question_en",
+  "new_value": "Assume that the following returns are a sample of annual returns for firms in the clothing industry.\n\n| Firm 1 | Firm 2 | Firm 3 | Firm 4 | Firm 5 |\n|---|---|---|---|---|\n| 15% | 2% | 5% | (7%) | 0% |\n\nThe sample standard deviation is closest to:",
+  "evidence": "PDF page (Q#10 of 61) confirms correct_answer C and options/explanation match; the firm-return table is squashed into a run-on sentence."
+ },
+ {
+  "id": "22c198f7-12b9-4c15-8c54-264be2d145c2",
+  "verdict": "formatting_missing",
+  "field": "explanation_en",
+  "new_value": "We need to calculate of probability weighted average payoff.\n\nSince the probability of the coin landing on its edge is 0.02, the probability of each of the other two events is 0.49. The expected payoff is: (0.02 × $50) + (0.49 × $1) + (0.49 × $2) = $2.47.\n\n| Outcome | Probability | Payoff | Probability × Payoff |\n|---|---|---|---|\n| Edge | 2 / 100 = 2% | $50 | 2% × $50 |\n| Heads | 49% | $1 | 49% × $1 |\n| Tails | 49% | $2 | 49% × $2 |\n| Expected Payoff = ∑ Probability × Payoff | | | $2.47 |",
+  "evidence": "PDF page (Q#6 of 15) confirms correct_answer A and options match, question stem is prose only (no fix needed); explanation's payoff table is squashed into a run-on sentence."
+ },
+ {
+  "id": "4157b38d-18b4-4407-b0e6-7eadb36624ce",
+  "verdict": "formatting_missing",
+  "field": "question_en",
+  "new_value": "Tully Advisers, Inc., has determined four possible economic scenarios and has projected the portfolio returns for two portfolios for their client under each scenario. Tully's economist has estimated the probability of each scenario as shown in the table below. Given this information, what is the expected return on Portfolio A?\n\n| Scenario | Probability | Return on Portfolio A | Return on Portfolio B |\n|---|---|---|---|\n| A | 15% | 17% | 19% |\n| B | 20% | 14% | 18% |\n| C | 25% | 12% | 10% |\n| D | 40% | 8% | 9% |",
+  "evidence": "PDF page (Q#11 of 15) confirms correct_answer C and options match; the scenario table is squashed into a run-on sentence."
+ },
+ {
+  "id": "4157b38d-18b4-4407-b0e6-7eadb36624ce",
+  "verdict": "formatting_missing",
+  "field": "explanation_en",
+  "new_value": "The expected return on Portfolio A is a probability-weighted average of 17%, 14%, 12%, and 8%. Expected return = (0.15)(0.17) + (0.20)(0.14) + (0.25)(0.12) + (0.40)(0.08) = 0.1155 or 11.55%.\n\n| Scenario | Probability | Return on Portfolio A | Portfolio × Weight |\n|---|---|---|---|\n| A | 15% | 17% | 15 × 17% |\n| B | 20% | 14% | 20% × 14% |\n| C | 25% | 12% | 25% × 12% |\n| D | 40% | 8% | 40% × 8% |\n| Probability Weighted Average Return = ∑ Probability × Weight | | | 11.55% |",
+  "evidence": "Same page; the weighting calculation table in the explanation is also squashed into a run-on sentence."
+ },
+ {
+  "id": "55a49e6e-5871-4b65-a839-a55726e4bc9f",
+  "verdict": "formatting_missing",
+  "field": "explanation_en",
+  "new_value": "| State of the Economy (Unconditional Probability) | Conditional Probability | Joint Probability | EPS | Joint Probability × EPS |\n|---|---|---|---|---|\n| GOOD 60% | 70% | 60% × 70% = 42% | $5.00 | 42% × $5.00 = $2.10 |\n| GOOD 60% | 30% | 60% × 30% = 18% | $3.50 | 18% × $3.50 = $0.63 |\n| BAD 40% | 80% | 40% × 80% = 32% | $1.50 | 32% × $1.50 = $0.48 |\n| BAD 40% | 20% | 40% × 20% = 8% | $1.00 | 8% × $1.00 = $0.08 |\n| Expected EPS = ∑ Joint Probability × EPS | | | | $3.29 |",
+  "evidence": "PDF page (Q#1 of 15) confirms correct_answer A and options match, question stem is prose only (no fix needed); explanation's joint-probability table is squashed into a run-on sentence."
+ },
+ {
+  "id": "8ec4df3e-d6a5-42e2-a166-c8edb1981ac8",
+  "verdict": "formatting_missing",
+  "field": "explanation_en",
+  "new_value": "The calculation to derive the Macaulay duration is shown here:\n\n| Cash Flow | Present Value | Weighting |\n|---|---|---|\n| 6 | 6 / 1.07 = 5.6075 | 5.6075 / 96.6128 = 0.0580 |\n| 6 | 6 / 1.07^2 = 5.2406 | 5.2406 / 96.6128 = 0.0542 |\n| 6 | 6 / 1.07^3 = 4.8978 | 4.8978 / 96.6128 = 0.0507 |\n| 106 | 106 / 1.07^4 = 80.8669 | 80.8669 / 96.6128 = 0.8370 |\n| | Total present value = 96.6128 | |\n\nMacaulay duration = 0.0580 (1) + 0.0542 (2) + 0.0507 (3) + 0.8370 (4) = 3.67 years.",
+  "evidence": "PDF page (Q#17 of 21) confirms correct_answer A and options match, question stem is prose only (no fix needed); explanation's duration table is squashed into a run-on sentence."
+ },
+ {
+  "id": "4e8046d5-0353-4b30-97c0-7edf67585681",
+  "verdict": "formatting_missing",
+  "field": "question_en",
+  "new_value": "Gator Sarl (Gator) purchased some PP&E at the start of the period costing €21,000 with a three-year useful economic life and no residual value. Gator uses straight-line depreciation in its accounts, but the tax authorities use double declining balance. The following balances are given for carrying value and the value of the tax base over the asset's life:\n\n| | Year 1 (€) | Year 2 (€) | Year 3 (€) |\n|---|---|---|---|\n| Carrying value | 14,000 | 7,000 | 0 |\n| Tax base | 7,000 | 2,333 | 0 |\n\nAssuming a statutory tax rate of 30%, which of the following is closest to the DTL reported in Gator's balance sheet at the end of Year 2?",
+  "evidence": "PDF page (Q#9 of 32) confirms correct_answer B and options/explanation match; the carrying-value/tax-base table is squashed into a run-on sentence."
+ },
+ {
+  "id": "e61a7788-f025-4be8-b344-341f75bbdb21",
+  "verdict": "formatting_missing",
+  "field": "question_en",
+  "new_value": "Jequa is a Japanese company with the following selected financial information (¥ billions):\n\n| | ¥ billions |\n|---|---|\n| Net income from continuing operations | 503 |\n| Depreciation & amortization | 256 |\n| Capital expenditures | 140 |\n| Cash flow from operations | 361 |\n| Dividends | 72 |\n\nJequa's funds from operations (FFO) is closest to:",
+  "evidence": "PDF page (Q#1 of 17) confirms correct_answer A and options/explanation match; the financial data table is squashed into a run-on sentence."
+ }
+]

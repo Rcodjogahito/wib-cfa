@@ -1,0 +1,342 @@
+[
+ {
+  "id": "b97f844d-e229-46c0-ad8f-52bfd7505768",
+  "reasons": [
+   "table_format_flag"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\2. QB KAPLAN-3000 MCQs\\QSTN WITH ANS\\Equity Investments\\Reading 42 Security Market Indexes - Answers.pdf",
+  "page_idx": 1,
+  "png": "scripts\\_kaplan108_png\\b97f844d-e229-46c0-ad8f-52bfd7505768.png",
+  "topic": "Equity Investments",
+  "subtopic": "Reading 42 Security Market Indexes",
+  "question_en": "James Investments is calculating an equally weighted index on a four stock portfolio. Stock Number of Shares Initial Cost Current Cost W 100 5.00 5.00 X 1,000 10.00 12.50 Y 500 7.50 10.00 Z 1500 5.00 8.00 If the initial index value is 100, the current index is closest to:",
+  "option_a": "142.6.",
+  "option_b": "129.5.",
+  "option_c": "137.9.",
+  "correct_answer": "B",
+  "explanation_en": "First calculate the return relatives and then find the mean of the relatives. The number of shares is irrelevant in this question. 5/5 = 1 12.5/10 = 1.25 10/7.50 = 1.33 8/5 = 1.60 (1 + 1.25 + 1.33 + 1.60) / 4 = 1.295 100 × 1.295 = 129.5"
+ },
+ {
+  "id": "2a1cbce6-39db-45ac-8ef2-80555740e07c",
+  "reasons": [
+   "table_format_flag"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\2. QB KAPLAN-3000 MCQs\\QSTN WITH ANS\\Fixed income\\Reading 54 Fixed-Income Bond Valuation- Prices and Yields - Answers.pdf",
+  "page_idx": 9,
+  "png": "scripts\\_kaplan108_png\\2a1cbce6-39db-45ac-8ef2-80555740e07c.png",
+  "topic": "Fixed Income",
+  "subtopic": "Reading 54 Fixed-Income Bond Valuation- Prices and Yields",
+  "question_en": "Interest rates have fallen over the seven years since a $1,000 par, 10-year bond was issued with a coupon of 7%. What is the present value of this bond if the required rate of return is currently four and one-half percent? (For simplicity, assume annual payments.)",
+  "option_a": "$1,052.17.",
+  "option_b": "$1,068.72.",
+  "option_c": "$1,044.33.",
+  "correct_answer": "B",
+  "explanation_en": "Each of the remaining cash flows on the bond is discounted at the annual rate of 4.5%. Period Payment Discount PV 1 $1,000 × 7% = $70 (1.045) 1 $ 66.99 2 $1,000 × 7% = $70 (1.045) 2 $ 64.10 3 $1,000 × 7% = $70 (1.045) $ 61.34 3 3 $1,000 principal (1.045) 3 $ 876.30 Total Present Value of Cash Flows $1,068.73 The present value can also be determined with a financial calculator. N = 3, I = 4.5%, PMT = $1,000 × 7%, FV = $1,000. Solve for PV = $1,068.724."
+ },
+ {
+  "id": "0b933829-5e86-4fec-9a51-80666b1a7bfc",
+  "reasons": [
+   "table_format_flag"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\2. QB KAPLAN-3000 MCQs\\QSTN WITH ANS\\Financial statement analysis\\Reading 39 Financial Analysis Techniques - Answers.pdf",
+  "page_idx": 14,
+  "png": "scripts\\_kaplan108_png\\0b933829-5e86-4fec-9a51-80666b1a7bfc.png",
+  "topic": "Financial Statement Analysis",
+  "subtopic": "Reading 39 Financial Analysis Techniques",
+  "question_en": "Wells Incorporated reported the following common size data for the year ended December 31, 20X7: Income Statement % Sales 100.0 Cost of goods sold 58.2 Operating expenses 30.2 Interest expense 0.7 Income tax 5.7 Net income 5.2 Balance sheet % % Cash 4.8 Accounts payable 15.0 Accounts receivable 14.9 Accrued liabilities 13.8 Inventory 49.4 Long-term debt 23.2 Net fixed assets 30.9 Common equity 48.0 Total assets 100.00 Total liabilities & equity 100.0 For 20X6, Wells reported sales of $183,100,000 and for 20X7, sales of $215,600,000. At the end of 20X6, Wells' total assets were $75,900,000 and common equity was $37,800,000. At the end of 20X7, total assets were $95,300,000. Calculate Wells' current ratio and return on equity ratio for 20X7. Current ratio Return on equity",
+  "option_a": "2.4 24.5%",
+  "option_b": "2.4 26.8%",
+  "option_c": "4.6 25.2%",
+  "correct_answer": "B",
+  "explanation_en": "The current ratio is equal to 2.4 [(4.8% cash + 14.9% accounts receivable + 49.4% inventory) / (15.0% accounts payable + 13.8% accrued liabilities)]. This ratio can be calculated from the common size balance sheet because the percentages are all on the same base amount (total). Return on equity is equal to net income divided by average total equity. Since this ratio mixes an income statement item and a balance sheet item, it is necessary to convert the common-size inputs to dollars. Net income is $11,211,200 ($215,600,000 × 5.2%) and average equity is $41,772,000 [($95,300,000 × 48.0%) + $37,800,000] / 2. Thus, 2007 ROE is 26.8% ($11,211,200 net income / $41,772,000 average equity)."
+ },
+ {
+  "id": "23ac8eb1-1000-4ea8-a1f3-b3f32bcdd7dd",
+  "reasons": [
+   "table_format_flag"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\2. QB KAPLAN-3000 MCQs\\QSTN WITH ANS\\Financial statement analysis\\Reading 39 Financial Analysis Techniques - Answers.pdf",
+  "page_idx": 35,
+  "png": "scripts\\_kaplan108_png\\23ac8eb1-1000-4ea8-a1f3-b3f32bcdd7dd.png",
+  "topic": "Financial Statement Analysis",
+  "subtopic": "Reading 39 Financial Analysis Techniques",
+  "question_en": "A firm's financial statements reflect the following: Current liabilities $4,000,000 Cash $400,000 Inventory $1,200,000 Accounts receivable $800,000 Short-term investments $2,000,000 Long-term investments $800,000 Accounts payable $2,500,000 What are the firm's current ratio, quick ratio, and cash ratio? Current Ratio Quick Ratio Cash Ratio",
+  "option_a": "1.1 0.8 0.6",
+  "option_b": "0.8 0.6 1.1",
+  "option_c": "1.1 0.6 0.8",
+  "correct_answer": "A",
+  "explanation_en": "Current ratio = (0.4 + 2.0 + 0.8 + 1.2) / 4.0 = 1.1. Quick ratio = (0.4 + 2.0 + 0.8) / 4.0 = 0.8. Cash ratio = (0.4 + 2.0) / 4.0 = 0.6."
+ },
+ {
+  "id": "51e0a76f-0235-4b0c-b3cc-102f0bd2fc10",
+  "reasons": [
+   "table_format_flag"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\2. QB KAPLAN-3000 MCQs\\QSTN WITH ANS\\Financial statement analysis\\Reading 39 Financial Analysis Techniques - Answers.pdf",
+  "page_idx": 42,
+  "png": "scripts\\_kaplan108_png\\51e0a76f-0235-4b0c-b3cc-102f0bd2fc10.png",
+  "topic": "Financial Statement Analysis",
+  "subtopic": "Reading 39 Financial Analysis Techniques",
+  "question_en": "Johnson Corp. had the following financial results for the fiscal 2004 year:\n\n- Current ratio: 2.00\n- Quick ratio: 1.25\n- Current liabilities: $100,000\n- Inventory turnover: 12\n- Gross profit %: 25\n\nThe only current assets are cash, accounts receivable, and inventory. The balance in these accounts has remained constant throughout the year. Johnson's net sales for 2004 were:",
+  "option_a": "$300,000.",
+  "option_b": "$1,200,000.",
+  "option_c": "$900,000.",
+  "correct_answer": "B",
+  "explanation_en": "The 25% GP indicates that the cost of goods sold is 75% of sales. The inventory is derived from the difference between current ratio and the quick ratio. The current ratio indicates that the current assets are $200,000 and the quick assets are $125,000. The difference represents the inventory of $75,000. The inventory turnover is used to obtain cost of goods sold of $900,000. The cost of goods sold is 75% of sales, indicating that sales are $1,200,000."
+ },
+ {
+  "id": "fa5555fc-ddce-4d58-a9db-c976f083db88",
+  "reasons": [
+   "table_format_flag"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\2. QB KAPLAN-3000 MCQs\\QSTN WITH ANS\\Financial statement analysis\\Reading 39 Financial Analysis Techniques - Answers.pdf",
+  "page_idx": 16,
+  "png": "scripts\\_kaplan108_png\\fa5555fc-ddce-4d58-a9db-c976f083db88.png",
+  "topic": "Financial Statement Analysis",
+  "subtopic": "Reading 39 Financial Analysis Techniques",
+  "question_en": "Selected financial information gathered from the Matador Corporation follows: 2007 2006 2005 Average debt $792,000 $800,000 $820,000 Average equity $215,000 $294,000 $364,000 Return on assets 5.9% 6.6% 7.2% Quick ratio 0.3 0.5 0.6 Sales $1,650,000 $1,452,000 $1,304,000 Cost of goods sold $1,345,000 $1,176,000 $1,043,000 Using only the data presented, which of the following statements is most correct?",
+  "option_a": "Gross prot margin has improved.",
+  "option_b": "Leverage has declined.",
+  "option_c": "Return on equity has improved.",
+  "correct_answer": "C",
+  "explanation_en": "Leverage increased as measured by the debt-to-equity ratio from 2.25 in 2005 to 3.68 in 2007. Gross profit margin declined from 20.0% in 2005 to 18.5% in 2007. Return on equity has improved since 2005. One measure of ROE is ROA × financial leverage. Financial leverage (assets / equity) can be derived by adding 1 to the debt-to-equity ratio. In 2005, ROE was 23.4% [7.2% ROA × (1 + 2.25 debt-to-equity)]. In 2007, ROE was 27.6% [5.9% ROA × (1 + 3.68 debt-to-equity)]."
+ },
+ {
+  "id": "3986cfeb-8f6c-4473-810c-f4f4dc665e53",
+  "reasons": [
+   "table_format_flag"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\2. QB KAPLAN-3000 MCQs\\QSTN WITH ANS\\Fixed income\\Reading 66 Asset-Backed Security (ABS) Instrument and Market Features - Answers.pdf",
+  "page_idx": 2,
+  "png": "scripts\\_kaplan108_png\\3986cfeb-8f6c-4473-810c-f4f4dc665e53.png",
+  "topic": "Fixed Income",
+  "subtopic": "Reading 66 Asset-Backed Security (ABS) Instrument and Market Features",
+  "question_en": "Consider the asset-backed security (ABS) structure in the table below, including the various tranches and collateral. If the market reference rate (MRR) is 3%, determine whether credit risk is fully mitigated by this structure. Tranche Name Face Value ($ mil) Interest Rate Tranche A senior notes $120 MRR + 0.25% Tranche B subordinated notes $20 MRR + 1.25% Tranche C equity tranche $10 – Collateral $150 MRR + 0.75%",
+  "option_a": "Yes, because the excess spread is zero.",
+  "option_b": "Yes, because the excess spread is positive.",
+  "option_c": "No, because the excess spread is negative.",
+  "correct_answer": "B",
+  "explanation_en": "The excess spread is positive, and therefore there is a built-in safety margin that protects the ABS from credit losses. Face Value ($ Interest Interest Tranche Name mil) Rate (paid)/earned Tranche A senior notes $120 MRR + 0.25% ($3.90) Tranche B subordinated $20 MRR + 1.25% ($0.85) notes Tranche C equity tranche $10 – Collateral $150 MRR + 0.75% $5.63 MRR = 3% $0.88 Excess spread"
+ },
+ {
+  "id": "b2c6f313-59ea-4496-a46d-aebfd724d4eb",
+  "reasons": [
+   "table_format_flag"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\2. QB KAPLAN-3000 MCQs\\QSTN WITH ANS\\Fixed income\\Reading 66 Asset-Backed Security (ABS) Instrument and Market Features - Answers.pdf",
+  "page_idx": 4,
+  "png": "scripts\\_kaplan108_png\\b2c6f313-59ea-4496-a46d-aebfd724d4eb.png",
+  "topic": "Fixed Income",
+  "subtopic": "Reading 66 Asset-Backed Security (ABS) Instrument and Market Features",
+  "question_en": "Based on the table below illustrating an asset-backed security (ABS) structure, what is the value of the equity tranche (in $ millions)? Tranche Name Face Value ($ mil) Interest Rate Tranche A senior notes $120 SOFR + 0.25% Tranche B subordinated notes $20 SOFR + 1.25% Tranche C equity tranche $10 Variable Total $150",
+  "option_a": "30.",
+  "option_b": "0.",
+  "option_c": "10.",
+  "correct_answer": "C",
+  "explanation_en": "The most subordinated / least senior tranche in the ABS structure is typically called the equity tranche. All losses up to $10 million will be absorbed by this tranche."
+ },
+ {
+  "id": "1f5104a7-129d-40eb-a78d-928a8e26c748",
+  "reasons": [
+   "table_format_flag"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\2. QB KAPLAN-3000 MCQs\\QSTN WITH ANS\\Quantitative Method\\Reading 3 Statistical Measures of Asset Returns - Answers.pdf",
+  "page_idx": 18,
+  "png": "scripts\\_kaplan108_png\\1f5104a7-129d-40eb-a78d-928a8e26c748.png",
+  "topic": "Quantitative Methods",
+  "subtopic": "Reading 3 Statistical Measures of Asset Returns",
+  "question_en": "The respective arithmetic mean and geometric mean returns of the following series of stock market returns are: Year 1 14% Year 2 6% Year 3 −5% Year 4 20%",
+  "option_a": "8.75%; 8.62%.",
+  "option_b": "8.90%; 8.62%.",
+  "option_c": "8.75%; 8.34%.",
+  "correct_answer": "C",
+  "explanation_en": "(14 + 6 + (-5) + 20) / 4 = 8.75. ((1.14 × 1.06 × 0.95 × 1.20)0.25 – 1 = 8.34%."
+ },
+ {
+  "id": "62cfe44e-14e0-47e9-88f3-b41b10e75a08",
+  "reasons": [
+   "table_format_flag"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\2. QB KAPLAN-3000 MCQs\\QSTN WITH ANS\\Quantitative Method\\Reading 3 Statistical Measures of Asset Returns - Answers.pdf",
+  "page_idx": 27,
+  "png": "scripts\\_kaplan108_png\\62cfe44e-14e0-47e9-88f3-b41b10e75a08.png",
+  "topic": "Quantitative Methods",
+  "subtopic": "Reading 3 Statistical Measures of Asset Returns",
+  "question_en": "Returns for a portfolio over the last four years are shown below. Treating these returns as a sample, what is their coefficient of variation (CV)? Year Return 1 17.0% 2 12.2% 3 3.9% 4 –8.4%",
+  "option_a": "1.80.",
+  "option_b": "1.56.",
+  "option_c": "0.55.",
+  "correct_answer": "A",
+  "explanation_en": "The coefficient of variation is equal to the standard deviation of returns divided by the mean return. Mean return = (17.0% + 12.2% + 3.9% – 8.4%) / 4 = 6.175% Year Return (R – 6.175%)2 1 17.0% 117.18 2 12.2% 36.30 3 3.9% 5.18 4 –8.4% 212.43 Sum = 371.09 Sample standard deviation = [371.09 / (4 – 1)]0.5 = 11.12% Coefficient of variation = 11.12% / 6.175% = 1.80"
+ },
+ {
+  "id": "82802dce-7a26-475d-9e81-7f17a9d0fc49",
+  "reasons": [
+   "table_format_flag"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\2. QB KAPLAN-3000 MCQs\\QSTN WITH ANS\\Quantitative Method\\Reading 3 Statistical Measures of Asset Returns - Answers.pdf",
+  "page_idx": 22,
+  "png": "scripts\\_kaplan108_png\\82802dce-7a26-475d-9e81-7f17a9d0fc49.png",
+  "topic": "Quantitative Methods",
+  "subtopic": "Reading 3 Statistical Measures of Asset Returns",
+  "question_en": "The annual returns on 5 portfolio investments for the last year are shown in the following table. What is the return on the portfolio and the geometric mean of the returns on the portfolio investments? Investment Invested Amount Return (%) A 10,000 12 B 10,000 14 C 10,000 9 D 10,000 13 E 10,000 7",
+  "option_a": "11.00; 10.78.",
+  "option_b": "11.00; 10.97.",
+  "option_c": "11.64; 10.97.",
+  "correct_answer": "B",
+  "explanation_en": "Arithmetic Mean: 12 + 14 + 9 + 13 + 7 = 55; 55 / 5 = 11 Geometric Mean: [(1.12 × 1.14 × 1.09 × 1.13 × 1.07)1/5] – 1 = 10.97%"
+ },
+ {
+  "id": "ac874475-23b0-40bd-b554-b3ce77738773",
+  "reasons": [
+   "table_format_flag"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\2. QB KAPLAN-3000 MCQs\\QSTN WITH ANS\\Quantitative Method\\Reading 3 Statistical Measures of Asset Returns - Answers.pdf",
+  "page_idx": 12,
+  "png": "scripts\\_kaplan108_png\\ac874475-23b0-40bd-b554-b3ce77738773.png",
+  "topic": "Quantitative Methods",
+  "subtopic": "Reading 3 Statistical Measures of Asset Returns",
+  "question_en": "Given the following annual returns, what are the geometric and arithmetic mean returns, respectively? 2002 2003 2004 2005 2006 15% 2% 5% -7% 0%",
+  "option_a": "1.45%; 3.00%.",
+  "option_b": "2.75%; 3.00%.",
+  "option_c": "2.75%; 5.80%.",
+  "correct_answer": "B",
+  "explanation_en": "Geometric Mean: (1.15 × 1.02 × 1.05 × 0.93 × 1.0)1/5 – 1 = 1.14541/5 – 1 = 2.75% Arithmetic Mean: (15% + 2% + 5% – 7% + 0%) / 5 = 3.00%"
+ },
+ {
+  "id": "b160f9f5-e9e3-4b67-b15e-5d378aefe5fe",
+  "reasons": [
+   "table_format_flag"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\2. QB KAPLAN-3000 MCQs\\QSTN WITH ANS\\Quantitative Method\\Reading 3 Statistical Measures of Asset Returns - Answers.pdf",
+  "page_idx": 17,
+  "png": "scripts\\_kaplan108_png\\b160f9f5-e9e3-4b67-b15e-5d378aefe5fe.png",
+  "topic": "Quantitative Methods",
+  "subtopic": "Reading 3 Statistical Measures of Asset Returns",
+  "question_en": "An investor has a $12,000 portfolio consisting of $7,000 in stock P with an expected return of 20% and $5,000 in stock Q with an expected return of 10%. What is the investor's expected return on the portfolio?",
+  "option_a": "15.8%.",
+  "option_b": "15.0%.",
+  "option_c": "30.0%.",
+  "correct_answer": "A",
+  "explanation_en": "Here we need to multiply the returns by the proportion that each stock represents in the portfolio then sum. Stock Return Invested Proportion of Portfolio Return × Proportion P 20% $7,000 7/12 20% × 7/12 Q 10% $5,000 5/12 10% × 5/12 Total $12,000 15.83%"
+ },
+ {
+  "id": "d864af14-fde3-4179-ad5b-a0a7f9d229a2",
+  "reasons": [
+   "table_format_flag"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\2. QB KAPLAN-3000 MCQs\\QSTN WITH ANS\\Quantitative Method\\Reading 3 Statistical Measures of Asset Returns - Answers.pdf",
+  "page_idx": 4,
+  "png": "scripts\\_kaplan108_png\\d864af14-fde3-4179-ad5b-a0a7f9d229a2.png",
+  "topic": "Quantitative Methods",
+  "subtopic": "Reading 3 Statistical Measures of Asset Returns",
+  "question_en": "Assume that the following returns are a sample of annual returns for firms in the clothing industry. Firm 1 Firm 2 Firm 3 Firm 4 Firm 5 15% 2% 5% (7%) 0% The sample standard deviation is closest to:",
+  "option_a": "5.7.",
+  "option_b": "7.2.",
+  "option_c": "8.0.",
+  "correct_answer": "C",
+  "explanation_en": "The sample variance is found by taking the sum of all squared deviations from the mean and dividing by (n – 1). [(15 – 3)2 + (2 – 3)2 + (5 – 3)2 + (-7 – 3)2 + (0 – 3)2] / (5 – 1) = 64.5 The sample standard deviation is found by taking the square root of the sample variance. √64.5 = 8.03"
+ },
+ {
+  "id": "22c198f7-12b9-4c15-8c54-264be2d145c2",
+  "reasons": [
+   "table_format_flag"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\2. QB KAPLAN-3000 MCQs\\QSTN WITH ANS\\Quantitative Method\\Reading 4 Probability Trees and Conditional Expectations - Answers.pdf",
+  "page_idx": 4,
+  "png": "scripts\\_kaplan108_png\\22c198f7-12b9-4c15-8c54-264be2d145c2.png",
+  "topic": "Quantitative Methods",
+  "subtopic": "Reading 4 Probability Trees and Conditional Expectations",
+  "question_en": "A two-sided but very thick coin is expected to land on its edge twice out of every 100 flips. And the probability of face up (heads) and the probability of face down (tails) are equal. When the coin is flipped, the prize is $1 for heads, $2 for tails, and $50 when the coin lands on its edge. What is the expected value of the prize on a single coin toss?",
+  "option_a": "$2.47.",
+  "option_b": "$1.50.",
+  "option_c": "$17.67.",
+  "correct_answer": "A",
+  "explanation_en": "We need to calculate of probability weighted average payoff. Since the probability of the coin landing on its edge is 0.02, the probability of each of the other two events is 0.49. The expected payoff is: (0.02 × $50) + (0.49 × $1) + (0.49 × $2) = $2.47. Outcome Probability Payoff Probability × Payoff Edge 2 / 100 = 2% $50 2% × $50 Heads 49% $1 49% × $1 Tails 49% $2 49% × $2 Expected Payoff = ∑ Probability × Payoff $2.47"
+ },
+ {
+  "id": "4157b38d-18b4-4407-b0e6-7eadb36624ce",
+  "reasons": [
+   "table_format_flag"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\2. QB KAPLAN-3000 MCQs\\QSTN WITH ANS\\Quantitative Method\\Reading 4 Probability Trees and Conditional Expectations - Answers.pdf",
+  "page_idx": 7,
+  "png": "scripts\\_kaplan108_png\\4157b38d-18b4-4407-b0e6-7eadb36624ce.png",
+  "topic": "Quantitative Methods",
+  "subtopic": "Reading 4 Probability Trees and Conditional Expectations",
+  "question_en": "Tully Advisers, Inc., has determined four possible economic scenarios and has projected the portfolio returns for two portfolios for their client under each scenario. Tully's economist has estimated the probability of each scenario as shown in the table below. Given this information, what is the expected return on Portfolio A? Scenario Probability Return on Portfolio A Return on Portfolio B A 15% 17% 19% B 20% 14% 18% C 25% 12% 10% D 40% 8% 9%",
+  "option_a": "12.55%.",
+  "option_b": "12.75%.",
+  "option_c": "11.55%.",
+  "correct_answer": "C",
+  "explanation_en": "The expected return on Portfolio A is a probability-weighted average of 17%, 14%, 12%, and 8%. Expected return = (0.15)(0.17) + (0.20)(0.14) + (0.25)(0.12) + (0.40)(0.08) = 0.1155 or 11.55%. Scenario Probability Return on Portfolio A Portfolio × Weight A 15% 17% 15 × 17% B 20% 14% 20% × 14% C 25% 12% 25% × 12% D 40% 8% 40% × 8% Probability Weighted Average Return 11.55% ∑ Probability × Weight"
+ },
+ {
+  "id": "55a49e6e-5871-4b65-a839-a55726e4bc9f",
+  "reasons": [
+   "table_format_flag"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\2. QB KAPLAN-3000 MCQs\\QSTN WITH ANS\\Quantitative Method\\Reading 4 Probability Trees and Conditional Expectations - Answers.pdf",
+  "page_idx": 0,
+  "png": "scripts\\_kaplan108_png\\55a49e6e-5871-4b65-a839-a55726e4bc9f.png",
+  "topic": "Quantitative Methods",
+  "subtopic": "Reading 4 Probability Trees and Conditional Expectations",
+  "question_en": "There is a 60% chance that the economy will be good next year and a 40% chance that it will be bad. If the economy is good, there is a 70% chance that XYZ Incorporated will have EPS of $5.00 and a 30% chance that their earnings will be $3.50. If the economy is bad, there is an 80% chance that XYZ Incorporated will have EPS of $1.50 and a 20% chance that their earnings will be $1.00. What is the firm's expected EPS?",
+  "option_a": "$3.29.",
+  "option_b": "$5.95.",
+  "option_c": "$2.75.",
+  "correct_answer": "A",
+  "explanation_en": "Joint State of the Economy Conditional Joint EPS Probability × (Unconditional Probability) Probability Probability EPS 60% × 70% = 42% × $5.00 = 70% $5.00 42% $2.10 GOOD 60% 60% × 30% = 18% × $3.50 = 30% $3.50 18% $0.63 40% × 80% = 32% × $1.50 = 80% $1.50 32% $0.48 BAD 40% 40% × 20% = 8% × $1.00 = 20% $1.00 8% $0.08 Expected EPS = ∑ Joint Probability × EPS $3.29"
+ },
+ {
+  "id": "8ec4df3e-d6a5-42e2-a166-c8edb1981ac8",
+  "reasons": [
+   "table_format_flag"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\2. QB KAPLAN-3000 MCQs\\QSTN WITH ANS\\Fixed income\\Reading 58 Interest Rate Risk and Return - Answers.pdf",
+  "page_idx": 8,
+  "png": "scripts\\_kaplan108_png\\8ec4df3e-d6a5-42e2-a166-c8edb1981ac8.png",
+  "topic": "Fixed Income",
+  "subtopic": "Reading 58 Interest Rate Risk and Return",
+  "question_en": "The Macaulay duration in years of a 4-year annual pay, 6% coupon bond with a par value of $100 and yielding 7% is closest to:",
+  "option_a": "3.67 years.",
+  "option_b": "3.99 years.",
+  "option_c": "3.35 years.",
+  "correct_answer": "A",
+  "explanation_en": "The calculation to derive the Macaulay duration is shown here: Cash Flow Present Value Weighting 6 6 / 1.07 = 5.6075 5.6075 / 96.6128 = 0.0580 6 6 / 1.072 = 5.2406 5.2406 / 96.6128 = 0.0542 6 6 / 1.073 = 4.8978 4.8978 / 96.6128 = 0.0507 106 106 / 1.074 = 80.8669 80.8669 / 96.6128 = 0.8370 Total present value = 96.6128 Macaulay duration = 0.0580 (1) + 0.0542 (2) + 0.0507 (3) + 0.8370 (4) = 3.67 years."
+ },
+ {
+  "id": "4e8046d5-0353-4b30-97c0-7edf67585681",
+  "reasons": [
+   "table_format_flag"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\2. QB KAPLAN-3000 MCQs\\QSTN WITH ANS\\Financial statement analysis\\Reading 37 Analysis of Income Taxes - Answers.pdf",
+  "page_idx": 3,
+  "png": "scripts\\_kaplan108_png\\4e8046d5-0353-4b30-97c0-7edf67585681.png",
+  "topic": "Financial Statement Analysis",
+  "subtopic": "Reading 37 Analysis of Income Taxes",
+  "question_en": "Gator Sarl (Gator) purchased some PP&E at the start of the period costing €21,000 with a three-year useful economic life and no residual value. Gator uses straight-line depreciation in its accounts, but the tax authorities use double declining balance. The following balances are given for carrying value and the value of the tax base over the asset's life: Year 1 Year 2 Year 3 € € € Carrying value 14,000 7,000 0 Tax base 7,000 2,333 0 Assuming a statutory tax rate of 30%, which of the following is closest to the DTL reported in Gator's balance sheet at the end of Year 2?",
+  "option_a": "€700.",
+  "option_b": "€1,400.",
+  "option_c": "€2,100.",
+  "correct_answer": "B",
+  "explanation_en": "DTL = (carrying value – tax base) × statutory rate Year 2 DTL = (€7,000 – €2,333) × 0.3 = €1,400."
+ },
+ {
+  "id": "e61a7788-f025-4be8-b344-341f75bbdb21",
+  "reasons": [
+   "table_format_flag"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\2. QB KAPLAN-3000 MCQs\\QSTN WITH ANS\\Fixed income\\Reading 64 Credit Analysis for Corporate Issuers - Answers.pdf",
+  "page_idx": 0,
+  "png": "scripts\\_kaplan108_png\\e61a7788-f025-4be8-b344-341f75bbdb21.png",
+  "topic": "Fixed Income",
+  "subtopic": "Reading 64 Credit Analysis for Corporate Issuers",
+  "question_en": "Jequa is a Japanese company with the following selected financial information (¥ billions):\n\n- Net income from continuing operations: 503\n- Depreciation & amortization: 256\n- Capital expenditures: 140\n- Cash flow from operations: 361\n- Dividends: 72\n\nJequa's funds from operations (FFO) is closest to:",
+  "option_a": "¥759 billion.",
+  "option_b": "¥247 billion.",
+  "option_c": "¥149 billion.",
+  "correct_answer": "A",
+  "explanation_en": "FFO is defined as net income from continuing operations plus depreciation, amortization, deferred taxes, and other noncash items. FFO = ¥503 + ¥256 = ¥759 billion."
+ }
+]

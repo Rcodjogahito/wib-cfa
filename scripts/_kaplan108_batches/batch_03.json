@@ -1,0 +1,376 @@
+[
+ {
+  "id": "c36f6ba8-ada6-4335-a594-dcbdbf811621",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\2. QB KAPLAN-3000 MCQs\\QSTN WITH ANS\\Quantitative Method\\Reading 5 Portfolio Mathematics - Answers.pdf",
+  "page_idx": 4,
+  "png": "scripts\\_kaplan108_png\\c36f6ba8-ada6-4335-a594-dcbdbf811621.png",
+  "topic": "Quantitative Methods",
+  "subtopic": "Reading 5 Portfolio Mathematics",
+  "question_en": "Use the following probability distribution. State of the Economy Probability Return on Portfolio Boom 0.30 15% Bust 0.70 3% The expected return for the portfolio is:",
+  "option_a": "9.0%.",
+  "option_b": "6.6%.",
+  "option_c": "8.1%.",
+  "correct_answer": "B",
+  "explanation_en": "The expected portfolio return is a probability-weighted average: State of the Economy Probability Return on Portfolio Probability × Return Boom 0.30 15% 0.3 × 15% = 4.5% Bust 0.70 3% 0.7 × 3% = 2.1% Expected Return = ∑Probability × Return 6.6%"
+ },
+ {
+  "id": "cb2fbfb2-719d-4956-a7ac-7cfabead2a39",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\2. QB KAPLAN-3000 MCQs\\QSTN WITH ANS\\Quantitative Method\\Reading 5 Portfolio Mathematics - Answers.pdf",
+  "page_idx": 5,
+  "png": "scripts\\_kaplan108_png\\cb2fbfb2-719d-4956-a7ac-7cfabead2a39.png",
+  "topic": "Quantitative Methods",
+  "subtopic": "Reading 5 Portfolio Mathematics",
+  "question_en": "The mean and standard deviation of returns for three portfolios are listed below in percentage terms.\n\n| Portfolio | Mean | Standard deviation |\n|---|---|---|\n| X | 5% | 3% |\n| Y | 14% | 20% |\n| Z | 19% | 28% |\n\nUsing Roy's safety-first criteria and a threshold of 4%, select the optimal portfolio.",
+  "option_a": "Portfolio Y.",
+  "option_b": "Portfolio X.",
+  "option_c": "Portfolio Z.",
+  "correct_answer": "C",
+  "explanation_en": "Portfolio Z has the largest value for the SFRatio: (19 – 4) / 28 = 0.5357. For Portfolio X, the SFRatio is (5 – 4) / 3 = 0.3333. For Portfolio Y, the SFRatio is (14 – 4) / 20 = 0.5000."
+ },
+ {
+  "id": "c1b0b0bb-bc6b-48f6-bc50-8d3f544f0907",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\2. QB KAPLAN-3000 MCQs\\QSTN WITH ANS\\Quantitative Method\\Reading 9 Parametric and Non-Parametric Tests of Independence - Answers.pdf",
+  "page_idx": 1,
+  "png": "scripts\\_kaplan108_png\\c1b0b0bb-bc6b-48f6-bc50-8d3f544f0907.png",
+  "topic": "Quantitative Methods",
+  "subtopic": "Reading 9 Parametric and Non-Parametric Tests of Independence",
+  "question_en": "Critical values from Student's t-distribution for a two-tailed test at a 5% significance level:\n\n| df | Critical value |\n|---|---|\n| 28 | 2.048 |\n| 29 | 2.045 |\n| 30 | 2.042 |\n\nA researcher wants to test a hypothesis that two variables have a population correlation coefficient equal to zero. For a sample size of 30, the appropriate critical value for this test is plus-or-minus:",
+  "option_a": "2.048.",
+  "option_b": "2.045.",
+  "option_c": "2.042.",
+  "correct_answer": "A",
+  "explanation_en": "The test statistic for a hypothesis test concerning population correlation follows a t- distribution with n − 2 degrees of freedom. For a sample size of 30 and a significance level of 5%, the sample statistic must be greater than 2.048 or less than −2.048 to reject the hypothesis that the population correlation equals zero."
+ },
+ {
+  "id": "4ee9a811-2da1-47a1-9aa5-a348af103401",
+  "reasons": [
+   "table_format_flag"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\8. KAPLAN MOCK-1100 MCQs\\Mock Exam 4 - Answers.pdf",
+  "page_idx": 47,
+  "png": "scripts\\_kaplan108_png\\4ee9a811-2da1-47a1-9aa5-a348af103401.png",
+  "topic": "Portfolio Management",
+  "subtopic": "Mock Exam 4",
+  "question_en": "Which of the following possible portfolios cannot lie on the efficient frontier? Portfolio Expected Return Standard Deviation 1 8% 6% 2 10% 6% 3 14% 12% 4 14% 16%",
+  "option_a": "Portfolio 3 only.",
+  "option_b": "Portfolios 1 and 4.",
+  "option_c": "Portfolios 2 and 3.",
+  "correct_answer": "B",
+  "explanation_en": "Portfolio 1 does not lie on the efficient frontier because it has a lower return than Portfolio 2 but has equal risk. Portfolio 4 does not lie on the efficient frontier because it has higher risk than Portfolio 3 but has the same return."
+ },
+ {
+  "id": "0d1be197-082c-46a3-8dba-df4241790029",
+  "reasons": [
+   "table_format_flag"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\2. QB KAPLAN-3000 MCQs\\QSTN WITH ANS\\Portofolio management part 1\\Reading 21 Portfolio Risk and Return Part II - Answers.pdf",
+  "page_idx": 8,
+  "png": "scripts\\_kaplan108_png\\0d1be197-082c-46a3-8dba-df4241790029.png",
+  "topic": "Portfolio Management",
+  "subtopic": "Reading 21 Portfolio Risk and Return Part II",
+  "question_en": "Over a sample period, an investor gathers the following data about three mutual funds. Mutual Fund Portfolio Return Portfolio Standard Deviation Portfolio Beta P 13% 18% 1.2 Q 15% 20% 1.4 R 18% 24% 1.8 The risk-free rate is 5%. Based solely on the Sharpe measure, an investor would prefer:",
+  "option_a": "Fund P.",
+  "option_b": "Fund R.",
+  "option_c": "Fund Q.",
+  "correct_answer": "B",
+  "explanation_en": "The Sharpe measure for a portfolio is calculated as the (mean portfolio return − mean return on the risk-free asset)/portfolio standard deviation. The Sharpe measures for the three mutual funds are: mutual fund P = (13 − 5) / 18 = 0.44 mutual fund Q = (15 − 5) / 20 = 0.50 mutual fund R = (18 − 5) / 24 = 0.54 Assuming that investors prefer return and dislike risk, they should prefer portfolios with large Sharpe ratios to those with smaller ratios. Thus, the investor should prefer mutual fund R."
+ },
+ {
+  "id": "5b1a978d-0e60-4b63-990d-fa30d85b0118",
+  "reasons": [
+   "table_format_flag"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\2. QB KAPLAN-3000 MCQs\\QSTN WITH ANS\\Equity Investments\\Reading 47 Company Analysis- Forecasting - Answers.pdf",
+  "page_idx": 5,
+  "png": "scripts\\_kaplan108_png\\5b1a978d-0e60-4b63-990d-fa30d85b0118.png",
+  "topic": "Equity Investments",
+  "subtopic": "Reading 47 Company Analysis- Forecasting",
+  "question_en": "Current-year sales for ABC Co. are $20 million. Although Annie Mann, CFA, forecasts overall growth of 5% heading into next year, she would like to further refine her estimates by assigning the following probabilities based on actions she thinks the competition may take. Growth Probability 6 percent 30% 5 percent 20% 4 percent 50% Using these probabilities, what is Mann's forecasted sales total for next year?",
+  "option_a": "$20,960,000.",
+  "option_b": "$21,000,000.",
+  "option_c": "$20,800,000.",
+  "correct_answer": "A",
+  "explanation_en": "The weighted average probability of the three scenarios is equal to 4.8% (6% × 30%) + (5% × 20%) + (4% × 50%); $20,000,000 × 1.048 = $20,960,000. The number $20,800,000 assumes 4% growth (because 50% is the highest probability), and $21,000,000 assumes 5% growth (because that is the overall figure)."
+ },
+ {
+  "id": "f7dbd05c-a982-4e27-9be7-8568dbd918a7",
+  "reasons": [
+   "table_format_flag"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\2. QB KAPLAN-3000 MCQs\\QSTN WITH ANS\\Economics\\Reading 19 Exchange Rate Calculations - Answers.pdf",
+  "page_idx": 0,
+  "png": "scripts\\_kaplan108_png\\f7dbd05c-a982-4e27-9be7-8568dbd918a7.png",
+  "topic": "Economics",
+  "subtopic": "Reading 19 Exchange Rate Calculations",
+  "question_en": "Spot and one-month forward exchange rates are as follows: Spot 1-month forward EUR/DEF 2.5675 2.5925 EUR/GHI 4.3250 4.2800 EUR/JKL 7.0625 7.0075 Based on these exchange rates, the EUR is closest to a 1-month forward:",
+  "option_a": "discount of 1% to the JKL.",
+  "option_b": "premium of 1% to the DEF.",
+  "option_c": "premium of 1% to the GHI.",
+  "correct_answer": "C",
+  "explanation_en": "The EUR is at a forward premium to the GHI because the EUR/GHI forward rate is less than the EUR/GHI spot rate. The base currency, GHI, is at a forward discount of forward/spot – 1 = 4.2800 / 4.3250 – 1 = –1.04%. The EUR is at a forward discount to the DEF and a forward premium to the JKL."
+ },
+ {
+  "id": "84799931-78f7-45a3-95a0-c3597128c4a7",
+  "reasons": [
+   "table_format_flag"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\2. QB KAPLAN-3000 MCQs\\QSTN WITH ANS\\Financial statement analysis\\Reading 32 Analyzing Statements of Cash Flows I - Answers.pdf",
+  "page_idx": 30,
+  "png": "scripts\\_kaplan108_png\\84799931-78f7-45a3-95a0-c3597128c4a7.png",
+  "topic": "Financial Statement Analysis",
+  "subtopic": "Reading 32 Analyzing Statements of Cash Flows I",
+  "question_en": "Assuming, US GAAP is applied, determine the cash flow from financing given the following table. Item Amount Cash payment of dividends $30 Sale of equipment $10 Net income $25 Purchase of land $15 Increase in accounts payable $20 Sale of preferred stock $25 Increase in deferred taxes $5 Profit on sale of equipment $4",
+  "option_a": "-$5.",
+  "option_b": "$15.",
+  "option_c": "$20.",
+  "correct_answer": "A",
+  "explanation_en": "CFF = 25(Sale of Stock) − 30(Div Paid) = -$5"
+ },
+ {
+  "id": "a7850d95-3b71-4940-b31f-a446ddfb335a",
+  "reasons": [
+   "table_format_flag"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\2. QB KAPLAN-3000 MCQs\\QSTN WITH ANS\\Financial statement analysis\\Reading 32 Analyzing Statements of Cash Flows I - Answers.pdf",
+  "page_idx": 22,
+  "png": "scripts\\_kaplan108_png\\a7850d95-3b71-4940-b31f-a446ddfb335a.png",
+  "topic": "Financial Statement Analysis",
+  "subtopic": "Reading 32 Analyzing Statements of Cash Flows I",
+  "question_en": "Determine the cash flow from operations given the following table. Item Amount Cash payment of dividends $30 Sale of equipment $25 Net income $25 Purchase of land $15 Increase in accounts payable $20 Sale of preferred stock $25 Increase in deferred taxes $5 Profit on sale of equipment $15",
+  "option_a": "$35.",
+  "option_b": "$20.",
+  "option_c": "$45.",
+  "correct_answer": "A",
+  "explanation_en": "Using the indirect method, CFO = Net income 25 + increase in accounts payable 20 + increase in deferred taxes 5 – profit on sale of equipment 15 = $35. Increases in accounts payable and deferred taxes are sources of operating cash that are not included in net income and must be added. Profit on sale of equipment is a CFI item that must be removed from net income. No adjustment needs to be made for cash payment of dividends (CFF), sale of preferred stock (CFF), or purchase of land (CFI) because they are not included in net income. Only the profit on sale of equipment, not the full proceeds from sale, is included in net income."
+ },
+ {
+  "id": "084372e7-2adb-45b8-b81e-52997de06bfd",
+  "reasons": [
+   "table_format_flag"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\2. QB KAPLAN-3000 MCQs\\QSTN WITH ANS\\Financial statement analysis\\Reading 30 Analyzing Income Statements - Answers.pdf",
+  "page_idx": 14,
+  "png": "scripts\\_kaplan108_png\\084372e7-2adb-45b8-b81e-52997de06bfd.png",
+  "topic": "Financial Statement Analysis",
+  "subtopic": "Reading 30 Analyzing Income Statements",
+  "question_en": "A firm had the following numbers of shares outstanding during the year: Beginning of year 8,000,000 shares Issued on April 1 750,000 shares Paid stock dividend of 20% on July 1 Issued on October 1 100,000 shares Purchased Treasury stock November 1 1,000,000 shares Split 2 for 1 on December 31 Based on this information, what is the weighted number of shares outstanding for the year?",
+  "option_a": "20,266,667.",
+  "option_b": "20,783,333.",
+  "option_c": "42,444,444.",
+  "correct_answer": "A",
+  "explanation_en": "Outstanding all year 8,000,000 × 1.2 × 2 × 1.0 19,200,000 Outstanding for 0.75 years 750,000 × 1.2 × 2 × 0.75 1,350,000 Outstanding for 0.25 years 100,000 × 2 × 0.25 50,000 Retired for 2 months -1,000,000 × 2 × (2/12) Weighted average number of shares for year: 20,266,667"
+ },
+ {
+  "id": "08b367e7-272b-4e7c-ba89-fa21c555330e",
+  "reasons": [
+   "table_format_flag"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\2. QB KAPLAN-3000 MCQs\\QSTN WITH ANS\\Financial statement analysis\\Reading 30 Analyzing Income Statements - Answers.pdf",
+  "page_idx": 79,
+  "png": "scripts\\_kaplan108_png\\08b367e7-272b-4e7c-ba89-fa21c555330e.png",
+  "topic": "Financial Statement Analysis",
+  "subtopic": "Reading 30 Analyzing Income Statements",
+  "question_en": "A firm's financial statements reflect the following: Net income $1,700,000 EBIT $2,900,000 Effective tax rate 35% Interest payments $285,000 Common equity $3,100,000 Total assets $6,600,000 Preferred dividends paid $1,100,000 Weighted avg. shares outstanding 523,000 Based on this information, what is the firm's basic EPS?",
+  "option_a": "$1.15.",
+  "option_b": "$3.25.",
+  "option_c": "$2.75.",
+  "correct_answer": "A",
+  "explanation_en": "The firm's basic EPS = ($1,700,000 – $1,100,000) / (523,000) = $1.147."
+ },
+ {
+  "id": "1f33dcd6-1642-461a-9efe-2c1a0158368f",
+  "reasons": [
+   "table_format_flag"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\2. QB KAPLAN-3000 MCQs\\QSTN WITH ANS\\Financial statement analysis\\Reading 30 Analyzing Income Statements - Answers.pdf",
+  "page_idx": 66,
+  "png": "scripts\\_kaplan108_png\\1f33dcd6-1642-461a-9efe-2c1a0158368f.png",
+  "topic": "Financial Statement Analysis",
+  "subtopic": "Reading 30 Analyzing Income Statements",
+  "question_en": "A firm has had the following numbers of shares outstanding during the year: Beginning of year 10,000,000 shares Issued on April 1 500,000 shares Split 2 for 1 on July 1 Issued on October 1 100,000 shares Split 2 for 1 on December 31 Based on this information, what is the weighted number of shares outstanding for the year?",
+  "option_a": "20,780,000.",
+  "option_b": "42,400,000.",
+  "option_c": "41,550,000.",
+  "correct_answer": "C",
+  "explanation_en": "Outstanding all year 10,000,000 × 2 × 2 × 1 40,000,000 Outstanding for 0.75 years 500,000 × 2 × 2 × 0.75 1,500,000 Outstanding for 0.25 years 100,000 × 2 × 0.25 50,000 Weighted average number of shares for year: 41,550,000"
+ },
+ {
+  "id": "91d5062a-a8d4-4525-933d-1309f1df7b75",
+  "reasons": [
+   "table_format_flag"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\8. KAPLAN MOCK-1100 MCQs\\Mock Exam 2 - Answers.pdf",
+  "page_idx": 60,
+  "png": "scripts\\_kaplan108_png\\91d5062a-a8d4-4525-933d-1309f1df7b75.png",
+  "topic": "Fixed Income",
+  "subtopic": "Mock Exam 2",
+  "question_en": "A corporate bond portfolio manager has a mandate to invest only in investment-grade bonds. Recently, three of the bonds in the portfolio have been downgraded by Moody's and S&P to the following ratings: Bond 1 BB+ Bond 2 Baa3 Bond 3 Ba1 As a result of the downgrades, the manager must sell Bond(s):",
+  "option_a": "2 only.",
+  "option_b": "1 and 3 only.",
+  "option_c": "1, 2, and 3.",
+  "correct_answer": "B",
+  "explanation_en": "The manager would keep any investment grade bonds of the three bonds, which is only Bond 2 at a Baa3 rating. The manager must sell Bond 1 and Bond 3 because BB+ and Ba1 are non-investment grade ratings."
+ },
+ {
+  "id": "b20b643d-f2f4-4a1f-9c3f-ad673f4a64bd",
+  "reasons": [
+   "table_format_flag"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\8. KAPLAN MOCK-1100 MCQs\\Mock Exam 2 - Answers.pdf",
+  "page_idx": 52,
+  "png": "scripts\\_kaplan108_png\\b20b643d-f2f4-4a1f-9c3f-ad673f4a64bd.png",
+  "topic": "Portfolio Management",
+  "subtopic": "Mock Exam 2",
+  "question_en": "Given the following correlation matrix, a risk-averse investor would least prefer which of the following 2-stock portfolios (all else equal)? Stock W X Y Z W +1 X –0.2 +1 Y +0.6 –0.1 +1 Z +0.8 –0.3 +0.5 +1",
+  "option_a": "W and Y.",
+  "option_b": "X and Y.",
+  "option_c": "X and Z.",
+  "correct_answer": "A",
+  "explanation_en": "A risk-averse investor prefers less risk to more risk. The lower the correlation, the greater the risk reduction. Thus, a risk-averse investor would most prefer the portfolio with the lowest correlation coefficient and least prefer the one with the highest. Of the choices given, W and Y's correlation coefficient of +0.6 is the highest."
+ },
+ {
+  "id": "5acbf4ef-f931-423f-95f2-6f19fc0fb8a1",
+  "reasons": [
+   "table_format_flag"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\2. QB KAPLAN-3000 MCQs\\QSTN WITH ANS\\Quantitative Method\\Reading 10 Simple Linear Regression - Answers.pdf",
+  "page_idx": 1,
+  "png": "scripts\\_kaplan108_png\\5acbf4ef-f931-423f-95f2-6f19fc0fb8a1.png",
+  "topic": "Quantitative Methods",
+  "subtopic": "Reading 10 Simple Linear Regression",
+  "question_en": "Consider the following analysis of variance (ANOVA) table: Source Sum of squares Degrees of freedom Mean sum of squares Regression 556 1 556 Error 679 50 13.5 Total 1,235 51 The R2 for this regression is closest to:",
+  "option_a": "0.45.",
+  "option_b": "0.55.",
+  "option_c": "0.82.",
+  "correct_answer": "A",
+  "explanation_en": "R2 = sum of squares regression / sum of squares total = 556 / 1,235 = 0.45."
+ },
+ {
+  "id": "07ccbc8e-6744-4861-9c87-58f85e7c556e",
+  "reasons": [
+   "table_format_flag"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\2. QB KAPLAN-3000 MCQs\\QSTN WITH ANS\\Portofolio management part 1\\Reading 20 Portfolio Risk and Return Part I - Answers.pdf",
+  "page_idx": 2,
+  "png": "scripts\\_kaplan108_png\\07ccbc8e-6744-4861-9c87-58f85e7c556e.png",
+  "topic": "Portfolio Management",
+  "subtopic": "Reading 20 Portfolio Risk and Return Part I",
+  "question_en": "Which of the following portfolios falls below the Markowitz efficient frontier? Portfolio Expected Return Expected Standard Deviation A 7% 14% B 9% 26% C 15% 30% D 12% 22%",
+  "option_a": "B.",
+  "option_b": "C.",
+  "option_c": "D.",
+  "correct_answer": "A",
+  "explanation_en": "Portfolio B is not on the efficient frontier because it has a lower return, but higher risk, than Portfolio D."
+ },
+ {
+  "id": "5c64ef90-089c-49a3-bfc0-899bd75f7e10",
+  "reasons": [
+   "table_format_flag"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\8. KAPLAN MOCK-1100 MCQs\\Mock Exam 1 - Answers.pdf",
+  "page_idx": 21,
+  "png": "scripts\\_kaplan108_png\\5c64ef90-089c-49a3-bfc0-899bd75f7e10.png",
+  "topic": "Economics",
+  "subtopic": "Mock Exam 1",
+  "question_en": "An analyst is forecasting market shares for the top three firms (which make up 90% of the market share) in a given market Scenario Firm Market Share Firm Market Share Firm Market Share 1 Smith 40% Jones 30% Adams 20% 2 Smith 35% Jones 40% Adams 15% 3 Smith 30% Jones 30% Adams 30% Which scenario produces the highest Herfindahl-Hirschman Index?",
+  "option_a": "Scenario 1.",
+  "option_b": "Scenario 2.",
+  "option_c": "Scenario 3.",
+  "correct_answer": "B",
+  "explanation_en": "Scenario 2. Scenario 1: 0.402 + 0.302 + 0.202 = 0.290. Scenario 2: 0.352 + 0.402 + 0.152 = 0.305. Scenario 3: 0.302 + 0.302 + 0.302 = 0.270."
+ },
+ {
+  "id": "ed122262-30c6-40a8-9c11-2819288d9c8d",
+  "reasons": [
+   "table_format_flag"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\8. KAPLAN MOCK-1100 MCQs\\Mock Exam 1 - Answers.pdf",
+  "page_idx": 22,
+  "png": "scripts\\_kaplan108_png\\ed122262-30c6-40a8-9c11-2819288d9c8d.png",
+  "topic": "Quantitative Methods",
+  "subtopic": "Mock Exam 1",
+  "question_en": "A simple linear regression model produces the following outputs: Total sum of squares 9,575.81 Mean regression sum of squares 7,115.74 Mean squared error 1,663.46 The F-statistic for this regression is closest to:",
+  "option_a": "1.3.",
+  "option_b": "4.3.",
+  "option_c": "5.8.",
+  "correct_answer": "B",
+  "explanation_en": "The F-statistic is the ratio of the mean regression sum of squares (MSR) to the mean squared error (MSE). 7,115.74 / 1,663.46 = 4.278."
+ },
+ {
+  "id": "b147243d-1847-4038-bbc0-eab3daf75cb6",
+  "reasons": [
+   "table_format_flag"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\8. KAPLAN MOCK-1100 MCQs\\Mock Exam 5 - Answers.pdf",
+  "page_idx": 42,
+  "png": "scripts\\_kaplan108_png\\b147243d-1847-4038-bbc0-eab3daf75cb6.png",
+  "topic": "Economics",
+  "subtopic": "Mock Exam 5",
+  "question_en": "An economist finds the following characteristics for the market for two products, S and T: Product Firm's Pricing Power Concentration Ratio S Considerable High T Some Low Based on the above characteristics, the economist could conclude that the industry for Product S is:",
+  "option_a": "an oligopoly, and the industry for Product T is also an oligopoly.",
+  "option_b": "an oligopoly, and the industry for Product T is monopolistic competition.",
+  "option_c": "monopolistic competition, and the industry for product T is perfect competition.",
+  "correct_answer": "B",
+  "explanation_en": "Greater pricing power for the individual firm and a high concentration ratio suggest Product S is produced in an oligopolistic industry. Product T, with less pricing power for firms and a lower concentration ratio, is most likely produced by an industry characterized by monopolistic competition."
+ },
+ {
+  "id": "1a1886c1-54ad-4414-a7c8-eb4b55883140",
+  "reasons": [
+   "table_format_flag"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\2. QB KAPLAN-3000 MCQs\\QSTN WITH ANS\\Equity Investments\\Reading 42 Security Market Indexes - Answers.pdf",
+  "page_idx": 12,
+  "png": "scripts\\_kaplan108_png\\1a1886c1-54ad-4414-a7c8-eb4b55883140.png",
+  "topic": "Equity Investments",
+  "subtopic": "Reading 42 Security Market Indexes",
+  "question_en": "The table below lists information on price per share and shares outstanding for three stocks. As of Beginning of Year As of End of Year Price per Share # Shares Price per Share # shares Stock ($) Outstanding ($) Outstanding Mertz 10 10,000 15 10,000 Norton 50 5,000 50 5,000 Rubble 100 500 85 500 At the beginning of the year, the value of a market-cap weighted index of these three stocks was 100. The index value at year-end is closest to:",
+  "option_a": "44.3.",
+  "option_b": "93.8.",
+  "option_c": "110.6.",
+  "correct_answer": "C",
+  "explanation_en": "Market-cap weighted index = (ending market capitalization / beginning market capitalization) × beginning index value. Beginning market capitalization = (10)(10,000) + (50)(5,000) + (100)(500) = 400,000 Ending market capitalization = (15)(10,000) + (50)(5,000) + (85)(500) = 442,500 Index value = (442,500 / 400,000) × 100 = 110.625"
+ },
+ {
+  "id": "3f2ef4b8-8d96-48b7-ac9c-65c22281465b",
+  "reasons": [
+   "table_format_flag"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\2. QB KAPLAN-3000 MCQs\\QSTN WITH ANS\\Equity Investments\\Reading 42 Security Market Indexes - Answers.pdf",
+  "page_idx": 4,
+  "png": "scripts\\_kaplan108_png\\3f2ef4b8-8d96-48b7-ac9c-65c22281465b.png",
+  "topic": "Equity Investments",
+  "subtopic": "Reading 42 Security Market Indexes",
+  "question_en": "What is the price-weighted index of the following three stocks? As of December 31, 2001 Company Stock Price Shares Outstanding A $50 10,000 B $35 20,000 C $110 30,000",
+  "option_a": "80.",
+  "option_b": "75.",
+  "option_c": "65.",
+  "correct_answer": "C",
+  "explanation_en": "The price-weighted index equals [(50 + 35 + 110) / 3] = 65."
+ },
+ {
+  "id": "953a79be-295b-4e6f-a3bb-b8d3afe64925",
+  "reasons": [
+   "table_format_flag"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\2. QB KAPLAN-3000 MCQs\\QSTN WITH ANS\\Equity Investments\\Reading 42 Security Market Indexes - Answers.pdf",
+  "page_idx": 16,
+  "png": "scripts\\_kaplan108_png\\953a79be-295b-4e6f-a3bb-b8d3afe64925.png",
+  "topic": "Equity Investments",
+  "subtopic": "Reading 42 Security Market Indexes",
+  "question_en": "What is the market-cap weighted index of the following three stocks assuming the beginning index value is 100 and a base value of $150,000? As of December 31 Company Stock Price Shares Outstanding X $1 5,000 Y $20 2,500 Z $60 1,000",
+  "option_a": "30.",
+  "option_b": "77.",
+  "option_c": "100.",
+  "correct_answer": "B",
+  "explanation_en": "The market-cap weighted index = [(($1)(5,000) + ($20)(2,500) + ($60)(1,000))/$150,000](100) = ($115,000/$150,000)(100) = (0.767)(100) = 76.67 or 77"
+ }
+]

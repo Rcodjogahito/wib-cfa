@@ -1,0 +1,257 @@
+[
+ {
+  "id": "9f27f605-3c5e-4db6-93aa-676d0acf4470",
+  "verdict": "option_bleed",
+  "field": "option_a",
+  "new_value": "the expected interest rate on the bonds of the firm.",
+  "evidence": "PNG shows option A (checked correct) reads 'the expected interest rate on the bonds of the firm.'; DB text dropped the 'fi' ligature, storing 'rm' instead of 'firm'."
+ },
+ {
+  "id": "a9a89bf3-79b9-4dc2-bc2c-ca94ac584132",
+  "verdict": "explanation_wrong",
+  "field": "explanation_en",
+  "new_value": "Cost of equity capital = 5% + 1.5(5%) = 12.5%. P0 = (1.1 / 1.125) + (25 / 1.125) = $23.20.",
+  "evidence": "PDF shows 'Cost of equity capital = 5% + 1.5(5%) = 12.5%' then 'P0 = (1.1 / 1.125) + (25 / 1.125) = $23.20.'; DB text had the P0 subscript displaced to a stray trailing '0' at the end of the string."
+ },
+ {
+  "id": "b34cc831-35ee-462f-9ff5-588c5014bf32",
+  "verdict": "option_bleed",
+  "field": "option_a",
+  "new_value": "9.14.",
+  "evidence": "PDF page (Parker Corp question, options A/B/C) shows A) 9.14, matching the 60% future payout ratio and 5% growth stated in the stem; DB stored 12.31 which belongs to a different variant of this question (80% payout, 6% growth)."
+ },
+ {
+  "id": "b34cc831-35ee-462f-9ff5-588c5014bf32",
+  "verdict": "option_bleed",
+  "field": "option_b",
+  "new_value": "7.98.",
+  "evidence": "PDF shows B) 7.98; DB stored 21.54, inconsistent with the stem's stated 60% payout / 5% growth."
+ },
+ {
+  "id": "b34cc831-35ee-462f-9ff5-588c5014bf32",
+  "verdict": "option_bleed",
+  "field": "option_c",
+  "new_value": "7.60.",
+  "evidence": "PDF shows C) 7.60 checked correct; DB stored 11.61, which is the result of the wrong-variant calculation (80% payout, 6% growth) rather than the stem's 60%/5%."
+ },
+ {
+  "id": "b34cc831-35ee-462f-9ff5-588c5014bf32",
+  "verdict": "explanation_wrong",
+  "field": "explanation_en",
+  "new_value": "Required rate of return on equity will be 12.89% = 6.75% + 1.17(12.00% – 6.75%). P/E Ratio = 0.60 / (0.1289 - 0.0500) = 7.60.",
+  "evidence": "PDF explanation uses the stem's 60% payout ratio and 5% growth rate to get 7.60, matching option C; DB explanation instead computed with an 80% payout and 6% growth (a different question variant), yielding 11.61. correct_answer 'C' itself is unaffected since the correct option is still C after this fix."
+ },
+ {
+  "id": "5e357349-d828-47db-924b-57c8871ce9fa",
+  "verdict": "ok",
+  "evidence": "Spider Corporation horizontal common-size table, options, correct_answer (B), and explanation all match the PDF page exactly; the earlier automated pass was just being cautious about the table."
+ },
+ {
+  "id": "a233dedd-6332-4739-b630-6e71bc03a1e4",
+  "verdict": "ok",
+  "evidence": "The recorded page (idx 19) only shows the stem before it is cut off; rendering the next page (idx 20) shows the full question with options A) an IPO (correct) / B) a SPAC / C) a direct listing and an explanation that match the DB record verbatim."
+ },
+ {
+  "id": "c3d530dd-56d5-41bf-92f0-22a5f215f190",
+  "verdict": "option_bleed",
+  "field": "option_a",
+  "new_value": "a high-risk biotech stock.",
+  "evidence": "PDF (Question #156, James Franklin CFA) shows option A as 'a high-risk biotech stock.'; DB had 'free rate.', an unrelated truncated fragment."
+ },
+ {
+  "id": "c3d530dd-56d5-41bf-92f0-22a5f215f190",
+  "verdict": "option_bleed",
+  "field": "option_b",
+  "new_value": "a high-beta portfolio of risky assets.",
+  "evidence": "PDF shows option B as 'a high-beta portfolio of risky assets.'; DB had a different, longer sentence not present on the page."
+ },
+ {
+  "id": "c3d530dd-56d5-41bf-92f0-22a5f215f190",
+  "verdict": "option_bleed",
+  "field": "option_c",
+  "new_value": "a leveraged position in the market portfolio.",
+  "evidence": "PDF shows option C (checked correct) as 'a leveraged position in the market portfolio.'; DB had 'the market portfolio as his only risky asset.', which does not appear on the page. correct_answer 'C' and explanation_en already matched the PDF verbatim and needed no change."
+ },
+ {
+  "id": "c3d8fc5d-9f89-45ec-bcd9-6fa8fee73da7",
+  "verdict": "option_bleed",
+  "field": "option_c",
+  "new_value": "its value to the fixed-rate payer.",
+  "evidence": "PDF shows 'its value to the fixed-rate payer.'; DB dropped the 'fi' ligature, storing 'xed-rate' instead of 'fixed-rate'."
+ },
+ {
+  "id": "c826e42b-63ac-4d9f-9af7-3e0aa6f92fd2",
+  "verdict": "option_bleed",
+  "field": "option_a",
+  "new_value": "follow her firm's policies for obtaining client approval for this trade.",
+  "evidence": "PDF shows option A with 'firm's'; DB dropped the 'fi' ligature, storing 'rm's'."
+ },
+ {
+  "id": "c826e42b-63ac-4d9f-9af7-3e0aa6f92fd2",
+  "verdict": "option_bleed",
+  "field": "option_b",
+  "new_value": "open an unmanaged account in which the client may execute this trade.",
+  "evidence": "DB's option_b had the start of option C's text ('discuss with the client whether this trade indicates a need to update the') appended to it; PDF shows option B ends cleanly after 'execute this trade.'"
+ },
+ {
+  "id": "c826e42b-63ac-4d9f-9af7-3e0aa6f92fd2",
+  "verdict": "option_bleed",
+  "field": "option_c",
+  "new_value": "discuss with the client whether this trade indicates a need to update the IPS.",
+  "evidence": "DB's option_c was truncated to just 'IPS.' with the rest of the sentence bled into option_b; PDF shows the full checked (correct) option C text, consistent with the stored correct_answer 'C'."
+ },
+ {
+  "id": "a402c30a-1e12-4aff-97ef-d6234a4ef8d1",
+  "verdict": "ok",
+  "evidence": "Question #24 of 29 (modified duration/convexity, 75bp decrease) stem, options (4.12%/4.21%/4.33% correct), and explanation all match the DB record verbatim across this page and the next."
+ },
+ {
+  "id": "263785f8-a434-443d-a09b-2673decde11b",
+  "verdict": "ok",
+  "evidence": "Kellen Harris / Longhorn Supply cash conversion cycle question: the turnover table, options (46/82/86 days, C correct), and explanation all match the PDF (Question #70 of 90) exactly, already correctly reproduced as markdown."
+ },
+ {
+  "id": "80039035-fb86-465b-a250-5f8dcf2f6542",
+  "verdict": "formatting_missing",
+  "field": "question_en",
+  "new_value": "Given the following income statement and balance sheet for a company:\n\n**Balance Sheet**\n\n| Assets | Year 2003 | Year 2004 |\n|---|---|---|\n| Cash | 500 | 450 |\n| Accounts Receivable | 600 | 660 |\n| Inventory | 500 | 550 |\n| Total CA | 1300 | 1660 |\n| Plant, prop. equip | 1000 | 1250 |\n| Total Assets | 2600 | 2910 |\n\n| Liabilities | Year 2003 | Year 2004 |\n|---|---|---|\n| Accounts Payable | 500 | 550 |\n| Long term debt | 700 | 1102 |\n| Total liabilities | 1200 | 1652 |\n\n| Equity | Year 2003 | Year 2004 |\n|---|---|---|\n| Common Stock | 400 | 538 |\n| Retained Earnings | 1000 | 720 |\n| Total Liabilities & Equity | 2600 | 2,910 |\n\n**Income Statement**\n\n| Item | Amount |\n|---|---|\n| Sales | 3000 |\n| Cost of Goods Sold | (1000) |\n| Gross Profit | 2000 |\n| SG&A | 500 |\n| Interest Expense | 151 |\n| EBT | 1349 |\n| Taxes (30%) | 405 |\n| Net Income | 944 |\n\nWhat is the gross profit margin?",
+  "evidence": "PDF shows the balance sheet and income statement as two clearly formatted tables; DB had squashed all the figures into one run-on sentence with no table structure."
+ },
+ {
+  "id": "80039035-fb86-465b-a250-5f8dcf2f6542",
+  "verdict": "option_bleed",
+  "field": "option_a",
+  "new_value": "0.333.",
+  "evidence": "PDF shows option A as 0.333 (gross profit margin question); DB stored 0.331, a value belonging to an unrelated current-ratio question."
+ },
+ {
+  "id": "80039035-fb86-465b-a250-5f8dcf2f6542",
+  "verdict": "option_bleed",
+  "field": "option_b",
+  "new_value": "0.472.",
+  "evidence": "PDF shows option B as 0.472; DB stored 2.018, belonging to the wrong question."
+ },
+ {
+  "id": "80039035-fb86-465b-a250-5f8dcf2f6542",
+  "verdict": "option_bleed",
+  "field": "option_c",
+  "new_value": "0.666.",
+  "evidence": "PDF shows option C (checked correct) as 0.666 = gross profit / sales = 2000/3000; DB stored 3.018 (a current-ratio value: 1660/550), unrelated to gross profit margin."
+ },
+ {
+  "id": "80039035-fb86-465b-a250-5f8dcf2f6542",
+  "verdict": "explanation_wrong",
+  "field": "explanation_en",
+  "new_value": "Gross profit margin = (gross profit / net sales) = (2,000 / 3,000) = 0.666",
+  "evidence": "PDF explanation computes gross profit margin (2,000/3,000 = 0.666) as the stem asks; DB explanation instead computed a current ratio (1,660/550 = 3.018), an entirely different metric that had bled in from a neighboring question. correct_answer 'C' is unaffected since option C, once corrected to 0.666, is still the right answer."
+ },
+ {
+  "id": "924d3864-9f0e-4d69-96db-353b62b8e38b",
+  "verdict": "option_bleed",
+  "field": "option_a",
+  "new_value": "in different industries that use the same accounting standards.",
+  "evidence": "PDF shows 'different'; DB dropped the 'ffi' ligature, storing 'dierent'."
+ },
+ {
+  "id": "924d3864-9f0e-4d69-96db-353b62b8e38b",
+  "verdict": "option_bleed",
+  "field": "option_b",
+  "new_value": "of different size in the same industry.",
+  "evidence": "PDF shows option B (checked correct) as 'of different size in the same industry.'; DB dropped the ligature, storing 'dierent'."
+ },
+ {
+  "id": "1cf0d06f-50de-4519-9645-af5685f9187c",
+  "verdict": "ok",
+  "evidence": "Box-and-whisker plot values (14.4%, 5.2%, 3.1%, 0.5%, -3.7%), options (A correct: 0.5% to 5.2%), and explanation all match the PDF page exactly; already correctly reproduced as a bullet list."
+ },
+ {
+  "id": "81f437ba-9a80-43db-9b80-81f2e7c4708e",
+  "verdict": "explanation_wrong",
+  "field": "explanation_en",
+  "new_value": "Modified duration is a measure of a bond's sensitivity to changes in interest rates. Approximate modified duration = (V₋ – V₊) / [2V₀ (change in required yield)], where V₋ = estimated price if yield decreases by a given amount, V₊ = estimated price if yield increases by a given amount, and V₀ = initial observed bond price. Thus, duration = (104.45 – 95.79)/(2 × 100 × 0.01) = 4.33. Remember that the change in interest rates must be in decimal form.",
+  "evidence": "DB text had the V subscripts extracted out of order ('V – V ... 0 ... - + 0'), garbling the formula; the underlying numbers and final answer (4.33, option B) were already correct and unchanged."
+ },
+ {
+  "id": "cefdb207-cc71-42a5-b482-6c5b2f1cf139",
+  "verdict": "explanation_wrong",
+  "field": "explanation_en",
+  "new_value": "S₄ = [ (1.06) (1.062) (1.063) (1.065) ]^0.25 – 1 = 6.25%.",
+  "evidence": "PDF shows 'S' with subscript 4 at the start of the formula; DB text relocated the '4' to a stray trailing character at the end of the string ('...= 6.25%. 4'). Value and correct_answer (A) unchanged."
+ },
+ {
+  "id": "7393e5f7-70ad-49cf-b8b3-1e6365398bad",
+  "verdict": "option_bleed",
+  "field": "option_a",
+  "new_value": "A company finances working capital using short-term funds.",
+  "evidence": "PDF shows 'finances' (option A, checked correct); DB dropped the 'fi' ligature, storing 'nances'."
+ },
+ {
+  "id": "7393e5f7-70ad-49cf-b8b3-1e6365398bad",
+  "verdict": "option_bleed",
+  "field": "option_b",
+  "new_value": "A company finances working capital using long-term funds.",
+  "evidence": "Same ligature-drop issue in option B."
+ },
+ {
+  "id": "7393e5f7-70ad-49cf-b8b3-1e6365398bad",
+  "verdict": "option_bleed",
+  "field": "option_c",
+  "new_value": "A company finances working capital using equity instead of debt.",
+  "evidence": "Same ligature-drop issue in option C."
+ },
+ {
+  "id": "6c629a1b-b715-4e1e-802e-593e1b0cfbd1",
+  "verdict": "ok",
+  "evidence": "Endowment bias question: stem, options, correct_answer (B), and explanation all match the PDF page verbatim."
+ },
+ {
+  "id": "1937cb1d-9448-4ed4-b9f7-5d3b5f6580cd",
+  "verdict": "ok",
+  "evidence": "Bond price/yield direction question: stem, options, correct_answer (C), and explanation all match the PDF page verbatim."
+ },
+ {
+  "id": "c190879e-c0ab-4c7e-95e3-f2b35aefe2c0",
+  "verdict": "explanation_wrong",
+  "field": "explanation_en",
+  "new_value": "25,458 / 1.14^9 = 7,828.54. Alternatively, N = 9; I/Y = 14; FV = -25,458; PMT = 0; CPT → PV = $7,828.54.",
+  "evidence": "PDF shows 1.14 raised to the power 9; DB text merged the superscript into the base, storing the ambiguous '1.149' (readable as a decimal). Options and correct_answer (C) were already correct."
+ },
+ {
+  "id": "262d13fa-1c67-494f-a58f-fab9d3c257f9",
+  "verdict": "ok",
+  "evidence": "The recorded page_idx (0) shows an unrelated question, but searching the same PDF located the true source at page_idx 9-10 (Question #16 of 31), where the stem, options (-12.0/24.0/6.0, A correct), and explanation match the DB record verbatim. Only the audit's page-location metadata was off, not the DB content."
+ },
+ {
+  "id": "bd0f3984-a8a4-432b-8d12-9b6e9328b1e5",
+  "verdict": "ok",
+  "evidence": "Boom/Bust probability distribution standard deviation question: table, options (5.5% correct), and explanation all match the PDF page verbatim."
+ },
+ {
+  "id": "c2b6887d-d756-44ec-a8ec-fc8d184972fa",
+  "verdict": "option_bleed",
+  "field": "option_a",
+  "new_value": "1.140%.",
+  "evidence": "PDF (Tully Advisers, Question #19 of 31, standard deviation of Portfolio A) shows option A as 1.140%; DB stored 12.55%, a value belonging to a different (expected-return) calculation."
+ },
+ {
+  "id": "c2b6887d-d756-44ec-a8ec-fc8d184972fa",
+  "verdict": "option_bleed",
+  "field": "option_b",
+  "new_value": "5.992%.",
+  "evidence": "PDF shows option B as 5.992%; DB stored 12.75%, not matching the page."
+ },
+ {
+  "id": "c2b6887d-d756-44ec-a8ec-fc8d184972fa",
+  "verdict": "option_bleed",
+  "field": "option_c",
+  "new_value": "4.53%.",
+  "evidence": "PDF shows option C (checked correct) as 4.53%, the standard deviation of Portfolio A's returns; DB stored 11.55%, which is actually an expected-return figure from a mismatched calculation."
+ },
+ {
+  "id": "c2b6887d-d756-44ec-a8ec-fc8d184972fa",
+  "verdict": "explanation_wrong",
+  "field": "explanation_en",
+  "new_value": "E(RA) = 11.65%. σ² = 0.0020506 = 0.15(0.18 – 0.1165)² + 0.2(0.17 – 0.1165)² + 0.25(0.11 – 0.1165)² + 0.4(0.07 – 0.1165)². σ = 0.0452836, or 4.53%.",
+  "evidence": "The question asks for the standard deviation of Portfolio A's returns; PDF's explanation computes E(RA)=11.65% then σ=4.53% (matching corrected option C). DB's stored explanation instead computed an expected return of 11.55% using different weights/returns entirely, answering a different question. correct_answer 'C' is unaffected since option C, once corrected to 4.53%, is still the right answer."
+ }
+]
