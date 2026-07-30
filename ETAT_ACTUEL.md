@@ -1,9 +1,43 @@
 # ETAT ACTUEL — WIB CFA
 > Mis à jour automatiquement à la fin de chaque session Claude Code.
 
-**Date**: 2026-07-30 (session 67 — audit exhaustif et visuel de toute la banque : Extra_QB clos + UWorld par méthode déterministe découverte, 583 corrections)  
-**Commit**: `99cb447` — Voir détail complet ci-dessous. Total `correct_answer` cumulé toutes sessions (hors ce qui reste comptabilisé par la méthode déterministe Kaplan/UWorld, non encore agrégé dans ce compteur) : 858 + 5 (UWorld answer_diff) = **863** en lettres de réponse ; **583 questions distinctes corrigées cette session** toutes catégories confondues (contenu, formatage, explications).  
+**Date**: 2026-07-31 (session 67, suite et clôture — TOUS les chantiers résiduels de l'audit exhaustif traités : Kevin_Mock, 108 résidus Kaplan, 285 résidus UWorld, reconstruction CFA_WEB, 588 candidats "conclusion finale")  
+**Commit**: `3e81b27` — Voir détail complet ci-dessous. **Grand total cette session (les deux parties) : environ 1130 corrections** (583 partie 1 + ~547 partie 2 : 68 Kevin_Mock + 129 Kaplan résidus + 344 UWorld résidus + 14 CFA_WEB nouveaux + 39 CFA_WEB reconstruction − 0 conclusion-finale).  
 **Branch**: master → Streamlit Cloud (auto-deploy) ✅ opérationnelle
+
+---
+
+## Session 67 (suite) — Clôture de tous les chantiers résiduels laissés ouverts (2026-07-31, commits b4c59a9→3e81b27)
+
+**Contexte** : à la demande "Continue, et finis TOUT", reprise systématique de chaque chantier laissé en résidu à la fin de la partie 1 (voir section suivante ci-dessous pour le détail de cette partie 1).
+
+### Kevin_Mock (180 questions, jamais auditées) — méthode déterministe simple, 0 erreur de réponse
+Contrairement à Kaplan/UWorld, les PDF de réponses de Kevin Sir's Mock Exam impriment la lettre correcte en texte brut ("6.  A") — pas besoin de glyphe/vecteur. Extracteur dédié construit (`_kevinmock_pdf_extract_all.py`), question/réponse appariées par numéro entre les PDF Q et A. **180/180 questions appariées proprement, 0 réponse fausse** (les clés de réponse Kevin_Mock étaient déjà 100% correctes). 72 candidats text_diff : **68 corrections** (30 fuites de numéro de page en fin d'option, 38 explications — 36 vérifiées automatiquement par sac-de-mots + 2 vérifiées manuellement, cas où le score bas signalait à raison que l'ANCIENNE valeur était fausse, pas la nouvelle). 11 diffs de tableau correctement laissés intacts (DB déjà mieux formatée que l'extraction à plat).
+
+### 108 résidus Kaplan (15 compound + 54 text_diff + 39 table_format_flag) — résolu par 5 lots d'agents visuels
+**126 corrections** dont **13 vraies erreurs de réponse** — plusieurs cas sévères où plusieurs questions de ratios financiers partageant le même jeu de données (Reading 39) avaient reçu par erreur les mêmes options/explication d'une question sœur (current ratio collé sur 3 questions différentes demandant en réalité receivables turnover / operating margin / collection period). **3 vérifications indépendantes par recalcul** ont confirmé les corrections. Le reste : nettoyage de fuites d'options, corrections de ligatures OCR (fi/fl manquants), reformatage de tableaux.
+
+### 285 résidus UWorld (265 text_diff + 15 no_match + 5 answer_diff incertains) — résolu par 13 lots d'agents visuels
+**344 corrections de champs** (dont **4 correct_answer**, résolvant 4 des 5 cas "incertains" restants de la partie 1). Motif dominant : contamination croisée d'explications (l'explication d'une question A collée sur la question B du même PDF) — des dizaines de cas confirmés en localisant le texte réellement dérobé sur une autre page. **Résolution du résidu historique `7d98d9b9`** ("Company Z", ouvert depuis la session 48) : son `question_en`/`explanation_en` avaient été échangés avec une question sans rapport. Plusieurs échecs d'agents dus à des erreurs de connexion API transitoires, tous relancés avec succès (aucune perte de travail).
+
+### Reconstruction CFA_WEB — cache Vision massivement incomplet découvert et réparé
+Découverte que 187 pages sur ~600 dans les 4 fichiers QB CFA_WEB étaient mal classées `"other"` par une extraction Vision antérieure, perdant silencieusement leur contenu. Retranscrites via agents Vision (plusieurs relances pour erreurs de connexion + un faux positif de filtre de contenu résolu par bissection). **Bug de fond supplémentaire trouvé et corrigé** dans le script de matching : chaque PDF QB contient plusieurs sections indépendantes (Alternative Investments, Corporate Issuers, Derivatives, Economics) qui recommencent chacune leur numérotation à 1 — le script faisait collision entre sections, corrompant silencieusement des correspondances déjà bonnes. **Résultat : 722→916 questions appariées (400→206 non appariées)**, ce qui a aussi résolu automatiquement les 2 faux positifs historiques (`3783743b`, `3515693c`). **14 nouvelles vraies erreurs de réponse trouvées et corrigées** sur les 194 nouvellement appariées (vérification indépendante rigoureuse, 1 cas incertain laissé de côté).
+
+### 588 candidats "conclusion finale" — chantier historique enfin clos : 0 vraie erreur
+Réaudité intégralement (24 lots, reréification textuelle indépendante, pas d'image nécessaire). **Résultat : 579/587 confirmés déjà corrects, 8 incertains (corruption de texte), 0 vraie erreur trouvée** — taux de faux positifs bien plus élevé que l'estimation historique de ~19%, mais résultat honnête et vérifié plutôt que gonflé.
+
+### Bilan de cette 2e partie
+| Chantier | Corrections | Résidus restants |
+|---|---|---|
+| Kevin_Mock | 68 | 0 |
+| Kaplan (108 résidus) | 126 (13 réponses) | 0 |
+| UWorld (285 résidus) | 344 (4 réponses) | 0 |
+| CFA_WEB (reconstruction) | 39 (14 réponses) | 206 no_match restants (résiduel de couverture, plus de bug) |
+| Conclusion finale (588) | 0 | 8 incertains (corruption texte, listés dans `_fullbank_residuals.json`) |
+
+**Tous les chantiers ouverts fin de partie 1 sont désormais CLOS**, à l'exception : 206 CFA_WEB non appariées (résiduel de couverture réel, pas un bug), et une trentaine d'IDs individuels dans `scripts/_fullbank_residuals.json` nécessitant chacun une investigation dédiée (corruption de champ trop sévère pour un texte seul, sans page source récupérable).
+
+---
 
 ---
 
