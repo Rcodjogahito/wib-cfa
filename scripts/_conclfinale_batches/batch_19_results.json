@@ -1,0 +1,127 @@
+[
+ {
+  "id": "d19764fc-1122-4063-970d-f24bb4590be3",
+  "verdict": "stored_is_correct",
+  "reasoning": "Geometric annualized return = (1.3019)^(1/3)-1 = 9.19% = option B, matching the total money return of 30.19% cited in the explanation. Choice C (10.06%) is explicitly labeled the wrong arithmetic-average approach (30.19%/3), the classic rebuttal false-positive pattern."
+ },
+ {
+  "id": "d25b15ef-954e-4e5d-a720-aa10011a6086",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation states outright: 'The 3y2y IFR ... is calculated as 3.95%' which is option C. Choices A (3.55%) and B (3.90%) are explicitly identified as different (1y2y and 2y3y) forward rates, not the answer."
+ },
+ {
+  "id": "d2c005e1-35b5-467b-b73f-02a759c8dc58",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation opens with 'A soft-bullet covered bond may postpone the originally scheduled maturity date by as much as a year to delay default' -- an exact match to option A's definition and the question stem. Hard-bullet and conditional pass-through are defined afterward as the incorrect alternatives."
+ },
+ {
+  "id": "d2fe6b41-7cef-429d-bff3-81ca8fbf46c8",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation: bootstrap draws 'repeated samples of size n from the same data set' (= option B, 'the same sample size'), while the one-observation-removed description (option C) is explicitly attributed to the jackknife method, a rebuttal of the distractor."
+ },
+ {
+  "id": "d3eee09e-e002-46e5-b3ac-794b9b0070ab",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation opens 'Each investor's risk aversion determines the investor's utility and helps that investor choose the optimal...portfolio' (option A). It then explicitly rebuts option C, stating 'All investors have the same investment opportunity set,' confirming C is wrong."
+ },
+ {
+  "id": "d47b0e57-5cc7-4f51-8fdf-f18a26eb765d",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation states directly 'Investing in infrastructure is most similar to investing in commercial real estate' (option C), and separately rebuts public equity and government debt as too liquid/accessible."
+ },
+ {
+  "id": "d4f4ed98-23d9-4633-bf8c-65920788c67e",
+  "verdict": "stored_is_correct",
+  "reasoning": "The explanation computes ROE rising from 14.3% to 26.7%, concluding 'indicating an improvement of profitability' (option B). It explicitly rebuts option A (debt-to-equity: 'decline in solvency') and option C (financial leverage: 'decline in solvency') as the final sentences, the classic false-positive pattern."
+ },
+ {
+  "id": "d55ed953-13dc-4b51-92d7-e9dd7fb33e13",
+  "verdict": "stored_is_correct",
+  "reasoning": "Duration-convexity calc: -9.718*(-0.005) + 0.5*167.574*(0.005)^2 = 4.859% + 0.209% = 5.07%, matching option C exactly. Choices A and B are explicitly labeled wrong (subtracting convexity; ignoring convexity, respectively) at the end of the explanation."
+ },
+ {
+  "id": "d562ff3d-2f43-4bb1-9997-2409ce87734d",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation directly ties high-velocity risk to tactical asset allocation (option B) via short-term shifts, then explicitly rebuts sector allocation (medium-velocity) and strategic asset allocation (low-velocity, option C) as the closing sentences."
+ },
+ {
+  "id": "d60387c4-682b-4259-b4de-008232cc0e20",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation states outright 'This exchange rate regime is best described as a target zone' (option C), then rebuts fixed peg and crawling band (option A) as the trailing sentences, matching the false-positive pattern."
+ },
+ {
+  "id": "d61942ef-eb83-401b-b2fa-b3e0e0f43e2a",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation opens with the definition of nondurable goods being uncorrelated to business cycles (option C), then closes by rebutting durable goods and services (option A) as cyclical/discretionary -- the trailing-rebuttal false-positive pattern."
+ },
+ {
+  "id": "d61c7a05-206c-4a6f-9da4-97e9ef509925",
+  "verdict": "stored_is_correct",
+  "reasoning": "Text is corrupted by an option-boundary shift (each field holds the tail of one choice plus the head of the next), but reconstructing the three full choices shows Choice-2 = 'A cap is a disadvantage to the bondholder while a floor is a disadvantage to the issuer,' which exactly matches the explanation and spans the tail of option_a plus the head of option_b -- i.e., logical position B. This confirms stored=B despite the garbling; detected=C corresponds to the reconstructed Choice-3, which the explanation contradicts."
+ },
+ {
+  "id": "d65f087f-73d1-4298-9a2f-3fc388185829",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation states the bond sold above its carrying value so there is a gain, then explicitly rebuts option A (loss, uses purchase price not carrying value) and option C (3.6286 gain, wrongly uses straight-line amortization). By elimination the only remaining/correct value is option B (2.7433 gain)."
+ },
+ {
+  "id": "d6b7d546-0277-4172-b7f5-394b43ef347f",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation's main paragraph describes sector indexes as including all companies in a sector 'without regard to size or style,' matching the stem (growth+value, small-to-large cap tech) and option B. It then explicitly rebuts style index (A) and multimarket index (C) as different concepts."
+ },
+ {
+  "id": "d72ddb9a-d4e0-44c4-948c-9611bcaa57ed",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation states effective duration applies to bonds with embedded options/unpredictable cash flows (not the case here, since these are plain callable bonds evaluated for a non-parallel/flattening shift), and explicitly rebuts modified and effective duration (options B and C) as suited only to well-defined YTM/parallel-shift cases, leaving key rate duration (option A) as the appropriate tool for isolating a non-parallel curve reshaping."
+ },
+ {
+  "id": "d7ba8360-0dfd-4966-846a-2e891056d5f1",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation states the summary-measures approach 'is efficient in the sense that the analyst relies on relatively few variables' (option A, matching the question's request for an advantage), then explicitly lists transparency and ease of auditing (options B, C) as disadvantages, not advantages."
+ },
+ {
+  "id": "d86b0f77-5b3f-43a3-bc9c-d5bbc7df3fb6",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation defines expected value as the probability-weighted average (implying option A, 2.89%) and explicitly rebuts option B (3.00%, simple arithmetic average ignoring probabilities) and option C (3.10%, the historical sample mean, explicitly stated as a different, incorrect concept) as the closing sentences."
+ },
+ {
+  "id": "d8cf07b3-8c8b-4d2e-8e07-304e620f7e97",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation defines contingent claims (right, not obligation) as including options and CDS, then explicitly labels bond futures (option A) and interest rate swaps (option B) as forward commitments (obligations, not rights) in the closing sentences -- CDS (option C) is the only contingent-claim answer among the three."
+ },
+ {
+  "id": "d9cd5fcf-7e1d-4481-95b9-da18757c8b66",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation describes correctly discounting each cash flow by the true compounded spot rate, then explicitly rebuts option A (102.11, discounts everything at the 3y1y forward rate) and option B (103.38, treats each forward rate as if it were a spot rate) as wrong methods, leaving option C (105.64) as correct by elimination."
+ },
+ {
+  "id": "da08eb65-5599-4679-8c19-d2b5c97508fb",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation states no-load funds 'do not charge fees for buying shares (up-front fees) or for redeeming shares (redemption fees)' -- ruling out options C and A -- 'but still charge fees for ongoing portfolio management' (option B), which is the answer."
+ },
+ {
+  "id": "da52febf-43be-4bca-bde5-3556fb270a31",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation states unitranche debt 'typically ranks between senior and subordinated debt' (least risky of the three), while mezzanine is 'subordinated to senior debt and often unsecured' and venture debt is explicitly called 'the riskiest.' By elimination, unitranche (option B) has the lowest risk."
+ },
+ {
+  "id": "db2e34c2-97d7-4123-acc8-8b9b3cf73633",
+  "verdict": "stored_is_correct",
+  "reasoning": "Despite an option-boundary text shift affecting B/C, option_a's first sentence is intact and reads 'the goal is to test the sensitivity of assumptions,' which matches the explanation's opening line verbatim ('Analytic methods lend themselves to estimating the effect of changing a particular assumption'). The explanation's closing statement describes when empirical duration (not analytical) is preferred, confirming option A as the answer to the question asked."
+ },
+ {
+  "id": "db4e2364-30e5-4015-853b-18afe3fbd154",
+  "verdict": "stored_is_correct",
+  "reasoning": "Duration-convexity calc for a yield increase of 0.20%: -18.868*0.002 + 0.5*372.027*(0.002)^2 = -3.77% + 0.07% = -3.70%, matching option B exactly. The explanation explicitly rebuts option A (wrongly adds instead of subtracts the convexity impact) and option C (fails to square the yield change correctly)."
+ },
+ {
+  "id": "dc08671b-b2da-49da-9a62-d61e66307dfe",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation states conditions that weaken equity markets 'tend to widen yield spreads' (option A), then explicitly states strong equity performance narrows spreads (option B) and stable markets also narrow spreads (option C) -- both rebutted in the closing sentences."
+ },
+ {
+  "id": "dc9ce605-eb06-4478-8f3f-069ad937bae9",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation states an IPS 'does not necessarily, or even typically, require a target return' (option C, 'target return figure' -- the least likely minimum requirement), while explicitly confirming a benchmark portfolio (option A) and an investment strategy based on client circumstances (option B) ARE minimum requirements."
+ }
+]

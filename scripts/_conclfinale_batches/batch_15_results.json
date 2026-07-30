@@ -1,0 +1,127 @@
+[
+ {
+  "id": "ab403474-72fa-4e23-a69f-6c899b96ae54",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation explicitly computes z = -0.74 and P(z < -0.74) = 0.2296, which is option B. The final sentence about 77.04% (option C) is an explicit rebuttal explaining why C is wrong (using +0.74 instead of -0.74)."
+ },
+ {
+  "id": "ac86d19d-bb5c-4149-a486-e25cd2cfc05a",
+  "verdict": "stored_is_correct",
+  "reasoning": "First sentence directly states the line combining a risky asset and the risk-free asset is the capital allocation line (option A). The characteristic line (option C) is defined last only to distinguish it as a wrong/unrelated concept."
+ },
+ {
+  "id": "ac936cc6-791c-4e9a-b54f-1d2cfaab1bd7",
+  "verdict": "stored_is_correct",
+  "reasoning": "The question asks which theory implies an optimal capital structure with both debt and equity; the explanation opens by identifying static trade-off theory (option B, OCR-garbled as 'trade-o') as exactly that. Pecking order (option A) is explicitly stated to imply no optimal structure."
+ },
+ {
+  "id": "ac9501a0-5710-4ec9-b4c7-d2b7db301e05",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation opens by stating Form 8-K (option B) must be filed within 4 business days of material events like acquisitions, directly answering the question. Proxy statements (option C) are dismissed in the final sentence as unrelated to M&A disclosure."
+ },
+ {
+  "id": "ad1d83c4-bd59-4eed-9978-1290e9e8234c",
+  "verdict": "stored_is_correct",
+  "reasoning": "First sentence states a catch-up clause (option C) allows the manager to catch up on performance fees, directly answering 'benefits the manager.' Clawback (option B) is described last only as a mechanism that returns fees to investors, i.e., it does not benefit the manager."
+ },
+ {
+  "id": "ad22d05d-ce52-4f69-9175-875e1e10e0df",
+  "verdict": "stored_is_correct",
+  "reasoning": "First sentence directly defines target independence (option B) as defining how inflation is computed and setting its desired level, matching the question exactly. Transparency (option C) is defined last purely as a contrasting/incorrect concept."
+ },
+ {
+  "id": "ad679adc-8bfc-4989-8695-4cb51e044073",
+  "verdict": "stored_is_correct",
+  "reasoning": "First sentence identifies dynamic pricing (option A) as charging different prices based on day/time, matching the salon scenario exactly. Razors-and-blades (option B) is explained last only to show it doesn't fit (it's a multi-product model, not applicable here)."
+ },
+ {
+  "id": "ae2bebfe-c6c4-4c16-adcb-a6bde23b0df7",
+  "verdict": "stored_is_correct",
+  "reasoning": "Direct computation stated in the explanation: 3.25% + 0.35% (quoted margin) = 3.60%, which matches option C exactly. The explanation's final line mislabels a rebuttal as '(Choice C) 3.45%' but 3.45% is actually option B's value, an apparent label typo in the source text; the computed 3.60% is unambiguous and matches stored C."
+ },
+ {
+  "id": "aecdf682-a7db-4719-a79c-7b17feffd7e8",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation directly computes operating profit = 0.4816 x 3,797 = ¥1,829 billion, which is option A exactly. Options B and C are explicitly described afterward as resulting from errors (excluding depreciation or R&D), overstating the true figure."
+ },
+ {
+  "id": "af0ae951-f075-499d-a459-17bdce32c139",
+  "verdict": "stored_is_correct",
+  "reasoning": "First sentence directly states interest rate above neutral rate is contractionary policy (option B), answering the question. Option C (easing monetary policy) is explicitly marked 'C is incorrect' in the text."
+ },
+ {
+  "id": "af588217-1839-4d5a-9bd8-cd1bac713778",
+  "verdict": "stored_is_correct",
+  "reasoning": "First sentence directly concludes the bond is a partially amortizing bond (option B) because principal is repaid before maturity but a balloon remains due. Bullet bond (option C) is defined last only to contrast it as the wrong answer (bullet bonds pay no principal until maturity, which doesn't match this scenario)."
+ },
+ {
+  "id": "af895760-abdf-4a0c-9431-4a027168c995",
+  "verdict": "stored_is_correct",
+  "reasoning": "The question asks which is LEAST likely part of the value chain relationship; explanation defines value chain as internal systems/processes, and explicitly attributes the retailer arrangement to supply chain (Choice B) and value proposition (Choice C), leaving value chain (option A) as least likely, matching stored."
+ },
+ {
+  "id": "af9303c3-cf11-41d8-ba1d-ada1c61f50f9",
+  "verdict": "stored_is_correct",
+  "reasoning": "First sentence defines text analytics (option A) as analyzing unstructured text/voice data to identify word frequency, directly matching the question. NLP (option C) is defined last only as a distinct, unrelated concept (interpreting human language), not the answer."
+ },
+ {
+  "id": "b00aea55-12e6-43b1-957a-9ba006b8e332",
+  "verdict": "stored_is_correct",
+  "reasoning": "Spot price = PV(forward) + cost of carry = 98/1.02 + 2.25 = 96.08 + 2.25 = 98.33, matching option B exactly. The final sentence about £100.25 (option C) explicitly describes it as resulting from failing to discount the forward price, i.e., an error."
+ },
+ {
+  "id": "b09f841f-9a78-4fe6-b0ba-f9fba3883cc2",
+  "verdict": "stored_is_correct",
+  "reasoning": "First sentence states the two countries are part of an economic union (option A), matching all four criteria described (free trade, common tariffs, free labor movement, common policies but separate currencies). Customs union (option B) is described last only to show it lacks free labor movement and common institutions, disqualifying it."
+ },
+ {
+  "id": "b0a3b73b-2fc6-43ac-9715-347bc9779768",
+  "verdict": "uncertain",
+  "reasoning": "The option text is corrupted: option_b appears to contain two merged statements and option_c is truncated to just the word 'consistent.', making it impossible to cleanly map the explanation's points to three distinct, complete answer choices. The explanation's content (book value useful in service industries = false, and the other two statements = true advantages) is directionally consistent with stored B, but the garbled options prevent confident letter-level verification."
+ },
+ {
+  "id": "b0a82081-4b14-470e-9667-fa5a8d897713",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation opens by naming Ricardian equivalence (option C) and describing exactly the scenario in the question (deficits/tax cuts offset by higher private savings for future taxes). Money neutrality (option B) is explicitly dismissed in the final sentence as being about the long-run neutrality of money supply, unrelated to fiscal policy reactions."
+ },
+ {
+  "id": "b0ed573b-f771-4086-992a-bafd0e0eb86e",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation states higher depreciation leads to LOWER profitability after revaluation, directly contradicting option B ('Higher profitability in the periods after revaluation'), making B the least likely outcome, matching stored. Higher earnings in the revaluation period (A) and lower solvency ratios (C) are both confirmed as things that CAN/DO occur."
+ },
+ {
+  "id": "b152aa0c-faea-4465-bc1a-7a77cb15eea6",
+  "verdict": "stored_is_correct",
+  "reasoning": "First sentence directly defines a sector index (option B) as measuring returns for an industry sector like finance, matching the question. Broad market index (option A) is defined last only as an unrelated, contrasting concept (90%+ of a given market's total cap, not a single sector)."
+ },
+ {
+  "id": "b16fc263-2307-444e-9aee-74ce37e18218",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation directly computes the convenience yield (option B) as $7/barrel and explains it as the reason forward < spot despite positive carrying costs. Counterparty credit risk (option C) is dismissed in the final sentence as not affecting forward price at all."
+ },
+ {
+  "id": "b23d6ff2-e3dc-4a3c-834e-e9325d0fc890",
+  "verdict": "stored_is_correct",
+  "reasoning": "Independent calculation: coupon difference (6% vs 3% annual = 1.5 per semiannual period on par 100) discounted as an annuity over 4 periods at 2.5% per period gives 1.5 x [1-(1.025)^-4]/0.025 = 5.64, matching option C exactly. The final sentence about 5.57 (option B) is explicitly an error description."
+ },
+ {
+  "id": "b2514335-e8fa-4afe-b213-0a2c129a5d7e",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation states a short forward is replicated by multiplying the long-call/short-put/long-bond position by -1, giving short call, long put, short bond -- which is option C verbatim. Option B is explicitly described last as replicating a LONG forward position instead, i.e., the wrong answer."
+ },
+ {
+  "id": "b2ed1b54-f09c-469e-9dc5-7aa536644153",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation computes all three index returns: price-weighted = 2.38%, market-value-weighted = -2.39%, equal-weighted = 5.0%. The equal-weighted arithmetic index (option C) has the greatest return, matching stored; option A (price-weighted, only 2.38%) does not."
+ },
+ {
+  "id": "b33acd83-f54c-4678-a5a7-d624695ce281",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation directly computes the issuance price using the derived coupon (8.75), original maturity (n=10), and original YTM (8.9%), arriving at PV = 99.03, matching option B exactly. Option C (99.10) is explicitly described last as an error from using the wrong (current) time to maturity."
+ },
+ {
+  "id": "b3a8801d-0e01-4474-b43b-f5fef7dae821",
+  "verdict": "stored_is_correct",
+  "reasoning": "Direct computation: Yf = 1.2% + 1.0(3.5%) = 4.7%; prediction interval = 4.7% +/- 2.032(1.4%) = (1.9%, 7.5%), matching option B exactly. Option C is explicitly described in the final sentence as the result of neglecting the critical t-value, an error."
+ }
+]

@@ -1,0 +1,127 @@
+[
+ {
+  "id": "0c32d7ea-e1f9-4dac-aa9b-093825c74bad",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation states creditors' payments are predetermined and don't depend on market value, so creditors (A) least likely benefit. The final sentence discusses executives (Choice C) benefiting via equity comp, which is confirming C DOES benefit, not that it's the answer to 'least likely' - classic rebuttal pattern the heuristic misread."
+ },
+ {
+  "id": "0d177551-d184-4519-bc69-77b8995f352e",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation directly states the multiplication rule (B) is used for joint probability of independent events: P(AB)=P(A)P(B). The trailing (Choice C) text about the total probability rule is a rebuttal of a distractor, not the answer."
+ },
+ {
+  "id": "0d70a932-fe64-47c5-bf28-95375c419831",
+  "verdict": "stored_is_correct",
+  "reasoning": "Low bargaining power of suppliers (B) lets firms control costs/request price cuts, supporting optimistic forecasts; the last sentence about low barriers to entry making ROIC hard to maintain is explaining why option C is bad for the forecast, not the answer."
+ },
+ {
+  "id": "0e7a0f35-a871-4d52-81d8-663aebaa95f2",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation states depreciable unit cost is constant (ruling out A) and 'the only variable that can change depreciation expense will be the actual number of units produced' - directly confirming units produced (C). The final paragraph labeled (Choice B) rebuts net margin, which the heuristic misread as the answer."
+ },
+ {
+  "id": "0ec1564e-7dc5-4e9e-9a8d-3038f029e299",
+  "verdict": "stored_is_correct",
+  "reasoning": "Main text states systematic risk 'is the driving force behind increases in a portfolio's long-term value,' matching option B exactly. The final (Choice C) sentence explicitly states systematic risk is unavoidable (only nonsystematic risk can be minimized via offsetting assets), which refutes option C rather than confirming it."
+ },
+ {
+  "id": "100c6f1a-1e86-4efd-80b6-f7fcc9bdf90d",
+  "verdict": "stored_is_correct",
+  "reasoning": "The scenario (holding a losing position hoping it bounces back) is the textbook definition of loss-aversion bias (C), stated first in the explanation. The final sentence about availability bias (A) is an unrelated distractor definition, not the answer."
+ },
+ {
+  "id": "10325b69-b765-49ff-8a31-a32987fa6857",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation identifies both Choice A (0.405, from using correlation instead of covariance) and Choice C (0.898, from swapping X/Y) as results of specific calculation errors, leaving B (0.679) as the correctly-computed slope. The last sentence explains the error producing C, a rebuttal, not the answer."
+ },
+ {
+  "id": "108dd706-6fb6-4ff1-b634-cacc05838901",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation classifies letters of credit as an external enhancement (guarantees from financial institutions), making it the 'least likely' internal enhancement (A), matching the question. The final (Choice C) sentence confirms reserve accounts ARE internal - a rebuttal of C, not support for it as the answer."
+ },
+ {
+  "id": "10f730a2-374b-46ea-a1a0-67ea65eb545b",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation states Choice A (7.20) omits the +1 in location calc and Choice C (7.96) uses 0.6 instead of 0.4 - both flagged as errors, leaving B (7.76) as the correctly interpolated value. Last sentence rebuts C's error method, not the answer."
+ },
+ {
+  "id": "11961a0c-d570-46cc-a37b-f095b7ea4b1e",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation explicitly states 'This results when the spot price is 82 since the short is obligated to buy the underlying at the higher exercise price of 85' - directly confirming B. The final (Choice C) sentence rebuts the 88 distractor as belonging to a short call scenario, not a short put."
+ },
+ {
+  "id": "12a43b1a-bb6b-463f-9611-6757e03dbc86",
+  "verdict": "stored_is_correct",
+  "reasoning": "Options b/c show field-bleed corruption (option_c is just the fragment 'presentation.' split off from option_b's real text), but the explanation - 'GIPS are voluntary standards for performance presentation by investment management firms' - directly matches option A's framing (voluntary, applies only to firms claiming compliance), which is well-established CFA content. The heuristic's C match is a spurious hit on the word 'presentation' bleeding across corrupted option fields."
+ },
+ {
+  "id": "12e46dcc-854d-4140-ae00-9936d76050cd",
+  "verdict": "stored_is_correct",
+  "reasoning": "Independently recomputed Macaulay duration: PV of CF1=6.635, CF2=6.289, CF3=91.144 (sum ~104.07, matching given price); time-weighted sum=292.64; 292.64/104.05=2.81, exactly matching stored B. The explanation flags A (2.64, omits last coupon) and C (2.93, divides by par instead of price) as specific errors, and the last sentence rebuts C."
+ },
+ {
+  "id": "12fadea8-775e-4849-ba91-84f3c21b5dee",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation states 'a model that estimates a stock's expected excess return based only on the book-to-market ratio is a single-factor model' - directly matching option C and the question's wording ('based on the ratio'). The final sentence about multifactor models (B) is a generic contrast/rebuttal, not the answer."
+ },
+ {
+  "id": "140167b4-a892-4495-8763-ed3d6e8c158e",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation states the friend's opinion 'does not make the information material' (ruling out a Material Non-Public Information violation, option B) while confirming Chambers DID violate both Diligence (option C, real text corrupted into option_a/b fields) and Priority of Transactions (option A). Since the question asks which he 'least likely violated,' the correct answer is B (not violated), and the heuristic's detection of A is based on a sentence confirming A WAS violated - the opposite of the answer."
+ },
+ {
+  "id": "14625eae-8108-4ab8-803c-93767652de9c",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation directly states 'The method of comparables is based on the law of one price, which is enforced by arbitrage' - matching option B exactly. The final sentence about competitive advantage (C) is a rebuttal explaining why C is not the rationale."
+ },
+ {
+  "id": "14cccdd0-bd8d-4b1e-ba5a-c8589ec3c88f",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation states 'Expanding profit margins indicate that a company has significant pricing power' - directly matching option B ('expanding operating margin'). The final sentence rebuts option C (revenue growth alone doesn't demonstrate pricing power since costs may grow faster)."
+ },
+ {
+  "id": "158d2ff3-93ee-413a-b9dd-ff42aa2af992",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation states banks typically pay no interest on checking deposits, directly supporting option B as the lowest-cost funding source. The last sentence notes central bank and interbank funds (options C and A) DO incur interest costs - a rebuttal of C, not confirmation of it."
+ },
+ {
+  "id": "1595c3eb-bbd8-4988-ab6c-9b45feba684f",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation opens with 'The conditional prepayment rate (CPR) is an annualized measure of a mortgage pool's prepayments' - directly matching option A and the question's exact wording ('annualized measure of prepayments'). The final sentence describing the PSA benchmark (B) is a generic definition/rebuttal, not the answer."
+ },
+ {
+  "id": "15eca81e-9345-4e94-9ee3-8a841a6aaca5",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation explicitly computes 'AR turnover is closest to 4.0,' matching stored B. The final sentence explains that 4.5 (option C) results from erroneously using ending AR instead of average AR - a rebuttal, not the answer."
+ },
+ {
+  "id": "16254e8e-bf90-4dfd-bc25-484bdf21c552",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation opens with 'Farmland provides the steadiest cash flows compared to timberland and raw land,' directly matching option A and the question's exact wording. The final sentence about raw land (C) generating no cash flow is a rebuttal, not the answer."
+ },
+ {
+  "id": "187b324b-39e3-4eac-9556-37aa6ab8f2fa",
+  "verdict": "stored_is_correct",
+  "reasoning": "Options show field-bleed corruption (option_a merges the real option A text with the start of option B), but the explanation's opening sentence - 'Carson has not violated either Standard based on the information given' - unambiguously matches the real option A content ('not violated the Standards'), confirming stored A despite the corrupted option fields."
+ },
+ {
+  "id": "18e37d94-8df9-40fe-af58-20f4c18bb25f",
+  "verdict": "stored_is_correct",
+  "reasoning": "Options are corrupted by line-wrap merging, but reconstructing them, real option A ('more likely mitigated through education') matches the explanation's opening claim about cognitive errors being easier to address via education. The final sentence rebuts the commission/omission distinction (real option C), which the heuristic mistook for the answer."
+ },
+ {
+  "id": "1942412c-a5ed-47a8-8dea-3659c5253a31",
+  "verdict": "stored_is_correct",
+  "reasoning": "Independently recomputed: PV(F)=30/(1+0.03*2/12)=29.85, value=31.5-29.85=1.65, matching stored B exactly. Recomputing the Choice C error (discounting by 2 years instead of 2 months: 30/1.03^2=28.28, 31.5-28.28=3.22) confirms C is explicitly the erroneous-method result described in the final sentence, not the answer."
+ },
+ {
+  "id": "199f9685-e64b-4f78-ac24-818e2038c91d",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation opens with 'A notice period... is the amount of time a fund has after receiving notice of a redemption request to fulfill the redemption request' - directly matching option B and the question's exact wording. The final sentence about the lockup period (A) is a contrasting definition, not the answer."
+ },
+ {
+  "id": "19db3089-0ac4-408a-91e4-78e70976c7fd",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation opens with 'Alpha is the return resulting from the manager's security selections' - directly matching option A and the question's exact wording ('attributable to security selection'). The final sentence about strategy beta (C) is a rebuttal, not the answer."
+ }
+]

@@ -1,0 +1,127 @@
+[
+  {
+    "id": "e79117ad-4af2-46e4-8b92-c7e858e748e3",
+    "verdict": "stored_is_correct",
+    "reasoning": "Independent PV calculation (N=8, i=2.25%, PMT=2.5, FV=100) gives 101.812, matching option C exactly. The explanation's final sentence explains why Choice B (101.7938, annual-pay assumption) is wrong, which the heuristic misread as the answer."
+  },
+  {
+    "id": "e7927722-7b9d-4d5b-bec4-6ea999cd5d0a",
+    "verdict": "stored_is_correct",
+    "reasoning": "Negative screening (excluding companies for ESG violations, e.g. human rights) is explicitly defined in the explanation and matches option C. The last sentence merely describes thematic investing (B) as a contrast, not the answer."
+  },
+  {
+    "id": "e7fc82e0-c31e-4255-a2c5-5f3e5a9c5699",
+    "verdict": "stored_is_correct",
+    "reasoning": "EAR = e^0.07 - 1 = 7.25%, matching option C, and the explanation even states outright that 7.25% is the only choice greater than 7% so must be correct. Last sentence rebuts Choice B (7.00%), a classic false-positive pattern."
+  },
+  {
+    "id": "ea7514d4-4666-4d0e-952b-7d5c01f8ec57",
+    "verdict": "stored_is_correct",
+    "reasoning": "Recomputing: Fund X Treynor=(5.13-1.7)/1.18=2.91%<3% (fails); Fund Y Treynor=(4.98-1.7)/0.95=3.45%>3% and alpha=4.98-4.83=0.15%>-0.5% (passes both); Fund Z alpha=7.29-7.81=-0.52%<-0.5% (fails). Only Fund Y (option B) passes both criteria, matching stored."
+  },
+  {
+    "id": "ea76b2d4-ef64-4db6-98a0-eced6225e4a2",
+    "verdict": "stored_is_correct",
+    "reasoning": "The explanation states directly and unambiguously that the no-arbitrage forward price with no holding costs/benefits is the future value of the spot price, which is option B, matching stored."
+  },
+  {
+    "id": "eaa740c3-0b6b-468d-8acd-afbca47e68dc",
+    "verdict": "stored_is_correct",
+    "reasoning": "Weak-form efficiency means historical data (technical analysis) cannot generate abnormal returns, matching option A directly per the explanation's opening reasoning; insider information and fundamental analysis (B, C) can still work under weak-form EMH."
+  },
+  {
+    "id": "eb1089ff-1f67-435f-b8cb-0ff5ecf8ba1b",
+    "verdict": "stored_is_correct",
+    "reasoning": "The explanation explicitly states late expansion is when businesses rehire full-time employees and invest in heavy capital equipment, matching the question scenario and option B exactly."
+  },
+  {
+    "id": "eb4d9132-830f-4447-b0c6-4ff76d8226b9",
+    "verdict": "stored_is_correct",
+    "reasoning": "Recomputed: Company X quick ratio = 850/1000=0.85; Company Y = 1150/1000=1.15. Company Y is higher, matching option B/stored. Detected 'A' is contradicted by the arithmetic."
+  },
+  {
+    "id": "eb9247db-1d58-49f4-a16f-bb34130316c5",
+    "verdict": "stored_is_correct",
+    "reasoning": "The two actual principles are confidentiality of proceedings (C) and fair process (A); since the question asks which option LEAST reflects the two principles, the correct answer is the one not among them, i.e. option B (public disclosure), matching stored."
+  },
+  {
+    "id": "ebafe999-2dc8-480d-bb0a-5f2db2c2450e",
+    "verdict": "stored_is_correct",
+    "reasoning": "Required spread = 0.04*0.20=80bp > actual 70bp spread, so the bond does not fairly compensate for risk and the investor should not buy = option A ('No'), matching stored. Options B/C show OCR/text-splitting corruption (two 'Yes' answers merged/split across B and C) but the semantic answer is unambiguous."
+  },
+  {
+    "id": "ec053637-b657-46a3-bbf3-87f84647146f",
+    "verdict": "stored_is_correct",
+    "reasoning": "The explanation opens by stating 'the hidden revenue pricing model is most appropriate' for a free app monetized via advertising, which is option A, matching stored exactly."
+  },
+  {
+    "id": "ec5ad8d4-d90a-42bd-aaf7-ecd7d90c1871",
+    "verdict": "stored_is_correct",
+    "reasoning": "z=2.50 > critical 1.96 means the null is actually false; failing to reject a false null is a Type II error (option B), which the explanation states directly. The final sentence about Choice C explains why 'correct decision' is wrong, a rebuttal misread by the heuristic."
+  },
+  {
+    "id": "ec728d1b-6c60-4859-9716-0c245a0ea8b3",
+    "verdict": "stored_is_correct",
+    "reasoning": "The explanation states the geometric mean is always less than or equal to the arithmetic mean, i.e. 'smaller' with variability present, matching option A/stored."
+  },
+  {
+    "id": "ed8728d9-d02d-428c-95d0-7c4da42b3c6d",
+    "verdict": "stored_is_correct",
+    "reasoning": "The spot-rate curve table itself is not present in the text (image-only), so the exact price cannot be recomputed, but the explanation explicitly refutes both Choice A (95.90, wrong uniform-rate method) and Choice C (97.50, omits Z-spread) as flawed methodologies, leaving option B (96.07) as the only unrefuted, correct choice by elimination — consistent with stored."
+  },
+  {
+    "id": "ed9b85e7-754d-4f51-99a3-b1f426ba1c20",
+    "verdict": "stored_is_correct",
+    "reasoning": "The attached explanation text is unrelated to the question (discusses common-size balance sheets/leverage, not quick ratios), a likely data-linking bug, but independent computation of the quick ratio ((Cash+MS+AR)/CL) gives A=0.53, B=0.53, C=0.78, so Company C has the highest quick ratio, confirming stored option C independently of the mismatched explanation."
+  },
+  {
+    "id": "edba8f26-a37e-4e51-b2dd-e8d9a4b4073b",
+    "verdict": "stored_is_correct",
+    "reasoning": "The explanation states extension occurs when prepayments are slower than expected, which is option C, matching stored; a rate decrease (B) causes contraction, and support-tranche exhaustion (A) applies to PAC tranches, not agency RMBS generally."
+  },
+  {
+    "id": "ede774a6-4943-4ed3-96c0-99ed7dfd84f0",
+    "verdict": "stored_is_correct",
+    "reasoning": "The explanation states legal infrastructure (like governmental infrastructure) is established outside the corporation's control, unlike contractual (B) and organizational (C) infrastructure which the corporation shapes directly — matching option A/stored as least controlled by the firm."
+  },
+  {
+    "id": "edf4c96b-0b17-4c27-b3bb-fc684792aeae",
+    "verdict": "stored_is_correct",
+    "reasoning": "The explanation states MD&A's suggested elements include the company's goals and highlights significant events/risks, matching option B, and explicitly attributes options A and C to the proxy statement and auditor's report respectively, confirming stored."
+  },
+  {
+    "id": "ee325dcd-f50f-4d7a-b02f-441ec15b981d",
+    "verdict": "stored_is_correct",
+    "reasoning": "The explanation states directly that the current ratio is a liquidity measure while equity turnover and net profit margin measure operating performance, matching option C/stored."
+  },
+  {
+    "id": "eecc013f-cb97-42be-9588-c02de03685dc",
+    "verdict": "stored_is_correct",
+    "reasoning": "Options show OCR text-splitting (missing 'fi' ligatures and merged/split sentences across a/b/c), but the explanation clearly identifies the ROE definition (net income / average book value) as the one that is NOT an accurate description of cost of equity, i.e. option C, matching stored — the other two descriptions (expected equilibrium return, minimum required return) are both valid definitions of cost of equity."
+  },
+  {
+    "id": "eee8a184-6790-44f9-856a-54fcb473839c",
+    "verdict": "stored_is_correct",
+    "reasoning": "The explanation states sunk costs are not to be included in investment analysis (i.e., least relevant to project cash flow), matching option A/stored, while opportunity costs and tax impacts are stated as relevant."
+  },
+  {
+    "id": "f0468156-cf11-4fe7-ab88-3691e98bc27d",
+    "verdict": "stored_is_correct",
+    "reasoning": "The explanation opens by defining loss aversion as disliking losses more than equivalent gains (asymmetric risk preference), which is exactly the scenario described and matches option B/stored."
+  },
+  {
+    "id": "f076766b-bfab-4542-a2a2-1873da286cdb",
+    "verdict": "stored_is_correct",
+    "reasoning": "The explanation states plainly that since the null hypothesis is actually true and was rejected, this is a Type I error, matching option A/stored; the final annotation for Choice C explains why 'correct decision' is wrong, a rebuttal misread by the heuristic."
+  },
+  {
+    "id": "f0b223c1-b3ce-4ac4-b907-58b997ba09c6",
+    "verdict": "stored_is_correct",
+    "reasoning": "The explanation states M-squared (and Jensen's alpha) produce meaningful standalone results, unlike Sharpe and Treynor which require peer comparison, matching option A/stored."
+  },
+  {
+    "id": "f1b39c20-2188-4895-976b-b618a4823877",
+    "verdict": "stored_is_correct",
+    "reasoning": "Modified duration = Macaulay duration (20, since it's a zero-coupon bond) / (1 + 0.04/2) = 20/1.02 = 19.61, matching option B/stored exactly. The final sentence merely notes Choice C (20.00) is the unadjusted Macaulay duration, a rebuttal misread by the heuristic."
+  }
+]

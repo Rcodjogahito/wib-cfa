@@ -1,0 +1,127 @@
+[
+ {
+  "id": "6a4426ec-5e2b-4e09-b05b-1dd3be3fb7f9",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation explicitly refutes both A (6.86%, wrong direction: price decline from widening, not narrowing) and B (7.15%, duration-only approximation, ignoring convexity, valid only for small spread changes). By elimination C (7.44%) is the correct answer, matching stored."
+ },
+ {
+  "id": "6a4833a1-3bd3-4c16-a500-04e858ae4b16",
+  "verdict": "stored_is_correct",
+  "reasoning": "Option text is corrupted (the three original option sentences appear concatenated then chopped into fixed-length a/b/c chunks, misaligned with the real option boundaries). The explanation's first, affirmative sentence describes the correct concept ('competitors match a price decrease but not a price increase'), while the collusion/cheat idea and the price-discrimination idea are both explicitly framed as other, wrong options. This affirmative concept corresponds to the original option labeled B, consistent with stored; detected C was likely triggered by the trailing word 'consumers' which belongs to a refuted distractor (price discrimination), not the answer."
+ },
+ {
+  "id": "6a5ba424-4c0a-4283-8b96-161449bbf18f",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation directly states investing cash flows are linked to noncurrent assets (option A), while operating links to current assets/liabilities (option C) and financing links to noncurrent liabilities/equity (option B, mentioned last but explicitly assigned to financing, not investing) -- classic last-sentence distractor pattern."
+ },
+ {
+  "id": "6aa58d89-3927-4422-9459-a3090e0e602e",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation states an investor CANNOT achieve abnormal returns via technical analysis under the weak form (or stronger forms), so the correct answer is 'None' (option A). The final mention of 'weak form' explains the general EMH condition, not that weak form is the answer -- false positive."
+ },
+ {
+  "id": "6adcf002-30da-4817-9fb3-418c93e6291d",
+  "verdict": "stored_is_correct",
+  "reasoning": "First sentence directly defines a gate as the as-needed, temporary redemption restriction (option A), matching the question. Notice period (B) and lockup period (C) are explicitly refuted afterward as not being 'temporary, as-needed' mechanisms -- textbook distractor-rebuttal false positive."
+ },
+ {
+  "id": "6b616742-d76b-4931-875b-068d128b375f",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation states FIFO reports lower COGS (decrease, matching option B) in a rising-price environment, while net income is higher and ending inventory is higher under FIFO (i.e. option A, ending inventory, does NOT decrease). Stored B is correct; detected A is refuted by the same passage."
+ },
+ {
+  "id": "6b66f547-9eb6-45bb-b9ce-6cc29b7b7f79",
+  "verdict": "stored_is_correct",
+  "reasoning": "Independent calculation: (100/80)^(1/18) - 1 = 1.2474%, annualized by periodicity 6 gives 7.48%, matching option B. Choice A (3.74%) and Choice C (7.72%) are both explicitly described as errors from using years-to-maturity (3) instead of periodicity (6)."
+ },
+ {
+  "id": "6b6cec30-18a3-4243-a3f9-1aa15eedcb83",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation states loss aversion 'may be a cause of investor overreaction' (option B), while conservatism (option A) is explicitly called 'unlikely to cause overreaction' and risk aversion (option C) is just the standard/symmetric baseline. Stored B matches; detected A is the explicitly-refuted concept mentioned last."
+ },
+ {
+  "id": "6c4ef979-46f8-4496-adee-336158550f24",
+  "verdict": "stored_is_correct",
+  "reasoning": "Options are anti-dilutive at $40 exercise vs $30 market price, so no exercise assumed: basic EPS = (11M - 1M preferred)/10M shares = $1.00, matching option A. Choice B ($1.01) and Choice C ($1.10) are both explicitly labeled as results of incorrect assumptions."
+ },
+ {
+  "id": "6e6e6950-55d5-4943-992f-2c9ceaacc111",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation states loss severity is 'also known as loss given default' (option A) directly and in the formula. Choice B (default rate) and Choice C (par value x default probability) are both explicitly refuted as incorrect formulas in the final two sentences."
+ },
+ {
+  "id": "6e9ad3d7-518f-49bf-a34d-fe7f985acc68",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation states execution instructions (option C) define how an order is filled (market vs. limit), and directly applies this to the client's limit order. Validity instructions (A) and clearing instructions (B) are explicitly described as different concepts in the trailing sentences."
+ },
+ {
+  "id": "6eb2e150-ae3b-412e-b1aa-8ae369e19a42",
+  "verdict": "stored_is_correct",
+  "reasoning": "The explanation performs the full calculation and states the margin call price is EUR233.33 (option A), matching the initial 80% equity / 40% maintenance margin setup. Choice B and Choice C are both explicitly labeled as arising from calculation errors."
+ },
+ {
+  "id": "6f334e5f-f230-47d1-a5c2-672473aa0ee8",
+  "verdict": "stored_is_correct",
+  "reasoning": "The question states the dealer quotes 102.62, and dealers quote the flat (clean) price -- so the flat price is directly 102.62 (option B). The explanation confirms this by stating Choice A (101.68) wrongly treats 102.62 as the full price, and Choice C (103.56) is actually the full (dirty) price, not the flat price."
+ },
+ {
+  "id": "6f396d1a-c7fb-4594-857d-5d60cc9049d1",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation states low turnover with declining revenue growth signals obsolete/slow-moving inventory (option A), matching the question exactly. Too little inventory (B) and efficient management (C) are explicitly tied to different combinations (high turnover scenarios) in the following sentences."
+ },
+ {
+  "id": "6f5b0937-ec1d-4146-9420-bce73539e123",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation states a high water mark (option B) ensures managers don't receive incentive fees on returns that merely reverse prior losses, i.e. prevents paying multiple fees for the same performance. Hurdle rate (A) and clawback (C) are defined as distinct, unrelated mechanisms in the closing sentences."
+ },
+ {
+  "id": "712a5dbc-7048-4069-b198-5c315398fcb1",
+  "verdict": "stored_is_correct",
+  "reasoning": "The question asks which is LEAST likely a UNIQUE risk. Explanation explicitly states default risk 'is not unique to real estate development' (option B), whereas regulatory issues (A) and construction delays (C) are affirmed as genuine, specific risks to property development."
+ },
+ {
+  "id": "715ebc10-5a3c-444a-b568-3db53cee5442",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation states directly: 'By allocating equal numbers of shares to each constituent, the manager has created a price-weighted index' (option A), matching the question's '1,000 shares of 20 different securities' setup. Equal-weighted (B, equal money amounts) and cap-weighted (C) are described as different constructions."
+ },
+ {
+  "id": "719c0131-70c2-4c2c-b802-5829462e8e96",
+  "verdict": "stored_is_correct",
+  "reasoning": "Independent calculation: (-9.12 x -0.0018) + 0.0021 = 0.016416 + 0.0021 = 0.018516, approx. 1.85%, matching option B exactly. Choice A and Choice C are explicitly explained as sign and decimal-placement errors."
+ },
+ {
+  "id": "71e2231f-a657-4fc6-b8a4-32507e901739",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation states 'the disclosure of assets' useful lives is required exclusively under IFRS' (option A), directly answering the question. Gross carrying amount (B) is required under both frameworks, and estimated depreciation over 5 years (C) is required under US GAAP, not IFRS -- opposite of what the question asks."
+ },
+ {
+  "id": "7210117f-328a-4e03-8c3c-f1b11d7b2a08",
+  "verdict": "stored_is_correct",
+  "reasoning": "Independent calculation: P(A or B) = 12% + 16% - 4% = 24%, matching option A. Choice B (26.1%, from multiplying probabilities) and Choice C (28.0%, from failing to subtract the joint probability) are both explicitly identified as calculation errors."
+ },
+ {
+  "id": "7235438e-23f6-40a8-8025-9eb219c23385",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation defines autarky as nationalistic, self-sufficient, and minimally cooperative (option A) -- the direct polar opposite of multilateralism's high cooperation. Hegemony (B) and bilateralism (C) are both described as retaining some degree of cooperation, making them lesser contrasts, consistent with stored A."
+ },
+ {
+  "id": "7265f6e1-f753-40e0-8f60-d8dd34689bd6",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation directly and unambiguously states 'Project 1 is the most appropriate investment choice ... since it has a higher NPV than Project 2' (option A). Project 2 (B, higher IRR but inferior NPV) and investing in both (C, impossible since mutually exclusive) are both explicitly refuted."
+ },
+ {
+  "id": "7295b461-f894-48e0-9ac1-6949464998ff",
+  "verdict": "stored_is_correct",
+  "reasoning": "The question seeks the country where the CFA Code (stricter) governs over local law. Only Country B lacks a fiduciary-duty requirement in local law, making the Code's Duty to Clients standard the stricter, applicable rule there (option B), as the explanation states directly. The closing sentence about Country C ('Country C's laws are the governing law') explains why C is NOT the answer -- classic distractor-rebuttal false positive, matching stored B."
+ },
+ {
+  "id": "730e9b9e-a35f-466d-9382-4a5e8d3ef053",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation states insurance companies (option C) can be classified as real money accounts (along with mutual/pension funds), while hedge funds (B) typically use derivatives and central banks (A) usually don't act as FX investors -- both explicitly excluded, matching stored C."
+ },
+ {
+  "id": "76d798f1-cef7-4a5a-84d2-fa2ad2724daa",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation defines common markets (option C) as removing barriers to labor/capital movement while NOT adopting common economic policies -- an exact match to the question. Monetary union (A) and economic union (B, which does adopt common economic policies) are both explicitly ruled out in the closing sentences."
+ }
+]

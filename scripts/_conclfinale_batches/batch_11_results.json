@@ -1,0 +1,127 @@
+[
+ {
+  "id": "7712938e-5a8c-4a3b-9a25-dc92774ce278",
+  "verdict": "stored_is_correct",
+  "reasoning": "Body states secured creditors (second lien = A) have the highest recovery rate; the final sentence rebuts Choice C (senior subordinated) as having the LOWEST recovery, not the answer. Stored A is correct."
+ },
+ {
+  "id": "772dc841-da5f-4415-bf32-011e23efb99f",
+  "verdict": "stored_is_correct",
+  "reasoning": "First sentence explicitly states sales per square foot (B) is commonly used for retail comparison; final sentence rebuts option A (sales per employee) as suited to service firms, not retail. Stored B is correct."
+ },
+ {
+  "id": "779c53ed-0958-437b-9a9d-e636eb042675",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation explicitly rebuts (Choice A) 103.7503 and (Choice B) 105.1310 as resulting from calculation errors, leaving only 105.1486 (C) as correct by elimination in this 3-option matrix-pricing problem. Stored C is correct."
+ },
+ {
+  "id": "77d688f4-62f3-4375-b405-eda1a50b8f44",
+  "verdict": "stored_is_correct",
+  "reasoning": "Recomputed: 100M x 1.08 = 108M year-end; mgmt fee = 2%x108M = 2.16M; profit net of mgmt fee = 5.84M < 6M hard hurdle so no incentive fee is earned; investor return = (108-2.16-100)/100 = 5.84%, matching stored B. Detected C (6.00%) is explicitly rebutted as an error in the text."
+ },
+ {
+  "id": "77d8d941-f33d-450f-ad03-3390410964e7",
+  "verdict": "stored_is_correct",
+  "reasoning": "The explanation shows the full computation table concluding total fee = 1.62 + 1.00 = 2.62 million, matching stored C exactly; (Choice A) and (Choice B) are explicitly labeled as incorrect derivations."
+ },
+ {
+  "id": "77eba63a-854c-41e3-a0ba-327518a4bb82",
+  "verdict": "stored_is_correct",
+  "reasoning": "Body explains subscription-based revenue (B) provides stability supporting debt capacity, then final sentence rebuts both cyclical industry (A) and high operating leverage (C) as supporting LOW debt weight. Stored B is correct."
+ },
+ {
+  "id": "77f29f19-23d7-435d-a8ef-36144e9f5c0d",
+  "verdict": "stored_is_correct",
+  "reasoning": "First sentence directly states commodity index constituents are futures contracts (B); the final sentence merely notes index returns can differ from holding physical commodities (A/C), which is a contrast, not confirmation of A. Stored B is correct."
+ },
+ {
+  "id": "782eb281-7c37-4253-8b90-226915762aa3",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation opens by stating the described method is (two-stage) cluster sampling (A), then contrasts it against stratified and convenience sampling in the following sentences to explain why those are wrong. Stored A is correct."
+ },
+ {
+  "id": "7952b270-fa87-4466-b1fd-5a607d3be113",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation explicitly computes the g-spread as 0.0595-0.0418=0.0177, i.e. 177 bps (C), and separately labels (Choice A) 160bps and (Choice B) 167bps as alternative wrong-formula results. Stored C is correct."
+ },
+ {
+  "id": "7a133d5b-9480-4d7f-9ea1-1d8444a949df",
+  "verdict": "stored_is_correct",
+  "reasoning": "Opening sentence directly states identity of the lender (C) is NOT specified in an indenture (matching the 'least likely' question), while source of funds (A) and covenants (B) ARE described as things the indenture does specify. Stored C is correct."
+ },
+ {
+  "id": "7b49c916-2079-48a4-bb29-ca727cd57752",
+  "verdict": "stored_is_correct",
+  "reasoning": "The quick ratio formula given (CA - inventories)/CL directly confirms inventory (A) is excluded; the final sentence just notes neither ratio considers non-current assets (C), which is not an endorsement of C. Stored A is correct."
+ },
+ {
+  "id": "7b98aa68-4261-4e19-8d7d-2b8e3fc8031c",
+  "verdict": "stored_is_correct",
+  "reasoning": "First sentence directly defines empirical duration (A) as using historical yield/price relationships, matching the question verbatim; the final sentence about analytical approaches (which include B) is descriptive context, not the answer. Stored A is correct."
+ },
+ {
+  "id": "7c3ab251-be4d-4309-8c6a-9a8ccd3a17db",
+  "verdict": "stored_is_correct",
+  "reasoning": "First sentence directly defines character (B) as covering fraud/malfeasance, strategy soundness, and bondholder treatment - matching the question verbatim. The final sentence about covenants (A) is a rebuttal/contrast. Stored B is correct."
+ },
+ {
+  "id": "7c6f5632-c4c5-40cf-9764-28683eb5b1b4",
+  "verdict": "stored_is_correct",
+  "reasoning": "Body states duration (C) measures bond interest rate sensitivity directly, then explicitly rebuts rho/option-Greeks (A) and beta as equity-specific (B) in the final sentences. Stored C is correct."
+ },
+ {
+  "id": "7d46cc98-9746-4c3f-a902-256eb5f7e993",
+  "verdict": "stored_is_correct",
+  "reasoning": "First sentence directly defines recognition lag (B) as the time to determine a policy action is needed, matching the question verbatim; impact lag (C) is defined last merely as contrast. Stored B is correct."
+ },
+ {
+  "id": "7d737752-9741-469f-add7-3d6ff618cc55",
+  "verdict": "stored_is_correct",
+  "reasoning": "First sentence directly defines impact lag (A) as the time for an implemented policy to affect the economy, matching the question verbatim; action lag (B) is defined last merely as contrast. Stored A is correct."
+ },
+ {
+  "id": "7dcd2e58-0fdd-4d30-b8cd-bebaaffbe0db",
+  "verdict": "stored_is_correct",
+  "reasoning": "First sentence directly states a defined benefit pension plan (A) has long horizon, low liquidity needs, and high risk tolerance, matching the question verbatim; banks (B) are described last as having the opposite profile. Stored A is correct."
+ },
+ {
+  "id": "7de74d1f-47de-43f6-b2a3-09988d3fdc9f",
+  "verdict": "stored_is_correct",
+  "reasoning": "First sentence directly defines a market order (A) as an order to buy/sell immediately at the best available price, matching the question verbatim; stop order (B) is defined last merely as contrast. Stored A is correct."
+ },
+ {
+  "id": "7e3687e5-3436-4557-a36e-a04506c794ed",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation explicitly states 'the investor's reinvested coupons are worth $21.88 at maturity' (C), then separately labels (Choice A) $21.67 and (Choice B) $21.77 as results of incorrect reinvestment-rate assumptions. Stored C is correct."
+ },
+ {
+  "id": "7ec63e04-16c8-4842-b8e6-7e293ba8b7b6",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation explicitly states 'Portfolio X is the best choice due to its highest allocation to VC (15%) and common stocks (70%)' (A), then separately rebuts Portfolio Y (B) as too conservative and Portfolio Z (C) as still less appropriate than X. Stored A is correct."
+ },
+ {
+  "id": "7ee53d83-816d-436f-8316-5d48aa2e2490",
+  "verdict": "stored_is_correct",
+  "reasoning": "First sentences directly describe a deferred-coupon bond (A) accruing payments then paying periodically - matching the question verbatim; step-up note (B) is defined last merely as contrast. Stored A is correct."
+ },
+ {
+  "id": "7eff0984-90b7-4a2b-92d9-a544d30f4734",
+  "verdict": "stored_is_correct",
+  "reasoning": "First sentence directly defines solvency risk (C) as the risk an organization cannot operate because it ran out of cash, matching the question verbatim; liquidity risk (B) is defined last merely as contrast. Stored C is correct."
+ },
+ {
+  "id": "7f36d6ba-be8d-4fe2-a3a0-a4c09abfdb1e",
+  "verdict": "stored_is_correct",
+  "reasoning": "This is a well-established CFA curriculum fact: under no-arbitrage/replication pricing, risk aversion has no role and investor risk-neutrality is assumed, meaning the underlying's expected rate of return (C) is the factor least likely to affect derivative value relative to the underlying - arbitrage (A) and replication (B) are explicitly described as the 'foundations of derivative pricing' that DO affect it. Stored C is correct."
+ },
+ {
+  "id": "7fa07042-79f1-4939-95c3-a034f6774780",
+  "verdict": "stored_is_correct",
+  "reasoning": "Recomputed forward points: Forward = 1.1650 x (1.0025/1.0150) = 1.15065; (1.15065-1.1650) x 10000 = -143.5 bps, matching stored A (-143). Text explicitly labels (Choice C) 145 as the error result of inverting the two interest rates."
+ },
+ {
+  "id": "801671ad-859c-4cfd-afa8-dccf09dd664f",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation states a large low-rated company needing a substantial loan makes a syndicate (C) more likely than a single bilateral lender (A), and separately notes bond issuance (B) is the exception NOT preferred precisely when the bond market is underdeveloped, matching this scenario. Stored C is correct."
+ }
+]

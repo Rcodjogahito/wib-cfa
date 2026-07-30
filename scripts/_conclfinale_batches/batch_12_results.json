@@ -1,0 +1,127 @@
+[
+ {
+  "id": "803059e4-3477-4e1c-9351-e4b1951c7fc2",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation classifies CFD (C) explicitly as a firm commitment (not a contingent claim), while total return swap (A) and credit-linked note (B) are both described as contingent claims. The question asks for LEAST likely contingent claim, so C is correct; detected B is the rebutted/discussed distractor, not the answer."
+ },
+ {
+  "id": "810bb66d-168b-478f-a0ba-2be4a184bf77",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation states the group of projects with greatest total NPV increases company value most, and explicitly says ranking by IRR (option A) will NOT necessarily find that group. Stored B (combined NPVs) is correct."
+ },
+ {
+  "id": "813a6dd6-1b0b-40d3-bb4d-037bbd65fd54",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation explicitly states likelihood of default (A) is the primary factor, with loss severity (B) and payment priority as secondary factors. Stored A is correct; detected B is a secondary factor mentioned last, not the answer."
+ },
+ {
+  "id": "8171a73c-0fae-46c0-9589-a82c945f1d72",
+  "verdict": "stored_is_correct",
+  "reasoning": "Both Choice A (82.67, equal-weighted error) and Choice B (85.76, price*weight sum error) are explicitly labeled as incorrect calculation results. By elimination the correct value is C (99.20), matching stored."
+ },
+ {
+  "id": "825767c2-0cc8-4500-9a79-9d871a8f500c",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation states bond-equivalent yield (C) is the standard way to compare money market instruments across conventions, and explicitly refutes quoted yields (A) and periodic interest rates (B) as not comparable. Stored C is correct."
+ },
+ {
+  "id": "82769b1d-3f8f-4c01-ad71-6435cfcf49cd",
+  "verdict": "stored_is_correct",
+  "reasoning": "Recomputing equity/leverage ratios from the balance sheet data: Company X ratio = 6340/4400=1.44, Y = 3460/2240=1.55, Z = 7030/4370=1.61. Company X has the lowest ratio and thus greatest solvency, matching stored A; detected C is explicitly the worst (least solvent) company in the explanation."
+ },
+ {
+  "id": "8332e720-795c-4efb-b275-b6c5de1c9ba9",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation explicitly says expanding profit margins (matching option B, expanding operating margin) indicate significant pricing power, while consistently growing revenue (C) alone is explicitly said not to demonstrate pricing power. Stored B is correct."
+ },
+ {
+  "id": "83571dde-e7e3-4d04-a2db-e6d8bfbe32a8",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation states delaying accounts payable (A) improves liquidity by slowing cash outflows, while increases in obsolete inventory/receivables (B, C) weaken liquidity. Stored A is correct; detected B is explicitly one of the negative factors."
+ },
+ {
+  "id": "843dcc3a-efad-464c-bb93-c0e790c83bdb",
+  "verdict": "stored_is_correct",
+  "reasoning": "The question asks for the geometric (compounded) mean return. Explanation explicitly labels 1.00% (B) as the arithmetic mean and 2.29% (C) as the holding period return, both explicitly wrong for this question, leaving 0.76% (A, stored) as the geometric mean."
+ },
+ {
+  "id": "8563eab2-f656-48e5-8af9-a756bf3a1f25",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation reasons the bond's yield is most affected by maturity risk (C) since default risk is low for an AA bond and liquidity risk is minimal given frequent trading. Stored C is correct; detected B (liquidity risk) is explicitly ruled out."
+ },
+ {
+  "id": "868f5655-d3c3-4fd8-85ad-fd7e0dda99b6",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation rules out Bond X (large position but short duration, so lower money duration impact) and Bond Z (long duration but small portfolio weight), leaving Bond Y (stored B) as the bond with the greatest money-duration impact by elimination."
+ },
+ {
+  "id": "86e41086-31af-4b01-9085-ca599339dab3",
+  "verdict": "stored_is_correct",
+  "reasoning": "Recomputed: basic EPS = (7,600,000 - 800,000)/2,000,000 = $3.40; if-converted EPS = 7,600,000/2,200,000 = $3.45. Since if-converted EPS is HIGHER than basic EPS, the preferred stock is antidilutive and excluded, so diluted EPS = basic EPS = $3.40 (B, stored). Detected C ($3.45) is the rejected if-converted figure, a classic false positive."
+ },
+ {
+  "id": "879a3d09-b341-4bbc-a66b-41cb995a3909",
+  "verdict": "stored_is_correct",
+  "reasoning": "A renewable-energy investment restriction maps directly to the Environmental ESG factor (C, stored) per the explanation's definitions; governance (detected B) covers corruption/board oversight, unrelated to this constraint."
+ },
+ {
+  "id": "87c1f556-d74d-4b96-9fe2-9e9f6f2592d4",
+  "verdict": "stored_is_correct",
+  "reasoning": "Recomputed weighted total return: X=(109-101+1)/101=8.91%, Y=(9-10+0.5)/10=-5%, Z=(7-6+0.1)/6=18.33%; weighted by 10/30/60% = 0.891-1.5+11.0=10.39%, matching stored C (10.4%). Detected B (8.6%) is explicitly the result of an incorrect calculation (dividing by ending instead of beginning prices)."
+ },
+ {
+  "id": "87d22312-0abe-4dbf-9387-7cb3eb7e4f3a",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation states digital assets derive value 'purely from market's expectations of future price appreciation,' matching option B (stored). It explicitly rules out liquidity (detected A) and cash flows (C) as sources of value."
+ },
+ {
+  "id": "87d599b5-8d32-4c21-9865-399636477c87",
+  "verdict": "stored_is_correct",
+  "reasoning": "Recomputed: management fee = 1.5%×300M=4.5M; profit net of mgmt fee = 50-4.5=45.5M; incentive fee = 18%×45.5=8.19M; total fees=12.69M; net return = (300-12.69-250)/250=14.9%, matching stored C. Detected B (14.6%) is explicitly the result of failing to net the incentive fee against the management fee."
+ },
+ {
+  "id": "88647780-7fc6-44e5-9722-641fb697bf65",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation explicitly states investment guidelines (C, stored) address policy execution and permitted asset types, while appendices (detected A) cover baseline allocations and permitted deviations, a different topic."
+ },
+ {
+  "id": "894004e2-aef0-4ef5-b53c-a3c715451aa6",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation states nonowner managers (B, stored) would most likely oppose the merger due to job-security concerns, while shareholders (detected A) are explicitly said to support the deal given the 20% premium."
+ },
+ {
+  "id": "8a80d91a-b429-45b3-ab93-26ce3ce458f7",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation explicitly identifies a heat map (A, stored) as appropriate for visualizing joint frequencies of two categorical variables (country and sector), while a scatterplot (detected C) is explicitly ruled out as being for two numerical variables only."
+ },
+ {
+  "id": "8accb424-8fb7-419e-9913-23d3117fb6c5",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation shows the explicit calculation: Market cap = (10×200) - 725 + (80+25) = 1,380, matching stored C. Detected B (1,355) is explicitly labeled as the result of forgetting to subtract short-term investments."
+ },
+ {
+  "id": "8ae4f903-98a8-4000-901b-ee54fbb6359a",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation defines efficiency (option B, OCR-garbled as 'eciency') as minimizing interference with market forces, matching the question exactly, while fairness (detected A) is defined as horizontal/vertical equality, unrelated to market interference."
+ },
+ {
+  "id": "8b462973-1505-48cc-8b0b-4f4cba2a13ab",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation explicitly labels both B (0.0433, simple average of EPS instead of expected value) and C (0.0612, simple average of squared differences instead of probability-weighted expected value) as incorrect methods, leaving stored A (0.0354) as the correct standard deviation by elimination."
+ },
+ {
+  "id": "8b59292d-a356-404b-aa15-967ac7509d0a",
+  "verdict": "stored_is_correct",
+  "reasoning": "The question describes decelerating GDP growth with accelerating inflation, which the explanation matches precisely to the peak phase (A, stored). Late expansion (detected C) is explicitly described as accelerating growth AND inflation, which does not match decelerating growth in the question."
+ },
+ {
+  "id": "8bbca709-64ef-477f-9d7c-0651e785259b",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation explicitly states capital expenditures (C, stored) are not needed in asset-based valuation models since their value is already reflected in assets, while liabilities (detected A) ARE explicitly needed (subtracted from assets)."
+ },
+ {
+  "id": "8bf5cb3e-1f40-4469-a983-70b5bdd776a0",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation directly defines specialized funds (C, stored) as those focusing on specific commodities such as oil/gas or precious metals, exactly matching the question. Managed futures funds (detected A) are only mentioned as sometimes concentrating on sectors, a secondary/hedging clause, not the definitional answer."
+ }
+]

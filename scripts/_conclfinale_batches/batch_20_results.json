@@ -1,0 +1,127 @@
+[
+ {
+  "id": "ddf3ea2f-d515-4e40-8640-c6a486c54c6f",
+  "verdict": "stored_is_correct",
+  "reasoning": "Least likely dilutive = premium bonds (C), since premium/discount is irrelevant to dilution and bonds are only dilutive if convertible. Stock options (B, the detected guess) are explicitly confirmed dilutive in the explanation, so B cannot be the answer."
+ },
+ {
+  "id": "de1c8b8d-aed5-4ee4-9b01-f394d7286935",
+  "verdict": "stored_is_correct",
+  "reasoning": "Forecasting selling prices and volumes per product/company is the definition of bottom-up forecasting (C). 'Economic driven' (B, detected) is explicitly dismissed as 'not a formal approach'."
+ },
+ {
+  "id": "ded06d8a-a747-467b-9ad6-5e1c32a72fb8",
+  "verdict": "stored_is_correct",
+  "reasoning": "SEE = sqrt(SSE/df) = sqrt(4.190/22) = 0.436, matching stored B. The detected value C (0.473) is explicitly labeled as the result of the wrong formula (using SST instead of SSE)."
+ },
+ {
+  "id": "def66f3d-5b07-454c-b3e1-726c5b5aaf88",
+  "verdict": "stored_is_correct",
+  "reasoning": "Reserving funds instead of buying insurance is the textbook definition of self-insurance (C), stated directly in the first sentence. Risk transfer (B, detected) is explicitly defined as the opposite (an outside party bearing the risk, e.g. insurance)."
+ },
+ {
+  "id": "e04aa558-6ef2-43a9-88c9-79edb596a8c1",
+  "verdict": "stored_is_correct",
+  "reasoning": "In a deflationary, competitive environment, passing cost reductions to customers faster than rivals (C) lowers relative prices and raises short-run volume, per the explanation's core logic and table. Choice A (detected) is explicitly grouped with B as raising relative price and reducing volume/share."
+ },
+ {
+  "id": "e0ca3a8a-ed50-47f0-a7ef-5d01a271f8bb",
+  "verdict": "stored_is_correct",
+  "reasoning": "FCFE = FCFF - Interest(1-t) + net borrowing = 196 - 20(0.75) + (295-300) = 196 - 15 - 5 = 176, matching stored A. Detected C (191) is explicitly the value from omitting the after-tax interest subtraction."
+ },
+ {
+  "id": "e0d92234-a727-4fcc-8985-7662111b94cd",
+  "verdict": "stored_is_correct",
+  "reasoning": "Text extraction bled part of option A into the question field, leaving only 'bonds.' in option_a; reconstructed, true option B reads 'greater than 7.0% on Kano and less than 8.0% on Samuel,' which is exactly what the explanation concludes (reinvestment rate 7.5% is above Kano's 7.0% YTM but below Samuel's 8.0% YTM). Stored B is correct; detected A ('greater than 8.0% on Samuel') contradicts the explanation."
+ },
+ {
+  "id": "e0eae951-f35e-4a37-807a-7e2f44705468",
+  "verdict": "stored_is_correct",
+  "reasoning": "CV of operating income helps compare business risk (B), as stated directly (note option_a is an OCR artifact 'nancial risk' = 'financial risk'). Financial risk (A, detected) is explicitly excluded ('not included in operating income')."
+ },
+ {
+  "id": "e0fd5866-46e9-4988-9a09-bfc5ddb52139",
+  "verdict": "stored_is_correct",
+  "reasoning": "The halo effect is explicitly and repeatedly tied to the value effect anomaly (C) throughout the explanation. Momentum (B, detected) is explicitly stated to have no halo association, linked instead to availability/hindsight/loss aversion biases."
+ },
+ {
+  "id": "e1255254-0f66-44cd-bac3-92c5f5be284a",
+  "verdict": "stored_is_correct",
+  "reasoning": "The explanation states directly the convexity adjustment 'is 0.60%' (B). Detected C (3.10%) is explicitly labeled as the duration-only price change, excluding convexity."
+ },
+ {
+  "id": "e1de49fb-34bd-496c-89cf-de9f7fd7c362",
+  "verdict": "stored_is_correct",
+  "reasoning": "Convertible/high-yield fixed income arbitrage strategies are explicitly classified as relative value (C). Opportunistic (B, detected) is explicitly described as commodity/macro-focused, unrelated."
+ },
+ {
+  "id": "e295a6ec-7ba8-4a7e-9bc3-18164f92a151",
+  "verdict": "stored_is_correct",
+  "reasoning": "Corporate tax 1.26B (36% rate) + personal tax on distributed 2.24B at 25% (0.56B) = 1.82B total tax / 3.5B pretax = 52%, matching stored B, stated verbatim in the text. Detected C (61%) is explicitly the result of incorrectly adding the two tax rates (36%+25%)."
+ },
+ {
+  "id": "e35e5771-3125-484a-8953-bb31bcf94a25",
+  "verdict": "stored_is_correct",
+  "reasoning": "Senior subordinated bondholders are explicitly described as the most junior class with the lowest recovery rate (C). Senior secured (B, detected) is explicitly stated to be ranked ahead of all other creditors, i.e., highest recovery."
+ },
+ {
+  "id": "e3b17609-2b56-4c56-9377-c837f332b9f5",
+  "verdict": "stored_is_correct",
+  "reasoning": "Digital assets are explicitly stated to derive value 'purely from the market's expectations of future price appreciation' (B). Liquidity (A, detected) is explicitly rejected: digital assets are described as relatively illiquid."
+ },
+ {
+  "id": "e3b95734-c15a-44ff-bcb5-1c95e1e414df",
+  "verdict": "stored_is_correct",
+  "reasoning": "Differentiated products, low entry barriers, downward-sloping demand, high elasticity describe monopolistic competition (C), stated directly. Pure competition (B, detected) is explicitly contrasted as having homogeneous products, no barriers, and perfectly elastic horizontal demand -- the opposite of the question's description."
+ },
+ {
+  "id": "e3c5cde6-e04b-4d3c-accb-3ab76a028f9b",
+  "verdict": "stored_is_correct",
+  "reasoning": "Reconstitution is explicitly defined as changing/replacing the securities in the index (B). Detected C (changing weights) is explicitly assigned to rebalancing, a distinct process from reconstitution."
+ },
+ {
+  "id": "e3e2a8dc-2fe4-47a6-9790-36b7c3060ced",
+  "verdict": "stored_is_correct",
+  "reasoning": "The risk questionnaire (C) is explicitly the tool used to gauge subjective 'willingness' to take risk. Time horizon (B, detected) is explicitly grouped with net worth as measuring 'ability,' not willingness, to take risk."
+ },
+ {
+  "id": "e3ffaa75-0e58-4aaa-b277-bd2670927572",
+  "verdict": "stored_is_correct",
+  "reasoning": "Closing one of several plants and shifting operations is explicitly classified as an unusual or infrequent item (C) under both US GAAP and IFRS. Discontinued operations (B, detected) is explicitly rejected since the company is not discontinuing the business entirely."
+ },
+ {
+  "id": "e496394e-9c39-4307-aece-9e3b57839443",
+  "verdict": "stored_is_correct",
+  "reasoning": "Option text is shifted across fields (an OCR/parsing offset bug, likely from ligature stripping); reconstructing the three sentences gives: A='no significant differences...in practice', B='significant differences...for long-term interest rates', C='significant differences...for short-term interest rates'. The explanation states convexity bias causes significant differences 'for contracts on longer-term interest rates,' matching reconstructed B (stored), not the detected C."
+ },
+ {
+  "id": "e4c303fc-5376-49f3-a4c9-e56df23e0863",
+  "verdict": "stored_is_correct",
+  "reasoning": "Option text is shifted across fields; reconstructed, true A='limited partners typically receive a smaller share of profits than general partners,' which matches the explanation's opening statement (GPs receive a greater share than limited partners). Reconstructed B and C are both explicitly contradicted by the explanation (limited partners do not manage the business, and do not appoint/remove general partners), ruling out detected C."
+ },
+ {
+  "id": "e5607b0b-2f52-40d8-b850-c8e2bcdbafa6",
+  "verdict": "stored_is_correct",
+  "reasoning": "Matching buyers and sellers by price/time precedence is the definition of an order-driven market (A), given directly in the first sentence. Brokered market (C, detected) is explicitly described as brokers organizing trades among clients, a different mechanism."
+ },
+ {
+  "id": "e5a2d117-1c72-4f67-8960-b11391a38117",
+  "verdict": "stored_is_correct",
+  "reasoning": "The explanation explicitly rejects both A (93.2048, result of assuming semiannual coupons) and C (93.7199, result of straight-line instead of constant-yield amortization), leaving stored B (93.2899) as the only viable carrying value under the constant-yield method with annual coupons."
+ },
+ {
+  "id": "e6ae8a37-4e90-4e4b-9773-a2b59753980b",
+  "verdict": "stored_is_correct",
+  "reasoning": "Anticipating competitor reactions while acting in self-interest is explicitly the definition of Nash equilibrium (B) per the table and explanation. Collusion (A, detected) is explicitly rejected: it maximizes industry profits and involves no anticipation of individual competitor responses, i.e. the opposite of the question's description."
+ },
+ {
+  "id": "e6aec857-6523-41be-a87b-8f5191f933e8",
+  "verdict": "stored_is_correct",
+  "reasoning": "Risk aversion means choosing the less risky asset only 'given equal expected returns' (C), stated directly. 'In all cases' (B, detected) is explicitly negated in the same sentence ('does not imply...in all cases')."
+ },
+ {
+  "id": "e76b95d4-d181-4c16-a9a2-666241996d07",
+  "verdict": "stored_is_correct",
+  "reasoning": "FV(quarterly, 2.00%) = 50000*(1.005)^12 = 53,083; FV(continuous, 1.75%) = 50000*e^0.0525 = 52,695; difference = 388.76, rounding to 389 (B), as stated directly in the explanation. Detected C (540) is explicitly the result of misapplying discrete compounding to the continuous-rate investment."
+ }
+]

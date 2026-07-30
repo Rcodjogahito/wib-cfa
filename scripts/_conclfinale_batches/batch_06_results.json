@@ -1,0 +1,127 @@
+[
+ {
+  "id": "3e1c41cd-4125-4281-805e-1f17f606ed84",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation explicitly builds the case for the LP role (passive investor, no unlimited liability, no separate legal entity) and then rebuts B and C by name. Detected C ('Corporate shareholder does not satisfy the investor's criteria') is a refuted distractor, classic false positive."
+ },
+ {
+  "id": "3e976c14-dfb3-4442-91de-92c1c8d816f0",
+  "verdict": "stored_is_correct",
+  "reasoning": "Main text states the HWM is calculated net of fees/expenses (net assets = A) and defines it as the prior AUM peak. The final '(Choice B) A hurdle rate is...' sentence defines and rejects B, not endorses it."
+ },
+ {
+  "id": "400db556-e0c1-4c7e-96ab-88aa3da885b6",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation states directly: 'Book value of equity is equal to balance sheet assets minus liabilities,' which is exactly option B and matches the question. The closing sentence on intrinsic value (C) is descriptive, not an endorsement."
+ },
+ {
+  "id": "405de957-8289-4fd1-882a-c5038bc3dc43",
+  "verdict": "stored_is_correct",
+  "reasoning": "Tariffs harm foreign exporters (A) and domestic consumers per the text; they benefit domestic producers and the domestic government. The last sentence ('government also benefits by collecting tariff revenue') describes a benefit to C, not a negative effect, so C is wrong and A stands."
+ },
+ {
+  "id": "4093ffe0-e2e9-4bac-add6-3810f11e6b5f",
+  "verdict": "stored_is_correct",
+  "reasoning": "Both listed wrong-answer notes are explicit rebuttals: A (1.29) comes from using net income instead of EBIT, and C (1.88) is the interest coverage ratio, not the fixed charge coverage ratio. By elimination the correct value is B (1.41)."
+ },
+ {
+  "id": "40a0c28d-bb46-4a43-ae10-22d4f4a311ee",
+  "verdict": "stored_is_correct",
+  "reasoning": "The pros/cons table and narrative both state IPO offers 'highest valuation potential' and 'positive publicity for the private equity firm,' matching the question exactly; A and B are explicitly rejected in the closing notes."
+ },
+ {
+  "id": "4105f119-a8e2-46e5-9c4b-d19d7e638a42",
+  "verdict": "stored_is_correct",
+  "reasoning": "Option B is the textbook definition of accrued interest (interest earned from last coupon to sale date); the explanation confirms 'this is a correct definition' and only corrects option A's wording (buyer vs seller) as an aside, not an endorsement of A."
+ },
+ {
+  "id": "4178e202-5a1f-4bbd-bd29-a2bd7bb43e9d",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation directly states 'Gross margin is a suitable approximation of contribution margin' (option A), then explains why EBITDA/operating margins (B, C) are not, since S&M/G&A/R&D are more fixed in nature."
+ },
+ {
+  "id": "419baf59-7661-4f9b-811a-21bcdaed237f",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation states plainly 'Indexes of small-cap or mid-cap stocks are classified as style indexes,' matching the question about a firm moving between small-cap and mid-cap, directly confirming option A."
+ },
+ {
+  "id": "4211cc8f-3060-4493-aaf8-f94bed94fa6d",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation states closed-end mutual funds (C) trade at market-determined prices while hedge funds (market neutral, B) and wrap accounts (A) 'typically require substantial minimum investment amounts,' making C the smallest-minimum answer as stored."
+ },
+ {
+  "id": "428f2f9f-79a4-450c-9427-000bf1a87413",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation says capacity analysis is 'similar to the top-down process used in equity analysis' (industry structure/fundamentals, company fundamentals), matching the question directly; covenants and collateral are described as distinct, unrelated analyses."
+ },
+ {
+  "id": "439dcb8d-10a8-492c-a192-6c07dbcb83b8",
+  "verdict": "stored_is_correct",
+  "reasoning": "The 'not underperform by more than 2%' framing is explicitly identified as a relative risk objective ('negatively stated to avoid exceeding a maximum level of underperformance'), matching option A; B and C are rebutted in the closing notes."
+ },
+ {
+  "id": "4458d688-7e52-412b-80a9-94cc891f5f57",
+  "verdict": "stored_is_correct",
+  "reasoning": "Text explicitly names the winning model as 'the log-lin model,' which per the given definitions is option B (logarithmic dependent variable, linear independent variable); the parenthetical '(Choice C)' tag beside it looks like a mislabeling artifact, but the named model text is unambiguous. The last sentence rebuts option A (lin-log) by name, the classic false-positive pattern."
+ },
+ {
+  "id": "44de8795-991a-4137-b66a-7feba539d40c",
+  "verdict": "stored_is_correct",
+  "reasoning": "Direct computation from the contingency table for the exact question asked (BBB-BB mid-cap defaults / all mid-cap defaults) is 47/134 ≈ 35.1%, matching option C. The 33.8% and 12.0% figures answer differently-phrased hypothetical questions, not the one asked, and are explicitly framed as such."
+ },
+ {
+  "id": "457595bc-6e38-45ba-a1af-29b38fc8a1c2",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation confirms complex structures (C) contain dilutive securities and states there is no such thing as a 'basic capital structure' (B doesn't exist as a structure type), leaving simple (A) as the only structure with no dilutive securities by elimination, consistent with CFA curriculum (simple vs complex)."
+ },
+ {
+  "id": "45d9dbb0-077a-48f1-98f3-081ed3750c0a",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation states the Gordon growth model's disadvantage is that the required return must be estimated, and explicitly notes neither the asset-based nor enterprise-value-multiplier models require this estimate, directly confirming option A over B and C."
+ },
+ {
+  "id": "466a7fa2-b1c1-4c90-b97d-c336c4975726",
+  "verdict": "stored_is_correct",
+  "reasoning": "The formula given, Fo(T)=S0(1+Rf)^T, is literally the future value of the spot price (option B). The final clause about the contract having 'a value of zero at initiation' addresses forward VALUE, a distinct concept from forward PRICE which is what the question asks, so it doesn't support option A."
+ },
+ {
+  "id": "46d49b1d-473f-4d3b-80b2-34e0998f4088",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation states directly 'The Sharpe ratio measures excess return per unit of risk' (option A) and separately notes peakedness (option B) is measured by kurtosis, not the Sharpe ratio, rebutting B."
+ },
+ {
+  "id": "472357a3-8947-4612-be21-2555512eff22",
+  "verdict": "stored_is_correct",
+  "reasoning": "Independent computation: (15000/9520)^(1/5)-1 ≈ 9.5%, matching option B. The explanation explicitly frames 9.2% (option A) as a common calculation error (misusing the quarterly-period count), not the correct EAR."
+ },
+ {
+  "id": "4798f2a0-6af6-4e9a-85c7-4f2864da624e",
+  "verdict": "uncertain",
+  "reasoning": "The question_en and option fields are garbled/mis-split (sentence fragments run across option boundaries, e.g. the actual 'least accurate' statement about risk vs. return framing spans the tail of option_a and the head of option_b), so the true letter-to-statement mapping cannot be reliably reconstructed from this text alone."
+ },
+ {
+  "id": "479cd173-5eca-4a25-a0fd-5fc9e8980533",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation defines hyperbolic discounting as 'favoring small payoffs in the short term over larger payoffs in the long term,' matching option B verbatim, then explicitly attributes A to self-attribution bias and C to loss aversion bias."
+ },
+ {
+  "id": "47c2d68e-088f-4df1-8364-b289d315b321",
+  "verdict": "stored_is_correct",
+  "reasoning": "Independent monopoly pricing calc: P = MC/(1-1/E) = 80/(1-1/1.2) = 80/0.1667 ≈ 480, matching option B. Options A (180) and C (900) are explicitly labeled as results of specific calculation errors (multiplying/dividing incorrectly)."
+ },
+ {
+  "id": "47e20e43-b7ad-45a2-978d-835411fb3a17",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation states front-running 'should be completely prohibited, not simply limited,' so 'limited front-running' (option C) is not a valid recommended procedure, matching the 'least likely to include' question; blackout periods (A) and disclosure (B) are affirmed as valid procedures."
+ },
+ {
+  "id": "47f4698e-97f5-4824-9a96-bf64b8d8836e",
+  "verdict": "stored_is_correct",
+  "reasoning": "Options are text-garbled (running across boundaries) but the substantive claim recoverable from option_a's lead sentence, 'its current yield and YTM are both higher than the coupon rate,' matches the explanation exactly: for a discount bond both current yield and YTM exceed the coupon rate, confirming stored A despite the formatting artifact."
+ },
+ {
+  "id": "487f7133-3bb0-4cd8-ace0-a0ccd3b65df4",
+  "verdict": "uncertain",
+  "reasoning": "The question references a data table ('gathers the following information about a company') that is missing from the extracted text, and the closing '(Choice A) An increase in statutory tax rates would increase net DTA' note lacks the negation pattern used elsewhere in this set, making it ambiguous whether it endorses or rebuts option A; cannot confidently re-derive whether B, A, or neither is correct from the text alone."
+ }
+]

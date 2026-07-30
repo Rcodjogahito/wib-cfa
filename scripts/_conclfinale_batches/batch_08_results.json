@@ -1,0 +1,127 @@
+[
+ {
+  "id": "54443f84-402e-4651-b47d-345f720259a2",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation explicitly labels both distractors as wrong: '(Choice B) 3.50 results from... semiannually instead of annually' and '(Choice C) 6.89 results from failing to include 2 in the denominator' (omitting the 2 exactly doubles 3.45 to ~6.90). Stored A (3.45) is the only unrefuted value; the heuristic flagged the last-mentioned distractor (C) which is explicitly rebutted."
+ },
+ {
+  "id": "54732c36-3728-4ca2-96c6-6670101fd481",
+  "verdict": "stored_is_correct",
+  "reasoning": "First sentence directly states unearned revenue creates a deferred tax asset (option C, matches stored). The final sentence about a decreasing tax rate merely explains why option B does NOT create a DTA (it only shrinks an existing one), a classic rebuttal-as-last-sentence false positive."
+ },
+ {
+  "id": "5503b842-06b5-41b3-af9e-13616977d276",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation opens with 'is called the action lag' (option A, matches stored), then rebuts B and C in turn ('B is incorrect...', 'C is incorrect...'). The last sentence rebuts C, which the heuristic mistook for the answer."
+ },
+ {
+  "id": "5531d0dc-9191-49ee-b60d-10c684bba26e",
+  "verdict": "stored_is_correct",
+  "reasoning": "Question specifically asks for the STRUCTURAL economic measure. Explanation states structural trends are captured by 'labor force, unemployment' (option B, matches stored), while interest rates/GDP are explicitly labeled cyclical, not structural. Detected A (interest rates) is the cyclical example, not structural."
+ },
+ {
+  "id": "558f247b-06fb-4805-9423-f8312b74db5b",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation states directly: 'A repeat sales index does have limitations, including sample selection bias' - matching stored C for the 'least appropriate to avoid sample selection bias' question. The final paragraph discusses Choice B's separate limitation (understated volatility from appraisal subjectivity), unrelated to sample selection bias, which the heuristic mismatched."
+ },
+ {
+  "id": "5616e7d0-7774-404d-b72d-18978ab5a1f7",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation directly concludes 'is considered a foreign bond in the French bond market' (option B, matches stored). The final sentence ('Most issued debt securities are domestic bonds') is a general fact about Choice C used to explain why domestic bonds is wrong here, not an endorsement of C."
+ },
+ {
+  "id": "5678cfc7-2773-4848-abdf-fa3eef6e35bc",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation states plainly: 'it is classified as an empirical probability' (option B, matches stored). The last paragraph explains why Choice C (subjective) is wrong, which the heuristic misread as the answer."
+ },
+ {
+  "id": "56b6fc77-c5a6-4979-b21c-0b4a4ab51712",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation opens 'Deflation is often associated with liquidity trap conditions' (option A, matches stored). The closing sentence explains bond market vigilantes (option B) cause rates to rise instead of fall, rebutting B rather than confirming it."
+ },
+ {
+  "id": "56fbc34f-9b79-4761-a90a-33279ac39215",
+  "verdict": "stored_is_correct",
+  "reasoning": "First sentence: 'Corporate bonds are most often issued in an underwritten offering' (option C, matches stored). The final sentence describes Choice B (best effort) as a rarer, distinct mechanism, rebutting it, not confirming it."
+ },
+ {
+  "id": "5740269b-b034-49d9-a3c0-4784e19de10f",
+  "verdict": "stored_is_correct",
+  "reasoning": "Independent recalculation: treasury stock method gives net new shares = 1,000,000 - (1,000,000x30/40) = 250,000; diluted EPS = (16M-1M)/10.25M = $1.463 ≈ $1.46, matching stored B. The last sentence explicitly states Choice C ($1.56) comes from an error (omitting the preferred dividend subtraction)."
+ },
+ {
+  "id": "5829cc9a-bc13-47cc-9050-b94cdb7c4336",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation states 'Peak and off-peak pricing is an example [of price discrimination]', matching option A (garbled OCR 'o-peak pricing' = 'off-peak pricing', missing the 'ff' ligature), consistent with stored. The final sentence describes cost-based pricing (option B) as a distinct, unrelated strategy, not the answer."
+ },
+ {
+  "id": "583db80a-8f1c-4919-8d51-c9dd3c1408f0",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation states 'With a finance lease, the lessor will recognize a lease receivable asset' (option B, OCR-garbled 'a nance lease' = 'a finance lease', missing 'fi'), matching stored. The last sentence describes the operating lease treatment (option A) as the contrasting, incorrect case."
+ },
+ {
+  "id": "58ff59b1-b4e9-4fd5-99ec-02329c856962",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation states 'The foregone return is the opportunity cost of current consumption' (option B, matches stored). The final sentence explains why Choice C (required rate of return) does not apply since the student rejected the investment, rebutting C rather than confirming it."
+ },
+ {
+  "id": "5b2c9ceb-f172-4e62-8aff-c318cb744a8e",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation states a ratio 'less than one... may indicate low-quality earnings' (option A, matches stored). The final sentence explicitly states high variability alone (option B) is 'not necessarily indicative of low-quality earnings,' directly refuting the detected answer."
+ },
+ {
+  "id": "5b63788d-cb32-4a53-8b1a-ecf27c657f90",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation states the sponsored DR owner 'has the same voting rights and receives the same dividends' (option B, matches stored). The final sentence notes a GDR (option A) 'may be sponsored or unsponsored,' meaning it doesn't guarantee voting rights, rebutting A as the answer."
+ },
+ {
+  "id": "5c1a1f43-2a84-42b8-b057-76dd482e63b7",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation directly states closed-end funds 'can trade at a premium or discount to NAV due to their fixed share base, unlike... ETFs which trade close to NAV' - confirming option C (matches stored) and explicitly ruling out ETFs (detected A) as trading close to NAV."
+ },
+ {
+  "id": "5c775fa7-0070-493c-afd7-d19ad2c45d13",
+  "verdict": "stored_is_correct",
+  "reasoning": "Independent recalculation: EAR = (1+0.085/4)^4 - 1 = 8.775%; monthly rate = (1.08775)^(1/12)-1 ≈ 0.703%; annualized at periodicity 12 = 0.703%x12 ≈ 8.44%, matching stored B. The last sentence explains Choice C (8.56%) results from an error (switching periodicities), rebutting the detected answer."
+ },
+ {
+  "id": "5cc4f134-2bc6-460b-b8cd-96a35d45abaa",
+  "verdict": "stored_is_correct",
+  "reasoning": "The scenario (treating wages vs. bonuses differently) matches the explanation's example of mental accounting bias verbatim (option B, matches stored). The final sentence defines availability bias (option A) generically, as a distractor description, not as the identified bias in this scenario."
+ },
+ {
+  "id": "5cd1fdb8-e219-479a-a39a-aaeca9645308",
+  "verdict": "stored_is_correct",
+  "reasoning": "Forecasting sales growth relative to macro GDP growth is explicitly defined as 'top-down analysis or forecasting' (option A, matches stored). The final sentence defines bottom-up analysis (option B) as the contrasting, microeconomic approach - a definition, not an endorsement of B."
+ },
+ {
+  "id": "5d1e7211-83c2-47a4-9432-ba8e6508a463",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation states firms shorten CCC by 'increasing trade creditor days' (i.e., accounts payable, option B, matches stored). The final sentence explains that increasing accounts receivable days (option C) instead lengthens the time to collect cash, rebutting C rather than confirming it."
+ },
+ {
+  "id": "5d2b6af8-3273-4156-9ff4-bce3265caec3",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation states write-downs have 'an artificially positive impact on activity ratios' (option A, matches stored), with inventory turnover given as the worked example. The final sentence states write-downs 'decreas[e] all types of profitability' (option C), explicitly the opposite of a positive effect, rebutting the detected answer."
+ },
+ {
+  "id": "5e52e335-2811-4933-a54f-2d84273275c3",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation states affirmative covenants cover 'payment of obligations such as taxes and payroll' (option B, matches stored, and matches the question's exact scenario). The final sentence describes internal credit enhancements (option C) generically as a distinct, unrelated mechanism."
+ },
+ {
+  "id": "5e6e0ed8-b1cd-4f99-8aad-33c8103f1658",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation states directly: 'Biotechnology is most likely considered growth and defensive' (option A, matches stored), then classifies crude oil (option C) as 'mature and cyclical' - the opposite of the requested (growth, defensive) box, ruling out C as the answer."
+ },
+ {
+  "id": "5e816adb-5b62-4865-a974-c4bba3b65c94",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation states 8.3% (A) omits the short rebate (understating the true return) and 26.7% (C) omits subtracting the dividend (overstating the true return); the true return combining both correct adjustments must fall between these two bounds, which is satisfied only by stored B (18.3%). Exact underlying figures are in a removed table, so this is a bounding-logic inference rather than a full independent recomputation."
+ },
+ {
+  "id": "5eca9257-88fa-45ef-a048-a583f10b812f",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation states EV should be compared to a capital-structure-neutral metric and lists 'EBITDA, operating income, or total revenue' as appropriate (option C, matches stored). The final sentence explicitly states net income (option B) 'is inappropriate to compare to EV since it is affected by interest expense and taxes,' rebutting the detected answer."
+ }
+]

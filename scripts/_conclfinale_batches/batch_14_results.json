@@ -1,0 +1,127 @@
+[
+ {
+  "id": "9796315c-7f4c-4a95-8a18-d87dafe46c3a",
+  "verdict": "stored_is_correct",
+  "reasoning": "A poison pill is a defense adopted by target-company boards against activists, not an action an activist would initiate; the explanation explicitly says proxy contests and tender offers (B, C) are activist tools, confirming A as the 'least likely' answer."
+ },
+ {
+  "id": "98913267-dfd4-4552-bb7b-a5f0a97baa88",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation states plainly 'Exogenous risk refers to unanticipated geopolitical events,' which is option B; the final sentence about event risk (option C) is just defining a different term, not the answer."
+ },
+ {
+  "id": "99a5475d-84fc-47e6-b4d8-ad3264a5d215",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation computes intrinsic value of SGD 77.22 vs market price SGD 73.68 and explicitly concludes 'the stock is undervalued' (option A); the trailing '(Choice C)' paragraph is a rebuttal explaining how 62.68/overvalued would wrongly arise from using market return instead of required return."
+ },
+ {
+  "id": "99b98c5f-ed78-4a7d-80ae-b92b57225201",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation directly states 'the estimated new price of the bond is closest to 712,862 + 6,478 = 719,340' which is option B; the final '(Choice C)' sentence about 719,830 is a rebuttal describing an error (omitting the 1/2 convexity factor), not the answer."
+ },
+ {
+  "id": "9a22d2ad-c042-4250-b8ec-2f0130dd9443",
+  "verdict": "stored_is_correct",
+  "reasoning": "Calculation shown is EBITDA = 698+207=905, coverage = 905/169 ≈ 5.36, which is option B; the trailing Choice C rebuttal (7.87, from netting interest income against expense) is explicitly labeled as incorrect."
+ },
+ {
+  "id": "9a526336-6fc2-4790-af74-9b12da61d842",
+  "verdict": "stored_is_correct",
+  "reasoning": "The explanation says common-size CFS show items as % of revenue OR inflows as % of all cash inflows / outflows as % of all cash outflows; 'total cash flows' (a combined in+out basis) is not one of the recognized bases, matching stored answer C as the 'least likely' basis."
+ },
+ {
+  "id": "9ab2ce16-a602-4715-a363-eff981038463",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation states future capital needs are disclosed in management's commentary (not footnotes), while debt agreement terms (option B) are explicitly given as an example of footnote content — confirming stored A as the 'least likely' footnote item."
+ },
+ {
+  "id": "9c8a91fc-aa74-4c4d-93c8-00afcb2a227b",
+  "verdict": "stored_is_correct",
+  "reasoning": "July 15 to Nov 20 on 30/360 = 4 months (120 days) + 5 days = 125 days, matching option B; the explanation explicitly labels 120 (Choice A, simplistic whole-month count) and 128 (Choice C, actual/actual days) as incorrect distractors."
+ },
+ {
+  "id": "9d2e797a-d718-48c7-9f1f-f3a7bd185c6e",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation says the stat-vs-economic significance gap is due to risk, transaction costs, and taxes, while sampling errors cause statistical (not economic) discrepancies — confirming stored B as the 'least likely' cause, not detected A (transaction costs, explicitly a valid cause)."
+ },
+ {
+  "id": "9db9a8b4-fcfa-4537-bbad-d0bf57de4522",
+  "verdict": "stored_is_correct",
+  "reasoning": "Option text is OCR-garbled (B and C appear merged/split incorrectly), but the explanation unambiguously states 'Stock dividends, stock splits, and reverse stock splits do not change a firm's shareholders' equity,' supporting the 'neither changes equity' answer, consistent with stored B despite the garbling."
+ },
+ {
+  "id": "9dd3a4b5-63e9-43eb-8dc7-22a08a1d4723",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation directly concludes growth capital 'is therefore also known as minority equity investing' (option C), and explicitly distinguishes venture capital (option A) as a different, earlier-stage strategy."
+ },
+ {
+  "id": "9e97df25-0121-43fa-8239-4f1a2090a634",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation explicitly computes 'the company will recognize 1/12th of the total subscription price each month, or $3,000/12 = $250' (option B); the Choice C rebuttal calls $1,000 the wrong cumulative (not monthly) figure."
+ },
+ {
+  "id": "9f1d315c-a6e1-443e-b0c9-57072e170dd3",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation identifies the transaction as a rights offering (option A) in its opening sentences and explicitly rules out private placement (B) and preferred stock offering (C) in labeled rebuttal paragraphs."
+ },
+ {
+  "id": "a233dedd-6332-4739-b630-6e71bc03a1e4",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation states an IPO raises equity for the company (option A), while a direct listing (option C) explicitly issues no additional shares to raise capital — confirming A as the answer for 'going public and raising growth capital.'"
+ },
+ {
+  "id": "a26cce70-37fe-4c37-95c7-adbcbdb36a42",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation states the company should use capital rationing (option B) to allocate a limited budget across profitable independent projects, and explicitly distinguishes project sequencing (option C) as applying to contingent, not independent, projects."
+ },
+ {
+  "id": "a3cc7477-a670-47ca-95fc-af5f2fca799b",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation states directly 'Company X has the highest inventory turnover ratio of 4.3' (option A), and explicitly notes Company Z (option C) has the lowest — confirming stored A, not detected C."
+ },
+ {
+  "id": "a4f7e4d8-ef26-4885-b882-fe8ef4a787eb",
+  "verdict": "stored_is_correct",
+  "reasoning": "Calculation shown gives g = 0.0975 - 2.40/30 = 0.0175, i.e., 1.75% (option A), explicitly labeled 'the correct answer'; the trailing text computing 1.83% and 1.89% is shown deriving those values FROM the correct 1.75% answer via distractor errors, not as the final answer — the 'final_number_mismatch' heuristic was misled by the trailing distractor arithmetic."
+ },
+ {
+  "id": "a562507d-0522-4477-9f99-c86a6a45986a",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation states 'if arbitrage is constrained, market efficiency is reduced' (option A), and explicitly states permitting foreign investment (option C) increases, not decreases, market efficiency."
+ },
+ {
+  "id": "a564f2ce-59f0-4ea5-b907-f277e126d2a8",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation concludes 'cumulative preferred shareholders do not share in the company's operating performance' (option A), while explicitly stating participating preferred shares (option C) do allow shareholders to share in performance."
+ },
+ {
+  "id": "a5d60acf-cd42-44f2-82bc-7833c2bfc902",
+  "verdict": "stored_is_correct",
+  "reasoning": "Despite garbled option B/C text, the explanation is clear: covered bonds are NOT set up via a bankruptcy-remote SPE and assets stay on the issuer's balance sheet (contradicting the B/C description), while investors have dual recourse — confirming stored A."
+ },
+ {
+  "id": "a623dd62-2d66-4142-9dbe-0f46e0519af6",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation states 'With sponsored depository receipts, the investor has the right to vote the shares' (option B), and explicitly notes global depository receipts (A) are not traded in U.S. markets, ruling out A/C."
+ },
+ {
+  "id": "a6e56283-3fe1-41cd-a2d7-779411152ed7",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation states companies are 'not required to provide full financial statements for segments' (option A) but must disclose the factors used to identify reportable segments (option B, explicitly required) — confirming stored A."
+ },
+ {
+  "id": "a7dcdcce-5c67-4ffa-809a-26e63d2c36d0",
+  "verdict": "stored_is_correct",
+  "reasoning": "Bayes' theorem calculation gives posterior probability 0.54/(0.54+0.28) = 0.66 (option B), explicitly identified as the updated probability; option C (0.82) is explicitly labeled as the prior total probability of beating the benchmark, not the answer."
+ },
+ {
+  "id": "a90160ad-9a7c-4ba6-9b33-bef6615394ff",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation states the planning step begins with determining client needs (option A) before writing the IPS or setting allocations; it explicitly notes writing the IPS (option C) occurs after client needs are identified."
+ },
+ {
+  "id": "aa9b195a-4c68-4de3-8b41-1b36d2d69581",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation defines a forward exchange rate as one specifying an exchange of currencies at a future point in time (option B), matching the question, and explicitly distinguishes the real exchange rate (option C) as inflation-adjusted, not the future-dated rate described."
+ }
+]

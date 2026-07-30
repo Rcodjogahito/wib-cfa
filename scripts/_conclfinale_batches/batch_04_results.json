@@ -1,0 +1,127 @@
+[
+ {
+  "id": "2e40e6eb-4229-494f-ba00-f288ae6c99f8",
+  "verdict": "stored_is_correct",
+  "reasoning": "Solving σp²=w_A²σ_A²+w_B²σ_B²+2w_Aw_Bσ_Aσ_Bρ with σp=5.40%: 29.16=4+36+24ρ → ρ=-0.4517, matching option A exactly. The explanation states this outright (\"The correlation is closest to −0.4517\") before rebutting Choice C (0.1733) as a misapplied-weights error; classic last-sentence rebuttal false positive."
+ },
+ {
+  "id": "2e45dd0a-e4af-4409-a908-186e104d337c",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation opens with \"Subordinated debt has a lower priority of claims than unsecured debt,\" directly answering the question and matching option C. Pari passu (B) is defined afterward as equal (not lower) priority, so it is explicitly ruled out, not the answer."
+ },
+ {
+  "id": "2e66868c-33d2-48bb-be28-b58638263752",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation states plainly that a senior/subordinated ABS structure \"establishes credit tranching,\" matching option A. Time tranching is described afterward as redistributing prepayment risk, which is a different concept, not the answer."
+ },
+ {
+  "id": "2e763242-b8c8-4f89-bc2c-4bed4d668ee9",
+  "verdict": "stored_is_correct",
+  "reasoning": "Straight-line depreciation = ($90M-$10M)/8 = $10M/year, exactly matching the given first-year depreciation of $10M and option C. Double-declining ($22.5M) and units-of-production ($16M) are computed only to show they don't match, per the explanation."
+ },
+ {
+  "id": "2e87d43c-0b87-4591-8b4d-85049c650d5f",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation explicitly identifies demographic changes in the addressable market as part of business model analysis, matching option C, then separately rebuts A (market share) and B (lawsuit losses) as not part of the analysis."
+ },
+ {
+  "id": "2e954a34-c93f-4f0a-bee1-6b5c9bdabe52",
+  "verdict": "stored_is_correct",
+  "reasoning": "P(A) = P(A or B) - P(B) + P(AB) = 0.46 - 0.23 + 0.17 = 0.40, matching option C exactly as shown in the worked calculation. The 0.29 figure (option B) is explicitly labeled as resulting from an incorrect subtraction, not the answer."
+ },
+ {
+  "id": "2e9a523c-459c-4d0b-a72e-e44676668fc4",
+  "verdict": "stored_is_correct",
+  "reasoning": "30/360 days from Mar 30 to Aug 20 = 140 days; accrued interest = 140/180 × CNY 60 = CNY 46.67, matching option B exactly. CNY 47.67 (option C) is explicitly labeled as the result of using actual/360 convention instead, not the correct answer."
+ },
+ {
+  "id": "2ef47e77-a341-4fea-91e6-b122ec109270",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation opens by stating creditors prefer less risk due to limited upside and large downside, directly matching option A and the question's phrasing (\"least likely to prefer... riskier strategy\"). Shareholders and suppliers are described as more receptive to the riskier strategy, ruling them out."
+ },
+ {
+  "id": "2f50ce87-bc2e-416d-87b9-9bf42f6bf4ff",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation states the currency board keeps the currency fixed to another currency, matching option C, while noting a fixed peg allows a ±1% band (i.e., less strict adherence to the target) and dollarization has no domestic currency at all. C is the closest match to \"keeping it closest to target.\""
+ },
+ {
+  "id": "2ffe1581-5a5e-4fe8-bd5a-4ee01e7998f5",
+  "verdict": "stored_is_correct",
+  "reasoning": "Forward points = (0.7131 - 0.7191) × 10,000 = -60, matching option B exactly as shown in the worked calculation. -83 (option A) is explicitly labeled as resulting from an incorrect division-before-multiplication error."
+ },
+ {
+  "id": "301ab7c3-d828-4684-afd3-9040159e0366",
+  "verdict": "stored_is_correct",
+  "reasoning": "The question describes several roadshows for a new issuer bringing debt to market for the first time; explanation confirms debut issues require significant roadshow marketing, matching option A. Repeat issues are explicitly said not to require months of roadshows, ruling out C."
+ },
+ {
+  "id": "30a06cfc-5e69-4d2f-b904-e16191848157",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation states portfolios right of the market portfolio on the CML are created by borrowing to hold more than 100% of the market (risky) portfolio, matching option B. \"Fully diversifying\" (C) is explicitly rejected since the market portfolio is already fully diversified by definition."
+ },
+ {
+  "id": "30c65a5b-d970-40d4-ba6e-dbb592ddef23",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation lists convertible arbitrage as a relative value strategy, matching option C, while classifying market neutral as equity hedge and merger arbitrage as event driven -- both explicitly different categories, ruling out A."
+ },
+ {
+  "id": "31b3a5d4-e1a2-4f27-b7ab-05ba6e0d69ef",
+  "verdict": "stored_is_correct",
+  "reasoning": "The explanation text is corrupted/unrelated (discusses BRL/EUR quotes, not this question's data). Independent calculation using the given table: CAD appreciates ~1.040% vs USD ((0.8740-0.8650)/0.8650), JPY appreciates ~1.026% vs USD (inverting JPY/USD), and EUR depreciates ~0.83%. CAD narrowly has the greatest appreciation, matching stored option A; detected C (EUR) is wrong in any convention since EUR clearly depreciates."
+ },
+ {
+  "id": "31d96396-6b0e-4066-bb5a-d33080b39c8f",
+  "verdict": "stored_is_correct",
+  "reasoning": "Average market D/E = (0.6+0.2+0.3)/3 = 0.3667, converting to weights D/V=0.2683, E/V=0.7317; WACC = 0.7317×11% + 0.2683×7% = 9.93%, matching option C. The explanation shows 9.53% (option B) as the error of using the average D/E ratio directly as the debt weight without conversion -- an explicitly labeled wrong-method result, not the answer."
+ },
+ {
+  "id": "3233fefb-45b9-4f3d-beb5-df48885fc662",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation states directly \"Company Z has the greatest value of assets, with €11,000,\" matching option C, then separately explains how X (option A) and Y (option B) would appear greatest only under incorrect calculation methods."
+ },
+ {
+  "id": "328fb5b3-c12a-4c25-8d07-d1f4366d11ff",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation defines the winsorized mean as replacing extreme values (lowest/highest 5%) with percentile values, directly matching option B (\"replaces outliers with less extreme returns\"). Equal weighting (A) is attributed to the arithmetic mean and compounded growth (C) to the geometric mean -- both different measures, ruling them out."
+ },
+ {
+  "id": "32a6d09c-781c-430c-833d-b4a68dedc553",
+  "verdict": "stored_is_correct",
+  "reasoning": "M² = Rf + (Rp-Rf)×(σm/σp) = 2 + (18-2)×(20/23) = 2 + 13.91 = 15.91%, matching option B exactly. Options A (11.57%) and C (20.40%) are explicitly labeled in the explanation as results of specific calculation errors, not the answer."
+ },
+ {
+  "id": "32f051ee-f064-4ea9-928e-e9395911471a",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation states the exchange for long-term government bonds is part of the \"secondary capital markets,\" matching option A. Money market is defined as short-term instruments (under one year), ruling out B, and primary market is described as the initial issuance venue, not secondary trading, ruling out C."
+ },
+ {
+  "id": "3335cab5-7794-443f-8ab4-000dc506c14a",
+  "verdict": "stored_is_correct",
+  "reasoning": "Number of bonds = €65,000,000 / €5,000 = 13,000, matching option B exactly, as explicitly stated in the explanation (\"the total number of bonds issued equals €65 million ÷ €5,000, or 13,000\"). The 13,130 figure (option C) is explicitly labeled as an error from dividing instead of multiplying by 101% -- the textbook example of the last-sentence-rebuttal false positive."
+ },
+ {
+  "id": "340962a0-709b-4873-bfcc-61e7efb50995",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation states directly \"Low barriers to entry are consistent with highly competitive markets,\" matching option B, while differentiated products and limited substitutes are explicitly attributed to less competitive markets, ruling out A and C."
+ },
+ {
+  "id": "34f67c3c-80dc-433a-8532-3db24392b00d",
+  "verdict": "stored_is_correct",
+  "reasoning": "The scenario describes maintaining physical asset (vehicle) ownership titles on a distributed ledger; explanation defines this exactly as tokenization, matching option C. Blockchain is described as merely one possible underlying technology (not required), and smart contracts are defined as something distinct (automated agreements), ruling out A and B."
+ },
+ {
+  "id": "3510ae97-dbf1-4ba5-89b0-c93f2a40f1d6",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation states an excess spread account is an example of an INTERNAL credit enhancement (built into the deal structure), making it the one that is least likely external -- matching option B, the stored answer. Letters of credit and bank guarantees are confirmed as external enhancements."
+ },
+ {
+  "id": "3572b0c2-d987-4bd4-b4b2-5e4c501ebaa9",
+  "verdict": "stored_is_correct",
+  "reasoning": "Options B/C show field-bleed corruption, but option A's claim (\"probability of Type I error equals the significance level\") is directly confirmed by the explanation's first sentence, matching stored answer A. The explanation separately refutes the corrupted B/C content (power is 1 minus Type II error probability, and hypothesis testing never proves a hypothesis), so detected C is not supported."
+ },
+ {
+  "id": "35bc9eb4-f01e-4f02-9b03-7530b8df3a7b",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation states covariance only indicates the direction (sign) of the linear relationship, not its strength, matching option C (\"a positive linear relationship\"). It explicitly says a strong relationship (option B) could only be concluded if 0.91 were the correlation rather than the covariance, ruling out B as the answer."
+ }
+]

@@ -1,0 +1,127 @@
+[
+ {
+  "id": "b4ed1d20-dc0c-4aaa-ab1a-d6e9ba5c04f8",
+  "verdict": "stored_is_correct",
+  "reasoning": "Opening sentence explicitly states Effective Duration (C) measures sensitivity to benchmark yield curve changes; the final sentence merely rebuts Modified/Macaulay duration (interest rate, not curve, sensitivity), triggering the false-positive pattern."
+ },
+ {
+  "id": "b5530196-fc9b-4819-af71-66b0f205e14f",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation states directly that the geometric mean return (C) is preferred for comparing multiyear returns with varying invested amounts; the truncated final text is mid-rebuttal of the arithmetic mean (B)."
+ },
+ {
+  "id": "b5b2b193-9904-45d4-8871-7de3bfd28f3f",
+  "verdict": "stored_is_correct",
+  "reasoning": "First sentence states an unsponsored DR (C) is where the depository bank retains voting rights, exactly matching the question stem; later sentences rebut ADS and global registered share (A, B)."
+ },
+ {
+  "id": "b5e1cb51-7cee-4bec-b47a-d47342d98c76",
+  "verdict": "stored_is_correct",
+  "reasoning": "Opening sentence confirms timberland (A) earns both income and appreciation; the closing sentences merely rebut commodities and infrastructure (B, C) as lacking one of the two features."
+ },
+ {
+  "id": "b6725e12-cf07-43ff-b012-f9caaa589d37",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation states FCFE is a type of present value model (B); the final sentence about enterprise value being a multiplier model is a rebuttal of option A, not the answer."
+ },
+ {
+  "id": "b79911c1-6800-4a7b-86e5-52e9992b5dad",
+  "verdict": "stored_is_correct",
+  "reasoning": "Independent calculation: P(A or B) = 0.48 + 0.25 - 0.06 = 0.67, matching option B exactly as computed mid-explanation; the trailing (Choice C) note only rebuts the distractor 0.73."
+ },
+ {
+  "id": "b7c6eb66-4f1e-4782-aa54-d8a25ca80239",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation states the horizontal common-size balance sheet (C) standardizes first-year values to 1.0, matching the question exactly; the final sentence rebuts the vertical common-size balance sheet (B)."
+ },
+ {
+  "id": "b8d85c88-06b0-4f0e-876e-776049e5aa3d",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation states convergence-to-base-rate forecasting is most appropriate for established (mature) industries (A); the final sentence rebuts growth industries (C)."
+ },
+ {
+  "id": "b9971c1d-a6e1-4d41-afdd-cc047aa3430c",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation explicitly identifies 0.0864 (B) as the PVBP answer and explains that 0.1729 (C) results from an arithmetic error (failing to divide by 2); the calculation-error note at the end triggered the false-positive heuristic."
+ },
+ {
+  "id": "b9cb8a59-f120-42fc-8ebd-4b97caae8396",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation states effective duration (a curve duration measure, B) is most appropriate for callable bonds; the closing sentences rebut yield durations (A and C, mislabeled 'modified duration')."
+ },
+ {
+  "id": "bafb7828-1efc-48ca-a047-fd7965b37b9e",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation states dilutive securities 'always decrease EPS,' directly answering the stem and matching option C; the remaining text about comparing basic vs diluted EPS to identify antidilutive securities is contextual, not a rebuttal of C."
+ },
+ {
+  "id": "bb0b48ae-1b28-41ec-9ce7-88b36ee3d480",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation states 'CFA Institute does not impose fines,' meaning payment of a fine (A) is the sanction NOT actually imposed, i.e. the 'least likely' answer to the question; public censure (B) is listed among sanctions CFAI DOES impose, so it cannot be the 'least likely' answer despite appearing in the final clause."
+ },
+ {
+  "id": "bb740107-1881-464f-95b1-3e18f7d04b32",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation states stock dividends (B) are payments in new shares instead of cash, matching the stem exactly; the final sentence describing a private placement is a rebuttal of option A."
+ },
+ {
+  "id": "bb9039bb-ee56-4ef6-9733-32789dbcf694",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation states hedge fund management fees are typically a percentage of AUM (C); the closing sentence about committed capital rebuts option A (private capital fund fee structure, not hedge funds)."
+ },
+ {
+  "id": "bce465b1-7aca-4d33-b250-114e57121da3",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation states the ROU asset and lease liability are equal only at inception and again at zero at lease end (i.e. beginning and end, C), differing throughout the interim; the final sentence about operating leases rebuts option B."
+ },
+ {
+  "id": "bd0b30e5-7dd5-48f1-bc7f-d0f32a6c5176",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation states exchange rate targeting (C) is limited by available foreign reserves; the closing sentence rebuts interest rate and inflation rate targeting (A, B) as not resource-limited."
+ },
+ {
+  "id": "bd13bb0d-87aa-4fbe-b945-ad782420f9cd",
+  "verdict": "stored_is_correct",
+  "reasoning": "Independent calculation: liability = 530 x 0.2 x $80 = $8,480; tax base = carrying value minus future tax-deductible amount = $8,480 - $8,480 = $0, matching option A exactly as stated in the final clause of the explanation."
+ },
+ {
+  "id": "bd1dcd4b-8406-4330-942e-15753ede0f7e",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation states value-add strategies (B) carry substantial risk aligned with equity risk-return; the final sentence rebuts core strategies and investment-grade CMBS (A, C) as bond-like."
+ },
+ {
+  "id": "bd32085f-6d07-42bf-a855-a7b41c3e20e7",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation states mental accounting (C) matches Park viewing each asset per specific goal; the closing sentences rebut overconfidence and framing bias (A, B)."
+ },
+ {
+  "id": "bd613c95-c02e-4fee-9870-73b4a0499f4a",
+  "verdict": "stored_is_correct",
+  "reasoning": "The option text is shifted across fields (OCR-style artifact), but reconstructing it shows the true option B reads 'incorrect, because these are not the only sources of return from investing in a bond' -- exactly what the explanation confirms as correct (missing reinvestment income); the final sentence rebuts the capital-gain-or-loss reasoning (option C)."
+ },
+ {
+  "id": "bd998a49-ae32-4cc7-98b0-b1ad921fa0f0",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation states key rate duration measures shaping risk from a shift in a portion of the benchmark yield curve (C); the closing sentences rebut modified duration (A) and effective duration/full curve shift (B)."
+ },
+ {
+  "id": "be05baf5-5b07-4bdc-828a-a67196cefea1",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation states asset-based models (A) are used for natural-resource/unprofitable companies, matching Visser's fishing quotas and unprofitability; the final clause rebuts earnings multiplier and Gordon growth models (B, C) as unsuitable given no profits."
+ },
+ {
+  "id": "be428262-8166-405f-b64e-2d11d0ee6233",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation explicitly labels 51.1 (B) as the error from using ending instead of average AR and 68.5 (C) as equal to daily credit sales, both flagged as wrong by process of elimination, leaving 47.5 (A) as the only remaining/correct value; independent recomputation using AR/daily credit sales (~48.7) is closest to A among the three choices, consistent with stored."
+ },
+ {
+  "id": "bede7c30-32a6-4c11-a541-8bcbff5bae36",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation states acquired patents (A) have a finite life since they are used over a specific period, directly answering the 'least likely indefinite-life' stem; the final sentence confirms trademarks (C) also have indefinite lives, rebutting it as a candidate answer."
+ },
+ {
+  "id": "bf617a85-a80f-46f1-9a37-34f37506fb1d",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation states the manager's stock-picking skill generated idiosyncratic returns (C); the closing sentence rebuts strategy beta (B) as attributable to investment style, not stock selection."
+ }
+]

@@ -1,0 +1,127 @@
+[
+ {
+  "id": "f1d8f54e-4563-401f-8e60-efaadf2eca8a",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation defines a currency option bond exactly as the question describes (principal and interest in either currency at investor's discretion), matching stored=C. The final sentence on dual-currency bonds (B) explicitly rebuts it: they pay interest in one currency and principal in another, which is a different structure."
+ },
+ {
+  "id": "f224b6af-b2f2-4115-a229-43991381464b",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation states YTM is the single discount rate used for all cash flows, matching stored=A. Simple yield (B) is defined afterward only to distinguish it, not as the answer."
+ },
+ {
+  "id": "f2df12d5-eabb-4807-a8b5-0503aa59b0e9",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation says shareholders favor added leverage to amplify returns, matching stored=C. The final sentence about customers (B) is a rebuttal showing why increased debt hurts customers, not helps them."
+ },
+ {
+  "id": "f3349122-18f4-48e2-a115-e3c4ed14b473",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation explicitly computes the price return as (630-600)/600 = 5.0%, matching stored=A. It then explicitly labels 6.3% (B) as the market-cap-weighted return and 7.5% (C) as the total return -- both explicitly wrong for this price-weighted index question."
+ },
+ {
+  "id": "f3bfb35c-7e4e-46dd-8863-5fba483e2a4b",
+  "verdict": "stored_is_correct",
+  "reasoning": "Question asks which characterization is LEAST accurate. Explanation confirms CDS ARE contingent claims and ARE a form of insurance, but are NOT forward commitments -- so 'forward commitments' (C, stored) is the least accurate characterization, and B (insurance) is affirmed as accurate, not a rebuttal target."
+ },
+ {
+  "id": "f40c6bec-4e6a-4f0d-b99a-579155015389",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation states Buffet violated Standard I via the audit committee's non-compliant provisioning policy, matching stored=B. It explicitly states Gatabaki (A) did NOT violate the standard, which is a rebuttal, not the answer."
+ },
+ {
+  "id": "f4c6c282-95e0-4542-905b-c4a793a252a8",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation lists 'accelerating payments to suppliers' as a pull, matching stored=A. Slower collection of AR (C) and inventory obsolescence (B) are explicitly listed as drags, the opposite of what the question asks."
+ },
+ {
+  "id": "f6045d03-fef5-4049-8dc2-1aff82ad133b",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation states derivatives valuation assumes arbitrage opportunities are exploited rapidly, matching stored=B, and explicitly says it does NOT assume investors are risk neutral (A) -- a direct rebuttal, not the answer."
+ },
+ {
+  "id": "f651a70a-7b66-4ee7-9153-8431d1bbc0f3",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation centers entirely on prepayment risk (contraction/extension risk) as the cash-flow risk of agency pass-throughs, matching stored=A. The final sentence explicitly states borrower defaults (C) do NOT affect cash flow uncertainty for agency MBS -- a rebuttal."
+ },
+ {
+  "id": "f670320e-4c86-43e1-9b54-5247dfba8376",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation explicitly states 'the investor exhibits the herding bias,' matching stored=A. Conservatism (C) is explicitly rejected in the final sentence because the investor DID update the model with new information, which is the opposite of conservatism."
+ },
+ {
+  "id": "f6949148-caaa-4b74-b94f-9dc6b249b96a",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation states the actual leased physical asset remains on the lessor's balance sheet, matching stored=B. The lessee (C) only recognizes a separate right-of-use asset/liability, not the physical asset itself, so C is not the answer to what the question literally asks."
+ },
+ {
+  "id": "f6aac1ea-3ca4-4dc4-ad62-ec65e01a0674",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation states ROA is unaffected by deferred tax classification because total assets stay the same, matching stored=C. The final sentence says the leverage ratio (B) WOULD be affected, which is a rebuttal, not the answer."
+ },
+ {
+  "id": "f6d06490-620a-4936-8ec3-c77613ed5145",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation states the analyst is using a hybrid approach (combining bottom-up factors like assets/liabilities/cash flows with top-down factors like market share/shocks), matching stored=A. The question describes both types of factors, confirming the hybrid label rather than pure top-down (C)."
+ },
+ {
+  "id": "f719dffa-c941-46e5-a02f-d0db625bba06",
+  "verdict": "stored_is_correct",
+  "reasoning": "Despite OCR corruption in options B/C (text appears split/garbled), option A's text is intact and the explanation directly quotes the Code of Ethics language 'practice and encourage others to practice in a professional and ethical manner,' matching stored=A. Suitability (Standard III(C)) and disclosure of investment processes (Standard V(B)), which map to the garbled B/C text, are explicitly identified as Standards requirements rather than Code of Ethics requirements, ruling out detected=C."
+ },
+ {
+  "id": "f73e3309-143b-42d4-ba7c-1a9f91084014",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation states volatility increases the value of both calls and puts, matching stored=A. Interest rate (C) is explicitly described as increasing calls but decreasing puts, which fails the 'both' condition in the question -- a rebuttal, not the answer."
+ },
+ {
+  "id": "f746e620-7fd3-42aa-8334-d4084a0983c9",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation states domestic consumers are harmed by paying higher prices, matching stored=C. It explicitly says a tariff does not affect foreign consumers (A), directly rebutting the detected option."
+ },
+ {
+  "id": "f7524e9c-539d-436a-a624-12061c47dc39",
+  "verdict": "stored_is_correct",
+  "reasoning": "Despite OCR ligature artifacts (missing 'fi' in 'firm'/'profits'/'specific'), the explanation clearly states participating preference shares receive extra dividends when firm profits exceed a threshold, matching stored=C (option text 'receive extra dividends if rm prots exceed a predetermined threshold'). Option A's description (sell back at a specific price) is explicitly attributed to putable shares, a different instrument, rebutting detected=A."
+ },
+ {
+  "id": "f79ac410-7c23-40a7-952f-c66c3a51e180",
+  "verdict": "stored_is_correct",
+  "reasoning": "Independent calculation: 100/(1.03)^10 = 74.41, matching stored=B. The explanation explicitly derives 86.26 (C) from an error (failing to use 10 semiannual periods), confirming it as a wrong-approach distractor, not the answer."
+ },
+ {
+  "id": "f7efa2ff-b8e8-454a-a24a-b7f4cfc39fcd",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation states hedge fund management fees are calculated as a percentage of assets under management (typically NAV), matching stored=B. Committed capital (C) is explicitly attributed to private capital funds, not hedge funds, rebutting detected=C."
+ },
+ {
+  "id": "f7f72730-5dca-4378-a3d1-3347ac1610d3",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation directly ties an undesirable net working capital position to solvency risk (running out of cash to meet short-term obligations), matching stored=A. Accounting risk (B) and operational risk (C) are described as unrelated categories, not the answer."
+ },
+ {
+  "id": "f8ab5d26-5851-4b14-93cb-d56e392a7362",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation explicitly identifies the yield to first call (1.43%) as the lowest of the three yields and therefore the yield-to-worst, matching stored=B. Yield to second call (1.68%, option C) is explicitly labeled as not the lowest, rebutting detected=C."
+ },
+ {
+  "id": "f8b7cf67-8c28-4e62-8075-1f141bab92c0",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation states that under a currency board a country retains its own currency while pegging it to a foreign currency, matching stored=B. Monetary union (C) is explicitly described as members adopting a common currency (i.e., NOT retaining their own), rebutting detected=C."
+ },
+ {
+  "id": "f8e52c27-0857-4b67-b8a8-c021e09699cb",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation states firm-specific factors such as research expenditures are fundamental factors, matching stored=B. Statistical factors (A) are described as often lacking finance-theory basis and being time-period specific, which describes what they are, not that the given factor is statistical -- rebutting detected=A."
+ },
+ {
+  "id": "f90c3fd7-92f3-42c8-bc1e-1ecf62e6c42c",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation states buying a bond with Macaulay duration equal to the liability horizon minimizes funding risk by balancing price and reinvestment risk, matching stored=C. Modified duration (B) is defined afterward only as a contrast (price sensitivity ignoring convexity), not as the answer."
+ },
+ {
+  "id": "f96479b9-1411-4f29-a71f-98482e4298e6",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation states intellectual capital, equity market cap, depreciation, and intangibles are all part of analyzing a borrower's collateral, matching stored=B. Covenants (C) are defined separately as terms and conditions of the bond issue, unrelated to these asset-quality items, rebutting detected=C."
+ }
+]

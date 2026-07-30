@@ -1,0 +1,127 @@
+[
+ {
+  "id": "5efe02c8-bc82-4064-a31a-2a58ed68e84b",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation states outright that investment manager's compensation (A) is not among the major IPS components. Detected C (investment objectives) is one of the components that IS included, cited later in the list, not the answer."
+ },
+ {
+  "id": "5f7c393c-76a0-47db-8d45-589dea9161e4",
+  "verdict": "stored_is_correct",
+  "reasoning": "The scenario (right to abandon the project after one year) is the textbook definition of an abandonment option (C), which the explanation opens with. The final sentence about 'fundamental options' (B) is a rebuttal of a distractor, not the answer."
+ },
+ {
+  "id": "5fca9a4b-214b-4d2a-97bc-e3fe0629e799",
+  "verdict": "stored_is_correct",
+  "reasoning": "The scenario (failing to revise a view despite reliable conflicting information) matches conservatism bias (A) verbatim in the explanation's opening sentence. The closing sentence defining hindsight bias (C) is a distractor rebuttal."
+ },
+ {
+  "id": "6074694c-2411-47da-adae-814493a2e0ac",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation defines PVBP as 'the change in the price of the bond when its yield changes by one basis point, or 0.01%', matching option B verbatim. The final sentence merely notes convexity is ignored for a small change in 'yield', triggering the false-positive containment match on option A."
+ },
+ {
+  "id": "609e0eec-86cc-4669-bfd0-06f430b3f3a3",
+  "verdict": "stored_is_correct",
+  "reasoning": "Independent calculation confirms: variance = 0.35^2*900 + 0.65^2*400 + 2*0.35*0.65*30 = 292.9, sqrt = 17.1%, matching option B exactly as stated in the explanation. Choice C (24.3%) is explicitly explained as an incorrect method in the final lines."
+ },
+ {
+  "id": "60aedd73-90de-4fee-81a4-31b035604952",
+  "verdict": "stored_is_correct",
+  "reasoning": "Independent calculation: WAC = (80*4.5+100*5.0+120*4.7)/300 = 4.75%, minus 0.25% servicing fee = 4.50%, matching option B exactly as the explanation states. Choice C (4.75%) is explicitly called the wrong (pre-fee) figure in the closing sentence."
+ },
+ {
+  "id": "60de1c96-f775-4829-9e7c-080d0236e5fb",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation states a country lacking trade protections for domestic producers is motivated to cooperate LESS (via tariffs), making that the least-likely reason to cooperate (option B), while lacking economic resources (A) and lacking security capabilities (C) are both explicitly reasons TO cooperate. Closing sentence about choice C is a distractor rebuttal."
+ },
+ {
+  "id": "61527bae-5aae-4a97-b453-05df7445260f",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation states appraisal index limitations 'result in understated return volatility', matching option B directly. Final sentence explaining why sample selection bias (C) doesn't apply to appraisal indexes is a distractor rebuttal."
+ },
+ {
+  "id": "61c1ce60-601b-474c-8c5c-bf53d0fd019a",
+  "verdict": "stored_is_correct",
+  "reasoning": "From the Choice A distractor calculation we can back out Asset Z's price (€40) and total prices (€240); equal weighting gives €1,200/3=€400 allocated to Z, and €400/€40=10 shares, matching option C (stored). The closing sentence about Choice B (8 shares) is a distractor rebuttal."
+ },
+ {
+  "id": "6231943e-ddd4-48f3-b0da-c39d5b1c4ecb",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation states 'A zero-coupon is a classic example of an OID bond,' matching option C. The closing sentence about index-linked bonds (B) being issued at par is a distractor rebuttal."
+ },
+ {
+  "id": "6242475c-fe67-4787-8ceb-a14f106ae4ea",
+  "verdict": "stored_is_correct",
+  "reasoning": "Independent PV calculation for a 5-year, 3.5% annual coupon bond discounted at 2.75% YTM gives 103.46 (coupons PV 16.14 + par PV 87.31), matching option A exactly. Choice C (107.07) is explicitly explained as the result of using the risk-free rate instead of YTM, a distractor rebuttal."
+ },
+ {
+  "id": "627d33a0-e902-4123-b3f7-cf21567f93ba",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation states an increase in the domestic price level decreases the real exchange rate, matching option A exactly. The closing sentence notes increases in the nominal exchange rate or foreign price level INCREASE the real exchange rate (the opposite effect), so B and C are not the answer."
+ },
+ {
+  "id": "62868f2c-ef67-474f-ac06-70dd94a08c1d",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation states cash receipt of interest under IFRS can be classified as EITHER investing or operating activity, meaning it cannot be classified as financing activity (B), matching stored. The word 'operating activity' at the end triggers the false-positive containment match on C."
+ },
+ {
+  "id": "64ccb9df-0020-4205-a917-b5a4a847607f",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation opens by confirming capitalization results in higher net income with no effect on total cash flows, matching option B. It explicitly states debt-to-equity/debt-to-assets ratios are LOWER (not higher) with capitalization, directly refuting option A, which is the final-sentence rebuttal that triggered the false positive."
+ },
+ {
+  "id": "6512d4fe-3732-4954-9ba3-1df0d9e9b551",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation explicitly states Wade did NOT violate Standard III(B), Fair Dealing (option B), which is the 'except' answer, while confirming he DID violate Standards V(B) and I(C) (options C and A). The closing sentence about I(C)/option A describes a violation he committed, not the exception."
+ },
+ {
+  "id": "6516f9eb-e674-4dd1-b528-cc8dbcc6421a",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation states customers are 'typically less concerned' with financial/operating-cycle issues and the scenario 'should not risk the company's viability' from their perspective, matching option C. The closing sentence about suppliers (B) being concerned is a distractor explanation, not the answer."
+ },
+ {
+  "id": "659b4010-375f-4987-8ce7-f8c5174a9b0a",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation states hedge fund management fees are 'always based on assets under management,' matching option C (year-end AUM). The closing sentence about Choice B (seed funding/committed capital) is a distractor rebuttal, and the '(Choice A)' reference mid-paragraph pertains to private-equity fee mechanics, not the hedge fund answer."
+ },
+ {
+  "id": "66104b32-d5d4-4229-8e56-c41c30dc8d8e",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation states classifying bonds as developed/emerging market is 'classification by geography', matching option A (emerging market bonds). The closing sentence noting municipal bonds (B) are classified by issuer type/taxable status is a distractor rebuttal."
+ },
+ {
+  "id": "66dde337-d92b-436e-a606-87d77c9e5f67",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation states dividend/M&A restrictions are 'a common covenant', matching option C. The closing sentence defining collateral (B) is a distractor rebuttal."
+ },
+ {
+  "id": "6714b0dc-fcf0-42a8-9fae-e20a8f94ad07",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation states bonds that adjust principal while keeping coupon fixed (matching the question's description of TIPS) are 'best described as capital-indexed bonds', matching option A. The closing reference to indexed-annuity bonds (B) is a distractor rebuttal."
+ },
+ {
+  "id": "6892cbfe-3b05-4222-a22d-e515122fe3cd",
+  "verdict": "stored_is_correct",
+  "reasoning": "Independent CAPM calculation: Stock A required return 18.5% > estimated 18.1% (overvalued, least likely to recommend buying); Stock B fairly valued; Stock C required 12.2% < estimated 12.5% (undervalued, good buy). The overvalued stock, A, matches stored; the closing discussion of Stock C being undervalued is a distractor, not the answer."
+ },
+ {
+  "id": "68fcf647-0ece-4012-b6c9-4e707eddd0a0",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation opens by stating direct real estate investment 'involves liquidity risk' due to long holding periods before sale, matching option A. The closing sentence about counterparty risk (C) applying mainly to derivatives is a distractor rebuttal."
+ },
+ {
+  "id": "6961bab2-8413-4854-bc1c-d81ee60788f9",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation states 'acquiring the company's financial statements' belongs to Step 2 'Gather data', not Step 3 'Process the data', making it the least-likely activity in the processing step, matching option A. The closing mention of preparing exhibits/graphs (C), which IS part of processing data, is a distractor rebuttal."
+ },
+ {
+  "id": "699a716e-84d9-4f5c-8f67-8e02012db42d",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation opens by stating ESG integration considers ESG factors 'throughout the asset allocation and security selection process', matching the question and option A verbatim. The closing definition of thematic investing (C) is a distractor rebuttal."
+ },
+ {
+  "id": "699bb997-b938-4e11-96fb-be8010c6c8eb",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation states Ricardian equivalence is the argument against being concerned about deficit size, matching option B, while explicitly listing crowding-out (C) and higher future taxes (A) as arguments FOR concern. The closing mention of higher future taxes (A) is part of that FOR-concern list, not the answer to an AGAINST-concern question."
+ }
+]

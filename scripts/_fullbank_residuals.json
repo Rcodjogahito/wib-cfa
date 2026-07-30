@@ -90,21 +90,57 @@
   "note": "FCF/FCFE/FCFF question with a SGD data table in the stem, but the stored explanation uses entirely different figures in a different currency (KRW) -- clearly mismatched from another question. Independent recomputation from the question's own SGD table gives FCFF as largest (196 vs FCF 181 vs FCFE 176), which matches NEITHER the DB's stored answer (A) nor the PDF-signal's suggestion (B). Needs full manual re-verification against the correct source PDF page, not a blind letter-swap."
  },
  {
-  "id": "uworld_textdiff_residual_265",
-  "source": "UWorld",
-  "issue": "batch_marker",
-  "note": "265 UWorld text_diff candidates did NOT word-bag-match cleanly between DB and deterministic PDF extraction (scripts/_uworld_textdiff_report.json, recon_status=='residual') -- genuine content differences requiring page-image visual review (agent-based sweep), same methodology as the Extra_QB/Kaplan hard-residual passes. Not yet started."
+  "id": "9169c359-f316-468d-83c8-cdc2ac97890e",
+  "source": "CFA_WEB",
+  "issue": "uncertain_neither_signal_confirmed",
+  "note": "Multi-market index benchmark question. DB says A, cache says B, but independent reasoning points to C (matches neither). The explanation only refutes A without affirming B. Needs the actual source PDF page pulled directly rather than trusting either signal."
  },
  {
-  "id": "uworld_no_match_15",
-  "source": "UWorld",
-  "issue": "batch_marker",
-  "note": "15 UWorld questions where the deterministic extractor's word-overlap matcher could not confidently locate the right PDF question (scripts/_uworld_full_diff_report.json, status=='no_match'). Needs manual page relocation, same as the historical 'wrong_page' residuals."
+  "id": "2adb4d48-da12-40c6-8953-442e61902595",
+  "source": "various",
+  "issue": "conclfinale_uncertain_fieldbleed",
+  "note": "Flagged during the 588-candidate conclusion-finale re-verification: option text is corrupted/field-bled enough that the true option-to-letter mapping cannot be confirmed from text alone. Needs a dedicated visual/page-source pass."
  },
  {
-  "id": "kaplan_residuals_108",
-  "source": "Kaplan",
-  "issue": "batch_marker",
-  "note": "Pre-existing from the deterministic Kaplan audit done earlier the same day (commits 961f8ef/e6c7c13, before this session): 15 residual compound cases (scripts/_kaplan_compound_report.json, recon_status=='residual'), 54 residual text_diff cases (scripts/_kaplan_textdiff_report.json, recon_status=='residual'), 39 table_format_flag cases (scripts/_kaplan_full_diff_report.json, status=='table_format_flag') where content is exact but a table exists in the PDF and may not be reproduced in question_en. None of these ~108 have been picked up yet this session."
+  "id": "36a3c6b3-eedd-43cc-a5f5-a83dd9cef9ed",
+  "source": "various",
+  "issue": "conclfinale_uncertain_fieldbleed",
+  "note": "Flagged during the 588-candidate conclusion-finale re-verification: option text is corrupted/field-bled enough that the true option-to-letter mapping cannot be confirmed from text alone. Needs a dedicated visual/page-source pass."
+ },
+ {
+  "id": "4798f2a0-6af6-4e9a-85c7-4f2864da624e",
+  "source": "various",
+  "issue": "conclfinale_uncertain_fieldbleed",
+  "note": "Flagged during the 588-candidate conclusion-finale re-verification: option text is corrupted/field-bled enough that the true option-to-letter mapping cannot be confirmed from text alone. Needs a dedicated visual/page-source pass."
+ },
+ {
+  "id": "487f7133-3bb0-4cd8-ace0-a0ccd3b65df4",
+  "source": "various",
+  "issue": "conclfinale_uncertain_fieldbleed",
+  "note": "Flagged during the 588-candidate conclusion-finale re-verification: option text is corrupted/field-bled enough that the true option-to-letter mapping cannot be confirmed from text alone. Needs a dedicated visual/page-source pass."
+ },
+ {
+  "id": "4d1cab6e-f40e-414b-949a-a8709f009492",
+  "source": "various",
+  "issue": "conclfinale_uncertain_fieldbleed",
+  "note": "Flagged during the 588-candidate conclusion-finale re-verification: option text is corrupted/field-bled enough that the true option-to-letter mapping cannot be confirmed from text alone. Needs a dedicated visual/page-source pass."
+ },
+ {
+  "id": "4ef46725-1e8b-49ae-910f-740e2f33385d",
+  "source": "various",
+  "issue": "conclfinale_uncertain_fieldbleed",
+  "note": "Flagged during the 588-candidate conclusion-finale re-verification: option text is corrupted/field-bled enough that the true option-to-letter mapping cannot be confirmed from text alone. Needs a dedicated visual/page-source pass."
+ },
+ {
+  "id": "9753f54b-9261-41c4-889a-f6af979ca59d",
+  "source": "various",
+  "issue": "conclfinale_uncertain_fieldbleed",
+  "note": "Flagged during the 588-candidate conclusion-finale re-verification: option text is corrupted/field-bled enough that the true option-to-letter mapping cannot be confirmed from text alone. Needs a dedicated visual/page-source pass."
+ },
+ {
+  "id": "b0a3b73b-2fc6-43ac-9715-347bc9779768",
+  "source": "various",
+  "issue": "conclfinale_uncertain_fieldbleed",
+  "note": "Flagged during the 588-candidate conclusion-finale re-verification: option text is corrupted/field-bled enough that the true option-to-letter mapping cannot be confirmed from text alone. Needs a dedicated visual/page-source pass."
  }
 ]

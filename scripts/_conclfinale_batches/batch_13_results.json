@@ -1,0 +1,127 @@
+[
+ {
+  "id": "8c693587-28e6-4334-8b61-d7d4281ba737",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation states winsorized mean removes distorting effects of outliers while arithmetic and geometric means include the impact of outliers, directly confirming option A as the best measure of central tendency when an extreme outlier is present."
+ },
+ {
+  "id": "8c6b7af3-420d-4182-b3ba-a2b74b3617d1",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation explicitly solves for and states the implied YTM as 4.65% (option C), then labels 3.94% (A) and 4.60% (B) as results of specific calculation errors. Detected B is the false-positive rebuttal pattern."
+ },
+ {
+  "id": "8cdfb023-497a-47a6-a0f8-0d913c1655c6",
+  "verdict": "stored_is_correct",
+  "reasoning": "Option text is OCR-shifted across the stem/options boundary, but the explanation plainly restates the correct rule verbatim: 'an investor cannot earn positive abnormal returns on average using technical analysis... after adjusting for transaction costs and taxes' — this matches option A's content, confirming stored A despite the garbled option split."
+ },
+ {
+  "id": "8d65d323-6713-4c89-ae7a-e01a1db32e7c",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation states the slope of the characteristic line is beta (confirming A), then corrects the reversed relationships in the other options ('the stock, not the market, is 95% as volatile'; covariance is 95% of variance, not the reverse) — a rebuttal of B/C, not a confirmation."
+ },
+ {
+  "id": "8d777cf8-4364-4503-b8d7-977f71053b85",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation states a price decline from fundamental factors like cash dividend reductions (option C) lowers the index value, while splits and reconstitutions (A, B) do not — ending with 'the same process is used for reconstitutions (Choices A and B)' as a rebuttal, the classic false-positive pattern."
+ },
+ {
+  "id": "8d8a4293-a168-44f0-88ec-dfcf020d92ba",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation states negative screening (option C) is the approach described and is the most common approach; it then explicitly labels impact investing (A) and thematic investing (B) as incorrect distractors at the end, matching the rebuttal false-positive pattern."
+ },
+ {
+  "id": "8e1a21f0-4c50-44e2-8366-7956a13dbd54",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation confirms text analytics (A) is used to evaluate word-frequency in filings, then defines algorithmic trading and NLP only to distinguish them as the wrong distractors — the trailing NLP definition triggered the heuristic but does not indicate NLP is correct."
+ },
+ {
+  "id": "8e54ccd4-f7ad-4725-883c-e7257ef37061",
+  "verdict": "stored_is_correct",
+  "reasoning": "Option text is OCR-shifted, but the explanation's opening statement directly answers the question: 'Corporate reports and press releases are written by management and are often viewed as public relations or sales materials' — i.e., least objective — matching option A (stored), while government data and proxy statements are described as legitimate objective sources."
+ },
+ {
+  "id": "8f612797-8a70-46d2-bdde-d41c072f48b2",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation states the governance committee, not the audit committee, is responsible for compliance monitoring (confirming C as the 'least likely' audit committee function), then closes with '(Choices A and B) The audit committee's responsibilities include...' as a rebuttal of those choices, not a confirmation."
+ },
+ {
+  "id": "8f7376a5-6506-4a77-945f-9fe477e9d9c9",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation states changing credit terms from 2/60 to 2/45 (option C) results in earlier receipt of payments and improves cash position, then states decreasing days' payables and inventory turnover (A, B) both reduce operating cash flow — an explicit rebuttal of the other two options."
+ },
+ {
+  "id": "8ff6138c-2d1e-4bdb-8029-787de33a1100",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation confirms positive net income must increase book value of equity (option A), then explains market value 'may or may not' increase and can even decrease — this final caveat about market value is a rebuttal of options B/C, not a confirmation of them."
+ },
+ {
+  "id": "9028a062-5314-48c8-98e2-33c03d737a8f",
+  "verdict": "stored_is_correct",
+  "reasoning": "The question asks what is INCONSISTENT with an efficient market. The explanation confirms rapid, unbiased, independent price adjustment IS what efficient markets do (i.e., options B and C describe consistent/expected behavior), leaving biased price adjustments (option A, stored) as the one inconsistent with efficiency."
+ },
+ {
+  "id": "906d1a65-112e-4474-b2b5-7536ff8e6d65",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation lists counterparty risk (option A) among the factors affecting repo margin, and explicitly closes with '(Choices B and C) The central bank policy rate and the interest rate on alternative sources of financing affect the repo rate, not the repo margin' — a direct rebuttal of B and C."
+ },
+ {
+  "id": "9254de06-d3ad-463a-80cb-5204a9be381e",
+  "verdict": "stored_is_correct",
+  "reasoning": "Independent recalculation confirms option C: duration effect = 7,812,000 x 0.003 = 23,436; convexity adjustment = 23,600 - 23,436 = 164 = 0.5 x MoneyConv x 0.003^2, giving MoneyConv = 164/0.0000045 ≈ 36,444,444, matching option C exactly. The explanation labels 164 (A) and 109,333 (B) as errors."
+ },
+ {
+  "id": "928188d7-58b6-4067-b33e-284355aca064",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation states creation/redemption by authorized participants is a unique feature of ETFs (option C), mentioning closed-end funds only as the type of fund whose pitfalls (premium/discount trading) ETFs avoid — not as the correct answer."
+ },
+ {
+  "id": "9293db6a-b59e-4af4-b890-38b5c7fb1775",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation explicitly concludes 'Company A has better efficiency (0.83 vs. 0.50)' confirming option B, then closes with '(Choice A) Company B has better solvency... (Choice C) Company B has better profitability' as rebuttals of the other two options, the classic false-positive trailing pattern."
+ },
+ {
+  "id": "92b62876-9257-436a-9b17-ea42d609e76b",
+  "verdict": "stored_is_correct",
+  "reasoning": "Since Y is an exact linear function of X (Y = -0.2 + 0.8X), the relationship is deterministic and perfectly linear, so correlation = 1.0 (option C), exactly as the explanation states ('a correlation of 1 indicates a perfect linear relationship regardless of the slope value'); the 0.8 slope value merely triggered the heuristic."
+ },
+ {
+  "id": "9419e5a1-992d-481f-8516-19769ef5c604",
+  "verdict": "stored_is_correct",
+  "reasoning": "Independent calculation: interest = 100M x 0.04 x (90/360) = 1M; proceeds = 100M - 1M = 99M, matching option B (stored) and the explanation's stated arithmetic exactly. Options A and C are explicitly labeled as resulting from calculation errors."
+ },
+ {
+  "id": "94c3244f-4144-4949-9170-4d5bb92a371f",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation states that as the number of market participants increases (option C), markets adjust faster to new information (improving efficiency), then explains that short-selling restrictions and high bid-ask spreads instead reduce efficiency — a rebuttal of options A and B, not a confirmation of bid-ask spreads (A)."
+ },
+ {
+  "id": "953a79be-295b-4e6f-a3bb-b8d3afe64925",
+  "verdict": "stored_is_correct",
+  "reasoning": "Independent recalculation: [(1x5,000)+(20x2,500)+(60x1,000)]/150,000 x 100 = 115,000/150,000 x 100 = 76.67 ≈ 77, matching option B (stored) exactly as the explanation computes. The '100' base value in the formula (not the answer) likely triggered the heuristic toward option C."
+ },
+ {
+  "id": "9544395a-0115-4056-bff4-83eb42426394",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation confirms professionals being 'more aware of investment costs and risks' than clients (option C) explains the need for trust, then closes by rebutting maximizing wealth (A) and the regulated-environment point (B) as not explaining the need for trust — the trailing rebuttal pattern."
+ },
+ {
+  "id": "95b18962-778c-4326-b30d-bab17ae461da",
+  "verdict": "stored_is_correct",
+  "reasoning": "Independent calculation: outstanding balance = 850,000 - 25,000 = 825,000; shortfall = 825,000 - 750,000 sale proceeds = 75,000, matching option B (stored) exactly. The explanation explicitly labels $50,000 (A) and $100,000 (C) as results of calculation errors."
+ },
+ {
+  "id": "95c85c54-6b91-4867-99fc-3358a075640b",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation confirms asset prices follow a lognormal distribution (option C) because continuously compounded returns are normally distributed, then closes by noting a binomial distribution (B) models price *changes* over time but not the distribution of prices themselves — a rebuttal, not a confirmation, of option B."
+ },
+ {
+  "id": "96d026e5-4dd3-4767-9e55-14f1dd6eda81",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation's opening sentence directly confirms channel strategy is examined when evaluating a company's business model (option B, stored); the trailing sentences on revenue drivers and pricing power are contrasting definitions of the other two options, not confirmations of them."
+ },
+ {
+  "id": "9753f54b-9261-41c4-889a-f6af979ca59d",
+  "verdict": "uncertain",
+  "reasoning": "The provided data table appears to omit a beginning accounts-payable figure needed to compute 'average accounts payable' as used in the stated DPO formula, so the exact 45.6 result cannot be independently reproduced from the given text; however, the explanation explicitly attributes 46.8 (B) to dividing by COGS instead of average daily purchases and 49.0 (C) to using ending instead of average payables, which rules out the detected option C and is consistent with stored A being correct."
+ }
+]

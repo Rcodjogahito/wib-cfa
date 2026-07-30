@@ -1,0 +1,127 @@
+[
+ {
+  "id": "000b7219-7350-47ea-b91b-90b7d501b7b0",
+  "verdict": "stored_is_correct",
+  "reasoning": "Options are OCR-shifted/merged, but the explanation's opening sentence directly recommends 'document unsuccessful attempts to update client information' (matches start of option_a text as displayed), and explicitly says the Standard does NOT prohibit purchasing risky securities or managing assets for clients withholding information (ruling out the other two). Stored A matches the recommended action."
+ },
+ {
+  "id": "00cd2912-36f6-4d02-b2fc-ab88d2b189b4",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation opens with 'An income statement shows the results of a firm's business activity over a specific period,' directly matching option B. The closing '(Choice C)' sentence rebuts the cash-transactions option, a classic rebuttal false-positive."
+ },
+ {
+  "id": "00e65ac8-c045-4840-8e66-5e9463dd7e85",
+  "verdict": "stored_is_correct",
+  "reasoning": "The scenario (normal-margin base bikes plus high-margin paint/tire/brake add-ons) is the textbook definition of add-on pricing given first in the explanation, matching option C. The trailing sentence about hidden revenue (A) is an unrelated distractor definition, not the answer."
+ },
+ {
+  "id": "00ee5ce0-9cc2-4637-9da2-2f51fcafbb65",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation states CFO 'is in a better position to fund growth opportunities,' directly matching option B (cash flow statement), and explicitly labels the closing discussion of C (statement of changes in equity) as a rebuttal ('(Choice C) ... does not explain how the company could fund new projects')."
+ },
+ {
+  "id": "00fa92b8-07f0-4010-a9b0-3e8522f92c2f",
+  "verdict": "stored_is_correct",
+  "reasoning": "Options are OCR-merged, but reconstructing them shows option B is 'a borrower to lock in an interest rate on a loan it will take out in 30 days.' The explanation says the FRA covers a borrowing period starting in 30 days, while a loan already made (A) and a long bond position (C) have 'current exposures not covered' by a forward-starting FRA - directly ruling out A and C and confirming B."
+ },
+ {
+  "id": "013a1d7b-1815-4202-8c32-0caf26a233d5",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation states that when the patent expires and new entrants come in, 'the HHI would be expected to shrink' - matching option A (smaller). The final '(Choice C)' sentence explains when HHI would instead increase (mergers among leaders), which is a rebuttal of the 'larger' distractor, not the answer."
+ },
+ {
+  "id": "014215ce-fccd-4150-a2b3-a82799f61959",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation opens by directly stating 'Lending money to government agencies is not typically a function of a central bank,' matching option C as the least-likely function. The word 'issuing currency' appearing near the end is confirming that function exists (not negating it), which is what tripped the heuristic toward A."
+ },
+ {
+  "id": "01881b09-9fe2-4977-b14f-f26348e6e29f",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation explicitly concludes 'which reduces the risk of forced selling and makes the notice period the most appropriate choice for fund managers concerned about liquidity,' matching option A. The closing discussion of redemption fees (Choice C) explains why fees only discourage, not prohibit, redemptions - a rebuttal, not the answer."
+ },
+ {
+  "id": "02391a42-e779-478b-b107-ef238f56f127",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation states 'sources of capital also include one-time infusions, such as asset disposals or sales,' matching option A. The closing '(Choices B and C)' sentence explicitly labels cash/investments and positive net working capital as uses (not sources) of capital, refuting both distractors."
+ },
+ {
+  "id": "02707103-a171-414f-a88c-cd2442870b31",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation states the example 'illustrates the concept of diminishing marginal utility of return,' matching option B directly. The closing '(Choice C)' sentence explains the convexity of the efficient frontier is unrelated to indifference-curve steepness, refuting C rather than confirming it."
+ },
+ {
+  "id": "02baffba-3bb0-45fa-ad7c-84813eb96791",
+  "verdict": "stored_is_correct",
+  "reasoning": "Independent recalculation: PMT=4, N=12, i=5%, FV=100 gives price = 4x[1-(1.05)^-12]/0.05 + 100x(1.05)^-12 = 35.45 + 55.68 = 91.14, matching stored B (91.1367). The closing '(Choice C)' sentence explicitly flags 109.3851 as incorrect (transposed coupon/discount rate), a rebuttal not the answer."
+ },
+ {
+  "id": "0376594f-3584-45e7-8e54-790f29625ead",
+  "verdict": "stored_is_correct",
+  "reasoning": "Independent recalculation: diluted EPS = NI / (WACSO + converted shares) = 50m / (100m + 2m*5) = 50/110 = 0.4545 ~ 0.45, matching stored A, and the explanation's own text says this directly ('reducing the EPS to $0.45'). The closing '(Choice C)' sentence flags 0.49 as resulting from an error (not applying the 5-to-1 ratio), a rebuttal."
+ },
+ {
+  "id": "0470b612-10fb-48b4-bb48-0f33c4f59ec4",
+  "verdict": "stored_is_correct",
+  "reasoning": "Independent recalculation: discounting the 2% coupon bond's cash flows at the given spot rates gives a price of ~92.96; solving for the single YTM that reproduces this price with N=4, PMT=2, FV=100 gives r~3.94%, matching stored B. The closing '(Choice C)' sentence flags 4.43% as resulting from omitting the final coupon, a rebuttal."
+ },
+ {
+  "id": "04da32b5-b26b-418f-863b-ab49b89fa498",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation's first sentence directly answers the question as asked: 'If the discount margin is greater than the quoted margin, the FRN will trade at a discount' - matching stored C exactly. The subsequent 'B is incorrect' sentence about premium is an explicit rebuttal, not the answer."
+ },
+ {
+  "id": "05097e3a-3ad4-42a5-9da7-3774ee9f4455",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation opens with 'Tokens represent ownership rights to physical assets in a blockchain or distributed ledger technology,' directly matching option C and the question's exact wording. The closing sentence about smart contracts (B) defines a different concept as a distractor, not the answer."
+ },
+ {
+  "id": "0528e88e-54c8-48cf-9ccf-68ab60d0f5fc",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation states 'Standards of conduct also clarify the minimally acceptable behaviors required to conform to the code of ethics,' matching option C exactly (the question asks what standards of conduct describe). The closing '(Choice B)' sentence explicitly states standards of conduct do NOT describe laws/regulations, a rebuttal."
+ },
+ {
+  "id": "069f5ff4-bdce-4572-984e-5ee797067e40",
+  "verdict": "stored_is_correct",
+  "reasoning": "Independent recalculation: total return factors are 1.06, 1.095, 0.98 (price + income each year); 100 x 1.06 x 1.095 x 0.98 = 113.75, matching stored B and stated explicitly in the explanation. The closing '(Choice C)' sentence flags 113.87 as resulting from wrongly compounding price and income instead of adding them, a rebuttal."
+ },
+ {
+  "id": "072bdb20-5411-4fde-8023-e0b2edf0687a",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation opens with 'Delta measures the sensitivity of a derivative's value to the price of its underlying asset,' directly matching the question and option B. The closing sentence defines beta (A) as measuring market risk of a security, a distractor definition, not the answer."
+ },
+ {
+  "id": "08fd1030-c3d8-4051-aa68-19cb5dfd9ec8",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation opens with 'Cryptocurrency coin trusts invest in a large pool of a cryptocurrency,' directly matching option C and the question's exact wording ('invests directly'). The closing sentence about futures contracts (A) explicitly notes they are cash-settled (i.e., not direct investment), a rebuttal."
+ },
+ {
+  "id": "0903ddd0-63c9-425c-993e-327b1e0cbe78",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation states a bank 'must invest in assets that are more conservative than those invested by other types of financial institutions' due to regulatory reserve requirements, directly establishing the bank (A) as having the lowest risk tolerance. The endowment is described as needing to accept higher risk, and the mutual fund's risk tolerance is described as ambiguous ('may be greater than or less than')."
+ },
+ {
+  "id": "09933a42-8d55-49b5-9b21-9754900d4fa9",
+  "verdict": "stored_is_correct",
+  "reasoning": "Independent recalculation: quarterly coupon PMT=1.25, periodic rate=1.4%, N=8 gives price = 1.25x7.5214 + 100x0.8947 = 9.40 + 89.47 = 98.87, matching stored B. The closing '(Choice C)' sentence flags 98.89 as resulting from wrongly assuming annual coupons, a rebuttal."
+ },
+ {
+  "id": "0ae548d4-fdac-4a93-980a-9419ccc2ba83",
+  "verdict": "stored_is_correct",
+  "reasoning": "A venture capital fund by definition specializes in early-stage companies; the explanation states funds specializing in early-stage companies earn higher returns when they begin investing during a business cycle expansion, matching stored option B. The distressed-company/contraction sentence describes a different fund specialization, not this VC fund."
+ },
+ {
+  "id": "0b847cf1-1c3b-431b-bfb0-df01d76689e3",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation's first sentence directly answers the question as worded: 'A distribution that is more peaked than normal is leptokurtic,' matching stored B. The closing sentence defines platykurtic (flatter than normal, i.e., option A) as the opposite concept, a distractor definition not the answer."
+ },
+ {
+  "id": "0c0a515e-a87d-4d4f-a240-e395d16947d1",
+  "verdict": "stored_is_correct",
+  "reasoning": "The detailed description of the early expansion phase ('GDP moves from negative to positive with moderate growth,' 'inflation tends to lag... therefore it is moderate') matches the question's 'stabilized GDP growth and moderate inflation' precisely, confirming stored option C. The closing '(Choice B)' sentence describes contraction (negative GDP growth) as a rebuttal, not the answer."
+ },
+ {
+  "id": "0c0e64eb-8adb-427a-9361-4b68aaca06b3",
+  "verdict": "stored_is_correct",
+  "reasoning": "Independent recalculation: modified duration A = 2.7/1.0313 = 2.618, modified duration B = 19.2/1.0453 = 18.371; market-value-weighted average = 0.5357x2.618 + 0.4644x18.371 = 9.93, matching stored A exactly. The closing '(Choice C)' sentence flags 12.46 as resulting from wrongly weighting by par value instead of market value, a rebuttal."
+ }
+]

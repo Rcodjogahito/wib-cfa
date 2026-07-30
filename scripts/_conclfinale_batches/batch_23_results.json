@@ -1,0 +1,62 @@
+[
+ {
+  "id": "f9703120-acef-456f-b52b-2a538eb6cb4b",
+  "verdict": "stored_is_correct",
+  "reasoning": "The explanation states the Sortino ratio 'is therefore a more appropriate measure of downside risk,' directly matching option B. The final paragraph '(Choice C) Return relative to systematic risk is best reflected by the Treynor ratio' is a rebuttal of the distractor, not the answer."
+ },
+ {
+  "id": "f9f89e88-e8ba-42c4-a6aa-453618144d0f",
+  "verdict": "stored_is_correct",
+  "reasoning": "Independent calculation: PV = 5/1.09 + 105/1.10^2 = 4.59 + 86.78 = 91.36, matching option A (stored). The final sentence '(Choice C) 98.17 is the result of discounting... incorrectly' explicitly refutes C as a wrong-method answer."
+ },
+ {
+  "id": "fa317a34-aa69-4606-a067-276d87482591",
+  "verdict": "stored_is_correct",
+  "reasoning": "The explanation's core paragraph defines the described action (overweighting noncyclicals, underweighting cyclicals ahead of a recession) as 'Sector rotation,' matching option B. The closing '(Choice C) Tactical asset allocation refers to... shifts among asset classes, not within an asset class' is a rebuttal, not the answer."
+ },
+ {
+  "id": "fac867ba-1ee6-42a3-82ba-832f9ea2043e",
+  "verdict": "stored_is_correct",
+  "reasoning": "The explanation concludes maximizing firm revenue 'will not always allow' acting in the client's best interest, identifying option A as the least-professional behavior (matching stored). The final sentence '(Choice C) Researching... is a form of continuing education' rebuts C as an example of professionalism, not the answer."
+ },
+ {
+  "id": "fb5737a0-a3ef-4fbe-b4d0-690b4a9d77aa",
+  "verdict": "stored_is_correct",
+  "reasoning": "Option text is OCR-shifted/garbled (each field bleeds tail-of-previous + head-of-next), but reconstructable: real option B reads 'difference between the purchase price and market price of the underlying bond.' The explanation defines repo margin exactly as 'the difference between the amount the lender... pays for it and its market price or value,' matching B (stored), not the repurchase-price definition implied for C."
+ },
+ {
+  "id": "fbdf9487-b213-4545-9dcd-047549b789e3",
+  "verdict": "stored_is_correct",
+  "reasoning": "The explanation states 'Population shifts occur over long periods of time, which is indicative of a thematic risk,' directly matching option B (stored). Exogenous risk (C) is defined afterward only as a contrast ('related to unanticipated events'), not as the answer."
+ },
+ {
+  "id": "fbef96f0-6d54-40ba-ba56-201e9ea3a909",
+  "verdict": "stored_is_correct",
+  "reasoning": "The explanation explicitly states 'In this case, DOH equals 48.7,' which is option C (stored). '(Choice B) 40.6 is the result of... ending inventory, not average inventory' is a rebuttal identifying B as an error from using the wrong inventory figure, not the answer."
+ },
+ {
+  "id": "fc71231d-9f33-4e3b-82b4-1da5470a1981",
+  "verdict": "stored_is_correct",
+  "reasoning": "Independent calculation: cash per share = 21*0.40 = 8.40, loan = 21-8.40 = 12.60; trigger price = 12.60/(1-0.25) = 16.80, matching option B (stored). The final sentence '(Choice C) $17.85 is the result of calculating...' rebuts C as a miscalculation, not the answer."
+ },
+ {
+  "id": "fca3985f-ff9e-42c9-99af-c26d4b7e9299",
+  "verdict": "stored_is_correct",
+  "reasoning": "OCR has dropped the 'fi' ligature ('rm size' = 'firm size'). Once restored, option B reads 'firm size, book-to-market ratio, and excess return on the market portfolio,' which matches the explanation's statement of the Fama-French three factors verbatim, confirming stored B. Detected A appears driven by garbled question-stem text bleeding into option A, not by any statement supporting A."
+ },
+ {
+  "id": "fcf9b88f-0f32-40c8-b3ea-989e31fa6fb1",
+  "verdict": "stored_is_correct",
+  "reasoning": "The bulk of the explanation defines Capacity in depth, including company-specific 'ability to generate revenue,' 'profitability,' 'leverage,' etc. -- the CFA curriculum places management's business strategy and execution under Capacity's company-fundamentals analysis, matching option A (stored). The final sentence '(Choice C) Asset values versus level of indebtedness is addressed under Collateral' mentions Collateral (option B's term) only to rebut distractor C -- the classic last-sentence false-positive pattern, not an indication that B is correct."
+ },
+ {
+  "id": "fefc1998-3c3a-445a-929e-f1099a50abbe",
+  "verdict": "stored_is_correct",
+  "reasoning": "The pricing structure described (declining per-unit price as purchase volume increases across bands) is a textbook example of volume-based tiers, and the explanation states 'Tiered pricing is based on volume of purchases,' matching option A (stored). The final clause 'Add-on pricing involves additional options that can be included with a product' merely defines the distractor B, not the answer."
+ },
+ {
+  "id": "ff1c07bd-74be-4ab5-bafe-6aec61371beb",
+  "verdict": "stored_is_correct",
+  "reasoning": "The explanation opens with 'Securitizers are financial intermediaries that assemble large pools of similar financial assets... and issue securities that represent interests in the pool,' matching the question stem verbatim and option C (stored). The final sentence defining arbitrageurs (option A) is only a contrasting definition, not the answer."
+ }
+]

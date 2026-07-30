@@ -1,0 +1,127 @@
+[
+ {
+  "id": "cb55e246-6b84-45a6-abad-4f41502b47a7",
+  "verdict": "stored_is_correct",
+  "reasoning": "ln(14.50/14.00) = 0.0351 = 3.51%, matching option A, which the explanation states directly ('grown continuously ... at 0.0351 equals $14.50'). The final sentence about 3.64% (Choice C) explicitly rebuts it as an incorrect daily-compounding method."
+ },
+ {
+  "id": "cb65d0b3-8baa-46ea-a033-82acb2fccff9",
+  "verdict": "stored_is_correct",
+  "reasoning": "k = D1/P0 + g = (1.50 x 1.045)/20 + 0.045 = 0.078375 + 0.045 = 12.34%, matching option B exactly as computed in the explanation. Option A (11.68%) is explicitly labeled as the result of the wrong (discounting instead of growing) approach."
+ },
+ {
+  "id": "cb9dca40-7013-4217-9d71-10c5e6f3edd0",
+  "verdict": "stored_is_correct",
+  "reasoning": "Buying an FRA is equivalent to paying fixed/receiving floating, which is option A and is stated directly in the explanation's main body. Choices B and C are each explicitly rejected in their own labeled rebuttal sentences."
+ },
+ {
+  "id": "cbb888e3-5377-4356-9cdf-1a5dcfd5e2c5",
+  "verdict": "stored_is_correct",
+  "reasoning": "The explanation states plainly that a positive duration gap exposes the investor to market price risk from increasing rates, which is option B verbatim. The mention of option A (reinvestment risk from decreasing rates) is a contrast case for a negative duration gap, not the answer."
+ },
+ {
+  "id": "cbcf5f60-c4a1-458e-8381-1328cc8b46f8",
+  "verdict": "stored_is_correct",
+  "reasoning": "Auction pricing is listed among price-discrimination forms (tiered, dynamic, auction) in the explanation's table and prose, matching option A. Options B and C are each explicitly identified as non-price-discrimination pricing models in their own rebuttal sentences."
+ },
+ {
+  "id": "cc0aaa07-c642-49e8-832b-0951fdb668b9",
+  "verdict": "stored_is_correct",
+  "reasoning": "Inventory quantity rose (500 to 510) while the LIFO reserve fell, which the explanation attributes directly to decreasing prices (option B); a LIFO liquidation requires a quantity decrease (ruled out) and decreasing demand would require comparing inventory/sales growth rates, which isn't shown here. The final sentence about demand is guidance for further analysis, not an assertion that A is correct."
+ },
+ {
+  "id": "cc2b6de6-55e9-4efc-ad3f-9e6f273ab66a",
+  "verdict": "stored_is_correct",
+  "reasoning": "The explanation states the execution step 'includes choosing a target asset allocation, evaluating potential investments ... and constructing the portfolio,' directly matching option C. Rebalancing (option A) is explicitly placed in the feedback step instead."
+ },
+ {
+  "id": "cc5042d6-6237-4cb4-a460-a6e53beb3aea",
+  "verdict": "stored_is_correct",
+  "reasoning": "The explanation states the standard error of estimate 'is equal to the square root of the mean squared error,' matching option A verbatim, and separately clarifies that options B (R2) and C (MSE) describe different statistics."
+ },
+ {
+  "id": "cc8c4630-a7a9-4dd4-a454-fe0d06ef275d",
+  "verdict": "stored_is_correct",
+  "reasoning": "The explanation states a call market trades 'at specific times at one price that clears the market,' matching option B. Options A and C are both explicitly attributed to continuous markets instead, in the same sentence."
+ },
+ {
+  "id": "ccd0ccd0-d069-469b-ad1a-cc89aeeecd18",
+  "verdict": "stored_is_correct",
+  "reasoning": "The explanation opens with 'The performance fee may also be called an incentive fee or carried interest,' directly matching option C. The management fee (option B) is explicitly distinguished as a separate fee earned regardless of performance."
+ },
+ {
+  "id": "cd297bb3-dff1-4fc2-ad6b-46f86b3af5b8",
+  "verdict": "stored_is_correct",
+  "reasoning": "The explanation states a management buy-in occurs when the LBO fund 'replaces the acquired company's management team with a new team,' matching the question and option B exactly. Management buyout (existing team stays) and activist shareholder (voting rights) are both explicitly ruled out as different concepts."
+ },
+ {
+  "id": "cd65fe7c-f018-44fd-a1a5-44af97439fce",
+  "verdict": "stored_is_correct",
+  "reasoning": "The incurrence test (option A) is described as a negative covenant restricting issuer actions, whereas the explanation explicitly labels both the pari passu clause (B) and cross-default clause (C) as affirmative covenants, ruling them out as the negative-pledge-type clause the question asks for."
+ },
+ {
+  "id": "cda5d654-2604-4cb7-845c-233958d2c577",
+  "verdict": "stored_is_correct",
+  "reasoning": "The explanation concludes explicitly, 'the company uses a value-based pricing model,' matching option B for pricing based on low total cost of ownership. Cost-based (A) and bundling (C) are each explicitly rejected in their own rebuttal sentences."
+ },
+ {
+  "id": "cdc10782-aa65-4857-b11a-19a53da5df5d",
+  "verdict": "stored_is_correct",
+  "reasoning": "The explanation describes a private equity/buyout fund as one that 'acquires entire public companies, takes them private, and reorganizes the companies,' matching option B and the scenario described (buyout, management replacement, IPO exit). Venture capital (C) is explicitly described as investing in start-ups instead."
+ },
+ {
+  "id": "ce14e54c-a86c-41fb-a47f-85f0fb002b5e",
+  "verdict": "stored_is_correct",
+  "reasoning": "The explanation states SSR 'quantifies how much of SST is explained by the model,' directly matching option B (explained variation), which the question asks about. The final sentence referencing Choice A is defining SST (total variation), a different quantity, not asserting A as the answer to the SSR question -- a classic false-positive rebuttal pattern."
+ },
+ {
+  "id": "ce6119a8-a5cc-4fee-a165-99bb6e2bbe9e",
+  "verdict": "stored_is_correct",
+  "reasoning": "The explanation states intangible assets with indefinite lives (option A, the trademark) must be tested for impairment at least annually, while land (option C) and finite-life intangibles are only tested when there is an indication of impairment -- directly ruling out C."
+ },
+ {
+  "id": "ceb5b979-b6d8-4ff7-b8db-24242e9388c3",
+  "verdict": "stored_is_correct",
+  "reasoning": "Effective duration = (V(rates fall) - V(rates rise)) / (2 x V0 x delta-y) = (112.99 - 110.23) / (2 x 111.62 x 0.0030) = 2.76/0.66972 = 4.12, matching option A. The explanation explicitly rejects B (modified duration, inappropriate for callable bonds) and C (effective convexity, a different measure)."
+ },
+ {
+  "id": "ced72436-ff5f-46da-a402-6fc97eecc1e8",
+  "verdict": "stored_is_correct",
+  "reasoning": "Portfolio variance = 0.7^2x0.2^2 + 0.3^2x0.15^2 + 2x0.7x0.3x0.2x0.15x0.32 = 0.0196+0.002025+0.004032 = 0.025657, and the standard deviation (square root) = 0.1602, approximately 16.0%, matching option A. The intermediate 0.0256 figure (variance, not standard deviation) is a computation step, not the final answer -- explaining the heuristic's false positive on option C."
+ },
+ {
+  "id": "cf241f9a-3699-4f31-8d1b-3deadbbbcf91",
+  "verdict": "stored_is_correct",
+  "reasoning": "Solving 30 = 0.45/(0.09-g) gives g = 0.09 - 0.45/30 = 0.09-0.015 = 0.075 = 7.5%, matching option C exactly as shown in the explanation's own algebra. Option B (7.0%) is explicitly labeled as the result of using the wrong ratio (retention rate instead of payout ratio)."
+ },
+ {
+  "id": "d0ffe9d1-3fbc-4599-bd40-0f47ef39a8c5",
+  "verdict": "stored_is_correct",
+  "reasoning": "The question asks which premium a T-bill rate is LEAST likely to include. The explanation states T-bills are the most liquid securities so 'investors do not require a liquidity premium,' meaning liquidity premium (option C) is the one NOT included -- the correct answer. The final sentence naming Choices A and B (real rate + inflation) identifies the components that ARE included, i.e., the wrong answers, not a claim that A is correct."
+ },
+ {
+  "id": "d11dfcdc-e458-41b2-8cb5-1f7cac27e56d",
+  "verdict": "stored_is_correct",
+  "reasoning": "Reducing equity weight from a 40% target to 35% due to a short-term overvaluation view is defined in the explanation's first sentence as tactical asset allocation, matching option C exactly. Rebalancing (option A) is explicitly defined as returning to the target weight, the opposite of what's described."
+ },
+ {
+  "id": "d126a855-a7e7-4cfc-8473-5ffc256bc9c6",
+  "verdict": "stored_is_correct",
+  "reasoning": "Mean EPS = 2.20; variance = [(2.00-2.20)^2+(2.20-2.20)^2+(2.40-2.20)^2]/3 = 0.08/3 = 0.0267, approximately 0.03, matching option A -- exactly what the question asks for. The final figure in the text (0.16) is the standard deviation, not the variance, so the heuristic's match to option B is a false positive on the wrong statistic."
+ },
+ {
+  "id": "d16de333-b815-492a-b5ba-39082a6043c5",
+  "verdict": "stored_is_correct",
+  "reasoning": "A partnership with some general partners and the rest limited partners is defined in the explanation as a limited partnership, matching option A exactly and matching the scenario described. The limited liability partnership (option B) is explicitly described as having only limited partners, which does not match the scenario's two general partners."
+ },
+ {
+  "id": "d17461f9-185c-4bfa-b782-eb7191e61dac",
+  "verdict": "stored_is_correct",
+  "reasoning": "A market with a large number of competitors offering differentiated products is defined as monopolistic competition in the explanation, matching option A. Oligopoly (option B) is explicitly described as having a small number of firms, directly contradicting the question's premise."
+ },
+ {
+  "id": "d17c3018-842f-4aa2-b542-4dba8b355362",
+  "verdict": "stored_is_correct",
+  "reasoning": "Option text is badly reflowed by OCR/extraction (sentences bleed across option boundaries), but the explanation's logic is unambiguous: home bias = better access to information about domestic vs. foreign companies (the option B slot, given endowment bias is mapped to A and the halo effect to C). This matches stored B; the detected C (halo effect, 'good stocks to own') is explicitly identified in the explanation as a different bias (halo effect), not home bias."
+ }
+]

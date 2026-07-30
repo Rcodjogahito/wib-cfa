@@ -1,0 +1,127 @@
+[
+ {
+  "id": "498fe69e-f9a5-4b88-8077-1688e1b64516",
+  "verdict": "stored_is_correct",
+  "reasoning": "Independent calc: FoF year-end value = 98+106+110=314, return = 4.67% < 5% hurdle so no incentive fee; management fee = 314 x 0.01 = 3.14 (option A). The explanation explicitly labels B and C as results of 'inappropriately assuming' an incentive fee is paid, the classic rebuttal pattern."
+ },
+ {
+  "id": "4ac7c6e7-873e-45a8-9bf5-e0b4a951a181",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation opens by defining EV as 'the total takeover cost of a company,' matching option A verbatim, then explicitly refutes B (fails to subtract cash/investments) and C (ignores debt) as distractors."
+ },
+ {
+  "id": "4ae62acd-a35a-4d9c-8d23-17da855cc3e6",
+  "verdict": "stored_is_correct",
+  "reasoning": "To protect a short position from losses above 10% ($44), a stop buy order at $44 is the correct instrument (matches option A). The explanation's final sentence rebuts a limit buy order at $44 (option C) because it would execute immediately, a rebuttal of the wrong distractor, not the answer."
+ },
+ {
+  "id": "4afd40ce-066f-41aa-bb9e-91c10f0a1774",
+  "verdict": "stored_is_correct",
+  "reasoning": "Independent calc: money duration = modified duration x full price = 10.054 x 90.287751 = ~907.75, closest to option A (907.80). Explanation explicitly labels B and C as errors from using the wrong duration measure or the wrong price base."
+ },
+ {
+  "id": "4b3513a4-8dac-44c5-b519-110f83209dd9",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation states top-down analysis of the investment environment occurs 'during the execution step,' directly matching option B, and explicitly assigns planning (A) and feedback (C) to other purposes, ruling them out."
+ },
+ {
+  "id": "4b5904e5-2c23-4d24-86f7-c6b31c6fefcc",
+  "verdict": "stored_is_correct",
+  "reasoning": "First sentence states 'A hard-bullet covered bond is in default if the issuer fails to make a scheduled payment,' matching option B exactly, then contrasts soft-bullet (A) and conditional pass-through (C) definitions as the wrong choices."
+ },
+ {
+  "id": "4b9ea708-7c7c-4677-b839-a7f09238c883",
+  "verdict": "stored_is_correct",
+  "reasoning": "The explanation's entire structure defines 'defeasance' as matching the scenario described, explicitly confirming option A, then rebuts sinking fund (B) and securitization (C) as incorrect distractor definitions in the trailing '(Choice B)/(Choice C)' sentences."
+ },
+ {
+  "id": "4c19e1d9-842c-41ae-ad3e-bf770304bfb5",
+  "verdict": "stored_is_correct",
+  "reasoning": "The question asks specifically for the DEFINITIONAL criteria (not recognition criteria). The explanation states the definitional criteria are 'identifiable, under control of company, and expected to generate future economic benefits,' which matches option C nearly verbatim. Options A and B are explicitly labeled as the separate 'recognition criteria,' not definitional criteria, so the detected A is a false positive from the heuristic catching the last-mentioned recognition criterion."
+ },
+ {
+  "id": "4c1e0218-8259-44ea-b3e6-c1bb76c94456",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation opens with 'Conservatism bias, or anchoring, reflects reluctance to incorporate new information... may cause an analyst to make only small changes to a prior forecast,' matching the question and option A exactly (option B has an OCR-dropped 'fi' ligature: 'conrmation' = confirmation). The explanation then defines confirmation bias and base-rate neglect as the wrong distractors."
+ },
+ {
+  "id": "4cb77cce-b9da-42c2-8052-56431019b7c3",
+  "verdict": "stored_is_correct",
+  "reasoning": "Opening sentence: 'Economies of scale describes situations in which unit costs decrease as production capacity increases,' matching the question and option A directly. Diseconomies (B) and constant returns (C) are explicitly defined afterward as the wrong distractors."
+ },
+ {
+  "id": "4d1cab6e-f40e-414b-949a-a8709f009492",
+  "verdict": "uncertain",
+  "reasoning": "The explanation states the two main components of credit risk are 'default risk and loss severity,' and separately lists 'spread risk' as a related risk measure (not a component) - this structurally points to spread risk (C) being the correct 'not a component' answer. However, option B reads 'Business risk,' which never appears in the explanation at all and does not match 'loss severity'; combined with a topic mislabeling (tagged Ethics but content is Fixed Income/credit risk), this suggests option text corruption severe enough that the answer cannot be confidently derived from the given text alone."
+ },
+ {
+  "id": "4d46d42a-75ca-47bb-8ce5-4e4985aa71fa",
+  "verdict": "stored_is_correct",
+  "reasoning": "Opening sentence: '\"Money markets\" generally refers to markets for debt securities maturing in one year or less,' matching option A directly and the question wording exactly. Forward markets (C) and primary markets (B) are defined afterward as the wrong distractors."
+ },
+ {
+  "id": "4db443c2-68d1-4a57-b789-195ccea13622",
+  "verdict": "stored_is_correct",
+  "reasoning": "Opening sentence: 'In a shelf registration, an entire issue is registered... but the bonds are sold to the public over a period of time,' matching the question and option B directly. Serial structure (A) and waterfall structure (C) are defined afterward as the wrong distractors."
+ },
+ {
+  "id": "4ef46725-1e8b-49ae-910f-740e2f33385d",
+  "verdict": "uncertain",
+  "reasoning": "The option text itself is severely corrupted/misaligned - option A's sentence is cut off mid-phrase ('...impact on earnings per'), option B continues that fragment ('share. The cost of capital...') and option C is a two-word fragment ('for debt.'), indicating the three answer choices were mis-split across fields. The original option boundaries cannot be reliably reconstructed from the given text, so the correct letter cannot be confidently re-derived even though the explanation's substantive content (EPS decreases, no debt retirement required, equity cost of capital exceeds debt cost) is clear."
+ },
+ {
+  "id": "4f7252f3-4b94-489e-a42f-4b8b38c9dcb9",
+  "verdict": "stored_is_correct",
+  "reasoning": "The correct method is described as CFO plus interest/taxes paid added back, divided by interest paid. The explanation explicitly labels 3.6 (A) as the result of subtracting interest paid from the numerator (wrong) and 5.9 (C) as the result of including CFI and CFF (wrong), leaving 5.6 (B) as correct by elimination, matching stored."
+ },
+ {
+  "id": "5023dc05-cab8-4aee-90ce-c50c133582dc",
+  "verdict": "stored_is_correct",
+  "reasoning": "Opening sentence: 'A notice period... is the amount of time a fund has after receiving notice of a redemption request to fulfill the redemption request,' directly matching the question and option B. Lockup period (A) is defined afterward as the wrong distractor."
+ },
+ {
+  "id": "51296e5c-116e-47c7-ba5c-f48b2f3c252c",
+  "verdict": "stored_is_correct",
+  "reasoning": "Opening sentence: 'The current price of a traded asset is its market value,' directly answering the question (value determined without estimation) and matching option C. Intrinsic/fundamental value (A, B) are explicitly described as requiring estimation, ruling them out - detected A is a false positive."
+ },
+ {
+  "id": "5213de5d-93eb-415a-8630-f828fff0c328",
+  "verdict": "stored_is_correct",
+  "reasoning": "Independent Bayes calc: P(win and beat)=0.2x0.6=0.12; posterior P(win|beat)=0.12/0.36=0.333, matching option B (0.33) - and the explanation states this number explicitly. The explanation labels 0.20 (A) as the prior and 0.40 (C) as P(not beat|win), both explicitly wrong."
+ },
+ {
+  "id": "52291fc4-9bf4-4b44-b90f-58d668eb8881",
+  "verdict": "stored_is_correct",
+  "reasoning": "Independent calc: %dP = -ModDur x dy + 0.5 x Convexity x dy^2 = -7.180x(-0.005) + 0.5x67.300x(0.005)^2 = 3.59% + 0.084% = 3.67%, matching option B exactly. Explanation explicitly labels A and C as errors from mis-applying the convexity adjustment."
+ },
+ {
+  "id": "53018d4b-11cc-4acf-8085-4847e1f4cc7b",
+  "verdict": "stored_is_correct",
+  "reasoning": "The scenario models two simultaneous changes (interest rate and FX), and the explanation opens with 'Scenario analysis involves modeling the effects of changes in multiple inputs at the same time,' directly matching option A. Stress testing (single input) and risk shifting are defined afterward as the wrong distractors."
+ },
+ {
+  "id": "537d7da8-156d-414b-a709-620a5514d570",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation explicitly states the calculator solution gives a 2.5% semiannual periodic rate, 'adjusted to an annual YTM of 5.0%,' matching option C directly and matching stored. It then labels 2.5% (A) and 2.7% (B) as errors from failing to annualize/adjust periods correctly."
+ },
+ {
+  "id": "53a6c2ec-f277-4ef0-93e1-ebb05cb78764",
+  "verdict": "stored_is_correct",
+  "reasoning": "Independent calc: (1.4431-1.4148)/1.4148 x 100 = 0.0283/1.4148 x 100 = 2.00%, matching option B and stored. Explanation explicitly labels 1.96 (A, divides by forward instead of spot) and 2.83 (C, omits the division by spot) as errors."
+ },
+ {
+  "id": "53ba19f2-6181-4b51-a420-182473e347e0",
+  "verdict": "stored_is_correct",
+  "reasoning": "Opening sentence: 'Impact investing refers to promoting a specific social or environmental goal through investment actions, which may include investing in a particular project,' directly matching the question and option A. Positive screening (B) and responsible investing (C) are defined afterward as wrong distractors."
+ },
+ {
+  "id": "53e7f0e2-92d4-4722-81c8-e3ce7a7f0fa7",
+  "verdict": "stored_is_correct",
+  "reasoning": "Opening sentence: 'Thematic investing refers to investing in sectors or companies in an attempt to promote specific ESG-related goals,' matching the question and option C exactly (near-verbatim). Full integration (A) and positive screening (B) are defined afterward as wrong distractors."
+ },
+ {
+  "id": "542d4ab0-2878-4930-8678-63e66db4186d",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation states 'the spot curve reflects the absence of both credit and reinvestment risks,' directly answering the question and matching option A. It explicitly states the spot curve does NOT address liquidity risk (B) or inflation risk (C), ruling out detected C as a rebuttal false positive."
+ }
+]

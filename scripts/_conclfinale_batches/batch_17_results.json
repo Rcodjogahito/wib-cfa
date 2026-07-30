@@ -1,0 +1,127 @@
+[
+ {
+  "id": "bfe57438-1514-47b4-8baa-3587ed342256",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation states the mezzanine stage 'occurs when a company is preparing to go public,' directly matching the question and stored answer C. The final sentence about the formative stage being 'early in a company's development' is a rebuttal of a distractor, not the answer."
+ },
+ {
+  "id": "c063c61c-4d80-49e9-be69-9e0252b25f3c",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation explicitly says 'independent board members serve on the supervisory board,' confirming stored B. The final sentence about staggered boards (election frequency) is a dismissal of distractor A, not the answer."
+ },
+ {
+  "id": "c0ae9ca3-7cc2-4381-abbb-28f13264d98e",
+  "verdict": "stored_is_correct",
+  "reasoning": "The explanation concludes health care spending increase is 'most likely smaller than the increase in spending on consumer staples,' i.e., health care (A) has the smallest increase, matching stored A. The final sentence rebuts choices B and C (food/beverage and personal care) as experiencing strong increases, not small ones."
+ },
+ {
+  "id": "c117a544-b7d5-44eb-bf16-15f85134d7c1",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation identifies the capital market line (CML) as the line formed by combinations of the risk-free asset and market portfolio, matching stored C. Final sentence 'Utility curves reflect individual preferences' rebuts distractor A."
+ },
+ {
+  "id": "c16696bc-4dda-4ac4-b97c-5f614128d6d3",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation directly states 'the global minimum-variance portfolio has the lowest return of any portfolio on the efficient frontier,' matching stored B. The trailing '(Choice C)' rebuttal about the tangency point is a distractor dismissal, not the answer."
+ },
+ {
+  "id": "c1e03783-2099-4f45-a18c-2d50da62d335",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation opens with 'Tokens represent ownership rights to physical assets,' matching stored C directly. The final sentence about smart contracts rebuts distractor B."
+ },
+ {
+  "id": "c21c6bc6-8e18-41c2-aa3f-82fbbe9632ba",
+  "verdict": "stored_is_correct",
+  "reasoning": "Options B and C appear text-shifted/garbled (the split point between 'name removed from the report' and 'independently review... changes' is misplaced), but the explanation's core point -- 'group consensus is not required' and name removal is only needed if she doubts the committee's basis, which she has no indication of -- supports 'does not need to take any further action,' matching stored A."
+ },
+ {
+  "id": "c34b116e-92a3-4c6c-8635-53fe10884bd3",
+  "verdict": "stored_is_correct",
+  "reasoning": "Options A and B are duplicated text (both '378'), a data-quality defect, but the explanation explicitly states 'The correct answer is B because the covariance is 378,' confirming stored B. The final numeric value 378 matching option A's text is what triggered the heuristic, not an actual mismatch."
+ },
+ {
+  "id": "c373528a-9bf4-4266-9b8f-0fb9fdc793a9",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation computes 'the FRN is priced at a discount of 100 - 99.7184 = 0.28,' matching stored B exactly. The final sentence rebuts distractor C (0.53) as resulting from an incorrect periodicity assumption."
+ },
+ {
+  "id": "c3864581-2cb0-473f-8010-ece9e613af94",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation opens with 'Banks are able to borrow from the Fed at the discount rate,' directly matching stored A. The final sentence defining the prime rate rebuts distractor B."
+ },
+ {
+  "id": "c3cdc9a5-89e9-483c-afa6-0607b3f40744",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation computes '20,000 x 4 = 80,000,' matching stored C (BRL 80,000) exactly via the leverage ratio (1/0.25=4). Final sentence rebuts distractor B (60,000, the margin loan amount) as not being the total funds available."
+ },
+ {
+  "id": "c3d0bf00-8a21-4d00-b9d4-0ce13c4a9b19",
+  "verdict": "stored_is_correct",
+  "reasoning": "Option text boundaries appear shifted by a clause (missing 'fi' ligatures and split points suggest option B should read 'Both the direct and indirect methods involve adding back noncash items such as depreciation and amortization' and option C should read 'When using the indirect method, an analyst should add any losses on sales of fixed assets to net income'). Reconstructed this way, the explanation's key point -- that D&A are NOT added back under the direct method, making the 'both methods add back noncash items' claim the least accurate statement -- maps to option B, matching stored."
+ },
+ {
+  "id": "c3d530dd-56d5-41bf-92f0-22a5f215f190",
+  "verdict": "stored_is_correct",
+  "reasoning": "Option A's text is truncated/garbled ('free rate.'), which likely contains the phrase 'risk-free rate' that falsely triggered the heuristic. The explanation describes an investor with high risk tolerance holding a position in the market portfolio 'partially funded by borrowing at the risk-free rate' -- i.e., the market portfolio remains the investor's only risky asset, matching stored C."
+ },
+ {
+  "id": "c422ae5b-f619-4cf4-b297-8aed464031aa",
+  "verdict": "stored_is_correct",
+  "reasoning": "Independent calculation of effective convexity = (V- + V+ - 2*V0)/(V0*(delta_y)^2) = (86.47+81.71-2*84.62)/(84.62*0.003^2) = -1.06/0.00076158 = approximately -1,392, matching stored B (-1,391.84) almost exactly. The explanation's final sentence rebuts distractor C as using the wrong (YTM-based) periodicity."
+ },
+ {
+  "id": "c439fd70-4962-44da-a112-42b56c7fefc5",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation states 'For a callable bond, the option-adjusted yield is lower than the YTM,' directly matching stored B. The final sentence's use of 'higher' refers to the YTM being higher relative to an option-free bond, not the option-adjusted yield being higher -- the classic rebuttal false-positive pattern."
+ },
+ {
+  "id": "c4441292-92f7-4678-8048-d1ac180c1549",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation states 'an externality occurs when a project under consideration affects other company projects. Cannibalization is a type of externality,' matching the cannibalization scenario in the question and stored B. Final sentence rebuts distractor C (opportunity cost)."
+ },
+ {
+  "id": "c4ed0631-f6ee-4f36-8749-26760219e859",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation states 'the weakest linear relationship is between Portfolios 2 and 3 because their correlation of 0.13 is the closest to 0,' directly matching stored C. Final sentence about Portfolios 1 and 3 (option B, corr -0.77) rebuts that distractor as a strong relationship, not weak."
+ },
+ {
+  "id": "c50c74a2-8f64-429a-b589-af8772caf1f8",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation opens with '\"Information cascades\" refers to uninformed traders watching the actions of informed traders,' directly matching the question and stored B. Final sentence on narrow framing rebuts distractor C."
+ },
+ {
+  "id": "c5bce8cd-ffb9-4d93-a439-7707fd487625",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation states 'When book values are not stable, analysts should calculate ROE based on the average book value for the period,' matching the question's scenario of increasing book values and stored A. Final sentence about stable book values using beginning value rebuts distractor C."
+ },
+ {
+  "id": "c7186e8c-0af1-42ec-983a-35df367e5730",
+  "verdict": "stored_is_correct",
+  "reasoning": "Independent calculation: book value at sale = sale price + loss = 3,000,000 + 900,000 = 3,900,000; accumulated depreciation = historical cost - book value = 4,000,000 - 3,900,000 = 100,000, matching stored A exactly. The explanation's rebuttals of B ($1M, sale price minus historical cost with no depreciation) and C ($1.9M, treating the loss as a gain) confirm this."
+ },
+ {
+  "id": "c76d28e5-58fa-4a77-a692-01a279d51722",
+  "verdict": "stored_is_correct",
+  "reasoning": "Independent calculation: 0.451 x 0.287 x 0.193 = approximately 0.025, matching stored B exactly. The final sentence explicitly rebuts distractor C (0.931) as resulting from incorrectly using the addition rule instead of the multiplication rule."
+ },
+ {
+  "id": "c83bd62c-80ce-4c65-8c43-8b46ab76c13c",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation states 'published returns (eg, an index) can overstate the performance of funds due to... survivorship bias and backfill bias,' directly matching stored B. Final sentence explains volatility and correlation (A and C) are understated, not overstated -- the opposite direction from what the question asks, confirming they are wrong."
+ },
+ {
+  "id": "c8c96d9c-2c10-4c91-a16c-d2af977fcd73",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation states 'the company's inventory ratio will be lower using FIFO compared to LIFO,' directly matching stored C. Final sentences rebut distractors A (current ratio actually higher under FIFO) and B (gross profit margin actually higher under FIFO), confirming only turnover ratio is lower."
+ },
+ {
+  "id": "c90867ca-7415-48ed-9604-aa729fa9a4bb",
+  "verdict": "stored_is_correct",
+  "reasoning": "Despite garbled formatting, the explanation clearly states the one-period binomial model 'determines the payoff... as the up value of the stock minus the strike price,' matching stored A. Final sentences rebut distractors B (put option payoff) and C (the option's value at time zero, not its payoff)."
+ },
+ {
+  "id": "cb4786c8-8d38-4932-809f-dcf2eff6d4fa",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation opens with 'A defensive company shows stable demand for its products and services,' directly matching the question's scenario and stored A. The final sentence 'Stable demand is not indicative of a growth company' rebuts distractor B, triggering the false-positive heuristic match."
+ }
+]
