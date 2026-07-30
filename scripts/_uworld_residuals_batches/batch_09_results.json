@@ -1,0 +1,198 @@
+[
+ {
+  "id": "ab251184-f8b1-4d85-bf96-3318573b3a11",
+  "verdict": "ok",
+  "evidence": "PDF p.25 (page_idx 24) of 5.07 Answers.pdf confirmed via rendered image: table (Carrying amount 31,000; Undiscounted 28,000; PV 26,500; Fair value if sold 22,000; Cost to sell 2,500) already reproduced correctly in question_en, options match, checkmark on B, and explanation_en matches the PDF verbatim including 'Things to remember'."
+ },
+ {
+  "id": "a362a214-a7fb-4605-9d33-bc036466214b",
+  "verdict": "ok",
+  "evidence": "PDF p.5 (page_idx 4) of 5.11 Answers.pdf confirmed via rendered image: the Selected Data (¥ billions) table (Revenue, Current assets, Current liabilities for 20X5/20X6) is already reproduced correctly in question_en, options and correct_answer (B, checkmark confirmed) match, and explanation_en matches the PDF verbatim including the 4.11 working-capital-turnover calculation."
+ },
+ {
+  "id": "c278d0e1-80ad-4d8f-929d-8c45f81c484b",
+  "verdict": "formatting_missing",
+  "field": "question_en",
+  "new_value": "The following applies to a one-year forward contract:\n\n| | |\n|---|---|\n| Forward price | ¥119.19 |\n| Spot price | ¥115.82 |\n| Risk-free rate | 3.0% |\n\nIf the present value of the costs of holding the underlying asset for 1 year is ¥1.62, then the present value of the benefits of holding the asset (in ¥) is closest to:",
+  "evidence": "PDF p.2 (page_idx 1) of 8.04 Answers.pdf shows a Forward price/Spot price/Risk-free rate table referenced by 'The following applies to...' but omitted from the DB stem. Checkmark confirmed on C (1.72), matching correct_answer."
+ },
+ {
+  "id": "c278d0e1-80ad-4d8f-929d-8c45f81c484b",
+  "verdict": "explanation_wrong",
+  "field": "explanation_en",
+  "new_value": "An investor can own an asset in the future (ie, at time T) by:\n- buying the asset now at the spot price S0 and holding it until time T or\n- entering a forward contract now to purchase the asset at the forward price F0(T) at time T.\nThe investor who:\n- buys the asset and holds it until time T incurs the costs and reaps the benefits of holding the asset.\n- goes long (ie, buys) the forward contract avoids the costs and forgoes the benefits of holding the asset.\nThis is reflected in the relationship between the forward price and the spot price, specifically in the carrying cost, since including the term −(γ − θ)(1 + r)^T = (−γ + θ)(1 + r)^T is equivalent to describing the forward price as \"equal to the future value of the spot price, minus the future value of the benefits, plus the future value of the costs.\"\nIn this scenario, substitute to solve for the present value of the benefits of holding the asset:\n119.19 = 115.82(1 + 0.03)^1 − (γ − 1.62)(1 + 0.03)^1\n119.19 − 115.82(1 + 0.03)^1 = −(γ − 1.62)(1 + 0.03)^1\nγ = −[119.19 − 115.82(1 + 0.03)] / (1 + 0.03) + 1.62\nγ ≈ 1.72\n(Choice A) −1.52 results from incorrectly substituting the present value of the costs of owning the asset as a negative number.\n(Choice B) 1.52 results from reversing the variables for the present values of costs and benefits in the formula for the forward price.",
+  "evidence": "The stored explanation_en (farmer/wheat forward-contract price-risk narrative) is verbatim a different question's explanation from elsewhere in the same PDF. The real explanation on p.2 (page_idx 1), confirmed via rendered image, walks through the cost-of-carry formula and substitutes the given numbers to solve gamma ≈ 1.72, with (Choice A) and (Choice B) call-outs matching options A and B exactly."
+ },
+ {
+  "id": "2fa39ab1-51cb-4391-a90d-1aa614110833",
+  "verdict": "formatting_missing",
+  "field": "question_en",
+  "new_value": "An analyst gathers the following information on two 18-month forward contracts, each for a different underlying asset:\n\n| | Asset X | Asset Y |\n|---|---|---|\n| Present value of benefits of owning asset | 9.17 | 1.94 |\n| Present value of costs of owning asset | 11.57 | 4.34 |\n| Spot price | 157.939 | 157.939 |\n| Forward price | 167.120 | ? |\n\nIf the risk-free rate is 2.8%, the forward price of Asset Y is most likely:",
+  "evidence": "PDF p.18 (page_idx 17) of 8.04 Answers.pdf shows the Asset X/Asset Y comparison table omitted from the DB stem. Checkmark confirmed on B, matching correct_answer."
+ },
+ {
+  "id": "2fa39ab1-51cb-4391-a90d-1aa614110833",
+  "verdict": "explanation_wrong",
+  "field": "explanation_en",
+  "new_value": "An investor can own an asset in the future (ie, at time T) by:\nbuying the asset now at the spot price S0 and holding it until time T, or\nentering into a forward contract now to purchase the asset at the forward price F0(T) at time T.\nAn investor who buys the asset now and holds it until time T incurs the costs and benefits of holding the asset. An investor who instead goes long the forward contract avoids the costs and forgoes the benefits of holding the asset.\nThis is reflected in the relationship between the futures price and the spot price, specifically in the carrying cost, since including the term −(γ − θ)(1 + r)^T = (−γ + θ)(1 + r)^T is equivalent to describing the forward price as \"equal to the future value of the spot price minus benefits plus costs.\"\nIn this scenario, it is not necessary to use the formula since the net cost of carry associated with each contract is the same:\n−(γ − θ) = −(1.94 − 4.34) = −(9.17 − 11.57) = 2.40\nSince all other relevant variables are equal for each asset (as given), the two contracts have the same forward price. The forward price for Asset Y can be calculated as:\nF0(T) = S0(1 + r)^T − (γ − θ)(1 + r)^T = 157.939(1 + 0.028)^(18/12) − (1.94 − 4.34)(1 + 0.028)^(18/12) ≈ 167.120\n(Choice A) Reversing the costs and benefits in the formula for the forward price results in incorrectly calculating a forward price for Asset Y that is lower than Asset X.\n(Choice C) Using the present value of the benefits of Asset Y of 1.94 in the formula for the forward price incorrectly as a negative number results in a forward price for Asset Y that is greater than Asset X.",
+  "evidence": "The stored explanation_en is a different variant of the 'Derivative pricing concepts' boilerplate (a bleed from another arbitrage/replication question in the same PDF) and never references Asset X/Y, 9.17, 11.57, or 167.120. The real explanation on p.18 (page_idx 17), confirmed via rendered image, works the actual numeric cost-of-carry comparison for this question."
+ },
+ {
+  "id": "be6c6144-d955-4ed4-8f68-77f3966ce0b9",
+  "verdict": "option_bleed",
+  "field": "option_c",
+  "new_value": "the underlying's required rate of return since the derivative's expected returns must be the same.",
+  "evidence": "PDF p.29 (page_idx 28) of 8.04 Answers.pdf, confirmed via rendered image, shows option C reads in full '...expected returns must be the same.'; the DB value is truncated after 'the'. Question, other options, correct_answer (B, checkmark confirmed), and explanation_en (the 'Derivative pricing concepts' table/text) all match this page verbatim otherwise."
+ },
+ {
+  "id": "8c03d34f-bf0e-437b-95b8-b93288f6aac5",
+  "verdict": "formatting_missing",
+  "field": "question_en",
+  "new_value": "An analyst gathers the following information on two competitors, concerning their differences in accounting methods.\n\n| | Company 1 | Company 2 |\n|---|---|---|\n| Classification of investments held indefinitely | Available-for-sale | Trading securities |\n| Composition of intangible assets | Majority consists of goodwill | No goodwill |\n| Depreciation method on fixed assets | Straight line | Accelerated |\n\nTo facilitate proper financial comparison, the analyst should most appropriately:",
+  "evidence": "PDF p.6 (page_idx 5) of 5.10 Answers.pdf shows the Company 1/Company 2 comparison table omitted from the DB stem. Checkmark confirmed on C, matching correct_answer."
+ },
+ {
+  "id": "8c03d34f-bf0e-437b-95b8-b93288f6aac5",
+  "verdict": "explanation_wrong",
+  "field": "explanation_en",
+  "new_value": "Common analyst adjustments:\n- Investments: Available-for-sale vs. trading securities classification → Adjust net income and/or other comprehensive income\n- Inventory: Comparing different cost methods (FIFO, LIFO, weighted average, specific ID) → Adjust COGS and inventory balance\n- Fixed assets: Straight-line vs. accelerated depreciation methods → Adjust depreciation expense and fixed assets' net book value\n- Goodwill: Significant M&A growth vs. internal organic growth → Adjust book value of intangible assets for goodwill\n(M&A = mergers and acquisitions.)\nAnalysts often compare companies that use different accounting methods and/or rely on distinct assumptions and estimates when preparing financial results. Differences between IFRS and US GAAP may also distort comparison. Analysts often adjust financial statements for such differences and/or requirements to facilitate \"apples-to-apples\" comparisons.\nIn this scenario, Company 1's intangible assets include significant goodwill, while Company 2 has no goodwill. Goodwill results purely from mergers and acquisitions activities and represents the purchase premium over an acquired company's fair value of net identifiable assets. Although goodwill is periodically tested for impairment, its value is subjective (ie, based on what the acquirer paid) and may overstate the acquirer's assets. Therefore, an analyst should adjust Company 1's book value of intangible assets for better comparison with Company 2.\n(Choice A) Net book value, not gross book value of fixed assets, should be adjusted when comparing companies that use different depreciation methods. Gross book value represents the historical purchase price and remains constant. Net book value is gross book value adjusted for accumulated depreciation.\n(Choice B) Company 1 appropriately classifies investments that are held indefinitely as available-for-sale. Fair value gains bypass net income and flow directly into other comprehensive income. Thus, no adjustment to Company 1's net income is necessary.\nThings to remember:\nDifferent companies often use different accounting methods and rely on distinct assumptions and estimates when preparing financial results. Differences between IFRS and US GAAP may also distort comparison. Analysts often adjust financial statements for such differences and/or requirements to facilitate comparisons.",
+  "evidence": "The stored explanation_en ('High-quality financial earnings...pro forma...shorter useful lives...') is a different question's explanation bled in from elsewhere in the same PDF and never mentions goodwill, AFS/trading classification, or depreciation methods. The real explanation on p.6 (page_idx 5), confirmed via rendered image, is the 'Common analyst adjustments' table plus goodwill discussion matching this question's options exactly."
+ },
+ {
+  "id": "9df9d2df-32d3-440c-aa4d-4aefcbd7335b",
+  "verdict": "option_bleed",
+  "field": "option_c",
+  "new_value": "Using the criteria of available-for-sale securities, rather than trading securities, to treat bond investment gains.",
+  "evidence": "PDF p.7 (page_idx 6) of 5.10 Answers.pdf, confirmed via rendered image, shows option C ending '...to treat bond investment gains.'; the DB value is truncated after 'bond'."
+ },
+ {
+  "id": "9df9d2df-32d3-440c-aa4d-4aefcbd7335b",
+  "verdict": "explanation_wrong",
+  "field": "explanation_en",
+  "new_value": "Aggressive accounting vs. conservative accounting:\n- Aggressive: Capitalizing costs; Classifying investments as trading securities; Presenting better pro forma results than IFRS or GAAP results\n- Conservative: Expensing costs; Classifying investments as available-for-sale securities; Presenting pro forma results close to IFRS or GAAP results\nAccounting choices affect the quality of a company's financial results. Aggressive accounting choices tend to inflate financial performance (eg, earnings, cash flow) in the current period but may understate performance in future periods. Conservative choices typically understate performance in the current period but may enhance future performance.\nCapitalizing (instead of expensing) in-process research and development (R&D) costs in a reporting period assigns those costs to an asset on the balance sheet. They are then amortized periodically as an expense on the income statement. The capitalization of a cost will produce:\n- higher net income in the current period since the entire cost is not expensed immediately, but\n- lower net income in future periods since the remaining cost is expensed over time.\nTherefore, capitalization is an aggressive accounting choice. R&D costs should be capitalized only when the product is reasonably certain to generate future revenue and is no longer considered to be in process.\n(Choice A) Pro forma earnings typically include numerous management adjustments (ie, add-backs) that cause them to differ from reported earnings (ie, those under GAAP or IFRS). In general, management presents pro forma earnings that are higher than reported earnings and therefore considered aggressive.\n(Choice C) When bond investments are treated as available-for-sale securities, any gains in fair value are included in other comprehensive income on the balance sheet instead of going directly to net income (earnings). Therefore, this treatment is a conservative choice.\nThings to remember:\nAggressive accounting choices tend to inflate financial performance (eg, earnings, cash flow) in the current period but may understate performance in future periods. Conservative accounting choices typically understate performance in the current period but may enhance future performance. Capitalizing in-process research and development costs is considered an aggressive accounting choice.",
+  "evidence": "The stored explanation_en (FOB shipping point/destination revenue recognition) belongs to a different question entirely and never mentions R&D capitalization, the correct answer's topic. The real explanation on p.7 (page_idx 6), confirmed via rendered image, is the 'Aggressive vs. conservative accounting' table and R&D discussion matching correct_answer B."
+ },
+ {
+  "id": "d4277410-9166-4def-9c5f-6d174f6b81e8",
+  "verdict": "option_bleed",
+  "field": "option_c",
+  "new_value": "Regulations that enforce disclosure but do not require management to certify financial statements",
+  "evidence": "PDF p.8 (page_idx 7) of 5.10 Answers.pdf, confirmed via rendered image, shows option C ending '...certify financial statements'; the DB value is truncated after 'financial'."
+ },
+ {
+  "id": "d4277410-9166-4def-9c5f-6d174f6b81e8",
+  "verdict": "explanation_wrong",
+  "field": "explanation_en",
+  "new_value": "Primary mechanisms that enhance financial reporting discipline:\n- Regulators: Recognize and enforce disclosure standards applicable to all companies\n- Auditors: Opinions that statements comply with standards and fairly present the company's financial condition\n- Investors: Features such as debt covenants create special financial reporting requirements to aid creditors\nMany jurisdictions require a company's statements to be audited by an independent auditor. An unqualified (ie, \"clean\") auditor's opinion does not guarantee the statements' accuracy, but it certifies that the statements comply with accounting standards and present the company's results fairly. The prospect of a poor auditor's opinion can induce a company to produce high-quality statements since market repercussions from a poor report are severe.\nThe company being audited pays the auditor's fee. By itself, that does not impugn an auditor's independence and objectivity. However, an auditor that bundles auditing with other services as part of overall engagement is not \"independent.\" Earning compensation from other services may cause an auditor to provide a lenient audit opinion to preserve those additional compensation sources.\n(Choice B) Investors or creditors may have legally enforceable rights against a company that violates the terms of an investment contract. An example is a lender that can accelerate payment of the loan if the borrower violates a debt covenant.\n(Choice C) Regulations often impose penalties on a company if its financial statements contain material misstatements or omit certain information. The possibility of penalties tends to enhance reporting discipline, regardless of whether the regulations require management to attest to the information's accuracy.\nThings to remember:\nMarket regulators, auditors, and investors are all groups that can enhance discipline on companies' financial reporting. However, for auditors to fulfill the role as a disciplinary mechanism, they must be independent of the company they are auditing. Auditors who \"bundle\" an audit with other services such as consulting cannot be considered independent.",
+  "evidence": "The stored explanation_en ('Common warning signs of accounting manipulation'/inventory turnover/bill-and-hold) belongs to a different question and never discusses auditor independence or reporting-discipline mechanisms, the actual topic. The real explanation on p.8 (page_idx 7), confirmed via rendered image, discusses regulators/auditors/investors as disciplinary mechanisms and matches correct_answer A (auditor bundling with consulting impairs independence)."
+ },
+ {
+  "id": "f9228501-1bef-4108-a61b-a35ee3effd1e",
+  "verdict": "formatting_missing",
+  "field": "question_en",
+  "new_value": "The 20X9 financial information for a company is shown below:\n\n| (In $ Millions) | |\n|---|---|\n| Assets | 500 |\n| Common stock | 280 |\n| Retained earnings (cumulative) | 100 |\n| Treasury stock | 60 |\n\nThe company's debt to total capital ratio is closest to:",
+  "evidence": "PDF p.3 (page_idx 2) of 5.11 Answers.pdf shows the Assets/Common stock/Retained earnings/Treasury stock table referenced by 'shown below' but omitted from the DB stem. Checkmark confirmed on B (0.36), matching correct_answer; explanation_en matches the PDF verbatim."
+ },
+ {
+  "id": "5d335c0b-fd30-48e1-8a20-324b2701d419",
+  "verdict": "formatting_missing",
+  "field": "question_en",
+  "new_value": "An analyst gathers the following information (in INR billions) for a company, selected from its financial statements:\n\n| INR billions | Current Year | Prior Year |\n|---|---|---|\n| EBIT | 204 | 197 |\n| Net income | 150 | 143 |\n| Short-term debt | 106 | 110 |\n| Long-term debt | 434 | 451 |\n| Shareholders' equity | 1,509 | 1,447 |\n| Total assets | 2,249 | 2,183 |\n\nBased on this data, the current year's return on total capital is closest to:",
+  "evidence": "PDF p.6 (page_idx 5) of 5.11 Answers.pdf shows the EBIT/Net income/debt/equity/assets table entirely omitted from the DB stem. Checkmark confirmed on C (10.06%), matching correct_answer."
+ },
+ {
+  "id": "5d335c0b-fd30-48e1-8a20-324b2701d419",
+  "verdict": "explanation_wrong",
+  "field": "explanation_en",
+  "new_value": "The return on total capital ratio measures the operating profits generated from a company's invested capital. Higher ratios indicate that capital is used more effectively.\n- The numerator is EBIT (earnings before interest and taxes), a proxy for operating profit, which represents profits before accounting for nonoperating items such as interest and tax.\n- The denominator is average total capital provided by creditors and shareholders, which includes short-term debt, long-term debt, and equity.\nIn this scenario, return on total capital is:\nReturn on total capital = EBIT / Average total capital = 204 / [(2,049 + 2,008)/2] = 10.06%\n(Choice A) 7.39% results from using net income instead of EBIT in the numerator. Net income is profits after interest and taxes; it represents only profits available for distribution to shareholders.\n(Choice B) 9.21% results from using total assets instead of total capital. Total assets include items not financed by capital provided from lenders and shareholders, such as accounts receivable.",
+  "evidence": "The stored explanation_en (DSO/AR turnover narrative ending mid-sentence at 'To solve for the change in the average daily AR:') is bled from a different question (the DSO/AR question on p.34, page_idx 33, of the same PDF) and never mentions EBIT or total capital. The real explanation on p.6 (page_idx 5), confirmed via rendered image, computes return on total capital = 204/[(2,049+2,008)/2] = 10.06%, matching correct_answer C and the (Choice A)/(Choice B) distractor logic."
+ },
+ {
+  "id": "bd259e18-d930-4870-8b03-0af8901c24d6",
+  "verdict": "formatting_missing",
+  "field": "question_en",
+  "new_value": "Company A's management wishes to increase working capital by lowering the company's average receivable collection period to the industry average. Data for Company A is below:\n\n| (EUR millions) | Company A |\n|---|---|\n| Days sales outstanding (DSO) | 23 days |\n| 20X7 credit sales | 100 |\n| 20X8 estimated credit sales | 125 |\n\nTo match the industry average days sales outstanding (DSO) of 17 days, the change (in €) in the average daily accounts receivable (AR) balance from 20X7 to 20X8 is closest to:",
+  "evidence": "PDF p.34 (page_idx 33) of 5.11 Answers.pdf shows the DSO/credit-sales table referenced by 'Data for Company A is below' but omitted from the DB stem. Checkmark confirmed on B (−479,452), matching correct_answer."
+ },
+ {
+  "id": "bd259e18-d930-4870-8b03-0af8901c24d6",
+  "verdict": "explanation_wrong",
+  "field": "explanation_en",
+  "new_value": "Days sales outstanding and accounts receivable turnover are activity ratios used to measure operational efficiency. The relationship between days sales outstanding (DSO) and accounts receivable (AR) turnover can serve as an important tool for forecasting what is needed to reach a company's working capital goals.\nA higher DSO indicates that customers are taking longer to pay, which results in lower liquidity. A lower DSO is preferable since it means the company is collecting receivables faster, thus improving liquidity. AR turnover indicates management's effectiveness in managing the credit given to customers. Higher AR turnover implies greater efficiency in converting receivables to cash.\nTo solve for the change in the average daily AR:\n- Calculate AR turnover by dividing days in a year (365) by DSO for both Company A and the industry average: Company A = 365 / 23 = 15.8696; Industry = 365 / 17 = 21.4706\n- Use AR turnover to solve for Company A's 20X7 average AR: 100,000,000 / 15.8696 = 6,301,370\n- Solve for Company A's target 20X8 average AR by dividing estimated Company A 20X8 credit sales by industry AR turnover: 125,000,000 / 21.4706 = 5,821,918\n- Solve for the required change in average AR by finding the difference between 20X8 average AR and 20X7 average AR: 5,821,918 − 6,301,370 = −479,452",
+  "evidence": "The stored explanation_en is genuinely sourced from this same page but cuts off mid-derivation at 'To solve for the change in the average daily AR:', omitting the entire calculation table (which PyMuPDF could not extract as text because it is rendered as a graphic). The rendered image of p.34 (page_idx 33) shows the full 4-step calculation table (AR turnover, 20X7 average AR, target 20X8 average AR, and the −479,452 change), transcribed here to complete the explanation without altering the prose that was already correct."
+ },
+ {
+  "id": "bc93f3c0-3dd3-4c4b-8427-55422e8a0ec1",
+  "verdict": "stem_wrong",
+  "field": "question_en",
+  "new_value": "An analyst has gathered the following information:\n\n| € millions | 20X5 | 20X6 | 20X7 |\n|---|---|---|---|\n| Average assets | 117.0 | 116.0 | 115.0 |\n| Average liabilities | 96.0 | 98.0 | 100.0 |\n| Revenues | 40.0 | 42.5 | 45.0 |\n| Net profit margin | 8.6% | 8.7% | 8.8% |\n\nUsing only this information, the most appropriate conclusion is that over the three-year period:",
+  "evidence": "PDF p.2 (page_idx 1) of 5.11 Answers.pdf is this question's true source: it shows only the € millions/Average assets/Average liabilities/Revenues/Net profit margin table, matching the options (return on assets/equity/asset turnover) and correct_answer B (checkmark confirmed) exactly. The DB stem instead concatenates three unrelated tables labeled 'Question 1' (a DuPont Company A/B/C table) and 'Question 3' (the $ Millions Assets/Common stock/Treasury stock table that is actually item f9228501's page 3 table) around the real 'Question 2' table. The Question 1 and Question 3 blocks are fabricated bleed from other pages and are removed; only the genuine table for this question is kept."
+ },
+ {
+  "id": "bc93f3c0-3dd3-4c4b-8427-55422e8a0ec1",
+  "verdict": "explanation_wrong",
+  "field": "explanation_en",
+  "new_value": "Return on equity (ROE) is the ratio of net income to average shareholders' equity. It measures earnings for every dollar of shareholder investment. Analysts carefully track changes in ROE to determine the growth rate of shareholder return as well as the sources of that growth.\nThe company's net income and average equity can be derived from the information given. Net profit margin is equal to net income divided by revenue; rearranging this equation makes it possible to solve for net income (net income = net profit margin × revenue).\nUsing this formula, the table below demonstrates that the company's net income has increased each year:\nSimilarly, equity equals assets minus liabilities, and the company's equity has declined each year, as shown in the table below:\nROE uses average equity as the denominator. A mathematical rule is that dividing a larger number (in this question, net margin) by a smaller number always produces a larger number. This means that the company's ROE has increased each year:\nThings to remember:\nReturn on equity equals net income divided by average shareholders' equity. Net income equals net profit margin multiplied by revenue. Average equity is the difference between average assets and average liabilities. With any ratio, a higher numerator and/or a lower denominator produces a larger number.",
+  "evidence": "The stored explanation_en ('Ratio analysis limitations: Heterogeneous operations...') is verbatim a different question's explanation (the ratio-analysis-limitations question on p.11, page_idx 10, of the same PDF) and never discusses ROE, net profit margin, or equity. The real explanation on p.2 (page_idx 1), confirmed via rendered image, derives net income and average equity from the table and concludes ROE increased each year, matching correct_answer B."
+ },
+ {
+  "id": "24c8f6b5-25d1-44e0-95d7-a665b4ecd127",
+  "verdict": "formatting_missing",
+  "field": "question_en",
+  "new_value": "An entrepreneur starts a company by investing $300,000 of equity to fund working capital. The entrepreneur makes the following forecast assumptions:\n\n| | |\n|---|---|\n| First-year sales | $500,000 |\n| Annual sales growth | 8% |\n| Net profit margin | 30% |\n| Working capital / Sales | 80% |\n\nBased only on this information, the company's cash balance at the end of the second year is closest to:",
+  "evidence": "PDF p.28 (page_idx 27) of 5.11 Answers.pdf confirms the four assumption rows (First-year sales $500,000; Annual sales growth 8%; Net profit margin 30%; Working capital/Sales 80%); the DB table had a malformed header row merging 'assumptions:' with the first-year-sales value instead of a proper two-column row. Options, correct_answer (C, checkmark confirmed), and explanation_en match the PDF verbatim."
+ },
+ {
+  "id": "e8d998ab-7316-49e8-8179-73ef6da617d0",
+  "verdict": "formatting_missing",
+  "field": "question_en",
+  "new_value": "A firm reports the following information (in RUB millions):\n\n| RUB Millions | Current Year | Prior Year |\n|---|---|---|\n| EBIT | 232 | 216 |\n| Net income | 186 | 173 |\n| Preferred dividends | 10 | 10 |\n| Common equity | 3,720 | 3,460 |\n\nBased on this data, the current year's return on common equity is closest to:",
+  "evidence": "PDF p.25 (page_idx 24) of 5.11 Answers.pdf shows the EBIT/Net income/Preferred dividends/Common equity table omitted from the DB stem. Checkmark confirmed on A (4.90%), matching correct_answer; explanation_en matches the PDF verbatim."
+ },
+ {
+  "id": "662195ec-4137-48d6-a13a-f19b4e3aaa93",
+  "verdict": "option_bleed",
+  "field": "option_c",
+  "new_value": "Analyzing historical cross-sectional ratio trends to gain insights on the company's relative valuation",
+  "evidence": "PDF p.29 (page_idx 28) of 5.11 Answers.pdf, confirmed via rendered image, shows option C ending '...relative valuation'; the DB value is truncated after 'relative'. Question, other options, correct_answer (C, checkmark confirmed), and explanation_en all match this page verbatim otherwise."
+ },
+ {
+  "id": "6e114c17-4417-40b2-89df-a48b8f74c827",
+  "verdict": "ok",
+  "evidence": "PDF p.36 (page_idx 35) of 5.11 Answers.pdf confirmed via rendered image: the Ratio/20X4/20X5/20X6 table (debt-to-equity, debt-to-EBITDA, working-capital turnover, fixed-asset turnover, price-to-book, price-to-earnings) is already reproduced in question_en, options and correct_answer (A, checkmark confirmed) match, and explanation_en matches the PDF verbatim."
+ },
+ {
+  "id": "9293db6a-b59e-4af4-b890-38b5c7fb1775",
+  "verdict": "formatting_missing",
+  "field": "question_en",
+  "new_value": "An analyst gathers the following data to compare two companies' performance.\n\n| ($ millions) | Company A | Company B |\n|---|---|---|\n| Revenue | 1,000 | 800 |\n| EBITDA | 200 | 250 |\n| Net income | 150 | 188 |\n| Long-term debt | 700 | 800 |\n| Total assets | 1,200 | 1,600 |\n\nThe analyst calculates only three ratios: Debt-to-EBITDA, net profit margin, and total asset turnover. Based only on these three ratios, the analyst can most appropriately conclude that Company A has better:",
+  "evidence": "PDF p.38 (page_idx 37) of 5.11 Answers.pdf shows the Company A/Company B Revenue/EBITDA/Net income/Long-term debt/Total assets table omitted from the DB stem. Checkmark confirmed on B, matching correct_answer; explanation_en matches the PDF verbatim."
+ },
+ {
+  "id": "e85813be-0b30-4c15-8631-992953b67310",
+  "verdict": "ok",
+  "evidence": "The page_idx hint (12) points to an unrelated SAR-millions ROE question; this question's real source is p.21 (page_idx 20) of 5.11 Answers.pdf, confirmed via rendered image: table (MXN millions Revenue/COGS/Operating expenses/Interest/Taxes/Dividends paid, 20X4 vs 20X3), options, correct_answer (C, checkmark confirmed), and explanation_en (operating margin 53.33%→50.00%, net margin 36.30%→43.33%) all match the DB record verbatim. No fix needed; the residual was caused by the wrong page_idx hint, not a DB content error."
+ },
+ {
+  "id": "3d8e8129-8629-4a6b-b9a7-20d655143003",
+  "verdict": "ok",
+  "evidence": "PDF p.17 (page_idx 16) of 5.11 Answers.pdf confirmed via rendered image: the Profitability Ratio (%) / 20X1 / 20X2 / 20X3 table (gross/operating/pretax margin) is already reproduced in question_en, options and correct_answer (A, checkmark confirmed) match, and explanation_en matches the PDF verbatim."
+ },
+ {
+  "id": "74e53ac8-ad99-495a-ae73-b07f8b8de771",
+  "verdict": "ok",
+  "evidence": "PDF p.31 (page_idx 30) of 5.11 Answers.pdf confirmed via rendered image: the Company/Industry Average table (DSO, total asset turnover, DOH) is already reproduced in question_en, options and correct_answer (B, checkmark confirmed) match, and explanation_en matches the PDF verbatim."
+ },
+ {
+  "id": "a2577ad9-3309-42ab-bd69-691c6fae0104",
+  "verdict": "ok",
+  "evidence": "PDF p.26 (page_idx 25) of 5.11 Answers.pdf confirmed via rendered image: the DuPont Company X/Company Y table (tax burden, interest burden, EBIT margin, asset turnover, leverage) is already reproduced in question_en, options and correct_answer (C, checkmark confirmed) match, and explanation_en matches the PDF verbatim."
+ },
+ {
+  "id": "974f206c-25b6-49f5-9a44-9923ad0a5abb",
+  "verdict": "stem_wrong",
+  "field": "question_en",
+  "new_value": "A company uses LIFO to determine the valuation for inventory and reports the following under US GAAP:\n\n| Selected Items from Financial Statements | 20X7 | 20X6 |\n|---|---|---|\n| Current assets (USD millions) | 1,400 | 1,680 |\n| Current liabilities (USD millions) | 333 | 400 |\n\nThe company discloses that its LIFO reserve in 20X7 was $277 and in 20X6 was $450. If the company used FIFO instead of LIFO for its inventory valuation, then over the last year, the company's current ratio most likely:",
+  "evidence": "PDF p.4 (page_idx 3) of 5.11 Answers.pdf, confirmed via rendered image, shows 20X6 current assets = 1,680 (USD millions); the DB table instead shows 1,660, a transcription error. This also matches the explanation_en's own worked figures ('20X6: 1,680 + 450 = 2,130'), which already use the correct 1,680 figure, confirming the stem digit (not the explanation) is wrong. Checkmark confirmed on A, matching correct_answer."
+ }
+]

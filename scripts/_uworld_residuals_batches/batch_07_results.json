@@ -1,0 +1,226 @@
+[
+ {
+  "id": "8aed3231-f8b7-43d7-aadf-1212b559615c",
+  "verdict": "formatting_missing",
+  "field": "question_en",
+  "new_value": "An analyst runs a regression to determine whether the value of Stock Index A is a good predictor of the value of Stock Index B. Selected data are presented below:\n\n| | Coefficient | Standard Error |\n|---|---|---|\n| Intercept | 31.930 | 91.950 |\n| Index A | 3.587 | 0.198 |\n\nThe analyst expects Index A to reach a value of 509 next month and estimates the standard error of the forecast (s) to be 42.893. If the critical t-values at a 10% significance level are 1.701 f (two-sided) and 1.313 (one-sided), the prediction interval for Index B is closest to:",
+  "evidence": "PDF p.10 (page_idx 9) of 1.10 Simple Linear Regression - Answers.pdf shows a Coefficient/Standard Error table (Intercept 31.930/91.950; Index A 3.587/0.198) referenced by 'presented below:' but missing from the DB stem. Options, correct_answer (A, checkmark precedes 'A.'), confirmed."
+ },
+ {
+  "id": "8aed3231-f8b7-43d7-aadf-1212b559615c",
+  "verdict": "explanation_wrong",
+  "field": "explanation_en",
+  "new_value": "Simple linear regressions are commonly used to predict a dependent variable (Ŷ) based on a forecasted value of the independent variable (X).\nf f\nThe prediction interval of a forecast is the expected range of values around Ŷ, given a level of significance (α)(D1485). The width of the range\nf\nis a function of two components:\nThe critical t-value (t ), a reliability factor that is negatively related to α and to the number of observations (n).\nc\nThe standard error of the forecast (s), which measures the accuracy of the predictions (ie, expected distance between observed values\nf\nand Ŷ). The s formula shows that s is positively related to the standard error of the estimate (se) and to the difference between X and the\nf f f f\nmean value of X. In addition, s is negatively related to the number of observations (n).\nf\nIn this scenario, X = 509 and α = 10%, so there is a 90% probability that Index B's actual value will be within the prediction interval around Ŷ.\nf f\nTherefore:\n\n| Steps | Calculations |\n|---|---|\n| 1. Forecast Index B (Ŷf) | Ŷf = b0 + b1Xf = 31.930 + (3.587 × 509) = 1,857.71 |\n| 2. Calculate the standard error of the forecast (sf) | sf = 42.893 (given) |\n| 3. Calculate the prediction interval of Ŷf | Ŷf ± tc × sf. Lower bound: 1,857.71 − (1.701 × 42.893) = 1,784.75. Upper bound: 1,857.71 + (1.701 × 42.893) = 1,930.67 |",
+  "evidence": "The DB explanation stops right before the page's 'Steps/Calculations' derivation table (rendered image of p.10, page_idx 9), jumping from 'Therefore:' straight to the end. The actual numeric derivation (Yf=31.930+3.587x509=1,857.71; lower/upper bound 1,784.75/1,930.67, matching option A) is restored verbatim from the page."
+ },
+ {
+  "id": "9a86d16b-febc-45ae-bcb1-0b25e3acdb23",
+  "verdict": "formatting_missing",
+  "field": "question_en",
+  "new_value": "A fixed income analyst runs a linear regression to evaluate the relationship between the price of two bonds. Selected data is presented below:\n\n| Source | Degrees of freedom | Sum of squares | Mean squares |\n|---|---|---|---|\n| Regression | 1 | 20.032 | 20.032 |\n| Residual | 28 | 159.371 | 5.692 |\n| Total | 29 | 179.404 | |\n\nAt a 5% significance level, the critical F-value is 4.196. Based only on the data, the most appropriate conclusion is that the:",
+  "evidence": "PDF p.12 (page_idx 11) of 1.10 Simple Linear Regression - Answers.pdf shows the ANOVA table (Regression 1/20.032/20.032; Residual 28/159.371/5.692; Total 29/179.404) referenced by 'presented below:' but missing from the DB stem. Correct_answer B confirmed by checkmark."
+ },
+ {
+  "id": "9a86d16b-febc-45ae-bcb1-0b25e3acdb23",
+  "verdict": "explanation_wrong",
+  "field": "explanation_en",
+  "new_value": "There are different ways to evaluate how well a regression model explains the relationship between the dependent (Y) and the independent (X)\nvariables in a simple linear regression:\nThe coefficient of determination (R2) measures the proportion of the change in Y explained by X.\nThe standard error of the estimate (s ) measures the accuracy of the regression.\ne\nThe F-statistic is used to test whether the regression results are random or statistically significant.\nThese statistics are three key measures of goodness of fit; they are usually analyzed together since they have different specific interpretations and\nlimitations (ie, each statistic explains only a part of the regression). The ANOVA table supplies the required information to calculate all three\nmeasures. The calculations are:\n\n| Steps | Calculations |\n|---|---|\n| 1. Coefficient of determination (R²) | R² = Sum of squares regression (SSR) / Sum of squares total (SST) = 20.032 / 179.404 = 0.1112 |\n| 2. Standard error of the estimate (se) | se = √Mean square error (MSE) = √5.692 = 2.386 |\n| 3. F-statistic (F) | F = Mean square regression (MSR) / Mean square error (MSE) = 20.032 / 5.692 = 3.52 |",
+  "evidence": "The DB explanation jumps from 'The calculations are:' directly to the page's trailing LOS line ('Describe the use of analysis of variance...'), omitting the actual 'Steps/Calculations' table shown on p.12 (page_idx 11) (R²=0.1112, se=2.386, F=3.52, matching options A/B/C). The table is restored and the LOS line removed."
+ },
+ {
+  "id": "920382f8-59b5-49fd-a203-be7ab2bb3136",
+  "verdict": "formatting_missing",
+  "field": "question_en",
+  "new_value": "The following table summarizes performance data for a mutual fund and its benchmark for the last 50 months:\n\n| | Fund Return (Y) | Benchmark Return (X) |\n|---|---|---|\n| Mean | 1.48 | 1.20 |\n| Variance | 5.60 | 5.07 |\n| Covariance (Y,X) | | 4.78 |\n\nBased on this data, if an investor expects a 0% return for the benchmark next month, the predicted return of the mutual fund will be closest to:",
+  "evidence": "PDF p.20 (page_idx 19) of 1.10 Simple Linear Regression - Answers.pdf shows the Fund/Benchmark Return table (Mean 1.48/1.20; Variance 5.60/5.07; Covariance 4.78) missing from the DB stem. Correct_answer A confirmed by checkmark."
+ },
+ {
+  "id": "920382f8-59b5-49fd-a203-be7ab2bb3136",
+  "verdict": "explanation_wrong",
+  "field": "explanation_en",
+  "new_value": "The coefficients of a linear regression (ie, slope and intercept) can be estimated based on common statistical measures, as given in this\nscenario. When the expected benchmark return (the independent variable, X) equals zero, the predicted return of the mutual fund (the predicted\ndependent variable, Ŷ) equals the value of the intercept.\nBased on the information given, find the intercept using the return means as the independent and dependent variable values and the slope of the\nregression line. The slope is the ratio of the covariance of Y and X to the variance of X. This is derived from the least squares criterion that drives\nthe goal of the linear regression: to minimize the sum of the squared residuals so that the regression line is the best fit for the data.\n\n| Steps | Calculations |\n|---|---|\n| Calculate the slope (b1) | b1 = Covariance of Y and X / Variance of X = 4.78 / 5.07 = 0.94 |\n| Calculate the intercept (b0) | b0 = Ȳ − b1X̄ = 1.48 − (0.94 × 1.20) = 0.35 |\n| Apply coefficients to linear equation | Ŷ = b0 + b1X + e = 0.35 + 0.94X + e |\n\nIt is important to note that 0.35% is the predicted mutual fund return, not the observed (ie, actual) return, and that the data set is just a sample of\nthe population, so the calculated coefficients will always be estimates of the population parameters.\n(Choice B) 0.94% is the slope, or the change in the predicted return of the mutual fund for every unit change in the expected return of the\nbenchmark.\n(Choice C) 1.48% is the mean (ie, average) return of the mutual fund. It is the expected return when there is no information about the\nbenchmark.",
+  "evidence": "The DB explanation jumps from '...best fit for the data.' directly to 'It is important to note that 0.35% is...', omitting the page's 'Calculation of slope and intercept' Steps/Calculations table (b1=4.78/5.07=0.94; b0=1.48-(0.94x1.20)=0.35) shown on p.20 (page_idx 19). Restored verbatim from the page."
+ },
+ {
+  "id": "10325b69-b765-49ff-8a31-a32987fa6857",
+  "verdict": "formatting_missing",
+  "field": "question_en",
+  "new_value": "The following table summarizes the relationship between two exchange rates, USD/GBP and USD/EUR for the last 12 months:\n\n| Statistic | Data |\n|---|---|\n| Standard deviation of USD/GBP | 1.389 |\n| Standard deviation of USD/EUR | 1.208 |\n| Correlation of USD/GBP and USD/EUR | 0.781 |\n\nAn analyst runs a linear regression to test if USD/GBP explains changes in USD/EUR. The slope of this regression model is closest to:",
+  "evidence": "PDF p.7 (page_idx 6) of 1.10 Simple Linear Regression - Answers.pdf shows the Statistic/Data table (std dev USD/GBP 1.389, std dev USD/EUR 1.208, correlation 0.781) missing from the DB stem. Correct_answer B confirmed by checkmark."
+ },
+ {
+  "id": "10325b69-b765-49ff-8a31-a32987fa6857",
+  "verdict": "explanation_wrong",
+  "field": "explanation_en",
+  "new_value": "This regression model examines how well USD/GBP explains USD/EUR. Therefore, USD/GBP is the explanatory or independent variable (X),\nwhile USD/EUR is the explained or dependent variable (Y). Since there is only one independent variable, this is a simple linear regression, and\nthe slope coefficient is the ratio of the covariance (Y, X) to the variance of X.\nIn this scenario, the covariance (Y, X) can be obtained using the correlation of Y and X and the standard deviations of X and Y. After obtaining the\ncovariance, the slope coefficient is calculated as follows:\n\n| Steps | Calculations |\n|---|---|\n| Define correlation (r) and isolate the covariance (X,Y) | r = cov(X,Y) / (σxσy) → cov(X,Y) = rσxσy |\n| Define slope (b1) and substitute for covariance (X,Y) | b1 = cov(X,Y) / σx² = rσxσy / σx² = r(σy/σx) |\n| Calculate the slope | b1 = 0.781 × (1.208 / 1.389) = 0.679 |\n\n(Choice A) 0.405 results from incorrectly using the correlation instead of covariance in the slope formula (ie, 0.781 / (1.389)2).\n(Choice C) 0.898 results from incorrectly swapping the variables (ie, using USD/GBP as the dependent variable and USD/EUR as the\nindependent variable [0.781 × 1.389 / 1.208]).",
+  "evidence": "The DB explanation jumps from 'the slope coefficient is calculated as follows:' directly to '(Choice A)...', omitting the page's 'Correlation and slope' Steps/Calculations table (b1=0.781x1.208/1.389=0.679) shown on p.7 (page_idx 6). Restored verbatim from the page."
+ },
+ {
+  "id": "fb68b8cb-56ec-4433-90c6-c93fa4ec73f0",
+  "verdict": "formatting_missing",
+  "field": "question_en",
+  "new_value": "A portfolio manager uses a regression model to evaluate how a company's debt-to-equity ratio influences its beta. The analysis of variance (ANOVA) for the regression model is:\n\n| Source | Degrees of Freedom | Sum of Squares | Mean Squares | F-statistic |\n|---|---|---|---|---|\n| Regression | 1 | 0.1426 | 0.1426 | ? |\n| Residual | 8 | 0.2986 | 0.0373 | |\n| Total | 9 | 0.4413 | | |\n\nThe manager formulates the null hypothesis (H ) that the slope coefficient is zero. If the critical F-value at a 5% significance is 5.32, the manager's most appropriate decision is to:",
+  "evidence": "PDF p.9 (page_idx 8) of 1.10 Simple Linear Regression - Answers.pdf shows the ANOVA table (Regression 1/0.1426/0.1426/?; Residual 8/0.2986/0.0373; Total 9/0.4413) missing from the DB stem. Correct_answer C confirmed by checkmark."
+ },
+ {
+  "id": "fb68b8cb-56ec-4433-90c6-c93fa4ec73f0",
+  "verdict": "explanation_wrong",
+  "field": "explanation_en",
+  "new_value": "A hypothesis test and the F-statistic are used to determine the statistical significance of a linear regression by testing whether results are\nrandom. In a simple linear regression (SLR), the goal of the F-test is to assess whether the single independent variable (X) helps to explain\nchanges in the dependent variable (Y).\nThe F-statistic is the ratio of two variances, the mean square regression (MSR) and the mean square error (MSE). The greater (smaller) the F-\nstatistic, the more (less) the variation is explained by the regression. The F-statistic is compared to the critical F-value, based on the desired\nlevel of significance, the number of independent variables, and the degrees of freedom. If the F-statistic is greater (less) than the critical F-value,\nthen reject (fail to reject) H .\n0\nIn a hypothesis test for a SLR, the null hypothesis (H ) states that the slope (b ) equals zero (ie, Xis not useful to predict Y). The step-by-step\n0 1\nprocess is as follows:\n\n| Steps | Calculations |\n|---|---|\n| 1. State the null (H0) and alternative (Ha) hypotheses | H0: b1 = 0; Ha: b1 ≠ 0 |\n| 2. Define the critical value | Critical F-value = 5.32 (given) |\n| 3. Define the rule | Reject H0 if F > Critical F-value |\n| 4. Calculate the F-statistic | F = MSR / MSE = 0.1426 / 0.0373 = 3.82 |\n| 5. Reject or fail to reject H0 | Fails to reject H0: 3.82 < 5.32 |\n\nIn this scenario, since H cannot be rejected, there is not sufficient evidence to indicate that the slope is different from zero. Therefore, the debt-\n0\nto-equity ratio is not statistically significant as a predictor of beta (Choices A and B).",
+  "evidence": "The DB explanation jumps from 'process is as follows:' directly to 'In this scenario, since H0 cannot be rejected...', omitting the page's F-test Steps/Calculations table (F=0.1426/0.0373=3.82, compared to critical 5.32) shown on p.9 (page_idx 8), and appends the page's trailing LOS line. Table restored, LOS line removed."
+ },
+ {
+  "id": "1bf567c0-e8b4-4e66-8cdd-423c5ebfecb7",
+  "verdict": "formatting_missing",
+  "field": "question_en",
+  "new_value": "An analyst evaluates the relationship between two securities and runs a linear regression based on 12 observations. Selected data from the ANOVA (analysis of variance) table is presented below:\n\n| Source | Sum of squares |\n|---|---|\n| Regression | 20.601 |\n| Residual | 8.326 |\n| Total | 28.927 |\n\nBased on this information, the F-statistic is closest to:",
+  "evidence": "PDF p.11 (page_idx 10) of 1.10 Simple Linear Regression - Answers.pdf shows the Source/Sum of squares table (Regression 20.601, Residual 8.326, Total 28.927) missing from the DB stem. Correct_answer A confirmed by checkmark."
+ },
+ {
+  "id": "1bf567c0-e8b4-4e66-8cdd-423c5ebfecb7",
+  "verdict": "explanation_wrong",
+  "field": "explanation_en",
+  "new_value": "The F-statistic is used to test the statistical significance of a linear regression by testing whether results are random. In the F-test for a simple\nlinear regression, if the F-statistic is greater than the critical F-value, there is evidence that the single independent variable (X) helps to explain\nchanges in the dependent variable (Y) (ie, results are not random).\nThe F-statistic is the ratio of the mean square regression (MSR) to the mean square error (MSE) and can be interpreted as the ratio of the\nexplained variance to the unexplained variance. The greater (smaller) the F-statistic, the more (less) of the variation is explained by the\nregression. In the current scenario:\n\n| Steps | Calculations |\n|---|---|\n| 1. Calculate MSR | MSR = Sum of squares regression / Number of independent variables = 20.601 / 1 = 20.601 |\n| 2. Calculate MSE | MSE = Sum of squares error (residual) / (Total observations − Total variables) = 8.326 / (12 − 2) = 0.8326 |\n| 3. Calculate the F-statistic | F = MSR / MSE = 20.601 / 0.8326 = 24.74 |\n\nNote that the denominators used to calculate MSR and MSE are the degrees of freedom (df) in each case:\ndf(model), denominator of MSR, is the number of independent variables, which is 1 in a simple linear regression.\ndf(residual), denominator of MSE, is the difference between the sample size (n) and the number of parameters (2 in a simple linear\nregression), so 10 = 12 − 2.\ndf(total) is the sum of df(model) and df(residual), or 11.\n(Choice B) 27.22 is obtained by incorrectly using total df in the denominator of MSE [20.601 / (8.326 / 11)].\n(Choice C) 29.69 is obtained by incorrectly using the total observations in the denominator of MSE [20.601 / (8.326 / 12)].",
+  "evidence": "The DB explanation jumps from 'In the current scenario:' directly to 'Note that the denominators...', omitting the page's Steps/Calculations table (MSR=20.601, MSE=0.8326, F=24.74) shown on p.11 (page_idx 10). Restored verbatim from the page."
+ },
+ {
+  "id": "9dc495dc-30fc-4eb5-b9cf-b009008a3b51",
+  "verdict": "formatting_missing",
+  "field": "question_en",
+  "new_value": "An analyst runs a simple linear regression using a sample of 10 observations. To assess the validity of the regression statistics, the analyst randomly draws 20 observations from the same data. The results of both regression analyses are:\n\n| | Sample size | Sum of squares total (SST) | Sum of squares errors (SSE) |\n|---|---|---|---|\n| Regression 1 | 10 | 167.00 | 47.75 |\n| Regression 2 | 20 | 334.00 | 95.50 |\n\nBased on this information, the analyst should most likely conclude that:",
+  "evidence": "PDF p.13 (page_idx 12) of 1.10 Simple Linear Regression - Answers.pdf shows the Sample size/SST/SSE table for Regression 1 and 2 missing from the DB stem. Correct_answer C confirmed by checkmark."
+ },
+ {
+  "id": "9dc495dc-30fc-4eb5-b9cf-b009008a3b51",
+  "verdict": "explanation_wrong",
+  "field": "explanation_en",
+  "new_value": "Sum of squares total\nSum of squares total (SST) = Sum of squares regression (SSR) + Sum of squares error (SSE)\nA simple linear regression (SLR) can be used to assess the degree to which variations in a dependent variable are explained by variations in an\nindependent variable. Outputs of a regression analysis include the:\nsum of squares total (SST), the variation in the observed values of the dependent variable versus its average value,\nsum of squares regression (SSR), the proportion of variation of the dependent variable explained by changes in the independent variable,\nand\nsum of squares error (SSE), the proportion of variation of the dependent variable unexplained by changes in the independent variable.\nF-statistics are used to evaluate the goodness of fit (ie, how well the regression model fits the data). F-statistics reflect the explained versus\nthe unexplained variation in the dependent variable, adjusted for sample size and degrees of freedom (ie, mean square regression [MSR] /\nmean square error [MSE]). For a given data set, both the SSR and SSE increase as sample size increases:\n\n| | Regression 1 | Regression 2 |\n|---|---|---|\n| SSR | 167.00 − 47.75 = 119.25 | 334.00 − 95.50 = 238.50 |\n| MSR | 119.25 / 1 = 119.25 | 238.50 / 1 = 238.50 |\n| MSE | 47.75 / (10 − 1 − 1) ≈ 5.9688 | 95.50 / (20 − 1 − 1) ≈ 5.3056 |\n| F-statistic | 119.25 / 5.9688 ≈ 19.9791 | 238.50 / 5.3056 ≈ 44.9529 |\n\nIn this scenario, both the SST and SSE double when the sample size doubles. This indicates the same relative variance is exhibited by both\nsamples. Since the divisor in calculating the F-statistic is inversely related to sample size, other things equal, a larger sample size exhibiting the\nsame relative variation results in a greater value for the F-statistic (Choices A and B).\nA larger sample size that exhibits the same relative variation of the dependent variable should give an analyst greater confidence regarding the\nexplanatory power of the independent variable.",
+  "evidence": "The DB explanation jumps from '...increases as sample size increases:' directly to 'In this scenario, both the SST and SSE double...', omitting the page's Regression 1 vs Regression 2 SSR/MSR/MSE/F-statistic table shown on p.13 (page_idx 12), and appends the page's trailing LOS line. Table restored, LOS line removed."
+ },
+ {
+  "id": "a86e4c7c-2cd9-4f38-9cbb-90390b4d7236",
+  "verdict": "explanation_wrong",
+  "field": "explanation_en",
+  "new_value": "Simple linear regressions are commonly used to predict a dependent variable (Ŷ) based on a forecasted value of the independent variable (X).\nf f\nThe forecast's prediction interval is the expected range of values around Ŷ given a certain level of significance (α). For example, if α = 5%,\nf\nthere is a 95% probability that the actual value of Y will be within the prediction interval.\nThe width of the range is a function of two components: the critical t-value (t ), which is a reliability factor, and the standard error of the forecast,\nc\nwhich is a measure of the regression's accuracy. In this scenario, the prediction interval is calculated as follows:\n\n| Steps | Calculations |\n|---|---|\n| 1. Forecast the gross margin (Ŷf) | Ŷf = b0 + b1Xf = 9.358 + (0.561 × 66) = 46.384 |\n| 2. Calculate the standard error of the forecast (sf) | sf = se × √[1 + 1/n + (Xf − X̄)² / ((n − 1) × Sx²)] = 1.841 × √[1 + 1/12 + (66 − 55.408)² / ((12 − 1) × (3.397)²)] = 1.841 × √1.967 = 1.841 × 1.402 = 2.581 |\n| 3. Calculate the prediction interval of Ŷf | Ŷf ± tc × sf, where tc = 2.228 (given). Lower bound: 46.384 − (2.228 × 2.581) = 40.63%. Upper bound: 46.384 + (2.228 × 2.581) = 52.13%. Prediction interval: 40.6% to 52.1% |",
+  "evidence": "The DB explanation stops right at '...the prediction interval is calculated as follows:', omitting the page's Steps/Calculations derivation table (Yf=46.384, sf=2.581, interval 40.6% to 52.1%, matching option A) shown on p.5 (page_idx 4) of 1.10 Simple Linear Regression - Answers.pdf. Restored verbatim from the page. Question_en already contains the regression-statistics table; correct_answer A confirmed by checkmark."
+ },
+ {
+  "id": "ded06d8a-a747-467b-9ad6-5e1c32a72fb8",
+  "verdict": "explanation_wrong",
+  "field": "explanation_en",
+  "new_value": "The standard error of the estimate (s ) measures the accuracy of a regression as the average distance between each predicted and observed\ne\nindependent variable (Y). It is also known as the standard error of the regression or the root mean square error (MSE). It is an absolute\nmeasure presented in the same units as Y. Smaller values of s mean that the regression has smaller errors; therefore, the regression line is a\ne\nbetter fit for the data.\nSince this scenario does not provide the MSE, it must be calculated as the ratio of the sum of squares error (SSE), or residual sum of squares, to\nthe degrees of freedom (df). Note that the df(residual) is the difference between the sample size (n = 24) and the number of variables (X and Y)\n(ie, 24 − 2 = 22).\nse = √MSE = √[SSE / (n − 2)] = √(4.190 / 22) = 0.436\n(Choice A) 0.418 is obtained by incorrectly using the number of observations (ie, sample size) in the denominator instead of the df, n − 2 (ie,\nsquare root of 4.190 / 24).\n(Choice C) 0.473 is obtained by incorrectly using the sum of squares total (SST), or total sum of squares, in the numerator instead of SSE (ie,\nsquare root of 4.932 / 22).",
+  "evidence": "The DB explanation jumps from '(ie, 24 − 2 = 22).' directly to '(Choice A)...', omitting the page's central formula line (se=√(4.190/22)=0.436) shown on p.14 (page_idx 13) of 1.10 Simple Linear Regression - Answers.pdf. Restored verbatim from the page. Question_en already contains the BRL/MXN table; correct_answer B confirmed by checkmark."
+ },
+ {
+  "id": "10d27155-9f3a-4d50-b996-6cf5e13d5285",
+  "verdict": "formatting_missing",
+  "field": "question_en",
+  "new_value": "An analyst selects 190 stocks and organizes them by style and market cap in a contingency table:\n\n| | Small-cap | Mid-cap | Large-cap | Totals |\n|---|---|---|---|---|\n| Growth | 30 | 20 | 50 | 100 |\n| Value | 45 | 30 | 15 | 90 |\n| Total | 75 | 50 | 65 | 190 |\n\nUsing marginal frequencies, the expected frequency of large-cap growth stock is closest to:",
+  "evidence": "PDF p.2 (page_idx 1) of 1.09 Parametric and Non-Parametric Tests of Independence - Answers.pdf shows the Small-cap/Mid-cap/Large-cap contingency table missing from the DB stem. Correct_answer B confirmed by checkmark."
+ },
+ {
+  "id": "10d27155-9f3a-4d50-b996-6cf5e13d5285",
+  "verdict": "explanation_wrong",
+  "field": "explanation_en",
+  "new_value": "A contingency table is used to display the frequency distribution for multiple categorical variables simultaneously. Each row displays a\nunique variable outcome of the first categorical variable, and each column displays a unique variable outcome of the second categorical variable.\nThe contingency table shows:\nthe marginal frequency of each categorical variable, which is the total frequency for each row or column.\nthe joint frequency of two categorical variables, which is the frequency in each cell.\nThe observed values are from a sample (ie, subset of a population) and are not representative of the whole target population. The population's\nexpected joint frequency of the two specified categorical variable outcomes is the product of the individual relative marginal frequency of each\ncategorical variable outcome, in this case, growth stock and large-cap stock:\n\n| | Small-cap | Mid-cap | Large-cap | Total |\n|---|---|---|---|---|\n| Growth | 39.5 | 26.3 | 34.2 | 100.0 |\n| Value | 35.5 | 23.7 | 30.8 | 90.0 |\n| Total | 75.0 | 50.0 | 65.0 | 190.0 |\n\nExpected value i,j = (Total observed frequency in row i × Total observed frequency in column j) / Number of observations\n= (Marginal frequency of growth stock × Marginal frequency of large-cap stock) / Number of observations\n= (100 × 65) / 190 = 34.21\n\nThe expected frequency is 34.2.",
+  "evidence": "The DB explanation jumps from '...growth stock and large-cap stock:' directly to 'The expected frequency is 34.2.', omitting the page's 'Expected frequency values' table and the numeric formula derivation (100×65/190=34.21) shown on p.2 (page_idx 1). Restored verbatim from the page."
+ },
+ {
+  "id": "44de8795-991a-4137-b66a-7feba539d40c",
+  "verdict": "formatting_missing",
+  "field": "question_en",
+  "new_value": "An analyst studies the relationship between company size and bond rating to predict bond defaults. The following table represents the number of defaults over a 10-year period:\n\n| Rating | Large Cap | Mid Cap | Small Cap |\n|---|---|---|---|\n| AAA or A | 15 | 32 | 51 |\n| BBB or BB | 24 | 47 | 68 |\n| High yield | 31 | 55 | 70 |\n\nBased on this information, the relative frequency of BBB–BB bond defaults by mid-cap companies, based on all mid-cap company bonds, is closest to:",
+  "evidence": "PDF p.3 (page_idx 2) of 1.09 Parametric and Non-Parametric Tests of Independence - Answers.pdf shows the Rating/Large Cap/Mid Cap/Small Cap table missing from the DB stem. Correct_answer C confirmed by checkmark. Explanation_en verified verbatim against the page (including the page's own '(Choice C)' label for the 33.8% alternative-scenario answer, which is a quirk in the source PDF itself, not a DB extraction error, since 47/139≈33.8% is genuinely option B in this record) -- no explanation fix made."
+ },
+ {
+  "id": "9173fbc2-4787-4162-83af-1721657cd773",
+  "verdict": "formatting_missing",
+  "field": "question_en",
+  "new_value": "An investor builds a contingency table for a group of 600 companies based on two variables: inventory valuation method and gross margin. The scaled squared deviation for each combination of these variables is presented below:\n\n| Inventory valuation method | Low | Average | High |\n|---|---|---|---|\n| FIFO | 2.92 | 0.60 | 0.77 |\n| LIFO | 1.47 | 0.34 | 0.34 |\n| Weighted average | 1.18 | 0.21 | 0.35 |\n\nAt a 5% level of significance and based on the chi-square distribution table, the most appropriate conclusion is that:",
+  "evidence": "PDF p.4 (page_idx 3) of 1.09 Parametric and Non-Parametric Tests of Independence - Answers.pdf shows the FIFO/LIFO/Weighted average scaled-squared-deviation table missing from the DB stem. Correct_answer B confirmed by checkmark. The page's explanation genuinely ends at 'The corresponding hypothesis test is:' with no further content on the page (confirmed via full-page render, no footer/LOS/copyright present) -- DB explanation_en is a complete, faithful transcription of the truncated source page, so no explanation fix is made (further content is unsourceable)."
+ },
+ {
+  "id": "463783e0-4483-4266-9b9d-36a3bdc6f704",
+  "verdict": "option_bleed",
+  "field": "option_c",
+  "new_value": "the convergence of finance and technology that provides easier access to investment services.",
+  "evidence": "PDF p.12 (page_idx 11) of 1.11 Introduction to Big Data Techniques - Answers.pdf gives option C in full ending 'investment services.'; the DB record truncates it at 'investment'. Correct_answer C and explanation_en otherwise verified verbatim against the page."
+ },
+ {
+  "id": "61a48a0f-4e90-49dd-b727-c450b55ccbb0",
+  "verdict": "formatting_missing",
+  "field": "question_en",
+  "new_value": "The following data is for a firm operating under perfect competition:\n\n| Quantity produced | Total economic cost (€) |\n|---|---|\n| 100 | 510 |\n| 101 | 511 |\n| 102 | 513 |\n| 103 | 516 |\n| 104 | 520 |\n| 105 | 525 |\n| 106 | 531 |\n\nIf the price per unit is €5, economic profits are maximized when the firm produces:",
+  "evidence": "PDF p.19 (page_idx 18) of 2.01 Firms and Market Structures - Answers.pdf shows the Quantity produced/Total economic cost table missing from the DB stem. Correct_answer B confirmed by checkmark; explanation_en (including the full 'Production data at a unit price of €5' table) verified verbatim against the page."
+ },
+ {
+  "id": "52689b4a-fadc-4108-9e4a-ab292f01b22f",
+  "verdict": "option_bleed",
+  "field": "option_c",
+  "new_value": "The firm should produce goods at a level at which marginal revenue exceeds average total cost.",
+  "evidence": "PDF p.25 (page_idx 24) of 2.01 Firms and Market Structures - Answers.pdf gives option C in full ending 'average total cost.'; the DB record truncates it at 'average total'. Correct_answer A and explanation_en otherwise verified verbatim against the page."
+ },
+ {
+  "id": "a6dbfe25-254a-42b5-9dc6-69f2d92c39bf",
+  "verdict": "formatting_missing",
+  "field": "question_en",
+  "new_value": "The following table lists various economic indicators and the trend in each one over the past several months for an economy.\n\n| Economic Indicator | Trend |\n|---|---|\n| Unemployment | Record low |\n| Unit labor costs | Modestly rising |\n| Industrial production growth | Steadily higher |\n| Residential building permits | Steady decline |\n| New orders for manufacturing | Steady decline |\n| Long-term bond yields | Declined 1% |\n| Short-term bond yields | Stable |\n\nThis mix of economic indicators most likely forecasts near-term future economic:",
+  "evidence": "PDF p.9 (page_idx 8) of 2.02 Understanding Business Cycles - Answers.pdf shows the Economic Indicator/Trend table missing from the DB stem. Correct_answer C confirmed by checkmark; explanation_en verified verbatim against the page (the page's own 'Indicator classification' table is a supplementary teaching aid restating the same data with added Leading/Lagging/Coincident labels, already fully covered by the DB's prose, so no explanation fix is made)."
+ },
+ {
+  "id": "2a5da4d4-7251-41f8-92d8-16923ede2acc",
+  "verdict": "option_bleed",
+  "field": "option_c",
+  "new_value": "Target country inflation (deflation) is imported regardless of the effect on the domestic economy.",
+  "evidence": "PDF p.2 (page_idx 1) of 2.04 Monetary Policy - Answers.pdf gives option C in full ending 'domestic economy.'; the DB record truncates it at 'domestic'. Correct_answer C confirmed by checkmark; explanation_en verified as a complete (if column-scrambled by PDF extraction) transcription of the page's 'Monetary policy targets' table and prose -- values are all correct and no fabrication/cross-contamination found, so no explanation fix is made."
+ },
+ {
+  "id": "2cd00a94-02bb-4cd2-bb81-baa5bb354c45",
+  "verdict": "formatting_missing",
+  "field": "question_en",
+  "new_value": "Three geopolitical risks may affect a country's investment returns:\n\n| Event Risk | Likelihood | Velocity | Impact Size | Impact Breadth |\n|---|---|---|---|---|\n| A | High | High | Moderate | Discrete |\n| B | Moderate | High | High | Broad |\n| C | High | Medium | Low | Broad |\n\nWithin the context of a country's investment returns, based on only the above information, which event warrants the highest level of risk assessment?",
+  "evidence": "PDF p.5 (page_idx 4) of 2.05 Introduction to Geopolitics - Answers.pdf shows the Event Risk/Likelihood/Velocity/Impact table missing from the DB stem. Correct_answer B confirmed by checkmark; explanation_en verified verbatim against the page (its own copy of the table, restated in the explanation, matches)."
+ },
+ {
+  "id": "f03ec524-ddde-4a77-a9f0-26fa27a13d3d",
+  "verdict": "option_bleed",
+  "field": "option_c",
+  "new_value": "Negotiate a voluntary export restraint agreement with a country running a large trade surplus with the domestic economy.",
+  "evidence": "PDF p.3 (page_idx 2) of 2.06 International Trade - Answers.pdf gives option C in full ending 'with the domestic economy.'; the DB record truncates it at 'trade surplus'. Correct_answer C and explanation_en otherwise verified verbatim against the page."
+ },
+ {
+  "id": "a62dab43-708f-4835-8cac-d6b007cabc54",
+  "verdict": "formatting_missing",
+  "field": "question_en",
+  "new_value": "An analyst has compiled the following information:\n\n| | Economic Model | Coffee Price ($) | Sugar Price ($) |\n|---|---|---|---|\n| Country A | Autarky | 0.70 | 0.50 |\n| Country B | Autarky | 1.00 | 0.45 |\n| Country C | Autarky | 0.90 | 0.60 |\n| Country Z | Open economy | 1.10 | 0.40 |\n\nCountry Z is an open economy, trading at world prices, and does not currently trade with any of the other three countries. Assuming equal consumption of both commodities, which country will benefit the most from a trading relationship with Country Z?",
+  "evidence": "PDF p.5 (page_idx 4) of 2.06 International Trade - Answers.pdf shows the Economic Model/Coffee Price/Sugar Price table for Countries A, B, C, Z missing from the DB stem. Correct_answer A confirmed by checkmark; explanation_en (which states the final Country A/B/C terms-of-trade benefit values of $0.50/$0.15/$0.40 matching the page) verified adequate, no fix made."
+ },
+ {
+  "id": "3761a848-d656-46d1-9f81-fda5ed371c18",
+  "verdict": "formatting_missing",
+  "field": "question_en",
+  "new_value": "A country recently imposed a tariff on apples of €300 per metric ton. The pre-tariff price for apples was €2,000 per metric ton. The table below shows the quantity demanded and the quantity supplied by domestic producers, along with the pre- and post-tariff prices of apples:\n\n| | Pre-Tariff | Post-Tariff |\n|---|---|---|\n| Quantity demanded (metric tons) | 200 | 150 |\n| Quantity supplied (domestic producers) | 110 | 130 |\n| Price per metric ton | €2,000 | €2,300 |\n\nThe image below shows the market for apples in this country: The area labeled A in the image represents an increase in:",
+  "evidence": "PDF p.6 (page_idx 5) of 2.06 International Trade - Answers.pdf shows the Pre-Tariff/Post-Tariff table missing from the DB stem. Correct_answer A confirmed by checkmark."
+ },
+ {
+  "id": "3761a848-d656-46d1-9f81-fda5ed371c18",
+  "verdict": "explanation_wrong",
+  "field": "explanation_en",
+  "new_value": "A tariff is one type of trade restraint. It is a tax on imported goods that is usually paid by domestic consumers in the form of higher prices. Although tariffs are intended to protect domestic producers, they often lead to inefficiencies in an economy's production and consumption functions.\nArea A in the diagram above represents an increase in the producer surplus. This surplus is the sum of two components:",
+  "evidence": "The stored explanation_en is entirely unrelated to this question -- it is verbatim (minus the numeric Steps/Calculations table) the mobile-phone tariff deadweight-loss explanation that belongs to p.8 (page_idx 7, question 7) of the same PDF. The full-page render of p.6 (page_idx 5) confirms this question's own explanation begins 'A tariff is one type of trade restraint...' and correctly identifies Area A as producer surplus, but the source page itself is truncated after 'This surplus is the sum of two components:' (no further text, no footer/LOS/copyright on the page) -- so only the genuinely sourceable portion is restored; anything past that point is unsourceable and is not fabricated."
+ },
+ {
+  "id": "9a3b132f-1794-4a2b-9d17-02b06a0da8ad",
+  "verdict": "formatting_missing",
+  "field": "question_en",
+  "new_value": "A country that is a price taker in the international market imposes a per-unit tariff of €50 on imported mobile phones. The table below shows domestic consumption, domestic production, and mobile phone prices before and after the tariff's imposition:\n\n| | Before Tariff | After Tariff |\n|---|---|---|\n| Domestic quantity demanded (thousands) | 8,200 | 7,000 |\n| Quantity supplied (domestic suppliers) (thousands) | 4,000 | 6,500 |\n| Price (per phone) | €200 | €250 |\n\nThe total deadweight loss (in €) from the imposition of the tariff is closest to:",
+  "evidence": "PDF p.8 (page_idx 7) of 2.06 International Trade - Answers.pdf shows the Before Tariff/After Tariff table missing from the DB stem. Correct_answer C confirmed by checkmark."
+ },
+ {
+  "id": "9a3b132f-1794-4a2b-9d17-02b06a0da8ad",
+  "verdict": "explanation_wrong",
+  "field": "explanation_en",
+  "new_value": "A tariff is one type of trade restraint. It is a tax on imported goods that is usually paid as a higher price for the goods and usually results in a\nloss to the net welfare of the economy. Tariffs cause inefficiencies in both the supply and production functions of the economy; these losses are\nknown as deadweight losses. In the diagram above, the supply deadweight loss is Region B and the demand deadweight loss is Region D.\nBefore the tariff, all suppliers had per-unit production costs of €200 or less. The tariff caused the price to increase to €250 so domestic suppliers\nwhose production costs were greater than €200 could now compete. However, domestic supply increased (from 4 million to 6.5 million) while\ndomestic demand decreased (from 8.2 million to 7 million), therefore the additional domestic supply represented a reallocation of resources to\nphones when those resources could have been better employed elsewhere in the economy, creating an inefficiency.\nThe demand deadweight loss is evidenced from the reduced domestic demand after the tariff. Consumers who might have spent more than €200\nfor a phone but would not spend €250 were excluded from the market.\nThe deadweight loss is the sum of the areas of the triangles B and D:\n\n| Steps | Calculations |\n|---|---|\n| Area of a triangle equals 0.5 × base × height. Base is the difference between pre- and post-tariff quantities; height is the difference between pre- and post-tariff price. | AreaB = 0.5 × (6,500 − 4,000) × (250 − 200) = 62,500 |\n| | AreaD = 0.5 × (8,200 − 7,000) × (250 − 200) = 30,000 |\n| Deadweight loss is the sum of the consumer and producer inefficiency losses | Deadweight loss = 62,500 + 30,000 = €92,500 |",
+  "evidence": "The stored explanation_en is entirely unrelated to this question -- it is verbatim the 'gains from trade / winners and losers' explanation belonging to p.9 (page_idx 8, question 8) of the same PDF. The full-page render of p.8 (page_idx 7) shows this question's own tariff/deadweight-loss explanation and worked Steps/Calculations table (AreaB=62,500, AreaD=30,000, total=€92,500, matching option C), restored verbatim here and the trailing LOS line removed."
+ }
+]

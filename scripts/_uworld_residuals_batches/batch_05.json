@@ -1,0 +1,376 @@
+[
+ {
+  "id": "7fc6005e-7c8f-4834-aa88-09e35853e205",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\5. Financial Statement Analysis\\5.02 Analyzing Income Statements - Answers.pdf",
+  "page_idx": 21,
+  "png": "scripts\\_uworld_residuals_png\\7fc6005e-7c8f-4834-aa88-09e35853e205.png",
+  "topic": "Financial Statement Analysis",
+  "subtopic": "5.02 Analyzing Income Statements",
+  "question_en": "In 20X9 a publicly traded corporation reported $10 million in net income. The information concerning its common shares outstanding is shown below: The company also has 500,000 shares of nonconvertible preferred stock, which have been outstanding the entire year. The annual dividend for each share of preferred stock is $5.00, which has been paid. The basic earnings per share (EPS) for this company in 20X9 is closest to:",
+  "option_a": "$0.50",
+  "option_b": "$0.77",
+  "option_c": "$1.03",
+  "correct_answer": "B",
+  "explanation_en": "Basic earnings per share (EPS) divides a company's net income by the number of shares of common stock outstanding. Scaling net income on a\nper-share basis provides a better means to compare net income across time periods. Basic EPS assumes that the company has not issued other\nsecurities, such as convertible debt, that can be converted into common stock.\nDividends on all classes of stock are paid from net income but since EPS applies only to common shares, net income must be adjusted by\nsubtracting dividends paid to preferred shareholders. Adjusting for preferred dividends accurately reflects the portion of income that is available to\ncommon shareholders. In this question, the company's preferred dividends totaled $2.5 million (500,000 shares × $5 / share), so the EPS\nnumerator becomes $10 million − $2.5 million = $7.5 million.\nA company that issues or repurchases common shares throughout the year will show different amounts of common shares outstanding at different\ntimes. Companies use a time-weighted average to show the relative time period for which different amounts have been outstanding. The table\nbelow demonstrates how the company calculates its weighted average:"
+ },
+ {
+  "id": "c51faed7-34ad-457c-ada4-c7d016ea9900",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\7. Fixed Income\\7.09 The Term Structure of Interest Rates Spot, Par, and Forward Curves - Answers.pdf",
+  "page_idx": 17,
+  "png": "scripts\\_uworld_residuals_png\\c51faed7-34ad-457c-ada4-c7d016ea9900.png",
+  "topic": "Fixed Income",
+  "subtopic": "7.09 The Term Structure of Interest Rates Spot, Par, and Forward Curves",
+  "question_en": "The following table shows a series of annual spot rates: The 1-year rate available in 2 years is closest to:",
+  "option_a": "3.47%",
+  "option_b": "4.05%",
+  "option_c": "6.04%",
+  "correct_answer": "B",
+  "explanation_en": "A forward rate for a period can be derived by using:\nthe forward rates from prior periods or\ntwo spot rates from a spot curve (ie, series of spot rates).\nA forward rate can be interpreted as a marginal return that would make investors extend their horizons by one period (eg, 1 year). In this\ninstance, the return on a 3-year bond is equivalent to the return on a 2-year bond plus the marginal return of extending the bond for 1 year.\nThat marginal return is a 1-year rate available in 2 years (ie, 2y1y) and can be calculated using 2-year and 3-year spot rates.\nThe rate given as 2y1y is solved as follows:"
+ },
+ {
+  "id": "0f51165c-36de-4907-8eb3-e024435d20da",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\7. Fixed Income\\7.09 The Term Structure of Interest Rates Spot, Par, and Forward Curves - Answers.pdf",
+  "page_idx": 21,
+  "png": "scripts\\_uworld_residuals_png\\0f51165c-36de-4907-8eb3-e024435d20da.png",
+  "topic": "Fixed Income",
+  "subtopic": "7.09 The Term Structure of Interest Rates Spot, Par, and Forward Curves",
+  "question_en": "An analyst has gathered the following information on zero-coupon government bond yields: If the rates are based on a periodicity of 1, the one-year forward rate 2 years in the future (2y1y) is closest to:",
+  "option_a": "3.72%",
+  "option_b": "4.16%",
+  "option_c": "4.35%",
+  "correct_answer": "C",
+  "explanation_en": "A forward rate (or implied forward rate [IFR]) is a future period interest rate. Forward rates are not expectations of future spot rates; instead, they\nare future interest rates that reflect the difference between spot rates of different maturities (ie, tenors), based on the assumption that\ninvestment strategies covering the same time horizon and carrying equivalent risk should have the same return. In effect, forward rates are the\nbreakeven reinvestment rates that produce that result. Arbitrage-free pricing enforces the consistency of forward rates with spot rate differences.\nIn this scenario, equal amounts invested in a strategy today should have the same future value at the end of 3 years. To answer this question, two\ninvestment strategies can be compared as follows:\nBuy a three-year zero-coupon bond and hold it to maturity (ie, right side of the first equation above).\nBuy a two-year zero-coupon bond and hold it to maturity; at maturity, reinvest the proceeds in a one-year zero-coupon bond (ie, left side of\nthe first equation above).\nThese two strategies are illustrated on the following timeline:\nThe IFR for the one-year forward rate starting 2 years in the future (IFR ) is calculated as follows:\n2,3−2"
+ },
+ {
+  "id": "0470b612-10fb-48b4-bb48-0f33c4f59ec4",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\7. Fixed Income\\7.09 The Term Structure of Interest Rates Spot, Par, and Forward Curves - Answers.pdf",
+  "page_idx": 14,
+  "png": "scripts\\_uworld_residuals_png\\0470b612-10fb-48b4-bb48-0f33c4f59ec4.png",
+  "topic": "Fixed Income",
+  "subtopic": "7.09 The Term Structure of Interest Rates Spot, Par, and Forward Curves",
+  "question_en": "An investor replicates a 4-year, 2% annual coupon-paying Treasury bond with 100 par value by combining zero-coupon bonds with the following spot rates:\n\n| Time to Maturity (years) | Spot Rates (annual) |\n|---|---|\n| 1 | 0.5% |\n| 2 | 1.7% |\n| 3 | 2.8% |\n| 4 | 4.0% |\n\nThe YTM on the bond is closest to:",
+  "option_a": "3.00%",
+  "option_b": "3.94%",
+  "option_c": "4.43%",
+  "correct_answer": "B",
+  "explanation_en": "A fixed-rate coupon Treasury bond can be replicated from a series of zero-coupon bonds (strips) with the same pattern of cash flows. The\nprice of the fixed-rate bond should equal the sum of the face values of the individual strips discounted by their corresponding spot rates (ie, the\nmarket discount rate for zero-coupon bonds). This is known as the arbitrage-free valuation approach since the same price applies to both\ninstruments; otherwise, arbitrage opportunities will be present.\nThe YTM is the rate that discounts a bond's future cash flows to its current price. To calculate the YTM (r) of a fixed-rate bond, first calculate the\nbond's present value (ie, price) using the cash flows of the zero-coupon strips, and then input the present value and other parameters (ie, maturity,\ncoupons, par value) on the calculator to solve for r.\n(Choice A) 3.00% results from incorrectly using 8 (ie, assuming semiannual periods) for the number of periods.\n(Choice C) 4.43% results from failing to include the last coupon payment of 20 in period 4's cash flow when computing the bond's present value."
+ },
+ {
+  "id": "bc0dbb3d-fe96-4dd3-95ce-ab7964e0e732",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\7. Fixed Income\\7.12 Yield-Based Bond Convexity and Portfolio Properties - Answers.pdf",
+  "page_idx": 9,
+  "png": "scripts\\_uworld_residuals_png\\bc0dbb3d-fe96-4dd3-95ce-ab7964e0e732.png",
+  "topic": "Fixed Income",
+  "subtopic": "7.12 Yield-Based Bond Convexity and Portfolio Properties",
+  "question_en": "An analyst reviewing the change in a bond's price after its yield decreased has compiled the following data:\n\n| Selected Data | |\n|---|---|\n| Bond original price | 88.1 |\n| Bond price when yield is increased | 87.3 |\n| Bond price when yield is decreased | 93.1 |\n| Decrease in yield | 1.1% |\n\nBased only on this data, the convexity adjustment is closest to:",
+  "option_a": "2.38%",
+  "option_b": "3.78%",
+  "option_c": "5.68%",
+  "correct_answer": "A",
+  "explanation_en": "Analysts often want to estimate the percentage change in a bond's price based on a change in its YTM, and vice versa. Duration (the blue line\nabove) approximates the change in price. Including the effect of convexity (ie, the convexity adjustment) will improve the estimate. The actual\nrelationship between a bond's price and its yield is represented graphically by a convex curve (the green curve above). Therefore, estimating a\nbond price involves beginning with the percentage change in price based on duration and then adding the convexity adjustment.\nIn this scenario, the price-change information and the change in yield are known. If the annual modified duration were also known, one could\nsolve for the convexity adjustment using this approach. However, since the annual modified duration is not known, the convexity adjustment can\nbe calculated by first finding an approximate convexity:\nThen substitute the approximate convexity for annual convexity to obtain the convexity adjustment:"
+ },
+ {
+  "id": "a7577776-397b-4243-8e44-253caece6dcc",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\7. Fixed Income\\7.12 Yield-Based Bond Convexity and Portfolio Properties - Answers.pdf",
+  "page_idx": 8,
+  "png": "scripts\\_uworld_residuals_png\\a7577776-397b-4243-8e44-253caece6dcc.png",
+  "topic": "Fixed Income",
+  "subtopic": "7.12 Yield-Based Bond Convexity and Portfolio Properties",
+  "question_en": "An analyst estimates the following for a noncallable bond with a price of £90.16: If the bond's yield declines by 100 basis points, the convexity-adjusted estimate of the bond's new price (in £) is closest to:",
+  "option_a": "90.99",
+  "option_b": "97.84",
+  "option_c": "98.68",
+  "correct_answer": "B",
+  "explanation_en": "Annual convexity and annual modified duration can be used to estimate a percentage change in a bond's price based on a change in its yield. If\nthe bond is noncallable, then the relationship between YTM and price is represented by the convex curve above, which includes the effect of both\nduration and convexity. The bond's price change based on its duration is a linear approximation, represented by the tangent line in the graph\nabove.\nTo estimate the change in the bond's price due to both annual modified duration and annual convexity, sum the two effects as follows:\nIn this scenario, substitute as follows to obtain the estimated percentage change in price:\n%∆PVFull = 0.0768 + (1/2)(167.85)(−0.01)2\n= 0.0768 + 0.0083925\n= 0.08519\nSince the yield is decreasing, the price is increasing. The convexity-adjusted estimate of the increase in the bond's price can be used to estimate\nthe bond's new price:\nPV × (1 + %∆PVFull) = New price\n0"
+ },
+ {
+  "id": "16f7bb98-3ef7-4868-874d-bac455172831",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\7. Fixed Income\\7.12 Yield-Based Bond Convexity and Portfolio Properties - Answers.pdf",
+  "page_idx": 19,
+  "png": "scripts\\_uworld_residuals_png\\16f7bb98-3ef7-4868-874d-bac455172831.png",
+  "topic": "Fixed Income",
+  "subtopic": "7.12 Yield-Based Bond Convexity and Portfolio Properties",
+  "question_en": "An investment portfolio consists of the following two bonds: The bonds pay coupons annually and are trading flat (ie, the market price is equal to the full price). If each bond's YTM declines by 10 basis points, the portfolio's estimated value, based only on portfolio duration, is closest to:",
+  "option_a": "GBP22,988,288",
+  "option_b": "GBP23,251,712",
+  "option_c": "GBP23,265,656",
+  "correct_answer": "B",
+  "explanation_en": "Duration can be used to measure the interest rate risk of bond portfolios. The impact of interest rate changes on a bond portfolio's value is\nestimated by multiplying portfolio duration by a change in market yields. The most common way to estimate bond portfolio duration is as a\nweighted average of the modified durations of the bonds in the portfolio:\nThis method implicitly assumes that any change in yield will be the same for every bond in the portfolio, regardless of its time to maturity: a parallel\nshift in the yield curve.\nIn this scenario, the portfolio's market value is 23,120,000, or 9,920,000 + 13,200,000. The annual portfolio duration is calculated as follows:\nA decrease in yields results in an increase in bond prices. The percentage change in the portfolio's value for a 10-basis-point downward shift in\nthe yield curve is:\nThe portfolio's estimated new market value is 23,120,000 × (1 + 0.0056969) ≈ 23,251,712.\n(Choice A) GBP 22,988,288 results from omitting the negative sign in the formula for the percentage change in the full bond price. This results in\na new bond portfolio market value that is less than the original value. A decrease in yields should result in an increase in bond prices.\n(Choice C) GBP 23,265,656 results from incorrectly calculating the portfolio modified duration by weighting by the par value of each bond.\nPortfolio duration is estimated by weighting each bond's modified duration by its market value."
+ },
+ {
+  "id": "c96d4276-d134-4b6d-9b8a-05bad3177e5c",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\1. Quantitative Methods\\1.01 Rates and Returns - Answers.pdf",
+  "page_idx": 3,
+  "png": "scripts\\_uworld_residuals_png\\c96d4276-d134-4b6d-9b8a-05bad3177e5c.png",
+  "topic": "Quantitative Methods",
+  "subtopic": "1.01 Rates and Returns",
+  "question_en": "An analyst records the price of an asset over a two-year period: Based only on price, the asset's Year 1 continuously compounded return is closest to:",
+  "option_a": "5.88%",
+  "option_b": "6.06%",
+  "option_c": "6.41%",
+  "correct_answer": "A",
+  "explanation_en": "The historical mean return is the actual return that an investor earned in the past. Since assets are risky, it is unlikely that this exact return will be earned again over a specific period in the future. However, in portfolio management it is assumed that given a long enough, although unspecified, period, it is reasonable to expect that a future return will be equal to the historical mean return. Although this assumption may not prove accurate, in practice the historical mean return is often used as a reasonable estimate of an asset's expected return (Choice A). (Choice B) It is incorrect to say that historical mean return is equal to expected return over any specific period, be it 30, 50, or 100 years, since the period may not be long enough."
+ },
+ {
+  "id": "ed5b310c-cc0c-48c3-a3a5-a9e7119339d7",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\1. Quantitative Methods\\1.01 Rates and Returns - Answers.pdf",
+  "page_idx": 4,
+  "png": "scripts\\_uworld_residuals_png\\ed5b310c-cc0c-48c3-a3a5-a9e7119339d7.png",
+  "topic": "Quantitative Methods",
+  "subtopic": "1.01 Rates and Returns",
+  "question_en": "A lender gathers data on three different loans in its portfolio: Based on the data above, the loan with the highest effective annual rate is:",
+  "option_a": "Loan X.",
+  "option_b": "Loan Y.",
+  "option_c": "Loan Z.",
+  "correct_answer": "B",
+  "explanation_en": "The future value of the first investment can be solved using the formula for multiple compounding periods per year. The present value is AUD 50,000 and the stated annual rate is 2.00%. Quarterly compounding implies 4 per year × 3 years = 12 compounding periods (N = 3 and m = 4). The other investment's future value can be solved using the continuous compounding formula. The stated annual rate is 1.75% and all other values are the same as those of the first investment. The two values and the difference between them are calculated as follows: The difference between the future values is 388.76, which can be rounded to 389. (Choice A) 364 is the result of solving for the future value of the first investment without adjusting for the number of compounding periods—in effect, assuming annual compounding. (Choice C) 540 results from mistakenly assuming continuous compounding has discrete compounding periods and then using the same frequency of compounding for both investments."
+ },
+ {
+  "id": "271342cc-a191-4e9c-a410-9b208eb36683",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\1. Quantitative Methods\\1.01 Rates and Returns - Answers.pdf",
+  "page_idx": 26,
+  "png": "scripts\\_uworld_residuals_png\\271342cc-a191-4e9c-a410-9b208eb36683.png",
+  "topic": "Quantitative Methods",
+  "subtopic": "1.01 Rates and Returns",
+  "question_en": "An analyst is comparing three investments: The investment with the greatest effective annual rate is:",
+  "option_a": "Investment X",
+  "option_b": "Investment Y",
+  "option_c": "Investment Z",
+  "correct_answer": "A",
+  "explanation_en": "If an investment's return is compounded more than once per year, then a stated annual rate of return does not accurately reflect the investor's\neffective annual rate (EAR) of return. The effect of compounding over a certain number of discrete periods during the year causes the investor to\nreceive more than the stated rate. All else equal, a greater number of compounding periods means a greater return for the investor.\nThe EAR can be used to compare investments with different compounding frequencies and therefore different numbers of compounding periods\nper year. The periodic rate is the stated annual rate per compounding period.\nIn this scenario, the EAR of each investment is calculated as follows:"
+ },
+ {
+  "id": "7698d227-2095-4b57-bd0e-cd364f068e10",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\1. Quantitative Methods\\1.01 Rates and Returns - Answers.pdf",
+  "page_idx": 36,
+  "png": "scripts\\_uworld_residuals_png\\7698d227-2095-4b57-bd0e-cd364f068e10.png",
+  "topic": "Quantitative Methods",
+  "subtopic": "1.01 Rates and Returns",
+  "question_en": "A manager is concerned about the current inflation rate and gathers the following information:\n\n| Investment Type | Expected annual return (%) |\n|---|---|\n| Certificates of deposit | 1.8 |\n| Treasury bills | 2.3 |\n| Commercial paper | 2.8 |\n| Equities | 8.0 |\n\nIf the equity risk premium is 3.5%, what is the current inflation rate?",
+  "option_a": "1.5%",
+  "option_b": "2.0%",
+  "option_c": "2.5%",
+  "correct_answer": "B",
+  "explanation_en": "Nominal return is the expected return on an asset. Three factors influence nominal return: the risk-free rate, the inflation rate, and the risk\npremium. Most investors estimate these factors, resulting in varying nominal return figures. The risk-free rate is the return received by investors\nwho take no risk. The risk premium is the additional return an investor receives for investing in a risky asset. The inflation rate is the percent\nchange in the cost of a basket of goods over time.\nThe nominal return (expected annual return) of equities is given at 8%. Since the return on short-term government bonds is the optimal proxy for\nthe risk-free rate, it can be used here to find the current inflation rate. Using the other given information, rearrange the nominal return formula to\nsolve for the missing variable.\n(Choice A) This option incorrectly calculates inflation using the expected return on certificates of deposit as a proxy for the risk-free rate.\nCertificates of deposit are bank-issued investments; they do not have the full faith and credit of the United States. This is not the best proxy for the\nrisk-free rate.\n(Choice C) This choice calculates the inflation rate using the expected return on commercial paper. Commercial paper is a company-issued,\nshort-term fixed income investment. This investment is subject to more risks than affect government securities. The expected return of\ncommercial paper is not the best proxy for the risk-free rate and overstates the inflation rate."
+ },
+ {
+  "id": "843dcc3a-efad-464c-bb93-c0e790c83bdb",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\1. Quantitative Methods\\1.01 Rates and Returns - Answers.pdf",
+  "page_idx": 41,
+  "png": "scripts\\_uworld_residuals_png\\843dcc3a-efad-464c-bb93-c0e790c83bdb.png",
+  "topic": "Quantitative Methods",
+  "subtopic": "1.01 Rates and Returns",
+  "question_en": "A portfolio manager has compiled an investment's annual returns for three years: The average annual compounded return on the investment over the three-year holding period is closest to:",
+  "option_a": "0.76%",
+  "option_b": "1.00%",
+  "option_c": "2.29%",
+  "correct_answer": "A",
+  "explanation_en": "The compounded periodic rate of return for an asset is the geometric mean return. It is used to measure the periodic average of investment\nperformance over multiple consecutive periods.\nCompounding assumes that one period's ending investment value is the next period's beginning value (ie, that returns accumulate). The\ngeometric mean is the average periodic rate of return that accounts for compounding and includes accumulated returns in subsequent periods. In\nthis instance, there are three annual periods (ie, N = 3), so the geometric mean is:\n(Choice B) 1.00% is the arithmetic mean, which is calculated as the simple average of multiple periodic returns and does not reflect\ncompounding.\n(Choice C) 2.29% is the holding period return, which is the total cumulative return received over the three-year period, not the annual return."
+ },
+ {
+  "id": "98d125f7-e754-4bb1-bc67-ecb3f0028fc4",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\1. Quantitative Methods\\1.01 Rates and Returns - Answers.pdf",
+  "page_idx": 8,
+  "png": "scripts\\_uworld_residuals_png\\98d125f7-e754-4bb1-bc67-ecb3f0028fc4.png",
+  "topic": "Quantitative Methods",
+  "subtopic": "1.01 Rates and Returns",
+  "question_en": "An analyst reviews the performance of three exchange-traded funds (ETFs): Which ETF had the highest three-year annual geometric mean return?",
+  "option_a": "Large-cap ETF",
+  "option_b": "Mid-cap ETF",
+  "option_c": "Small-cap ETF",
+  "correct_answer": "A",
+  "explanation_en": "The geometric mean return (GMR) formula is used to convert actual performance data over multiple periods into a comparable format. The\nGMR produces a constant periodic return, usually annual, from actual periodic returns. The actual periodic returns, which are geometrically\nlinked, produce an actual total return. The GMR breaks this multiperiod total return into a conforming time period.\nAdvantages of the GMR include allowing for varying investment levels and comparability. The simple arithmetic mean assumes that each\nperiod's level of investment is constant. The GMR is independent of levels of investment, which allows for better performance comparisons\nbetween securities such as large-, mid-, and small-cap exchange-traded funds (ETFs).\nTo calculate the GMR, link the annual returns to produce a three-year total return. Link the returns geometrically (by multiplying), not arithmetically\n(by adding), then convert the three-year total return to an annualized one-year return. Use the total number of years (3) as the root number when\nreconstructing the GMR. The large-cap ETF has the highest annual GMR at 8.8%.\nAdd 1 to the ETF return to represent the initial investment. Subtracting 1 after calculating the GMR removes the effect of the initial investment.\nScaling all initial investments of any dollar amount to a base of 1 allows for comparable performance figures.\n(Choice B) This option incorrectly employs the arithmetic mean to find each of the ETFs' returns. The arithmetic mean is dependent on the level\nof investment. It assumes a constant investment.\n(Choice C) In this calculation, +1.5% instead of −1.5% is used in Year 2 for the mid-cap ETF. Omitting the minus sign for negative returns is a\ncommon computational error."
+ },
+ {
+  "id": "cfaab151-43a7-4178-a93f-6ab245bd3436",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\1. Quantitative Methods\\1.01 Rates and Returns - Answers.pdf",
+  "page_idx": 11,
+  "png": "scripts\\_uworld_residuals_png\\cfaab151-43a7-4178-a93f-6ab245bd3436.png",
+  "topic": "Quantitative Methods",
+  "subtopic": "1.01 Rates and Returns",
+  "question_en": "An analyst gathers monthly investment returns for a 9-month period: The analyst notes that the data set has outliers and decides to calculate the average considering all nine observations while limiting the range of returns to be between the 20th and 80th percentile. Using these parameters, the mean is closest to:",
+  "option_a": "7.00%",
+  "option_b": "7.29%",
+  "option_c": "7.67%",
+  "correct_answer": "C",
+  "explanation_en": "Outliers can significantly distort the accuracy of statistical measures used to summarize a data set of observations. They can be treated in three\ndifferent ways when calculating the mean:\nThe arithmetic mean reflects the entire data set, including outliers.\nThe trimmed mean eliminates all outliers from the data set.\nThe winsorized mean includes outliers but \"corrects\" their values to fall within an acceptable range.\nThe winsorized mean thus reflects the total number of observations without allowing distortion by outliers. In this scenario, the analyst specifies\nthat the acceptable range of values is between the 20th and 80th percentiles. The winsorized mean is calculated as follows:\nStep 1: Find the range of acceptable values by locating the observations at the 20th and 80th percentiles:\nL = (9 + 1) × (20 / 100) = 2: the lower limit is the 2nd observed value\n20\nL = (9 + 1) × (80 / 100) = 8: the upper limit is the 8th observed value\n80"
+ },
+ {
+  "id": "b671a720-f320-4b34-ba1e-31e6e855b256",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\1. Quantitative Methods\\1.01 Rates and Returns - Answers.pdf",
+  "page_idx": 14,
+  "png": "scripts\\_uworld_residuals_png\\b671a720-f320-4b34-ba1e-31e6e855b256.png",
+  "topic": "Quantitative Methods",
+  "subtopic": "1.01 Rates and Returns",
+  "question_en": "The following table shows an investment's closing price on each day: Based only on this information, the continuously compounded return of the investment from March 1 to May 1 is closest to:",
+  "option_a": "23.1%",
+  "option_b": "26.2%",
+  "option_c": "30.0%",
+  "correct_answer": "B",
+  "explanation_en": "A continuously compounded rate of return is one way to measure an asset's change in value over a holding period, assuming that changes in\nvalue are compounded continuously. This differs from discrete compounding, which assumes that compounding occurs at evenly spaced\nintervals, such as weekly or annually. The asset's change in value has two elements:\nChange in price over the period (ie, gain, loss)\nIncome received from the asset over the period\nThese two elements are used to calculate the asset's total return. The formula for calculating total return is:\nThe total return is used to calculate the holding period return (HPR), which is (Total return − 1).\nIn this scenario, the investment does not pay interest or a dividend, so its HPR from March 1 to May 1 is (65 / 50) − 1 = 0.3, or 30%. The\ncontinuously compounded return over this period is the natural logarithm of (1 + HPR) = the natural logarithm of (Total return), or ln(1 + 0.3) ≈"
+ },
+ {
+  "id": "4f222882-ecdb-4ada-b2d3-5db846f9d54b",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\1. Quantitative Methods\\1.01 Rates and Returns - Answers.pdf",
+  "page_idx": 24,
+  "png": "scripts\\_uworld_residuals_png\\4f222882-ecdb-4ada-b2d3-5db846f9d54b.png",
+  "topic": "Quantitative Methods",
+  "subtopic": "1.01 Rates and Returns",
+  "question_en": "A university receives contributions to its endowment fund at the beginning of each year. The fund generates the returns displayed in the chart below: Over the four-year period, the measure that shows the highest return is the:",
+  "option_a": "internal rate of return.",
+  "option_b": "time-weighted rate of return.",
+  "option_c": "money-weighted rate of return.",
+  "correct_answer": "B",
+  "explanation_en": "The time-weighted rate of return (TWR) and the money-weighted rate of return (MWR) are both portfolio return measures. The TWR measures\nthe compound growth rate of a portfolio and excludes impact from contributions and withdrawals. The MWR is the internal rate of return on a\nportfolio and accounts for the impact of contributions and withdrawals.\nThe MWR equates the present value of the cash outflows to the present value of the investor's cash inflows. The outflows (contributions) are\nprovided in the question. The value of the fund at the end of Year 4 should be treated as the only inflow for the purpose of calculating MWR.\nSolve for MWR:\nDetermine cash inflows:\nCalculate MWR:\nThe TWR is the geometric growth of the portfolio without considering the impact of contributions and withdrawals. To solve for TWR, find the\nannual geometric mean of annual returns over all four years.\nSolve for TWR:"
+ },
+ {
+  "id": "422f198b-2a78-4a3e-be4a-64e26d2716e0",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\1. Quantitative Methods\\1.01 Rates and Returns - Answers.pdf",
+  "page_idx": 2,
+  "png": "scripts\\_uworld_residuals_png\\422f198b-2a78-4a3e-be4a-64e26d2716e0.png",
+  "topic": "Quantitative Methods",
+  "subtopic": "1.01 Rates and Returns",
+  "question_en": "A hedge fund manager invested in three investments, A, B, and C, with differing holding periods. The manager collected the following information:\n\n# First Table\n\n| Investment performance | A | B | C |\n|---|---|---|---|\n| Holding period return | 0.5% | 50.0% | 350.0% |\n| Holding period return | 5 days | 23 months | 6.7 years |\n\n# Second Table\n\n| Time (years) | Price (AUD) |\n|---|---|\n| 0 | 99 |\n| 1 | 105 |\n| 2 | 113 |\n\nWhich of the three investments has the lowest annualized rate of return?",
+  "option_a": "Investment A",
+  "option_b": "Investment B",
+  "option_c": "Investment C",
+  "correct_answer": "B",
+  "explanation_en": "In a discretely compounded return, an investment's return compounds periodically (eg, monthly, quarterly) for a defined number of periods within a certain time frame. In a continuously compounded return, returns compound over infinite periods within a certain time frame. The continuously compounded return is the natural log of (1 + Holding period return). In this scenario, the holding period return is calculated as follows: (Choice A) 13.00% results from incorrectly multiplying the annual geometric return by 2. (Choice B) 13.87% results from incorrectly dividing the two-year continuously compounded return by 2, and then annually compounding it for 2 years."
+ },
+ {
+  "id": "61d32679-ebb7-4580-8be4-be4397af669a",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\1. Quantitative Methods\\1.01 Rates and Returns - Answers.pdf",
+  "page_idx": 19,
+  "png": "scripts\\_uworld_residuals_png\\61d32679-ebb7-4580-8be4-be4397af669a.png",
+  "topic": "Quantitative Methods",
+  "subtopic": "1.01 Rates and Returns",
+  "question_en": "An investor is reviewing investment performance and collects the following information:\n\n```markdown\n| (AUD millions) | Year 1 | Year 2 | Year 3 |\n|---|---|---|---|\n| Beginning value of investment | 0 | 1,150 | 1,285 |\n| Beginning of year contributions | 1,000 | 500 | 0 |\n| Total investment at beginning of year | 1,000 | 1,650 | 1,285 |\n| Portfolio performance (%) | 15% | -10% | 20% |\n| Portfolio performance | 150 | (165) | 257 |\n| Portfolio withdrawals | 0 | (200) | 0 |\n| Ending value of investment | 1,150 | 1,285 | 1,542 |\n\n| Investment | Type of Return | Returns (%) |\n|---|---|---|\n| X | Holding period return over two years | 8.0 |\n| Y | Holding period return each year for two years | 3.9 |\n| Z | Continuously compounded return for two years | 7.9 |\n```\n\nIf withdrawals only occur at year-end, the investor's money-weighted return over the three years is closest to:",
+  "option_a": "6.03%",
+  "option_b": "7.49%",
+  "option_c": "8.28%",
+  "correct_answer": "A",
+  "explanation_en": "The money-weighted return (MWR), an application of the internal rate of return (IRR), measures investment performance based on an\ninvestor's cash flows. The net present value (NPV) represents the sum of all discounted investor cash flows. When cash flows are discounted\nby the MWR, the NPV = 0 and the initial investment is equal to the future discounted contributions and withdrawals.\nThe relevant cash flows for calculating MWR are the:\ninvestor's contributions (ie, investor's outflows)\ninvestor's withdrawals (ie, investor's inflows), and\ninvestment's value at the end of the measuring period.\nThe investment's ending value is an inflow; as if the investor liquidated the entire investment at the end of the measuring period.\nDiscount the investor's cash flows over the appropriate time period. The initial investment (AUD 1,000) occurs at time zero, so it is not\ndiscounted. Consider the beginning of the year contributions as occurring at the end of the previous period. When withdrawals occur at the end of\nthe year, as in this question, they are discounted over that year as well as all prior periods.\nAfter the cash flows have been identified, solve for the MWR using a financial calculator. Enter positive values for cash inflows and negative\nvalues for cash outflows."
+ },
+ {
+  "id": "9faa70ab-a96d-4598-a010-cebdcebffdd6",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\1. Quantitative Methods\\1.01 Rates and Returns - Answers.pdf",
+  "page_idx": 15,
+  "png": "scripts\\_uworld_residuals_png\\9faa70ab-a96d-4598-a010-cebdcebffdd6.png",
+  "topic": "Quantitative Methods",
+  "subtopic": "1.01 Rates and Returns",
+  "question_en": "An investment fund holds investments X, Y, and Z. An analyst reviews the following information:\n\n| | 20X8 Allocation | 20X8 Annual Return | 20X9 Allocation | 20X9 Annual Return |\n|---|---|---|---|---|\n| Investment X | 0.40 | 0.30 | 0.30 | 0.25 |\n| Investment Y | 0.05 | 0.10 | 0.10 | 0.10 |\n| Investment Z | 0.55 | 0.20 | 0.60 | -0.10 |\n\nThe geometric mean return for the fund over two years is closest to:",
+  "option_a": "12.5%",
+  "option_b": "13.0%",
+  "option_c": "14.0%",
+  "correct_answer": "A",
+  "explanation_en": "To find the two-year geometric mean return, first determine the portfolio returns for 20X8 and 20X9. The portfolio return is the weighted\naverage return of the holdings of the portfolio. It is based on each holding's weight and return. Using the portfolio return formula, find the fund's\nannual return for 20X8 and 20X9.\nLink these annual returns to determine the two-year geometric mean return using the geometric mean formula. Time-weighted returns nullify the\ninfluences created from cash flows and improve comparability of returns.\nThe geometric mean return for the fund over two years is 12.51%.\n(Choice B) This choice correctly finds the portfolio return for 20X8 and 20X9 but uses the arithmetic mean instead of the geometric mean to find\nthe two-year mean return.\n(Choice C) This option correctly uses the geometric mean formula but mistakenly applies a simple arithmetic return (arithmetic mean), not a\nweighted average return, for the components of the portfolio return."
+ },
+ {
+  "id": "37908a75-b11b-40f4-8e9c-28106b37e061",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\1. Quantitative Methods\\1.03 Statistical Measures of Asset Returns - Answers.pdf",
+  "page_idx": 28,
+  "png": "scripts\\_uworld_residuals_png\\37908a75-b11b-40f4-8e9c-28106b37e061.png",
+  "topic": "Quantitative Methods",
+  "subtopic": "1.03 Statistical Measures of Asset Returns",
+  "question_en": "An analyst collects a portfolio's stock returns from last year and plots them on the following box-and-whisker plot:\n\n- Upper extreme: 10%\n- Upper quartile (Q3): 6%\n- Median: 2%\n- Lower quartile (Q1): -1%\n- Lower extreme: -6%\n\nThe interquartile range is closest to:",
+  "option_a": "3.5%",
+  "option_b": "4.0%",
+  "option_c": "7.0%",
+  "correct_answer": "C",
+  "explanation_en": "A box-and-whisker plot shows how ordered data is distributed across quartiles. The upper bound of the box marks the third quartile (Q3); the lower bound marks the first quartile (Q1). The box therefore displays the interquartile range (IQR), the difference between Q3 and Q1, representing the range of the middle half of observations.\n\nIQR = Q3 - Q1 = 6% - (-1%) = 7.0%.\n\n(Choice A) 3.5% results from incorrectly dividing the IQR in half.\n(Choice B) 4.0% results from incorrectly dividing the full range of the dataset [10% - (-6%) = 16%] by the number of quartiles (4); the IQR does not include the whiskers or any outliers."
+ },
+ {
+  "id": "352e12c3-c429-4de1-868d-9ca447925d21",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\1. Quantitative Methods\\1.03 Statistical Measures of Asset Returns - Answers.pdf",
+  "page_idx": 16,
+  "png": "scripts\\_uworld_residuals_png\\352e12c3-c429-4de1-868d-9ca447925d21.png",
+  "topic": "Quantitative Methods",
+  "subtopic": "1.03 Statistical Measures of Asset Returns",
+  "question_en": "The monthly returns for a mutual fund are: If the target monthly return is 1.5%, the fund's target semideviation (%) is closest to:",
+  "option_a": "1.88",
+  "option_b": "2.00",
+  "option_c": "2.65",
+  "correct_answer": "B",
+  "explanation_en": "An investment's standard deviation measures the dispersion of returns above and below the mean, so it can indicate the investment's potential\nupside and downside for investors. Investors are most often concerned about an investment's potential downside.\nTarget semideviation focuses on an investment's downside risk and therefore considers only returns below a target return. The target can be\nthe mean or another investor-selected metric (eg, minimum acceptable return). In this scenario, the target semideviation is calculated as follows:"
+ },
+ {
+  "id": "550c625f-7278-4806-8061-7b0744e6e190",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\1. Quantitative Methods\\1.03 Statistical Measures of Asset Returns - Answers.pdf",
+  "page_idx": 22,
+  "png": "scripts\\_uworld_residuals_png\\550c625f-7278-4806-8061-7b0744e6e190.png",
+  "topic": "Quantitative Methods",
+  "subtopic": "1.03 Statistical Measures of Asset Returns",
+  "question_en": "For four years, an investor invests €1,000,000 annually in a stock at the following prices (per share): The average price per share paid for the stock over the four-year period is closest to:",
+  "option_a": "€141.89",
+  "option_b": "€143.42",
+  "option_c": "€145.00",
+  "correct_answer": "A",
+  "explanation_en": "The harmonic mean is a weighted average. It is a measure of central tendency typically used for averaging ratios (stated as \"amount per unit\")\nwhere an observation's value is inversely proportional to its weight in the average. It can be used for cost averaging (ie, finding average price per\nshare) when fixed amounts are invested periodically.\nIn this instance, since the investor is investing annually the same total amount, €1,000,000, a lower stock price implies that a larger number of\nshares can be purchased. Thus, the lower (higher) share prices should be assigned larger (smaller) weights in the average since a greater\n(smaller) number of shares in the investment portfolio was purchased at that price. The harmonic mean assigns a larger weight to smaller\nobservations and therefore is appropriate.\n(Choice B) The geometric mean is most appropriate for calculating the average growth rate over multiple consecutive return periods by taking\ncompounding into account. It is not a weighted average.\n(Choice C) The arithmetic mean is a simple average of the purchase prices, assigning equal weight to all observations."
+ }
+]

@@ -1,0 +1,191 @@
+[
+ {
+  "id": "3f91a49c-25f6-4321-844f-d27fc798cf0f",
+  "verdict": "ok",
+  "evidence": "PNG page matches: table, options, correct_answer A, and explanation all verified verbatim against 4.04 Working Capital and Liquidity - Answers.pdf page 8 (1-indexed 'Q8')."
+ },
+ {
+  "id": "a3cc7477-a670-47ca-95fc-af5f2fca799b",
+  "verdict": "ok",
+  "evidence": "PNG page matches: table, options, correct_answer A, and explanation verified verbatim against PDF page 9 ('Q9')."
+ },
+ {
+  "id": "06683c1e-0a85-4e16-80fa-0f110f3dd0a4",
+  "verdict": "ok",
+  "evidence": "PNG page matches: table, options, correct_answer C, and explanation verified verbatim against PDF page 21 ('Q21')."
+ },
+ {
+  "id": "9c51aa0b-2104-46cd-869f-7cfc2d0a2ede",
+  "verdict": "ok",
+  "evidence": "PNG page matches: table, options, correct_answer A, and explanation verified verbatim against PDF page 15 ('Q15')."
+ },
+ {
+  "id": "7595fe8c-ebcb-4979-9156-38529fd6147c",
+  "verdict": "formatting_missing",
+  "field": "question_en",
+  "new_value": "An analyst obtains the following information about a bond with no embedded options:\n\n| | |\n|---|---|\n| Effective duration | 13.0 years |\n| Price value of a basis point | 0.12 |\n| Price if YTM decreases by 1 basis point | 94.17 |\n\nIf the bond's YTM increases by 1 basis point, the best estimate of the bond's price is closest to:",
+  "evidence": "PDF page 4 (7.11 Yield-Based Bond Duration Measures and Properties, 'Q3') shows a 3-row data table (Effective duration/PVBP/Price if YTM decreases) entirely missing from stored question_en. Confirmed via fitz text extraction of page 3 (0-indexed)."
+ },
+ {
+  "id": "7595fe8c-ebcb-4979-9156-38529fd6147c",
+  "verdict": "explanation_wrong",
+  "field": "explanation_en",
+  "new_value": "The price value of a basis point (PVBP), a measure of yield duration, is an estimate of how much a bond's price changes in currency given a 1-basis-point change in its YTM. A basis point is 1/100 of a percentage point, or 0.0001. The PVBP of a bond is also known as the bond's PV01 (price value) or DV01 (dollar value) of a 1-basis-point change.\n\nThe PVBP can be calculated as (PV− − PV+) / 2 or, alternatively, as the product of approximate modified duration, the bond's initial value (PV0), and 1 basis point (0.0001). The reason these two calculations yield the same result is shown here.\n\nIn this scenario, since the PVBP and price of the bond for a YTM increase are given, substitute each to calculate the price for a 1-basis-point increase in YTM as follows:\n\n0.12 = (94.17 − PV+) / 2\nPV+ = 93.93\n\n(Choice A) 92.31 is the result of calculating the initial price of the bond using the relationship PVBP = ApproxModDur × PV0 × 0.0001 and using effective duration instead of the approximate modified duration. Also, this question asks for the price when the bond's YTM increases, not its initial price.\n\n(Choice C) 94.41 is the result of incorrectly substituting 94.17 for PV+ and then solving for PV+. The price of the bond when the yield decreases, not increases, is 94.17.",
+  "evidence": "Stored explanation is entirely unrelated: it discusses money duration and a multi-bond portfolio (Bonds X/Y/Z) — not this single-bond PVBP question. Confirmed against fitz text of PDF page 3 (0-indexed) and its rendered PNG; correct_answer B (93.93) is itself correct and left unchanged."
+ },
+ {
+  "id": "100cce43-fdf8-4b02-9632-304b67d39e52",
+  "verdict": "explanation_wrong",
+  "field": "explanation_en",
+  "new_value": "A company's weighted average cost of capital (WACC) measures its cost to raise additional capital, assuming new projects are funded by the same proportions of capital. WACC is often used to evaluate the potential profitability of new projects. When projects have average risk, an internal rate of return (IRR) that is less (greater) than the company's WACC means the project is deemed unprofitable (profitable) since its return is less (greater) than the company's opportunity cost of capital.\n\nIn this question, to calculate the WACC the cost of equity component must be derived via the Gordon growth model, then the weights of debt and equity must be derived from the company's debt-to-equity (D/E) ratio. This can be done as follows:\n\nRearrange Gordon growth model: V0 = D1/(r − g); r = D1/V0 + g\nCalculate cost of equity: r = 40/500 + 0.025 = 0.105\nCalculate weights of debt and equity: D/E = 0.8 = 0.8/1.0; wd = D/(D+E) = 0.8/(0.8+1.0) ≈ 0.444; we = E/(D+E) = 1.0/(0.8+1.0) ≈ 0.556\nCalculate WACC: WACC = (0.444 × 0.05) + (0.556 × 0.105) ≈ 0.0806\n\nThe company's WACC is 8.06%. Since both projects have IRRs that are less than the company's WACC, the company should invest in neither project.\n\n(Choice A) The company would invest in both projects if the D/E ratio were misinterpreted as the percentage of the company's capital financed by debt when calculating the WACC. This would result in a WACC of 6.1%.\n\n(Choice B) The company would invest only in Project B if the dividend growth rate were not added to (D1/V0) when calculating the cost of equity (8%). This would result in a WACC of 6.67%.",
+  "evidence": "Stored explanation was truncated after 'shown below:' and its continuation was actually page 21's boilerplate WACC intro + LOS line ('...values, not their book values...Calculate and interpret the weighted-average cost of capital for a company') copy-pasted in, unrelated to this Gordon-growth/IRR question. Correct full text combines 4.06 Capital Structure - Answers.pdf pages 7 and 8 (0-indexed 6-7), confirmed via fitz text dump. question_en and correct_answer (C) already match the PDF and are unchanged."
+ },
+ {
+  "id": "7d8b39ef-46a1-4aa4-b077-f88f68ff6b21",
+  "verdict": "explanation_wrong",
+  "field": "explanation_en",
+  "new_value": "When a company uses debt, it incurs interest expense, which lowers taxable income and tax expense. This creates a beneficial \"tax shield\" (ie, shielding income from taxation) of using debt that partially offsets the cost of debt, such that the after-tax cost of debt [rd(1 − t)] is less than the pretax cost of debt (rd).\n\nWith all else equal, a lower (higher) tax rate creates a smaller (greater) benefit and increases (decreases) the after-tax cost of debt. Since a decrease in the tax rate increases the after-tax cost of debt, it increases the weighted average cost of capital (WACC). In this question, the decrease in the tax rate means that the WACC can only increase, so the correct answer must be a WACC greater than 7.5%.\n\nTo solve for the WACC when the tax rate is 15%, first calculate the weights of debt (wd) and equity (we) by using the WACC formula with the existing tax rate of 25%. Since the company has no preferred stock, wd + we = 100% and wd = 1 − we:\n\nWACC = (1 − we)(rd)(1 − t) + we re — Modify the WACC formula\n0.075 = (1 − we)(0.05)(1 − 0.25) + 0.10we — Use given information\n0.075 = 0.0375 − 0.0375we + 0.10we — Simplify\nwe = 0.60 — Solve for the weight of equity\nwd = (1.00 − 0.60) = 0.40 — Solve for the weight of debt\n\nWACC = (0.4)(0.05)(1 − 0.15) + (0.6)(0.10)\n= 0.017 + 0.06\n= 0.077, or 7.70%\n\nOnce the weights of debt and equity are known, the answer can be found by using the WACC formula again but with a lower tax rate of 15%. The increase in the company's WACC from 7.50% to 7.70% is due solely to a lower tax rate.\n\n(Choice A) 7.50% is the WACC found by assuming that the weights of debt and equity are each 50%, using the pretax cost of debt. This suggests that there is no tax effect on the cost of debt.\n\n(Choice C) 7.83% is the WACC found by using the lower tax rate of 15%, not 25%, to determine the weight of debt and equity in the target allocation.",
+  "evidence": "Stored explanation was actually item f4359ed1's explanation (a different question: tax rate 25%->40%, 12% starting WACC, wd/we=0.60/0.40 from a 0.12 equation) copy-pasted in — mismatched with this question's own 25%->15%, 7.5% starting WACC scenario. Correct text sourced from 4.06 Capital Structure - Answers.pdf page 19 (0-indexed 18), confirmed via fitz text dump and PNG. question_en and correct_answer (B) already match and are unchanged."
+ },
+ {
+  "id": "11d78f2a-bd72-40ab-abf3-27ad7043f80d",
+  "verdict": "formatting_missing",
+  "field": "question_en",
+  "new_value": "Information for a company is shown below:\n\n| Item | Value |\n|---|---|\n| Book value of assets | $70 million |\n| Market value of assets | $92.5 million |\n| Book value of equity | $20 million |\n| Market value of equity | $30 million |\n| Cost of equity | 13% |\n| Percentage of liabilities that is debt | 80% |\n| Corporate tax rate | 30% |\n\nIf the company's weighted average cost of capital (WACC) is 8.0%, its pretax cost of debt is closest to:",
+  "evidence": "PDF page 22 (0-indexed 21) has a 7-row data table entirely missing from stored question_en."
+ },
+ {
+  "id": "11d78f2a-bd72-40ab-abf3-27ad7043f80d",
+  "verdict": "explanation_wrong",
+  "field": "explanation_en",
+  "new_value": "A company's weighted average cost of capital (WACC) is its overall cost of capital. WACC combines the proportion of each component in the overall capital structure (ie, \"weight\") with the cost of that component. When calculating WACC, weights are based on the components' market values, not their book values. The steps demonstrating how to derive the cost of debt are shown below:\n\nRearrange accounting equation to derive liabilities: $92.5 million − $30 million = $62.5 million\n80% of the company's liabilities are debt (given in question): $62.5 million × 0.80 = $50 million\nCalculate weights of each component by dividing its market value by the total market value of all capital components: Weight(debt) = D/(D+E); Weight(equity) = E/(D+E)\nInsert market values to derive weights of debt and equity: Weight(debt) = 50/(50+30) = 0.625; Weight(equity) = 30/(50+30) = 0.375\nWACC formula highlighting unknown variable: 0.08 = (0.625)(pretax cost of debt)(1 − 0.3) + (0.375)(0.13)\nRearrange WACC formula to isolate pretax cost of debt: 0.08 − 0.04875 = (0.625)(pretax cost of debt)(0.7); 0.03125/(0.625 × 0.7) = pretax cost of debt; 0.0714 ≈ pretax cost of debt\n\n(D = market value debt, E = market value equity)",
+  "evidence": "Stored explanation was truncated right after the intro paragraph and omitted the entire derivation table (liabilities, weights, and pretax cost of debt solve) visible on the page. correct_answer C already matches the PDF checkmark and is unchanged."
+ },
+ {
+  "id": "f4359ed1-e581-4be7-af03-c870895eeb9a",
+  "verdict": "formatting_missing",
+  "field": "question_en",
+  "new_value": "An analyst gathers the following information about a profitable company's target costs of capital:\n\n| Item | Value |\n|---|---|\n| Cost of equity | 16% |\n| Pretax cost of debt | 8% |\n| Weighted average cost of capital (WACC) | 12% |\n\nThe company has no other sources of capital. All else being equal, if its tax rate changes from 25% to 40%, its new WACC will be closest to:",
+  "evidence": "PDF page 12 (0-indexed 11) has a 3-row 'Selected Financial Data' table entirely missing from stored question_en."
+ },
+ {
+  "id": "f4359ed1-e581-4be7-af03-c870895eeb9a",
+  "verdict": "explanation_wrong",
+  "field": "explanation_en",
+  "new_value": "When a company uses debt, it incurs interest expense, which lowers taxable income and tax expense. This creates a beneficial \"tax shield\" (ie, shielding income from taxation) using debt that partially offsets the cost of debt, such that:\nthe after-tax cost of debt [rd(1 − t)] < the pretax cost of debt (rd).\n\nAll else equal, a higher (lower) tax rate creates a greater (smaller) benefit and decreases (increases) the after-tax cost of debt. Since an increase in the tax rate decreases the cost of debt, it decreases the weighted average cost of capital (WACC). In this question, the increase in the tax rate means that WACC can only decrease, not increase, so 12% represents the highest possible WACC (Choice C).\n\nTo solve for the WACC when the tax rate is 40%, first calculate the weights of debt (wd) and equity (we) by using the WACC formula with the existing tax rate of 25%. Since the company has no preferred stock, wd + we = 100% and wd = 1 − we:\n\nWACC = (1 − we)rd(1 − t) + we re — Modify the WACC formula\n0.12 = (1 − we)(0.08)(1 − 0.25) + we(0.16) — Use given information\n0.12 = 0.06 − 0.06we + 0.16we — Simplify\nwe = 0.60 — Solve for the weight of equity\nwd = (1.00 − 0.60) = 0.40 — Solve for the weight of debt\n\nOnce the weights of debt and equity are known, the answer can be found by using the WACC formula again, but with the higher tax rate of 40%. The decrease in the company's WACC from 12.00% to 11.52% is solely due to a higher tax rate.\n\nWACC = (0.4)(0.08)(1 − 0.4) + (0.6)(0.16)\n= 0.0192 + 0.096\n= 11.52%\n\n(Choice A) 9.60% is the WACC if the weight of equity and debt are the same (50%). This would be the case if 8% were the after-tax cost of debt.",
+  "evidence": "Stored explanation was cut off mid-sentence right after 'Modify the WACC formula' and omitted the numeric solve (0.12=..., we=0.60, wd=0.40, WACC=11.52%) and the Choice A remark, all present on PDF page 12 (0-indexed 11). correct_answer B already matches and is unchanged."
+ },
+ {
+  "id": "b0fc66fd-efdb-4ad5-b9af-38513e585050",
+  "verdict": "ok",
+  "evidence": "question_en (fenced markdown table), correct_answer B, and full explanation (including 'HP 12c TI BA II Plus' calculator prefix) verified verbatim against 4.06 Capital Structure - Answers.pdf page 29 (0-indexed) / PNG."
+ },
+ {
+  "id": "d994c7dc-5e01-4ca8-8cd6-5f81b9974485",
+  "verdict": "explanation_wrong",
+  "field": "explanation_en",
+  "new_value": "A company's WACC is the weighted average cost of its different sources of capital. The most common sources are common equity, preferred stock, and debt.\n\nIn this scenario, all inputs to solve for WACC are given, except the cost of preferred stock. Calculate the company's cost of preferred stock (rp), then use that value with the given variables to solve for WACC.\n\n1. Calculate cost of preferred stock (rp): rp = Dp/Pp = 2.6/50 = 0.052\n2. Solve for WACC: WACC = wd rd(1 − t) + wp rp + we re\nWACC = 0.61(0.058) × (1 − 0.25) + 0.35(0.071) + 0.04(0.052) = 0.0535\n\n(Choice B) WACC of 5.48% results from inappropriately dividing the preferred dividend by the preferred stock share price at issuance to calculate the cost of preferred stock.\n\n(Choice C) WACC of 6.25% results from failing to account for the after-tax cost of debt.",
+  "evidence": "Stored explanation was a verbatim duplicate of item b0fc66fd's (a different question about CAPM/beta=1.61), entirely unrelated to this preferred-stock-cost question. Correct text sourced from PDF page 30 (0-indexed 29), confirmed via fitz text dump and PNG. question_en (already has full table) and correct_answer (A) are unchanged."
+ },
+ {
+  "id": "e5ae75fa-5fa0-4b24-bc2d-cc35f0ef5eea",
+  "verdict": "explanation_wrong",
+  "field": "explanation_en",
+  "new_value": "The Modigliani-Miller (MM) propositions hold that, assuming perfectly efficient capital markets, a company's value and WACC are unaffected by capital structure changes. However, if the perfectly efficient market assumption is relaxed to acknowledge corporate taxes, all else equal, then according to the MM propositions:\n\n- The market value of a levered company is greater than that of an unlevered but otherwise identical company due to the debt tax shield.\n- Since the value of the levered company is greater, its WACC must be lower.\n- The cost of equity moves in proportion to the levered company's tax-adjusted D/E ratio.\n\nIn this case, the company currently has no debt, so its WACC equals the cost of equity. After adding leverage, the company's WACC is calculated as follows:\n\nThe levered WACC is approximately 6.83%. All else equal, with leverage, the company's WACC is less than its unlevered WACC (8.00%); the benefit of the tax shield increases the company's value, decreasing its WACC (Choice C).\n\n(Choice A) 5.71% is the result of using the company's unlevered value to find the levered cost of equity.",
+  "evidence": "Stored explanation was truncated at 'calculated as follows:' with no result or Choice remarks. This question's answer/explanation spans PDF pages 16-17 (0-indexed 15-16); page 16 opens directly with 'The levered WACC is approximately 6.83%...' confirming the derivation table itself is not present as extractable text/image on page 15, so no numeric table was fabricated beyond what is verifiable. correct_answer B already matches and is unchanged."
+ },
+ {
+  "id": "31d96396-6b0e-4066-bb5a-d33080b39c8f",
+  "verdict": "explanation_wrong",
+  "field": "explanation_en",
+  "new_value": "A firm maximizes its value when operating at its optimal capital structure. In practice, this point of maximization is difficult to identify, and a range for leverage is often used when specifying a target capital structure. A firm may operate at its current capital structure in the short run and theoretically achieve its target capital structure in the long run; the firm's WACC would be calculated using the target structure.\n\nWhen a company's target capital structure is unknown, it can be estimated as:\n- the company's current capital structure,\n- an average of comparable companies' capital structures, or\n- by examining the company's historical capital structure and management's capital structure policy.\n\nThe table below demonstrates how to calculate WACC using target weights of debt and equity:\n\nCalculate the average debt-to-equity (D/E) ratio based on market values: Average D/E = (0.6 + 0.2 + 0.3)/3 = 0.367\nFind the weights of debt and equity: Weight of debt = (D/E)/(1+D/E) = 0.37/1.37 = 0.27; Weight of equity = 1 − Weight of debt = 1 − 0.27 = 0.73\nCalculate the WACC: WACC = (0.27)(0.07) + (0.73)(0.11) = 9.93%\n\n(Choice A) 9.35% results from incorrectly using the book values of debt and equity when estimating the target capital structure, instead of using the market values.\n\n(Choice B) 9.53% results from incorrectly using the average debt-to-equity ratio as the weight of debt.",
+  "evidence": "Stored explanation omitted the entire 'Steps/Calculations' derivation table (average D/E, weights, final WACC=9.93%) that appears between 'target weights of debt and equity:' and '(Choice A)' on PDF page 22 (0-indexed). question_en (has table) and correct_answer (C) already match and are unchanged."
+ },
+ {
+  "id": "17e887d4-ee3a-4a24-a29a-e80296187806",
+  "verdict": "ok",
+  "evidence": "question_en (with table), correct_answer B, and full 6-step explanation verified verbatim against 4.06 Capital Structure - Answers.pdf page 26 (0-indexed) / PNG."
+ },
+ {
+  "id": "b79694e6-c53c-4cb3-9970-b780ee3c4efb",
+  "verdict": "explanation_wrong",
+  "field": "explanation_en",
+  "new_value": "When companies sell equipment, they report a noncash gain (loss) equal to the difference between the cash received from the sale and current net book value (BV) of the equipment. When the net BV of the equipment sold is not provided, financial statement items can be used to estimate the cost.\n\nIn this scenario, to calculate the BV of the disposed equipment, use the relationship between the change in the equipment's net BV and factors that account for that change: capital expenditures (ie, increases to BV) and depreciation expense and disposals of equipment (ie, decreases to BV). The net BV of the disposed equipment can be derived as follows:\n\nCalculate Net BV of equipment at beginning and end of period:\nNet BV(Beg) = Gross BV(Beg) − Accumulated depreciation(Beg) = 760 − 140 = 620\nNet BV(End) = Gross BV(End) − Accumulated depreciation(End) = 800 − 150 = 650\n\nCalculate change in Net BV: 650 − 620 = 30\n\nCalculate Net BV of equipment disposed: 30 = Capital expenditures − Depreciation expense − Net BV equipment disposed\n30 = 65 − 20 − Net BV equipment disposed\nNet BV equipment disposed = 65 − 20 − 30 = 15\n\nSince the cash received from the sale is 55, the gain from the sale is 40 (55 − 15).",
+  "evidence": "Stored explanation discusses IFRS/US GAAP tax classification of investment income on the cash flow statement (CFO vs CFI, rental income taxes) — entirely unrelated to this gain-on-sale-of-equipment question. Correct text sourced from 5.04 Analyzing Statements of Cash Flows I - Answers.pdf page 6 (0-indexed 5) / PNG. question_en (has table) and correct_answer (C) already match and are unchanged."
+ },
+ {
+  "id": "c409068b-bbd1-4d47-ae62-084c9e2b76b5",
+  "verdict": "formatting_missing",
+  "field": "question_en",
+  "new_value": "A company reports the following data (in millions):\n\n| Income statement | | Indirect cash flow statement | |\n|---|---|---|---|\n| Net sales | $1,500 | Net income | $200 |\n| Cost of goods sold | 800 | Depreciation and amortization | 150 |\n| Gross profit | 700 | Adjustments for changes to net working capital: | |\n| Sales and wage expenses | 250 | Increase in inventory | -10 |\n| Depreciation and amortization | 150 | Decrease in accounts receivable | 20 |\n| Operating income | 300 | Decrease in wages payable | -15 |\n| Interest expense | 50 | Decrease in accounts payable | -5 |\n| Tax expense | 50 | Increase in interest payable | 0 |\n| Net income | 200 | Increase in taxes payable | 5 |\n| | | Cash from operating activities | 345 |\n\nBased on only this information, the cash paid to suppliers (in $ millions) reported on the company's cash flow statement in the direct format would be closest to:",
+  "evidence": "PDF page 4 (0-indexed 3) has a two-column Income statement / Indirect cash flow statement data table entirely missing from stored question_en."
+ },
+ {
+  "id": "c409068b-bbd1-4d47-ae62-084c9e2b76b5",
+  "verdict": "explanation_wrong",
+  "field": "explanation_en",
+  "new_value": "Components of direct cash flow statement:\n- Cash received from customers = Revenue − Δ accounts receivable\n- Cash paid to suppliers = COGS + Δ inventory − Δ accounts payable\n- Cash paid to employees = Wage expense − Δ wages payable\n- Cash paid for interest = Interest expense − Δ interest payable\n- Cash paid for taxes = Tax expense − Δ taxes payable\n(Note: Δ reflects changes to balances, so signs may differ from indirect cash flow statement.)\n\nCash flow from operating activities can be presented in a company's cash flow statement using either the direct or indirect method. The direct method displays cash inflows (eg, cash received from customers) and cash outflows (eg, cash paid to suppliers). An indirect cash flow statement can be converted to the direct format by adjusting for the changes in working capital items found on the statement.\n\nTo solve this question, the sources and uses of cash on the indirect cash flow statement must be converted to changes of balances on the balance sheet, which are then used in the equations above. On the indirect cash flow statement:\n\nA net negative cash flow from inventory indicates an increase (ie, a positive change) in inventory as purchases (ie, a use of cash) exceeded COGS. In this case, the change in inventory of −10 on the indirect cash flow statement indicates an increase in the inventory balance on the balance sheet. This results in an increase to cash paid to suppliers of 10.\n\nA net negative cash flow from accounts payable indicates a decrease (ie, a negative change) in accounts payable as the company paid more to suppliers (ie, a use of cash) than it purchased on credit (ie, a source of cash). In this case, a change of accounts payable of −5 is a decrease in the accounts payable balance. This results in an increase to cash paid to suppliers of 5.\n\nNote: since inventories are an asset while accounts payable are a liability, their signs on the cash flow statement indicate different directions for the change in cash.\n\nCash paid to suppliers = COGS + Δ inventory − Δ accounts payable\nCash paid to suppliers = 800 + 10 − (−5) = 815",
+  "evidence": "Stored explanation discusses interest expense/interest payable in SGD for a completely different question — unrelated to cash paid to suppliers. Correct text sourced from PDF page 4 (0-indexed 3) / PNG. correct_answer C (815) already matches and is unchanged."
+ },
+ {
+  "id": "6a490e28-47c0-45c0-be37-ddef57b4235a",
+  "verdict": "ok",
+  "evidence": "question_en (with table), correct_answer B, and explanation with matching figures (5, 70, 10, 65, Choice A/C remarks) verified against 5.04 Analyzing Statements of Cash Flows I - Answers.pdf page 8 (0-indexed 7) / PNG."
+ },
+ {
+  "id": "8797701f-c956-49e1-82d4-70ab2abce967",
+  "verdict": "formatting_missing",
+  "field": "question_en",
+  "new_value": "A company reports the following information in its first year of operations:\n\n| Item | Value |\n|---|---|\n| Taxable profit | €155,000 |\n| Accounting profit | €140,000 |\n| Tax rate | 20% |\n\nAll else equal, if the tax rate had been 25% instead of 20%, then most likely the company's:",
+  "evidence": "PDF page 27 (0-indexed 26) has a 3-row data table entirely missing from stored question_en."
+ },
+ {
+  "id": "8797701f-c956-49e1-82d4-70ab2abce967",
+  "verdict": "explanation_wrong",
+  "field": "explanation_en",
+  "new_value": "DTA at 20% tax = (155,000 − 140,000) × 0.20 = 3,000\nDTA at 25% tax = (155,000 − 140,000) × 0.25 = 3,750\nΔDTA = 3,750 − 3,000 = 750\n\nDeferred tax assets (DTA) and liabilities arise from temporary differences between income tax expense and taxes payable for a period. These differences are expected to reverse over time and offset previous deferred tax items. Income tax expense is based on reported accounting income from the income statement. Taxes payable is based on taxable income on the tax return and is the actual amount owed to the government.\n\nDTA arise when:\n- Taxable income > Accounting income and\n- Taxes payable > Tax expense.\n\nDeferred tax liabilities (DTL) arise when:\n- Taxable income < Accounting income and\n- Taxes payable < Tax expense.\n\nIn this scenario, a DTA is created since taxable income is greater than accounting income (Choice C).\n\nThe deferred tax amount can be calculated as the product of the absolute difference between the taxable income and accounting income and the tax rate. Therefore, the size of the deferred tax item is directly correlated to the tax rate. If the tax rate were higher, the amount of the DTA increase would be higher as well (Choice A).",
+  "evidence": "Stored explanation never mentions the €750 figure referenced by all three answer options and omits the DTA-at-20%/DTA-at-25% numeric derivation shown on the page. correct_answer B already matches and is unchanged."
+ },
+ {
+  "id": "2be956f7-c6b9-4d04-912c-ec046fbb9c56",
+  "verdict": "formatting_missing",
+  "field": "question_en",
+  "new_value": "An analyst collects the following information (in € millions) on a company:\n\n| Item | Value |\n|---|---|\n| Income tax expense | 500 |\n| Deferred tax assets (DTAs) | 40 |\n| Deferred tax liabilities (DTLs) | 80 |\n| Prior year DTA | 50 |\n| Prior year DTL | 60 |\n\nBased on only this data, the company's income taxes payable (in € millions) is closest to:",
+  "evidence": "PDF page 21 (0-indexed 20) has a 5-row data table entirely missing from stored question_en."
+ },
+ {
+  "id": "2be956f7-c6b9-4d04-912c-ec046fbb9c56",
+  "verdict": "explanation_wrong",
+  "field": "explanation_en",
+  "new_value": "Deferred tax assets (DTAs) and liabilities (DTLs) reflect temporary differences between income tax expense and taxes payable, created by differences between accounting standards and tax laws. Income tax expense is reported on the income statement according to accounting standards, whereas taxes payable is the actual amount owed to the government based on applicable tax laws.\n\nWhen tax expense is less than taxes payable, DTA is created since the company:\n- pays more in taxes in the current period and\n- will owe less in taxes in the future.\n\nWhen tax expense is greater than taxes payable, DTL is created since the company:\n- pays less in taxes in the current period and\n- will owe more in taxes in the future.\n\nThe equation above shows how changes in DTL and DTA are related to tax expense and taxes payable (Tax expense = Taxes payable + ΔDTL − ΔDTA). To calculate taxes payable, substitute values for all the other variables:\n\nTaxes payable = Tax expense − ΔDTL + ΔDTA\n= 500 − (80 − 60) + (40 − 50) = 470\n\n(Choice B) 490 results from reversing the sign when treating the change in DTA.\n(Choice C) 510 results from reversing the sign when treating the change in DTL.",
+  "evidence": "Stored explanation omitted the numeric taxes-payable derivation (=470) that directly supports correct_answer A, ending instead at 'substitute values for all the other variables.' correct_answer A already matches and is unchanged."
+ },
+ {
+  "id": "2ba07e17-2db0-4345-a23c-fe256c1dcad4",
+  "verdict": "formatting_missing",
+  "field": "question_en",
+  "new_value": "An analyst gathers the following information about a company that reports under US GAAP:\n\n| (USD thousands) | Year 2 | Year 1 |\n|---|---|---|\n| Net deferred tax assets | 6,400 | 7,600 |\n| Accounting profit | 2,300 | 2,100 |\n| Taxable income | 3,300 | 1,900 |\n\nIn Year 2, the decrease in net deferred tax assets most likely results from an increase in:",
+  "evidence": "PDF page 22 (0-indexed 21) has a 3-row Year 2 / Year 1 data table entirely missing from stored question_en. explanation_en was checked against the same page and matches fully verbatim, so no explanation fix is needed."
+ },
+ {
+  "id": "0c3bfc8c-ece9-4d6f-bcff-ef78f83bf7e0",
+  "verdict": "explanation_wrong",
+  "field": "explanation_en",
+  "new_value": "Tax expense appears on a company's income statement. It demonstrates what a company owes in taxes based on applicable accounting standards. For some items, the tax laws mandate treatment different from accounting standards. This difference means that the taxes that the company pays (or owes) are not the same as it reports as tax expense.\n\nIf the disparity between tax expense and taxes payable is expected to reverse in the future, the company creates a deferred tax asset (DTA) or a deferred tax liability (DTL). A DTA signals investors that the company will pay less tax in the future than it pays in the current period; a DTL signals the opposite.\n\nTax expense relates to taxes payable by adding the difference between the change in DTL and DTA for a given period. As a simple example, if a company reports a tax expense of $20 and taxes payable of $12, it creates a DTL of $20 − 12 = $8 to account for the difference. If the company had no previous DTL, its DTL increased by $8, and the above equality holds (ie, $20 = $12 + 8).\n\nRearrange the formula above to solve for taxes payable: Taxes payable = Tax expense + ΔDTA − ΔDTL\n\nTax expense = 19\nΔDTA = 15 − 17 = −2\nΔDTL = 29 − 24 = 5\n\nTaxes payable = 19 + (−2) − 5 = 12\n\n(Choice B) This choice incorrectly adds both the change in DTL and DTA.\n(Choice C) This choice incorrectly adds the change in DTL and subtracts the change in DTA.",
+  "evidence": "The batch's page_idx (31) actually points to a different question (the one that correctly belongs to sibling item 487f7133); this item's real page is 30 (0-indexed) in 5.09 Analysis of Income Taxes - Answers.pdf, confirmed by full-text search for 'taxes payable for 20X8' and by rendering that page directly. The stored explanation topic/wording is correct (matches page 30's intro) but was truncated before the numeric derivation table (ΔDTA=−2, ΔDTL=5, Taxes payable=12). question_en (already has the correct table) and correct_answer (A) match page 30 and are unchanged."
+ },
+ {
+  "id": "487f7133-3bb0-4cd8-ace0-a0ccd3b65df4",
+  "verdict": "formatting_missing",
+  "field": "question_en",
+  "new_value": "An analyst gathers the following information about a company reporting under US GAAP:\n\n| ($ millions) | Fiscal Year End 20X1 |\n|---|---|\n| Total deferred tax assets | 1,100 |\n| Valuation allowance | (700) |\n| Total deferred tax assets after valuation allowance | 400 |\n| Total deferred tax liabilities | (1,500) |\n| Net deferred tax liabilities | (1,100) |\n\nAll else being equal, an increase in the statutory tax rate from 20% to 25% would most likely increase:",
+  "evidence": "PDF page 32 (0-indexed 31) has a 5-row data table entirely missing from stored question_en."
+ },
+ {
+  "id": "487f7133-3bb0-4cd8-ace0-a0ccd3b65df4",
+  "verdict": "explanation_wrong",
+  "field": "explanation_en",
+  "new_value": "Deferred tax assets (DTA) and deferred tax liabilities (DTL) result from temporary differences between taxable income (based on tax reporting) and accounting profit (based on financial reporting). These differences create future tax benefits (ie, DTA) or obligations (ie, DTL).\n\nDTA and DTL are reassessed at the end of each fiscal year, based on the tax rates that will be applied in the future when the temporary differences reverse, and DTA is recovered, or DTL is settled. If future income is taxed at higher (lower) rates:\n- the company's tax obligations increase (decrease), resulting in an increased (decreased) DTL, and\n- the benefit of future deductions increases (decreases), resulting in an increased (decreased) DTA.\n\nDTA and DTL are netted and reported as a single item on the balance sheet. In this case, since DTL > DTA, there are no deferred taxes reported as an asset on the balance sheet.\n\n| | 20% rate | 25% rate | Difference |\n|---|---|---|---|\n| Total DTA | 1,100 | 1,375 | 275 |\n| Total DTL | (1,500) | (1,875) | (375) |\n| Net effect | (400) | (500) | (100) |\n\nAn increase in the statutory tax rate increases both DTL and DTA, so in this scenario the net effect is an increase in net DTL. Therefore, total liabilities will increase and the tax rate change will not affect total assets.\n\nNote: No calculation is necessary to answer this question.",
+  "evidence": "Stored explanation was a verbatim duplicate of item 2ba07e17's explanation (a different Year1/Year2 valuation-allowance question), unrelated to this statutory-tax-rate-increase question. Correct text and table sourced from PDF page 32 (0-indexed 31) / PNG, which is the same page rendered for this item's PNG file. correct_answer B already matches and is unchanged."
+ }
+]

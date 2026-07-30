@@ -1,0 +1,359 @@
+[
+ {
+  "id": "5b809aaf-79a0-4d2f-bb7a-af8fb0f90251",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\10. Ethics\\11.02 Code Of Ethics And Standards Of Professional Conduct - Answers.pdf",
+  "page_idx": 6,
+  "png": "scripts\\_uworld_residuals_png\\5b809aaf-79a0-4d2f-bb7a-af8fb0f90251.png",
+  "topic": "Ethics & Professional Standards",
+  "subtopic": "11.02 Code Of Ethics And Standards Of Professional Conduct",
+  "question_en": "A client names a Member in a written complaint involving potential misconduct and files the complaint with the Member's firm. At a minimum, CFA Institute's Code and Standards require that the Member:",
+  "option_a": "self-disclose the incident on the annual Professional Conduct Statement.",
+  "option_b": "immediately disclose the incident to CFA Institute's Professional Conduct Program staff.",
+  "option_c": "self-disclose the incident on the annual Professional Conduct Statement only if the firm finds",
+  "correct_answer": "A",
+  "explanation_en": "Professional conduct\nAll Members and Candidates must file an annual Professional Conduct Statement\nAny matter that questions professional conduct must be disclosed\nWritten complaints sent directly to CFA Institute Professional Conduct Program staff can result in an investigation\nCFA Institute staff may also investigate if they become aware of questionable conduct\nThe CFA Institute Professional Conduct Program provides a framework for handling inquiries about Members' and Candidates' professional\nconduct. The Professional Conduct Program staff can initiate an inquiry based on either an external complaint or an internal investigation. The\nstaff works with the Disciplinary Review Committee to enforce the Code and Standards.\nMembers and Candidates are required to submit a completed Professional Conduct Statement annually. This statement is a pledge to adhere to\nthe Code and Standards and the Professional Conduct Program. It also provides an opportunity to self-disclose questionable behavior.\nWhen a Member or Candidate receives a written complaint that questions his or her professional conduct, the complaint must be disclosed to\nProfessional Conduct Program staff. CFA Institute encourages disclosure at the time of the event, but at a minimum the matter must be disclosed\nwhen filing the annual Professional Conduct Statement (Choice B).\n(Choice C) Regardless of the outcome of any internal (ie, firm) investigation, the Member or Candidate must self-disclose the incident on the\nannual Professional Conduct Statement or directly to Professional Conduct Program staff."
+ },
+ {
+  "id": "0138468d-1e39-4d59-acf6-6d3ed7ff11bb",
+  "reasons": [
+   "no_match"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\3. Portfolio Management\\3.02 Portfolio Risk And Return Part II - Answers.pdf",
+  "page_idx": 50,
+  "png": "scripts\\_uworld_residuals_png\\0138468d-1e39-4d59-acf6-6d3ed7ff11bb.png",
+  "topic": "Portfolio Management",
+  "subtopic": "3.02 Portfolio Risk And Return Part II",
+  "question_en": "An analyst gathers the following information:\n\n# First Table\n\n| Metric | Value |\n|---|---|\n| Market return | 10.0% |\n| US Treasury bill return | 4.0% |\n| Standard deviation of portfolio returns | 22.9% |\n| Fund return | 16.0% |\n| Beta | 1.15 |\n\n# Second Table\n\n| Investment | Expected return (%) | Expected standard deviation (%) | Beta |\n|---|---|---|---|\n| A | 19 | 30 | 1.4 |\n| B | 16 | 26 | 1.1 |\n| C | 6 | 13 | 0.7 |\n| Market | 8 | 18 | 1.0 |\n\n# Third Table\n\n| Metric | Portfolio | Market |\n|---|---|---|\n| Expected return | 10.4% | 8% |\n| Beta | 1.4 | 1.0 |\n| Standard deviation | 15% | 12% |\n\nIf the risk-free rate is 2%, the portfolio's Sharpe ratio is closest to:",
+  "option_a": "0.06",
+  "option_b": "0.56",
+  "option_c": "0.70",
+  "correct_answer": "B",
+  "explanation_en": "Performance evaluation analyzes a portfolio's return and degree of risk. In portfolio management, risk is quantified as either systematic risk, as measured by beta, or total risk, as measured by standard deviation. Total risk includes both systematic and unsystematic risk. The Treynor ratio, which is the ratio of excess return to beta, allows the isolation of systematic risk using beta. This distinguishes it from the Sharpe ratio, which is the ratio of excess return to total risk as measured by standard deviation. In this question, the portfolio with the highest systematic risk is identified as follows: Portfolio 1 has the highest systematic risk, with a beta of 1.50."
+ },
+ {
+  "id": "565dbae6-01d8-470d-be05-ea7c3d517d4a",
+  "reasons": [
+   "no_match"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\7. Fixed Income\\7.11 Yield-Based Bond Duration Measures and Properties - Answers.pdf",
+  "page_idx": 1,
+  "png": "scripts\\_uworld_residuals_png\\565dbae6-01d8-470d-be05-ea7c3d517d4a.png",
+  "topic": "Fixed Income",
+  "subtopic": "7.11 Yield-Based Bond Duration Measures and Properties",
+  "question_en": "An analyst gathers the following information about three bonds:\n\n|  | Bond X | Bond Y | Bond Z |\n|---|---|---|---|\n| Yield-to-maturity (%) |  |  | 6.2 |\n| Coupon paid annually (%) |  |  | 5 |\n| Time-to-maturity (in years) |  |  | 11 |\n| Price when yield decreases by 1 basis point |  | 87.25 |  |\n| Price when yield increases by 1 basis point |  | 87.15 |  |\n| Price value of a basis point | 0.04 |  |  |\n\nAs measured by price value of a basis point, which bond is most sensitive to changes in its YTM?",
+  "option_a": "Bond X",
+  "option_b": "Bond Y",
+  "option_c": "Bond Z",
+  "correct_answer": "C",
+  "explanation_en": "The price value of a basis point (PVBP), a measure of yield duration, is an estimate of how much a bond's price changes given a change of 1\nbasis point in its yield-to-maturity. A basis point is 1/100th of a percentage point, or 0.0001. The PVBP of a bond is also called the bond's\nPV01 or DV01, meaning \"price value\" or \"dollar value\" of a 1-basis-point change.\nIn this scenario, Bond Z's YTM (6.2%), annual coupon (5%), and time-to-maturity (11 years) are given. A 1-basis-point increase in Bond Z's YTM\nresults in a new YTM of 6.21%, and a 1-basis-point decrease results in a new YTM of 6.19%. PV and PV are calculated for Bond Z as follows:\n+ −"
+ },
+ {
+  "id": "e7b5b9ab-ae62-4ea0-9083-391c02487e01",
+  "reasons": [
+   "no_match"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\5. Financial Statement Analysis\\5.09 Analysis of Income Taxes - Answers.pdf",
+  "page_idx": 18,
+  "png": "scripts\\_uworld_residuals_png\\e7b5b9ab-ae62-4ea0-9083-391c02487e01.png",
+  "topic": "Financial Statement Analysis",
+  "subtopic": "5.09 Analysis of Income Taxes",
+  "question_en": "Three companies present the disclosure requirements for income taxes in the notes of their financial statements: Which company most likely has the lowest effective tax rate?\n\n```markdown\n| | Company A | Company B | Company C |\n|---|---|---|---|\n| Earnings before tax | | | |\n| Domestic | 12,500 | 18,300 | 24,600 |\n| Foreign | 2,500 | 5,490 | 6,150 |\n| Current income taxes | | | |\n| Domestic | 4,100 | 5,000 | 8,100 |\n| Foreign | 600 | 1,400 | 1,500 |\n| Deferred taxes | | | |\n| Domestic | -1,200 | 2,600 | -1,500 |\n| Foreign | 250 | 800 | -900 |\n```",
+  "option_a": "Company A",
+  "option_b": "Company B",
+  "option_c": "Company C",
+  "correct_answer": "C",
+  "explanation_en": "Total income tax expense is the sum of the current taxes and the net deferred taxes. Current taxes refers to taxes payable in the current period. Deferred tax assets or liabilities arise from differences between tax reporting and financial reporting. The effective tax rate is the percentage calculated when income tax expense is divided by pretax income: Effective tax rate = Income tax expense / Pretax income.\n\nTotal pretax income is earnings before tax for both domestic and foreign operations. Adding total current income taxes to the change in total deferred taxes results in a company's total income tax expense on both domestic and foreign income. In this scenario, Company C's effective tax rate is the lowest at 23.4%:\n\n| | Company A | Company B | Company C |\n|---|---|---|---|\n| Total pretax income | 15,000 | 23,970 | 30,750 |\n| Total income tax expense | 3,750 | 9,800 | 7,200 |\n| Effective tax rate | 3,750/15,000 = 25.0% | 9,800/23,790 = 41.2% | 7,200/30,750 = 23.4% |"
+ },
+ {
+  "id": "93f2290c-f110-4518-8bde-f0f3e041f12c",
+  "reasons": [
+   "no_match"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\1. Quantitative Methods\\1.04 Probability Trees and Conditional Expectations - Answers.pdf",
+  "page_idx": 4,
+  "png": "scripts\\_uworld_residuals_png\\93f2290c-f110-4518-8bde-f0f3e041f12c.png",
+  "topic": "Quantitative Methods",
+  "subtopic": "1.04 Probability Trees and Conditional Expectations",
+  "question_en": "A regulator devised a test to determine if distressed banks will go bankrupt and has estimated the following related probabilities:\n\n| Probability that a bank does not pass the test | 0.6200 |\n|---|---|\n| Joint probability that a bank goes bankrupt and passes the test | 0.0500 |\n| Probability that a bank goes bankrupt given that it does not pass the test | 0.7903 |\n\nThe probability that a bank goes bankrupt is closest to:",
+  "option_a": "0.06",
+  "option_b": "0.49",
+  "option_c": "0.54",
+  "correct_answer": "C",
+  "explanation_en": "When a question requires a candidate to calculate the probability that an event occurs based on whether a different event occurs or does not occur, this signals the candidate to use the total probability rule: P(bankrupt) = P(bankrupt AND pass) + P(bankrupt AND not pass) = [P(pass) x P(bankrupt | pass)] + [P(not pass) x P(bankrupt | not pass)]. The question asks for the probability of a bank going bankrupt, an event the occurrence of which is related to whether it passes a test. The probability of not passing the test is 0.62, so the probability of passing the test is 1 - 0.62 = 0.38. The joint probability that a bank goes bankrupt and it passes the test is 0.05; the conditional probability that a bank goes bankrupt given that it does not pass the test is 0.7903. The total probability rule can be illustrated as a tree diagram: the first node shows the two unconditional probabilities of whether a bank passes the test or does not pass; the next nodes show the conditional probabilities of bankruptcy and no bankruptcy, based on whether the bank passes the test or not. The two conditional probabilities containing no bankruptcy are irrelevant since the question asks for the probability that a bank goes bankrupt. The joint probability of bankruptcy and passing the test is given in the question as 0.05. The joint probability that a bank goes bankrupt and does not pass the test is calculated as: P(bankrupt AND not pass) = P(not pass) x P(bankrupt | not pass) = 0.62 x 0.7903 = 0.4899. The total probability that a bank goes bankrupt is the sum of the two joint probabilities involving the bank going bankrupt: 0.05 + 0.4899 = 0.5399, or approximately 0.54."
+ },
+ {
+  "id": "61cf6d82-1953-4e28-935a-f68c01663da1",
+  "reasons": [
+   "no_match"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\5. Financial Statement Analysis\\5.02 Analyzing Income Statements - Answers.pdf",
+  "page_idx": 26,
+  "png": "scripts\\_uworld_residuals_png\\61cf6d82-1953-4e28-935a-f68c01663da1.png",
+  "topic": "Financial Statement Analysis",
+  "subtopic": "5.02 Analyzing Income Statements",
+  "question_en": "An analyst collects the following information on two companies:\n\nModified Income Statement\n\n| (€ thousands) | Company A | Company B |\n|---|---|---|\n| Revenue | 20,000 | 15,000 |\n| Cost of goods sold | 5,000 | 4,000 |\n| Gross profit | 15,000 | 11,000 |\n| General and administrative | 5,100 | 2,500 |\n| Depreciation | 5,000 | 2,520 |\n| Operating income | 4,900 | 5,980 |\n| Interest | - | 1,500 |\n| Earnings from continuing operations before tax | 4,900 | 4,480 |\n| Income taxes | 1,460 | 1,900 |\n| Net income | 3,440 | 2,580 |\n\nCompanies A and B paid common dividends of €200,000 and €250,000, respectively. Company A's net profit margin is most likely:",
+  "option_a": "less than Company B's.",
+  "option_b": "equal to Company B's.",
+  "option_c": "greater than Company B's.",
+  "correct_answer": "B",
+  "explanation_en": "Net profit margin reveals how effective management is in managing all expenses and converting revenue to profit. It is used to measure the\namount of net income (ie, based on accounting standards) that the company creates per unit (€) of revenue. A larger net profit margin signals that\nthe company is more efficient at generating a profit.\nHere, divide each company's net income by its revenue to compare the two companies' net profit margins. Both companies have the same net\nprofit margin of 17.2%.\n(Choice A) This choice is correct if the companies' operating profit margin, not net profit margin, is used in the evaluation.\n(Choice C) This answer results if common dividend payments are subtracted from the net income in calculating the net profit margin. Its\ncalculation does not include dividend payments since they are not expenses but instead are a distribution of capital from the company to\nshareholders. This is also true if gross margin, not net profit margin, is used in the evaluation."
+ },
+ {
+  "id": "1a7dddf0-3ed3-4dce-9a68-4414db48f500",
+  "reasons": [
+   "no_match"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\1. Quantitative Methods\\1.03 Statistical Measures of Asset Returns - Answers.pdf",
+  "page_idx": 18,
+  "png": "scripts\\_uworld_residuals_png\\1a7dddf0-3ed3-4dce-9a68-4414db48f500.png",
+  "topic": "Quantitative Methods",
+  "subtopic": "1.03 Statistical Measures of Asset Returns",
+  "question_en": ".A one-week sample of daily closing net asset values for a fund is randomly selected. The observations for the week were 38, 41, 35, 51, and 45. The mean absolute deviation (MAD) for this sample is closest to:",
+  "option_a": "0.0",
+  "option_b": "4.8",
+  "option_c": "6.0",
+  "correct_answer": "B",
+  "explanation_en": "Mean absolute deviation (MAD) measures dispersion (ie, variability) of observations around the mean. Dispersion refers to the difference\nbetween an observation and the mean. Higher dispersion means that the observations are more spread out around the mean, which indicates a\ngreater probability of observations that are significantly higher or lower than the mean. In finance, dispersion indicates risk.\nSince the sum of all dispersions around the mean equals 0, MAD instead uses the absolute value of each dispersion. The sum of all the absolute\nvalues is divided by the number of observations, which produces the average dispersion. The calculations are shown below:\n(Choice A) Data in a sample will be both above and below the mean, so some dispersions around the mean are negative and others are\npositive. The sum of all dispersions equals 0, so the average also equals 0. By using the absolute value of the dispersions, MAD always\ngenerates a number ≥ 0.\n(Choice C) 6.0 results from dividing the sum of the absolute values by (n − 1), or 4, instead of 5. The number of observations minus 1 is used\nonly when calculating the standard deviation of a sample. MAD uses the actual number of observations."
+ },
+ {
+  "id": "0c8f87b8-bf34-43c9-aa0c-25f17643a4bc",
+  "reasons": [
+   "no_match"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\3. Portfolio Management\\10.02 Basics Of Portfolio Planning And Construction - Answers.pdf",
+  "page_idx": 11,
+  "png": "scripts\\_uworld_residuals_png\\0c8f87b8-bf34-43c9-aa0c-25f17643a4bc.png",
+  "topic": "Portfolio Management",
+  "subtopic": "10.02 Basics Of Portfolio Planning And Construction",
+  "question_en": "A manager collects the following data about a client:\n\n| Client age | 42 |\n|---|---|\n| Expected retirement age | 72 |\n| Income | High and exceeds living costs |\n| Dependent family members | • Spouse (age 39) • Twin sons (age 1) |\n| Investment goals | • Retirement • Children's college |\n| Employment (length of years) | Computer programmer (20 years) |\n\nThe length of the client's time horizon is most likely considered to be:",
+  "option_a": "long-term.",
+  "option_b": "short-term.",
+  "option_c": "medium-term.",
+  "correct_answer": "A",
+  "explanation_en": "Investment constraints Time horizon Length of investment objective Taxes Status, treatment of application Need for cash during the time Liquidity horizon All laws in the jurisdiction Legal Special legal status (eg, pension) Special A special aspect of the client circumstances One investment constraint, a client's time horizon, is the length of time needed to meet the client's investment objectives. It ends when objectives are met or the client's needs change. At the end of the time horizon, investments are sold and the proceeds are used to meet each objective. Alternatively, the manager may restructure the portfolio to meet the client's new objectives with new time horizons. There is no authoritative body that determines time horizons, but in general, a short-term time horizon is approximately less than 3 years. Long- term time horizons are most often greater than 15 years. Here, stable employment (20 years as a computer programmer) and high current income (which exceeds living costs) suggest that the client's foreseeable needs are satisfied. Since the twins are very young, the time horizon for college savings is greater than 15 years; the time horizon for retirement is 30 years (retirement age less current age). Given this evidence, the client's time horizon is long-term (Choices B and C)."
+ },
+ {
+  "id": "d9055f89-9b7e-42d9-a628-54a666c912d3",
+  "reasons": [
+   "no_match"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\7. Fixed Income\\7.10 Interest Rate Risk and Return - Answers.pdf",
+  "page_idx": 6,
+  "png": "scripts\\_uworld_residuals_png\\d9055f89-9b7e-42d9-a628-54a666c912d3.png",
+  "topic": "Fixed Income",
+  "subtopic": "7.10 Interest Rate Risk and Return",
+  "question_en": "A 7% semiannual payment corporate bond that matures on January 11, 2035 is purchased for settlement on its coupon payment date of July 11, 2023. If the bond is priced with a 10.2% YTM, the bond's annual Macaulay duration is closest to:",
+  "option_a": "7.1",
+  "option_b": "7.6",
+  "option_c": "15.2",
+  "correct_answer": "B",
+  "explanation_en": "Macaulay duration is a type of yield duration that measures the sensitivity of a bond's full price to changes in its own YTM. The Macaulay duration\nis the weighted average time to receipt of the bond's payments. The weights are the portions of the bond's full price that correspond to each of the\nfuture payments. Macaulay duration can also be thought of as the average time to receipt of the bond's payments that will result in realization of\nthe bond's initial, stated YTM.\nIn this scenario:\nt/T = 0/T = 0 since the bond settles on its July 11, 2023 coupon payment date\nYTM is 10.2% and YTM per period is r = (0.102 / 2) = 0.051\nCoupon per period is c = (0.07 / 2) = 0.035\nN = 23 = (11.5 years × 2 semiannual periods per year)\nSubstitute these values into the formula to calculate the bond's Macaulay duration per period:\nThe result of this calculation is the bond's Macaulay duration per period. Dividing by the number of periods per year results in the bond's annual\nMacaulay duration: 15.18 ÷ 2 = 7.59.\n(Choice A) 7.1 is the result of incorrectly interpreting the fact that the bond's settlement is on the coupon payment date to mean that t = T, so that\nt/T = 1. The correct value of t/T in this question is 0/T = 0.\n(Choice C) 15.2 is the result of failing to convert Macaulay duration per period into annual Macaulay duration."
+ },
+ {
+  "id": "2aca9da5-65bc-41c4-93cb-4e2c27b386a9",
+  "reasons": [
+   "no_match"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\5. Financial Statement Analysis\\5.03 Analyzing Balance Sheets - Answers.pdf",
+  "page_idx": 18,
+  "png": "scripts\\_uworld_residuals_png\\2aca9da5-65bc-41c4-93cb-4e2c27b386a9.png",
+  "topic": "Financial Statement Analysis",
+  "subtopic": "5.03 Analyzing Balance Sheets",
+  "question_en": "An analyst collects the following year-end information on three companies:\n\n| Selected Financial Data ($ thousands) | Company X | Company Y | Company Z |\n|---|---|---|---|\n| Cash | 1,200 | 16,500 | 3,000 |\n| Accounts receivable | 3,000 | 5,300 | 8,000 |\n| Inventory | 8,000 | 23,000 | 16,000 |\n| Total current assets | 12,200 | 44,800 | 27,000 |\n| Property, plant, and equipment | 6,000 | 9,000 | 10,000 |\n| Goodwill | 7,000 | 8,500 | 5,000 |\n| Total assets | 25,200 | 62,300 | 42,000 |\n\nOn its common-size balance sheet, which company most likely reports the highest percentage of inventory?",
+  "option_a": "Company X",
+  "option_b": "Company Y",
+  "option_c": "Company Z",
+  "correct_answer": "C",
+  "explanation_en": "A common-size balance sheet reports accounts (ie, assets and liabilities) on the balance sheet as a percentage of total assets. It is a useful\ntool for comparing companies of various sizes at the same point in time. To convert a balance sheet to a common-size balance sheet, divide each\nasset account balance by the company's total assets.\nHere, divide each company's inventory by its total assets to determine which company has the highest percentage of inventory on its common-size\nbalance sheet. Company Z's inventory as a percentage of total assets is 38.1%, the greatest of the three companies.\n(Choice A) Company X would have the highest percentage of inventory if common-size balance sheets were based on current assets, not total\nassets.\n(Choice B) Company Y has the highest amount of inventory in currency terms, but not as a percentage of total assets."
+ },
+ {
+  "id": "c91f9139-5b26-4d4a-b73f-4128ee167966",
+  "reasons": [
+   "no_match"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\5. Financial Statement Analysis\\5.03 Analyzing Balance Sheets - Answers.pdf",
+  "page_idx": 9,
+  "png": "scripts\\_uworld_residuals_png\\c91f9139-5b26-4d4a-b73f-4128ee167966.png",
+  "topic": "Financial Statement Analysis",
+  "subtopic": "5.03 Analyzing Balance Sheets",
+  "question_en": "A portfolio manager gathers the following data:\n\n# First Table\n\n| | (KRW millions) |\n|---|---|\n| Cash | 15,000 |\n| Accounts receivable | 25,000 |\n| Inventory | 17,000 |\n| Accounts payable | 35,000 |\n| Interest payable | 74,000 |\n| Bonds payable | 135,000 |\n| Noncurrent deferred revenue | 35,000 |\n| Common stock | 157,000 |\n| Retained earnings | 200,000 |\n\n# Second Table\n\n| 20X8 | (€ thousands) |\n|---|---|\n| Assets | 5,000 |\n| Short-term debt | 500 |\n| Long-term debt | 2,000 |\n| Deferred tax liabilities | 300 |\n| Deferred revenue | 100 |\n| Accounts payable | 100 |\n\nIf the company has no other long-term debts, its long-term debt-to-equity ratio is closest to:",
+  "option_a": "0.38",
+  "option_b": "0.48",
+  "option_c": "1.08",
+  "correct_answer": "A",
+  "explanation_en": "Long-term-debt to equity is a solvency ratio that measures a company's ability to pay its long-term obligations and helps gauge a company's\nfinancial risk. The long-term debt-to-equity ratio signifies the level of long-term, interest-bearing debt relative to the amount of equity. The greater\na company's ratio, the weaker the company's solvency. In this scenario:\nLong-term debt includes bonds payable but does not include noncurrent deferred revenue. Bonds payable is considered long-term since payment\nis due in more than 12 months. Some analysts include all long-term liabilities, which would include noncurrent deferred revenue, but CFAI limits\n\"liabilities\" to those that are interest-bearing. In this case, noncurrent deferred revenue is not included since it is not interest-bearing.\nEquity includes common stock and retained earnings. Retained earnings represents the accumulated portion of net income (after paying for\ndividends) that is reinvested back into the company each year.\n(Choice B) 0.48 results from including the noncurrent deferred revenue as part of long-term debt.\n(Choice C) 0.68 results from incorrectly including interest payable as part of long-term debt. Interest payable is a current liability that is due in\nless than 12 months and is not included in long-term debt."
+ },
+ {
+  "id": "35402487-a444-4d96-8af7-751b1940647d",
+  "reasons": [
+   "no_match"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\5. Financial Statement Analysis\\5.03 Analyzing Balance Sheets - Answers.pdf",
+  "page_idx": 12,
+  "png": "scripts\\_uworld_residuals_png\\35402487-a444-4d96-8af7-751b1940647d.png",
+  "topic": "Financial Statement Analysis",
+  "subtopic": "5.03 Analyzing Balance Sheets",
+  "question_en": "A company provides the following balance sheet information:\n\n| ($ millions) | Current year | Prior year |\n|---|---|---|\n| ASSETS |  |  |\n| Current assets | 20 | 15 |\n| Plant, property & equipment | 60 | 45 |\n| Intangible assets | 120 | 85 |\n| Total assets | 200 | 145 |\n| LIABILITIES AND EQUITY |  |  |\n| Current liabilities | 25 | 20 |\n| Long-term notes payable | 20 | 25 |\n| Total liabilities | 45 | 45 |\n| Common stock | 85 | 70 |\n| Retained earnings | 70 | 30 |\n| Total equity | 155 | 100 |\n| Total liabilities and equity | 200 | 145 |\n\nCompared to the prior year, a current year common-size balance sheet would most likely show a(n):",
+  "option_a": "increase in current assets.",
+  "option_b": "increase in common stock.",
+  "option_c": "decrease in current liabilities.",
+  "correct_answer": "C",
+  "explanation_en": "Common-size balance sheets display each line item as a percentage of total assets. Analysts often construct common-size balance sheets to\ncompare the composition of items over time or across companies.\nIn this question, the respective percentages are determined by dividing the items by total assets. The output shows that current liabilities\ndecreased from the prior year as a percentage of total assets from 13.8% to 12.5% despite increasing in amount. Similarly, current assets and\ncommon stock increased from the prior year on an absolute basis but decreased as a percentage of total assets (Choices A and B)."
+ },
+ {
+  "id": "e73b325d-144b-40df-8f30-86cb68e6340e",
+  "reasons": [
+   "no_match"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\5. Financial Statement Analysis\\5.11 Financial Analysis Techniques - Answers.pdf",
+  "page_idx": 1,
+  "png": "scripts\\_uworld_residuals_png\\e73b325d-144b-40df-8f30-86cb68e6340e.png",
+  "topic": "Financial Statement Analysis",
+  "subtopic": "5.11 Financial Analysis Techniques",
+  "question_en": "An analyst calculates the following data:\n\n# First Table\n\n| | Company A | Company B | Company C |\n|---|---|---|---|\n| Net profit margin | 0.05 | 0.08 | 0.15 |\n| Total asset turnover | 1.6 | 2.0 | 0.9 |\n| Leverage | 2.5 | 1.5 | 2.0 |\n\n# Second Table\n\n| € millions | 20X5 | 20X6 | 20X7 |\n|---|---|---|---|\n| Average assets | 117.0 | 116.0 | 115.0 |\n| Average liabilities | 96.0 | 98.0 | 100.0 |\n| Revenues | 40.0 | 42.5 | 45.0 |\n| Net profit margin | 8.6% | 8.7% | 8.8% |\n\n# Third Table\n\n| (In $ Millions) | |\n|---|---|\n| Assets | 500 |\n| Common stock | 280 |\n| Retained earnings (cumulative) | 100 |\n| Treasury stock | 60 |\n\nWhich of the three companies most likely has the highest return on equity?",
+  "option_a": "Company A",
+  "option_b": "Company B",
+  "option_c": "Company C",
+  "correct_answer": "C",
+  "explanation_en": "ROE measures the profit a company creates from using its equity. DuPont analysis entails decomposing ROE into different components: profitability, efficiency, and leverage. By understanding the components of ROE, a company can determine more particularly how it can improve its ROE. ROE is the product of the company's return on assets (ROA) and the amount of leverage it uses. ROA (ie, the ratio of net income to asset value) can also be expressed as the product of profit margin and asset turnover. The more profit the company produces and the more efficiently it uses its assets, the higher its ROE. A company can also increase ROE by borrowing, which increases its leverage. Using DuPont analysis, ROE is the product of the net profit margin, total asset turnover, and leverage. Company C has the highest ROE, 27.0% since its low efficiency is offset by a high profit margin (Choices A and B)."
+ },
+ {
+  "id": "04a9f6de-de07-4e58-be74-e69d0c532e51",
+  "reasons": [
+   "no_match"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\5. Financial Statement Analysis\\5.11 Financial Analysis Techniques - Answers.pdf",
+  "page_idx": 14,
+  "png": "scripts\\_uworld_residuals_png\\04a9f6de-de07-4e58-be74-e69d0c532e51.png",
+  "topic": "Financial Statement Analysis",
+  "subtopic": "5.11 Financial Analysis Techniques",
+  "question_en": "An analyst collects the following information on three companies:\n\n| Selected Financial Data (in AUD except # of shares) | Company A | Company B | Company C |\n|---|---|---|---|\n| Market price per share | 15 | 55 | 30 |\n| Book value of assets | 500,000 | 1,000,000 | 1,200,000 |\n| Book value of liabilities | 60,000 | 250,000 | 850,000 |\n| Outstanding shares | 10,000 | 10,000 | 20,000 |\n\nWhich company has the highest price-to-book ratio?",
+  "option_a": "Company A",
+  "option_b": "Company B",
+  "option_c": "Company C",
+  "correct_answer": "C",
+  "explanation_en": "Valuation ratios compare a stock price to a value measure, such as book value (BV), earnings, cash flow, or sales. A price-to-book (P/B) ratio indicates the price of a company's stock as a multiple of the company's BV of net assets (ie, assets minus liabilities). The price per share is the quoted market price. The P/B ratio can be calculated using per-share or total values: Market price per share divided by BV of net assets per share; Total market capitalization divided by total BV of net assets. The per-share calculation is more common since the market price is quoted on a per-share basis. In this scenario, Company C has a higher P/B ratio (1.71) than the other two companies (Choices A and B)."
+ },
+ {
+  "id": "4d5d2af2-20dc-4e4e-b343-4fdc69b828a3",
+  "reasons": [
+   "no_match"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\5. Financial Statement Analysis\\5.11 Financial Analysis Techniques - Answers.pdf",
+  "page_idx": 17,
+  "png": "scripts\\_uworld_residuals_png\\4d5d2af2-20dc-4e4e-b343-4fdc69b828a3.png",
+  "topic": "Financial Statement Analysis",
+  "subtopic": "5.11 Financial Analysis Techniques",
+  "question_en": "A company's manager collects the following data:\n\n| Selected Financial Data (EUR thousands) | |\n|---|---|\n| Net income | 100,000 |\n| Lease payments | 20,000 |\n| Interest payments | 40,000 |\n| Taxes | 50,000 |\n\nBased on only this data, the company's interest coverage ratio is closest to:",
+  "option_a": "2.50",
+  "option_b": "3.50",
+  "option_c": "4.75",
+  "correct_answer": "C",
+  "explanation_en": "Solvency ratios convey a company's ability to meet its long-term debt obligations. There are two types of solvency ratios:\nDebt ratios measure a company's debt levels relative to its assets or equity. Declining debt ratios indicate that less asset value is financed\nby debt and, therefore, there is less financial risk and stronger solvency.\nCoverage ratios measure a company's ability to pay its required interest payments, based on income and expenses. Rising coverage\nratios mean the company's solvency is stronger since it has relatively more earnings available to pay interest.\nIn this scenario, the focus is on calculating the interest coverage ratio, defined as EBIT divided by interest payments. Interest payments and taxes\nare added back to net income to w EBIT.\nApplying the interest coverage ratio, the company has interest payments covered 4.75 times by EBIT. Put another way, EBIT is 4.75 times larger\nthan the company's interest obligations.\nCalculate and interpret activity, liquidity, solvency, and profitability ratios"
+ },
+ {
+  "id": "01429d8c-de85-44ca-9e1c-3c733f7dc960",
+  "reasons": [
+   "no_match"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\5. Financial Statement Analysis\\5.11 Financial Analysis Techniques - Answers.pdf",
+  "page_idx": 32,
+  "png": "scripts\\_uworld_residuals_png\\01429d8c-de85-44ca-9e1c-3c733f7dc960.png",
+  "topic": "Financial Statement Analysis",
+  "subtopic": "5.11 Financial Analysis Techniques",
+  "question_en": "An analyst obtains the following information for three companies:\n\n| Selected Financial Data | Company A | Company B | Company C |\n|---|---|---|---|\n| Daily cash expenditures | 50,000 | 50,000 | 50,000 |\n| Current liability | 1,500,000 | 1,500,000 | 1,500,000 |\n| Cash ratio | 0.7 | 0.9 | 0.8 |\n| Quick ratio | 1.2 | 1.0 | 1.1 |\n| Current ratio | 1.5 | 2.0 | 2.5 |\n\nWhich of the three companies is most likely to meet its daily cash expenditures?",
+  "option_a": "Company A",
+  "option_b": "Company B",
+  "option_c": "Company C",
+  "correct_answer": "A",
+  "explanation_en": "Liquidity ratios measure a firm's ability to pay its short-term liabilities. A company's defensive interval ratio (DIR) measures the time (eg, days) it\nwould take for the company to exhaust its quick assets (eg, cash + short-term marketable investments + receivables) when paying for its\nongoing expenses. If its DIR is low, the company may not be able to pay its bills.\nSome may understand this ratio as a burn rate (ie, how long it will take the company to burn through its cash and quick assets). To find the\ncompany most likely to meet its daily cash expenditure, first use the quick ratio to find the quick assets; use the quick assets to determine the DIR.\nIn this scenario, since all three companies have the same daily cash expenditures of $50,000 and the same current liabilities of $1,500,000, the\ncompany with the highest quick ratio, Company A, will have the largest amount of quick assets and the largest DIR.\nCompany A is most likely to meet is daily cash expenditures, since it has the highest DIR of 36.\n(Choice B) This choice results from incorrectly using the cash ratio to determine the assets included in the DIR. Doing so excludes accounts\nreceivable, a quick asset, and understates the DIR.\n(Choice C) This choice results from incorrectly using the current ratio to determine assets included in the DIR. This includes inventory, which is\nharder to convert to cash than quick assets and results in an overstatement of the DIR."
+ },
+ {
+  "id": "fa1babd8-e216-47a2-b1dc-49989de8eb5d",
+  "reasons": [
+   "uncertain_answer_diff"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\6. Equity Investments\\6.08 Equity Valuation Concepts And Basic Tools - Answers.pdf",
+  "page_idx": 9,
+  "png": "scripts\\_uworld_residuals_png\\fa1babd8-e216-47a2-b1dc-49989de8eb5d.png",
+  "topic": "Equity Investments",
+  "subtopic": "6.08 Equity Valuation Concepts And Basic Tools",
+  "question_en": "An analyst has gathered the following information about a company's stock: According to the Gordon growth model, the company's justified price-to-earnings ratio implies its stock's value is closest to:",
+  "option_a": "SGD 10",
+  "option_b": "SGD 20",
+  "option_c": "SGD 30",
+  "correct_answer": "A",
+  "explanation_en": "Analysts use valuation models to estimate the intrinsic value of a stock to determine whether it is valued fairly. Common forms of valuation models include multiplier, present value, and asset based. With an asset-based valuation model, a firm's estimated equity value (ie, value to shareholders) is assumed to be equal to the current fair value of assets minus the fair value of liabilities. Analysts often start with the book values of line items on the balance sheet and make fair value adjustments to derive their market values. Since all inputs are based on current data, no long-term growth rate (g) is needed; g is used as an input for forecasting future cash flows (eg, dividends, free cash flows). (Choice A) When a multiplier model is justified (ie, justified P/E), it typically is derived from a present value model (eg, discounted free cash flow, dividend discount model), that includes g as an input. (Choice B) Present value models (eg, dividend discount model) typically require g for forecasting a company's future financial results (eg, dividends, free cash flows). Once forecasts are made, they are discounted to the present at an appropriate discount rate (eg, WACC) to derive an intrinsic value."
+ },
+ {
+  "id": "f1385d93-3b68-4d49-85d8-90ff201f733c",
+  "reasons": [
+   "uncertain_answer_diff"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\6. Equity Investments\\6.08 Equity Valuation Concepts And Basic Tools - Answers.pdf",
+  "page_idx": 19,
+  "png": "scripts\\_uworld_residuals_png\\f1385d93-3b68-4d49-85d8-90ff201f733c.png",
+  "topic": "Equity Investments",
+  "subtopic": "6.08 Equity Valuation Concepts And Basic Tools",
+  "question_en": "An analyst gathers the following information about the common stock of a mature company for which dividend growth is expected to be constant for an indefinite period. Based on this information, the stock is most likely:",
+  "option_a": "undervalued.",
+  "option_b": "fairly valued.",
+  "option_c": "overvalued.",
+  "correct_answer": "B",
+  "explanation_en": "In a present value model, the intrinsic value of a stock is determined by the present values of the stock's future cash flows. The present value of each cash flow is calculated by discounting it by an appropriate discount rate over a relevant time period (ie., discounting the cash flow). The sum of the discounted cash flows is the intrinsic value of the equity. A present value model uses cash flows to value equity. These cash flows may be dividends or free cash flows. If dividends are not available for use, then free cash flows may be used instead. For an application of the present value model, see this present value example. (Choice B) Present value models are based on discounting cash flows over an appropriate time horizon. Thus, the time horizon of each cash flow is required to determine the intrinsic value of the asset. In some models, the time horizon may be infinity, in which case time is not a direct input. However, in these cases the infinite time horizon is implicitly required to use the model. (Choice C) Present value models require an appropriate discount rate. Otherwise the present value cannot be obtained."
+ },
+ {
+  "id": "a074104e-e223-4b8b-84ba-5f9a11730df5",
+  "reasons": [
+   "uncertain_answer_diff"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\3. Portfolio Management\\3.02 Portfolio Risk And Return Part II - Answers.pdf",
+  "page_idx": 34,
+  "png": "scripts\\_uworld_residuals_png\\a074104e-e223-4b8b-84ba-5f9a11730df5.png",
+  "topic": "Portfolio Management",
+  "subtopic": "3.02 Portfolio Risk And Return Part II",
+  "question_en": "An analyst collects the following information on a portfolio's performance over the past year: The Jensen's alpha of the portfolio is closest to:",
+  "option_a": "−0.40",
+  "option_b": "0.27",
+  "option_c": "1.10",
+  "correct_answer": "B",
+  "explanation_en": "Capital market theory states that the market portfolio includes all risky assets. It is a theoretical portfolio that holds traditional assets such as stocks and bonds as well as other assets that may not be tradeable or investable (eg, art, real estate, human capital). The market portfolio ignores real-world constraints and includes these assets. The theoretical market portfolio is not attainable, but a reasonable proxy can be achieved by using a broad global market index. (Choices A and C) The market portfolio does not contain the risk-free asset. If the market portfolio included all assets, then it would hold the risk- free asset as well as risky assets. The theoretical market portfolio is based on assets that are on the efficient frontier and the risk-free asset is not on the efficient frontier."
+ },
+ {
+  "id": "25818e19-7854-4b13-b7d8-45403f528e20",
+  "reasons": [
+   "uncertain_answer_diff"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\5. Financial Statement Analysis\\5.05 Analyzing Statements of Cash Flows II - Answers.pdf",
+  "page_idx": 5,
+  "png": "scripts\\_uworld_residuals_png\\25818e19-7854-4b13-b7d8-45403f528e20.png",
+  "topic": "Financial Statement Analysis",
+  "subtopic": "5.05 Analyzing Statements of Cash Flows II",
+  "question_en": "A company reports the following information:\n\n```markdown\n| Selected Data (SGD millions) | Prior Year | Current Year |\n|---|---|---|\n| Net income | 200 | 215 |\n| Depreciation | 5 | 5 |\n| Interest expense | 20 | 20 |\n| Net working capital | 44 | 53 |\n| Long-term debt | 300 | 295 |\n| Capital expenditures | 40 | 30 |\n```\n\nIf the company has a 25% tax rate, which of the following cash flow measures is greatest?",
+  "option_a": "Free cash flow",
+  "option_b": "Free cash flow to equity",
+  "option_c": "Free cash flow to the firm",
+  "correct_answer": "A",
+  "explanation_en": "Free cash flow (FCF) determines how much excess cash a company generates from its operations after covering its capital expenditures.\nFCF may be used in various ways (eg, reinvesting in the company's business, paying dividends, repaying debt). An analyst can calculate this\ncash flow's value to the company's suppliers of debt and equity capital (ie, free cash flow to the firm [FCFF]) or to only equity shareholders (ie, free\ncash flow to equity [FCFE]) by adjusting for cash items available to those groups.\nFCFF adds back after-tax interest payments since it includes suppliers of debt capital, and interest payments are paid to the company's\ndebtholders. Since FCFE is available to a company's equity shareholders, it adds back the net borrowing (ie. net change in debt). Companies\nmay use any additions to debt for the benefit of equity shareholders through dividend payments or share repurchases.\nFCF = NI + NCC − ΔWC − ΔFC\n= 660 + 260 − 120 − 200 = 600\nFCFE = NI + NCC − ΔWC − ΔFC + Net borrowing\n= FCF + Net borrowing\n= 600 + (535 − 500) = 635\nFCFF = NI + NCC − ΔWC − ΔFC + Int (1 − t)\n= FCF + Int (1 − t)\n= 600 + 40 (1 − 0.25) = 630\nIn this scenario, the largest measure of FCF is the company's FCFE, which is supported by KRW 40 million in net borrowing (Choices A and C)."
+ },
+ {
+  "id": "cada5032-7b1d-499d-87d2-2c600d7574e4",
+  "reasons": [
+   "uncertain_answer_diff"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\4. Corporate Issuers\\4.06 Capital Structure - Answers.pdf",
+  "page_idx": 21,
+  "png": "scripts\\_uworld_residuals_png\\cada5032-7b1d-499d-87d2-2c600d7574e4.png",
+  "topic": "Corporate Issuers",
+  "subtopic": "4.06 Capital Structure",
+  "question_en": "Information for a company is shown below: The company's weighted average cost of capital (WACC) is closest to:",
+  "option_a": "8.2%",
+  "option_b": "9.6%",
+  "option_c": "10.5%",
+  "correct_answer": "B",
+  "explanation_en": "A company's weighted average cost of capital (WACC) is its overall cost of capital. WACC combines the proportion of each component in the\noverall capital structure (ie, \"weight\") with the cost of that component. When calculating WACC, weights are based on the components' market\nvalues, not their book values. The steps demonstrating how to derive the cost of debt are shown below:\nCalculate and interpret the weighted-average cost of capital for a company"
+ }
+]

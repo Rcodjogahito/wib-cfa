@@ -1,0 +1,376 @@
+[
+ {
+  "id": "ffc59edd-60c2-4b29-aa59-6785ec9bfc2b",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\6. Equity Investments\\6.05 Company Analysis Past and Present - Answers.pdf",
+  "page_idx": 1,
+  "png": "scripts\\_uworld_residuals_png\\ffc59edd-60c2-4b29-aa59-6785ec9bfc2b.png",
+  "topic": "Equity Investments",
+  "subtopic": "6.05 Company Analysis Past and Present",
+  "question_en": "A company is developing a product for planned launch in 20X8. An analyst collects the company's 20X7 actual financial data and creates 20X8 forecasts for two scenarios: The company's degree of operating leverage in 20X8 will most likely be:",
+  "option_a": "greater if the new product launches in 20X8.",
+  "option_b": "the same regardless of whether the new product launches.",
+  "option_c": "greater if the new product does not launch in 20X8.",
+  "correct_answer": "B",
+  "explanation_en": "Operating leverage refers to the level of fixed costs in a company's cost structure. Increasing fixed costs relative to variable costs increases operating leverage. The degree of operating leverage (DOL) measures the rate at which operating profit increases (decreases) relative to the rate at which sales increase (decrease). The greater (smaller) a company's operating leverage, the more (less) operating income will change given a change in sales. A company's DOL may differ from its peers' depending on its cost structure, and a single company's DOL can change over time. In this scenario, the company's DOL must be calculated and compared for two separate scenarios: If the company launches a new product If the company does not launch a new product The company's DOL under each scenario can be calculated as: In both scenarios, the percentage change in operating income is twice the percentage change in sales, so the company's DOL is the same (Choices A and C). Note, however, that this may not always be the case, such as if the new product had a greater or lesser contribution margin or fixed cost requirements than the overall company, all else equal."
+ },
+ {
+  "id": "b4891f2b-5d19-47b9-a181-80b29655c1c5",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\6. Equity Investments\\6.05 Company Analysis Past and Present - Answers.pdf",
+  "page_idx": 13,
+  "png": "scripts\\_uworld_residuals_png\\b4891f2b-5d19-47b9-a181-80b29655c1c5.png",
+  "topic": "Equity Investments",
+  "subtopic": "6.05 Company Analysis Past and Present",
+  "question_en": "An analyst collects the following information on a company and its industry peers: Based only on this information, the most appropriate conclusion is that the company:",
+  "option_a": "has a better credit rating than peers.",
+  "option_b": "maintains a conservative capital structure.",
+  "option_c": "generates returns that exceed equity investors' requirements.",
+  "correct_answer": "C",
+  "explanation_en": "Return on equity (ROE) measures how much profit a company generates relative to its equity. ROE is often compared with investors' required rate of return (r) to determine whether the company is generating profit in excess of the return required by its equity investors. When ROE is greater (less) than r, the company is generating a profit that exceeds (falls short of) what is required by investors. DuPont analysis decomposes ROE into measures of profitability, efficiency, and leverage. ROE is the product of the company's profit margin, asset turnover, and leverage ratio (ie, equity multiplier). In this scenario, using the three ratios, the company's ROE can be calculated as 0.04 × 1.2 × 2.5 = 0.12 = 12%, which exceeds the required return on equity of 9%. (Choice A) The company and its peers are in the same industry, yet its cost of debt (6%) exceeds the industry average of 5%. Although a credit rating is based on many factors, this greater cost of debt suggests that the company would have a worse credit rating than its industry peers. (Choice B) The company has an equity multiplier of 2.5 and degree of financial leverage of 2, suggesting a significant amount of debt in its capital structure and therefore higher financial risk. It would not be appropriate to assume that the company has a conservative capital structure."
+ },
+ {
+  "id": "b79911c1-6800-4a7b-86e5-52e9992b5dad",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\1. Quantitative Methods\\1.04 Probability Trees and Conditional Expectations - Answers.pdf",
+  "page_idx": 3,
+  "png": "scripts\\_uworld_residuals_png\\b79911c1-6800-4a7b-86e5-52e9992b5dad.png",
+  "topic": "Quantitative Methods",
+  "subtopic": "1.04 Probability Trees and Conditional Expectations",
+  "question_en": "A and B are two events with the following probabilities:\n\n| | | |\n|---|---|---|\n| Probability of A | P(A) | 0.48 |\n| Probability of B | P(B) | 0.25 |\n| Probability of A and B | P(AB) | 0.06 |\n\nThe probability of A or B is closest to:",
+  "option_a": "0.12",
+  "option_b": "0.67",
+  "option_c": "0.73",
+  "correct_answer": "B",
+  "explanation_en": "The addition rule for probabilities describes how to calculate the probability that A or B will occur: P(A or B) = P(A) + P(B) - P(AB), which simplifies to P(A) + P(B) if the events are mutually exclusive (P(AB) = 0).\n\nIn this scenario, P(AB) = 0.06 ≠ 0, so events A and B are not mutually exclusive:\n\nP(A or B) = P(A) + P(B) - P(AB) = 0.48 + 0.25 - 0.06 = 0.67\n\n(Choice A) 0.12 is the result of incorrectly using the multiplication rule for two independent events instead of the addition rule.\n(Choice C) 0.73 is the result of failing to subtract P(AB), which double counts the joint probability."
+ },
+ {
+  "id": "bde09cd7-fd39-4858-aacb-413c6124ae48",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\1. Quantitative Methods\\1.04 Probability Trees and Conditional Expectations - Answers.pdf",
+  "page_idx": 1,
+  "png": "scripts\\_uworld_residuals_png\\bde09cd7-fd39-4858-aacb-413c6124ae48.png",
+  "topic": "Quantitative Methods",
+  "subtopic": "1.04 Probability Trees and Conditional Expectations",
+  "question_en": "wo research analysts asked a mutual fund manager the following questions: Analyst A: \"What is the probability that the fund will have a zero percent return this year?\" Analyst B: \"What is the probability that the fund will have a negative return this year?\" The two events described by the analysts are most likely:",
+  "option_a": "mutually exclusive and exhaustive.",
+  "option_b": "mutually exclusive and not exhaustive.",
+  "option_c": "neither mutually exclusive nor exhaustive.",
+  "correct_answer": "B",
+  "explanation_en": "An event is a set of possible outcomes. In this situation, the two events are Event A: the fund earns a return of 0% Event B: the fund earns a return of less than 0% (ie, a negative return) These two events are mutually exclusive, meaning that they cannot both occur at the same time. If Event A happens, then Event B cannot happen at the same time. Exhaustive events cover all possible outcomes. Event A and Event B are not exhaustive since they do not cover outcomes in which returns are greater than 0%."
+ },
+ {
+  "id": "5f2ddee4-d0e3-4c4f-9eff-f2b0e8293b59",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\1. Quantitative Methods\\1.04 Probability Trees and Conditional Expectations - Answers.pdf",
+  "page_idx": 5,
+  "png": "scripts\\_uworld_residuals_png\\5f2ddee4-d0e3-4c4f-9eff-f2b0e8293b59.png",
+  "topic": "Quantitative Methods",
+  "subtopic": "1.04 Probability Trees and Conditional Expectations",
+  "question_en": "A money management firm surveyed individuals about their attitudes toward investing. A partial summary of the data is shown below: If a randomly selected individual's portfolio holds equities, the probability that the investor is not an active investor is closest to:",
+  "option_a": "11.0%",
+  "option_b": "24.6%",
+  "option_c": "44.8%",
+  "correct_answer": "B",
+  "explanation_en": "The addition rule can be used to determine the probability of an event OR another event. For any two events (A and B), the addition rule for probabilities describes how to calculate the probability that A or B will occur, or P(A or B). The formula can be simplified from P(A or B) to P(A) + P(B) if the events are mutually exclusive, which is true if their joint probability is equal to zero [P(AB) = 0]. This makes sense: if events are mutually exclusive, there is zero chance of them both occurring. As described in the diagram above, if events are not mutually exclusive, adding P(A) and P(B) will double count P(AB), the joint probability of A and B, which would overestimate the probability of A or B occurring. Thus, after P(A) and P(B) are added together, P(AB) is subtracted to avoid double counting. In this scenario, P(AB) is not equal to zero [P(AB) = 0.06], so events A and B are not mutually exclusive. The probability of A or B is calculated as: (Choice A) 0.12 is the result of incorrectly using the multiplication rule for the probabilities of two independent events, instead of using the addition rule for probabilities. The multiplication rule describes how to calculate the joint probability that both A and B occur. (Choice C) 0.73 is the result of failing to subtract the joint probability [P(AB)] of A and B. If the events are not mutually exclusive, failing to subtract the joint probability has the effect of double counting P(AB)."
+ },
+ {
+  "id": "1596531e-eca1-4ec0-8a91-97c6ed2d6404",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\1. Quantitative Methods\\1.04 Probability Trees and Conditional Expectations - Answers.pdf",
+  "page_idx": 3,
+  "png": "scripts\\_uworld_residuals_png\\1596531e-eca1-4ec0-8a91-97c6ed2d6404.png",
+  "topic": "Quantitative Methods",
+  "subtopic": "1.04 Probability Trees and Conditional Expectations",
+  "question_en": "A and B are two events with the following probabilities:\n\n| Probability of A | P(A) | 0.31 |\n|---|---|---|\n| Probability of B | P(B) | 0.90 |\n| Probability of A given B | P(A\\|B) | 0.28 |\n\nThe joint probability of A and B is closest to:",
+  "option_a": "0.0868",
+  "option_b": "0.2520",
+  "option_c": "0.2790",
+  "correct_answer": "B",
+  "explanation_en": "When asked to calculate the joint probability of two events, use the multiplication rule for probability: P(AB) = P(A|B)P(B). If the events A and B are independent, then P(A) = P(A|B) (ie, probability of A is the same as probability of A given B) since the probability of A occurring is the same whether or not B occurs. If this is the case, the multiplication rule simplifies to P(AB) = P(A)P(B). In this scenario, P(A) is not equal to P(A|B): 0.31 ≠ 0.28. Therefore, events A and B are not independent. Substitute into the multiplication rule: (Choice A) 0.0868 is equal to P(A|B)P(A). This is an incorrect statement of the multiplication rule since the second event in the conditional probability should be the same as the event in the second part of the product: P(AB) = P(A|B)P(B) = P(B|A)P(A). (Choice C) 0.2790 is the result of incorrectly treating events A and B as if they were independent [ie, P(AB) = P(A)P(B)]. Since the events are not independent, P(AB) = P(A|B)P(B) must be used instead."
+ },
+ {
+  "id": "9df53df9-8d7f-4ee8-bb90-5352e69b89e6",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\1. Quantitative Methods\\1.04 Probability Trees and Conditional Expectations - Answers.pdf",
+  "page_idx": 10,
+  "png": "scripts\\_uworld_residuals_png\\9df53df9-8d7f-4ee8-bb90-5352e69b89e6.png",
+  "topic": "Quantitative Methods",
+  "subtopic": "1.04 Probability Trees and Conditional Expectations",
+  "question_en": "An analyst determines that the probabilities of two events are as follows: Assuming the events are independent but not mutually exclusive, the probability that at least one of the two events will occur is closest to:",
+  "option_a": "0.16",
+  "option_b": "0.66",
+  "option_c": "0.82",
+  "correct_answer": "B",
+  "explanation_en": "Conditional probability is the probability that one event will occur given that another event occurs. For example, an analyst may believe there is a 0.30 probability that a company will report earnings per share (EPS) of at least USD 0.20 (Event B). If Event B occurs, the analyst estimates a 0.60 probability that the company will increase its dividend (Event A). This describes a conditional probability since an of EPS of more than USD 0.20 impacts the probability of the dividend increase. Conditional probability can be higher, lower, or the same as unconditional probability. For example, the analyst may believe there is a 0.15 unconditional probability that the company will raise its dividend regardless of EPS. The conditional probability of a dividend increase given a threshold level of EPS (0.60) is higher than the unconditional probability of a dividend increase (0.15). (Choice A) Mutually exclusive events are events that cannot occur at the same time: P(A and B) = 0. Since this is the numerator of the equation for conditional probability, conditional probability for mutually exclusive events is always 0. (Choice C) The numerator for the conditional probability of B given A is P(B and A). However, P(B and A) is the same as P(A and B). This means that the conditional probability of A given B can equal the conditional probability of B given A if the probability of Events A and B (the denominator) is the same, that is if P(A) = P(B)."
+ },
+ {
+  "id": "c06589ea-ae06-4588-b7ad-44595ff14073",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\1. Quantitative Methods\\1.04 Probability Trees and Conditional Expectations - Answers.pdf",
+  "page_idx": 11,
+  "png": "scripts\\_uworld_residuals_png\\c06589ea-ae06-4588-b7ad-44595ff14073.png",
+  "topic": "Quantitative Methods",
+  "subtopic": "1.04 Probability Trees and Conditional Expectations",
+  "question_en": "An analyst estimates the probability distribution for a company's upcoming quarterly EBITDA: The standard deviation of the distribution (in $ billions) is closest to:",
+  "option_a": "0.147",
+  "option_b": "0.150",
+  "option_c": "0.152",
+  "correct_answer": "C",
+  "explanation_en": "For any two events A and B, the addition rule for probabilities, P(A or B) = P(A) + P(B) − P(AB), describes how to calculate the probability that Aor B occurs. The formula can be simplified if the events are mutually exclusive, which is true only if their joint probability is equal to zero: P(AB) = 0. If events are mutually exclusive, there is zero chance of both occurring. Thus, if the events are mutually exclusive, the addition rule simplifies to P(A or B) = P(A) + P(B). Consider the probabilities of A and B in the diagram. P(A) and P(B) are represented by their areas. If events are not mutually exclusive, adding P(A) and P(B) will result in double counting P(AB), which is the overlap of the two areas. This would result in overestimating the probability of A or B occurring. Thus, after adding P(A) and P(B), P(AB) should be subtracted to avoid double counting this probability (Choices A and C)."
+ },
+ {
+  "id": "d1233925-12f5-4743-b87e-47d440105f11",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\1. Quantitative Methods\\1.04 Probability Trees and Conditional Expectations - Answers.pdf",
+  "page_idx": 19,
+  "png": "scripts\\_uworld_residuals_png\\d1233925-12f5-4743-b87e-47d440105f11.png",
+  "topic": "Quantitative Methods",
+  "subtopic": "1.04 Probability Trees and Conditional Expectations",
+  "question_en": "Fifty mutual funds are each subjected to two tests. The first tests a fund's 5-year average return, and the second tests its 5-year average expense ratio. The results are:\n\n- 16 funds pass both tests\n- 31 funds pass the first test\n- 20 funds pass the second test\n\nGiven that a fund passed the first test, the probability that it also passed the second test is closest to:",
+  "option_a": "0.248",
+  "option_b": "0.516",
+  "option_c": "0.700",
+  "correct_answer": "B",
+  "explanation_en": "This question demonstrates the concept of conditional probability, which is the estimated likelihood of an event occurring given that another\nevent occurs. The formula for conditional probability is:\nIn this scenario, P(AB) is the joint probability that a fund passes both tests. This is given as 16/50, or 0.32. If P(A) is the probability of passing\nTest 2 and P(B) is the probability of passing Test 1, then the probability that a fund passes Test 2 given that it passes Test 1 equals P(A and B) ÷\nP(B). The steps for calculating the conditional probability are shown below:\nFormulate an investment problem as a probability tree and explain the use of conditional expectations in investment application"
+ },
+ {
+  "id": "6106bd1c-e573-4a3d-9a6f-0b2bdf31d9cc",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\1. Quantitative Methods\\1.04 Probability Trees and Conditional Expectations - Answers.pdf",
+  "page_idx": 47,
+  "png": "scripts\\_uworld_residuals_png\\6106bd1c-e573-4a3d-9a6f-0b2bdf31d9cc.png",
+  "topic": "Quantitative Methods",
+  "subtopic": "1.04 Probability Trees and Conditional Expectations",
+  "question_en": "An analyst has developed a screening test to determine whether a company's earnings will decrease. If the company does not pass the test, it is likely that its earnings will decrease in the Based on this information, the probability that the company's earnings will decrease in the next quarter given that the company passes the test is closest to:",
+  "option_a": "0.13",
+  "option_b": "0.21",
+  "option_c": "0.34",
+  "correct_answer": "B",
+  "explanation_en": "This question asks the candidate to calculate the probability that a company's earnings will decrease given that it passes a screening test\n[P(Earnings decrease | Passes test)]. This is an example of a conditional probability. The question does not provide the information needed to\ndirectly solve for the answer, but the solution can be derived using the total probability rule.\nThe total probability of an event is the sum of the joint probabilities of its mutually exclusive and exhaustive scenarios. In this question, the\ntotal probability of an earnings decrease is the sum of:\nP(Passes test AND Earnings decrease) and\nP(Does not pass the test AND Earnings decrease).\nEach joint probability is the product of two probabilities. The first term is the unconditional probability of the company passing (or does not\npass) the test, and the second is a conditional probability (ie, its earnings decrease given that it passes (or not passes) the test). The joint\nprobability is P(A and B) = P(A) × P(B | A). The information needed to calculate the probability that the company will not pass the test AND have\nan earnings decrease [P(Does not pass test AND Earnings decrease)] is given: (1 − 0.62) × 0.90 ≈ 0.34 (Choice C).\nThe information needed to calculate the probability that the company will pass the test AND have an earnings decrease is not given; however, it\ncan be deduced since the total probability of an earnings decrease is given as 0.47. These two joint probabilities of an earnings decrease are\nmutually exclusive and exhaustive and sum to the total probability (0.47); therefore, the unknown joint probability is 0.47 − 0.342 = 0.128 (Choice\nA).\nOnce the joint probability P(Passes test AND Earnings decrease) is known, and since the unconditional probability of passing the test is given\n[P(Passes test) = 0.62], the conditional probability can be calculated by rearranging the formula for joint probability: P(B | A) = P(A and B) / P(A), or\nP(Passes test AND Earnings decrease) / P(Passes test) = 0.128 / 0.62 ≈ 0.21"
+ },
+ {
+  "id": "50214013-d8b7-474e-89ba-2f11641e0f6c",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\1. Quantitative Methods\\1.04 Probability Trees and Conditional Expectations - Answers.pdf",
+  "page_idx": 33,
+  "png": "scripts\\_uworld_residuals_png\\50214013-d8b7-474e-89ba-2f11641e0f6c.png",
+  "topic": "Quantitative Methods",
+  "subtopic": "1.04 Probability Trees and Conditional Expectations",
+  "question_en": "An analyst who is evaluating the probability that a company will fire its CEO if EPS decreases this year gathers the following relevant estimates:\n\n| estimates: |  |\n|---|---|\n| Probability that EPS decreases | 0.35 |\n| Probability that company fires CEO if EPS decreases | 0.85 |\n| Probability that company does not fire CEO if EPS does not decrease | 0.75 |\n\nThe analyst later learns that the company did not fire the CEO after reporting EPS. The updated probability that the company's EPS decreased is closest to:",
+  "option_a": "0.05",
+  "option_b": "0.10",
+  "option_c": "0.15",
+  "correct_answer": "B",
+  "explanation_en": "Probability estimates are often revised based on new information. In this scenario, the conditional probability that the CEO is not fired depends on\nwhether the company's earnings per share (EPS) have decreased. Two relevant conditional probabilities are as follows:\nThe CEO is not fired given that EPS did not decrease [P(CEO not fired | no EPS decrease)]\nThe CEO is not fired given that EPS decreased [P(CEO not fired | EPS decrease)]\nThe diagram above shows that the probabilities that the CEO is not fired are:"
+ },
+ {
+  "id": "d3ce67aa-043f-4674-abe7-d9c6fdc99acc",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\1. Quantitative Methods\\1.04 Probability Trees and Conditional Expectations - Answers.pdf",
+  "page_idx": 13,
+  "png": "scripts\\_uworld_residuals_png\\d3ce67aa-043f-4674-abe7-d9c6fdc99acc.png",
+  "topic": "Quantitative Methods",
+  "subtopic": "1.04 Probability Trees and Conditional Expectations",
+  "question_en": "An analyst designates the following events as possible return outcomes for a portfolio's value at the end of one year, estimating their probabilities as follows: It is least appropriate to conclude that the events are:",
+  "option_a": "dependent.",
+  "option_b": "exhaustive.",
+  "option_c": "mutually exclusive.",
+  "correct_answer": "B",
+  "explanation_en": "Properties of probability\nThe probability of any event's occurrence is between 0 and 1.\nIn any set of mutually exclusive and exhaustive events, the sum of probabilities for all events equals 1.\nEvents that are mutually exclusive cannot happen at the same time. Events that are exhaustive account for 100% of the possible outcomes in a\nsample space. For any set of mutually exclusive and exhaustive events, the sum of their probabilities is equal to 1. Events may be:\nThe events in this scenario are mutually exclusive since their return ranges do not overlap. The sum of the events' probabilities is:\nP(V) + P(W) + P(X) + P(Y) + P(Z)\n= 0.17 + 0.21 + 0.34 + 0.14 + 0.12\n= 0.98\nSince the sum of the event's probabilities is not equal to 1, it is not appropriate to conclude that the events are exhaustive.\nCalculate and interpret an updated probability in an investment setting using Bayes’ formula"
+ },
+ {
+  "id": "addebd82-0290-4ecd-9fa9-9aca1d8c0f0d",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\1. Quantitative Methods\\1.04 Probability Trees and Conditional Expectations - Answers.pdf",
+  "page_idx": 24,
+  "png": "scripts\\_uworld_residuals_png\\addebd82-0290-4ecd-9fa9-9aca1d8c0f0d.png",
+  "topic": "Quantitative Methods",
+  "subtopic": "1.04 Probability Trees and Conditional Expectations",
+  "question_en": "Three companies make a specialty component used in the automobile industry. The relevant information for each company is shown below: If a component is randomly selected and found to be defective, the probability that it was manufactured by Company C is closest to:",
+  "option_a": "0.004",
+  "option_b": "0.028",
+  "option_c": "0.157",
+  "correct_answer": "C",
+  "explanation_en": "In this question, the conditional probability that a component is defective given that Company C manufactured it is 0.04. It is often useful to revise\ninitial probability estimates when updated information is provided. If it is later learned that a component was defective (ie, the updated\ninformation), Bayes' formula essentially reverses the conditions. It calculates the probability that Company C manufactured the component\ngiven that it was defective:\nThe unconditional probability that a component is defective is the sum of each total probability that any of the three companies manufactures a\ndefective component: 0.0174 + 0.0062 + 0.0044 = 0.0280. The probability that Company C manufactured a component given that it is defective is:\nBefore knowing whether a component was defective, there was a 0.11 probability that it was manufactured by Company C. After learning that the\ncomponent was defective, the new probability that Company C manufactured it increased to 15.7%. Although Company C has the smallest\nmarket share, it also has the highest percentage of defective components.\n(Choice A) 0.4% is the joint probability that Company C both manufactured a component and that it was defective.\n(Choice B) 2.8% is the sum of the total probability that all three companies manufactured a defective component, that is, the unconditional\nprobability that a component is defective."
+ },
+ {
+  "id": "609e0eec-86cc-4669-bfd0-06f430b3f3a3",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\1. Quantitative Methods\\1.04 Probability Trees and Conditional Expectations - Answers.pdf",
+  "page_idx": 37,
+  "png": "scripts\\_uworld_residuals_png\\609e0eec-86cc-4669-bfd0-06f430b3f3a3.png",
+  "topic": "Quantitative Methods",
+  "subtopic": "1.04 Probability Trees and Conditional Expectations",
+  "question_en": "An investor estimates a covariance matrix for the relative price movements of Asset A and Asset B that is shown below: If the investor creates a portfolio with 35% invested in Asset A and 65% invested in Asset B, the portfolio's standard deviation is closest to:",
+  "option_a": "16.7%",
+  "option_b": "17.1%",
+  "option_c": "24.3%",
+  "correct_answer": "B",
+  "explanation_en": "A portfolio's standard deviation is the positive square root of its variance. Standard deviation measures the dispersion of the portfolio's returns\naround its mean return, which indicates the portfolio's risk relative to its return. A greater standard deviation represents greater risk.\nCovariance indicates how the return of one asset moves relative to another asset. These co-movements affect the portfolio's variance. The\ncovariance of an asset with itself is its variance: σ2(X) = Cov(X, X). In this question, reading the matrix provided shows that:\n900 is Asset A's variance,\n400 is Asset B's variance, and\n30 is the covariance between the assets.\nSubstituting the assets' weights, variances, and covariance into the equation for standard deviation:\nThe benefit of the assets' low covariance is risk reduction: A low covariance (relative to each asset's variance) allows a portfolio to be created that\nhas a lower standard deviation, and thus a lower risk, than either of the individual assets. The assets' standard deviations are 30% (Asset A) and\n20% (Asset B) whereas the risk of a portfolio that combines both assets (given this weighting) is approximately 17.1%.\n(Choice A) 16.7% results from summing the simple weighted average of each of the asset's variances and then taking the square root of the\nresult. This method fails to account for the effects of the assets' covariance.\n(Choice C) 24.3% results from not squaring the weights of each asset in the first two elements of the equation."
+ },
+ {
+  "id": "d9417006-909c-4f8e-bf6a-36ba0f81b986",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\1. Quantitative Methods\\1.04 Probability Trees and Conditional Expectations - Answers.pdf",
+  "page_idx": 40,
+  "png": "scripts\\_uworld_residuals_png\\d9417006-909c-4f8e-bf6a-36ba0f81b986.png",
+  "topic": "Quantitative Methods",
+  "subtopic": "1.04 Probability Trees and Conditional Expectations",
+  "question_en": "There is an 80% chance that a hedge fund's return will exceed its benchmark this year. There is a 90% chance that the fund manager will earn higher total compensation than last year if the fund's return exceeds the benchmark. Suppose that the overall probability that the manager will earn higher total compensation this year is 73%. Which of the following statements is most accurate?",
+  "option_a": "The conditional probability of the fund return exceeding the benchmark is 0.80.",
+  "option_b": "The unconditional probability of earning higher compensation this year is 0.73.",
+  "option_c": "The conditional probability of earning higher total compensation this year given that returns",
+  "correct_answer": "B",
+  "explanation_en": "The conditional probability of an event expresses the likelihood that the event will occur given that another event occurs. In this case, the\nconditional probability of the manager earning higher compensation given that the fund return exceeds its benchmark, denoted P(higher comp |\nexceeds benchmark), is 0.9.\nThe unconditional probability (expected probability) of an event expresses the likelihood that an event will occur, regardless of whether\nanother event occurs. In this case, the unconditional probability of the manager earning higher compensation is 0.73, regardless of the fund's\nreturn.\n(Choice A) The unconditional probability of the fund exceeding its benchmark is 0.8. In this question, the event, defined as the fund return\nexceeding the benchmark, is not conditioned on another event.\n(Choice C) 0.72 is the joint probability of exceeding the benchmark and receiving higher compensation. The joint probability of two events equals\nthe product of the unconditional probability of one event [P(exceeds benchmark)] and the conditional probability of another event [P(higher comp |\nexceeds benchmark)]."
+ },
+ {
+  "id": "626eb39b-f486-4339-a301-b9f958b41bf0",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\1. Quantitative Methods\\1.04 Probability Trees and Conditional Expectations - Answers.pdf",
+  "page_idx": 43,
+  "png": "scripts\\_uworld_residuals_png\\626eb39b-f486-4339-a301-b9f958b41bf0.png",
+  "topic": "Quantitative Methods",
+  "subtopic": "1.04 Probability Trees and Conditional Expectations",
+  "question_en": "An analyst identifies two events and estimates probabilities as follows: Events X and Y are most likely:",
+  "option_a": "dependent.",
+  "option_b": "mutually exclusive.",
+  "option_c": "perfectly correlated.",
+  "correct_answer": "A",
+  "explanation_en": "If\nP(A|B) = P(A) or P(B|A) = P(B)\nthen events A and B are independent.\nIf, for two events X and Y, the occurrence of each event has no effect on the probability of the other event, then the events are\nindependent. Therefore, the probability of X given that Y occurs is the same as the probability of X regardless of Y, and vice versa.\nIn this scenario, the conditional probability of X given Y, or P(X|Y), is provided: 0.7222. Since P(X) = 0.51 ≠ P(X|Y) = 0.722, events X and Y are\nnot independent. Therefore, the events are dependent.\n(Choice B) Two events X and Y are mutually exclusive if and only if P(X and Y) = 0. Whether the events are independent or not, P(X and Y) =\nP(X|Y) × P(Y) = 0.7222 × 0.36 ≈ 0.26 ≠ 0. Therefore, since P(X and Y) ≠ 0, X and Y are not mutually exclusive.\n(Choice C) In the context of two random variables with binary outcomes, perfect correlation would mean that whenever one occurs, the other\noccurs, and vice versa. This would mean that P(X) = P(Y) = P(X and Y), and that P(X|Y) = 1, which is not the case in this scenario."
+ },
+ {
+  "id": "1af08d3f-b8ac-4fa7-abf1-651a97c253dc",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\1. Quantitative Methods\\1.04 Probability Trees and Conditional Expectations - Answers.pdf",
+  "page_idx": 28,
+  "png": "scripts\\_uworld_residuals_png\\1af08d3f-b8ac-4fa7-abf1-651a97c253dc.png",
+  "topic": "Quantitative Methods",
+  "subtopic": "1.04 Probability Trees and Conditional Expectations",
+  "question_en": "An analyst considers the impact of a company's earnings-per-share on its CEO's compensation and estimates the following probabilities:\n\n| Event | Probability |\n|---|---|\n| Probability that company's EPS does not increase | 0.60 |\n| Probability that CEO's compensation does not increase given EPS does not increase | 0.90 |\n| Probability that CEO's compensation increases given EPS increases | 0.80 |\n\nBased on the information given, a calculated probability of 0.38 most likely represents the:",
+  "option_a": "total probability of an increase in compensation.",
+  "option_b": "joint probability of an increase in compensation and in EPS.",
+  "option_c": "conditional probability that compensation increased given that EPS does not increase.",
+  "correct_answer": "A",
+  "explanation_en": "This question uses the total probability rule to estimate the probability of a compensation increase. The compensation increase is impacted by\nwhether the company's EPS increases. One scenario is that EPS does not increase, which has a probability of 0.6. Since the probability of EPS\nincreasing is mutually exclusive and conditional, the probability of an EPS increase is (1 − 0.6) = 0.4.\nAfter the independent probabilities of an EPS increase are determined, the next step is to identify and calculate the conditional probabilities of\ncompensation increasing, given that EPS increases and also given that it does not. The sum of those conditional probabilities is the total\nprobability that compensation increases.\nThe likelihood that compensation increases given that EPS increases is 0.8, so the joint probability that both EPS and compensation increase is"
+ },
+ {
+  "id": "96a557a9-f239-475f-851a-2b43e89e3fc8",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\5. Financial Statement Analysis\\5.02 Analyzing Income Statements - Answers.pdf",
+  "page_idx": 19,
+  "png": "scripts\\_uworld_residuals_png\\96a557a9-f239-475f-851a-2b43e89e3fc8.png",
+  "topic": "Financial Statement Analysis",
+  "subtopic": "5.02 Analyzing Income Statements",
+  "question_en": "Under IFRS, a company reporting bad debt expense should most appropriately:",
+  "option_a": "write off the receivable when the customer fails to pay and recognize the write-off as a bad debt expense.",
+  "option_b": "multiply the company's credit sales by its historical percentage of uncollectible receivables, and report that result as an operating expense.",
+  "option_c": "multiply the company's average accounts receivable by the historical percentage of",
+  "correct_answer": "B",
+  "explanation_en": "In general, an expense should be recognized in the same period in which the revenue associated with the expense was earned (ie, matching\nprinciple). Sales on credit are reported as revenue in the period they were made. If the company has a history of being unable to collect all its\ncredit sales, then both IFRS and US GAAP require it to report a bad debt expense as an operating expense for that period.\nNeither IFRS nor US GAAP mandate a specific methodology that a company must employ to estimate its bad debt expense. Several methods are\nacceptable, such as a percentage of uncollectible accounts that is based on overall sales, overall credit sales, or delinquent credit sales. The\nonly requirements are that:\nthe company use the method consistently; and\nthe method fairly reflects a reasonable assessment of the company's bad debt history.\n(Choice A) This is known as the direct write-off method. It violates the matching principle and neither IFRS nor US GAAP permit it to be used.\n(Choice C) An operating expense is deducted from gross profit to calculate earnings before interest and taxes. Deducting it from revenues to\ncalculate gross profit will distort gross profit margins."
+ },
+ {
+  "id": "3ed21d97-6dbc-439b-b26f-80409a575127",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\5. Financial Statement Analysis\\5.02 Analyzing Income Statements - Answers.pdf",
+  "page_idx": 13,
+  "png": "scripts\\_uworld_residuals_png\\3ed21d97-6dbc-439b-b26f-80409a575127.png",
+  "topic": "Financial Statement Analysis",
+  "subtopic": "5.02 Analyzing Income Statements",
+  "question_en": "An analyst gathers the following information about a company for its fiscal year:\n\n| Selected Financial Statement Data (CAD millions) | |\n|---|---|\n| Common dividends paid | 4 |\n| Preferred dividends paid | 15 |\n| Net income | 75 |\n\nThe weighted average number of common shares outstanding is 20 million, with 750,000 options outstanding at the beginning of the year. There are no other dilutive securities. If the options' exercise price is CAD 15 per share and the average market price of the stock is CAD 20 per share, then the company's diluted earnings per share is closest to:",
+  "option_a": "CAD 2.77",
+  "option_b": "CAD 2.89",
+  "option_c": "CAD 2.97",
+  "correct_answer": "C",
+  "explanation_en": "The treasury stock method is used to calculate diluted earnings per share (EPS) when a company has issued options. If the average stock price is greater than the exercise price, the method assumes all options are exercised, increasing the weighted average number of common shares outstanding. The method also assumes the proceeds from exercise are used to buy back the maximum number of shares possible, minimizing the dilution.\n\nDiluted EPS = (Net income - Preferred dividends) / Adjusted weighted average shares outstanding\n\nAdjusted weighted average shares outstanding = 20,000,000 (beginning shares) + 750,000 (shares from option exercise) - [750,000 × 15 / 20 = 562,500] (shares considered repurchased with option proceeds) = 20,187,500\n\nDiluted EPS = (75,000,000 - 15,000,000) / 20,187,500 = CAD 2.97."
+ },
+ {
+  "id": "d26f8f6c-ef83-420b-b305-3000ca93befc",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\5. Financial Statement Analysis\\5.02 Analyzing Income Statements - Answers.pdf",
+  "page_idx": 1,
+  "png": "scripts\\_uworld_residuals_png\\d26f8f6c-ef83-420b-b305-3000ca93befc.png",
+  "topic": "Financial Statement Analysis",
+  "subtopic": "5.02 Analyzing Income Statements",
+  "question_en": "An air services company entered into a contract with a city to build a new runway at an airport. The contract price is €100 million, and the company estimated its total project costs to be €80 million. The contract calls for construction to take place over four years, and the company does not anticipate any material changes to its costs nor any uncertainty about receiving payment. Each year's costs are listed in the following table:\n\n```markdown\n| Year | 1 | 2 | 3 | 4 | Total |\n|---|---|---|---|---|---|\n| Costs (€ millions) | 35 | 15 | 13 | 17 | 80 |\n```\n\n```markdown\n| | |\n|---|---|\n| Shares outstanding on Jan 1 | 2,000 |\n| Shares issued on April 1 | 400 |\n| Shares repurchased on Oct 1 | (500) |\n| Shares outstanding on Dec 31 | 1,900 |\n```\n\nThe company reports under IFRS standards. The amount of revenue that this company will recognize cumulatively at the end of Year 2 is closest to:",
+  "option_a": "€0",
+  "option_b": "€50.0 million",
+  "option_c": "€62.5 million",
+  "correct_answer": "C",
+  "explanation_en": "In general, an expense should be recognized in the same period in which the revenue associated with the expense was earned (ie, matching principle). Sales on credit are reported as revenue in the period they were made. If the company has a history of being unable to collect all its credit sales, then both IFRS and US GAAP require it to report a bad debt expense as an operating expense for that period. Neither IFRS nor US GAAP mandate a specific methodology that a company must employ to estimate its bad debt expense. Several methods are acceptable, such as a percentage of uncollectible accounts that is based on overall sales, overall credit sales, or delinquent credit sales. The only requirements are that: the company use the method consistently; and the method fairly reflects a reasonable assessment of the company's bad debt history. (Choice A) This is known as the direct write-off method. It violates the matching principle and neither IFRS nor US GAAP permit it to be used. (Choice C) An operating expense is deducted from gross profit to calculate earnings before interest and taxes. Deducting it from revenues to calculate gross profit will distort gross profit margins."
+ },
+ {
+  "id": "5dfd848b-10ab-4287-91bc-ac8e4f0c75cd",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\5. Financial Statement Analysis\\5.02 Analyzing Income Statements - Answers.pdf",
+  "page_idx": 8,
+  "png": "scripts\\_uworld_residuals_png\\5dfd848b-10ab-4287-91bc-ac8e4f0c75cd.png",
+  "topic": "Financial Statement Analysis",
+  "subtopic": "5.02 Analyzing Income Statements",
+  "question_en": "A company has the following capital structure, which has been in effect for the entire year: The diluted earnings per share (EPS) that the company will report for the year is closest to:",
+  "option_a": "$1.20",
+  "option_b": "$1.23",
+  "option_c": "$1.53",
+  "correct_answer": "A",
+  "explanation_en": "Convertible securities may reduce earnings per share (EPS), if converted, by increasing the number of common shares in the denominator. Such\nsecurities are dilutive; both GAAP and IFRS require companies to report basic EPS (ie, EPS without impact from conversion) and diluted EPS.\nThe deemed conversion increases the weighted average of the number of common shares outstanding. For calculating diluted EPS, treat\nconvertible securities as having been converted at the beginning of the period.\nWhen the convertible security is debt, the numerator for the equation must be adjusted to add back the interest expense since converting the\ndebt means that the interest will no longer be paid. This increases the net income that is available to common shareholders. Companies receive\na tax deduction for interest paid, which effectively reduces their actual interest expense, so the interest that is added back to net income is\ncalculated on an after-tax basis to reflect the true cost.\nThe calculations for the company's basic and diluted EPS are shown below:\nDescribe how earnings per share is calculated and calculate and interpret a company’s basic and diluted earnings per share for companies with\nsimple and complex capital structures including those with antidilutive securities"
+ },
+ {
+  "id": "8d11898d-09a9-4c89-8388-47ee7f17a8cd",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\5. Financial Statement Analysis\\5.02 Analyzing Income Statements - Answers.pdf",
+  "page_idx": 11,
+  "png": "scripts\\_uworld_residuals_png\\8d11898d-09a9-4c89-8388-47ee7f17a8cd.png",
+  "topic": "Financial Statement Analysis",
+  "subtopic": "5.02 Analyzing Income Statements",
+  "question_en": "An analyst gathers the following data on a company at year end:\n\n| | |\n|---|---|\n| Net income | €12.25 million |\n| Preferred dividends | €0.25 million |\n| Exercise price | €20 |\n| Weighted average common shares outstanding | 15 million |\n| Employee stock options outstanding | 2 million |\n\nIf the number of stock options outstanding remained constant throughout the year and the average stock price was 25, then the company's diluted EPS (in €) is closest to:",
+  "option_a": "0.71",
+  "option_b": "0.78",
+  "option_c": "0.80",
+  "correct_answer": "B",
+  "explanation_en": "The method used to calculate diluted EPS for a company with outstanding options assumes that\nthe options will be converted into common shares (ie, exercised) if the average stock price is greater than the exercise price, and\nthe company will use all cash proceeds from the exercised options to repurchase shares at the average market price to mitigate dilution.\nAs such, the net share increase equals new common shares issued net of repurchases.\nSince the average stock price (25) is greater than the exercise price (20), all 2 million options are assumed to be converted into common shares.\nThe company would have used all options proceeds (2 million × 20, or 40 million) to repurchase 1.6 million shares (40 million/25), thus increasing\nnet new shares by 0.4 million.\nDescribe how earnings per share is calculated and calculate and interpret a company’s basic and diluted earnings per share for companies with\nsimple and complex capital structures including those with antidilutive securities"
+ }
+]

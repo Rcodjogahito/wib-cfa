@@ -1,0 +1,376 @@
+[
+ {
+  "id": "ee9d77a1-3371-43fc-b745-6d0024d645d9",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\3. Portfolio Management\\3.02 Portfolio Risk And Return Part II - Answers.pdf",
+  "page_idx": 18,
+  "png": "scripts\\_uworld_residuals_png\\ee9d77a1-3371-43fc-b745-6d0024d645d9.png",
+  "topic": "Portfolio Management",
+  "subtopic": "3.02 Portfolio Risk And Return Part II",
+  "question_en": "An analyst collects the following data: The risk-free rate is 2%. The M-squared value of Portfolio A is closest to:",
+  "option_a": "11.5%",
+  "option_b": "12.0%",
+  "option_c": "15.8%",
+  "correct_answer": "A",
+  "explanation_en": "Portfolio returns are compared to a benchmark to determine whether the portfolio manager outperformed the benchmark. However, simply comparing returns is not useful without knowing how much risk the manager assumed. M-squared (or M2) is an investment performance tool that takes risk, as measured by standard deviation, into account. It measures the risk- adjusted excess return of the portfolio using the ratio of the market's standard deviation to the portfolio's standard deviation. If the M-squared value is greater than the market return, it indicates that the portfolio outperformed the market on a risk-adjusted basis. Rearranging terms in the equation results in: The blue-shaded terms represent the Sharpe ratio, so the M-squared formula simplifies to: Sharpe ratio × σ + Risk-free rate m = (1.06 × 0.09) + 0.02 = 0.1154 = 11.54% Note that the difference between a portfolio's M-squared and the market return is known as M-squared alpha. (Choice B) 12.0% is the market's M-squared value. Since M-squared measures excess return, there is no excess return between the market's return and itself. (Choice C) 15.78% is obtained by incorrectly multiplying the portfolio's Sharpe ratio by its standard deviation instead of the market's standard deviation."
+ },
+ {
+  "id": "53ed6a53-5c47-43bc-afa1-5fa8d50f7637",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\3. Portfolio Management\\3.02 Portfolio Risk And Return Part II - Answers.pdf",
+  "page_idx": 20,
+  "png": "scripts\\_uworld_residuals_png\\53ed6a53-5c47-43bc-afa1-5fa8d50f7637.png",
+  "topic": "Portfolio Management",
+  "subtopic": "3.02 Portfolio Risk And Return Part II",
+  "question_en": "An analyst collects the following data for three portfolios over the past five years: Which portfolio has the highest Sharpe ratio?",
+  "option_a": "Portfolio 1",
+  "option_b": "Portfolio 2",
+  "option_c": "Portfolio 3",
+  "correct_answer": "B",
+  "explanation_en": "Investors require higher returns for assuming more risk. The Sharpe ratio is one metric that evaluates returns on a risk-adjusted basis, measuring excess return per unit of total risk. Excess return is the difference between the portfolio's return and the return of a risk-free asset (eg, US Treasury bill, or T-bill). Total risk is measured by the standard deviation of returns and captures both systematic (market) risk and nonsystematic (nonmarket) risk. The Sharpe ratios for the three portfolios are calculated below: Portfolio 2 has the highest Sharpe ratio, and therefore has the greatest excess return per unit of total risk compared to its peers."
+ },
+ {
+  "id": "19240fdf-fbde-445d-8967-ce1402669a43",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\3. Portfolio Management\\3.02 Portfolio Risk And Return Part II - Answers.pdf",
+  "page_idx": 22,
+  "png": "scripts\\_uworld_residuals_png\\19240fdf-fbde-445d-8967-ce1402669a43.png",
+  "topic": "Portfolio Management",
+  "subtopic": "3.02 Portfolio Risk And Return Part II",
+  "question_en": "An analyst collects the following data to calculate the Treynor ratio for a fund: The Treynor ratio for the four-year period is closest to:",
+  "option_a": "0.10",
+  "option_b": "0.14",
+  "option_c": "0.52",
+  "correct_answer": "A",
+  "explanation_en": "The Treynor ratio is a metric that evaluates a portfolio's performance on a risk-adjusted basis. It measures excess return per unit of systematic (market) risk. Excess return is the difference between the portfolio's return and the return of a risk-free asset (eg, US Treasury bill, or T-bill). Systematic risk is measured by beta and refers to the relative sensitivity of a portfolio's return to that of the overall market. It is important to adjust return for risk since investors require additional return for taking on more risk. (Choice B) This answer results from dividing the average portfolio return, instead of the excess return, by beta. (Choice C) The excess return was divided by the standard deviation instead of beta."
+ },
+ {
+  "id": "1a0abadc-e035-45ce-9a3b-7551b1c7807d",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\3. Portfolio Management\\3.02 Portfolio Risk And Return Part II - Answers.pdf",
+  "page_idx": 26,
+  "png": "scripts\\_uworld_residuals_png\\1a0abadc-e035-45ce-9a3b-7551b1c7807d.png",
+  "topic": "Portfolio Management",
+  "subtopic": "3.02 Portfolio Risk And Return Part II",
+  "question_en": "An analyst provides the following performance information for three portfolios over the past year: Based only on this information, if the risk-free rate is 1.5%, which portfolio has the highest systematic risk?",
+  "option_a": "Portfolio 1",
+  "option_b": "Portfolio 2",
+  "option_c": "Portfolio 3",
+  "correct_answer": "A",
+  "explanation_en": "The capital market line (CML) is the practical form of the capital allocation line (CAL). The CAL represents theoretical portfolios combining the optimal risky portfolio and a risk-free asset. The CML replaces the optimal risky portfolio with the real market portfolio (eg, the S&P 500 Index) and replaces the risk-free asset with short-term domestic government bonds. Analysts using the CML assume that markets are informationally efficient. This means that markets provide all the information investors need, and all investors find the same valuation. With uniformity of securities' valuations, it is very difficult for investors to outperform the market consistently. This assumption compels investors to follow a passive investing strategy. Under these conditions, using a stock index—such as the S&P 500 Index—as a proxy for the market portfolio is logical. Under the CAL, the definition of the optimal risky portfolio not only includes stocks and bonds but also includes thousands of different types of asset classes. Some of these are unavailable due to legal restrictions (eg, Class A China Stock to non-Chinese investors) and some are nontradable (eg, private property). Therefore, the optimal risky portfolio does not exist in the real world. (Choice A) The efficient frontier represents all theoretical portfolios of risky assets in the investment opportunity set to that offer the highest expected return at each level of risk. Portfolios on the efficient frontier do not hold the risk-free asset. (Choice C) The security market line shows rates of return for individual assets, not for a portfolio of assets. It depicts one security's expected return as a function of systematic risk."
+ },
+ {
+  "id": "250e8da4-28dd-4542-8967-008df165e0e3",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\3. Portfolio Management\\3.02 Portfolio Risk And Return Part II - Answers.pdf",
+  "page_idx": 34,
+  "png": "scripts\\_uworld_residuals_png\\250e8da4-28dd-4542-8967-008df165e0e3.png",
+  "topic": "Portfolio Management",
+  "subtopic": "3.02 Portfolio Risk And Return Part II",
+  "question_en": "An analyst collects the following information on a portfolio's performance over the past year: The portfolio's M-squared value is closest to:",
+  "option_a": "0.30",
+  "option_b": "6.75",
+  "option_c": "7.50",
+  "correct_answer": "B",
+  "explanation_en": "The capital asset pricing model (CAPM) allows investors to estimate a security's expected return given that security's beta, the market's return, and the risk-free rate. Beta calculates the security's expected return based on only its systematic risk. The security market line (SML) is the graphical representation of the CAPM, displaying the linear relationship between a security's expected return (y-axis) and its beta (x-axis). The SML allows investors to identify the relative value of a security. Securities located on the SML are deemed to be fairly valued. In contrast: Securities that plot above the SML are undervalued (ie, greater return than expected for the amount of risk), so the value should rise and the expected return should decrease. Securities that plot below the SML are overvalued (ie, less return than expected for the amount of risk), so the value should fall and the expected return should increase. (Choice B) The capital market line relates to only portfolios on the efficient frontier. The SML relates to any security or asset. (Choice C) The SML intersects the y-axis at the risk-free rate. The market risk premium is the slope of the SML."
+ },
+ {
+  "id": "c4be37a2-1702-4a92-8da4-82c1766d9fcd",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\3. Portfolio Management\\3.02 Portfolio Risk And Return Part II - Answers.pdf",
+  "page_idx": 50,
+  "png": "scripts\\_uworld_residuals_png\\c4be37a2-1702-4a92-8da4-82c1766d9fcd.png",
+  "topic": "Portfolio Management",
+  "subtopic": "3.02 Portfolio Risk And Return Part II",
+  "question_en": "An analyst gathers the following information on a fully diversified portfolio's performance over the past year: Based on this information, the Treynor ratio for the portfolio is closest to:",
+  "option_a": "0.020",
+  "option_b": "0.047",
+  "option_c": "0.060",
+  "correct_answer": "B",
+  "explanation_en": "The security market line (SML) is a graph of the capital asset pricing model (CAPM). The CAPM is used to estimate a security's expected return based on the security's beta, the market's return, and the risk-free rate. Beta measures the sensitivity of a security's return relative to the market return. Fairly valued securities are located on the SML. Undervalued securities are plotted above the SML and overvalued securities are plotted below it. If an asset's expected return is too high for its risk level, then its price is too low relative to its risk. The asset is undervalued and is plotted above the SML. Rational investors buy this undervalued asset, increasing its price and decreasing its expected return until the security is priced fairly so that it is plotted on the SML. Use the CAPM to determine the expected return of the security: Here, the difference between the expected return based on the security's market price and the expected return of the security using the CAPM is 2.0% (0.09 − 0.07 = 0.02)."
+ },
+ {
+  "id": "5bf89b6a-6f45-4cf5-aefc-abfd4e1a2365",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\3. Portfolio Management\\3.02 Portfolio Risk And Return Part II - Answers.pdf",
+  "page_idx": 28,
+  "png": "scripts\\_uworld_residuals_png\\5bf89b6a-6f45-4cf5-aefc-abfd4e1a2365.png",
+  "topic": "Portfolio Management",
+  "subtopic": "3.02 Portfolio Risk And Return Part II",
+  "question_en": "The following information on three portfolios is collected: All portfolios have an actual return of 15%. According to the capital asset pricing model (CAPM), which of the following is most likely to be the best performing portfolio based on the difference between its actual return and its expected return?\n\n# First Table\n\n| | Mean Annual Return | Sharpe Ratio | Treynor Ratio |\n|---|---|---|---|\n| Portfolio 1 | 18.0% | 0.83 | 0.11 |\n| Portfolio 2 | 10.0% | 0.34 | 0.13 |\n| Portfolio 3 | 7.5% | 0.50 | 0.06 |\n\n# Second Table\n\n| Portfolio | Jensen's Alpha (%) | Sharpe Ratio | Treynor Ratio |\n|---|---|---|---|\n| X | 6.50 | 0.48 | 0.07 |\n| Y | 5.50 | 0.79 | 0.10 |\n| Z | 5.75 | 0.75 | 0.14 |",
+  "option_a": "Portfolio X",
+  "option_b": "Portfolio Y",
+  "option_c": "Portfolio Z",
+  "correct_answer": "A",
+  "explanation_en": "Performance measures comparison Performance Risk Diversification Description Risk measure measure Excess return per Standard Sharpe ratio No Total unit of total risk deviation Excess market-risk- Standard M-squared No Total adjusted return deviation Return per unit of Treynor ratio Yes Beta Systematic systematic risk Excess of actual vs. Jensen's alpha Yes Beta Systematic expected return In theory, fully diversified portfolios have no nonsystematic (company-specific) risk. For those portfolios, an appropriate performance measure is one that uses beta to measure market risk. Portfolios that are not fully diversified contain both nonsystematic (company-specific) and systematic (market) risk. For these portfolios, a suitable performance measure is one that uses total risk (standard deviation). Here, the portfolio is fully diversified, so an appropriate performance measure should be based on beta, not standard deviation (Choices A and B). Using the Treynor ratio or Jensen's alpha is appropriate. The Treynor ratio is a performance measure that determines a portfolio's excess return per unit of systematic risk. For example, if the return of a portfolio is 20%, the risk-free rate is 5%, and its beta 1.2, then the portfolio's Treynor ratio is 0.125, or (0.20 − 0.05)/1.2. This means that the portfolio earned 0.125 units of excess return per unit of systematic risk."
+ },
+ {
+  "id": "b78fa277-d23e-4588-aeab-e26bd7688d37",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\3. Portfolio Management\\3.02 Portfolio Risk And Return Part II - Answers.pdf",
+  "page_idx": 47,
+  "png": "scripts\\_uworld_residuals_png\\b78fa277-d23e-4588-aeab-e26bd7688d37.png",
+  "topic": "Portfolio Management",
+  "subtopic": "3.02 Portfolio Risk And Return Part II",
+  "question_en": "A fund manager collects the following data for the firm's three top-performing portfolios over the past seven years. Which portfolio has the highest Jensen's alpha?\n\n| Year | 20X1 | 20X2 | 20X3 |\n|---|---|---|---|\n| Portfolio return | 10.0% | 13.0% | 19.0% |\n| Market return | | | 7.0% |\n| US Treasury bill return | | | 3.0% |\n| Standard deviation of portfolio returns | | | 4.6% |",
+  "option_a": "Portfolio X",
+  "option_b": "Portfolio Y",
+  "option_c": "Portfolio Z",
+  "correct_answer": "B",
+  "explanation_en": "Analyzing a portfolio's return is only one part of performance evaluation; another is determining how much risk the manager took to earn the return. In portfolio management, risk is quantified as either systematic risk (as measured by beta) or total risk (as measured by standard deviation). In theory, fully diversified portfolios have only systematic (ie, market, non-diversifiable) risk. The Treynor ratio measures excess return relative to systematic risk and is therefore appropriate for a fully diversified portfolio. When calculating the Treynor ratio, excess return is the difference between the portfolio's average return and the average return of a risk-free asset (eg, US Treasury bill, or T-bill), and systematic risk is measured by beta. In this scenario, the relevant data used to calculate the Treynor ratio are the mean annual portfolio return of 8.0%, the mean annual risk-free rate of 1.0%, and beta of 1.5: 0.08 − 0.01 Treynor ratio = ≈ 0.047 1.5 This result suggests the portfolio's excess return was 4.7 times its systematic risk. The Treynor ratio is best used as a measure to compare the performance of two or more portfolios. (Choice A) 0.02 represents the Sharpe ratio, which measures excess return per unit of total risk (ie, standard deviation). (Choice C) 0.06 represents the portfolio's M-squared measure, which evaluates portfolio return by adjusting the total risk of the portfolio compared to a benchmark (typically the market)."
+ },
+ {
+  "id": "6237cf72-d029-4518-a918-1e1ed77d2a32",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\3. Portfolio Management\\3.02 Portfolio Risk And Return Part II - Answers.pdf",
+  "page_idx": 59,
+  "png": "scripts\\_uworld_residuals_png\\6237cf72-d029-4518-a918-1e1ed77d2a32.png",
+  "topic": "Portfolio Management",
+  "subtopic": "3.02 Portfolio Risk And Return Part II",
+  "question_en": "A manager collects the following data:\n\n# Question 5\n\n| Investment | Expected return (%) | Expected standard deviation (%) | Correlation between investment and the market |\n|---|---|---|---|\n| A | 9 | 17 | 0.9 |\n| B | 10 | 14 | 1.0 |\n| C | 13 | 18 | 0.8 |\n| Market | 8 | 15 | 1.0 |\n\n# Question 8\n\n| Investment | Beta | Expected Standard Deviation (%) |\n|---|---|---|\n| 1 | 0.8 | 20 |\n| 2 | 0.9 | 22 |\n| 3 | 1.0 | 17 |\n\nIf the risk-free rate is 3.5% and the market risk premium is positive, which investment has the lowest expected return according to the capital asset pricing model?",
+  "option_a": "Investment 1",
+  "option_b": "Investment 2",
+  "option_c": "Investment 3",
+  "correct_answer": "A",
+  "explanation_en": "Portfolio returns are compared to a benchmark to determine whether the portfolio manager outperformed the benchmark. However, simply\ncomparing returns is not useful without knowing how much risk the manager assumed.\nM-squared (or M2) is an investment performance tool that takes risk, as measured by standard deviation, into account. It measures the risk-\nadjusted excess return of the portfolio using the ratio of the market's standard deviation to the portfolio's standard deviation. If the M-squared\nvalue is greater than the market return, it indicates that the portfolio outperformed the market on a risk-adjusted basis.\nRearranging terms in the equation results in:\nThe blue-shaded terms represent the Sharpe ratio, so the M-squared formula simplifies to:\nSharpe ratio × σ + Risk-free rate\nm\n= (1.06 × 0.09) + 0.02 = 0.1154 = 11.54%\nNote that the difference between a portfolio's M-squared and the market return is known as M-squared alpha.\n(Choice B) 12.0% is the market's M-squared value. Since M-squared measures excess return, there is no excess return between the market's\nreturn and itself.\n(Choice C) 15.78% is obtained by incorrectly multiplying the portfolio's Sharpe ratio by its standard deviation instead of the market's standard\ndeviation."
+ },
+ {
+  "id": "93bb70fc-4091-4113-bc1f-ee160d36fdd7",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\6. Equity Investments\\6.02 Security Market Indexes - Answers.pdf",
+  "page_idx": 1,
+  "png": "scripts\\_uworld_residuals_png\\93bb70fc-4091-4113-bc1f-ee160d36fdd7.png",
+  "topic": "Equity Investments",
+  "subtopic": "6.02 Security Market Indexes",
+  "question_en": "A fundamentally weighted index is constructed using the following data, with earnings yield as the weighting factor: If the initial value of the index is €1,000, the value of Asset Z in the index is closest to:",
+  "option_a": "€277",
+  "option_b": "€333",
+  "option_c": "€351",
+  "correct_answer": "A",
+  "explanation_en": "Each bond issue has unique characteristics (eg, coupon, maturity, call features), resulting in thousands more individual securities than the equity markets. For example, the Bloomberg Barclays U.S. Aggregate Bond Index includes roughly 8,000 US-issued securities, combining various bond types and credit ratings that range from Treasury and agency debt to mortgage- and asset-backed securities and corporate bonds. The lack of daily transactions and the general illiquidity for many of these bonds create a burdensome and expensive pricing process compared with exchange-traded equities. These factors combine to make fixed income index construction more costly and difficult for an investor to replicate than equity indexes. (Choice B) Due to the vast variety and characteristics of bonds outstanding, it is difficult for an index to precisely replicate the composition of a bond universe with a small sample of securities. (Choice C) Although the bond markets are much larger than equity markets and there are some issues that are very liquid and actively traded, the vast majority of bond pricing occurs through dealer quotes or a matrix pricing process, making price transparency more burdensome and less clear."
+ },
+ {
+  "id": "7709fedc-8fd6-49ae-95cd-16e6e96620df",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\6. Equity Investments\\6.02 Security Market Indexes - Answers.pdf",
+  "page_idx": 2,
+  "png": "scripts\\_uworld_residuals_png\\7709fedc-8fd6-49ae-95cd-16e6e96620df.png",
+  "topic": "Equity Investments",
+  "subtopic": "6.02 Security Market Indexes",
+  "question_en": "An analyst compiles the following data about a market-capitalization-weighted index with a beginning index value of €1,000: The value of Asset X in the index at the beginning of the period is closest to:",
+  "option_a": "€230",
+  "option_b": "€333",
+  "option_c": "€439",
+  "correct_answer": "A",
+  "explanation_en": "In a price-weighted index, the weight of each constituent security is its price as a proportion of the sum of all the securities' prices in the index. One advantage of this weighting method is the simplicity of its construction, since it requires only the price of each security (Choice C). One disadvantage of a price-weighted index is that each company's weight may not correlate to the proportion of its total market value. This can result in index returns that do not reflect the market since small companies with a high stock price but low market capitalization can have an oversized impact on index returns compared to their impact in the market. In addition, if a company splits its stock, the weighting of every security in the index must be revalued, although stock splits do not affect a company's total market value. (Choice A) Price-weighted indexes have no inherent value tilt. Value tilt is an issue for fundamentally weighted indexes since their weights are based on fundamental factors (eg, sales, earnings). Compared to growth stocks, value stocks have higher ratios of such factors relative to their market values."
+ },
+ {
+  "id": "343c0fa8-cb4d-4335-870e-048824c5e499",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\6. Equity Investments\\6.02 Security Market Indexes - Answers.pdf",
+  "page_idx": 9,
+  "png": "scripts\\_uworld_residuals_png\\343c0fa8-cb4d-4335-870e-048824c5e499.png",
+  "topic": "Equity Investments",
+  "subtopic": "6.02 Security Market Indexes",
+  "question_en": "An analyst has gathered the following data about the stocks included in an equal-weighted index with a beginning value of €1,200: The price return for the equal-weighted index during the period is closest to:",
+  "option_a": "16.7%",
+  "option_b": "19.3%",
+  "option_c": "20.4%",
+  "correct_answer": "A",
+  "explanation_en": "Challenges in fixed-income index construction Vast number of bonds outstanding Lack of market-derived pricing information General illiquidity of many bonds Each bond issue, even from the same issuer, will have different characteristics (eg, maturity, seniority), resulting in thousands more bond securities outstanding than equity securities. For example, AT&T has one type of common stock and three series of preferred stock, but about 200 bonds outstanding. The volume of bonds outstanding leads to each specific issue trading less frequently, reducing bond liquidity. The absence of a central secondary market (eg, the New York Stock Exchange) also contributes to illiquidity of bonds compared to equity investments, since investors will often have to trade with dealers instead of trading directly with an exchange. This illiquidity can easily become an issue for fixed-income index construction and replication, given the larger number of securities needed to accurately track the represented market. Illiquidity can also make it difficult and expensive to regularly update the price of bonds in an index since current pricing may need to be ascertained from dealers or estimated from the prices of similar securities. Equity securities are more liquid and equity markets are typically more transparent, making index construction and replication easier and less costly. (Choice B) It is possible to price and track fixed-income securities for use in an index; futures contracts are not needed. Index creation with futures contracts is a characteristic of commodity indexes. (Choice C) Accurately tracking styles and sectors with indexes is possible with fixed-income securities, though it may take a larger number of securities than for equity indexes due to the larger number of securities outstanding."
+ },
+ {
+  "id": "431f1b41-7fea-4414-a9d4-4a69e879ec6d",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\6. Equity Investments\\6.02 Security Market Indexes - Answers.pdf",
+  "page_idx": 13,
+  "png": "scripts\\_uworld_residuals_png\\431f1b41-7fea-4414-a9d4-4a69e879ec6d.png",
+  "topic": "Equity Investments",
+  "subtopic": "6.02 Security Market Indexes",
+  "question_en": "The following market-capitalization-weighted index data is for one year: The index's total return for the year is closest to:",
+  "option_a": "7.0%",
+  "option_b": "14.5%",
+  "option_c": "24.1%",
+  "correct_answer": "B",
+  "explanation_en": "Index construction requires decisions regarding three characteristics: target market (eg, sector or asset class), security selection (eg, representative stocks), and weighting (ie, portion of index in each security). Once created, the index must be managed over time to maintain consistency with the characteristics established at index construction. Index management actions are categorized as: Rebalancing: adjusting the weights of constituent securities to maintain consistency with index weighting methodology Reconstitution: adding and/or removing securities to maintain consistency with the target market Securities are added or removed for a variety of reasons: new exchange listings or delistings, whether securities newly meet or no longer meet index criteria, or companies no longer existing due to acquisitions or bankruptcies. Some indexes (eg, S&P 500) are designed to reflect the relative importance of different industry sectors. Selection committees sometimes alter index composition to reflect shifts in economic significance. Changes in the constituent stocks for these reasons are characterized as a reconstitution. (Choice A) Rebalancing refers to changes in the weights given to the constituent securities. Index reconstitution sometimes necessitates rebalancing, but the two are separate aspects of index management. (Choice C) Reorganization is not used to describe actions related to index management. It describes certain corporate restructurings related to bankruptcies."
+ },
+ {
+  "id": "f3349122-18f4-48e2-a115-e3c4ed14b473",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\6. Equity Investments\\6.02 Security Market Indexes - Answers.pdf",
+  "page_idx": 23,
+  "png": "scripts\\_uworld_residuals_png\\f3349122-18f4-48e2-a115-e3c4ed14b473.png",
+  "topic": "Equity Investments",
+  "subtopic": "6.02 Security Market Indexes",
+  "question_en": "An analyst gathers the following information on the constituents of a price-weighted index: Based on this information, the index's price return is closest to:",
+  "option_a": "5.0%",
+  "option_b": "6.3%",
+  "option_c": "7.5%",
+  "correct_answer": "A",
+  "explanation_en": "The price return of an index is equal to the weighted average of the price returns of each constituent security in the index. The price return\nof each security is the change in price as a percentage of the beginning value; it excludes dividends, interest, and other distributions.\nIn a price-weighted index, each security's weighting is the ratio of its beginning price to the total beginning price of the index. For example,\nin this scenario Stock A's beginning price is ¥150. The total beginning price of all three stocks is ¥600, so Stock A's weight in the index is ¥150 /\n¥600, or 25%.\nThe price return of the index is calculated as follows:\nIt should be noted that since there were no stock splits during the period, the price return can also be calculated as (630 − 600) / 600 = 5.0%.\n(Choice B) 6.3% would be the price return of the index if it were market cap-weighted, instead of price-weighted.\n(Choice C) 7.5% is the total return of the index, which includes income from securities (eg, dividends, interest)."
+ },
+ {
+  "id": "61c1ce60-601b-474c-8c5c-bf53d0fd019a",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\6. Equity Investments\\6.02 Security Market Indexes - Answers.pdf",
+  "page_idx": 16,
+  "png": "scripts\\_uworld_residuals_png\\61c1ce60-601b-474c-8c5c-bf53d0fd019a.png",
+  "topic": "Equity Investments",
+  "subtopic": "6.02 Security Market Indexes",
+  "question_en": "An equal-weighted index is constructed using the following three assets: The initial value of the index is €1,200. The number of shares of Asset Z initially included in the index is closest to:",
+  "option_a": "5 shares.",
+  "option_b": "8 shares.",
+  "option_c": "10 shares.",
+  "correct_answer": "C",
+  "explanation_en": "In an equal-weighted index, each asset is assigned an equal weight of 1/N, at the time of construction and periodically thereafter. N is the\nnumber of assets in the index. In this example, the weight of each asset is 1/3. Since the initial value of the index is €1,200, the value allocated to\neach asset is:\nDivide the value allocated to Asset Z by the price of Asset Z to find the number of shares of the asset in the index:\nAs asset prices change, an equal-weighted index becomes no longer equally weighted. Therefore, a disadvantage of this weighting method is the\nneed for periodic rebalancing. Also, companies with high stock prices may not be given appropriate importance within the index.\n(Choice A) Five shares is the result of finding the number of shares of Asset Z in the index using price weighting instead of equal weighting: €40 ÷\n(€120 + €80 + €40) = 0.1666 × €1,200 = €200 / 40 = 5 shares.\n(Choice B) Eight shares is the result of incorrectly using the ending price for the asset during the time period to determine the number of shares:\n€400 ÷ 50 = 8 shares."
+ },
+ {
+  "id": "8171a73c-0fae-46c0-9589-a82c945f1d72",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\6. Equity Investments\\6.02 Security Market Indexes - Answers.pdf",
+  "page_idx": 18,
+  "png": "scripts\\_uworld_residuals_png\\8171a73c-0fae-46c0-9589-a82c945f1d72.png",
+  "topic": "Equity Investments",
+  "subtopic": "6.02 Security Market Indexes",
+  "question_en": "The following securities make up a price-weighted index: If the divisor is 2.5, the index value at the beginning of the period is closest to:",
+  "option_a": "€82.67",
+  "option_b": "€85.76",
+  "option_c": "€99.20",
+  "correct_answer": "C",
+  "explanation_en": "Price weighting is one of the simplest methods of index weighting. The value of a price-weighted index is found by dividing the sum of the\nindividual securities' prices by the divisor. In a price-weighted index, higher priced securities have a greater impact on the index's value than\nlower priced securities. Price return is not needed in the calculation of the value of a price weighted index; but it is necessary for the price return\nof an index. Only the price of each security and the divisor are needed.\nSubstitute values for the price of each security and the divisor:\nBecause the divisor changes over time, it is important to remember that the divisor is not usually the same as the number of securities in the\nindex. Corporate actions like stock splits change the prices of the securities in the index, and the divisor must be adjusted when such actions\noccur to keep the value of the index consistent.\n(Choice A) €82.67 is the result of incorrectly taking the average of the three securities' prices. This would be the result under an equal-weighted\nindex, not a price-weighted index.\n(Choice B) €85.76 is the result of incorrectly finding the sum of the products of each security's price and weight."
+ },
+ {
+  "id": "608432e3-e37b-4e72-966d-fdbc35dbe642",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\6. Equity Investments\\6.02 Security Market Indexes - Answers.pdf",
+  "page_idx": 20,
+  "png": "scripts\\_uworld_residuals_png\\608432e3-e37b-4e72-966d-fdbc35dbe642.png",
+  "topic": "Equity Investments",
+  "subtopic": "6.02 Security Market Indexes",
+  "question_en": "Three equity indexes hold the same 30 securities, but they are weighted differently in each index. Over the past year, the total returns of the indexes were: The best explanation for this performance difference is:",
+  "option_a": "large-cap and value outperformance.",
+  "option_b": "small-cap and value outperformance.",
+  "option_c": "large-cap and momentum outperformance.",
+  "correct_answer": "B",
+  "explanation_en": "for this performance difference is:\nA. large-cap and value outperformance.\n\nB. small-cap and value outperformance.\nC. large-cap and momentum outperformance.\nExplanation\nEquity index weighting styles\nType of index Key performance drivers\nMarket capitalization Large-cap, momentum\nEqual Small-cap, value\nFundamental Value\nPrice High-priced stocks\nIndex weighting methodology can have a substantial impact on the underlying performance of an index. Understanding the underlying biases\npresent in each approach helps analyze index performance more effectively. Three key index weighting methods are:\nEqual: Equal weight is assigned to each asset.\nMarket capitalization: Weight is based on the market value of the asset as a percentage of the total market value of assets in the index.\nFundamental: Weight is based on a company metric (eg, revenues, book value, number of employees relative to the sum of the total for all\nconstituents, earnings yields ) to determine the weight in the index.\nCompared to a market capitalization approach, fundamentally and equally weighted indexes emphasize assets normally associated with a value\ntilt. In equally weighted indexes, small-capitalization stocks have an outsized effect on performance. In this scenario, the equal-weighted index\nwas the clear outperformer, indicating small-cap and value outperformance.\n(Choices A and C) Market capitalization-weighted index performance is heavily influenced by large-capitalization stocks and the momentum\neffect. Capitalization-weighted indexes are based on market value, so high-momentum stocks have increasing weight and performance impact."
+ },
+ {
+  "id": "ae4fe1ca-34e9-4afe-aa59-ee5452cf7542",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\6. Equity Investments\\6.02 Security Market Indexes - Answers.pdf",
+  "page_idx": 4,
+  "png": "scripts\\_uworld_residuals_png\\ae4fe1ca-34e9-4afe-aa59-ee5452cf7542.png",
+  "topic": "Equity Investments",
+  "subtopic": "6.02 Security Market Indexes",
+  "question_en": "An analyst gathers the following data (in AUD) about a value-weighted index:\n\n| Asset | Beginning Price | Ending Price | Dividend | Shares Outstanding |\n|---|---|---|---|---|\n| A | 13.50 | 11.50 | 0.30 | 700,000 |\n| B | 56.50 | 55.00 | 0.25 | 450,000 |\n| C | 67.00 | 69.00 | 0.00 | 400,000 |\n\nThe price return of the index is closest to:",
+  "option_a": "−2.1%",
+  "option_b": "−1.5%",
+  "option_c": "−1.1%",
+  "correct_answer": "A",
+  "explanation_en": "The price return of an index is the weighted average return of the asset prices of the index's constituents: PR_Index = w1 x PR1 + w2 x PR2 + ... + wN x PRN, where each asset's price return PRi = (Ending price - Beginning price) / Beginning price. An asset's price return is the percent change in its price over a given period. Unlike an index or asset's total return, the price return excludes any dividend or interest income from the assets since investors anticipate such income and adjust asset prices accordingly. To find the price return of an index, multiply each asset's price return by its weighting in the index. For a value-weighted (market cap-weighted) index, each asset's weight in the index is its beginning market capitalization as a percentage of the total beginning market cap in the index: Asset A: 13.50 x 700,000 = 9,450,000, so 9,450,000 / 61,675,000 is approximately 15.3%; Asset B: 56.50 x 450,000 = 25,425,000, approximately 41.2%; Asset C: 67.00 x 400,000 = 26,800,000, approximately 43.5%; total beginning market cap = 61,675,000. With the assets' weightings calculated, the index's price return is calculated from the individual assets' price returns: Asset A: (11.50 - 13.50) / 13.50 is approximately -14.8%, and -14.8% x 15.3% is approximately -2.27%; Asset B: (55.00 - 56.50) / 56.50 is approximately -2.7%, and -2.7% x 41.2% is approximately -1.09%; Asset C: (69.00 - 67.00) / 67.00 is approximately 3.0%, and 3.0% x 43.5% is approximately 1.30%. Total index price return = -2.1%. Therefore, the price return of the index is -2.1%. (Choice B) -1.5% results from weighting the assets by their prices, not their market caps. (Choice C) -1.1% results from including the assets' dividend income in the return calculation. Price returns exclude income from dividends. Things to remember: The price return of an index is the weighted average return of the prices of the index's constituent assets. An asset's price return is the percent change in its price over a certain period."
+ },
+ {
+  "id": "387e313d-c128-4048-91c6-ae252df6ee2b",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\7. Fixed Income\\7.06 Fixed-Income Bond Valuation Prices and Yields - Answers.pdf",
+  "page_idx": 29,
+  "png": "scripts\\_uworld_residuals_png\\387e313d-c128-4048-91c6-ae252df6ee2b.png",
+  "topic": "Fixed Income",
+  "subtopic": "7.06 Fixed-Income Bond Valuation Prices and Yields",
+  "question_en": "An analyst gathers information for the following bonds:\n\n| Bond | Coupon | Maturity (years) | YTM |\n|---|---|---|---|\n| A | 0% | 20 | 20% |\n| B | 0% | 30 | 20% |\n| C | 10% | 20 | 20% |\n| D | 10% | 30 | 20% |\n| E | 25% | 20 | 20% |\n| F | 25% | 30 | 20% |\n\nIf yield-to-maturity (YTM) increases by 100 basis points for all bonds, the exception to the maturity effect most likely means, in terms of absolute percentage price change, that:",
+  "option_a": "Bond A's change is higher than Bond D's.",
+  "option_b": "Bond B's change is higher than Bond E's.",
+  "option_c": "Bond C's change is higher than Bond F's.",
+  "correct_answer": "B",
+  "explanation_en": "The maturity effect refines the general inverse relationship between bond prices and the required YTM, which is also known as the required rate\nof return. If two bonds are identical in all respects except for maturity, a given change in YTM generally causes a higher absolute percentage price\nchange for the bond with the longer maturity than for the bond with the shorter maturity.\nThe maturity effect always holds for zero-coupon and premium bonds (Choices A and C). A rare exception can apply to discount bonds\n(bonds that have a price less than par value). If the exception applies, shorter maturities will exhibit a higher absolute percentage change than\nlonger maturities. The bonds that the exception applies to are long-term bonds with high YTM, as shown by the table below:"
+ },
+ {
+  "id": "f8677e73-6006-4271-bba6-f86e94eee3d1",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\7. Fixed Income\\7.08 Yield and Yield Spread Measures for Floating-Rate Instruments - Answers.pdf",
+  "page_idx": 13,
+  "png": "scripts\\_uworld_residuals_png\\f8677e73-6006-4271-bba6-f86e94eee3d1.png",
+  "topic": "Fixed Income",
+  "subtopic": "7.08 Yield and Yield Spread Measures for Floating-Rate Instruments",
+  "question_en": "An analyst has compiled the following information to compare the yields of three money market instruments: If the credit risks are the same, the instrument that offers the highest rate of return is:",
+  "option_a": "Investment X.",
+  "option_b": "Investment Y.",
+  "option_c": "Investment Z.",
+  "correct_answer": "B",
+  "explanation_en": "Analysis of money market instruments is made difficult by the variety of features and quoting conventions. Different times-to-maturity, types of\ninterest rates (ie, discount versus add-on), and periodicities will complicate comparisons. One way to simplify comparisons is to convert rates\nto a bond equivalent yield (ie, investment yield). The bond equivalent yield for money market instruments is the rate stated as a 365-day add-on\nrate, which—unlike a discount rate—is quoted as a percentage of present value rather than future value, and therefore represents an investor's\nannualized rate of return.\nIn this scenario, the money market instruments are quoted using different types of interest rates, either add-on or discount, and using either a 360-\nday or a 365-day year convention. Investment Z is quoted on a 365-day add-on basis, so it is already stated as a money market bond equivalent\nyield.\nInvestment X is quoted with an add-on rate, but its year convention is 360. The investment's bond equivalent yield (365-day add-on rate) is\ncalculated as follows:\nInvestment Y is quoted with a 360-day discount rate. It is converted to a 365-day add-on rate as follows:"
+ },
+ {
+  "id": "59bd3ac3-a31f-4f71-8840-8b5641d70bd1",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\5. Financial Statement Analysis\\5.05 Analyzing Statements of Cash Flows II - Answers.pdf",
+  "page_idx": 0,
+  "png": "scripts\\_uworld_residuals_png\\59bd3ac3-a31f-4f71-8840-8b5641d70bd1.png",
+  "topic": "Financial Statement Analysis",
+  "subtopic": "5.05 Analyzing Statements of Cash Flows II",
+  "question_en": "An analyst compiles the following common-sized cash flow statements as a percentage of revenue for a company: The company had total revenue of MXN 1,000 million in 20X4, MXN 900 million in 20X5, and a tax rate of 20% for both years. The analyst's most appropriate conclusion is that the company is:",
+  "option_a": "increasing its free cash flow to equity.",
+  "option_b": "growing its dividend in line with net income.",
+  "option_c": "expanding its net investments in equipment.",
+  "correct_answer": "A",
+  "explanation_en": "Common-size cash flow statements display each statement item either as a percentage of revenue or as a percentage of the company's total cash inflows or outflows. This allows analysts to compare the receipts and expenditures for companies of different sizes or for one company over time. In this scenario, the common-size cash flow statement indicates that the company's free cash flow to equity (FCFE) as a percentage of revenue increased between 20X4 and 20X5: from 3.5% (= 9% + 5% − 5.5% − 5% + 6% − 6%) in 20X4 to 4.4% (= 11.1% + 6.7% −7.2% − 6.7% + 2.2% − 1.7%) in 20X5. This equates to FCFE of MXN 35 million in 20X4 (= 1,000 × 0.035) and MXN 40 million in 20X5 (= 900 × 0.044). Note: After-tax cash paid for interest is used in the calculation of free cash flow to the firm (FCFF), not FCFE."
+ },
+ {
+  "id": "53199bb8-003b-433e-9b12-8428a172f7a7",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\5. Financial Statement Analysis\\5.05 Analyzing Statements of Cash Flows II - Answers.pdf",
+  "page_idx": 5,
+  "png": "scripts\\_uworld_residuals_png\\53199bb8-003b-433e-9b12-8428a172f7a7.png",
+  "topic": "Financial Statement Analysis",
+  "subtopic": "5.05 Analyzing Statements of Cash Flows II",
+  "question_en": "A company reports the following information:\n\n# First Table\n\n| | $ millions |\n|---|---|\n| Net income | 39.0 |\n| Depreciation | 15.0 |\n| Interest expense | 6.0 |\n| Tax expense | 13.0 |\n| Pretax income | 52.0 |\n\n# Second Table\n\n| MXN millions | Prior Year | Current Year |\n|---|---|---|\n| Net income | 550 | 600 |\n| Depreciation | 75 | 90 |\n| Interest expense | 100 | 100 |\n| Net working capital | 200 | 220 |\n| Long-term debt | 750 | 780 |\n\nThe company's tax rate is 30%. If capital expenditures for the year are MXN 300 million, then free cash flow to equity for the current year (in MXN millions) is closest to:",
+  "option_a": "370",
+  "option_b": "400",
+  "option_c": "440",
+  "correct_answer": "B",
+  "explanation_en": "Free cash flow (FCF) determines how much excess cash a company generates from its operations after covering its capital expenditures.\nFCF may be used in various ways (eg, reinvesting in the company's business, paying dividends, repaying debt). An analyst can calculate this\ncash flow's value to the company's suppliers of debt and equity capital (ie, free cash flow to the firm [FCFF]) or to only equity shareholders (ie, free\ncash flow to equity [FCFE]) by adjusting for cash items available to those groups.\nFCFF adds back after-tax interest payments since it includes suppliers of debt capital, and interest payments are paid to the company's\ndebtholders. Since FCFE is available to a company's equity shareholders, it adds back the net borrowing (ie. net change in debt). Companies\nmay use any additions to debt for the benefit of equity shareholders through dividend payments or share repurchases.\nFCF = NI + NCC − ΔWC − ΔFC\n= 660 + 260 − 120 − 200 = 600\nFCFE = NI + NCC − ΔWC − ΔFC + Net borrowing\n= FCF + Net borrowing\n= 600 + (535 − 500) = 635\nFCFF = NI + NCC − ΔWC − ΔFC + Int (1 − t)\n= FCF + Int (1 − t)\n= 600 + 40 (1 − 0.25) = 630\nIn this scenario, the largest measure of FCF is the company's FCFE, which is supported by KRW 40 million in net borrowing (Choices A and C)."
+ }
+]

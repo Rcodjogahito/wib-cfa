@@ -1,0 +1,376 @@
+[
+ {
+  "id": "e10d2593-c679-4edc-8e40-7c61e3614e93",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\9. Alternative Investments\\9.02 Alternative Investment Performance and Returns - Answers.pdf",
+  "page_idx": 22,
+  "png": "scripts\\_uworld_residuals_png\\e10d2593-c679-4edc-8e40-7c61e3614e93.png",
+  "topic": "Alternative Investments",
+  "subtopic": "9.02 Alternative Investment Performance and Returns",
+  "question_en": "The following table depicts a hedge fund's performance and fee information for year-end 20X7: Based on only the information provided, which of the following best describes the hedge fund's incentive fee structure?",
+  "option_a": "A soft hurdle rate of 5% and a 10% incentive fee",
+  "option_b": "A soft hurdle rate of 10% and a 12% incentive fee",
+  "option_c": "A hard hurdle rate of 10% and a 10% incentive fee",
+  "correct_answer": "A",
+  "explanation_en": "A hedge fund charges incentive fees subject to certain constraints that include the following:\nThe hurdle rate, which is the minimum total return, either net or gross of management fees, that the fund must earn before it receives an\nincentive fee. The hurdle rate can be either:\nsoft, so that the incentive fee is based on the entire profit, or\nhard, so that the incentive fee is based on only returns in excess of the hurdle rate.\nThe high-water mark, a base asset value used to calculate the incentive fee. It is the fund's previous peak value of assets under\nmanagement that resulted in an incentive fee.\nIn this scenario, the fund's net performance (ie, after management fees) of 30% cleared all the given hurdle rates, which entitles the fund to an\nincentive fee. The soft hurdle rate allows the fund to collect the incentive fee on the entire gain above the high-water mark (ie, 10% of $30\nmillion = $3 million)."
+ },
+ {
+  "id": "0c0d65ad-578b-4692-a614-cfa39ba9dbfa",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\9. Alternative Investments\\9.02 Alternative Investment Performance and Returns - Answers.pdf",
+  "page_idx": 27,
+  "png": "scripts\\_uworld_residuals_png\\0c0d65ad-578b-4692-a614-cfa39ba9dbfa.png",
+  "topic": "Alternative Investments",
+  "subtopic": "9.02 Alternative Investment Performance and Returns",
+  "question_en": "A hedge fund has the following fee structure, charged on year-end assets under management (AUM): The fund value is $372 million at the beginning of the year and $412 million, before fees, at the end of the year. For this year, if fees are calculated independently, the net return to the investor is closest to:",
+  "option_a": "7.80%",
+  "option_b": "8.06%",
+  "option_c": "8.67%",
+  "correct_answer": "B",
+  "explanation_en": "An investor's return is calculated net of fees and as a percentage of the fund's beginning value. Hedge funds often levy both a management fee\nand an incentive fee.\nThe management fee is calculated as a percentage of the fund's total ending assets under management (AUM) and is assessed\nregardless of profitability.\nThe incentive fee is calculated as a percentage of profits either net (ie, after deducting) or gross (ie, before deducting) of management\nfees.\nIf fees are calculated independently, the hurdle rate determination and fee calculations are on a gross basis.\nAn incentive fee is often contingent on profits being greater than a hurdle rate and/or AUM being higher than the high-water mark. In this scenario,\nthe fund's threshold to earn an incentive fee is contingent on exceeding the 5% soft hurdle rate and the high-water mark of $380 million. Due to\nthe soft hurdle rate, the incentive fee will be applied to the entire gain above the high-water mark.\nThe investor's return for the year is calculated (in $ millions) as follows:"
+ },
+ {
+  "id": "eee1dcbb-26db-4557-abcb-f412978b7cae",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\10. Ethics\\11.03 Guidance For Standards I–VII - Answers.pdf",
+  "page_idx": 6,
+  "png": "scripts\\_uworld_residuals_png\\eee1dcbb-26db-4557-abcb-f412978b7cae.png",
+  "topic": "Ethics & Professional Standards",
+  "subtopic": "11.03 Guidance For Standards I–VII",
+  "question_en": "Hella Flosadottir, CFA, resides in Country A and works for an investment bank located there. Her clients include a pension fund located in Country B. Flosadottir routinely checks the monthly statements of all her clients, and the statement for the pension fund leads her to suspect that somebody may be embezzling from the fund. However, the statement does not contain enough information for her to be sure that embezzlement is occurring. The relevant laws of each country are shown below: To comply with Standard I(A) Knowledge of the Law, which of the following is Flosadottir's most appropriate action?",
+  "option_a": "Contact the police in Country B",
+  "option_b": "Advise the client of the possible embezzlement",
+  "option_c": "Inform her firm's compliance officer of the situation",
+  "correct_answer": "A",
+  "explanation_en": "\"Members and Candidates must keep information about current, former, and prospective clients confidential unless:"
+ },
+ {
+  "id": "20227741-edf0-4ff3-b57d-d125042c771f",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\10. Ethics\\11.03 Guidance For Standards I–VII - Answers.pdf",
+  "page_idx": 17,
+  "png": "scripts\\_uworld_residuals_png\\20227741-edf0-4ff3-b57d-d125042c771f.png",
+  "topic": "Ethics & Professional Standards",
+  "subtopic": "11.03 Guidance For Standards I–VII",
+  "question_en": "Kathy Lee Wayne, CFA, is a portfolio manager who supervises a team at a large investment firm. Since the firm has adopted CFA Institute Code and Standards, Wayne assumes its compliance policies and procedures are adequate for monitoring her team. During her annual performance review, her supervisor tells Wayne that annual bonuses will be based only on hitting investment performance targets \"no matter what it takes.\" Wayne replies, \"That sounds fine. I'll let my team know, and my team will hit its targets!\" Some months later, a member of Wayne's team admits to falsifying reports in order to make it appear that the team hit its performance targets. During the subsequent internal investigation, investigators conclude that Wayne did not participate in the falsification and could not be expected to have been aware of it. According to Standard IV(C) Responsibilities of Supervisors, which of the following best describes how Wayne has not complied with recommended practice?",
+  "option_a": "Only by failing to detect her employee's unethical activity",
+  "option_b": "Only by readily accepting the incentive structure of the firm",
+  "option_c": "Both by failing to detect her employee's unethical activity and by readily accepting the",
+  "correct_answer": "C",
+  "explanation_en": "\"Members and Candidates who possess material nonpublic information that could affect the value of an investment must not act or cause others to act on the information.\" Standard II(A) Material Nonpublic Information requires Members and Candidates to abstain from investment actions if they have material nonpublic information (MNI). Trading on or acting on MNI erodes the public's trust in the fairness of the capital markets. MNI can come from many sources, and a Member or Candidate must evaluate information to decide whether it is MNI before acting on it. Selective disclosure (eg, analysts on a conference call, corporate insiders) does not necessarily make information public. In this question, Ching Liu and ES intentionally disclosed information and gave the analysts the timeline of when that information would be publicly disseminated. This type of selective disclosure is not a violation of the Standard (Choices A and B). However, by agreeing to be part of the select group receiving the information, Bo Wang has a duty to keep this information confidential until it is released publicly by the company. Even though Wang did not directly disclose the MNI, he violated the Standard by using his knowledge of MNI to influence others to act based on this information. Acting on MNI is not limited strictly to that company's securities (eg, ES), any trading based on MNI is a violation of the Standard."
+ },
+ {
+  "id": "5e51738d-ce12-4172-a657-ad93c78f6ba1",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\10. Ethics\\11.03 Guidance For Standards I–VII - Answers.pdf",
+  "page_idx": 14,
+  "png": "scripts\\_uworld_residuals_png\\5e51738d-ce12-4172-a657-ad93c78f6ba1.png",
+  "topic": "Ethics & Professional Standards",
+  "subtopic": "11.03 Guidance For Standards I–VII",
+  "question_en": "Zhao Fen, CFA, is an independent investor. She holds a large position of Formula Industries, a lightly traded stock with low liquidity, in one of her two personal accounts. If Zhao wishes to exit the position, which of the following would most likely violate the Standards?",
+  "option_a": "Using an intermediary to sell the position outside of the market to avoid price impacts.",
+  "option_b": "Selling her holdings as one position, which would likely cause a large drop in the price.",
+  "option_c": "Trading the stock between personal accounts to attract interest from other market",
+  "correct_answer": "C",
+  "explanation_en": "\"Members and Candidates must not engage in any professional conduct involving dishonesty, fraud, or deceit or commit any act that reflects adversely on their professional reputation, integrity, or competence.\" Standard I(D) Misconduct is primarily concerned with the professional activities of a Member or Candidate, which covers all conduct that may negatively impact the Member's or Candidate's trustworthiness, reputation, or ability to perform their duties. Examples include acts that involve lying, cheating, theft, fraud, or other dishonest behavior. However, violations of Standard I(D) are not limited to actions specifically prohibited by the Standard. Failure to take appropriate action or lack of sufficient effort may also constitute a violation. However, there are other Standards that specifically address Emara's adding the broad-based equity fund (eg, V(A) – Diligence and Reasonable Basis; III(C) – Suitability). Standard I(D) addresses fraud and misconduct that erode public trust in the profession. Nothing in Emara's actions suggests that he committed fraud or deception, and asserting that Emara also violated Standard I(D) is an overbroad reading of the Standard (Choice C). (Choice B) Being arrested and jailed for acts of civil disobedience does not in itself constitute a violation of Standard I(D). In this case, Emara's protest activities are a form of civil disobedience that does not reflect poorly on his professional capacities."
+ },
+ {
+  "id": "2cf3eae7-ef5b-44cb-9896-94ac963e1359",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\10. Ethics\\11.03 Guidance For Standards I–VII - Answers.pdf",
+  "page_idx": 16,
+  "png": "scripts\\_uworld_residuals_png\\2cf3eae7-ef5b-44cb-9896-94ac963e1359.png",
+  "topic": "Ethics & Professional Standards",
+  "subtopic": "11.03 Guidance For Standards I–VII",
+  "question_en": "Karl Mahler, CFA, creates a mutual fund in Country A, where he is a resident. Mahler intends to sell the security in both Country A and Country B. The laws of Country A are more strict than the laws of Country B, and the laws of both countries are more strict than the Code and Standards. When selling the mutual fund in Country B, Mahler must adhere to the:",
+  "option_a": "laws of Country A.",
+  "option_b": "laws of Country B.",
+  "option_c": "Code and Standards.",
+  "correct_answer": "A",
+  "explanation_en": "\"Members and Candidates who possess material nonpublic information that could affect the value of an investment must not act or cause others to act on the information.\" Standard II Integrity of Capital Markets discusses the member's and candidate's responsibility to protect the integrity of the capital markets. Standard II(A) focuses specifically on the use of material nonpublic information. Trading with material nonpublic information (\"insider trading\") threatens market integrity, which relies on all market participants having fair access to information and no participant having the advantage of using information that is not widely available. The table below is a quick reference for determining whether Standard II(A) is violated: When a firm has material nonpublic information about a stock, it must try to ensure that trading does not violate the Standard. A ban on all trading in the stock is not always necessary or advisable. For example, if a firm acts as a market maker or dealer for a certain security, suspension of market making may signal that the firm has material nonpublic information and, in effect, expose that information. Market-making activities may continue but should be restricted to taking passive, counterparty positions in unsolicited trades. (Choice A) Risk-arbitrage activity (proprietary trading, as when a firm establishes positions for its own profit) should be suspended since there is great potential for illegal gains. (Choice C) The stock should be placed on a \"restricted\" or \"watch\" list, and employees should not trade the stock for their personal accounts. Personal trades should be reported periodically and monitored for insider trading activity."
+ },
+ {
+  "id": "d2c43663-8c2d-43dc-8ba8-4e9d7df5e684",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\10. Ethics\\11.03 Guidance For Standards I–VII - Answers.pdf",
+  "page_idx": 22,
+  "png": "scripts\\_uworld_residuals_png\\d2c43663-8c2d-43dc-8ba8-4e9d7df5e684.png",
+  "topic": "Ethics & Professional Standards",
+  "subtopic": "11.03 Guidance For Standards I–VII",
+  "question_en": "Joanna Krakowski, CFA, is the chief compliance officer (CCO) at Universal Investment Managers (UIM). Krakowski recently hired John Smith, CFA, as a compliance manager. Smith will report directly to Krakowski, who believes the current compliance systems and procedures are adequate. As Smith settles into his new position, he discovers numerous deficiencies including outdated software, excessive manual processes, a compliance manual that has not been updated in four years, and inadequately trained and understaffed compliance personnel. Smith meets with Krakowski to address these shortcomings, as he does not believe he can adequately perform his duties given the circumstances. Krakowski informs Smith that there is no money in the budget for new software or additional employees. Smith's most appropriate action is to:",
+  "option_a": "improve the compliance program using his best efforts, given his duty is to his employer.",
+  "option_b": "decline his supervisory responsibilities in writing until the compliance systems are improved.",
+  "option_c": "immediately submit a written resignation from UIM, since the compliance program is",
+  "correct_answer": "B",
+  "explanation_en": "\"Investment transactions for clients and employers must have priority over investment transactions in which a Member or Candidate is the beneficial owner.\" Standard VI(B) Priority of Transactions is intended to avoid inherent conflicts of interest that arise from placing personal investing decisions over client or employer interests. One source of an actual or potential conflict of interest is personal participation in equity initial public offerings (IPOs). Personal participation in any equity IPO may appear to deprive clients of attractive investment opportunities. The guidance for the Standard recommends that firms require preapproval (ie, preclearance) before employees participate in any equity IPOs, even if there is no potential conflict. Other recommended procedures include: Restrictions on private placements Establishment of blackout periods/restricted lists Reporting requirements Disclosure of policies regarding personal investments (Choice A) WTI's restricted list policy follows the Standard's recommendations as it applies to individuals involved in the investment decision- making process. (Choice C) The Standard allows firms to tailor personal investment policies to meet their own criteria—for example, by prohibiting certain activities such as investment clubs."
+ },
+ {
+  "id": "daf4d0dd-823b-4537-9b82-ba1a983b2405",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\10. Ethics\\11.03 Guidance For Standards I–VII - Answers.pdf",
+  "page_idx": 41,
+  "png": "scripts\\_uworld_residuals_png\\daf4d0dd-823b-4537-9b82-ba1a983b2405.png",
+  "topic": "Ethics & Professional Standards",
+  "subtopic": "11.03 Guidance For Standards I–VII",
+  "question_en": "hang Xue, CFA, is hired as an associate research analyst by Phoenix Capital, where she helps her senior analyst in writing research reports. After several months, Chang notices that her senior analyst receives material nonpublic information during discussions with management of covered companies. She suspects this information is sometimes used to change the recommendations on those companies, although the specific information is not disclosed in the research reports. Acting on material nonpublic information is against the law in the country where Phoenix operates, but since the report does not disclose any material nonpublic information, Chang is not sure what to do. She brings this up to Li Tengfei, the chief compliance officer for Phoenix. Li tells Chang that she would not be found guilty of breaking the law since no information is disclosed in the report, so she should continue to assist in writing the reports. To best comply with the Standards, Chang should:",
+  "option_a": "dissociate from her role collecting data for her senior analyst.",
+  "option_b": "do nothing since she is not the person using material nonpublic information.",
+  "option_c": "do nothing since she received approval to continue from the firm's compliance officer.",
+  "correct_answer": "A",
+  "explanation_en": "\"Members and Candidates must make reasonable efforts to ensure that anyone subject to their supervision or authority complies with applicable laws, rules, regulations, and the Code and Standards.\" Standard IV(C) Responsibilities of Supervisors requires Members and Candidates who supervise employees to encourage behavior that complies with local laws, rules established by their firms, and the Code and Standards. They also must take reasonable steps to detect and prevent violations. A Member or Candidate who encounters an inadequate compliance system should bring the shortcomings of the system to the attention of the company's managers and make recommendations for corrective actions. Any Member or Candidate who is prevented from carrying out supervisory responsibilities due to these shortcomings should decline in writing to take on supervisory responsibility until the compliance system is fixed and is allowing for adequate controls. Accepting a supervisory role when the compliance system is inadequate would not allow the Member or Candidate to promote compliance by subordinates and thus would violate the Standard. (Choice A) Under Standard IV(C), supervisors who supervise large numbers of employees can delegate supervision. The employee to whom those supervisory responsibilities are delegated does not have to be a CFA charterholder. (Choice C) Supervisors should make a reasonable effort to detect unethical behavior. However, failing to detect such behavior does not imply a violation of the Standard as long as the supervisor ensures that a proper compliance system is in place. In such a case, the system may need to be reviewed."
+ },
+ {
+  "id": "fa53297d-c687-4966-9086-b87dbce03be2",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\10. Ethics\\11.03 Guidance For Standards I–VII - Answers.pdf",
+  "page_idx": 45,
+  "png": "scripts\\_uworld_residuals_png\\fa53297d-c687-4966-9086-b87dbce03be2.png",
+  "topic": "Ethics & Professional Standards",
+  "subtopic": "11.03 Guidance For Standards I–VII",
+  "question_en": "Deshawn Walker, CFA, and Jevon Glover, MD, grew up together and remain close friends today. Walker is a manager at Primary Partners Associates (PPA) and works on the Small Cap Sciences Fund, which focuses on health-care securities with great upside potential. Glover recently left his medical practice and now works for a sell-side securities firm where he is researching Cancer Advances Corp. (CAC), a company that uses artificial intelligence to design cancer drugs. CAC has yet to become profitable, but Glover feels optimistic based on its pipeline. He strongly suggests that Walker take a position in CAC since he expects the company to outperform. Walker conducts thorough due diligence and concludes that CAC is riskier than its peers but also that the company could see significantly higher returns if regulators approve certain drugs. Therefore, he deems CAC appropriate for the Small Cap Sciences Fund. Regarding the purchase of CAC stock for the fund, Walker will most likely comply with Standard VI(A) Disclosure of Conflicts if he:",
+  "option_a": "adds an insignificant position in CAC to the fund, so disclosure is unnecessary.",
+  "option_b": "explains to Glover that he cannot buy CAC since a conflict of interest exists between them.",
+  "option_c": "adds a significant position in CAC to the fund after he informs PPA of his relationship with",
+  "correct_answer": "C",
+  "explanation_en": "\"Members and Candidates must make full and fair disclosure of all matters that could reasonably be expected to impair their independence and objectivity or interfere with respective duties to their clients, prospective clients, and employer. Members and Candidates must ensure that such disclosures are prominent, are delivered in plain language, and communicate the relevant information effectively.\" Standard VI(A) Disclosure of Conflicts defines a conflict as a matter that reasonably could be expected to \"impair [members' or candidates'] independence or objectivity or interfere with their respective duties….\" Beck's spouse serves as a director of a company that Beck will be covering as an analyst. This must be disclosed since it potentially interferes with Beck's objectivity. It is irrelevant that Beck wrote reports on the company for his previous employer since he cannot assume the new employer is aware of the relevant facts. The Standard includes all conflicts, not just financial conflicts. Beck's soccer trusteeship is a potential conflict since Beck will have to devote significant time to the association in the coming months. This could interfere with his duties to his employer as well as to his clients. The Standard does not require an actual conflict to exist to trigger disclosure, only that one could \"reasonably be expected\" to occur (Choice A). (Choice C) Both Beck's spouse serving as a trustee of a company that Beck will be covering as an analyst and his soccer trusteeship pose actual or potential conflicts of interest, which Standard VI(A) requires him to disclose to his new employer."
+ },
+ {
+  "id": "b857de5a-3997-44ff-9ec7-2bde2542ca70",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\10. Ethics\\11.03 Guidance For Standards I–VII - Answers.pdf",
+  "page_idx": 60,
+  "png": "scripts\\_uworld_residuals_png\\b857de5a-3997-44ff-9ec7-2bde2542ca70.png",
+  "topic": "Ethics & Professional Standards",
+  "subtopic": "11.03 Guidance For Standards I–VII",
+  "question_en": "Leslie Gutkowski, CFA, specializes in managing US equity portfolios at Sawa Investments. She adds a new Sawa Emerging Markets Portfolio and decides to outsource its management. She knows many external managers but selects Akiko Investments since they manage emerging markets portfolios for the lowest cost. She dismisses other factors since she strongly believes that the lowest cost is the most important consideration. With respect to Standard V(A) Diligence and Reasonable Basis, Gutkowski most likely:",
+  "option_a": "violates the Standard by basing the selection of Akiko only on its fee structure.",
+  "option_b": "violates the Standard by relying on Akiko to provide external portfolio management.",
+  "option_c": "does not violate the Standard since selecting the least expensive manager is in her clients'",
+  "correct_answer": "A",
+  "explanation_en": "\"Members and Candidates must keep information about current, former, and prospective clients confidential unless:"
+ },
+ {
+  "id": "0413fff5-2be7-407f-88e0-dba6dc2c9ed4",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\10. Ethics\\11.03 Guidance For Standards I–VII - Answers.pdf",
+  "page_idx": 10,
+  "png": "scripts\\_uworld_residuals_png\\0413fff5-2be7-407f-88e0-dba6dc2c9ed4.png",
+  "topic": "Ethics & Professional Standards",
+  "subtopic": "11.03 Guidance For Standards I–VII",
+  "question_en": "Ajay Patel, CFA, is a financial adviser for Eclipse Financial. At a party, Patel discusses financial advisory services with Nira Jain. Jain asks Patel to be her adviser, but Patel states that he cannot accept new clients. Patel recommends Eclipse and states that he has faith in all the company's advisers. Jain agrees to become a client of Eclipse if Patel agrees to meet with her quarterly over dinner, paid for by Jain, to discuss her portfolio allocation. Which of the following best describes Patel's options under the Code and Standards?",
+  "option_a": "Patel must reject the offer",
+  "option_b": "Patel can accept the offer but then must disclose it immediately to Eclipse in writing",
+  "option_c": "Patel can accept the offer only after disclosing it in writing to Eclipse and receiving approval",
+  "correct_answer": "C",
+  "explanation_en": "\"Members and Candidates must not accept gifts, benefits, compensation, or consideration that\ncompetes with or might reasonably be expected to create a conflict of interest with their employer's\ninterest unless they obtain written consent from all parties involved.\"\nStandard IV(B) Additional Compensation Arrangements requires Members and Candidates to obtain written permission when third-party,\nadditional compensation agreements could be reasonably seen as creating a conflict with their employers. Permission must be received from\nall parties before the agreement can be accepted. The Standard applies to both monetary and nonmonetary (eg, gifts, benefits) compensation.\nIn this scenario, accepting Jain's offer to pay for quarterly dinners to discuss portfolio allocation could be perceived as a conflict of interest since\nPatel's actions can be perceived as giving Jain preferential treatment. His advice could be viewed as favoring Jain over his own clients and may\nrun counter to advice given by Eclipse's other advisers. To comply with the Standard, Patel would be required to obtain written permission from\nboth Jain and Eclipse before accepting the offer so Eclipse can monitor his actions.\n(Choice A) Patel is not required to reject the offer so long as he obtains written permission from all parties involved so his employer can monitor\nfor conflicts.\n(Choice B) Informing Eclipse after accepting the offer is a violation of the Standard. Patel must receive permission before agreeing so Eclipse\ncan decide if the agreement presents a conflict."
+ },
+ {
+  "id": "50861cd8-5d30-43e3-b13d-8cfbb18ae325",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\10. Ethics\\11.03 Guidance For Standards I–VII - Answers.pdf",
+  "page_idx": 18,
+  "png": "scripts\\_uworld_residuals_png\\50861cd8-5d30-43e3-b13d-8cfbb18ae325.png",
+  "topic": "Ethics & Professional Standards",
+  "subtopic": "11.03 Guidance For Standards I–VII",
+  "question_en": "Shani Gupta works in the manufacturing industry and wants to transition into a financial services role. She believes a CFA charter can help with this transition. Gupta recently sat for Level III of the CFA exam and is excited to update her resume to send to potential employers, although she has not yet received her results. Which of the following statements can she most appropriately use on her resume to adhere to the Standards?",
+  "option_a": "\"The knowledge gained from the CFA program makes me a superior candidate.\"",
+  "option_b": "\"I will be eligible for a CFA charter after completing my required work experience.\"",
+  "option_c": "\"My studies in the CFA program have enhanced my knowledge and skills in finance.\"",
+  "correct_answer": "C",
+  "explanation_en": "Members and Candidates have a duty of loyalty to their clients and must act with reasonable care and exercise prudent judgment. Members and Candidates must act for the benefit of their clients and place their clients' interests before their employer's or their own interests.\" Under Standard VI(C), Members and Candidates must notify their employers, existing clients, and prospective clients of benefits or costs for client referrals. Disclosing referral arrangements allows employers and clients to determine if objectivity is compromised and to identify costs. Members and Candidates must properly disclose referral arrangements before clients sign up for a service that confers the benefits (eg, revenue, income). Before Long Ming signs new contracts, both Mao Yi and Jiang Bai, as parties to the arrangement, must disclose to Ming the details of the referral arrangement between them (Choice A). (Choice C) The Standard requires Members and Candidates, not their firms, to disclose referral fees to clients."
+ },
+ {
+  "id": "5c587146-0e8e-4452-becd-85c9f1a905c1",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\10. Ethics\\11.03 Guidance For Standards I–VII - Answers.pdf",
+  "page_idx": 46,
+  "png": "scripts\\_uworld_residuals_png\\5c587146-0e8e-4452-becd-85c9f1a905c1.png",
+  "topic": "Ethics & Professional Standards",
+  "subtopic": "11.03 Guidance For Standards I–VII",
+  "question_en": "Tony Fernandez, CFA, is an analyst who provides investment recommendations to clients of Johan Investment Management (JIM). Mercedes Chevela, CFA, president of JIM, gives freedom to each analyst to develop diverse recommendations. Chevela's philosophy is to be the first with new ideas, so she streamlined JIM's research operations and eliminated her review of the analysts' work. All analysts deliver their recommendations to clients the same day they are made and are solely responsible for its content. As part of Fernandez's research efforts, he sometimes checks certain websites to get a sense of how \"hot\" a stock currently is. He also examines the company's financial statements, third-party research, and quantitative forecasts, which he believes cover all important issues. Over the last year, most of his sell recommendations have proven to be wrong. To ensure compliance with Standard V(A) Diligence and Reasonable Basis, the most appropriate recommended action is that:",
+  "option_a": "Fernandez should exclude internet rumors as part of his research.",
+  "option_b": "Chevela should reinstate a review process to ensure diligence when making investment recommendations.",
+  "option_c": "Fernandez should redesign his analysis since it lacks a reasonable basis, as proven by his",
+  "correct_answer": "B",
+  "explanation_en": "\"Members and Candidates must use reasonable care and judgment to achieve and maintain independence and objectivity in their professional activities. Members and Candidates must not offer, solicit, or accept any gift, benefit, compensation, or consideration that reasonably could be expected to compromise their own or another's independence and objectivity.\" Standard I(B) Independence and Objectivity focuses on ensuring that Members and Candidates who are investment professionals avoid any actions that compromise their independence and objectivity. The Standard also pertains to actions that could create a conflict of interest. Accepting travel arrangements or accommodations from a company being analyzed should be avoided whenever possible since clients or colleagues could perceive it as compromising the analyst's objecivity. If there are reasonable alternatives for travel and accommodations, accepting those offered by the subject company violates Standard I(B). Best practice is to use commercial transportation and modest accommodations at the expense of the analyst or the analyst's employer. If other commercial transportation or lodging is unavailable, travel can be accepted from the subject company. In this scenario, since other flights and hotels are available, Patel's best course of action is to decline the flight and hotel accommodations and pay for both herself (or have her employer pay). Accepting the accommodations from Red Tiger would be especially inappropriate since best practice suggests accepting only modest accommodations (and only if necessary)—not a luxury suite (Choices B and C)."
+ },
+ {
+  "id": "c85339ab-3cc5-48d1-ad78-afe422e5a2d4",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\10. Ethics\\11.03 Guidance For Standards I–VII - Answers.pdf",
+  "page_idx": 58,
+  "png": "scripts\\_uworld_residuals_png\\c85339ab-3cc5-48d1-ad78-afe422e5a2d4.png",
+  "topic": "Ethics & Professional Standards",
+  "subtopic": "11.03 Guidance For Standards I–VII",
+  "question_en": "Patricia Murphy, CFA, is asked by her manager at the hedge fund firm Star Capital to create a marketing brochure for prospective clients. The firm has achieved the following returns: In the brochure, Murphy writes, \"Star Capital has consistently outperformed its benchmark on a risk-adjusted basis and has yet to have a loss in any year. Clients can expect more of the same next year.\" Which part of Murphy's statements most likely violates Standard I(C) Misrepresentation? Stating that:",
+  "option_a": "\"Star Capital…has yet to have a loss in any year.\"",
+  "option_b": "\"Clients can expect more of the same next year.\"",
+  "option_c": "\"Star Capital has consistently outperformed its benchmark...\"",
+  "correct_answer": "B",
+  "explanation_en": "\"Members and Candidates must not engage in any professional conduct involving dishonesty, fraud, or deceit or commit any act that reflects adversely on their professional reputation, integrity, or competence.\" Standard I(D) Misconduct focuses on conduct, whether legal or illegal, that reflects poorly on the professional competence, reputation, and integrity of members or candidates. In this case, Bellefont's refusal to cooperate with the enforcement of insider trading laws reflects poorly on his professional integrity. His refusal to testify is a refusal to protect the integrity of the capital markets from illegal insider trading and, ultimately, is a refusal to protect clients from this colleague. In fact, this diminishes the professional reputation of his firm as well as himself. Bankruptcy by itself is not a violation of the Standard (Choices B and C). However, the action that led to this bankruptcy—attempting to deceive and defraud the government by evading taxes—does violate the Standard."
+ },
+ {
+  "id": "d1ef6350-7ff8-4bb5-940a-51b7cc81fd91",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\10. Ethics\\11.03 Guidance For Standards I–VII - Answers.pdf",
+  "page_idx": 49,
+  "png": "scripts\\_uworld_residuals_png\\d1ef6350-7ff8-4bb5-940a-51b7cc81fd91.png",
+  "topic": "Ethics & Professional Standards",
+  "subtopic": "11.03 Guidance For Standards I–VII",
+  "question_en": "Sarah Paxton, CFA, works as an investment adviser at a bank. When a client is interested in buying a home, she refers them to Susan Jones, a friend and real estate agent. Jones reciprocates by referring real estate clients to Paxton when appropriate. Since Paxton and Jones are both skilled and respected professionals, each believes the referrals benefit their clients and are in the clients' best interest. According to Standard VI(C) Referral Fees, Paxton is most likely:",
+  "option_a": "required to disclose this arrangement to both her employer and clients.",
+  "option_b": "not required to disclose this arrangement because she believes the clients benefit.",
+  "option_c": "not required to disclose this arrangement because no money is exchanged between Paxton",
+  "correct_answer": "A",
+  "explanation_en": "\"Members and Candidates must disclose to their employer, clients, and prospective clients, as appropriate, any compensation,\nconsideration, or benefit received from or paid to others for the recommendation of products or services.\"\nStandard VI(C) Referral Fees requires Members and Candidates to notify their employers, existing clients, and prospective clients of benefits\nreceived for recommending a product or service. Disclosing referral fee arrangements allows employers and clients to determine whether\nconflicts of interest exist and whether a recommendation is impartial. Referral fees are broadly defined and include any cash or noncash rewards\n(eg, tickets to a sporting event).\nIn this question, Paxton has entered into an agreement with Jones to mutually refer clients when appropriate, which is beneficial for both Paxton\nand Jones. Therefore, Paxton is required to disclose this information to both her employer and clients although no direct money transfer is\ninvolved (Choice C).\n(Choice B) The fact that Paxton believes the clients benefit from the arrangement does not preclude Paxton from the disclosure requirement of\nthe Standard."
+ },
+ {
+  "id": "4e9f8364-1065-4a72-920b-d98236cb6b6c",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\10. Ethics\\11.05 Ethics Application - Answers.pdf",
+  "page_idx": 12,
+  "png": "scripts\\_uworld_residuals_png\\4e9f8364-1065-4a72-920b-d98236cb6b6c.png",
+  "topic": "Ethics & Professional Standards",
+  "subtopic": "11.05 Ethics Application",
+  "question_en": "Trevor Johnson, CFA, joins Pinnacle Advisors as an equity trader. Pinnacle uses Research Market Brokers (RMB) for all trades from accounts that allow soft dollar arrangements and Cost Cutter Brokers (CCB) for those that do not. RMB does not have the lowest execution price but offers research used for the benefit of Pinnacle's clients. CCB offers the lowest price execution available for Pinnacle. After a slow trading month, Pinnacle is below its soft dollar trading commitment to RMB. RMB offers to temporarily lower the price of its trades to match CCB until the commitment is reached as long as all trades, including those on accounts that do not allow soft dollar arrangements, are made through their brokerage. Based on the Code and Standards, Johnson:",
+  "option_a": "can temporarily trade all accounts through RMB since it lowered its price.",
+  "option_b": "can only trade stocks through CCB for all accounts since it is usually the lowest-priced.",
+  "option_c": "cannot use trades for accounts that prohibit soft dollar arrangements to meet the",
+  "correct_answer": "A",
+  "explanation_en": "\"Members and Candidates must not engage in practices that distort prices or artificially inflate trading volume with the intent to mislead market participants.\" Standard II(B) Market Manipulation requires Members and Candidates to avoid any practices that deceive market participants through the distortion of securities prices or trading volume. Manipulation can occur through: information-based activities (eg, issuing misleading information) and transaction-based activities (eg, exaggerated trading between two accounts). The Standard is not meant to prevent the use of legitimate strategies that limit a trade's impact on the market when trading large positions or low- liquidity stocks. The key element in determining whether the Standard is violated is whether the trading strategy is intended to deceive market participants. If the strategy is intended to deceive investors, it violates the Standard. In this scenario, Annika Goncharov uses a legitimate strategy of breaking up a large position of a low-liquidity stock to limit the impact of the sale on the price. Annika's strategy has not violated the Standard (Choice B). Boris Goncharov intends to distort market prices by making market participants believe there are more buyers of Bright Sky Capital's stock than there are. Since market participants cannot see that Boris is driving both the buying and the selling activity, the trading is deceptive and has violated the Standard (Choice C)."
+ },
+ {
+  "id": "10911a37-bd7e-4d9b-a862-ed1c73515668",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\10. Ethics\\11.05 Ethics Application - Answers.pdf",
+  "page_idx": 59,
+  "png": "scripts\\_uworld_residuals_png\\10911a37-bd7e-4d9b-a862-ed1c73515668.png",
+  "topic": "Ethics & Professional Standards",
+  "subtopic": "11.05 Ethics Application",
+  "question_en": "Sumit Ahuja, CFA, is an investor with limited knowledge of the biotech industry. Through an expert network, he calls a physician at a prestigious hospital regarding broad trends in the biotech industry. The physician names several companies that have high-profile drugs in the final stages of the government's publicly disclosed approval process. One of the companies is Orion Pharmaceuticals. After the call, as part of his thorough research on Orion, Ahuja purchases a newly released research report from Vijaya Dayal, a respected biotech analyst who covers Orion. In her report, Dayal states that Orion's drug is likely to receive regulatory approval, based on her own opinion from thorough research. As a result, Ahuja purchases stock in Orion. Ahuja:",
+  "option_a": "was in full compliance of the Standards.",
+  "option_b": "violated the Standards by trading based on information received from the expert network.",
+  "option_c": "violated the Standards by trading based on a research report that was not disseminated to",
+  "correct_answer": "A",
+  "explanation_en": "\"Members and Candidates must use reasonable care and judgment to achieve and maintain independence and objectivity in their professional activities. Members and Candidates must not offer, solicit, or accept any gift, benefit, compensation, or consideration that reasonably could be expected to compromise their own or another's independence and objectivity.\" Standard I(B) Independence and Objectivity requires Members and Candidates to avoid actions that compromise their independence and objectivity or create conflicts of interest. Producing issuer-paid research is an acceptable practice as long as the analyst conducts the research with due diligence, remains independent, and discloses all conflicts. One way to maintain independence is to accept only a flat fee for this type of work, since a variable fee linked to conclusions, recommendations, or outcomes could inhibit the analyst's independence and objectivity. In this scenario, Landry and O'Connor both violated the Standard by agreeing to tie compensation to outcomes (ie, new investors). (Choices B and C) Novogratz did not violate the Standard by proposing his distribution arrangement since this compensation is not based on any specific outcome and cannot be seen as compromising his independence."
+ },
+ {
+  "id": "98d1e3e5-e991-4ac8-8d35-5642b138d01a",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\10. Ethics\\11.05 Ethics Application - Answers.pdf",
+  "page_idx": 68,
+  "png": "scripts\\_uworld_residuals_png\\98d1e3e5-e991-4ac8-8d35-5642b138d01a.png",
+  "topic": "Ethics & Professional Standards",
+  "subtopic": "11.05 Ethics Application",
+  "question_en": "Maya Levine, CFA, is a research analyst at a hedge fund. Levine covers the global alternative energy industry and regularly uses an expert network to keep abreast of new developments. During a recent expert network call with a junior scientific researcher at an electric car manufacturer, Levine asks about a new battery technology that was disclosed in the last earnings release. The researcher echoes the optimistic tone of the press release, suggesting possible commercial development within a short period, but also notes that the rare earth elements needed for commercial production are in short supply. Based on this conversation, Levine begins researching rare earth mining stocks that could potentially benefit from large-scale commercialization were the technology adopted. After conducting her research, Levine identifies and recommends the purchase for the hedge fund of an attractively valued rare earth mining company, believing that this new technology could provide an upside to her valuation estimate. According to the Standard II(A) Material Nonpublic Information, Levine:",
+  "option_a": "did not violate the Standard.",
+  "option_b": "violated the Standard by acting on material nonpublic information.",
+  "option_c": "violated the Standard by not reporting the receipt of material nonpublic information to her",
+  "correct_answer": "A",
+  "explanation_en": "\"Members and Candidates must not accept gifts, benefits, compensation, or consideration that competes with or might reasonably be expected to create a conflict of interest with their employer's interest unless they obtain written consent from all parties involved.\" Standard IV(B) Additional Compensation Arrangements notes that third-party, additional compensation is allowed. However, if the arrangement could be reasonably seen as creating a conflict with the employer, the Member or Candidate must obtain written permission from all parties involved. In this case, Nakamura cannot accept compensation for any investment advice that could be seen as conflicting with her firm's interests without written permission from all parties involved. Since Nakamura is giving investment advice that differs from her firm's recommendations and proposing trade execution by another firm, this can reasonably be seen as a conflict with her employer's interests (Choice C). Therefore, she has violated the Standards by not obtaining prior written permission. Additional compensation does not necessarily have to be cash compensation; it could be anything of value above a reasonable threshold, including a gift, tickets to a sporting event, or, as here, a series of expensive dinners. By establishing this condition for sharing her investment ideas, Nakamura has created a compensation arrangement and is not just having dinner with a friend (Choice B)."
+ },
+ {
+  "id": "edf229ac-bdfb-4a55-abda-6284eeb1537d",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\10. Ethics\\11.05 Ethics Application - Answers.pdf",
+  "page_idx": 16,
+  "png": "scripts\\_uworld_residuals_png\\edf229ac-bdfb-4a55-abda-6284eeb1537d.png",
+  "topic": "Ethics & Professional Standards",
+  "subtopic": "11.05 Ethics Application",
+  "question_en": "Tom Smith, CFA, is assigned a new client, Brigitte Duret, who is currently invested entirely in cash. During a brief phone conversation with Smith, Duret says: \"I'd like to earn a better return, but I don't want to take any risk. I am going to work in the Amazon rainforest for about three months, so we will meet when I am back in the US.\" Smith schedules a meeting with Duret three months from today. Smith temporarily invests Duret's assets in the firm's Conservative Portfolio since he does not want Duret to miss out on at least some of the market's performance before their meeting. Smith is the firm's leading expert on the Conservative Portfolio (shown in the table below) and has used it for many client portfolios with good results. According to Standard III(C) Suitability and based on the Conservative Portfolio's asset allocation, Smith most likely:",
+  "option_a": "violates the Standard since he failed to perform due diligence before taking investment action.",
+  "option_b": "violates the Standard since he invested the client's assets before understanding the client's risk and return objectives.",
+  "option_c": "does not violate the Standard since he spoke to Duret, the investment is temporary, and it is",
+  "correct_answer": "B",
+  "explanation_en": "\"Investment transactions for clients and employers must have priority over investment transactions in which a Member or Candidate is the beneficial owner.\" Standard VI(B) Priority of Transactions requires members and candidates to place clients' and employers' financial interests before their own when investing. It is not uncommon for a member or candidate to transact in the same investments as a client or even alongside the client. This situation does not violate the Standard provided that: the client is not disadvantaged by the trade, the member or candidate does not benefit from the client transactions, and the member or candidate adheres to all applicable regulatory requirements. Likewise, a manager has no obligation to invest personal funds in the same strategy as clients do since the manager may have different risk and return objectives and different constraints (eg, liquidity needs) than the clients. In this scenario, Ivanov complied with the Standard. Ivanov has no specific obligation to inform clients of his personal transactions (Choice B). His sale ran counter to the long-term advice given to clients, but since he did not violate the guidelines above, no infringement occurred (Choice C)."
+ },
+ {
+  "id": "b32bfeb3-3a88-49ac-a6b1-3be2cd772a49",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\10. Ethics\\11.05 Ethics Application - Answers.pdf",
+  "page_idx": 76,
+  "png": "scripts\\_uworld_residuals_png\\b32bfeb3-3a88-49ac-a6b1-3be2cd772a49.png",
+  "topic": "Ethics & Professional Standards",
+  "subtopic": "11.05 Ethics Application",
+  "question_en": "The CEO of PrimeHealth, Inc., a publicly traded pharmaceutical company, hosted a conference call for approximately 15 analysts from 10 different investment banks. One of the listeners was Paula Pressly, Level II CFA candidate. The CEO of PrimeHealth announces that the company has received regulatory approval to sell its latest cancer drug. The CEO tells the assembled participants that he anticipates additional revenues of $3 billion this year, which he estimates will grow at 10% per year. After the call, but before the CEO's information has been widely distributed, Pressly buys 100 shares of PrimeHealth for her account. At the same time, she also calls her father and advises him to buy PrimeHealth stock, but he does not act on her advice. Which of the following most accurately describes any violations by Pressly of Standard II(A) Material Nonpublic Information?",
+  "option_a": "Pressly violated the Standard only by purchasing the stock.",
+  "option_b": "Pressly violated the Standard only by recommending that her father purchase the stock.",
+  "option_c": "Pressly violated the Standard both by her purchase and recommending that her father",
+  "correct_answer": "C",
+  "explanation_en": "\"Members and Candidates must develop and maintain appropriate records to support their investment analyses, recommendations, actions, and other investment-related communications with clients and prospective clients.\" Standard V(C) Record Retention requires Members and Candidates to keep records that are considered property of their firms. This requirement includes retaining and documenting all social media and instant messaging interactions that involve investment-related communication with clients and prospective clients. Although the Standard places some responsibility for record retention on firms, Members and Candidates must assist in the process, which includes capturing and forwarding documentation of work-related digital media (eg, text messages, blog posts, social media interactions). In this scenario, Bao Pham's failure to retain and document all of his client communications violates the Standard. His concern that private information may be included does not override the requirement (Choice C). (Choice B) Personal social media and instant messaging interactions that include any work-related content must be retained and submitted to the firm, even if the firm has no stated policy on the issue."
+ },
+ {
+  "id": "0ef74f5f-5364-45bf-a69d-ab6a11941353",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\10. Ethics\\11.05 Ethics Application - Answers.pdf",
+  "page_idx": 72,
+  "png": "scripts\\_uworld_residuals_png\\0ef74f5f-5364-45bf-a69d-ab6a11941353.png",
+  "topic": "Ethics & Professional Standards",
+  "subtopic": "11.05 Ethics Application",
+  "question_en": "Enes Yilmaz, CFA, is a portfolio manager who is responsible for selecting emerging market subadvisors for a government pension fund. Yilmaz regularly evaluates third-party investment advisers and has developed an extensive due diligence checklist. While screening for new managers, he identifies a particularly strong-performing hedge fund that provides excellent diversification benefits to the pension portfolio. During his due diligence, Yilmaz discovers that: ● the fund is registered in an offshore jurisdiction with weak governance requirements, ● none of the firm's employees are CFA charterholders, and ● the company does not have an established code of ethics. The hedge fund's CEO explains that all employees are thoroughly vetted before hiring and that everyone at his firm \"knows right from wrong.\" Although Yilmaz is concerned about the lack of a code of ethics, he confirms that the fund complies with local laws and is in good standing with regulators; therefore, he decides to invest. Does Yilmaz's conduct comply with Standard V(A) Diligence and Reasonable Basis?",
+  "option_a": "No.",
+  "option_b": "Yes, since external advisory firms are not required to adopt a code of ethics.",
+  "option_c": "Yes, since he performed thorough due diligence and investing in the hedge fund is in the",
+  "correct_answer": "A",
+  "explanation_en": "\"Members and Candidates must:"
+ },
+ {
+  "id": "68fb69d2-a5e7-486b-9f62-c29acf7a62e2",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\10. Ethics\\11.02 Code Of Ethics And Standards Of Professional Conduct - Answers.pdf",
+  "page_idx": 1,
+  "png": "scripts\\_uworld_residuals_png\\68fb69d2-a5e7-486b-9f62-c29acf7a62e2.png",
+  "topic": "Ethics & Professional Standards",
+  "subtopic": "11.02 Code Of Ethics And Standards Of Professional Conduct",
+  "question_en": "Which of the following is one of the six elements of the CFA Institute's Code of Ethics? Members and candidates must:",
+  "option_a": "judge the suitability of investments in the context of the client's total portfolio.",
+  "option_b": "promote the integrity of the global capital markets for the ultimate benefit of society.",
+  "option_c": "avoid misrepresentations relating to analysis, recommendations, actions, or other",
+  "correct_answer": "B",
+  "explanation_en": "Code of Ethics Standards of Professional Conduct Aspirational Behavioral Overarching expected behavior Ethical business practices Conceptual Actionable CFA Charter holders and candidates are obligated to abide by and advocate for the Code of Ethics (ie, the Code) and the Standards of Professional Conduct (ie, the Standards), which provide guidance for appropriate ethical behavior. The Code includes general principles to which members and candidates must adhere. In contrast, the Standards address more specific applications of those principles that must be followed. To identify elements of the Code and the Standards, determine whether the task in question is actionable or is more conceptual. \"Promoting… integrity and viability…for the ultimate benefit of society\" is one of the six principles of ethical behaviors in the Code. Judging client suitability and avoiding misrepresentation are practical applications of the Standards (Choices A and C)."
+ }
+]

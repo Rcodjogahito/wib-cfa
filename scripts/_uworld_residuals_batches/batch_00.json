@@ -1,0 +1,376 @@
+[
+ {
+  "id": "e3c21b6b-a208-4831-b9c1-ae05757b18ee",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\6. Equity Investments\\6.08 Equity Valuation Concepts And Basic Tools - Answers.pdf",
+  "page_idx": 77,
+  "png": "scripts\\_uworld_residuals_png\\e3c21b6b-a208-4831-b9c1-ae05757b18ee.png",
+  "topic": "Equity Investments",
+  "subtopic": "6.08 Equity Valuation Concepts And Basic Tools",
+  "question_en": "An analyst gathers the following information about the common stock of a mature company, with dividend growth expected to be constant for an indefinite period. Assume the stock is fairly valued. Based on this information and the appropriate valuation model, the amount of the company's last dividend paid is closest to:",
+  "option_a": "$2.58",
+  "option_b": "$2.68",
+  "option_c": "$3.01",
+  "correct_answer": "A",
+  "explanation_en": "The Gordon growth model (GGM) is used to estimate the intrinsic value of a stock. The GGM assumes the company has steady growth in\nearnings, resulting in a constant dividend growth rate (g). Dividend discount models, such as the GGM, are present value models that use\nfuture dividends as inputs to determine a stock's current value.\nThe constant dividend growth rate can be estimated as the earnings retention ratio (b) multiplied by the return on equity (ROE):\nROE is a measure of return on shareholder equity. The earnings retention ratio, b, indicates how much of that return is reinvested in the\nbusiness. Thus, the constant dividend growth rate gives an estimate of future growth of earnings and dividends based on reinvested shareholder\nreturn. Substitute values to calculate stock intrinsic value (V ):\n0"
+ },
+ {
+  "id": "0f29c4b3-d638-46d4-bd8d-080288e6f033",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\6. Equity Investments\\6.08 Equity Valuation Concepts And Basic Tools - Answers.pdf",
+  "page_idx": 62,
+  "png": "scripts\\_uworld_residuals_png\\0f29c4b3-d638-46d4-bd8d-080288e6f033.png",
+  "topic": "Equity Investments",
+  "subtopic": "6.08 Equity Valuation Concepts And Basic Tools",
+  "question_en": "An analyst has collected the following data for a noncallable, nonconvertible, perpetual preferred stock: The intrinsic value of the preferred stock is closest to:",
+  "option_a": "€20.00",
+  "option_b": "€20.80",
+  "option_c": "€23.81",
+  "correct_answer": "A",
+  "explanation_en": "Like other equities, the intrinsic value of a preferred stock is the present value of all its future dividends. The model for determining the\nintrinsic value of a preferred stock assumes that dividends remain the same and continue indefinitely. As a result, the value of a preferred stock is\ncalculated as the value of a perpetuity, where the perpetuity's future payments are the preferred stock's dividends:\nIntrinsic value is equal to the annual dividend divided by the required rate of return (ie, the prevailing market rate).\nThe dividend is the product of the preferred dividend rate and the par value.\nIn this scenario, the last preferred dividend is calculated by multiplying the par value by the preferred dividend rate (25 × 0.056 = 1.4). Substitute\nvalues into the preferred stock valuation model to calculate the intrinsic value:\nSince the intrinsic value is equal to the market value (after rounding to two decimal places), the preferred stock is considered fairly valued.\n(Choice A) Determining the stock is undervalued is the result of incorrectly reversing the required rate of return and the preferred stock dividend\nrate in the calculation.\n(Choice C) Concluding that the stock is overvalued results from using the market value, rather than the par value, to determine the dividend used\nto calculate intrinsic value."
+ },
+ {
+  "id": "ddacbd80-36df-4ef2-91c0-762dd75d7ac5",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\6. Equity Investments\\6.08 Equity Valuation Concepts And Basic Tools - Answers.pdf",
+  "page_idx": 3,
+  "png": "scripts\\_uworld_residuals_png\\ddacbd80-36df-4ef2-91c0-762dd75d7ac5.png",
+  "topic": "Equity Investments",
+  "subtopic": "6.08 Equity Valuation Concepts And Basic Tools",
+  "question_en": "An analyst has estimated the enterprise value of a firm and wants to calculate the market value of its common equity. The analyst would most appropriately:",
+  "option_a": "add the market value of preferred stock and debt and subtract cash equivalents and short-term investments.",
+  "option_b": "subtract the market value of preferred stock and debt and add cash equivalents and short-term investments.",
+  "option_c": "subtract the market value of preferred stock and debt and subtract cash equivalents and",
+  "correct_answer": "B",
+  "explanation_en": "Equity represents the claim that shareholders have on a firm's net assets after accounting for liabilities. Companies report assets and liabilities at book value, which may not always reflect current market conditions. Therefore, it is important for analysts to adjust book values to market (fair) values when valuing a company. The short-term (one year or less) nature of current assets and liabilities (ie, working capital) makes them easy to value since market prices are likely to be close to their book values. As such, it is often appropriate to apply asset-based valuation to a firm that holds a large percentage of working capital (relative to total assets). Conversely, it is difficult to value firms with large proportions of noncurrent assets (eg, equipment), since book values can differ drastically from market values. (Choice A) Under asset-based valuation, a firm's equity value is approximated from the market value, not the book value, of assets and liabilities. (Choice C) Intangible assets (eg, goodwill, patents) are usually hard to measure and company specific. Therefore, it is difficult to obtain market prices as proxies."
+ },
+ {
+  "id": "6fea0a5c-1014-4d49-a797-e7f054cf4c27",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\6. Equity Investments\\6.08 Equity Valuation Concepts And Basic Tools - Answers.pdf",
+  "page_idx": 4,
+  "png": "scripts\\_uworld_residuals_png\\6fea0a5c-1014-4d49-a797-e7f054cf4c27.png",
+  "topic": "Equity Investments",
+  "subtopic": "6.08 Equity Valuation Concepts And Basic Tools",
+  "question_en": "An analyst gathers the following information about the common stock of a mature company with a stable growth pattern. The company's dividend growth is expected to be constant for an indefinite time period. The intrinsic value of the stock is closest to:",
+  "option_a": "€16.64",
+  "option_b": "€17.18",
+  "option_c": "€18.62",
+  "correct_answer": "B",
+  "explanation_en": "The comparables (comps) method is the most common way to compare and report on price multiples. The analyst compares a price multiple of a company stock to that of a benchmark (ie, similar company stock, industry average). If the price multiple of the stock is lower, higher, or the same as the benchmark, then the stock is considered undervalued, overvalued, or fairly valued, respectively. There are disadvantages to the comps method. Results can be inconsistent with other types of models (eg, present value, asset-based). Also, factors that decrease comparability, such as economic fluctuations and choice of accounting methods, may distort comparisons. For example, companies have flexibility on the timing and amount of expenses they recognize, which can potentially impact income statement items and therefore price multiples. Using comps to make valuation decisions also has advantages. The data needed to construct price multiples and make comparisons are publicly available, and the method is easily used and widely understood. Compared with other valuation methods, use of comps is relatively simple and allows for relative comparisons between companies. It is particularly suited to comparing companies in the same industry (Choices A and B)."
+ },
+ {
+  "id": "0b1de945-7f65-4fce-969e-688f54da117e",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\6. Equity Investments\\6.08 Equity Valuation Concepts And Basic Tools - Answers.pdf",
+  "page_idx": 7,
+  "png": "scripts\\_uworld_residuals_png\\0b1de945-7f65-4fce-969e-688f54da117e.png",
+  "topic": "Equity Investments",
+  "subtopic": "6.08 Equity Valuation Concepts And Basic Tools",
+  "question_en": "An analyst gathers the following data on a company whose dividend growth rate is expected to be constant indefinitely: Assuming the stock is fairly valued, its long-term growth rate is closest to:",
+  "option_a": "2.98%",
+  "option_b": "3.36%",
+  "option_c": "3.51%",
+  "correct_answer": "B",
+  "explanation_en": "The most common way analysts compare and report on price multiples is the method of comparables. An analyst compares the price multiple of a company stock to a benchmark (ie, price multiple of a similar company stock or average). In a well-functioning financial system, arbitrage forces identical assets to have the same price. Therefore, a price multiple should be close to its benchmark. Market participants engage in arbitrage by purchasing a lower-priced asset and selling it at a higher price. This puts upward pressure on the lower price and downward pressure on the higher price until the prices of the identical assets converge. The method of comparables is based on the law of one price, which is enforced by arbitrage. (Choice A) The present value approach assumes that an asset's intrinsic value is equal to the discounted value of all its future cash flows and then compares that value to the asset's market price to determine whether it is fairly priced. In contrast, the method of comparables measures an asset's price against a benchmark of similar assets. (Choice C) Competitive advantage is a set of business conditions or company attributes that allows a business to outperform competitors and achieve superior results. Competitive advantage may allow one firm to sell at a lower price than its competitors but would not be associated with identical assets having the same price."
+ },
+ {
+  "id": "bf663568-b42c-48ef-8991-0a57773343d9",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\6. Equity Investments\\6.08 Equity Valuation Concepts And Basic Tools - Answers.pdf",
+  "page_idx": 15,
+  "png": "scripts\\_uworld_residuals_png\\bf663568-b42c-48ef-8991-0a57773343d9.png",
+  "topic": "Equity Investments",
+  "subtopic": "6.08 Equity Valuation Concepts And Basic Tools",
+  "question_en": "A company issued retractable term preferred shares on June 30, 20X1, with the following characteristics: On July 1, 20X5, an analyst trying to value these shares assumes that the retraction feature will be exercised at par on June 30, 20X8, and that the required rate of return is 7.5%. The analyst's most appropriate conclusion is that the intrinsic value ($) per share is closest to:",
+  "option_a": "23.74",
+  "option_b": "24.00",
+  "option_c": "25.00",
+  "correct_answer": "B",
+  "explanation_en": "Enterprise value (EV) is a measurement of a company's total value and is used as an alternative to the value of equity. EV can be described as the total takeover cost of a company. In the event of a takeover, the acquiring company will take on the target company's debt and equity. These costs are offset by the target company's cash and investments. Suppose a company has 10 million common shares outstanding with a current market price of CNY 43 per share and 1 million preferred shares trading at CNY 26 per share. The company's total debt is CNY 126 million. The company has short-term investments of CNY 10 million and cash equivalents of CNY 4 million: In this scenario, the EV is CNY 568 million. (Choice B) This choice fails to subtract cash equivalents and short-term investments, which is required to correctly calculate EV. A company's capital from all sources includes market capitalization, market value of preferred stock, and the market value of debt. (Choice C) A company's equity and liquid investments do not take into account cash equivalents or the market value of debt."
+ },
+ {
+  "id": "bb77aece-381f-4b8b-a821-b8676cc171fd",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\6. Equity Investments\\6.08 Equity Valuation Concepts And Basic Tools - Answers.pdf",
+  "page_idx": 21,
+  "png": "scripts\\_uworld_residuals_png\\bb77aece-381f-4b8b-a821-b8676cc171fd.png",
+  "topic": "Equity Investments",
+  "subtopic": "6.08 Equity Valuation Concepts And Basic Tools",
+  "question_en": "An analyst gathers the following information related to a company's stock: If the stock is fairly valued, then the terminal value at the end of Year 3 using the two-stage dividend discount model is closest to:",
+  "option_a": "€14.20",
+  "option_b": "€14.89",
+  "option_c": "€15.19",
+  "correct_answer": "C",
+  "explanation_en": "Price multiples, such as the P/E ratio, typically express the relationship between a company's stock price and a fundamental variable, such as earnings. The method of comparables commonly entails comparing price multiples across companies in the same industry (ie, cross-sectional analysis) to gauge whether a company is fairly valued relative to its competitors based on the law of one price. In theory, the law of one price implies that similar companies should be priced similarly relative to their fundamentals. For example, if the median P/E ratio in an industry is 10, then a fairly priced company would be priced at 10 times its EPS. If a company's stock price is more (less) than 10 times its EPS, then it may be overvalued (undervalued) relative to its industry peers. (Choice A) A year-on-year comparison of stock price measures growth for shareholders. Unless the stock price is compared to a fundamental variable, the law of one price does not apply. (Choice C) A trailing 12-month P/E ratio is based on current price and historical earnings, whereas a justified forward P/E ratio is based on forecasted stock price and earnings. Comparing the two P/E ratios (justified versus trailing) does not rely on the law of one price."
+ },
+ {
+  "id": "2803d4a5-a2d6-42a2-b715-360947f637b4",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\6. Equity Investments\\6.08 Equity Valuation Concepts And Basic Tools - Answers.pdf",
+  "page_idx": 22,
+  "png": "scripts\\_uworld_residuals_png\\2803d4a5-a2d6-42a2-b715-360947f637b4.png",
+  "topic": "Equity Investments",
+  "subtopic": "6.08 Equity Valuation Concepts And Basic Tools",
+  "question_en": "An analyst has collected the following data for a noncallable, nonconvertible preferred stock: Based on this information, the stock is most likely:",
+  "option_a": "undervalued.",
+  "option_b": "fairly valued.",
+  "option_c": "overvalued.",
+  "correct_answer": "B",
+  "explanation_en": "Regarding shareholder wealth, all else being equal, repurchasing shares is comparable to paying cash dividends; both return cash to shareholders. A share repurchase allows the company greater control in the timing and size of shareholder distributions. Some companies prefer this approach to avoid a regular cash dividend and all the market expectations that go along with paying it. By controlling the timing and size of share repurchase, management can buy shares to support the share price and/or offset the exercise of employee stock options. Share repurchase has also gained popularity since it is often a more tax-efficient means of returning cash to shareholders. Repurchased shares are excluded from the earnings per share (EPS) calculation. This has a positive impact on EPS growth and is also a reason why a company's management pursues share repurchase instead of a cash dividend. (Choices A and C) Shares that have been repurchased are not eligible to participate in cash dividends or shareholder voting."
+ },
+ {
+  "id": "2909c31e-2ebf-4182-9767-3389073ce98a",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\6. Equity Investments\\6.08 Equity Valuation Concepts And Basic Tools - Answers.pdf",
+  "page_idx": 60,
+  "png": "scripts\\_uworld_residuals_png\\2909c31e-2ebf-4182-9767-3389073ce98a.png",
+  "topic": "Equity Investments",
+  "subtopic": "6.08 Equity Valuation Concepts And Basic Tools",
+  "question_en": "An analyst has compiled the following information about a company stock:\n\n| Selected Data | |\n|---|---|\n| Return on equity | 7% |\n| Dividend payout ratio | 20% |\n| Required rate of return | 6% |\n| Weighted average cost of capital | 5% |\n| Current market price of stock | CNY 52 |\n| Next year's projected earnings | CNY 1 |\n\nThe company's justified price-to-earnings ratio using the Gordon growth model indicates the stock is most likely:",
+  "option_a": "undervalued.",
+  "option_b": "fairly valued.",
+  "option_c": "overvalued.",
+  "correct_answer": "C",
+  "explanation_en": "To understand the relationship between the justified forward price-to-earnings (P/E) ratio and company fundamentals, begin with the Gordon\ngrowth model (GGM). Assuming that price is equal to value, divide both sides by leading (ie, next year's) earnings (E ) and observe that the ratio\n1\nof dividends to earnings is the dividend payout ratio:\nTo calculate the justified forward P/E ratio, first calculate the long-term growth rate as (1 − dividend payout ratio) multiplied by the return on equity\n(ROE). Substitute values:"
+ },
+ {
+  "id": "7d98d9b9-d71c-49fb-b445-d35a0cb42d71",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\6. Equity Investments\\6.08 Equity Valuation Concepts And Basic Tools - Answers.pdf",
+  "page_idx": 52,
+  "png": "scripts\\_uworld_residuals_png\\7d98d9b9-d71c-49fb-b445-d35a0cb42d71.png",
+  "topic": "Equity Investments",
+  "subtopic": "6.08 Equity Valuation Concepts And Basic Tools",
+  "question_en": "An analyst gathers the following information about three comparable companies: All other things being equal, based on cross-sectional analysis of the companies during the most recent year, which company is most likely overvalued?\n\n```markdown\n| | Company X | Company Y |\n|---|---|---|\n| Current market price per share | ZAR 101.00 | ZAR 62.00 |\n| Last year's earnings-per-share | ZAR 2.09 | ZAR 1.15 |\n| Long-term dividend growth rate | 6.0% | 7.5% |\n| Dividend payout ratio | 50.0% | 60.0% |\n| Required rate of return | 7.0% | 9.0% |\n```",
+  "option_a": "Company X",
+  "option_b": "Company Y",
+  "option_c": "Company Z",
+  "correct_answer": "A",
+  "explanation_en": "The Gordon growth model (GGM) is used to estimate the intrinsic value of a stock. The GGM assumes the company has steady growth in\nearnings, resulting in a constant dividend growth rate (g). Dividend discount models, such as the GGM, are present value models that use\nfuture dividends as inputs to determine a stock's current value.\nThe constant dividend growth rate can be estimated as the earnings retention ratio (b) multiplied by the return on equity (ROE):\nROE is a measure of return on shareholder equity. The earnings retention ratio, b, indicates how much of that return is reinvested in the\nbusiness. Thus, the constant dividend growth rate gives an estimate of future growth of earnings and dividends based on reinvested shareholder\nreturn. Substitute values to calculate stock intrinsic value (V ):\n0"
+ },
+ {
+  "id": "a6b37f04-266d-4ce6-b2de-363a16d66695",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\6. Equity Investments\\6.08 Equity Valuation Concepts And Basic Tools - Answers.pdf",
+  "page_idx": 19,
+  "png": "scripts\\_uworld_residuals_png\\a6b37f04-266d-4ce6-b2de-363a16d66695.png",
+  "topic": "Equity Investments",
+  "subtopic": "6.08 Equity Valuation Concepts And Basic Tools",
+  "question_en": "An analyst gathered the following price multiples:\n\n# Price Multiples 20X9\n\n| Company | P/E | P/S | P/B |\n|---|---|---|---|\n| X | 21.3 | 2.3 | 3.5 |\n| Y | 17.6 | 1.2 | 3.4 |\n| Z | 21.0 | 1.7 | 3.2 |\n\nP/E = Price-to-earnings ratio\nP/S = Price-to-sales ratio\nP/B = Price-to-book ratio\n\nThe analyst will most appropriately conclude that which of the following companies is undervalued?",
+  "option_a": "Company X",
+  "option_b": "Company Y",
+  "option_c": "Company Z",
+  "correct_answer": "B",
+  "explanation_en": "The method of comparables can be used in two ways. Comparing one asset's price multiple to its historical average (ie, benchmark) over multiple years is called time-series analysis. Comparing the price multiples of several similar assets over the same time period is called cross-sectional analysis. If the price multiple of the asset is\n\n- less than the benchmark, it is considered undervalued\n- nearly equal to the benchmark, it is considered fairly valued\n- greater than the benchmark, it is considered overvalued.\n\nIn this scenario, there are three price multiples under consideration: price-to-earnings (P/E), price-to-book (P/B), and price-to-sales (P/S). Since only one year is given, time-series analysis is not an option; therefore, cross-sectional analysis is appropriate. Company Y's P/B is the same as the average P/B for the three companies. However, Company Y's P/E and P/S are below the average P/E and P/S for all three companies. Therefore, Company Y is considered undervalued.\n\n(Choice A) Company X's P/B is virtually the same as the average of all three companies. Its P/E and P/S are well over the three companies' average, so Company X would be considered overvalued.\n\n(Choice C) Company Z's P/E is above the companies' average, its P/S is the same as the average, and its P/B is below the average. Therefore, it would be inappropriate to conclude that Company Z is undervalued."
+ },
+ {
+  "id": "8accb424-8fb7-419e-9913-23d3117fb6c5",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\6. Equity Investments\\6.08 Equity Valuation Concepts And Basic Tools - Answers.pdf",
+  "page_idx": 85,
+  "png": "scripts\\_uworld_residuals_png\\8accb424-8fb7-419e-9913-23d3117fb6c5.png",
+  "topic": "Equity Investments",
+  "subtopic": "6.08 Equity Valuation Concepts And Basic Tools",
+  "question_en": "An analyst estimates a company's ratio of enterprise value (EV) to EBITDA to be 10 based on peer analysis. The analyst gathers the following company information:\n\n| company information: INR | millions |\n|---|---|\n| Cash and cash equivalents | 80 |\n| Book value of debt | 800 |\n| Market value of debt | 725 |\n| Short-term investments | 25 |\n\nIf the company is expected to report EBITDA of INR 200 million this year, its market capitalization (in INR millions) is closest to:",
+  "option_a": "1,305",
+  "option_b": "1,355",
+  "option_c": "1,380",
+  "correct_answer": "C",
+  "explanation_en": "Enterprise value (EV) measures the total value of a firm (ie, common equity, net debt). EV is also considered the takeover value, the amount an\nacquirer would pay for a target firm less the target's cash (since cash can be used to pay down debt).\nEV multiples allow for evaluating a firm's relative value over time or compared with other firms. When combined with net debt, the estimate of EV\nderived from the EV multiple can also be used to estimate the firm's market capitalization (ie, equity value).\nIn this scenario, the analyst is estimating the market capitalization of the company based on its EV-to-EBITDA ratio. The formula for the EV-to-\nEBITDA ratio can be rearranged to solve for market capitalization as follows:\nMarket capitalization = (10 × 200) – 725 + (80 + 25) = 1,380\n(Choice A) Market capitalization of 1,305 results from using the book value of the company's debt instead of the market value. The book value of\na company's bonds on its balance sheet may differ from the bonds' market value, which is a more current valuation.\n(Choice B) Market capitalization of 1,355 results from not subtracting short-term investments."
+ },
+ {
+  "id": "320838af-5f30-4d70-8e26-f7af54ea7dd9",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\6. Equity Investments\\6.08 Equity Valuation Concepts And Basic Tools - Answers.pdf",
+  "page_idx": 40,
+  "png": "scripts\\_uworld_residuals_png\\320838af-5f30-4d70-8e26-f7af54ea7dd9.png",
+  "topic": "Equity Investments",
+  "subtopic": "6.08 Equity Valuation Concepts And Basic Tools",
+  "question_en": "An analyst gathers the following information on a company that is expected to experience high dividend growth for 4 years followed by long-term, constant growth: Using only this data for a two-stage dividend discount model, the analyst's most appropriate conclusion is that the stock is:",
+  "option_a": "undervalued.",
+  "option_b": "fairly valued.",
+  "option_c": "overvalued.",
+  "correct_answer": "B",
+  "explanation_en": "The Gordon growth model (GGM) is used to estimate the intrinsic value of a stock. The GGM assumes the company has steady growth in\nearnings, resulting in a constant dividend growth rate (g). Dividend discount models, such as the GGM, are present value models that use\nfuture dividends as inputs to determine a stock's current value.\nThe constant dividend growth rate can be estimated as the earnings retention ratio (b) multiplied by the return on equity (ROE):\nROE is a measure of return on shareholder equity. The earnings retention ratio, b, indicates how much of that return is reinvested in the\nbusiness. Thus, the constant dividend growth rate gives an estimate of future growth of earnings and dividends based on reinvested shareholder\nreturn. Substitute values to calculate stock intrinsic value (V ):\n0"
+ },
+ {
+  "id": "9a9f10b2-3d10-4b3c-b140-931009e95bf4",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\6. Equity Investments\\6.08 Equity Valuation Concepts And Basic Tools - Answers.pdf",
+  "page_idx": 92,
+  "png": "scripts\\_uworld_residuals_png\\9a9f10b2-3d10-4b3c-b140-931009e95bf4.png",
+  "topic": "Equity Investments",
+  "subtopic": "6.08 Equity Valuation Concepts And Basic Tools",
+  "question_en": "An analyst compiles the following P/E ratios of comparable companies: Using time-series analysis for the period from 20X6 to 20X9, the analyst would most appropriately conclude that, as of the end of 20X9, which company is fairly valued?\n\n| Selected Data | |\n|---|---|\n| Earnings retention ratio | 55% |\n| Long-term economic growth rate | 4% |\n| Required rate of return | 9% |\n| Weighted average cost of capital | 7% |\n| Company justified forward P/E | 30 |\n\n| Company | 20X6 | 20X7 | 20X8 | 20X9 |\n|---|---|---|---|---|\n| X | 15.40 | 17.09 | 19.56 | 17.39 |\n| Y | 14.83 | 17.15 | 18.75 | 19.53 |\n| Z | 15.74 | 16.27 | 19.60 | 16.50 |",
+  "option_a": "Company X",
+  "option_b": "Company Y",
+  "option_c": "Company Z",
+  "correct_answer": "A",
+  "explanation_en": "The method of comparables can be used in two ways. A time-series analysis is the comparison of the price multiple of one asset to its historical\naverage over multiple time periods. Comparing the price multiple of different assets over the same time period is known as cross-sectional\nanalysis.\nIn this scenario, the analyst is reviewing the four-year trend of the P/E ratio for three companies. Company X's P/E ratio was 17.39 in 20X9, very\nclose to its historical average for the period, 17.36. The result of the comparison is that Company X can be considered fairly valued as of the\nend of 20X9.\nAs of 20X9, Company Y's P/E ratio was well above its historical average of 17.57, and Company Z's P/E ratio was below its historical average of\n17.03. Therefore, Company Y can be considered overvalued and Company Z can be considered undervalued (Choices B and C)."
+ },
+ {
+  "id": "cf241f9a-3699-4f31-8d1b-3deadbbbcf91",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\6. Equity Investments\\6.08 Equity Valuation Concepts And Basic Tools - Answers.pdf",
+  "page_idx": 9,
+  "png": "scripts\\_uworld_residuals_png\\cf241f9a-3699-4f31-8d1b-3deadbbbcf91.png",
+  "topic": "Equity Investments",
+  "subtopic": "6.08 Equity Valuation Concepts And Basic Tools",
+  "question_en": "An analyst has gathered the following information about a company stock:\n\n| Selected Data | |\n|---|---|\n| Earnings retention ratio | 55% |\n| Long-term economic growth rate | 4% |\n| Required rate of return | 9% |\n| Weighted average cost of capital | 4% |\n| Company justified forward P/E | 30 |\n\nThe company's justified forward price-to-earnings ratio using the Gordon growth model implies the long-term dividend growth rate of the company is closest to:",
+  "option_a": "2.5%",
+  "option_b": "7.0%",
+  "option_c": "7.5%",
+  "correct_answer": "C",
+  "explanation_en": "The justified forward P/E under the Gordon growth model is P0/E1 = (dividend payout ratio)/(r - g), where the payout ratio is 1 minus the earnings retention rate.\n\nWith an earnings retention rate of 55%, the dividend payout ratio is 45%. Solving for g:\n30 = 0.45/(0.09 - g) => 0.09 - g = 0.45/30 = 0.015 => g = 0.075 = 7.5%.\n\n(Choice B) 7.0% results from incorrectly using the earnings retention ratio (55%) instead of the dividend payout ratio (45%) in the formula."
+ },
+ {
+  "id": "ed2f7b60-894d-4ea7-b351-f5f2ba336020",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\6. Equity Investments\\6.08 Equity Valuation Concepts And Basic Tools - Answers.pdf",
+  "page_idx": 6,
+  "png": "scripts\\_uworld_residuals_png\\ed2f7b60-894d-4ea7-b351-f5f2ba336020.png",
+  "topic": "Equity Investments",
+  "subtopic": "6.08 Equity Valuation Concepts And Basic Tools",
+  "question_en": "An analyst gathers the following data about two companies:\n\n|  | Company X | Company Y |\n| --- | --- | --- |\n| Current market price per share | ZAR 101.00 | ZAR 62.00 |\n| Last year's earnings-per-share | ZAR 2.09 | ZAR 1.15 |\n| Long-term dividend growth rate | 6.0% | 7.5% |\n| Dividend payout ratio | 50.0% | 60.0% |\n| Required rate of return | 7.0% | 9.0% |\n\nCompared with Company X, Company Y most likely has a:",
+  "option_a": "higher trailing P/E and justified forward P/E.",
+  "option_b": "higher trailing P/E and lower justified forward P/E.",
+  "option_c": "lower trailing P/E and higher justified forward P/E.",
+  "correct_answer": "B",
+  "explanation_en": "The P/E ratio has different forms: trailing P/E, forward P/E (prospective or leading P/E), and justified forward P/E. Trailing P/E is based on past earnings and forward P/E on future earnings. If the forward earnings estimate is based on a model used to estimate future company fundamentals or cash flows, the ratio is referred to as justified forward P/E. Forward multiples allow analysts to predict and compare potential future prices of companies' stock. The justified forward P/E ratio, derived from the Gordon growth model, allows analysts to do such comparisons based on a projected value of future earnings. Values should be substituted into the formulas for trailing P/E (P0 / E0) and justified forward P/E (p / (r - g)) for each company. Trailing P/E: Company X: 101 / 2.09 = 48.33; Company Y: 62 / 1.15 = 53.91. Justified forward P/E: Company X: 0.50 / (0.07 - 0.06) = 50; Company Y: 0.60 / (0.09 - 0.075) = 40. Based on these calculations, Company Y has a higher trailing P/E ratio and lower justified forward P/E ratio than Company X. Things to remember: The trailing P/E ratio is calculated as the current market price divided by past earnings: P0/E0. The forward P/E ratio is the current market price divided by future earnings: P0/E1. The justified forward P/E ratio is the dividend payout ratio divided by the difference between the required rate of return and the long-term dividend growth rate: P0/E1 = p / (r - g)."
+ },
+ {
+  "id": "3dd022f4-ab26-4829-8c17-b0931836c404",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\6. Equity Investments\\6.08 Equity Valuation Concepts And Basic Tools - Answers.pdf",
+  "page_idx": 73,
+  "png": "scripts\\_uworld_residuals_png\\3dd022f4-ab26-4829-8c17-b0931836c404.png",
+  "topic": "Equity Investments",
+  "subtopic": "6.08 Equity Valuation Concepts And Basic Tools",
+  "question_en": "An analyst gathers the following information about a company:\n\n| (CHF millions) | |\n|---|---|\n| Market value of preferred stock | 4 |\n| Short-term investments | 6 |\n| Market value of debt | 500 |\n| Cash equivalents | 3 |\n| Enterprise value | 1,567 |\n\nIf the company has 50 million common and 160,000 preferred shares, the company's market price per common share is closest to:",
+  "option_a": "CHF 21.32",
+  "option_b": "CHF 21.44",
+  "option_c": "CHF 21.61",
+  "correct_answer": "B",
+  "explanation_en": "Enterprise value (EV) equals market capitalization (ie, the market value of common stock), plus the market value of preferred stock, plus the market value of debt, minus cash, cash equivalents, and short-term investments.\n\nIn this scenario, the analyst is estimating the company's market price per share based on its enterprise value (EV). This is accomplished by rearranging the formula for EV to solve for market capitalization (ie, the market value of common stock). Then substitute the values (CHF millions):\n\nEnterprise value: 1,567\n- Market value of preferred stock: (4)\n- Market value of debt: (500)\n+ Cash equivalents and short-term investments: 9\n= Market value of common stock: 1,072\n\nThe market capitalization of the company is CHF 1,072 million. Rearrange the formula for market capitalization to solve for market price per share, and substitute values:\n\nMarket capitalization = Market price per share x Number of common shares outstanding\nMarket price per share = Market capitalization / Number of common shares outstanding\nMarket price per share = 1,072 / 50 = 21.44\n\nThe estimated market price per share is CHF 21.44.\n\n(Choice A) 21.32 is the result of failing to add in the value of short-term investments when calculating market capitalization.\n\n(Choice C) 21.61 is the result of incorrectly including the market value of preferred shares in the calculation of market capitalization and including the preferred shares in the number of shares used to find market price per share.\n\nThings to remember:\nEnterprise value (EV) is equal to the market capitalization (ie, the market value of common stock) plus the market value of preferred stock plus the market value of debt minus cash and short-term investments. The EV can be used to estimate the market value of a firm's common stock."
+ },
+ {
+  "id": "077e56dc-eeed-4e7a-b348-38e83ee963c2",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\6. Equity Investments\\6.08 Equity Valuation Concepts And Basic Tools - Answers.pdf",
+  "page_idx": 9,
+  "png": "scripts\\_uworld_residuals_png\\077e56dc-eeed-4e7a-b348-38e83ee963c2.png",
+  "topic": "Equity Investments",
+  "subtopic": "6.08 Equity Valuation Concepts And Basic Tools",
+  "question_en": "An analyst has gathered the following information about a company stock:\n\n| Selected Data | |\n|---|---|\n| Market price of the stock | €31.42 |\n| Next year's projected earnings | €1.60 |\n| Dividend payout ratio | 70% |\n| Required rate of return | 8% |\n| Long-term dividend growth rate | 5% |\n| Long-term economic growth rate | 3% |\n\nThe justified forward price-to-earnings ratio implies the stock is mispriced in the market by an amount closest to:",
+  "option_a": "€5.91",
+  "option_b": "€8.09",
+  "option_c": "€9.02",
+  "correct_answer": "A",
+  "explanation_en": "Price-to-earnings (P/E) ratios are used in several forms: the trailing P/E ratio, the forward P/E ratio (ie, the prospective or leading P/E), and the justified forward P/E ratio. The trailing P/E ratio uses past earnings, while the forward P/E ratio is based on future earnings. The forward justified P/E ratio involves a forward earnings estimate using a model of future company fundamentals or cash flows.\n\nAnalysts use the justified forward P/E ratio to compare companies and draw conclusions about asset prices. The price implied by the justified forward P/E ratio can be compared with the current market price to determine if the asset is mispriced and, if so, by how much.\n\nIn this scenario, the price implied by the justified forward P/E ratio is calculated as follows:\n\nP0/E1 = p / (r - g)\nP0 = [p / (r - g)] x E1\nP0 = [0.70 / (0.08 - 0.05)] x 1.60\nP0 = EUR 37.33\n\nThe market price of the stock is given as EUR 31.42. The difference between 37.33 and 31.42 is EUR 5.91, the amount by which the stock is mispriced (ie, undervalued) in the market.\n\nThings to remember:\nThe price implied by the justified forward price-to-earnings (P/E) ratio can be compared with the market price to reach conclusions about asset mispricing. The price implied by the justified forward P/E ratio is calculated by dividing the dividend payout ratio by the difference between the required rate of return and the long-term dividend growth rate, then multiplying the result by the next year's earnings."
+ },
+ {
+  "id": "acfee345-8011-4c4f-a6b7-025bfb0dc3ed",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\6. Equity Investments\\6.08 Equity Valuation Concepts And Basic Tools - Answers.pdf",
+  "page_idx": 95,
+  "png": "scripts\\_uworld_residuals_png\\acfee345-8011-4c4f-a6b7-025bfb0dc3ed.png",
+  "topic": "Equity Investments",
+  "subtopic": "6.08 Equity Valuation Concepts And Basic Tools",
+  "question_en": "An analyst wants to use the asset-based valuation approach to determine the intrinsic value of a company's stock and gathers the following data:\n\n| Modified Balance Sheet (USD billions) | |\n|---|---|\n| Current assets | 30 |\n| Long-term assets | 40 |\n| Total assets | 70 |\n| Current liabilities | 25 |\n| Long-term debt | 20 |\n| Shareholders' equity | 25 |\n| Total liabilities and equity | 70 |\n\nTo reflect fair values, the analyst believes that the long-term assets should be adjusted down by 25% and the long-term debt should be adjusted up by 5%. If there are 500 million shares currently outstanding, and the company's stock trades at $29 per share, then the stock is most likely:",
+  "option_a": "undervalued.",
+  "option_b": "fairly valued.",
+  "option_c": "overvalued.",
+  "correct_answer": "C",
+  "explanation_en": "Analysts can use the asset-based valuation model to estimate the intrinsic equity value of a firm by subtracting the fair value of liabilities from the\nfair value of assets. The intrinsic stock price can be calculated by dividing the intrinsic equity value by the number of shares outstanding. If\nthe market price of the stock is greater than its intrinsic value, then the stock is overvalued, and vice versa.\nThe stock is overvalued since its price is trading at 29, which is above its intrinsic value of 28."
+ },
+ {
+  "id": "f01d947d-8dc6-4c4b-85c0-8da63fd1e3a1",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\6. Equity Investments\\6.08 Equity Valuation Concepts And Basic Tools - Answers.pdf",
+  "page_idx": 43,
+  "png": "scripts\\_uworld_residuals_png\\f01d947d-8dc6-4c4b-85c0-8da63fd1e3a1.png",
+  "topic": "Equity Investments",
+  "subtopic": "6.08 Equity Valuation Concepts And Basic Tools",
+  "question_en": "An analyst gathers the following information about a company:\n\n| Selected Data | |\n|---|---|\n| Next year's projected dividends | ¥100 |\n| Next year's projected earnings | ¥260 |\n| Long-term dividend growth rate | 3% |\n| Required rate of return | 5% |\n| Industry average justified forward P/E ratio | 21.4 |\n\nAll else being equal, the justified forward price-to-earnings (P/E) ratio implies that, relative to industry peers, the company's stock price is most likely:",
+  "option_a": "more expensive.",
+  "option_b": "fairly priced.",
+  "option_c": "less expensive.",
+  "correct_answer": "C",
+  "explanation_en": "Analysts use the price-to-earnings (P/E) ratio to compare companies with similar characteristics, or to compare a company with its industry, and draw conclusions about stock prices. If the forward earnings estimate is based on a predictive model involving company fundamentals or cash flows, the ratio is the justified forward P/E ratio: P0/E1 = (D1/E1)/(r-g) = p/(r-g).\n\nP0/E1 = (100/260) / (0.05 - 0.03) = 0.3846 / 0.02 = 19.23\n\nThe company's justified forward P/E ratio (19.23) is lower than the industry average justified forward P/E ratio (21.4). Therefore, all else being equal, the company's stock price is relatively less expensive compared with industry peers."
+ },
+ {
+  "id": "5829c7b8-461e-4ff3-ad18-493563d47325",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\3. Portfolio Management\\3.02 Portfolio Risk And Return Part II - Answers.pdf",
+  "page_idx": 8,
+  "png": "scripts\\_uworld_residuals_png\\5829c7b8-461e-4ff3-ad18-493563d47325.png",
+  "topic": "Portfolio Management",
+  "subtopic": "3.02 Portfolio Risk And Return Part II",
+  "question_en": "An analyst gathers the following information on three stocks: The market's expected return is 12%. Based on the CAPM, if the risk-free rate is 2%, then the stock with an expected return greater than the market's expected return is most likely:",
+  "option_a": "Stock A.",
+  "option_b": "Stock B.",
+  "option_c": "Stock C.",
+  "correct_answer": "A",
+  "explanation_en": "According to the CAPM, an asset's expected return is a function of its sensitivity to systematic risk as measured by beta, the market risk premium, and the risk-free rate. The market's beta is always equal to 1.0. If a security's beta is greater than 1.0, that security has more exposure to systematic risk and a higher expected return than the market. In this case, Stock A's beta (1.3) is greater than the market beta (1.0), so Stock A has an expected return greater than the market's expected return (Choices B and C). Alternatively, a security's expected return can be calculated using the CAPM and then compared to the market's return. Stock A's expected return of 15% is greater than the market's expected return of 12%."
+ },
+ {
+  "id": "e620b932-7e7b-4256-bfe6-5d6de5b358ff",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\3. Portfolio Management\\3.02 Portfolio Risk And Return Part II - Answers.pdf",
+  "page_idx": 16,
+  "png": "scripts\\_uworld_residuals_png\\e620b932-7e7b-4256-bfe6-5d6de5b358ff.png",
+  "topic": "Portfolio Management",
+  "subtopic": "3.02 Portfolio Risk And Return Part II",
+  "question_en": "A state pension fund employs three investment managers; their fund performance data for the past year is shown below: If the risk-free rate is 2%, then the manager with the highest total risk-adjusted return is:",
+  "option_a": "Manager 1.",
+  "option_b": "Manager 2.",
+  "option_c": "Manager 3",
+  "correct_answer": "A",
+  "explanation_en": "Total risk, or standard deviation of returns (σ), combines systematic risk (market risk) and nonsystematic risk (nonmarket risk). Using either the Sharpe ratio or M-squared (M2) equation is proper when evaluating managers based on the highest return adjusted for total risk. Both M-squared and the Sharpe ratio calculate total risk-adjusted performance for each manager because each reflects total risk (as captured by standard deviation, σ). Both also evaluate a portfolio's excess return (ie, return greater than the risk-free rate) compared to that portfolio's standard deviation. Both the unscaled Sharpe ratio and the M2, in percentage terms, give identical rankings when comparing manager's performance. As shown below, Manager 1 has the highest Sharpe ratio and M-squared results."
+ }
+]

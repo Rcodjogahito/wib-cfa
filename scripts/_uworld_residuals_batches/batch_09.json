@@ -1,0 +1,376 @@
+[
+ {
+  "id": "ab251184-f8b1-4d85-bf96-3318573b3a11",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\5. Financial Statement Analysis\\5.07 Analysis of Long-Term Assets - Answers.pdf",
+  "page_idx": 24,
+  "png": "scripts\\_uworld_residuals_png\\ab251184-f8b1-4d85-bf96-3318573b3a11.png",
+  "topic": "Financial Statement Analysis",
+  "subtopic": "5.07 Analysis of Long-Term Assets",
+  "question_en": "A company reports under US GAAP and provides the following information on its equipment:\n\n| Metric | $ |\n|---|---|\n| Carrying amount | 31,000 |\n| Expected future cash flows: Undiscounted | 28,000 |\n| Expected future cash flows: Present value | 26,500 |\n| Fair value if sold | 22,000 |\n| Cost to sell | 2,500 |\n\nDue to an impairment charge, the carrying value of the machine is closest to:",
+  "option_a": "19,500",
+  "option_b": "22,000",
+  "option_c": "26,500",
+  "correct_answer": "B",
+  "explanation_en": "Impairment charges are recognized when an asset's carrying amount, measured as historical cost minus accumulated depreciation, is greater\nthan its recoverable value. US GAAP defines the recoverable amount as simply the undiscounted expected future cash flows. In this case,\nthe carrying amount ($31,000) exceeds the recoverable amount ($28,000).\nThe impaired asset is written down to a new carrying value with a new depreciation schedule. Under US GAAP, the asset would be written down\nto fair value (ie, value if sold [$22,000]). This fair value estimate becomes the new carrying amount.\nIn contrast, IFRS defines the recoverable amount and the new carrying value as the greater of the asset's fair value less costs to sell the asset\n($22,000 − $2,500) or the discounted future cash flows ($26,500) that the asset is expected to generate (Choices A and C)."
+ },
+ {
+  "id": "c278d0e1-80ad-4d8f-929d-8c45f81c484b",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\8. Derivatives\\8.04 Arbitrage, Replication, and the Cost of Carry in Pricing Derivatives - Answers.pdf",
+  "page_idx": 1,
+  "png": "scripts\\_uworld_residuals_png\\c278d0e1-80ad-4d8f-929d-8c45f81c484b.png",
+  "topic": "Derivatives",
+  "subtopic": "8.04 Arbitrage, Replication, and the Cost of Carry in Pricing Derivatives",
+  "question_en": "The following applies to a one-year forward contract: If the present value of the costs of holding the underlying asset for 1 year is ¥1.62, then the present value of the benefits of holding the asset (in ¥) is closest to:",
+  "option_a": "−1.52",
+  "option_b": "1.52",
+  "option_c": "1.72",
+  "correct_answer": "C",
+  "explanation_en": "An owner of an asset is exposed to the risk that the commodity price will fall between now and when it is sold. Selling an asset forward means that the seller commits to deliver that asset at a future date for a guaranteed price. Selling forward eliminates the seller's price risk, but it also means that the seller does not benefit if the asset's spot price is higher than the contracted price when the contract expires. Although the price the farmer receives at expiration is guaranteed, the relative value of the contract varies prior to expiration depending on how spot prices of the underlying asset change. At expiration, the value of the contract is the difference between the spot price and the forward price. Prior to that time, the contract's value is the difference between the asset's current spot price and the present value of the forward price. Any gain to one party from a change in the forward contract's value is exactly offset by the other party's loss. In this example, any increase in spot wheat prices prior to expiration causes the contract's value to increase to the long party. As the farmer is short, an increase in the contract's value represents a loss. (Choice B) The price that the farmer receives at the contract's expiration does not change, but the value of the contract changes as the underlying asset's price changes. (Choice C) The value of any contract to the short party increases only if the price of the underlying asset decreases."
+ },
+ {
+  "id": "2fa39ab1-51cb-4391-a90d-1aa614110833",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\8. Derivatives\\8.04 Arbitrage, Replication, and the Cost of Carry in Pricing Derivatives - Answers.pdf",
+  "page_idx": 17,
+  "png": "scripts\\_uworld_residuals_png\\2fa39ab1-51cb-4391-a90d-1aa614110833.png",
+  "topic": "Derivatives",
+  "subtopic": "8.04 Arbitrage, Replication, and the Cost of Carry in Pricing Derivatives",
+  "question_en": "An analyst gathers the following information on two 18-month forward contracts, each for a different underlying asset: If the risk-free rate is 2.8%, the forward price of Asset Y is most likely:",
+  "option_a": "less than the forward price of Asset X.",
+  "option_b": "equal to the forward price of Asset X.",
+  "option_c": "greater than the forward price of Asset X.",
+  "correct_answer": "B",
+  "explanation_en": "Derivative pricing concepts Traders take advantage of any mispricing of derivatives Riskless strategies are created from offsetting positions in Arbitrage-free derivatives and underlying assets Strategies are pursued until risk-free profits are eliminated (ie, no-arbitrage pricing) Derivatives can be created synthetically from underlying and Replication risk-free assets Equivalent positions must have the same expected returns Derivative price reflects the value of the replicating strategy Riskless positions are created from long/short derivatives Risk-neutral and replication strategies Riskless positions earn a risk-free rate of return; cash flows are discounted at the risk-free rate Derivative pricing is based on three key concepts: Arbitrage-free pricing assumes market prices are free of arbitrage opportunities. Derivative pricing is risk-neutral since arbitrage-free markets guarantee risk-free positions that earn the risk-free rate. Equivalent positions can be created through replication using combinations of the underlying asset, a risk-free asset, and a derivative. Derivative prices must reflect the risk-free rate since riskless positions can be created by combining an underlying asset (eg, long a bond) with related derivatives (eg, short bond futures). Similarly, derivative positions can be replicated by combining positions in the underlying asset with the risk-free asset. Replicated positions that are economically equivalent should trade at economically equivalent prices. Thus, the price of a derivative reflects the value of a replication strategy. If an economically equivalent condition does not hold, arbitrage occurs until prices adjust so that riskless profits can no longer be earned and arbitrage-free pricing is achieved. This arbitrage-free pricing renders investors risk-neutral, meaning that the risk premiums required by investors to hold the underlying asset have no effect on derivative pricing (Choice B). (Choice C) The price of a derivative contract is dependent on the price of the underlying asset and the terms of the contract, such as the strike price and exercise date. This does not imply that the underlying asset's expected rate of return will be the same as the derivative's expected rate of return."
+ },
+ {
+  "id": "be6c6144-d955-4ed4-8f68-77f3966ce0b9",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\8. Derivatives\\8.04 Arbitrage, Replication, and the Cost of Carry in Pricing Derivatives - Answers.pdf",
+  "page_idx": 28,
+  "png": "scripts\\_uworld_residuals_png\\be6c6144-d955-4ed4-8f68-77f3966ce0b9.png",
+  "topic": "Derivatives",
+  "subtopic": "8.04 Arbitrage, Replication, and the Cost of Carry in Pricing Derivatives",
+  "question_en": "Arbitrage-free pricing of derivatives most likely results in using a discount rate equal to:",
+  "option_a": "zero due to the inability to earn arbitrage profits.",
+  "option_b": "the risk-free rate since riskless positions should earn a risk-free rate of return.",
+  "option_c": "the underlying's required rate of return since the derivative's expected returns must be the",
+  "correct_answer": "B",
+  "explanation_en": "Derivative pricing concepts\nTraders take advantage of any mispricing of derivatives\nRiskless strategies are created from offsetting positions in\nArbitrage-free derivatives and underlying assets\nStrategies are pursued until risk-free profits are eliminated\n(ie, no-arbitrage pricing)\nDerivatives can be created synthetically from underlying and\nReplication risk-free assets\nEquivalent positions must have the same expected returns\nDerivative price reflects the value of the replicating strategy\nRiskless positions are created from long/short derivatives\nRisk-neutral and replication strategies\nRiskless positions earn a risk-free rate of return; cash flows\nare discounted at the risk-free rate\nDerivative positions can be replicated by combining positions in the underlying with the risk-free asset. Economically equivalent positions should\ntrade at prices that result in equal returns. If that condition does not hold, arbitrage occurs until prices adjust so that risk-free profits can no longer\nbe earned. Arbitrage-free pricing means that investor risk aversion has no impact on derivative pricing. Therefore, derivative pricing is described\nas risk-neutral pricing.\nBy combining positions in the underlying asset (eg, long bond) and the derivative (eg, short bond futures), investors can create riskless\npositions. Since riskless positions earn a risk-free rate of return, the expected payoffs are discounted at the risk-free rate when pricing\nderivatives.\n(Choice A) An absence of arbitrage profits means derivatives are fairly priced relative to the underlying asset. In that case, taking offsetting\npositions in the derivative and an appropriate replication strategy earns the risk-free rate of return, resulting in the risk-free rate (not zero) being\nthe appropriate discount rate.\n(Choice C) An asset's required rate of return is appropriate for valuing assets but not for pricing derivatives. Derivative prices are derived from\ntheir underlying asset's price, based on arbitrage and risk-neutral pricing; therefore, the asset's required rate of return is not the appropriate\ndiscount rate."
+ },
+ {
+  "id": "8c03d34f-bf0e-437b-95b8-b93288f6aac5",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\5. Financial Statement Analysis\\5.10 Financial Reporting Quality - Answers.pdf",
+  "page_idx": 5,
+  "png": "scripts\\_uworld_residuals_png\\8c03d34f-bf0e-437b-95b8-b93288f6aac5.png",
+  "topic": "Financial Statement Analysis",
+  "subtopic": "5.10 Financial Reporting Quality",
+  "question_en": "An analyst gathers the following information on two competitors, concerning their differences in accounting methods. To facilitate proper financial comparison, the analyst should most appropriately:",
+  "option_a": "adjust Company 2's gross book value of fixed assets.",
+  "option_b": "reduce Company 1's net income for fair value investment gains.",
+  "option_c": "reduce Company 1's amount of intangible assets by its goodwill balance.",
+  "correct_answer": "C",
+  "explanation_en": "High-quality financial earnings are characterized by sustainability over future periods. The quality of reported earnings tends to be positively correlated to the quality of the financial statements that chronicle those earnings. Companies with conservative accounting policies tend to generate high-quality earnings more often than companies with more aggressive reporting methods. The same applies for companies that make unbiased accounting choices. Pro forma statements are one characteristic of aggressive reporting. They selectively present limited information that makes current earnings appear stronger than might otherwise be justified. The selective nature of the information calls into question whether the earnings are sustainable. Pro forma presentations do not comply with either US GAAP or IFRS. Choosing shorter useful lives for noncurrent assets represents a conservative accounting choice (Choice C). The shorter lives result in higher depreciation expense each year. The increased expense means lower earnings. Also, shorter useful lives implicitly signal the company's intent to invest in its infrastructure to foster future earnings growth. (Choice B) Revenue is the primary driver of earnings. Robust and sustainable revenues tend to result in consistent, high-quality earnings."
+ },
+ {
+  "id": "9df9d2df-32d3-440c-aa4d-4aefcbd7335b",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\5. Financial Statement Analysis\\5.10 Financial Reporting Quality - Answers.pdf",
+  "page_idx": 6,
+  "png": "scripts\\_uworld_residuals_png\\9df9d2df-32d3-440c-aa4d-4aefcbd7335b.png",
+  "topic": "Financial Statement Analysis",
+  "subtopic": "5.10 Financial Reporting Quality",
+  "question_en": "Which of the following reporting practices is most likely considered aggressive accounting?",
+  "option_a": "Presenting pro forma earnings per share (EPS) that are lower than reported EPS.",
+  "option_b": "Capitalizing, instead of expensing, in-process research and development (R&D) costs.",
+  "option_c": "Using the criteria of available-for-sale securities, rather than trading securities, to treat bond",
+  "correct_answer": "B",
+  "explanation_en": "Under both IFRS and US GAAP, revenue can be recognized when the risks and rewards of ownership have been transferred to the buyer. When goods are in transit: under Free on Board (FOB) destination, ownership transfers to the buyer when the shipped goods are received. Therefore, the seller can recognize revenue only when the goods arrive at the customer's destination. under FOB shipping point, ownership transfers to the buyer upon shipment. Therefore, the seller can recognize revenue when the goods are shipped. For a seller, switching shipping terms from FOB destination to FOB shipping will change the timing of when the goods' ownership is transferred, thus changing when revenue can be recognized. It effectively allows a seller to recognize revenue earlier, which results in more reported revenue for the current period. Therefore, management sometimes uses this tactic to enhance reported revenue for a period. (Choice A) Expensing, rather than capitalizing, an asset purchase will increase operating expenses for the current period, thus lowering profits. Expensing an asset purchase is a conservative choice. (Choice B) Decreasing future cash benefit projections in a goodwill impairment test will more likely lead to a write-down; therefore, it is a conservative choice."
+ },
+ {
+  "id": "d4277410-9166-4def-9c5f-6d174f6b81e8",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\5. Financial Statement Analysis\\5.10 Financial Reporting Quality - Answers.pdf",
+  "page_idx": 7,
+  "png": "scripts\\_uworld_residuals_png\\d4277410-9166-4def-9c5f-6d174f6b81e8.png",
+  "topic": "Financial Statement Analysis",
+  "subtopic": "5.10 Financial Reporting Quality",
+  "question_en": "Which of the following is least likely to increase financial reporting discipline?",
+  "option_a": "Auditor reports included as part of the auditing company's consulting services",
+  "option_b": "Debt covenants that require the current ratio to be at or above a minimum figure",
+  "option_c": "Regulations that enforce disclosure but do not require management to certify financial",
+  "correct_answer": "A",
+  "explanation_en": "Common warning signs of accounting manipulation Frequent reporting \"surprises\" \"Nonrecurring\" items that consistently appear in multiple periods Unusual levels of receivables, payables, inventory turnover, operating cash flow, net income, profit margins Underestimating warranty expenses that are \"restated\" in subsequent periods Useful lives for long-term assets that are different than industry average Related-party transactions Heavy emphasis on pro forma (non-GAAP, non-IFRS) earnings Both GAAP and IFRS allow managers discretion over the financial information they are required to present and over how it is presented. Analysts must be vigilant to detect managers' manipulation of financial statements which may reduce the quality of the financial statements and/or the company's earnings, even if such manipulation is not so extreme as to be criminal conduct. Analysts should pay close attention to the ratio of cash from operations (CFO) to net income. Sales on credit (ie, new accounts receivable) are included in a company's net income. Receivables must be converted to cash to pay expenses. Not converting receivables to cash may indicate that the company is recognizing \"sales\" that are illusory (and thus cannot be converted to cash), which is an accounting impropriety. A ratio of at least 1.0 indicates that CFO is keeping pace with net income; a ratio of consistently less than 1.0 likely constitutes a warning sign. (Choice A) Inventory turnover (ie, the ratio of COGS to average inventory) measures how quickly a company sells its inventory. If this ratio is decreasing, it may signal that the company has poor inventory management or that its inventory is becoming obsolete. Declining inventory turnover is a warning sign. (Choice B) A bill-and-hold arrangement is an agreement for a sale today with delivery deferred to a subsequent period. The seller improperly recognizes the revenue today despite not delivering the goods. Consistently using bill-and-hold transactions to recognize revenue is a warning sign."
+ },
+ {
+  "id": "f9228501-1bef-4108-a61b-a35ee3effd1e",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\5. Financial Statement Analysis\\5.11 Financial Analysis Techniques - Answers.pdf",
+  "page_idx": 2,
+  "png": "scripts\\_uworld_residuals_png\\f9228501-1bef-4108-a61b-a35ee3effd1e.png",
+  "topic": "Financial Statement Analysis",
+  "subtopic": "5.11 Financial Analysis Techniques",
+  "question_en": "The 20X9 financial information for a company is shown below: The company's debt to total capital ratio is closest to:",
+  "option_a": "0.24",
+  "option_b": "0.36",
+  "option_c": "0.56",
+  "correct_answer": "B",
+  "explanation_en": "Summary of fixed-asset turnover ratio Activity ratio Ratio = Revenue / Average fixed assets Higher ratio is desirable Indicates more efficient use of fixed assets Lower ratio does not always indicate inefficiency Company may have newer fixed assets Company may be capital-intensive Activity ratios measure the revenue a company generates relative to its assets. The fixed-asset turnover ratio analyzes revenue relative to the book value of a company's long-term assets (ie, PPE). A high ratio suggests that the company is efficient in using its fixed assets to generate revenue. Since assets are the ratio's denominator, a greater amount of PPE results in a lower ratio than a smaller amount of PPE. In general, newer assets have a greater book value due to lower depreciation, which results in a lower fixed-asset turnover ratio. (Choice B) A labor-intensive business uses proportionally fewer fixed assets than a capital-intensive business and is more likely to have a relatively high fixed-asset turnover ratio. (Choice C) Working capital is the difference between current assets and current liabilities. Since working capital does not impact fixed assets, the amount of a company's working capital has no bearing on the company's fixed-asset turnover ratio."
+ },
+ {
+  "id": "5d335c0b-fd30-48e1-8a20-324b2701d419",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\5. Financial Statement Analysis\\5.11 Financial Analysis Techniques - Answers.pdf",
+  "page_idx": 5,
+  "png": "scripts\\_uworld_residuals_png\\5d335c0b-fd30-48e1-8a20-324b2701d419.png",
+  "topic": "Financial Statement Analysis",
+  "subtopic": "5.11 Financial Analysis Techniques",
+  "question_en": "An analyst gathers the following information (in INR billions) for a company, selected from its financial statements: Based on this data, the current year's return on total capital is closest to:",
+  "option_a": "7.39%",
+  "option_b": "9.21%",
+  "option_c": "10.06%",
+  "correct_answer": "C",
+  "explanation_en": "Days sales outstanding and accounts receivable turnover are activity ratios used to measure operational efficiency. The relationship between days sales outstanding (DSO) and accounts receivable (AR) turnover can serve as an important tool for forecasting what is needed to reach a company's working capital goals. A higher DSO indicates that customers are taking longer to pay, which results in lower liquidity. A lower DSO is preferable since it means the company is collecting receivables faster, thus improving liquidity. AR turnover indicates management's effectiveness in managing the credit given to customers. Higher AR turnover implies greater efficiency in converting receivables to cash. To solve for the change in the average daily AR:"
+ },
+ {
+  "id": "bd259e18-d930-4870-8b03-0af8901c24d6",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\5. Financial Statement Analysis\\5.11 Financial Analysis Techniques - Answers.pdf",
+  "page_idx": 33,
+  "png": "scripts\\_uworld_residuals_png\\bd259e18-d930-4870-8b03-0af8901c24d6.png",
+  "topic": "Financial Statement Analysis",
+  "subtopic": "5.11 Financial Analysis Techniques",
+  "question_en": "Company A's management wishes to increase working capital by lowering the company's average receivable collection period to the industry average. Data for Company A is below: To match the industry average days sales outstanding (DSO) of 17 days, the change (in €) in the average daily accounts receivable (AR) balance from 20X7 to 20X8 is closest to:",
+  "option_a": "−1,534,527",
+  "option_b": "−479,452",
+  "option_c": "1,918,159",
+  "correct_answer": "B",
+  "explanation_en": "Days sales outstanding and accounts receivable turnover are activity ratios used to measure operational efficiency. The relationship between\ndays sales outstanding (DSO) and accounts receivable (AR) turnover can serve as an important tool for forecasting what is needed to\nreach a company's working capital goals.\nA higher DSO indicates that customers are taking longer to pay, which results in lower liquidity. A lower DSO is preferable since it means the\ncompany is collecting receivables faster, thus improving liquidity. AR turnover indicates management's effectiveness in managing the credit given\nto customers. Higher AR turnover implies greater efficiency in converting receivables to cash.\nTo solve for the change in the average daily AR:"
+ },
+ {
+  "id": "bc93f3c0-3dd3-4c4b-8427-55422e8a0ec1",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\5. Financial Statement Analysis\\5.11 Financial Analysis Techniques - Answers.pdf",
+  "page_idx": 1,
+  "png": "scripts\\_uworld_residuals_png\\bc93f3c0-3dd3-4c4b-8427-55422e8a0ec1.png",
+  "topic": "Financial Statement Analysis",
+  "subtopic": "5.11 Financial Analysis Techniques",
+  "question_en": "An analyst has gathered the following information:\n\n# Question 1\n\n| | Company A | Company B | Company C |\n|---|---|---|---|\n| Net profit margin | 0.05 | 0.08 | 0.15 |\n| Total asset turnover | 1.6 | 2.0 | 0.9 |\n| Leverage | 2.5 | 1.5 | 2.0 |\n\n# Question 2\n\n| € millions | 20X5 | 20X6 | 20X7 |\n|---|---|---|---|\n| Average assets | 117.0 | 116.0 | 115.0 |\n| Average liabilities | 96.0 | 98.0 | 100.0 |\n| Revenues | 40.0 | 42.5 | 45.0 |\n| Net profit margin | 8.6% | 8.7% | 8.8% |\n\n# Question 3\n\n| (In $ Millions) | |\n|---|---|\n| Assets | 500 |\n| Common stock | 280 |\n| Retained earnings (cumulative) | 100 |\n| Treasury stock | 60 |\n\nUsing only this information, the most appropriate conclusion is that over the three-year period:",
+  "option_a": "return on assets has declined.",
+  "option_b": "return on equity has increased.",
+  "option_c": "total asset turnover has declined.",
+  "correct_answer": "B",
+  "explanation_en": "Ratio analysis limitations Heterogeneous operations Inconsistent results Ratios alone are incomplete Accounting differences Analysts often using ratio analysis to assess a company's financial performance or position. Although ratio analysis may provide useful insight, it also comes with limitations: Heterogeneity in operation: If the company's divisions individually operate in distinct industries, then combining performance may oversimplify data at an aggregate level and not provide insight into divisional performance. Inconsistent interpretation of results: Different ratios may provide conflicting interpretations of performance for the same company. For example, one ratio can suggest improving liquidity whereas another ratio can suggest worsening liquidity. The need for judgment: Analysts must determine whether ratios are reliable in the context of industry and company history. Ratios are statistical measures with no inherent value and alone are incomplete; it is the analyst's interpretation that creates insight. Different accounting standards: Differences in accounting methods limit the comparability of ratios across companies. For example, one company may use FIFO inventory reporting whereas another company uses LIFO inventory reporting. Analysts must adjust company information to ensure a meaningful comparison. (Choice A) Interpretations that vary among analysts are a benefit, not a limitation, of ratio analysis. Multiple forecasts and scenarios capture a broader range of expectations. (Choice C) Adjusting results to reconcile differences in accounting standards allows for a more valid comparisons."
+ },
+ {
+  "id": "a362a214-a7fb-4605-9d33-bc036466214b",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\5. Financial Statement Analysis\\5.11 Financial Analysis Techniques - Answers.pdf",
+  "page_idx": 4,
+  "png": "scripts\\_uworld_residuals_png\\a362a214-a7fb-4605-9d33-bc036466214b.png",
+  "topic": "Financial Statement Analysis",
+  "subtopic": "5.11 Financial Analysis Techniques",
+  "question_en": "A company reports the following information:\n\n| Item | 20X5 | 20X6 |\n|---|---|---|\n| Revenue | 3.4 | 3.7 |\n| Current assets | 5.0 | 5.2 |\n| Current liabilities | 4.0 | 4.4 |\n\nBased on this data, working capital turnover for 20X6 is closest to:",
+  "option_a": "3.94",
+  "option_b": "4.11",
+  "option_c": "4.63",
+  "correct_answer": "B",
+  "explanation_en": "Activity ratios measure how efficiently a company utilizes its assets. The numerator is commonly an income statement item (eg revenue, COGS); the denominator is commonly a balance sheet item (eg, inventory, accounts payable). Working capital (WC) turnover measures how efficiently a company generates sales (revenue) from its current working capital. Working capital is defined as current assets (eg, accounts receivable, inventory) less current liabilities (eg, accounts payable). A high WC turnover suggests that the company is more efficient at using its short-term assets and liabilities to support sales. In this question, divide 20X6 revenue by the average working capital values to calculate working capital turnover: WC turnover(20X6) = Revenue(20X6) / [(WC(20X5) + WC(20X6)) divided by 2] = 3.7 / [(1.0 + 0.8) divided by 2] = 4.11. It is important to note that income statement items (ie, revenue) reflect what happens throughout a period, whereas balance sheet items (inventory) reflect the balance at the end of the period. Therefore, in most ratios that mix income statement with balance sheet items, the balance sheet item is averaged to better capture asset levels throughout the period. (Choice A) 3.94 results from incorrectly averaging both years' revenue in the numerator. (Choice C) 4.63 results from including only 20X6's working capital in the denominator."
+ },
+ {
+  "id": "24c8f6b5-25d1-44e0-95d7-a665b4ecd127",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\5. Financial Statement Analysis\\5.11 Financial Analysis Techniques - Answers.pdf",
+  "page_idx": 27,
+  "png": "scripts\\_uworld_residuals_png\\24c8f6b5-25d1-44e0-95d7-a665b4ecd127.png",
+  "topic": "Financial Statement Analysis",
+  "subtopic": "5.11 Financial Analysis Techniques",
+  "question_en": "An entrepreneur starts a company by investing $300,000 of equity to fund working capital. The entrepreneur makes the following forecast assumptions:\n\n| assumptions: First-year sales $500,000 |  |\n|---|---|\n| Annual sales growth | 8% |\n| Net profit margin | 30% |\n| Working capital / Sales | 80% |\n\nBased only on this information, the company's cash balance at the end of the second year is closest to:",
+  "option_a": "$32,000",
+  "option_b": "$50,000",
+  "option_c": "$180,000",
+  "correct_answer": "C",
+  "explanation_en": "Businesses often rely on key assumptions to forecast long-term financial performance. The forecast assumptions often rely on:\nA growth rate to forecast sales\nCost or profit margin as a percent of sales to forecast cost or margin in currency terms\nWorking capital investments\nFixed capital investments\nFinancing from external sources (eg, issuing debt or equity)\nAs shown, at the end of Year 2, the company's net income (at 30% of sales) is $162,000. Working capital investments are $32,000, as reflected in\nthe change in working capital levels from $400,000 to $432,000. Netting Year 2's net income with investments in working capital results in\n$130,000 cash inflow. Since Year 2's beginning cash balance is $50,000, this $130,000 increase in cash results in an ending cash balance of\n$180,000.\n(Choice A) $32,000 is the change in working capital in Year 2.\n(Choice B) $50,000 is the ending balance of cash in Year 1."
+ },
+ {
+  "id": "e8d998ab-7316-49e8-8179-73ef6da617d0",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\5. Financial Statement Analysis\\5.11 Financial Analysis Techniques - Answers.pdf",
+  "page_idx": 24,
+  "png": "scripts\\_uworld_residuals_png\\e8d998ab-7316-49e8-8179-73ef6da617d0.png",
+  "topic": "Financial Statement Analysis",
+  "subtopic": "5.11 Financial Analysis Techniques",
+  "question_en": "A firm reports the following information (in RUB millions): Based on this data, the current year's return on common equity is closest to:",
+  "option_a": "4.90%",
+  "option_b": "5.18%",
+  "option_c": "6.18%",
+  "correct_answer": "A",
+  "explanation_en": "Return on common equity (ROCE) gauges the amount of residual net income (after accounting for preferred dividends) generated relative to\ncommon equity. Preferred dividends are subtracted from net income since common shareholders receive distributions only after preferred\nshareholders receive their dividends. Greater ROCE ratios suggest that a company is more effective in using common equity to generate a return\nfor common shareholders.\nROCE should not be confused with ROE (return on equity). ROE measures the return for all equity investors (preferred and common) and is\ncalculated as net income / average total equity.\n(Choice B) 5.18% results from failing to subtract preferred dividends from net income. ROCE measures return for common shareholders only, so\ndistributions to preferred shareholders (ie, preferred dividends) should be taken out.\n(Choice C) 6.18% results from incorrectly using EBIT, instead of net income, in the calculation. EBIT measures profits before interest and taxes,\nwhich reduce income available to common shareholders."
+ },
+ {
+  "id": "662195ec-4137-48d6-a13a-f19b4e3aaa93",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\5. Financial Statement Analysis\\5.11 Financial Analysis Techniques - Answers.pdf",
+  "page_idx": 28,
+  "png": "scripts\\_uworld_residuals_png\\662195ec-4137-48d6-a13a-f19b4e3aaa93.png",
+  "topic": "Financial Statement Analysis",
+  "subtopic": "5.11 Financial Analysis Techniques",
+  "question_en": "Which of the following is the best use of ratio analysis for a company?",
+  "option_a": "Analyzing historical profitability ratios to make credit decisions",
+  "option_b": "Analyzing current-year liquidity ratios to confirm the company's stock performance",
+  "option_c": "Analyzing historical cross-sectional ratio trends to gain insights on the company's relative",
+  "correct_answer": "C",
+  "explanation_en": "Insights gained from financial ratio analysis\nComprehension of: Helps in assessing:\nInternal economic relationships Projected free cash flow\nCurrent financial status Ability to expand and pay debts\nManagement's strategy execution Reliance on management's claims\nPeer and time-series analysis Absolute and relative performance\nRatio analysis entails reviewing a company's activity, leverage, profitability, and valuation ratios. Detecting important economic connections\nbetween different ratios is crucial in making economic decisions; the ratios alone are just statistics regarding a company's performance.\nAnalysts seek connections between ratios from time-series or cross-sectional analyses. A company's efficiency may impact its profitability, which\nin turn affects its valuation. Analysts must use inferences from ratio analyses to form independent judgments. They then use these judgments to\narrive at economic conclusions (eg, creditworthiness, stock price).\n(Choice A) Historical profitability ratios show the company's ability to generate profit, but since profit is different from cash flow, these ratios are\nnot useful in determining the company's creditworthiness.\n(Choice B) The current year's liquidity ratios are data that may indicate the company's ability to pay short-term debts. Only a comprehensive\nevaluation of all ratios over time can provide an understanding of the company's overall performance, not just its liquidity."
+ },
+ {
+  "id": "6e114c17-4417-40b2-89df-a48b8f74c827",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\5. Financial Statement Analysis\\5.11 Financial Analysis Techniques - Answers.pdf",
+  "page_idx": 35,
+  "png": "scripts\\_uworld_residuals_png\\6e114c17-4417-40b2-89df-a48b8f74c827.png",
+  "topic": "Financial Statement Analysis",
+  "subtopic": "5.11 Financial Analysis Techniques",
+  "question_en": "An analyst calculates the following ratios for a company to assess performance over time: Based on this information only, the analyst can most appropriately conclude that the company's:",
+  "option_a": "solvency position has improved.",
+  "option_b": "operation has increased efficiency.",
+  "option_c": "stock is more expensive relative to fundamentals.",
+  "correct_answer": "A",
+  "explanation_en": "Analysts can use integrated financial ratio analysis to gauge a company's performance over time in terms of its activity or efficiency, liquidity,\nsolvency, profitability, and valuation.\nActivity ratios measure how efficiently a company uses its assets.\nLiquidity ratios measure how well a company can cover its short-term obligations with cash or assets that are easily converted to cash.\nSolvency ratios measure a company's ability to satisfy its long-term obligations.\nProfitability ratios measure a company's return on sales and return on investments.\nValuation ratios measures a company's stock price relative to its fundamentals.\nIn this scenario, solvency, as measured by debt-to-equity (Debt / Equity) and debt-to-EBITDA (Debt / EBITDA), has been improving. The\ndownward trend in both ratios indicates that the company has lowered its outstanding debt relative to its equity and EBITDA.\n(Choice B) Efficiency (ie, activity), as measured by working-capital turnover (Sales / Net working capital) and fixed asset turnover (Sales / Fixed\nassets), has worsened. Both ratios are trending down over time, indicating that the company has become less efficient at using its assets to\ngenerate sales.\n(Choice C) The stock price has become less expensive over time relative to company fundamentals, as indicated by the decreasing price-to-book\n(P/B) and price-to-earnings (P/E) ratios here. This suggests that the investors pay less for the stock relative to the company's earnings and book\nvalue."
+ },
+ {
+  "id": "9293db6a-b59e-4af4-b890-38b5c7fb1775",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\5. Financial Statement Analysis\\5.11 Financial Analysis Techniques - Answers.pdf",
+  "page_idx": 37,
+  "png": "scripts\\_uworld_residuals_png\\9293db6a-b59e-4af4-b890-38b5c7fb1775.png",
+  "topic": "Financial Statement Analysis",
+  "subtopic": "5.11 Financial Analysis Techniques",
+  "question_en": "An analyst gathers the following data to compare two companies' performance. The analyst calculates only three ratios: Debt-to-EBITDA, net profit margin, and total asset turnover. Based only on these three ratios, the analyst can most appropriately conclude that Company A has better:",
+  "option_a": "solvency.",
+  "option_b": "efficiency.",
+  "option_c": "profitability.",
+  "correct_answer": "B",
+  "explanation_en": "Analysts use integrated financial ratio analysis to gauge a company's performance in terms of its activity or efficiency, liquidity, solvency, and\nprofitability.\nActivity ratios measure how efficiently a company utilizes its assets.\nLiquidity ratios measure how well a company can cover its short-term obligations with cash or with assets that are easily converted to cash.\nSolvency ratios measure a company's ability to satisfy its long-term obligations.\nProfitability ratios measure a company's return on sales and return on investments. Return on sales measures the margin earned from\nsales. Return on investment measures the profit from invested capital (eg, equity).\nFrom the information provided in the question, solvency is measured by Debt-to-EBITDA ratio, efficiency is measured by total asset turnover,\nand profitability is measured by net profit margin. After calculating the three ratios, the analyst can most appropriately conclude that Company\nA has better efficiency (0.83 vs. 0.50) since it is better at utilizing its assets to generate sales.\n(Choice A) Company B has better solvency as measured by a lower Debt-to-EBITDA ratio.\n(Choice C) Company B has better profitability as measured by net profit margin."
+ },
+ {
+  "id": "e85813be-0b30-4c15-8631-992953b67310",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\5. Financial Statement Analysis\\5.11 Financial Analysis Techniques - Answers.pdf",
+  "page_idx": 12,
+  "png": "scripts\\_uworld_residuals_png\\e85813be-0b30-4c15-8631-992953b67310.png",
+  "topic": "Financial Statement Analysis",
+  "subtopic": "5.11 Financial Analysis Techniques",
+  "question_en": "A company reports the following information:\n\n| (MXN millions) | 20X4 | 20X3 |\n|---|---|---|\n| Revenue | 15,000 | 13,500 |\n| Cost of goods sold | 5,000 | 4,000 |\n| Operating expenses | 2,500 | 2,300 |\n| Interest | 200 | 1,100 |\n| Taxes | 800 | 1,200 |\n| Dividends paid | 1,500 | 100 |\n\nBased only on this information, which of the following best describes the change in the company's profitability?",
+  "option_a": "Operating profit margin and net profit margin both increased.",
+  "option_b": "Operating profit margin and net profit margin both decreased.",
+  "option_c": "Operating profit margin decreased and net profit margin increased.",
+  "correct_answer": "C",
+  "explanation_en": "A company's profit margin, a type of profitability ratio, measures a company's profit relative to its revenue. Different types of profit margins incorporate different expenses to determine a company's profitability.\nHere, find the changes in operating profit margin and net profit margin to determine how the company's profitability changed:\n- Determine the operating profit margin by calculating operating income and comparing it to revenue. Operating income is earnings that remain after subtracting COGS and operating expenses from revenue.\n- Determine the net profit margin by calculating net income and comparing it to revenue. To calculate net income, subtract all expenses (ie, including interest and taxes) from revenue.\nThe operating profit margin declined from 53.33% to 50.00%. The net profit margin increased from 36.30% to 43.33%."
+ },
+ {
+  "id": "3d8e8129-8629-4a6b-b9a7-20d655143003",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\5. Financial Statement Analysis\\5.11 Financial Analysis Techniques - Answers.pdf",
+  "page_idx": 16,
+  "png": "scripts\\_uworld_residuals_png\\3d8e8129-8629-4a6b-b9a7-20d655143003.png",
+  "topic": "Financial Statement Analysis",
+  "subtopic": "5.11 Financial Analysis Techniques",
+  "question_en": "A consultant gathers the following profitability ratios for a company:\n\n| Profitability Ratio (%) | 20X1 | 20X2 | 20X3 |\n|---|---|---|---|\n| Gross profit margin | 31.00 | 31.70 | 32.10 |\n| Operating profit margin | 10.10 | 10.00 | 8.90 |\n| Pretax margin | 9.90 | 9.90 | 6.90 |\n\nBased on this information, over this period the company most likely improved its ability to cover:",
+  "option_a": "raw material costs.",
+  "option_b": "operating expenses.",
+  "option_c": "nonoperating expenses.",
+  "correct_answer": "A",
+  "explanation_en": "Profit margins (profit / revenue) indicate a company's ability to generate adequate sales to cover various costs:\nGross margin measures ability to cover COGS, which are costs directly attributable to producing the goods and services sold (eg, raw\nmaterial costs, production wages, distribution costs).\nOperating margin measures ability to further cover operating expenses such as marketing or research and development.\nPretax margin measures ability to further cover certain nonoperating expenses such as financing costs (eg, interest).\nNet margin measures ability to further cover taxes.\nIn this scenario, gross margin increased over time, which means the company improved its ability to cover COGS, including raw material costs.\n(Choice B) Operating margin decreased over time, which suggests a worsened ability to cover operating expenses.\n(Choice C) Pretax margin remained unchanged, which suggests deterioration or no improvement in the company's ability to cover nonoperating\nexpenses (before taxes)."
+ },
+ {
+  "id": "74e53ac8-ad99-495a-ae73-b07f8b8de771",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\5. Financial Statement Analysis\\5.11 Financial Analysis Techniques - Answers.pdf",
+  "page_idx": 30,
+  "png": "scripts\\_uworld_residuals_png\\74e53ac8-ad99-495a-ae73-b07f8b8de771.png",
+  "topic": "Financial Statement Analysis",
+  "subtopic": "5.11 Financial Analysis Techniques",
+  "question_en": "An analyst collects the following annual data for a company:\n\n| | Company | Industry Average |\n|---|---|---|\n| Days of sales outstanding | 45.10 | 30.09 |\n| Total asset turnover | 1.20 | 1.15 |\n| Days of inventory on hand | 25.42 | 29.77 |\n\nWhich of the following best describes how the company's efficiency compares with the industry?",
+  "option_a": "The company has a receivable turnover that is better.",
+  "option_b": "The company has more effective inventory management.",
+  "option_c": "The company produces less revenue for a given asset level.",
+  "correct_answer": "B",
+  "explanation_en": "Activity ratios measure how efficient a company is and indicate its operational performance. Days of inventory on hand (DOH), an activity ratio,\nindicates management's effectiveness in overseeing its inventory. DOH is the average number of days it takes a company to convert inventory\n(eg, current assets) into revenue.\nThe ratio is calculated as the number of days in the period divided by the company's inventory turnover (COGS/average inventory). Lower DOH\nsuggests that management has a lower drain on company assets and generates revenue more quickly. Here, it has more effective inventory\nmanagement than its peers since its DOH is less than the industry average (25.42 < 29.77).\n(Choice A) Using the days of sales outstanding formula, the company's receivable turnover of 8.09 (45.10 = 365 / receivable turnover) is lower\nthan the industry's of 12.13 (30.09 = 365/receivable turnover). Its receivable turnover is worse, not better than the industry average. If the days of\nsales outstanding (DSO) is lower than the industry average, so is the receivable turnover since they are effectively the same; DSO converts\nturnover into a time measurement.\n(Choice C) Total asset turnover is a ratio that measures a company's overall efficiency; a higher ratio means the company is more efficient at\ngenerating revenue for a given level of assets. The company produces more revenue for a given asset level than its peers since its total asset\nturnover is greater (1.20 > 1.15) than the industry average."
+ },
+ {
+  "id": "a2577ad9-3309-42ab-bd69-691c6fae0104",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\5. Financial Statement Analysis\\5.11 Financial Analysis Techniques - Answers.pdf",
+  "page_idx": 25,
+  "png": "scripts\\_uworld_residuals_png\\a2577ad9-3309-42ab-bd69-691c6fae0104.png",
+  "topic": "Financial Statement Analysis",
+  "subtopic": "5.11 Financial Analysis Techniques",
+  "question_en": "An analyst completes the following DuPont analysis on two companies:\n\n|  | Company X | Company Y |\n| --- | --- | --- |\n| Tax burden | 0.75 | 0.75 |\n| Interest burden | 0.80 | 0.80 |\n| EBIT margin | 0.10 | 0.18 |\n| Asset turnover | 0.90 | 1.20 |\n| Leverage | 3.00 | 1.20 |\n\nCompared with Company Y, Company X mostly likely has a:",
+  "option_a": "lower ROE and is more efficient.",
+  "option_b": "higher ROE and has a higher profit margin.",
+  "option_c": "higher ROE and a higher proportion of debt.",
+  "correct_answer": "C",
+  "explanation_en": "DuPont analysis entails decomposing ROE into five components. In this case, multiply the five components together to find the ROE of\nCompanies X and Y, which are 16.20% and 15.55%, respectively. Company X has a higher ROE despite its lower profitability (0.10 vs. 0.18) and\nefficiency (0.90 vs. 1.20) compared with Company Y's. Company X has greater leverage (ie, proportion of debt) than Company Y (3.00 vs 1.20),\nwhich is why Company X's ROE is greater than Company Y's (Choices A and B).\nLeverage is a gauge of solvency as measured by the company's assets relative to its average total equity. The higher the ratio, the more the\ncompany finances its assets with debt."
+ },
+ {
+  "id": "974f206c-25b6-49f5-9a44-9923ad0a5abb",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\5. Financial Statement Analysis\\5.11 Financial Analysis Techniques - Answers.pdf",
+  "page_idx": 3,
+  "png": "scripts\\_uworld_residuals_png\\974f206c-25b6-49f5-9a44-9923ad0a5abb.png",
+  "topic": "Financial Statement Analysis",
+  "subtopic": "5.11 Financial Analysis Techniques",
+  "question_en": "A company uses LIFO to determine the valuation for inventory and reports the following under US GAAP:\n\n| Selected Items from Financial Statements | 20X7 | 20X6 |\n|---|---|---|\n| Current assets (USD millions) | 1,400 | 1,660 |\n| Current liabilities (USD millions) | 333 | 400 |\n\nThe company discloses that its LIFO reserve in 20X7 was $277 and in 20X6 was $450. If the company used FIFO instead of LIFO for its inventory valuation, then over the last year, the company's current ratio most likely:",
+  "option_a": "decreased.",
+  "option_b": "remained the same.",
+  "option_c": "increased.",
+  "correct_answer": "A",
+  "explanation_en": "FIFO inventory = Inventory valued under LIFO + LIFO reserve. Companies that use LIFO (last-in, first-out) to value inventory often report lower inventory and higher expense than companies that use FIFO (first-in, first-out). Under US GAAP, companies that use LIFO must report the difference between inventory under LIFO and FIFO as the LIFO reserve. When preparing comparisons between companies that differ in their use of LIFO and FIFO inventory valuation, add back the LIFO reserve to convert LIFO inventory to FIFO. In this case, to find the company's current ratio as it would be under the FIFO method, add the LIFO reserve to current assets (inventory is a part of current assets). Adjusted current assets: 20X7: 1,400 + 277 = 1,677; 20X6: 1,680 + 450 = 2,130. The current ratio is current assets divided by current liabilities. Using current assets adjusted for FIFO, the current ratio decreases year over year from 5.33 to 5.04: 20X7: 1,677 / 333 = 5.04; 20X6: 2,130 / 400 = 5.33. (Choice B) The current ratio would have remained the same with no adjustment for differences in the accounting method. (Choice C) The current ratio would have increased by subtracting the LIFO reserve from current assets. To adjust for differences between LIFO and FIFO, add the LIFO reserves to inventory. This increases current assets. Things to remember: When comparing companies, some of which use LIFO and some of which use FIFO for inventory reporting, make their inventory values comparable by adding the LIFO reserve to the LIFO inventory valuation."
+ }
+]

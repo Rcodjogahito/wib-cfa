@@ -1,0 +1,376 @@
+[
+ {
+  "id": "27307bf8-116f-428b-a525-66cacd5e9c5e",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\3. Portfolio Management\\10.04 Introduction to Risk Management - Answers.pdf",
+  "page_idx": 14,
+  "png": "scripts\\_uworld_residuals_png\\27307bf8-116f-428b-a525-66cacd5e9c5e.png",
+  "topic": "Portfolio Management",
+  "subtopic": "10.04 Introduction to Risk Management",
+  "question_en": "Which of the following statements about elements of the risk management framework is most accurate?",
+  "option_a": "The company determines how frequently it monitors risk positions.",
+  "option_b": "The risk infrastructure team is responsible for determining the risk budget.",
+  "option_c": "The identification phase includes the assessment of whether risk positions align with the",
+  "correct_answer": "A",
+  "explanation_en": "Risk shifting refers to using derivatives (eg, forward commitments, contingent claims) to modify risk by moving exposure to a counterparty. Forward commitments (eg, futures, forwards, swaps) do not require a premium payment at initiation but obligate both parties to complete the transaction in the future (Choice C). The futures contract specifies the price of the commodity in the future, and thus eliminates the price uncertainty and limits the risk for the company purchasing the commodity. The risk is shifted to the counterparty in the futures contract. (Choice B) Risk shifting can also be achieved by using contingent claims (eg, options). In contrast to forward commitments, options require the buyer to pay a premium. The advantage of paying the premium is that the buyer is granted the right, but not the obligation, to exercise the option."
+ },
+ {
+  "id": "56c80f98-6724-4601-bcae-f0d907a69e89",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\4. Corporate Issuers\\4.03 Corporate Governance - Conflicts, Mechanisms, Risks, and Benefits - Answers.pdf",
+  "page_idx": 13,
+  "png": "scripts\\_uworld_residuals_png\\56c80f98-6724-4601-bcae-f0d907a69e89.png",
+  "topic": "Corporate Issuers",
+  "subtopic": "4.03 Corporate Governance - Conflicts, Mechanisms, Risks, and Benefits",
+  "question_en": "Which of the following is most accurate with regard to a dual-class share structure?",
+  "option_a": "Shareholders have voting power equal to their percentage of ownership.",
+  "option_b": "It may grant founders superior voting control even if their ownership level falls below 50%.",
+  "option_c": "It typically grants outside shareholders greater voting power than insiders and family",
+  "correct_answer": "B",
+  "explanation_en": "Normally, public companies have a share structure that grants each shareholder proportional voting power based on the number of shares held. For example, a shareholder who owns 50% of the company controls 50% of the votes. One exception to the general rule is a dual-class structure, where different share classes allow different numbers of votes per share (eg, Class A at one vote per share vs. Class B at two votes per share). A dual-class structure may create disproportional voting power relative to share ownership. Insiders (eg, founders) commonly hold Class B shares, which grant them dominant voting control on important issues (eg, board elections or strategic decisions) even if their share ownership falls below 50%. (Choice A) Shareholders have voting power equal to their percentage of share ownership only if all shares grant the same number of votes. Different share classes allow for different votes per share in a dual-class structure. (Choice C) Class B shares are granted mainly to insiders and family members and not to outside shareholders; therefore, greater voting power is typically held by insiders and family members."
+ },
+ {
+  "id": "85822bde-25d3-4f16-994e-930267f2d284",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\4. Corporate Issuers\\4.05 Capital Investments and Capital Allocation - Answers.pdf",
+  "page_idx": 9,
+  "png": "scripts\\_uworld_residuals_png\\85822bde-25d3-4f16-994e-930267f2d284.png",
+  "topic": "Corporate Issuers",
+  "subtopic": "4.05 Capital Investments and Capital Allocation",
+  "question_en": "A company's analyst made the following after-tax cash flow projections for two independent investments: The cost of capital is the company's hurdle rate of 12.5%. Based on the internal rate of return (IRR) approach, which of the following actions is most appropriate for the company?",
+  "option_a": "Invest in Project A.",
+  "option_b": "Invest in Project B.",
+  "option_c": "Invest in both Projects A and B.",
+  "correct_answer": "A",
+  "explanation_en": "Companies often make choices among possible projects since there are constraints that prevent them from pursuing all net present value (NPV) positive projects. Depending on the circumstances, these project interactions include: project sequencing, capital rationing, or mutually exclusive projects. With project sequencing, projects are lined up sequentially through time, so that investing in Project X creates the option to invest in Project Y. The decision to invest in Project Y (or other future projects) will be based on the completion and success of Project X. For example, a company may begin delivery services in a new region. Depending on the success of the delivery service, the company will decide whether to build a distribution center in that region. (Choice A) Capital rationing is the process of allocating limited resources (at any one time) to the most profitable combination of projects. This occurs when a company has more positive NPV projects than its resources will allow it to pursue. (Choice B) Mutually exclusive projects are those that compete directly with each other, so only one project can be selected. This is usually due to a resource constraint."
+ },
+ {
+  "id": "b8606822-2279-46f1-96b6-97a6d18cec1e",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\4. Corporate Issuers\\4.05 Capital Investments and Capital Allocation - Answers.pdf",
+  "page_idx": 20,
+  "png": "scripts\\_uworld_residuals_png\\b8606822-2279-46f1-96b6-97a6d18cec1e.png",
+  "topic": "Corporate Issuers",
+  "subtopic": "4.05 Capital Investments and Capital Allocation",
+  "question_en": "A company is analyzing two mutually exclusive three-year projects with conventional cash flows: If the hurdle rate is 8% and there are no other cash flows, then based on the IRR and NPV criteria, the best investment decision is to invest in:",
+  "option_a": "A only.",
+  "option_b": "B only.",
+  "option_c": "both A and B.",
+  "correct_answer": "A",
+  "explanation_en": "NPV and IRR criteria are commonly used to make capital investment decisions. The general rule is to accept a project if:\nthe project's NPV is positive or\nthe project's IRR is greater than the required rate of return (ie, hurdle rate).\nFor independent projects with conventional cash flows, the NPV and IRR lead to the same investment decision. When a project has a positive\nNPV, IRR will always be greater than the project's required rate of return, and vice versa.\nIRR and NPV can produce conflicting rankings when projects are mutually exclusive (ie, the firm can accept only one project). NPV is a better\ncriterion than IRR since the NPV model:\nshows the amount of value added to the firm, whereas IRR shows only the rate of return, not the actual value added. In this case, Project B\nhas a higher IRR (24.3%) that translates into a lower NPV of £18.10 million (as per the calculations below). The greater the NPV, the more\nvalue added to the firm.\nuses a more conservative reinvestment rate. The discounted cash flow analysis implicitly assumes cash flows are reinvested at the discount\nrate, which is the required rate of return (for NPV) or the IRR. Required rates of return are returns that could be earned on equivalent\nprojects, so NPV reflects a more realistic reinvestment assumption.\n12 30 55\n= −60 + + + = 20.49\nNPV of Project A\n(1 + 0.08)1 (1 + 0.08)2 (1 + 0.08)3\n60 45 5\n= −80 + + + = 18.10\nNPV of Project B\n(1 + 0.08)1 (1 + 0.08)2 (1 + 0.08)3\nThe company should choose Project A since the projects are mutually exclusive and Project A has a greater NPV than Project B.\nDescribe the capital allocation process, calculate net present value (NPV), internal rate of return (IRR), and return on invested capital (ROIC),\nand contrast their use in capital allocation"
+ },
+ {
+  "id": "0b47cfc2-7711-46a1-86fd-040a68486449",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\4. Corporate Issuers\\4.05 Capital Investments and Capital Allocation - Answers.pdf",
+  "page_idx": 11,
+  "png": "scripts\\_uworld_residuals_png\\0b47cfc2-7711-46a1-86fd-040a68486449.png",
+  "topic": "Corporate Issuers",
+  "subtopic": "4.05 Capital Investments and Capital Allocation",
+  "question_en": "A project has the following forecasted annual cash flows (in ¥ billions): Based on this information, which of the following discount rates will produce the lowest net present value (NPV)?",
+  "option_a": "6%",
+  "option_b": "8%",
+  "option_c": "11%",
+  "correct_answer": "A",
+  "explanation_en": "HP 12c TI BA II Plus\nThe net present value (NPV) of an investment equals the present value of its forecasted net cash flows (ie, inflows minus outflows). The discount\nrate used for calculating NPV is the required rate of return for investors, which accounts for the investment's risk.\nTypically, for projects with conventional cash flows (ie, one initial negative cash flow followed by positive future cash flows), lower discount rates\nwill yield higher NPVs. However, for projects with unconventional cash flows (ie, negative cash flows occurring beyond the initial period), the\nrelationship between discount rates and the size of the NPV can vary.\nIn this case, the investment has unconventional cash flows. The lowest discount rate (6%) yields the lowest NPV (−¥0.52 billion) (Choices B and\nC). This occurs because the sizable negative terminal cash flow generates the most negative present value when using the 6% discount rate;\ntherefore, the NPV is reduced more than under the other two rates."
+ },
+ {
+  "id": "51625732-fc5e-47c8-8e52-a701304b788f",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\4. Corporate Issuers\\4.05 Capital Investments and Capital Allocation - Answers.pdf",
+  "page_idx": 14,
+  "png": "scripts\\_uworld_residuals_png\\51625732-fc5e-47c8-8e52-a701304b788f.png",
+  "topic": "Corporate Issuers",
+  "subtopic": "4.05 Capital Investments and Capital Allocation",
+  "question_en": "With regards to capital budgeting, which of the following statements best describes project interactions?",
+  "option_a": "Mutually exclusive projects do not compete directly for resources.",
+  "option_b": "When a company has unlimited funds, all projects should be selected.",
+  "option_c": "Project sequencing refers to undertaking one project based on the outcome of another",
+  "correct_answer": "C",
+  "explanation_en": "Companies typically select projects to undertake based on each project's net present values (NPVs). When there are no constraints (eg, limited\nfunds, mutually exclusive projects, time constraints), projects with positive NPVs should be chosen. However, constraints often prevent\ncompanies from doing so. Depending on the situation, certain project interactions (illustrated above) need to be considered.\nWith project sequencing, the ability to start a project is contingent on the completion of another project. For example, the second version of\na device will start production only after the first version of the device proves its potential.\n(Choice A) If two projects are mutually exclusive, then only one can be selected. For example, a company with financing to bring only one\ngaming device to market would have to choose between two prototypes in development.\n(Choice B) Even when a company has access to unlimited funding, projects with negative NPVs should be rejected since they destroy wealth."
+ },
+ {
+  "id": "b4753083-5950-4fe2-ac86-9955d4b77571",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\4. Corporate Issuers\\4.05 Capital Investments and Capital Allocation - Answers.pdf",
+  "page_idx": 19,
+  "png": "scripts\\_uworld_residuals_png\\b4753083-5950-4fe2-ac86-9955d4b77571.png",
+  "topic": "Corporate Issuers",
+  "subtopic": "4.05 Capital Investments and Capital Allocation",
+  "question_en": "A company plans to replace its old equipment. The replacement equipment would cost AUD 20 million, and the cash flows (in AUD millions) are expected to be: Based on this information, the internal rate of return (IRR) for replacing the equipment is closest to:",
+  "option_a": "4.7%",
+  "option_b": "7.7%",
+  "option_c": "13.5%",
+  "correct_answer": "B",
+  "explanation_en": "HP 12c TI BA II Plus\nThe internal rate of return (IRR) is one criterion used by companies and analysts in capital budgeting analysis. The IRR is the discount rate\nthat results in a project net present value (NPV) equal to zero. If the IRR is greater (less) than the project's actual discount rate, the project is\nexpected to be profitable (unprofitable) since the return on the project exceeds (is exceeded by) its cost.\nA timeline for the investment and cash flows (CFs) is shown below:\nUsing a financial calculator and these inputs, the IRR for this project is closest to 7.7%.\n(Choice A) 4.7% is the compounded return on the initial investment as the sum of the CFs over four years: (24/20)(1/4) − 1.\n(Choice C) 13.5% results from shifting the CFs forward by one year and combining the first CF with the initial investment. The first CF will be at\nYear 1 (ie, CF ).\n1\nDescribe the capital allocation process, calculate net present value (NPV), internal rate of return (IRR), and return on invested capital (ROIC), and\ncontrast their use in capital allocation"
+ },
+ {
+  "id": "7265f6e1-f753-40e0-8f60-d8dd34689bd6",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\4. Corporate Issuers\\4.05 Capital Investments and Capital Allocation - Answers.pdf",
+  "page_idx": 1,
+  "png": "scripts\\_uworld_residuals_png\\7265f6e1-f753-40e0-8f60-d8dd34689bd6.png",
+  "topic": "Corporate Issuers",
+  "subtopic": "4.05 Capital Investments and Capital Allocation",
+  "question_en": "A corporation is evaluating two projects with the following cash flows (INR million): Project 1 has a required rate of return of 3% and an internal rate of return (IRR) of 26.9%, while Project 2 has a required rate of return of 8% and an IRR of 38.8%. If the projects are mutually exclusive, the most appropriate investment decision is to invest in:",
+  "option_a": "Project 1.",
+  "option_b": "Project 2.",
+  "option_c": "both projects.",
+  "correct_answer": "A",
+  "explanation_en": "HP 12c TI BA II Plus\nNet present value (NPV) analysis evaluates investments based on the present value of a project's cash flows. NPV is the difference between\nthe present values of the project's cash outflows and inflows. The projected cash flows are discounted to the present using the required rate\nof return (r) as the discount rate. As a result, projects with a positive NPV add to company value.\nProject 1 is the most appropriate investment choice in this scenario since it has a higher NPV than Project 2 and will therefore add more\nshareholder value to the corporation.\n(Choice B) Project 2 seems to be the better choice based on its higher internal rate of return (IRR); however, the NPV is a superior decision\ncriterion since NPV measures the actual value added to the company, whereas IRR measures a percentage return. A project can have a higher\npercentage return but a smaller NPV, based on the timing of the cash flows and their discount rate, resulting in less value added to the\ncorporation.\n(Choice C) Since the projects are mutually exclusive, the corporation cannot invest in both projects, although each has a positive NPV and would\nadd value."
+ },
+ {
+  "id": "843fd6a6-12f1-4413-af24-39eded505156",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\4. Corporate Issuers\\4.05 Capital Investments and Capital Allocation - Answers.pdf",
+  "page_idx": 0,
+  "png": "scripts\\_uworld_residuals_png\\843fd6a6-12f1-4413-af24-39eded505156.png",
+  "topic": "Corporate Issuers",
+  "subtopic": "4.05 Capital Investments and Capital Allocation",
+  "question_en": "A company is building a new plant. The NPV of the plant is projected to be €8 million if demand is high, and −€3 million if demand is low. Both scenarios are equally likely. The company has also secured a 1-year lease on some adjoining land, with an option to buy, to expand the facility if demand is high. The costs of the lease and expected cash flows from the expansion option are: The value of the plant with the option (in EUR) is closest to:",
+  "option_a": "2.50 million.",
+  "option_b": "2.74 million.",
+  "option_c": "3.48 million.",
+  "correct_answer": "B",
+  "explanation_en": "HP 12c TI BA II Plus\nReal option classifications\nReal option type Flexibility offered to:\nTiming Delay an investment decision until more information becomes available (eg, project sequencing)\nFundamental Undertake projects only when fundamentals of underlying asset are favorable (eg, oil refineries)\nAbandon a project (ie, abandonment option)\nSizing\nExpand (ie, growth option)\nPrice-setting Increase prices with demand\nChange output volume\nProduction-flexibility Use alternative input\nProduce different output\nA real option arises during normal business activities or operations when management has some flexibility in the investment decision\nprocess. Real options give management either:\ntiming flexibility (ie, timing or fundamental options) or\noperational flexibility (ie, sizing options, pricing options, or production flexibility options).\nWhen evaluating investment projects, management should consider if there are any real options linked to a project, and the value that they\nadd to the project.\nIn this instance, the lease is a production-flexibility option that allows management to alter production capacity to manage demand-supply\nmismatches. It will be exercised only when demand is high, of which there is a 50% probability. The NPV of the plant with the option is calculated\nas the NPV without options, adjusted for the cost and value of the option, as follows:\nStep 1: Determine the value of the plant without the option by summing the NPV under the different scenarios:\nExpected NPV = P (NPV ) + P (NPV )\nhigh demand high demand low demand low demand\n= 0.5 (8.0 million) + 0.5 (−3.0 million) = €2.5 million\nStep 2: Calculate the NPV of cash flows from the option if exercised:\nStep 3: Determine the NPV of the plant with the option:\n= NPV without options − Cost of options + Value of options\nwhere the option's value accounts for the probability of high demand\n= 2.5 − 0.5 + 0.5(1.48) = €2.74 million\n(Choice A) €2.50 million is the expected NPV of the plant without the option.\n(Choice C) €3.48 million results from ignoring the probability that demand level might remain low, whereby the option would not have any\nadditional value.\nDescribe types of real options relevant to capital investments"
+ },
+ {
+  "id": "ecdf729f-e7be-496c-95fa-6c2046c2fc0c",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\4. Corporate Issuers\\4.05 Capital Investments and Capital Allocation - Answers.pdf",
+  "page_idx": 12,
+  "png": "scripts\\_uworld_residuals_png\\ecdf729f-e7be-496c-95fa-6c2046c2fc0c.png",
+  "topic": "Corporate Issuers",
+  "subtopic": "4.05 Capital Investments and Capital Allocation",
+  "question_en": "A company is evaluating a high-risk investment in a new product line. A facility to produce the new product would be built on land that previously generated rental income of CAD 20,000 per year. The product will benefit from a recently run marketing campaign with a cost of CAD 80,000. Other data related to the investment are as follows: The project's NPV (in CAD) is closest to:",
+  "option_a": "14,910",
+  "option_b": "28,668",
+  "option_c": "55,392",
+  "correct_answer": "B",
+  "explanation_en": "HP 12c TI BA II Plus\nCommon errors in capital allocation decisions\nCorrect application Misapplication Drawback\nIRR cannot be used with\nProject criterion NPV IRR unconventional cash flows\nAssumes reinvestment at IRR\nFirms are incentivized to boost\nProfitability measure Long-term performance Short-term performance EPS and net income in the short\nterm\nReflects the firm's risk, not the\nDiscount rate Project's required return WACC\nproject's\nExclude sunk costs\nCash flows Include financing costs Mishandling costs Miscalculated NPV\nInclude opportunity costs\nWhen making a capital investment decision, firms typically use the capital allocation process based on a cash flow analysis. Common capital\nallocation errors include accounting for cash flows incorrectly and using the wrong discount rate.\nCash flows incurred prior to the investment decision (ie, sunk costs) are not included in the analysis since they do not represent a cost of\nthe project.\nIncome that would be generated if the project is not pursued (ie, forgone income) is considered a direct cost (ie, opportunity cost) of the\nproject and should be included.\nThe discount rate should be the project's required return (not the company's WACC) since that return reflects the project's incremental\nrisk rather than the company's total risk.\nIn this scenario, the marketing campaign is a sunk cost, which should be excluded from the analysis; the forgone rental income is an opportunity\ncost and therefore should be included. Thus, the project's annual net cash flows of CAD 220,000 (240,000 after-tax cash flows − 20,000\nopportunity cost) would be discounted at the project's required rate of return (8.0%):\nDescribe principles of capital allocation and common capital allocation pitfalls"
+ },
+ {
+  "id": "5c5bc30e-9f52-4d39-a4ba-410f1a87c6fc",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\5. Financial Statement Analysis\\5.03 Analyzing Balance Sheets - Answers.pdf",
+  "page_idx": 1,
+  "png": "scripts\\_uworld_residuals_png\\5c5bc30e-9f52-4d39-a4ba-410f1a87c6fc.png",
+  "topic": "Financial Statement Analysis",
+  "subtopic": "5.03 Analyzing Balance Sheets",
+  "question_en": "An analyst compiles the following common-size balance sheet items for a company: Based only on the data above, the most appropriate conclusion the analyst can draw is that compared to 20X8, in 20X9 the company has:",
+  "option_a": "increasing solvency risk.",
+  "option_b": "a more liquid asset base.",
+  "option_c": "not made any acquisitions.",
+  "correct_answer": "B",
+  "explanation_en": "Required disclosures of property, plant, and equipment (PPE) vary between IFRS and US GAAP. Under US GAAP, required disclosures are much less detailed as compared to IFRS. PPE includes tangible assets with useful lives of greater than one year. The costs (ie, measurement base) to obtain them are capitalized. Each year, part of the PPE cost is expensed as depreciation. Disclosures help analysts identify how different companies determine original costs and calculate depreciation expenses. The disclosure of assets' useful lives is required exclusively under IFRS. Useful life is an estimate of the time remaining in which an asset continues to provide economic benefit (eg, generate revenue). (Choice B) Both IFRS and US GAAP require the disclosure of the gross carrying amount. The gross carrying amount is the value of an asset prior to accounting for deprecation. (Choice C) The disclosure of estimated depreciation over the next five years is required under US GAAP, not IFRS."
+ },
+ {
+  "id": "4093ffe0-e2e9-4bac-add6-3810f11e6b5f",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\5. Financial Statement Analysis\\5.03 Analyzing Balance Sheets - Answers.pdf",
+  "page_idx": 6,
+  "png": "scripts\\_uworld_residuals_png\\4093ffe0-e2e9-4bac-add6-3810f11e6b5f.png",
+  "topic": "Financial Statement Analysis",
+  "subtopic": "5.03 Analyzing Balance Sheets",
+  "question_en": "An airline company reports the following information for 20X8: The fixed charge coverage ratio for 20X8 is closest to:",
+  "option_a": "1.29",
+  "option_b": "1.41",
+  "option_c": "1.88",
+  "correct_answer": "B",
+  "explanation_en": "Solvency ratios evaluate a company's ability to satisfy its long-term debt obligations. Coverage ratios such as the fixed charge coverage ratio\nare one category of solvency ratios. Coverage ratios focus on income statement items and cash from operations (CFO) and illustrate a company's\nability to satisfy periodic payments related to debt and debt-like obligations such as leases.\nLease payments and interest on debt are two common types of fixed charges. The fixed charge coverage ratio measures the company's ability to\nsatisfy its fixed obligations from operating earnings. The company's fixed charge coverage ratio is shown below:\n(Choice A) 1.29 results from using net income instead of EBIT to calculate the fixed charge coverage ratio.\n(Choice C) 1.88 is the interest coverage ratio, which does not include lease payments."
+ },
+ {
+  "id": "b6b30052-2a33-4b3b-bfcc-d0395c6ebd55",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\5. Financial Statement Analysis\\5.03 Analyzing Balance Sheets - Answers.pdf",
+  "page_idx": 18,
+  "png": "scripts\\_uworld_residuals_png\\b6b30052-2a33-4b3b-bfcc-d0395c6ebd55.png",
+  "topic": "Financial Statement Analysis",
+  "subtopic": "5.03 Analyzing Balance Sheets",
+  "question_en": "An analyst gathers the following information:\n\n# First Table\n\n| | Company | | |\n|---|---|---|---|\n| | X | Y | Z |\n| Long-term debt-to-equity ratio | 0.80 | 3.00 | 1.25 |\n| Financial leverage ratio | 2.00 | 5.00 | 2.75 |\n| Total long-term debt (€) | 4,000 | 3,000 | 5,000 |\n\n# Second Table\n\n| Accounts | Company | | |\n|---|---|---|---|\n| | X | Y | Z |\n| Cash | 50 | 50 | 20 |\n| Marketable securities | 20 | 100 | 120 |\n| Accounts receivable | 80 | 40 | 50 |\n| Inventory | 60 | 20 | 430 |\n| Unearned revenue | 790 | 850 | 930 |\n| Accounts payable | 220 | 350 | 130 |\n| Dividends payable | 210 | 320 | 450 |\n| Taxes payable | 110 | 250 | 540 |\n\nBased on the cash ratio, the company least able to meet its short-term obligations is:",
+  "option_a": "Company X",
+  "option_b": "Company Y",
+  "option_c": "Company Z",
+  "correct_answer": "A",
+  "explanation_en": "Liquidity ratios measure a company's ability to pay its short-term obligations. Among liquidity ratios, the cash ratio is considered the most\nconservative since it includes only items that are cash equivalents or marketable securities, which can both be quickly converted to cash. The\ncash ratio is the ratio of a company's total cash equivalents and marketable securities to its current liabilities.\nIn this scenario, the cash ratio of each company can be calculated as:\nCompany X Company Y Company Z\nCash 50 + 20 50 + 100 20 + 120\n+ Marketable securities = 70 = 150 = 140\nUnearned revenue\n+Accounts payable 790 + 220 + 850 + 350 + 930 + 130 +\n+ Dividends payable 210 + 110 320 + 250 450 + 540\n+Taxes payable = 1,330 = 1,770 = 2,050\n= Current liabilities\nCash ratio 70 / 1,330 ≈ 0.05 150 / 1,770 ≈ 0.08 140 / 2,050 ≈ 0.07\nCompany X has the lowest cash ratio. Therefore, of the three companies, Company X is least able to pay its short-term obligations."
+ },
+ {
+  "id": "ed9b85e7-754d-4f51-99a3-b1f426ba1c20",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\5. Financial Statement Analysis\\5.03 Analyzing Balance Sheets - Answers.pdf",
+  "page_idx": 2,
+  "png": "scripts\\_uworld_residuals_png\\ed9b85e7-754d-4f51-99a3-b1f426ba1c20.png",
+  "topic": "Financial Statement Analysis",
+  "subtopic": "5.03 Analyzing Balance Sheets",
+  "question_en": "An analyst gathers the following data:\n\n| Accounts | A | B | C |\n|---|---|---|---|\n| Cash | 15 | 25 | 20 |\n| Marketable securities | 10 | 7 | 15 |\n| Accounts receivable | 16 | 19 | 35 |\n| Inventory | 126 | 45 | 16 |\n| Prepaid insurance expense | 15 | 19 | 25 |\n| Accounts payable | 13 | 20 | 13 |\n| Wages payable | 18 | 15 | 22 |\n| Current portion of long-term debt | 11 | 57 | 16 |\n| Interest payable | 35 | 5 | 39 |\n\nWhich of the following companies most likely has the greatest ability to pay its current liabilities based on the quick ratio?",
+  "option_a": "Company A",
+  "option_b": "Company B",
+  "option_c": "Company C",
+  "correct_answer": "C",
+  "explanation_en": "The quick ratio is a liquidity ratio that measures a company's ability to meet its short-term obligations (ie, due within a year). It is a conservative liquidity measure because it includes only cash, marketable securities, and accounts receivable. In the context of calculating the quick ratio, marketable securities are considered short-term. Inventory, excluded from the quick ratio, is a less liquid current asset as it takes longer to convert to cash. Prepaid expenses are not included in the quick ratio since they are rarely converted to cash. Here, add the quick assets and divide this sum by total current liabilities. Company C has the greatest ability to pay with a quick ratio of 0.778."
+ },
+ {
+  "id": "0e7a0f35-a871-4d52-81d8-663aebaa95f2",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\5. Financial Statement Analysis\\5.03 Analyzing Balance Sheets - Answers.pdf",
+  "page_idx": 20,
+  "png": "scripts\\_uworld_residuals_png\\0e7a0f35-a871-4d52-81d8-663aebaa95f2.png",
+  "topic": "Financial Statement Analysis",
+  "subtopic": "5.03 Analyzing Balance Sheets",
+  "question_en": "A company discloses its required depreciation expense for five years: The company uses units of production to calculate depreciation expense. Based only on this data, the company most likely expects an increase in:",
+  "option_a": "unit cost.",
+  "option_b": "net margin.",
+  "option_c": "units produced.",
+  "correct_answer": "C",
+  "explanation_en": "The units-of-production depreciation method expenses an asset's cost based on its use during each period. Depreciation expense is\ncalculated by multiplying the units produced each year by the depreciable unit cost, which is calculated as the asset's depreciable value (ie, initial\ncost less salvage value) divided by the total number of units expected to be produced over the asset's life.\nThe depreciable unit cost is constant since the asset's cost is known, and the salvage value and the total number of units expected to be produced\nare estimated at the beginning of the asset's life (Choice C). Therefore, the only variable that can change the depreciation expense will be the\nactual number of units produced. Using the units-of-production method, if the depreciation expense increases each year, the number of units\nproduced is also expected to grow.\n(Choice B) Net margin (ie, net profit margin) is a measure of profitability, and it increases only if profit increases or revenue decreases. In this\nscenario, although production and COGS are expected to grow, that does not suggest the net margin will increase."
+ },
+ {
+  "id": "fdcb34f1-faa3-497d-90ad-5bc202c44162",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\5. Financial Statement Analysis\\5.03 Analyzing Balance Sheets - Answers.pdf",
+  "page_idx": 13,
+  "png": "scripts\\_uworld_residuals_png\\fdcb34f1-faa3-497d-90ad-5bc202c44162.png",
+  "topic": "Financial Statement Analysis",
+  "subtopic": "5.03 Analyzing Balance Sheets",
+  "question_en": "An analyst collects the following information (in ¥ millions) for a company: If there are no other current liabilities, compared with the industry average cash ratio of 0.4, the company's cash ratio is most likely:",
+  "option_a": "less than the industry average.",
+  "option_b": "equal to the industry average.",
+  "option_c": "greater than the industry average.",
+  "correct_answer": "B",
+  "explanation_en": "Liquidity refers to how quickly and easily an asset can be converted to cash at its current value. Liquidity ratios assess a company's ability to\nsatisfy its current liabilities. The cash ratio is the most conservative liquidity ratio since it includes only the most liquid assets.\nThe cash ratio is the sum of cash (including cash equivalents) and marketable securities as a percentage of the company's current liabilities.\nCurrent liabilities are debts due within 12 months. A higher cash ratio suggests better liquidity. In this scenario, the cash ratio is calculated as\nfollows:\n(Choice A) The cash ratio is less than the industry average when it excludes marketable securities from the numerator.\n(Choice C) The cash ratio is greater than the industry average when it erroneously includes accounts receivable in the numerator. Accounts\nreceivable is not considered as liquid as cash or marketable securities."
+ },
+ {
+  "id": "82769b1d-3f8f-4c01-ad71-6435cfcf49cd",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\5. Financial Statement Analysis\\5.03 Analyzing Balance Sheets - Answers.pdf",
+  "page_idx": 16,
+  "png": "scripts\\_uworld_residuals_png\\82769b1d-3f8f-4c01-ad71-6435cfcf49cd.png",
+  "topic": "Financial Statement Analysis",
+  "subtopic": "5.03 Analyzing Balance Sheets",
+  "question_en": "An analyst evaluates the solvency of three companies and gathers the following information:\n\n```markdown\n| | Company X | Company Y | Company Z |\n|---|---|---|---|\n| Total assets | 6,340 | 3,460 | 7,030 |\n| Common stock | 750 | 140 | 470 |\n| Additional paid-in capital | 2,800 | 1,890 | 3,900 |\n| Retained earnings | 900 | 310 | 110 |\n| Treasury stock | (50) | (100) | (110) |\n```\n\nBased on the companies' financial leverage ratios, which company has the greatest ability to meet long-term obligations?",
+  "option_a": "Company X",
+  "option_b": "Company Y",
+  "option_c": "Company Z",
+  "correct_answer": "A",
+  "explanation_en": "The financial leverage ratio (ie, total assets to total equity) is one of several solvency ratios analysts use to measure a company's ability to\nmeet its long-term obligations and understand its financial risk. The greater the ratio, the more the company uses debt to finance its assets.\nTherefore, a lower financial ratio implies greater solvency, and vice versa.\nIn this scenario, calculate the financial leverage ratios of each company as follows:\nCompany X has the lowest financial leverage ratio and therefore the greatest ability to meet long-term obligations.\n(Choice B) Company Y has the least amount of total assets. However, compared with Company X, its total equity is lower in relation to its total\nassets; therefore, Company Y has a higher financial leverage ratio than Company X.\n(Choice C) Company Z has the highest financial leverage ratio; therefore, of the three companies, it is least able to meet its long-term obligations."
+ },
+ {
+  "id": "88e31af1-c472-4af6-9beb-8e0f32e10429",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\5. Financial Statement Analysis\\5.06 Analysis of Inventories - Answers.pdf",
+  "page_idx": 3,
+  "png": "scripts\\_uworld_residuals_png\\88e31af1-c472-4af6-9beb-8e0f32e10429.png",
+  "topic": "Financial Statement Analysis",
+  "subtopic": "5.06 Analysis of Inventories",
+  "question_en": "An analyst gathers the following data on two companies: Neither company has reported inventory shortages or write-downs. After the appropriate adjustments are made to compare the companies' financial data, Company A's inventory turnover is most likely:",
+  "option_a": "less than Company B's.",
+  "option_b": "the same as Company B's.",
+  "option_c": "greater than Company B's.",
+  "correct_answer": "A",
+  "explanation_en": "Inventory write-downs and revaluations US GAAP IFRS Lower of cost or net realizable value (FIFO) Lower of cost or net realizable value (LIFO not permitted Lower of cost or market value (LIFO) under IFRS) Market value equals replacement cost but with an upper and lower limit Revaluations in future periods permitted Upper limit: net realizable value Revaluations limited to amount of all previous write- Lower limit: net realizable value less normal profit margin downs (except for agricultural, forest, and mineral Revaluations generally NOT permitted products) IFRS, unlike GAAP, permit upward revaluation of inventory if the net realizable value increases. With very few exceptions, upward revaluation is limited to the amount of all previous write-downs. Further, the maximum value for the inventory is its original cost. This company wrote down its inventory by £1.3 million to reflect its reduced value. Although the value has sharply increased, the amount of revaluation is limited to the previous £1.3 million reduction. This brings the inventory's value back to its original cost of £30 million. (Choice A) This would be the case under US GAAP, which do not permit upward revaluations to previously written-down inventory except for agricultural, forest, and mineral products. (Choice C) IFRS limit revaluation of inventory to the original cost, even if the future net realizable value exceeds the original cost. For agricultural, forest, and mineral products, revaluations can exceed the original cost."
+ },
+ {
+  "id": "7eda3598-7353-4d12-a970-7c4d38885998",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\5. Financial Statement Analysis\\5.06 Analysis of Inventories - Answers.pdf",
+  "page_idx": 7,
+  "png": "scripts\\_uworld_residuals_png\\7eda3598-7353-4d12-a970-7c4d38885998.png",
+  "topic": "Financial Statement Analysis",
+  "subtopic": "5.06 Analysis of Inventories",
+  "question_en": "A company that reports under US GAAP decides to change its inventory accounting from FIFO to LIFO. The change on its financial statements is most appropriately disclosed:",
+  "option_a": "retroactively, including a restatement of prior years' financial statements.",
+  "option_b": "retroactively, without restating prior financial statements but disclosing the impact of the change to prior years' statements in footnotes.",
+  "option_c": "prospectively, without restating prior financial statements but disclosing the impact of the",
+  "correct_answer": "C",
+  "explanation_en": "Inventory constitutes a large percentage of total assets for many companies and can significantly impact revenue, expenses (ie, cost of sales), and liquidity. As such, companies provide inventory-related disclosures in financial statements to better explain reporting methods and trends. One important category of disclosure relates to reversals of previously written down inventory, which is permitted under IFRS only. In general, a write-down occurs when an inventory item's market value falls below its carrying value on the balance sheet. A write-down increases expenses (cost of sales) and lowers profits. Any subsequent reversals of write-downs will allow companies to recapture these lost profits. (Choice A) LIFO reporting is allowed under US GAAP, not IFRS. LIFO reserves measure the difference between ending inventory value measured under FIFO and LIFO and are reported only for US GAAP companies. (Choice B) Companies using both US GAAP and IFRS disclose information related to inventory write-downs."
+ },
+ {
+  "id": "5b6d3241-cd74-464d-9865-f5f8494fa05a",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\5. Financial Statement Analysis\\5.06 Analysis of Inventories - Answers.pdf",
+  "page_idx": 8,
+  "png": "scripts\\_uworld_residuals_png\\5b6d3241-cd74-464d-9865-f5f8494fa05a.png",
+  "topic": "Financial Statement Analysis",
+  "subtopic": "5.06 Analysis of Inventories",
+  "question_en": "A manager collects information on a company's inventory for a period: The company uses LIFO to calculate COGS. Based on only this information, under US GAAP, the per-unit value (in USD) for the existing inventory is closest to:",
+  "option_a": "96",
+  "option_b": "100",
+  "option_c": "105",
+  "correct_answer": "A",
+  "explanation_en": "Inventory may lose value due to spoilage, obsolescence, or declines in selling prices. Companies often update their inventory values on the\nbalance sheet to account for such events. US GAAP require companies to report inventory at the lower of historical cost or market value (MV).\nWhen a company reports under US GAAP and uses LIFO as its inventory costing method, MV is the current replacement cost subject to an\nupper and lower limit.\nThe upper limit is the net realizable value (NRV), which is the selling price net of the costs to complete and sell the inventory. In this\nscenario, NRV = Selling price − Selling cost − Completion cost, so NRV = 140 − 10 − 30 = 100.\nThe lower limit is the NRV minus a normal profit margin. In this scenario, the lower limit is NRV − Normal profit margin = 100 − 7 = 93.\nMV is always the middle number of the replacement cost (RC), upper limit, and lower limit when ranked in order:\nIf RC > Upper > Lower, MV is the upper limit.\nIf Upper > RC > Lower, MV is the RC.\nIf Upper > Lower > RC, MV is the lower limit.\nIn this case, the MV is the RC of $96 per unit since it is within the upper and lower limits and is lower than the historical cost of the inventory.\n(Choice B) $100 is the upper limit for MV, which is capped at the upper limit only when RC exceeds the upper limit.\n(Choice C) $105 is the company's historical cost. The inventory's NRV is lower than its historical cost, so the NRV should be reported."
+ },
+ {
+  "id": "81ce7ad9-f2a0-4109-ad7e-601b4de519af",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\5. Financial Statement Analysis\\5.06 Analysis of Inventories - Answers.pdf",
+  "page_idx": 12,
+  "png": "scripts\\_uworld_residuals_png\\81ce7ad9-f2a0-4109-ad7e-601b4de519af.png",
+  "topic": "Financial Statement Analysis",
+  "subtopic": "5.06 Analysis of Inventories",
+  "question_en": "A company that reports under IFRS is valuing its year-end inventory. It has collected the following information (in CHF millions): Based on this data, the inventory value (in CHF millions) reported on its balance sheet is closest to:",
+  "option_a": "165",
+  "option_b": "175",
+  "option_c": "180",
+  "correct_answer": "B",
+  "explanation_en": "Inventory is initially recorded on a company's balance sheet at historic cost. However, companies are required to regularly reassess this value. If\nthe inventory's value falls below its cost (eg, spoils, becomes obsolete, declines in selling price), the company must write down the inventory to\nreflect the new, lower value, which becomes the carrying value.\nIFRS require companies to report the carrying value of inventory at the lower of cost or net realizable value (NRV). The NRV is the estimated\nselling price less the cost of completing and selling the inventory.\nIn this scenario, the NRV of the inventory is CHF 180 million (240 − 60). This is higher than the cost of 175, so no write down is taken and the\ninventory remains at 175.\n(Choice A) 165 is the replacement value, which is not used by IFRS in valuing inventory. The replacement value is used by companies reporting\nunder US GAAP and using LIFO or retail inventory methods when valuing inventory.\n(Choice C) 180 is the NRV, which is greater than the historical cost. Since inventory is required to be valued at the lower of cost and NRV, the\ncompany would not be permitted to increase the value of its inventory above 175."
+ },
+ {
+  "id": "09d8b9d3-afdb-4a97-bd87-7981a939942c",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\8. Derivatives\\8.02 Forward Commitment and Contingent Claim Features and Instruments - Answers.pdf",
+  "page_idx": 11,
+  "png": "scripts\\_uworld_residuals_png\\09d8b9d3-afdb-4a97-bd87-7981a939942c.png",
+  "topic": "Derivatives",
+  "subtopic": "8.02 Forward Commitment and Contingent Claim Features and Instruments",
+  "question_en": "The credit protection buyer in a credit default swap most likely pays:",
+  "option_a": "a series of payments in return for a promise of compensation if a credit event occurs.",
+  "option_b": "a one-time premium for the right to benefit from an increase in a bond's credit spread.",
+  "option_c": "the interest, principal, and appreciation on a specific bond in return for a fixed or variable",
+  "correct_answer": "A",
+  "explanation_en": "A European put option gives its holder the right, but not the obligation, to sell an underlying asset at the exercise price on the date of the option's expiration. If the market price is less than the exercise price, then the put buyer has the right to sell the underlying asset at a higher price than the existing market price. The difference between the exercise price and the market price is the put buyer's payoff. If the market price is not lower than the exercise price, then the put buyer will not exercise the option, and there is no payoff. Therefore, the put buyer's payoff is the greater of (exercise price – market price) and zero. In this scenario, the put's exercise price at expiration is GBP 76, and the value of the underlying is GBP 83. The payoff is the greater of (76 – 83) = GBP −7 and zero, so the payoff is GBP 0. (Choice A) GBP −3 is the put buyer's profit, which equals the payoff minus the amount paid to purchase the option: (0 – 3) = GBP −3. (Choice C) GBP 7 is the result of subtracting the exercise price from the value of the underlying asset."
+ }
+]

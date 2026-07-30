@@ -1,0 +1,376 @@
+[
+ {
+  "id": "3f91a49c-25f6-4321-844f-d27fc798cf0f",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\4. Corporate Issuers\\4.04 Working Capital and Liquidity - Answers.pdf",
+  "page_idx": 7,
+  "png": "scripts\\_uworld_residuals_png\\3f91a49c-25f6-4321-844f-d27fc798cf0f.png",
+  "topic": "Corporate Issuers",
+  "subtopic": "4.04 Working Capital and Liquidity",
+  "question_en": "An analyst is evaluating the performance of inventory management across several manufacturing companies. The analyst gathers the following data:\n\n# Selected Items from Financial Statements (RUB millions)\n\n| Company | FY17 Cost of Goods Sold | FY17 Average Inventory Balance | FY18 Cost of Goods Sold | FY18 Average Inventory Balance |\n|---|---|---|---|---|\n| X | 60.0 | 10.0 | 60.4 | 9.5 |\n| Y | 55.0 | 11.0 | 55.2 | 10.7 |\n| Z | 70.0 | 9.0 | 70.0 | 9.4 |\n| Industry Average | 61.7 | 10.0 | 61.9 | 9.9 |\n\nBased on the data, and assuming all companies manufacture the same product, which of the following best describes the improvements in the number of days of inventory (DOH) from the previous year?",
+  "option_a": "Company X shows the most improvement.",
+  "option_b": "Company Z shows more improvement than Company Y.",
+  "option_c": "The industry average shows more improvement than Company Y.",
+  "correct_answer": "A",
+  "explanation_en": "The number of days of inventory (DOH), also referred to as days of inventory on hand, measures the average number of days that it takes a company to sell its inventory. Analysts can use DOH to evaluate a company's inventory management. Shorter DOH indicates greater speed and efficiency in selling inventory. In contrast, longer DOH can lead to inventory obsolescence and extra storage costs. Calculate the changes in DOH between FY18 and FY17: Company X improved the most (by 3.4 days) over the previous year. On average, it took Company X 3.4 fewer days to sell its inventory compared to the prior year. (Choice B) Compared with the previous year, Company Z's DOH increased by 2.1 days while Company Y's DOH decreased by 2.2 days. This means that Company Z's DOH worsened by 2.1 days while Company Y's DOH improved by 2.2 days. (Choice C) Compared with the previous year, the industry's DOH decreased by 1 day while Company Y's DOH decreased by 2.2 days. This means that the industry's DOH improved by only 1 day while Company Y's DOH improved by 2.2 days."
+ },
+ {
+  "id": "a3cc7477-a670-47ca-95fc-af5f2fca799b",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\4. Corporate Issuers\\4.04 Working Capital and Liquidity - Answers.pdf",
+  "page_idx": 8,
+  "png": "scripts\\_uworld_residuals_png\\a3cc7477-a670-47ca-95fc-af5f2fca799b.png",
+  "topic": "Corporate Issuers",
+  "subtopic": "4.04 Working Capital and Liquidity",
+  "question_en": "An analyst is evaluating the performance of three manufacturers with the following information:\n\n| Company | 20X1 ($ millions) Cost of Goods Sold | Inventory Beginning Balance | Inventory Ending Balance |\n|---|---|---|---|\n| X | 6.0 | 1.4 | 1.4 |\n| Y | 7.3 | 2.2 | 1.8 |\n| Z | 5.0 | 1.8 | 1.4 |\n\nWhich company has the highest inventory turnover?",
+  "option_a": "Company X",
+  "option_b": "Company Y",
+  "option_c": "Company Z",
+  "correct_answer": "A",
+  "explanation_en": "The inventory turnover ratio represents the number of times, on average, inventory is sold and replenished during a fiscal period. It is calculated by dividing the cost of goods sold (COGS) by the average inventory. Average inventory is used since inventory fluctuates throughout the year. COGS, or the cost at which the inventory was acquired or manufactured, is recorded when an item is sold. Higher inventory turnover can imply stronger sales relative to inventory levels whereas lower inventory turnover can imply slower sales or excess inventory. The faster a company sells its inventory, the quicker it can convert its assets to cash and improve liquidity. In addition, long inventory storage times can lead to obsolete inventory. Company X has the highest inventory turnover ratio of 4.3. (Choice B) Company Y has a lower inventory turnover ratio than Company X, meaning that Company Y was less efficient in converting its inventory into sales. (Choice C) Company Z has the lowest inventory turnover ratio."
+ },
+ {
+  "id": "06683c1e-0a85-4e16-80fa-0f110f3dd0a4",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\4. Corporate Issuers\\4.04 Working Capital and Liquidity - Answers.pdf",
+  "page_idx": 20,
+  "png": "scripts\\_uworld_residuals_png\\06683c1e-0a85-4e16-80fa-0f110f3dd0a4.png",
+  "topic": "Corporate Issuers",
+  "subtopic": "4.04 Working Capital and Liquidity",
+  "question_en": "An analyst is evaluating several companies and has compiled the following information:\n\n| ($ millions) | Credit Sales 20X1 | Accounts Receivable 20X1 | Credit Sales 20X2 | Accounts Receivable 20X2 |\n|---|---|---|---|---|\n| Company 1 | 8.0 | 0.8 | 8.8 | 1.0 |\n| Company 2 | 10.0 | 1.1 | 11.0 | 1.2 |\n| Company 3 | 7.0 | 0.5 | 7.7 | 0.5 |\n\nFrom 20X1 to 20X2, which company improved the most in days sales outstanding?",
+  "option_a": "Company 1",
+  "option_b": "Company 2",
+  "option_c": "Company 3",
+  "correct_answer": "C",
+  "explanation_en": "Days sales outstanding (DSO), sometimes referred to as days in receivables, calculates the number of days, on average, for a company to collect cash from its customers after sales are made on credit. It measures how quickly a company converts its receivables into cash. Faster collection of receivables results in a lower DSO, and this enhances a company's liquidity. By contrast, a higher DSO indicates that customers are too slow to pay invoices or that the company has poor credit extension policies (eg, not granting trade discount incentives for early payment), both of which can act as a drag on liquidity. It is helpful to gauge a company's DSO performance by comparing it across time, to that of the industry average, or to peers. Company 3 showed the most improvement from the previous year. It reduced its DSO by 2.4 days, meaning that it collected its receivables, on average, 2.4 days faster than it did for the previous year. (Choice A) Company 1 took 5.0 days longer, on average, to collect its receivables compared to its performance the prior year. (Choice B) Although Company 2 improved its DSO from the previous year (−0.3 days), the improvement was less than that of Company 3."
+ },
+ {
+  "id": "9c51aa0b-2104-46cd-869f-7cfc2d0a2ede",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\4. Corporate Issuers\\4.04 Working Capital and Liquidity - Answers.pdf",
+  "page_idx": 14,
+  "png": "scripts\\_uworld_residuals_png\\9c51aa0b-2104-46cd-869f-7cfc2d0a2ede.png",
+  "topic": "Corporate Issuers",
+  "subtopic": "4.04 Working Capital and Liquidity",
+  "question_en": "A consultant is evaluating several companies and has collected the following information for the fiscal year:\n\n| Company | Credit Sales ($ millions) | Cost of Goods Sold ($ millions) | Accounts Receivable Average Balance ($ millions) |\n|---|---|---|---|\n| 1 | 9.0 | 5.0 | 2.5 |\n| 2 | 10.0 | 7.3 | 4.0 |\n| 3 | 7.0 | 5.0 | 2.3 |\n\nWhich company has the best accounts receivable turnover?",
+  "option_a": "Company 1",
+  "option_b": "Company 2",
+  "option_c": "Company 3",
+  "correct_answer": "A",
+  "explanation_en": "The accounts receivable (AR) turnover ratio measures the number of times, on average, accounts receivable is generated by credit sales and collected as cash during a fiscal period. Credit sales occur when companies allow customers to defer sales invoice payments for a short period of time (commonly 30-60 days). Companies then record the amount owed from the customers as AR. A higher AR turnover ratio implies greater efficiency in converting receivables to cash and indicates better liquidity. This efficiency can result from a firm's effectiveness in receivables collection or from its credit-extension policies (eg, granting trade discount incentives for early payment). AR turnover for the three companies are as follows: Company 1 has the highest AR turnover ratio of 3.64, which means that it is the most efficient in collecting its AR among the three companies. (Choice B) Company 2 has collected on its AR 2.50 times on average during the year. This means that it was less efficient than Company 1 at converting receivables to cash. (Choice C) Company 3 has collected on its AR 3.04 times on average during the year. This means that it was less efficient that Company 1 at converting receivables to cash."
+ },
+ {
+  "id": "7595fe8c-ebcb-4979-9156-38529fd6147c",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\7. Fixed Income\\7.11 Yield-Based Bond Duration Measures and Properties - Answers.pdf",
+  "page_idx": 3,
+  "png": "scripts\\_uworld_residuals_png\\7595fe8c-ebcb-4979-9156-38529fd6147c.png",
+  "topic": "Fixed Income",
+  "subtopic": "7.11 Yield-Based Bond Duration Measures and Properties",
+  "question_en": "An analyst obtains the following information about a bond with no embedded options: If the bond's YTM increases by 1 basis point, the best estimate of the bond's price is closest to:",
+  "option_a": "92.31",
+  "option_b": "93.93",
+  "option_c": "94.41",
+  "correct_answer": "B",
+  "explanation_en": "A bond's money duration is its annual modified duration multiplied by the bond's full price. In this calculation, the full price is the bond's\nmarket value, as none of the bonds have any accrued interest. Money duration is a measure of a bond's price sensitivity to a change in its YTM\nexpressed in the currency units of the bond's denomination.\nUnlike other measures of price sensitivity (ie, modified and effective durations that estimate percentage price change, money duration estimates\nthe total change in value. Since it is weighted by the size of the position, money duration more effectively measures the impact individual bond\npositions have on portfolio risk.\n(Choice A) Bond X is the largest position by value invested but it has a much shorter duration than the other bonds.\n(Choice C) Bond Z has the longest duration of the three bonds but has a much smaller weight in the portfolio than either of the other two\nsecurities."
+ },
+ {
+  "id": "100cce43-fdf8-4b02-9632-304b67d39e52",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\4. Corporate Issuers\\4.06 Capital Structure - Answers.pdf",
+  "page_idx": 6,
+  "png": "scripts\\_uworld_residuals_png\\100cce43-fdf8-4b02-9632-304b67d39e52.png",
+  "topic": "Corporate Issuers",
+  "subtopic": "4.06 Capital Structure",
+  "question_en": "A company is evaluating two projects. Project A has an IRR of 6.4%, and Project B has an IRR of 7.5%. The company has the following information:\n\n| Item | Value |\n|---|---|\n| Next year's dividend | ¥40 |\n| Dividend growth rate | 2.5% |\n| Stock price | ¥500 |\n| After-tax cost of debt | 5.0% |\n| Debt-to-equity ratio | 80% |\n\nAssuming average risk and no capital constraints, the company should most likely invest in:",
+  "option_a": "both projects.",
+  "option_b": "only Project B.",
+  "option_c": "neither project.",
+  "correct_answer": "C",
+  "explanation_en": "A company's weighted average cost of capital (WACC) is its overall cost of capital. WACC combines the proportion of each component in the overall capital structure (ie, \"weight\") with the cost of that component. When calculating WACC, weights are based on the components' market values, not their book values. The steps demonstrating how to derive the cost of debt are shown below: Calculate and interpret the weighted-average cost of capital for a company"
+ },
+ {
+  "id": "7d8b39ef-46a1-4aa4-b077-f88f68ff6b21",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\4. Corporate Issuers\\4.06 Capital Structure - Answers.pdf",
+  "page_idx": 18,
+  "png": "scripts\\_uworld_residuals_png\\7d8b39ef-46a1-4aa4-b077-f88f68ff6b21.png",
+  "topic": "Corporate Issuers",
+  "subtopic": "4.06 Capital Structure",
+  "question_en": "An analyst gathers the following information about a company with only debt and common equity in its capital structure. All else being equal, if the company's tax rate decreases from 25% to 15%, the company's new WACC will be closest to:",
+  "option_a": "7.50%",
+  "option_b": "7.70%",
+  "option_c": "7.83%",
+  "correct_answer": "B",
+  "explanation_en": "When a company uses debt, it incurs interest expense, which lowers taxable income and tax expense. This creates a beneficial \"tax shield\" (ie,\nshielding income from taxation) using debt that partially offsets the cost of debt, such that:\nthe after-tax cost of debt [r (1 − t)] < the pretax cost of debt (r ).\nd d\nAll else equal, a higher (lower) tax rate creates a greater (smaller) benefit and decreases (increases) the after-tax cost of debt. Since an\nincrease in the tax rate decreases the cost of debt, it decreases the weighted average cost of capital (WACC). In this question, the increase in the\ntax rate means that WACC can only decrease, not increase, so 12% represents the highest possible WACC (Choice C).\nw w\nTo solve for the WACC when the tax rate is 40%, first calculate the weights of debt ( d) and equity ( e by using the WACC formula with the\nw + w w w\nexisting tax rate of 25%. Since the company has no preferred stock, d e = 100% and d = 1 − e:\nCalculations Steps\nWACC = (1 − w )r (1 − t) + w r Modify the WACC formula\ne d e e"
+ },
+ {
+  "id": "11d78f2a-bd72-40ab-abf3-27ad7043f80d",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\4. Corporate Issuers\\4.06 Capital Structure - Answers.pdf",
+  "page_idx": 21,
+  "png": "scripts\\_uworld_residuals_png\\11d78f2a-bd72-40ab-abf3-27ad7043f80d.png",
+  "topic": "Corporate Issuers",
+  "subtopic": "4.06 Capital Structure",
+  "question_en": "Information for a company is shown below: If the company's weighted average cost of capital (WACC) is 8.0%, its pretax cost of debt is closest to:",
+  "option_a": "5.0%",
+  "option_b": "5.7%",
+  "option_c": "7.1%",
+  "correct_answer": "C",
+  "explanation_en": "A company's weighted average cost of capital (WACC) is its overall cost of capital. WACC combines the proportion of each component in the\noverall capital structure (ie, \"weight\") with the cost of that component. When calculating WACC, weights are based on the components' market\nvalues, not their book values. The steps demonstrating how to derive the cost of debt are shown below:\nCalculate and interpret the weighted-average cost of capital for a company"
+ },
+ {
+  "id": "f4359ed1-e581-4be7-af03-c870895eeb9a",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\4. Corporate Issuers\\4.06 Capital Structure - Answers.pdf",
+  "page_idx": 11,
+  "png": "scripts\\_uworld_residuals_png\\f4359ed1-e581-4be7-af03-c870895eeb9a.png",
+  "topic": "Corporate Issuers",
+  "subtopic": "4.06 Capital Structure",
+  "question_en": "An analyst gathers the following information about a profitable company's target costs of capital: The company has no other sources of capital. All else being equal, if its tax rate changes from 25% to 40%, its new WACC will be closest to:",
+  "option_a": "9.60%",
+  "option_b": "11.52%",
+  "option_c": "12.34%",
+  "correct_answer": "B",
+  "explanation_en": "When a company uses debt, it incurs interest expense, which lowers taxable income and tax expense. This creates a beneficial \"tax shield\" (ie,\nshielding income from taxation) using debt that partially offsets the cost of debt, such that:\nthe after-tax cost of debt [r (1 − t)] < the pretax cost of debt (r ).\nd d\nAll else equal, a higher (lower) tax rate creates a greater (smaller) benefit and decreases (increases) the after-tax cost of debt. Since an\nincrease in the tax rate decreases the cost of debt, it decreases the weighted average cost of capital (WACC). In this question, the increase in the\ntax rate means that WACC can only decrease, not increase, so 12% represents the highest possible WACC (Choice C).\nw w\nTo solve for the WACC when the tax rate is 40%, first calculate the weights of debt ( d) and equity ( e by using the WACC formula with the\nw + w w w\nexisting tax rate of 25%. Since the company has no preferred stock, d e = 100% and d = 1 − e:\nCalculations Steps\nWACC = (1 − w )r (1 − t) + w r Modify the WACC formula\ne d e e"
+ },
+ {
+  "id": "b0fc66fd-efdb-4ad5-b9af-38513e585050",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\4. Corporate Issuers\\4.06 Capital Structure - Answers.pdf",
+  "page_idx": 29,
+  "png": "scripts\\_uworld_residuals_png\\b0fc66fd-efdb-4ad5-b9af-38513e585050.png",
+  "topic": "Corporate Issuers",
+  "subtopic": "4.06 Capital Structure",
+  "question_en": "An analyst is estimating a company's weighted average cost of capital (WACC) based on the following data:\n\n```markdown\n| | |\n|---|---|\n| Pretax cost of debt | 8% |\n| Cost of equity | 12% |\n| Debt-to-equity ratio | 0.6 |\n| Corporate tax rate | 30% |\n| After-tax cost of debt | 5.8% |\n| Cost of preferred stock | 5.9% |\n| Return on the market | 7.4% |\n| Risk-free rate | 3.0% |\n| Marginal tax rate | 28.0% |\n| Weight of debt | 42.0% |\n| Weight of equity | 53.0% |\n| Weight of preferred stock | 5.0% |\n```\n\nIf the analyst estimates the company's beta as 1.61, then the company's WACC is closest to:",
+  "option_a": "7.35%",
+  "option_b": "8.08%",
+  "option_c": "10.64%",
+  "correct_answer": "B",
+  "explanation_en": "HP 12c TI BA II Plus\nA company's weighted average cost of capital (WACC) is its marginal cost to raise additional capital. The cost is weighted by the amounts of\ncapital the company currently uses to support all its business activities since the cost of new capital depends on the proportions of each\ncomponent cost of capital currently outstanding.\nIn this scenario, both the cost of preferred equity and the after-tax cost of debt are given. The only component cost of capital required to\ndetermine WACC that is not given is the cost of common equity. Since the inputs of the CAPM are given, the cost of common equity can be\ndetermined as follows:\nr = 3.0% + 1.61(7.4% − 3.0%)\ne\n≈ 10.1%\nWACC is then calculated as follows:\nWACC = 5.8%(0.42) + 10.1%(0.53) + 5.9%(0.05)\n≈ 8.08%\n(Choice A) 7.35% results from treating the given after-tax cost of debt as the before-tax cost of debt and adjusting it. However, the after-tax cost\nof debt of 5.8% has already been adjusted for the fact that interest is tax deductible.\n(Choice C) 10.64% results from incorrectly multiplying the beta in the CAPM by the return on the market instead of multiplying by the risk\npremium.\nCalculate and interpret the weighted average cost of capital for a company"
+ },
+ {
+  "id": "d994c7dc-5e01-4ca8-8cd6-5f81b9974485",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\4. Corporate Issuers\\4.06 Capital Structure - Answers.pdf",
+  "page_idx": 30,
+  "png": "scripts\\_uworld_residuals_png\\d994c7dc-5e01-4ca8-8cd6-5f81b9974485.png",
+  "topic": "Corporate Issuers",
+  "subtopic": "4.06 Capital Structure",
+  "question_en": "An analyst is estimating a company's weighted average cost of capital (WACC) and compiles the following information:\n\n| Item | Value |\n|---|---|\n| Pretax cost of debt | 5.8% |\n| Cost of common equity | 7.1% |\n| Preferred stock share price at issuance | $30.00 |\n| Current preferred stock share price | $50.00 |\n| Preferred dividend | $2.60 |\n| Weight of debt | 61.0% |\n| Weight of common equity | 35.0% |\n| Weight of preferred stock | 4.0% |\n| Marginal tax rate | 25.0% |\n\nBased on only this information, the WACC is closest to:",
+  "option_a": "5.35%",
+  "option_b": "5.48%",
+  "option_c": "6.25%",
+  "correct_answer": "A",
+  "explanation_en": "HP 12c TI BA II Plus\nA company's weighted average cost of capital (WACC) is its marginal cost to raise additional capital. The cost is weighted by the amounts of\ncapital the company currently uses to support all its business activities since the cost of new capital depends on the proportions of each\ncomponent cost of capital currently outstanding.\nIn this scenario, both the cost of preferred equity and the after-tax cost of debt are given. The only component cost of capital required to\ndetermine WACC that is not given is the cost of common equity. Since the inputs of the CAPM are given, the cost of common equity can be\ndetermined as follows:\nr = 3.0% + 1.61(7.4% − 3.0%)\ne\n≈ 10.1%\nWACC is then calculated as follows:\nWACC = 5.8%(0.42) + 10.1%(0.53) + 5.9%(0.05)\n≈ 8.08%\n(Choice A) 7.35% results from treating the given after-tax cost of debt as the before-tax cost of debt and adjusting it. However, the after-tax cost\nof debt of 5.8% has already been adjusted for the fact that interest is tax deductible.\n(Choice C) 10.64% results from incorrectly multiplying the beta in the CAPM by the return on the market instead of multiplying by the risk\npremium.\nCalculate and interpret the weighted average cost of capital for a company"
+ },
+ {
+  "id": "e5ae75fa-5fa0-4b24-bc2d-cc35f0ef5eea",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\4. Corporate Issuers\\4.06 Capital Structure - Answers.pdf",
+  "page_idx": 15,
+  "png": "scripts\\_uworld_residuals_png\\e5ae75fa-5fa0-4b24-bc2d-cc35f0ef5eea.png",
+  "topic": "Corporate Issuers",
+  "subtopic": "4.06 Capital Structure",
+  "question_en": "A company's current financial information includes the following data:\n\n| Item | Value |\n|---|---|\n| Unlevered value (AUD millions) | 1.75 |\n| Debt (AUD millions) | 0 |\n| Cost of equity (%) | 8 |\n| Tax rate (%) | 30 |\n\nIf the company borrows AUD 1 million at a rate of 4% for a stock buyback, then after the buyback and based on the Modigliani-Miller propositions (with taxes), the company's WACC is closest to:",
+  "option_a": "5.71%",
+  "option_b": "6.83%",
+  "option_c": "8.00%",
+  "correct_answer": "B",
+  "explanation_en": "The Modigliani-Miller (MM) propositions hold that, assuming perfectly efficient capital markets, a company's value and WACC are unaffected by\ncapital structure changes. However, if the perfectly efficient market assumption is relaxed to acknowledge corporate taxes, all else equal, then\naccording to the MM propositions:\nThe market value of a levered company is greater than that of an unlevered but otherwise identical company due to the debt tax shield.\nSince the value of the levered company is greater, its WACC must be lower.\nThe cost of equity moves in proportion to the levered company's tax-adjusted D/E ratio.\nIn this case, the company currently has no debt, so its WACC equals the cost of equity. After adding leverage, the company's WACC is calculated\nas follows:"
+ },
+ {
+  "id": "31d96396-6b0e-4066-bb5a-d33080b39c8f",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\4. Corporate Issuers\\4.06 Capital Structure - Answers.pdf",
+  "page_idx": 22,
+  "png": "scripts\\_uworld_residuals_png\\31d96396-6b0e-4066-bb5a-d33080b39c8f.png",
+  "topic": "Corporate Issuers",
+  "subtopic": "4.06 Capital Structure",
+  "question_en": "A firm uses comparable companies' capital structures to estimate its target capital structure and gathers the following data:\n\n```markdown\n| Company | Book value of debt to book value of equity | Market value of debt to market value of equity |\n|---|---|---|\n| A | 0.8 | 0.6 |\n| B | 0.6 | 0.2 |\n| C | 0.7 | 0.3 |\n```\n\nIf the firm's cost of equity is 11% and its after-tax cost of debt is 7%, the firm's WACC is closest to:",
+  "option_a": "9.35%",
+  "option_b": "9.53%",
+  "option_c": "9.93%",
+  "correct_answer": "C",
+  "explanation_en": "A firm maximizes its value when operating at its optimal capital structure. In practice, this point of maximization is difficult to identify, and a range\nfor leverage is often used when specifying a target capital structure. A firm may operate at its current capital structure in the short run and\ntheoretically achieve its target capital structure in the long run; the firm's WACC would be calculated using the target structure.\nWhen a company's target capital structure is unknown, it can be estimated as:\nthe company's current capital structure,\nan average of comparable companies' capital structures, or\nby examining the company's historical capital structure and management's capital structure policy.\nThe table below demonstrates how to calculate WACC using target weights of debt and equity:\n(Choice A) 9.35% results from incorrectly using the book values of debt and equity when estimating the target capital structure, instead of using\nthe market values.\n(Choice B) 9.53% results from incorrectly using the average debt-to-equity ratio as the weight of debt."
+ },
+ {
+  "id": "17e887d4-ee3a-4a24-a29a-e80296187806",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\4. Corporate Issuers\\4.06 Capital Structure - Answers.pdf",
+  "page_idx": 26,
+  "png": "scripts\\_uworld_residuals_png\\17e887d4-ee3a-4a24-a29a-e80296187806.png",
+  "topic": "Corporate Issuers",
+  "subtopic": "4.06 Capital Structure",
+  "question_en": "An analyst has compiled the following data for a company:\n\n| | Common Stock | Preferred Stock |\n|---|---|---|\n| Shares outstanding | 1,000,000 | 800,000 |\n| Issue price | £20.00 | £25.00 |\n| Current price | £47.60 | £28.00 |\n| Dividend | £1.00 | £1.80 |\n| Equity beta | 1.2 | — |\n| Risk-free rate | 3% | — |\n| Equity risk premium (ERP) | 5% | — |\n| Tax rate | 20% | — |\n\nThe company recently issued £30 million in debt with a 6% yield. Assume that beta remains stable. Using the CAPM approach, which of the following is closest to the company's weighted average cost of capital (WACC)?",
+  "option_a": "6.72%",
+  "option_b": "7.16%",
+  "option_c": "7.34%",
+  "correct_answer": "B",
+  "explanation_en": "The weighted average cost of capital (WACC) is a company's weighted average after-tax cost of capital from all sources. The most common sources of capital include equity, preferred stock, and debt. The WACC also represents the weighted average required return of all capital providers.\n\nWACC = (wd)(rd)(1 - t) + (we)(re) + (wp)(rp)\n\nFor this question, use the steps below to calculate WACC using CAPM:\n\n1. Determine current market values of capital (GBP millions): Debt: 30.00; Common: 1,000,000 x 47.60 = 47.60; Preferred: 800,000 x 28.0 = 22.40; Total: 100.00\n2. Determine weight of each capital source: wd = 30%, we = 47.6%, wp = 22.4%\n3. Recall given pre-tax cost of debt: rd = 6%\n4. Use CAPM to determine cost of common equity: re = Rf + B(ERP) = 0.03 + 1.2(0.05) = 0.09\n5. Determine the cost of preferred equity: rp = 1.80 / 28.00 = 0.0643\n6. Input WACC variables:\n\nWACC = (0.3)(0.06)(1 - 0.20) + (0.476)(0.09) + (0.224)(0.0643) = 7.16%"
+ },
+ {
+  "id": "b79694e6-c53c-4cb3-9970-b780ee3c4efb",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\5. Financial Statement Analysis\\5.04 Analyzing Statements of Cash Flows I - Answers.pdf",
+  "page_idx": 5,
+  "png": "scripts\\_uworld_residuals_png\\b79694e6-c53c-4cb3-9970-b780ee3c4efb.png",
+  "topic": "Financial Statement Analysis",
+  "subtopic": "5.04 Analyzing Statements of Cash Flows I",
+  "question_en": "A company receives cash of €55 million from the sale of equipment in 20X7. During that year, the company had depreciation expenses of €20 million and capital expenditures of €65 million; the capital expenditures were all used to purchase new equipment. The company reported the following balance sheet data:\n\n| following balance sheet data: € millions | 20X7 | 20X6 |\n|---|---|---|\n| Gross cost of equipment | 800 | 760 |\n| Accumulated depreciation | (150) | (140) |\n\nBased on only this information, the gain on the sale of the equipment (in € millions) is closest to:",
+  "option_a": "10",
+  "option_b": "30",
+  "option_c": "40",
+  "correct_answer": "C",
+  "explanation_en": "Cash flow treatment of investment income taxes paid US GAAP IFRS Investment CFO CFO or CFI income Income CFO, but can treat taxes paid CFO taxes on CFI income as CFI Cash flow statements divide cash inflows and outflows into three categories: cash from operations (CFO), cash from investing (CFI), and cash from financing (CFF). CFO encompasses cash inflows and outflows related to a company's daily activities. In contrast, CFI refers to inflows and outflows from noncore activities, such as passive investments in other companies. There are no income tax implications for CFF. In most cases, IFRS classify all taxes paid as CFO regardless of the underlying source of income. However, when a portion of the taxes can be specifically identified as paid on investment income, IFRS permit (but do not require) the company to classify that portion of the taxes as CFI. This company attributes €3 million of its total taxes paid to the rental income, which is not part of its core operations. The rents received constitute CFI, and the company may classify the taxes associated with those rents as CFI. The balance of the tax payment is classified as CFO. (Choices A and C) Financing activities that give rise to CFF entries include borrowing or repaying debt, issuing stock, and paying dividends. None of the taxes paid relate to any type of financing activity, so none can be classified as CFF."
+ },
+ {
+  "id": "c409068b-bbd1-4d47-ae62-084c9e2b76b5",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\5. Financial Statement Analysis\\5.04 Analyzing Statements of Cash Flows I - Answers.pdf",
+  "page_idx": 3,
+  "png": "scripts\\_uworld_residuals_png\\c409068b-bbd1-4d47-ae62-084c9e2b76b5.png",
+  "topic": "Financial Statement Analysis",
+  "subtopic": "5.04 Analyzing Statements of Cash Flows I",
+  "question_en": "A company reports the following data (in millions): Based on only this information, the cash paid to suppliers (in $ millions) reported on the company's cash flow statement in the direct format would be closest to:",
+  "option_a": "785",
+  "option_b": "805",
+  "option_c": "815",
+  "correct_answer": "C",
+  "explanation_en": "Under accrual basis accounting, for any period, the recorded interest expense may differ from actual interest payments: Interest expense can be fully recorded in one period while portions of it may be payable in a future period. Interest paid for a period is equal to the interest expense adjusted for the changes in interest payable, a current liability. In this question, the company must have reduced its outstanding interest payable balance by 0.5 million for the period since it made interest payments of 5.5 million while incurring interest expense of only 5.0 million. Reducing the beginning interest payable balance of 4.5 million by 0.5 million results in an ending interest payable balance of 4.0 million. (Choice B) SGD 5 million results from adding the 0.5 million to the beginning interest payable balance instead of subtracting it. (Choice C) SGD 6 million results from adding 0.5 million to interest payments of 5.5 million."
+ },
+ {
+  "id": "6a490e28-47c0-45c0-be37-ddef57b4235a",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\5. Financial Statement Analysis\\5.04 Analyzing Statements of Cash Flows I - Answers.pdf",
+  "page_idx": 7,
+  "png": "scripts\\_uworld_residuals_png\\6a490e28-47c0-45c0-be37-ddef57b4235a.png",
+  "topic": "Financial Statement Analysis",
+  "subtopic": "5.04 Analyzing Statements of Cash Flows I",
+  "question_en": "A company reports the following information under US GAAP:\n\n| Shareholders' equity item (USD millions) | Dec. 31, 20X1 | Dec. 31, 20X2 |\n|---|---|---|\n| Common stock | 200 | 205 |\n| Additional paid-in capital | 500 | 570 |\n| Accumulated other comprehensive income | 5 | 10 |\n| Retained earnings | 300 | 345 |\n| Total stockholders' equity | 1,005 | 1,130 |\n\nIn 20X2, all dividends declared were paid to shareholders. Based on only the data above, if net income for 20X2 is USD 55 million, 20X2 cash flow from financing activities (in USD millions) is closest to:",
+  "option_a": "60",
+  "option_b": "65",
+  "option_c": "85",
+  "correct_answer": "B",
+  "explanation_en": "A company's cash flows from financing activities relate to obtaining or repaying capital: issuing or repurchasing common stock, paying dividends, and borrowing or repaying debt. Here, net cash from financing activities includes the proceeds from issuing common stock (a cash inflow) and the payment of dividends (a cash outflow). The proceeds from issuing common stock equal the total change in common stock and additional paid-in capital. Dividends paid can be determined from the change in retained earnings, after accounting for net income.\n\nChange in common stock = 205 - 200 = 5\nChange in additional paid-in capital = 570 - 500 = 70\nDividends paid = Beginning retained earnings + Net income - Ending retained earnings = 300 + 55 - 345 = (10)\n\nCash flow from financing activities = 5 + 70 - 10 = 65.\n\n(Choice A) 60 results from subtracting the increase in accumulated other comprehensive income (AOCI), which mainly reflects unrealized gains/losses and is not an actual cash flow.\n(Choice C) 85 results from incorrectly adding, instead of subtracting, dividends."
+ },
+ {
+  "id": "8797701f-c956-49e1-82d4-70ab2abce967",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\5. Financial Statement Analysis\\5.09 Analysis of Income Taxes - Answers.pdf",
+  "page_idx": 26,
+  "png": "scripts\\_uworld_residuals_png\\8797701f-c956-49e1-82d4-70ab2abce967.png",
+  "topic": "Financial Statement Analysis",
+  "subtopic": "5.09 Analysis of Income Taxes",
+  "question_en": "A company reports the following information in its first year of operations: All else equal, if the tax rate had been 25% instead of 20%, then most likely the company's:",
+  "option_a": "deferred tax assets would have been €750 lower.",
+  "option_b": "deferred tax assets would have been €750 higher.",
+  "option_c": "deferred tax liabilities would have been €750 higher.",
+  "correct_answer": "B",
+  "explanation_en": "Deferred tax assets (DTA) and liabilities arise from temporary differences between income tax expense and taxes payable for a period. These\ndifferences are expected to reverse over time and offset previous deferred tax items. Income tax expense is based on reported accounting\nincome from the income statement. Taxes payable is based on taxable income on the tax return and is the actual amount owed to the\ngovernment.\nDTA arise when:\nTaxable income > Accounting income and\nTaxes payable > Tax expense.\nDeferred tax liabilities (DTL) arise when:\nTaxable income < Accounting income and\nTaxes payable < Tax expense.\nIn this scenario, a DTA is created since taxable income is greater than accounting income (Choice C).\nThe deferred tax amount can be calculated as the product of the absolute difference between the taxable income and accounting income and the\ntax rate. Therefore, the size of the deferred tax item is directly correlated to the tax rate. If the tax rate were higher, the amount of the DTA\nincrease would be higher as well (Choice A)."
+ },
+ {
+  "id": "2be956f7-c6b9-4d04-912c-ec046fbb9c56",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\5. Financial Statement Analysis\\5.09 Analysis of Income Taxes - Answers.pdf",
+  "page_idx": 20,
+  "png": "scripts\\_uworld_residuals_png\\2be956f7-c6b9-4d04-912c-ec046fbb9c56.png",
+  "topic": "Financial Statement Analysis",
+  "subtopic": "5.09 Analysis of Income Taxes",
+  "question_en": "An analyst collects the following information (in € millions) on a company: Based on only this data, the company's income taxes payable (in € millions) is closest to:",
+  "option_a": "470",
+  "option_b": "490",
+  "option_c": "510",
+  "correct_answer": "A",
+  "explanation_en": "Deferred tax assets (DTAs) and liabilities (DTLs) reflect temporary differences between income tax expense and taxes payable, created by\ndifferences between accounting standards and tax laws. Income tax expense is reported on the income statement according to accounting\nstandards, whereas taxes payable is the actual amount owed to the government based on applicable tax laws.\nWhen tax expense is less than taxes payable, DTA is created since the company:\npays more in taxes in the current period and\nwill owe less in taxes in the future.\nWhen tax expense is greater than taxes payable, DTL is created since the company:\npays less in taxes in the current period and\nwill owe more in taxes in the future.\nThe equation above shows how changes in DTL and DTA are related to tax expense and taxes payable. To calculate taxes payable, substitute\nvalues for all the other variables.\n(Choice B) 490 results from reversing the sign when treating the change in DTA.\n(Choice C) 510 results from reversing the sign when treating the change in DTL."
+ },
+ {
+  "id": "2ba07e17-2db0-4345-a23c-fe256c1dcad4",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\5. Financial Statement Analysis\\5.09 Analysis of Income Taxes - Answers.pdf",
+  "page_idx": 21,
+  "png": "scripts\\_uworld_residuals_png\\2ba07e17-2db0-4345-a23c-fe256c1dcad4.png",
+  "topic": "Financial Statement Analysis",
+  "subtopic": "5.09 Analysis of Income Taxes",
+  "question_en": "An analyst gathers the following information about a company that reports under US GAAP: In Year 2, the decrease in net deferred tax assets most likely results from an increase in:",
+  "option_a": "statutory tax rates.",
+  "option_b": "valuation allowance.",
+  "option_c": "deferred tax liabilities.",
+  "correct_answer": "B",
+  "explanation_en": "Deferred tax assets (DTA) and liabilities (DTL) result from temporary differences between taxable income (based on tax reporting) and\naccounting profit (based on financial reporting).\nDTA are created when companies pay higher current taxes since taxable income is greater than accounting profit. This creates future tax\nbenefits, as in this scenario.\nDTL are created when companies pay lower current taxes since taxable income is less than accounting profit. This creates future tax\nliabilities.\nThe carrying amount of DTA represents the recoverable tax benefit, so if a company does not expect to generate enough taxable income to fully\nrecover the DTA, it must reduce the carrying amount. In that case, under US GAAP a company would create or increase a valuation allowance,\nwhich is a contra account that decreases DTA. Under IFRS, the company reduces DTA directly and does not use a valuation allowance.\nDTL and DTA (net of the valuation allowance) are combined and presented as net DTA (DTL) on the balance sheet. Therefore, an increase in the\nvaluation allowance would result in a decrease in the net DTA reported.\n(Choice A) An increase in statutory tax rates would increase net DTA.\n(Choice C) Since taxable income exceeds accounting profit in Year 2, there is an increase in DTA, not DTL."
+ },
+ {
+  "id": "0c3bfc8c-ece9-4d6f-bcff-ef78f83bf7e0",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\5. Financial Statement Analysis\\5.09 Analysis of Income Taxes - Answers.pdf",
+  "page_idx": 31,
+  "png": "scripts\\_uworld_residuals_png\\0c3bfc8c-ece9-4d6f-bcff-ef78f83bf7e0.png",
+  "topic": "Financial Statement Analysis",
+  "subtopic": "5.09 Analysis of Income Taxes",
+  "question_en": "A company reports the following information:\n\n```markdown\n| (€ millions) | 20X8 | 20X7 |\n|---|---|---|\n| Deferred tax assets | 15 | 17 |\n| Deferred tax liabilities | 29 | 24 |\n| Tax expense | 19 | - |\n```\n\nBased on this information, the company's taxes payable for 20X8 are closest to:",
+  "option_a": "€12 million",
+  "option_b": "€22 million",
+  "option_c": "€26 million",
+  "correct_answer": "A",
+  "explanation_en": "Tax expense appears on a company's income statement. It demonstrates what a company owes in taxes based on applicable accounting\nstandards. For some items, the tax laws mandate treatment different from accounting standards. This difference means that the taxes that the\ncompany pays (or owes) are not the same as it reports as tax expense.\nIf the disparity between tax expense and taxes payable is expected to reverse in the future, the company creates a deferred tax asset (DTA) or a\ndeferred tax liability (DTL). A DTA signals investors that the company will pay less tax in the future than it pays in the current period; a DTL signals\nthe opposite.\nTax expense relates to taxes payable by adding the difference between the change in DTL and DTA for a given period. As a simple example, if a\ncompany reports a tax expense of $20 and taxes payable of $12, it creates a DTL of $20 − 12 = $8 to account for the difference. If the company\nhad no previous DTL, its DTL increased by $8, and the above equality holds (ie, $20 = $12 + 8).\nRearrange the formula above to solve for taxes payable:\n(Choice B) This choice incorrectly adds both the change in DTL and DTA.\n(Choice C) This choice incorrectly adds the change in DTL and subtracts the change in DTA."
+ },
+ {
+  "id": "487f7133-3bb0-4cd8-ace0-a0ccd3b65df4",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\5. Financial Statement Analysis\\5.09 Analysis of Income Taxes - Answers.pdf",
+  "page_idx": 31,
+  "png": "scripts\\_uworld_residuals_png\\487f7133-3bb0-4cd8-ace0-a0ccd3b65df4.png",
+  "topic": "Financial Statement Analysis",
+  "subtopic": "5.09 Analysis of Income Taxes",
+  "question_en": "An analyst gathers the following information about a company reporting under US GAAP: All else being equal, an increase in the statutory tax rate from 20% to 25% would most likely increase:",
+  "option_a": "total assets.",
+  "option_b": "total liabilities.",
+  "option_c": "taxable income.",
+  "correct_answer": "B",
+  "explanation_en": "Deferred tax assets (DTA) and liabilities (DTL) result from temporary differences between taxable income (based on tax reporting) and\naccounting profit (based on financial reporting).\nDTA are created when companies pay higher current taxes since taxable income is greater than accounting profit. This creates future tax\nbenefits, as in this scenario.\nDTL are created when companies pay lower current taxes since taxable income is less than accounting profit. This creates future tax\nliabilities.\nThe carrying amount of DTA represents the recoverable tax benefit, so if a company does not expect to generate enough taxable income to fully\nrecover the DTA, it must reduce the carrying amount. In that case, under US GAAP a company would create or increase a valuation allowance,\nwhich is a contra account that decreases DTA. Under IFRS, the company reduces DTA directly and does not use a valuation allowance.\nDTL and DTA (net of the valuation allowance) are combined and presented as net DTA (DTL) on the balance sheet. Therefore, an increase in the\nvaluation allowance would result in a decrease in the net DTA reported.\n(Choice A) An increase in statutory tax rates would increase net DTA.\n(Choice C) Since taxable income exceeds accounting profit in Year 2, there is an increase in DTA, not DTL."
+ }
+]

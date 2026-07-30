@@ -1,0 +1,185 @@
+[
+ {
+  "id": "ffc59edd-60c2-4b29-aa59-6785ec9bfc2b",
+  "verdict": "formatting_missing",
+  "field": "question_en",
+  "new_value": "A company is developing a product for planned launch in 20X8. An analyst collects the company's 20X7 actual financial data and creates 20X8 forecasts for two scenarios:\n\n| (in € millions) | 20X7 | 20X8 Product launches | 20X8 Product does not launch |\n|---|---|---|---|\n| Sales | 1,000 | 1,500 | 1,200 |\n| Operating income | 100 | 200 | 140 |\n\nThe company's degree of operating leverage in 20X8 will most likely be:",
+  "evidence": "PDF p.2 (page_idx 1) of 6.05 Answers.pdf shows a 20X7/20X8-launch/20X8-no-launch table (Sales 1,000/1,500/1,200; Operating income 100/200/140) that is described in the DB stem but not reproduced. Options, correct_answer (B, confirmed by checkmark line preceding 'B.'), and explanation all otherwise match the PDF verbatim."
+ },
+ {
+  "id": "b4891f2b-5d19-47b9-a181-80b29655c1c5",
+  "verdict": "formatting_missing",
+  "field": "question_en",
+  "new_value": "An analyst collects the following information on a company and its industry peers:\n\n| | Company | Peer average |\n|---|---|---|\n| Net margin | 4% | 6% |\n| Asset turnover | 1.2 | 1.4 |\n| Equity multiplier | 2.5 | 1.5 |\n| Degree of operating leverage | 1.2 | 1.4 |\n| Degree of financial leverage | 2 | 1.2 |\n| Required return on equity | 9% | 7% |\n| Cost of debt | 6% | 5% |\n\nBased only on this information, the most appropriate conclusion is that the company:",
+  "evidence": "PDF p.14 (page_idx 13) of 6.05 Answers.pdf shows the Company-vs-Peer-average table referenced in the stem but not reproduced in the DB record. Options, correct_answer (C, checkmark precedes 'C.'), and explanation match the PDF verbatim (explanation cites the 0.04, 1.2, 2.5, 9% figures from this table)."
+ },
+ {
+  "id": "b79911c1-6800-4a7b-86e5-52e9992b5dad",
+  "verdict": "ok",
+  "evidence": "The automated matcher's page_idx (3) pointed to a different question (the one now correctly matched by item 1596531e). This question's real source is p.18 (page_idx 17) of 1.04 Answers.pdf, confirmed by rendering that page: table (P(A)=0.48, P(B)=0.25, P(AB)=0.06), options 0.12/0.67/0.73, checkmark on B, and explanation all match the DB record verbatim. No fix needed; the residual was caused by the wrong page_idx hint, not a DB content error."
+ },
+ {
+  "id": "bde09cd7-fd39-4858-aacb-413c6124ae48",
+  "verdict": "stem_wrong",
+  "field": "question_en",
+  "new_value": "Two research analysts asked a mutual fund manager the following questions: Analyst A: \"What is the probability that the fund will have a zero percent return this year?\" Analyst B: \"What is the probability that the fund will have a negative return this year?\" The two events described by the analysts are most likely:",
+  "evidence": "PDF p.2 (page_idx 1) of 1.04 Answers.pdf begins 'Two research analysts asked...'; the DB stem is missing the leading 'T', reading 'wo research analysts...'. Options, correct_answer (B), and explanation otherwise match the PDF verbatim."
+ },
+ {
+  "id": "5f2ddee4-d0e3-4c4f-9eff-f2b0e8293b59",
+  "verdict": "formatting_missing",
+  "field": "question_en",
+  "new_value": "A money management firm surveyed individuals about their attitudes toward investing. A partial summary of the data is shown below:\n\n| Event | Probability |\n|---|---|\n| Investor is an active investor | 0.45 |\n| Portfolio holds equities, given that the investor is an active investor | 0.75 |\n| Portfolio does not hold equities, given that the investor is not an active investor | 0.80 |\n\nIf a randomly selected individual's portfolio holds equities, the probability that the investor is not an active investor is closest to:",
+  "evidence": "PDF p.6 (page_idx 5) of 1.04 Answers.pdf shows the Event/Probability table referenced by 'shown below' but not reproduced in the DB stem. Options (11.0%/24.6%/44.8%), correct_answer (B), and explanation match the PDF verbatim."
+ },
+ {
+  "id": "1596531e-eca1-4ec0-8a91-97c6ed2d6404",
+  "verdict": "ok",
+  "evidence": "Confirmed against p.4 (page_idx 3) of 1.04 Answers.pdf via rendered image: table (P(A)=0.31, P(B)=0.90, P(A|B)=0.28), options 0.0868/0.2520/0.2790, checkmark on B, and explanation all match the DB record verbatim."
+ },
+ {
+  "id": "9df53df9-8d7f-4ee8-bb90-5352e69b89e6",
+  "verdict": "formatting_missing",
+  "field": "question_en",
+  "new_value": "An analyst determines that the probabilities of two events are as follows:\n\n| Event | Description | Probability |\n|---|---|---|\n| A | Price of oil increases | 0.33 |\n| B | S&P 500 Index increases | 0.49 |\n\nAssuming the events are independent but not mutually exclusive, the probability that at least one of the two events will occur is closest to:",
+  "evidence": "PDF p.11 (page_idx 10) of 1.04 Answers.pdf shows the Event/Description/Probability table (A: Price of oil increases 0.33; B: S&P 500 Index increases 0.49) that is missing from the DB stem. Options (0.16/0.66/0.82), correct_answer (B), and explanation match the PDF verbatim (explanation computes 0.33+0.49-0.33*0.49=0.66)."
+ },
+ {
+  "id": "c06589ea-ae06-4588-b7ad-44595ff14073",
+  "verdict": "formatting_missing",
+  "field": "question_en",
+  "new_value": "An analyst estimates the probability distribution for a company's upcoming quarterly EBITDA:\n\n| Probability | EBITDA ($ billions) |\n|---|---|\n| 0.5 | 2.05 |\n| 0.2 | 2.20 |\n| 0.3 | 2.40 |\n\nThe standard deviation of the distribution (in $ billions) is closest to:",
+  "evidence": "Rendered image of p.12 (page_idx 11) of 1.04 Answers.pdf shows the Probability/EBITDA table (0.5/2.05, 0.2/2.20, 0.3/2.40) omitted from the DB stem, and confirms options 0.147/0.150/0.152 with checkmark on C."
+ },
+ {
+  "id": "c06589ea-ae06-4588-b7ad-44595ff14073",
+  "verdict": "explanation_wrong",
+  "field": "explanation_en",
+  "new_value": "The standard deviation of a random variable measures the dispersion around the variable's expected value (ie, mean). In this scenario, the random variable is the company's next quarterly EBITDA. To solve for standard deviation, first calculate the expected value of EBITDA by finding the mean of the distribution: the probability-weighted average of the possible EBITDA outcomes. The distances between each outcome and the mean can then be used to calculate the standard deviation as a probability-weighted average dispersion around the expected EBITDA value.\n\nFrom the given probabilities and EBITDA outcomes, the standard deviation is calculated as follows:\n1. Calculate expected EBITDA value: E(X) = 0.5 × 2.05 + 0.2 × 2.2 + 0.3 × 2.4 = 2.185\n2. Solve for standard deviation: σ(X) = √[0.5(2.05 − 2.185)² + 0.2(2.2 − 2.185)² + 0.3(2.4 − 2.185)²] = 0.15174 ≈ 0.152\n\n(Choice A) Standard deviation of 0.147 results from taking the simple average of the [Xi − E(X)]² terms in the second step, instead of using the probability-weighted average.\n(Choice B) Standard deviation of 0.150 results from using a simple average, instead of a weighted average, to calculate the expected EBITDA value.",
+  "evidence": "The stored explanation_en is entirely unrelated to this question -- it is verbatim the addition-rule/'probability of A or B' explanation that belongs to p.40 (question 39) of the same PDF. The rendered image of p.12 (page_idx 11) shows the actual EBITDA standard-deviation explanation and worked calculation (E(X)=2.185, sigma=0.15174≈0.152), which was used to write the corrected text verbatim from the page."
+ },
+ {
+  "id": "d1233925-12f5-4743-b87e-47d440105f11",
+  "verdict": "explanation_wrong",
+  "field": "explanation_en",
+  "new_value": "This question demonstrates the concept of conditional probability, which is the estimated likelihood of an event occurring given that another\nevent occurs. The formula for conditional probability is:\nIn this scenario, P(AB) is the joint probability that a fund passes both tests. This is given as 16/50, or 0.32. If P(A) is the probability of passing\nTest 2 and P(B) is the probability of passing Test 1, then the probability that a fund passes Test 2 given that it passes Test 1 equals P(A and B) ÷\nP(B). The steps for calculating the conditional probability are shown below:",
+  "evidence": "PDF p.20 (page_idx 19) of 1.04 Answers.pdf: the explanation text matches the DB record verbatim, but the DB record appends the page's trailing LOS line ('Formulate an investment problem as a probability tree...') as if it were part of the explanation. Per extraction rules the reasoning should stop before the LOS label line, so that trailing sentence is removed."
+ },
+ {
+  "id": "6106bd1c-e573-4a3d-9a6f-0b2bdf31d9cc",
+  "verdict": "stem_wrong",
+  "field": "question_en",
+  "new_value": "An analyst has developed a screening test to determine whether a company's earnings will decrease. If the company does not pass the test, it is likely that its earnings will decrease in the next quarter. The table below shows relevant information:\n\n| Event | Probability |\n|---|---|\n| Probability of an earnings decrease in the next quarter | 0.47 |\n| Probability of passing the test | 0.62 |\n| Probability of an earnings decrease in the next quarter given it did not pass the test | 0.90 |\n\nBased on this information, the probability that the company's earnings will decrease in the next quarter given that the company passes the test is closest to:",
+  "evidence": "PDF p.48 (page_idx 47) of 1.04 Answers.pdf continues '...its earnings will decrease in the next quarter. The table below shows relevant information:' followed by an Event/Probability table (0.47, 0.62, 0.90). The DB stem drops this entire phrase and table, jumping directly from 'in the' to 'Based on this information'. Options, correct_answer (B), and explanation match the PDF verbatim."
+ },
+ {
+  "id": "50214013-d8b7-474e-89ba-2f11641e0f6c",
+  "verdict": "formatting_missing",
+  "field": "question_en",
+  "new_value": "An analyst who is evaluating the probability that a company will fire its CEO if EPS decreases this year gathers the following relevant estimates:\n\n| | |\n|---|---|\n| Probability that EPS decreases | 0.35 |\n| Probability that company fires CEO if EPS decreases | 0.85 |\n| Probability that company does not fire CEO if EPS does not decrease | 0.75 |\n\nThe analyst later learns that the company did not fire the CEO after reporting EPS. The updated probability that the company's EPS decreased is closest to:",
+  "evidence": "PDF p.34 (page_idx 33) of 1.04 Answers.pdf confirms this table's three rows/values; the existing DB table only had a spurious duplicated header row ('| estimates: |  |') instead of a blank header, which is corrected here without altering any wording."
+ },
+ {
+  "id": "50214013-d8b7-474e-89ba-2f11641e0f6c",
+  "verdict": "explanation_wrong",
+  "field": "explanation_en",
+  "new_value": "Probability estimates are often revised based on new information. In this scenario, the conditional probability that the CEO is not fired depends on\nwhether the company's earnings per share (EPS) have decreased. Two relevant conditional probabilities are as follows:\nThe CEO is not fired given that EPS did not decrease [P(CEO not fired | no EPS decrease)]\nThe CEO is not fired given that EPS decreased [P(CEO not fired | EPS decrease)]\nThe diagram above shows that the probabilities that the CEO is not fired are:\n0.0525 if EPS decreased and\n0.4875 if EPS did not decrease.\nThe total probability that the CEO is not fired, regardless of what happens to EPS, is 0.0525 + 0.4875 = 0.54. Bayes' formula can be used to\nreverse the conditional probability and answer the question, \"What is the probability that EPS decreased given that the CEO was not fired\"? However, it is often easier to invert the tree diagram using previously calculated probabilities than to memorize and apply Bayes' formula:\nBefore the analyst learned the outcome for the CEO, the estimated probability of an EPS decrease was 0.35. Given the updated information (ie,\nCEO was not fired) and using Bayes' formula, the revised probability that EPS decreased is reduced to approximately 0.10 (ie, 0.0972).\n(Choice A) 0.05 (ie, 0.0525) represents the joint probability that the CEO is not fired and that there is a decrease in EPS.\n(Choice C) 0.15 is the conditional probability that the CEO is not fired given that EPS decreased.",
+  "evidence": "The stored explanation_en is cut off mid-sentence after '...probabilities that the CEO is not fired are:'. PDF p.34 (page_idx 33) of 1.04 Answers.pdf continues with the 0.0525/0.4875 figures, the Bayes'-formula narrative, and the (Choice A)/(Choice C) callouts, all restored verbatim here (stopping before the page's 'Things to remember:' section)."
+ },
+ {
+  "id": "d3ce67aa-043f-4674-abe7-d9c6fdc99acc",
+  "verdict": "formatting_missing",
+  "field": "question_en",
+  "new_value": "An analyst designates the following events as possible return outcomes for a portfolio's value at the end of one year, estimating their probabilities as follows:\n\n| Event | Return Range (%) | Probability |\n|---|---|---|\n| V | −16 ≤ X < −12 | 0.17 |\n| W | −12 ≤ X < −5 | 0.21 |\n| X | −5 ≤ X < 0 | 0.34 |\n| Y | 0 ≤ X < 5 | 0.14 |\n| Z | 5 ≤ X < 12 | 0.12 |\n\nIt is least appropriate to conclude that the events are:",
+  "evidence": "PDF p.14 (page_idx 13) of 1.04 Answers.pdf shows the Event/Return Range/Probability table (V through Z) referenced by 'as follows' but missing from the DB stem; the explanation itself sums these same five probabilities to 0.98, confirming the values."
+ },
+ {
+  "id": "d3ce67aa-043f-4674-abe7-d9c6fdc99acc",
+  "verdict": "explanation_wrong",
+  "field": "explanation_en",
+  "new_value": "Properties of probability\nThe probability of any event's occurrence is between 0 and 1.\nIn any set of mutually exclusive and exhaustive events, the sum of probabilities for all events equals 1.\nEvents that are mutually exclusive cannot happen at the same time. Events that are exhaustive account for 100% of the possible outcomes in a\nsample space. For any set of mutually exclusive and exhaustive events, the sum of their probabilities is equal to 1. Events may be:\nThe events in this scenario are mutually exclusive since their return ranges do not overlap. The sum of the events' probabilities is:\nP(V) + P(W) + P(X) + P(Y) + P(Z)\n= 0.17 + 0.21 + 0.34 + 0.14 + 0.12\n= 0.98\nSince the sum of the event's probabilities is not equal to 1, it is not appropriate to conclude that the events are exhaustive.",
+  "evidence": "PDF p.14 (page_idx 13) of 1.04 Answers.pdf: explanation text matches the DB record verbatim except the DB record appends the page's trailing LOS line ('Calculate and interpret an updated probability...') as if part of the explanation; that trailing sentence is removed here."
+ },
+ {
+  "id": "addebd82-0290-4ecd-9fa9-9aca1d8c0f0d",
+  "verdict": "formatting_missing",
+  "field": "question_en",
+  "new_value": "Three companies make a specialty component used in the automobile industry. The relevant information for each company is shown below:\n\n| | Market Share (%) | Defective Components (%) |\n|---|---|---|\n| Company A | 58 | 3 |\n| Company B | 31 | 2 |\n| Company C | 11 | 4 |\n\nIf a component is randomly selected and found to be defective, the probability that it was manufactured by Company C is closest to:",
+  "evidence": "PDF p.25 (page_idx 24) of 1.04 Answers.pdf shows the Market Share / Defective Components table for Companies A-C referenced by 'shown below' but missing from the DB stem. Options, correct_answer (C), and explanation (which cites these exact percentages) match the PDF verbatim."
+ },
+ {
+  "id": "609e0eec-86cc-4669-bfd0-06f430b3f3a3",
+  "verdict": "formatting_missing",
+  "field": "question_en",
+  "new_value": "An investor estimates a covariance matrix for the relative price movements of Asset A and Asset B that is shown below:\n\n| | Asset A | Asset B |\n|---|---|---|\n| Asset A | 900 | 30 |\n| Asset B | 30 | 400 |\n\nIf the investor creates a portfolio with 35% invested in Asset A and 65% invested in Asset B, the portfolio's standard deviation is closest to:",
+  "evidence": "PDF p.38 (page_idx 37) of 1.04 Answers.pdf shows the covariance matrix (900/30/30/400) referenced by 'shown below' but missing from the DB stem; the explanation itself references these same values (900 = Asset A variance, 400 = Asset B variance, 30 = covariance)."
+ },
+ {
+  "id": "d9417006-909c-4f8e-bf6a-36ba0f81b986",
+  "verdict": "option_bleed",
+  "field": "option_c",
+  "new_value": "The conditional probability of earning higher total compensation this year given that returns exceed the benchmark is 0.72.",
+  "evidence": "PDF p.41 (page_idx 40) of 1.04 Answers.pdf gives option C in full; the DB record truncates it mid-sentence at 'given that returns'. The explanation's own '(Choice C) 0.72 is the joint probability...' callout confirms the missing wording and value (0.72)."
+ },
+ {
+  "id": "626eb39b-f486-4339-a301-b9f958b41bf0",
+  "verdict": "formatting_missing",
+  "field": "question_en",
+  "new_value": "An analyst identifies two events and estimates probabilities as follows:\n\n| | |\n|---|---|\n| Probability of X | 0.5100 |\n| Probability of Y | 0.3600 |\n| Probability of X given Y | 0.7222 |\n\nEvents X and Y are most likely:",
+  "evidence": "PDF p.44 (page_idx 43) of 1.04 Answers.pdf shows P(X)=0.5100, P(Y)=0.3600, P(X|Y)=0.7222 as a table referenced by 'as follows' but missing from the DB stem; the explanation cites these same three values verbatim."
+ },
+ {
+  "id": "1af08d3f-b8ac-4fa7-abf1-651a97c253dc",
+  "verdict": "explanation_wrong",
+  "field": "explanation_en",
+  "new_value": "This question uses the total probability rule to estimate the probability of a compensation increase. The compensation increase is impacted by\nwhether the company's EPS increases. One scenario is that EPS does not increase, which has a probability of 0.6. Since the probability of EPS\nincreasing is mutually exclusive and conditional, the probability of an EPS increase is (1 − 0.6) = 0.4.\nAfter the independent probabilities of an EPS increase are determined, the next step is to identify and calculate the conditional probabilities of\ncompensation increasing, given that EPS increases and also given that it does not. The sum of those conditional probabilities is the total\nprobability that compensation increases.\nThe likelihood that compensation increases given that EPS increases is 0.8, so the joint probability that both EPS and compensation increase is\n0.8 × 0.4 = 0.32 (Choice B). This is not the total probability of a compensation increase since it does not address the scenario of compensation\nincreasing given that EPS does not increase.\nConditional probabilities can also be mutually exclusive and exhaustive. The probability of no compensation increase given no EPS increase\nis 0.9, so the conditional probability that compensation increases given that EPS does not increase is 1 − 0.9 = 0.1. The joint probability of no EPS\nincrease and a compensation increase is 0.6 × 0.1 = 0.06 (Choice C). The result is the total probability of a compensation increase of 0.32 + 0.06\n= 0.38.",
+  "evidence": "Rendered image of p.28 (page_idx 27, PDF question 28) of 1.04 Answers.pdf confirms the table (0.60/0.90/0.80), checkmark on A, and the full explanation. The DB explanation is truncated mid-sentence at '...the joint probability that both EPS and compensation increase is'; the full text (Choice B/Choice C walkthrough concluding at 0.38) is restored here verbatim from the page, stopping before its 'Things to remember:' section."
+ },
+ {
+  "id": "96a557a9-f239-475f-851a-2b43e89e3fc8",
+  "verdict": "option_bleed",
+  "field": "option_c",
+  "new_value": "multiply the company's average accounts receivable by the historical percentage of delinquent receivables, and deduct that amount from revenues to calculate gross profit.",
+  "evidence": "PDF p.20 (page_idx 19) of 5.02 Answers.pdf gives option C in full; the DB record truncates it after 'historical percentage of'. The explanation's own '(Choice C) An operating expense is deducted from gross profit...' callout confirms the missing wording."
+ },
+ {
+  "id": "3ed21d97-6dbc-439b-b26f-80409a575127",
+  "verdict": "ok",
+  "evidence": "Confirmed against rendered image of p.14 (page_idx 13) of 5.02 Answers.pdf: table (Common dividends paid 4, Preferred dividends paid 15, Net income 75), options CAD 2.77/2.89/2.97, checkmark on C, and explanation all match the DB record; explanation's numeric walkthrough (20,187,500 shares, CAD 2.97) matches the page's worked table."
+ },
+ {
+  "id": "d26f8f6c-ef83-420b-b305-3000ca93befc",
+  "verdict": "stem_wrong",
+  "field": "question_en",
+  "new_value": "An air services company entered into a contract with a city to build a new runway at an airport. The contract price is €100 million, and the company estimated its total project costs to be €80 million. The contract calls for construction to take place over four years, and the company does not anticipate any material changes to its costs nor any uncertainty about receiving payment. Each year's costs are listed in the following table:\n\n| Year | 1 | 2 | 3 | 4 | Total |\n|---|---|---|---|---|---|\n| Costs (€ millions) | 35 | 15 | 13 | 17 | 80 |\n\nThe company reports under IFRS standards. The amount of revenue that this company will recognize cumulatively at the end of Year 2 is closest to:",
+  "evidence": "PDF p.2 (page_idx 1) of 5.02 Answers.pdf, confirmed by rendered image, has only the Year/Costs table. The DB stem appends a second, unrelated 'Shares outstanding on Jan 1 / issued April 1 / repurchased Oct 1 / outstanding Dec 31' table that does not belong to this question and is not present on the page; it is removed here."
+ },
+ {
+  "id": "d26f8f6c-ef83-420b-b305-3000ca93befc",
+  "verdict": "explanation_wrong",
+  "field": "explanation_en",
+  "new_value": "A tenet of accrual accounting is that revenue is recognized when it is earned. Revenue is earned when the seller has delivered goods or furnished services. When a contract calls for delivery of goods or services over multiple periods (eg, airport construction), two special accounting methods exist to determine when and how much revenue must be recognized.\nThe two methods are the percentage-of-completion method and the completed contract method. The method to be used depends on whether the contract's outcome is reasonably certain. \"Reasonable certainty\" focuses on the probability that the seller will be paid and the probability that the seller's estimated costs to complete the project will not change materially before completion. Both IFRS and GAAP require the percentage-of-completion method if these conditions are satisfied.\nThe company anticipates that it will receive the contract price and it expects that its project costs will not change, so it will use the percentage-of-completion method. The table below shows how the company will calculate its revenue:\n\n| Year | 1 | 2 | 3 | 4 | Total |\n|---|---|---|---|---|---|\n| Costs (€ millions) | 35 | 15 | 13 | 17 | 80 |\n| Percent completed | 43.75% | 18.75% | 16.25% | 21.25% | 100.00% |\n| Revenue recognized | 43.75 | 18.75 | 16.25 | 21.25 | 100 |\n| Cumulative revenue | 43.75 | 62.50 | 78.75 | 100.00 | |\n\nCumulative revenue recognized through the end of Year 2 is €43.75 million + €18.75 million = €62.50 million.",
+  "evidence": "The stored explanation_en is entirely unrelated to this question -- it is verbatim the IFRS bad-debt-expense explanation belonging to p.20 (page_idx 19) of the same PDF (item 96a557a9). Rendered image of p.2 (page_idx 1) shows the real percentage-of-completion explanation and worked revenue table (43.75/18.75/16.25/21.25, cumulative 43.75/62.50/78.75/100.00), used to write the corrected text verbatim from the page."
+ },
+ {
+  "id": "5dfd848b-10ab-4287-91bc-ac8e4f0c75cd",
+  "verdict": "formatting_missing",
+  "field": "question_en",
+  "new_value": "A company has the following capital structure, which has been in effect for the entire year:\n\n| | |\n|---|---|\n| Common shares outstanding, January 1 | 3,000,000 |\n| Convertible debt, 6% coupon, presently convertible into 1,000,000 common shares (at par value) | $5,000,000 |\n| Preferred stock, 8% dividend, $50 par value | $5,000,000 |\n| Net income | $5,000,000 |\n| Corporate tax rate | 30% |\n\nThe diluted earnings per share (EPS) that the company will report for the year is closest to:",
+  "evidence": "Rendered image of p.9 (page_idx 8) of 5.02 Answers.pdf confirms the capital-structure table values, referenced by 'as follows' but missing from the DB stem, and confirms options $1.20/$1.23/$1.53 with checkmark on A."
+ },
+ {
+  "id": "5dfd848b-10ab-4287-91bc-ac8e4f0c75cd",
+  "verdict": "explanation_wrong",
+  "field": "explanation_en",
+  "new_value": "Convertible securities may reduce earnings per share (EPS), if converted, by increasing the number of common shares in the denominator. Such\nsecurities are dilutive; both GAAP and IFRS require companies to report basic EPS (ie, EPS without impact from conversion) and diluted EPS.\nThe deemed conversion increases the weighted average of the number of common shares outstanding. For calculating diluted EPS, treat\nconvertible securities as having been converted at the beginning of the period.\nWhen the convertible security is debt, the numerator for the equation must be adjusted to add back the interest expense since converting the\ndebt means that the interest will no longer be paid. This increases the net income that is available to common shareholders. Companies receive\na tax deduction for interest paid, which effectively reduces their actual interest expense, so the interest that is added back to net income is\ncalculated on an after-tax basis to reflect the true cost.\nThe calculations for the company's basic and diluted EPS are shown below:\n\n| | Basic | Diluted |\n|---|---|---|\n| Net income | $5,000,000 | $5,000,000 |\n| Less preferred dividend | (400,000) | (400,000) |\n| Plus after-tax convertible debt interest | 0 | 210,000 |\n| Net income for calculating EPS | $4,600,000 | $4,810,000 |\n| # of common shares | 3,000,000 | 3,000,000 |\n| Additional shares from conversion | – | 1,000,000 |\n| Weighted average # of shares | 3,000,000 | 4,000,000 |\n| EPS | 1.53 | 1.20 |\n\nDiluted EPS for the year is $1.20.",
+  "evidence": "PDF p.9 (page_idx 8) of 5.02 Answers.pdf: DB explanation matches verbatim up through 'shown below:' but then (a) omits the worked basic-vs-diluted EPS table shown on the page and (b) appends the page's trailing LOS line as if part of the explanation. Both are corrected here using the table values read directly from the rendered page image."
+ },
+ {
+  "id": "8d11898d-09a9-4c89-8388-47ee7f17a8cd",
+  "verdict": "explanation_wrong",
+  "field": "explanation_en",
+  "new_value": "The method used to calculate diluted EPS for a company with outstanding options assumes that\nthe options will be converted into common shares (ie, exercised) if the average stock price is greater than the exercise price, and\nthe company will use all cash proceeds from the exercised options to repurchase shares at the average market price to mitigate dilution.\nAs such, the net share increase equals new common shares issued net of repurchases.\nSince the average stock price (25) is greater than the exercise price (20), all 2 million options are assumed to be converted into common shares.\nThe company would have used all options proceeds (2 million × 20, or 40 million) to repurchase 1.6 million shares (40 million/25), thus increasing\nnet new shares by 0.4 million.",
+  "evidence": "PDF p.12 (page_idx 11) of 5.02 Answers.pdf: explanation text matches the DB record verbatim except the DB record appends the page's trailing LOS line ('Describe how earnings per share is calculated...') as if part of the explanation; that trailing sentence is removed here. Rendered image confirms table values, options, and checkmark on B."
+ }
+]

@@ -1,0 +1,376 @@
+[
+ {
+  "id": "ecb9c85c-60d7-48a2-8517-dbfd21f8e09e",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\5. Financial Statement Analysis\\5.12 Introduction to Financial Statement Modeling - Answers.pdf",
+  "page_idx": 7,
+  "png": "scripts\\_uworld_residuals_png\\ecb9c85c-60d7-48a2-8517-dbfd21f8e09e.png",
+  "topic": "Financial Statement Analysis",
+  "subtopic": "5.12 Introduction to Financial Statement Modeling",
+  "question_en": "A global clothing company reports the following 20X1 financial results for one of its business units: A forecast of 20X3 operating profits (EBIT) for this business unit assumes that:\n\n- Volume will contribute 7% to annual sales growth each year.\n- Price/mix will contribute 3% to annual sales growth each year.\n- Net foreign currency fluctuation is expected to reduce annual sales growth by 1% each year.\n- COGS is expected to be 30% of revenue each year.\n- SG&A is expected to be 50% of revenue each year.\n- Sales growth is calculated geometrically.\n\nUsing these assumptions, the 20X3 EBIT forecast (in € millions) for the business unit is closest to:",
+  "option_a": "21.82",
+  "option_b": "23.76",
+  "option_c": "23.81",
+  "correct_answer": "C",
+  "explanation_en": "The first step when building a sale-based pro forma financial model is to forecast revenue. Revenue growth is typically based on volume\ngrowth, price growth, changes to the product mix, foreign currency fluctuations, and acquisitions. After projected revenues are modeled, analysts\noften determine expenses (eg, COGS, SG&A) based on a percent of revenue. The expense percentages are frequently based on a combination\nof historical average and management guidance.\nCalculate Annual revenue growth\nannual = (1 + Volume growth %)(1 + Price/mix growth %)(1 + Foreign currency change %) − 1\ngrowth = (1 + 0.07)(1 + 0.03)(1 + −0.01) − 1\nrate* = 0.0911 or 9.11%\nCalculate\nRevenue = Revenue × (1 + Growth rate)2\n20X3 20X1\n20X3\n= 100 × (1 + 0.0911)2 = 119.05\nrevenue\n*Revenue growth is calculated geometrically in this scenario\nThen apply COGS and SG&A percentages to 20X3 revenue to determine expenses and operating profit (EBIT):\nin € millions 20X1 20X3\nRevenue 100.00 119.05\nCOGS 30.00 35.71 ← 119.05 × 30%\nGross profit 70.00 83.33\nSG&A 50.00 59.52 ← 119.05 × 50%\nEBIT 20.00 23.81"
+ },
+ {
+  "id": "5e816adb-5b62-4865-a974-c4bba3b65c94",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\6. Equity Investments\\6.01 Market Organization And Structure - Answers.pdf",
+  "page_idx": 0,
+  "png": "scripts\\_uworld_residuals_png\\5e816adb-5b62-4865-a974-c4bba3b65c94.png",
+  "topic": "Equity Investments",
+  "subtopic": "6.01 Market Organization And Structure",
+  "question_en": "A hedge fund will commit $15 million to a short sale of an exchange-listed stock. The fund sells short the maximum number of shares allowable when the margin requirement is 0.4. The relevant information is shown in the table below: No interest is paid for the borrowed shares, but there is a short rebate on the sales proceeds. If the fund closes out the position in exactly 1 year, the total percentage return is closest to:",
+  "option_a": "8.3%",
+  "option_b": "18.3%",
+  "option_c": "26.7%",
+  "correct_answer": "B",
+  "explanation_en": "A short sale of a stock happens when the short seller borrows shares, sells them, and subsequently repurchases and returns them to the lender. A short sale is profitable if the repurchase price is lower than the sales price (\"buy low, sell high\" = \"sell high, buy low\"). The profit depends largely on the number of shares that are shorted. Borrowing shares represents leverage, so all short sales are margin transactions. The maximum number of shares that can be sold short is a function of the short seller's equity in the transaction. In addition to the difference between the sales and repurchase prices, the return on a short sale also depends on: the short rebate: interest earned by the short seller on the short sales proceeds and calculated as a function of the investment value and the broker’s deposit rate. dividends that are paid on the shares until they are repurchased, which the short seller must pay the lender. commissions and other trading costs subtracted from the proceeds (not a factor in this question). The calculations for all components of the short sale in this scenario are shown below: (Choice A) 8.3% would be the approximate return if the short rebate on the sales proceeds is not included. (Choice C) 26.7% would be the approximate return if the $1.25 million dividend is not subtracted from the fund's gains."
+ },
+ {
+  "id": "9ea3e2b3-620b-48e4-aff4-acf49bc09fbc",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\6. Equity Investments\\6.01 Market Organization And Structure - Answers.pdf",
+  "page_idx": 27,
+  "png": "scripts\\_uworld_residuals_png\\9ea3e2b3-620b-48e4-aff4-acf49bc09fbc.png",
+  "topic": "Equity Investments",
+  "subtopic": "6.01 Market Organization And Structure",
+  "question_en": "In an order-driven market system, the following buy limit orders for a stock are listed in the system's limit book: Each order is listed for 200 shares. Based on the commonly used order precedence hierarchy, if the current market price is $15.10 and the exchange receives a market sell order for 500 shares, then the orders most likely to be fully executed are:",
+  "option_a": "Orders 1 and 2.",
+  "option_b": "Orders 2 and 3.",
+  "option_c": "Orders 1, 2, and 3.",
+  "correct_answer": "B",
+  "explanation_en": "Order-driven system: priority rules for filling limit orders\nThe most aggressively priced orders (eg, highest-priced\nHighest priority:\nbuys, lowest-priced sells) filled first\nPrice\nPrice takes priority over time and visibility\nOrders of fully visible size have priority over those of partially\nNext priority:\nor fully hidden size\nVisibility\nVisibility takes priority over time\nNext priority: Same-price orders filled based on time of receipt\nTime received Earliest received = Higher priority\nAn order-driven system is used by nearly every stock exchange, with rules that match the buyers' and sellers' orders. Three basic rules\ndetermine how limit orders are executed (\"filled\").\nThe first rule is based on price. Orders with the most aggressive prices (eg, highest buy price, lowest sell price) receive the highest priority. If\nmore than one order has the same price, priority is given to orders that are fully visible, meaning that the entire number of shares covered by the\norder is known. Orders in which the size is hidden, either fully or partially (ie, iceberg orders, have lower priority than fully visible orders.\nFor orders with the same price and visibility, priority is based on when each order was received. The earliest-received order has the highest\npriority, followed by the second earliest, etc.\nIn this case, Order 3 has the highest price, so it will be filled first even though it arrived last at the exchange. Orders 1 and 2 have the same price.\nOrder 1 arrived first, but since it is an iceberg order, it drops behind Order 2 in priority. Order 1 receives only 100 shares; Orders 2 and 3 are filled\nentirely (Choices A and C)."
+ },
+ {
+  "id": "6af9c6ad-c0eb-4b21-a15f-c6e9df499124",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\6. Equity Investments\\6.01 Market Organization And Structure - Answers.pdf",
+  "page_idx": 38,
+  "png": "scripts\\_uworld_residuals_png\\6af9c6ad-c0eb-4b21-a15f-c6e9df499124.png",
+  "topic": "Equity Investments",
+  "subtopic": "6.01 Market Organization And Structure",
+  "question_en": "A limit order book contains the following information for a stock:\n\n| Bid Size | Price | Ask Size |\n|---|---|---|\n| 6,000 | 15.20 |  |\n| 10,000 | 15.22 |  |\n| 8,000 | 15.25 |  |\n|  | 15.27 | 6,000 |\n|  | 15.30 | 10,000 |\n|  | 15.33 | 12,000 |\n\nThe market bid-ask quote is most likely:",
+  "option_a": "15.20 bid, 15.27 ask",
+  "option_b": "15.20 bid, 15.33 ask",
+  "option_c": "15.25 bid, 15.27 ask",
+  "correct_answer": "C",
+  "explanation_en": "Market makers (eg, dealers) provide liquidity in the marketplace by transacting with other buyers and sellers. Dealers are willing to buy at bid\nprices and sell at ask prices (offer prices) and profit from the difference (ie, bid-ask spread). The market bid-ask quote is the highest bid price\n(best bid) and lowest ask price (best ask).\nIn this instance, the highest bid is 15.25, and the lowest ask is 15.27. This means that 15.25 is the best (highest) price that a seller can sell to a\ndealer who is willing to buy, and 15.27 is the best (lowest) price that a buyer can buy from a dealer who is willing to sell."
+ },
+ {
+  "id": "8def86bf-f414-4ca5-9ea1-84171d2200a1",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\6. Equity Investments\\6.01 Market Organization And Structure - Answers.pdf",
+  "page_idx": 43,
+  "png": "scripts\\_uworld_residuals_png\\8def86bf-f414-4ca5-9ea1-84171d2200a1.png",
+  "topic": "Equity Investments",
+  "subtopic": "6.01 Market Organization And Structure",
+  "question_en": "A market's limit order book for a stock is listed below: A buy limit order for 200 shares makes a new market when it is priced at:",
+  "option_a": "103.00",
+  "option_b": "103.03",
+  "option_c": "103.05",
+  "correct_answer": "B",
+  "explanation_en": "The prices at which market participants are willing to buy (sell) are called bid (offer) prices. When a new limit order is entered that is at current\nmarket prices, the order is said to:\nMake the market if it matches the current best bid (buy) or offer (sell) price and is added to the order book, as is the case in this scenario.\nTake the market if it is immediately executed, since the order takes what the market is currently quoting. A buyer takes the lowest (best)\noffer and a seller takes the highest (best) bid (Choice C).\nWhen a new market order is entered that is between the current highest bid and lowest offer, it is said to make a new market (Choice B)."
+ },
+ {
+  "id": "814019af-cba6-47ff-be49-7ae279347157",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\6. Equity Investments\\6.01 Market Organization And Structure - Answers.pdf",
+  "page_idx": 34,
+  "png": "scripts\\_uworld_residuals_png\\814019af-cba6-47ff-be49-7ae279347157.png",
+  "topic": "Equity Investments",
+  "subtopic": "6.01 Market Organization And Structure",
+  "question_en": "A leveraged security position is held with only the minimum required equity. If the minimum equity requirement is reduced, the most likely consequence is that the position's risk is:",
+  "option_a": "increased since the securities are less valuable collateral for the margin loan.",
+  "option_b": "decreased since the maximum possible loss is reduced by having less equity in the position.",
+  "option_c": "increased since any security price changes will be a larger percentage of the position's",
+  "correct_answer": "C",
+  "explanation_en": "In a leveraged position, a trader invests less equity than the security's market value (ie, buys on margin) and borrows the balance. For any\nposition, leveraged or unleveraged, gains or losses are the change in the position's value. For a leveraged position the equity is less than 100% of\nthe position's value, therefore any percentage change the position's value will produce a greater percentage change in the equity.\nLeveraged long positions exhibit a wider dispersion of returns than unleveraged long positions since the percentage gains (losses) are greater\nwhen prices rise (fall). Therefore, leveraged long positions are riskier. The difference in risk is related directly to the leverage ratio: if a position's\nequity is reduced in line with a reduction in the minimum margin requirement, risk increases since the leverage has increased.\n(Choice A) The collateral value of securities is based on market value and is not affected by the margin requirement.\n(Choice B) Losses are not limited to the trader's equity in the position. Holders of leveraged security positions incur losses equal to the full\namount of any loss on the entire position."
+ },
+ {
+  "id": "a49a8ff7-36f5-4e29-9482-5fb16c40a9dc",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\6. Equity Investments\\6.04 Overview Of Equity Securities - Answers.pdf",
+  "page_idx": 21,
+  "png": "scripts\\_uworld_residuals_png\\a49a8ff7-36f5-4e29-9482-5fb16c40a9dc.png",
+  "topic": "Equity Investments",
+  "subtopic": "6.04 Overview Of Equity Securities",
+  "question_en": "With respect to cumulative preference shares, dividends that were not paid in prior periods are most likely:",
+  "option_a": "forfeited and not paid to cumulative preference shareholders in the future.",
+  "option_b": "accrued and paid to cumulative preference shareholders in the future before paying common shareholders.",
+  "option_c": "accrued and paid to cumulative preference shareholders in the future only after paying",
+  "correct_answer": "B",
+  "explanation_en": "Types of preference shares (preferred stock)\nCumulative Accrues for past dividends that are unpaid\nNoncumulative Does not accrue dividends that are undeclared and unpaid in past periods\nParticipating Allows for additional dividend payments if company profits exceed a certain threshold\nNonparticipating Fixed dividend; no additional payments based on company performance\nConvertible Can convert into a specified number of common shares\nCallable Allows issuer to buy back shares from investors for a specified price\nPutable Allows investors to sell shares back to issuer for a specified price\nPreferred (preference) shares ownership represents a form of equity investment in a company. Preference shares may grant certain benefits to\npreferred shareholders such as high dividend payments and in some cases conversion rights (to common stock). Furthermore, dividend\npayments to preferred shareholders take precedence over dividend payments to common shareholders. Preferred dividends can be cumulative\nor noncumulative.\nFor cumulative preference dividends, if a company does not pay a dividend (or dividends) in one period (or several periods), the unpaid dividend\naccrues and is owed in the future. Conversely, for noncumulative preference dividends, the company does not accrue (and does not owe payment\nfor) unpaid dividends from past periods.\n(Choice A) Unpaid dividends on cumulative preferred shares are accrued and owed to preferred shareholders.\n(Choice C) Payments of past unpaid dividends are due to preference shareholders before any dividends can be distributed to common\nshareholders."
+ },
+ {
+  "id": "4098e617-1ba9-40ad-ba8d-b853814ab0ba",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\6. Equity Investments\\6.04 Overview Of Equity Securities - Answers.pdf",
+  "page_idx": 19,
+  "png": "scripts\\_uworld_residuals_png\\4098e617-1ba9-40ad-ba8d-b853814ab0ba.png",
+  "topic": "Equity Investments",
+  "subtopic": "6.04 Overview Of Equity Securities",
+  "question_en": "A business student gathers the following information on a company:\n\n| (GBP millions) | 20X1 | 20X2 | 20X3 |\n|---|---|---|---|\n| EBITDA | 45 | 50 | 40 |\n| Net income | 40 | 35 | 45 |\n| Assets | 500 | 480 | 500 |\n| Liabilities | 200 | 200 | 230 |\n| Market value of equity | 450 | 405 | 687 |\n\nIf return on equity (ROE) is calculated using average amounts from the balance sheet, then the ROE in 20X3 most accurately:",
+  "option_a": "improved from 20X2.",
+  "option_b": "did not change from 20X2.",
+  "option_c": "worsened from 20X2.",
+  "correct_answer": "A",
+  "explanation_en": "Return on equity (ROE) is the rate of return that shareholders receive on their equity capital. It is frequently calculated as the ratio of net\nincome to average shareholders' equity. The ROE in 20X3 is higher than in 20X2, meaning that the company generated more net income\nusing the equity invested. This indicates improvement in ROE and performance.\nNote that in some cases, the question may specify to calculate ROE using beginning book value of equity alone in the denominator (instead of\naverage book value). This may be a reasonable approach assuming there is little difference in the book value of equity at the beginning of the\nyear and at the end of the year."
+ },
+ {
+  "id": "de974a62-0501-42ff-ac8d-24d48273e07b",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\8. Derivatives\\8.08 Pricing and Valuation of Options - Answers.pdf",
+  "page_idx": 8,
+  "png": "scripts\\_uworld_residuals_png\\de974a62-0501-42ff-ac8d-24d48273e07b.png",
+  "topic": "Derivatives",
+  "subtopic": "8.08 Pricing and Valuation of Options",
+  "question_en": "An analyst observes the following market data for one American put option:\n\n| Selected Data (in CAD) |  |\n| --- | --- |\n| Stock price | 48 |\n| Strike price | 50 |\n| Option premium | 4 |\n\nThis option's moneyness is best described as:",
+  "option_a": "in the money.",
+  "option_b": "at the money.",
+  "option_c": "out of the money.",
+  "correct_answer": "A",
+  "explanation_en": "Moneyness refers to the relationship between an option's strike price and the underlying stock price and is indicative of the option's intrinsic value. An option trading at the money or out of the money has no intrinsic value. An option trading in the money has intrinsic value: For an in-the-money call option, the underlying stock price is greater than the strike price. This gives the call owner the right to buy the stock at a price lower than the market price, which in turn gives the option intrinsic value. For an in-the-money put option, the strike price is greater than the underlying stock price. This gives the put owner the right to sell the stock at a price higher than the market price, which in turn gives the option intrinsic value. In this scenario, the put option's underlying stock price is less than its strike price. Therefore, the option is trading in the money. Note that the option's premium is irrelevant to determining the option's intrinsic value; it would, however, be relevant to determining the option's profit at exercise. (Choice B) If the stock price equals the strike price, the option is trading at the money (ATM). At expiration, an ATM option is economically equivalent to owning the underlying asset. (Choice C) For a call option, if the stock price is less than the strike price, the option is trading out of the money (OTM) and has no intrinsic value. The same is true for a put option if the stock price is greater than the strike price."
+ },
+ {
+  "id": "9f10de25-ea43-4460-8bc4-169efe8bebf9",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\7. Fixed Income\\7.04 Fixed-Income Markets for Corporate Issuers - Answers.pdf",
+  "page_idx": 7,
+  "png": "scripts\\_uworld_residuals_png\\9f10de25-ea43-4460-8bc4-169efe8bebf9.png",
+  "topic": "Fixed Income",
+  "subtopic": "7.04 Fixed-Income Markets for Corporate Issuers",
+  "question_en": "A contingency provision contained in the indenture of a bond issued by a corporation most likely refers to:",
+  "option_a": "the issuer's ability to defer coupon payments if certain conditions are met.",
+  "option_b": "the bondholder's ability to force the corporation to redeem the bond before maturity.",
+  "option_c": "the issuer's right to incur additional debt while some or all of the original amount is still",
+  "correct_answer": "B",
+  "explanation_en": "Typical bond contingency provisions Callability Issuer has right to redeem bond before maturity Putability Bondholder can require issuer to redeem bond before maturity Bondholder can convert bond into a predetermined number of issuer's Convertibility common shares Contingency provisions in the context of bonds are very specific and refer to the rights of the issuer and/or bondholders with respect to how a bond can be redeemed or disposed of. The most common types of contingency provisions concern whether a bond can be called, put, or converted. A putable bond gives its holder the right to require that the issuer redeem the bond before maturity. The redemption price is established in the indenture, in addition to any other relevant provisions such as when the bondholder must act. This right (ie, the put) can be valuable to the bondholder, and that value allows the issuer to pay a lower coupon rate. (Choice A) The issuer's right to defer coupon payments does not relate to redeeming or converting the bond, so it is not properly categorized as a contingency. (Choice C) Provisions concerning an issuer's ability to incur additional debt are a covenant, or promise, of actions that the issuer agrees to take (ie, affirmative covenants) or not take (ie, negative covenants)."
+ },
+ {
+  "id": "bf1b57b3-718f-40be-a5e6-697e55098a7e",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\7. Fixed Income\\7.04 Fixed-Income Markets for Corporate Issuers - Answers.pdf",
+  "page_idx": 14,
+  "png": "scripts\\_uworld_residuals_png\\bf1b57b3-718f-40be-a5e6-697e55098a7e.png",
+  "topic": "Fixed Income",
+  "subtopic": "7.04 Fixed-Income Markets for Corporate Issuers",
+  "question_en": "The repo margin most accurately describes:",
+  "option_a": "the rate of return earned by the repo lender.",
+  "option_b": "the difference between the market value of the collateral and the amount loaned.",
+  "option_c": "the amount of additional collateral required by the repo lender in addition to the repo",
+  "correct_answer": "B",
+  "explanation_en": "A repurchase agreement (ie, repo) is a type of short-term debt. It is structured as the sale of an asset, typically a high-quality, short-term bond that the seller agrees to repurchase at a future date for a specified amount. Since the terms of the agreement are known in advance, a repo can be viewed as a short-term secured loan. The repo seller is the borrower and the repo buyer is the lender. The lender is exposed to the risk that the borrower will be unable to repurchase the asset when the agreement matures. Although the buyer can sell the collateral if the seller defaults, it is possible that its market value will have declined from when the repo was initiated. To mitigate this risk, the amount loaned is less than the value of the collateral. The difference is the repo margin. In the example above, the repo margin is $1,010 − 1,000 = $10. (Choice A) The repo rate is the lender's return from the transaction (ie, the repurchase agreement's interest rate). In the example above, the price ($2 higher) that the seller pays to repurchase the asset is equivalent to the interest on the original $1,000 loan. In this case the repo rate is 0.2% for the two-month period, or 1.2% annually. (Choice C) The financial instrument that the buyer purchases is the only collateral in a repo. The repo margin is a form of credit enhancement for the loan, but it is not additional collateral."
+ },
+ {
+  "id": "6a4426ec-5e2b-4e09-b05b-1dd3be3fb7f9",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\7. Fixed Income\\7.14 Credit Risk - Answers.pdf",
+  "page_idx": 0,
+  "png": "scripts\\_uworld_residuals_png\\6a4426ec-5e2b-4e09-b05b-1dd3be3fb7f9.png",
+  "topic": "Fixed Income",
+  "subtopic": "7.14 Credit Risk",
+  "question_en": "An analyst has compiled the following data on a corporate bond: The price impact from an instantaneous 80 basis points of spread narrowing is closest to (%):",
+  "option_a": "6.86",
+  "option_b": "7.15",
+  "option_c": "7.44",
+  "correct_answer": "C",
+  "explanation_en": "The price change of a bond is a function of its modified duration, its convexity, and a change in its yield. The yield of a corporate bond is a function of interest rates and the bond's yield spread. The yield spread is the difference in yields between the corporate bond and a government issue of the same maturity, reflecting the greater credit and liquidity risks (ie, spread risk) of the corporate bond. A change in spread can significantly impact the price of a bond. Bond prices and yields move in opposite directions. Therefore, narrowing spreads (ie, smaller spreads) positively impact prices and widening spreads (ie, larger spreads) have a negative impact. Note that the negative sign in the price impact equation accounts for this inverse relationship. Price impact can be determined by entering the values into the formula: (Choice A) 6.86% is the estimated price decline if the spread widens by 80 basis points. (Choice B) 7.15% results from approximating price impact (L54761) using only modified duration, which is appropriate for only small changes in spreads."
+ },
+ {
+  "id": "60aedd73-90de-4fee-81a4-31b035604952",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\7. Fixed Income\\7.19 Mortgage-Backed Security (MBS) Instrument and Market Features - Answers.pdf",
+  "page_idx": 1,
+  "png": "scripts\\_uworld_residuals_png\\60aedd73-90de-4fee-81a4-31b035604952.png",
+  "topic": "Fixed Income",
+  "subtopic": "7.19 Mortgage-Backed Security (MBS) Instrument and Market Features",
+  "question_en": "An issuer constructs a mortgage pass-through security with the following underlying collateral:\n\n| Mortgage | Remaining balance ($ thousands) | Mortgage rates (%) | Months of maturity remaining |\n|---|---|---|---|\n| A | 80 | 4.5 | 48 |\n| B | 100 | 5.0 | 60 |\n| C | 120 | 4.7 | 72 |\n\nIf the issuer charges a servicing fee of 25 basis points, then the pass-through rate is closest to:",
+  "option_a": "4.48%",
+  "option_b": "4.50%",
+  "option_c": "4.75%",
+  "correct_answer": "B",
+  "explanation_en": "Issuers create mortgage pass-through securities (ie, pass-throughs) by pooling individual mortgage loans and using the pool as collateral for the pass-through security, which is then sold to investors. Investors receive cash returns generated from the pool of monthly mortgage payments. The mortgage pool usually consists of multiple mortgages with different interest rates. The pass-through rate (ie, coupon rate that pass-through investors receive) equals the weighted average coupon (WAC) less servicing and administrative fees. The WAC is the weighted average of the mortgage rates for the pooled mortgages, with the weights being each mortgage balance as a percentage of the total balances. In this scenario, the WAC is 4.75% and the fees are 0.25%, so the pass-through rate is 4.50%. (Choice A) 4.48% results from taking the simple average, not the weighted average, of the coupons. (Choice C) 4.75% results from not subtracting the servicing fee from the WAC."
+ },
+ {
+  "id": "bffa4bae-d68d-4957-b43e-c80c830a5858",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\8. Derivatives\\8.05 Pricing and Valuation of Forward Contracts and for an Underlying with Varying Maturities - Answers.pdf",
+  "page_idx": 1,
+  "png": "scripts\\_uworld_residuals_png\\bffa4bae-d68d-4957-b43e-c80c830a5858.png",
+  "topic": "Derivatives",
+  "subtopic": "8.05 Pricing and Valuation of Forward Contracts and for an Underlying with Varying Maturities",
+  "question_en": "An analyst gathers the following data: The bond has exactly 10 years until maturity and pays coupons annually. There are no other costs or benefits while holding the bond. A 1-year forward contract created with an initial value of zero most likely has an agreed-on price:",
+  "option_a": "less than 100.",
+  "option_b": "equal to 100.",
+  "option_c": "greater than 100.",
+  "correct_answer": "A",
+  "explanation_en": "Futures price = Spot price + Cost of holding underlying − Benefits of holding underlying Derivative pricing is based on the no-arbitrage principle (ie, arbitrage-free pricing). This means that economically equivalent positions should trade at prices that result in equal returns. If that condition does not hold, arbitrage occurs until prices adjust so that risk-free profits can no longer be earned. Futures price − Spot price = Cost of holding underlying − Benefits of holding underlying Benefits < costs Futures > spot Benefits > costs Futures < spot Benefits = costs Futures = spot Taking a long position in futures avoids the costs and forgoes any benefits of holding the underlying asset. For equivalent positions (eg, long stock = long stock futures + long a risk-free bond) to earn equal returns, futures and spot prices must differ by the net cost of holding the underlying asset until the expiration of the futures contract. When the benefits of holding the asset are greater than the costs of holding it, there is added value in holding the asset, so futures prices are below the spot price and not equal to or above it (Choices B and C). The net cost of holding a position in the underlying asset or commodity is called the cost of carry. The carry, as it is sometimes called, reflects the net of: costs—charges for storage, insurance, or financing the underlying position, versus benefits—income (ie, dividends or interest) or convenience yield from holding the underlying."
+ },
+ {
+  "id": "ed857ec4-7ecc-43d2-aeea-f6e08b192df4",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\8. Derivatives\\8.09 Option Replication Using Put–Call Parity - Answers.pdf",
+  "page_idx": 5,
+  "png": "scripts\\_uworld_residuals_png\\ed857ec4-7ecc-43d2-aeea-f6e08b192df4.png",
+  "topic": "Derivatives",
+  "subtopic": "8.09 Option Replication Using Put–Call Parity",
+  "question_en": "An investor obtains the following information about a European call and a European put on the same underlying asset, and the forward price of the asset: The options and the forward contract expire on the same date, and the options have a strike price of €100. Using put-call-forward parity to analyze the information, the investor most appropriately concludes that an arbitrage opportunity:",
+  "option_a": "does not exist.",
+  "option_b": "is exploited by selling the protective put and buying the fiduciary call.",
+  "option_c": "is exploited by buying the protective put and selling the fiduciary call.",
+  "correct_answer": "B",
+  "explanation_en": "Arbitrage based on put-call parity ensures that puts and calls are fairly valued relative to each other. The equivalent portfolios approach to put-call parity (above) illustrates the pricing relationship. Both portfolios have the same value at expiration, so they must have the same value at any time prior to expiration. Synthetic positions are derived by isolating one position on one side of the equation. The combination of positions is the synthetic equivalent of the isolated position. Plus and minus signs designate long (+) or short (−), so a long bond position is indicated by X / (1 + r)t. This is a zero-coupon, risk-free bond with a face amount equal to the strike price (X) and a price equal to the present value of X. The long bond's synthetic equivalent is Long asset, S Short a call, −c Long a put, +p The long bond's value is its face amount (X). The synthetic long bond position also has a value of X, regardless of the asset price (S ). Either one T of the options is in the money or both options are at the money. If one option is in the money, the long asset is sold for the exercise price (X), and if both options are at the money (S = X), the asset has a value equal to the maturing bond. T"
+ },
+ {
+  "id": "011ae2e6-a2b3-4c2f-b606-6d5861521985",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\8. Derivatives\\8.09 Option Replication Using Put–Call Parity - Answers.pdf",
+  "page_idx": 12,
+  "png": "scripts\\_uworld_residuals_png\\011ae2e6-a2b3-4c2f-b606-6d5861521985.png",
+  "topic": "Derivatives",
+  "subtopic": "8.09 Option Replication Using Put–Call Parity",
+  "question_en": "A trader observes the following data on European put and call options on the same stock with the same expiry (one year from today): Assuming the call option is correctly priced in the market, the trader would most appropriately conclude that put-call parity is:",
+  "option_a": "not violated.",
+  "option_b": "violated since the put is overvalued.",
+  "option_c": "violated since the put is undervalued.",
+  "correct_answer": "A",
+  "explanation_en": "HP 12c TI BA II Plus\nIf put-call parity holds, the price of a protective put is equal to the price of its corresponding fiduciary call when the put and call options have the\nsame underlying stock, strike price, and expiry. The parity relationship can be used to determine the appropriate price of any of the variables,\ngiven the values of the other three. Therefore, the price of a put can be calculated given the price of its corresponding call, the stock price,\nand the risk-free rate.\nIn this scenario, to determine the appropriate price of the put option, substitute values as follows:\nThe parity relationship implies that the price of the put should be 4.86, the price at which it is trading in the market. Therefore, put-call parity is\nnot violated since the put is appropriately valued in the market (Choices B and C)."
+ },
+ {
+  "id": "106b2e0c-54ab-4ed1-acb4-843ab7f1873e",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\8. Derivatives\\8.09 Option Replication Using Put–Call Parity - Answers.pdf",
+  "page_idx": 13,
+  "png": "scripts\\_uworld_residuals_png\\106b2e0c-54ab-4ed1-acb4-843ab7f1873e.png",
+  "topic": "Derivatives",
+  "subtopic": "8.09 Option Replication Using Put–Call Parity",
+  "question_en": "A trader observes the following data for European put and call options on the same stock with the same strike price and expiry (one year from today), and a forward contract on the same stock with the same expiry: If the put option is correctly priced in the market, the trader's most appropriate conclusion is that put-call-forward parity is:",
+  "option_a": "not violated.",
+  "option_b": "violated since the call is overvalued.",
+  "option_c": "violated since the call is undervalued.",
+  "correct_answer": "C",
+  "explanation_en": "HP 12c TI BA II Plus\nIf put-call-forward parity holds, the price of a protective put is equal to the price of its corresponding fiduciary call when the protective put and\nfiduciary call include put and call options with the same strike price and expiry and are written on the same underlying asset. The parity\nrelationship can be used to determine the appropriate price of a call given the price of its corresponding put, and vice versa.\nIn this scenario, to determine the appropriate price of the call option, substitute values as follows:\nThe parity relationship implies the price of the call should be 7.65, but it is trading at 7.5 in the market. Therefore, put-call-forward parity is violated\nas, based on the price of the put, the call is undervalued in the market (Choices A and B)."
+ },
+ {
+  "id": "440ee1a9-6244-4774-991e-bc19634a5ece",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\8. Derivatives\\8.09 Option Replication Using Put–Call Parity - Answers.pdf",
+  "page_idx": 14,
+  "png": "scripts\\_uworld_residuals_png\\440ee1a9-6244-4774-991e-bc19634a5ece.png",
+  "topic": "Derivatives",
+  "subtopic": "8.09 Option Replication Using Put–Call Parity",
+  "question_en": "An analyst obtains the following information about a call option on 100 shares of a stock: If the option expires in one year and the analyst estimates that the stock's intrinsic value is $41, then according to put-call-forward parity the put's premium is closest to:",
+  "option_a": "$5.54",
+  "option_b": "$6.85",
+  "option_c": "$9.54",
+  "correct_answer": "B",
+  "explanation_en": "HP 12c TI BA II Plus\nIt is important to understand the difference between put-call parity and put-call-forward parity. Put-call parity implies that a protective put and\nfiduciary call constructed with options on the same asset and with the same strike price and expiry have the same payoff; therefore, their values\nare equal at any time prior to maturity:\nPut-call-forward parity can be explained based on put-call parity since an investor can create a synthetic equivalent of the underlying asset by\ngoing long a forward contract and a risk-free zero-coupon bond whose face value is equal to the asset's forward price. Since it costs nothing to\nenter a forward contract, the value of the combination at time zero is the zero-coupon bond's present value:\nThe expression for the synthetic asset position is substituted for S in the put-call parity equation to obtain the put-call-forward parity equation:\nIn this scenario, to calculate the put option's premium, substitute as follows:\nExplain put–call forward parity for European options"
+ },
+ {
+  "id": "bffe0573-7219-404f-9a09-fd690cfd9910",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\8. Derivatives\\8.09 Option Replication Using Put–Call Parity - Answers.pdf",
+  "page_idx": 6,
+  "png": "scripts\\_uworld_residuals_png\\bffe0573-7219-404f-9a09-fd690cfd9910.png",
+  "topic": "Derivatives",
+  "subtopic": "8.09 Option Replication Using Put–Call Parity",
+  "question_en": "The following data apply to put and call options on the same asset, with the same expiry one year from today and strike price: According to put-call-forward parity, the forward price (in €) of the underlying asset is closest to:",
+  "option_a": "66.15",
+  "option_b": "68.07",
+  "option_c": "73.93",
+  "correct_answer": "B",
+  "explanation_en": "Put-call-forward parity can be derived from put-call parity: a protective put and fiduciary call constructed with options on the same asset, with the\nsame strike price and expiry, have the same payoff; therefore, their values are equivalent at any time prior to the options' expiration.\nAn investor can create the synthetic equivalent of an underlying asset by going long a forward contract and a risk-free zero-coupon bond whose\nface value is equal to the forward price of the asset. This \"synthetic\" underlying asset can be used in place of the actual underlying asset to\nreplicate the protective put. Since it costs nothing to enter a forward contract, the value of the combination of forward contract and zero-coupon\nbond at Time 0 equals the present value of the zero-coupon bond:\nThe expression for the synthetic asset is substituted for S in the put-call parity equation to obtain the put-call-forward parity equation:\nSubstitute to determine the value of the forward contract:"
+ },
+ {
+  "id": "ac871ba4-90a5-484d-8b78-db837235148e",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\9. Alternative Investments\\9.02 Alternative Investment Performance and Returns - Answers.pdf",
+  "page_idx": 2,
+  "png": "scripts\\_uworld_residuals_png\\ac871ba4-90a5-484d-8b78-db837235148e.png",
+  "topic": "Alternative Investments",
+  "subtopic": "9.02 Alternative Investment Performance and Returns",
+  "question_en": "The seed investor of a three-year-old hedge fund that invests in high-yield private placements requests a redemption of £20 million. Fund details are listed below: Which of the following is the most likely outcome?",
+  "option_a": "The forced liquidation causes the hedge fund to close.",
+  "option_b": "There is sufficient time for an orderly disposition of assets.",
+  "option_c": "The hedge fund could invoke the lockup clause, delaying the redemption.",
+  "correct_answer": "A",
+  "explanation_en": "Some types of alternative investments (ie, private equity or real estate) have variable cash flows in which investors often experience low or negative cash flows early in the investment, with cash flows eventually turning positive. Ideally, measuring returns capture both the amount and the timing of cash flows. IRR is the primary measure used to assess investments with variable cash flows. The IRR calculation considers the timing of an investment's cash flows and its overall time frame, as well as the opportunity cost of the capital committed to an investment. The multiple of invested capital (MOIC) (ie, money multiple) is a ratio of total value of all residual asset values and distributions to the initial investment; thus, it is expressed as a multiple of the initial investment. This is viewed as a shortcut method that does not consider the investment time frame. IRR's main advantage over MOIC is that it accounts for how cash flow timing affects returns. IRR also has two key disadvantages: It is less intuitive than MOIC: MOIC illustrates how much an investor has received relative to the amount initially invested (Choice A). IRR is more complicated to calculate: MOIC is simply a multiple at a point in time and ignores effects from the timing of cash flows; IRR relies on assumptions about financing and reinvestment rates (Choice B)."
+ },
+ {
+  "id": "57c8e6b9-ab2e-44ef-b565-30fc1e6505b8",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\9. Alternative Investments\\9.02 Alternative Investment Performance and Returns - Answers.pdf",
+  "page_idx": 6,
+  "png": "scripts\\_uworld_residuals_png\\57c8e6b9-ab2e-44ef-b565-30fc1e6505b8.png",
+  "topic": "Alternative Investments",
+  "subtopic": "9.02 Alternative Investment Performance and Returns",
+  "question_en": "At the end of 20X4, a hedge fund had $25 million in assets under management (AUM). The fund has the following fee structure, high-water mark, and 20X5 results: Assuming no inflows or outflows, the incentive fee (in $) earned by this hedge fund for 20X5 is closest to:",
+  "option_a": "109,000",
+  "option_b": "272,500",
+  "option_c": "300,000",
+  "correct_answer": "B",
+  "explanation_en": "Proper asset valuations are necessary for calculating investment performance. Valuation is straightforward when an asset is highly liquid and trades frequently since prices are readily available. Valuation becomes more difficult and subjective when prices cannot be readily observed or when an asset trades infrequently. Internal modeling tends to be used for valuation only if other, more objective methods cannot be applied. Internal modeling is typically used if the asset is: illiquid, not traded on exchanges, not priced by outside sources, or affected by unobservable inputs or assumptions Distressed debt generally fits all these criteria, so hedge funds specializing in distressed debt would likely use internal models to value their assets. (Choice A) Macro hedge funds invest opportunistically across a wide variety of asset classes, including derivatives. The value of certain derivatives such as interest rate swaps or currency swaps depends on rates that are directly observable in the market. (Choice C) Assets that trade regularly on public exchanges have reliable and easily available prices. Hedge funds specializing in fundamental value strategies establish long and short positions on assets that are openly traded in the market, and thus are unlikely to rely on internal models."
+ },
+ {
+  "id": "df6e9a84-0903-40a1-aa63-0962a2ed73e6",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\9. Alternative Investments\\9.02 Alternative Investment Performance and Returns - Answers.pdf",
+  "page_idx": 7,
+  "png": "scripts\\_uworld_residuals_png\\df6e9a84-0903-40a1-aa63-0962a2ed73e6.png",
+  "topic": "Alternative Investments",
+  "subtopic": "9.02 Alternative Investment Performance and Returns",
+  "question_en": "An endowment invested €10 million into a hedge fund on January 1 of Year 1 and neither added nor withdrew funds since then. Information concerning the fund is shown as of the beginning of Year 5: The incentive fee is independent of the management fee and is subject to the high-water mark. If the fees are based on year-end AUM, then the endowment's return for the year is closest to:",
+  "option_a": "8.6%",
+  "option_b": "11.6%",
+  "option_c": "15.0%",
+  "correct_answer": "B",
+  "explanation_en": "Hedge funds and funds of funds (FOFs): custom fee arrangements Fees based on liquidity terms Reduced fees for longer lock-up period, or based on total assets invested in the fund for large and/or asset size investors, placement agents, and FOFs Founders' shares Early investors in new funds pay a lower fee to incentivize initial fund growth Either/or fees Investors pay either a management fee or an incentive fee, but not both Hedge funds frequently charge both a management fee and an incentive fee. Hedge fund fees are often negotiated, enticing investors to commit capital, particularly for new or small hedge funds. These custom fee arrangements can take many forms, but a common arrangement includes founders' shares, which entitle early investors to: permanently lower fees, up to a certain monetary threshold (eg, $100 million invested), or fees that do not apply until the fund grows to a certain size (eg, greater than $100 million AUM). (Choice B) Lower fees in exchange for a longer lockup period indicate a liquidity-based fee arrangement, not founder's shares. (Choice C) An \"either/or\" fee structure is not a characteristic of founders' shares and refers to an arrangement of paying either management or incentive fees. For example, an investor may agree to pay a 30% incentive fee if certain performance thresholds are met, but in exchange will not pay an annual management fee."
+ }
+]

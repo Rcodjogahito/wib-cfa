@@ -1,0 +1,376 @@
+[
+ {
+  "id": "6924ac38-4487-4845-bf7a-593490bbbfed",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\1. Quantitative Methods\\1.03 Statistical Measures of Asset Returns - Answers.pdf",
+  "page_idx": 8,
+  "png": "scripts\\_uworld_residuals_png\\6924ac38-4487-4845-bf7a-593490bbbfed.png",
+  "topic": "Quantitative Methods",
+  "subtopic": "1.03 Statistical Measures of Asset Returns",
+  "question_en": "One month of historical daily price change data is given below for two investments: The relative dispersion of the daily price change data for Investment Y is approximately:",
+  "option_a": "1/2 that of Investment X.",
+  "option_b": "7 times that of Investment X.",
+  "option_c": "14 times that of Investment X.",
+  "correct_answer": "A",
+  "explanation_en": "Analysts often use the standard deviations of data set samples as a way of comparing the data sets' dispersion. However, differences in sample\nmeans affect the comparability of standard deviations. Consequently, analysts may choose instead to measure the relative dispersion of the\nsamples using the coefficient of variation (CV) if they believe a comparison of dispersion using the standard deviations would be\nproblematic due to\ndifferent units of measurement between the data sets and/or\na large difference in the data sets' sample means.\nIn this scenario, the two samples have different units of measurement (currencies) and sample means that differ greatly in magnitude—USD 3.37\nversus JPY 47.03—so comparing their dispersion using standard deviations directly could be problematic. Although 283.43 is almost seven times"
+ },
+ {
+  "id": "1c62861c-d4ef-452b-9037-87b959369630",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\1. Quantitative Methods\\1.03 Statistical Measures of Asset Returns - Answers.pdf",
+  "page_idx": 12,
+  "png": "scripts\\_uworld_residuals_png\\1c62861c-d4ef-452b-9037-87b959369630.png",
+  "topic": "Quantitative Methods",
+  "subtopic": "1.03 Statistical Measures of Asset Returns",
+  "question_en": "The annual returns for a mutual fund are shown below: The median return (in %) is closest to:",
+  "option_a": "1.6",
+  "option_b": "2.7",
+  "option_c": "4.6",
+  "correct_answer": "B",
+  "explanation_en": "The median is the middle value of a set of observations arranged in ascending or descending order. For an odd number of observations, the\nmedian is the observation at (n + 1) / 2 since that will always be the middle observation. For an even number of observations, the median value is\ncalculated using the formula shown above.\nThe observations, sorted in ascending order, are shown below:\nThis question has 12 observations, so the median is located between observations 6 and 7. The median value is the average of the values for\nobservations 6 and 7:\n(Choice A) 1.6% is the mode of the observations since it is the most frequently occurring value.\n(Choice C) 4.6% is the approximate average of the returns for Years 6 and 7. Before calculating the median, remember to sort the data."
+ },
+ {
+  "id": "62699055-ec8b-4525-9d9b-20075980759d",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\1. Quantitative Methods\\1.03 Statistical Measures of Asset Returns - Answers.pdf",
+  "page_idx": 9,
+  "png": "scripts\\_uworld_residuals_png\\62699055-ec8b-4525-9d9b-20075980759d.png",
+  "topic": "Quantitative Methods",
+  "subtopic": "1.03 Statistical Measures of Asset Returns",
+  "question_en": "The total assets of 10 different companies, as well as their research and development (R&D) spending as a percentage of revenue, are mapped on the following scatterplot:\n\n| Company | Total assets | R&D as % of revenue |\n|---|---|---|\n| 1 | 1.0 | 14.0 |\n| 2 | 1.5 | 13.0 |\n| 3 | 2.5 | 11.0 |\n| 4 | 3.0 | 10.0 |\n| 5 | 3.2 | 9.6 |\n| 6 | 3.5 | 9.0 |\n| 7 | 3.8 | 8.4 |\n| 8 | 4.0 | 8.0 |\n| 9 | 6.0 | 4.0 |\n| 10 | 6.5 | 3.0 |\n\nThe correlation between total assets and R&D spending is closest to:",
+  "option_a": "−2.0",
+  "option_b": "−1.0",
+  "option_c": "1.0",
+  "correct_answer": "B",
+  "explanation_en": "Correlation and covariance measure the linear relationship between two variables. Unlike covariance, in which values are based on the\nvariables' magnitude, correlation is a standardized measure ranging from −1.0 to 1.0. As such, correlation provides insight into not only the\ndirection but also the strength of the relationship. Direction is indicated by the correlation's sign, and strength is indicated by its value on the\nscale.\nA correlation of:\n0 suggests no linear relationship."
+ },
+ {
+  "id": "b2c5f8aa-056d-4e66-9aef-328034e4b1ea",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\1. Quantitative Methods\\1.03 Statistical Measures of Asset Returns - Answers.pdf",
+  "page_idx": 21,
+  "png": "scripts\\_uworld_residuals_png\\b2c5f8aa-056d-4e66-9aef-328034e4b1ea.png",
+  "topic": "Quantitative Methods",
+  "subtopic": "1.03 Statistical Measures of Asset Returns",
+  "question_en": "An analyst gathers statistics based on comparable samples taken from the returns of three index exchange-traded funds (index ETFs): Which of these funds has the smallest relative dispersion?",
+  "option_a": "Index ETF X",
+  "option_b": "Index ETF Y",
+  "option_c": "Index ETF Z",
+  "correct_answer": "A",
+  "explanation_en": "Using the standard deviations of samples from different data sets to compare dispersion is not always helpful, since the sample means of the sets\nmay differ greatly or may involve different units of measurement. To address this issue, analysts may turn to the coefficient of variation (CV), a\nmeasure of relative dispersion. The CV is calculated as the sample standard deviation divided by the sample mean. In this scenario, the CVs\nof the index exchange-traded funds (ETFs) are as follows:\nIndex ETF Sample standard deviation Sample mean Coefficient of\n(% return) (% return) variation\nX 11.5 8.2 1.4\nY 9.4 5.9 1.6\nZ 5.1 1.7 3.0\nIndex ETF X has the largest standard deviation, but its CV, and therefore its relative dispersion, is the smallest.\n(Choices B and C) Index ETFs Y and Z have smaller standard deviations than Index ETF X. However, standard deviation is a measure of\ndispersion, not relative dispersion. Index ETF X has the smallest CV, which measures relative dispersion."
+ },
+ {
+  "id": "c6bc7641-95e7-463c-ad4d-336018695798",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\1. Quantitative Methods\\1.03 Statistical Measures of Asset Returns - Answers.pdf",
+  "page_idx": 35,
+  "png": "scripts\\_uworld_residuals_png\\c6bc7641-95e7-463c-ad4d-336018695798.png",
+  "topic": "Quantitative Methods",
+  "subtopic": "1.03 Statistical Measures of Asset Returns",
+  "question_en": "An analyst gathers 20X7 annual returns of all 16 stocks in a portfolio. The analyst sorts them from lowest to highest and categorizes them into 4 different groups based on the size of the annual return: The 75th percentile return for all 16 stocks in the portfolio is closest to:",
+  "option_a": "11.90%",
+  "option_b": "12.05%",
+  "option_c": "12.20%",
+  "correct_answer": "B",
+  "explanation_en": "Each quartile represents 25% of the annual returns, with the lowest set of returns in the 1st quartile (Group 1) and the highest set in the 4th\nquartile (Group 4). The location of the 75th percentile is where Group 3 ends. The 75th percentile location's value separates the bottom 75% of\nall returns from the top 25% of all returns. To determine the location (L) of the 75th percentile, use the location of the percentile formula:\nThe 12.75 result shows that the value of the 75th percentile is located between the 12th and the 13th annual returns. The values of the 12th and\n13th locations are 11.6% and 12.2%, respectively. To find the value of the location:\nCalculate, interpret, and evaluate measures of central tendency and location to address an investment problem"
+ },
+ {
+  "id": "a6559306-ce94-42bf-9943-7d76bfc593e7",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\1. Quantitative Methods\\1.03 Statistical Measures of Asset Returns - Answers.pdf",
+  "page_idx": 36,
+  "png": "scripts\\_uworld_residuals_png\\a6559306-ce94-42bf-9943-7d76bfc593e7.png",
+  "topic": "Quantitative Methods",
+  "subtopic": "1.03 Statistical Measures of Asset Returns",
+  "question_en": "A set of stocks in a portfolio had the following returns last year: A manager wants to adjust the portfolio's strategy and review the stocks in the second quartile of returns. Which stock would be among those that the manager will most likely review?",
+  "option_a": "Stock 1",
+  "option_b": "Stock 4",
+  "option_c": "Stock 7",
+  "correct_answer": "A",
+  "explanation_en": "List the stock returns in ascending order:\nDeciles, quintiles, quartiles, and percentiles are all types of quantiles, which are measures of location for data sets. They provide the position\nthat a certain percentage of the data is at or below.\nQuartiles split data sets into fourths. For instance, Quartile 1 marks the point that 25% of the data is at or below. Quartile 3 marks the point that\n75% of the data is at or below.\nQuartiles are often used to group data points into segments. The second quartile would be stock returns from 25% to 50% (ie, the stock returns\nbetween Quartile 1 and Quartile 2).\nTo find measures of location, returns must be placed in ascending order. After the location is calculated, the value can be determined by counting\nfrom the smallest data point. Measures of location can be calculated with the following equation:\nThe portfolio has 10 stocks, so the locations of Quartile 1 and Quartile 2 are:\nThe manager will review the stocks between locations 2.75 and 5.5, which are the 3rd, 4th, and 5th lowest stock returns. Stock 6, Stock 1, and\nStock 9 are located within Quartile 2.\n(Choice B) Stock 4 is the 6th stock when returns are ranked in ascending order. The return is placed in the 3rd quartile, which is not in the set of\nstocks that the manager plans to review.\n(Choice C) Stock 7 is the 2nd stock when returns are ranked in ascending order. The return is placed in the 1st or bottom quartile, which is not in\nthe set of stocks that the manager plans to review."
+ },
+ {
+  "id": "c862f1b2-714a-46cd-8c43-d2b33283582c",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\7. Fixed Income\\7.17 Fixed-Income Securitization - Answers.pdf",
+  "page_idx": 5,
+  "png": "scripts\\_uworld_residuals_png\\c862f1b2-714a-46cd-8c43-d2b33283582c.png",
+  "topic": "Fixed Income",
+  "subtopic": "7.17 Fixed-Income Securitization",
+  "question_en": "In the context of securitization, describing a special-purpose entity (SPE) as \"bankruptcy remote\" most likely refers to the:",
+  "option_a": "probability that the SPE declares bankruptcy.",
+  "option_b": "protection of the collateral from creditors' claims against the asset seller if the seller declares bankruptcy.",
+  "option_c": "responsibility of the SPE for principal and interest of a securitized loan if the borrower",
+  "correct_answer": "B",
+  "explanation_en": "Securitization refers to the process of bundling (ie, pooling) cash-generating loans, such as mortgages or credit card receivables. The original lenders sell the assets to an entity that issues bonds secured by the assets, which are broadly referred to as asset-backed securities. The cash flows from these assets are used to pay the bonds' interest and principal. Although securitization offers many benefits, it can also present increased risks. A lender that plans to sell a 30-year home mortgage immediately after originating it, rather than keeping the loan until it matures, has less incentive to conduct proper due diligence concerning the borrower's credit quality or the collateral securing the loan. This can lead to later defaults, as in the financial crisis of 2006-2008. (Choices A and C) Traditionally, lenders kept loans on their balance sheets until they matured; therefore, they were not liquid. However, bonds that are secured by bundled assets can be traded in the secondary market; therefore, they are liquid. This liquidity is a benefit of securitization. In addition, securitization provides lenders with another source of capital aside from borrowing or selling equity."
+ },
+ {
+  "id": "8beace9e-0fbe-4c75-85f4-673b384c9c5c",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\7. Fixed Income\\7.07 Yield and Yield Spread Measures for Fixed-Rate Bonds - Answers.pdf",
+  "page_idx": 3,
+  "png": "scripts\\_uworld_residuals_png\\8beace9e-0fbe-4c75-85f4-673b384c9c5c.png",
+  "topic": "Fixed Income",
+  "subtopic": "7.07 Yield and Yield Spread Measures for Fixed-Rate Bonds",
+  "question_en": "Information on the yield spreads for three nonconvertible bonds, expressed in basis points, is as follows: Based on this data, the most appropriate conclusion is that:",
+  "option_a": "Bond 1 and Bond 3 are putable.",
+  "option_b": "Bond 2 is putable and Bond 3 is callable.",
+  "option_c": "Bond 1 is putable and Bond 2 is callable.",
+  "correct_answer": "B",
+  "explanation_en": "Relationship between Z-spread, OAS, and embedded options\nOAS = Z-spread − Option value\nOAS < Z-spread: Callable bond\nOAS > Z-spread: Putable bond\nWhen the cash flows of a nongovernment bond are discounted using a government bond spot rate curve, the theoretical price is usually higher\nthan the market price. This is due to the spot rates not accounting for the risks of the nongovernment bond (eg, credit risk, liquidity). The Z-\nspread, or zero-volatility spread, is a constant percentage that is added to each spot rate; the combined rate is then used as the discount rate for\neach maturity. This adjustment to each discount rate makes the theoretical price equal to the market price.\nFor callable and putable bonds, the Z-spread includes the value of the embedded option. Subtracting this option value from the Z-spread results\nin a spread that accounts for risks other than the option; this spread is called the option-adjusted spread (OAS).\nAn embedded option affects the yield that an investor receives from owning a bond. A callable bond is disadvantageous to the investor since\nthe issuer can terminate the cash flows before maturity. This means that a portion of the additional yield incorporates the option value.\nSubtracting that option value compensates for the other risks mentioned above. A put option benefits the investor, so the OAS of the bond will be\ngreater than its Z-spread.\nThe type of each bond in this scenario is shown below:\nZero-volatility spread Option-adjusted spread OAS vs. Z-spread Type of bond\nBond 1 145 130 OAS < Z-spread Callable\nBond 2 100 120 OAS > Z-spread Putable\nBond 3 125 115 OAS < Z-spread Callable\n(Choice A) The OAS for both Bond 1 and Bond 3 is less than their respective Z-spreads, so these bonds are callable.\n(Choice C) Bond 2 is putable, not callable, since its OAS is greater than its Z-spread."
+ },
+ {
+  "id": "ed8728d9-d02d-428c-95d0-7c4da42b3c6d",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\7. Fixed Income\\7.07 Yield and Yield Spread Measures for Fixed-Rate Bonds - Answers.pdf",
+  "page_idx": 17,
+  "png": "scripts\\_uworld_residuals_png\\ed8728d9-d02d-428c-95d0-7c4da42b3c6d.png",
+  "topic": "Fixed Income",
+  "subtopic": "7.07 Yield and Yield Spread Measures for Fixed-Rate Bonds",
+  "question_en": "A government spot-rate curve is shown below: If a 3-year, 5% annual-pay nongovernment bond has a zero-volatility spread of 55 basis points and a par value of 100, the highest arbitrage-free price that an investor should be willing to pay for the bond (per 100 par value) is closest to:",
+  "option_a": "95.90",
+  "option_b": "96.07",
+  "option_c": "97.50",
+  "correct_answer": "B",
+  "explanation_en": "HP 12c TI BA II Plus\nA bond's no-arbitrage (ie, arbitrage-free) value is calculated by discounting each cash flow by the spot rate corresponding to when that cash\nflow occurs. Since spot rates are derived from a yield curve for government bonds, which are default-free, the rates do not reflect a\nnongovernment bond's credit risk. Therefore, the no-arbitrage value is, in general, higher than the bond's market price.\nTo equate a bond's arbitrage-free price with its market price, an identical extra yield called the zero-volatility spread (ie, Z-spread) is added to each\nspot rate. The Z-spread reflects the additional compensation needed for the risks of investing in a nongovernment bond. This means that the\nappropriate discount rate for each cash flow is the applicable spot rate plus the Z-spread, as shown below:\n(Choice A) 95.90 results from discounting each cash flow by 0.0655, which is the sum of the 3-year spot rate and the 55-basis-point Z-spread.\n(Choice C) 97.50 results from discounting each cash flow at its applicable spot rate but neglecting to add the Z-spread to each rate."
+ },
+ {
+  "id": "ef6d6cf6-d678-4c62-8de8-f793dcbd5920",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\7. Fixed Income\\7.07 Yield and Yield Spread Measures for Fixed-Rate Bonds - Answers.pdf",
+  "page_idx": 12,
+  "png": "scripts\\_uworld_residuals_png\\ef6d6cf6-d678-4c62-8de8-f793dcbd5920.png",
+  "topic": "Fixed Income",
+  "subtopic": "7.07 Yield and Yield Spread Measures for Fixed-Rate Bonds",
+  "question_en": "An analyst gathers the following data for two bonds:\n\n| | Coupon Rate | Price (per 100 Par Value) | Periodicity | Maturity |\n|---|---|---|---|---|\n| Bond X | 5.2% | 97 | Semiannual (2) | 4 years |\n| Bond Y | 5.4% | 95 | Quarterly (4) | 4 years |\n\nBased on a periodicity of 2, the difference between the YTM values of the two bonds is closest to:",
+  "option_a": "78 bps",
+  "option_b": "84 bps",
+  "option_c": "132 bps",
+  "correct_answer": "B",
+  "explanation_en": "A bond's YTM can be stated as the product of the periodic rate (ie, rate per compounding period) and the periodicity (ie, assumed number of payment periods each year). In this scenario, Bond X has a periodicity of 2 (due to semiannual payments) and Bond Y has a periodicity of 4 (due to quarterly payments). To draw an appropriate YTM comparison, the analyst needs to convert Bond Y's YTM using an assumed periodicity of 2, instead of 4.\n\nStep 1 - Calculate the YTM of both bonds based on the number of actual payment periods per year:\nBond X: 97 = 2.6/(1+r)^1 + 2.6/(1+r)^2 + ... + (2.6 + 100)/(1+r)^8, so r = 0.0303 and YTM2 = 0.0303 x 2 = 0.0606\nBond Y: 95 = 1.35/(1+r)^1 + 1.35/(1+r)^2 + ... + (1.35 + 100)/(1+r)^16, so r = 0.0171 and YTM4 = 0.0171 x 4 = 0.0684\n\nStep 2 - Convert Bond Y's YTM using a periodicity of 2:\n(1 + YTM4/4)^4 = (1 + YTM2/2)^2\n(1 + 0.0684/4)^4 = (1 + YTM2/2)^2\n1.0702 = (1 + YTM2/2)^2\n(1.0702^(1/2) - 1) x 2 = YTM2 = 0.0690\n\nStep 3 - Calculate the absolute difference of the two YTM values:\n0.0690 - 0.0606 = 0.0084, or 84 bps\n\nNote that only the final answer is rounded when using a calculator.\n\n(Choice A) 78 bps results from not converting Bond Y's YTM using a periodicity of 2.\n\n(Choice C) 132 bps is the absolute difference between the periodic rates (r) of the two bonds without adjusting for the different periodicity.\n\nThings to remember:\nA bond's YTM can be stated as the product of the periodic rate (ie, rate per compounding period) and the periodicity (ie, assumed number of payment periods each year). When comparing YTM values with different periodicities, adjust the YTM to reflect the same periodicity."
+ },
+ {
+  "id": "770170b4-ce40-486c-8ae2-a0ad70aefeaa",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\7. Fixed Income\\7.07 Yield and Yield Spread Measures for Fixed-Rate Bonds - Answers.pdf",
+  "page_idx": 14,
+  "png": "scripts\\_uworld_residuals_png\\770170b4-ce40-486c-8ae2-a0ad70aefeaa.png",
+  "topic": "Fixed Income",
+  "subtopic": "7.07 Yield and Yield Spread Measures for Fixed-Rate Bonds",
+  "question_en": "An analyst has compiled the following data to analyze a bond:\n\n| Selected Benchmark Data (%) | |\n|---|---|\n| 5-year government bond yield | 2.10 |\n| 5-year interbank lending rate | 4.83 |\n\nIf the bond is five years from maturity, trades at 78.3, and has a 6% annual coupon, paid semiannually, the I-spread for the bond is closest to:",
+  "option_a": "1.11%",
+  "option_b": "7.05%",
+  "option_c": "9.78%",
+  "correct_answer": "B",
+  "explanation_en": "HP 12c TI BA II Plus\nThe I-spread is the difference between the yield-to-maturity (YTM) of a given bond and the interbank lending benchmark rate with the same\ntime-to-maturity. A benchmark rate is a broad market measure that reflects macroeconomic risk factors. The I-spread over different times-to-\nmaturity indicates the term structure of spreads since the spreads differ across times-to-maturity.\nTo determine the I-spread of a bond, the YTM of the bond should be calculated first. In this scenario:\nThe periodicity (m) of the bond is 2 since the coupons are semiannual.\nThe number of periods is therefore 10 = (m × n = 2 × 5).\nThe periodic coupon payment is 3 = [(0.06 ÷ 2) × 100] since the bond's annual coupon is 6%, paid semiannually.\nThe present value is the price of the bond, 78.3.\nThe periodic discount rate is determined, using a financial calculator, according to the following formula:\nThe periodicity of the bond is 2, so multiplying the periodic discount rate (r) by 2 will determine the annual YTM: YTM = r × m = 5.94 × 2 = 11.88%.\nThe I-spread is the difference between the YTM of the bond and the interbank lending benchmark rate with the same time-to-maturity, 4.83%.\nTherefore, the I-spread is 11.88 − 4.83 = 7.05%\nCompare calculate and interpret yield and yield spread measures for fixed rate bonds"
+ },
+ {
+  "id": "8c26359a-a457-4a54-ba80-6833f41c67f8",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\7. Fixed Income\\7.07 Yield and Yield Spread Measures for Fixed-Rate Bonds - Answers.pdf",
+  "page_idx": 4,
+  "png": "scripts\\_uworld_residuals_png\\8c26359a-a457-4a54-ba80-6833f41c67f8.png",
+  "topic": "Fixed Income",
+  "subtopic": "7.07 Yield and Yield Spread Measures for Fixed-Rate Bonds",
+  "question_en": "An analyst gathers the following information:\n\n| | Coupon Rate | Price (per 100 Par Value) |\n|---|---|---|\n| Two-year government benchmark bond | 4.25% | 98.50 |\n| Two-year corporate bond | 6.00% | 99.75 |\n\nBoth bonds pay coupon interest semiannually. The one-year and two-year spot rates are 3.50% and 5.09%, respectively. All rates are stated on a semiannual basis. The G-spread, measured in basis points (bps), between the two-year corporate bond and the two-year government bond is closest to:",
+  "option_a": "107.9 bps.",
+  "option_b": "108.7 bps.",
+  "option_c": "159.0 bps.",
+  "correct_answer": "B",
+  "explanation_en": "HP 12c TI BA II Plus\nA bond's yield quantifies and describes its return. A common yield measure is the YTM, which represents a single rate used to discount all a\nbond's cash flows. The YTM for a government bond is often considered the risk-free rate since government bonds are perceived as having no\ndefault risk. Most yield curves show the YTM for government bonds of different maturities.\nWhen determining the appropriate YTM for a risky (ie, nongovernment) bond of a given maturity, the convention is to add an additional\npercentage, known as the G-spread, to the government bond's YTM for that maturity. The G-spread is typically referred to in terms of basis\npoints (bps), so a spread of 150 bps means that the difference in YTM is 1.5%.\nIn this question, the YTM is not given for either bond but can be derived from the information provided using a financial calculator. Stated on a\nsemiannual basis, the government bond's YTM is 5.048%, while the corporate bond's YTM is 6.135%. The G-spread is 0.06135 − 0.05048 ="
+ },
+ {
+  "id": "0b03c2f3-c8f7-4602-b9f6-e8e9a82b37e1",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\1. Quantitative Methods\\1.05 Portfolio Mathematics - Answers.pdf",
+  "page_idx": 0,
+  "png": "scripts\\_uworld_residuals_png\\0b03c2f3-c8f7-4602-b9f6-e8e9a82b37e1.png",
+  "topic": "Quantitative Methods",
+  "subtopic": "1.05 Portfolio Mathematics",
+  "question_en": "An analyst estimates the following joint probability function of returns for two assets, X and Y, under three scenarios: Based only on this information, the covariance of returns of the two assets is closest to:",
+  "option_a": "−1.63",
+  "option_b": "0.39",
+  "option_c": "6.53",
+  "correct_answer": "B",
+  "explanation_en": "The covariance of two random variables can be calculated based on their joint probability function. First calculate the expected return on each asset: ER = 12(0.28) + 9(0.51) + 7(0.21) = 9.42 X ER = 7(0.28) + 17(0.51) + 2(0.21= 11.05 Y Substitute into the formula for covariance: Cov(R , R ) = (0.28)(12 − 9.42)(7 − 11.05) X Y + (0.51)(9 − 9.42)(17 − 11.05) + (0.21)(7 − 9.42)(2 − 11.05) Cov(R , R ) ≈ 0.39 X Y"
+ },
+ {
+  "id": "ba4ddd86-2879-4ceb-86e9-510c17156670",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\1. Quantitative Methods\\1.05 Portfolio Mathematics - Answers.pdf",
+  "page_idx": 6,
+  "png": "scripts\\_uworld_residuals_png\\ba4ddd86-2879-4ceb-86e9-510c17156670.png",
+  "topic": "Quantitative Methods",
+  "subtopic": "1.05 Portfolio Mathematics",
+  "question_en": "A portfolio comprises three equally weighted assets. The covariance matrix for the three assets' returns is shown below: All else equal, if the covariance between Asset A and Asset C increases to 150 and the covariance between Asset B and Asset C is simultaneously halved, the overall portfolio variance will be closest to:",
+  "option_a": "117",
+  "option_b": "124",
+  "option_c": "196",
+  "correct_answer": "A",
+  "explanation_en": "Covariance measures how two variables (eg, asset returns) move in relation to each other. For portfolios with multiple assets, each possible asset\npairing has its own covariance. The different pairings can be illustrated using a covariance matrix, which shows the covariance between specific\nasset pairs. For example, in this scenario:\nThe covariance between the Asset A and Asset C returns equals 125. In the equation, this covariance would be expressed as Cov(R ,R ) =\nA C"
+ },
+ {
+  "id": "b63b2a23-f477-47e2-8efd-3b5c07e552c9",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\1. Quantitative Methods\\1.07 Estimation and Inference - Answers.pdf",
+  "page_idx": 2,
+  "png": "scripts\\_uworld_residuals_png\\b63b2a23-f477-47e2-8efd-3b5c07e552c9.png",
+  "topic": "Quantitative Methods",
+  "subtopic": "1.07 Estimation and Inference",
+  "question_en": "A sample is drawn from a population. Which of the following best describes all the requirement(s) for the sample mean to be an accurate estimate of the population mean?",
+  "option_a": "The sample size is a least 30.",
+  "option_b": "The sample size is a least 30 and the population has a finite variance.",
+  "option_c": "The sample size is at least 30 and the population has a finite variance and is normally",
+  "correct_answer": "B",
+  "explanation_en": "Analysts using statistical tests need to understand whether sample statistics accurately estimate population parameters. The implication of the Central Limit Theorem is that regardless of the distribution of a population, as long as the sample size is sufficiently large (≥ 30) and the population variance is finite, the sample mean is an accurate estimate of the population mean (Choices A and C)."
+ },
+ {
+  "id": "7f937aa6-90ae-4ca5-93ea-b1065b44b53d",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\1. Quantitative Methods\\1.08 Hypothesis Testing - Answers.pdf",
+  "page_idx": 0,
+  "png": "scripts\\_uworld_residuals_png\\7f937aa6-90ae-4ca5-93ea-b1065b44b53d.png",
+  "topic": "Quantitative Methods",
+  "subtopic": "1.08 Hypothesis Testing",
+  "question_en": "An automotive industry analyst uses a linear regression to test the relationship between gas prices (in USD/gallon) and vehicle sales (in millions of units). Selected data is presented below: If critical t-values are 2.10 at a 5% significance level, then based only on this data, the analyst's most appropriate conclusion is that:",
+  "option_a": "average monthly vehicle sales are 2.060 million.",
+  "option_b": "changes in gas prices explain changes in vehicle sales.",
+  "option_c": "the slope of the linear regression line is not significantly different from zero.",
+  "correct_answer": "B",
+  "explanation_en": "Hypothesis testing is used to test the statistical significance of a linear regression by testing whether results are random. The t-statistic (t) is used to test whether the slope coefficient estimated by a regression (b ) differs from a hypothesized (tested) value (B ). This is achieved by 1 1 comparing B with the appropriate critical t-value, which is based on the desired level of significance and degrees of freedom. 1 This scenario is a two-tailed test since it tests whether b ≠ B , with no direction specified (ie, tests if b < B and if b > B ). If the t-statistic is 1 1 1 1 1 1 beyond the critical t-value area (ie, t < −2.10 or t > +2.10), then reject the null hypothesis, H , which is b = 0 since it tests if the population slope ≠ 0 1 0: Construct hypothesis tests and determine their statistical significance, the associated Type I and Type II errors, and power of the test given a significance level"
+ },
+ {
+  "id": "fe3a320c-078e-4654-afb8-500d158330a6",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\1. Quantitative Methods\\1.08 Hypothesis Testing - Answers.pdf",
+  "page_idx": 4,
+  "png": "scripts\\_uworld_residuals_png\\fe3a320c-078e-4654-afb8-500d158330a6.png",
+  "topic": "Quantitative Methods",
+  "subtopic": "1.08 Hypothesis Testing",
+  "question_en": "An analyst performs hypothesis testing on a normal distribution. If the distribution's p-value is 0.01, most likely:",
+  "option_a": "there is a 1% probability of a Type II error.",
+  "option_b": "the null hypothesis can be rejected at the 95% confidence level.",
+  "option_c": "for a two-tailed test, the null rejection point is approximately 2.33 standard deviations from",
+  "correct_answer": "B",
+  "explanation_en": "A point estimate is a specific estimated value for a population parameter. For example, a broker may estimate that the average client account size at the firm is €50,000. Point estimates can be imprecise, so confidence intervals present an alternative way to express parameter estimates. A confidence interval establishes the range of possible values that may contain the actual population parameter at a certain probability (ie, degree of confidence) (Choice B). For example, a broker may estimate that the average client account size at the firm is between €40,000 and €60,000 with 90% certainty. The range of a confidence interval is calculated around the point estimate using standard deviation. (Choice C) Point estimates are more specific, not more accurate, than estimates derived from confidence intervals."
+ },
+ {
+  "id": "75601405-b052-4988-b1a8-c2ac23bbe840",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\1. Quantitative Methods\\1.08 Hypothesis Testing - Answers.pdf",
+  "page_idx": 16,
+  "png": "scripts\\_uworld_residuals_png\\75601405-b052-4988-b1a8-c2ac23bbe840.png",
+  "topic": "Quantitative Methods",
+  "subtopic": "1.08 Hypothesis Testing",
+  "question_en": "An analyst runs a linear regression between the prices of Stock A and Stock B, with 24 observations, resulting in the following coefficients table: The coefficient of determination (R2) of this regression is 0.425 and the critical t-value at a 5% significance level is ±2.074. The most appropriate conclusion about the correlation of the stocks is that there is:",
+  "option_a": "sufficient evidence that the stocks are positively correlated.",
+  "option_b": "sufficient evidence that the stocks are negatively correlated.",
+  "option_c": "not sufficient evidence that the stocks are positively or negatively correlated.",
+  "correct_answer": "B",
+  "explanation_en": "Hypothesis testing is used to test the statistical significance of the intercept and the slope of a simple linear regression (SLR). It also tests the\nsample correlation (r), which measures the direction and strength of the linear relationship between the independent (X) and dependent (Y)\nvariables, from −1 to 1. In an SLR:\nThe direction of r, indicated by its sign (ie, positive or negative), will always have the same sign as the slope coefficient, since both are\nratios with the same numerator (ie, covariance [X,Y]) and both have positive numbers as denominators.\nThe strength of r can be calculated from the coefficient of determination (R2), which is the square of r.\nIn this scenario, the slope is negative (−1.339), so r must be negative (Choice A). Therefore, since R2 = 0.425, r = −0.652. The next step is to\nuse the sample correlation to test the population correlation (ρ) using the t-statistic:\nThe null hypothesis is rejected since there is enough evidence that Stock A and Stock B are negatively correlated and that ρ is different from\nzero (Choice C).\nNote: The t-statistic for the correlation is always equal to the t-statistic that tests the significance of the slope (ie, (−1.339 − 0) / 0.332 = −4.033).\nConstruct hypothesis tests and determine their statistical significance, the associated Type I and Type II errors, and power of the test given a\nsignificance level"
+ },
+ {
+  "id": "7493df08-6192-4127-88ee-35b6dcd8daf4",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\1. Quantitative Methods\\1.08 Hypothesis Testing - Answers.pdf",
+  "page_idx": 19,
+  "png": "scripts\\_uworld_residuals_png\\7493df08-6192-4127-88ee-35b6dcd8daf4.png",
+  "topic": "Quantitative Methods",
+  "subtopic": "1.08 Hypothesis Testing",
+  "question_en": "An analyst wants to measure a mutual fund's performance and volatility against a benchmark and runs a regression where the benchmark is the single independent variable. Selected data for the regression, based on 12 observations, is: The analyst tests whether the intercept is greater than 0.10 and whether the slope is greater than 1.00. If the critical t-values, with 5% significance, are 2.228 (two-sided) and 1.812 (one-sided), the data most likely supports the hypothesis(es) that:",
+  "option_a": "the intercept is greater than 0.10, and the slope is greater than 1.00.",
+  "option_b": "the intercept is greater than 0.10, but the slope is not greater than 1.00.",
+  "option_c": "the intercept is not greater than 0.10, but the slope is greater than 1.00.",
+  "correct_answer": "C",
+  "explanation_en": "Hypothesis testing is used to evaluate the statistical significance of a linear regression by testing the regression coefficients. The t-statistic is\nused to test whether the population intercept (b ) and slope (b ) differ from hypothesized values (ie, if b ≠ B, b > B, or b < B). The test compares\n0 1 i i i i i i\nthe calculated t-statistic with the appropriate critical t-value, which is based on the desired level of significance and degrees of freedom.\nˆ\n(b )\nt-statistics are calculated as the ratio of difference between the estimated coefficient i and its hypothesized value (B i ) to its standard error\n(s )\nˆ . The calculation is presented below:\nbi"
+ },
+ {
+  "id": "6900a669-8313-4fa0-bbcf-6327ecd02bd3",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\1. Quantitative Methods\\1.08 Hypothesis Testing - Answers.pdf",
+  "page_idx": 22,
+  "png": "scripts\\_uworld_residuals_png\\6900a669-8313-4fa0-bbcf-6327ecd02bd3.png",
+  "topic": "Quantitative Methods",
+  "subtopic": "1.08 Hypothesis Testing",
+  "question_en": "An analyst has created a regression to verify whether the return on a company's stock is related to its reported free cash flow (FCF) over the prior 30 quarters. Information from the regression is: The analyst tests the FCF slope coefficient at a 5% level of significance (α). If the critical t-values at the 5% level of significance are\n\n- 1.701 for a one-tailed test and\n- 2.048 for a two-tailed test,\n\nthen the most appropriate null hypothesis and conclusion regarding the FCF slope coefficient is:",
+  "option_a": "H : FCF ≠ 0; reject the null hypothesis. 0",
+  "option_b": "H : FCF = 0; reject the null hypothesis. 0",
+  "option_c": "H : FCF = 0; cannot reject the null hypothesis.",
+  "correct_answer": "C",
+  "explanation_en": "Hypothesis testing is used to assess whether a regression coefficient explains the relationship between independent and dependent variables,\ngiven a certain level of significance. In this scenario, the analyst assumes the relationship between the independent and dependent variables is\nstatistically significant, which would suggest a slope coefficient not equal to zero. Therefore, the null hypothesis (H ) is that the slope coefficient is\n0\nzero, and the alternative hypothesis (H ) is that the coefficient does not equal zero (Choice A).\na\nIn this case, H is tested by comparing the t-statistic for the coefficient with a critical t-value (t ), which is the cutoff between rejecting or failing to\n0 c\nreject H . If H is rejected, then\n0 0\nH is accepted,\na\nthe coefficient is statistically significant (ie, is not equal to 0), and\nthe linear regression explains the relationship between the variables."
+ },
+ {
+  "id": "4458d688-7e52-412b-80a9-94cc891f5f57",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\1. Quantitative Methods\\1.10 Simple Linear Regression - Answers.pdf",
+  "page_idx": 1,
+  "png": "scripts\\_uworld_residuals_png\\4458d688-7e52-412b-80a9-94cc891f5f57.png",
+  "topic": "Quantitative Methods",
+  "subtopic": "1.10 Simple Linear Regression",
+  "question_en": "An economist runs the following regression models between two macroeconomic datasets with variable transformations: Based only on this data, which of the following functional forms is the most appropriate fit for the sample data?",
+  "option_a": "Lin-log",
+  "option_b": "Log-lin",
+  "option_c": "Log-log",
+  "correct_answer": "B",
+  "explanation_en": "Linearity is one of the four key assumptions of a simple linear regression. However, even if data sets do not have a linear relationship, a simple linear regression can be used by transforming one or both variables by using, for example, the square, the reciprocal, or the log of the variable. This results in distinct functional forms, allowing the regression to better fit a curvature. These transformed models have linear parameters (ie, the intercept b and the slope b ), although the variables are not linear. 0 1 In this scenario: M1 is a log-lin model, with a logarithmic dependent variable (lnY) and a linear independent variable (X), and M2 is a log-log model, with both variables in their logarithmic forms. The study show that M1 has the largest coefficient of determination and F-statistic, and the smallest standard error of the estimate. Therefore, the log-lin model displays the best fit for the data (Choice C). It is important to remember that regression statistics can be compared for regressions only when each regression's dependent variable has the same form. For instance, linear and lin-log models can be compared since the dependent variable for each is linear, but a lin-log model cannot be directly compared with a log-log model. In this question, M1 and M2 can be compared since both use lnY as the dependent variable. (Choice A) Neither regression is in the lin-log functional form, which has a linear dependent variable (Y) and a logarithmic independent variable (lnX)."
+ },
+ {
+  "id": "bd9cf0d5-eda6-4524-ae97-ab5c46383247",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\1. Quantitative Methods\\1.10 Simple Linear Regression - Answers.pdf",
+  "page_idx": 3,
+  "png": "scripts\\_uworld_residuals_png\\bd9cf0d5-eda6-4524-ae97-ab5c46383247.png",
+  "topic": "Quantitative Methods",
+  "subtopic": "1.10 Simple Linear Regression",
+  "question_en": "A linear regression analysis generates the following ANOVA (analysis of variance) table: Based on this data, the standard error of the estimate (s ) is closest to:",
+  "option_a": "0.241",
+  "option_b": "0.323",
+  "option_c": "0.677",
+  "correct_answer": "A",
+  "explanation_en": "Linearity is one of the four key assumptions of a simple linear regression. However, even if data sets do not have a linear relationship, it is possible to transform one or both variables by using the square, the reciprocal, or the log and then employing a linear regression with the transformed variable(s). A common solution to nonlinearity is to use a log transformation. This results in distinct functional forms, allowing the regression line to better fit a curvature. In the graphs, it is evident that the linear functional form does not depict a linear relationship but the log-lin functional form provides a much better fit, resulting in a stronger regression model. Although the graphs indicate this improvement, the statistics of both regression models cannot be compared directly since they use different forms of the dependent variable. (Choice B) An indicator variable (ie, dummy variable) is used in specific situations (eg, when there is seasonal data indicating autocorrelation) but not as a solution to nonlinearity. (Choice C) Increasing the sample size reduces a regression's uncertainty but does not resolve the nonlinear relationship between variables."
+ }
+]

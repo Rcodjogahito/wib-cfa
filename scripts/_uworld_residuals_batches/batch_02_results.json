@@ -1,0 +1,223 @@
+[
+  {
+    "id": "40d8bb9b-da54-4f24-a626-129d23efa3e6",
+    "verdict": "formatting_missing",
+    "field": "question_en",
+    "new_value": "An analyst has compiled the following information for a company's latest fiscal year:\n\n| | $ millions |\n|---|---|\n| Net income | 39.0 |\n| Depreciation | 15.0 |\n| Interest expense | 6.0 |\n| Tax expense | 13.0 |\n| Pretax income | 52.0 |\n\nIn the same period, the company also purchased machinery for $10 million. Cash from operations (CFO) for the period was $14.5 million. If the company reports under US GAAP, the free cash flow to the firm (FCFF) is closest to:",
+    "evidence": "Page 3 of PDF confirms question 4 with the data table; correct_answer B and explanation_en verified verbatim correct. Only the table was missing from question_en."
+  },
+  {
+    "id": "f3aebf7d-ea7e-479b-b186-ae777d673f69",
+    "verdict": "ok",
+    "evidence": "page_idx hint (5) pointed to an unrelated MXN/FCFE question. Searched PDF and found the actual match on page 7 (question 8, BRL/FCFF, options 540/550/560). DB question_en, correct_answer B, and explanation_en all match page 7 verbatim already; no fix needed."
+  },
+  {
+    "id": "e8c79ef2-c110-4c2d-8380-a5028ba8004a",
+    "verdict": "ok",
+    "evidence": "Page 8 (question 9, common-sized CFO statement) matches DB question_en (table included), correct_answer A, and explanation_en verbatim. No fix needed."
+  },
+  {
+    "id": "e0ca3a8a-ed50-47f0-a7ef-5d01a271f8bb",
+    "verdict": "ok",
+    "evidence": "Page 2 (question 3, SGD FCFF/FCFE) matches DB question_en (table included), correct_answer A, and explanation_en verbatim. No fix needed."
+  },
+  {
+    "id": "ed0f519b-4286-464d-a71b-1f700b68e3e4",
+    "verdict": "formatting_missing",
+    "field": "question_en",
+    "new_value": "An analyst gathers the following information related to the New Zealand dollar (NZD) and the Australian dollar (AUD):\n\n| Selected Exchange Rate Information | |\n|---|---|\n| Spot exchange rate (NZD/AUD) | 1.1800 |\n| Arbitrage-free one-year forward exchange rate (NZD/AUD) | 1.1974 |\n| Dealer offered one-year forward exchange rate (NZD/AUD) | 1.1700 |\n| New Zealand one-year interest rate | 3.0% |\n| Australian one-year interest rate | 1.5% |\n\nBased on this information, the maximum arbitrage profits (in AUD) are closest to:",
+    "evidence": "Page 0 of PDF; table was missing from question_en."
+  },
+  {
+    "id": "ed0f519b-4286-464d-a71b-1f700b68e3e4",
+    "verdict": "explanation_wrong",
+    "field": "explanation_en",
+    "new_value": "When the risk-free interest rates of two countries are different, the forward rates of their currencies must be priced to prevent arbitrage profit in an efficient market. The forward rate calculation is based on the spot rate, the interest rates, and the length of the forward period. In this scenario, since a dealer is offering a rate of 1.1700 NZD/AUD, which differs from the arbitrage-free rate, arbitrage profits are possible. According to the arbitrage-free rate, AUD 1.000 should purchase NZD 1.1974. However, using the dealer quote, AUD 1.000 only purchases NZD 1.1700. Therefore, in the market, the AUD is underpriced and the NZD is overpriced.\n\nArbitrage profits can be earned by committing today to sell (ie, deliver) the overpriced NZD and to buy (ie, take delivery of) the underpriced AUD through a forward exchange rate contract. One of the key elements of arbitrage is that investors do not risk their own funds, but instead borrow to initiate the transaction. In this scenario, the first step is to borrow AUD to obtain the NZD, which will be invested and eventually delivered under the forward contract. The complete steps to exploit this opportunity are as follows:\n\nToday:\n- Borrow AUD 1.00 at Australian interest rate of 1.5%\n- Exchange AUD 1.00 in spot market for NZD 1.18\n- Invest NZD 1.18 for one year at New Zealand rate of 3.0%\n- Sell a forward contract to deliver NZD 1.2154 for AUD 1.0388 one-year from today*\n\nOne year from today:\n- Redeem NZD 1.2154 investment (NZD 1.18 x 1.03)\n- Deliver NZD 1.2154 receive AUD 1.0388 under forward contract\n- Repay AUD 1.015 interest and principal (AUD 1.00 x 1.015)\n- Profit remaining equals AUD 0.0238 (AUD 1.0388 - 1.015)\n\n*NZD amount to deliver equals value of investment, (AUD 1.0388 = NZD 1.1800 / 1.1700 NZD/AUD)\n\n(Choice A) 0.0120 represents the difference between the arbitrage-free forward exchange rate and the market rate, or 1/1.1700 - 1/1.1974 (quotes are inverted to obtain the AUD result). (Choice C) 0.0276 represents the loss that would be incurred by entering into a forward contract to sell the AUD (ie, underpriced asset) and buy the NZD (ie, overpriced asset). This transaction is unlikely since it would lock in a loss.",
+    "evidence": "Page 1 of PDF (continuation) shows the 'Steps to exploit arbitrage opportunity' diagram entirely omitted from stored explanation_en between 'as follows:' and '(Choice A)'."
+  },
+  {
+    "id": "aa969336-bc87-4148-9f2f-75aed5c61759",
+    "verdict": "formatting_missing",
+    "field": "question_en",
+    "new_value": "A currency trader observes the following currency spot exchange rates from two dealers:\n\n| Source | Currency | Exchange Rate |\n|---|---|---|\n| Dealer 1 | CNY/THB | 0.22 |\n| Dealer 1 | INR/THB | 2.35 |\n| Dealer 2 | INR/CNY | 10.75 |\n\nBased on only this information, the arbitrage profit available per every CNY 1 is closest to:",
+    "evidence": "Page 4 of PDF; table was missing from question_en. correct_answer A and explanation_en (including its verbatim '(Choice C)' label quirk from the source PDF) verified correct - no change to explanation."
+  },
+  {
+    "id": "d19d52f7-251d-4816-8a0e-e1ba9090542e",
+    "verdict": "formatting_missing",
+    "field": "question_en",
+    "new_value": "An analyst obtains the following exchange rates among EUR, GBP, and CHF:\n\n| | |\n|---|---|\n| CHF/EUR | 1.1010 |\n| GBP/EUR | 0.8602 |\n| CHF/GBP | 1.2799 |\n\nIf CHF appreciates by 5% versus EUR and EUR appreciates by 2% versus GBP, the no-arbitrage CHF/GBP rate would be closest to:",
+    "evidence": "Page 13 of PDF; table was missing from question_en."
+  },
+  {
+    "id": "d19d52f7-251d-4816-8a0e-e1ba9090542e",
+    "verdict": "explanation_wrong",
+    "field": "explanation_en",
+    "new_value": "Among any three currencies (eg, EUR, CHF, and GBP), three exchange rates express the value between each possible pair (ie, CHF/EUR,\nGBP/EUR, and CHF/GBP). Given any two of the three exchange rates, the third is effectively fixed by arbitrage. This implied exchange rate is\nknown as a cross rate, which is obtained by multiplying the two given rates and factoring out the currency common to both quotes. In some\ncases, currency quotes need to be inverted to facilitate cancelling out the intermediary currency.\nIn this scenario, EUR has appreciated by 2% against GBP and CHF has appreciated by 5% against EUR.\n\nSince EUR has appreciated relative to the GBP and is the base currency in the given GBP/EUR exchange rate, that rate is multiplied by 1.02, indicating that 1 EUR now buys more GBP.\nSince CHF has appreciated relative to the EUR and is the price currency in the given CHF/EUR exchange rate, it is multiplied by (1/1.05), indicating that the EUR now buys fewer CHF.\n\nThe new CHF/GBP cross rate is:\nCHF/GBP = (1/1.05) x CHF/EUR x 1/(1.02 x GBP/EUR)\n= (1/1.05 x 1.1010) x (1/(1.02 x 0.8602))\n= 1.1951\n\n(Choice B) 1.2434 CHF/GBP results from dividing the original GBP/EUR exchange rate by 1.02, rather than multiplying to reflect EUR's appreciation against GBP.\n(Choice C) 1.3176 CHF/GBP results from multiplying the original CHF/EUR exchange rate by 1.05 rather than dividing to reflect the CHF's appreciation against the EUR.",
+    "evidence": "Page 13 explanation was truncated mid-sentence in DB ('...that rate is multiplied by'); page shows the full derivation, the cross-rate formula, and both wrong-choice explanations, all missing from the stored value."
+  },
+  {
+    "id": "57f9bfaf-fa14-4404-8ef9-db145a49a466",
+    "verdict": "formatting_missing",
+    "field": "question_en",
+    "new_value": "The current spot rate between the Russian ruble and Chinese yuan is 10.5000 RUB/CNY. The Russian annual interest rate is at 7.0% and the Chinese annual interest rate is at 4.0%. The following one-year forward exchange rate quotes are available from foreign exchange dealers:\n\n| Available dealer quotes (RUB/CNY) | |\n|---|---|\n| Dealer 1 | 10.8029 |\n| Dealer 2 | 10.9100 |\n\nAn arbitrage opportunity is most likely offered by:",
+    "evidence": "Page 20 of PDF; table was missing from question_en. correct_answer B and explanation_en verified correct and complete already - no change to explanation."
+  },
+  {
+    "id": "1e084771-193c-4d57-b2a2-6850f89e1672",
+    "verdict": "formatting_missing",
+    "field": "question_en",
+    "new_value": "A Singapore-based investor holds assets in New Zealand denominated in NZD. The investor forecasts the following changes over the next year:\n\n| | |\n|---|---|\n| SGD/NZD spot exchange rate | +6% |\n| SGD nominal inflation rate | +3% |\n| NZD nominal inflation rate | -2% |\n\nBased on this information, the expected change in the SGD/NZD real exchange rate is closest to:",
+    "evidence": "Page 7 of the Capital Flows PDF; stored table was a garbled/misordered pseudo-table (wrong row order, malformed markdown). Corrected to match the page's actual order: spot rate, SGD inflation, NZD inflation."
+  },
+  {
+    "id": "1e084771-193c-4d57-b2a2-6850f89e1672",
+    "verdict": "explanation_wrong",
+    "field": "explanation_en",
+    "new_value": "The purchasing power of one currency versus another is measured by the real exchange rate between the two. The real exchange rate is a function of both the quoted (ie, nominal) exchange rate between the currencies and the price level in each currency; changes in real exchange rates result from changes in one or more of those factors.\n\nConsidered from the perspective of the price currency versus the base currency, a change in the real exchange rate reflects the cumulative impact of changes to the: spot exchange rate, the net inflation rate in the base currency (ie, NZD), and the net inflation rate in the price currency (ie, SGD).\n\nThe more precise measure of changes in real exchange rates is calculated as 0.85% = 1%:\n[(1 + %DeltaS(SGD/NZD)) x (1 + %DeltaP(NZD))/(1 + %DeltaP(SGD)) - 1] = [(1.06) x (0.98/1.03) - 1] = 0.0085 = 0.01\n\nHowever, the change in the SGD/NZD real exchange rate change may also be estimated using a second formula. This formula estimates the net change in the real exchange rate as the expected change in the spot rate, adjusted for the difference between the expected change in the price currency's inflation and the expected change in the base currency's inflation; the three expected changes are expressed as percentage changes.\n%DeltaR(SGD/NZD) = %DeltaS(SGD/NZD) + %DeltaP(NZD) - %DeltaP(SGD) = +6% + (-2%) - (+3%) = 1%\n\n(Choice B) 5% results from incorrectly treating NZD deflation as reinforcing, not offsetting, the impact of the increase in the SGD/NZD spot exchange rate.\n(Choice C) 11% results from incorrectly treating both NZD deflation and SGD inflation as factors that reinforce the impact of the increase in the SGD/NZD spot exchange rate.",
+    "evidence": "Stored explanation had jumbled subscript ordering from PDF extraction (eg '0.85% 1%:' instead of '0.85% = 1%', formula symbols scattered out of order at the end of a sentence). Corrected to a coherent verbatim reading of page 7 content; no content added or removed beyond reordering symbols already present."
+  },
+  {
+    "id": "6c3d1452-5e72-416c-94b3-aa51602b5c6b",
+    "verdict": "formatting_missing",
+    "field": "question_en",
+    "new_value": "A manager, acting on a client's behalf, may choose from three investments:\n\n| | Expected Return | Expected Standard Deviation (sigma) |\n|---|---|---|\n| Fund 1 | 0.08 | 0.08 |\n| Fund 2 | 0.07 | 0.07 |\n| Fund 3 | 0.08 | 0.07 |\n\nWhich investment is most appropriate for a risk-averse client?",
+    "evidence": "Page 10 of Portfolio Risk and Return PDF (question 11); table was missing from question_en. correct_answer C and explanation_en verified correct and complete."
+  },
+  {
+    "id": "fa41d2f1-1f82-407c-9868-1caeadaac826",
+    "verdict": "stem_wrong",
+    "field": "question_en",
+    "new_value": "An analyst researches a portfolio that holds two securities, Stock A and Stock B, and collects the following data:\n\n| | Expected Standard Deviation (sigma) | Asset Weights |\n|---|---|---|\n| Stock A | 0.17 | 0.25 |\n| Stock B | 0.08 | 0.75 |\n\nThe analyst determines that the correlation coefficient (rho) between Stock A and Stock B is 0.65. The expected variance of the portfolio is closest to:",
+    "evidence": "Page 1 of PDF (question 2) shows only ONE simple table (Stock A/B, std dev 0.17/0.08, weights 0.25/0.75, correlation 0.65). The stored question_en instead contained three fabricated tables ('Table 1: Expected Return Based on Bank Action' with Investment A/B/C bank-action data, and a second 'Table 3' example with different Stock A/B figures 0.25/0.80 and 0.20/0.20) that do not appear anywhere on this page and belong to no other page in this PDF either - these were spurious content merged in during extraction. correct_answer A and explanation_en (which reference only the real 0.17/0.25/0.08/0.75/0.65 figures) are correct and match the page; only the stem's fabricated tables needed removal."
+  },
+  {
+    "id": "3250c706-feea-4fd2-a8ac-c467768b4f08",
+    "verdict": "formatting_missing",
+    "field": "question_en",
+    "new_value": "A manager prepares risk and return information for three different funds:\n\n| | Expected Return | Expected Standard Deviation (sigma) |\n|---|---|---|\n| Fund 1 | 0.15 | 0.17 |\n| Fund 2 | 0.20 | 0.20 |\n| Fund 3 | 0.25 | 0.23 |\n\nIf an investor's risk aversion is 8, then the fund with the highest utility for that investor is most likely?",
+    "evidence": "Page 19 of PDF (question 19); table was missing from question_en."
+  },
+  {
+    "id": "3250c706-feea-4fd2-a8ac-c467768b4f08",
+    "verdict": "explanation_wrong",
+    "field": "explanation_en",
+    "new_value": "Investor utility (Ui) measures an investor's degree of satisfaction with an investment. It is most useful in ranking one investor's choices\nregarding risk and return. An investor's utility is a function of the investment's expected return and risk and the investor's risk-aversion level. An\ninvestor uses utility to decide which investments are most preferred. All investors seek to maximize their utility.\nUse the information provided to determine the utility for each fund. The expected standard deviation squared is the fund's expected variance.\nAfter calculating the investor's utility for each fund, select the fund with the highest utility to determine a risk-averse investor's most preferred\ninvestment.\n\n| | Fund 1 | Fund 2 | Fund 3 |\n|---|---|---|---|\n| U = | 0.15 - (1/2)(8)(0.17^2) | 0.20 - (1/2)(8)(0.20^2) | 0.25 - (1/2)(8)(0.23^2) |\n| = | 0.15 - 4 x 0.0289 | 0.20 - 4 x 0.04 | 0.25 - 4 x 0.0529 |\n| = | 0.15 - 0.1156 | 0.20 - 0.16 | 0.25 - 0.2116 |\n| = | 0.0344 | 0.0400 | 0.0384 |\n\n(Choice B) Fund 1 has the lowest utility of all three choices. All investors seek to maximize, not minimize, their utility.\n(Choice C) A risk-seeking investor would choose Fund 3 over Fund 2 since it has greater risk despite having lower utility than Fund 2. Risk-\nseeking investors seek the highest risk regardless of returns.",
+    "evidence": "Stored explanation skipped the entire 'Investor utility' per-fund calculation table shown on page 19 (jumps directly from the setup sentence to '(Choice B)'). Note: the source PDF itself mislabels the Fund-1 discussion as '(Choice B)' - this is preserved verbatim per anti-fabrication rules, not corrected, since it is a genuine source quirk not a DB error."
+  },
+  {
+    "id": "0b53b8c2-3c74-4904-8615-205acbfd3f8c",
+    "verdict": "formatting_missing",
+    "field": "question_en",
+    "new_value": "A portfolio consists of two assets:\n\n| Asset | Expected standard deviation (%) | Asset weight (%) |\n|---|---|---|\n| A | 15 | 75 |\n| B | 8 | 25 |\n\nIf the expected standard deviation of the portfolio is 10%, then the two assets can be best described as having:",
+    "evidence": "Page 27 of PDF (question 27); table was missing from question_en."
+  },
+  {
+    "id": "0b53b8c2-3c74-4904-8615-205acbfd3f8c",
+    "verdict": "explanation_wrong",
+    "field": "explanation_en",
+    "new_value": "The correlation coefficient evaluates how two assets' returns move or are expected to move in relation to each other. It measures both the\ndegree and the direction of the relationship between the two assets. Positively correlated asset returns generally move in the same way,\nwhile negatively correlated asset returns tend to move in opposite directions. The closer the correlation coefficient is to -1 or 1, the stronger the\nnegative or positive relationship, respectively.\nThe correlation coefficient is used to calculate the expected standard deviation of portfolio returns. The degree and the direction of the variance\nbetween asset returns affects the portfolio's overall risk. If two assets are less than perfectly correlated, combining them would produce a portfolio\nwith a lower standard deviation than the weighted average of the assets' standard deviations. The closer the correlation coefficient is to -1, the\nlower the portfolio risk.\nThe relationship between a two-asset portfolio's standard deviation and the weights, standard deviations, and correlation of its component assets\nis shown below.\nIn this case, since all the other information is provided, the relationships above can be used to solve for the assets' correlation as follows:\n\n0.10 = sqrt((0.15^2)(0.75^2) + (0.08^2)(0.25^2) + 2(0.75)(0.25)(rho_ab)(0.15)(0.08))\n0.10 = sqrt(0.0127 + 0.0004 + 0.0045 x rho_ab)\n0.10^2 = 0.0127 + 0.0004 + 0.0045 x rho_ab\n0.01 = 0.0127 + 0.0004 + 0.0045 x rho_ab\n-0.0031 = 0.0045 x rho_ab\nrho_ab = -0.6792\n\nThe correlation coefficient of assets A and B is -0.6792, so they are negatively correlated (Choices A and B).",
+    "evidence": "Stored explanation skipped the entire numeric derivation of rho_ab (solving 0.10 = sqrt(...) down to -0.6792) shown on page 27, jumping directly from the setup sentence to the conclusion."
+  },
+  {
+    "id": "e740a903-70d8-467e-a3a6-b016bc4fe1ee",
+    "verdict": "formatting_missing",
+    "field": "question_en",
+    "new_value": "A manager constructs a new portfolio using a treasury bond and a stock. The manager obtains the following information:\n\n| | Expected Annual Return | Expected Variance |\n|---|---|---|\n| Treasury Bond | 0.04 | 0.01 |\n| Stock | 0.12 | 0.04 |\n\nThe expected correlation coefficient between the stock and treasury bond is 0.25. If the portfolio's expected return is 9%, its expected standard deviation will be closest to:",
+    "evidence": "Page 28 of PDF (question 28); table was missing from question_en."
+  },
+  {
+    "id": "e740a903-70d8-467e-a3a6-b016bc4fe1ee",
+    "verdict": "explanation_wrong",
+    "field": "explanation_en",
+    "new_value": "The portfolio standard deviation, sigma_p, is a measure of risk. For a standard deviation of a two-asset portfolio, the portfolio standard deviation is a\nfunction of the weight and risk of the portfolio's assets and the correlation between two assets. It expresses the degree of dispersion of how\nportfolio returns occur around its mean. The greater the dispersion, the higher the risk.\nThe data given in this question are all expected values; this does not change how the portfolio standard deviation is calculated. Both expected\nstandard deviation and standard deviation from historical data are calculated from the same equation.\nTo find portfolio standard deviation, input the weights, standard deviations, variances of the portfolio's assets, and the correlation coefficients\nbetween all pairs of assets. For this question, find the weights of treasury bond (T) and the stock (S) from the return requirement.\nIn a two-asset portfolio, restate the weight of one of the funds as the difference of the total portfolio minus the other fund's weight.\n\nwT rT + wS rS = Rp\n(1 - wS) rT + wS rS = Rp\n(1 - wS) 0.04 + wS 0.12 = 0.09\n0.04 - 0.04wS + 0.12wS = 0.09\n0.08wS = 0.05\nwS = 0.625\n\nOnce the weight of stock (wS) is found, solve for the weight of the treasury bond (wT):\nwT = 1 - wS\nwT = 1 - 0.625\nwT = 0.375\n\nFor the expected standard deviations of T (treasury bond) and S (stock), calculate the values by taking the square root of the variance.\nsigma_T^2 = 0.01, sigma_S^2 = 0.04\nsigma_T = sqrt(0.01), sigma_S = sqrt(0.04)\nsigma_T = 0.10, sigma_S = 0.20\n\nNow that all the components have been calculated, input all values into the standard deviation of the two-asset portfolio equation and solve:\nsigma_p = sqrt(wa^2 sigma_a^2 + wb^2 sigma_b^2 + 2 wa wb rho_ab sigma_a sigma_b)\nsigma_p = sqrt((0.375)^2(0.01) + (0.625)^2(0.04) + 2(0.375)(0.625)(0.25)(0.10)(0.20))\nsigma_p = sqrt(0.0014 + 0.0156 + 0.0023)\nsigma_p = sqrt(0.0193)\nsigma_p = 0.1389\n\n(Choice A) This choice misapplies the variance of the assets and then squares them as if the variance were the standard deviation. This understates portfolio risk.\n(Choice C) This option does not square the weights of the assets and therefore overstates portfolio risk.",
+    "evidence": "Stored explanation was truncated mid-derivation, ending at '...calculate the values by taking the square root of the variance.' Continuation was found on PDF page 29 (sigma_T/sigma_S values, final portfolio sigma_p = 0.1389, and both wrong-choice explanations), all missing from the stored value."
+  },
+  {
+    "id": "e526f2f8-c950-45d2-8a0d-f2c7944d4a00",
+    "verdict": "formatting_missing",
+    "field": "question_en",
+    "new_value": "Information concerning two assets that compose a portfolio is shown below:\n\n| | Weight | Standard deviation |\n|---|---|---|\n| A | 25% | 25% |\n| B | 75% | 35% |\n\nIf the portfolio's variance is 0.07, the covariance between the two assets is best described as:",
+    "evidence": "Page 15 of PDF (question 15); table was missing from question_en."
+  },
+  {
+    "id": "e526f2f8-c950-45d2-8a0d-f2c7944d4a00",
+    "verdict": "explanation_wrong",
+    "field": "explanation_en",
+    "new_value": "Covariance describes the linear relationship between returns of two assets relative to each other. If two assets' returns tend to move in the\nsame direction at the same time, the assets have positive covariance. If the returns tend to move in opposite directions, the assets have negative\ncovariance. Zero covariance means there is no linear relationship between the assets.\nCovariance is important in portfolio management since assets with negative covariance can be combined to create a lower-risk portfolio. In this\nquestion, each asset's weight and the portfolio's variance are given. Each asset's variance is the square of its standard deviation. Calculating\ncovariance is accomplished by rearranging the terms in the equation above:\n\n| Steps | Calculations |\n|---|---|\n| Insert variables into the two-asset variance equation | sigma_p^2 = wa^2 sigma_a^2 + wb^2 sigma_b^2 + 2 wa wb Cov_ab; 0.07 = (0.25)^2(0.25)^2 + (0.75)^2(0.35)^2 + (2 x 0.25 x 0.75 x Cov_ab) |\n| Rearrange to isolate and solve for covariance | (0.07 - 0.0039 - 0.0689) / 0.3750 = Cov_ab; Cov_ab = -0.0028 / 0.3750 = -0.0075 |\n\nIn this scenario, the covariance is negative since the sum of the product of each asset's squared weight and its variance is greater than the\nportfolio's variance (Choices B and C). However, covariance indicates only the direction of each asset relative to the other; it does not provide\nany information about the strength of the linear relationship. The correlation coefficient provides information about both the direction and strength\nof the linear relationship.",
+    "evidence": "Stored explanation skipped the 'Steps/Calculations' table on page 15 showing the numeric derivation of Cov_ab = -0.0075, jumping directly from the setup sentence to the conclusion."
+  },
+  {
+    "id": "8db6e2cb-171e-44d4-9617-c9bf2c5876fd",
+    "verdict": "ok",
+    "evidence": "Page 17 (question 17, equity correlation matrix) matches DB question_en (full 4x4 correlation matrix table included), correct_answer A, and explanation_en verbatim. A small redundant 'Correlations with US equity' sub-table on the page duplicates data already in the question_en table with no new information, so no fix needed."
+  },
+  {
+    "id": "4fff23d6-6ca0-4bae-bca0-84bc1f4d5fab",
+    "verdict": "formatting_missing",
+    "field": "question_en",
+    "new_value": "A government agency issues a one-year, 3% coupon bond at par on June 30, 20X0. The bond is callable in whole or in part at:\n\n| Call date | Price |\n|---|---|\n| September 30, 20X0 | 101.00 |\n| December 31, 20X0 | 100.50 |\n| March 31, 20X1 | 100.00 |\n\nThe call provision is best described as:",
+    "evidence": "Page 24 of Fixed Income PDF (question 25); table was missing from question_en. correct_answer A and explanation_en verified correct and complete already."
+  },
+  {
+    "id": "f400bdd2-5857-42f1-aefa-50c97e47e12e",
+    "verdict": "formatting_missing",
+    "field": "question_en",
+    "new_value": "A one-year bond is issued with the following characteristics:\n\n| Coupon Changes on Call Dates, Callable Quarterly | |\n|---|---|\n| Initial coupon | 1.00% |\n| Second coupon | 1.25% |\n| Third coupon | 1.50% |\n| Final coupon | 1.75% |\n\nThis coupon structure is best described as:",
+    "evidence": "Page 12 of PDF (question 13); table was missing from question_en."
+  },
+  {
+    "id": "f400bdd2-5857-42f1-aefa-50c97e47e12e",
+    "verdict": "explanation_wrong",
+    "field": "explanation_en",
+    "new_value": "A step-up coupon bond has a structure where the coupon increases by a predetermined amount on specific dates. These step-up dates usually\ncorrespond with call dates, allowing the issuer to call the bonds before the coupon increases. A step-up coupon structure offers investors some\nprotection against rising interest rates but also exposes them to call risk.\n(Choice B) Coupons on floating-rate bonds reset periodically, but the amount of change is not preset. Floating-rate coupons are specifically tied\nto an underlying reference rate (eg, LIBOR), with the coupon fixed at that variable rate plus a predetermined spread.\n(Choice C) Bermuda style refers to a type of call structure in which the issuer has the right to call the bonds on predetermined dates (eg,\nquarterly), often in conjunction with coupon payment dates. However, the coupon is not scheduled to increase on each call date.",
+    "evidence": "Stored explanation_en was entirely about tax treatment of bond interest/capital gains - content belonging to a different question altogether, unrelated to this step-up coupon question. Replaced with the correct verbatim explanation from page 12 (bond coupon structures table, step-up definition, and Choice B/C rationale). correct_answer A was already right."
+  },
+  {
+    "id": "5032c6a4-8d7e-4970-baef-6cc57045b53d",
+    "verdict": "option_bleed",
+    "field": "option_c",
+    "new_value": "issued by a British company, denominated in GBP, and sold in the UK, Japan, and South America.",
+    "evidence": "Page 15 of PDF (question 16); stored option_c was truncated mid-word ('...South'), missing 'America.' at the end."
+  },
+  {
+    "id": "5032c6a4-8d7e-4970-baef-6cc57045b53d",
+    "verdict": "explanation_wrong",
+    "field": "explanation_en",
+    "new_value": "Regulatory and legal considerations affect where a bond is issued and to whom it is sold. A domestic bond is issued by a company that is\nincorporated within the country of issuance, denominated in that country's currency, and sold to investors within that country. This classification\napplies even if the issuer is a subsidiary of a foreign company. An example is a US subsidiary of Toyota (a Japanese company) issuing USD\nbonds in the United States.\n(Choice A) A bond issued by a US company in Australia and denominated in EUR is considered a Eurobond.\n(Choice C) This is an example of a global bond, which is issued in the issuer's domestic country as well as in other countries.",
+    "evidence": "Stored explanation_en was about credit-linked/step-up bond coupons - content belonging to a different question, unrelated to this domestic-bond-classification question. Replaced with the correct verbatim explanation from page 15 (geographical bond classification, domestic bond definition, Choice A/C rationale). correct_answer B was already right."
+  },
+  {
+    "id": "f9b25bc2-60a7-41f3-9d90-355562118936",
+    "verdict": "formatting_missing",
+    "field": "question_en",
+    "new_value": "A company issues a callable 10-year corporate bond with the following characteristics:\n\n| | Corporate callable bond | Comparable government bond |\n|---|---|---|\n| Coupon (%) | 5.00 | 3.50 |\n| Current YTM (%) | 5.50 | 3.00 |\n\nThe bond has a make-whole provision with a 40-basis-point call spread. If this bond is called, the unpaid coupons and principal will be discounted at a rate closest to:",
+    "evidence": "Page 21 of PDF (question 22); table was missing from question_en."
+  },
+  {
+    "id": "f9b25bc2-60a7-41f3-9d90-355562118936",
+    "verdict": "explanation_wrong",
+    "field": "explanation_en",
+    "new_value": "A call provision gives the issuer the option to buy back a bond before maturity. A make-whole call provision requires the issuer to make a lump-\nsum payment to bondholders that includes compensation for forgone coupon and principal payments and, thus, to make the bondholders whole if\nthe bond is called.\nThe lump-sum payment is calculated as the present value of all remaining future coupon and principal payments, discounted at a rate equal to\nthe YTM of a predetermined comparable government bond plus a spread. The make-whole call can typically be exercised at any time and the\npayment can never be less than par. A call provision is seldom used since the cost to the issuer is usually substantial, but the provision is included\nin the bond indenture to \"sweeten\" the deal and lower the issuer's borrowing cost.\nIn this scenario, the bond was issued with a 40-basis-point call spread (ie, 0.40%), which is added to the current 3.00% YTM of the referenced\ngovernment bond. Therefore, the present value of the lump sum payment would be discounted at a rate of 3.40%.\n(Choice A) 2.90% results from inappropriately using the difference in yields (ie, yield spread) between the corporate bond and the government\nbond (2.50%) and adding the make-whole call spread of 40 basis points.\n(Choice C) 5.40% results from inappropriately using the corporate coupon rate of 5.00% and adding the make-whole call spread of 40 basis\npoints.",
+    "evidence": "Stored explanation_en was about the Eurobond market and emerging-market sovereign debt yields - content belonging to a different question, unrelated to this make-whole call provision question. Replaced with the correct verbatim explanation from page 21 (make-whole call provision mechanics, 3.40% derivation, Choice A/C rationale). correct_answer B was already right."
+  },
+  {
+    "id": "fbef96f0-6d54-40ba-ba56-201e9ea3a909",
+    "verdict": "ok",
+    "evidence": "page_idx hint (11) pointed to a different question (cash conversion cycle) also claimed by 9ac58218. Searched PDF and found the actual match on page 5 (question 6, DOH, CAD millions table, options 36.5/40.6/48.7). DB question_en (table included), correct_answer C, and explanation_en all match page 5 verbatim already; no fix needed."
+  },
+  {
+    "id": "9ac58218-81b7-4868-b330-4eaa42e000a9",
+    "verdict": "formatting_missing",
+    "field": "question_en",
+    "new_value": "An analyst gathers the following information for 20X1 for a Brazilian company (in BRL millions):\n\n| | BRL millions |\n|---|---|\n| Credit sales | 135 |\n| Cost of goods sold (COGS) | 108 |\n| Purchases | 127 |\n| Accounts receivable | 12 |\n| Beginning inventory balance | 15 |\n| Ending inventory balance | 17 |\n| Accounts payable | 8 |\n\nIf the average length of the cash conversion cycle for the industry is 58 days, then the cash conversion cycle for the company is most likely:",
+    "evidence": "Page 11 of PDF (question 12); table was missing from question_en. correct_answer C confirmed correct."
+  },
+  {
+    "id": "9ac58218-81b7-4868-b330-4eaa42e000a9",
+    "verdict": "explanation_wrong",
+    "field": "explanation_en",
+    "new_value": "The cash conversion cycle (CCC) is the average number of days it takes a company to collect the cash from a sale of goods after paying\nsuppliers. The CCC consists of the number of days of inventory (ie, days of inventory on hand, DOH) plus the number of days of receivables (ie,\ndays of sales outstanding, DSO) less the number of days of payables (ie, days of payables outstanding, DPO). DOH measures the average time\nneeded for a company to sell its inventory. DSO measures the average time needed to collect cash from the sales. DPO measures the average\ntime needed to pay suppliers for the materials used to make the goods.\n\nCCC = Inventory/(COGS/365) + Accounts receivable/(Credit sales/365) - Accounts payable/(Purchases/365)\n= [(15 + 17)/2] / (108/365) + 12/(135/365) - 8/(127/365)\n= 54.07 + 32.44 - 22.99 = 63.52\n\nIn this scenario, it takes the company 5.52 (63.52 - 58) more days than the industry, on average, to convert its inventory to cash after paying\nsuppliers. This indicates a worse CCC relative to the industry since it takes longer for the company to convert inventory to cash (Choices A and\nB).",
+    "evidence": "Stored explanation skipped the CCC formula/numeric derivation (54.07 + 32.44 - 22.99 = 63.52) shown on page 11, jumping directly from the setup sentence to the conclusion."
+  }
+]

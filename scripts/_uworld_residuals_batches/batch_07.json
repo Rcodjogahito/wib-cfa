@@ -1,0 +1,376 @@
+[
+ {
+  "id": "8aed3231-f8b7-43d7-aadf-1212b559615c",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\1. Quantitative Methods\\1.10 Simple Linear Regression - Answers.pdf",
+  "page_idx": 9,
+  "png": "scripts\\_uworld_residuals_png\\8aed3231-f8b7-43d7-aadf-1212b559615c.png",
+  "topic": "Quantitative Methods",
+  "subtopic": "1.10 Simple Linear Regression",
+  "question_en": "An analyst runs a regression to determine whether the value of Stock Index A is a good predictor of the value of Stock Index B. Selected data are presented below: The analyst expects Index A to reach a value of 509 next month and estimates the standard error of the forecast (s) to be 42.893. If the critical t-values at a 10% significance level are 1.701 f (two-sided) and 1.313 (one-sided), the prediction interval for Index B is closest to:",
+  "option_a": "1,785 to 1,931.",
+  "option_b": "1,801 to 1,914.",
+  "option_c": "1,815 to 1,901.",
+  "correct_answer": "A",
+  "explanation_en": "Simple linear regressions are commonly used to predict a dependent variable (Ŷ) based on a forecasted value of the independent variable (X).\nf f\nThe prediction interval of a forecast is the expected range of values around Ŷ, given a level of significance (α)(D1485). The width of the range\nf\nis a function of two components:\nThe critical t-value (t ), a reliability factor that is negatively related to α and to the number of observations (n).\nc\nThe standard error of the forecast (s), which measures the accuracy of the predictions (ie, expected distance between observed values\nf\nand Ŷ). The s formula shows that s is positively related to the standard error of the estimate (se) and to the difference between X and the\nf f f f\nmean value of X. In addition, s is negatively related to the number of observations (n).\nf\nIn this scenario, X = 509 and α = 10%, so there is a 90% probability that Index B's actual value will be within the prediction interval around Ŷ.\nf f\nTherefore:"
+ },
+ {
+  "id": "9a86d16b-febc-45ae-bcb1-0b25e3acdb23",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\1. Quantitative Methods\\1.10 Simple Linear Regression - Answers.pdf",
+  "page_idx": 11,
+  "png": "scripts\\_uworld_residuals_png\\9a86d16b-febc-45ae-bcb1-0b25e3acdb23.png",
+  "topic": "Quantitative Methods",
+  "subtopic": "1.10 Simple Linear Regression",
+  "question_en": "A fixed income analyst runs a linear regression to evaluate the relationship between the price of two bonds. Selected data is presented below: At a 5% significance level, the critical F-value is 4.196. Based only on the data, the most appropriate conclusion is that the:",
+  "option_a": "coefficient of determination (R2) is 12.6%.",
+  "option_b": "standard error of the estimate (s ) is 2.386. e",
+  "option_c": "model is statistically significant since the F-statistic is 3.52.",
+  "correct_answer": "B",
+  "explanation_en": "There are different ways to evaluate how well a regression model explains the relationship between the dependent (Y) and the independent (X)\nvariables in a simple linear regression:\nThe coefficient of determination (R2) measures the proportion of the change in Y explained by X.\nThe standard error of the estimate (s ) measures the accuracy of the regression.\ne\nThe F-statistic is used to test whether the regression results are random or statistically significant.\nThese statistics are three key measures of goodness of fit; they are usually analyzed together since they have different specific interpretations and\nlimitations (ie, each statistic explains only a part of the regression). The ANOVA table supplies the required information to calculate all three\nmeasures. The calculations are:\nDescribe the use of analysis of variance (ANOVA) in regression analysis, interpret ANOVA results, and calculate and interpret the standard error\nof Estimate in a simple linear regression"
+ },
+ {
+  "id": "920382f8-59b5-49fd-a203-be7ab2bb3136",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\1. Quantitative Methods\\1.10 Simple Linear Regression - Answers.pdf",
+  "page_idx": 19,
+  "png": "scripts\\_uworld_residuals_png\\920382f8-59b5-49fd-a203-be7ab2bb3136.png",
+  "topic": "Quantitative Methods",
+  "subtopic": "1.10 Simple Linear Regression",
+  "question_en": "The following table summarizes performance data for a mutual fund and its benchmark for the last 50 months: Based on this data, if an investor expects a 0% return for the benchmark next month, the predicted return of the mutual fund will be closest to:",
+  "option_a": "0.35%",
+  "option_b": "0.94%",
+  "option_c": "1.48%",
+  "correct_answer": "A",
+  "explanation_en": "The coefficients of a linear regression (ie, slope and intercept) can be estimated based on common statistical measures, as given in this\nscenario. When the expected benchmark return (the independent variable, X) equals zero, the predicted return of the mutual fund (the predicted\ndependent variable, Ŷ) equals the value of the intercept.\nBased on the information given, find the intercept using the return means as the independent and dependent variable values and the slope of the\nregression line. The slope is the ratio of the covariance of Y and X to the variance of X. This is derived from the least squares criterion that drives\nthe goal of the linear regression: to minimize the sum of the squared residuals so that the regression line is the best fit for the data.\nIt is important to note that 0.35% is the predicted mutual fund return, not the observed (ie, actual) return, and that the data set is just a sample of\nthe population, so the calculated coefficients will always be estimates of the population parameters.\n(Choice B) 0.94% is the slope, or the change in the predicted return of the mutual fund for every unit change in the expected return of the\nbenchmark.\n(Choice C) 1.48% is the mean (ie, average) return of the mutual fund. It is the expected return when there is no information about the\nbenchmark."
+ },
+ {
+  "id": "10325b69-b765-49ff-8a31-a32987fa6857",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\1. Quantitative Methods\\1.10 Simple Linear Regression - Answers.pdf",
+  "page_idx": 6,
+  "png": "scripts\\_uworld_residuals_png\\10325b69-b765-49ff-8a31-a32987fa6857.png",
+  "topic": "Quantitative Methods",
+  "subtopic": "1.10 Simple Linear Regression",
+  "question_en": "The following table summarizes the relationship between two exchange rates, USD/GBP and USD/EUR for the last 12 months: An analyst runs a linear regression to test if USD/GBP explains changes in USD/EUR. The slope of this regression model is closest to:",
+  "option_a": "0.405",
+  "option_b": "0.679",
+  "option_c": "0.898",
+  "correct_answer": "B",
+  "explanation_en": "This regression model examines how well USD/GBP explains USD/EUR. Therefore, USD/GBP is the explanatory or independent variable (X),\nwhile USD/EUR is the explained or dependent variable (Y). Since there is only one independent variable, this is a simple linear regression, and\nthe slope coefficient is the ratio of the covariance (Y, X) to the variance of X.\nIn this scenario, the covariance (Y, X) can be obtained using the correlation of Y and X and the standard deviations of X and Y. After obtaining the\ncovariance, the slope coefficient is calculated as follows:\n(Choice A) 0.405 results from incorrectly using the correlation instead of covariance in the slope formula (ie, 0.781 / (1.389)2).\n(Choice C) 0.898 results from incorrectly swapping the variables (ie, using USD/GBP as the dependent variable and USD/EUR as the\nindependent variable [0.781 × 1.389 / 1.208])."
+ },
+ {
+  "id": "fb68b8cb-56ec-4433-90c6-c93fa4ec73f0",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\1. Quantitative Methods\\1.10 Simple Linear Regression - Answers.pdf",
+  "page_idx": 8,
+  "png": "scripts\\_uworld_residuals_png\\fb68b8cb-56ec-4433-90c6-c93fa4ec73f0.png",
+  "topic": "Quantitative Methods",
+  "subtopic": "1.10 Simple Linear Regression",
+  "question_en": "A portfolio manager uses a regression model to evaluate how a company's debt-to-equity ratio influences its beta. The analysis of variance (ANOVA) for the regression model is: The manager formulates the null hypothesis (H ) that the slope coefficient is zero. If the critical F-value at a 5% significance is 5.32, the manager's most appropriate decision is to:",
+  "option_a": "reject H since the F-statistic is less than 5.32",
+  "option_b": "reject H since the F-statistic is greater than 5.32.",
+  "option_c": "fail to reject H since the F-statistic is less than 5.32.",
+  "correct_answer": "C",
+  "explanation_en": "A hypothesis test and the F-statistic are used to determine the statistical significance of a linear regression by testing whether results are\nrandom. In a simple linear regression (SLR), the goal of the F-test is to assess whether the single independent variable (X) helps to explain\nchanges in the dependent variable (Y).\nThe F-statistic is the ratio of two variances, the mean square regression (MSR) and the mean square error (MSE). The greater (smaller) the F-\nstatistic, the more (less) the variation is explained by the regression. The F-statistic is compared to the critical F-value, based on the desired\nlevel of significance, the number of independent variables, and the degrees of freedom. If the F-statistic is greater (less) than the critical F-value,\nthen reject (fail to reject) H .\n0\nIn a hypothesis test for a SLR, the null hypothesis (H ) states that the slope (b ) equals zero (ie, Xis not useful to predict Y). The step-by-step\n0 1\nprocess is as follows:\nIn this scenario, since H cannot be rejected, there is not sufficient evidence to indicate that the slope is different from zero. Therefore, the debt-\n0\nto-equity ratio is not statistically significant as a predictor of beta (Choices A and B).\nCalculate and interpret measures of fit and formulate and evaluate tests of fit and of regression coefficients in a simple linear regression"
+ },
+ {
+  "id": "1bf567c0-e8b4-4e66-8cdd-423c5ebfecb7",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\1. Quantitative Methods\\1.10 Simple Linear Regression - Answers.pdf",
+  "page_idx": 10,
+  "png": "scripts\\_uworld_residuals_png\\1bf567c0-e8b4-4e66-8cdd-423c5ebfecb7.png",
+  "topic": "Quantitative Methods",
+  "subtopic": "1.10 Simple Linear Regression",
+  "question_en": "An analyst evaluates the relationship between two securities and runs a linear regression based on 12 observations. Selected data from the ANOVA (analysis of variance) table is presented below: Based on this information, the F-statistic is closest to:",
+  "option_a": "24.74",
+  "option_b": "27.22",
+  "option_c": "29.69",
+  "correct_answer": "A",
+  "explanation_en": "The F-statistic is used to test the statistical significance of a linear regression by testing whether results are random. In the F-test for a simple\nlinear regression, if the F-statistic is greater than the critical F-value, there is evidence that the single independent variable (X) helps to explain\nchanges in the dependent variable (Y) (ie, results are not random).\nThe F-statistic is the ratio of the mean square regression (MSR) to the mean square error (MSE) and can be interpreted as the ratio of the\nexplained variance to the unexplained variance. The greater (smaller) the F-statistic, the more (less) of the variation is explained by the\nregression. In the current scenario:\nNote that the denominators used to calculate MSR and MSE are the degrees of freedom (df) in each case:\ndf(model), denominator of MSR, is the number of independent variables, which is 1 in a simple linear regression.\ndf(residual), denominator of MSE, is the difference between the sample size (n) and the number of parameters (2 in a simple linear\nregression), so 10 = 12 − 2.\ndf(total) is the sum of df(model) and df(residual), or 11.\n(Choice B) 27.22 is obtained by incorrectly using total df in the denominator of MSE [20.601 / (8.326 / 11)].\n(Choice C) 29.69 is obtained by incorrectly using the total observations in the denominator of MSE [20.601 / (8.326 / 12)]."
+ },
+ {
+  "id": "9dc495dc-30fc-4eb5-b9cf-b009008a3b51",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\1. Quantitative Methods\\1.10 Simple Linear Regression - Answers.pdf",
+  "page_idx": 12,
+  "png": "scripts\\_uworld_residuals_png\\9dc495dc-30fc-4eb5-b9cf-b009008a3b51.png",
+  "topic": "Quantitative Methods",
+  "subtopic": "1.10 Simple Linear Regression",
+  "question_en": "An analyst runs a simple linear regression using a sample of 10 observations. To assess the validity of the regression statistics, the analyst randomly draws 20 observations from the same data. The results of both regression analyses are: Based on this information, the analyst should most likely conclude that:",
+  "option_a": "Regression 1 has a larger F-statistic.",
+  "option_b": "both regressions have the same F-statistic.",
+  "option_c": "Regression 2 has a larger F-statistic.",
+  "correct_answer": "C",
+  "explanation_en": "Sum of squares total\nSum of squares total (SST) = Sum of squares regression (SSR) + Sum of squares error (SSE)\nA simple linear regression (SLR) can be used to assess the degree to which variations in a dependent variable are explained by variations in an\nindependent variable. Outputs of a regression analysis include the:\nsum of squares total (SST), the variation in the observed values of the dependent variable versus its average value,\nsum of squares regression (SSR), the proportion of variation of the dependent variable explained by changes in the independent variable,\nand\nsum of squares error (SSE), the proportion of variation of the dependent variable unexplained by changes in the independent variable.\nF-statistics are used to evaluate the goodness of fit (ie, how well the regression model fits the data). F-statistics reflect the explained versus\nthe unexplained variation in the dependent variable, adjusted for sample size and degrees of freedom (ie, mean square regression [MSR] /\nmean square error [MSE]). For a given data set, both the SSR and SSE increase as sample size increases:\nIn this scenario, both the SST and SSE double when the sample size doubles. This indicates the same relative variance is exhibited by both\nsamples. Since the divisor in calculating the F-statistic is inversely related to sample size, other things equal, a larger sample size exhibiting the\nsame relative variation results in a greater value for the F-statistic (Choices A and B).\nA larger sample size that exhibits the same relative variation of the dependent variable should give an analyst greater confidence regarding the\nexplanatory power of the independent variable.\nCalculate and interpret measures of fit and formulate and evaluate tests of fit and of regression coefficients in a simple linear regression"
+ },
+ {
+  "id": "a86e4c7c-2cd9-4f38-9cbb-90390b4d7236",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\1. Quantitative Methods\\1.10 Simple Linear Regression - Answers.pdf",
+  "page_idx": 4,
+  "png": "scripts\\_uworld_residuals_png\\a86e4c7c-2cd9-4f38-9cbb-90390b4d7236.png",
+  "topic": "Quantitative Methods",
+  "subtopic": "1.10 Simple Linear Regression",
+  "question_en": "An analyst runs a linear regression on crude oil prices (in USD per barrel) and a company's gross margin (in %), with the following results:\n\n| Regression statistics | |\n|---|---|\n| Coefficient of determination (R²) | 0.541 |\n| Standard error (Sε) | 1.841 |\n| Observations (quarters) (n) | 12 |\n\n| Coefficients | |\n|---|---|\n| Intercept | 9.358 |\n| Crude oil | 0.581 |\n\n| Descriptive statistics (Crude oil) | |\n|---|---|\n| Mean (X̄) | 55.408 |\n| Standard deviation (Sx) | 3.397 |\n\nThe analyst forecasts an average oil price of USD 66 in the following quarter. Considering t-values of ±2.228, the 95% prediction interval for the company's gross margin is closest to:",
+  "option_a": "40.6% to 52.1%.",
+  "option_b": "42.3% to 50.5%.",
+  "option_c": "44.2% to 48.6%.",
+  "correct_answer": "A",
+  "explanation_en": "Simple linear regressions are commonly used to predict a dependent variable (Ŷ) based on a forecasted value of the independent variable (X).\nf f\nThe forecast's prediction interval is the expected range of values around Ŷ given a certain level of significance (α). For example, if α = 5%,\nf\nthere is a 95% probability that the actual value of Y will be within the prediction interval.\nThe width of the range is a function of two components: the critical t-value (t ), which is a reliability factor, and the standard error of the forecast,\nc\nwhich is a measure of the regression's accuracy. In this scenario, the prediction interval is calculated as follows:"
+ },
+ {
+  "id": "ded06d8a-a747-467b-9ad6-5e1c32a72fb8",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\1. Quantitative Methods\\1.10 Simple Linear Regression - Answers.pdf",
+  "page_idx": 13,
+  "png": "scripts\\_uworld_residuals_png\\ded06d8a-a747-467b-9ad6-5e1c32a72fb8.png",
+  "topic": "Quantitative Methods",
+  "subtopic": "1.10 Simple Linear Regression",
+  "question_en": "A foreign exchange trader runs a linear regression with 24 observations in which BRL/USD is the independent variable and MXN/USD is the dependent variable and compiles the following results:\n\n| | BRL/USD (Xi) | MXN/USD (Yi) | Total sum of squares Σ(Yi-Ȳ)² | Residual sum of squares Σ(Yi-Ŷ)² |\n|---|---|---|---|---|\n| Mean | 4.993 | 21.033 | | |\n| Sum | | | 4.932 | 4.190 |\n\nThe standard error of the estimate is closest to:",
+  "option_a": "0.418",
+  "option_b": "0.436",
+  "option_c": "0.473",
+  "correct_answer": "B",
+  "explanation_en": "The standard error of the estimate (s ) measures the accuracy of a regression as the average distance between each predicted and observed\ne\nindependent variable (Y). It is also known as the standard error of the regression or the root mean square error (MSE). It is an absolute\nmeasure presented in the same units as Y. Smaller values of s mean that the regression has smaller errors; therefore, the regression line is a\ne\nbetter fit for the data.\nSince this scenario does not provide the MSE, it must be calculated as the ratio of the sum of squares error (SSE), or residual sum of squares, to\nthe degrees of freedom (df). Note that the df(residual) is the difference between the sample size (n = 24) and the number of variables (X and Y)\n(ie, 24 − 2 = 22).\n(Choice A) 0.418 is obtained by incorrectly using the number of observations (ie, sample size) in the denominator instead of the df, n − 2 (ie,\nsquare root of 4.190 / 24).\n(Choice C) 0.473 is obtained by incorrectly using the sum of squares total (SST), or total sum of squares, in the numerator instead of SSE (ie,\nsquare root of 4.932 / 22)."
+ },
+ {
+  "id": "10d27155-9f3a-4d50-b996-6cf5e13d5285",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\1. Quantitative Methods\\1.09 Parametric and Non-Parametric Tests of Independence - Answers.pdf",
+  "page_idx": 1,
+  "png": "scripts\\_uworld_residuals_png\\10d27155-9f3a-4d50-b996-6cf5e13d5285.png",
+  "topic": "Quantitative Methods",
+  "subtopic": "1.09 Parametric and Non-Parametric Tests of Independence",
+  "question_en": "An analyst selects 190 stocks and organizes them by style and market cap in a contingency table: Using marginal frequencies, the expected frequency of large-cap growth stock is closest to:",
+  "option_a": "26.3",
+  "option_b": "34.2",
+  "option_c": "50.0",
+  "correct_answer": "B",
+  "explanation_en": "A contingency table is used to display the frequency distribution for multiple categorical variables simultaneously. Each row displays a\nunique variable outcome of the first categorical variable, and each column displays a unique variable outcome of the second categorical variable.\nThe contingency table shows:\nthe marginal frequency of each categorical variable, which is the total frequency for each row or column.\nthe joint frequency of two categorical variables, which is the frequency in each cell.\nThe observed values are from a sample (ie, subset of a population) and are not representative of the whole target population. The population's\nexpected joint frequency of the two specified categorical variable outcomes is the product of the individual relative marginal frequency of each\ncategorical variable outcome, in this case, growth stock and large-cap stock:\nThe expected frequency is 34.2."
+ },
+ {
+  "id": "44de8795-991a-4137-b66a-7feba539d40c",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\1. Quantitative Methods\\1.09 Parametric and Non-Parametric Tests of Independence - Answers.pdf",
+  "page_idx": 2,
+  "png": "scripts\\_uworld_residuals_png\\44de8795-991a-4137-b66a-7feba539d40c.png",
+  "topic": "Quantitative Methods",
+  "subtopic": "1.09 Parametric and Non-Parametric Tests of Independence",
+  "question_en": "An analyst studies the relationship between company size and bond rating to predict bond defaults. The following table represents the number of defaults over a 10-year period: Based on this information, the relative frequency of BBB–BB bond defaults by mid-cap companies, based on all mid-cap company bonds, is closest to:",
+  "option_a": "12.0%",
+  "option_b": "33.8%",
+  "option_c": "35.1%",
+  "correct_answer": "C",
+  "explanation_en": "Contingency table\nCompany size\nRating Large cap Mid cap Small cap Total by rating\nAAA or A 15 32 51 98\nBBB or BB 24 47 68 139\nHigh yield 31 55 70 156\nTotal by size 70 134 189 393\nContingency tables can be used to find patterns that exist between two variables. Each variable can have one or more categories; the only\nrequirement is that the number of categories be finite. One variable (eg, company size) is placed in rows and the other (eg, bond rating) is placed\nin columns. Each cell in a contingency table represents a joint frequency between a category of one variable and a category of the other variable.\nData in a contingency table can be displayed as a count (ie, absolute frequency) or a percentage of a total (ie, relative frequency).\nIn this question, the variables are bond rating and company size, and each variable has three categories. There are 47 defaults of bonds rated\neither BBB or BB from mid-cap companies and 134 total bond defaults from mid-cap companies, so the relative frequency is 47 / 134 ≈ 35.1%.\nWhen using contingency tables, it is crucial to know precisely which relationships are being compared. For instance, if this question had asked for\nthe frequency of BBB- or BB-rated mid-cap defaults relative to all defaults of BBB—BB bonds, the correct answer would be 47 / 139 ≈ 33.8%\n(Choice C). If the question had asked for the frequency of mid-cap defaults with those ratings relative to all defaults, the correct answer would be\n47 / 393 ≈ 12.0% (Choice A)."
+ },
+ {
+  "id": "9173fbc2-4787-4162-83af-1721657cd773",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\1. Quantitative Methods\\1.09 Parametric and Non-Parametric Tests of Independence - Answers.pdf",
+  "page_idx": 3,
+  "png": "scripts\\_uworld_residuals_png\\9173fbc2-4787-4162-83af-1721657cd773.png",
+  "topic": "Quantitative Methods",
+  "subtopic": "1.09 Parametric and Non-Parametric Tests of Independence",
+  "question_en": "An investor builds a contingency table for a group of 600 companies based on two variables: inventory valuation method and gross margin. The scaled squared deviation for each combination of these variables is presented below: At a 5% level of significance and based on the chi-square distribution table, the most appropriate conclusion is that:",
+  "option_a": "the variables are positively correlated.",
+  "option_b": "the variables are independent of each other.",
+  "option_c": "the chi-square statistic is greater than the critical value.",
+  "correct_answer": "B",
+  "explanation_en": "Contingency tables can be used to find existing patterns between two categorical variables. The rows represent the groups (ie, categories) of the\nfirst variable, while the columns represent the groups of the second variable. Each cell represents a joint frequency of a pair of groups. Chi-\nsquare (χ2) is a nonparametric test statistic that tests if these variables are independent or related to each other.\nTo obtain the χ2, it is necessary to create a contingency table, an expected frequency table, and a scaled squared deviation table. This\ncalculation is extensive, but χ2 can be calculated adding the cells of the scaled squared deviation table, which is given in this question. The\ncorresponding hypothesis test is:"
+ },
+ {
+  "id": "463783e0-4483-4266-9b9d-36a3bdc6f704",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\1. Quantitative Methods\\1.11 Introduction to Big Data Techniques - Answers.pdf",
+  "page_idx": 11,
+  "png": "scripts\\_uworld_residuals_png\\463783e0-4483-4266-9b9d-36a3bdc6f704.png",
+  "topic": "Quantitative Methods",
+  "subtopic": "1.11 Introduction to Big Data Techniques",
+  "question_en": "Which of the following best describes fintech within the investment management industry? Fintech is:",
+  "option_a": "the financial analysis of technology stocks.",
+  "option_b": "a form of technical analysis used to determine the price of an asset.",
+  "option_c": "the convergence of finance and technology that provides easier access to investment",
+  "correct_answer": "C",
+  "explanation_en": "The convergence of finance and technology is commonly known as fintech. Creators and users of fintech changed the investment management industry. For example, firms now use robo-advisers, which are automated client account management programs using preset algorithms. Investors using robo-advisers receive a portfolio that matches their objectives (ie, return) and constraints (ie, risks) with little human interaction. With more automation than traditional investing, fintech enables investors to have easier access to investment management. (Choices A and B) Fintech is the innovation in finance using advancements in technology. It is neither a financial analysis of technology stocks nor a form of technical analysis."
+ },
+ {
+  "id": "61a48a0f-4e90-49dd-b727-c450b55ccbb0",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\2. Economics\\2.01 Firms and Market Structures - Answers.pdf",
+  "page_idx": 18,
+  "png": "scripts\\_uworld_residuals_png\\61a48a0f-4e90-49dd-b727-c450b55ccbb0.png",
+  "topic": "Economics",
+  "subtopic": "2.01 Firms and Market Structures",
+  "question_en": "The following data is for a firm operating under perfect competition: If the price per unit is €5, economic profits are maximized when the firm produces:",
+  "option_a": "104 units.",
+  "option_b": "105 units.",
+  "option_c": "106 units.",
+  "correct_answer": "B",
+  "explanation_en": "Under perfect competition, firms face a horizontal demand curve with the market price equal to marginal revenue. The level of output that\nmaximizes economic profit is also the economic breakeven, where marginal revenue (MR) equals marginal cost (MC) and average total cost\n(ATC): MR = MC = ATC. At that point, production of:\nadditional units would result in an economic loss, wherein MR < MC and ATC, and\nfewer units would result in a missed profit, wherein MR > MC.\nIn this case, profit is maximized at 105 units, the point at which MR per unit (ie, €5 market price), MC, and ATC are all equal.\nProduction data at a unit price of €5\nQuantity produced Total cost MC per unit MR per unit ATC per unit\n100 510 − 5 5.10\n101 511 1 5 5.07\n102 513 2 5 5.03\n103 516 3 5 5.01\n104 520 4 5 5.00\n105 525 5 5 5.00\n106 531 6 5 5.03"
+ },
+ {
+  "id": "52689b4a-fadc-4108-9e4a-ab292f01b22f",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\2. Economics\\2.01 Firms and Market Structures - Answers.pdf",
+  "page_idx": 24,
+  "png": "scripts\\_uworld_residuals_png\\52689b4a-fadc-4108-9e4a-ab292f01b22f.png",
+  "topic": "Economics",
+  "subtopic": "2.01 Firms and Market Structures",
+  "question_en": "For a firm operating in perfect competition, which of the following statements is most accurate with respect to long-run equilibrium?",
+  "option_a": "The firm can expect to earn zero economic profit.",
+  "option_b": "Zero economic profit means that the firm generated an accounting loss.",
+  "option_c": "The firm should produce goods at a level at which marginal revenue exceeds average total",
+  "correct_answer": "A",
+  "explanation_en": "Economic profit is the difference between a firm's total revenue, which is price (P) × quantity sold (Q ), and its total cost, which is cost (C) ×\nE\nQ . Total cost consists of accounting expenses plus opportunity costs; opportunity costs include the owner's expected return from the\nE\nbusiness.\nAny firm in a perfectly competitive industry should always produce the quantity of goods at which marginal revenue equals marginal cost. In the\nshort run, a firm can earn an economic profit; this is reflected in the yellow rectangle shown above. However, since there are no barriers to entry\nin perfect competition, additional sellers are attracted by the potential economic profit and enter the industry.\nThe increased supply from these new entrants causes the market price to fall to the point where marginal revenue, marginal cost, and average\ncost meet (Choice C). The new equilibrium quantity is at Q', which represents the point at which TR equals TC and economic profit equals zero.\n(Choice B) Economic profit equals accounting profit (ie, total revenue − accounting expenses) minus opportunity costs. Opportunity costs include\na rate of return to the business owner. If economic profit equals zero, then the formula can be rearranged so that accounting profit = owner's\nreturn. This means that accounting profit is positive, not negative."
+ },
+ {
+  "id": "a6dbfe25-254a-42b5-9dc6-69f2d92c39bf",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\2. Economics\\2.02 Understanding Business Cycles - Answers.pdf",
+  "page_idx": 8,
+  "png": "scripts\\_uworld_residuals_png\\a6dbfe25-254a-42b5-9dc6-69f2d92c39bf.png",
+  "topic": "Economics",
+  "subtopic": "2.02 Understanding Business Cycles",
+  "question_en": "The following table lists various economic indicators and the trend in each one over the past several months for an economy. This mix of economic indicators most likely forecasts near-term future economic:",
+  "option_a": "stability.",
+  "option_b": "acceleration.",
+  "option_c": "deceleration.",
+  "correct_answer": "C",
+  "explanation_en": "Certain economic and financial measures have historically exhibited consistent patterns indicating the stage of the business cycle. These\neconomic indicators are characterized as leading, coincident, or lagging indicators.\nLeading indicators provide the most value to investment practitioners since they signal changes in real GDP several months to a year in\nadvance. Coincident indicators move largely in tandem with the economy, and lagging indicators trail changes in the economy by several months\nor quarters. How specific indicators are classified will vary from country to country, but leading indicators that are consistent across most\neconomies include:\nInterest rate spread\nResidential building permits/construction\nStock market performance\nNew manufacturing/machinery orders\nBusiness confidence/expectations\nIn this scenario, all three leading indicators are indicating a period of economic deceleration or slowing growth in the coming quarters.\nResidential building permits and new orders for manufacturing have been in steady decline. The interest rate spread is the difference\nbetween short-term rates and long-term rates. A narrowing of the spread, as is the case here (ie, the yield curve flattened by 1%), implies\neconomic deceleration."
+ },
+ {
+  "id": "2a5da4d4-7251-41f8-92d8-16923ede2acc",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\2. Economics\\2.04 Monetary Policy - Answers.pdf",
+  "page_idx": 1,
+  "png": "scripts\\_uworld_residuals_png\\2a5da4d4-7251-41f8-92d8-16923ede2acc.png",
+  "topic": "Economics",
+  "subtopic": "2.04 Monetary Policy",
+  "question_en": "In an economy that operates under an exchange rate targeting policy, which of the following conditions is most likely?",
+  "option_a": "The central bank is required to maintain a fixed policy interest rate.",
+  "option_b": "Monetary policy can focus on internal rather than external considerations.",
+  "option_c": "Target country inflation (deflation) is imported regardless of the effect on the domestic",
+  "correct_answer": "C",
+  "explanation_en": "Monetary policy targets Stated Long-run Country policy target economic goal characteristics Fixed rate or Price stability leading to better long- Inflation range for specified run performance price index Larger, Optimize across more developed economies Interest multiple goals Target adjusted over business cycle rates (employment, GDP growth) Smaller, Exchange Fixed rate or range versus target Stability versus economies of major less developed rate currency trading partners with significant import/export sectors The goal of monetary policy is to optimize economic welfare, although central banks are given a variety of policy targets intended to attain that goal. Central banks may have: One policy target (ie, single mandate) that guides all policy actions: A specific inflation target (eg, 2%) or a specified range An exchange rate target, which is a fixed level or band of values versus a major currency (eg, EUR) Multiple policy targets that seek an optimal balance among potentially conflicting goals: High employment GDP growth Stable prices Stable exchange rate When a country uses exchange rate targeting, its policies are designed to maintain an exchange rate target (or range) with another currency, usually from a larger and/or more stable economy. As a result, if the target currency's economy experiences inflation or deflation, so does the economy that targets it. In this situation, since all policy actions must be aimed at maintaining the targeted currency exchange value, the targeting economy gives up monetary policy independence. This may adversely affect both the targeting economy and its ability to address any adverse effects. For example, exchange rate targeting may keep a central bank from exercising independent monetary policies based solely on domestic conditions, such as maintaining a fixed policy interest rate or adjusting monetary policy (Choices A and B)."
+ },
+ {
+  "id": "2cd00a94-02bb-4cd2-bb81-baa5bb354c45",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\2. Economics\\2.05 Introduction to Geopolitics - Answers.pdf",
+  "page_idx": 4,
+  "png": "scripts\\_uworld_residuals_png\\2cd00a94-02bb-4cd2-bb81-baa5bb354c45.png",
+  "topic": "Economics",
+  "subtopic": "2.05 Introduction to Geopolitics",
+  "question_en": "Three geopolitical risks may affect a country's investment returns: Within the context of a country's investment returns, based on only the above information, which event warrants the highest level of risk assessment?",
+  "option_a": "Event A",
+  "option_b": "Event B",
+  "option_c": "Event C",
+  "correct_answer": "B",
+  "explanation_en": "Event risk Likelihood Velocity Impact size Impact breadth A High High Moderate Discrete B Moderate High High Broad C High Medium Low Broad Analysts evaluate geopolitical risks to gauge their potential impact on investment returns. To do so, an analyst collectively assesses an event's: Likelihood (ie, probability of the event) Velocity of the impact (ie, how quickly the event may impact investment returns) Size and nature of the impact (ie, how large the impact may be, and its overall reach) In this scenario, Event B poses the most significant risk. Even though it has only a moderate probability of occurring, its impact on the country's economy will be fast, intense, and broad-based if it occurs. As an example, pandemics do not occur frequently, but when a pandemic occurs, its disastrous impact on an economy will be swift. (Choice A) Although Event A has high probability and high velocity, its impact is moderate and discrete (ie, narrowly limited to one sector or to a few sectors). Therefore, its threat is not as significant as Event B's. (Choice C) Compared with Event B, Event C has lower impact and takes longer to move the market."
+ },
+ {
+  "id": "f03ec524-ddde-4a77-a9f0-26fa27a13d3d",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\2. Economics\\2.06 International Trade - Answers.pdf",
+  "page_idx": 2,
+  "png": "scripts\\_uworld_residuals_png\\f03ec524-ddde-4a77-a9f0-26fa27a13d3d.png",
+  "topic": "Economics",
+  "subtopic": "2.06 International Trade",
+  "question_en": "Which of the following trade policies is most appropriate for a country to enact if it is trying to reduce a large trade deficit?",
+  "option_a": "Reduce import tariffs on raw materials and manufactured goods by an average of 50%.",
+  "option_b": "Impose import quotas limiting foreigners to 20% of a domestic market in which imports constitute 5% of the market.",
+  "option_c": "Negotiate a voluntary export restraint agreement with a country running a large trade surplus",
+  "correct_answer": "C",
+  "explanation_en": "Quotas, tariffs, and voluntary export restraints are the policies most commonly used to reduce trade deficits. Imposing quotas or levying tariffs on imports directly impacts commercial counterparties. Alternatively, agreements with foreign governments are used to restrain their firms from exporting to the domestic market. Although the specific mechanisms of each policy differ, all restrict foreign sales in the domestic market. All else constant, the trade balance is favorably affected as reduced imports shrink trade deficits or increase trade surpluses. Voluntary export restraints are negotiated with countries currently running large surpluses. Foreign governments agreeing to constrain their exports will reduce domestic imports. Effective voluntary export restraint agreements reduce trade deficits. (Choice A) Reducing tariffs on raw materials and manufactured goods tends to make those foreign-sourced items less expensive. Tariff cuts increase imports, which leads to higher trade deficits. (Choice B) Import quotas normally reduce trade deficits. Limiting foreign producers to a 20% market share in a market where foreign sales account for only 5% of sales is an ineffective way to reduce the trade deficit."
+ },
+ {
+  "id": "a62dab43-708f-4835-8cac-d6b007cabc54",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\2. Economics\\2.06 International Trade - Answers.pdf",
+  "page_idx": 4,
+  "png": "scripts\\_uworld_residuals_png\\a62dab43-708f-4835-8cac-d6b007cabc54.png",
+  "topic": "Economics",
+  "subtopic": "2.06 International Trade",
+  "question_en": "An analyst has compiled the following information: Country Z is an open economy, trading at world prices, and does not currently trade with any of the other three countries. Assuming equal consumption of both commodities, which country will benefit the most from a trading relationship with Country Z?",
+  "option_a": "Country A",
+  "option_b": "Country B",
+  "option_c": "Country C",
+  "correct_answer": "A",
+  "explanation_en": "An autarky is a country that produces all goods and services consumed internally and does not trade with others. An autarkic economy is considered a closed economy. Domestic prices within a country are a function of its ability to produce those goods with only domestic resources and are known as the autarkic prices. Countries that do not place restrictions on imports and exports are known as open economies. Open economies are said to practice free trade as they import and export at the world's price for goods and services (eg, Country Z). The further away the world price is relative to a country's autarkic price, the greater the potential trade benefit for the autarky. A country's terms of trade benefit the most if world export prices are greater than its autarkic price and world import prices are less than its autarkic price since the country can achieve greater purchasing power. In this scenario, all the autarkies produce coffee below world price and sugar above world price. Thus, if all three traded with other countries, each would export coffee and import sugar. The net terms-of-trade improvement would be greatest for Country A since it would sell (ie, export) coffee at the world price of $1.10 and buy (ie, import) sugar at the world price of $0.40, netting a $0.50 improvement. (Choices B and C) The net terms-of-trade improvement for Country B is $0.15. For Country C, it is $0.40."
+ },
+ {
+  "id": "3761a848-d656-46d1-9f81-fda5ed371c18",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\2. Economics\\2.06 International Trade - Answers.pdf",
+  "page_idx": 5,
+  "png": "scripts\\_uworld_residuals_png\\3761a848-d656-46d1-9f81-fda5ed371c18.png",
+  "topic": "Economics",
+  "subtopic": "2.06 International Trade",
+  "question_en": "A country recently imposed a tariff on apples of €300 per metric ton. The pre-tariff price for apples was €2,000 per metric ton. The table below shows the quantity demanded and the quantity supplied by domestic producers, along with the pre- and post-tariff prices of apples: The image below shows the market for apples in this country: The area labeled A in the image represents an increase in:",
+  "option_a": "producer surplus.",
+  "option_b": "consumer surplus.",
+  "option_c": "government revenue.",
+  "correct_answer": "A",
+  "explanation_en": "A tariff is one type of trade restraint. It is a tax on imported goods that is usually paid as a higher price for the goods and usually results in a loss to the net welfare of the economy. Tariffs cause inefficiencies in both the supply and production functions of the economy; these losses are known as deadweight losses. In the diagram above, the supply deadweight loss is Region B and the demand deadweight loss is Region D. Before the tariff, all suppliers had per-unit production costs of €200 or less. The tariff caused the price to increase to €250 so domestic suppliers whose production costs were greater than €200 could now compete. However, domestic supply increased (from 4 million to 6.5 million) while domestic demand decreased (from 8.2 million to 7 million), therefore the additional domestic supply represented a reallocation of resources to phones when those resources could have been better employed elsewhere in the economy, creating an inefficiency. The demand deadweight loss is evidenced from the reduced domestic demand after the tariff. Consumers who might have spent more than €200 for a phone but would not spend €250 were excluded from the market. The deadweight loss is the sum of the areas of the triangles B and D: Compare types of trade restrictions, such as tariffs, quotas, and export subsidies, and their economic implications"
+ },
+ {
+  "id": "9a3b132f-1794-4a2b-9d17-02b06a0da8ad",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\2. Economics\\2.06 International Trade - Answers.pdf",
+  "page_idx": 7,
+  "png": "scripts\\_uworld_residuals_png\\9a3b132f-1794-4a2b-9d17-02b06a0da8ad.png",
+  "topic": "Economics",
+  "subtopic": "2.06 International Trade",
+  "question_en": "A country that is a price taker in the international market imposes a per-unit tariff of €50 on imported mobile phones. The table below shows domestic consumption, domestic production, and mobile phone prices before and after the tariff's imposition: The total deadweight loss (in €) from the imposition of the tariff is closest to:",
+  "option_a": "25.0 million",
+  "option_b": "62.5 million",
+  "option_c": "92.5 million",
+  "correct_answer": "C",
+  "explanation_en": "Most economists believe greater overall welfare is attained when countries engage in international trade rather than by attempting self-sufficiency in meeting domestic demand (ie, autarky). The gains from international trade derive from each country concentrating on the production of goods it produces relatively more efficiently and trading for goods it produces relatively less efficiently. Gains result from specialization and economies of scale. The gains from trade are not shared equally; there are winners and losers. On one hand, industries expanding to meet export opportunities will benefit from higher prices, due to increased foreign demand, and their employees will benefit from greater job opportunities and higher wages (Choice C). On the other hand, the industries' domestic customers must pay higher prices. In addition, industries facing import competition will suffer domestic market share decline. As such industries contract, they will employ fewer workers. (Choice A) Increased trade results in greater consumer choice. This is due both to imported goods competing with domestic suppliers and the introduction of previously unavailable products."
+ }
+]

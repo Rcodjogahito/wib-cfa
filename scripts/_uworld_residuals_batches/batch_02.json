@@ -1,0 +1,376 @@
+[
+ {
+  "id": "40d8bb9b-da54-4f24-a626-129d23efa3e6",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\5. Financial Statement Analysis\\5.05 Analyzing Statements of Cash Flows II - Answers.pdf",
+  "page_idx": 3,
+  "png": "scripts\\_uworld_residuals_png\\40d8bb9b-da54-4f24-a626-129d23efa3e6.png",
+  "topic": "Financial Statement Analysis",
+  "subtopic": "5.05 Analyzing Statements of Cash Flows II",
+  "question_en": "An analyst has compiled the following information for a company's latest fiscal year: In the same period, the company also purchased machinery for $10 million. Cash from operations (CFO) for the period was $14.5 million. If the company reports under US GAAP, the free cash flow to the firm (FCFF) is closest to:",
+  "option_a": "$4.5 million",
+  "option_b": "$9.0 million",
+  "option_c": "$29.0 million",
+  "correct_answer": "B",
+  "explanation_en": "Free cash flow to the firm (FCFF) measures the cash available for the company's lenders and shareholders after the company has paid its\noperating expenses and made necessary investments in both long-term assets and working capital. The table below shows how to calculate\nFCFF:\nNot all variables are given in this question, so it is important to know how to use what is given to calculate the unknown quantities. For example,\ninterest expense is calculated on an after-tax basis, but when the tax rate is not provided it must be derived from dividing tax expense by pre-tax\nincome.\nAlso, the question provides no information on changes in short-term assets or short-term liabilities. However, such information is unnecessary if\ncash from operations (CFO) is known since changes in short-term assets and liabilities are used to calculate CFO. Similarly, noncash expenses\nare added back to net income to derive CFO, so the depreciation expense is irrelevant when CFO is known.\nWhen CFO is known, the above table simplifies to:\nInserting numbers results in:\n(Choice A) Although CFO encompasses interest expense, FCFF represents cash that is potentially available to lenders and shareholders. One\nassumption of FCFF is that neither lenders nor shareholders have priority in receiving available cash, so after-tax interest must be added back to\nCFO.\n(Choice C) This answer adds the long-term asset investment instead of subtracting it. FCFF is not the total cash that is available to the lenders\nand shareholders. Returning all its cash without making investments in machinery will eventually result in the firm's closure."
+ },
+ {
+  "id": "f3aebf7d-ea7e-479b-b186-ae777d673f69",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\5. Financial Statement Analysis\\5.05 Analyzing Statements of Cash Flows II - Answers.pdf",
+  "page_idx": 5,
+  "png": "scripts\\_uworld_residuals_png\\f3aebf7d-ea7e-479b-b186-ae777d673f69.png",
+  "topic": "Financial Statement Analysis",
+  "subtopic": "5.05 Analyzing Statements of Cash Flows II",
+  "question_en": "A consultant gathers the following data on a company:\n\n| Selected Data (BRL millions) | Prior Year | Current Year |\n|---|---|---|\n| Net income | 500 | 550 |\n| Depreciation | 25 | 40 |\n| Interest expense | 50 | 50 |\n| Net working capital | 150 | 170 |\n| Long-term debt | 700 | 730 |\n\nIf the company's tax rate is 20% and current year capital expenditures were BRL 60 million, then free cash flow to the firm (in BRL millions) for the current year is closest to:",
+  "option_a": "540",
+  "option_b": "550",
+  "option_c": "560",
+  "correct_answer": "B",
+  "explanation_en": "Free cash flow to the firm (FCFF) is the cash flow available to capital providers (ie, lenders and shareholders) after subtracting operating expenses\nand investments in fixed and working capital. FCFF is commonly used in asset valuation and financial analysis.\nTo calculate FCFF, start with net income, add depreciation and after-tax interest expense, and then subtract capital expenditures and investments\nin working capital.\n(Choice A) 540 is free cash flow to equity (FCFE). FCFE equals FCFF minus after-tax interest expense and change in debt.\n(Choice C) 560 results from not tax-adjusting the interest expense by one minus the tax rate. For FCFF purposes, the after-tax interest expense\nis added back to net income since borrowers benefit from a tax-shield."
+ },
+ {
+  "id": "e8c79ef2-c110-4c2d-8380-a5028ba8004a",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\5. Financial Statement Analysis\\5.05 Analyzing Statements of Cash Flows II - Answers.pdf",
+  "page_idx": 8,
+  "png": "scripts\\_uworld_residuals_png\\e8c79ef2-c110-4c2d-8380-a5028ba8004a.png",
+  "topic": "Financial Statement Analysis",
+  "subtopic": "5.05 Analyzing Statements of Cash Flows II",
+  "question_en": "An analyst reviews the following common-sized cash flow statement:\n\n| Cash Flow From Operating Activities | Percentage of Net Revenue (20X7) |\n|---|---|\n| Net income | 20.00 |\n| Depreciation | 7.00 |\n| Change in accounts receivable | (9.00) |\n| Change in inventory | (6.00) |\n| Change in accounts payable | 8.50 |\n| Net cash provided by operating activities | 20.50 |\n\nWhich of the following best describes the impact on net cash provided by operating activities?",
+  "option_a": "The increase in inventory decreases cash flow",
+  "option_b": "The decrease in accounts payable increases cash flow",
+  "option_c": "The decrease in accounts receivable decreases cash flow",
+  "correct_answer": "A",
+  "explanation_en": "Common-sized cash flow statements may be reported as a percentage of net revenue. Increases in assets indicate a use of cash and are\nshown as negative numbers on a common-sized cash flow statement; decreases are shown as positive figures. In this question, inventory is\nincreasing, so it decreases cash flow and is shown as a negative percentage of net revenue. Increases in liabilities suggest a source of cash.\nIncreases in liabilities are shown as positive figures and decreases as negative figures on common-sized statements of cash flow.\n(Choice B) Accounts payable increases when a company purchases assets on credit and decreases as the company pays off those assets. It is\nthe increase, not the decrease, in accounts payable that increases cash flow.\n(Choice C) Accounts receivable increases when a company extends credit to customers and decreases when the company collects cash from\nthem. It is the increase, not the decrease, in accounts receivable that decreases cash flow."
+ },
+ {
+  "id": "e0ca3a8a-ed50-47f0-a7ef-5d01a271f8bb",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\5. Financial Statement Analysis\\5.05 Analyzing Statements of Cash Flows II - Answers.pdf",
+  "page_idx": 2,
+  "png": "scripts\\_uworld_residuals_png\\e0ca3a8a-ed50-47f0-a7ef-5d01a271f8bb.png",
+  "topic": "Financial Statement Analysis",
+  "subtopic": "5.05 Analyzing Statements of Cash Flows II",
+  "question_en": "An analyst gathers the following data on a company:\n\n| Selected Data (SGD millions) | Prior Year | Current Year |\n|---|---|---|\n| Net income | 200 | 215 |\n| Depreciation | 5 | 5 |\n| Interest expense | 20 | 20 |\n| Net working capital | 44 | 53 |\n| Long-term debt | 300 | 295 |\n| Capital expenditures | 40 | 30 |\n\nThe company's tax rate is 25% and current year's free cash flow to the firm (FCFF) is SGD 196 million. Based only on this information, free cash flow to equity (FCFE) for the current year is closest to:",
+  "option_a": "SGD 176 million.",
+  "option_b": "SGD 181 million.",
+  "option_c": "SGD 191 million.",
+  "correct_answer": "A",
+  "explanation_en": "Free cash flow metrics are commonly used in asset valuation and financial analysis. Free cash flow to the firm (FCFF) is the cash flow available\nto debt and equity providers after subtracting operating expenses and investments in fixed and working capital. Free cash flow to equity (FCFE) is\nthe cash flow available to equity providers (shareholders), which is FCFF adjusted for interest payments and any changes in debt from principal\nreduction and/or new borrowing.\nSince FCFF (196) is given in this question, start with FCFF, subtract the after-tax cost of interest, and then subtract the reduction in debt principal\nto obtain FCFE.\n(Choice B) SGD 181 million results from not including change in debt in the equation.\n(Choice C) SGD 191 million results from not subtracting the after-tax interest expense."
+ },
+ {
+  "id": "ed0f519b-4286-464d-a71b-1f700b68e3e4",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\2. Economics\\2.08 Exchange Rate Calculations - Answers.pdf",
+  "page_idx": 0,
+  "png": "scripts\\_uworld_residuals_png\\ed0f519b-4286-464d-a71b-1f700b68e3e4.png",
+  "topic": "Economics",
+  "subtopic": "2.08 Exchange Rate Calculations",
+  "question_en": "An analyst gathers the following information related to the New Zealand dollar (NZD) and the Australian dollar (AUD): Based on this information, the maximum arbitrage profits (in AUD) are closest to:",
+  "option_a": "0.0120",
+  "option_b": "0.0238",
+  "option_c": "0.0276",
+  "correct_answer": "B",
+  "explanation_en": "When the risk-free interest rates of two countries are different, the forward rates of their currencies must be priced to prevent arbitrage profit in an efficient market. The forward rate calculation is based on the spot rate, the interest rates, and the length of the forward period. In this scenario, since a dealer is offering a rate of 1.1700 NZD/AUD, which differs from the arbitrage-free rate, arbitrage profits are possible. According to the arbitrage-free rate, AUD 1.000 should purchase NZD 1.1974. However, using the dealer quote, AUD 1.000 only purchases NZD 1.1700. Therefore, in the market, the AUD is underpriced and the NZD is overpriced. Arbitrage profits can be earned by committing today to sell (ie, deliver) the overpriced NZD and to buy (ie, take delivery of) the underpriced AUD through a forward exchange rate contract. One of the key elements of arbitrage is that investors do not risk their own funds, but instead borrow to initiate the transaction. In this scenario, the first step is to borrow AUD to obtain the NZD, which will be invested and eventually delivered under the forward contract. The complete steps to exploit this opportunity are as follows: (Choice A) 0.0120 represents the difference between the arbitrage-free forward exchange rate and the market rate, or 1/1.1700 − 1/1.1974 (quotes are inverted to obtain the AUD result). (Choice C) 0.0276 represents the loss that would be incurred by entering into a forward contract to sell the AUD (ie, underpriced asset) and buy the NZD (ie, overpriced asset). This transaction is unlikely since it would lock in a loss."
+ },
+ {
+  "id": "aa969336-bc87-4148-9f2f-75aed5c61759",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\2. Economics\\2.08 Exchange Rate Calculations - Answers.pdf",
+  "page_idx": 4,
+  "png": "scripts\\_uworld_residuals_png\\aa969336-bc87-4148-9f2f-75aed5c61759.png",
+  "topic": "Economics",
+  "subtopic": "2.08 Exchange Rate Calculations",
+  "question_en": "A currency trader observes the following currency spot exchange rates from two dealers: Based on only this information, the arbitrage profit available per every CNY 1 is closest to:",
+  "option_a": "INR 0.0682",
+  "option_b": "INR 0.0064",
+  "option_c": "CNY 0.0682",
+  "correct_answer": "A",
+  "explanation_en": "A cross-rate is the exchange rate implied by two related exchange rates, assuming that no arbitrage opportunities exist. If the actual exchange rate differs from the no-arbitrage exchange rate implied by the cross-rate, then an arbitrage opportunity exists. An investor can profit by purchasing a currency from the source where it is underpriced and simultaneously selling the same currency to the source where it is overpriced. Finding an arbitrage opportunity from cross-rates can be conceptualized as a triangle, as shown above. Potential arbitrage profits can be observed by moving from one currency to another in two directions around the triangle. When moving around the triangle, one currency is multiplied by the actual exchange rate to convert to another currency. In this scenario, the INR/CNY rate from Dealer 2 is 10.75. Using the INR/THB and CNY/THB rates quoted by Dealer 1, Dealer 1's INR/CNY cross- rate is 10.6818. The arbitrage profit is the difference between buying CNY 1 for INR 10.6818 from Dealer 1 and simultaneously selling CNY 1 for INR 10.75 to Dealer 2. The profit is INR 10.75 − INR 10.6818 = INR 0.0682 per every CNY 1 (Choice C). (Choice B) 0.0064 is the potential arbitrage profit in CNY, not INR."
+ },
+ {
+  "id": "d19d52f7-251d-4816-8a0e-e1ba9090542e",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\2. Economics\\2.08 Exchange Rate Calculations - Answers.pdf",
+  "page_idx": 13,
+  "png": "scripts\\_uworld_residuals_png\\d19d52f7-251d-4816-8a0e-e1ba9090542e.png",
+  "topic": "Economics",
+  "subtopic": "2.08 Exchange Rate Calculations",
+  "question_en": "An analyst obtains the following exchange rates among EUR, GBP, and CHF: If CHF appreciates by 5% versus EUR and EUR appreciates by 2% versus GBP, the no-arbitrage CHF/GBP rate would be closest to:",
+  "option_a": "1.1951",
+  "option_b": "1.2434",
+  "option_c": "1.3176",
+  "correct_answer": "A",
+  "explanation_en": "Among any three currencies (eg, EUR, CHF, and GBP), three exchange rates express the value between each possible pair (ie, CHF/EUR,\nGBP/EUR, and CHF/GBP). Given any two of the three exchange rates, the third is effectively fixed by arbitrage. This implied exchange rate is\nknown as a cross rate, which is obtained by multiplying the two given rates and factoring out the currency common to both quotes. In some\ncases, currency quotes need to be inverted to facilitate cancelling out the intermediary currency.\nIn this scenario, EUR has appreciated by 2% against GBP and CHF has appreciated by 5% against EUR.\nSince EUR has appreciated relative to the GBP and is the base currency in the given GBP/EUR exchange rate, that rate is multiplied by"
+ },
+ {
+  "id": "57f9bfaf-fa14-4404-8ef9-db145a49a466",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\2. Economics\\2.08 Exchange Rate Calculations - Answers.pdf",
+  "page_idx": 20,
+  "png": "scripts\\_uworld_residuals_png\\57f9bfaf-fa14-4404-8ef9-db145a49a466.png",
+  "topic": "Economics",
+  "subtopic": "2.08 Exchange Rate Calculations",
+  "question_en": "The current spot rate between the Russian ruble and Chinese yuan is 10.5000 RUB/CNY. The Russian annual interest rate is at 7.0% and the Chinese annual interest rate is at 4.0%. The following one-year forward exchange rate quotes are available from foreign exchange dealers: An arbitrage opportunity is most likely offered by:",
+  "option_a": "Dealer 1 only.",
+  "option_b": "Dealer 2 only.",
+  "option_c": "both Dealer 1 and Dealer 2.",
+  "correct_answer": "B",
+  "explanation_en": "Arbitrage refers to the riskless sale of an asset at a higher price in one market and the simultaneous purchase of the same asset at a lower\nprice in a different market. The arbitrage-free forward rate is the rate that prevents arbitrage profit. For this question, the first step is to calculate\nthe arbitrage-free rate, and then determine if either of the dealer quotes are priced to allow arbitrage.\nThe spot exchange rate shows RUB as the price currency and CNY as the base currency. Using the formula shown above, the arbitrage-free one-\nyear forward rate (in RUB/CNY) is:\n1 + 0.07\n= 10.5000 ×\nArbitrage-free forward rate\n1 + 0.04\n= 10.8029\nSince Dealer 2's quote of 10.9100 RUB/CNY is different from this arbitrage-free rate, an investor can earn arbitrage profits using the quote.\nThere is no arbitrage opportunity with the quote from Dealer 1 since that quote equals the arbitrage-free rate (Choices A and C)."
+ },
+ {
+  "id": "1e084771-193c-4d57-b2a2-6850f89e1672",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\2. Economics\\2.07 Capital Flows and the FX Market - Answers.pdf",
+  "page_idx": 7,
+  "png": "scripts\\_uworld_residuals_png\\1e084771-193c-4d57-b2a2-6850f89e1672.png",
+  "topic": "Economics",
+  "subtopic": "2.07 Capital Flows and the FX Market",
+  "question_en": "A Singapore-based investor holds assets in New Zealand denominated in NZD. The investor forecasts the following changes over the next year:\n\n| year: NZD nominal inflation rate −2% |  |\n|---|---|\n| SGD/NZD spot exchange rate +6% |  |\n| SGD nominal inflation rate +3% |  |\n\nBased on this information, the expected change in the SGD/NZD real exchange rate is closest to:",
+  "option_a": "1%",
+  "option_b": "5%",
+  "option_c": "11%",
+  "correct_answer": "A",
+  "explanation_en": "The purchasing power of one currency versus another is measured by the real exchange rate between the two. The real exchange rate is a function of both the quoted (ie, nominal) exchange rate between the currencies and the price level in each currency; changes in real exchange rates result from changes in one or more of those factors. Considered from the perspective of the price currency versus the base currency, a change in the real exchange rate reflects the cumulative impact of changes to the: spot exchange rate, the net inflation rate in the base currency (ie, NZD), and the net inflation rate in the price currency (ie, SGD). ≈ The more precise measure of changes in real exchange rates is calculated as 0.85% 1%: However, the change in the SGD/NZD real exchange rate change may also be estimated using a second formula. This formula estimates the net change in the real exchange rate as the expected change in the spot rate, adjusted for the difference between the expected change in the price currency's inflation and the expected change in the base currency's inflation; the three expected changes are expressed as percentage changes. %ΔR ≈ %ΔS + %ΔP − %ΔP = +6% + (−2%) − (+3%) = 1% SGD/NZD SGD/NZD NZD SGD (Choice B) 5% results from incorrectly treating NZD deflation as reinforcing, not offsetting, the impact of the increase in the SGD/NZD spot exchange rate. (Choice C) 11% results from incorrectly treating both NZD deflation and SGD inflation as factors that reinforce the impact of the increase in the SGD/NZD spot exchange rate."
+ },
+ {
+  "id": "6c3d1452-5e72-416c-94b3-aa51602b5c6b",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\3. Portfolio Management\\3.01 Portfolio Risk And Return Part I - Answers.pdf",
+  "page_idx": 10,
+  "png": "scripts\\_uworld_residuals_png\\6c3d1452-5e72-416c-94b3-aa51602b5c6b.png",
+  "topic": "Portfolio Management",
+  "subtopic": "3.01 Portfolio Risk And Return Part I",
+  "question_en": "A manager, acting on a client's behalf, may choose from three investments: Which investment is most appropriate for a risk-averse client?",
+  "option_a": "Fund 1",
+  "option_b": "Fund 2",
+  "option_c": "Fund 3",
+  "correct_answer": "C",
+  "explanation_en": "A risk-averse investor wants either the least risk given the same return, or the most return given the same risk. Here, determine the lowest-risk\ninvestment with the highest return.\nFund 2 and Fund 3 have the lowest risk. Fund 1 and Fund 3 have the highest return. Fund 3 has the best combination of risk and return."
+ },
+ {
+  "id": "fa41d2f1-1f82-407c-9868-1caeadaac826",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\3. Portfolio Management\\3.01 Portfolio Risk And Return Part I - Answers.pdf",
+  "page_idx": 1,
+  "png": "scripts\\_uworld_residuals_png\\fa41d2f1-1f82-407c-9868-1caeadaac826.png",
+  "topic": "Portfolio Management",
+  "subtopic": "3.01 Portfolio Risk And Return Part I",
+  "question_en": "An analyst researches a portfolio that holds two securities, Stock A and Stock B, and collects the following data:\n\n# Table 1: Expected Return Based on Bank Action\n\n| Investment | Raise | Maintain | Lower |\n|---|---|---|---|\n| A | 10 | 0 | 5 |\n| B | 0 | 10 | 5 |\n| C | 10 | 5 | 0 |\n\n# Table 2: Portfolio with Stock A and Stock B (First Example)\n\n| | Expected Standard Deviation (σ) | Asset Weights |\n|---|---|---|\n| Stock A | 0.17 | 0.25 |\n| Stock B | 0.08 | 0.75 |\n\n# Table 3: Portfolio with Stock A and Stock B (Second Example)\n\n| | Expected Standard Deviation (σ) | Asset Weights |\n|---|---|---|\n| Stock A | 0.25 | 0.80 |\n| Stock B | 0.20 | 0.20 |\n\nThe analyst determines that the correlation coefficient (ρ) between Stock A and Stock B is 0.65. The expected variance of the portfolio is closest to:",
+  "option_a": "0.0087",
+  "option_b": "0.0120",
+  "option_c": "0.0153",
+  "correct_answer": "A",
+  "explanation_en": "The variance of a portfolio's return (portfolio variance), σp², is a measure of risk. Portfolio variance is a function of the weight and risk of the portfolio's assets and the correlation between the two assets. Portfolio variance expresses the degree of dispersion of how portfolio returns occur around its mean. The greater the dispersion, the higher the portfolio risk.\n\nTo find the portfolio variance of a two-asset portfolio, input the weights and variances of the portfolio's underlying investments and the correlation coefficient of the two assets into the portfolio variance formula: Portfolio variance (σp²) = wa²σa² + wb²σb² + 2wawbρabσaσb.\n\nσp = (0.25² × 0.17²) + (0.75² × 0.08²) + (2 × 0.25 × 0.75 × 0.65 × 0.17 × 0.08)\nσp = (0.0625 × 0.0289) + (0.5625 × 0.0064) + (0.0033)\nσp = 0.0018 + 0.0036 + 0.0033\nσp = 0.0087\n\n(Choice B) This choice uses a weighted average of the underlying securities' variance to determine portfolio variance. It does not include the impact that correlating assets have on the portfolio.\n\n(Choice C) This choice misapplies the portfolio variance formula by using unsquared weights of the assets. It overstates portfolio variance.\n\nThings to remember: Expected portfolio variance measures the total risk of the portfolio. The portfolio's underlying holdings and how they correlate with each other will determine the portfolio's risk. Adding low-correlating securities to a portfolio lowers expected portfolio variance."
+ },
+ {
+  "id": "3250c706-feea-4fd2-a8ac-c467768b4f08",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\3. Portfolio Management\\3.01 Portfolio Risk And Return Part I - Answers.pdf",
+  "page_idx": 19,
+  "png": "scripts\\_uworld_residuals_png\\3250c706-feea-4fd2-a8ac-c467768b4f08.png",
+  "topic": "Portfolio Management",
+  "subtopic": "3.01 Portfolio Risk And Return Part I",
+  "question_en": "A manager prepares risk and return information for three different funds: If an investor's risk aversion is 8, then the fund with the highest utility for that investor is most likely?",
+  "option_a": "Fund 1",
+  "option_b": "Fund 2",
+  "option_c": "Fund 3",
+  "correct_answer": "B",
+  "explanation_en": "Investor utility (U) measures an investor's degree of satisfaction with an investment. It is most useful in ranking one investor's choices\ni\nregarding risk and return. An investor's utility is a function of the investment's expected return and risk and the investor's risk-aversion level. An\ninvestor uses utility to decide which investments are most preferred. All investors seek to maximize their utility.\nUse the information provided to determine the utility for each fund. The expected standard deviation squared is the fund's expected variance.\nAfter calculating the investor's utility for each fund, select the fund with the highest utility to determine a risk-averse investor's most preferred\ninvestment.\n(Choice B) Fund 1 has the lowest utility of all three choices. All investors seek to maximize, not minimize, their utility.\n(Choice C) A risk-seeking investor would choose Fund 3 over Fund 2 since it has greater risk despite having lower utility than Fund 2. Risk-\nseeking investors seek the highest risk regardless of returns."
+ },
+ {
+  "id": "0b53b8c2-3c74-4904-8615-205acbfd3f8c",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\3. Portfolio Management\\3.01 Portfolio Risk And Return Part I - Answers.pdf",
+  "page_idx": 27,
+  "png": "scripts\\_uworld_residuals_png\\0b53b8c2-3c74-4904-8615-205acbfd3f8c.png",
+  "topic": "Portfolio Management",
+  "subtopic": "3.01 Portfolio Risk And Return Part I",
+  "question_en": "A portfolio consists of two assets: If the expected standard deviation of the portfolio is 10%, then the two assets can be best described as having:",
+  "option_a": "no correlation.",
+  "option_b": "positive correlation.",
+  "option_c": "negative correlation.",
+  "correct_answer": "C",
+  "explanation_en": "The correlation coefficient evaluates how two assets' returns move or are expected to move in relation to each other. It measures both the\ndegree and the direction of the relationship between the two assets. Positively correlated asset returns generally move in the same way,\nwhile negatively correlated asset returns tend to move in opposite directions. The closer the correlation coefficient is to −1 or 1, the stronger the\nnegative or positive relationship, respectively.\nThe correlation coefficient is used to calculate the expected standard deviation of portfolio returns. The degree and the direction of the variance\nbetween asset returns affects the portfolio's overall risk. If two assets are less than perfectly correlated, combining them would produce a portfolio\nwith a lower standard deviation than the weighted average of the assets' standard deviations. The closer the correlation coefficient is to −1, the\nlower the portfolio risk.\nThe relationship between a two-asset portfolio's standard deviation and the weights, standard deviations, and correlation of its component assets\nis shown below.\nIn this case, since all the other information is provided, the relationships above can be used to solve for the assets' correlation as follows:\nThe correlation coefficient of assets A and B is −0.6792, so they are negatively correlated (Choices A and B)."
+ },
+ {
+  "id": "e740a903-70d8-467e-a3a6-b016bc4fe1ee",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\3. Portfolio Management\\3.01 Portfolio Risk And Return Part I - Answers.pdf",
+  "page_idx": 28,
+  "png": "scripts\\_uworld_residuals_png\\e740a903-70d8-467e-a3a6-b016bc4fe1ee.png",
+  "topic": "Portfolio Management",
+  "subtopic": "3.01 Portfolio Risk And Return Part I",
+  "question_en": "A manager constructs a new portfolio using a treasury bond and a stock. The manager obtains the following information: The expected correlation coefficient between the stock and treasury bond is 0.25. If the portfolio's expected return is 9%, its expected standard deviation will be closest to:",
+  "option_a": "5.4%",
+  "option_b": "13.9%",
+  "option_c": "17.6%",
+  "correct_answer": "B",
+  "explanation_en": "HP 12c TI BA II Plus\nσ ,\nThe portfolio standard deviation, p is a measure of risk. For a standard deviation of a two-asset portfolio, the portfolio standard deviation is a\nfunction of the weight and risk of the portfolio's assets and the correlation between two assets. It expresses the degree of dispersion of how\nportfolio returns occur around its mean. The greater the dispersion, the higher the risk.\nThe data given in this question are all expected values; this does not change how the portfolio standard deviation is calculated. Both expected\nstandard deviation and standard deviation from historical data are calculated from the same equation.\nTo find portfolio standard deviation, input the weights, standard deviations, variances of the portfolio's assets, and the correlation coefficients\nbetween all pairs of assets. For this question, find the weights of treasury bond (T) and the stock (S) from the return requirement.\nIn a two-asset portfolio, restate the weight of one of the funds as the difference of the total portfolio minus the other fund's weight.\nOnce the weight of stock (w ) is found, solve for the weight of the treasury bond (w ):\nS T\nFor the expected standard deviations of T (treasury bond) and S (stock), calculate the values by taking the square root of the variance."
+ },
+ {
+  "id": "e526f2f8-c950-45d2-8a0d-f2c7944d4a00",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\3. Portfolio Management\\3.01 Portfolio Risk And Return Part I - Answers.pdf",
+  "page_idx": 15,
+  "png": "scripts\\_uworld_residuals_png\\e526f2f8-c950-45d2-8a0d-f2c7944d4a00.png",
+  "topic": "Portfolio Management",
+  "subtopic": "3.01 Portfolio Risk And Return Part I",
+  "question_en": "Information concerning two assets that compose a portfolio is shown below: If the portfolio's variance is 0.07, the covariance between the two assets is best described as:",
+  "option_a": "negative.",
+  "option_b": "zero.",
+  "option_c": "positive.",
+  "correct_answer": "A",
+  "explanation_en": "Covariance describes the linear relationship between returns of two assets relative to each other. If two assets' returns tend to move in the\nsame direction at the same time, the assets have positive covariance. If the returns tend to move in opposite directions, the assets have negative\ncovariance. Zero covariance means there is no linear relationship between the assets.\nCovariance is important in portfolio management since assets with negative covariance can be combined to create a lower-risk portfolio. In this\nquestion, each asset's weight and the portfolio's variance are given. Each asset's variance is the square of its standard deviation. Calculating\ncovariance is accomplished by rearranging the terms in the equation above:\nIn this scenario, the covariance is negative since the sum of the product of each asset's squared weight and its variance is greater than the\nportfolio's variance (Choices B and C). However, covariance indicates only the direction of each asset relative to the other; it does not provide\nany information about the strength of the linear relationship. The correlation coefficient provides information about both the direction and strength\nof the linear relationship."
+ },
+ {
+  "id": "8db6e2cb-171e-44d4-9617-c9bf2c5876fd",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\3. Portfolio Management\\3.01 Portfolio Risk And Return Part I - Answers.pdf",
+  "page_idx": 17,
+  "png": "scripts\\_uworld_residuals_png\\8db6e2cb-171e-44d4-9617-c9bf2c5876fd.png",
+  "topic": "Portfolio Management",
+  "subtopic": "3.01 Portfolio Risk And Return Part I",
+  "question_en": "An analyst reviews the following information on equity classes:\n\n| | US equity | European equity | Japanese equity | Indian equity |\n|---|---|---|---|---|\n| US equity | 1.00 | | | |\n| European equity | 0.74 | 1.00 | | |\n| Japanese equity | 0.67 | 0.59 | 1.00 | |\n| Indian equity | 0.61 | 0.55 | 0.47 | 1.00 |\n\nThe analyst wishes to form a portfolio using only US equity and one of the other equity classes shown above. If the portfolio is equally weighted between the two classes, which would reduce the portfolio's risk the most if included in the portfolio?",
+  "option_a": "Indian equity",
+  "option_b": "European equity",
+  "option_c": "Japanese equity",
+  "correct_answer": "A",
+  "explanation_en": "σ\nThe expected standard deviation of a portfolio's return, p, is a measure of risk. It is a function of the weight and risk of the portfolio's assets\nand the correlation between the two assets. On a graph, it expresses the dispersion of portfolio returns around its mean return. The lower the\ndispersion, the lower the portfolio risk.\nCombining two assets whose returns are less than perfectly correlated (ie, correlation coefficient less than 1) with each other reduces\nportfolio risk. The lower the correlation is between the two assets, the greater the benefit from diversification and the lower the portfolio's\nexpected standard deviation. In this instance, the asset class that has the lowest correlation with the US equities is the Indian equity asset class,\nwith a correlation of 0.61. Therefore, it reduces portfolio risk the most if combined with the US equity asset class (Choices B and C)."
+ },
+ {
+  "id": "4fff23d6-6ca0-4bae-bca0-84bc1f4d5fab",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\7. Fixed Income\\7.02 Fixed-Income Cash Flows and Types - Answers.pdf",
+  "page_idx": 24,
+  "png": "scripts\\_uworld_residuals_png\\4fff23d6-6ca0-4bae-bca0-84bc1f4d5fab.png",
+  "topic": "Fixed Income",
+  "subtopic": "7.02 Fixed-Income Cash Flows and Types",
+  "question_en": "A government agency issues a one-year, 3% coupon bond at par on June 30, 20X0. The bond is callable in whole or in part at: The call provision is best described as:",
+  "option_a": "Bermuda style.",
+  "option_b": "American style.",
+  "option_c": "European style.",
+  "correct_answer": "A",
+  "explanation_en": "Types of call provisions\nAmerican style Continuously callable: the issuer has the right to call at any time beginning on the call date until maturity\nEuropean style Only one call date, and the issuer can call bonds only on that date\nBermuda style Can be called on one of multiple call dates, but only on those dates\nA call provision allows the bond issuer to redeem a bond prior to its final maturity. This allowance exposes bondholders to reinvestment risk, as\nthe call provision is unlikely to be exercised unless yields are lower than when the bond was issued. To compensate for the call risk, investors\nrequire higher yields for callable bonds than for noncallable bonds.\nMost callable bonds have an initial call protection period during which the bonds cannot be called. Once the call protection period has passed, the\nbond is callable within the constraints of the embedded call provision. Specific call dates usually coincide with coupon payment dates.\nIn this scenario, the bond is callable on multiple specific dates and is, therefore, a Bermuda-style call rather than an American- or European-\nstyle call (Choices B and C). Bermuda-style calls often require a premium to par on the earliest call dates, which serves as a \"sweetener\" for the\nbondholder since it discourages the issuer from exercising the call provision early in the life of the bond."
+ },
+ {
+  "id": "f400bdd2-5857-42f1-aefa-50c97e47e12e",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\7. Fixed Income\\7.02 Fixed-Income Cash Flows and Types - Answers.pdf",
+  "page_idx": 12,
+  "png": "scripts\\_uworld_residuals_png\\f400bdd2-5857-42f1-aefa-50c97e47e12e.png",
+  "topic": "Fixed Income",
+  "subtopic": "7.02 Fixed-Income Cash Flows and Types",
+  "question_en": "A one-year bond is issued with the following characteristics: This coupon structure is best described as:",
+  "option_a": "step up.",
+  "option_b": "floating rate.",
+  "option_c": "Bermuda style.",
+  "correct_answer": "A",
+  "explanation_en": "Receipt of coupon interest and principal exposes investors to two potential types of tax. Interest is normally treated as ordinary income and is subject to tax at the same rate as wages. However, interest received on bonds issued by state and local governments is generally exempt from income tax. Tax-exempt bonds tend to be purchased by investors in jurisdictions with high personal income tax rates. The other type of tax is capital gains tax, which taxes an investor's gain (ie, profit) from an investment. This tax applies to all bonds, regardless of whether the bondholder pays taxes on interest received. A capital gain occurs when the face value that the investor receives at maturity is greater than the amount the investor paid for the bond. For the exam, remember that the tax-exempt designation does not apply to all taxes. The exemption usually applies to income taxation of coupon interest. Taxes on capital gains apply to all bonds (Choices A and C)."
+ },
+ {
+  "id": "5032c6a4-8d7e-4970-baef-6cc57045b53d",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\7. Fixed Income\\7.02 Fixed-Income Cash Flows and Types - Answers.pdf",
+  "page_idx": 15,
+  "png": "scripts\\_uworld_residuals_png\\5032c6a4-8d7e-4970-baef-6cc57045b53d.png",
+  "topic": "Fixed Income",
+  "subtopic": "7.02 Fixed-Income Cash Flows and Types",
+  "question_en": "Which of the following bonds is most likely to be considered a domestic bond? A bond that is:",
+  "option_a": "issued by a US company, denominated in EUR, and sold in Australia.",
+  "option_b": "issued by a US-based subsidiary of a Japanese company, denominated in USD, and sold in the US.",
+  "option_c": "issued by a British company, denominated in GBP, and sold in the UK, Japan, and South",
+  "correct_answer": "B",
+  "explanation_en": "A credit-linked bond has coupon payments that change as the bond's or issuer's credit rating changes. In this question, the coupon rate increases by 30 bps every time the issuer credit rating deteriorates. Investors may be concerned about an issuer's (borrower's) future creditworthiness, so credit-linked coupons compensate for this risk. (Choice A) Changes to a floating rate note's coupons are driven by movements in the underlying reference interest rate (eg, LIBOR), not by changes in the issuer's credit rating. (Choice B) Step-up coupon bonds have coupon rates that increase (ie, \"step up\") on preset dates specified in the bond indenture. For example, a step-up bond indenture may specify an increase of 20 bps every six months. These increases happen regardless of changes to the issuer's credit rating."
+ },
+ {
+  "id": "f9b25bc2-60a7-41f3-9d90-355562118936",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\7. Fixed Income\\7.02 Fixed-Income Cash Flows and Types - Answers.pdf",
+  "page_idx": 21,
+  "png": "scripts\\_uworld_residuals_png\\f9b25bc2-60a7-41f3-9d90-355562118936.png",
+  "topic": "Fixed Income",
+  "subtopic": "7.02 Fixed-Income Cash Flows and Types",
+  "question_en": "A company issues a callable 10-year corporate bond with the following characteristics: The bond has a make-whole provision with a 40-basis-point call spread. If this bond is called, the unpaid coupons and principal will be discounted at a rate closest to:",
+  "option_a": "2.9%",
+  "option_b": "3.4%",
+  "option_c": "5.4%",
+  "correct_answer": "B",
+  "explanation_en": "Eurobond market Market Part of international bond market outside national markets' jurisdiction Currency Major currency (usually not issuer's domestic currency) denomination Issuance currency's benchmark rate + Yield spread reflecting Valuation issuer's credit risk and issue's liquidity risk The market value of a bond is the PV of the coupon and principal amounts discounted by the appropriate market interest rate for the bond's currency denomination. An interest rate in the same currency must be used since it represents the opportunity cost of debt capital in that currency. The specific rate used to value the bond is based on the currency's benchmark (eg, government bond, interest rate swap) rate, adjusted for any risk factors (eg, credit, liquidity) that are appropriate for the bond. A bond's market yield is the market discount rate used for valuing the bond's cash flows. Therefore, the market yield on US dollar-denominated emerging market sovereign debt, as in this case, is primarily determined by US dollar interest rates regardless of where the bonds are issued. (Choice A) Euro interest rates are used to value euro-denominated securities but have no direct effect on the value of bonds denominated in other currencies. The Eurobond market is a segment of the global fixed-income securities markets that consists of debt issued outside the jurisdiction of any single country. (Choice C) An emerging market's domestic interest rates are the primary determinant of the country's sovereign debt yield if the bond is denominated in that country's currency, regardless of where the debt is issued. However, in this scenario, the bonds are US dollar-denominated."
+ },
+ {
+  "id": "fbef96f0-6d54-40ba-ba56-201e9ea3a909",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\4. Corporate Issuers\\4.04 Working Capital and Liquidity - Answers.pdf",
+  "page_idx": 11,
+  "png": "scripts\\_uworld_residuals_png\\fbef96f0-6d54-40ba-ba56-201e9ea3a909.png",
+  "topic": "Corporate Issuers",
+  "subtopic": "4.04 Working Capital and Liquidity",
+  "question_en": "An analyst gathers the following data for a company:\n\n| Selected Financial Data | CAD millions |\n|---|---|\n| Credit sales | 12,000 |\n| Cost of goods sold | 9,000 |\n| Accounts receivable | 5,000 |\n| Inventory, beginning balance | 1,400 |\n| Inventory, ending balance | 1,000 |\n| Accounts payable | 3,500 |\n\nBased on this information, the days of inventory on hand (DOH) is closest to:",
+  "option_a": "36.5",
+  "option_b": "40.6",
+  "option_c": "48.7",
+  "correct_answer": "C",
+  "explanation_en": "Days of inventory on hand (DOH), also referred to as number of days of inventory, measures the average number of days it takes a company to sell its inventory. DOH is an activity ratio that indicates management's effectiveness in managing its inventory, with fewer days usually indicating more efficiency as capital is tied up in inventory for a shorter time. DOH is particularly useful as a means of contrasting operating and asset efficiency when comparing similar businesses. DOH is calculated as average inventory for the period divided by daily COGS. In this case, DOH equals 48.7. (Choice A) 36.5 is credit sales, not average inventory, divided by daily COGS. (Choice B) 40.6 is ending inventory, not average inventory, divided by daily COGS."
+ },
+ {
+  "id": "9ac58218-81b7-4868-b330-4eaa42e000a9",
+  "reasons": [
+   "textdiff_residual"
+  ],
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\6. TOUGH QB UWORLD-2000 MCQs\\4. Corporate Issuers\\4.04 Working Capital and Liquidity - Answers.pdf",
+  "page_idx": 11,
+  "png": "scripts\\_uworld_residuals_png\\9ac58218-81b7-4868-b330-4eaa42e000a9.png",
+  "topic": "Corporate Issuers",
+  "subtopic": "4.04 Working Capital and Liquidity",
+  "question_en": "An analyst gathers the following information for 20X1 for a Brazilian company (in BRL millions): If the average length of the cash conversion cycle for the industry is 58 days, then the cash conversion cycle for the company is most likely:",
+  "option_a": "better than that of the industry.",
+  "option_b": "the same as that of the industry.",
+  "option_c": "worse than that of the industry.",
+  "correct_answer": "C",
+  "explanation_en": "The cash conversion cycle (CCC) is the average number of days it takes a company to collect the cash from a sale of goods after paying suppliers. The CCC consists of the number of days of inventory (ie, days of inventory on hand, DOH) plus the number of days of receivables (ie, days of sales outstanding, DSO) less the number of days of payables (ie, days of payables outstanding, DPO). DOH measures the average time needed for a company to sell its inventory. DSO measures the average time needed to collect cash from the sales. DPO measures the average time needed to pay suppliers for the materials used to make the goods. In this scenario, it takes the company 5.52 (63.52 − 58) more days than the industry, on average, to convert its inventory to cash after paying suppliers. This indicates a worse CCC relative to the industry since it takes longer for the company to convert inventory to cash (Choices A and B)."
+ }
+]

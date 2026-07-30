@@ -1,0 +1,165 @@
+[
+ {
+  "id": "27307bf8-116f-428b-a525-66cacd5e9c5e",
+  "verdict": "explanation_wrong",
+  "field": "explanation_en",
+  "new_value": "The elements (ie, phases) of the risk management framework incorporate the enterprise-wide spectrum of risk management activities and help management stay within the company's risk tolerance while pursuing strategic goals. These elements can be summarized as follows: Leadership determines the overall strategic operating goals, risk budget, and risk tolerance. Management allocates capital to risky projects and manages daily operations. The risk infrastructure (eg, people, systems) gathers, measures, monitors, and reports risk positions. How frequently a company monitors its risk position may vary among entities and depends upon the size of the organization, available resources, and to what degree risk affects decision-making. For example, a large multinational entity may opt for daily monitoring, whereas a smaller regional firm may choose monthly monitoring. (Choice B) Leadership determines the company's risk budget during the risk governance phase. In the context of risk management, risk infrastructure refers to the people and systems that support the implementation of risk management with data collection, measurement, monitoring, and reporting. (Choice C) Assessing the current risk position's alignment with the company's risk tolerance is done in the monitoring phase, not the identification phase. During the identification phase, the company analyzes risk drivers (eg, economic factors, industry's intensity of competition, specific company factors).",
+  "evidence": "PNG/PDF page for this question ('Which of the following statements about elements of the risk management framework...', correct=A) shows the real explanation about risk governance/infrastructure phases. The DB's stored explanation_en ('Risk shifting refers to using derivatives...') is verbatim the explanation for a DIFFERENT question on the same source PDF ('If a company shifts the price risk of a commodity by purchasing a futures contract...') — cross-contamination between two questions in the same PDF."
+ },
+ {
+  "id": "56c80f98-6724-4601-bcae-f0d907a69e89",
+  "verdict": "ok"
+ },
+ {
+  "id": "85822bde-25d3-4f16-994e-930267f2d284",
+  "verdict": "explanation_wrong",
+  "field": "explanation_en",
+  "new_value": "Using a financial calculator, the internal rate of return (IRR) for Projects A and B are 13.0% and 12.1%. When the IRR is at the respective rates above, the net present value (NPV) of each project is equal to zero (ie, the present value of cash inflows equals cash outflows). When evaluating projects under the IRR decision rule, a project should only be accepted if the IRR is above the hurdle rate, which is usually the firm's weighted average cost of capital. Furthermore, if the projects are independent (ie, selection of multiple projects is allowed), choose all projects with an IRR above the hurdle rate. If the projects are mutually exclusive (ie, selection of only one project is allowed), choose the project with the highest IRR. In this independent project scenario where multiple selections are allowed, only Project A should be selected since its IRR is above the hurdle rate. Project A's IRR at 13.0% is greater than its WACC at 12.5%.",
+  "evidence": "Verified against the PDF page for this question (idx9 in the source PDF, correct=A). The DB's stored explanation ('Companies often make choices among possible projects...project sequencing, capital rationing...') is verbatim the explanation for a DIFFERENT question on the same PDF ('A company invests in Project X in 20X8 and plans to invest in Project Y in 20X9...', about project interactions) — cross-contamination."
+ },
+ {
+  "id": "85822bde-25d3-4f16-994e-930267f2d284",
+  "verdict": "formatting_missing",
+  "field": "question_en",
+  "new_value": "A company's analyst made the following after-tax cash flow projections for two independent investments:\n\n| Year | 0 | 1 | 2 | 3 |\n|---|---|---|---|---|\n| Project A | −36,000 | 14,000 | 16,000 | 16,000 |\n| Project B | −39,000 | 15,500 | 16,500 | 17,000 |\n\nThe cost of capital is the company's hurdle rate of 12.5%. Based on the internal rate of return (IRR) approach, which of the following actions is most appropriate for the company?",
+  "evidence": "PDF page shows a cash-flow table (Year 0-3, Project A and B) that is missing from question_en, which currently jumps straight from 'two independent investments:' to 'The cost of capital...'."
+ },
+ {
+  "id": "b8606822-2279-46f1-96b6-97a6d18cec1e",
+  "verdict": "formatting_missing",
+  "field": "question_en",
+  "new_value": "A company is analyzing two mutually exclusive three-year projects with conventional cash flows:\n\n| Cash Flows (£ millions) | Year 0 | Year 1 | Year 2 | Year 3 | IRR |\n|---|---|---|---|---|---|\n| Project A | −60 | 12 | 30 | 55 | 22.2% |\n| Project B | −80 | 60 | 45 | 5 | 24.3% |\n\nIf the hurdle rate is 8% and there are no other cash flows, then based on the IRR and NPV criteria, the best investment decision is to invest in:",
+  "evidence": "PDF page shows the 'Cash Flows (£ millions)' table with Year/Project A/Project B/IRR columns, absent from question_en. correct_answer (A) and explanation_en already match this question correctly (only minor table-linearization word-order differences vs the raw PDF extraction, not a content error)."
+ },
+ {
+  "id": "0b47cfc2-7711-46a1-86fd-040a68486449",
+  "verdict": "formatting_missing",
+  "field": "question_en",
+  "new_value": "A project has the following forecasted annual cash flows (in ¥ billions):\n\n| Year | Cash Flow |\n|---|---|\n| 0 | −5 |\n| 1 | 15 |\n| 2 | 8 |\n| 3 | −20 |\n\nBased on this information, which of the following discount rates will produce the lowest net present value (NPV)?",
+  "evidence": "PDF page shows a Year/Cash Flow table missing from question_en. correct_answer and explanation_en already match this question."
+ },
+ {
+  "id": "51625732-fc5e-47c8-8e52-a701304b788f",
+  "verdict": "ok"
+ },
+ {
+  "id": "b4753083-5950-4fe2-ac86-9955d4b77571",
+  "verdict": "formatting_missing",
+  "field": "question_en",
+  "new_value": "A company plans to replace its old equipment. The replacement equipment would cost AUD 20 million, and the cash flows (in AUD millions) are expected to be:\n\n| Year | 1 | 2 | 3 | 4 |\n|---|---|---|---|---|\n| Cash Flow | 4 | 8 | 8 | 4 |\n\nBased on this information, the internal rate of return (IRR) for replacing the equipment is closest to:",
+  "evidence": "PDF page shows the 'Projected Cash Flows (AUD)' table (Year 1-4 / Cash Flow 4,8,8,4) missing from question_en. correct_answer and explanation_en already match this question."
+ },
+ {
+  "id": "7265f6e1-f753-40e0-8f60-d8dd34689bd6",
+  "verdict": "formatting_missing",
+  "field": "question_en",
+  "new_value": "A corporation is evaluating two projects with the following cash flows (INR million):\n\n| Year | 0 | 1 | 2 | 3 |\n|---|---|---|---|---|\n| Project 1 | −10 | 3 | 6 | 8 |\n| Project 2 | −10 | 8 | 6 | 3 |\n\nProject 1 has a required rate of return of 3% and an internal rate of return (IRR) of 26.9%, while Project 2 has a required rate of return of 8% and an IRR of 38.8%. If the projects are mutually exclusive, the most appropriate investment decision is to invest in:",
+  "evidence": "PDF page shows the Year/Project 1/Project 2 cash-flow table missing from question_en. correct_answer and explanation_en already match this question."
+ },
+ {
+  "id": "843fd6a6-12f1-4413-af24-39eded505156",
+  "verdict": "formatting_missing",
+  "field": "question_en",
+  "new_value": "A company is building a new plant. The NPV of the plant is projected to be €8 million if demand is high, and −€3 million if demand is low. Both scenarios are equally likely. The company has also secured a 1-year lease on some adjoining land, with an option to buy, to expand the facility if demand is high. The costs of the lease and expected cash flows from the expansion option are:\n\n| | |\n|---|---|\n| Option cost (1-year lease expense) | 0.5 million |\n| Annual net cash inflows over 5 years (Years 2–6), if exercised | 0.4 million |\n| Required rate of return | 8% |\n\nThe value of the plant with the option (in EUR) is closest to:",
+  "evidence": "PDF page shows the option cost/cash-flow table missing from question_en. correct_answer (B) and explanation_en already match this question (explanation already contains the real options table, only minor row-order differences vs raw PDF extraction)."
+ },
+ {
+  "id": "ecdf729f-e7be-496c-95fa-6c2046c2fc0c",
+  "verdict": "formatting_missing",
+  "field": "question_en",
+  "new_value": "A company is evaluating a high-risk investment in a new product line. A facility to produce the new product would be built on land that previously generated rental income of CAD 20,000 per year. The product will benefit from a recently run marketing campaign with a cost of CAD 80,000. Other data related to the investment are as follows:\n\n| | |\n|---|---|\n| Initial outlay (in CAD) | 700,000 |\n| Annual after-tax cash flows for 4 years (in CAD) | 240,000 |\n| Required return on investment | 8.0% |\n| WACC | 6.4% |\n\nThe project's NPV (in CAD) is closest to:",
+  "evidence": "PDF page shows the investment-data table missing from question_en (currently jumps from 'as follows:' straight to 'The project's NPV...'). correct_answer and explanation_en already match this question."
+ },
+ {
+  "id": "5c5bc30e-9f52-4d39-a4ba-410f1a87c6fc",
+  "verdict": "explanation_wrong",
+  "field": "explanation_en",
+  "new_value": "A common-size balance sheet shows all a company's assets and liabilities as a percentage of its total assets. Converting to a common-size balance sheet can be useful for analyzing trends for a single company over time, as well as comparing companies of different sizes to each other. Since common-size balance sheet items are proportional to a company's asset value, an analyst could determine whether the company is shifting its asset base to become more liquid. In this scenario, the company's current assets have increased from 44% of the company's asset base to 47%, indicating that it may be shifting to a greater proportion of more liquid assets. (Choice A) Based on the company's common-size balance sheet, its solvency risk measures are declining, suggesting decreasing solvency risk. (Choice C) The company has goodwill on its balance sheet in 20X9 and none in 20X8, suggesting that it made an acquisition during 20X9.",
+  "evidence": "Verified against the PNG for this question (common-size balance sheet, correct=B, 'a more liquid asset base'). The DB's stored explanation ('Required disclosures of property, plant, and equipment (PPE) vary between IFRS and US GAAP...') is verbatim the explanation for a DIFFERENT, unrelated question on the same PDF ('Which of the following is most likely a disclosure for PPE...', correct=A) — cross-contamination."
+ },
+ {
+  "id": "5c5bc30e-9f52-4d39-a4ba-410f1a87c6fc",
+  "verdict": "formatting_missing",
+  "field": "question_en",
+  "new_value": "An analyst compiles the following common-size balance sheet items for a company:\n\n| | 20X9 | 20X8 |\n|---|---|---|\n| Cash and cash equivalents | 4 | 5 |\n| Accounts receivable | 15 | 14 |\n| Inventory | 28 | 25 |\n| Total current assets | 47 | 44 |\n| Property, plant & equipment | 50 | 56 |\n| Goodwill | 3 | 0 |\n| Total assets | 100 | 100 |\n| Accounts payable | 12 | 9 |\n| Short-term debt | 8 | 10 |\n| Total current liabilities | 20 | 19 |\n| Long-term debt | 57 | 59 |\n| Total liabilities | 77 | 78 |\n| Total shareholders' equity | 23 | 22 |\n| Total liabilities and shareholders' equity | 100 | 100 |\n\nBased only on the data above, the most appropriate conclusion the analyst can draw is that compared to 20X8, in 20X9 the company has:",
+  "evidence": "PNG confirms the full common-size balance sheet table (20X9 vs 20X8 columns), entirely missing from question_en."
+ },
+ {
+  "id": "4093ffe0-e2e9-4bac-add6-3810f11e6b5f",
+  "verdict": "formatting_missing",
+  "field": "question_en",
+  "new_value": "An airline company reports the following information for 20X8:\n\n| £ thousands | |\n|---|---|\n| Gross profit | 2,900 |\n| Finance lease payments | (900) |\n| Other operating expenses | (500) |\n| Interest payments | (800) |\n| Earnings before tax (EBT) | 700 |\n| Tax (30%) | (210) |\n| Net income | 490 |\n\nThe fixed charge coverage ratio for 20X8 is closest to:",
+  "evidence": "PNG confirms the income-statement table missing from question_en. correct_answer and explanation_en already match this question."
+ },
+ {
+  "id": "b6b30052-2a33-4b3b-bfcc-d0395c6ebd55",
+  "verdict": "stem_wrong",
+  "field": "question_en",
+  "new_value": "An analyst gathers the following information:\n\n| Accounts | Company X | Company Y | Company Z |\n|---|---|---|---|\n| Cash | 50 | 50 | 20 |\n| Marketable securities | 20 | 100 | 120 |\n| Accounts receivable | 80 | 40 | 50 |\n| Inventory | 60 | 20 | 430 |\n| Unearned revenue | 790 | 850 | 930 |\n| Accounts payable | 220 | 350 | 130 |\n| Dividends payable | 210 | 320 | 450 |\n| Taxes payable | 110 | 250 | 540 |\n\nBased on the cash ratio, the company least able to meet its short-term obligations is:",
+  "evidence": "The stored question_en's 'First Table' (long-term debt-to-equity ratio 0.80/3.00/1.25, financial leverage ratio 2.00/5.00/2.75, total long-term debt 4,000/3,000/5,000 for Companies X/Y/Z) is fabricated cross-contamination from a COMPLETELY DIFFERENT question on the same source PDF (page 18, 0-indexed 17: 'A bank examiner collects the following data: Which company has the greatest value of assets?', correct=C) — confirmed by recomputing equity/assets from that table's own numbers (Company Z assets = 4,000/1.25... wait 5,000/1.25=4,000 equity, 4,000*2.75=11,000 assets, matching that question's own explanation stating 'Company Z has the greatest value of assets, with €11,000'). This question's actual page (page 19, 0-indexed 18) contains ONLY the 'Selected Financial Statement Items' cash-ratio table (the DB's 'Second Table'), which matches the DB's own correct_answer (A) and explanation_en verbatim (cash ratios 0.05/0.08/0.07 for X/Y/Z)."
+ },
+ {
+  "id": "ed9b85e7-754d-4f51-99a3-b1f426ba1c20",
+  "verdict": "ok"
+ },
+ {
+  "id": "0e7a0f35-a871-4d52-81d8-663aebaa95f2",
+  "verdict": "formatting_missing",
+  "field": "question_en",
+  "new_value": "A company discloses its required depreciation expense for five years:\n\n| 20X3–20X7 depreciation expense (in USD) | |\n|---|---|\n| 20X3 | 52,000 |\n| 20X4 | 60,000 |\n| 20X5 | 75,000 |\n| 20X6 | 87,000 |\n| 20X7 | 101,000 |\n\nThe company uses units of production to calculate depreciation expense. Based only on this data, the company most likely expects an increase in:",
+  "evidence": "PNG confirms the 5-year depreciation-expense table missing from question_en. correct_answer and explanation_en already match this question."
+ },
+ {
+  "id": "fdcb34f1-faa3-497d-90ad-5bc202c44162",
+  "verdict": "formatting_missing",
+  "field": "question_en",
+  "new_value": "An analyst collects the following information (in ¥ millions) for a company:\n\n| | |\n|---|---|\n| Cash | 1,900 |\n| Marketable securities | 500 |\n| Accounts receivable | 200 |\n| Accounts payable | 6,000 |\n\nIf there are no other current liabilities, compared with the industry average cash ratio of 0.4, the company's cash ratio is most likely:",
+  "evidence": "PNG confirms the 4-line data table missing from question_en. correct_answer and explanation_en already match this question."
+ },
+ {
+  "id": "82769b1d-3f8f-4c01-ad71-6435cfcf49cd",
+  "verdict": "ok"
+ },
+ {
+  "id": "88e31af1-c472-4af6-9beb-8e0f32e10429",
+  "verdict": "explanation_wrong",
+  "field": "explanation_en",
+  "new_value": "Two steps are required to allow for a comparison between Company A and Company B: convert Company A's financial information from LIFO to FIFO, and then calculate the inventory turnover of both companies. Since the two companies use different inventory valuation methods, Company A's inventory and COGS must be converted from LIFO to FIFO. This is achieved with the LIFO reserve, a required disclosure for a company using LIFO. To convert Company A's ending inventory for a given period to FIFO, add the LIFO reserve for the same period to the inventory balance. To convert COGS, add the amount of decrease in the LIFO reserve over the period to the reported COGS. The change in the LIFO reserve is calculated from a period's beginning and ending LIFO reserve. After Company A's data is converted to FIFO (COGS of 815, ending inventory of 165, beginning inventory of 150), the inventory turnover for both companies can be calculated and compared. Inventory turnover is the ratio of COGS to average inventory (ie, the average number of times that the company sells and replenishes its inventory during a period). Company A's adjusted inventory turnover is 815 / [(165 + 150) / 2] = 5.2, while Company B's is 1,500 / [(280 + 265) / 2] = 5.5. Converting Company A's inventory and COGS to FIFO shows that the company has a lower inventory turnover than Company B (Choices B and C).",
+  "evidence": "Verified against the PNG for this question (two-company inventory turnover comparison, correct=A). The DB's stored explanation ('Inventory write-downs and revaluations US GAAP IFRS...£30 million...£28.7 million...') is verbatim the explanation for a DIFFERENT question on the same PDF (about an IFRS inventory revaluation write-up) — cross-contamination."
+ },
+ {
+  "id": "88e31af1-c472-4af6-9beb-8e0f32e10429",
+  "verdict": "formatting_missing",
+  "field": "question_en",
+  "new_value": "An analyst gathers the following data on two companies:\n\n| Selected financial information (EUR millions) | Company A | Company B |\n|---|---|---|\n| Inventory valuation method | LIFO | FIFO |\n| Revenue (20X9) | 1,300 | 2,200 |\n| COGS (20X9) | 800 | 1,500 |\n| Gross profit (20X9) | 500 | 700 |\n| Inventory (20X9) | 145 | 280 |\n| Inventory (20X8) | 115 | 265 |\n| LIFO reserve (20X9) | 20 | — |\n| LIFO reserve (20X8) | 35 | — |\n\nNeither company has reported inventory shortages or write-downs. After the appropriate adjustments are made to compare the companies' financial data, Company A's inventory turnover is most likely:",
+  "evidence": "PNG confirms the two-company financial-data table missing from question_en."
+ },
+ {
+  "id": "7eda3598-7353-4d12-a970-7c4d38885998",
+  "verdict": "explanation_wrong",
+  "field": "explanation_en",
+  "new_value": "Disclosure requirements for a change in inventory costing method differ depending on the new method used. Only US GAAP permit companies to use LIFO. Switching from LIFO to any other method requires the company to explain why the new method is better than LIFO, and it must also restate prior financial statements as though it had used the new method in prior years (Choices A and B). One reasonable explanation for switching from LIFO to FIFO is that it improves comparability between IFRS and GAAP reporting companies. When switching to LIFO from another method, US GAAP require the company to treat the change prospectively. It must disclose the reasons for the change but is not required to restate prior financial statements. Although the CFA materials do not explain why no restatement is necessary, there is no need to retroactively adjust comparisons since IFRS companies cannot use LIFO.",
+  "evidence": "Verified against the PNG for this question (FIFO-to-LIFO change disclosure, correct=C). The DB's stored explanation ('Inventory constitutes a large percentage of total assets...one important category of disclosure relates to reversals of previously written down inventory...') is verbatim the explanation for a DIFFERENT question on the same PDF ('Unlike companies that comply with US GAAP, a company reporting under IFRS can disclose...', about LIFO reserves/write-down reversals) — cross-contamination."
+ },
+ {
+  "id": "5b6d3241-cd74-464d-9865-f5f8494fa05a",
+  "verdict": "formatting_missing",
+  "field": "question_en",
+  "new_value": "A manager collects information on a company's inventory for a period:\n\n| Per-Unit Inventory (USD) | |\n|---|---|\n| Original cost | 105 |\n| Selling price | 140 |\n| Selling cost | 10 |\n| Completion cost | 30 |\n| Replacement cost | 96 |\n| Normal profit margin | 7 |\n\nThe company uses LIFO to calculate COGS. Based on only this information, under US GAAP, the per-unit value (in USD) for the existing inventory is closest to:",
+  "evidence": "PNG confirms the per-unit inventory data table missing from question_en. correct_answer and explanation_en already match this question."
+ },
+ {
+  "id": "81ce7ad9-f2a0-4109-ad7e-601b4de519af",
+  "verdict": "formatting_missing",
+  "field": "question_en",
+  "new_value": "A company that reports under IFRS is valuing its year-end inventory. It has collected the following information (in CHF millions):\n\n| | |\n|---|---|\n| Historic cost | 175 |\n| Replacement cost | 165 |\n| Selling price | 240 |\n| Cost to sell inventory | 60 |\n\nBased on this data, the inventory value (in CHF millions) reported on its balance sheet is closest to:",
+  "evidence": "PNG confirms the 4-line inventory-valuation data table missing from question_en. correct_answer and explanation_en already match this question."
+ },
+ {
+  "id": "09d8b9d3-afdb-4a97-bd87-7981a939942c",
+  "verdict": "explanation_wrong",
+  "field": "explanation_en",
+  "new_value": "A credit default swap (CDS) is a form of credit derivative. The credit protection buyer makes a series of scheduled payments to another party, the credit protection seller, who provides protection against the credit risk posed by a third party. In return, the credit protection seller pays a certain amount to the credit protection buyer only if the third party experiences a credit event. A credit event includes bankruptcy and may include other events like debt restructuring or failure to make a scheduled payment. A CDS is analogous to insurance paid for by the credit protection buyer. (Choice B) A one-time premium for the right to benefit from an increase in a bond's credit spread describes a credit spread option, not a CDS. (Choice C) Paying the interest, principal, and appreciation on a specific bond in return for a fixed or variable rate describes a total return swap.",
+  "evidence": "Verified against the PNG for this question (credit default swap, correct=A). The DB's stored explanation ('A European put option gives its holder the right...GBP 76...GBP 83...') is verbatim the explanation for a DIFFERENT question on the same PDF (a European put option payoff calculation) — cross-contamination."
+ }
+]

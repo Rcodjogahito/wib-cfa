@@ -1,0 +1,193 @@
+[
+ {
+  "id": "e3c21b6b-a208-4831-b9c1-ae05757b18ee",
+  "verdict": "explanation_wrong",
+  "field": "explanation_en",
+  "new_value": "The Gordon growth model (GGM) is commonly used to estimate the intrinsic value of a stock. Dividend discount models, such as the GGM, are present-value models that use future dividends as a stock's cash flows to determine the stock's value.\n\nThe GGM assumes a company has steady growth in earnings and a constant dividend payout ratio, resulting in a constant dividend growth rate (g). Modeling the stock as a perpetuity, the GGM states that the stock's intrinsic value is calculated by discounting the next dividend by the required rate of return (r), adjusted for the constant dividend growth rate.\n\nIn this scenario, the company's dividend is expected to be constant for an indefinite period, so the GGM is the appropriate model to use. Since the stock is fairly valued, its market price is equal to its intrinsic value. The last dividend can be determined by rearranging the GGM and substituting as follows:\n\nV0 = D0(1 + g)/(r - g)\nD0 = V0(r - g)/(1 + g)\n= 107.36(0.065 - 0.04)/(1 + 0.04)\n≈ 2.58\n\n(Choice B) $2.68 is the next dividend, which is the result of calculating the product in the numerator and failing to divide by (1 + g).\n\n(Choice C) $3.01 is the result of incorrectly using the industry's long-term dividend growth rate in place of the company's long-term dividend growth rate.\n\nThings to remember:\nThe Gordon growth model (GGM) assumes a company has steady growth in earnings and a constant dividend payout ratio, resulting in a constant dividend growth rate. The GGM states that the stock's intrinsic value is calculated by discounting the next dividend by the required rate of return (r), adjusted for the constant dividend growth rate.",
+  "evidence": "PDF page (6.08 Equity Valuation, page_idx 77, Q74): correct_answer A matches checkmark. Stored explanation was the generic 'GGM = b x ROE' template (belonging to a different question, e.g. 6fea0a5c) truncated at 'Substitute values to calculate stock intrinsic value (V0):\\n0'. The actual page explanation computes the LAST dividend (D0) from V0, r, g -- a different derivation entirely. Replaced with verbatim text/numbers from the page."
+ },
+ {
+  "id": "0f29c4b3-d638-46d4-bd8d-080288e6f033",
+  "verdict": "explanation_wrong",
+  "field": "explanation_en",
+  "new_value": "The preferred stock valuation model assumes dividends remain the same and continue forever. The intrinsic value of a preferred stock is the present value of all future dividends. Since the dividends continue forever, the cash flows to a preferred shareholder are equivalent to a perpetuity. Intrinsic value is equal to the annual dividend divided by the required rate of return (ie, the prevailing market rate).\n\nSubstitute the values for the annual dividend and the required rate of return into the formula:\n\nV0 = €1/0.05 = €20\n\nThe par value, market value, and economic growth rate are not required to find the solution.\n\n(Choice B) €20.80 is the result of incorrectly accounting for growth in the dividend at the long-term rate of economic growth: €1 x (1 + 0.04) ÷ 0.05 = €20.80. The valuation model for preferred stock assumes dividends will never change, so economic growth is irrelevant.\n\n(Choice C) €23.81 is the result of incorrectly discounting par value by the required rate of return: €25 ÷ (1 + 0.05) = €23.81.\n\nThings to remember:\nThe intrinsic value of a noncallable, nonconvertible, perpetual preferred stock is the value of a perpetuity. To calculate the intrinsic value of such a security, divide the constant annual dividend by the required rate of return.",
+  "evidence": "PDF page (page_idx 62, Q60): correct_answer A matches checkmark; annual dividend is given directly (€1.00), par/market value/economic growth are distractors. Stored explanation instead described deriving the dividend from par value x dividend rate (25 x 0.056) -- that derivation belongs to a different question (2803d4a5, Q23), not this one. Replaced with this page's own verbatim explanation."
+ },
+ {
+  "id": "ddacbd80-36df-4ef2-91c0-762dd75d7ac5",
+  "verdict": "option_bleed",
+  "field": "option_c",
+  "new_value": "subtract the market value of preferred stock and debt and subtract cash equivalents and short-term investments.",
+  "evidence": "PDF page (page_idx 3, Q4): option C reads in full 'subtract the market value of preferred stock and debt and subtract cash equivalents and short-term investments.' Stored option_c was truncated after 'subtract cash equivalents and'."
+ },
+ {
+  "id": "ddacbd80-36df-4ef2-91c0-762dd75d7ac5",
+  "verdict": "explanation_wrong",
+  "field": "explanation_en",
+  "new_value": "Enterprise value (EV) is a way of viewing the total value of an enterprise, including debt and equity. EV can be used to value a firm's equity, by beginning with the value of both debt and equity. EV is described as the total takeover cost of a company since it represents the total cost an acquirer would pay for the company's equity and debt, minus cash equivalents and short-term investments.\n\nSuppose a company's EV is HKD 101,000 million, its market value of debt is HKD 14,000 million, its market value of preferred stock is HKD 70 million, and its cash and short-term investments are HKD 10 million. The market capitalization (ie, the market value of common stock) is calculated as follows:\n\nEnterprise value: 101,000\n- Market value of preferred stock: (70)\n- Market value of debt: (14,000)\n+ Cash equivalents and short-term investments: 10\nMarket value of common stock: 86,940\n\nIn this example, the company's market capitalization (ie, its market value of common stock) is HKD 86,940 million. Therefore, given the EV of a company, calculate its market capitalization by subtracting the market value of preferred stock and debt, then adding the value of cash equivalents and short-term investments (Choices A and C).\n\nThings to remember:\nEnterprise value (EV) is the sum of the company's market capitalization, market value of preferred stock, and market value of debt, minus cash equivalents and short-term investments. Given the EV of a company, calculate the market value of its common stock by subtracting the market value of preferred stock and debt, then adding the value of cash equivalents and short-term investments.",
+  "evidence": "PDF page (page_idx 3, Q4): correct_answer B matches checkmark. Stored explanation was entirely about asset-based valuation (book vs market value of working capital, intangible assets) -- unrelated to this EV question. Replaced with this page's own verbatim EV explanation."
+ },
+ {
+  "id": "6fea0a5c-1014-4d49-a797-e7f054cf4c27",
+  "verdict": "explanation_wrong",
+  "field": "explanation_en",
+  "new_value": "The Gordon growth model (GGM) is used to estimate the intrinsic value of a stock. The GGM assumes the company has steady growth in earnings, resulting in a constant dividend growth rate (g). Dividend discount models, such as the GGM, are present value models that use future dividends as inputs to determine a stock's current value.\n\nThe constant dividend growth rate can be estimated as the earnings retention ratio (b) multiplied by the return on equity (ROE):\n\ng = b × ROE = (1 − Dividend payout ratio) × ROE = (1 − 0.53) × (0.07) = 0.0329\n\nROE is a measure of return on shareholder equity. The earnings retention ratio, b, indicates how much of that return is reinvested in the business. Thus, the constant dividend growth rate gives an estimate of future growth of earnings and dividends based on reinvested shareholder return. Substitute values to calculate stock intrinsic value (V0):\n\nV0 = D0(1 + g)/(r − g) = 0.95(1 + 0.0329)/(0.09 − 0.0329) = 0.981255/0.0571 = €17.18\n\nThings to remember:\nThe Gordon growth model is used for stock valuation when growth is constant. Intrinsic value is the next period dividend divided by the difference between the required return and the growth rate. The constant dividend growth rate is the product of the earnings retention rate and return on equity.",
+  "evidence": "PDF page (page_idx 4, Q5): correct_answer B (€17.18) matches checkmark and the page's own worked GGM/ROE calculation. Stored explanation instead described the 'comparables method' / law of one price -- content for an unrelated question. Replaced with this page's own verbatim explanation."
+ },
+ {
+  "id": "0b1de945-7f65-4fce-969e-688f54da117e",
+  "verdict": "explanation_wrong",
+  "field": "explanation_en",
+  "new_value": "The Gordon growth model (GGM), a dividend discount model, is commonly used to estimate the intrinsic value of stocks. Dividend discount models are present value models that use future dividends as cash flows to determine a stock's value.\n\nThe GGM assumes the company has steady growth in earnings and a constant dividend payout ratio, resulting in a constant dividend growth rate (g). Modeling the stock as a perpetuity, the GGM states the stock's intrinsic value is the present value of the next dividend discounted by the required rate of return, adjusted for the long-term dividend growth rate.\n\nIn this scenario, the stock is fairly valued, so its market price equals its intrinsic value. The dividend growth rate g can be determined by rearranging the GGM equation and substituting the given values:\n\nV0 = D0(1 + g)/(r − g)\ng = (rV0 − D0)/(D0 + V0) = (0.08(61.03) − 2.74)/(2.74 + 61.03) = 0.0336\n\n(Choice A) 2.98% is the result of using the WACC instead of the required rate of return on equity for the variable r. Since WACC includes the cost of all forms of capital, it should not be used to calculate stock price (which is related to common equity only).\n\n(Choice C) 3.51% is the result of failing to account for growth in the dividend. The GGM uses the next dividend in the numerator, not the last dividend.\n\nThings to remember:\nThe Gordon growth model states that the stock's intrinsic value is the present value of next year's dividend discounted by the required rate of return, adjusted for the company's long-term dividend growth rate. If a stock is fairly valued, its intrinsic value is equal to its market value.",
+  "evidence": "PDF page (page_idx 7, Q8): correct_answer B (3.36%) matches checkmark and page's own g calculation. Stored explanation instead described the 'method of comparables' / law of one price -- unrelated content. Replaced with this page's own verbatim explanation."
+ },
+ {
+  "id": "bf663568-b42c-48ef-8991-0a57773343d9",
+  "verdict": "formatting_missing",
+  "field": "question_en",
+  "new_value": "A company issued retractable term preferred shares on June 30, 20X1, with the following characteristics:\n\n| Selected Data | |\n|---|---|\n| Par value, per share | $25.00 |\n| Dividend yield at issuance | 6.0% |\n| Dividend payments | Annually on June 30 |\n| Retraction date | June 30, 20X8 |\n| Maturity date | June 30, 20X9 |\n\nOn July 1, 20X5, an analyst trying to value these shares assumes that the retraction feature will be exercised at par on June 30, 20X8, and that the required rate of return is 7.5%. The analyst's most appropriate conclusion is that the intrinsic value ($) per share is closest to:",
+  "evidence": "PDF page (page_idx 15, Q16): stem omits the 'Selected Data' table (par value, dividend yield, payment schedule, retraction/maturity dates) shown on the page. Added as markdown table, wording otherwise unchanged."
+ },
+ {
+  "id": "bf663568-b42c-48ef-8991-0a57773343d9",
+  "verdict": "explanation_wrong",
+  "field": "explanation_en",
+  "new_value": "Retractable term preferred shares (RTPS) are a special type of preferred stock. Preferred stock is typically viewed and valued as a perpetuity. Conversely, RTPS have a maturity date, are often callable, and always include a retraction provision (ie, put provision). The retraction provision allows the investor to \"put\" (ie, sell) the preferred shares back to the issuer at a predetermined price and time.\n\nThe intrinsic value of a RTPS is equal to the present value of its dividend stream plus the present value of the expected final principal payment, which could occur on a call date, a retraction date, or at maturity.\n\nTo determine the intrinsic value in this instance, the initial dividend yield must be converted into a cash value. The initial yield of 6% based on a $25 par value equals an annual dividend of $25 × 0.06 = $1.50. Therefore, intrinsic value is calculated using the dividends from 20X6 through 20X8 and the par value at the retraction date (ie, 20X8), discounted by the required rate of return:\n\nV0 = D1/(1 + r)^1 + D2/(1 + r)^2 + (Dn + F)/(1 + r)^n\n24.02 = 1.50/(1 + 0.075)^1 + 1.50/(1 + 0.075)^2 + (1.50 + 25)/(1 + 0.075)^3\n\nBased on the intrinsic value calculation, the shares are fairly valued at approximately $24.00.\n\n(Choice A) $23.74 is the intrinsic value of the shares if valued to maturity, not to the retraction date.\n\n(Choice C) $25.00 is the undiscounted par value whether using either the retraction date or maturity date.\n\nThings to remember:\nRetractable term preferred shares are a special type of preferred stock that have an embedded put provision, allowing the investor to \"put\" the shares back to the issuer at a predetermined price and time.",
+  "evidence": "PDF page (page_idx 15, Q16): correct_answer B ($24.00) matches checkmark. Stored explanation was an unrelated enterprise-value walkthrough (10 million shares, CNY 43, etc.) that does not match this question at all. Replaced with this page's own verbatim RTPS explanation."
+ },
+ {
+  "id": "bb77aece-381f-4b8b-a821-b8676cc171fd",
+  "verdict": "formatting_missing",
+  "field": "question_en",
+  "new_value": "An analyst gathers the following information related to a company's stock:\n\n| Selected Data | |\n|---|---|\n| Current annual dividend per share | €1.00 |\n| Annual dividend growth rate for Years 1-3 | 6% |\n| Annual dividend growth rate for Years 4+ | 2% |\n| Required rate of return | 10% |\n\nIf the stock is fairly valued, then the terminal value at the end of Year 3 using the two-stage dividend discount model is closest to:",
+  "evidence": "PDF page (page_idx 21, Q22): stem omits the 'Selected Data' table shown on the page (current dividend, growth rates, required return). Added as markdown table, wording otherwise unchanged."
+ },
+ {
+  "id": "bb77aece-381f-4b8b-a821-b8676cc171fd",
+  "verdict": "explanation_wrong",
+  "field": "explanation_en",
+  "new_value": "The two-stage dividend growth model is used to determine the intrinsic value of the stock of a company that is expected to experience a period of high, short-term dividend growth followed by lower long-term growth. The stock's intrinsic value is the sum of the present values of dividends from both stages.\n\nThe terminal value represents the stock's intrinsic value at the end of the short-term, high-growth stage. At that point, the dividend is expected to grow at a lower rate over a period expected to continue indefinitely. The terminal value can be calculated using the Gordon growth model since that model is appropriate for a stock with expected constant dividend growth.\n\nIn this scenario, the terminal value is the value at the end of Year 3, when the long-term growth stage begins. First, calculate the dividend at the end of Year 3 using the short-term growth rate of 6% since the dividend grows at the higher rate up to that point. Then, the terminal value is calculated using the lower, long-term growth rate of 2%:\n\nCalculate dividend for Year 3: Dn = D0(1 + gs)^n; D3 = 1(1.06)^3 = 1.1910\n\nCalculate terminal value at Year 3 using the Year 4 dividend: Vn = Dn(1 + gl)/(r − gl); V3 = 1.1910(1.02)/(0.10 − 0.02) = 15.1855\n\nThings to remember:\nIn the two-stage dividend growth model, a stock's intrinsic value is the sum of the present values of dividends from both a short-term, high-growth stage and a subsequent, long-term stage of lower growth. The terminal value represents the intrinsic value at the beginning of the second stage, which is expected to continue indefinitely. The Gordon growth model, which is appropriate for a stock with an expected constant growth rate, can be used to determine the terminal value.",
+  "evidence": "PDF page (page_idx 21, Q22): correct_answer C (€15.19 ≈ 15.1855) matches checkmark and page's own terminal-value calculation. Stored explanation instead described 'price multiples ... law of one price' -- unrelated content. Replaced with this page's own verbatim explanation."
+ },
+ {
+  "id": "2803d4a5-a2d6-42a2-b715-360947f637b4",
+  "verdict": "formatting_missing",
+  "field": "question_en",
+  "new_value": "An analyst has collected the following data for a noncallable, nonconvertible preferred stock:\n\n| Selected Data | |\n|---|---|\n| Par value | SAR 25.00 |\n| Market value | SAR 24.56 |\n| Preferred stock dividend rate | 5.6% |\n| Required rate of return | 5.7% |\n\nBased on this information, the stock is most likely:",
+  "evidence": "PDF page (page_idx 22, Q23): stem omits the 'Selected Data' table (par value, market value, dividend rate, required return) shown on the page. Added as markdown table, wording otherwise unchanged."
+ },
+ {
+  "id": "2803d4a5-a2d6-42a2-b715-360947f637b4",
+  "verdict": "explanation_wrong",
+  "field": "explanation_en",
+  "new_value": "Like other equities, the intrinsic value of a preferred stock is the present value of all its future dividends. The model for determining the intrinsic value of a preferred stock assumes that dividends remain the same and continue indefinitely. As a result, the value of a preferred stock is calculated as the value of a perpetuity, where the perpetuity's future payments are the preferred stock's dividends:\n\n- Intrinsic value is equal to the annual dividend divided by the required rate of return (ie, the prevailing market rate).\n- The dividend is the product of the preferred dividend rate and the par value.\n\nIn this scenario, the last preferred dividend is calculated by multiplying the par value by the preferred dividend rate (25 × 0.056 = 1.4). Substitute values into the preferred stock valuation model to calculate the intrinsic value:\n\nV0 = D0/r = 1.4/0.057 ≈ 24.56\n\nSince the intrinsic value is equal to the market value (after rounding to two decimal places), the preferred stock is considered fairly valued.\n\n(Choice A) Determining the stock is undervalued is the result of incorrectly reversing the required rate of return and the preferred stock dividend rate in the calculation.\n\n(Choice C) Concluding that the stock is overvalued results from using the market value, rather than the par value, to determine the dividend used to calculate intrinsic value.\n\nThings to remember:\nThe model for determining the intrinsic value of a preferred stock assumes that dividends remain the same and continue indefinitely. As a result, the intrinsic value of a preferred stock is calculated as the value of a perpetuity, where the perpetuity's future payments are the preferred stock's dividends. If intrinsic value is equal to market value, the preferred stock is considered fairly valued.",
+  "evidence": "PDF page (page_idx 22, Q23): correct_answer B (fairly valued) matches checkmark and page's own calculation (25 x 0.056 = 1.4; V0 = 1.4/0.057 = 24.56). This exact explanation was found duplicated (without the final calc line and Things-to-remember) under item 0f29c4b3's DB row -- a mismatched/duplicated assignment. Restored this item's own verbatim explanation."
+ },
+ {
+  "id": "2909c31e-2ebf-4182-9767-3389073ce98a",
+  "verdict": "explanation_wrong",
+  "field": "explanation_en",
+  "new_value": "To understand the relationship between the justified forward price-to-earnings (P/E) ratio and company fundamentals, begin with the Gordon growth model (GGM). Assuming that price is equal to value, divide both sides by leading (ie, next year's) earnings (E1) and observe that the ratio of dividends to earnings is the dividend payout ratio:\n\nTo calculate the justified forward P/E ratio, first calculate the long-term growth rate as (1 − dividend payout ratio) multiplied by the return on equity (ROE). Substitute values:\n\ng = (1 − p) × ROE = (1 − 0.20) × 0.07 = 5.6%\n\nSubstitute E1, dividend payout ratio (p), required rate of return (r), and the long-term growth rate (g) into the formula for the justified forward P/E ratio to calculate the current stock price implied by the GGM and the justified forward P/E ratio:\n\nP0/E1 = p/(r − g)\nP0/1 = 0.20/(0.06 − 0.056)\nP0 = 50\n\nCompared with the price implied by the justified forward P/E ratio as calculated above (CNY 50), the stock is currently overvalued by the market (CNY 52).\n\nThings to remember:\nThe long-term growth rate is equal to (1 − dividend payout ratio) multiplied by the return on equity. The justified forward P/E ratio is equal to the dividend payout ratio divided by the difference between the required rate of return and the long-term growth rate.",
+  "evidence": "PDF page (page_idx 60-61, Q59): correct_answer C (overvalued) matches checkmark. Stored explanation was truncated mid-sentence at 'Substitute values:' -- the rest of the derivation (g = 5.6%, P0 = 50, and the overvalued conclusion plus Things to remember) was missing. Completed using the next PDF page's verbatim continuation."
+ },
+ {
+  "id": "7d98d9b9-d71c-49fb-b445-d35a0cb42d71",
+  "verdict": "stem_wrong",
+  "field": "question_en",
+  "new_value": "An analyst gathers the following information about three comparable companies:\n\n| Price-to-earnings ratios | | | |\n|---|---|---|---|\n| Company | 20X7 | 20X8 | 20X9 |\n| X | 15.90 | 19.56 | 18.79 |\n| Y | 16.67 | 18.75 | 17.50 |\n| Z | 15.47 | 18.19 | 16.23 |\n\nAll other things being equal, based on cross-sectional analysis of the companies during the most recent year, which company is most likely overvalued?",
+  "evidence": "PDF page (page_idx 52, Q51): stem is 'An analyst gathers the following information about three comparable companies' and shows a P/E-ratios-by-year table for Companies X/Y/Z (three companies), matching this page's checkmark on Company X and its explanation. The stored question_en instead embedded a 2-company ZAR table (market price, EPS, growth rate, payout ratio, required return) that belongs to a different question (ed2f7b60, page_idx 6) -- an internal inconsistency (stem says 'three comparable companies' but the pasted table only listed two). Replaced with this page's own table."
+ },
+ {
+  "id": "7d98d9b9-d71c-49fb-b445-d35a0cb42d71",
+  "verdict": "explanation_wrong",
+  "field": "explanation_en",
+  "new_value": "The method of comparables can be used in two ways. Comparing the price multiple of one asset to its historical average over multiple time periods is called time-series analysis. Comparing the price multiples of different assets over the same time period is called cross-sectional analysis.\n\nIn this scenario, the analyst compares the companies in 20X9, the most recent year, using cross-sectional analysis. The price-to-earnings (P/E) ratio of Company X is greater than the average 20X9 P/E of the three companies; therefore, Company X is overvalued.\n\n(Choice B) Company Y's P/E ratio is close to the cross-sectional average P/E ratio in 20X9; therefore, Company Y is fairly valued.\n\n(Choice C) Company Z's P/E ratio is less than the cross-sectional average P/E in 20X9; therefore, Company Z is undervalued.\n\nThings to remember:\nComparing the price multiples of different assets over the same time period is called cross-sectional analysis. If the price multiple of the stock is less than, greater than, or close to the benchmark, the stock is considered undervalued, overvalued, or fairly valued, respectively.",
+  "evidence": "PDF page (page_idx 52, Q51): correct_answer A (Company X, overvalued) matches checkmark. Stored explanation discussed 'law of one price' / generic P/E multiple theory unrelated to this specific 3-company/3-year cross-sectional comparison. Replaced with this page's own verbatim explanation."
+ },
+ {
+  "id": "a6b37f04-266d-4ce6-b2de-363a16d66695",
+  "verdict": "ok",
+  "evidence": "PDF page (page_idx 19->20, Q21): question_en table (Company X/Y/Z, P/E 21.3/17.6/21.0, P/S 2.3/1.2/1.7, P/B 3.5/3.4/3.2), options, correct_answer B (Company Y), and explanation_en (incl. Choice A/C and Things to remember) all match the page verbatim. No changes needed."
+ },
+ {
+  "id": "8accb424-8fb7-419e-9913-23d3117fb6c5",
+  "verdict": "ok",
+  "evidence": "PDF page (page_idx 85, Q81): question_en table (cash 80, book value of debt 800, market value of debt 725, short-term investments 25), options, correct_answer C (1,380), and explanation_en (EV-to-EBITDA rearrangement, Choice A/B) all match the page. Explanation omits only the page's closing 'Things to remember' recap, which restates content already present -- not a substantive gap."
+ },
+ {
+  "id": "320838af-5f30-4d70-8e26-f7af54ea7dd9",
+  "verdict": "explanation_wrong",
+  "field": "explanation_en",
+  "new_value": "A two-stage dividend discount model (DDM) contains an initial finite period of high dividend growth (gS) for n years, followed by a period of low sustainable growth (gL) into perpetuity. The stock's intrinsic value equals:\n\n- the present value of the first stage's dividends, plus\n- the present value of the terminal value.\n\nThe terminal value represents the value of the second stage's discounted dividends at the end of the first stage (n). The discount rate is the required rate of return (r).\n\nSteps:\n1. Calculate first stage's dividends: D1 = 2(1.1) = 2.2; D2 = 2(1.1)^2 = 2.42; D3 = 2(1.1)^3 = 2.662; D4 = 2(1.1)^4 = 2.9282\n2. Calculate terminal value: V4 = D4(1 + gL)/(r − gL) = 2.9282(1.03)/(0.07 − 0.03) = 75.4012\n3. Discount first stage's dividends and the terminal value to today: V0 = 2.2/(1.07) + 2.42/(1.07)^2 + 2.662/(1.07)^3 + 2.9282/(1.07)^4 + 75.4012/(1.07)^4 = 66.10\n\nSince the stock's intrinsic value is equal to its current trading price of £66.10, the stock is fairly valued.\n\n(Choice A) The stock would be undervalued if the long-term growth rate were used instead of the required rate of return to discount all dividends and terminal value.\n\n(Choice C) The stock would be overvalued if the long-term growth period dividends at the end of Year 4 were discounted by 5 years instead of 4 years.\n\nThings to remember:\nDividend discount models assume that a stock's intrinsic value equals the present value of expected dividends. A two-stage dividend discount model includes an initial finite period of high dividend growth (gS) for n years, followed by a period of lower constant growth (gL) in perpetuity. The terminal value is calculated using the Gordon growth model.",
+  "evidence": "PDF page (page_idx 40-41, Q41): correct_answer B (fairly valued) matches checkmark and page's own two-stage DDM calculation (V0 = 66.10 = current price). Stored explanation was the unrelated generic 'GGM = b x ROE' template. Replaced with this page's own verbatim explanation."
+ },
+ {
+  "id": "9a9f10b2-3d10-4b3c-b140-931009e95bf4",
+  "verdict": "stem_wrong",
+  "field": "question_en",
+  "new_value": "An analyst compiles the following P/E ratios of comparable companies:\n\n| Company | 20X6 | 20X7 | 20X8 | 20X9 |\n|---|---|---|---|---|\n| X | 15.40 | 17.09 | 19.56 | 17.39 |\n| Y | 14.83 | 17.15 | 18.75 | 19.53 |\n| Z | 15.74 | 16.27 | 19.60 | 16.50 |\n\nUsing time-series analysis for the period from 20X6 to 20X9, the analyst would most appropriately conclude that, as of the end of 20X9, which company is fairly valued?",
+  "evidence": "PDF page (page_idx 92, Q87): question stem and P/E-by-year table match exactly; correct_answer A (Company X) matches checkmark. Stored question_en had an extra, erroneous 'Selected Data' table (earnings retention ratio 55%, long-term economic growth rate 4%, required rate of return 9%, WACC 7%, justified forward P/E 30) spliced in before the real table -- that data belongs to a different question (cf241f9a, page_idx 91) and is irrelevant to this time-series P/E question. Removed the erroneous table."
+ },
+ {
+  "id": "cf241f9a-3699-4f31-8d1b-3deadbbbcf91",
+  "verdict": "stem_wrong",
+  "field": "question_en",
+  "new_value": "An analyst has gathered the following information about a company stock:\n\n| Selected Data | |\n|---|---|\n| Earnings retention ratio | 55% |\n| Long-term economic growth rate | 4% |\n| Required rate of return | 9% |\n| Weighted average cost of capital | 7% |\n| Company justified forward P/E | 30 |\n\nThe company's justified forward price-to-earnings ratio using the Gordon growth model implies the long-term dividend growth rate of the company is closest to:",
+  "evidence": "PDF page_idx originally pointed at a different question (Q10, SGD 20/justified P/E value question); the real match was found at page_idx 91 (Q86), which has this exact stem, options (2.5%/7.0%/7.5%), and checkmark on C. On that page the 'Weighted average cost of capital' value is 7%, not the 4% stored in this item's question_en table (the 4% appears to be a data-entry slip, possibly bleed from a different WACC figure). Table also added since it was previously narrative-only."
+ },
+ {
+  "id": "cf241f9a-3699-4f31-8d1b-3deadbbbcf91",
+  "verdict": "explanation_wrong",
+  "field": "explanation_en",
+  "new_value": "Price-to-earnings (P/E) ratios are used mainly in three different forms: the trailing P/E ratio, the forward P/E ratio (prospective or leading P/E), and the justified forward P/E ratio. The trailing P/E ratio uses past earnings; the forward P/E ratio is based on future earnings. If the forward earnings estimate is based on a model used to estimate company fundamentals or cash flows, the ratio is referred to as the justified forward P/E ratio. Analysts use the justified forward P/E ratio to compare companies sharing similar characteristics and draw conclusions about asset prices.\n\nIn this scenario, the required rate of return, justified forward P/E ratio, and earnings retention ratio are given. The dividend payout ratio (p) is equal to (1 − earnings retention ratio) = (1 − 0.55) = 0.45. Rearrange the formula for the justified forward P/E ratio and solve for the long-term dividend growth rate. Then substitute values to calculate the long-term dividend growth rate:\n\nP0/E1 = p/(r − g)\ng = r − p/(P0/E1)\ng = 0.09 − 0.45/30\ng = 7.5%\n\n(Choice A) 2.5% is the result of incorrectly using the long-term economic growth rate in place of the required rate of return.\n\n(Choice B) 7.0% is the result of incorrectly using the earnings retention ratio instead of the dividend payout ratio.\n\nThings to remember:\nThe long-term dividend growth rate can be calculated by rearranging the justified forward price-to-earnings (P/E) formula. The long-term dividend growth rate is calculated by dividing the dividend payout ratio by the P/E ratio and then subtracting that quantity from the required rate of return.",
+  "evidence": "Located the matching PDF page at page_idx 91 (Q86): correct_answer C (7.5%) matches checkmark and page's own g = 0.09 - 0.45/30 = 7.5% derivation. Stored explanation was a paraphrase using slightly different notation (30 = 0.45/(0.09-g)) and omitted the Choice A rationale and Things to remember section. Replaced with page's verbatim explanation for completeness and traceability."
+ },
+ {
+  "id": "ed2f7b60-894d-4ea7-b351-f5f2ba336020",
+  "verdict": "ok",
+  "evidence": "PDF page (page_idx 6, Q7): question_en table (Company X: ZAR 101.00/2.09/6.0%/50.0%/7.0%; Company Y: ZAR 62.00/1.15/7.5%/60.0%/9.0%), options, correct_answer B, and explanation_en (trailing P/E 48.33/53.91, justified forward P/E 50/40, Things to remember) all match the page verbatim. No changes needed."
+ },
+ {
+  "id": "3dd022f4-ab26-4829-8c17-b0931836c404",
+  "verdict": "ok",
+  "evidence": "PDF page (page_idx 73, Q70): question_en table (CHF millions: preferred stock 4, short-term investments 6, debt 500, cash equivalents 3, EV 1,567), options, correct_answer B (CHF 21.44), and explanation_en (EV to market cap rearrangement, Choice A/C, Things to remember) all match the page verbatim. No changes needed."
+ },
+ {
+  "id": "077e56dc-eeed-4e7a-b348-38e83ee963c2",
+  "verdict": "ok",
+  "evidence": "PDF page (page_idx 51, Q50): question_en table (market price €31.42, next earnings €1.60, payout 70%, required return 8%, growth 5%, economic growth 3%), options, correct_answer A (€5.91), and explanation_en (P0 = 37.33, mispricing = 5.91, Things to remember) all match the page verbatim. No changes needed."
+ },
+ {
+  "id": "acfee345-8011-4c4f-a6b7-025bfb0dc3ed",
+  "verdict": "explanation_wrong",
+  "field": "explanation_en",
+  "new_value": "Analysts can use the asset-based valuation model to estimate the intrinsic equity value of a firm by subtracting the fair value of liabilities from the fair value of assets. The intrinsic stock price can be calculated by dividing the intrinsic equity value by the number of shares outstanding. If the market price of the stock is greater than its intrinsic value, then the stock is overvalued, and vice versa.\n\nEquity value = Market (fair) value of assets − Market (fair) value of liabilities\n\nAdjusting the balance sheet to fair value: long-term assets are decreased by 25% (from 40 to 30), resulting in total assets of 60 (USD billions). Long-term debt is increased by 5% (from 20 to 21). Fair value of equity = 60 − (25 + 21) = 14 billion.\n\nPrice per share = 14 billion equity value ÷ 500 million shares outstanding = 28\n\nSince 29 > 28, the stock is overvalued: its price is trading at 29, which is above its intrinsic value of 28.\n\nThings to remember:\nAnalysts can use the asset-based valuation model to estimate the intrinsic equity value of a firm by subtracting the fair value of liabilities from the fair value of assets. The intrinsic stock price can be calculated by dividing the intrinsic equity value by the number of shares outstanding.",
+  "evidence": "PDF page (page_idx 95, Q90): correct_answer C (overvalued) matches checkmark. Stored explanation stated the conclusion (29 vs intrinsic value 28) but omitted the entire supporting calculation shown on the page (balance sheet fair-value adjustments: 60 - 25 - 21 = 14 billion equity; 14bn/500m shares = 28) and the Things to remember section. Added the full verbatim derivation."
+ },
+ {
+  "id": "f01d947d-8dc6-4c4b-85c0-8da63fd1e3a1",
+  "verdict": "ok",
+  "evidence": "PDF page (page_idx 43, Q43): question_en table (dividends ¥100, earnings ¥260, growth 3%, required return 5%, industry P/E 21.4), options, correct_answer C (less expensive), and explanation_en (P0/E1 = 19.23 vs industry 21.4) all match the page's calculation. Explanation omits only the closing 'Things to remember' recap -- not a substantive gap."
+ },
+ {
+  "id": "5829c7b8-461e-4ff3-ad18-493563d47325",
+  "verdict": "formatting_missing",
+  "field": "question_en",
+  "new_value": "An analyst gathers the following information on three stocks:\n\n| Stock | Expected Standard Deviation | Beta |\n|---|---|---|\n| A | 20% | 1.3 |\n| B | 13% | 0.8 |\n| C | 31% | -0.3 |\n\nThe market's expected return is 12%. Based on the CAPM, if the risk-free rate is 2%, then the stock with an expected return greater than the market's expected return is most likely:",
+  "evidence": "PDF page (page_idx 8, Q9): stem omits the Stock A/B/C table (expected standard deviation, beta) shown on the page. Added as markdown table, wording otherwise unchanged. Options, correct_answer A, and explanation_en (Stock A beta 1.3 > 1.0, CAPM expected return 15% > market 12%) already match the page."
+ },
+ {
+  "id": "e620b932-7e7b-4256-bfe6-5d6de5b358ff",
+  "verdict": "formatting_missing",
+  "field": "question_en",
+  "new_value": "A state pension fund employs three investment managers; their fund performance data for the past year is shown below:\n\n| | Return | Standard Deviation (σ) | Beta (β) |\n|---|---|---|---|\n| Manager 1 | 13% | 18% | 1.4 |\n| Manager 2 | 7% | 12% | 0.8 |\n| Manager 3 | 14% | 22% | 1.5 |\n| Market | 8% | 14% | 1.0 |\n\nIf the risk-free rate is 2%, then the manager with the highest total risk-adjusted return is:",
+  "evidence": "PDF page (page_idx 16, Q17): stem omits the Manager 1/2/3/Market performance table (return, standard deviation, beta) shown on the page. Added as markdown table, wording otherwise unchanged."
+ },
+ {
+  "id": "e620b932-7e7b-4256-bfe6-5d6de5b358ff",
+  "verdict": "explanation_wrong",
+  "field": "explanation_en",
+  "new_value": "Total risk, or standard deviation of returns (σ), combines systematic risk (market risk) and nonsystematic risk (nonmarket risk). Using either the Sharpe ratio or M-squared (M2) equation is proper when evaluating managers based on the highest return adjusted for total risk.\n\nBoth M-squared and the Sharpe ratio calculate total risk-adjusted performance for each manager because each reflects total risk (as captured by standard deviation, σ). Both also evaluate a portfolio's excess return (ie, return greater than the risk-free rate) compared to that portfolio's standard deviation.\n\nBoth the unscaled Sharpe ratio and the M2, in percentage terms, give identical rankings when comparing manager's performance. As shown below, Manager 1 has the highest Sharpe ratio and M-squared results:\n\nSharpe ratio = (Rp − Rf)/σp; M-squared = (Rp − Rf)(σm/σp) + Rf\n\nManager 1: Sharpe = (13% − 2%)/18% = 0.61; M-squared = (13% − 2%)(14%/18%) + 2% = 10.56%\nManager 2: Sharpe = (7% − 2%)/12% = 0.42; M-squared = (7% − 2%)(14%/12%) + 2% = 7.83%\nManager 3: Sharpe = (14% − 2%)/22% = 0.55; M-squared = (14% − 2%)(14%/22%) + 2% = 9.64%\n\nThings to remember:\nStandard deviation measures total risk whereas beta measures systematic risk.",
+  "evidence": "PDF page (page_idx 16, Q17): correct_answer A (Manager 1) matches checkmark. Stored explanation described the concepts and concluded 'As shown below, Manager 1 has the highest Sharpe ratio and M-squared results' but the referenced Sharpe/M-squared calculations for all three managers were entirely missing (and the closing Things-to-remember section). Added the full verbatim calculations from the page."
+ }
+]

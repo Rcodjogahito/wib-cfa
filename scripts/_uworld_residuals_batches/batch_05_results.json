@@ -1,0 +1,162 @@
+[
+ {
+  "id": "7fc6005e-7c8f-4834-aa88-09e35853e205",
+  "verdict": "formatting_missing",
+  "field": "question_en",
+  "new_value": "In 20X9 a publicly traded corporation reported $10 million in net income. The information concerning its common shares outstanding is shown below:\n\n| Date (20X9) | Action | Change in Shares | Shares Outstanding |\n|---|---|---|---|\n| 1/1 | Beginning balance | | 3,000 |\n| 3/1 | Shares issued | 9,000 | 12,000 |\n| 6/1 | Shares repurchased | (3,000) | 9,000 |\n| 11/1 | Shares issued | 6,000 | 15,000 |\n| 12/31 | Ending balance | | 15,000 |\n\nAll shares in thousands.\n\nThe company also has 500,000 shares of nonconvertible preferred stock, which have been outstanding the entire year. The annual dividend for each share of preferred stock is $5.00, which has been paid. The basic earnings per share (EPS) for this company in 20X9 is closest to:",
+  "evidence": "PNG matches question exactly (page_idx 21 correct); checkmark on B confirms correct_answer; explanation matches verbatim up to the table reference. Only the shares-outstanding table was missing from question_en."
+ },
+ {
+  "id": "c51faed7-34ad-457c-ada4-c7d016ea9900",
+  "verdict": "formatting_missing",
+  "field": "question_en",
+  "new_value": "The following table shows a series of annual spot rates:\n\n| Maturity (years) | Spot Rate (%) |\n|---|---|\n| 1 | 1.05 |\n| 2 | 2.33 |\n| 3 | 2.90 |\n\nThe 1-year rate available in 2 years is closest to:",
+  "evidence": "PNG (page_idx 17) confirms question, checkmark on B, and explanation text match the DB exactly; only the spot-rate table was missing."
+ },
+ {
+  "id": "0f51165c-36de-4907-8eb3-e024435d20da",
+  "verdict": "formatting_missing",
+  "field": "question_en",
+  "new_value": "An analyst has gathered the following information on zero-coupon government bond yields:\n\n| Maturity | Spot Rate |\n|---|---|\n| 1 year | 2.42% |\n| 2 years | 3.05% |\n| 3 years | 3.48% |\n| 4 years | 3.65% |\n\nIf the rates are based on a periodicity of 1, the one-year forward rate 2 years in the future (2y1y) is closest to:",
+  "evidence": "PNG (page_idx 21) confirms question, checkmark on C, and explanation match the DB exactly; only the spot-rate table was missing."
+ },
+ {
+  "id": "0470b612-10fb-48b4-bb48-0f33c4f59ec4",
+  "verdict": "ok",
+  "evidence": "PNG (page_idx 14) matches question_en (table already present as markdown), option set, checkmark on B, and explanation text word-for-word. No fix needed."
+ },
+ {
+  "id": "bc0dbb3d-fe96-4dd3-95ce-ab7964e0e732",
+  "verdict": "formatting_missing",
+  "field": "question_en",
+  "new_value": "An analyst reviewing the change in a bond's price after its yield decreased has compiled the following data:\n\n| Selected Data | |\n|---|---|\n| Bond original price | 88.1 |\n| Bond price when yield is increased | 87.3 |\n| Bond price when yield is decreased | 93.1 |\n| Decrease in yield | 1.1% |\n\nBased only on this data, the convexity adjustment is closest to:",
+  "evidence": "page_idx 9 hint was wrong page (different question); actual match found via fitz text search on page_idx 10 (question 10 in the PDF), confirming options, checkmark on A, and explanation match the DB exactly. Only the Selected Data table was missing from question_en."
+ },
+ {
+  "id": "a7577776-397b-4243-8e44-253caece6dcc",
+  "verdict": "formatting_missing",
+  "field": "question_en",
+  "new_value": "An analyst estimates the following for a noncallable bond with a price of £90.16:\n\n| | |\n|---|---|\n| Bond price change based on modified duration | 7.68% |\n| Annual convexity | 167.85 |\n\nIf the bond's yield declines by 100 basis points, the convexity-adjusted estimate of the bond's new price (in £) is closest to:",
+  "evidence": "PNG (page_idx 8) confirms question, checkmark on B, and explanation match the DB exactly; only the data table was missing."
+ },
+ {
+  "id": "16f7bb98-3ef7-4868-874d-bac455172831",
+  "verdict": "formatting_missing",
+  "field": "question_en",
+  "new_value": "An investment portfolio consists of the following two bonds:\n\n| | Bond A | Bond B |\n|---|---|---|\n| Par value (GBP) | 10,000,000 | 20,000,000 |\n| Market value (GBP) | 9,920,000 | 13,200,000 |\n| Modified duration | 2.1 | 8.4 |\n\nThe bonds pay coupons annually and are trading flat (ie, the market price is equal to the full price). If each bond's YTM declines by 10 basis points, the portfolio's estimated value, based only on portfolio duration, is closest to:",
+  "evidence": "PNG (page_idx 19) confirms question, checkmark on B, and explanation match the DB exactly; only the two-bond table was missing."
+ },
+ {
+  "id": "c96d4276-d134-4b6d-9b8a-05bad3177e5c",
+  "verdict": "explanation_wrong",
+  "field": "explanation_en",
+  "new_value": "An infinite number of infinitesimally small compounding periods during a holding period is known as continuous compounding. The continuously compounded return is related to the holding period return; it is the natural log of the ratio of the ending value to the beginning value of the investment.\nIn this scenario, solve to determine the Year 1 continuously compounded return using the price at the beginning (St) and price at the end (St+1) of the one-year holding period, which are both given.\nNote that the continuously compounded return in this scenario is lower than the holding period return (6.06%). This makes sense due to the fact that compounding at a lower rate more frequently results in the same return as compounding at a higher rate less frequently.\n(Choice B) 6.06% is the Year 1 holding period return.\n(Choice C) 6.41% is the geometric mean of the two-year, continuously compounded return.",
+  "evidence": "PNG (page_idx 3) shows question and options match DB and checkmark confirms correct_answer A is right, but DB explanation_en discusses historical mean vs expected return (a different, unrelated question) instead of continuously compounded return math shown on the page. Replaced with the actual page explanation, truncated before 'Things to remember'."
+ },
+ {
+  "id": "ed5b310c-cc0c-48c3-a3a5-a9e7119339d7",
+  "verdict": "explanation_wrong",
+  "field": "explanation_en",
+  "new_value": "With interest-bearing investments, lenders (investors) earn interest periodically (eg, monthly, quarterly) based on a specific periodic rate over time. When interest is compounded, interest income is reinvested each period at the periodic rate, so additional interest is earned on previous interest. Therefore, the total value of the investment (including principal and interest) grows at the periodic rate. The investment's percentage growth in annual terms, accounting for periodic compounding, is known as the effective annual rate (EAR).\nThe EAR is derived from the periodic rate. Since the periodic rate is not given, it must be derived from the stated annual rate (rs). The rs is an annualized quotation convention (used by financial institutions) that equals the periodic rate multiplied by the number of compounding periods per year (m). To derive the periodic rate, divide the rs by m.\nCalculate EAR for the three loans:\nThe EAR for Loan Y is 10.97%. An EAR example illustrates how $1 invested today in Loan Y will result in an annual return of 10.97%.",
+  "evidence": "PNG (page_idx 4) shows question/options match DB and checkmark confirms correct_answer B, but DB explanation_en describes an unrelated future-value/AUD 50,000 calculation instead of the EAR-for-three-loans reasoning shown on the page. Replaced with the actual page explanation, truncated before 'Things to remember'."
+ },
+ {
+  "id": "ed5b310c-cc0c-48c3-a3a5-a9e7119339d7",
+  "verdict": "formatting_missing",
+  "field": "question_en",
+  "new_value": "A lender gathers data on three different loans in its portfolio:\n\n| Loan | Stated Annual Interest Rate (rs) | Compounding Frequency |\n|---|---|---|\n| X | 10.40% | weekly |\n| Y | 10.45% | monthly |\n| Z | 10.50% | quarterly |\n\nBased on the data above, the loan with the highest effective annual rate is:",
+  "evidence": "Same page (page_idx 4); the loans table was missing from question_en."
+ },
+ {
+  "id": "271342cc-a191-4e9c-a410-9b208eb36683",
+  "verdict": "formatting_missing",
+  "field": "question_en",
+  "new_value": "An analyst is comparing three investments:\n\n| Investment | Frequency of Compounding | Stated Annual Rate |\n|---|---|---|\n| X | Semiannually | 6.1% |\n| Y | Quarterly | 6.0% |\n| Z | Continuously | 5.9% |\n\nThe investment with the greatest effective annual rate is:",
+  "evidence": "PNG (page_idx 26) confirms question, checkmark on A, and explanation match the DB exactly; only the investments table was missing."
+ },
+ {
+  "id": "7698d227-2095-4b57-bd0e-cd364f068e10",
+  "verdict": "ok",
+  "evidence": "PNG (page_idx 36) matches question_en (table already present), options, checkmark on B, and explanation text word-for-word. No fix needed."
+ },
+ {
+  "id": "843dcc3a-efad-464c-bb93-c0e790c83bdb",
+  "verdict": "formatting_missing",
+  "field": "question_en",
+  "new_value": "A portfolio manager has compiled an investment's annual returns for three years:\n\n| Time Period | Return (%) |\n|---|---|\n| Year 1 | -3% |\n| Year 2 | 11% |\n| Year 3 | -5% |\n\nThe average annual compounded return on the investment over the three-year holding period is closest to:",
+  "evidence": "PNG (page_idx 41) confirms question, checkmark on A, and explanation match the DB exactly; only the annual-returns table was missing."
+ },
+ {
+  "id": "98d125f7-e754-4bb1-bc67-ecb3f0028fc4",
+  "verdict": "formatting_missing",
+  "field": "question_en",
+  "new_value": "An analyst reviews the performance of three exchange-traded funds (ETFs):\n\n| ETF Annual Returns | Large-cap | Mid-cap | Small-cap |\n|---|---|---|---|\n| Year 1 | 13.0% | 17.0% | 10.0% |\n| Year 2 | 14.0% | -1.5% | 18.5% |\n| Year 3 | -0.1% | 9.6% | -5.3% |\n\nWhich ETF had the highest three-year annual geometric mean return?",
+  "evidence": "PNG (page_idx 8) confirms question, checkmark on A, and explanation match the DB exactly; only the ETF returns table was missing."
+ },
+ {
+  "id": "cfaab151-43a7-4178-a93f-6ab245bd3436",
+  "verdict": "formatting_missing",
+  "field": "question_en",
+  "new_value": "An analyst gathers monthly investment returns for a 9-month period:\n\n| Month | Return |\n|---|---|\n| January | 5% |\n| February | 6% |\n| March | -4% |\n| April | 16% |\n| May | 8% |\n| June | 6% |\n| July | 8% |\n| August | 5% |\n| September | 13% |\n\nThe analyst notes that the data set has outliers and decides to calculate the average considering all nine observations while limiting the range of returns to be between the 20th and 80th percentile. Using these parameters, the mean is closest to:",
+  "evidence": "PNG (page_idx 11) confirms question, checkmark on C, and explanation match the DB exactly; only the monthly-returns table was missing."
+ },
+ {
+  "id": "b671a720-f320-4b34-ba1e-31e6e855b256",
+  "verdict": "formatting_missing",
+  "field": "question_en",
+  "new_value": "The following table shows an investment's closing price on each day:\n\n| Date | Closing Price |\n|---|---|\n| March 1 | 50 |\n| April 1 | 74 |\n| May 1 | 65 |\n\nBased only on this information, the continuously compounded return of the investment from March 1 to May 1 is closest to:",
+  "evidence": "PNG (page_idx 14) confirms question, checkmark on B, and explanation match the DB exactly; only the closing-price table was missing."
+ },
+ {
+  "id": "4f222882-ecdb-4ada-b2d3-5db846f9d54b",
+  "verdict": "formatting_missing",
+  "field": "question_en",
+  "new_value": "A university receives contributions to its endowment fund at the beginning of each year. The fund generates the returns displayed in the chart below:\n\n| Year of investment | Contributions ($ millions) | Return during year of investment |\n|---|---|---|\n| 1 | 20 | 12% |\n| 2 | 50 | 16% |\n| 3 | 70 | 18% |\n| 4 | 200 | -2% |\n\nOver the four-year period, the measure that shows the highest return is the:",
+  "evidence": "PNG (page_idx 24) confirms question, checkmark on B (time-weighted rate of return, 10.71% > MWR 5.77%), and explanation match the DB exactly; only the contributions/returns table was missing."
+ },
+ {
+  "id": "422f198b-2a78-4a3e-be4a-64e26d2716e0",
+  "verdict": "stem_wrong",
+  "field": "question_en",
+  "new_value": "A hedge fund manager invested in three investments, A, B, and C, with differing holding periods. The manager collected the following information:\n\n| Investment performance | A | B | C |\n|---|---|---|---|\n| Holding period return | 0.5% | 50.0% | 350.0% |\n| Holding period return | 5 days | 23 months | 6.7 years |\n\nWhich of the three investments has the lowest annualized rate of return?",
+  "evidence": "PNG (page_idx 2) shows only the Investment A/B/C holding-period-return table; the DB question_en also fabricated a second 'Time (years)/Price (AUD)' table (0:99,1:105,2:113) that belongs to a different question (matches item c96d4276 in this same batch) and is not present on this page. Removed the contaminated table; kept the genuine one."
+ },
+ {
+  "id": "422f198b-2a78-4a3e-be4a-64e26d2716e0",
+  "verdict": "explanation_wrong",
+  "field": "explanation_en",
+  "new_value": "The annualized rate of return is an application of the geometric mean return. It converts a holding period return to an equivalent annualized return. To find the annualized rate of return, determine the time unit (eg, days, months, or years). Identify how many time units occur in one year (eg, days = 365, months = 12, year = 1). Express the time in years. Apply this standardized unit of time to the geometric mean return formula.\nWhen the annualized returns of all investments are compared, Investment B has the lowest return, 23.56%.\nThe annualized returns of Investment A (Choice A) and Investment C (Choice C) both show higher annualized returns than Investment B's annualized return.",
+  "evidence": "DB explanation_en discussed continuous vs discrete compounding and cited Choice A/B percentages (13.00%/13.87%) unrelated to this question's own options (Investment A/B/C); page_idx 2 shows the actual reasoning is the annualized-rate-of-return / geometric mean approach with Investment B having the lowest annualized return (23.56%). Replaced with the on-page explanation, truncated before 'Things to remember'."
+ },
+ {
+  "id": "61d32679-ebb7-4580-8be4-be4397af669a",
+  "verdict": "stem_wrong",
+  "field": "question_en",
+  "new_value": "An investor is reviewing investment performance and collects the following information:\n\n| (AUD millions) | Year 1 | Year 2 | Year 3 |\n|---|---|---|---|\n| Beginning value of investment | 0 | 1,150 | 1,285 |\n| Beginning of year contributions | 1,000 | 500 | 0 |\n| Total investment at beginning of year | 1,000 | 1,650 | 1,285 |\n| Portfolio performance (%) | 15% | -10% | 20% |\n| Portfolio performance | 150 | (165) | 257 |\n| Portfolio withdrawals | 0 | (200) | 0 |\n| Ending value of investment | 1,150 | 1,285 | 1,542 |\n\nIf withdrawals only occur at year-end, the investor's money-weighted return over the three years is closest to:",
+  "evidence": "PNG (page_idx 19) shows only the AUD-millions Year1-3 MWR table; the DB question_en also fabricated a second 'Investment X/Y/Z, Type of Return, Returns (%)' table not present on this page or anywhere in this PDF section. Correct_answer A and explanation_en both match the page exactly, so only the question_en table contamination needed removal."
+ },
+ {
+  "id": "9faa70ab-a96d-4598-a010-cebdcebffdd6",
+  "verdict": "ok",
+  "evidence": "PNG (page_idx 15) matches question_en (table already present), options, checkmark on A, and explanation text word-for-word. No fix needed."
+ },
+ {
+  "id": "37908a75-b11b-40f4-8e9c-28106b37e061",
+  "verdict": "ok",
+  "evidence": "PNG (page_idx 28) matches question_en (bullet list already present), options, checkmark on C, and explanation text word-for-word. No fix needed."
+ },
+ {
+  "id": "352e12c3-c429-4de1-868d-9ca447925d21",
+  "verdict": "formatting_missing",
+  "field": "question_en",
+  "new_value": "The monthly returns for a mutual fund are:\n\n| Month | Return (%) |\n|---|---|\n| 1 | 3.0 |\n| 2 | -0.5 |\n| 3 | 0.0 |\n| 4 | 1.1 |\n| 5 | -1.2 |\n| 6 | -2.3 |\n| 7 | 1.6 |\n| 8 | 2.0 |\n\nIf the target monthly return is 1.5%, the fund's target semideviation (%) is closest to:",
+  "evidence": "PNG (page_idx 16) confirms question, checkmark on B, and explanation match the DB exactly; only the monthly-returns table was missing."
+ },
+ {
+  "id": "550c625f-7278-4806-8061-7b0744e6e190",
+  "verdict": "formatting_missing",
+  "field": "question_en",
+  "new_value": "For four years, an investor invests €1,000,000 annually in a stock at the following prices (per share):\n\n| Year | Purchase Price of Security (€) |\n|---|---|\n| Year 1 | 120 |\n| Year 2 | 130 |\n| Year 3 | 155 |\n| Year 4 | 175 |\n\nThe average price per share paid for the stock over the four-year period is closest to:",
+  "evidence": "PNG (page_idx 22) confirms question, checkmark on A, and explanation match the DB exactly; only the purchase-price table was missing."
+ }
+]

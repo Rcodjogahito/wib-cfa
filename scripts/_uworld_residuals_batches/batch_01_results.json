@@ -1,0 +1,434 @@
+[
+  {
+    "id": "ee9d77a1-3371-43fc-b745-6d0024d645d9",
+    "verdict": "ok",
+    "field": "correct_answer",
+    "evidence": "Checkmark on A (11.5%) in PNG matches stored correct_answer A."
+  },
+  {
+    "id": "ee9d77a1-3371-43fc-b745-6d0024d645d9",
+    "verdict": "formatting_missing",
+    "field": "question_en",
+    "new_value": "An analyst collects the following data:\n\n| | Sharpe Ratio | Return | Standard Deviation |\n|---|---|---|---|\n| Portfolio A | 1.06 | | 13% |\n| Market | | 12% | 9% |\n\nThe risk-free rate is 2%. The M-squared value of Portfolio A is closest to:",
+    "evidence": "PNG page 19 shows a data table (Sharpe Ratio/Return/Standard Deviation for Portfolio A and Market) that is absent from stored question_en; stem wording otherwise matches."
+  },
+  {
+    "id": "ee9d77a1-3371-43fc-b745-6d0024d645d9",
+    "verdict": "ok",
+    "field": "explanation_en",
+    "evidence": "Stored explanation_en matches PNG explanation verbatim (M-squared calc, choices B/C rationale)."
+  },
+  {
+    "id": "53ed6a53-5c47-43bc-afa1-5fa8d50f7637",
+    "verdict": "ok",
+    "field": "correct_answer",
+    "evidence": "Checkmark on B (Portfolio 2) matches stored correct_answer B."
+  },
+  {
+    "id": "53ed6a53-5c47-43bc-afa1-5fa8d50f7637",
+    "verdict": "formatting_missing",
+    "field": "question_en",
+    "new_value": "An analyst collects the following data for three portfolios over the past five years:\n\n| | Return | Standard Deviation (σ) | Beta (β) |\n|---|---|---|---|\n| Manager 1 | 10% | 18% | 1.2 |\n| Manager 2 | 9% | 12% | 0.8 |\n| Manager 3 | 11% | 22% | 1.5 |\n| Market | 8% | 14% | |\n| Risk-free rate | 3% | | |\n\nWhich portfolio has the highest Sharpe ratio?",
+    "evidence": "PNG page 21 shows a data table absent from stored question_en. Table row labels 'Manager 1/2/3' vs stem wording 'portfolios' is a PDF-native inconsistency, reproduced as-is."
+  },
+  {
+    "id": "53ed6a53-5c47-43bc-afa1-5fa8d50f7637",
+    "verdict": "explanation_wrong",
+    "field": "explanation_en",
+    "new_value": "Investors require higher returns for assuming more risk. The Sharpe ratio is one metric that evaluates returns on a risk-adjusted basis, measuring excess return per unit of total risk. Excess return is the difference between the portfolio's return and the return of a risk-free asset (eg, US Treasury bill, or T-bill). Total risk is measured by the standard deviation of returns and captures both systematic (market) risk and nonsystematic (nonmarket) risk. The Sharpe ratios for the three portfolios are calculated below:\n\n| | Portfolio 1 | Portfolio 2 | Portfolio 3 |\n|---|---|---|---|\n| Sharpe ratio | (10% − 3%) / 18% = 0.39 | (9% − 3%) / 12% = 0.50 | (11% − 3%) / 22% = 0.36 |\n\nPortfolio 2 has the highest Sharpe ratio, and therefore has the greatest excess return per unit of total risk compared to its peers.\n\nThings to remember:\nThe Sharpe ratio measures excess return per unit of total risk. Standard deviation, not beta, is used to calculate the Sharpe ratio. The portfolio with the highest Sharpe ratio produces the best risk-adjusted result.",
+    "evidence": "Stored explanation ended after 'are calculated below:' without the actual Sharpe ratio calculation table shown on the PNG page. Text completed verbatim from the page."
+  },
+  {
+    "id": "19240fdf-fbde-445d-8967-ce1402669a43",
+    "verdict": "ok",
+    "field": "correct_answer",
+    "evidence": "Checkmark on A (0.10) matches stored correct_answer A."
+  },
+  {
+    "id": "19240fdf-fbde-445d-8967-ce1402669a43",
+    "verdict": "formatting_missing",
+    "field": "question_en",
+    "new_value": "An analyst collects the following data to calculate the Treynor ratio for a fund:\n\n| | |\n|---|---|\n| Market return | 10.0% |\n| US Treasury bill return | 4.0% |\n| Standard deviation of portfolio returns | 22.9% |\n| Fund return | 16.0% |\n| Beta | 1.15 |\n\nThe Treynor ratio for the four-year period is closest to:",
+    "evidence": "PNG page 23 shows a data table absent from stored question_en."
+  },
+  {
+    "id": "19240fdf-fbde-445d-8967-ce1402669a43",
+    "verdict": "ok",
+    "field": "explanation_en",
+    "evidence": "Stored explanation_en matches PNG explanation verbatim (Treynor ratio calc, choices B/C rationale)."
+  },
+  {
+    "id": "1a0abadc-e035-45ce-9a3b-7551b1c7807d",
+    "verdict": "ok",
+    "field": "correct_answer",
+    "evidence": "Checkmark on A (Portfolio 1) matches stored correct_answer A."
+  },
+  {
+    "id": "1a0abadc-e035-45ce-9a3b-7551b1c7807d",
+    "verdict": "formatting_missing",
+    "field": "question_en",
+    "new_value": "An analyst provides the following performance information for three portfolios over the past year:\n\n| | Mean Annual Return | Sharpe Ratio | Treynor Ratio |\n|---|---|---|---|\n| Portfolio 1 | 18.0% | 0.83 | 0.11 |\n| Portfolio 2 | 10.0% | 0.34 | 0.13 |\n| Portfolio 3 | 7.5% | 0.50 | 0.06 |\n\nBased only on this information, if the risk-free rate is 1.5%, which portfolio has the highest systematic risk?",
+    "evidence": "PNG page 26 ('Selected Portfolio Performance Data') shows this table; it was missing from question_en and was found garbled into item b78fa277-...'s question_en instead ('First Table')."
+  },
+  {
+    "id": "1a0abadc-e035-45ce-9a3b-7551b1c7807d",
+    "verdict": "explanation_wrong",
+    "field": "explanation_en",
+    "new_value": "Performance evaluation analyzes a portfolio's return and degree of risk. In portfolio management, risk is quantified as either systematic risk, as measured by beta, or total risk, as measured by standard deviation. Total risk includes both systematic and unsystematic risk.\n\nThe Treynor ratio, which is the ratio of excess return to beta, allows the isolation of systematic risk using beta. This distinguishes it from the Sharpe ratio, which is the ratio of excess return to total risk as measured by standard deviation.\n\nIn this question, the portfolio with the highest systematic risk is identified as follows:\n\n| Calculations | Steps |\n|---|---|\n| βp = (Rp − Rf) / Treynor ratio | Rearrange Treynor ratio formula to solve for beta |\n| β1 = (0.18 − 0.015) / 0.11 = 1.50 | Solve for beta for Portfolio 1 |\n| β2 = (0.10 − 0.015) / 0.13 = 0.65 | Solve for beta for Portfolio 2 |\n| β3 = (0.075 − 0.015) / 0.06 = 1.00 | Solve for beta for Portfolio 3 |\n\nPortfolio 1 has the highest systematic risk, with a beta of 1.50.\n\nThings to remember:\nThe Treynor ratio measures excess return relative to systematic risk, as measured by beta. This distinguishes it from the Sharpe ratio, which also uses excess return but relative to total risk as measured by standard deviation.",
+    "evidence": "Stored explanation_en (about CML/CAL/efficient frontier/SML) is entirely unrelated to this Treynor-ratio/beta question; it belongs to a different question. Replaced with the actual explanation from the PNG page (beta-via-Treynor-ratio calc table)."
+  },
+  {
+    "id": "250e8da4-28dd-4542-8967-008df165e0e3",
+    "verdict": "ok",
+    "field": "correct_answer",
+    "evidence": "Checkmark on B (6.75) matches stored correct_answer B."
+  },
+  {
+    "id": "250e8da4-28dd-4542-8967-008df165e0e3",
+    "verdict": "formatting_missing",
+    "field": "question_en",
+    "new_value": "An analyst collects the following information on a portfolio's performance over the past year:\n\n| | Mean Annual Return | Standard Deviation | Beta |\n|---|---|---|---|\n| Portfolio | 12.0% | 40.0% | 1.8 |\n| Market | 7.0% | 20.0% | |\n| Risk-free rate | 1.5% | | |\n\nThe portfolio's M-squared value is closest to:",
+    "evidence": "PNG page shows this data table absent from stored question_en."
+  },
+  {
+    "id": "250e8da4-28dd-4542-8967-008df165e0e3",
+    "verdict": "explanation_wrong",
+    "field": "explanation_en",
+    "new_value": "M-squared (M²) measures portfolio returns in excess of a benchmark (typically the market portfolio) adjusted for the ratio of the total risk of the portfolio relative to the total risk of the benchmark. For M-squared, total risk is measured as the standard deviation.\n\nM-squared is appropriate both for evaluating standalone portfolio performance and for ranking portfolios. If a portfolio's M-squared measure is higher than the market return, then the portfolio achieved a better performance than the market on a total risk-adjusted basis, and vice versa. When ranking portfolios, the portfolio with the highest M-squared value has outperformed its peers.\n\nFor this question, the M-squared calculation is as follows:\n\nM² = (12.0 − 1.5)(20/40) + 1.5 = 5.25 + 1.5 = 6.75\n\nThe difference between the market return of 7.0% and the portfolio's M-squared value of 6.75 suggests that the portfolio underperformed the market on a total risk-adjusted basis. Although the portfolio earned an excess return of 10.5%, the risk-adjusted return before adding back the risk-free rate is only 5.25%.\n\nNote: Many candidates confuse M² with M²-alpha. Many sources treat them as identical concepts, but the CFA curriculum distinguishes them. M²-alpha subtracts the market return from M²; both of these are addressed in the curriculum.\n\n(Choice A) The result 0.30 represents the Sharpe ratio, which is a component of, but not equivalent to, M-squared. The Sharpe ratio measures excess return per unit of total risk, or standard deviation, but does not adjust this excess return by the ratio of the portfolio standard deviation to the market standard deviation.\n\n(Choice C) The result 7.50 results from using the market return instead of the risk premium to calculate M-squared.\n\nThings to remember:\nM-squared measures portfolio performance relative to a benchmark, typically the market portfolio, on a total risk-adjusted basis. The measure is calculated by multiplying the excess portfolio return by the ratio of the standard deviation of the market to the standard deviation of the portfolio, then adding back the risk-free rate.",
+    "evidence": "Stored explanation_en (about CAPM/SML expected return) is unrelated to this M-squared question. Replaced with actual M-squared explanation from the PNG page."
+  },
+  {
+    "id": "c4be37a2-1702-4a92-8da4-82c1766d9fcd",
+    "verdict": "ok",
+    "field": "correct_answer",
+    "evidence": "Checkmark on B (0.047) matches stored correct_answer B."
+  },
+  {
+    "id": "c4be37a2-1702-4a92-8da4-82c1766d9fcd",
+    "verdict": "formatting_missing",
+    "field": "question_en",
+    "new_value": "An analyst gathers the following information on a fully diversified portfolio's performance over the past year:\n\n| | Mean annual return | Standard deviation | Beta |\n|---|---|---|---|\n| Portfolio | 8.0% | 35.0% | 1.5 |\n| Market | 7.0% | 25.0% | |\n| Risk-free rate | 1.0% | | |\n\nBased on this information, the Treynor ratio for the portfolio is closest to:",
+    "evidence": "PNG page 49 shows this data table absent from stored question_en."
+  },
+  {
+    "id": "c4be37a2-1702-4a92-8da4-82c1766d9fcd",
+    "verdict": "explanation_wrong",
+    "field": "explanation_en",
+    "new_value": "Analyzing a portfolio's return is only one part of performance evaluation; another is determining how much risk the manager took to earn the return. In portfolio management, risk is quantified as either systematic risk (as measured by beta) or total risk (as measured by standard deviation). In theory, fully diversified portfolios have only systematic (ie, market, non-diversifiable) risk.\n\nThe Treynor ratio measures excess return relative to systematic risk and is therefore appropriate for a fully diversified portfolio. When calculating the Treynor ratio, excess return is the difference between the portfolio's average return and the average return of a risk-free asset (eg, US Treasury bill, or T-bill), and systematic risk is measured by beta. In this scenario, the relevant data used to calculate the Treynor ratio are the mean annual portfolio return of 8.0%, the mean annual risk-free rate of 1.0%, and beta of 1.5:\n\nTreynor ratio = (0.08 − 0.01) / 1.5 ≈ 0.047\n\nThis result suggests the portfolio's excess return was 4.7 times its systematic risk. The Treynor ratio is best used as a measure to compare the performance of two or more portfolios.\n\n(Choice A) 0.02 represents the Sharpe ratio, which measures excess return per unit of total risk (ie, standard deviation).\n\n(Choice C) 0.06 represents the portfolio's M-squared measure, which evaluates portfolio return by adjusting the total risk of the portfolio compared to a benchmark (typically the market).\n\nThings to remember:\nThe Treynor ratio measures excess return relative to systematic risk, as measured by beta.",
+    "evidence": "Stored explanation_en (about CAPM/SML expected return, 0.09-0.07=0.02) is unrelated to this Treynor-ratio question; it was found to be word-for-word the correct explanation for a different question elsewhere in the PDF. Replaced with the actual Treynor ratio explanation from the PNG page."
+  },
+  {
+    "id": "5bf89b6a-6f45-4cf5-aefc-abfd4e1a2365",
+    "verdict": "ok",
+    "field": "correct_answer",
+    "evidence": "Checkmark on A (Portfolio X) matches stored correct_answer A."
+  },
+  {
+    "id": "5bf89b6a-6f45-4cf5-aefc-abfd4e1a2365",
+    "verdict": "stem_wrong",
+    "field": "question_en",
+    "new_value": "The following information on three portfolios is collected:\n\n| Portfolio | Jensen's Alpha (%) | Sharpe Ratio | Treynor Ratio |\n|---|---|---|---|\n| X | 6.50 | 0.48 | 0.07 |\n| Y | 5.50 | 0.79 | 0.10 |\n| Z | 5.75 | 0.75 | 0.14 |\n\nAll portfolios have an actual return of 15%. According to the capital asset pricing model (CAPM), which of the following is most likely to be the best performing portfolio based on the difference between its actual return and its expected return?",
+    "evidence": "PNG page 28 shows only ONE table (Portfolio X/Y/Z, Jensen's Alpha/Sharpe/Treynor). Stored question_en additionally contained a garbled 'First Table' (Portfolio 1/2/3 Mean Annual Return/Sharpe/Treynor) that belongs to a different question (item 1a0abadc, page 26) and does not appear on this page at all; removed it."
+  },
+  {
+    "id": "5bf89b6a-6f45-4cf5-aefc-abfd4e1a2365",
+    "verdict": "explanation_wrong",
+    "field": "explanation_en",
+    "new_value": "Examining a portfolio's return is only one aspect of evaluating its performance. Another is determining how much risk it took to earn that return. This is accomplished by calculating a risk-adjusted return. In portfolio management, the return is adjusted for risk using either systematic risk (beta) or total risk (standard deviation).\n\nJensen's alpha is a performance measure that uses beta to determine the portfolio's risk-adjusted excess return. It is the difference between a portfolio's actual return and its risk-adjusted return as predicted by the capital asset pricing model (CAPM). Portfolio X, which has the highest Jensen's alpha, is the best performing portfolio based on its risk-adjusted excess return.\n\n(Choice B) Portfolio Y is the best performing investment evaluated using the Sharpe ratio. The Sharpe ratio determines a portfolio's risk premium (return less risk-free rate) per unit of total risk (standard deviation).\n\n(Choice C) Portfolio Z is the best-performing investment evaluated using the Treynor ratio. The Treynor ratio determines a portfolio's risk premium (return less risk-free rate) per unit of systematic risk (beta).\n\nThings to remember:\nJensen's alpha is the difference between actual return and expected return as predicted by the capital asset pricing model. The portfolio with the highest Jensen's alpha outperforms its peers by having the greatest risk-adjusted excess return.",
+    "evidence": "Stored explanation_en (performance-measures comparison table + Treynor-ratio worked example) does not match this question (its own 'Choices A and B' reference doesn't correspond to this question's options X/Y/Z). Replaced with the actual Jensen's-alpha explanation from the PNG page."
+  },
+  {
+    "id": "b78fa277-d23e-4588-aeab-e26bd7688d37",
+    "verdict": "ok",
+    "field": "correct_answer",
+    "evidence": "Checkmark on B (Portfolio Y) matches stored correct_answer B."
+  },
+  {
+    "id": "b78fa277-d23e-4588-aeab-e26bd7688d37",
+    "verdict": "stem_wrong",
+    "field": "question_en",
+    "new_value": "A fund manager collects the following data for the firm's three top-performing portfolios over the past seven years.\n\n| | Return (%) | Standard Deviation (%) | Correlation Between Portfolio and the Market |\n|---|---|---|---|\n| Portfolio X | 21 | 41 | 0.7 |\n| Portfolio Y | 19 | 35 | 0.6 |\n| Portfolio Z | 16 | 27 | 0.6 |\n| Market | 10 | 17 | |\n| Risk-free rate | 3 | | |\n\nWhich portfolio has the highest Jensen's alpha?",
+    "evidence": "PDF text extraction of page 47 confirms this exact table (Portfolio X/Y/Z Return/SD/Correlation). Stored question_en instead showed a garbled, unrelated table ('Year 20X1/20X2/20X3', 'Portfolio return', 'US Treasury bill return', single SD value 4.6%) that does not appear anywhere on this page."
+  },
+  {
+    "id": "b78fa277-d23e-4588-aeab-e26bd7688d37",
+    "verdict": "explanation_wrong",
+    "field": "explanation_en",
+    "new_value": "Jensen's alpha is a risk-adjusted return that measures a portfolio's actual return minus its expected (predicted) return. Jensen's alpha uses beta to adjust for market, or systematic, risk; a higher beta means a higher expected return. If Jensen's alpha is positive, then the portfolio has performed better than expected. On a risk-adjusted basis, the portfolio with the highest Jensen's alpha has outperformed its peers.\n\nIn the question, beta needs to be calculated before solving for Jensen's alpha.\n\n| Portfolio | Beta calculation | Beta |\n|---|---|---|\n| X | (0.7 × 0.41) / 0.17 | 1.6882 |\n| Y | (0.6 × 0.35) / 0.17 | 1.2353 |\n| Z | (0.6 × 0.27) / 0.17 | 0.9529 |\n\nPortfolio Y has the highest Jensen's alpha and therefore the highest risk-adjusted return.\n\n(Choice A) Portfolio X has a Jensen's alpha of 6.18%, which is less than that of Portfolio Y.\n(Choice C) Portfolio Z has a Jensen's alpha of 6.33%, which is less than that of Portfolio Y.\n\nThings to remember:\nJensen's alpha measures the percent return relative to the expected return. A higher Jensen's alpha is preferable.",
+    "evidence": "Stored explanation_en was actually the correct explanation for item c4be37a2 (Treynor ratio 0.047 calc), cross-contaminated. Replaced with the real explanation for this page, confirmed via PDF text extraction of pages 47-48 (beta table + Jensen's alpha values for X/Y/Z: 6.18%, highest for Y, 6.33%)."
+  },
+  {
+    "id": "6237cf72-d029-4518-a918-1e1ed77d2a32",
+    "verdict": "ok",
+    "field": "correct_answer",
+    "evidence": "Checkmark on A (Investment 1) matches stored correct_answer A."
+  },
+  {
+    "id": "6237cf72-d029-4518-a918-1e1ed77d2a32",
+    "verdict": "stem_wrong",
+    "field": "question_en",
+    "new_value": "A manager collects the following data:\n\n| Investment | Beta | Expected Standard Deviation (%) |\n|---|---|---|\n| 1 | 0.8 | 20 |\n| 2 | 0.9 | 22 |\n| 3 | 1.0 | 17 |\n\nIf the risk-free rate is 3.5% and the market risk premium is positive, which investment has the lowest expected return according to the capital asset pricing model?",
+    "evidence": "PNG page (Q58) shows only this Investment/Beta/Expected SD table. Stored question_en contained a garbled extra 'Question 5' table (Investment A/B/C with expected return/SD/correlation to market) that does not belong to this question/page at all."
+  },
+  {
+    "id": "6237cf72-d029-4518-a918-1e1ed77d2a32",
+    "verdict": "explanation_wrong",
+    "field": "explanation_en",
+    "new_value": "The capital asset pricing model determines the expected return for a security based on the security's beta, the market return, and the risk-free rate. In this question, it is not possible to calculate the investments' expected returns since the expected return of the market is unknown but is constant and applicable to all securities equally. However, beta can be used to determine the relative return among investments, so it is possible to find which investment has the lowest expected return.\n\nBeta measures the sensitivity of a security's expected return relative to the expected market return. A security with the lowest beta has the least sensitivity to market risk and, given the direct relationship between risk and return, the lowest expected return. Investment 1 has the lowest expected return since it has the lowest beta (Choices B and C).\n\nThings to remember:\nUnder the capital asset pricing model, a security's beta helps determine its expected return. Given a positive expected return, a low beta means a low expected return on a security.",
+    "evidence": "Stored explanation_en was word-for-word item ee9d77a1's M-squared explanation, entirely unrelated to this CAPM/beta question. Replaced with the actual explanation from the PNG page."
+  },
+  {
+    "id": "93bb70fc-4091-4113-bc1f-ee160d36fdd7",
+    "verdict": "ok",
+    "field": "correct_answer",
+    "evidence": "Checkmark on A (€277) matches stored correct_answer A."
+  },
+  {
+    "id": "93bb70fc-4091-4113-bc1f-ee160d36fdd7",
+    "verdict": "formatting_missing",
+    "field": "question_en",
+    "new_value": "A fundamentally weighted index is constructed using the following data, with earnings yield as the weighting factor:\n\n| Asset | Beginning price (€) | Earnings per share (€) |\n|---|---|---|\n| X | 100.00 | 3.00 |\n| Y | 48.00 | 4.80 |\n| Z | 80.00 | 4.00 |\n\nIf the initial value of the index is €1,000, the value of Asset Z in the index is closest to:",
+    "evidence": "PNG page 2 shows this data table absent from stored question_en."
+  },
+  {
+    "id": "93bb70fc-4091-4113-bc1f-ee160d36fdd7",
+    "verdict": "explanation_wrong",
+    "field": "explanation_en",
+    "new_value": "Fundamental weighting uses some fundamental measure of a company, such as earnings, to weight the assets in the index. Other usable measures include dividends, revenues, or book value.\n\nSince fundamental weighting uses these types of measures instead of market cap or share price, it tends to favor assets normally associated with value investing. To find the weight of an asset, divide the fundamental measure of the asset by the sum of the measures of every asset in the index. In this example, the fundamental value is earnings yield, which is found by dividing earnings by share price.\n\nEarnings yield = Earnings per share / Share price\n\nUse the price at the beginning of the period and the earnings per share to find the fundamental weight of Asset Z. Then multiply the weight of the asset by the initial value of the index to find the value of Asset Z in the index:\n\n| Asset | Earnings yield | Fundamental weight | Value in index |\n|---|---|---|---|\n| X | €3.00/€100.00 = 0.03 | 0.03/(0.03+0.10+0.05) = 16.7% | €1,000 × 16.7% = €167 |\n| Y | €4.80/€48.00 = 0.10 | 0.10/(0.03+0.10+0.05) = 55.6% | €1,000 × 55.6% = €556 |\n| Z | €4.00/€80.00 = 0.05 | 0.05/(0.03+0.10+0.05) = 27.7% | €1,000 × 27.7% = €277 |\n\n(Choice B) €333 is the value of Asset Z in the index using equal weighting: €1,000 ÷ 3 = €333.\n(Choice C) €351 is the value in the index of Asset Z based on its price weight. The price weight of an asset is found by dividing the price of the asset by the sum of all the asset prices in the index.\n\nThings to remember:\nTo find the fundamental weight of an asset, divide the fundamental measure of the asset by the sum of the fundamental measures of all the assets in the index. Earnings yield is calculated as earnings per share divided by share price.",
+    "evidence": "Stored explanation_en (about fixed-income/bond index construction challenges) is entirely unrelated to this equity fundamental-weighting question. Replaced with the actual explanation from the PNG page."
+  },
+  {
+    "id": "7709fedc-8fd6-49ae-95cd-16e6e96620df",
+    "verdict": "ok",
+    "field": "correct_answer",
+    "evidence": "Checkmark on A (€230) matches stored correct_answer A."
+  },
+  {
+    "id": "7709fedc-8fd6-49ae-95cd-16e6e96620df",
+    "verdict": "formatting_missing",
+    "field": "question_en",
+    "new_value": "An analyst compiles the following data about a market-capitalization-weighted index with a beginning index value of €1,000:\n\n| Asset | Beginning price (€) | Ending price (€) | Dividends per share (€) | Outstanding shares |\n|---|---|---|---|---|\n| X | 100 | 112 | 3 | 100 |\n| Y | 48 | 60 | 1 | 200 |\n| Z | 80 | 92 | 2 | 300 |\n\nThe value of Asset X in the index at the beginning of the period is closest to:",
+    "evidence": "PNG page 3 shows this data table absent from stored question_en."
+  },
+  {
+    "id": "7709fedc-8fd6-49ae-95cd-16e6e96620df",
+    "verdict": "explanation_wrong",
+    "field": "explanation_en",
+    "new_value": "The weight of an asset in a market-capitalization-weighted (ie, market-cap-weighted) index is the market cap of the individual asset divided by the sum of the market caps of all the assets in the index. The market cap of an asset is the product of the price of the asset and the number of shares outstanding. Dividends and end of period prices are not used in the calculation of an asset's weight in a market-cap-weighted index at the beginning of the period.\n\nSubstituting the above values into the formula:\n\nMarket-cap weight of Asset X = 100(€100) / [100(€100) + 200(€48) + 300(€80)] = 10,000/43,600 = 23%\n\nThe value of Asset X in the index is the product of its weight in the index and the index value:\n\n23% × €1,000 = €230\n\n(Choice B) €333 is the value of Asset X in an equal-weighted index.\n(Choice C) €439 is the value of Asset X in a price-weighted index: €100 ÷ (€100 + €48 + €80) × €1,000 = €439.\n\nThings to remember:\nIn a market-capitalization-weighted index, weight is apportioned to each asset based on market capitalization. Market cap is the product of shares outstanding and share price. The value of an asset in the index is the product of its weight in the index and the index value.",
+    "evidence": "Stored explanation_en (about price-weighted index construction, value tilt) is unrelated to this market-cap-weighted-index question. Replaced with the actual explanation from the PNG page."
+  },
+  {
+    "id": "343c0fa8-cb4d-4335-870e-048824c5e499",
+    "verdict": "ok",
+    "field": "correct_answer",
+    "evidence": "Checkmark on A (16.7%) matches stored correct_answer A."
+  },
+  {
+    "id": "343c0fa8-cb4d-4335-870e-048824c5e499",
+    "verdict": "formatting_missing",
+    "field": "question_en",
+    "new_value": "An analyst has gathered the following data about the stocks included in an equal-weighted index with a beginning value of €1,200:\n\n| Asset | Beginning price (€) | Ending price (€) | Dividends per share (€) |\n|---|---|---|---|\n| X | 80 | 100 | 1 |\n| Y | 40 | 44 | 2 |\n| Z | 20 | 23 | 1 |\n\nThe price return for the equal-weighted index during the period is closest to:",
+    "evidence": "PNG page 9 shows this data table absent from stored question_en."
+  },
+  {
+    "id": "343c0fa8-cb4d-4335-870e-048824c5e499",
+    "verdict": "explanation_wrong",
+    "field": "explanation_en",
+    "new_value": "An equal-weighted index assigns the same weight to each asset. Since the beginning value of the index is €1,200 and there are three assets, each asset is weighted at 1/3 of the total index value: €1,200 ÷ 3 = €400.\n\nNext, use the asset prices to find the share amounts that equal €400. This is €400 divided by each share price; it is the number of shares that will give each company equal weight in the index at the beginning of the period.\n\n| Asset | Beginning value | Shares of each asset | Asset ending value per share | Ending value |\n|---|---|---|---|---|\n| X | 1,200/3 = 400 | 400/80 = 5 shares | 100 | 5 shares × 100 = 500 |\n| Y | 1,200/3 = 400 | 400/40 = 10 shares | 44 | 10 shares × 44 = 440 |\n| Z | 1,200/3 = 400 | 400/20 = 20 shares | 23 | 20 shares × 23 = 460 |\n\nTotal beginning: 3 × 400 = 1,200. Total ending: 500 + 440 + 460 = 1,400.\n\nFind the ending index value by multiplying the ending value of each asset by each asset's number of shares. Finally, calculate the price return of the index by subtracting the beginning price of the index from the ending price, then dividing by the beginning price:\n\nPR_Index = (P_End − P_Beg) / P_Beg = (1,400 − 1,200) / 1,200 = 16.7%\n\n(Choice B) 19.3% is the result of calculating the price return of the index as if it were price-weighted. However, this question asks for the price return of the equal-weighted index. If this index were price-weighted, then the initial number of shares of each asset would be the number needed to make each asset's weight the ratio of its price to the total prices of the assets in the index. For example, the price weighting of Asset X would be 80/(80 + 40 + 20) = 0.5714, instead of 1/3, the equal weighting.\n\n(Choice C) 20.4% is the total return, not the price return, of the equal-weighted index. The dividends given in the table above are included in the calculation of the total return of an index but not in its price return calculation.\n\nThings to remember:\nAn equal-weighted index allocates an equal amount of value to each asset. The price return of any asset is calculated by first subtracting the beginning price from the ending price, then dividing the result by the beginning price. Total return also includes dividends.",
+    "evidence": "Stored explanation_en (about fixed-income index construction challenges) is entirely unrelated to this equal-weighted-index price-return question. Replaced with the actual explanation from the PNG page."
+  },
+  {
+    "id": "431f1b41-7fea-4414-a9d4-4a69e879ec6d",
+    "verdict": "ok",
+    "field": "correct_answer",
+    "evidence": "Checkmark on B (14.5%) matches stored correct_answer B."
+  },
+  {
+    "id": "431f1b41-7fea-4414-a9d4-4a69e879ec6d",
+    "verdict": "formatting_missing",
+    "field": "question_en",
+    "new_value": "The following market-capitalization-weighted index data is for one year:\n\n| Asset | Beginning Price (£) | Ending Price (£) | Dividends Per Share (£) | Shares Outstanding |\n|---|---|---|---|---|\n| X | 10 | 14 | 1 | 6,000 |\n| Y | 18 | 20 | 2 | 7,500 |\n| Z | 22 | 21 | 1 | 10,000 |\n\nThe index's total return for the year is closest to:",
+    "evidence": "PNG page 13 shows this data table absent from stored question_en."
+  },
+  {
+    "id": "431f1b41-7fea-4414-a9d4-4a69e879ec6d",
+    "verdict": "explanation_wrong",
+    "field": "explanation_en",
+    "new_value": "The total return of an index is the weighted average of the total returns of each asset in the index. The total return of each asset is the change in overall investment value as a percentage of beginning value, accounting for both price changes and income. The income component of total return may be dividends, interest, or another form of distribution.\n\nIn this scenario, the index is market-capitalization-weighted (ie, market-cap-weighted). The weight of an asset in a market-cap-weighted index is the market cap of the individual asset as a percentage of the sum of the market caps of all the assets in the index. The market cap of an asset is the product of its price per share and the number of shares outstanding, using beginning-of-period data. Therefore, in this case, the initial percentages of each asset are as follows:\n\n| Asset | Beginning price (£) | Shares outstanding | Market capitalization | Beginning percentage (%) |\n|---|---|---|---|---|\n| X | 10 | 6,000 | 60,000 | 60,000/415,000 ≈ 0.1446 |\n| Y | 18 | 7,500 | 135,000 | 135,000/415,000 ≈ 0.3253 |\n| Z | 22 | 10,000 | 220,000 | 220,000/415,000 ≈ 0.5301 |\n| Total | | | 415,000 | |\n\nThe total return of each asset (including dividends) is: X = (14 − 10 + 1)/10 = 50%; Y = (20 − 18 + 2)/18 ≈ 22.2%; Z = (21 − 22 + 1)/22 = 0%.\n\nThe total return of the index is calculated as the weighted average: (0.1446 × 50%) + (0.3253 × 22.2%) + (0.5301 × 0%) ≈ 14.5%.\n\nNote that the weight used to calculate total return is each security's percentage of the index at the beginning of the period.\n\n(Choice A) 7.0% results from incorrectly calculating the price return of the index. This question asks for the index's total return.\n(Choice C) 24.1% results from incorrectly calculating the total return of an equal-weighted index.\n\nThings to remember:\nAn index's total return is the weighted average of the total returns of each asset in the index. The total return of each asset is the change in overall investment value as a percentage of beginning value, accounting for both price changes and income. In a market-cap-weighted index, an individual asset's weight is its market cap as a percentage the sum of the market caps of all assets in the index, using beginning-of-period data.",
+    "evidence": "Stored explanation_en (about rebalancing vs reconstitution) is entirely unrelated to this total-return calculation question. Replaced with the actual explanation, verified via PDF text extraction of pages 13-14, with the weighted-average total-return computation added (directly derivable from the page's own beginning percentages and the given prices/dividends, consistent with the 14.5% answer)."
+  },
+  {
+    "id": "f3349122-18f4-48e2-a115-e3c4ed14b473",
+    "verdict": "ok",
+    "field": "correct_answer",
+    "evidence": "Checkmark on A (5.0%) matches stored correct_answer A."
+  },
+  {
+    "id": "f3349122-18f4-48e2-a115-e3c4ed14b473",
+    "verdict": "formatting_missing",
+    "field": "question_en",
+    "new_value": "An analyst gathers the following information on the constituents of a price-weighted index:\n\n| Stock | Beginning price (¥) | Ending price (¥) | Dividends per share (¥) | Shares outstanding |\n|---|---|---|---|---|\n| A | 150 | 180 | | 12,000 |\n| B | 250 | 270 | 10 | 10,000 |\n| C | 200 | 180 | 5 | 14,000 |\n\nBased on this information, the index's price return is closest to:",
+    "evidence": "PNG page shows this data table absent from stored question_en."
+  },
+  {
+    "id": "f3349122-18f4-48e2-a115-e3c4ed14b473",
+    "verdict": "ok",
+    "field": "explanation_en",
+    "evidence": "Stored explanation_en matches PNG explanation verbatim (price-weighted return calc, weight/return table logic, choices B/C rationale)."
+  },
+  {
+    "id": "61c1ce60-601b-474c-8c5c-bf53d0fd019a",
+    "verdict": "ok",
+    "field": "correct_answer",
+    "evidence": "Checkmark on C (10 shares) matches stored correct_answer C."
+  },
+  {
+    "id": "61c1ce60-601b-474c-8c5c-bf53d0fd019a",
+    "verdict": "formatting_missing",
+    "field": "question_en",
+    "new_value": "An equal-weighted index is constructed using the following three assets:\n\n| Asset | Beginning price (€) | Ending price (€) |\n|---|---|---|\n| X | 120 | 112 |\n| Y | 80 | 86 |\n| Z | 40 | 50 |\n\nThe initial value of the index is €1,200. The number of shares of Asset Z initially included in the index is closest to:",
+    "evidence": "PNG page 16 shows this data table absent from stored question_en."
+  },
+  {
+    "id": "61c1ce60-601b-474c-8c5c-bf53d0fd019a",
+    "verdict": "ok",
+    "field": "explanation_en",
+    "evidence": "Stored explanation_en matches PNG explanation verbatim (equal-weight allocation calc, choices A/B rationale)."
+  },
+  {
+    "id": "8171a73c-0fae-46c0-9589-a82c945f1d72",
+    "verdict": "ok",
+    "field": "correct_answer",
+    "evidence": "Checkmark on C (€99.20) matches stored correct_answer C."
+  },
+  {
+    "id": "8171a73c-0fae-46c0-9589-a82c945f1d72",
+    "verdict": "formatting_missing",
+    "field": "question_en",
+    "new_value": "The following securities make up a price-weighted index:\n\n| Security | Beginning price (€) | Price return |\n|---|---|---|\n| X | 101 | 12% |\n| Y | 62 | 20% |\n| Z | 85 | 15% |\n\nIf the divisor is 2.5, the index value at the beginning of the period is closest to:",
+    "evidence": "PNG page 18 shows this data table absent from stored question_en."
+  },
+  {
+    "id": "8171a73c-0fae-46c0-9589-a82c945f1d72",
+    "verdict": "ok",
+    "field": "explanation_en",
+    "evidence": "Stored explanation_en matches PNG explanation verbatim (price-weighted value calc, choices A/B rationale)."
+  },
+  {
+    "id": "608432e3-e37b-4e72-966d-fdbc35dbe642",
+    "verdict": "ok",
+    "field": "correct_answer",
+    "evidence": "Checkmark on B (small-cap and value outperformance) matches stored correct_answer B."
+  },
+  {
+    "id": "608432e3-e37b-4e72-966d-fdbc35dbe642",
+    "verdict": "formatting_missing",
+    "field": "question_en",
+    "new_value": "Three equity indexes hold the same 30 securities, but they are weighted differently in each index. Over the past year, the total returns of the indexes were:\n\n| Index Weighting | Return % |\n|---|---|\n| Fundamental | 6 |\n| Equal | 10 |\n| Market capitalization | 2 |\n\nThe best explanation for this performance difference is:",
+    "evidence": "PNG page 20 shows this data table absent from stored question_en."
+  },
+  {
+    "id": "608432e3-e37b-4e72-966d-fdbc35dbe642",
+    "verdict": "explanation_wrong",
+    "field": "explanation_en",
+    "new_value": "Index weighting methodology can have a substantial impact on the underlying performance of an index. Understanding the underlying biases present in each approach helps analyze index performance more effectively. Three key index weighting methods are:\n\n- Equal: Equal weight is assigned to each asset.\n- Market capitalization: Weight is based on the market value of the asset as a percentage of the total market value of assets in the index.\n- Fundamental: Weight is based on a company metric (eg, revenues, book value, number of employees relative to the sum of the total for all constituents, earnings yields) to determine the weight in the index.\n\n| Type of index | Key performance drivers |\n|---|---|\n| Market capitalization | Large-cap, momentum |\n| Equal | Small-cap, value |\n| Fundamental | Value |\n| Price | High-priced stocks |\n\nCompared to a market capitalization approach, fundamentally and equally weighted indexes emphasize assets normally associated with a value tilt. In equally weighted indexes, small-capitalization stocks have an outsized effect on performance. In this scenario, the equal-weighted index was the clear outperformer, indicating small-cap and value outperformance.\n\n(Choices A and C) Market capitalization-weighted index performance is heavily influenced by large-capitalization stocks and the momentum effect. Capitalization-weighted indexes are based on market value, so high-momentum stocks have increasing weight and performance impact.",
+    "evidence": "Stored explanation_en had a bled-in duplicate of the question stem, options, and an 'Explanation' header prefixed before the actual explanation text, and the 'Type of index / Key performance drivers' comparison was left as unstructured prose instead of the table shown on the page. Cleaned prefix removed and comparison reproduced as a markdown table; substantive wording otherwise unchanged and verified against the PNG."
+  },
+  {
+    "id": "ae4fe1ca-34e9-4afe-aa59-ee5452cf7542",
+    "verdict": "ok",
+    "field": "correct_answer",
+    "evidence": "Checkmark on A (-2.1%) matches stored correct_answer A."
+  },
+  {
+    "id": "ae4fe1ca-34e9-4afe-aa59-ee5452cf7542",
+    "verdict": "ok",
+    "field": "question_en",
+    "evidence": "Stored question_en already includes the correct markdown table (Asset/Beginning Price/Ending Price/Dividend/Shares Outstanding) matching the PNG page."
+  },
+  {
+    "id": "ae4fe1ca-34e9-4afe-aa59-ee5452cf7542",
+    "verdict": "ok",
+    "field": "explanation_en",
+    "evidence": "Stored explanation_en matches PNG explanation (price-return-by-weight calc, per-asset contributions, choices B/C rationale) and is numerically self-consistent with the page's data."
+  },
+  {
+    "id": "387e313d-c128-4048-91c6-ae252df6ee2b",
+    "verdict": "ok",
+    "field": "correct_answer",
+    "evidence": "Checkmark on B (Bond B's change is higher than Bond E's) matches stored correct_answer B."
+  },
+  {
+    "id": "387e313d-c128-4048-91c6-ae252df6ee2b",
+    "verdict": "ok",
+    "field": "question_en",
+    "evidence": "Stored question_en already includes the correct markdown table (Bond/Coupon/Maturity/YTM for A-F) matching the PNG page."
+  },
+  {
+    "id": "387e313d-c128-4048-91c6-ae252df6ee2b",
+    "verdict": "explanation_wrong",
+    "field": "explanation_en",
+    "new_value": "The maturity effect refines the general inverse relationship between bond prices and the required YTM, which is also known as the required rate of return. If two bonds are identical in all respects except for maturity, a given change in YTM generally causes a higher absolute percentage price change for the bond with the longer maturity than for the bond with the shorter maturity.\n\nThe maturity effect always holds for zero-coupon and premium bonds (Choices A and C). A rare exception can apply to discount bonds (bonds that have a price less than par value). If the exception applies, shorter maturities will exhibit a higher absolute percentage change than longer maturities. The bonds that the exception applies to are long-term bonds with high YTM, as shown by the table below:\n\n| Bond | Coupon | Maturity (years) | YTM | Price (20% YTM) | Price (21% YTM) | % Change | Price (19% YTM) | % Change |\n|---|---|---|---|---|---|---|---|---|\n| A | 0% | 20 | 20% | 2.61 | 2.21 | -15.29% | 3.08 | 18.22% |\n| D | 0% | 30 | 20% | 0.42 | 0.33 | -22.04% | 0.54 | 28.54% |\n| B | 10% | 20 | 20% | 51.30 | 48.78 | -4.93% | 54.09 | 5.43% |\n| E | 10% | 30 | 20% | 50.21 | 47.79 | -4.82% | 52.89 | 5.33% |\n| C | 25% | 20 | 20% | 124.35 | 118.63 | -4.60% | 130.61 | 5.03% |\n| F | 25% | 30 | 20% | 124.89 | 118.99 | -4.73% | 131.41 | 5.22% |\n\nThings to remember:\nThe maturity effect states that when two bonds have the same coupon and required return, a given change in interest rates usually causes a greater percentage price change for a bond with the longer maturity. An exception to the maturity effect can apply in some cases, but ONLY to long-term discount bonds that pay coupon interest.",
+    "evidence": "Stored explanation_en was truncated mid-sentence at 'as shown by the table below:' -- missing the actual price-change table (visible/legible in the PNG image) and the entire 'Things to remember' section (confirmed present via PDF text extraction of the same page, which is the last page of this PDF). Completed verbatim/sourced from the page."
+  },
+  {
+    "id": "f8677e73-6006-4271-bba6-f86e94eee3d1",
+    "verdict": "ok",
+    "field": "correct_answer",
+    "evidence": "Checkmark on B (Investment Y) matches stored correct_answer B."
+  },
+  {
+    "id": "f8677e73-6006-4271-bba6-f86e94eee3d1",
+    "verdict": "formatting_missing",
+    "field": "question_en",
+    "new_value": "An analyst has compiled the following information to compare the yields of three money market instruments:\n\n| | Investment X | Investment Y | Investment Z |\n|---|---|---|---|\n| Day count | 360 | 360 | 365 |\n| Term (in days) | 180 | 90 | 30 |\n| Quoted rate | 6.15% | 6.20% | 6.30% |\n| Rate type | Add-on | Discount | Add-on |\n\nIf the credit risks are the same, the instrument that offers the highest rate of return is:",
+    "evidence": "PNG page 14 shows this data table absent from stored question_en."
+  },
+  {
+    "id": "f8677e73-6006-4271-bba6-f86e94eee3d1",
+    "verdict": "explanation_wrong",
+    "field": "explanation_en",
+    "new_value": "Analysis of money market instruments is made difficult by the variety of features and quoting conventions. Different times-to-maturity, types of interest rates (ie, discount versus add-on), and periodicities will complicate comparisons. One way to simplify comparisons is to convert rates to a bond equivalent yield (ie, investment yield). The bond equivalent yield for money market instruments is the rate stated as a 365-day add-on rate, which—unlike a discount rate—is quoted as a percentage of present value rather than future value, and therefore represents an investor's annualized rate of return.\n\nIn this scenario, the money market instruments are quoted using different types of interest rates, either add-on or discount, and using either a 360-day or a 365-day year convention. Investment Z is quoted on a 365-day add-on basis, so it is already stated as a money market bond equivalent yield.\n\nInvestment X is quoted with an add-on rate, but its year convention is 360. The investment's bond equivalent yield (365-day add-on rate) is calculated as follows:\n\nFV = PV + (PV × Days/Year × AOR) = 100 + (100 × 180/360 × 0.0615) = 103.075\nAOR = Year/Days × (FV − PV)/PV = 365/180 × (103.075 − 100)/100 ≈ 0.0624\n\nInvestment Y is quoted with a 360-day discount rate. It is converted to a 365-day add-on rate as follows:\n\n| | Bond equivalent yield (365-day add-on rate) |\n|---|---|\n| Investment X | 6.24% |\n| Investment Y | 6.39% |\n| Investment Z | 6.30% |\n\nAfter conversion to the bond equivalent yield, it becomes clear that Investment Y has a higher annualized rate of return than Investment X (Choice A) or Investment Z.\n\n(Choice C) Investment Z has the highest quoted rate. However, the quoted rates are misleading in this case, since the day-count conventions and rate types are not equivalent and therefore not comparable.\n\nThings to remember:\nAnalysis of money market instruments is made difficult by the variety of features and quoting conventions. Comparisons can be facilitated by converting interest rates to a bond equivalent yield. The bond equivalent yield for money market instruments is the 365-day add-on rate.",
+    "evidence": "Stored explanation_en was truncated mid-sentence at 'It is converted to a 365-day add-on rate as follows:' -- missing the Investment X calc (visible in the PNG) and the entire results table/conclusion/Things-to-remember section, confirmed via PDF text extraction of pages 14-15. Completed verbatim/sourced."
+  },
+  {
+    "id": "59bd3ac3-a31f-4f71-8840-8b5641d70bd1",
+    "verdict": "ok",
+    "field": "correct_answer",
+    "evidence": "Checkmark on A (increasing its free cash flow to equity) matches stored correct_answer A."
+  },
+  {
+    "id": "59bd3ac3-a31f-4f71-8840-8b5641d70bd1",
+    "verdict": "formatting_missing",
+    "field": "question_en",
+    "new_value": "An analyst compiles the following common-sized cash flow statements as a percentage of revenue for a company:\n\n| | 20X4 | 20X5 |\n|---|---|---|\n| Net income | 9.0% | 11.1% |\n| Depreciation and amortization | 5.0% | 6.7% |\n| Changes in operating assets and liabilities | -5.5% | -7.2% |\n| Cash flow from operations | 8.5% | 10.6% |\n| Purchase of equipment | -5.0% | -6.7% |\n| Cash flow from investing | -5.0% | -6.7% |\n| Issuance of debt | 6.0% | 2.2% |\n| Repayment of debt | -6.0% | -1.7% |\n| Dividend payments | -1.5% | -1.7% |\n| Cash flow from financing | -1.5% | -1.1% |\n| Net change in cash | 2.0% | 2.8% |\n| Cash paid for interest | 2.5% | 2.2% |\n\nThe company had total revenue of MXN 1,000 million in 20X4, MXN 900 million in 20X5, and a tax rate of 20% for both years. The analyst's most appropriate conclusion is that the company is:",
+    "evidence": "PNG page 1 shows this data table absent from stored question_en."
+  },
+  {
+    "id": "59bd3ac3-a31f-4f71-8840-8b5641d70bd1",
+    "verdict": "explanation_wrong",
+    "field": "explanation_en",
+    "new_value": "Common-size cash flow statements display each statement item either as a percentage of revenue or as a percentage of the company's total cash inflows or outflows. This allows analysts to compare the receipts and expenditures for companies of different sizes or for one company over time.\n\nIn this scenario, the common-size cash flow statement indicates that the company's free cash flow to equity (FCFE) as a percentage of revenue increased between 20X4 and 20X5: from 3.5% (= 9% + 5% − 5.5% − 5% + 6% − 6%) in 20X4 to 4.4% (= 11.1% + 6.7% −7.2% − 6.7% + 2.2% − 1.7%) in 20X5. This equates to FCFE of MXN 35 million in 20X4 (= 1,000 × 0.035) and MXN 40 million in 20X5 (= 900 × 0.044).\n\nNote: After-tax cash paid for interest is used in the calculation of free cash flow to the firm (FCFF), not FCFE.\n\nThings to remember:\nCommon-size cash flow statements can present each item on the cash flow statement as a percentage of revenue. They allow analysts to compare the receipts and expenditures that contribute to cash generation for companies of different sizes or for one company over time.",
+    "evidence": "Stored explanation_en matched the PNG page but was truncated after the FCFE Note, missing the 'Things to remember' closing section visible on the page. Appended verbatim."
+  },
+  {
+    "id": "53199bb8-003b-433e-9b12-8428a172f7a7",
+    "verdict": "ok",
+    "field": "correct_answer",
+    "evidence": "Checkmark on B (400) matches stored correct_answer B."
+  },
+  {
+    "id": "53199bb8-003b-433e-9b12-8428a172f7a7",
+    "verdict": "stem_wrong",
+    "field": "question_en",
+    "new_value": "A company reports the following information:\n\n| MXN millions | Prior Year | Current Year |\n|---|---|---|\n| Net income | 550 | 600 |\n| Depreciation | 75 | 90 |\n| Interest expense | 100 | 100 |\n| Net working capital | 200 | 220 |\n| Long-term debt | 750 | 780 |\n\nThe company's tax rate is 30%. If capital expenditures for the year are MXN 300 million, then free cash flow to equity for the current year (in MXN millions) is closest to:",
+    "evidence": "PNG page 6 shows only ONE table (MXN millions, Prior Year/Current Year), matching the DB's 'Second Table'. Stored question_en additionally contained a garbled, unrelated 'First Table' ($ millions: Net income 39.0, Depreciation 15.0, Interest expense 6.0, Tax expense 13.0, Pretax income 52.0) that does not appear on this page; removed it."
+  },
+  {
+    "id": "53199bb8-003b-433e-9b12-8428a172f7a7",
+    "verdict": "explanation_wrong",
+    "field": "explanation_en",
+    "new_value": "Free cash flow to equity (FCFE) represents the remaining cash available to shareholders after making investments in working capital, fixed capital (ie, property plant and equipment), and servicing debt. Companies may use FCFE to pay dividends to shareholders or buy back shares.\n\nIn this scenario, take the following steps:\n\n- Begin with net income (600 million), an accrued figure that includes noncash components\n- Add back depreciation (90 million) since it is a noncash expense\n- Subtract the investments in net working capital (20 million) (eg, accounts receivable, accounts payable, inventory) and fixed capital (300 million) that are required to sustain operations\n- Add the change in net debt (an increase of 30 million) to reflect additional cash from net borrowing\n\nFCFE = NI + NCC − ΔWC − ΔFC + ΔDebt\n= 600 + 90 − (220 − 200) − 300 + (780 − 750)\n= 400\n\nThis results in FCFE of MXN 400 million, which may be used to pay dividends to shareholders or to buy back shares.\n\n(Choice A) MXN 370 million results from failing to include changes to debt.\n\n(Choice C) MXN 440 million is the free cash flow to the firm (FCFF). The calculation for FCFF involves adding back after-tax interest expense and excluding changes to debt.\n\nThings to remember:\nFree cash flow to equity is the cash flow available to equity providers (ie, shareholders) after accounting for investments in fixed capital, working capital, and changes in debt.",
+    "evidence": "Stored explanation_en used entirely different figures/currency (NI=660, NCC=260, KRW) that don't correspond to this question's MXN data at all -- it belongs to a different question. Replaced with the actual FCFE explanation matching the page (FCFE=600+90-20-300+30=400)."
+  }
+]

@@ -1,0 +1,199 @@
+[
+ {
+  "id": "6924ac38-4487-4845-bf7a-593490bbbfed",
+  "verdict": "formatting_missing",
+  "field": "question_en",
+  "new_value": "One month of historical daily price change data is given below for two investments:\n\n| | Mean | Standard Deviation |\n|---|---|---|\n| Investment X | USD 3.37 | USD 41.45 |\n| Investment Y | JPY 47.03 | JPY 283.43 |\n\nThe relative dispersion of the daily price change data for Investment Y is approximately:",
+  "evidence": "PNG page 9 shows a Mean/Standard Deviation table for Investment X and Y not reproduced in question_en."
+ },
+ {
+  "id": "6924ac38-4487-4845-bf7a-593490bbbfed",
+  "verdict": "explanation_wrong",
+  "field": "explanation_en",
+  "new_value": "Analysts often use the standard deviations of data set samples as a way of comparing the data sets' dispersion. However, differences in sample means affect the comparability of standard deviations. Consequently, analysts may choose instead to measure the relative dispersion of the samples using the coefficient of variation (CV) if they believe a comparison of dispersion using the standard deviations would be problematic due to\n- different units of measurement between the data sets and/or\n- a large difference in the data sets' sample means.\n\nIn this scenario, the two samples have different units of measurement (currencies) and sample means that differ greatly in magnitude—USD 3.37 versus JPY 47.03—so comparing their dispersion using standard deviations directly could be problematic. Although 283.43 is almost seven times 41.45, Investment Y is not necessarily seven times as volatile as Investment X (Choice B). Dividing the sample standard deviations by the sample means, and thus measuring relative dispersion, allows a more appropriate comparison:\n\n| Investment | Mean | Standard deviation | Coefficient of variation (CV) |\n|---|---|---|---|\n| X | 3.37 | 41.45 | 12.3 |\n| Y | 47.03 | 283.43 | 6.0 |\n\nTherefore, the relative dispersion, as measured by the CV, of Investment Y (6.0) is about one half that of Investment X (12.3).\n\n(Choice C) The mean, not the CV, of Investment Y is about 14 times that of Investment X.",
+  "evidence": "DB explanation_en was cut off mid-sentence at '...Although 283.43 is almost seven times' -- entire CV table, conclusion, and (Choice C) paragraph were missing."
+ },
+ {
+  "id": "1c62861c-d4ef-452b-9037-87b959369630",
+  "verdict": "formatting_missing",
+  "field": "question_en",
+  "new_value": "The annual returns for a mutual fund are shown below:\n\n| Year | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 |\n|---|---|---|---|---|---|---|---|---|---|---|---|---|\n| Return (%) | -3.8 | 1.6 | 5.1 | 13.0 | -3.6 | 5.3 | 3.8 | -4.0 | 4.5 | 1.6 | 6.0 | 1.6 |\n\nThe median return (in %) is closest to:",
+  "evidence": "PNG page 13 shows a Year/Return(%) table for 12 years not reproduced in question_en. Explanation_en already matches page content fully; correct_answer B confirmed by checkmark."
+ },
+ {
+  "id": "62699055-ec8b-4525-9d9b-20075980759d",
+  "verdict": "explanation_wrong",
+  "field": "explanation_en",
+  "new_value": "Correlation and covariance measure the linear relationship between two variables. Unlike covariance, in which values are based on the variables' magnitude, correlation is a standardized measure ranging from −1.0 to 1.0. As such, correlation provides insight into not only the direction but also the strength of the relationship. Direction is indicated by the correlation's sign, and strength is indicated by its value on the scale.\n\nA correlation of:\n- 0 suggests no linear relationship.\n- 1.0 indicates a perfectly positive linear relationship.\n- −1.0 indicates a perfectly negative linear relationship.\n\nThe closer to 1.0 or −1.0, the stronger the relationship. The closer to 0, the weaker the relationship. If the correlation is exactly 1.0 or −1.0, the variables move by a consistent magnitude. In this scenario, total assets and research and development (R&D) spending as a percentage of revenue demonstrate a perfectly negative linear relationship: when total assets increase, R&D revenue consistently decreases. Therefore, the correlation is negative (Choice C).\n\n(Choice A) −2.0 is the slope of the line formed by the data points and outside the range for a correlation (ie, a standardized measure ranging from −1.0 to 1.0).",
+  "evidence": "DB explanation_en was cut off at '0 suggests no linear relationship.' -- missing the rest of the bullet list, the conclusion, and the (Choice A) paragraph. Question_en already reproduces the table correctly."
+ },
+ {
+  "id": "b2c5f8aa-056d-4e66-9aef-328034e4b1ea",
+  "verdict": "formatting_missing",
+  "field": "question_en",
+  "new_value": "An analyst gathers statistics based on comparable samples taken from the returns of three index exchange-traded funds (index ETFs):\n\n| Index ETF | Sample Standard Deviation (% return) | Sample Mean (% return) |\n|---|---|---|\n| X | 11.5 | 8.2 |\n| Y | 9.4 | 5.9 |\n| Z | 5.1 | 1.7 |\n\nWhich of these funds has the smallest relative dispersion?",
+  "evidence": "PNG page 22 shows the ETF standard deviation/mean table not reproduced in question_en. Explanation_en already matches page content fully; correct_answer A confirmed by checkmark."
+ },
+ {
+  "id": "c6bc7641-95e7-463c-ad4d-336018695798",
+  "verdict": "formatting_missing",
+  "field": "question_en",
+  "new_value": "An analyst gathers 20X7 annual returns of all 16 stocks in a portfolio. The analyst sorts them from lowest to highest and categorizes them into 4 different groups based on the size of the annual return:\n\n| Group 1 | Group 2 | Group 3 | Group 4 |\n|---|---|---|---|\n| -6.2% | -2.3% | 6.3% | 12.2% |\n| -5.7% | -1.6% | 8.8% | 14.0% |\n| -3.6% | 3.4% | 11.5% | 15.7% |\n| -3.5% | 4.2% | 11.6% | 16.2% |\n\nThe 75th percentile return for all 16 stocks in the portfolio is closest to:",
+  "evidence": "PNG page 36 shows the 4-group annual-return table not reproduced in question_en."
+ },
+ {
+  "id": "c6bc7641-95e7-463c-ad4d-336018695798",
+  "verdict": "explanation_wrong",
+  "field": "explanation_en",
+  "new_value": "Each quartile represents 25% of the annual returns, with the lowest set of returns in the 1st quartile (Group 1) and the highest set in the 4th quartile (Group 4). The location of the 75th percentile is where Group 3 ends. The 75th percentile location's value separates the bottom 75% of all returns from the top 25% of all returns. To determine the location (L) of the 75th percentile, use the location of the percentile formula:\n\nL_75 = (16 + 1) × (75 / 100) = 12.75\n\nThe 12.75 result shows that the value of the 75th percentile is located between the 12th and the 13th annual returns. The values of the 12th and 13th locations are 11.6% and 12.2%, respectively. To find the value of the location:\n\nQ = Value below location + (Quantile decimal) × (Value above location − Value below location)\n= 11.6% + (0.75) × (12.2% − 11.6%)\n= 12.05%",
+  "evidence": "DB explanation_en was cut off right before the final calculation step ('...To find the value of the location:') -- the Q= formula and 12.05% result were missing."
+ },
+ {
+  "id": "a6559306-ce94-42bf-9943-7d76bfc593e7",
+  "verdict": "formatting_missing",
+  "field": "question_en",
+  "new_value": "A set of stocks in a portfolio had the following returns last year:\n\n| Stock | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Return | 4.7% | 9.7% | -8.3% | 6.8% | 12.1% | 0.9% | -2.6% | 18.7% | 5.5% | 17.2% |\n\nA manager wants to adjust the portfolio's strategy and review the stocks in the second quartile of returns. Which stock would be among those that the manager will most likely review?",
+  "evidence": "PNG page 37 shows the Stock/Return table not reproduced in question_en. Explanation_en already matches page content fully; correct_answer A confirmed by checkmark."
+ },
+ {
+  "id": "c862f1b2-714a-46cd-8c43-d2b33283582c",
+  "verdict": "option_bleed",
+  "field": "option_c",
+  "new_value": "responsibility of the SPE for principal and interest of a securitized loan if the borrower declares bankruptcy.",
+  "evidence": "DB option_c was truncated mid-sentence, missing 'declares bankruptcy.' shown on the page."
+ },
+ {
+  "id": "c862f1b2-714a-46cd-8c43-d2b33283582c",
+  "verdict": "explanation_wrong",
+  "field": "explanation_en",
+  "new_value": "Securitization refers to the process of bundling (ie, pooling) cash-generating loans such as mortgages or credit card receivables. The original lender sells the loans to a special-purpose entity (SPE), which then issues bonds that use the bundled loans as collateral. Borrowers make payments on the loans to the SPE, which applies the payments to the bonds' interest and principal.\n\nPayments made on the collateral are often the only source of payments for the bonds. For this reason, it is critical that the SPE be independent from the seller of the assets used to create the bonds. This prevents the possibility that, if the seller went bankrupt, creditors of the seller could seize the collateral for the securitized loans to satisfy claims against the seller. For this reason, the SPE is commonly referred to as \"bankruptcy remote.\"\n\n(Choice A) If borrowers on the collateral default in repaying those loans, this could cause the SPE to become bankrupt. \"Bankruptcy remote\" does not refer to the SPE's possibility of bankruptcy.\n\n(Choice C) The SPE has no obligation to assume a borrower's debt if the borrower declares bankruptcy.",
+  "evidence": "DB explanation_en is entirely about a different question (securitization benefits/risks, financial crisis of 2006-2008, liquidity) -- it never mentions 'bankruptcy remote' at all, the actual topic of this question. Cross-contamination from a different page's explanation. Replaced with the explanation actually shown on the page (Fixed Income 7.17, page 6)."
+ },
+ {
+  "id": "8beace9e-0fbe-4c75-85f4-673b384c9c5c",
+  "verdict": "formatting_missing",
+  "field": "question_en",
+  "new_value": "Information on the yield spreads for three nonconvertible bonds, expressed in basis points, is as follows:\n\n| | Zero-volatility spread (Z-spread) | Option-adjusted spread (OAS) |\n|---|---|---|\n| Bond 1 | 145 | 130 |\n| Bond 2 | 100 | 120 |\n| Bond 3 | 125 | 115 |\n\nBased on this data, the most appropriate conclusion is that:",
+  "evidence": "PNG page 4 shows the Z-spread/OAS table not reproduced in question_en. Explanation_en already matches page content fully; correct_answer B confirmed by checkmark."
+ },
+ {
+  "id": "ed8728d9-d02d-428c-95d0-7c4da42b3c6d",
+  "verdict": "formatting_missing",
+  "field": "question_en",
+  "new_value": "A government spot-rate curve is shown below:\n\n| Maturity | 1-year | 2-year | 3-year |\n|---|---|---|---|\n| Rate | 3.75% | 5.15% | 6.00% |\n\nIf a 3-year, 5% annual-pay nongovernment bond has a zero-volatility spread of 55 basis points and a par value of 100, the highest arbitrage-free price that an investor should be willing to pay for the bond (per 100 par value) is closest to:",
+  "evidence": "PNG page 18 shows the Maturity/Rate spot-curve table not reproduced in question_en."
+ },
+ {
+  "id": "ed8728d9-d02d-428c-95d0-7c4da42b3c6d",
+  "verdict": "explanation_wrong",
+  "field": "explanation_en",
+  "new_value": "A bond's no-arbitrage (ie, arbitrage-free) value is calculated by discounting each cash flow by the spot rate corresponding to when that cash flow occurs. Since spot rates are derived from a yield curve for government bonds, which are default-free, the rates do not reflect a nongovernment bond's credit risk. Therefore, the no-arbitrage value is, in general, higher than the bond's market price.\n\nTo equate a bond's arbitrage-free price with its market price, an identical extra yield called the zero-volatility spread (ie, Z-spread) is added to each spot rate. The Z-spread reflects the additional compensation needed for the risks of investing in a nongovernment bond. This means that the appropriate discount rate for each cash flow is the applicable spot rate plus the Z-spread, as shown below:\n\n| Calculations | Steps |\n|---|---|\n| PV = 5 / (1 + 0.0375 + 0.0055) = 5 / 1.043 ≈ 4.79 | Present value of first cash flow |\n| PV = 5 / (1 + 0.0515 + 0.0055)^2 = 5 / 1.1172 ≈ 4.48 | Present value of second cash flow |\n| PV = (5 + 100) / (1 + 0.06 + 0.0055)^3 = 105 / 1.2097 ≈ 86.80 | Present value of third cash flow |\n| Price = 4.79 + 4.48 + 86.80 = 96.07 | Sum all cash flows' present values |\n\n(Choice A) 95.90 results from discounting each cash flow by 0.0655, which is the sum of the 3-year spot rate and the 55-basis-point Z-spread.\n\n(Choice C) 97.50 results from discounting each cash flow at its applicable spot rate but neglecting to add the Z-spread to each rate.",
+  "evidence": "DB explanation_en skipped the entire calculation table (PV of each cash flow and final price = 96.07) that appears on the page between the setup paragraph and the (Choice A)/(Choice C) notes."
+ },
+ {
+  "id": "ef6d6cf6-d678-4c62-8de8-f793dcbd5920",
+  "verdict": "ok",
+  "evidence": "PNG page 13 confirms question_en table, correct_answer B (checkmark), and explanation_en (full derivation through Things to remember) all match the page content."
+ },
+ {
+  "id": "770170b4-ce40-486c-8ae2-a0ad70aefeaa",
+  "verdict": "ok",
+  "evidence": "PNG page 15 confirms question_en table, correct_answer B (checkmark), and explanation_en (full derivation ending '...I-spread is 11.88 − 4.83 = 7.05%') all match the page content."
+ },
+ {
+  "id": "8c26359a-a457-4a54-ba80-6833f41c67f8",
+  "verdict": "explanation_wrong",
+  "field": "explanation_en",
+  "new_value": "A bond's yield quantifies and describes its return. A common yield measure is the YTM, which represents a single rate used to discount all a bond's cash flows. The YTM for a government bond is often considered the risk-free rate since government bonds are perceived as having no default risk. Most yield curves show the YTM for government bonds of different maturities.\n\nWhen determining the appropriate YTM for a risky (ie, nongovernment) bond of a given maturity, the convention is to add an additional percentage, known as the G-spread, to the government bond's YTM for that maturity. The G-spread is typically referred to in terms of basis points (bps), so a spread of 150 bps means that the difference in YTM is 1.5%.\n\nIn this question, the YTM is not given for either bond but can be derived from the information provided using a financial calculator. Stated on a semiannual basis, the government bond's YTM is 5.048%, while the corporate bond's YTM is 6.135%. The G-spread is 0.06135 − 0.05048 = 0.01087 = 1.087% = 108.7 bps.\n\n(Choice A) The G-spread is 107.9 bps when the yield is calculated on an annual instead of semiannual basis. One must remember to divide the coupon payment by two and multiply the number of years by two to adjust for the semiannual basis.\n\n(Choice C) 159.0 bps represents the difference between the two spot rates that are given in the information. It is not a G-spread.",
+  "evidence": "DB explanation_en was cut off mid-sentence at 'The G-spread is 0.06135 − 0.05048 =' -- the final numeric answer and both (Choice A)/(Choice C) paragraphs were missing. Question_en already reproduces the table correctly."
+ },
+ {
+  "id": "0b03c2f3-c8f7-4602-b9f6-e8e9a82b37e1",
+  "verdict": "formatting_missing",
+  "field": "question_en",
+  "new_value": "An analyst estimates the following joint probability function of returns for two assets, X and Y, under three scenarios:\n\n| Scenario | Return on X (%) | Return on Y (%) | Probability |\n|---|---|---|---|\n| 1 | 12 | 7 | 0.28 |\n| 2 | 9 | 17 | 0.51 |\n| 3 | 7 | 2 | 0.21 |\n\nBased only on this information, the covariance of returns of the two assets is closest to:",
+  "evidence": "PNG page 1 shows the Scenario/Return/Probability table not reproduced in question_en. Explanation_en's content is complete (garbled subscript spacing is a pre-existing PDF-extraction artifact, not a content error) and correct_answer B is confirmed by checkmark."
+ },
+ {
+  "id": "ba4ddd86-2879-4ceb-86e9-510c17156670",
+  "verdict": "formatting_missing",
+  "field": "question_en",
+  "new_value": "A portfolio comprises three equally weighted assets. The covariance matrix for the three assets' returns is shown below:\n\n| | Asset A | Asset B | Asset C |\n|---|---|---|---|\n| Asset A | 200 | | |\n| Asset B | 100 | 75 | |\n| Asset C | 125 | 90 | 210 |\n\nAll else equal, if the covariance between Asset A and Asset C increases to 150 and the covariance between Asset B and Asset C is simultaneously halved, the overall portfolio variance will be closest to:",
+  "evidence": "PNG page 7 shows the 3x3 covariance matrix not reproduced in question_en."
+ },
+ {
+  "id": "ba4ddd86-2879-4ceb-86e9-510c17156670",
+  "verdict": "explanation_wrong",
+  "field": "explanation_en",
+  "new_value": "Covariance measures how two variables (eg, asset returns) move in relation to each other. For portfolios with multiple assets, each possible asset pairing has its own covariance. The different pairings can be illustrated using a covariance matrix, which shows the covariance between specific asset pairs. For example, in this scenario:\n- The covariance between the Asset A and Asset C returns equals 125. In the equation, this covariance would be expressed as Cov(R_A, R_C) = 125.\n- When the matrix shows an asset's covariance with itself, that covariance is simply the asset's variance: Cov(R_B, R_B) = σ²(R_B) = 75.\n\nThe covariance matrix can be applied to the equation to calculate the overall return variance for a three-asset portfolio. The asset weights are all equal; therefore, W_A = W_B = W_C = 1/3 = 0.33. In this case, Cov(R_A,R_C) increases from 125 to 150 while Cov(R_B, R_C) is halved from 90 to 45. The resulting portfolio variance is calculated as follows (with updated covariances in red):\n\nσ²(R_p) = 0.33²(200) + 0.33²(75) + 0.33²(210) + 2(0.33)(0.33)(100) + (2)(0.33)(0.33)(45) + (2)(0.33)(0.33)(150)\n\nσ²(R_p) = 0.33² [200 + 75 + 210 + 2(100 + 45 + 150)] ≈ 117.1\n\nNote that the variance is approximately 119.4 when using 1/3 as each asset's weight instead of 0.33.\n\n(Choice B) 124 derives from the given covariance matrix (ie, prior to the stated changes). However, a change in the covariance matrix values results in a change to the portfolio variance.\n\n(Choice C) 196 results from incorrectly simplifying the portfolio variance equation, multiplying the full equation by 2 instead of multiplying only the covariance terms by 2.",
+  "evidence": "DB explanation_en was cut off mid-sentence right after 'Cov(R ,R ) =' -- the entire portfolio-variance calculation (≈117.1) and both Choice B/C paragraphs were missing."
+ },
+ {
+  "id": "b63b2a23-f477-47e2-8efd-3b5c07e552c9",
+  "verdict": "ok",
+  "evidence": "PNG page 3 confirms question_en (no table needed), correct_answer B (checkmark), and explanation_en all match the page content exactly (including the source PDF's own 'a least 30' typo, which is not our error to fix)."
+ },
+ {
+  "id": "7f937aa6-90ae-4ca5-93ea-b1065b44b53d",
+  "verdict": "formatting_missing",
+  "field": "question_en",
+  "new_value": "An automotive industry analyst uses a linear regression to test the relationship between gas prices (in USD/gallon) and vehicle sales (in millions of units). Selected data is presented below:\n\n| | Coefficients | Standard Error |\n|---|---|---|\n| Intercept | 2.060 | 0.273 |\n| Gas Price | (0.323) | 0.128 |\n\nIf critical t-values are ± 2.10 at a 5% significance level, then based only on this data, the analyst's most appropriate conclusion is that:",
+  "evidence": "PNG page 1 shows the Coefficients/Standard Error table not reproduced in question_en."
+ },
+ {
+  "id": "7f937aa6-90ae-4ca5-93ea-b1065b44b53d",
+  "verdict": "explanation_wrong",
+  "field": "explanation_en",
+  "new_value": "Hypothesis testing is used to test the statistical significance of a linear regression by testing whether results are random. The t-statistic (t) is used to test whether the slope coefficient estimated by a regression (b₁) differs from a hypothesized (tested) value (B₁). This is achieved by comparing the t-statistic with the appropriate critical t-value, which is based on the desired level of significance and degrees of freedom.\n\nThis scenario is a two-tailed test since it tests whether b₁ ≠ B₁, with no direction specified (ie, tests if b₁ < B₁ and if b₁ > B₁). If the t-statistic is beyond the critical t-value area (ie, t < −2.10 or t > +2.10), then reject the null hypothesis, H₀, which is b₁ = 0 since it tests if the population slope ≠ 0:\n\n| Steps | Calculations |\n|---|---|\n| 1. State the null (H0) and alternative (H1) hypotheses | H0: b1 = 0, H1: b1 ≠ 0 |\n| 2. Define the critical value | Critical t-value = ±2.10 (given) |\n| 3. Define the rule | Reject H0 if t-statistic is less than −2.10 or greater than +2.10 |\n| 4. Calculate the t-statistic (t) | t = (bˆ1 − B1) / Sbˆ1 = (−0.323 − 0) / 0.128 = −2.52 |\n| 5. Reject or fail to reject H0 | Reject H0: −2.52 < −2.10 |",
+  "evidence": "DB explanation_en stopped right after stating the rejection rule, merged directly into the unrelated LOS text -- the entire 5-step calculation table (culminating in t = −2.52) shown on the page was missing."
+ },
+ {
+  "id": "fe3a320c-078e-4654-afb8-500d158330a6",
+  "verdict": "explanation_wrong",
+  "field": "explanation_en",
+  "new_value": "The p-value is the lowest level of significance (shown as α in the images above), where the null hypothesis can be rejected. In this question, a p-value of 0.01 means that the null should be rejected if the hypothesis is tested at a significance of 0.01. A confidence level for a test equals 1 − the level of significance, so a 95% confidence level is the same as a significance level of 0.05.\n\nIf the p-value is less than a specified level of significance, the null should be rejected. In this question, 0.01 is less than 0.05, so the correct decision is to reject the null at the 95% confidence level.\n\n(Choice A) The significance level of the test equals the probability of a Type I error, not a Type II error.\n\n(Choice C) For hypothesis tests on a normal distribution, a two-tailed hypothesis test with a 0.01 significance level results in a null rejection point of approximately 2.58. This represents a value that is ± 2.58 standard deviations from the mean. The rejection point for a one-tailed test at a 0.01 significance level is approximately 2.33.",
+  "evidence": "DB explanation_en is entirely about point estimates vs. confidence intervals for a broker's average client account size -- unrelated content that never mentions p-values, alpha, or Type I/II errors, the actual topic. Cross-contamination from a different page's explanation. Replaced with the explanation actually shown on the page (Quant Methods 1.08, page 5). Question_en and correct_answer B are already correct."
+ },
+ {
+  "id": "75601405-b052-4988-b1a8-c2ac23bbe840",
+  "verdict": "formatting_missing",
+  "field": "question_en",
+  "new_value": "An analyst runs a linear regression between the prices of Stock A and Stock B, with 24 observations, resulting in the following coefficients table:\n\n| | Coefficients | Standard Error |\n|---|---|---|\n| Intercept | 402.314 | 29.689 |\n| Stock A | (1.339) | 0.332 |\n\nThe coefficient of determination (R2) of this regression is 0.425 and the critical t-value at a 5% significance level is ±2.074. The most appropriate conclusion about the correlation of the stocks is that there is:",
+  "evidence": "PNG page 17 shows the Intercept/Stock A coefficients table not reproduced in question_en."
+ },
+ {
+  "id": "75601405-b052-4988-b1a8-c2ac23bbe840",
+  "verdict": "explanation_wrong",
+  "field": "explanation_en",
+  "new_value": "Hypothesis testing is used to test the statistical significance of the intercept and the slope of a simple linear regression (SLR). It also tests the sample correlation (r), which measures the direction and strength of the linear relationship between the independent (X) and dependent (Y) variables, from −1 to 1. In an SLR:\n- The direction of r, indicated by its sign (ie, positive or negative), will always have the same sign as the slope coefficient, since both are ratios with the same numerator (ie, covariance [X,Y]) and both have positive numbers as denominators.\n- The strength of r can be calculated from the coefficient of determination (R2), which is the square of r.\n\nIn this scenario, the slope is negative (−1.339), so r must be negative (Choice A). Therefore, since R2 = 0.425, r = −0.652. The next step is to use the sample correlation to test the population correlation (ρ) using the t-statistic:\n\n| Steps | Calculations |\n|---|---|\n| State the null (H0) and alternative (Ha) hypotheses | H0: ρ = 0, Ha: ρ ≠ 0 |\n| Define the critical t-value | ±2.074 (two-sided; testing if ρ < 0 and if ρ > 0) |\n| Define the rule | Reject H0 if t-statistic > +2.074 or < −2.074 |\n| Calculate the t-statistic (t) | t = r√(n − 2) / √(1 − r²) = −0.652 × √22 / √(1 − 0.425) = −4.033 |\n| Reject or fail to reject H0 | Reject H0 since −4.033 < −2.074 |\n| Conclusion | Evidence supports the hypothesis that ρ ≠ 0 |\n\nThe null hypothesis is rejected since there is enough evidence that Stock A and Stock B are negatively correlated and that ρ is different from zero (Choice C).\n\nNote: The t-statistic for the correlation is always equal to the t-statistic that tests the significance of the slope (ie, (−1.339 − 0) / 0.332 = −4.033).",
+  "evidence": "DB explanation_en jumped straight from 'using the t-statistic:' to the final conclusion, skipping the entire 6-row hypothesis-test calculation table (t = −4.033) shown on the page."
+ },
+ {
+  "id": "7493df08-6192-4127-88ee-35b6dcd8daf4",
+  "verdict": "formatting_missing",
+  "field": "question_en",
+  "new_value": "An analyst wants to measure a mutual fund's performance and volatility against a benchmark and runs a regression where the benchmark is the single independent variable. Selected data for the regression, based on 12 observations, is:\n\n| | Coefficients | Standard Error |\n|---|---|---|\n| Intercept | 0.127 | 0.022 |\n| Benchmark | 1.055 | 0.026 |\n\nThe analyst tests whether the intercept is greater than 0.10 and whether the slope is greater than 1.00. If the critical t-values, with 5% significance, are 2.228 (two-sided) and 1.812 (one-sided), the data most likely supports the hypothesis(es) that:",
+  "evidence": "PNG page 19 shows the Intercept/Benchmark coefficients table not reproduced in question_en."
+ },
+ {
+  "id": "7493df08-6192-4127-88ee-35b6dcd8daf4",
+  "verdict": "explanation_wrong",
+  "field": "explanation_en",
+  "new_value": "Hypothesis testing is used to evaluate the statistical significance of a linear regression by testing the regression coefficients. The t-statistic is used to test whether the population intercept (b0) and slope (b1) differ from hypothesized values (ie, if bi ≠ Bi, bi > Bi, or bi < Bi). The test compares the calculated t-statistic with the appropriate critical t-value, which is based on the desired level of significance and degrees of freedom.\n\nt-statistics are calculated as the ratio of difference between the estimated coefficient (bˆi) and its hypothesized value (Bi) to its standard error (Sbˆi). The calculation is presented below:\n\n| | Testing if the intercept > 0.10 | Testing if the slope > 1.00 |\n|---|---|---|\n| 1. State the null (H0) and alternative (H1) hypotheses | H0: b0 ≤ 0.10, H1: b0 > 0.10 | H0: b1 ≤ 1.00, H1: b1 > 1.00 |\n| 2. Define the critical t-value | 1.812 (one-sided, since testing if >) | 1.812 (one-sided, since testing if >) |\n| 3. Define the rule | Reject H0 if t-statistic > 1.812 | Reject H0 if t-statistic > 1.812 |\n| 4. Calculate the t-statistic (t) | t = (bˆ0 − B0) / Sbˆ0 = (0.127 − 0.10) / 0.022, t = 1.227 | t = (bˆ1 − B1) / Sbˆ1 = (1.055 − 1.00) / 0.026, t = 2.115 |\n| 5. Reject or fail to reject H0 | Fail to reject H0 since 1.227 < 1.812 | Reject H0 since 2.115 > 1.812 |\n| 6. Conclusion | Evidence does not support the hypothesis that intercept > 0.10 | Evidence supports the hypothesis that slope > 1.00 |",
+  "evidence": "DB explanation_en was cut off right before the calculation table ('...The calculation is presented below:') -- the entire two-column t-test table (intercept t=1.227, slope t=2.115, and both conclusions) was missing."
+ },
+ {
+  "id": "6900a669-8313-4fa0-bbcf-6327ecd02bd3",
+  "verdict": "formatting_missing",
+  "field": "question_en",
+  "new_value": "An analyst has created a regression to verify whether the return on a company's stock is related to its reported free cash flow (FCF) over the prior 30 quarters. Information from the regression is:\n\n| Regression Output | Coefficient | Standard Error | t-statistic |\n|---|---|---|---|\n| Intercept | 37.743 | 6.745 | 5.596 |\n| FCF | 0.085 | 0.046 | 1.859 |\n\n| ANOVA Output | df | Sum of Squares (SS) | Mean Square (MS) |\n|---|---|---|---|\n| Regression | 1 | 961.01 | 961.01 |\n| Residual | 28 | 7,784.86 | 278.03 |\n| Total | 29 | 8,745.87 | |\n\nThe analyst tests the FCF slope coefficient at a 5% level of significance (α). If the critical t-values at the 5% level of significance are\n\n- 1.701 for a one-tailed test and\n- 2.048 for a two-tailed test,\n\nthen the most appropriate null hypothesis and conclusion regarding the FCF slope coefficient is:",
+  "evidence": "PNG page 22 shows Regression Output and ANOVA Output tables not reproduced in question_en."
+ },
+ {
+  "id": "6900a669-8313-4fa0-bbcf-6327ecd02bd3",
+  "verdict": "explanation_wrong",
+  "field": "explanation_en",
+  "new_value": "Hypothesis testing is used to assess whether a regression coefficient explains the relationship between independent and dependent variables, given a certain level of significance. In this scenario, the analyst assumes the relationship between the independent and dependent variables is statistically significant, which would suggest a slope coefficient not equal to zero. Therefore, the null hypothesis (H0) is that the slope coefficient is zero, and the alternative hypothesis (Ha) is that the coefficient does not equal zero (Choice A).\n\nIn this case, H0 is tested by comparing the t-statistic for the coefficient with a critical t-value (tc), which is the cutoff between rejecting or failing to reject H0. If H0 is rejected, then\n- Ha is accepted,\n- the coefficient is statistically significant (ie, is not equal to 0), and\n- the linear regression explains the relationship between the variables.\n\nThe value of tc depends on the significance level, the degrees of freedom, and whether a one-tailed or two-tailed test is used. Since the analyst is testing whether the coefficient differs from zero, not whether it is greater or less than zero, a two-tailed test is required.\n\nThe test is conducted as follows:\n\n| Steps | Calculations |\n|---|---|\n| State the null (H0) and alternative (Ha) hypotheses | H0: b1 = 0, Ha: b1 ≠ 0 |\n| Define the critical t-value | 2.048 (two-sided, since testing if ≠) |\n| Define the rule | Reject H0 if \\|t-statistic\\| > 2.048 |\n| Calculate the t-statistic (t) | Given above as t = 1.859 |\n| Reject or fail to reject H0 | Failed to reject H0 since \\|1.859\\| < 2.048 |\n| Conclusion | Evidence does not support the hypothesis that coefficient FCF ≠ 0 |\n\nTherefore, the null hypothesis is not rejected (Choice B). The linear regression as specified does not properly explain the relationship between the independent and dependent variables.",
+  "evidence": "This question spans two PDF pages (page_idx 22-23). DB explanation_en only covered page 22 and stopped at the bullet list; page 23's entire two-tailed test calculation table (t=1.859 vs critical 2.048, fail to reject) and conclusion were missing."
+ }
+]
