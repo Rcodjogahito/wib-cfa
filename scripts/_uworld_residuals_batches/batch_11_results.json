@@ -1,0 +1,289 @@
+[
+ {
+  "id": "e10d2593-c679-4edc-8e40-7c61e3614e93",
+  "verdict": "formatting_missing",
+  "field": "question_en",
+  "new_value": "The following table depicts a hedge fund's performance and fee information for year-end 20X7:\n\n| | |\n|---|---|\n| Assets | $130 million |\n| Fund's net performance | 30% |\n| High-water mark | $100 million |\n| Incentive fee | $3 million |\n\nBased on only the information provided, which of the following best describes the hedge fund's incentive fee structure?",
+  "evidence": "9.02 Alternative Investment Performance and Returns - Answers.pdf p23 (0-idx 22): find_tables() confirms 4-row data table (Assets/Fund's net performance/High-water mark/Incentive fee) present on the question page, absent from question_en."
+ },
+ {
+  "id": "e10d2593-c679-4edc-8e40-7c61e3614e93",
+  "verdict": "explanation_wrong",
+  "field": "explanation_en",
+  "new_value": "A hedge fund charges incentive fees subject to certain constraints that include the following:\nThe hurdle rate, which is the minimum total return, either net or gross of management fees, that the fund must earn before it receives an incentive fee. The hurdle rate can be either:\nsoft, so that the incentive fee is based on the entire profit, or\nhard, so that the incentive fee is based on only returns in excess of the hurdle rate.\nThe high-water mark, a base asset value used to calculate the incentive fee. It is the fund's previous peak value of assets under management that resulted in an incentive fee.\nIn this scenario, the fund's net performance (ie, after management fees) of 30% cleared all the given hurdle rates, which entitles the fund to an incentive fee. The soft hurdle rate allows the fund to collect the incentive fee on the entire gain above the high-water mark (ie, 10% of $30 million = $3 million).\n(Choice B) This structure implies a $3.6 million incentive fee (ie, 12% of $30 million). However, the incentive fee in this scenario is $3 million. The soft hurdle rate of 10% allows the fund to collect on the entire gain above the high-water mark of $100 million (ie, 130 − 100 = 30).\n(Choice C) Given a high-water mark of $100 million and a 10% hard hurdle rate, the fund would receive an incentive fee on only the gains above the hurdle rate. The fund's net performance of 30% minus 10% equals 20%, and 20% of $100 million is $20 million, so the incentive fee would be 10% of $20 million (ie, $2 million).",
+  "evidence": "9.02 Alternative Investment Performance and Returns - Answers.pdf pp23-24 (0-idx 22-23): DB explanation was truncated mid-page, cutting off the (Choice B)/(Choice C) elimination paragraphs that continue onto the next PDF page before 'Things to remember:'. Correct_answer A verified via checkmark-glyph geometry."
+ },
+ {
+  "id": "0c0d65ad-578b-4692-a614-cfa39ba9dbfa",
+  "verdict": "formatting_missing",
+  "field": "question_en",
+  "new_value": "A hedge fund has the following fee structure, charged on year-end assets under management (AUM):\n\n| | |\n|---|---|\n| Annual management fee | 1.5% |\n| Incentive fee | 12% |\n| Soft hurdle rate | 5% |\n| High-water mark | $380 million |\n\nThe fund value is $372 million at the beginning of the year and $412 million, before fees, at the end of the year. For this year, if fees are calculated independently, the net return to the investor is closest to:",
+  "evidence": "9.02 Alternative Investment Performance and Returns - Answers.pdf p28 (0-idx 27): find_tables() confirms 4-row fee-structure table present on the question page, absent from question_en."
+ },
+ {
+  "id": "0c0d65ad-578b-4692-a614-cfa39ba9dbfa",
+  "verdict": "explanation_wrong",
+  "field": "explanation_en",
+  "new_value": "An investor's return is calculated net of fees and as a percentage of the fund's beginning value. Hedge funds often levy both a management fee and an incentive fee.\nThe management fee is calculated as a percentage of the fund's total ending assets under management (AUM) and is assessed regardless of profitability.\nThe incentive fee is calculated as a percentage of profits either net (ie, after deducting) or gross (ie, before deducting) of management fees.\nIf fees are calculated independently, the hurdle rate determination and fee calculations are on a gross basis.\nAn incentive fee is often contingent on profits being greater than a hurdle rate and/or AUM being higher than the high-water mark. In this scenario, the fund's threshold to earn an incentive fee is contingent on exceeding the 5% soft hurdle rate and the high-water mark of $380 million. Due to the soft hurdle rate, the incentive fee will be applied to the entire gain above the high-water mark.\nThe investor's return for the year is calculated (in $ millions) as follows:\n\n| Steps | Calculations | |\n|---|---|---|\n| Calculate profit before fees | Ending AUM | 412 |\n| | Beginning AUM | (372) |\n| | Profit before fees | 40 |\n| Hurdle rate determination* | (40 ÷ 372) | 10.75% |\n| Calculate management fee | Management fee (412 × 0.015) | (6.18) |\n| Calculate incentive fee | Profit before fees | 40 |\n| | High-water mark adjustment (380 − 372) | (8) |\n| | Incentive fee base | 32 |\n| | Incentive fee (32 × 0.12) | (3.84) |\n| Calculate investor return | Profit before fees | 40 |\n| | Management fee | (6.18) |\n| | Incentive fee | (3.84) |\n| | Profit after fees | 29.98 |\n| | Investor return (29.98 ÷ 372) | 8.06% |\n\n*Incentive fee earned as 10.75% > 5% hurdle rate and ending AUM of 412 > the HWM of 380\n\n(Choice A) A 7.80% return inappropriately calculates returns using beginning AUM, instead of the high-water mark, as the incentive fee's base.\n(Choice C) An 8.67% return inappropriately calculates returns using a hard hurdle rate.",
+  "evidence": "9.02 Alternative Investment Performance and Returns - Answers.pdf pp28-29 (0-idx 27-28): DB explanation was truncated before the calculation table (rendered as an image on the PDF page, transcribed via visual read of the rendered page) and the Choice A/C paragraphs. Correct_answer B verified via checkmark geometry."
+ },
+ {
+  "id": "eee1dcbb-26db-4557-abcb-f412978b7cae",
+  "verdict": "formatting_missing",
+  "field": "question_en",
+  "new_value": "Hella Flosadottir, CFA, resides in Country A and works for an investment bank located there. Her clients include a pension fund located in Country B. Flosadottir routinely checks the monthly statements of all her clients, and the statement for the pension fund leads her to suspect that somebody may be embezzling from the fund. However, the statement does not contain enough information for her to be sure that embezzlement is occurring. The relevant laws of each country are shown below:\n\n| Country | Requirements of country's laws | Comparative strictness to Code and Standards |\n|---|---|---|\n| Country A | Notify client of possible embezzlement | Less strict |\n| Country B | Notify police in Country B | More strict |\n\nTo comply with Standard I(A) Knowledge of the Law, which of the following is Flosadottir's most appropriate action?",
+  "evidence": "11.03 Guidance For Standards I-VII - Answers.pdf p7 (0-idx 6): find_tables() confirms 3-row Country/Requirements/Strictness table present on the question page, absent from question_en."
+ },
+ {
+  "id": "eee1dcbb-26db-4557-abcb-f412978b7cae",
+  "verdict": "explanation_wrong",
+  "field": "explanation_en",
+  "new_value": "\"Members and Candidates must understand and comply with all applicable laws, rules, and regulations (including the CFA Institute Code of Ethics and Standards of Professional Conduct) of any government, regulatory organization, licensing agency, or professional association governing their professional activities. In the event of conflict, Members and Candidates must comply with the more strict law, rule, or regulation....\"\nStandard I(A) Knowledge of the Law prescribes how Members and Candidates resolve conflicts when the applicable laws of a jurisdiction conflict with behaviors required by the CFA Institute Code and Standards. The general rule is that Members and Candidates must adhere to the stricter of:\nthe laws and regulations in their home country and\nthe Code and Standards.\nIn this scenario, the laws of Hella Flosadottir's country (Country A) are less strict than both the Code and Standards and the laws of Country B. Country B's laws are stricter than the Code and Standards, so Flosadottir's most appropriate action is to contact the Country B police.\n(Choices B and C) Country A's laws would require Flosadottir to notify the client; the Code and Standards require her to seek guidance from her firm's compliance officer. However, since both options are less strict than the laws of Country B, Country B's laws apply.",
+  "evidence": "11.03 Guidance For Standards I-VII - Answers.pdf p7 (0-idx 6): DB explanation_en was a one-line fragment quoting Standard III(E) Preservation of Confidentiality, unrelated to this Standard I(A) Knowledge of the Law question (cross-contamination). Correct_answer A verified via checkmark geometry."
+ },
+ {
+  "id": "20227741-edf0-4ff3-b57d-d125042c771f",
+  "verdict": "option_bleed",
+  "field": "option_c",
+  "new_value": "Both by failing to detect her employee's unethical activity and by readily accepting the incentive structure of the firm",
+  "evidence": "11.03 Guidance For Standards I-VII - Answers.pdf p18 (0-idx 17): DB option_c was truncated mid-sentence at '...readily accepting the'; PDF shows full option text."
+ },
+ {
+  "id": "20227741-edf0-4ff3-b57d-d125042c771f",
+  "verdict": "explanation_wrong",
+  "field": "explanation_en",
+  "new_value": "\"Members and Candidates must make reasonable efforts to ensure that anyone subject to their supervision or authority complies with applicable laws, rules, regulations, and the Code and Standards.\"\nRecommendations for compliance with the Standard IV(C) Responsibilities of Supervisors acknowledge that a supervisor may not be able to dictate the ethical standards, culture, or compliance efforts of an entire firm, but should work with management to encourage the adoption of effective compliance tools. One effective compliance tool is an incentive structure that supports ethical behavior.\nHere, Wayne should have recognized the firm's incentive structure as not supportive of ethical behavior and, in fact, perhaps as actually encouraging unethical behavior. She should have brought this weakness to her supervisor's attention rather than accepting it without question.\nThe guidance for Standard IV(C) is very clear that failing to detect unethical behavior does not mean that the supervisor violated the Standard or ignored its recommendations. However, in this case, there is no evidence that Wayne ever investigated the firm's policies and procedures to determine if they were adequate to prevent the type of unethical behavior that occurred. As a Charterholder, Wayne cannot assume, without investigation, that the existing policies are sufficient.",
+  "evidence": "11.03 Guidance For Standards I-VII - Answers.pdf p18 (0-idx 17): DB explanation_en discussed Standard II(A) Material Nonpublic Information (Ching Liu/Bo Wang scenario), unrelated to this Standard IV(C) supervisors question (cross-contamination, likely swapped with the daf4d0dd item in this same PDF). Correct_answer C verified via checkmark geometry."
+ },
+ {
+  "id": "5e51738d-ce12-4172-a657-ad93c78f6ba1",
+  "verdict": "option_bleed",
+  "field": "option_c",
+  "new_value": "Trading the stock between personal accounts to attract interest from other market participants.",
+  "evidence": "11.03 Guidance For Standards I-VII - Answers.pdf p15 (0-idx 14): DB option_c was truncated mid-sentence at '...other market'; PDF shows full option text ending 'participants.'"
+ },
+ {
+  "id": "5e51738d-ce12-4172-a657-ad93c78f6ba1",
+  "verdict": "explanation_wrong",
+  "field": "explanation_en",
+  "new_value": "\"Members and Candidates must not engage in practices that distort prices or artificially inflate trading volume with the intent to mislead market participants.\"\nStandard II(B) Market Manipulation prohibits activities by Members or Candidates that deceive market participants by distorting securities prices or volumes. Manipulation can occur through: information-based activities (eg, issuing false or misleading information) and/or transaction-based activities (eg, exaggerated trading between two accounts).\nThe Standard does not prevent the use of legitimate trading strategies, even if they cause price movements or are designed to purposefully limit the impact on the market. The key element in determining whether the Standard is violated is intent: if the strategy is intended to deceive investors, it violates the Standard.\nIn this scenario, if Zhao Fen traded Formula Industries stock between her personal accounts, it would give market participants a false impression of higher trading volume since the trading is not done between unique market participants. Deceiving participants through transaction-based manipulation violates the Standard.\n(Choice A) Using an intermediary (eg, block house) to sell the position outside the market or break the order into smaller batches is a legitimate trading strategy. This practice aims to reduce a sale's impact on the market, but the resulting trades are done with other market participants and therefore do not violate the Standard.\n(Choice B) While selling all the holdings in one position might drive down the price, Zhao may do so without intending to manipulate market participants; therefore, it is not the action most likely to violate the Standard. The Standards do not require Members or Candidates to disadvantage themselves to uphold market integrity, so this strategy can be used if cash is needed quickly.",
+  "evidence": "11.03 Guidance For Standards I-VII - Answers.pdf p15 (0-idx 14): DB explanation_en discussed Standard I(D) Misconduct (an unrelated 'Emara' scenario), cross-contaminated. Correct explanation is Standard II(B) Market Manipulation matching this stock-trading scenario. Correct_answer C verified via checkmark geometry."
+ },
+ {
+  "id": "2cf3eae7-ef5b-44cb-9896-94ac963e1359",
+  "verdict": "explanation_wrong",
+  "field": "explanation_en",
+  "new_value": "\"Members and Candidates must understand and comply with all applicable laws, rules, and regulations (including the CFA Institute Code of Ethics and Standards of Professional Conduct) of any government, regulatory organization, licensing agency, or professional association governing their professional activities. In the event of conflict, Members and Candidates must comply with the more strict law, rule, or regulation. Members and Candidates must not knowingly participate or assist in and must dissociate from any violation of such laws, rules, or regulations.\"\nTo abide by Standard I(A) Knowledge of the Law, Members and Candidates who create financial products that will be sold in more than one country must comply with each country's laws and regulations. When the laws conflict, Members and Candidates must comply with the stricter law. However, if the Code and Standards are stricter than the country's laws, then Members and Candidates must adhere to the Code and Standards.\nIn this scenario, Karl Mahler must compare the laws in the country where the product originated with the laws in the additional country where it will be sold and compare both with the Code and Standards.\nThe laws in Country A, the country of origin, are stricter than the Code and Standards, so when Mahler sells the mutual fund in Country A, he must adhere to the laws of Country A.\nThe laws in Country B, the additional country of sale, also are more strict than the Code and Standards, so Country B's laws take precedence (Choice C).\nHowever, the laws in Country B are less strict than those in Country A, so Mahler must adhere to Country A's laws when he sells the mutual fund in Country B. Country A's laws are the most strict of the three possibilities (Choice B).",
+  "evidence": "11.03 Guidance For Standards I-VII - Answers.pdf p17 (0-idx 16): DB explanation_en discussed Standard II(A) Material Nonpublic Information (an unrelated MNI-reference-table scenario), cross-contaminated. Correct explanation is Standard I(A) Knowledge of the Law matching the Karl Mahler multi-country scenario. Correct_answer A verified via checkmark geometry."
+ },
+ {
+  "id": "d2c43663-8c2d-43dc-8ba8-4e9d7df5e684",
+  "verdict": "option_bleed",
+  "field": "option_c",
+  "new_value": "immediately submit a written resignation from UIM, since the compliance program is deficient.",
+  "evidence": "11.03 Guidance For Standards I-VII - Answers.pdf p23 (0-idx 22): DB option_c was truncated mid-sentence at '...compliance program is'; PDF shows full option text ending 'deficient.'"
+ },
+ {
+  "id": "d2c43663-8c2d-43dc-8ba8-4e9d7df5e684",
+  "verdict": "explanation_wrong",
+  "field": "explanation_en",
+  "new_value": "\"Members and Candidates must make reasonable efforts to ensure that anyone subject to their supervision or authority complies with applicable laws, rules, regulations, and the Code and Standards.\"\nStandard IV(C) Responsibilities of Supervisors requires Members and Candidates who supervise employees to encourage behavior that complies with local laws, rules established by their firms, and the Code and Standards. They also must take reasonable steps to detect and prevent violations. A Member or Candidate who encounters an inadequate compliance system should bring the shortcomings of the system to the attention of the company's managers and make recommendations for corrective actions.\nAny Member or Candidate who cannot perform supervisory responsibilities due to these shortcomings should decline to accept supervisory responsibility, in writing, until the compliance system is improved and allows for adequate controls. Accepting a supervisory role when the compliance system is inadequate would not allow the Member or Candidate to adequately monitor compliance by subordinates, and thus would violate the Standard.\n(Choice A) Smith has a duty to his employer to improve the compliance program using his best efforts but must decline the supervisory responsibilities of the job until the firm has committed to investing appropriate resources into the compliance program.\n(Choice C) The Standard does not require the Member or Candidate to resign but to decline the supervisory responsibilities of the job until the compliance program is sufficiently improved.",
+  "evidence": "11.03 Guidance For Standards I-VII - Answers.pdf p23 (0-idx 22): DB explanation_en discussed Standard VI(B) Priority of Transactions (an unrelated IPO/'WTI restricted list' scenario), cross-contaminated. Correct explanation is Standard IV(C) Responsibilities of Supervisors matching the Krakowski/Smith scenario. Correct_answer B verified via checkmark geometry."
+ },
+ {
+  "id": "daf4d0dd-823b-4537-9b82-ba1a983b2405",
+  "verdict": "stem_wrong",
+  "field": "question_en",
+  "new_value": "Chang Xue, CFA, is hired as an associate research analyst by Phoenix Capital, where she helps her senior analyst in writing research reports. After several months, Chang notices that her senior analyst receives material nonpublic information during discussions with management of covered companies. She suspects this information is sometimes used to change the recommendations on those companies, although the specific information is not disclosed in the research reports. Acting on material nonpublic information is against the law in the country where Phoenix operates, but since the report does not disclose any material nonpublic information, Chang is not sure what to do. She brings this up to Li Tengfei, the chief compliance officer for Phoenix. Li tells Chang that she would not be found guilty of breaking the law since no information is disclosed in the report, so she should continue to assist in writing the reports. To best comply with the Standards, Chang should:",
+  "evidence": "11.03 Guidance For Standards I-VII - Answers.pdf p42 (0-idx 41): DB question_en began 'hang Xue, CFA, is hired...' missing the leading 'C' of the candidate's name (later occurrences correctly read 'Chang'); PDF confirms 'Chang Xue, CFA, is hired...'."
+ },
+ {
+  "id": "daf4d0dd-823b-4537-9b82-ba1a983b2405",
+  "verdict": "explanation_wrong",
+  "field": "explanation_en",
+  "new_value": "\"Members and Candidates must understand and comply with all applicable laws, rules, and regulations (including the CFA Institute Code of Ethics and Standards of Professional Conduct) of any government, regulatory organization, licensing agency, or professional association governing their professional activities. In the event of conflict, Members and Candidates must comply with the more strict law, rule, or regulation. Members and Candidates must not knowingly participate or assist in and must dissociate from any violation of such laws, rules, or regulations.\"\nStandard I(A) Knowledge of the Law requires Members and Candidates to understand the laws of all countries where they reside and do business in order to know if their actions may contribute to violations. If an action that a Member or Candidate assists with is believed to be a violation, the Member or Candidate should notify a supervisor or the firm's compliance department to stop the action. If the violation continues, the Standard requires the Member or Candidate to dissociate from the action.\nWhen there is doubt if an action is a violation, the Member or Candidate should seek advice of legal counsel or compliance personnel. However, this advice does not absolve the Member or Candidate from potential violations of the Standard if the action is illegal. Members and Candidates are still required to know local laws and report on or dissociate from violations, if necessary (Choice C).\nIn this scenario, Chang has already brought the potential violation to the attention of the firm's compliance department. Based on the Standard, Chang's next step should be to dissociate from the activity.\n(Choice B) Although Chang is not the person using material nonpublic information, she is still required to report on or dissociate from violations, if necessary.",
+  "evidence": "11.03 Guidance For Standards I-VII - Answers.pdf p42 (0-idx 41): DB explanation_en discussed Standard IV(C) Responsibilities of Supervisors (the Kathy Lee Wayne scenario, item 20227741 in this same batch), cross-contaminated/swapped. Correct explanation is Standard I(A) Knowledge of the Law matching the Chang Xue scenario. Correct_answer A verified via checkmark geometry."
+ },
+ {
+  "id": "fa53297d-c687-4966-9086-b87dbce03be2",
+  "verdict": "option_bleed",
+  "field": "option_c",
+  "new_value": "adds a significant position in CAC to the fund after he informs PPA of his relationship with Glover.",
+  "evidence": "11.03 Guidance For Standards I-VII - Answers.pdf p46 (0-idx 45): DB option_c was truncated mid-sentence at '...relationship with'; PDF shows full option text ending 'Glover.'"
+ },
+ {
+  "id": "fa53297d-c687-4966-9086-b87dbce03be2",
+  "verdict": "explanation_wrong",
+  "field": "explanation_en",
+  "new_value": "\"Members and Candidates must make full and fair disclosure of all matters that could reasonably be expected to impair their independence and objectivity or interfere with respective duties to their clients, prospective clients, and employer. Members and Candidates must ensure that such disclosures are prominent, are delivered in plain language, and communicate the relevant information effectively.\"\nWhen a conflict interferes with a member's ability to conduct unbiased investment evaluations, the member's employer must be informed of the conflict to comply with Standard VI(A) Disclosure of Conflicts.\nFor example, a member who feels pressured by personal loyalty to a friend may be impeded from making impartial decisions and acting in the employer's best interest. Therefore, to comply with the Standard, Walker must disclose his relationship with Glover to Primary Partners Associates (PPA). Walker may subsequently purchase Cancer Advances Corp. (CAC) since, after performing due diligence, he believes the company is appropriate for the fund.\n(Choice A) Since a conflict of interest exists between them, Walker must disclose his relationship with Glover before purchasing shares of CAC for the fund, regardless of the size of the transaction.\n(Choice B) A conflict of interest, if resolved, does not necessarily result in the prohibition of behavior. Since Walker believes CAC is suitable for the fund, once his relationship with Glover is disclosed and PPA has no objections, the purchase can be made.",
+  "evidence": "11.03 Guidance For Standards I-VII - Answers.pdf p46 (0-idx 45): DB explanation_en applied the same Standard VI(A) quote to a different scenario ('Beck', a spouse-as-director/soccer-trusteeship conflict), cross-contaminated. Correct explanation matches the Walker/Glover/CAC scenario. Correct_answer C verified via checkmark geometry."
+ },
+ {
+  "id": "b857de5a-3997-44ff-9ec7-2bde2542ca70",
+  "verdict": "option_bleed",
+  "field": "option_c",
+  "new_value": "does not violate the Standard since selecting the least expensive manager is in her clients' best interest.",
+  "evidence": "11.03 Guidance For Standards I-VII - Answers.pdf p61 (0-idx 60): DB option_c was truncated mid-sentence at \"...in her clients'\"; PDF shows full option text ending 'best interest.'"
+ },
+ {
+  "id": "b857de5a-3997-44ff-9ec7-2bde2542ca70",
+  "verdict": "explanation_wrong",
+  "field": "explanation_en",
+  "new_value": "\"Members and Candidates must:\n1. Exercise diligence, independence, and thoroughness in analyzing investments, making investment recommendations, and taking investment actions.\n2. Have a reasonable and adequate basis, supported by appropriate research and investigation, for any investment analysis, recommendation, or action.\"\nStandard V(A) Diligence and Reasonable Basis requires members and candidates to exercise diligence and thoroughness when making investment decisions. An example of an investment decision is a review of external managers. Managers commonly hire external managers (ie, outsource) but must conduct a diligent review before doing so.\nHere, Gutkowski selects Akiko by considering only the fee structure and dismisses all other factors (eg, risk and return, manager tenure). Gutkowski fails to exercise diligence and thoroughness in taking an investment action; this violates the Standard (Choice C).\n(Choice B) The Standard does not preclude members and candidates from hiring external managers; in fact, this practice is common. When it does occur, the hiring manager must conduct a diligent review of the external manager.",
+  "evidence": "11.03 Guidance For Standards I-VII - Answers.pdf p61 (0-idx 60): DB explanation_en was a one-line fragment quoting Standard III(E) Preservation of Confidentiality, unrelated to this Standard V(A) Diligence question (cross-contamination). Correct_answer A verified via checkmark geometry."
+ },
+ {
+  "id": "0413fff5-2be7-407f-88e0-dba6dc2c9ed4",
+  "verdict": "option_bleed",
+  "field": "option_c",
+  "new_value": "Patel can accept the offer only after disclosing it in writing to Eclipse and receiving approval in writing",
+  "evidence": "11.03 Guidance For Standards I-VII - Answers.pdf p11 (0-idx 10): DB option_c was truncated mid-sentence at '...receiving approval'; PDF shows full option text ending 'in writing'. explanation_en verified against PDF: matches Patel/Jain/Eclipse scenario correctly, no fix needed."
+ },
+ {
+  "id": "50861cd8-5d30-43e3-b13d-8cfbb18ae325",
+  "verdict": "stem_wrong",
+  "field": "question_en",
+  "new_value": "Ishani Gupta works in the manufacturing industry and wants to transition into a financial services role. She believes a CFA charter can help with this transition. Gupta recently sat for Level III of the CFA exam and is excited to update her resume to send to potential employers, although she has not yet received her results. Which of the following statements can she most appropriately use on her resume to adhere to the Standards?",
+  "evidence": "11.03 Guidance For Standards I-VII - Answers.pdf p19 (0-idx 18): DB question_en began 'Shani Gupta works...' missing the leading 'I'; PDF confirms 'Ishani Gupta works...'."
+ },
+ {
+  "id": "50861cd8-5d30-43e3-b13d-8cfbb18ae325",
+  "verdict": "explanation_wrong",
+  "field": "explanation_en",
+  "new_value": "\"When referring to CFA Institute, CFA Institute membership, the CFA designation, or candidacy in the CFA Program, Members and Candidates must not misrepresent or exaggerate the meaning or implications of membership in CFA Institute, holding the CFA designation, or candidacy in the CFA Program.\"\nStandard VII(B) Reference to CFA Institute, the CFA Designation, and the CFA Program regulates how Members and Candidates may use the CFA designation. Stating objective facts about the benefits of achieving the CFA designation or the intensity and rigor of the CFA program is allowed. This includes statements about knowledge and skills gained.\nHowever, the Standard forbids Members and Candidates from exaggerating the meaning or implication of their CFA charters, such as declaring superior competency as an investment professional or suggesting charter holders are more qualified than non–charter holders (Choice A).\n(Choice B) Gupta sat for the Level III exam but has not yet received her results. She does not yet know if she passed, and therefore saying that she will be eligible for the charter after completing the required work experience is a violation of the Standard.",
+  "evidence": "11.03 Guidance For Standards I-VII - Answers.pdf p19 (0-idx 18): DB explanation_en discussed Standard VI(C) Referral Fees (an unrelated 'Long Ming/Mao Yi/Jiang Bai' scenario), cross-contaminated. Correct explanation is Standard VII(B) matching the Gupta CFA-designation-on-resume scenario. Correct_answer C verified via checkmark geometry."
+ },
+ {
+  "id": "5c587146-0e8e-4452-becd-85c9f1a905c1",
+  "verdict": "option_bleed",
+  "field": "option_c",
+  "new_value": "Fernandez should redesign his analysis since it lacks a reasonable basis, as proven by his consistently inaccurate recommendations.",
+  "evidence": "11.03 Guidance For Standards I-VII - Answers.pdf p47 (0-idx 46): DB option_c was truncated mid-sentence at '...as proven by his'; PDF shows full option text ending 'recommendations.'"
+ },
+ {
+  "id": "5c587146-0e8e-4452-becd-85c9f1a905c1",
+  "verdict": "explanation_wrong",
+  "field": "explanation_en",
+  "new_value": "\"Members and Candidates must:\n1. Exercise diligence, independence, and thoroughness in analyzing investments, making investment recommendations, and taking investment actions.\n2. Have a reasonable and adequate basis, supported by appropriate research and investigation, for any investment analysis, recommendation, or action.\"\nTo reach an investment recommendation, each analyst may take different steps in conducting investment research. However, identifiable criteria should be measured when evaluating the research's quality. Under Standard V(A) Diligence and Reasonable Basis, it is recommended that analysts and supervisors establish policies and procedures that require analysts to substantiate that their research is reasonable.\nOne recommended procedure is that supervisors should review and approve analysts' claims of a reasonable basis; this should be completed prior to disseminating investment advice. If this is not done it raises uncertainty as to the thoroughness of diligence. Here, Chevela streamlined operations and does not evaluate each analyst's research. Reinstating a review process would lead to a greater level of diligence.\n(Choice A) Analysts use information from diverse sources; these may include company reports, third-party research, or quantitative data. Fernandez does not violate the Standard since he combines internet opinions with other information that he believes is thorough.\n(Choice C) Conducting research with a reasonable basis does not eliminate downside risk since analysts make decisions based on information available at a point in time. The process of coming to the conclusion, not the correctness or consistency of the results, determines whether the research has a reasonable basis.",
+  "evidence": "11.03 Guidance For Standards I-VII - Answers.pdf p47 (0-idx 46): DB explanation_en discussed Standard I(B) Independence and Objectivity (an unrelated 'Patel/Red Tiger' travel-accommodations scenario), cross-contaminated. Correct explanation is Standard V(A) Diligence matching the Fernandez/Chevela scenario. Correct_answer B verified via checkmark geometry."
+ },
+ {
+  "id": "c85339ab-3cc5-48d1-ad78-afe422e5a2d4",
+  "verdict": "formatting_missing",
+  "field": "question_en",
+  "new_value": "Patricia Murphy, CFA, is asked by her manager at the hedge fund firm Star Capital to create a marketing brochure for prospective clients. The firm has achieved the following returns:\n\n| | Star Capital (actual) | Star Capital (risk-adjusted) | Market |\n|---|---|---|---|\n| 20X3 | 5% | 2% | −4% |\n| 20X4 | 13% | 12% | 8% |\n| 20X5 | 24% | 22% | 13% |\n| 20X6 | 5% | 5% | 4% |\n| 20X7 | 16% | 14% | 6% |\n\nIn the brochure, Murphy writes, \"Star Capital has consistently outperformed its benchmark on a risk-adjusted basis and has yet to have a loss in any year. Clients can expect more of the same next year.\" Which part of Murphy's statements most likely violates Standard I(C) Misrepresentation? Stating that:",
+  "evidence": "11.03 Guidance For Standards I-VII - Answers.pdf p59 (0-idx 58): find_tables() confirms a 6-row/4-col yearly returns table (20X3-20X7, actual/risk-adjusted/market) present on the question page, absent from question_en."
+ },
+ {
+  "id": "c85339ab-3cc5-48d1-ad78-afe422e5a2d4",
+  "verdict": "explanation_wrong",
+  "field": "explanation_en",
+  "new_value": "\"Members and Candidates must not knowingly make any misrepresentations relating to investment analysis, recommendations, actions, or other professional activities.\"\nStandard I(C) Misrepresentation focuses on avoiding both the use of false or misleading statements and the omission of facts, which can undermine investor trust. This includes statements that guarantee clients a level of future performance or a specific return on risky investments (eg, stocks). The Standard applies to information prepared as a verbal or published statement that is intended for clients, colleagues, or the public.\nIn the marketing brochure, Murphy violates the Standard by implying that clients of Star Capital can expect to receive positive returns and to outperform the market next year. Since the hedge fund's investments consist of risky assets, it is impossible for Murphy to know whether Star Capital can achieve these targets. Past results are not guarantees of future performance and should not be presented as such.\n(Choice A) Stating that Star Capital has not had a loss is not misrepresentation since it is a factual statement with no omissions.\n(Choice C) Stating that returns have consistently outperformed the benchmark on a risk-adjusted basis is not misrepresentation since it, too, is a factual statement with no omissions.",
+  "evidence": "11.03 Guidance For Standards I-VII - Answers.pdf p59 (0-idx 58): DB explanation_en discussed Standard I(D) Misconduct (an unrelated 'Bellefont' insider-trading/bankruptcy scenario), cross-contaminated. Correct explanation is Standard I(C) Misrepresentation matching the Murphy/Star Capital brochure scenario. Correct_answer B verified via checkmark geometry."
+ },
+ {
+  "id": "d1ef6350-7ff8-4bb5-940a-51b7cc81fd91",
+  "verdict": "explanation_wrong",
+  "field": "explanation_en",
+  "new_value": "\"Members and Candidates must disclose to their employer, clients, and prospective clients, as appropriate, any compensation, consideration, or benefit received from or paid to others for the recommendation of products or services.\"\nStandard VI(C) Referral Fees requires Members and Candidates to notify their employers, existing clients, and prospective clients of benefits received for recommending a product or service. Disclosing referral fee arrangements allows employers and clients to determine whether conflicts of interest exist and whether a recommendation is impartial. Referral fees are broadly defined and include any cash or noncash rewards (eg, tickets to a sporting event).\nIn this question, Paxton has entered into an agreement with Jones to mutually refer clients when appropriate, which is beneficial for both Paxton and Jones. Therefore, Paxton is required to disclose this information to both her employer and clients although no direct money transfer is involved (Choice C).\n(Choice B) The fact that Paxton believes the clients benefit from the arrangement does not preclude Paxton from the disclosure requirement of the Standard.",
+  "evidence": "11.03 Guidance For Standards I-VII - Answers.pdf p50 (0-idx 49): DB explanation_en discussed Standard VI(B) Priority of Transactions (an unrelated 'Ivanov' personal-trading scenario), cross-contaminated. Correct explanation is Standard VI(C) Referral Fees matching the Paxton/Jones scenario. Correct_answer A verified via checkmark geometry. Options a/b/c verified complete, no truncation."
+ },
+ {
+  "id": "4e9f8364-1065-4a72-920b-d98236cb6b6c",
+  "verdict": "option_bleed",
+  "field": "option_c",
+  "new_value": "cannot use trades for accounts that prohibit soft dollar arrangements to meet the commitment.",
+  "evidence": "11.05 Ethics Application - Answers.pdf p13 (0-idx 12): DB option_c was truncated mid-sentence at '...to meet the'; PDF shows full option text ending 'commitment.'"
+ },
+ {
+  "id": "4e9f8364-1065-4a72-920b-d98236cb6b6c",
+  "verdict": "explanation_wrong",
+  "field": "explanation_en",
+  "new_value": "\"Members and Candidates have a duty of loyalty to their clients and must act with reasonable care and exercise prudent judgment. Members and Candidates must act for the benefit of their clients and place their clients' interests before their employer's or their own interests.\"\nStandard III(A) Loyalty, Prudence, and Care requires Members and Candidates to seek best price and best execution for client trades. \"Best price\" and \"best execution\" do not necessarily mean the lowest trading commission, but commissions paid to brokers to execute the trades must be commensurate with the value received.\nSoft dollar brokerage refers to the practice of using a portion of brokerage commissions to purchase investment services (eg, research). Since the client \"pays\" the commission out of client assets, these investment services are the property of the client, not the investment management firm, and must be used to benefit the client. Typically, brokers that offer value-added investment services charge higher commissions. Clients can choose not to have their accounts traded on a soft dollar basis if they do not feel the value is worth the cost.\nIn this scenario, Johnson does not violate the Standard even though he directs all account trading to RMB. RMB reduced its commissions to match CCB's commissions; therefore, the clients that do not allow soft dollars are not paying extra to subsidize the research used by clients that allow soft dollars (Choice C). When RMB raises its prices, Johnson must switch accounts that do not allow soft dollars back to CCB.\n(Choice B) Johnson is not required to trade through only CCB despite them having the lowest commissions since RMB adds value to Pinnacle's clients through the research they offer, so long as the research is used to benefit Pinnacle's clients.",
+  "evidence": "11.05 Ethics Application - Answers.pdf p13 (0-idx 12): DB explanation_en discussed Standard II(B) Market Manipulation (an unrelated 'Annika/Boris Goncharov' scenario), cross-contaminated. Correct explanation is Standard III(A) Loyalty, Prudence, and Care matching the Johnson/RMB/CCB soft-dollar scenario. Correct_answer A verified via checkmark geometry."
+ },
+ {
+  "id": "10911a37-bd7e-4d9b-a862-ed1c73515668",
+  "verdict": "option_bleed",
+  "field": "option_c",
+  "new_value": "violated the Standards by trading based on a research report that was not disseminated to the general public.",
+  "evidence": "11.05 Ethics Application - Answers.pdf p60 (0-idx 59): DB option_c was truncated mid-sentence at '...not disseminated to'; PDF shows full option text ending 'the general public.'"
+ },
+ {
+  "id": "10911a37-bd7e-4d9b-a862-ed1c73515668",
+  "verdict": "explanation_wrong",
+  "field": "explanation_en",
+  "new_value": "\"Members and Candidates who possess material nonpublic information that could affect the value of an investment must not act or cause others to act on the information.\"\nStandard II(A) requires Members and Candidates to abstain from investment actions if they have material nonpublic information (MNI). Trading based on MNI erodes trust in the fairness of the capital markets and the investing profession by perpetuating the idea that insiders take deceitful advantage of the investing public. MNI can come from many sources, including company management and expert networks. A Member or Candidate must evaluate the information itself to decide whether it is MNI before acting on it.\nIn this question, the physician whom Sumit Ahuja calls through an expert network provides information on broad industry trends, which is nonmaterial since it is not company specific. The physician also provides the names of companies with drugs in the final stages of the government approval process, which is public information. Therefore, Ahuja did not receive MNI through the expert network and did not violate the Standard by acting on it (Choice B).\nAlthough research reports from sell-side analysts, even those based on opinions, can be material and nonpublic, trading based on these reports does not violate the Standard if any investor can purchase them. Such availability means that a report is public even if not publicly disseminated. Since the report Ahuja purchased from Vijaya Dayal is available to all investors, Ahuja did not violate the Standard by acting on it (Choice C).",
+  "evidence": "11.05 Ethics Application - Answers.pdf p60 (0-idx 59): DB explanation_en discussed Standard I(B) Independence and Objectivity (an unrelated 'Landry/O'Connor/Novogratz' issuer-paid-research scenario), cross-contaminated. Correct explanation is Standard II(A) MNI matching the Ahuja/Dayal/Orion scenario. Correct_answer A verified via checkmark geometry."
+ },
+ {
+  "id": "98d1e3e5-e991-4ac8-8d35-5642b138d01a",
+  "verdict": "option_bleed",
+  "field": "option_c",
+  "new_value": "violated the Standard by not reporting the receipt of material nonpublic information to her supervisor or compliance staff.",
+  "evidence": "11.05 Ethics Application - Answers.pdf p69 (0-idx 68): DB option_c was truncated mid-sentence at '...information to her'; PDF shows full option text ending 'supervisor or compliance staff.'"
+ },
+ {
+  "id": "98d1e3e5-e991-4ac8-8d35-5642b138d01a",
+  "verdict": "explanation_wrong",
+  "field": "explanation_en",
+  "new_value": "\"Members and Candidates who possess material nonpublic information that could affect the value of an investment must not act or cause others to act on the information.\"\nStandard II(A) Material Nonpublic Information prohibits Members and Candidates from acting on or recommending investments based on material nonpublic information. However, analysts may piece together public and nonmaterial nonpublic data from multiple sources to form an investment conclusion. This process is referred to as mosaic theory. Recommendations based on mosaic theory do not violate the Standard since, rather than rely on company insiders, the conclusions depend on the analyst's skill in synthesizing information from disparate sources.\nIn this scenario, the researcher reiterates the company's already publicly released statement on the prospects and timeline for commercial development of a new battery technology, so no nonpublic information was disclosed. The researcher's comments regarding rare earth elements being in short supply might provide some additional nonmaterial information since it can be reasonably assumed that the information is included in the company's publicly released forecasts or otherwise publicly available.\nTherefore, Maya Levine did not violate the Standard since she disclosed no material nonpublic information. Levine used this information in applying mosaic theory to assist with the investment thesis for the rare earth mining company (Choice B).\n(Choice C) Although it is recommended that Members and Candidates report the receipt of potentially material nonpublic information to their supervisor or compliance staff, it is not required in all circumstances, and Members and Candidates are urged to exercise their own judgment, as appropriate.",
+  "evidence": "11.05 Ethics Application - Answers.pdf p69 (0-idx 68): DB explanation_en discussed Standard IV(B) Additional Compensation Arrangements (an unrelated 'Nakamura' scenario), cross-contaminated. Correct explanation is Standard II(A) MNI/mosaic theory matching the Levine scenario. Correct_answer A verified via checkmark geometry."
+ },
+ {
+  "id": "edf229ac-bdfb-4a55-abda-6284eeb1537d",
+  "verdict": "formatting_missing",
+  "field": "question_en",
+  "new_value": "Tom Smith, CFA, is assigned a new client, Brigitte Duret, who is currently invested entirely in cash. During a brief phone conversation with Smith, Duret says: \"I'd like to earn a better return, but I don't want to take any risk. I am going to work in the Amazon rainforest for about three months, so we will meet when I am back in the US.\" Smith schedules a meeting with Duret three months from today. Smith temporarily invests Duret's assets in the firm's Conservative Portfolio since he does not want Duret to miss out on at least some of the market's performance before their meeting. Smith is the firm's leading expert on the Conservative Portfolio (shown in the table below) and has used it for many client portfolios with good results.\n\n| Asset Class | Percent Allocation |\n|---|---|\n| Cash | 45 |\n| Fixed Income | 45 |\n| Developed Equity | 5 |\n| Emerging Markets | 5 |\n\nAccording to Standard III(C) Suitability and based on the Conservative Portfolio's asset allocation, Smith most likely:",
+  "evidence": "11.05 Ethics Application - Answers.pdf p17 (0-idx 16): find_tables() confirms 5-row Asset Class/Percent Allocation table present on the question page, absent from question_en."
+ },
+ {
+  "id": "edf229ac-bdfb-4a55-abda-6284eeb1537d",
+  "verdict": "option_bleed",
+  "field": "option_c",
+  "new_value": "does not violate the Standard since he spoke to Duret, the investment is temporary, and it is consistent with what a prudent investor would expect.",
+  "evidence": "11.05 Ethics Application - Answers.pdf p17 (0-idx 16): DB option_c was truncated mid-sentence at '...and it is'; PDF shows full option text."
+ },
+ {
+  "id": "edf229ac-bdfb-4a55-abda-6284eeb1537d",
+  "verdict": "explanation_wrong",
+  "field": "explanation_en",
+  "new_value": "\"When Members and Candidates are responsible for managing a portfolio to a specific mandate, strategy, or style, they must make only investment recommendations or take only investment actions that are consistent with the stated objectives and constraints of the portfolio.\"\nStandard III(C) Suitability prescribes how the manager must act when investing on behalf of the client. Suitability entails evaluating whether an investment's expected risk and return match the client's risk tolerance and return objectives. Suitability cannot determine until the manager knows the client's investment objectives and constraints.\n(Choice A) Standard V(A) Diligence and Reasonable Basis states that managers must diligently exercise thoroughness when taking investment actions. Given Smith's expertise with the Conservative Portfolio, it is reasonable to assume that the violation does not involve a lack of diligence.\n(Choice C) The Conservative Portfolio has more risk than a cash portfolio since it has exposure to equities and emerging markets. There is no prudent investor test to determine whether the portfolio is appropriate or not. No matter how \"temporary\" the investment is intended to be, it does not excuse Smith from first assessing whether the investment is suitable for the client's risk and return objectives.",
+  "evidence": "11.05 Ethics Application - Answers.pdf p17 (0-idx 16): DB explanation_en discussed Standard VI(B) Priority of Transactions (the same unrelated 'Ivanov' text bled into item d1ef6350 as well), cross-contaminated. Correct explanation is Standard III(C) Suitability matching the Smith/Duret scenario. Correct_answer B verified via checkmark geometry."
+ },
+ {
+  "id": "b32bfeb3-3a88-49ac-a6b1-3be2cd772a49",
+  "verdict": "option_bleed",
+  "field": "option_c",
+  "new_value": "Pressly violated the Standard both by her purchase and recommending that her father purchase the stock.",
+  "evidence": "11.05 Ethics Application - Answers.pdf p77 (0-idx 76): DB option_c was truncated mid-sentence at '...recommending that her father'; PDF shows full option text ending 'purchase the stock.'"
+ },
+ {
+  "id": "b32bfeb3-3a88-49ac-a6b1-3be2cd772a49",
+  "verdict": "explanation_wrong",
+  "field": "explanation_en",
+  "new_value": "\"Members and Candidates who possess material nonpublic information that could affect the value of an investment must not act or cause others to act on the information.\"\nStandard II(A) Material Nonpublic Information prohibits members and candidates from trading on material nonpublic information. \"Material\" refers to information that would be expected to cause a significant change in the market price of a security. \"Nonpublic\" means that the information has not been disseminated to the general investing marketplace. Information that is given only to a limited group of investors, such as to analysts on a conference call, does not make that information public.\nThe Standard also prohibits members and candidates from recommending investments to others if the recommendation is based on material nonpublic information. It is irrelevant whether the recipient acts on the recommendation.\nPressly violated the Standard both by purchasing the stock and advising her father to buy it. The CEO's information is clearly material since the expected boost to Prime Health's revenues from regulatory approval of the drug will likely affect PrimeHealth's stock price. The information was also nonpublic since only a few analysts knew it when Pressly bought the stock. Although Pressly's father did not act on her recommendation, it was based on material nonpublic information, so her recommendation alone violated the Standard (Choices A and B).",
+  "evidence": "11.05 Ethics Application - Answers.pdf p77 (0-idx 76): DB explanation_en discussed Standard V(C) Record Retention (an unrelated 'Bao Pham' social-media-recordkeeping scenario), cross-contaminated. Correct explanation is Standard II(A) MNI matching the Pressly/PrimeHealth scenario. Correct_answer C verified via checkmark geometry."
+ },
+ {
+  "id": "0ef74f5f-5364-45bf-a69d-ab6a11941353",
+  "verdict": "option_bleed",
+  "field": "option_c",
+  "new_value": "Yes, since he performed thorough due diligence and investing in the hedge fund is in the plan's best interest.",
+  "evidence": "11.05 Ethics Application - Answers.pdf p73 (0-idx 72): DB option_c was truncated mid-sentence at '...is in the'; PDF shows full option text ending \"plan's best interest.\""
+ },
+ {
+  "id": "0ef74f5f-5364-45bf-a69d-ab6a11941353",
+  "verdict": "explanation_wrong",
+  "field": "explanation_en",
+  "new_value": "\"Members and Candidates must:\nExercise diligence, independence, and thoroughness in analyzing investments, making investment recommendations, and taking investment actions.\nHave a reasonable and adequate basis, supported by appropriate research and investigation, for any investment analysis, recommendation, or action.\"\nStandard V(A) Diligence and Reasonable Basis states that Members and Candidates must perform reasonable and standardized due diligence on external advisers. In addition to reviewing an adviser's investment process, strategy, performance presentation, and internal controls, Members and Candidates must review the adviser's code of ethics.\nIn this scenario, Enes Yilmaz conducts thorough due diligence and confirms that the hedge fund operates in compliance with local laws, as required by the Standard. However, he also discovers that the company does not have an established code of ethics. Without a code of ethics, Yilmaz cannot be confident that the firm will adhere to a high level of ethical standards. Therefore, by investing with this manager, Yilmaz violates Standard V(A) Diligence and Reasonable Basis.\n(Choice B) Given the circumstances, the hedge fund is not required to conform to the Standards. However, before investing, Yilmaz must ensure a minimum level of internal controls and decision-making protocols, including an established code of ethics.\n(Choice C) Yilmaz has a fiduciary duty to the pension plan participants but also must adhere to the higher ethical standards imposed on CFA charterholders.",
+  "evidence": "11.05 Ethics Application - Answers.pdf p73 (0-idx 72): DB explanation_en was a one-line fragment ('Members and Candidates must:') with no continuation, unsourced/truncated. Correct explanation sourced from the actual page. Correct_answer A verified via checkmark geometry."
+ },
+ {
+  "id": "68fb69d2-a5e7-486b-9f62-c29acf7a62e2",
+  "verdict": "option_bleed",
+  "field": "option_c",
+  "new_value": "avoid misrepresentations relating to analysis, recommendations, actions, or other professional activities.",
+  "evidence": "11.02 Code Of Ethics And Standards Of Professional Conduct - Answers.pdf p2 (0-idx 1): DB option_c was truncated mid-sentence at '...actions, or other'; PDF shows full option text ending 'professional activities.' explanation_en verified against PDF: content matches (Code of Ethics vs Standards distinction), correct_answer B verified via checkmark geometry; no fix needed for explanation."
+ }
+]

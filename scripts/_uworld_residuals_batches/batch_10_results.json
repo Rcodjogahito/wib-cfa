@@ -1,0 +1,206 @@
+[
+  {
+    "id": "ecb9c85c-60d7-48a2-8517-dbfd21f8e09e",
+    "verdict": "formatting_missing",
+    "field": "question_en",
+    "new_value": "A global clothing company reports the following 20X1 financial results for one of its business units:\n\n| (€ millions) | 20X1 |\n|---|---|\n| Revenue | 100.00 |\n| COGS | 30.00 |\n| Gross profit | 70.00 |\n| SG&A | 50.00 |\n| EBIT | 20.00 |\n\nA forecast of 20X3 operating profits (EBIT) for this business unit assumes that:\n\n- Volume will contribute 7% to annual sales growth each year.\n- Price/mix will contribute 3% to annual sales growth each year.\n- Net foreign currency fluctuation is expected to reduce annual sales growth by 1% each year.\n- COGS is expected to be 30% of revenue each year.\n- SG&A is expected to be 50% of revenue each year.\n- Sales growth is calculated geometrically.\n\nUsing these assumptions, the 20X3 EBIT forecast (in € millions) for the business unit is closest to:",
+    "evidence": "PDF page 8 (5.12, page_idx 7) shows a 20X1 data table (Revenue 100.00, COGS 30.00, Gross profit 70.00, SG&A 50.00, EBIT 20.00) before the bullet assumptions; question_en omitted it. Correct_answer C matches checkmark; explanation_en matches source verbatim."
+  },
+  {
+    "id": "5e816adb-5b62-4865-a974-c4bba3b65c94",
+    "verdict": "formatting_missing",
+    "field": "question_en",
+    "new_value": "A hedge fund will commit $15 million to a short sale of an exchange-listed stock. The fund sells short the maximum number of shares allowable when the margin requirement is 0.4. The relevant information is shown in the table below:\n\n| Item | Value |\n|---|---|\n| Share price at initial sale | $30 |\n| Share price at repurchase | $28 |\n| Dividend (paid 8 months after short sale) | $1/share |\n| Margin loan rate | 9% |\n| Broker's deposit rate | 4% |\n\nNo interest is paid for the borrowed shares, but there is a short rebate on the sales proceeds. If the fund closes out the position in exactly 1 year, the total percentage return is closest to:",
+    "evidence": "PDF page 1 (6.01, page_idx 0) shows a data table (share prices, dividend, margin loan rate, broker's deposit rate) before 'No interest is paid...'; question_en omitted it. Correct_answer B matches checkmark; explanation_en beginning matches source verbatim (choice callouts 8.3%/26.7% consistent with given options, kept as-is)."
+  },
+  {
+    "id": "9ea3e2b3-620b-48e4-aff4-acf49bc09fbc",
+    "verdict": "formatting_missing",
+    "field": "question_en",
+    "new_value": "In an order-driven market system, the following buy limit orders for a stock are listed in the system's limit book:\n\n| Order | Time Arrived | Number of Shares | Limit Price ($) | Special Instructions |\n|---|---|---|---|---|\n| 1 | 10:05 | 100 | 15.10 | Iceberg order (total order is for 200 shares) |\n| 2 | 10:07 | 200 | 15.10 |  |\n| 3 | 10:08 | 200 | 15.11 |  |\n\nEach order is listed for 200 shares. Based on the commonly used order precedence hierarchy, if the current market price is $15.10 and the exchange receives a market sell order for 500 shares, then the orders most likely to be fully executed are:",
+    "evidence": "PDF page 28 (6.01, page_idx 27) / PNG confirms exact order table (Order 1/2/3, times, shares, limit prices, iceberg note). Correct_answer B matches checkmark; explanation_en matches source content (order-driven priority rules), just a reference-table reading-order artifact, not contamination."
+  },
+  {
+    "id": "8def86bf-f414-4ca5-9ea1-84171d2200a1",
+    "verdict": "formatting_missing",
+    "field": "question_en",
+    "new_value": "A market's limit order book for a stock is listed below:\n\n| Bid Size (Shares) | Price (EUR) | Offer Size (Shares) |\n|---|---|---|\n| 500 | 102.60 |  |\n| 300 | 102.80 |  |\n| 200 | 103.00 |  |\n|  | 103.05 | 150 |\n|  | 103.10 | 300 |\n|  | 103.20 | 600 |\n\nA buy limit order for 200 shares makes a new market when it is priced at:",
+    "evidence": "PDF page 44 (6.01, page_idx 43) / PNG confirms exact bid/offer table. Correct_answer B (103.03) matches checkmark."
+  },
+  {
+    "id": "8def86bf-f414-4ca5-9ea1-84171d2200a1",
+    "verdict": "explanation_wrong",
+    "field": "explanation_en",
+    "new_value": "A market order instructs a brokerage firm to immediately execute a trade at the current market price. A limit order instructs the firm to execute the trade at only the limit price or better. When a new limit order is entered at the current market price, the order is said to:\nmake a new market if it is entered at a price between the current highest bid and lowest offer. In this scenario, the buy limit order of EUR 103.03 is between the existing best bid and best offer, so it makes a new market.\nmake the market if it matches the current best bid (buy limit order) or offer (sell limit order) price and is added to the order book. A price of 103.00 matches the current best bid (Choice A).\ntake the market if a buy (sell) order is placed at the existing best offer (bid). A price of 103.05 matches the best offer and would be executed immediately (Choice C).",
+    "evidence": "Stored explanation_en ('The prices at which market participants are willing to buy (sell) are called bid (offer) prices... Take the market if it is immediately executed... a buyer takes the lowest (best) offer...') does not match this page's actual explanation text at all (verified via PDF page 44 text and PNG); it discusses generic bid/offer/take-the-market wording inconsistent with this specific 103.00/103.03/103.05 scenario. Replaced with the verbatim source explanation."
+  },
+  {
+    "id": "814019af-cba6-47ff-be49-7ae279347157",
+    "verdict": "option_bleed",
+    "field": "option_c",
+    "new_value": "increased since any security price changes will be a larger percentage of the position's equity.",
+    "evidence": "Stored option_c is truncated mid-sentence (\"...a larger percentage of the position's\"). PDF page 35 (6.01, page_idx 34) shows full option C ending '...a larger percentage of the position's equity.'"
+  },
+  {
+    "id": "a49a8ff7-36f5-4e29-9482-5fb16c40a9dc",
+    "verdict": "option_bleed",
+    "field": "option_c",
+    "new_value": "accrued and paid to cumulative preference shareholders in the future only after paying common shareholders.",
+    "evidence": "Stored option_c is truncated mid-sentence (\"...only after paying\"). PDF page 22 (6.04, page_idx 21) shows full option C ending '...only after paying common shareholders.'"
+  },
+  {
+    "id": "4098e617-1ba9-40ad-ba8d-b853814ab0ba",
+    "verdict": "stem_wrong",
+    "field": "question_en",
+    "new_value": "A business student gathers the following information on a company:\n\n| (GBP millions) | 20X1 | 20X2 | 20X3 |\n|---|---|---|---|\n| EBITDA | 45 | 50 | 40 |\n| Net income | 40 | 35 | 45 |\n| Assets | 500 | 480 | 500 |\n| Liabilities | 200 | 210 | 230 |\n| Market value of equity | 450 | 405 | 687 |\n\nIf return on equity (ROE) is calculated using average amounts from the balance sheet, then the ROE in 20X3 most accurately:",
+    "evidence": "PNG of PDF page 20 (6.04, page_idx 19) shows Liabilities row as 200 / 210 / 230 for 20X1/20X2/20X3 (confirmed in both the 'Selected Data' table and the worked 'Calculation of ROE' table). Stored question_en has Liabilities 20X2 = 200, a genuine data error (should be 210). Only this cell corrected; all other values verified matching."
+  },
+  {
+    "id": "9f10de25-ea43-4460-8bc4-169efe8bebf9",
+    "verdict": "option_bleed",
+    "field": "option_c",
+    "new_value": "the issuer's right to incur additional debt while some or all of the original amount is still outstanding.",
+    "evidence": "Stored option_c is truncated mid-sentence (\"...is still\"). PDF page 8 (7.04, page_idx 7) shows full option C ending '...is still outstanding.'"
+  },
+  {
+    "id": "bf1b57b3-718f-40be-a5e6-697e55098a7e",
+    "verdict": "option_bleed",
+    "field": "option_c",
+    "new_value": "the amount of additional collateral required by the repo lender in addition to the repo collateral.",
+    "evidence": "Stored option_c is truncated mid-sentence (\"...in addition to the repo\"). PDF page 15 (7.04, page_idx 14) / PNG shows full option C ending '...in addition to the repo collateral.'"
+  },
+  {
+    "id": "6a4426ec-5e2b-4e09-b05b-1dd3be3fb7f9",
+    "verdict": "formatting_missing",
+    "field": "question_en",
+    "new_value": "An analyst has compiled the following data on a corporate bond:\n\n| Selected Data | Value |\n|---|---|\n| Maturity (years) | 12 |\n| Coupon (%) | 5 |\n| Price | 100 |\n| Modified duration | 8.94 |\n| Convexity | 90 |\n\nThe price impact from an instantaneous 80 basis points of spread narrowing is closest to (%):",
+    "evidence": "PDF page 1 (7.14, page_idx 0) shows a 'Selected Data' table (Maturity 12, Coupon 5%, Price 100, Modified duration 8.94, Convexity 90) before the question; question_en omitted it. Correct_answer C matches checkmark; explanation_en matches source verbatim."
+  },
+  {
+    "id": "bffa4bae-d68d-4957-b43e-c80c830a5858",
+    "verdict": "formatting_missing",
+    "field": "question_en",
+    "new_value": "An analyst gathers the following data:\n\n| Selected Data | Value |\n|---|---|\n| Bond price | 100 |\n| Coupon rate | 6% |\n| Risk-free rate | 4% |\n\nThe bond has exactly 10 years until maturity and pays coupons annually. There are no other costs or benefits while holding the bond. A 1-year forward contract created with an initial value of zero most likely has an agreed-on price:",
+    "evidence": "PDF page 2 (8.05, page_idx 1) shows a 'Selected Data' table (Bond price 100, Coupon rate 6%, Risk-free rate 4%) before the question; question_en omitted it. Correct_answer A matches checkmark."
+  },
+  {
+    "id": "bffa4bae-d68d-4957-b43e-c80c830a5858",
+    "verdict": "explanation_wrong",
+    "field": "explanation_en",
+    "new_value": "A forward contract price has an initial value of zero if the value of holding the forward contract (and not holding the asset until some future date) is equivalent to the value of holding the asset now and accruing any costs or benefits of having the asset in the meantime.\nIf there is a net cost to having the asset now, then the forward price is greater than the spot price, and the net cost is the difference in the forward price and the spot price.\nIf there is a net benefit to having the asset now, then the forward price is less than the spot price by the value of the net benefit derived from holding the asset.\nForward price = Spot price × (1 + r)^T − Bond coupon payment × (1 + r), where F0 is the forward price today, S0 is the spot price today, C is the bond's coupon payment, T is the time to expiration, and r is the risk-free rate.\nIn this scenario, the only holding cost is the opportunity cost of capital, which is the risk-free rate of 4%. The benefit of holding the bond is the coupon of 6% that is paid in 1 year. The net benefit of holding the underlying asset is the difference between the bond's 6% coupon and the 4% risk-free rate (ie, 2%).\nThe bond and bond-forward contract are equivalent positions, so their prices imply the same return until the forward's expiration. For that condition to hold, the forward contract price must be less than the spot price by the net benefit of holding the bond rather than the forward contract (Choices B and C).",
+    "evidence": "Stored explanation_en is a generic futures-pricing explanation ('Futures price = Spot price + Cost - Benefits...Benefits<costs...Futures>spot...cost of carry...') that never mentions this question's specific bond (6% coupon, 4% risk-free rate, 10-year maturity). PDF page 2 (8.05, page_idx 1) text is specific to this exact scenario and reaches the correct conclusion (Choices B and C). Replaced with the verbatim source explanation (formula symbols reconstructed in words from the source's own variable definitions: F0=forward price today, C=bond coupon payment, S0=spot price today, T=time to expiration, r=risk-free rate)."
+  },
+  {
+    "id": "ed857ec4-7ecc-43d2-aeea-f6e08b192df4",
+    "verdict": "formatting_missing",
+    "field": "question_en",
+    "new_value": "An investor obtains the following information about a European call and a European put on the same underlying asset, and the forward price of the asset:\n\n| Item | Value |\n|---|---|\n| Current asset price | €100 |\n| 1-year forward price | €105 |\n| European call premium | €10 |\n| European put premium | €6 |\n| Risk-free rate | 5% |\n\nThe options and the forward contract expire on the same date, and the options have a strike price of €100. Using put-call-forward parity to analyze the information, the investor most appropriately concludes that an arbitrage opportunity:",
+    "evidence": "PDF page 6 (8.09, page_idx 5) shows a data table (asset price, forward price, call/put premiums, risk-free rate) before the question; question_en omitted it. Correct_answer B matches checkmark."
+  },
+  {
+    "id": "ed857ec4-7ecc-43d2-aeea-f6e08b192df4",
+    "verdict": "explanation_wrong",
+    "field": "explanation_en",
+    "new_value": "Put-call-forward parity describes the relationship between a European call and put option on the same underlying. Each option has the same expiration date and exercise (strike) prices. In put-call-forward parity, each option is a component of separate portfolios. The call option is part of a portfolio known as a fiduciary call, and the put option is part of a protective put:\nFiduciary call: a long position in a European call option on the underlying, and a long position in a zero-coupon bond that matures on the option's expiration date with a face value equal to the option's strike price.\nProtective put: a long position in a European put option on the underlying, a long position in a forward contract on the underlying, and a long position in a zero-coupon bond that matures when both the option and forward expire, with a face value equal to the forward price.\nHolding a long position in a forward contract and a zero-coupon bond with a face value equal to the forward price replicates owning the stock.\nIn put-call-forward parity, the payoff is the same for both portfolios when all the derivative instruments expire, regardless of the underlying asset's price at that time. Since the payoffs are identical, the portfolios must have the same value or else an arbitrage opportunity exists.\nUsing the information in this question, and assuming a discount period of one year, insert the numbers to derive the values of the fiduciary call and protective put portfolios:\nThe protective put is worth more than the fiduciary call, so there is an arbitrage opportunity (Choice A). To exploit this, the investor would sell the protective put by selling the put option, the forward contract, and the zero-coupon bond, which would result in an inflow of €106. At the same time, the investor would buy the fiduciary call, which would mean buying the call option and the zero-coupon bond, for a net outflow of €105.24. The arbitrage profit is €0.76.",
+    "evidence": "Stored explanation_en discusses generic put-call parity synthetic-bond replication notation (X/(1+r)^t, 'Long asset S, Short a call -c, Long a put +p'...) that never references this question's actual numbers (€100/€105/€10/€6/5%) or its arbitrage-profit conclusion. PDF page 6 (8.09, page_idx 5) text is specific to this exact scenario, concludes with the correct answer (Choice B, sell protective put / buy fiduciary call, €0.76 profit). Replaced with the verbatim source explanation."
+  },
+  {
+    "id": "011ae2e6-a2b3-4c2f-b606-6d5861521985",
+    "verdict": "formatting_missing",
+    "field": "question_en",
+    "new_value": "A trader observes the following data on European put and call options on the same stock with the same expiry (one year from today):\n\n| Item | Value |\n|---|---|\n| Price of the stock | 204.50 |\n| Price of call option | 9.36 |\n| Price of put option | 4.86 |\n| Call option strike price | 206.00 |\n| Put option strike price | 206.00 |\n| Risk-free rate | 3% |\n\nAssuming the call option is correctly priced in the market, the trader would most appropriately conclude that put-call parity is:",
+    "evidence": "PDF page 13 (8.09, page_idx 12) / PNG confirms exact data table. Correct_answer A matches checkmark; explanation_en reaches the correct conclusion (put price should be 4.86, matches market, not violated) and is kept as-is."
+  },
+  {
+    "id": "106b2e0c-54ab-4ed1-acb4-843ab7f1873e",
+    "verdict": "formatting_missing",
+    "field": "question_en",
+    "new_value": "A trader observes the following data for European put and call options on the same stock with the same strike price and expiry (one year from today), and a forward contract on the same stock with the same expiry:\n\n| Item | Value |\n|---|---|\n| Price of call option | 7.50 |\n| Price of put option | 2.80 |\n| Call option strike price | 57.00 |\n| Put option strike price | 57.00 |\n| Forward price | 62.00 |\n| Risk-free rate | 3.00% |\n\nIf the put option is correctly priced in the market, the trader's most appropriate conclusion is that put-call-forward parity is:",
+    "evidence": "PDF page 14 (8.09, page_idx 13) / PNG confirms exact data table. Correct_answer C matches checkmark; explanation_en reaches the correct conclusion (call should be 7.65, trades at 7.5, undervalued) and is kept as-is."
+  },
+  {
+    "id": "440ee1a9-6244-4774-991e-bc19634a5ece",
+    "verdict": "formatting_missing",
+    "field": "question_en",
+    "new_value": "An analyst obtains the following information about a call option on 100 shares of a stock:\n\n| Item | Value |\n|---|---|\n| Price of call option | $2 |\n| Forward price | $45 |\n| Call option strike price | $50 |\n| Put option strike price | $50 |\n| Risk-free rate | 3% |\n\nIf the option expires in one year and the analyst estimates that the stock's intrinsic value is $41, then according to put-call-forward parity the put's premium is closest to:",
+    "evidence": "PDF page 15 (8.09, page_idx 14) / PNG confirms exact data table. Correct_answer B matches checkmark."
+  },
+  {
+    "id": "440ee1a9-6244-4774-991e-bc19634a5ece",
+    "verdict": "explanation_wrong",
+    "field": "explanation_en",
+    "new_value": "It is important to understand the difference between put-call parity and put-call-forward parity. Put-call parity implies that a protective put and fiduciary call constructed with options on the same asset and with the same strike price and expiry have the same payoff; therefore, their values are equal at any time prior to maturity.\nPut-call-forward parity can be explained based on put-call parity since an investor can create a synthetic equivalent of the underlying asset by going long a forward contract and a risk-free zero-coupon bond whose face value is equal to the asset's forward price. Since it costs nothing to enter a forward contract, the value of the combination at time zero is the zero-coupon bond's present value.\nThe expression for the synthetic asset position is substituted for S in the put-call parity equation to obtain the put-call-forward parity equation.\nIn this scenario, to calculate the put option's premium, substitute as follows:\np0 + 45 / (1 + 0.03) = 2 + 50 / (1 + 0.03)\np0 + 43.6893 = 2 + 48.5437\np0 = 50.5437 − 43.6893\np0 = 6.8544, or approximately $6.85.",
+    "evidence": "Stored explanation_en breaks off at 'In this scenario, to calculate the put option's premium, substitute as follows:' and then jumps straight to the LOS line, never stating the derivation or the final $6.85 answer. PNG of PDF page 15 (8.09, page_idx 14) shows the full substitution (p0 + 45/1.03 = 2 + 50/1.03; p0 = 6.8544). Replaced with the complete, sourced derivation."
+  },
+  {
+    "id": "bffe0573-7219-404f-9a09-fd690cfd9910",
+    "verdict": "formatting_missing",
+    "field": "question_en",
+    "new_value": "The following data apply to put and call options on the same asset, with the same expiry one year from today and strike price:\n\n| Item | Value |\n|---|---|\n| Price of call option | €2.27 |\n| Price of put option | €5.12 |\n| Strike price | €71.00 |\n| Risk-free rate | 2.9% |\n\nAccording to put-call-forward parity, the forward price (in €) of the underlying asset is closest to:",
+    "evidence": "PDF page 7 (8.09, page_idx 6) / PNG confirms exact data table. Correct_answer B matches checkmark."
+  },
+  {
+    "id": "bffe0573-7219-404f-9a09-fd690cfd9910",
+    "verdict": "explanation_wrong",
+    "field": "explanation_en",
+    "new_value": "Put-call-forward parity can be derived from put-call parity: a protective put and fiduciary call constructed with options on the same asset, with the same strike price and expiry, have the same payoff; therefore, their values are equivalent at any time prior to the options' expiration.\nAn investor can create the synthetic equivalent of an underlying asset by going long a forward contract and a risk-free zero-coupon bond whose face value is equal to the forward price of the asset. This \"synthetic\" underlying asset can be used in place of the actual underlying asset to replicate the protective put. Since it costs nothing to enter a forward contract, the value of the combination of forward contract and zero-coupon bond at Time 0 equals the present value of the zero-coupon bond.\nThe expression for the synthetic asset is substituted for S in the put-call parity equation to obtain the put-call-forward parity equation.\nSubstitute to determine the value of the forward contract:\n5.12 + F0(T) / (1 + 0.029) = 2.27 + 71 / (1 + 0.029)\nF0(T) = [2.27 + 71/(1.029) − 5.12] × (1.029)\nF0(T) = 68.07",
+    "evidence": "Stored explanation_en breaks off at 'Substitute to determine the value of the forward contract:' without ever stating the resulting forward price (68.07, matching the checkmarked answer B). PNG of PDF page 7 (8.09, page_idx 6) shows the full substitution and result F0(T) = 68.07. Replaced with the complete, sourced derivation."
+  },
+  {
+    "id": "ac871ba4-90a5-484d-8b78-db837235148e",
+    "verdict": "formatting_missing",
+    "field": "question_en",
+    "new_value": "The seed investor of a three-year-old hedge fund that invests in high-yield private placements requests a redemption of £20 million. Fund details are listed below:\n\n| Item | Value |\n|---|---|\n| Fund assets | £50 million |\n| High-water mark | £51 million |\n| Fee structure | 2% and 20% |\n| Redemption notice period | 2 weeks |\n| Lockup period | 1 year |\n| Hurdle rate | 2% |\n| Average annual returns since inception | 1.5% |\n| Number of positions | 20 |\n\nWhich of the following is the most likely outcome?",
+    "evidence": "PDF page 3 (9.02, page_idx 2) shows a fund-details table before the question; question_en omitted it. Correct_answer A matches checkmark."
+  },
+  {
+    "id": "ac871ba4-90a5-484d-8b78-db837235148e",
+    "verdict": "explanation_wrong",
+    "field": "explanation_en",
+    "new_value": "Effect of redemptions on hedge funds: poor performance often results in redemptions; a drawdown below the high-water mark is often a catalyst for redemptions; large redemptions often cause forced selling, leading to further losses; redemption notice periods help insulate a hedge fund from withdrawals; lockup periods commit investors to a minimum investment period.\nThe redemption is most likely catastrophic for this hedge fund for the following reasons:\nThe redemption (£20 million) represents 40% of assets, making it difficult for the fund to continue executing its strategy.\nThe fund has performed poorly, on average not even hitting its hurdle rate, and assets under management are currently valued below the high-water mark.\nLike other areas of asset management, fees have decreased, even for the hedge fund industry. The 2-and-20 structure, common in the past, is now considered high for all but the most successful firms.\nThe two-week redemption notice period is not long enough to result in an orderly disposition of assets since the fund is concentrated (only 20 positions) in illiquid assets (high-yield private placements) (Choice B).\nThis relatively large redemption will create a negative feedback loop: the fund will be forced to sell assets, most likely creating losses and poor performance that will result in more redemptions, more asset sales, even poorer performance, and eventual liquidation.\n(Choice C) As the seed (ie, initial) investor, this investor has been with the fund since its inception three years ago and is no longer restricted by the lockup period.",
+    "evidence": "Stored explanation_en is entirely about IRR vs MOIC as performance measures for private equity/real estate ('IRR is the primary measure used to assess investments with variable cash flows... MOIC...') and never mentions redemptions, lockups, or this fund's numbers at all - a different question's explanation. PDF page 3 (9.02, page_idx 2) text is specific to this exact redemption scenario and correctly explains why the answer is A. Replaced with the verbatim source explanation."
+  },
+  {
+    "id": "57c8e6b9-ab2e-44ef-b565-30fc1e6505b8",
+    "verdict": "formatting_missing",
+    "field": "question_en",
+    "new_value": "At the end of 20X4, a hedge fund had $25 million in assets under management (AUM). The fund has the following fee structure, high-water mark, and 20X5 results:\n\n| Selected Data | Value |\n|---|---|\n| Management fee (average assets) | 1% |\n| Incentive fee (net of management fee) | 10% |\n| Soft hurdle rate | 6% |\n| High-water mark (millions) | $27 |\n| Year-end fund assets 20X5 (millions) | $30 |\n\nAssuming no inflows or outflows, the incentive fee (in $) earned by this hedge fund for 20X5 is closest to:",
+    "evidence": "PDF page 7 (9.02, page_idx 6) shows a 'Selected Data' table before the question; question_en omitted it. Correct_answer B matches checkmark."
+  },
+  {
+    "id": "57c8e6b9-ab2e-44ef-b565-30fc1e6505b8",
+    "verdict": "explanation_wrong",
+    "field": "explanation_en",
+    "new_value": "Hedge funds charge a management fee and an incentive fee. The management fee is calculated as a percentage of the total value of the fund's assets under management (AUM). It is assessed each year regardless of profitability.\nThe incentive fee is levied against the fund's annual gains, subject to certain conditions. It is calculated either gross or net of the management fee. The net calculation subtracts the management fee from AUM to arrive at an adjusted AUM that is used to calculate the fund's profits.\nThe high-water mark represents the value of AUM, net of fees, at any time during the fund's existence. To earn an incentive fee, the fund must exceed the high-water mark, the base from which the fee is calculated.\nThe hurdle rate is the minimum profit that the fund must earn (usually annually) before it receives an incentive fee. The hurdle rate can either be \"soft,\" meaning that the incentive fee is calculated based on the entire profit, or \"hard,\" meaning that the incentive fee is based on only the excess profit above the hurdle rate.\nIn this scenario, the fund generated net returns in 20X5 of 18.9% ( = (29.725 – 25) / 25 ), above the soft hurdle rate of 6%, and eclipsed the high-water mark of $27 million. Therefore, the fund earned an incentive fee of 10% of profits, net of the management fee on average assets of $27,500,000:\n0.10 × (29,725,000 − 27,000,000) = $272,500.",
+    "evidence": "Stored explanation_en is entirely about asset valuation methods (internal modeling for illiquid/distressed debt vs observable prices for macro/fundamental strategies) and never mentions incentive fees, hurdle rates, or this fund's numbers - a different question's explanation. PDF page 7 (9.02, page_idx 6) text is specific to this exact fee calculation and derives the checkmarked answer $272,500. Replaced with the verbatim source explanation."
+  },
+  {
+    "id": "df6e9a84-0903-40a1-aa63-0962a2ed73e6",
+    "verdict": "formatting_missing",
+    "field": "question_en",
+    "new_value": "An endowment invested €10 million into a hedge fund on January 1 of Year 1 and neither added nor withdrew funds since then. Information concerning the fund is shown as of the beginning of Year 5:\n\n| Item | Value |\n|---|---|\n| Assets under management (AUM), beginning of year | €200 million |\n| Management fee | 3% of year-end AUM |\n| Incentive fee | 20% of annual profits |\n| Incentive fee calculation | Independent of management fee |\n| Previous high-water mark | €250 million |\n| Fund's return for the year | 15% |\n\nThe incentive fee is independent of the management fee and is subject to the high-water mark. If the fees are based on year-end AUM, then the endowment's return for the year is closest to:",
+    "evidence": "PDF page 8 (9.02, page_idx 7) / PNG confirms exact data table. Correct_answer B matches checkmark."
+  },
+  {
+    "id": "df6e9a84-0903-40a1-aa63-0962a2ed73e6",
+    "verdict": "explanation_wrong",
+    "field": "explanation_en",
+    "new_value": "A hedge fund investor's return is calculated after the hedge fund deducts its fees. Hedge funds typically impose both a management fee and an incentive fee. The management fee is calculated as a percentage of the total value of the fund's assets (ie, assets under management, or AUM). It is assessed at the end of each year regardless of profitability. The fund's management fee is €230 million × 3%, or €6.9 million.\nThe incentive fee is calculated as a percentage of profits. It can be calculated either after deducting the management fee (net) or before doing so (gross). Also, the incentive fee may be contingent on profits being greater than the hurdle rate and/or AUM being higher than the high-water mark.\nThis fund has no hurdle rate, but its incentive fee is subject to a high-water mark. In this scenario, the high-water mark of €250 million means that ending AUM must exceed that amount before it can earn an incentive fee from the endowment. With ending AUM of only €230 million, the fund receives no incentive fee.\nThe endowment's return for the year is calculated as follows (AUM and profits in € millions): adjust AUM after fee deduction (€230 − 6.9 = €223.1), find the fund's profit after fees (€223.1 − 200 = €23.1), then calculate the endowment's percent return net of fees (€23.1 / €200 = 11.6%).",
+    "evidence": "Stored explanation_en is entirely about custom hedge-fund fee arrangements (founders' shares, either/or fees, liquidity-based fee discounts) and never mentions this endowment's AUM, management fee, or high-water mark calculation - a different question's explanation. PNG of PDF page 8 (9.02, page_idx 7) shows the full worked calculation (management fee €6.9m, adjusted AUM €223.1m, profit €23.1m, return 11.6%) matching the checkmarked answer B. Replaced with the complete, sourced explanation."
+  },
+  {
+    "id": "6af9c6ad-c0eb-4b21-a15f-c6e9df499124",
+    "verdict": "ok",
+    "evidence": "Question_en already contains the correct markdown limit-order-book table (verified against PNG of PDF page 39, 6.01 page_idx 38); correct_answer C matches checkmark; explanation_en matches source verbatim; options clean."
+  },
+  {
+    "id": "de974a62-0501-42ff-ac8d-24d48273e07b",
+    "verdict": "ok",
+    "evidence": "Question_en already contains the correct markdown data table (Stock price 48/Strike 50/Premium 4), verified against PNG of PDF page 9 (8.08 page_idx 8); correct_answer A matches checkmark; explanation_en matches source verbatim; options clean."
+  },
+  {
+    "id": "60aedd73-90de-4fee-81a4-31b035604952",
+    "verdict": "ok",
+    "evidence": "Question_en already contains the correct markdown mortgage-collateral table, verified against PNG of PDF page 2 (7.19 page_idx 1); correct_answer B matches checkmark; explanation_en matches source verbatim; options clean."
+  }
+]

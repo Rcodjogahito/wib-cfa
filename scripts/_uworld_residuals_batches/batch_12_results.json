@@ -1,0 +1,199 @@
+[
+ {
+  "id": "5b809aaf-79a0-4d2f-bb7a-af8fb0f90251",
+  "verdict": "option_bleed",
+  "field": "option_c",
+  "new_value": "self-disclose the incident on the annual Professional Conduct Statement only if the firm finds wrongdoing.",
+  "evidence": "PDF page (11.02 Code Of Ethics, page 6) shows option C reads in full: 'self-disclose the incident on the annual Professional Conduct Statement only if the firm finds wrongdoing.' DB value was truncated mid-sentence, cutting off 'wrongdoing.' Question, correct_answer (A), and explanation_en all otherwise match the page verbatim."
+ },
+ {
+  "id": "0138468d-1e39-4d59-acf6-6d3ed7ff11bb",
+  "verdict": "stem_wrong",
+  "field": "question_en",
+  "new_value": "An analyst gathers the following information:\n\n| | Portfolio | Market |\n|---|---|---|\n| Expected return | 10.4% | 8% |\n| Beta | 1.4 | 1.0 |\n| Standard deviation | 15% | 12% |\n\nIf the risk-free rate is 2%, the portfolio's Sharpe ratio is closest to:",
+  "evidence": "The real matching question (options 0.06/0.56/0.70, answer B) is on page 25 of '3.02 Portfolio Risk And Return Part II - Answers.pdf' and has only ONE data table (Portfolio/Market: expected return, beta, standard deviation). DB's 'First Table' (Market return 10%, T-bill 4%, SD 22.9%, Fund return 16%, Beta 1.15) is actually the data for an unrelated Treynor-ratio question on page 22 of the same PDF; DB's 'Second Table' (Fund X/Y/Z data) belongs to yet another unrelated question on page 14. Both were fabricated into this stem."
+ },
+ {
+  "id": "0138468d-1e39-4d59-acf6-6d3ed7ff11bb",
+  "verdict": "explanation_wrong",
+  "field": "explanation_en",
+  "new_value": "The Sharpe ratio is one method used to evaluate the performance of an asset or portfolio relative to its risk. It measures an investment's return in excess of the risk-free rate, then scales that return by the amount of risk the investor assumed to achieve the return. An investment with a greater Sharpe ratio indicates that the investment produced greater excess return for its risk.\nThe Sharpe ratio uses total risk, as measured by standard deviation, as its risk metric. Asset risk refers to either the asset's systematic risk or its total risk, which is the sum of its systematic risk and unsystematic (ie, diversifiable) risk.\nIn this scenario, the portfolio's Sharpe ratio is calculated as:\n(Choice A) 0.06 is the portfolio's Treynor ratio. This ratio represents the portfolio's excess return relative to its systematic risk, as measured by beta.\n(Choice C) 0.70 is the ratio of the portfolio's excess return to the market's, not the portfolio's, standard deviation.",
+  "evidence": "Verified verbatim on page 25 of '3.02 Portfolio Risk And Return Part II - Answers.pdf'. The original DB explanation discussed the Treynor ratio and an unrelated 'Portfolio 1 has the highest systematic risk, with a beta of 1.50' statement that does not correspond to this question's data at all (bled from a different item)."
+ },
+ {
+  "id": "565dbae6-01d8-470d-be05-ea7c3d517d4a",
+  "verdict": "explanation_wrong",
+  "field": "explanation_en",
+  "new_value": "The price value of a basis point (PVBP), a measure of yield duration, is an estimate of how much a bond's price changes given a change of 1 basis point in its yield-to-maturity. A basis point is 1/100th of a percentage point, or 0.0001. The PVBP of a bond is also called the bond's PV01 or DV01, meaning \"price value\" or \"dollar value\" of a 1-basis-point change.\nIn this scenario, Bond Z's YTM (6.2%), annual coupon (5%), and time-to-maturity (11 years) are given. A 1-basis-point increase in Bond Z's YTM results in a new YTM of 6.21%, and a 1-basis-point decrease results in a new YTM of 6.19%. PV− and PV+ are calculated for Bond Z as follows:\nPV− = 5/(1+0.0619)^1 + 5/(1+0.0619)^2 + ... + (5+100)/(1+0.0619)^11 = 90.7052\nPV+ = 5/(1+0.0621)^1 + 5/(1+0.0621)^2 + ... + (5+100)/(1+0.0621)^11 = 90.5585\nPVBP = (90.7052 − 90.5585)/2 = 0.0733\nFor Bond Y, PV− and PV+ are given. Substitute to calculate Bond Y's PVBP:\nPVBP = (87.25 − 87.15)/2 = $0.05\n\n| | Bond X | Bond Y | Bond Z |\n|---|---|---|---|\n| PVBP (USD) | 0.04 | 0.05 | 0.07 |\n\nTherefore, Bond Z has the greatest yield duration based on its price value of a basis point compared to Bond X and Bond Y (Choices A and B).",
+  "evidence": "DB explanation stopped mid-derivation at 'PV+ and PV- are calculated for Bond Z as follows:'. The explanation genuinely continues onto the next PDF page (page index 2 of '7.11 Yield-Based Bond Duration Measures and Properties - Answers.pdf'), which supplies the numeric PV calculations, the PVBP summary table, and the concluding sentence. Question, options, and correct_answer (C) were already accurate."
+ },
+ {
+  "id": "e7b5b9ab-ae62-4ea0-9083-391c02487e01",
+  "verdict": "ok",
+  "evidence": "PNG/PDF page (5.09 Analysis of Income Taxes, page 19) matches question table, options, correct_answer (C), and full explanation_en verbatim, including the source PDF's own '23,790' vs '23,970' inconsistency in the ratio row, which is an error present in the original UWorld material itself, not an extraction artifact."
+ },
+ {
+  "id": "93f2290c-f110-4518-8bde-f0f3e041f12c",
+  "verdict": "ok",
+  "evidence": "PNG matches question, options, correct_answer (C), and explanation_en verbatim (probability tree / total probability rule question)."
+ },
+ {
+  "id": "61cf6d82-1953-4e28-935a-f68c01663da1",
+  "verdict": "ok",
+  "evidence": "PNG matches question table, options, correct_answer (B), and explanation_en verbatim (net profit margin question)."
+ },
+ {
+  "id": "1a7dddf0-3ed3-4dce-9a68-4414db48f500",
+  "verdict": "ok",
+  "evidence": "PNG matches question, options, correct_answer (B), and explanation_en verbatim (MAD question). Minor stray leading period in question_en is cosmetic only, not fabricated content."
+ },
+ {
+  "id": "0c8f87b8-bf34-43c9-aa0c-25f17643a4bc",
+  "verdict": "ok",
+  "evidence": "PNG matches question table, options, correct_answer (A), and explanation_en content (time horizon question). The 'Investment constraints' table portion of the explanation reads in an unusual (jumbled) column order due to PDF text-extraction order, but no facts are incorrect or bled from another question."
+ },
+ {
+  "id": "d9055f89-9b7e-42d9-a628-54a666c912d3",
+  "verdict": "ok",
+  "evidence": "PNG matches question, options, correct_answer (B), and explanation_en verbatim (Macaulay duration question)."
+ },
+ {
+  "id": "2aca9da5-65bc-41c4-93cb-4e2c27b386a9",
+  "verdict": "ok",
+  "evidence": "Located on page 4 of '5.03 Analyzing Balance Sheets - Answers.pdf' (page_idx hint of 18 was wrong, but content matches this PDF at a different page). Question table, options, correct_answer (C), and explanation_en all match verbatim."
+ },
+ {
+  "id": "c91f9139-5b26-4d4a-b73f-4128ee167966",
+  "verdict": "stem_wrong",
+  "field": "question_en",
+  "new_value": "A portfolio manager gathers the following data:\n\n| (KRW millions) | |\n|---|---|\n| Cash | 15,000 |\n| Accounts receivable | 25,000 |\n| Inventory | 17,000 |\n| Accounts payable | 35,000 |\n| Interest payable | 74,000 |\n| Bonds payable | 135,000 |\n| Noncurrent deferred revenue | 35,000 |\n| Common stock | 157,000 |\n| Retained earnings | 200,000 |\n\nIf the company has no other long-term debts, its long-term debt-to-equity ratio is closest to:",
+  "evidence": "PDF page (5.03 Analyzing Balance Sheets, page 9) shows only ONE data table (KRW millions). DB's 'Second Table' (20X8, € thousands: Assets 5,000, Short-term debt 500, Long-term debt 2,000, Deferred tax liabilities 300, Deferred revenue 100, Accounts payable 100) does not appear anywhere on this page and is fabricated/bled from an unrelated question."
+ },
+ {
+  "id": "c91f9139-5b26-4d4a-b73f-4128ee167966",
+  "verdict": "option_bleed",
+  "field": "option_c",
+  "new_value": "0.68",
+  "evidence": "Page shows option C = '0.68' (DB had '1.08'). This is also internally confirmed by the DB's own explanation_en text: '(Choice C) 0.68 results from incorrectly including interest payable as part of long-term debt,' which contradicts the stored option_c value of 1.08."
+ },
+ {
+  "id": "35402487-a444-4d96-8af7-751b1940647d",
+  "verdict": "ok",
+  "evidence": "PNG matches question table, options, correct_answer (C), and explanation_en verbatim (common-size balance sheet trend question)."
+ },
+ {
+  "id": "e73b325d-144b-40df-8f30-86cb68e6340e",
+  "verdict": "stem_wrong",
+  "field": "question_en",
+  "new_value": "An analyst calculates the following data:\n\n| | Company A | Company B | Company C |\n|---|---|---|---|\n| Net profit margin | 0.05 | 0.08 | 0.15 |\n| Total asset turnover | 1.6 | 2.0 | 0.9 |\n| Leverage | 2.5 | 1.5 | 2.0 |\n\nWhich of the three companies most likely has the highest return on equity?",
+  "evidence": "Located on page 0 of '5.11 Financial Analysis Techniques - Answers.pdf', which has only ONE data table (Company A/B/C: net profit margin, total asset turnover, leverage) matching options, correct_answer (C), and explanation_en verbatim. DB's 'Second Table' (20X5-20X7 average assets/liabilities/revenues data) and 'Third Table' (Assets 500, Common stock 280, etc.) belong to unrelated questions elsewhere and were fabricated into this stem."
+ },
+ {
+  "id": "04a9f6de-de07-4e58-be74-e69d0c532e51",
+  "verdict": "ok",
+  "evidence": "PNG matches question table, options, correct_answer (C), and explanation_en verbatim (price-to-book ratio question)."
+ },
+ {
+  "id": "4d5d2af2-20dc-4e4e-b343-4fdc69b828a3",
+  "verdict": "explanation_wrong",
+  "field": "explanation_en",
+  "new_value": "Solvency ratios convey a company's ability to meet its long-term debt obligations. There are two types of solvency ratios:\nDebt ratios measure a company's debt levels relative to its assets or equity. Declining debt ratios indicate that less asset value is financed by debt and, therefore, there is less financial risk and stronger solvency.\nCoverage ratios measure a company's ability to pay its required interest payments, based on income and expenses. Rising coverage ratios mean the company's solvency is stronger since it has relatively more earnings available to pay interest.\nIn this scenario, the focus is on calculating the interest coverage ratio, defined as EBIT divided by interest payments. Interest payments and taxes are added back to net income to arrive at EBIT.\nApplying the interest coverage ratio, the company has interest payments covered 4.75 times by EBIT. Put another way, EBIT is 4.75 times larger than the company's interest obligations.",
+  "evidence": "DB's explanation_en had the page footer/LOS line 'Calculate and interpret activity, liquidity, solvency, and profitability ratios' appended directly onto the end of the explanation text with no separation; this is the page's learning-objective footer, not explanation content, and has been removed. Rest of the explanation matches the page verbatim; question, options, and correct_answer (C) were already accurate."
+ },
+ {
+  "id": "01429d8c-de85-44ca-9e1c-3c733f7dc960",
+  "verdict": "ok",
+  "evidence": "Located on page 34 of '5.11 Financial Analysis Techniques - Answers.pdf' (page_idx hint of 32 was wrong, but content matches this PDF at a nearby page). Question table, options, correct_answer (A), and explanation_en all match verbatim (defensive interval ratio question)."
+ },
+ {
+  "id": "fa1babd8-e216-47a2-b1dc-49989de8eb5d",
+  "verdict": "formatting_missing",
+  "field": "question_en",
+  "new_value": "An analyst has gathered the following information about a company's stock:\n\n| Selected Data | |\n|---|---|\n| Long-term constant growth rate | 5% |\n| Earnings retention ratio | 60% |\n| Required rate of return | 9% |\n| Weighted average cost of capital | 6% |\n| Next year's projected earnings | SGD 2 |\n\nAccording to the Gordon growth model, the company's justified price-to-earnings ratio implies its stock's value is closest to:",
+  "evidence": "PDF page (6.08 Equity Valuation Concepts, page 9) shows a 'Selected Data' table that was missing from question_en."
+ },
+ {
+  "id": "fa1babd8-e216-47a2-b1dc-49989de8eb5d",
+  "verdict": "correct_answer_wrong",
+  "field": "correct_answer",
+  "new_value": "B",
+  "evidence": "Checkmark on the page is next to option B (SGD 20), confirmed by the calculation P0 = 0.40/(0.09-0.05) = SGD 20 shown on the page. DB had stored 'A'."
+ },
+ {
+  "id": "fa1babd8-e216-47a2-b1dc-49989de8eb5d",
+  "verdict": "explanation_wrong",
+  "field": "explanation_en",
+  "new_value": "The price-to-earnings (P/E) ratio is used mainly in three different forms: trailing P/E, forward P/E ratio (prospective or leading P/E), and justified forward P/E ratio. Trailing P/E uses past earnings, whereas forward P/E is based on future earnings. If the forward earnings estimate is based on some predictive model involving company fundamentals or cash flows, the ratio is referred to as justified forward P/E.\nIn this scenario, first calculate the dividend payout ratio p = (1 − earnings retention ratio) = (1 − 0.60) = 0.40. Substitute next year's earnings (E1), dividend payout ratio (p), required rate of return (r), and the long-term growth rate (g), into the formula for the forward justified P/E ratio to calculate the current value of the stock implied by the justified forward P/E:\nP0/E1 = p/(r-g)\nP0/2 = 0.40/(0.09-0.05)\nP0 = SGD 20\nThe derivation of the justified forward P/E ratio from the Gordon growth model includes the assumption that the stock's price is assumed to be equal to its value in this model. The weighted average cost of capital is not used in this calculation.\n(Choice A) SGD 10 is incorrect. The forward justified P/E ratio of the stock is 10, and its price is SGD 20.\n(Choice C) SGD 30 results from using the earnings retention ratio instead of the dividend payout ratio in the numerator.",
+  "evidence": "DB's stored explanation discussed generic asset-based vs present-value valuation models with no reference to the Gordon growth model P/E calculation in this question at all (bled from a different item). Verified replacement text matches the page verbatim."
+ },
+ {
+  "id": "f1385d93-3b68-4d49-85d8-90ff201f733c",
+  "verdict": "formatting_missing",
+  "field": "question_en",
+  "new_value": "An analyst gathers the following information about the common stock of a mature company for which dividend growth is expected to be constant for an indefinite period.\n\n| Selected Data | |\n|---|---|\n| Current market price | €48.53 |\n| Last dividend paid | €1.65 |\n| Required rate of return | 6.5% |\n| Long-term dividend growth rate | 3.1% |\n| Long-term economic growth rate | 2.9% |\n\nBased on this information, the stock is most likely:",
+  "evidence": "PDF page (6.08 Equity Valuation Concepts, page 19) shows a 'Selected Data' table that was missing from question_en."
+ },
+ {
+  "id": "f1385d93-3b68-4d49-85d8-90ff201f733c",
+  "verdict": "correct_answer_wrong",
+  "field": "correct_answer",
+  "new_value": "A",
+  "evidence": "Checkmark on the page is next to option A (undervalued), confirmed by the Gordon growth model calculation V0 = 1.65(1.031)/(0.065-0.031) = 50.03, which exceeds the €48.53 market price. DB had stored 'B'."
+ },
+ {
+  "id": "f1385d93-3b68-4d49-85d8-90ff201f733c",
+  "verdict": "explanation_wrong",
+  "field": "explanation_en",
+  "new_value": "The Gordon growth model (GGM) is commonly used to estimate the intrinsic value of a stock. Dividend discount models, such as the GGM, are present value models that use future dividends as a stock's future cash flows to determine its value.\nThe GGM assumes the company has steady growth, resulting in a constant dividend growth rate (g). The GGM states that the stock's intrinsic value is equal to the next dividend divided by the difference between the required rate of return and the company's long-term dividend growth rate.\nIn this scenario, the stock's intrinsic value is determined by substituting the given values:\nV0 = D1/(r-g) = D0(1+g)/(r-g) = 1.65(1+0.031)/(0.065-0.031)\nV0 = 50.03\nSince the stock's intrinsic value is greater than its market price, the stock is undervalued by the market.\n(Choice B) The stock would be seen as fairly valued if the last dividend was incorrectly used as the model's numerator instead of the next dividend. In that case, the stock's intrinsic value would be €48.53, which is equal to the market price.\n(Choice C) The stock would be seen as overvalued if the long-term economic growth rate was incorrectly used as the growth rate (g) in the model instead of the company's long-term dividend growth rate. In that case, the intrinsic value would be €47.16, which is less than the market price.",
+  "evidence": "DB's stored explanation discussed generic present-value model time-horizon concepts with no reference to this question's Gordon growth model calculation, market price, or valuation conclusion (bled from a different item). Verified replacement text matches the page verbatim."
+ },
+ {
+  "id": "a074104e-e223-4b8b-84ba-5f9a11730df5",
+  "verdict": "formatting_missing",
+  "field": "question_en",
+  "new_value": "An analyst collects the following information on a portfolio's performance over the past year:\n\n| | Mean annual return | Standard deviation | Beta |\n|---|---|---|---|\n| Portfolio | 5.5% | 15.0% | 0.8 |\n| Market | 7.0% | 20.0% | |\n| Risk-free rate | 1.5% | | |\n\nThe Jensen's alpha of the portfolio is closest to:",
+  "evidence": "PDF page (3.02 Portfolio Risk And Return Part II, page 39) shows a 'Selected portfolio and market data' table that was missing from question_en."
+ },
+ {
+  "id": "a074104e-e223-4b8b-84ba-5f9a11730df5",
+  "verdict": "correct_answer_wrong",
+  "field": "correct_answer",
+  "new_value": "A",
+  "evidence": "Checkmark on the page is next to option A (-0.40), confirmed by the calculation Jensen's alpha = 5.5 - [1.5 + 0.8(7.0-1.5)] = -0.40. DB had stored 'B'."
+ },
+ {
+  "id": "a074104e-e223-4b8b-84ba-5f9a11730df5",
+  "verdict": "explanation_wrong",
+  "field": "explanation_en",
+  "new_value": "Jensen's alpha is a risk-adjusted return that measures the difference between a portfolio's actual return and its expected return as predicted using the capital asset pricing model, or CAPM. Since the CAPM estimates expected return based on systematic risk as measured by beta, Jensen's alpha is a measure of excess systematic risk-adjusted return.\nJensen's alpha is appropriate both for evaluating stand-alone portfolio performance and for ranking portfolios. For example, if Jensen's alpha is positive, the portfolio performed better than expected. When portfolios are ranked, the portfolio with the highest Jensen's alpha has outperformed its peers on a risk-adjusted basis.\nFor this question, Jensen's alpha is calculated as follows:\nJensen's alpha = 5.5 − [1.5 + 0.8(7.0 − 1.5)] = 5.5 − 5.9 = −0.40\nSince the portfolio produced negative alpha, its actual return was less than its expected return as predicted by the CAPM.\n(Choice B) 0.27 represents the portfolio's Sharpe ratio, which measures excess return per unit of total risk, or standard deviation, not systematic risk, or beta.\n(Choice C) 1.10 incorrectly subtracts the portfolio's expected return from the market return, not from the portfolio's actual return.",
+  "evidence": "DB's stored explanation discussed the theoretical market portfolio (efficient frontier, risk-free asset) with no reference to Jensen's alpha or this question's data at all (bled from a different item). Verified replacement text matches the page verbatim."
+ },
+ {
+  "id": "25818e19-7854-4b13-b7d8-45403f528e20",
+  "verdict": "stem_wrong",
+  "field": "question_en",
+  "new_value": "A company reports the following information:\n\n| Cash flow item | KRW millions |\n|---|---|\n| Net income | 660 |\n| Depreciation and amortization expense | −260 |\n| Interest expense | −40 |\n| Working capital expenditures | −120 |\n| Capital expenditures | −200 |\n| Proceeds from long-term debt | 535 |\n| Repayments of long-term debt | −500 |\n\nIf the company has a 25% tax rate, which of the following cash flow measures is greatest?",
+  "evidence": "Located on page 1 of '5.05 Analyzing Statements of Cash Flows II - Answers.pdf'. DB's stored table (SGD millions, Prior Year/Current Year format with Net income 200/215, Net working capital 44/53, Long-term debt 300/295, Capital expenditures 40/30) does not match the source page at all; the actual table is a single-period KRW cash-flow-item list whose figures (660, -260, -40, -120, -200, 535, -500) are exactly what the explanation's FCF/FCFE/FCFF calculations use (600, 635, 630)."
+ },
+ {
+  "id": "25818e19-7854-4b13-b7d8-45403f528e20",
+  "verdict": "correct_answer_wrong",
+  "field": "correct_answer",
+  "new_value": "B",
+  "evidence": "Checkmark on the page is next to option B (Free cash flow to equity), consistent with the explanation's own conclusion: 'the largest measure of FCF is the company's FCFE ... (Choices A and C)' [being excluded]. DB had stored 'A'."
+ },
+ {
+  "id": "cada5032-7b1d-499d-87d2-2c600d7574e4",
+  "verdict": "formatting_missing",
+  "field": "question_en",
+  "new_value": "Information for a company is shown below:\n\n| Pretax cost of debt | 8% |\n|---|---|\n| Cost of equity | 12% |\n| Debt-to-equity ratio | 0.6 |\n| Corporate tax rate | 30% |\n\nThe company's weighted average cost of capital (WACC) is closest to:",
+  "evidence": "Located on page 27 of '4.06 Capital Structure - Answers.pdf', which shows this data table (missing from question_en). Options (8.2%/9.6%/10.5%) and correct_answer (B) were already accurate."
+ },
+ {
+  "id": "cada5032-7b1d-499d-87d2-2c600d7574e4",
+  "verdict": "explanation_wrong",
+  "field": "explanation_en",
+  "new_value": "WACC is a company's overall cost of capital. It combines the proportion of each component in the overall capital structure (ie, the \"weight\") with the component's cost. The debt-to-equity (D/E) ratio can be used to find the weight of each component. In this question, the D/E ratio is 0.6, which means that there are 0.6 units of debt for each unit of equity. The proportion of debt in the capital structure is obtained by dividing the value of debt by the sum of the values of debt plus equity:\nweight_debt = D/(D+E) = 0.6/(0.6+1.0) = 0.375\nSince the total of debt and equity forms 100% of a company's capital structure, the weight of equity is 1 − Proportion of debt, or 1 − 0.375 = 0.625. The cost of each component is multiplied by its weight, and the total for each of those products is the company's WACC. The company can deduct the interest it pays on its debt to reduce its taxes so the after-tax cost of debt is used:\n0.375 × 0.08 × (1 − 0.30) = 0.021 (adjust the before-tax cost of debt to after-tax cost of debt)\n0.625 × 0.12 = 0.075 (calculate the weighted cost of equity)\n0.021 + 0.075 = 0.096 (sum the two components to find the weighted average cost of capital)\n(Choice A) 8.2% results from mistakenly treating the 0.6 D/E ratio as the weight of debt.\n(Choice C) 10.5% results from using the pretax cost of debt instead of the after-tax cost.",
+  "evidence": "DB's stored explanation was bled from a different, related question on the same topic (the one deriving pretax cost of debt given WACC = 8.0%, market value assets/equity data): it referenced 'market values, not book values' and 'the steps demonstrating how to derive the cost of debt' with no D/E-ratio-based calculation at all. Verified replacement text matches page 27 verbatim."
+ }
+]

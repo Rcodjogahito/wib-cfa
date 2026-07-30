@@ -1,0 +1,207 @@
+[
+ {
+  "id": "e10d2593-c679-4edc-8e40-7c61e3614e93",
+  "field": "question_en",
+  "verified": true
+ },
+ {
+  "id": "e10d2593-c679-4edc-8e40-7c61e3614e93",
+  "field": "explanation_en",
+  "verified": true
+ },
+ {
+  "id": "0c0d65ad-578b-4692-a614-cfa39ba9dbfa",
+  "field": "question_en",
+  "verified": true
+ },
+ {
+  "id": "0c0d65ad-578b-4692-a614-cfa39ba9dbfa",
+  "field": "explanation_en",
+  "verified": true
+ },
+ {
+  "id": "eee1dcbb-26db-4557-abcb-f412978b7cae",
+  "field": "question_en",
+  "verified": true
+ },
+ {
+  "id": "eee1dcbb-26db-4557-abcb-f412978b7cae",
+  "field": "explanation_en",
+  "verified": true
+ },
+ {
+  "id": "20227741-edf0-4ff3-b57d-d125042c771f",
+  "field": "option_c",
+  "verified": true
+ },
+ {
+  "id": "20227741-edf0-4ff3-b57d-d125042c771f",
+  "field": "explanation_en",
+  "verified": true
+ },
+ {
+  "id": "5e51738d-ce12-4172-a657-ad93c78f6ba1",
+  "field": "option_c",
+  "verified": true
+ },
+ {
+  "id": "5e51738d-ce12-4172-a657-ad93c78f6ba1",
+  "field": "explanation_en",
+  "verified": true
+ },
+ {
+  "id": "2cf3eae7-ef5b-44cb-9896-94ac963e1359",
+  "field": "explanation_en",
+  "verified": true
+ },
+ {
+  "id": "d2c43663-8c2d-43dc-8ba8-4e9d7df5e684",
+  "field": "option_c",
+  "verified": true
+ },
+ {
+  "id": "d2c43663-8c2d-43dc-8ba8-4e9d7df5e684",
+  "field": "explanation_en",
+  "verified": true
+ },
+ {
+  "id": "daf4d0dd-823b-4537-9b82-ba1a983b2405",
+  "field": "question_en",
+  "verified": true
+ },
+ {
+  "id": "daf4d0dd-823b-4537-9b82-ba1a983b2405",
+  "field": "explanation_en",
+  "verified": true
+ },
+ {
+  "id": "fa53297d-c687-4966-9086-b87dbce03be2",
+  "field": "option_c",
+  "verified": true
+ },
+ {
+  "id": "fa53297d-c687-4966-9086-b87dbce03be2",
+  "field": "explanation_en",
+  "verified": true
+ },
+ {
+  "id": "b857de5a-3997-44ff-9ec7-2bde2542ca70",
+  "field": "option_c",
+  "verified": true
+ },
+ {
+  "id": "b857de5a-3997-44ff-9ec7-2bde2542ca70",
+  "field": "explanation_en",
+  "verified": true
+ },
+ {
+  "id": "0413fff5-2be7-407f-88e0-dba6dc2c9ed4",
+  "field": "option_c",
+  "verified": true
+ },
+ {
+  "id": "50861cd8-5d30-43e3-b13d-8cfbb18ae325",
+  "field": "question_en",
+  "verified": true
+ },
+ {
+  "id": "50861cd8-5d30-43e3-b13d-8cfbb18ae325",
+  "field": "explanation_en",
+  "verified": true
+ },
+ {
+  "id": "5c587146-0e8e-4452-becd-85c9f1a905c1",
+  "field": "option_c",
+  "verified": true
+ },
+ {
+  "id": "5c587146-0e8e-4452-becd-85c9f1a905c1",
+  "field": "explanation_en",
+  "verified": true
+ },
+ {
+  "id": "c85339ab-3cc5-48d1-ad78-afe422e5a2d4",
+  "field": "question_en",
+  "verified": true
+ },
+ {
+  "id": "c85339ab-3cc5-48d1-ad78-afe422e5a2d4",
+  "field": "explanation_en",
+  "verified": true
+ },
+ {
+  "id": "d1ef6350-7ff8-4bb5-940a-51b7cc81fd91",
+  "field": "explanation_en",
+  "verified": true
+ },
+ {
+  "id": "4e9f8364-1065-4a72-920b-d98236cb6b6c",
+  "field": "option_c",
+  "verified": true
+ },
+ {
+  "id": "4e9f8364-1065-4a72-920b-d98236cb6b6c",
+  "field": "explanation_en",
+  "verified": true
+ },
+ {
+  "id": "10911a37-bd7e-4d9b-a862-ed1c73515668",
+  "field": "option_c",
+  "verified": true
+ },
+ {
+  "id": "10911a37-bd7e-4d9b-a862-ed1c73515668",
+  "field": "explanation_en",
+  "verified": true
+ },
+ {
+  "id": "98d1e3e5-e991-4ac8-8d35-5642b138d01a",
+  "field": "option_c",
+  "verified": true
+ },
+ {
+  "id": "98d1e3e5-e991-4ac8-8d35-5642b138d01a",
+  "field": "explanation_en",
+  "verified": true
+ },
+ {
+  "id": "edf229ac-bdfb-4a55-abda-6284eeb1537d",
+  "field": "question_en",
+  "verified": true
+ },
+ {
+  "id": "edf229ac-bdfb-4a55-abda-6284eeb1537d",
+  "field": "option_c",
+  "verified": true
+ },
+ {
+  "id": "edf229ac-bdfb-4a55-abda-6284eeb1537d",
+  "field": "explanation_en",
+  "verified": true
+ },
+ {
+  "id": "b32bfeb3-3a88-49ac-a6b1-3be2cd772a49",
+  "field": "option_c",
+  "verified": true
+ },
+ {
+  "id": "b32bfeb3-3a88-49ac-a6b1-3be2cd772a49",
+  "field": "explanation_en",
+  "verified": true
+ },
+ {
+  "id": "0ef74f5f-5364-45bf-a69d-ab6a11941353",
+  "field": "option_c",
+  "verified": true
+ },
+ {
+  "id": "0ef74f5f-5364-45bf-a69d-ab6a11941353",
+  "field": "explanation_en",
+  "verified": true
+ },
+ {
+  "id": "68fb69d2-a5e7-486b-9f62-c29acf7a62e2",
+  "field": "option_c",
+  "verified": true
+ }
+]
