@@ -1,9 +1,67 @@
 # ETAT ACTUEL — WIB CFA
 > Mis à jour automatiquement à la fin de chaque session Claude Code.
 
-**Date**: 2026-07-30 (session 65, 2e partie — sweep field-bleed Kaplan Ethics CLOS : 180/180 candidats résolus, dont 10 vraies erreurs `correct_answer` découvertes en bonus)  
-**Commit**: `9786595`/`dd13ce3` — Extension du bug "field-bleed" (session 48) au-delà de l'échantillon de 173 : détection par signal structurel (stem sans ponctuation finale) → 180/635 candidats Kaplan Ethics. Décalage confirmé **purement mécanique et 100% réversible par script** (chaque champ DB = [lignes du vrai champ moins sa 1ère ligne] + [1ère ligne du champ suivant]) → **152/180 reconstruits par re-parsing déterministe des marqueurs "A)"/"B)"/"C)"** (PyMuPDF) et vérifiés par égalité de sac-de-mots, patchés sur Supabase. Les **28 résiduels** (non réductibles à un simple décalage même après recherche sur tout le PDF) confiés à un agent Sonnet 5 pour lecture visuelle directe : tous résolus (le vrai contenu était simplement sur la page suivante, pas une contamination croisée), et **10/28 se sont révélés être de vraies erreurs de lettre `correct_answer`** (pas juste du texte décalé), confirmées par les coches visuelles sur les pages sources et corroborées par l'explication déjà stockée. **Sweep field-bleed Kaplan Ethics désormais CLOS : 180/180.** Total `correct_answer` cumulé : 848→**858**.  
+**Date**: 2026-07-30 (session 67 — audit exhaustif et visuel de toute la banque : Extra_QB clos + UWorld par méthode déterministe découverte, 583 corrections)  
+**Commit**: `99cb447` — Voir détail complet ci-dessous. Total `correct_answer` cumulé toutes sessions (hors ce qui reste comptabilisé par la méthode déterministe Kaplan/UWorld, non encore agrégé dans ce compteur) : 858 + 5 (UWorld answer_diff) = **863** en lettres de réponse ; **583 questions distinctes corrigées cette session** toutes catégories confondues (contenu, formatage, explications).  
 **Branch**: master → Streamlit Cloud (auto-deploy) ✅ opérationnelle
+
+---
+
+## Session 67 — Audit exhaustif et visuel de toute la banque (2026-07-30)
+
+**Déclencheur** : demande explicite de l'utilisateur — "Vérifie bien que pour toute la banque de questions sur le site web, les questions sont correctes ; que la bonne réponse est bien celle dans le document initial, que l'explication est bien celle dans le document initial, et que pour les questions ayant des tableaux, schémas, figures, énumérations, le format initial est bien reproduit dans l'application également. Fais un audit exhaustif et visuel." Objectif annoncé : "fiabilisation maximale".
+
+**Dimensionnement initial** : sur les 6127 questions Kaplan/UWorld/Extra_QB/Kevin_Mock déjà localisées dans leur PDF source (session 47), seules 173 avaient eu un vrai contrôle visuel individuel (session 48) — 5954 n'avaient jamais été relues contre leur page source, seulement localisées par recouvrement de mots automatique. Côté CFA_WEB (1122, PDF scannés), 400/1122 sans aucune couverture.
+
+### Volet 1 — Sweep visuel Extra_QB (316 questions, 16 lots d'agents Sonnet 5)
+
+Extra_QB était la seule source à 0% de couverture visuelle. Pipeline construit : rendu PyMuPDF de 3833 pages uniques, découpage en 298 lots de 20 questions, agents Sonnet 5 comparant chaque question (réponse/explication/mise en forme) contre l'image de sa page source (recherche autonome de la section "Solutions" séparée quand nécessaire, PDF spécifique à ce fournisseur). **16/298 lots exécutés = 316/316 questions Extra_QB, sweep CLOS.**
+
+**81 corrections appliquées** (pré-check + PATCH + relecture live systématiques) : explications swappées avec une autre question (bug recurrent, ~15 cas), tableaux/listes manquants du `question_en` reconstruits en Markdown (~15 cas), chiffres tronqués par OCR, fuite de numéro de page en fin d'option (`option_bleed`, ~10 cas), 1 texte de copyright générique injecté en tête d'explication.
+
+**Incident qualité détecté et corrigé** : un agent (lot 0013) a attribué la correction d'une question voisine (FRN floor/collar) au mauvais ID (`0ed48185`, en réalité une question sensibilité-taux d'un bond option-free) — détecté par un script de vérification croisée automatique (`scripts/_fullbank_verify_applied.py`, comparant chaque `new_value` appliqué contre le contenu original du manifest) et **reverté immédiatement**. Sur 82 corrections vérifiées, 1 seule erreur trouvée (1,2%). Ce script doit tourner après chaque nouvelle vague de corrections.
+
+**9 résidus Extra_QB** documentés dans `scripts/_fullbank_residuals.json` (explications sans source retrouvée, 1 option contaminée par une question voisine sur page non rendue, 1 préambule d'explication encore partiellement corrompu par un artefact OCR historique).
+
+### Volet 2 — Découverte majeure : méthode déterministe applicable à UWorld
+
+En préparant le sweep visuel de Kaplan, découverte que **deux commits du même jour (13:42/13:49, avant cette session) avaient déjà audité tout Kaplan de façon déterministe** (`961f8ef`, `e6c7c13`, jamais documentés dans ce fichier) : les PDF Kaplan dessinent la coche verte/croix rouge de réponse comme un **rectangle vectoriel réel** (`fitz.get_drawings()`), lisible directement sans aucun appel LLM. Résultat de cet audit antérieur : **1492 questions Kaplan corrigées** (764 réponses pures + 224 cas composés + 504 reconstructions text_diff), avec **108 résidus connus** non traités (15 compound + 54 text_diff + 39 table_format_flag) — voir `scripts/_kaplan_compound_report.json` / `_kaplan_textdiff_report.json` / `_kaplan_full_diff_report.json` pour les IDs exacts.
+
+**Extension à UWorld** : vérification que les PDF UWorld utilisent le même principe — un **glyphe coche FontAwesome** (``) positionné exactement à la hauteur (y-center) de la bonne option, détecté par correspondance au plus proche (même anti-erreur que Kaplan : une correspondance par ordre/tolérance fixe avait provoqué un faux positif chez Kaplan sur les Mock Exams à interlignage serré). Un script `_uworld_pdf_extract_all.py` avait déjà été committé le même jour (dans `961f8ef`) mais jamais exécuté jusqu'au bout — repris et complété : `_uworld_full_diff.py` (diff contre les 1897 questions UWorld live) + `_uworld_textdiff_reconstruct.py` + `_uworld_apply_textdiff_clean.py`.
+
+**Résultat du diff déterministe UWorld (1897 questions)** : 24 `answer_diff`, 802 `text_diff`, 1056 déjà correctes, 15 non appariées.
+
+**Vérification indépendante des 24 `answer_diff`** (agent Sonnet 5, consigne explicite de ne JAMAIS faire confiance aveuglément au signal PDF ni à la valeur DB, recalcul intégral à partir de zéro pour chacune) : **5 vraies erreurs confirmées et corrigées** (`96b2e751` B→C, `5735fa01` B→C, `7c52dd3f` B→C, `eef04527` A→C, `a8a0ca92` A→B), **14 faux positifs** du script déterministe (mauvaise page/question appariée par le matching à recouvrement de mots, score de confiance souvent <0,8), **5 incertains** archivés en résidus (dont 1 cas où ni la DB ni le signal PDF ne semblent corrects — `25818e19`, devise et chiffres incohérents avec le tableau de la question).
+
+**Reconstruction word-bag des 802 `text_diff`** : 537 "clean" (mêmes mots, juste reformatés) / 265 résidus (vrai écart de contenu, nécessitent relecture visuelle dédiée).
+
+**2 bugs d'extraction trouvés et corrigés AVANT application en masse** (contrôle de cohérence sur échantillon avant de patcher 537 questions) :
+1. Le glyphe coche `` fuitait silencieusement dans le texte extrait de l'énoncé/des options (invisible à l'affichage terminal, donc passé inaperçu jusqu'à une vérification `repr()` explicite) — corrigé en filtrant les lignes marquées `has_check`.
+2. L'extraction à plat du PDF **régressait des questions déjà correctement formatées en tableau Markdown** par une session antérieure (le texte du PDF ne contient pas la mise en forme visuelle d'un tableau) — garde-fou ajouté : ne jamais remplacer un champ contenant déjà `|` ou une liste à puces par une version qui les a perdus.
+
+**497/537 corrections effectivement appliquées** après ces garde-fous (273 `question_en` reformatés, 458 `explanation_en` remplacées, filtre de sécurité sur la longueur ayant exclu 79 remplacements d'explication trop courts pour éviter une perte de contenu) — **0 échec, vérifié par échantillonnage aléatoire (8/8 confirmés en direct)**.
+
+### Bilan chiffré de la session
+
+| Chantier | Questions auditées | Corrections appliquées | Résidus |
+|---|---|---|---|
+| Extra_QB (agents visuels) | 316/316 | 81 | 9 |
+| UWorld answer_diff (déterministe + vérif. agent) | 24/24 | 5 | 5 (incertain) |
+| UWorld text_diff (déterministe, word-bag) | 802/802 | 497 | 265 |
+| UWorld no_match | — | 0 | 15 |
+| Kaplan (audit antérieur au même jour, non retouché cette session) | 3717/3717 | 1492 (session précédente) | 108 |
+
+**Total corrections cette session : 583** (81+5+497). **Total questions désormais couvertes par un vrai contrôle de contenu (visuel ou déterministe) depuis le début du projet : Extra_QB 100%, Kaplan ~97% (108 résidus/3717), UWorld ~85% (280 résidus+no_match/1897 restent).**
+
+### Ouvert pour la suite (prochaine session)
+1. **265 résidus UWorld text_diff** + **15 no_match** : nécessitent une relecture visuelle par agents (même méthode qu'Extra_QB), infrastructure déjà réutilisable (`scripts/_fullbank_render_and_batch.py` etc., adapté aux chemins PDF UWorld).
+2. **108 résidus Kaplan** (15 compound + 54 text_diff + 39 table_format_flag) — jamais traités, IDs déjà connus dans les rapports JSON existants.
+3. **5 cas UWorld incertains** (`fa1babd8`, `f1385d93`, `a074104e`, `cada5032`, `25818e19`) — bug de données indépendant du diff PDF (explication ne correspondant à aucune question du même sujet), nécessite investigation dédiée.
+4. **Kevin_Mock (180 questions)** — jamais audité, ni visuellement ni par méthode déterministe ; vérifier d'abord si ses PDF ont le même mécanisme de coche exploitable.
+5. **CFA_WEB (1122 questions, PDF scannés)** — 400 sans cache Vision du tout, 722 déjà comparées au cache mais pas toutes relues individuellement ; phase non commencée cette session.
+6. Chantiers antérieurs toujours ouverts : 588 candidats "conclusion finale" jamais vérifiés, 2 faux positifs de matching CFA_WEB (`3783743b`/`3515693c`), `7d98d9b9` (donnée manquante "Company Z").
+
+**Infrastructure réutilisable créée cette session** : `scripts/_fullbank_*.py` (manifeste, rendu, découpage en lots, application, vérification croisée post-application), `scripts/_uworld_pdf_extract_all.py` + `_uworld_full_diff.py` + `_uworld_textdiff_reconstruct.py` + `_uworld_apply_textdiff_clean.py` (méthode déterministe, réutilisable telle quelle pour reprendre UWorld ou l'adapter à Kevin_Mock).
 
 ---
 
