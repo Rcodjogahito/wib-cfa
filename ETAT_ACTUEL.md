@@ -1,9 +1,36 @@
 # ETAT ACTUEL — WIB CFA
 > Mis à jour automatiquement à la fin de chaque session Claude Code.
 
-**Date**: 2026-07-09 (session 48 — les 173 candidats à faible score TOUS traités : 94 questions patchées sur Supabase, 23/24 mauvaises pages relocalisées, 1 cas restant genuinement irrésolu)  
-**Commit**: **94 corrections appliquées en direct sur Supabase** — 26 `correct_answer` + 52 reconstructions de contenu (dont 10 `correct_answer` en sous-produit) + 16 relocalisations de page avec reconstruction associée. Bug systémique de "bleed" de champs résolu sur tous les cas trouvés (Kaplan Ethics + UWorld). **Chantier des 173 candidats à faible score maintenant CLOS** (1 seul résiduel : `7d98d9b9`, donnée manquante — voir détail).  
+**Date**: 2026-07-30 (session 65 — audit CFA_WEB étendu : bug de parsing des caches Mock corrigé, couverture 160→722/1122, 25 `correct_answer` corrigés)  
+**Commit**: `9fb568b`/`0bb9c11` — Le script d'audit CFA_WEB (session 47) ne savait lire que le format de cache QB (`page_type`/`items`) ; les 12 fichiers de cache Mock (format aplati, déjà fusionné Q+A, 1226 entrées) étaient silencieusement lus comme 0 entrée. C'était la cause réelle des "~962 CFA_WEB non couvertes". Nouveau script `_cfaweb_audit_v2.py` : couverture fiable 160→**722/1122** appariées (400 encore sans cache correspondant = résiduel réel désormais). Sur 32 divergences `correct_answer` détectées : 3 déjà corrigées en session 47 (dump figé), 1 faux positif (options cache nulles), 2 faux positifs de matching (mauvaise sous-question d'un même cas à tableau partagé), 1 calcul DDM re-dérivé confirmant que la BASE avait déjà raison (OCR du cache auto-contradictoire). **25 corrections `correct_answer` appliquées et revérifiées en direct sur Supabase**, chacune confirmée par re-dérivation indépendante depuis le texte `explanation_en` déjà en base (qui décrivait la bonne option en prose alors que la lettre stockée pointait ailleurs).  
 **Branch**: master → Streamlit Cloud (auto-deploy) ✅ opérationnelle
+
+---
+
+## Session 65 — Audit CFA_WEB étendu : bug de parsing corrigé, 25 corrections (2026-07-30)
+
+**Déclencheur** : reprise du chantier CFA_WEB laissé ouvert en session 47/48 ("~962 CFA_WEB non couvertes"). Le script `_cfaweb_audit.py` (untracked depuis session 47) existait mais n'avait jamais été exécuté (`_cfaweb_audit_report.json` absent).
+
+**Root cause trouvée en l'exécutant** : `load_cache_dir()` ne reconnaît que le format QB (liste de pages avec `page_type="questions"/"answers"` + `items[]`). Les 12 fichiers `scripts/_cache_cfaweb_mocks/*.json` (remplis en session 44n) utilisent un format différent : liste plate d'objets déjà fusionnés Q+A (`qnum`/`stem`/`A`/`B`/`C`/`correct`/`expl`), plus quelques marqueurs de page sans question (`page_type`/`page_idx` seuls). Résultat : 447 entrées de cache chargées (QB seulement) au lieu de ~1493, donc seulement 160/1122 questions appariées de façon fiable.
+
+**Fix** : `scripts/_cfaweb_audit_v2.py` ajoute `load_mock_dir()` pour le format aplati. Rechargement : **1493 entrées de cache** (447 QB + 1226 Mock), **722/1122 CFA_WEB appariées** (contre 160 avant) — **400 questions restent sans cache correspondant** (vrai résiduel, pas un bug de script).
+
+**Vérification des 32 divergences `correct_answer` détectées** (score de recouvrement de mots ≥0.5 sur le stem + ratio ≥0.8 sur les 3 options, méthode session 47 inchangée) :
+- **3 déjà corrigées** en session 47 (`9dd3a4b5`, `6adcf002`, `637e6cd3`) — le dump `_full_dump_audit.json` utilisé date d'avant leur patch le même jour ; relecture live confirme qu'elles sont déjà correctes, aucune action.
+- **1 faux positif technique** (`2b1cfa17`) : les options A/B du cache étaient `null` (OCR incomplet), correspondance forcée sur C seul ; live déjà correcte, aucune action.
+- **2 faux positifs de matching** (`3783743b`, `3515693c`, scores 0.818/0.625 — les plus bas du lot) : questions liées au même cas à 3 entreprises (tableau CA/dette partagé) mais portant sur une sous-question différente (survalorisation/sous-valorisation par multiples EV) que celle du cache apparié (capacité de levier additionnel) — préambule identique, question finale différente. Non corrigées, nécessiteraient une relocalisation PDF dédiée.
+- **1 cas d'hallucination OCR du cache confirmé** (`004a50b3`, DDM) : recalcul indépendant (g=(1-0,6)×17,5%=7%, V₀=3×1,07/(0,15-0,07)=40,13$) confirme que la base (option B, $40,13) est déjà correcte et méthodologiquement standard ; le texte OCR du cache pour l'option "correcte" (C, $73,67) s'auto-décrit littéralement comme "This incorrect calculation" — preuve que l'étiquette `correct` extraite par Vision est fausse sur ce cas précis. Non corrigé, base déjà juste.
+- **25 corrections génuines appliquées** : dans chaque cas, le texte `explanation_en` déjà stocké en base décrivait/justifiait en prose l'option indiquée par le cache — pas seulement une confiance aveugle dans le cache — et contredisait la lettre `correct_answer` elle-même stockée (même schéma de bug que les cas `24fd91bb`/`cf241f9a` des sessions précédentes : contenu correct, lettre corrompue). Recalculs indépendants effectués sur les questions chiffrées (quick ratio, rendements géométrique/arithmétique/HPR, DDM) pour confirmer avant patch.
+
+**Liste des 25 IDs corrigés** : `3989e69d`(A→B) `be88652d`(A→B) `1c4c5d2b`(A→C) `66da5498`(A→B) `3a1c4b88`(A→B) `a8ba09fa`(B→A) `8486b001`(A→B) `7df2799f`(B→A) `bb91aac5`(B→C) `7642d48f`(A→C) `9134e653`(B→C) `25b7841c`(A→B) `f4d35e0a`(A→C) `3e6c490d`(A→B) `0f2feeab`(A→C) `814310a8`(C→A) `c7a30419`(A→B) `bacfa405`(A→B) `b8436a49`(A→C) `fff9fce6`(A→B) `9f49142b`(A→B) `cfbe5363`(B→C) `eb0326bf`(A→B) `8ca47e12`(A→C) `2d437dff`(B→A).
+
+**Vérification** : pré-check live juste avant patch (25/25 valeur "avant" confirmée), PATCH Supabase 25/25 → HTTP 204, relecture live indépendante après coup → 25/25 confirmées.
+
+**Total `correct_answer` cumulé toutes sessions : 823 + 25 = 848.**
+
+**Ouvert pour la suite** : 400 questions CFA_WEB toujours sans cache (vrai résiduel de couverture, pas de bug) ; 2 faux positifs de matching à relocaliser manuellement (`3783743b`, `3515693c`) ; chantiers antérieurs non touchés (588 candidats "conclusion finale", field-bleed Kaplan Ethics au-delà de l'échantillon de 173, `7d98d9b9` donnée manquante).
+
+**Détail complet** : `scripts/_cfaweb_audit_v2.py`, `scripts/_cfaweb_audit_v2_report.json` (722 appariements), `scripts/_cfaweb_mismatch32_full.json` (32 candidats avec options complètes des deux sources).
 
 ---
 
