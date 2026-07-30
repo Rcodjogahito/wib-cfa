@@ -1,0 +1,19 @@
+{
+ "n_touched": 58,
+ "fields_patched": {
+  "option_c": 30,
+  "explanation_en": 36
+ },
+ "skipped_low_overlap": [
+  [
+   "67d01b4a-5876-4827-9234-b8e04584bd5e",
+   "explanation_en",
+   0.0
+  ],
+  [
+   "4514d50b-6c64-491c-be06-3a71c4e86479",
+   "explanation_en",
+   0.059
+  ]
+ ]
+}

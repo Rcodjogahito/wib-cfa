@@ -1,0 +1,14 @@
+[
+ {
+  "id": "67d01b4a-5876-4827-9234-b8e04584bd5e",
+  "verdict": "explanation_wrong",
+  "field": "explanation_en",
+  "new_value": "January – March return = 51,000 / 50,000 − 1 = 2.00% April – June return = 60,000 / (51,000 + 10,000) − 1 = –1.64% July – December return = 30,000 / (60,000 − 30,000) − 1 = 0.00% Time-weighted return = [(1 + 0.02)(1 − 0.0164)(1 + 0.00)] − 1 = 0.3272% (NOTE THAT RAISED TO 1/N IS NOT NEEDED AS THERE ARE NO MULTIPLE YEARS)"
+ },
+ {
+  "id": "4514d50b-6c64-491c-be06-3a71c4e86479",
+  "verdict": "explanation_wrong",
+  "field": "explanation_en",
+  "new_value": "Option B is incorrect, as insurance companies' main investment purpose is to meet claims rather than paying bonuses. Option C is also incorrect because banks need to be conservative while making investments of excess reserves."
+ }
+]
