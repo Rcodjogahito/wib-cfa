@@ -117,6 +117,11 @@ def extract_pdf_questions(pdf_path):
                     break
                 expl_lines.append(l["text"].strip())
             explanation = " ".join(t for t in expl_lines if t)
+            # Mock Exam PDFs sometimes append "(Module X.X, LOS X.y ...)" to
+            # the END of the last explanation line instead of putting it on
+            # its own line (Reading PDFs always use a separate line) -- strip
+            # it wherever it lands so both layouts produce the same text.
+            explanation = re.sub(r"\s*\((?:Module|Reading|LOS)[^)]*\)\s*$", "", explanation).strip()
 
         option_positions = {"A": ia, "B": ib, "C": ic}
         if idd is not None:

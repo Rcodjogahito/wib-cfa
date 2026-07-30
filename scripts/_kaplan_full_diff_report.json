@@ -66,7 +66,7 @@
  {
   "id": "04ebda69-dcfa-47d6-8e34-8957dcd7b577",
   "subtopic": "Mock Exam 4",
-  "status": "text_diff",
+  "status": "ok",
   "score": 1.0,
   "stem_cmp": "exact",
   "a_cmp": "exact",
@@ -74,7 +74,7 @@
   "c_cmp": "exact",
   "ans_cmp": "exact",
   "ans_missing_in_pdf": false,
-  "expl_cmp": "diff",
+  "expl_cmp": "exact",
   "table_flag": false,
   "db_correct": "A",
   "pdf_correct": "A"
@@ -82,7 +82,7 @@
  {
   "id": "06eeb08e-2c75-41d4-a475-b858d9ae027f",
   "subtopic": "Mock Exam 4",
-  "status": "text_diff",
+  "status": "ok",
   "score": 1.0,
   "stem_cmp": "exact",
   "a_cmp": "exact",
@@ -90,7 +90,7 @@
   "c_cmp": "exact",
   "ans_cmp": "exact",
   "ans_missing_in_pdf": false,
-  "expl_cmp": "diff",
+  "expl_cmp": "exact",
   "table_flag": false,
   "db_correct": "B",
   "pdf_correct": "B"
@@ -242,7 +242,7 @@
  {
   "id": "15a20597-f1bd-4dc7-8ae7-f7b90ac365ae",
   "subtopic": "Mock Exam 4",
-  "status": "text_diff",
+  "status": "ok",
   "score": 1.0,
   "stem_cmp": "exact",
   "a_cmp": "exact",
@@ -250,7 +250,7 @@
   "c_cmp": "exact",
   "ans_cmp": "exact",
   "ans_missing_in_pdf": false,
-  "expl_cmp": "diff",
+  "expl_cmp": "exact",
   "table_flag": false,
   "db_correct": "A",
   "pdf_correct": "A"
@@ -282,7 +282,7 @@
   "c_cmp": "diff",
   "ans_cmp": "exact",
   "ans_missing_in_pdf": false,
-  "expl_cmp": "diff",
+  "expl_cmp": "exact",
   "table_flag": false,
   "db_correct": "C",
   "pdf_correct": "C"
@@ -314,7 +314,7 @@
   "c_cmp": "exact",
   "ans_cmp": "diff",
   "ans_missing_in_pdf": false,
-  "expl_cmp": "diff",
+  "expl_cmp": "exact",
   "table_flag": false,
   "db_correct": "B",
   "pdf_correct": "C"
@@ -330,7 +330,7 @@
   "c_cmp": "diff",
   "ans_cmp": "exact",
   "ans_missing_in_pdf": false,
-  "expl_cmp": "diff",
+  "expl_cmp": "exact",
   "table_flag": false,
   "db_correct": "C",
   "pdf_correct": "C"
@@ -346,7 +346,7 @@
   "c_cmp": "diff",
   "ans_cmp": "diff",
   "ans_missing_in_pdf": false,
-  "expl_cmp": "diff",
+  "expl_cmp": "exact",
   "table_flag": false,
   "db_correct": "B",
   "pdf_correct": "A"
@@ -354,7 +354,7 @@
  {
   "id": "1c21f419-da97-4d34-858c-7bc7f7831350",
   "subtopic": "Mock Exam 4",
-  "status": "text_diff",
+  "status": "ok",
   "score": 0.968,
   "stem_cmp": "exact",
   "a_cmp": "delig_ok",
@@ -362,7 +362,7 @@
   "c_cmp": "exact",
   "ans_cmp": "exact",
   "ans_missing_in_pdf": false,
-  "expl_cmp": "diff",
+  "expl_cmp": "exact",
   "table_flag": false,
   "db_correct": "B",
   "pdf_correct": "B"
@@ -402,7 +402,7 @@
  {
   "id": "253c683d-f40b-4c05-9459-278b14d7bb8b",
   "subtopic": "Mock Exam 4",
-  "status": "text_diff",
+  "status": "ok",
   "score": 1.0,
   "stem_cmp": "exact",
   "a_cmp": "exact",
@@ -410,7 +410,7 @@
   "c_cmp": "exact",
   "ans_cmp": "exact",
   "ans_missing_in_pdf": false,
-  "expl_cmp": "diff",
+  "expl_cmp": "exact",
   "table_flag": false,
   "db_correct": "B",
   "pdf_correct": "B"
@@ -442,7 +442,7 @@
   "c_cmp": "diff",
   "ans_cmp": "diff",
   "ans_missing_in_pdf": false,
-  "expl_cmp": "diff",
+  "expl_cmp": "exact",
   "table_flag": false,
   "db_correct": "B",
   "pdf_correct": "C"
@@ -498,7 +498,7 @@
  {
   "id": "2a813490-bc91-4328-8819-d33bc86008cf",
   "subtopic": "Mock Exam 4",
-  "status": "text_diff",
+  "status": "ok",
   "score": 0.969,
   "stem_cmp": "exact",
   "a_cmp": "exact",
@@ -506,7 +506,7 @@
   "c_cmp": "delig_ok",
   "ans_cmp": "exact",
   "ans_missing_in_pdf": false,
-  "expl_cmp": "diff",
+  "expl_cmp": "exact",
   "table_flag": false,
   "db_correct": "A",
   "pdf_correct": "A"
@@ -522,7 +522,7 @@
   "c_cmp": "diff",
   "ans_cmp": "exact",
   "ans_missing_in_pdf": false,
-  "expl_cmp": "diff",
+  "expl_cmp": "exact",
   "table_flag": false,
   "db_correct": "C",
   "pdf_correct": "C"
@@ -554,7 +554,7 @@
   "c_cmp": "diff",
   "ans_cmp": "exact",
   "ans_missing_in_pdf": false,
-  "expl_cmp": "diff",
+  "expl_cmp": "exact",
   "table_flag": false,
   "db_correct": "C",
   "pdf_correct": "C"
@@ -626,7 +626,7 @@
  {
   "id": "3f4f29c5-0712-4cac-b9d6-8d22061fffa4",
   "subtopic": "Mock Exam 4",
-  "status": "text_diff",
+  "status": "ok",
   "score": 1.0,
   "stem_cmp": "exact",
   "a_cmp": "delig_ok",
@@ -634,7 +634,7 @@
   "c_cmp": "exact",
   "ans_cmp": "exact",
   "ans_missing_in_pdf": false,
-  "expl_cmp": "diff",
+  "expl_cmp": "exact",
   "table_flag": false,
   "db_correct": "A",
   "pdf_correct": "A"
@@ -658,7 +658,7 @@
  {
   "id": "40481e09-d64f-4e73-922d-6c881b906dd5",
   "subtopic": "Mock Exam 4",
-  "status": "text_diff",
+  "status": "ok",
   "score": 0.931,
   "stem_cmp": "exact",
   "a_cmp": "delig_ok",
@@ -666,7 +666,7 @@
   "c_cmp": "exact",
   "ans_cmp": "exact",
   "ans_missing_in_pdf": false,
-  "expl_cmp": "diff",
+  "expl_cmp": "exact",
   "table_flag": false,
   "db_correct": "C",
   "pdf_correct": "C"
@@ -738,7 +738,7 @@
  {
   "id": "479cd173-5eca-4a25-a0fd-5fc9e8980533",
   "subtopic": "Mock Exam 4",
-  "status": "text_diff",
+  "status": "ok",
   "score": 1.0,
   "stem_cmp": "exact",
   "a_cmp": "exact",
@@ -746,7 +746,7 @@
   "c_cmp": "exact",
   "ans_cmp": "exact",
   "ans_missing_in_pdf": false,
-  "expl_cmp": "diff",
+  "expl_cmp": "exact",
   "table_flag": false,
   "db_correct": "B",
   "pdf_correct": "B"
@@ -786,7 +786,7 @@
  {
   "id": "49b1a403-f674-42b7-ab1a-63962270ffdc",
   "subtopic": "Mock Exam 4",
-  "status": "text_diff",
+  "status": "ok",
   "score": 1.0,
   "stem_cmp": "exact",
   "a_cmp": "exact",
@@ -794,7 +794,7 @@
   "c_cmp": "exact",
   "ans_cmp": "exact",
   "ans_missing_in_pdf": false,
-  "expl_cmp": "diff",
+  "expl_cmp": "exact",
   "table_flag": false,
   "db_correct": "B",
   "pdf_correct": "B"
@@ -850,7 +850,7 @@
  {
   "id": "4ee9a811-2da1-47a1-9aa5-a348af103401",
   "subtopic": "Mock Exam 4",
-  "status": "text_diff",
+  "status": "table_format_flag",
   "score": 1.0,
   "stem_cmp": "exact",
   "a_cmp": "exact",
@@ -858,7 +858,7 @@
   "c_cmp": "exact",
   "ans_cmp": "exact",
   "ans_missing_in_pdf": false,
-  "expl_cmp": "diff",
+  "expl_cmp": "exact",
   "table_flag": true,
   "db_correct": "B",
   "pdf_correct": "B"
@@ -898,7 +898,7 @@
  {
   "id": "50b155e8-2b52-438c-be62-f15449cae6ac",
   "subtopic": "Mock Exam 4",
-  "status": "text_diff",
+  "status": "ok",
   "score": 1.0,
   "stem_cmp": "exact",
   "a_cmp": "exact",
@@ -906,7 +906,7 @@
   "c_cmp": "exact",
   "ans_cmp": "exact",
   "ans_missing_in_pdf": false,
-  "expl_cmp": "diff",
+  "expl_cmp": "exact",
   "table_flag": false,
   "db_correct": "A",
   "pdf_correct": "A"
@@ -962,7 +962,7 @@
  {
   "id": "583db80a-8f1c-4919-8d51-c9dd3c1408f0",
   "subtopic": "Mock Exam 4",
-  "status": "text_diff",
+  "status": "ok",
   "score": 0.882,
   "stem_cmp": "exact",
   "a_cmp": "exact",
@@ -970,7 +970,7 @@
   "c_cmp": "delig_ok",
   "ans_cmp": "exact",
   "ans_missing_in_pdf": false,
-  "expl_cmp": "diff",
+  "expl_cmp": "exact",
   "table_flag": false,
   "db_correct": "B",
   "pdf_correct": "B"
@@ -978,7 +978,7 @@
  {
   "id": "590bfed2-d1f5-44ad-a593-5f1e2147cfa4",
   "subtopic": "Mock Exam 4",
-  "status": "text_diff",
+  "status": "ok",
   "score": 1.0,
   "stem_cmp": "exact",
   "a_cmp": "exact",
@@ -986,7 +986,7 @@
   "c_cmp": "exact",
   "ans_cmp": "exact",
   "ans_missing_in_pdf": false,
-  "expl_cmp": "diff",
+  "expl_cmp": "exact",
   "table_flag": false,
   "db_correct": "A",
   "pdf_correct": "A"
@@ -1098,7 +1098,7 @@
   "c_cmp": "exact",
   "ans_cmp": "exact",
   "ans_missing_in_pdf": false,
-  "expl_cmp": "diff",
+  "expl_cmp": "exact",
   "table_flag": false,
   "db_correct": "A",
   "pdf_correct": "A"
@@ -1138,7 +1138,7 @@
  {
   "id": "68dd22f8-97e8-49db-8b2f-a636d3f067aa",
   "subtopic": "Mock Exam 4",
-  "status": "text_diff",
+  "status": "ok",
   "score": 0.96,
   "stem_cmp": "exact",
   "a_cmp": "exact",
@@ -1146,7 +1146,7 @@
   "c_cmp": "exact",
   "ans_cmp": "exact",
   "ans_missing_in_pdf": false,
-  "expl_cmp": "diff",
+  "expl_cmp": "exact",
   "table_flag": false,
   "db_correct": "A",
   "pdf_correct": "A"
@@ -1162,7 +1162,7 @@
   "c_cmp": "diff",
   "ans_cmp": "exact",
   "ans_missing_in_pdf": false,
-  "expl_cmp": "diff",
+  "expl_cmp": "exact",
   "table_flag": false,
   "db_correct": "C",
   "pdf_correct": "C"
@@ -1178,7 +1178,7 @@
   "c_cmp": "exact",
   "ans_cmp": "diff",
   "ans_missing_in_pdf": false,
-  "expl_cmp": "diff",
+  "expl_cmp": "exact",
   "table_flag": false,
   "db_correct": "C",
   "pdf_correct": "B"
@@ -1186,7 +1186,7 @@
  {
   "id": "6aab38c3-836d-42e7-bae0-f035665ea66f",
   "subtopic": "Mock Exam 4",
-  "status": "text_diff",
+  "status": "ok",
   "score": 1.0,
   "stem_cmp": "exact",
   "a_cmp": "exact",
@@ -1194,7 +1194,7 @@
   "c_cmp": "exact",
   "ans_cmp": "exact",
   "ans_missing_in_pdf": false,
-  "expl_cmp": "diff",
+  "expl_cmp": "exact",
   "table_flag": false,
   "db_correct": "B",
   "pdf_correct": "B"
@@ -1218,7 +1218,7 @@
  {
   "id": "6c0b23f2-a73f-498e-8749-45907d5c60f0",
   "subtopic": "Mock Exam 4",
-  "status": "text_diff",
+  "status": "ok",
   "score": 1.0,
   "stem_cmp": "exact",
   "a_cmp": "exact",
@@ -1226,7 +1226,7 @@
   "c_cmp": "exact",
   "ans_cmp": "exact",
   "ans_missing_in_pdf": false,
-  "expl_cmp": "diff",
+  "expl_cmp": "exact",
   "table_flag": false,
   "db_correct": "A",
   "pdf_correct": "A"
@@ -1266,7 +1266,7 @@
  {
   "id": "6f86d3af-deae-4094-ba6b-52fa7ef68d7f",
   "subtopic": "Mock Exam 4",
-  "status": "text_diff",
+  "status": "ok",
   "score": 1.0,
   "stem_cmp": "delig_ok",
   "a_cmp": "exact",
@@ -1274,7 +1274,7 @@
   "c_cmp": "exact",
   "ans_cmp": "exact",
   "ans_missing_in_pdf": false,
-  "expl_cmp": "diff",
+  "expl_cmp": "exact",
   "table_flag": false,
   "db_correct": "B",
   "pdf_correct": "B"
@@ -1282,7 +1282,7 @@
  {
   "id": "7039e057-63e5-4a01-a70e-b61223a0d659",
   "subtopic": "Mock Exam 4",
-  "status": "text_diff",
+  "status": "ok",
   "score": 1.0,
   "stem_cmp": "exact",
   "a_cmp": "exact",
@@ -1290,7 +1290,7 @@
   "c_cmp": "exact",
   "ans_cmp": "exact",
   "ans_missing_in_pdf": false,
-  "expl_cmp": "diff",
+  "expl_cmp": "exact",
   "table_flag": false,
   "db_correct": "B",
   "pdf_correct": "B"
@@ -1298,7 +1298,7 @@
  {
   "id": "708b0655-3484-4112-a095-7fe35158ab39",
   "subtopic": "Mock Exam 4",
-  "status": "text_diff",
+  "status": "ok",
   "score": 1.0,
   "stem_cmp": "exact",
   "a_cmp": "exact",
@@ -1306,7 +1306,7 @@
   "c_cmp": "exact",
   "ans_cmp": "exact",
   "ans_missing_in_pdf": false,
-  "expl_cmp": "diff",
+  "expl_cmp": "exact",
   "table_flag": false,
   "db_correct": "C",
   "pdf_correct": "C"
@@ -1330,7 +1330,7 @@
  {
   "id": "7ad74afb-2ae6-41c3-ae01-0d4aac30377f",
   "subtopic": "Mock Exam 4",
-  "status": "text_diff",
+  "status": "ok",
   "score": 1.0,
   "stem_cmp": "exact",
   "a_cmp": "exact",
@@ -1338,7 +1338,7 @@
   "c_cmp": "exact",
   "ans_cmp": "exact",
   "ans_missing_in_pdf": false,
-  "expl_cmp": "diff",
+  "expl_cmp": "exact",
   "table_flag": false,
   "db_correct": "B",
   "pdf_correct": "B"
@@ -1346,7 +1346,7 @@
  {
   "id": "810bb66d-168b-478f-a0ba-2be4a184bf77",
   "subtopic": "Mock Exam 4",
-  "status": "text_diff",
+  "status": "ok",
   "score": 1.0,
   "stem_cmp": "exact",
   "a_cmp": "exact",
@@ -1354,7 +1354,7 @@
   "c_cmp": "exact",
   "ans_cmp": "exact",
   "ans_missing_in_pdf": false,
-  "expl_cmp": "diff",
+  "expl_cmp": "exact",
   "table_flag": false,
   "db_correct": "B",
   "pdf_correct": "B"
@@ -1386,7 +1386,7 @@
   "c_cmp": "diff",
   "ans_cmp": "exact",
   "ans_missing_in_pdf": false,
-  "expl_cmp": "diff",
+  "expl_cmp": "exact",
   "table_flag": false,
   "db_correct": "B",
   "pdf_correct": "B"
@@ -1434,7 +1434,7 @@
   "c_cmp": "diff",
   "ans_cmp": "exact",
   "ans_missing_in_pdf": false,
-  "expl_cmp": "diff",
+  "expl_cmp": "exact",
   "table_flag": false,
   "db_correct": "C",
   "pdf_correct": "C"
@@ -1474,7 +1474,7 @@
  {
   "id": "8a48109f-7d13-49b0-9d4c-c98095be1b14",
   "subtopic": "Mock Exam 4",
-  "status": "text_diff",
+  "status": "ok",
   "score": 1.0,
   "stem_cmp": "exact",
   "a_cmp": "exact",
@@ -1482,7 +1482,7 @@
   "c_cmp": "exact",
   "ans_cmp": "exact",
   "ans_missing_in_pdf": false,
-  "expl_cmp": "diff",
+  "expl_cmp": "exact",
   "table_flag": false,
   "db_correct": "A",
   "pdf_correct": "A"
@@ -1490,7 +1490,7 @@
  {
   "id": "8b06b50a-7f45-4467-9ddf-b4580a5128b0",
   "subtopic": "Mock Exam 4",
-  "status": "text_diff",
+  "status": "ok",
   "score": 1.0,
   "stem_cmp": "exact",
   "a_cmp": "exact",
@@ -1498,7 +1498,7 @@
   "c_cmp": "exact",
   "ans_cmp": "exact",
   "ans_missing_in_pdf": false,
-  "expl_cmp": "diff",
+  "expl_cmp": "exact",
   "table_flag": false,
   "db_correct": "B",
   "pdf_correct": "B"
@@ -1506,7 +1506,7 @@
  {
   "id": "8b5102c4-be57-47f8-bd53-6ddb34b58cec",
   "subtopic": "Mock Exam 4",
-  "status": "text_diff",
+  "status": "ok",
   "score": 1.0,
   "stem_cmp": "delig_ok",
   "a_cmp": "exact",
@@ -1514,7 +1514,7 @@
   "c_cmp": "exact",
   "ans_cmp": "exact",
   "ans_missing_in_pdf": false,
-  "expl_cmp": "diff",
+  "expl_cmp": "exact",
   "table_flag": false,
   "db_correct": "A",
   "pdf_correct": "A"
@@ -1554,7 +1554,7 @@
  {
   "id": "8efa9856-86a5-41ad-b826-1d2ca06b0b5f",
   "subtopic": "Mock Exam 4",
-  "status": "text_diff",
+  "status": "ok",
   "score": 1.0,
   "stem_cmp": "exact",
   "a_cmp": "exact",
@@ -1562,7 +1562,7 @@
   "c_cmp": "exact",
   "ans_cmp": "exact",
   "ans_missing_in_pdf": false,
-  "expl_cmp": "diff",
+  "expl_cmp": "exact",
   "table_flag": false,
   "db_correct": "A",
   "pdf_correct": "A"
@@ -1570,7 +1570,7 @@
  {
   "id": "9057600e-86c2-4091-a7c8-c77a2bbdd618",
   "subtopic": "Mock Exam 4",
-  "status": "text_diff",
+  "status": "ok",
   "score": 1.0,
   "stem_cmp": "exact",
   "a_cmp": "exact",
@@ -1578,7 +1578,7 @@
   "c_cmp": "exact",
   "ans_cmp": "exact",
   "ans_missing_in_pdf": false,
-  "expl_cmp": "diff",
+  "expl_cmp": "exact",
   "table_flag": false,
   "db_correct": "C",
   "pdf_correct": "C"
@@ -1586,7 +1586,7 @@
  {
   "id": "928dbc48-2908-4457-965b-8e0d3273a78a",
   "subtopic": "Mock Exam 4",
-  "status": "text_diff",
+  "status": "ok",
   "score": 1.0,
   "stem_cmp": "exact",
   "a_cmp": "exact",
@@ -1594,7 +1594,7 @@
   "c_cmp": "exact",
   "ans_cmp": "exact",
   "ans_missing_in_pdf": false,
-  "expl_cmp": "diff",
+  "expl_cmp": "exact",
   "table_flag": false,
   "db_correct": "A",
   "pdf_correct": "A"
@@ -1650,7 +1650,7 @@
  {
   "id": "96c72e12-ba3a-40b7-849d-0885e2f2010d",
   "subtopic": "Mock Exam 4",
-  "status": "text_diff",
+  "status": "ok",
   "score": 0.976,
   "stem_cmp": "exact",
   "a_cmp": "exact",
@@ -1658,7 +1658,7 @@
   "c_cmp": "delig_ok",
   "ans_cmp": "exact",
   "ans_missing_in_pdf": false,
-  "expl_cmp": "diff",
+  "expl_cmp": "exact",
   "table_flag": false,
   "db_correct": "B",
   "pdf_correct": "B"
@@ -1698,7 +1698,7 @@
  {
   "id": "9e90f439-abfd-4356-9220-2aed4be88ebc",
   "subtopic": "Mock Exam 4",
-  "status": "text_diff",
+  "status": "ok",
   "score": 1.0,
   "stem_cmp": "exact",
   "a_cmp": "exact",
@@ -1706,7 +1706,7 @@
   "c_cmp": "exact",
   "ans_cmp": "exact",
   "ans_missing_in_pdf": false,
-  "expl_cmp": "diff",
+  "expl_cmp": "exact",
   "table_flag": false,
   "db_correct": "A",
   "pdf_correct": "A"
@@ -1778,7 +1778,7 @@
  {
   "id": "a39fc90d-5b48-4605-b02b-17a2fdf72d91",
   "subtopic": "Mock Exam 4",
-  "status": "text_diff",
+  "status": "ok",
   "score": 1.0,
   "stem_cmp": "exact",
   "a_cmp": "exact",
@@ -1786,7 +1786,7 @@
   "c_cmp": "exact",
   "ans_cmp": "exact",
   "ans_missing_in_pdf": false,
-  "expl_cmp": "diff",
+  "expl_cmp": "exact",
   "table_flag": false,
   "db_correct": "A",
   "pdf_correct": "A"
@@ -1842,7 +1842,7 @@
  {
   "id": "a7a016ba-b94f-423d-a102-0da0215e534e",
   "subtopic": "Mock Exam 4",
-  "status": "text_diff",
+  "status": "ok",
   "score": 1.0,
   "stem_cmp": "exact",
   "a_cmp": "exact",
@@ -1850,7 +1850,7 @@
   "c_cmp": "exact",
   "ans_cmp": "exact",
   "ans_missing_in_pdf": false,
-  "expl_cmp": "diff",
+  "expl_cmp": "exact",
   "table_flag": false,
   "db_correct": "B",
   "pdf_correct": "B"
@@ -1938,7 +1938,7 @@
  {
   "id": "afe2c0dc-a0ea-4304-80ba-589a3c82200a",
   "subtopic": "Mock Exam 4",
-  "status": "text_diff",
+  "status": "ok",
   "score": 1.0,
   "stem_cmp": "exact",
   "a_cmp": "exact",
@@ -1946,7 +1946,7 @@
   "c_cmp": "exact",
   "ans_cmp": "exact",
   "ans_missing_in_pdf": false,
-  "expl_cmp": "diff",
+  "expl_cmp": "exact",
   "table_flag": false,
   "db_correct": "A",
   "pdf_correct": "A"
@@ -2026,7 +2026,7 @@
   "c_cmp": "delig_ok",
   "ans_cmp": "diff",
   "ans_missing_in_pdf": false,
-  "expl_cmp": "diff",
+  "expl_cmp": "exact",
   "table_flag": false,
   "db_correct": "B",
   "pdf_correct": "A"
@@ -2066,7 +2066,7 @@
  {
   "id": "ba929b21-ed45-41f8-95d3-3820f4122237",
   "subtopic": "Mock Exam 4",
-  "status": "text_diff",
+  "status": "ok",
   "score": 1.0,
   "stem_cmp": "exact",
   "a_cmp": "exact",
@@ -2074,7 +2074,7 @@
   "c_cmp": "exact",
   "ans_cmp": "exact",
   "ans_missing_in_pdf": false,
-  "expl_cmp": "diff",
+  "expl_cmp": "exact",
   "table_flag": false,
   "db_correct": "A",
   "pdf_correct": "A"
@@ -2098,7 +2098,7 @@
  {
   "id": "bb9039bb-ee56-4ef6-9733-32789dbcf694",
   "subtopic": "Mock Exam 4",
-  "status": "text_diff",
+  "status": "ok",
   "score": 1.0,
   "stem_cmp": "exact",
   "a_cmp": "exact",
@@ -2106,7 +2106,7 @@
   "c_cmp": "exact",
   "ans_cmp": "exact",
   "ans_missing_in_pdf": false,
-  "expl_cmp": "diff",
+  "expl_cmp": "exact",
   "table_flag": false,
   "db_correct": "C",
   "pdf_correct": "C"
@@ -2130,7 +2130,7 @@
  {
   "id": "be05baf5-5b07-4bdc-828a-a67196cefea1",
   "subtopic": "Mock Exam 4",
-  "status": "text_diff",
+  "status": "ok",
   "score": 1.0,
   "stem_cmp": "exact",
   "a_cmp": "exact",
@@ -2138,7 +2138,7 @@
   "c_cmp": "exact",
   "ans_cmp": "exact",
   "ans_missing_in_pdf": false,
-  "expl_cmp": "diff",
+  "expl_cmp": "exact",
   "table_flag": false,
   "db_correct": "A",
   "pdf_correct": "A"
@@ -2178,7 +2178,7 @@
  {
   "id": "c18b4bcf-472a-4b25-8620-09d00c3e999e",
   "subtopic": "Mock Exam 4",
-  "status": "text_diff",
+  "status": "ok",
   "score": 1.0,
   "stem_cmp": "exact",
   "a_cmp": "exact",
@@ -2186,7 +2186,7 @@
   "c_cmp": "exact",
   "ans_cmp": "exact",
   "ans_missing_in_pdf": false,
-  "expl_cmp": "diff",
+  "expl_cmp": "exact",
   "table_flag": false,
   "db_correct": "A",
   "pdf_correct": "A"
@@ -2202,7 +2202,7 @@
   "c_cmp": "exact",
   "ans_cmp": "exact",
   "ans_missing_in_pdf": false,
-  "expl_cmp": "diff",
+  "expl_cmp": "exact",
   "table_flag": false,
   "db_correct": "A",
   "pdf_correct": "A"
@@ -2210,7 +2210,7 @@
  {
   "id": "c50abbd9-a9e9-4fb0-bfc0-c2bf8d919b8b",
   "subtopic": "Mock Exam 4",
-  "status": "text_diff",
+  "status": "ok",
   "score": 1.0,
   "stem_cmp": "exact",
   "a_cmp": "exact",
@@ -2218,7 +2218,7 @@
   "c_cmp": "exact",
   "ans_cmp": "exact",
   "ans_missing_in_pdf": false,
-  "expl_cmp": "diff",
+  "expl_cmp": "exact",
   "table_flag": false,
   "db_correct": "C",
   "pdf_correct": "C"
@@ -2242,7 +2242,7 @@
  {
   "id": "ca875cfa-74ae-4ee4-bd68-3ec29b96ebb6",
   "subtopic": "Mock Exam 4",
-  "status": "text_diff",
+  "status": "ok",
   "score": 1.0,
   "stem_cmp": "exact",
   "a_cmp": "exact",
@@ -2250,7 +2250,7 @@
   "c_cmp": "exact",
   "ans_cmp": "exact",
   "ans_missing_in_pdf": false,
-  "expl_cmp": "diff",
+  "expl_cmp": "exact",
   "table_flag": false,
   "db_correct": "C",
   "pdf_correct": "C"
@@ -2258,7 +2258,7 @@
  {
   "id": "cc0aaa07-c642-49e8-832b-0951fdb668b9",
   "subtopic": "Mock Exam 4",
-  "status": "text_diff",
+  "status": "ok",
   "score": 1.0,
   "stem_cmp": "exact",
   "a_cmp": "exact",
@@ -2266,7 +2266,7 @@
   "c_cmp": "exact",
   "ans_cmp": "exact",
   "ans_missing_in_pdf": false,
-  "expl_cmp": "diff",
+  "expl_cmp": "exact",
   "table_flag": false,
   "db_correct": "B",
   "pdf_correct": "B"
@@ -2322,7 +2322,7 @@
  {
   "id": "d364d640-7959-4cd3-8ffa-1016490e28a7",
   "subtopic": "Mock Exam 4",
-  "status": "text_diff",
+  "status": "ok",
   "score": 1.0,
   "stem_cmp": "exact",
   "a_cmp": "exact",
@@ -2330,7 +2330,7 @@
   "c_cmp": "exact",
   "ans_cmp": "exact",
   "ans_missing_in_pdf": false,
-  "expl_cmp": "diff",
+  "expl_cmp": "exact",
   "table_flag": false,
   "db_correct": "C",
   "pdf_correct": "C"
@@ -2338,7 +2338,7 @@
  {
   "id": "d3ac2dce-e1df-41ca-830b-8ef6f048cb82",
   "subtopic": "Mock Exam 4",
-  "status": "text_diff",
+  "status": "ok",
   "score": 1.0,
   "stem_cmp": "exact",
   "a_cmp": "exact",
@@ -2346,7 +2346,7 @@
   "c_cmp": "exact",
   "ans_cmp": "exact",
   "ans_missing_in_pdf": false,
-  "expl_cmp": "diff",
+  "expl_cmp": "exact",
   "table_flag": false,
   "db_correct": "A",
   "pdf_correct": "A"
@@ -2450,7 +2450,7 @@
  {
   "id": "dc0758ab-297d-42bd-a573-1dba3a3f0706",
   "subtopic": "Mock Exam 4",
-  "status": "text_diff",
+  "status": "ok",
   "score": 1.0,
   "stem_cmp": "exact",
   "a_cmp": "delig_ok",
@@ -2458,7 +2458,7 @@
   "c_cmp": "delig_ok",
   "ans_cmp": "exact",
   "ans_missing_in_pdf": false,
-  "expl_cmp": "diff",
+  "expl_cmp": "exact",
   "table_flag": false,
   "db_correct": "B",
   "pdf_correct": "B"
@@ -2474,7 +2474,7 @@
   "c_cmp": "diff",
   "ans_cmp": "exact",
   "ans_missing_in_pdf": false,
-  "expl_cmp": "diff",
+  "expl_cmp": "exact",
   "table_flag": false,
   "db_correct": "C",
   "pdf_correct": "C"
@@ -2482,7 +2482,7 @@
  {
   "id": "dc9d80e8-763a-4fcd-b983-971578ea85e9",
   "subtopic": "Mock Exam 4",
-  "status": "text_diff",
+  "status": "ok",
   "score": 1.0,
   "stem_cmp": "exact",
   "a_cmp": "exact",
@@ -2490,7 +2490,7 @@
   "c_cmp": "exact",
   "ans_cmp": "exact",
   "ans_missing_in_pdf": false,
-  "expl_cmp": "diff",
+  "expl_cmp": "exact",
   "table_flag": false,
   "db_correct": "A",
   "pdf_correct": "A"
@@ -2498,7 +2498,7 @@
  {
   "id": "dcfb16a7-7f8f-40d2-86ff-ea6572b47b06",
   "subtopic": "Mock Exam 4",
-  "status": "text_diff",
+  "status": "ok",
   "score": 1.0,
   "stem_cmp": "exact",
   "a_cmp": "exact",
@@ -2506,7 +2506,7 @@
   "c_cmp": "exact",
   "ans_cmp": "exact",
   "ans_missing_in_pdf": false,
-  "expl_cmp": "diff",
+  "expl_cmp": "exact",
   "table_flag": false,
   "db_correct": "C",
   "pdf_correct": "C"
@@ -2562,7 +2562,7 @@
  {
   "id": "e07e2b6d-3e0d-45a8-bcaa-f3ba01fe5d64",
   "subtopic": "Mock Exam 4",
-  "status": "text_diff",
+  "status": "ok",
   "score": 0.867,
   "stem_cmp": "exact",
   "a_cmp": "exact",
@@ -2570,7 +2570,7 @@
   "c_cmp": "delig_ok",
   "ans_cmp": "exact",
   "ans_missing_in_pdf": false,
-  "expl_cmp": "diff",
+  "expl_cmp": "exact",
   "table_flag": false,
   "db_correct": "A",
   "pdf_correct": "A"
@@ -2578,7 +2578,7 @@
  {
   "id": "e43cec0e-4bbd-4a05-b4d5-99e26acbc4ed",
   "subtopic": "Mock Exam 4",
-  "status": "text_diff",
+  "status": "ok",
   "score": 1.0,
   "stem_cmp": "exact",
   "a_cmp": "exact",
@@ -2586,7 +2586,7 @@
   "c_cmp": "exact",
   "ans_cmp": "exact",
   "ans_missing_in_pdf": false,
-  "expl_cmp": "diff",
+  "expl_cmp": "exact",
   "table_flag": false,
   "db_correct": "B",
   "pdf_correct": "B"
@@ -2658,7 +2658,7 @@
  {
   "id": "ebb72a48-f974-4075-aad3-efb681fc8f60",
   "subtopic": "Mock Exam 4",
-  "status": "text_diff",
+  "status": "ok",
   "score": 1.0,
   "stem_cmp": "exact",
   "a_cmp": "exact",
@@ -2666,7 +2666,7 @@
   "c_cmp": "exact",
   "ans_cmp": "exact",
   "ans_missing_in_pdf": false,
-  "expl_cmp": "diff",
+  "expl_cmp": "exact",
   "table_flag": false,
   "db_correct": "B",
   "pdf_correct": "B"
@@ -2722,7 +2722,7 @@
  {
   "id": "f4c34d8b-55bf-4947-926b-7a10bde97fcb",
   "subtopic": "Mock Exam 4",
-  "status": "text_diff",
+  "status": "ok",
   "score": 0.938,
   "stem_cmp": "exact",
   "a_cmp": "delig_ok",
@@ -2730,7 +2730,7 @@
   "c_cmp": "exact",
   "ans_cmp": "exact",
   "ans_missing_in_pdf": false,
-  "expl_cmp": "diff",
+  "expl_cmp": "exact",
   "table_flag": false,
   "db_correct": "A",
   "pdf_correct": "A"
@@ -6530,7 +6530,7 @@
  {
   "id": "005dad34-35e4-4a56-addb-81e215474253",
   "subtopic": "Reading 19 Exchange Rate Calculations",
-  "status": "text_diff",
+  "status": "ok",
   "score": 1.0,
   "stem_cmp": "exact",
   "a_cmp": "exact",
@@ -6538,7 +6538,7 @@
   "c_cmp": "exact",
   "ans_cmp": "exact",
   "ans_missing_in_pdf": false,
-  "expl_cmp": "diff",
+  "expl_cmp": "exact",
   "table_flag": false,
   "db_correct": "A",
   "pdf_correct": "A"
@@ -6626,7 +6626,7 @@
  {
   "id": "399751e7-4bca-4557-89a5-bd05aa4e3307",
   "subtopic": "Reading 19 Exchange Rate Calculations",
-  "status": "text_diff",
+  "status": "ok",
   "score": 1.0,
   "stem_cmp": "exact",
   "a_cmp": "exact",
@@ -6634,7 +6634,7 @@
   "c_cmp": "exact",
   "ans_cmp": "exact",
   "ans_missing_in_pdf": false,
-  "expl_cmp": "diff",
+  "expl_cmp": "exact",
   "table_flag": false,
   "db_correct": "A",
   "pdf_correct": "A"
@@ -6810,7 +6810,7 @@
   "c_cmp": "exact",
   "ans_cmp": "diff",
   "ans_missing_in_pdf": false,
-  "expl_cmp": "diff",
+  "expl_cmp": "exact",
   "table_flag": false,
   "db_correct": "A",
   "pdf_correct": "C"
@@ -7834,7 +7834,7 @@
   "c_cmp": "exact",
   "ans_cmp": "diff",
   "ans_missing_in_pdf": false,
-  "expl_cmp": "diff",
+  "expl_cmp": "exact",
   "table_flag": false,
   "db_correct": "B",
   "pdf_correct": "C"
@@ -8282,7 +8282,7 @@
   "c_cmp": "exact",
   "ans_cmp": "exact",
   "ans_missing_in_pdf": false,
-  "expl_cmp": "diff",
+  "expl_cmp": "exact",
   "table_flag": false,
   "db_correct": "C",
   "pdf_correct": "C"
@@ -9482,7 +9482,7 @@
   "c_cmp": "delig_ok",
   "ans_cmp": "exact",
   "ans_missing_in_pdf": false,
-  "expl_cmp": "diff",
+  "expl_cmp": "exact",
   "table_flag": false,
   "db_correct": "A",
   "pdf_correct": "A"
@@ -9682,7 +9682,7 @@
  {
   "id": "9b93926f-5b39-4436-a408-3108a06bb709",
   "subtopic": "Reading 30 Analyzing Income Statements",
-  "status": "text_diff",
+  "status": "ok",
   "score": 1.0,
   "stem_cmp": "exact",
   "a_cmp": "exact",
@@ -9690,7 +9690,7 @@
   "c_cmp": "exact",
   "ans_cmp": "exact",
   "ans_missing_in_pdf": false,
-  "expl_cmp": "diff",
+  "expl_cmp": "exact",
   "table_flag": false,
   "db_correct": "A",
   "pdf_correct": "A"
@@ -10266,7 +10266,7 @@
   "c_cmp": "exact",
   "ans_cmp": "diff",
   "ans_missing_in_pdf": false,
-  "expl_cmp": "diff",
+  "expl_cmp": "exact",
   "table_flag": false,
   "db_correct": "C",
   "pdf_correct": "A"
@@ -12298,7 +12298,7 @@
   "c_cmp": "diff",
   "ans_cmp": "exact",
   "ans_missing_in_pdf": false,
-  "expl_cmp": "diff",
+  "expl_cmp": "exact",
   "table_flag": false,
   "db_correct": "C",
   "pdf_correct": "C"
@@ -14946,7 +14946,7 @@
  {
   "id": "1c4c3a20-cf36-42d2-929f-2d36cd128153",
   "subtopic": "Mock Exam 1",
-  "status": "text_diff",
+  "status": "ok",
   "score": 1.0,
   "stem_cmp": "exact",
   "a_cmp": "exact",
@@ -14954,7 +14954,7 @@
   "c_cmp": "exact",
   "ans_cmp": "exact",
   "ans_missing_in_pdf": false,
-  "expl_cmp": "diff",
+  "expl_cmp": "exact",
   "table_flag": false,
   "db_correct": "B",
   "pdf_correct": "B"
@@ -18706,7 +18706,7 @@
  {
   "id": "6d8629db-7bbf-45d6-9991-6d170317bd75",
   "subtopic": "Mock Exam 5",
-  "status": "text_diff",
+  "status": "ok",
   "score": 0.988,
   "stem_cmp": "exact",
   "a_cmp": "exact",
@@ -18714,7 +18714,7 @@
   "c_cmp": "delig_ok",
   "ans_cmp": "exact",
   "ans_missing_in_pdf": false,
-  "expl_cmp": "diff",
+  "expl_cmp": "exact",
   "table_flag": false,
   "db_correct": "A",
   "pdf_correct": "A"
@@ -19674,7 +19674,7 @@
   "c_cmp": "exact",
   "ans_cmp": "diff",
   "ans_missing_in_pdf": false,
-  "expl_cmp": "diff",
+  "expl_cmp": "exact",
   "table_flag": false,
   "db_correct": "A",
   "pdf_correct": "B"
@@ -21746,7 +21746,7 @@
  {
   "id": "129e2bc4-ca1e-4aa8-a671-47a3d67cd3a1",
   "subtopic": "Reading 15 Monetary Policy",
-  "status": "text_diff",
+  "status": "ok",
   "score": 1.0,
   "stem_cmp": "exact",
   "a_cmp": "exact",
@@ -21754,7 +21754,7 @@
   "c_cmp": "exact",
   "ans_cmp": "exact",
   "ans_missing_in_pdf": false,
-  "expl_cmp": "diff",
+  "expl_cmp": "exact",
   "table_flag": false,
   "db_correct": "C",
   "pdf_correct": "C"
@@ -21834,7 +21834,7 @@
   "c_cmp": "diff",
   "ans_cmp": "diff",
   "ans_missing_in_pdf": false,
-  "expl_cmp": "diff",
+  "expl_cmp": "exact",
   "table_flag": false,
   "db_correct": "C",
   "pdf_correct": "A"
@@ -31178,7 +31178,7 @@
   "c_cmp": "exact",
   "ans_cmp": "diff",
   "ans_missing_in_pdf": false,
-  "expl_cmp": "diff",
+  "expl_cmp": "exact",
   "table_flag": false,
   "db_correct": "C",
   "pdf_correct": "A"
@@ -31466,7 +31466,7 @@
   "c_cmp": "diff",
   "ans_cmp": "exact",
   "ans_missing_in_pdf": false,
-  "expl_cmp": "diff",
+  "expl_cmp": "exact",
   "table_flag": false,
   "db_correct": "B",
   "pdf_correct": "B"
@@ -31474,7 +31474,7 @@
  {
   "id": "461402db-491c-4682-9382-53da69c47688",
   "subtopic": "Reading 39 Financial Analysis Techniques",
-  "status": "text_diff",
+  "status": "ok",
   "score": 0.947,
   "stem_cmp": "exact",
   "a_cmp": "exact",
@@ -31482,7 +31482,7 @@
   "c_cmp": "delig_ok",
   "ans_cmp": "exact",
   "ans_missing_in_pdf": false,
-  "expl_cmp": "diff",
+  "expl_cmp": "exact",
   "table_flag": false,
   "db_correct": "B",
   "pdf_correct": "B"
@@ -31666,7 +31666,7 @@
  {
   "id": "74113c92-2132-45b1-8cc5-aacbc3712b1b",
   "subtopic": "Reading 39 Financial Analysis Techniques",
-  "status": "text_diff",
+  "status": "ok",
   "score": 1.0,
   "stem_cmp": "exact",
   "a_cmp": "exact",
@@ -31674,7 +31674,7 @@
   "c_cmp": "exact",
   "ans_cmp": "exact",
   "ans_missing_in_pdf": false,
-  "expl_cmp": "diff",
+  "expl_cmp": "exact",
   "table_flag": false,
   "db_correct": "C",
   "pdf_correct": "C"
@@ -32130,7 +32130,7 @@
  {
   "id": "d27d6693-dc7e-4ec5-b92b-6e03cd5d08aa",
   "subtopic": "Reading 39 Financial Analysis Techniques",
-  "status": "text_diff",
+  "status": "ok",
   "score": 1.0,
   "stem_cmp": "exact",
   "a_cmp": "exact",
@@ -32138,7 +32138,7 @@
   "c_cmp": "exact",
   "ans_cmp": "exact",
   "ans_missing_in_pdf": false,
-  "expl_cmp": "diff",
+  "expl_cmp": "exact",
   "table_flag": false,
   "db_correct": "B",
   "pdf_correct": "B"
@@ -32226,7 +32226,7 @@
  {
   "id": "e207f814-9964-40c9-be42-9e46c07ff8e5",
   "subtopic": "Reading 39 Financial Analysis Techniques",
-  "status": "text_diff",
+  "status": "ok",
   "score": 1.0,
   "stem_cmp": "exact",
   "a_cmp": "exact",
@@ -32234,7 +32234,7 @@
   "c_cmp": "exact",
   "ans_cmp": "exact",
   "ans_missing_in_pdf": false,
-  "expl_cmp": "diff",
+  "expl_cmp": "delig_ok",
   "table_flag": false,
   "db_correct": "A",
   "pdf_correct": "A"
@@ -32922,7 +32922,7 @@
   "c_cmp": "diff",
   "ans_cmp": "diff",
   "ans_missing_in_pdf": false,
-  "expl_cmp": "diff",
+  "expl_cmp": "exact",
   "table_flag": false,
   "db_correct": "C",
   "pdf_correct": "A"
@@ -33210,7 +33210,7 @@
   "c_cmp": "exact",
   "ans_cmp": "exact",
   "ans_missing_in_pdf": false,
-  "expl_cmp": "diff",
+  "expl_cmp": "exact",
   "table_flag": false,
   "db_correct": "C",
   "pdf_correct": "C"
@@ -33898,7 +33898,7 @@
   "c_cmp": "exact",
   "ans_cmp": "diff",
   "ans_missing_in_pdf": false,
-  "expl_cmp": "diff",
+  "expl_cmp": "exact",
   "table_flag": false,
   "db_correct": "A",
   "pdf_correct": "B"
@@ -34306,7 +34306,7 @@
  {
   "id": "eee8a184-6790-44f9-856a-54fcb473839c",
   "subtopic": "Reading 26 Capital Investments and Capital Allocation",
-  "status": "text_diff",
+  "status": "ok",
   "score": 1.0,
   "stem_cmp": "exact",
   "a_cmp": "exact",
@@ -34314,7 +34314,7 @@
   "c_cmp": "exact",
   "ans_cmp": "exact",
   "ans_missing_in_pdf": false,
-  "expl_cmp": "diff",
+  "expl_cmp": "exact",
   "table_flag": false,
   "db_correct": "A",
   "pdf_correct": "A"
@@ -34362,7 +34362,7 @@
   "c_cmp": "diff",
   "ans_cmp": "diff",
   "ans_missing_in_pdf": false,
-  "expl_cmp": "diff",
+  "expl_cmp": "exact",
   "table_flag": false,
   "db_correct": "A",
   "pdf_correct": "C"
@@ -34746,7 +34746,7 @@
   "c_cmp": "delig_ok",
   "ans_cmp": "diff",
   "ans_missing_in_pdf": false,
-  "expl_cmp": "diff",
+  "expl_cmp": "exact",
   "table_flag": false,
   "db_correct": "B",
   "pdf_correct": "A"
@@ -34986,7 +34986,7 @@
   "c_cmp": "exact",
   "ans_cmp": "exact",
   "ans_missing_in_pdf": false,
-  "expl_cmp": "diff",
+  "expl_cmp": "exact",
   "table_flag": false,
   "db_correct": "B",
   "pdf_correct": "B"
@@ -35778,7 +35778,7 @@
  {
   "id": "7933534e-3517-4ff5-8bd3-e8ad045841d6",
   "subtopic": "Reading 41 Market Organization and Structure",
-  "status": "text_diff",
+  "status": "ok",
   "score": 1.0,
   "stem_cmp": "exact",
   "a_cmp": "exact",
@@ -35786,7 +35786,7 @@
   "c_cmp": "exact",
   "ans_cmp": "exact",
   "ans_missing_in_pdf": false,
-  "expl_cmp": "diff",
+  "expl_cmp": "exact",
   "table_flag": false,
   "db_correct": "A",
   "pdf_correct": "A"
@@ -36514,7 +36514,7 @@
  {
   "id": "403a53b7-6f50-40f6-94d3-65c4cd44a876",
   "subtopic": "Reading 18 Capital Flows and the FX Market",
-  "status": "text_diff",
+  "status": "ok",
   "score": 1.0,
   "stem_cmp": "exact",
   "a_cmp": "exact",
@@ -36522,7 +36522,7 @@
   "c_cmp": "exact",
   "ans_cmp": "exact",
   "ans_missing_in_pdf": false,
-  "expl_cmp": "diff",
+  "expl_cmp": "exact",
   "table_flag": false,
   "db_correct": "B",
   "pdf_correct": "B"
@@ -36778,7 +36778,7 @@
   "c_cmp": "diff",
   "ans_cmp": "diff",
   "ans_missing_in_pdf": false,
-  "expl_cmp": "diff",
+  "expl_cmp": "exact",
   "table_flag": false,
   "db_correct": "B",
   "pdf_correct": "C"
@@ -38218,7 +38218,7 @@
   "c_cmp": "exact",
   "ans_cmp": "diff",
   "ans_missing_in_pdf": false,
-  "expl_cmp": "diff",
+  "expl_cmp": "exact",
   "table_flag": false,
   "db_correct": "C",
   "pdf_correct": "B"
@@ -38378,7 +38378,7 @@
   "c_cmp": "delig_ok",
   "ans_cmp": "diff",
   "ans_missing_in_pdf": false,
-  "expl_cmp": "diff",
+  "expl_cmp": "exact",
   "table_flag": false,
   "db_correct": "A",
   "pdf_correct": "C"
@@ -38482,7 +38482,7 @@
  {
   "id": "05db3ef6-d46e-4391-97b0-07f9b535d877",
   "subtopic": "Reading 3 Statistical Measures of Asset Returns",
-  "status": "text_diff",
+  "status": "ok",
   "score": 1.0,
   "stem_cmp": "exact",
   "a_cmp": "exact",
@@ -38490,7 +38490,7 @@
   "c_cmp": "exact",
   "ans_cmp": "exact",
   "ans_missing_in_pdf": false,
-  "expl_cmp": "diff",
+  "expl_cmp": "exact",
   "table_flag": false,
   "db_correct": "A",
   "pdf_correct": "A"
@@ -38938,7 +38938,7 @@
   "c_cmp": "exact",
   "ans_cmp": "diff",
   "ans_missing_in_pdf": false,
-  "expl_cmp": "diff",
+  "expl_cmp": "exact",
   "table_flag": false,
   "db_correct": "A",
   "pdf_correct": "B"
@@ -39338,7 +39338,7 @@
   "c_cmp": "exact",
   "ans_cmp": "exact",
   "ans_missing_in_pdf": false,
-  "expl_cmp": "diff",
+  "expl_cmp": "exact",
   "table_flag": false,
   "db_correct": "B",
   "pdf_correct": "B"
@@ -39898,7 +39898,7 @@
   "c_cmp": "diff",
   "ans_cmp": "exact",
   "ans_missing_in_pdf": false,
-  "expl_cmp": "diff",
+  "expl_cmp": "exact",
   "table_flag": false,
   "db_correct": "A",
   "pdf_correct": "A"
@@ -40146,7 +40146,7 @@
  {
   "id": "dd147bde-9de4-40a7-bc89-baf3942cb72b",
   "subtopic": "Reading 12 Firms and Market Structures",
-  "status": "text_diff",
+  "status": "ok",
   "score": 0.909,
   "stem_cmp": "exact",
   "a_cmp": "delig_ok",
@@ -40154,7 +40154,7 @@
   "c_cmp": "exact",
   "ans_cmp": "exact",
   "ans_missing_in_pdf": false,
-  "expl_cmp": "diff",
+  "expl_cmp": "exact",
   "table_flag": false,
   "db_correct": "A",
   "pdf_correct": "A"
@@ -41658,7 +41658,7 @@
   "c_cmp": "diff",
   "ans_cmp": "diff",
   "ans_missing_in_pdf": false,
-  "expl_cmp": "diff",
+  "expl_cmp": "exact",
   "table_flag": false,
   "db_correct": "B",
   "pdf_correct": "A"
@@ -49306,7 +49306,7 @@
   "c_cmp": "exact",
   "ans_cmp": "diff",
   "ans_missing_in_pdf": false,
-  "expl_cmp": "diff",
+  "expl_cmp": "exact",
   "table_flag": false,
   "db_correct": "B",
   "pdf_correct": "C"
@@ -49330,7 +49330,7 @@
  {
   "id": "327c9086-a1d9-4821-bcbd-d35108f0cc6c",
   "subtopic": "Reading 80 Investments in Private Capital- Equity and Debt",
-  "status": "text_diff",
+  "status": "ok",
   "score": 1.0,
   "stem_cmp": "exact",
   "a_cmp": "exact",
@@ -49338,7 +49338,7 @@
   "c_cmp": "exact",
   "ans_cmp": "exact",
   "ans_missing_in_pdf": false,
-  "expl_cmp": "diff",
+  "expl_cmp": "exact",
   "table_flag": false,
   "db_correct": "C",
   "pdf_correct": "C"
@@ -49346,7 +49346,7 @@
  {
   "id": "8fcec448-bc21-4526-a43a-c0fbcf7e153f",
   "subtopic": "Reading 80 Investments in Private Capital- Equity and Debt",
-  "status": "text_diff",
+  "status": "ok",
   "score": 1.0,
   "stem_cmp": "exact",
   "a_cmp": "exact",
@@ -49354,7 +49354,7 @@
   "c_cmp": "exact",
   "ans_cmp": "exact",
   "ans_missing_in_pdf": false,
-  "expl_cmp": "diff",
+  "expl_cmp": "exact",
   "table_flag": false,
   "db_correct": "A",
   "pdf_correct": "A"
@@ -49362,7 +49362,7 @@
  {
   "id": "af62bd72-ea62-462d-a85b-89cbdef9e657",
   "subtopic": "Reading 80 Investments in Private Capital- Equity and Debt",
-  "status": "text_diff",
+  "status": "ok",
   "score": 1.0,
   "stem_cmp": "exact",
   "a_cmp": "exact",
@@ -49370,7 +49370,7 @@
   "c_cmp": "delig_ok",
   "ans_cmp": "exact",
   "ans_missing_in_pdf": false,
-  "expl_cmp": "diff",
+  "expl_cmp": "exact",
   "table_flag": false,
   "db_correct": "A",
   "pdf_correct": "A"
@@ -49458,7 +49458,7 @@
  {
   "id": "e1e450fd-6302-48e8-a0fb-4576a22ce1ea",
   "subtopic": "Reading 80 Investments in Private Capital- Equity and Debt",
-  "status": "text_diff",
+  "status": "ok",
   "score": 0.97,
   "stem_cmp": "exact",
   "a_cmp": "exact",
@@ -49466,7 +49466,7 @@
   "c_cmp": "exact",
   "ans_cmp": "exact",
   "ans_missing_in_pdf": false,
-  "expl_cmp": "diff",
+  "expl_cmp": "exact",
   "table_flag": false,
   "db_correct": "A",
   "pdf_correct": "A"
@@ -49474,7 +49474,7 @@
  {
   "id": "ea97dcd9-b3fc-48f7-8d5f-f8c5a556f496",
   "subtopic": "Reading 80 Investments in Private Capital- Equity and Debt",
-  "status": "text_diff",
+  "status": "ok",
   "score": 0.964,
   "stem_cmp": "exact",
   "a_cmp": "exact",
@@ -49482,7 +49482,7 @@
   "c_cmp": "delig_ok",
   "ans_cmp": "exact",
   "ans_missing_in_pdf": false,
-  "expl_cmp": "diff",
+  "expl_cmp": "exact",
   "table_flag": false,
   "db_correct": "C",
   "pdf_correct": "C"
@@ -49538,7 +49538,7 @@
  {
   "id": "190e5b19-0e56-4f59-bcd1-79991c11cb7f",
   "subtopic": "Reading 35 Analysis of Long-Term Assets",
-  "status": "text_diff",
+  "status": "ok",
   "score": 1.0,
   "stem_cmp": "exact",
   "a_cmp": "exact",
@@ -49546,7 +49546,7 @@
   "c_cmp": "exact",
   "ans_cmp": "exact",
   "ans_missing_in_pdf": false,
-  "expl_cmp": "diff",
+  "expl_cmp": "exact",
   "table_flag": false,
   "db_correct": "C",
   "pdf_correct": "C"
@@ -49562,7 +49562,7 @@
   "c_cmp": "exact",
   "ans_cmp": "diff",
   "ans_missing_in_pdf": false,
-  "expl_cmp": "diff",
+  "expl_cmp": "exact",
   "table_flag": false,
   "db_correct": "C",
   "pdf_correct": "A"
@@ -49762,7 +49762,7 @@
  {
   "id": "0cece234-cd10-4065-af95-2798e118b764",
   "subtopic": "Reading 69 Forward Commitment and Contingent Claim Features and Instruments",
-  "status": "text_diff",
+  "status": "ok",
   "score": 1.0,
   "stem_cmp": "exact",
   "a_cmp": "exact",
@@ -49770,7 +49770,7 @@
   "c_cmp": "exact",
   "ans_cmp": "exact",
   "ans_missing_in_pdf": false,
-  "expl_cmp": "diff",
+  "expl_cmp": "exact",
   "table_flag": false,
   "db_correct": "A",
   "pdf_correct": "A"
@@ -51714,7 +51714,7 @@
  {
   "id": "9a526336-6fc2-4790-af74-9b12da61d842",
   "subtopic": "Reading 33 Analyzing Statements of Cash Flows II",
-  "status": "text_diff",
+  "status": "ok",
   "score": 0.895,
   "stem_cmp": "exact",
   "a_cmp": "exact",
@@ -51722,7 +51722,7 @@
   "c_cmp": "delig_ok",
   "ans_cmp": "exact",
   "ans_missing_in_pdf": false,
-  "expl_cmp": "diff",
+  "expl_cmp": "exact",
   "table_flag": false,
   "db_correct": "C",
   "pdf_correct": "C"
@@ -53266,7 +53266,7 @@
  {
   "id": "61ec4a9d-4fc5-4fb8-98d4-f03b6fca092a",
   "subtopic": "Reading 37 Analysis of Income Taxes",
-  "status": "text_diff",
+  "status": "ok",
   "score": 1.0,
   "stem_cmp": "exact",
   "a_cmp": "exact",
@@ -53274,7 +53274,7 @@
   "c_cmp": "exact",
   "ans_cmp": "exact",
   "ans_missing_in_pdf": false,
-  "expl_cmp": "diff",
+  "expl_cmp": "exact",
   "table_flag": false,
   "db_correct": "B",
   "pdf_correct": "B"
@@ -54986,7 +54986,7 @@
   "c_cmp": "exact",
   "ans_cmp": "diff",
   "ans_missing_in_pdf": false,
-  "expl_cmp": "diff",
+  "expl_cmp": "exact",
   "table_flag": false,
   "db_correct": "B",
   "pdf_correct": "A"
@@ -55130,7 +55130,7 @@
   "c_cmp": "exact",
   "ans_cmp": "diff",
   "ans_missing_in_pdf": false,
-  "expl_cmp": "diff",
+  "expl_cmp": "exact",
   "table_flag": false,
   "db_correct": "C",
   "pdf_correct": "B"
@@ -55210,7 +55210,7 @@
   "c_cmp": "exact",
   "ans_cmp": "exact",
   "ans_missing_in_pdf": false,
-  "expl_cmp": "diff",
+  "expl_cmp": "exact",
   "table_flag": false,
   "db_correct": "C",
   "pdf_correct": "C"
@@ -57842,7 +57842,7 @@
  {
   "id": "66bc8648-1d89-40e8-8165-6cb0e066c04a",
   "subtopic": "Reading 6 Simulation Methods",
-  "status": "text_diff",
+  "status": "ok",
   "score": 1.0,
   "stem_cmp": "exact",
   "a_cmp": "exact",
@@ -57850,7 +57850,7 @@
   "c_cmp": "exact",
   "ans_cmp": "exact",
   "ans_missing_in_pdf": false,
-  "expl_cmp": "diff",
+  "expl_cmp": "exact",
   "table_flag": false,
   "db_correct": "A",
   "pdf_correct": "A"
@@ -58570,7 +58570,7 @@
   "c_cmp": "diff",
   "ans_cmp": "exact",
   "ans_missing_in_pdf": false,
-  "expl_cmp": "diff",
+  "expl_cmp": "exact",
   "table_flag": false,
   "db_correct": "C",
   "pdf_correct": "C"
@@ -58906,7 +58906,7 @@
   "c_cmp": "exact",
   "ans_cmp": "diff",
   "ans_missing_in_pdf": false,
-  "expl_cmp": "diff",
+  "expl_cmp": "exact",
   "table_flag": false,
   "db_correct": "B",
   "pdf_correct": "C"
@@ -59154,7 +59154,7 @@
  {
   "id": "494d44b1-ac51-40aa-b906-e7f713a8b04f",
   "subtopic": "Reading 24 Corporate Governance- Conflicts, Mechanisms, Risks, and Benefits",
-  "status": "text_diff",
+  "status": "ok",
   "score": 0.958,
   "stem_cmp": "exact",
   "a_cmp": "exact",
@@ -59162,7 +59162,7 @@
   "c_cmp": "exact",
   "ans_cmp": "exact",
   "ans_missing_in_pdf": false,
-  "expl_cmp": "diff",
+  "expl_cmp": "exact",
   "table_flag": false,
   "db_correct": "C",
   "pdf_correct": "C"
