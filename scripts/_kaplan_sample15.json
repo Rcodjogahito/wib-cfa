@@ -1,0 +1,167 @@
+[
+ {
+  "id": "e735a5b9-0c5a-4237-9b18-8ba2e23e78b5",
+  "subtopic": "Reading 23 Investors and Other Stakeholders",
+  "db_correct": "C",
+  "pdf_correct": "A",
+  "question_en": "Increasing a company's risk exposure in an effort to increase its growth rate is most likely to be favored by:",
+  "option_a": "owners but not lenders.",
+  "option_b": "neither lenders nor owners.",
+  "option_c": "both lenders and owners.",
+  "explanation_en": "Because the upside for lenders is limited to the promised interest payments and repayment of principal, they do not benefit from an increased growth rate of the company and are unlikely to favor actions that increase a company's risk exposure and potential for default. Because owners have potentially unlimited upside from a company's growth, they are more likely to favor actions that increase a company's potential growth rate."
+ },
+ {
+  "id": "d5712a5b-804b-4625-a07b-aaac2ac71af1",
+  "subtopic": "Reading 30 Analyzing Income Statements",
+  "db_correct": "B",
+  "pdf_correct": "A",
+  "question_en": "For a firm with a simple capital structure, all of the following are necessary to measure basic earnings per share (EPS) EXCEPT:",
+  "option_a": "dividends paid to common shareholders.",
+  "option_b": "the timing and number of shares issued or repurchased during the year.",
+  "option_c": "dividends paid to preferred shareholders.",
+  "explanation_en": "Basic EPS = earnings available to common shareholders divided by the weighted average number of common shares outstanding. Earnings available to common shareholders equals net income minus preferred dividends."
+ },
+ {
+  "id": "2a8965d3-703a-4922-8327-c741bb515ecb",
+  "subtopic": "Reading 1 Rates and Returns",
+  "db_correct": "C",
+  "pdf_correct": "B",
+  "question_en": "A stock increased in value last year. Which will be greater, its continuously compounded or its holding period return?",
+  "option_a": "Its continuously compounded return.",
+  "option_b": "Its holding period return.",
+  "option_c": "Neither, they will be equal.",
+  "explanation_en": "When a stock increases in value, the holding period return is always greater than the continuously compounded return that would be required to generate that holding period return. For example, if a stock increases from $1 to $1.10 in a year, the holding period return is 10%. The continuously compounded rate needed to increase a stock's value by 10% is Ln(1.10) = 9.53%."
+ },
+ {
+  "id": "edad5484-709b-413b-984b-3c56ed50a20c",
+  "subtopic": "Reading 77 Valuing a Derivative Using a One-Period Binomial Model",
+  "db_correct": "B",
+  "pdf_correct": "C",
+  "question_en": "Consider a stock that will have a value of either 22 or 14 one year from now. If the risk-free rate is 5%, what is the ratio of shares to short call options with an exercise price of 18 for a portfolio that will have the same value at expiration regardless of the stock price at the end of the year?",
+  "option_a": "0.48.",
+  "option_b": "0.53.",
+  "option_c": "0.50.",
+  "explanation_en": "With a stock price of 22 at expiration, the short call payoff is –4. With a stock price of 14 at expiration, the call payoff is zero. The appropriate hedge ratio is (4 – 0) / (22 – 14) = 0.5. Portfolio value: 0.5(22) – 4 = 0.5(14) = 7 A portfolio of 0.5 shares of stock to 1 short call option will produce the same portfolio value whether the stock price at expiration is 22 or 14."
+ },
+ {
+  "id": "b5647842-0f23-4ae6-8933-3f19caaf9a05",
+  "subtopic": "Reading 54 Fixed-Income Bond Valuation- Prices and Yields",
+  "db_correct": "A",
+  "pdf_correct": "B",
+  "question_en": "A new-issue, 15-year, $1,000 face value 6.75% semi-annual coupon bond is priced at $1,075. Which of the following describes the bond and the relationship of the bond's market yield to the coupon?",
+  "option_a": "Premium bond, required market yield is greater than 6.75%.",
+  "option_b": "Premium bond, required market yield is less than 6.75%.",
+  "option_c": "Discount bond, required market yield is greater than 6.75%.",
+  "explanation_en": "When the issue price is greater than par, the bond is selling at a premium. We also know that the current market required rate is less than the coupon rate of 6.75%, because the bond is selling at a premium. For the examination, remember the following relationships: Type of Bond Market Yield to Coupon Price to Par Premium Market Yield < Coupon Price > Par Par Market Yield = Coupon Price = Par Discount Market Yield > Coupon Price < Par"
+ },
+ {
+  "id": "b0a61e9a-91ef-4dfe-9260-1b936164adea",
+  "subtopic": "Reading 91.3 Guidance for Standard II",
+  "db_correct": "B",
+  "pdf_correct": "C",
+  "question_en": "An analyst manages the assets of a charitable organization. Her supervisor tells her to buy a certain stock because the company's chief executive, who is also a board member in the organization, told her the company's earnings will exceed the market forecast when they are released next week. The analyst objects, but the supervisor says this is what they have always done and sees no reason for changing now. The analyst complies with the request. The analyst violated the Standard(s) concerning:",
+  "option_a": "only loyalty.",
+  "option_b": "both loyalty and material nonpublic information.",
+  "option_c": "only material nonpublic information.",
+  "explanation_en": "Complying with the request is a violation of Standard II(A) Material Nonpublic Information which prohibits trading on insider information. Standard IV(A) Loyalty deals with issues such as independent practice, leaving an employer and continuing to act in the employer's best interest until their resignation becomes effective, and whistleblowing."
+ },
+ {
+  "id": "01c9eeef-b5be-4f43-b3fc-3ac0b90f440b",
+  "subtopic": "Mock Exam 6",
+  "db_correct": "B",
+  "pdf_correct": "A",
+  "question_en": "Alan Powers, CFA, is a trader with Rogers Securities. His sister works for Potter Steel and has told him that Potter's earnings, which will be released two days from now, are significantly less than expectations. Powers receives a buy order for the firm's client accounts for a block of Potter shares. According to the Code and Standards, Powers' most appropriate action is to:",
+  "option_a": "enter the trade without mentioning the coming earnings disappointment.",
+  "option_b": "ask his compliance officer to place Potter stock on the firm’s restricted list because he has material nonpublic information, to avoid making the trade.",
+  "option_c": "inform only the firm’s head of trading that the trade would not be in clients’ best interest, without disclosing the information.",
+  "explanation_en": "Standard II(A) Material Nonpublic Information requires members and candidates not to act or cause others to act based on material nonpublic information. As a general rule, if a member acts as he would if he did not possess the information, he will not violate this Standard."
+ },
+ {
+  "id": "aa6e02bf-6678-4fd4-b1b5-a0c2f1e84f39",
+  "subtopic": "Reading 20 Portfolio Risk and Return Part I",
+  "db_correct": "B",
+  "pdf_correct": "A",
+  "question_en": "Stock A has a standard deviation of 0.5 and Stock B has a standard deviation of 0.3. Stock A and Stock B are perfectly positively correlated. According to Markowitz portfolio theory how much should be invested in each stock to minimize the portfolio's standard deviation?",
+  "option_a": "100% in Stock B.",
+  "option_b": "30% in Stock A and 70% in Stock B.",
+  "option_c": "50% in Stock A and 50% in Stock B.",
+  "explanation_en": "Since the stocks are perfectly correlated, there is no benefit from diversification. So, invest in the stock with the lowest risk."
+ },
+ {
+  "id": "b86a74d7-406d-4ec8-91af-e30aa8146ff0",
+  "subtopic": "Reading 14 Fiscal Policy",
+  "db_correct": "B",
+  "pdf_correct": "C",
+  "question_en": "Arguments for being concerned with the size of a fiscal deficit relative to GDP least likely include:",
+  "option_a": "a likely need for higher future taxes.",
+  "option_b": "higher interest rates due to government borrowing.",
+  "option_c": "a high proportion of government debt owed to the country’s citizens.",
+  "explanation_en": "That a government owes its own citizens much of its outstanding debt is an argument against being concerned about fiscal deficits. Arguments for being concerned about fiscal deficits include the need for higher future taxes and the potential for government borrowing to increase interest rates and crowd out private investment."
+ },
+ {
+  "id": "590c3070-cc10-4f43-a2ed-86a2cf2f9c38",
+  "subtopic": "Reading 30 Analyzing Income Statements",
+  "db_correct": "B",
+  "pdf_correct": "A",
+  "question_en": "Which of the following securities would least likely be found in a simple capital structure?",
+  "option_a": "3%, $100 par value convertible preferred.",
+  "option_b": "6%, $5000 par value putable bond.",
+  "option_c": "7%, $100 par value non convertible preferred.",
+  "explanation_en": "A simple capital structure contains no potentially dilutive securities such as stock options, warrants, or convertible preferred stock."
+ },
+ {
+  "id": "45d3bc08-9d9d-4ffa-b43c-0f3ce76cf892",
+  "subtopic": "Reading 52 Fixed-Income Markets for Corporate Issuers",
+  "db_correct": "C",
+  "pdf_correct": "A",
+  "question_en": "Which of the following statements regarding repurchase agreements is most accurate?",
+  "option_a": "Greater demand for the underlying security results in a lower repo margin.",
+  "option_b": "Higher credit rating of the underlying collateral results in a higher repo rate.",
+  "option_c": "Lower credit rating of the underlying collateral results in a lower repo margin.",
+  "explanation_en": "Other things equal, the repo margin (percent difference between the market value of the collateral and the loan amount) is lower if the collateral is in greater demand. The repo margin and repo rate (the annualized percent difference between the sale price and repurchase price of the collateral) are inversely related to the credit quality of the collateral."
+ },
+ {
+  "id": "ae681e48-9922-4885-889c-a071ea6544ed",
+  "subtopic": "Reading 77 Valuing a Derivative Using a One-Period Binomial Model",
+  "db_correct": "A",
+  "pdf_correct": "B",
+  "question_en": "If a European put option is trading at a higher price than that implied from the binomial model, investors can earn a return in excess of the risk-free rate by:",
+  "option_a": "buying the underlying, selling the call, and investing at the risk-free rate.",
+  "option_b": "selling the underlying, buying the call, and investing at the risk-free rate.",
+  "option_c": "buying the underlying, buying the call, and borrowing at the risk-free rate.",
+  "explanation_en": "Using put-call parity and then rearranging to isolate the put: S + p = c + X(1 + r)–T 0 0 0 p = c – S + X(1 + r)–T 0 0 0 The put is overpriced, therefore it should be sold (left side of rearranged equation). Therefore, the components of the right side of the equation should be transacted: buy a call, sell the underlying, and invest at the risk-free rate."
+ },
+ {
+  "id": "df9454a9-5660-41cb-a049-86bd94a16d3b",
+  "subtopic": "Reading 50 Fixed-Income Cash Flows and Types",
+  "db_correct": "B",
+  "pdf_correct": "A",
+  "question_en": "Which of the following securities is least likely classified as a eurobond? A bond that is denominated in:",
+  "option_a": "euros and issued in Germany.",
+  "option_b": "euros and issued in the United States.",
+  "option_c": "U.S. dollars and issued in Japan.",
+  "explanation_en": "Bonds denominated in the currency of the country or region where they are issued are domestic bonds. Eurobonds are denominated in a currency other than those of the countries in which they are sold."
+ },
+ {
+  "id": "62a38317-cf55-494b-acb7-6765100e94ef",
+  "subtopic": "Reading 32 Analyzing Statements of Cash Flows I",
+  "db_correct": "B",
+  "pdf_correct": "A",
+  "question_en": "To convert an indirect statement of cash flows to a direct basis, the analyst would:",
+  "option_a": "add decreases in accounts receivables to net sales.",
+  "option_b": "subtract increases in inventory from cost of goods sold.",
+  "option_c": "add increases in accounts payable to cost of goods sold.",
+  "explanation_en": "A decrease in accounts receivable represents an increase in cash so this should be added to sales. Increases in accounts payable represent an increase in cash so these should be subtracted from cost of goods sold. Increases in inventory represent a use of cash so these would be added to cost of goods sold."
+ },
+ {
+  "id": "c4fd83b4-6e5c-4ca7-867e-954ebf083c96",
+  "subtopic": "Reading 17 International Trade",
+  "db_correct": "C",
+  "pdf_correct": "B",
+  "question_en": "An anti-dumping restriction on trade:",
+  "option_a": "keeps some highly sensitive products in the country.",
+  "option_b": "prohibits foreign rms from selling products below cost to gain market share.",
+  "option_c": "protects infant industries.",
+  "explanation_en": "Firms dump their goods at a price lower than cost in order to drive out the competition. Once this is complete, they will be able to raise prices to much higher levels in order to gain abnormal profits. Of course, once prices are increased, new competitors may arise."
+ }
+]
