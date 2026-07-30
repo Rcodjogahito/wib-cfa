@@ -1,0 +1,222 @@
+[
+ {
+  "cache_name": "AI,_Corporate,_Deriv,_Eco.json",
+  "page_idx": 149,
+  "page_type": "answers",
+  "items": [
+   {
+    "qnum": 38,
+    "correct": "C",
+    "expl": "A. Incorrect because once an economy has moved to a system of fiat money, the role of the supplier of that money (the central bank) becomes even more crucial because they could, for example, expand the supply of this money indefinitely should they wish to do so. Central banks therefore play a crucial role in modern economies as the suppliers and guardians of the value of their fiat currencies and as institutions charged with the role of maintaining confidence in their currencies.\nB. Incorrect because once an economy has moved to a system of fiat money, the role of the supplier of that money (the central bank) becomes even more crucial because they could, for example, expand the supply of this money indefinitely should they wish to do so. Central banks therefore play a crucial role in modern economies as the suppliers and guardians of the value of their fiat currencies and as institutions charged with the role of maintaining confidence in their currencies.\nC. Correct because once an economy has moved to a system of fiat money, the role of the supplier of that money (the central bank) becomes even more crucial because they could, for example, expand the supply of this money indefinitely should they wish to do so. Central banks therefore play a crucial role in modern economies as the suppliers and guardians of the value of their fiat currencies and as institutions charged with the role of maintaining confidence in their currencies."
+   },
+   {
+    "qnum": 39,
+    "correct": "C",
+    "expl": "A. Incorrect because businesses wait until downturns look genuine to lay off, and wait until recoveries look secure to rehire, this measure is important because it lags the cycle on both the way down and the way up. Thus, average duration of unemployment is a lagging economic indicator.\nB. Incorrect because businesses will cut overtime before laying off workers in a downturn and increase it before rehiring in a cyclical upturn, these measures move up and down before the general economy. Thus, average weekly hours, manufacturing is a leading economic indicator.\nC. Correct because once recession or recovery is clear, businesses adjust their fulltime payrolls. Non-agricultural payrolls and manufacturing and trade sales are coincident indicators."
+   },
+   {
+    "qnum": 40,
+    "correct": "B",
+    "expl": "A. Incorrect because the CAD/USD exchange rate was not inverted, as required in the correct calculation:\nBeginning of period JPY/CAD rate = 1.3216 × 105.42 = 139.32\nEnd of period JPY/CAD exchange rate = 1.2944 × 104.74 = 135.58\nTherefore the percentage change in JPY/CAD was calculated incorrectly as 135.58/139.32 – 1 = -2.68% ≈ -2.7%.\nB. Correct because sometimes it is necessary to invert one of the quotes in order to get the intermediary currency to cancel out in the equation to get the cross-rate. For example, to get a Canada-yen (JPY/CAD) quote, one is typically using the dollar-Canada (CAD/USD) rate and dollar-yen (JPY/USD) rate, which are the market conventions. Hence, to get a Canada-yen (JPY/CAD) quote, we must first invert the dollar-Canada (CAD/USD) quote before multiplying by the dollar-yen (JPY/USD) quote."
+   }
+  ],
+  "note": "Answer 40 explanation continues on page_idx 150 and concludes on page_idx 151."
+ },
+ {
+  "cache_name": "AI,_Corporate,_Deriv,_Eco.json",
+  "page_idx": 150,
+  "page_type": "answers",
+  "items": [
+   {
+    "qnum": 40,
+    "correct": "B",
+    "expl": "The beginning of period JPY/CAD exchange rate is therefore = 1/1.3216 × 105.42 = 0.75666 × 105.42 = 79.77"
+   }
+  ],
+  "note": "Continuation of Answer 40 (option B calculation) from page_idx 149; continues on page_idx 151. Page is otherwise blank."
+ },
+ {
+  "cache_name": "AI,_Corporate,_Deriv,_Eco.json",
+  "page_idx": 151,
+  "page_type": "answers",
+  "items": [
+   {
+    "qnum": 40,
+    "correct": "B",
+    "expl": "The end of period JPY/CAD exchange rate is therefore = 1/1.2944 × 104.74 = 0.77256 × 104.74 = 80.92\nThe percentage change in the JPY/CAD exchange rate over the period is therefore = 80.92/79.77 – 1 = 1.44% ≈ 1.4%.\nC. Incorrect because the beginning and end of period JPY/USD exchange rates have been reversed chronologically as follows: Beginning of period JPY/CAD rate = 1/1.3216 × 104.74 = 0.75666 × 104.74 = 79.25\nEnd of period JPY/CAD exchange rate = 1/1.2944 × 105.42 = 0.77256 × 105.42 = 81.44\nTherefore the percentage change in JPY/CAD was calculated incorrectly as 81.44/79.25 – 1 = 2.76% ≈ 2.8%."
+   },
+   {
+    "qnum": 41,
+    "correct": "B",
+    "expl": "A. Incorrect because sometimes it is necessary to invert one of the quotes in order to get the intermediary currency to cancel out in the equation to get the cross-rate. The formula for the EUR/GBP cross rate is USD/GBP × (USD/EUR)-1 = USD/GBP × EUR/USD. This answer inverts the wrong exchange rate and reverses the formula to 1.1786 / 1.2604 ≈ 0.9351. This answer would be the GBP/EUR cross rate, not the EUR/GBP cross rate.\nB. Correct because sometimes it is necessary to invert one of the quotes in order to get the intermediary currency to cancel out in the equation to get the cross-rate. For example, to get a Canada-yen (JPY/CAD) quote, one is typically using the dollar-Canada (CAD/USD) rate and dollar-yen (JPY/USD) rate, which are the market conventions. This Canada-yen calculation requires that the dollar-Canada rate (CAD/USD) be inverted to a USD/CAD quote for the calculations to work. The formula for the EUR/GBP cross rate is USD/GBP × (USD/EUR)-1 = USD/GBP × EUR/USD = 1.2604 / 1.1786 ≈ 1.0694.\nC. Incorrect because sometimes it is necessary to invert one of the quotes in order to get the intermediary currency to cancel out in the equation to get the cross-rate. This answer does not invert the quotes but rather multiplies the two spot rates. 1.2604 × 1.1786 ≈ 1.4855."
+   },
+   {
+    "qnum": 42,
+    "correct": "C",
+    "expl": "A. Incorrect because unlike some economic concepts, perfect competition is not merely an ideal based on assumptions. Perfect competition is a reality.\nB. Incorrect because perfect competition does not mean that all perfectly competitive industries are doomed to extinction by a lack of profits. On the contrary, millions of businesses that do very well are living under the pressures of perfect competition.\nC. Correct because profits under the conditions of perfect competition are driven to the required rate of return paid by the entrepreneur to borrow capital from investors (so-called normal profit or rental cost of capital)."
+   }
+  ],
+  "note": "Begins with the conclusion of Answer 40 (continued from page_idx 150), then Answers 41 and 42 in full."
+ },
+ {
+  "cache_name": "AI,_Corporate,_Deriv,_Eco.json",
+  "page_idx": 152,
+  "page_type": "answers",
+  "items": [
+   {
+    "qnum": 43,
+    "correct": "A",
+    "expl": "A. Correct because nominal exchange rates exhibit persistent deviations from PPP.\nB. Incorrect because relative price levels are represented by the real exchange rate. The real exchange rate is an index that adjusts the nominal exchange rate for each country's price level. Creating these indexes requires adjusting the nominal exchange rate by using the price levels in each country of the currency pair (hence the name “real exchange rates”) in order to compare the relative purchasing power between countries. An equivalent way of viewing the real exchange rate is that it represents the relative price levels in the domestic and foreign countries.\nC. Incorrect because nominal exchange rates are not indexes. The real exchange rate represents indexes created by analysts to understand the international competitiveness of an economy and the real purchasing power of a currency. In this context, real exchange rates can be useful for understanding trends in international trade and capital flows and hence can be seen as one of the influences on nominal spot exchange rates."
+   },
+   {
+    "qnum": 44,
+    "correct": "A",
+    "expl": "A. Correct because opponents of free trade point to the potential for greater income inequality and the loss of jobs in developed countries as a result of import competition.\nB. Incorrect because firms benefit from greater economies of scale. Hence, scale economies allow firms to benefit from the larger market size and experience lower average cost of production as a result of trade.\nC. Incorrect because trade can lead to increased exchange of ideas, freer flow of technical expertise, and greater awareness of changing consumer tastes and preferences in global markets. It can also contribute to the development of higher quality and more effective institutions and policies that encourage domestic innovation. For example, Coe and Helpman (1995) show that foreign research and development (R&D) has beneficial effects on domestic productivity. These effects become stronger the more open an economy is to foreign trade."
+   },
+   {
+    "qnum": 45,
+    "correct": "B",
+    "expl": "A. Incorrect because it does not add 1 to the inflation rates and the nominal appreciation rate in the formula, and calculates the change of the real exchange rate as (6%) × (2%)/(3%) = 4%.\nB. Correct because the change in the real exchange rate is (1+ΔSd/f/Sd/f) × (1+ΔPf/Pf)/(1+ΔPd/Pd) – 1 = (1+6%) × (1+2%)/(1+3%) – 1 = 1.06 × 1.02/1.03 – 1 = 0.0497 ≈ 0.05 = 5%, where ΔSd/f/Sd/f is the change of the nominal exchange rate, ΔPf/Pf is the foreign inflation rate, and ΔPd/Pd is the domestic inflation rate.\nUsing the appropriate approximate formula, 6.0% + 2.0% – 3.0% = 5% leads to the same answer choice.\nC. Incorrect because it interchanges domestic and foreign inflation rates in the formula, and calculates the change of real exchange rate as (1+6%) × (1+3%)/(1+2%) – 1 = 1.06 × 1.03/1.02 – 1 = 0.0704 ≈ 0.07 = 7%."
+   }
+  ]
+ },
+ {
+  "cache_name": "AI,_Corporate,_Deriv,_Eco.json",
+  "page_idx": 153,
+  "page_type": "answers",
+  "items": [
+   {
+    "qnum": 46,
+    "correct": "A",
+    "expl": "A. Correct because the change in the real exchange rate is (1+ΔSd/f/Sd/f) × (1+ΔPf/Pf)/(1+ΔPd/Pd) – 1; (1-4%) × (1+6%)/(1+2%) – 1 ≈ 0%. Thus, the change in the real exchange rate is approximately zero percent. The rough calculation is: -4% + 6% – 2% = 0%.\nB. Incorrect because the price increase in the U.S. is assumed to be additive; -4% + 6% + 2% = 4%.\nC. Incorrect because the change in the nominal exchange rate is misinterpreted; 4% + 6% – 2% = 8%."
+   },
+   {
+    "qnum": 47,
+    "correct": "A",
+    "expl": "A. Correct because the characteristics of oligopoly markets include: entry into the market is difficult, with fairly high costs and significant barriers to competition.\nB. Incorrect because perfect competition has very low barriers to entry.\nC. Incorrect because monopolistic competition has low barriers to entry."
+   },
+   {
+    "qnum": 48,
+    "correct": "A",
+    "expl": "A. Correct because the common market is the next level of economic integration that incorporates all aspects of the customs union and extends it by allowing free movement of factors of production among members.\nB. Incorrect because the common market is the customs union plus the free movement of factors of production among members. An economic union plus a common currency is a monetary union. That is, if the members of the economic union decide to adopt a common currency, then it is also a monetary union.\nC. Incorrect because the common market is the customs union plus the free movement of factors of production among members. Common economic institutions and coordination of economic policies among members are traits of an economic union. That is, an economic union requires an even greater degree of integration. It incorporates all aspects of a common market and in addition requires common economic institutions and coordination of economic policies among members."
+   },
+   {
+    "qnum": 49,
+    "correct": "C",
+    "expl": "A. Incorrect because the forward exchange rate will increase, rather than decrease, as a result of an increase in the spot exchange rate.\nB. Incorrect because the forward exchange rate will increase, rather than decrease, as a result of an increase in the foreign risk-free interest rate.\nC. Correct because the arbitrage equation can be re-arranged as needs require. For example, to get the formula for the forward rate, the above equation can be restated as: F(f/d) = S(f/d) × [(1+if)/(1+id)], where F(f/d) is the forward exchange rate, S(f/d) is the spot exchange rate, if is the foreign risk-free interest rate, and id is the domestic risk-free interest rate. Therefore, the forward exchange rate will decrease as a result of an increase in the domestic risk-free interest rate."
+   }
+  ]
+ },
+ {
+  "cache_name": "AI,_Corporate,_Deriv,_Eco.json",
+  "page_idx": 154,
+  "page_type": "answers",
+  "items": [
+   {
+    "qnum": 50,
+    "correct": "A",
+    "expl": "A. Correct because the concentration ratio is the sum of the market shares of the largest N firms. This number is always between zero (perfect competition) and 100 percent (monopoly).\nB. Incorrect because O.C. Herfindahl and A.O. Hirschman suggested an index where the market shares of the top N companies are first squared and then added. If one firm controls the whole market (a monopoly), the Herfindahl–Hirschman index (HHI) equals 1.\nC. Incorrect because O.C. Herfindahl and A.O. Hirschman suggested an index where the market shares of the top N companies are first squared and then added. If one firm controls the whole market (a monopoly), the Herfindahl-Hirschman index (HHI) equals 1."
+   },
+   {
+    "qnum": 51,
+    "correct": "C",
+    "expl": "A. Incorrect because a small country is one that is a price taker in the world market for a product and cannot influence the world market price. The welfare effect can be summarized as follows: Consumers suffer a loss of consumer surplus, local producers gain producer surplus and the net welfare effect results in a deadweight loss to the country's welfare.\nB. Incorrect because the economic impact of a tariff on imports in a small country is one that is a price taker in the world market for a product and cannot influence the world market price. The welfare effect can be summarized as follows: Consumers suffer a loss of consumer surplus, local producers gain producer surplus and the net welfare effect results in a deadweight loss to the country's welfare.\nC. Correct because the economic impact of a tariff on imports in small country is one that is a price taker in the world market for a product and cannot influence the world market price. The welfare effect can be summarized as follows: Consumers suffer a loss of consumer surplus, local producers gain producer surplus and the net welfare effect results in a deadweight loss to the country's welfare."
+   },
+   {
+    "qnum": 52,
+    "correct": "A",
+    "expl": "A. Correct because the ideal currency regime would have three properties. One of those properties is, all currencies would be fully convertible (i.e., currencies could be freely exchanged for any purpose and in any amount). This condition ensures unrestricted flow of capital.\nB. Incorrect because the ideal currency regime would have three properties. One of those properties states the exchange rate between any two currencies would be credibly fixed, not floating.\nC. Incorrect because the ideal currency regime would have three properties. One of those properties states each country would be able to undertake fully independent (not common) monetary policy in pursuit of domestic objectives, such as growth and inflation targets."
+   }
+  ]
+ },
+ {
+  "cache_name": "AI,_Corporate,_Deriv,_Eco.json",
+  "page_idx": 155,
+  "page_type": "answers",
+  "items": [
+   {
+    "qnum": 53,
+    "correct": "C",
+    "expl": "A. Incorrect because in the long run, if a firm cannot earn at least a zero economic profit, it will not operate because it is not covering the opportunity cost of all of its factors of production, labor, and capital. In the short run, however, a firm might find it advantageous to continue to operate even if it is not earning at least a zero economic profit. Firms will stay in business (short and long run) if they make a zero profit.\nB. Incorrect because sunk costs cannot be avoided, no matter what the firm does. Sunk costs must be ignored in the decision to continue to operate in the short run. As long as the firm's revenues cover at least its variable cost, the firm is better off continuing to operate.\nC. Correct because the firm must cover its variable cost to remain in business in the short run. If TR cannot cover TVC, the firm shuts down production to minimize loss. The loss would be equal to the amount of fixed cost."
+   },
+   {
+    "qnum": 54,
+    "correct": "C",
+    "expl": "A. Incorrect because calculating (1 – (1.1605/1.17240)) × 10,000 ≈ 101.5 is not using the correct formula of (1.1724 – 1.1605) × 10,000 = 119.0.\nB. Incorrect because calculating (1.17240/1.1605 – 1) × 10,000 ≈ 102.5 is not using the correct formula of (1.17240 – 1.1605) × 10,000 = 119.0.\nC. Correct because the forward rate is calculated as (1.17240 – 1.1605) × 10,000 = 119.0."
+   },
+   {
+    "qnum": 55,
+    "correct": "A",
+    "expl": "A. Correct because the oligopoly market structure is based on a relatively small number of firms supplying the market. The small number of firms in the market means that each firm must consider what retaliatory strategies the other firms will pursue when prices and production levels change. Consider the pricing behavior of commercial airline companies. Pricing strategies and route scheduling are based on the expected reaction of the other carriers in similar markets.\nB. Incorrect because there are many sellers in this type of market structure and firms operating in a market structure or perfect competition are price takers.\nC. Incorrect because there are many sellers and in the case of monopolistic competition, the success of product differentiation determines the degree with which the firm can influence prices."
+   },
+   {
+    "qnum": 56,
+    "correct": "C",
+    "expl": "A. Incorrect because the neutral policy rate for any economy comprises two components: Real trend rate of growth of the underlying economy, and long-run expected inflation. Also note Neutral rate = Trend growth + Inflation target.\nB. Incorrect because the neutral policy rate for any economy comprises two components: Real trend rate of growth of the underlying economy, and long-run expected inflation. Also note Neutral rate = Trend growth + Inflation target.\nC. Correct because the neutral policy rate for any economy comprises two components: Real trend rate of growth of the underlying economy, and long-run expected inflation. Also note Neutral rate = Trend growth + Inflation target."
+   }
+  ]
+ },
+ {
+  "cache_name": "AI,_Corporate,_Deriv,_Eco.json",
+  "page_idx": 156,
+  "page_type": "answers",
+  "items": [
+   {
+    "qnum": 57,
+    "correct": "A",
+    "expl": "A. Correct because the long-run marginal cost schedule is the perfectly competitive firm's supply curve. The firm's demand curve is dictated by the aggregate market's equilibrium price. The basic rule of profit maximization is that MR = MC, as is the case in long-run equilibrium.\nB. Incorrect because the horizontal line that represents the firm's demand curve is the firm's AR [average revenue] schedule.\nC. Incorrect because in a perfectly competitive market structure the firm's demand schedule is the same as the firm's marginal revenue and average revenue. Given its cost of operation, the only decision the perfectly competitive firm faces is how much to produce. The answer is the level of output that maximizes its return, and that level is where MR = MC. The demand curve is perfectly elastic. Of course, the firm constantly tries to find ways to lower its cost in the long run."
+   },
+   {
+    "qnum": 58,
+    "correct": "B",
+    "expl": "A. Incorrect because ensuring price stability is an objective of monetary policy not fiscal policy. There is one overarching objective [of the central bank] that most seem to acknowledge explicitly, and that is the objective of maintaining price stability.\nB. Correct because the tools associated with fiscal policy involve the use of government spending and changing tax revenue to affect a number of aspects of the economy: including the overall level of aggregate demand in an economy and hence the level of economic activity.\nC. Incorrect because targeting exchange rates is a part of monetary not fiscal policy. Many developing economies choose to operate monetary policy by targeting their currency's exchange rate, rather than an explicit level of domestic inflation."
+   },
+   {
+    "qnum": 59,
+    "correct": "A",
+    "expl": "A. Correct because there may be occasions where the demand for money becomes infinitely elastic so that further injections of money into the economy will not serve to further lower interest rates or affect real activity. This is known as a liquidity trap. In this extreme circumstance, monetary policy can become completely ineffective.\nB. Incorrect because crowding out is the reduction in private sector investment due to increased government borrowing and describes a difficulty in implementing fiscal, not monetary, policy.\nC. Incorrect because this is the action lag and describes a difficulty in implementing fiscal policy. An example of the action lag is the government's decision to raise spending on capital projects to increase employment and incomes, but they may take many months to implement."
+   }
+  ]
+ },
+ {
+  "cache_name": "AI,_Corporate,_Deriv,_Eco.json",
+  "page_idx": 157,
+  "page_type": "answers",
+  "items": [
+   {
+    "qnum": 60,
+    "correct": "B",
+    "expl": "A. Incorrect because this is not a limitation of monetary policy. Automatic stabilizers are features which reduce output fluctuations in the economy and impact fiscal policy.\nB. Correct because this is a limitation of monetary policy. The limitations of monetary policy include problems in the transmission mechanism and the relative ineffectiveness of interest rate adjustment as a policy tool in deflationary environments.\nC. Incorrect because this is not a limitation of monetary policy. This is an aspect of the economy that fiscal policy tools try to address. The limitations of monetary policy include problems in the transmission mechanism and the relative ineffectiveness of interest rate adjustment as a policy tool in deflationary environments."
+   },
+   {
+    "qnum": 61,
+    "correct": "C",
+    "expl": "A. Incorrect because this refers to a key objective for the International Monetary Fund. That is, the IMF supports exchange rate stability and an open system of international payments.\nB. Incorrect because this refers to a key objective for the World Trade Organization. That is, the WTO provides the legal and institutional foundation of the multinational trading system.\nC. Correct because the World Bank's main objective is to help developing countries fight poverty and enhance environmentally sound economic growth."
+   },
+   {
+    "qnum": 62,
+    "correct": "C",
+    "expl": "A. Incorrect because expansionary [fiscal] policy could take one or more of the following forms: ... Cuts in sales (indirect) taxes to lower prices which raises real incomes with the objective of raising consumer demand. Thus, an increase in sales taxes would be contractionary, not expansionary.\nB. Incorrect because when the economy is slowing and inflation and monetary trends are weakening, central banks may increase liquidity by cutting their target [interest] rate. In these circumstances, monetary policy is said to be expansionary. Thus while expansionary, this is an example of monetary rather than fiscal policy.\nC. Correct because there are a number of ways that fiscal policy can influence aggregate demand ... expansionary policy could take one or more of the following forms: ... New public spending on social goods and infrastructure."
+   },
+   {
+    "qnum": 63,
+    "correct": "B",
+    "expl": "A. Incorrect because to convert any of these quoted forward points into a forward rate, one would divide the number of points by 10,000 (to scale down to the fourth decimal place, the last decimal place in the spot quote) and then add the result to the spot exchange rate quote. The forward points were incorrectly divided by 100 and the forward rate was calculated as follows: -16/100 + 1.4780 = -0.16 + 1.4780 = 1.3180.\nB. Correct because to convert any of these quoted forward points into a forward rate, one would divide the number of points by 10,000 (to scale down to the fourth decimal place, the last decimal place in the spot quote) and then add the result to the spot exchange rate quote. The forward points are negative and therefore the forward rate = -16/10,000 + 1.4780 = -0.0016 + 1.4780 = 1.4764."
+   }
+  ],
+  "note": "Answer 63 explanation continues on page_idx 158 (option C)."
+ },
+ {
+  "cache_name": "AI,_Corporate,_Deriv,_Eco.json",
+  "page_idx": 158,
+  "page_type": "answers",
+  "items": [
+   {
+    "qnum": 63,
+    "correct": "B",
+    "expl": "C. Incorrect because to convert any of these quoted forward points into a forward rate, one would divide the number of points by 10,000 (to scale down to the fourth decimal place, the last decimal place in the spot quote) and then add the result to the spot exchange rate quote. In this case the forward points have been treated as a positive number as follows: 16/10,000 + 1.4780 = 0.0016 + 1.4780 = 1.4796."
+   }
+  ],
+  "note": "Continuation of Answer 63 (option C) from page_idx 157; remainder of page is blank except page number footer."
+ }
+]

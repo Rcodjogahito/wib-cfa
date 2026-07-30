@@ -1,0 +1,127 @@
+[
+ {
+  "id": "35d2d7a7-c25b-4880-9bdf-d84d60dd1fdf",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation states the CML's risk measure (x-axis) is total risk / standard deviation (option C), and only mentions Beta to contrast it with the SML. Detected=A is the classic rebuttal false positive."
+ },
+ {
+  "id": "36010666-b33d-4dd0-aee6-38e943f625c1",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation defines strategy beta (C) as the return from sector exposure, matching the question exactly; alpha and market beta are defined only to be ruled out. Detected=B is the trailing-sentence false positive."
+ },
+ {
+  "id": "36257e4b-f5fe-44cf-9eee-ad2602ef07df",
+  "verdict": "stored_is_correct",
+  "reasoning": "Fund investing (C) is explicitly described as giving diversification with small capital, matching the scenario; co-investing and direct investing are ruled out for requiring larger capital. Detected=A is a false positive."
+ },
+ {
+  "id": "366cf9ec-1008-4f51-8663-d085005bd110",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation directly states common-size balance sheets are % of assets (C); the sales reference is only to contrast with the income statement rule. Detected=B is a false positive."
+ },
+ {
+  "id": "36a3c6b3-eedd-43cc-a5f5-a83dd9cef9ed",
+  "verdict": "uncertain",
+  "reasoning": "Options A and B are both listed as identical text \"378\", and the question stem itself is missing (\"not fully visible\"), so there is no way to determine from the given text which of A or B corresponds to the computed 378 value."
+ },
+ {
+  "id": "36b2bea0-31ac-460a-aca6-27ac910eb9b4",
+  "verdict": "stored_is_correct",
+  "reasoning": "Recomputing: profit before fees = 270-240=30M; incentive fee = 10%x30M=3M (gross basis, per explanation); management fee = 1%x270M=2.7M; net profit=24.3M; return=24.3/240=10.125%≈10.1%, matching stored A. Choices B and C are explicitly labeled as results of alternate incorrect methods."
+ },
+ {
+  "id": "3710f0c7-ec02-4e85-b758-fe5be54a50e8",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation states the remuneration committee is primarily responsible for performance evaluation and compensation of managers (B), while explicitly attributing A to the audit committee and C to the nomination committee. Detected=C is a false positive."
+ },
+ {
+  "id": "3744d749-f832-46c7-be92-74fa6af7b4ec",
+  "verdict": "stored_is_correct",
+  "reasoning": "Ability to take risk is explicitly tied to net worth (A) in the explanation; risk attitude and investing experience are explicitly tied to willingness, not ability. Detected=C is a false positive from the final rebuttal sentence."
+ },
+ {
+  "id": "375b7af2-c834-40a2-a020-22c05183c3e5",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation states \"the company's DFL is approximately 1.67\" (option C), and explicitly labels 0.50 as DOL (Choice A) and 0.83 as total leverage (Choice B). Detected=B is a false positive."
+ },
+ {
+  "id": "376aa3b3-0ce6-4a7c-b922-a2a934d91d9d",
+  "verdict": "stored_is_correct",
+  "reasoning": "Cumulative preference shares (B) only guarantee fixed dividends in arrears and do not participate in upside, so they least benefit from growth; participating and convertible shares are explicitly described as benefiting from growth. Detected=A is a false positive."
+ },
+ {
+  "id": "3788135b-ecf2-42d5-92d0-648cd4e698a8",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation concludes inventory must have increased by $10,000 (option A) to explain the gap between unchanged current assets and decreased quick assets; Choices B and C are explicitly addressed as ruled out. Detected=C is a false positive."
+ },
+ {
+  "id": "37908a75-b11b-40f4-8e9c-28106b37e061",
+  "verdict": "stored_is_correct",
+  "reasoning": "IQR = Q3-Q1 = 6%-(-1%) = 7.0%, matching stored C exactly as stated in the explanation; Choices A and B are explicitly labeled as results of incorrect methods. Detected=B is a false positive."
+ },
+ {
+  "id": "38102d7a-a8b7-47bd-b315-e218d8f6754d",
+  "verdict": "stored_is_correct",
+  "reasoning": "Cumulative voting (C) is explicitly described as enabling proportional minority representation on the board, while statutory voting is explicitly ruled out. Detected=A is a false positive."
+ },
+ {
+  "id": "3887f2e9-ef2d-416a-a940-d8983bba86b6",
+  "verdict": "stored_is_correct",
+  "reasoning": "Creditors (A) are explicitly described as preferring steady, predictable cash flows (matching the scenario), while customers and the board are explicitly ruled out. Detected=C is a false positive."
+ },
+ {
+  "id": "39201c37-9c37-4e08-a3e1-70d9ee43f9f8",
+  "verdict": "stored_is_correct",
+  "reasoning": "The explanation text itself, despite being a corrupted/partial scrape, explicitly states \"the correct answer is implied to be B based on context,\" directly confirming stored=B. Detected=A only reflects the surviving fragment discussing brokers being ruled out."
+ },
+ {
+  "id": "39ecc82a-cc4f-4083-9fd9-7e1670b95422",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation concludes differing timing of gain/loss realization (C) causes futures/forward price divergence, and explicitly states neither liquidity (A) nor counterparty credit risk (B) affects arbitrage-free pricing. Detected=B is a false positive."
+ },
+ {
+  "id": "3a1656ad-2e0d-463c-9b68-49844ede0be4",
+  "verdict": "stored_is_correct",
+  "reasoning": "A cash-settled contract (B) is explicitly defined as one where only net gain/loss is exchanged at settlement, matching the question; deliverable contract is explicitly ruled out. Detected=A is a false positive."
+ },
+ {
+  "id": "3a884856-6056-4c2f-a92b-801c6e0c182c",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation walks through weighting bond durations by market value (the correct method) and explicitly attributes 6.45 (Choice A, par-value weighting) and 7.22 (Choice C, equal weighting) to incorrect methods, leaving 6.65 (stored B) as correct by elimination. Detected=C is a false positive."
+ },
+ {
+  "id": "3ae815ec-7919-4976-8260-5c3732fefb2d",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation states hedgers enter futures to reduce price risk (B), matching the oil producer's activity, while explicitly ruling out speculation (A) and clearing (C). Detected=C is a false positive."
+ },
+ {
+  "id": "3b23bb72-c2d6-4b74-8708-2956383ed39a",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation states potential losses for a short call position are unlimited (A), matching the investor's role as option seller, and explicitly attributes GBP 3 loss to a long call (B) and GBP 47 to a short put (C), neither of which applies here. Detected=C is a false positive."
+ },
+ {
+  "id": "3bd1d8d6-8190-4842-bae5-f9f5769ba617",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation states accounting standard-setting bodies (C) issue standards but do not enforce compliance, making them the mechanism 'least likely' to enforce discipline, while regulators and private-contract counterparties are stated to be enforcement mechanisms. Detected=B is a false positive."
+ },
+ {
+  "id": "3be750ba-e199-4cfc-a1f4-ac89d55d9946",
+  "verdict": "stored_is_correct",
+  "reasoning": "Scenario analysis (B) is explicitly defined via the example of forecasting earnings based on a specific alternative like changing a supplier; sensitivity analysis and simulation are explicitly defined as different techniques. Detected=A is a false positive."
+ },
+ {
+  "id": "3d8d3dcc-343d-44f4-b846-8a5fe576f66f",
+  "verdict": "stored_is_correct",
+  "reasoning": "Negative covenants (B) are explicitly defined as prohibitive restrictions on asset sales and additional borrowings, exactly matching the question; affirmative/positive covenants are explicitly defined as required actions instead. Detected=A is a false positive."
+ },
+ {
+  "id": "3d9fa657-c325-4dd8-a486-9d2acaba9c88",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation explicitly states product differentiation among competitors (C) relates to demand analysis, while company capacity/cost structure and industry concentration (Choices A and B) are explicitly attributed to supply analysis instead. Detected=A is a false positive."
+ },
+ {
+  "id": "3df1684d-b37c-433d-8c37-adec5225f4fe",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation lists lack of transparency as a typical alternative-investment feature, supporting A (less likely to exhibit transparency); Choice C is explicitly rebutted by stating alt investments require MORE active management, not less. Detected=C is a false positive from that rebuttal sentence."
+ }
+]

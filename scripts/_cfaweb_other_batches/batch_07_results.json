@@ -1,0 +1,347 @@
+[
+ {
+  "cache_name": "Equity,_Ethics.json",
+  "page_idx": 166,
+  "page_type": "answers",
+  "items": [
+   {
+    "qnum": 123,
+    "correct": "B",
+    "expl": "A.\tIncorrect because the member has returned investor capital, which is not a violation of the Code and Standards. However, the member has violated Standard I(C), which prohibits members and candidates from guaranteeing clients any specific return on volatile investments. With the return of their capital, investors did not lose their original investment, but they did suffer an economic opportunity loss.\nB.\tCorrect because the member has misrepresented the returns she could realistically achieve for her clients, violating Standard I(C), which prohibits members and candidates from guaranteeing clients any specific return on volatile investments.\nC.\tIncorrect because the investment mandate is not a violation of the Code and Standards. The mandate is very broadly defined and while it may or may not be appropriate, there is not enough information in the vignette to make this determination. The promised, but unachieved, yield is the violation that can be clearly identified"
+   },
+   {
+    "qnum": 124,
+    "correct": "C",
+    "expl": "A.\tIncorrect because according to the GIPS standards misleading practices include Representative Accounts: Selecting a top-performing portfolio to represent the firm's overall investment results for a specific mandate. Therefore, the GIPS standards does not allow the use of a representative account to present the firm's overall investment results.\nB.\tIncorrect because presenting an 'average' performance history that excludes portfolios whose poor performance was weak enough to result in termination of the firm is known as survivorship bias and is a misleading practice when presenting investment performance data. Therefore, presenting performance history that only includes accounts remaining at the firm (and excludes accounts that has left the firm) is incorrect.\nC.\tCorrect because the GIPS standards are a practitioner-driven set of ethical principles that establish a standardized, industry-wide approach for investment firms to follow in calculating and presenting their historical investment results to prospective clients. Therefore, the GIPS standard establish a standardized approach to presenting historical investment results to prospective clients, and this answer is Correct."
+   },
+   {
+    "qnum": 125,
+    "correct": "A",
+    "expl": "A.\tCorrect because the objectives of the GIPS standards are as follows: Promote fair, global competition among investment firms.\nB.\tIncorrect because the GIPS standards certainly do not eliminate the need for in-depth due diligence on the part of the client or investor, but compliance with the Standards enhances the credibility of investment management firms that have chosen to undertake this responsibility.\nC.\tIncorrect because complying with the GIPS standards is voluntary. Compliance with the GIPS standards is not typically required by legal or regulatory authorities. Also, the preamble to the GIPS standards states that by adhering to a global standard, firms in countries with minimal or no investment performance standards can compete for business on an equal footing with firms from countries with more-developed standards.\nTherefore, it is clear that GIPS standards were not created to serve as a mandatory performance standard for asset management firms in countries without investment performance regulation."
+   }
+  ]
+ },
+ {
+  "cache_name": "Equity,_Ethics.json",
+  "page_idx": 167,
+  "page_type": "answers",
+  "items": [
+   {
+    "qnum": 126,
+    "correct": "C",
+    "expl": "A.\tIncorrect because the portfolio manager took property of his former employer, proprietary trading software, and violated Standard IV(A)-Loyalty. Although the manager created the software himself, it was during a period of time when the large money manager employed him and the software is not his property to take.\nB.\tIncorrect because the member violated Standard IV(A)-Loyalty as he did not act for the benefit of his former employer. In this case, the member may cause harm to his former employer if his weekend messages result in clients moving to his new business.\nC.\tCorrect because the portfolio manager received permission to use his investment performance history from his prior employer. The member violated his non-solicitation agreement by indicating his availability to new clients on several social media sites accessible by clients of his former employer. This is a violation of Standard IV(A)-Loyalty because he did not act for the benefit of his former employer. In this case, the member may cause harm to his former employer if his weekend messages result in clients moving to his new business from his former employer. The member also violated this standard by taking his employer's property, trading software."
+   },
+   {
+    "qnum": 127,
+    "correct": "A",
+    "expl": "A.\tCorrect because the recommended procedures for compliance with Standard I (C), Misrepresentation, state that firms can also help prevent misrepresentation by specifically designating which employees are authorized to speak on behalf of the firm.\nB.\tIncorrect because the recommended procedures for compliance with Standard I (C), Misrepresentation, state that firms can assist members by periodically reviewing employee correspondence and documents that contain representations of individual or firm qualifications. Performing quarterly competence reviews of employees who deliver firm presentations to clients is not a recommended procedure.\nC.\tIncorrect because the recommended procedures for compliance with Standard I (C), Misrepresentation, state that members and candidates should encourage their employers to develop procedures for verifying information of third party firms. Therefore, it is not a recommended procedure for firms to ensure each employee develops processes for verifying information of third party firms provided to clients."
+   },
+   {
+    "qnum": 128,
+    "correct": "B",
+    "expl": "A.\tIncorrect because the recommended procedures for compliance with Standard VI (B), Priority of Transactions, recommend that investment personnel should examine all planned personal trades to identify possible conflicts prior to the execution of the trades. Therefore, a recommended procedure for compliance with the Standard is to examine all planned personal trades prior to [not immediately after] the execution of the trade.\nB.\tCorrect because the recommended procedures for compliance with Standard VI (B), Priority of Transactions, recommend that investment personnel should be required to direct their brokers to supply to firms duplicate copies or confirmations of all their personal securities transactions and copies of periodic statements for all securities accounts.\nC.\tIncorrect because the recommended procedures for compliance with Standard VI (B), Priority of Transactions, recommend that disclosure by investment personnel to the firm should be made upon commencement of the employment relationship and at least annually thereafter.& Therefore, a recommended procedure for compliance with the [continues on next page]"
+   }
+  ],
+  "note": "Item 128's explanation for choice C is cut off at the page bottom mid-sentence; it continues on page_idx 168."
+ },
+ {
+  "cache_name": "Equity,_Ethics.json",
+  "page_idx": 168,
+  "page_type": "answers",
+  "items": [
+   {
+    "qnum": 128,
+    "correct": "B",
+    "expl": "[continuation from page_idx 167, choice C] Standard is to disclose upon commencement of the employment relationship and at least annually thereafter [not a one off disclosure on commencement of employment only]."
+   },
+   {
+    "qnum": 129,
+    "correct": "C",
+    "expl": "A.\tIncorrect because, as described in the rationale for the correct answer, both Procedure 1 and Procedure 2 are recommended procedures.\nB.\tIncorrect because, as described in the rationale for the correct answer, both Procedure 2 and Procedure 1 are recommended procedures.\nC.\tCorrect because the recommended procedures for compliance with Standard III(C), Suitability, state that an investor's objectives and constraints should be maintained and reviewed periodically to reflect any changes in the client's circumstances. Annual review is reasonable unless business or other reasons, such as a major change in market conditions, dictate more frequent review. In addition, in formulating an investment policy for the client, the member or candidate should take the following into consideration: performance measurement benchmarks. Therefore, both procedures are recommended for compliance with Standard III(C)."
+   },
+   {
+    "qnum": 130,
+    "correct": "B",
+    "expl": "A.\tIncorrect because according to Standard I(B), Independence and Objectivity, members are permitted to accept token business-related gifts. Per the Standard, members and candidates must limit the acceptance of gratuities and/or gifts to token items. Firms should consider a strict value limit for acceptable gifts that is based on the local or regional customs and should address whether the limit is per gift or an aggregate annual value.\nB.\tCorrect because this is a requirement of Standard I(B), Independence and Objectivity. Issuer-paid research conducted by independent analysts, however, is fraught with potential conflicts. Members must adhere to strict standards of conduct that govern how the research is to be conducted and what disclosures must be made in the report. Analysts must engage in thorough, independent, and unbiased analysis and must fully disclose potential conflicts of interest, including the nature of their compensation.\nC.\tIncorrect because according to Standard I(B), Independence and Objectivity, it is recommended (not required) that members pay for commercial transportation and hotel charges, not meals, when attending meetings at an issuer's headquarters."
+   },
+   {
+    "qnum": 131,
+    "correct": "A",
+    "expl": "A.\tCorrect because under Standard I(A), Knowledge of the Law, members and candidates have a responsibility to step away and dissociate from the [unethical] activity. Inaction combined with continuing association with those involved in illegal or unethical conduct may be construed as participation or assistance in the illegal or unethical conduct.\nB.\tIncorrect because under Standard I(A), Knowledge of the Law, a failure to report is less likely to be construed as a violation than a failure to dissociate from unethical conduct, the impact of inactivity on the integrity of capital market can be significant. Although the Code and Standards do not compel members and candidates to report violations to their [continues on next page]"
+   }
+  ],
+  "note": "Item 128 completed from a continuation carried over from page_idx 167. Item 131's explanation for choice B is cut off mid-sentence at the page bottom; it continues on page_idx 169."
+ },
+ {
+  "cache_name": "Equity,_Ethics.json",
+  "page_idx": 169,
+  "page_type": "answers",
+  "items": [
+   {
+    "qnum": 131,
+    "correct": "A",
+    "expl": "[continuation from page_idx 168, choice B] governmental or regulatory organizations..., such disclosure may be prudent under certain circumstances.\nC.\tBIncorrect because under Standard I(A), Knowledge of the Law, while members and candidates must understand the applicable laws and regulations of the countries and jurisdictions where they engage in professional activities, 'members and candidates are not required to have detailed knowledge of or be experts on all the laws that could potentially govern their activities."
+   },
+   {
+    "qnum": 132,
+    "correct": "A",
+    "expl": "A.\tCorrect because under Standard IV(C), Responsibilities of Supervisors, members and candidates should encourage their employers to provide their codes to clients... the code of ethics will be effective in conveying that the firm is committed to conducting business in an ethical manner and in the best interests of the clients.\nB.\tIncorrect because under Standard IV(C), Responsibilities of Supervisors, members and candidates are encouraged to recommend [not require] that their employers adopt a code of ethics. Adoption of a code of ethics is critical to establishing a strong ethical foundation for investment advisory firms and their employees.\nC.\tIncorrect because under Standard IV(C), Responsibilities of Supervisors, members are recommended to separate the code of ethics from compliance procedures. A stand-alone codes of ethics should be written in plain language and should address general fiduciary concepts. They should be unencumbered by numerous detailed procedures."
+   },
+   {
+    "qnum": 133,
+    "correct": "A",
+    "expl": "A.\tCorrect because verification is performed with respect to an entire firm, not on specific composites or pooled funds.\nB.\tIncorrect because verification is performed with respect to an entire firm, not on specific composites or pooled funds.\nC.\tIncorrect because verification must be performed by an independent third party. A firm cannot perform its own verification."
+   },
+   {
+    "qnum": 134,
+    "correct": "C",
+    "expl": "A.\tIncorrect because this is not permitted by Standard V(C), Record Retention. For future use, the member or candidate must re-create the supporting records at the new firm with information gathered through public sources or directly from the covered company and not from memory or sources obtained at the previous employer.\nB.\tIncorrect because this is not permitted by Standard V(C), Record Retention. For future use, the member or candidate must re-create the supporting records at the new firm with information gathered through public sources or directly from the covered company and not from memory or sources obtained at the previous employer.\nC.\tCorrect because this is consistent with Standard V(C), Record Retention. For future use, the member or candidate must re-create the supporting records at the new firm with information gathered through public sources or directly from the covered company and not from memory or sources obtained at the previous employer."
+   }
+  ],
+  "note": "Item 131 completed from a continuation carried over from page_idx 168 (choices B and C). The printed text reads 'BIncorrect' for choice C, transcribed verbatim as it appears in the source (likely a source typo)."
+ },
+ {
+  "cache_name": "Equity,_Ethics.json",
+  "page_idx": 170,
+  "page_type": "answers",
+  "items": [
+   {
+    "qnum": 135,
+    "correct": "A",
+    "expl": "A.\tCorrect because verification is performed with respect to an entire firm, not on specific composites.\nB.\tIncorrect because verification of GIPS standards must be conducted by a third party, not the firm itself: verification must be performed by an independent third party. A firm cannot perform its own verification.\nC.\tIncorrect because verification does not ensure the accuracy of any specific composite presentation."
+   },
+   {
+    "qnum": 136,
+    "correct": "C",
+    "expl": "A.\tIncorrect because the design of both performance calculation and firm policies related to pooled fund maintenance are assured by a GIPS verifier: verification provides assurance on whether the firm's policies and procedures related to composite and pooled fund maintenance, as well as the calculation, presentation, and distribution of performance, have been designed in compliance with the GIPS standards and have been implemented on a firm-wide basis.\nB.\tIncorrect because the design of both performance calculation and firm policies related to pooled fund maintenance are assured by a GIPS verifier: verification provides assurance on whether the firm's policies and procedures related to composite and pooled fund maintenance, as well as the calculation, presentation, and distribution of performance, have been designed in compliance with the GIPS standards and have been implemented on a firm-wide basis.\nC.\tCorrect because verification provides assurance on whether the firm's policies and procedures related to composite and pooled fund maintenance, as well as the calculation, presentation, and distribution of performance, have been designed in compliance with the GIPS standards and have been implemented on a firm-wide basis."
+   },
+   {
+    "qnum": 137,
+    "correct": "A",
+    "expl": "A.\tCorrect because according to Standard V (A), Diligence and Reasonable basis, Members and Candidates must:\n1. Exercise diligence, independence, and thoroughness in analyzing investments, making investment recommendations, and taking investment actions.\n2. Have a reasonable and adequate basis, supported by appropriate research and investigation, for any investment analysis, recommendation, or action.\nAdditionally, the results of research are not always clear, and different people may have different opinions based on the same factual evidence. In this case, the committee may have valid reasons for issuing a report that differs from the analyst's original research. The firm can issue a report that is different from the original report of an analyst as long as there is a reasonable and adequate basis for its conclusions.\nGenerally, analysts must write research reports that reflect their own opinion and can ask the firm not to put their name on reports that ultimately differ from that opinion. When the work is a group effort, however, not all members of the team may agree with all aspects of the report. Ultimately, members and candidates can [continues on next page]"
+   }
+  ],
+  "note": "Item 137's explanation for choice A is cut off mid-sentence at the page bottom; it continues on page_idx 171."
+ },
+ {
+  "cache_name": "Equity,_Ethics.json",
+  "page_idx": 171,
+  "page_type": "answers",
+  "items": [
+   {
+    "qnum": 137,
+    "correct": "A",
+    "expl": "[continuation from page_idx 170, choice A] ask to have their names removed from the report, but if they are satisfied that the process has produced results or conclusions that have a reasonable and adequate basis, members and candidates do not have to dissociate from the report even when they do not agree with its contents.\nYong was thorough in her research and There is no evidence to assume that she did not have a reasonable and adequate basis for her recommendation. Additionally there is no violation of the standard relating to loyalty, prudence and care.\nB.\tIncorrect because according to Standard III (A), Loyalty, Prudence, and Care Members and Candidates have a duty of loyalty to their clients and must act with reasonable care and exercise prudent judgment. Members and Candidates must act for the benefit of their clients and place their clients' interests before their employer's or their own interests. By contrast, this case is about whether Yong was thorough in her analysis. This case does not pertain to Standard III (A). Therefore, Standard III (A) has not been violated.\nC.\tIncorrect because Yong has not violated this Standard as described in the rationale to the correct response."
+   },
+   {
+    "qnum": 138,
+    "correct": "B",
+    "expl": "A.\tIncorrect because according to the recommended procedures for compliance with Standard I (B), Independence and Objectivity, if the firm is unwilling to permit dissemination of adverse opinions about a corporate client, members and candidates should encourage the firm to remove the controversial company from the research universe and put it on a restricted list so that the firm disseminates only factual information about the company. Therefore, a member should encourage her firm to place a company on (not remove a company from) a restricted list if the firm is unwilling to permit dissemination of adverse opinion about the company. So, Statement 1 is not accurate.\nB.\tCorrect because according to Standard I (B), Independence and Objectivity, one type of benefit is the allocation of shares in oversubscribed IPOs to investment managers for their personal accounts. This practice affords managers the opportunity to make quick profits that may not be available to their clients. Such a practice is prohibited under Standard I (B). Therefore, a member is prohibited from accepting benefits from corporate issuers in the form of allocation of shares in oversubscribed IPOs that are suitable for firm's clients. So, Statement 2 is accurate.\nC.\tIncorrect because according to the recommended procedures for compliance with Standard I (B), Independence and Objectivity, if the firm is unwilling to permit dissemination of adverse opinions about a corporate client, members and candidates should encourage the firm to remove the controversial company from the research universe and put it on a restricted list so that the firm disseminates only factual information about the company. Therefore, a member should encourage her firm to place a company on (not remove a company from) a restricted list if the firm is unwilling to permit dissemination of adverse opinion about the company. So, Statement 1 is not accurate."
+   },
+   {
+    "qnum": 139,
+    "correct": "B",
+    "expl": "A.\tIncorrect because according to Standard IV (A), Loyalty, in matters related to their employment, Members and Candidates must act for the benefit of their employer and not deprive their employer of the advantage of their skills and abilities, divulge confidential information, or otherwise cause harm to their employer. Working on weekends for a charity to do tasks that do not compete with her investment role employer does not violate this Standard. [continues on next page]"
+   }
+  ],
+  "note": "Item 137 completed from a continuation carried over from page_idx 170. Item 139's explanation for choice B (and C) is on the next page; only choice A is visible here. This page is cut off after choice A; continuation on page_idx 172."
+ },
+ {
+  "cache_name": "Equity,_Ethics.json",
+  "page_idx": 172,
+  "page_type": "answers",
+  "items": [
+   {
+    "qnum": 139,
+    "correct": "B",
+    "expl": "[continuation from page_idx 171] B.\tCorrect because according to Standard I (D), Misconduct, Members and Candidates must not engage in any professional conduct involving dishonesty, fraud, or deceit or commit any act that reflects adversely on their professional reputation, integrity, or competence. Overcharging the charity by any amount is fraud and reflects adversely on Melmo as an investment professional and potentially on her employer and and the investment profession.\nC.\tIncorrect because according to Standard I (D), Misconduct, Members and Candidates must not engage in any professional conduct involving dishonesty, fraud, or deceit or commit any act that reflects adversely on their professional reputation, integrity, or competence. Further, and according to Standard IV (A), Loyalty, in matters related to their employment, Members and Candidates must act for the benefit of their employer and not deprive their employer of the advantage of their skills and abilities, divulge confidential information, or otherwise cause harm to their employer. Working on weekends for a charity does not violate either Standard. However, overcharging the charity is fraud and reflects adversely on Melmo as an investment professional and potentially on her employer and on the investment profession."
+   },
+   {
+    "qnum": 140,
+    "correct": "B",
+    "expl": "A.\tIncorrect because according to Standard VI(A), Disclosure of Conflicts, when members or candidates providing investment services also serve as directors, they should be isolated from those making investment decisions by the use of firewalls or similar restrictions. Standard VI(A) protects investors and employers by requiring members and candidates to fully disclose to clients, potential clients, and employers all actual and potential conflicts of interest. Once a member or candidate has made full disclosure, the member's or candidate's employer, clients, and prospective clients will have the information needed to evaluate the objectivity of the investment advice or action taken on their behalf. Therefore, with disclosure, accepting the board position is acceptable.\nB.\tCorrect because according to Standard VI(A), Disclosure of Conflicts, equally important is the disclosure of arrangements in which the firm benefits directly from investment recommendations. An obvious conflict of interest is the rebate of a portion of the service fee some classes of mutual funds charge to investors. Members and candidates should ensure that their firms disclose such relationships so clients can fully understand the costs of their investments and the benefits received by their investment manager's employer.\nC.\tIncorrect because according to the recommended procedure for compliance with Standard VI(A), Disclosure of Conflicts, if a member, a candidate, or a member's or candidate's firm has outstanding agent options to buy stock as part of the compensation package for corporate financing activities, the amount and expiration date of these options should be disclosed as a footnote to any research report published by the member's or candidate's firm. Therefore, a member need not place the company on a restricted list and issue factual information about the company if the member's firm holds options on the company's shares."
+   },
+   {
+    "qnum": 141,
+    "correct": "B",
+    "expl": "A.\tIncorrect because according to Standard VI(B), Priority of Transactions, members and candidates should fully disclose to investors their firm's policies regarding personal investing. The information about employees' personal investment activities and policies will foster an atmosphere of full and complete disclosure and calm the public's legitimate concerns about the conflicts of interest posed by investment personnel's personal trading.\nB.\tCorrect because according to Standard VI(B), Priority of Transactions, investment personnel involved in the investment decision-making process should establish blackout [continues on next page]"
+   }
+  ],
+  "note": "Item 139 completed from a continuation carried over from page_idx 171. Item 141's explanation for choice B is cut off mid-sentence at the page bottom; it continues on page_idx 173."
+ },
+ {
+  "cache_name": "Equity,_Ethics.json",
+  "page_idx": 173,
+  "page_type": "answers",
+  "items": [
+   {
+    "qnum": 141,
+    "correct": "B",
+    "expl": "[continuation from page_idx 172, choice B] periods prior to trades for clients so that managers cannot take advantage of their knowledge of client activity by \"front-running\" client trades (trading for one's personal account before trading for client accounts).\nA.\tIncorrect because according to Standard VI(B), Priority of Transactions, members or candidates may undertake transactions in accounts for which they are a beneficial owner only after their clients and employers have had adequate opportunity to act on a recommendation. Family accounts that are client accounts should be treated like any other firm account and should neither be given special treatment nor be disadvantaged because of the family relationship."
+   },
+   {
+    "qnum": 142,
+    "correct": "B",
+    "expl": "A.\tIncorrect because Garcia has not violated Standard III (B), Fair Dealing, by calling her largest client, since she widely disseminated the recommendation and provided the information to all her clients prior to discussing it with her largest client. Members and candidates should establish procedures for the timing of dissemination of investment recommendations so that all clients are treated fairly-that is, are informed at approximately the same time. Once this distribution has occurred, the member or candidate may follow up separately with individual clients, but members and candidates should not give favored clients advance information when such advance notification may disadvantage other clients.\nB.\tCorrect because Garcia has violated Standard III (B), Fair Dealing, by disseminating the sell recommendation to her largest client before the recommendation is sent to all clients. Each member or candidate is obligated to ensure that information is disseminated in such a manner that all clients have a fair opportunity to act on every recommendation. Garcia has not violated Standard III (B) by calling her largest client, since she widely disseminated the recommendation and provided the information to all her clients prior to discussing it with her largest client. Members and candidates should establish procedures for the timing of dissemination of investment recommendations so that all clients are treated fairly-that is, are informed at approximately the same time. Once this distribution has occurred, the member or candidate may follow up separately with individual clients, but members and candidates should not give favored clients advance information when such advance notification may disadvantage other clients.\nC.\tIncorrect because Garcia has not violated Standard III (B), Fair Dealing, by calling her largest client, since she widely disseminated the recommendation and provided the information to all her clients prior to discussing it with her largest client. Members and candidates should establish procedures for the timing of dissemination of investment recommendations so that all clients are treated fairly-that is, are informed at approximately the same time. Once this distribution has occurred, the member or candidate may follow up separately with individual clients, but members and candidates should not give favored clients advance information when such advance notification may disadvantage other clients."
+   },
+   {
+    "qnum": 143,
+    "correct": null,
+    "expl": "A.\tIncorrect because according to Standard V (C), Investment Analysis, Recommendations, and Actions - Record Retention, Local regulators often impose requirements on members, candidates, and their firms related to record retention that must be followed. Firms may also implement policies detailing the applicable time frame for retaining research and client communication records. Fulfilling such regulatory and firm requirements satisfies the requirements of Standard V(C). In the absence of regulatory guidance or firm policies, CFA Institute recommends maintaining records for at least seven years. [choices B and C continue on next page; the bolded 'Correct' marker was not visible in choice A on this page]"
+   }
+  ],
+  "note": "Item 141 completed from a continuation carried over from page_idx 172; note the printed text shows a second 'A.' labeled paragraph appearing after choice B rather than a 'C.', transcribed verbatim as it appears in the source (likely a source formatting artifact). Item 143 shows only choice A on this page (complete text, but the correct answer marker is not on this page); choices B and C continue on page_idx 174."
+ },
+ {
+  "cache_name": "Equity,_Ethics.json",
+  "page_idx": 174,
+  "page_type": "answers",
+  "items": [
+   {
+    "qnum": 143,
+    "correct": "C",
+    "expl": "[continuation from page_idx 173, choice A] B.\tIncorrect because Incorrect because according to Standard V (C), Investment Analysis, Recommendations, and Actions - Record Retention, Local regulators often impose requirements on members, candidates, and their firms related to record retention that must be followed. Firms may also implement policies detailing the applicable time frame for retaining research and client communication records. Fulfilling such regulatory and firm requirements satisfies the requirements of Standard V(C). In the absence of regulatory guidance or firm policies, CFA Institute recommends maintaining records for at least seven years.\nC.\tCorrect because according to Standard V (C), Investment Analysis, Recommendations, and Actions - Record Retention, Local regulators often impose requirements on members, candidates, and their firms related to record retention that must be followed. Firms may also implement policies detailing the applicable time frame for retaining research and client communication records. Fulfilling such regulatory and firm requirements satisfies the requirements of Standard V(C). In the absence of regulatory guidance or firm policies, CFA Institute recommends maintaining records for at least seven years."
+   },
+   {
+    "qnum": 144,
+    "correct": "C",
+    "expl": "A.\tIncorrect because Standard VI (C), Referral Fees, states the responsibility of members and candidates to inform their employer, clients, and prospective clients of any benefit received for referrals of customers and clients. Therefore, a member has to inform his employer and his potential clients.\nB.\tIncorrect because Standard VI (C), Referral Fees, states the responsibility of members and candidates to inform their employer, clients, and prospective clients of any benefit received for referrals of customers and clients. Therefore, a member has to inform his employer and his potential clients.\nC.\tCorrect because Standard VI (C), Referral Fees, states the responsibility of members and candidates to inform their employer, clients, and prospective clients of any benefit received for referrals of customers and clients."
+   },
+   {
+    "qnum": 145,
+    "correct": "A",
+    "expl": "A.\tCorrect, because the GIPS standards rely on the integrity of input data, the quality of which is critical to creating accurate performance presentations. The underlying valuations of portfolio holdings drive performance. It is essential for these and other inputs to be accurate. The GIPS standards require firms to adhere to certain calculation methodologies to allow for comparability across firms.\nB.\tIncorrect, because meeting the objectives of fair representation and full disclosure is likely to require more than simply adhering to the minimum requirements of the GIPS standards. Firms should also adhere to the recommendations to achieve best practice in the calculation and presentation of performance. In addition, GIPS standards will continue to evolve over time to address additional areas of investment performance and firms will be required to keep up with the updated standards.\nC.\tIncorrect, because the GIPS standards require firms to create and maintain composites for all strategies for which the firm manages segregated accounts or markets to segregated accounts. Firms must include all actual, fee-paying, discretionary segregated accounts in at least one composite defined by investment mandate, objective, or strategy. Non-discretionary accounts must not be included in composites."
+   }
+  ],
+  "note": "Item 143 completed from a continuation carried over from page_idx 173 (choices B, C). The source text literally repeats 'Incorrect because Incorrect because' for choice B, transcribed verbatim (likely a source typo)."
+ },
+ {
+  "cache_name": "Equity,_Ethics.json",
+  "page_idx": 175,
+  "page_type": "answers",
+  "items": [
+   {
+    "qnum": 146,
+    "correct": "C",
+    "expl": "A.\tIncorrect because, according to Standard V (C), Record Retention, records created as part of a member's or candidate's professional activity on behalf of his or her employer are the property of the firm, not the client.\nB.\tIncorrect because, according to Standard V (C), Record Retention, records created as part of a member's or candidate's professional activity on behalf of his or her employer are the property of the firm, not the member.\nC.\tCorrect because, according to Standard V (C), Record Retention, records created as part of a member's or candidate's professional activity on behalf of his or her employer are the property of the firm."
+   },
+   {
+    "qnum": 147,
+    "correct": "A",
+    "expl": "A.\tCorrect, because the identical material reflected in her previous client's proposal belongs to that client, even though she wrote it on their behalf as their consultant. To use itin its identical format would be considered plagiarism. In addition, the description also identifies a proprietary process and is therefore not applicable to her existing client's investment process. Consequently, to prevent violating Standard I(C) Misrepresentation the material should be removed. The Standard states Members and Candidates must not knowingly make any misrepresentations relating to investment analysis, recommendations, actions, or other professional activities. Standard I(C) Misrepresentation prohibits plagiarism in the preparation of material for distribution to employers, associates, clients, prospects, or the general public. Macharia should also report the use of plagiarized material to the client so they can take action to prevent the event being repeated in the future (Standard I(A) Knowledge of the Law). Allowing the use of plagiarized material reflects poorly on a firm and can hurt their reputation. By reporting to the client Macharia is also protecting the interests of her clients (Standard III(A) Loyalty, Prudence, and Care).\nB.\tIncorrect, Standard I(A) Knowledge of the Law states if a member has reasonable grounds to believe that ongoing activities within a firm are illegal or unethical, the member or candidate must dissociate, or separate, from the activity. In this case, Macharia is required to protect the interests of her clients (Standard III(A) Loyalty, Prudence, and Care) by helping them avoid plagiarism and misrepresenting their investment process (Standard I(C) Misrepresentation). To most effectively do this, the first step should be to attempt to stop the behavior by bringing it to the attention of the employer (or client in this case) through a supervisor or the firm's compliance department.\nC.\tIncorrect, because making a few changes here and there would be insufficient to avoid the statement from being considered plagiarized or misrepresenting the firm's investment process by using a description of the previous client's proprietary investment process. Macharia has.a duty to take the necessary action to prevent this unethical behavior. To do otherwise would cause her to violate Standard I(A) Knowledge of the Law and Standard I(C) Misrepresentation. Standard I(A) Knowledge of the Law states if a member has reasonable grounds to believe that ongoing activities within a firm are illegal or unethical, the member or candidate must dissociate, or separate, from the activity. Whendirect discussions with the person committing the violation are unsuccessful, the first step should be to attempt to stop the behavior by bringing it to the attention of the employer through a supervisor or the firm's compliance department. Standard I(C) Misrepresentation states Members and Candidates must not knowingly make any misrepresentations relating to investment analysis, recommendations, actions, or other professional activities."
+   }
+  ],
+  "note": "Text preserved verbatim including apparent source typos: 'itin' (choice A), 'Macharia has.a duty' and 'Whendirect discussions' (choice C)."
+ },
+ {
+  "cache_name": "Equity,_Ethics.json",
+  "page_idx": 176,
+  "page_type": "answers",
+  "items": [
+   {
+    "qnum": 148,
+    "correct": "A",
+    "expl": "A.\tCorrect. GIPS standards are ethical standards for investment performance presentation to ensure fair representation and full disclosure of investment performance.So, Statement 1 is a key concept of the GIPS standards.\nB.\tIncorrect because, the GIPS standards require firms to create and maintain composites for all strategies for which the firm manages segregated accounts or markets tosegregated accounts. Firms must include all actual, fee-paying, discretionary segregated accounts in at least one composite defined by investment mandate, objective, or strategy. So, Statement 2 is not a key concept of the GIPS standards.\nC.\tIncorrect because the GIPS standards do not address every aspect of performancemeasurement and will continue to evolve over time to address additional areas of investment performance. So, Statement 3 is not a key concept of the GIPS standards."
+   }
+  ],
+  "note": "Text preserved verbatim including apparent source typos without spaces: 'performance.So', 'tosegregated', 'performancemeasurement'. This is the final answer (148 of 148) of the section; large blank space follows on the page."
+ },
+ {
+  "cache_name": "Equity,_Ethics.json",
+  "page_idx": 177,
+  "page_type": "other",
+  "items": []
+ },
+ {
+  "cache_name": "Portfolio,_Quants.json",
+  "page_idx": 0,
+  "page_type": "other",
+  "items": []
+ },
+ {
+  "cache_name": "Portfolio,_Quants.json",
+  "page_idx": 1,
+  "page_type": "other",
+  "items": []
+ },
+ {
+  "cache_name": "Portfolio,_Quants.json",
+  "page_idx": 2,
+  "page_type": "other",
+  "items": []
+ },
+ {
+  "cache_name": "Portfolio,_Quants.json",
+  "page_idx": 3,
+  "page_type": "other",
+  "items": []
+ },
+ {
+  "cache_name": "Portfolio,_Quants.json",
+  "page_idx": 56,
+  "page_type": "questions",
+  "items": [
+   {
+    "qnum": null,
+    "stem": "Which of the following test statistics is most appropriate for a hypothesis test concerning the mean difference between two normally distributed populations?",
+    "A": "t-statistic",
+    "B": "F-statistic",
+    "C": "Chi-square statistic"
+   }
+  ],
+  "note": "No question number is printed anywhere on this page; the question appears otherwise complete (full stem and all three choices)."
+ },
+ {
+  "cache_name": "Portfolio,_Quants.json",
+  "page_idx": 61,
+  "page_type": "questions",
+  "items": [
+   {
+    "qnum": null,
+    "C": "4.6%."
+   }
+  ],
+  "note": "Only choice C is visible on this page; the question stem and choices A/B appear on a preceding page not included in this batch. No question number printed."
+ },
+ {
+  "cache_name": "Portfolio,_Quants.json",
+  "page_idx": 64,
+  "page_type": "questions",
+  "items": [
+   {
+    "qnum": null,
+    "stem": "The annualized time-weighted rate of return of the investment over the two-year period is closest to:"
+   }
+  ],
+  "note": "Answer choices A/B/C are not visible on this page; they likely appear on the following page, not included in this batch. No question number printed."
+ },
+ {
+  "cache_name": "Portfolio,_Quants.json",
+  "page_idx": 67,
+  "page_type": "questions",
+  "items": [
+   {
+    "qnum": null,
+    "A": "4%.",
+    "B": "5%.",
+    "C": "6%."
+   }
+  ],
+  "note": "The question stem and choice A's label appear on a preceding page not included in this batch; only the value '4%.' for choice A is visible here as a continuation, followed by full choices B and C. No question number printed."
+ },
+ {
+  "cache_name": "Portfolio,_Quants.json",
+  "page_idx": 70,
+  "page_type": "questions",
+  "items": [
+   {
+    "qnum": null,
+    "stem": "...form is best described as the:",
+    "A": "log-lin model.",
+    "B": "lin-log model.",
+    "C": "log-log model."
+   }
+  ],
+  "note": "Only the tail end of the question stem is visible ('form is best described as the:'); the beginning of the sentence appears on a preceding page not included in this batch. All three choices are fully visible. No question number printed."
+ }
+]

@@ -1,0 +1,241 @@
+[
+ {
+  "cache_name": "AI,_Corporate,_Deriv,_Eco.json",
+  "page_idx": 117,
+  "page_type": "questions",
+  "items": [
+   {"qnum": 20, "stem": "Which of the following organizations was founded with the goal of assisting in the reconstruction of the international payment system?", "A": "The World Trade Organization", "B": "The International Monetary Fund", "C": "The International Bank for Reconstruction and Development"},
+   {"qnum": 21, "stem": "Under which of the following market structures do firms have the least control over price?", "A": "Oligopoly", "B": "Monopoly", "C": "Monopolistic competition"},
+   {"qnum": 22, "stem": "Assuming wages and prices are rigid, which of the following policy combinations most likely leads to the private sector increasing its share of GDP?", "A": "Easy fiscal policy and tight monetary policy", "B": "Tight monetary policy and tight fiscal policy", "C": "Tight fiscal policy and easy monetary policy"},
+   {"qnum": 23, "stem": "Which of the following changes most likely reflects a discretionary fiscal policy action?", "A": "A decrease in corporate tax revenues due to lower corporate profitability", "B": "An increase in government expenditures due to new infrastructure projects", "C": "An increase in payments of unemployment benefits due to increasing unemployment"},
+   {"qnum": 24, "stem": "Each oligopoly firm faces an individual demand curve under:", "A": "colluding market conditions only.", "B": "non-colluding market conditions only.", "C": "both colluding and non-colluding market conditions."},
+   {"qnum": 25, "stem": "A decline in tax revenues due to a recession is best described as an example of a(n):", "A": "automatic stabilizer.", "B": "expansionary fiscal policy.", "C": "contractionary fiscal policy."}
+  ],
+  "note": "Question 26 stem begins at the bottom of this page ('According to the Cournot assumption, in an oligopoly market each firm determines its profit-maximizing production level by assuming that other firms will:') but its answer choices are printed on the next page (page_idx 118); the full Q26 is captured there instead to avoid a split/incomplete item."
+ },
+ {
+  "cache_name": "AI,_Corporate,_Deriv,_Eco.json",
+  "page_idx": 118,
+  "page_type": "questions",
+  "items": [
+   {"qnum": 26, "stem": "According to the Cournot assumption, in an oligopoly market each firm determines its profit-maximizing production level by assuming that other firms will:", "A": "decrease output.", "B": "not change output.", "C": "increase output."}
+  ],
+  "note": "This page contains only the three answer choices (A/B/C), printed at the top of an otherwise blank page. The question stem is printed on the previous page (page_idx 117) and has been merged into this item for completeness."
+ },
+ {
+  "cache_name": "AI,_Corporate,_Deriv,_Eco.json",
+  "page_idx": 119,
+  "page_type": "questions",
+  "items": [
+   {"qnum": 27, "stem": "The main objective of most central banks is to maintain:", "A": "price stability.", "B": "gold reserves.", "C": "an employment target."},
+   {"qnum": 28, "stem": "An analyst gathers the following information about a company:\nRow: Average variable cost per unit = $12.50\nRow: Selling price per unit = $37.50\nRow: Total fixed costs = $900,000\nThe minimum production level needed to continue operations over the long run is most likely:", "A": "24,000 units.", "B": "36,000 units.", "C": "72,000 units."},
+   {"qnum": 29, "stem": "The implementation of an export subsidy for a normal good produced in a small country will most likely increase the:", "A": "domestic consumption of the good.", "B": "price of the good in the domestic market.", "C": "national welfare of the country providing the subsidy."},
+   {"qnum": 30, "stem": "Under monopolistic competition, a firm's supply curve is represented by:", "A": "average cost.", "B": "marginal cost.", "C": "neither average cost nor marginal cost."},
+   {"qnum": 31, "stem": "During the slowdown phase of the business cycle:", "A": "inflation decelerates.", "B": "business halts new orders.", "C": "business slows its rate of hiring."},
+   {"qnum": 32, "stem": "The interest rate spread between 10-year treasury yields and overnight borrowing rates most likely:", "A": "is a lagging economic indicator.", "B": "decreases when the market expects an economic downturn.", "C": "increases as the market expects future short-term interest rates to decrease."}
+  ]
+ },
+ {
+  "cache_name": "AI,_Corporate,_Deriv,_Eco.json",
+  "page_idx": 120,
+  "page_type": "questions",
+  "items": [
+   {"qnum": 33, "stem": "Which of the following monetary policy actions is most likely considered expansionary? The central bank:", "A": "acts as the lender in a repurchase agreement.", "B": "sells government bonds to commercial banks.", "C": "raises reserve requirements of commercial banks."},
+   {"qnum": 34, "stem": "Dollarization is best described as an exchange rate regime whereby a country:", "A": "uses the currency of another nation as its medium of exchange.", "B": "participates in a monetary union whose members share the same legal tender.", "C": "makes a commitment to exchange domestic currency for a specified foreign currency at a fixed exchange rate."},
+   {"qnum": 35, "stem": "Which of the following fiscal policy actions is most likely contractionary?", "A": "Increasing taxes and decreasing spending", "B": "Decreasing taxes and increasing spending", "C": "Decreasing taxes and decreasing spending"},
+   {"qnum": 36, "stem": "A fiscal policy tool that can immediately influence spending is most likely:", "A": "indirect taxes.", "B": "exchange rate targeting.", "C": "capital expenditure plans."},
+   {"qnum": 37, "stem": "Which of the following is most likely a lagging economic indicator?", "A": "Inventory-sales ratio", "B": "S&P 500 Stock Index", "C": "Manufacturers' new orders for consumer goods and materials"},
+   {"qnum": 38, "stem": "As an economy moves from the gold standard to a system of fiat currency, the role of the central bank most likely:", "A": "becomes less crucial.", "B": "remains unchanged.", "C": "becomes more crucial."}
+  ],
+  "note": "Question 39 begins at the bottom of this page ('Which of the following is most likely a coincident indicator of economic activity?', option A: 'Average duration of unemployment') but its remaining options (B/C) are on the next page (page_idx 121); the full Q39 is captured there instead."
+ },
+ {
+  "cache_name": "AI,_Corporate,_Deriv,_Eco.json",
+  "page_idx": 121,
+  "page_type": "questions",
+  "items": [
+   {"qnum": 39, "stem": "Which of the following is most likely a coincident indicator of economic activity?", "A": "Average duration of unemployment", "B": "Average weekly hours, manufacturing", "C": "Employees on non-agricultural payrolls"}
+  ],
+  "note": "This page contains only options B and C, printed at the top of an otherwise blank page. The stem and option A are printed on the previous page (page_idx 120) and have been merged into this item for completeness."
+ },
+ {
+  "cache_name": "AI,_Corporate,_Deriv,_Eco.json",
+  "page_idx": 122,
+  "page_type": "questions",
+  "items": [
+   {"qnum": 40, "stem": "An analyst gathers the following foreign exchange rate information:\nRow: Beginning of period, CAD/USD = 1.3216, JPY/USD = 105.42\nRow: End of period, CAD/USD = 1.2944, JPY/USD = 104.74\nNote: CAD/USD is the amount of CAD per 1 USD. JPY/USD is the amount of JPY per 1 USD.\nThe percentage change in the JPY/CAD cross-rate for the period is closest to:", "A": "-2.7%.", "B": "1.4%.", "C": "2.8%."},
+   {"qnum": 41, "stem": "An analyst gathers the following information about spot rates:\nRow: USD/GBP = 1.2604\nRow: USD/EUR = 1.1786\nNote: USD/GBP is the amount of USD per 1 GBP. USD/EUR is the amount of USD per 1 EUR.\nThe spot EUR/GBP cross rate is closest to:", "A": "0.9351.", "B": "1.0694.", "C": "1.4855."},
+   {"qnum": 42, "stem": "A perfectly competitive market structure:", "A": "is not possible in reality.", "B": "causes all industries to ultimately fail due to lack of profits.", "C": "drives company profits to the investors' required rate of return."},
+   {"qnum": 43, "stem": "In contrast to real exchange rates, nominal foreign exchange rates:", "A": "tend to deviate from purchasing power parity.", "B": "represent the relative price levels in the domestic and foreign countries.", "C": "are indexes useful for understanding international trade and capital flows."},
+   {"qnum": 44, "stem": "An argument against free trade is that:", "A": "it has the potential to lead to greater income inequality.", "B": "it increases average production costs in goods and services.", "C": "it discourages foreign research and development in an economy."}
+  ]
+ },
+ {
+  "cache_name": "AI,_Corporate,_Deriv,_Eco.json",
+  "page_idx": 123,
+  "page_type": "questions",
+  "items": [
+   {"qnum": 45, "stem": "An analyst gathers the following information:\nRow: Foreign inflation rate = 2%\nRow: Domestic inflation rate = 3%\nRow: Nominal appreciation of domestic currency against foreign currency = 6%\nThe real appreciation of the domestic currency against the foreign currency is closest to:", "A": "4%.", "B": "5%.", "C": "7%."},
+   {"qnum": 46, "stem": "Price levels increase by 2% in the US and by 6% in the Eurozone. If the nominal spot exchange rate of the USD/EUR (amount of US dollars per 1 euro) decreases by 4%, the absolute change in the real exchange rate is closest to:", "A": "0%.", "B": "4%.", "C": "8%."},
+   {"qnum": 47, "stem": "Which of the following market structures has high barriers to entry?", "A": "An oligopoly", "B": "Perfect competition", "C": "Monopolistic competition"},
+   {"qnum": 48, "stem": "With respect to trading blocs, a common market most likely incorporates all aspects of a(n):", "A": "customs union.", "B": "monetary union.", "C": "economic union."},
+   {"qnum": 49, "stem": "All else being equal, in an efficient market a forward exchange rate will decrease as a result of an increase in the:", "A": "spot exchange rate.", "B": "foreign risk-free interest rate.", "C": "domestic risk-free interest rate."},
+   {"qnum": 50, "stem": "Which of the following indicators suggest(s) a monopoly market?", "A": "A concentration ratio of 100% only", "B": "A Herfindahl-Hirschman index of zero only", "C": "Both a concentration ratio of 100% and a Herfindahl-Hirschman index of zero"}
+  ]
+ },
+ {
+  "cache_name": "AI,_Corporate,_Deriv,_Eco.json",
+  "page_idx": 124,
+  "page_type": "questions",
+  "items": [
+   {"qnum": 51, "stem": "When a country that is a price taker imposes a tariff on an imported good:", "A": "national welfare increases.", "B": "consumers gain consumer surplus.", "C": "local producers gain producer surplus."},
+   {"qnum": 52, "stem": "An ideal international currency regime would most likely have:", "A": "currencies that are fully convertible.", "B": "floating exchange rates between currencies.", "C": "a common monetary policy across different countries."},
+   {"qnum": 53, "stem": "In the short run, a firm most likely shuts down production when:", "A": "economic profit is zero.", "B": "sunk costs are greater than total revenue.", "C": "total revenue is less than total variable cost."},
+   {"qnum": 54, "stem": "If the spot USD/EUR exchange rate (the amount of USD per one EUR) is 1.1605 and the one-year forward rate is 1.17240, the forward points are:", "A": "+101.5.", "B": "+102.5.", "C": "+119.0."},
+   {"qnum": 55, "stem": "Under which of the following market structures are pricing strategies most likely influenced by the expected reaction of other firms?", "A": "Oligopoly", "B": "Perfect competition", "C": "Monopolistic competition"},
+   {"qnum": 56, "stem": "The neutral policy rate is equal to:", "A": "long-run expected inflation.", "B": "the real trend rate of growth of the underlying economy.", "C": "long-run expected inflation plus the real trend rate of growth of the underlying economy."}
+  ],
+  "note": "The heading 'Question 57 of 76' appears at the very bottom of this page with no stem or options visible; the full Q57 content is printed on the next page (page_idx 125) and is captured there."
+ },
+ {
+  "cache_name": "AI,_Corporate,_Deriv,_Eco.json",
+  "page_idx": 125,
+  "page_type": "questions",
+  "items": [
+   {"qnum": 57, "stem": "In long-run equilibrium, the perfectly competitive firm's supply curve is best represented by the firm's long-run:", "A": "marginal cost schedule.", "B": "average revenue schedule.", "C": "marginal revenue schedule."}
+  ],
+  "note": "The 'Question 57 of 76' heading is on the previous page (page_idx 124); this page carries the stem and options, merged into the item above."
+ },
+ {
+  "cache_name": "AI,_Corporate,_Deriv,_Eco.json",
+  "page_idx": 126,
+  "page_type": "questions",
+  "items": [
+   {"qnum": 58, "stem": "Which of the following is most likely an objective of fiscal policy?", "A": "Maintaining price stability", "B": "Affecting aggregate demand", "C": "Achieving an exchange rate target"},
+   {"qnum": 59, "stem": "Which of the following is most likely to limit the effectiveness of monetary policy?", "A": "A liquidity trap", "B": "The crowding out effect", "C": "A time lag to implement government spending"},
+   {"qnum": 60, "stem": "Which of the following is a limitation of monetary policy?", "A": "The presence of automatic stabilizers in the economy", "B": "The ineffectiveness of interest rate adjustments in deflationary environments", "C": "The uneven distribution of income and wealth among different segments of the population"},
+   {"qnum": 61, "stem": "The main objective of the World Bank Group is to:", "A": "support exchange rate stability and an open system of international payments.", "B": "provide the legal and institutional foundation of the multinational trading system.", "C": "help developing countries fight poverty and enhance environmentally sound economic growth."},
+   {"qnum": 62, "stem": "Which of the following is an expansionary fiscal policy?", "A": "An increase in sales taxes", "B": "A decrease in interest rates", "C": "in public spending on infrastructure", "note": "Option C appears truncated/garbled in the source ('in public spending on infrastructure'), likely originally 'An increase in public spending on infrastructure' — transcribed verbatim as printed."},
+   {"qnum": 63, "stem": "If the spot rate for AUD/USD (amount of AUD per 1 USD) is 1.4780 and the 1-month forward points are -16.0, the 1-month forward rate for AUD/USD is closest to:", "A": "1.3180.", "B": "1.4764.", "C": "1.4796."}
+  ]
+ },
+ {
+  "cache_name": "AI,_Corporate,_Deriv,_Eco.json",
+  "page_idx": 127,
+  "page_type": "questions",
+  "items": [
+   {"qnum": 64, "stem": "When a central bank sells government bonds to commercial banks, broad money growth:", "A": "decreases.", "B": "remains the same.", "C": "increases."},
+   {"qnum": 65, "stem": "When a country has a fiscal surplus and an excess of private saving over investment, its exports are:", "A": "less than its imports.", "B": "equal to its imports.", "C": "greater than its imports."},
+   {"qnum": 66, "stem": "Which of the following behavioral archetypes best describes a country that is high on the globalization spectrum but low on the cooperation spectrum?", "A": "Autarky", "B": "Hegemony", "C": "Bilateralism"},
+   {"qnum": 67, "stem": "An analyst gathers the following data about an economy:\nRow: Real trend growth rate = 0.5%\nRow: Central bank's policy rate = 1.5%\nIf monetary policy is contractionary, the central bank's inflation target is:", "A": "less than 1.0%.", "B": "equal to 1.0%.", "C": "greater than 1.0%."},
+   {"qnum": 68, "stem": "An analyst gathers the following information (in $ millions) about a firm operating in a perfectly competitive market:\nRow: Total variable costs = 700\nRow: Total fixed costs = 400\nIf the firm's total revenue is $1,000 million, the firm should:", "A": "stay in the market in both the short run and long run.", "B": "stay in the market in the short run and exit the market in the long run.", "C": "shut down production in the short run and exit the market in the long run."}
+  ]
+ },
+ {
+  "cache_name": "AI,_Corporate,_Deriv,_Eco.json",
+  "page_idx": 128,
+  "page_type": "questions",
+  "items": [
+   {"qnum": 69, "stem": "To be effective in targeting inflation a central bank is least likely to need:", "A": "government oversight.", "B": "transparency of decisions.", "C": "credibility with market participants."},
+   {"qnum": 70, "stem": "To increase liquidity, a central bank most likely implements an interest rate policy that is:", "A": "contractionary.", "B": "neutral.", "C": "expansionary."},
+   {"qnum": 71, "stem": "The conversion of nominal exchange rates into real exchange rates requires the:", "A": "GDP of both countries.", "B": "price levels in both countries.", "C": "interest rates in both countries."},
+   {"qnum": 72, "stem": "Which of the following is most likely a benefit of globalization?", "A": "Increased profits", "B": "More equal income distribution", "C": "Stronger environmental, social, and governance standards"},
+   {"qnum": 73, "stem": "Natural disasters are an example of:", "A": "event risk.", "B": "thematic risk.", "C": "exogenous risk."},
+   {"qnum": 74, "stem": "Which of the following changes are investors most likely to make in response to a black swan risk?", "A": "Tactical", "B": "Sector specific", "C": "Asset allocation"}
+  ]
+ },
+ {
+  "cache_name": "AI,_Corporate,_Deriv,_Eco.json",
+  "page_idx": 129,
+  "page_type": "questions",
+  "items": [
+   {"qnum": 75, "stem": "During the recovery phase of the business cycle, inflation most likely:", "A": "remains moderate.", "B": "further accelerates.", "C": "decelerates but with a lag."},
+   {"qnum": 76, "stem": "The Herfindahl-Hirschman index is calculated based on:", "A": "market shares of the companies.", "B": "elasticity of demand in the market.", "C": "probability of new entry into the market."}
+  ],
+  "note": "This is the final question of the practice set (76 of 76); the answer key begins on the next page (page_idx 130)."
+ },
+ {
+  "cache_name": "AI,_Corporate,_Deriv,_Eco.json",
+  "page_idx": 130,
+  "page_type": "answers",
+  "items": [
+   {"qnum": 1, "correct": "B", "expl": "A. Incorrect because fiscal policy refers to the government's decisions about taxation and spending. B. Correct because fiscal policy refers to the government's decisions about taxation and spending. C. Incorrect because monetary policy refers to central bank activities that are directed toward influencing the quantity of money and credit in an economy. By contrast, fiscal policy refers to the government's decisions about taxation and spending."},
+   {"qnum": 2, "correct": "C", "expl": "A. Incorrect because the least competitive market structure is monopoly. In pure monopoly markets, there are no other good substitutes for the given product or service. There is a single seller, which, if allowed to operate without constraint, exercises considerable power over pricing and output decisions. B. Incorrect because perfect competition is a reality-for example, in several commodities markets, where sellers and buyers have a strictly homogeneous product and no single producer is large enough to influence market prices. Product differentiation is not possible under perfect competition. C. Correct because monopolistic competition is also highly competitive; however, it is considered a form of imperfect competition. The competitive characteristic is a notably large number of firms, while the monopoly aspect is the result of product differentiation. That is, if the seller can convince consumers that its product is uniquely different from other, similar products, then the seller can exercise some degree of pricing power over the market."},
+   {"qnum": 3, "correct": "B", "expl": "A. Incorrect because fiscal policy refers to the government's decisions about taxation and spending and it is not directly related to the quantity of credit in an economy. B. Correct because monetary policy refers to central bank activities that are directed toward influencing the quantity of money and credit in an economy. C. Incorrect because fiscal policy refers to the government's decisions about taxation and spending and it is not directly related to the quantity of credit in an economy."},
+   {"qnum": 4, "correct": "A", "expl": "A. Correct because F(f/d) = S(f/d)((1+i_f)/(1+i_d)). Substituting the values, F(f/d) = 0.8027 x ((1+0.0242)/(1+0.033)) ≈ 0.7959. B. Incorrect because it uses the incorrect formula F(f/d) = S(f/d)((1+i_d)/(1+i_f)). Substituting the values, F(f/d) = 0.8027 x ((1+0.033)/(1+0.0242)) ≈ 0.8096. C. Incorrect because it uses the incorrect formula F(f/d) = S(f/d)(1+i_f). Substituting the values, F(f/d) = 0.8027 x (1+0.033) ≈ 0.8292."}
+  ],
+  "note": "Answer 4's option C explanation is split across this page and the next (page_idx 131); the full text has been merged into the item above."
+ },
+ {
+  "cache_name": "AI,_Corporate,_Deriv,_Eco.json",
+  "page_idx": 131,
+  "page_type": "answers",
+  "items": [
+   {"qnum": 4, "correct": "A", "expl": "(continuation only) ...values, F(f/d) = 0.8027 x (1+0.033) ≈ 0.8292."}
+  ],
+  "note": "This page contains only the final clause of Answer 4's option C explanation, continued from the previous page (page_idx 130), where the full merged text is recorded."
+ },
+ {
+  "cache_name": "AI,_Corporate,_Deriv,_Eco.json",
+  "page_idx": 132,
+  "page_type": "answers",
+  "items": [
+   {"qnum": 5, "correct": "A", "expl": "A. Correct because transfer payments are welfare payments made through the social security system, and, depending on the country, comprise payments for state pensions, housing benefits, tax credits and income support for poorer families, child benefits, unemployment benefits and job search allowances. B. Incorrect because capital expenditure includes infrastructure spending on roads, hospitals, prisons, and schools, not transfer payments. C. Incorrect because current government spending involves spending on goods and services that are provided on a regular, recurring basis-including health, education, and defence, not transfer payments."},
+   {"qnum": 6, "correct": "A", "expl": "A. Correct because a currency board system works best if domestic prices and wages are very flexible. B. Incorrect because a currency board system works best when the global supply of the reserve asset grows at a slow, steady rate consistent with long-run real growth with stable prices. C. Incorrect because a currency board system works best if non-traded sectors of the domestic economy are relatively small."},
+   {"qnum": 7, "correct": "B", "expl": "A. Incorrect because the consumer price index is considered a lagging indicator: Inflation generally adjusts to the cycle late, especially the more stable services area. B. Correct because as a leading economic indicator, a positive change in the S&P 500 Index is supposed to lead (come before) an increase in aggregate economic activity. An increase in the S&P 500 would be positive for future economic growth, all else equal. Additionally, the Euro Stoxx Equity Index is considered a leading indicator in the Eurozone. C. Incorrect because this index measures industrial output, thus capturing the behavior of the most volatile part of the economy. This index is considered one of the 4 coincidental indicators in the United States as tracked by the Conference Board."},
+   {"qnum": 8, "correct": "C", "expl": "A. Incorrect because these are qualities of a central bank. A primary aim for fiscal policy is to help manage the economy through its influence on aggregate national output, that is, real GDP. B. Incorrect because these are qualities of a successful inflation-targeting central bank. The monetary transmission mechanism is the process whereby a central bank's interest rate gets transmitted through the economy and ultimately affects the rate of increase of prices-that is, inflation. Those channels include bank lending rates, asset prices, agents' expectations, and exchange rates. C. Correct because although inflation-targeting regimes vary a little from economy to economy, their success is thought to depend on three key concepts: central bank independence, credibility, and transparency."}
+  ]
+ },
+ {
+  "cache_name": "AI,_Corporate,_Deriv,_Eco.json",
+  "page_idx": 133,
+  "page_type": "answers",
+  "items": [
+   {"qnum": 9, "correct": "C", "expl": "A. Incorrect because regulatory cooperation includes setting up regulatory bodies such as Basel Committee on Banking Supervision (BCBS) rather than setting standards for container size and shape. B. Incorrect because process standardization includes establishing processes like Society for Worldwide Interbank Financial Telecommunication (SWIFT) rather than setting standards for container size and shape. C. Correct because an example of operational synchronization is standards set for containers of uniform size and shape using multi-modal forms of transport (land, sea, air, rail) and port cranes."},
+   {"qnum": 10, "correct": "B", "expl": "A. Incorrect because autarky describes countries seeking political self-sufficiency with little or no external trade or finance. Autarkic countries tend not to be cooperative with other countries. B. Correct because bilateralism is the conduct of political, economic, financial, or cultural cooperation between two countries. Countries engaging in bilateralism may have relations with many different countries, but they are one-at-a-time agreements without multiple partners. C. Incorrect because hegemonic countries tend to be regional or even global leaders, and they use their political or economic influence of others to control resources economic and political dominance may provide important influence on global affairs. Thus, hegemonic countries tend to lead or dominate more than cooperate."},
+   {"qnum": 11, "correct": "C", "expl": "A. Incorrect because an inflation-targeting framework normally has a clear, symmetric and forward-looking medium-term inflation target, sufficiently above 0 percent to avoid the risk of deflation but low enough to ensure a significant degree of price stability. B. Incorrect because an inflation-targeting framework normally has a clear, symmetric and forward-looking medium-term inflation target, sufficiently above 0 percent to avoid the risk of deflation but low enough to ensure a significant degree of price stability. C. Correct because an inflation-targeting framework normally has a clear, symmetric and forward-looking medium-term inflation target, sufficiently above 0 percent to avoid the risk of deflation but low enough to ensure a significant degree of price stability.", "note": "The A/B/C rationale text is near-identical across all three options in the source (an apparent production/OCR artifact in the original PDF); transcribed verbatim as printed, only the correctness marking differs."},
+   {"qnum": 12, "correct": "C", "expl": "A. Incorrect because this leads to a liquidity trap. In very extreme instances, there may be occasions where the demand for money becomes infinitely elastic so that further injections of money into the economy will not serve to further lower interest rates or affect real activity. This is known as a liquidity trap. In this extreme circumstance, monetary policy can become completely ineffective. B. Incorrect because when the central bank or monetary authority chooses to target an exchange rate, interest rates and conditions in the domestic economy must adapt to accommodate this target and domestic interest rates and money supply can become more volatile. C. Correct because deflation is more problematic for the central bank than inflation."}
+  ],
+  "note": "Answer 12's option C explanation continues with additional detail on the next page (page_idx 134); that continuation is appended to the recorded expl there and referenced back to this item."
+ },
+ {
+  "cache_name": "AI,_Corporate,_Deriv,_Eco.json",
+  "page_idx": 134,
+  "page_type": "answers",
+  "items": [
+   {"qnum": 12, "correct": "C", "expl": "(continuation only) C. Correct because deflation is more problematic for the central bank than inflation. Deflation is a pervasive and persistent fall in a general price index and is more difficult for conventional monetary policy to deal with than inflation. This is because cutting nominal interest rates much below zero to stimulate the economy is difficult. It is at this point that the economic conditions for a liquidity trap arise."}
+  ],
+  "note": "This page contains the continuation of Answer 12's option C rationale, begun on the previous page (page_idx 133)."
+ },
+ {
+  "cache_name": "AI,_Corporate,_Deriv,_Eco.json",
+  "page_idx": 135,
+  "page_type": "answers",
+  "items": [
+   {"qnum": 13, "correct": "B", "expl": "A. Incorrect because event risk evolves around set dates, such as elections, new legislation, or other date-driven milestones, such as holidays or political anniversaries, known in advance, whilst thematic risks are known risks that evolve and expand over a period of time and cyber threats are an example of thematic risk. B. Correct because cyber threats are another example of thematic risk. C. Incorrect because exogenous risk is a sudden or unanticipated risk that impacts either a country's cooperative stance, the ability of non-state actors to globalize, or both. Examples include sudden uprisings, invasions, or the aftermath of natural disasters, whilst thematic risks are known risks that evolve and expand over a period of time and cyber threats are an example of thematic risk.", "note": "A few words at the end of option C are partially obscured by a printing artifact in the source ('...cyber threats are [an example of thematic risk'); transcribed as best legible."},
+   {"qnum": 14, "correct": "C", "expl": "A. Incorrect because money in all major economies today is not convertible by law into anything else, but it is, in law, legal tender. Money that is not convertible into any other commodity is known as fiat money. B. Incorrect because money that is not convertible into any other commodity is known as fiat money. C. Correct because fiat money derives its value via government decree and because people accept it for payment of goods and services and for debt repayment."},
+   {"qnum": 15, "correct": "C", "expl": "A. Incorrect because monetary policy, not fiscal policy, refers to central bank activities such as supervising the banking system. B. Incorrect because monetary policy refers to central bank activities that are directed toward influencing the quantity of money and credit in an economy. By contrast, fiscal policy refers to the government's decisions about taxation and spending. C. Correct because fiscal policy involves the use of government spending and changing tax revenue to affect a number of aspects of the economy including the distribution of income and wealth among different segments of the population."},
+   {"qnum": 16, "correct": "A", "expl": "A. Correct because decreasing taxes reflects easy fiscal policy. If taxes are cut the expansionary fiscal policy will lead to a rise in aggregate output. Increasing interest rates reflects tight monetary policy. If this is accompanied by a reduction in money supply to offset the fiscal expansion, then interest rates will rise. B. Incorrect because a decrease in taxes is expansionary fiscal policy, not tight fiscal policy. C. Incorrect because a decrease in taxes is expansionary fiscal policy, not tight fiscal policy."}
+  ],
+  "note": "Answer 16's option B explanation is split mid-word across this page and the next (page_idx 136); the merged text is recorded above."
+ },
+ {
+  "cache_name": "AI,_Corporate,_Deriv,_Eco.json",
+  "page_idx": 136,
+  "page_type": "answers",
+  "items": [
+   {"qnum": 16, "correct": "A", "expl": "(continuation only) B. Incorrect because a decrease in taxes is expansionary fiscal policy, not tight fiscal policy."}
+  ],
+  "note": "This page contains only the tail end of Answer 16's option B explanation, continued from page_idx 135, where the full merged text is recorded. Note: this page's visible text ('C. Incorrect because a decrease in taxes is expansionary fiscal policy, not tight fiscal policy.') duplicates the C option already fully printed on page_idx 135; likely a repeated/re-flowed line in the source document rather than new content."
+ },
+ {
+  "cache_name": "AI,_Corporate,_Deriv,_Eco.json",
+  "page_idx": 137,
+  "page_type": "answers",
+  "items": [
+   {"qnum": 17, "correct": "A", "expl": "A. Correct because deflation is more difficult for conventional monetary policy to deal with than inflation. This is because once the monetary authority has cut nominal interest rates to zero to stimulate the economy, it cannot cut them any further. B. Incorrect because deflation is more difficult for conventional monetary policy to deal with than inflation. This is because once the monetary authority has cut nominal interest rates to zero to stimulate the economy, it cannot cut them any further. C. Incorrect because deflation is more difficult for conventional monetary policy to deal with than inflation. This is because once the monetary authority has cut nominal interest rates to zero to stimulate the economy, it cannot cut them any further."},
+   {"qnum": 18, "correct": "B", "expl": "A. Incorrect because real exchange rates are indexes often constructed by economists and other market analysts to assess changes in the relative purchasing power of one currency compared with another, and are therefore not based on an arbitrage relationship. B. Correct because forward exchange rates are based on an arbitrage relationship that equates the investment return on two alternative but equivalent investments, which involves the relationship between the risk-free interest rates of the two countries concerned. The arbitrage relationship is F(f/d) = S(f/d)(1 + i_f)/(1 + i_d), where F(f/d) is the forward rate, S(f/d) is the spot rate, and i_f (i_d) is the foreign (domestic) risk-free interest rate. C. Incorrect because the nominal exchange rate is the number of units of one currency (called the price currency) that one unit of another currency (called the base currency) will buy, and is set by market forces e.g., capital flows, trade flows, etc. While it is true that cross-rate (nominal exchange rate) quotes must be consistent, the market will arbitrage the mispricings, the specific arbitrage relationship relating to nominal exchange rates does not involve relative interest rates, it is simply based on currency market quotations (and subsequently by the derived currency cross-rates)."},
+   {"qnum": 19, "correct": "B", "expl": "A. Incorrect because soft power has a positive effect on globalization. Soft power is a means of influencing another country's decisions without force or coercion. Soft power can be built over time through such actions as cultural programs, advertisement, travel grants, and university exchange. And globalization also has cultural and communicative features. Although it can be difficult to measure these features, such as the spread of information or culture, it has increased interactions between citizens of countries all over the world. Internet usage allows for the near-instantaneous spread of cultural information and context. B. Correct because globalization is marked by economic and financial cooperation, including the active trade of goods and services, capital flows, currency exchange, and cultural and information exchange. Actors participating in globalization are likely to reach beyond their national borders for access to new markets, talent, or learning. By contrast, anti-globalization or nationalism is the promotion of a country's own economic interests to the exclusion or detriment of the interests of other nations. C. Incorrect because standardization is the process of creating protocols for the production, sale, transport, or use of a product or service. Standardization occurs when relevant parties agree to follow these protocols together. It helps support expanded economic and financial activities across borders. And as globalization deepens, companies develop standards and processes to incorporate multiple cultures into their overall [text cut off at bottom of page]", "note": "Option C's explanation is cut off mid-sentence at the bottom of this page ('...incorporate multiple cultures into their overall'); the continuation would be on the next page, which is outside this batch (page_idx 137 is the last item in batch_04). Transcribed verbatim up to the visible cutoff; nothing beyond it was invented."}
+  ]
+ }
+]

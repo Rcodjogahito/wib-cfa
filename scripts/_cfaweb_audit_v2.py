@@ -17,30 +17,48 @@ def sig_words(text):
     return Counter(WORD_RE.findall((text or "").lower()))
 
 def load_qb_dir(d):
+    """Each QB PDF contains several independent practice-pack sections
+    (eg. Alternative Investments, Corporate Issuers, Derivatives, Economics)
+    that each restart question numbering at 1 -- a naive single dict keyed
+    only by "n" silently collides across sections (last one wins), dropping
+    most matches. Segment into sections first: walk pages in page_idx order,
+    and start a new section whenever a "questions" page's items restart at
+    a number well below the max seen so far in the current section.
+    """
     entries = []
     for jf in sorted(Path(d).glob("*.json")):
-        pages = json.loads(jf.read_text(encoding="utf-8"))
-        q_by_n, a_by_n = {}, {}
+        pages = sorted(json.loads(jf.read_text(encoding="utf-8")), key=lambda p: p.get("page_idx", 0))
+        sections = []  # list of (q_by_n, a_by_n)
+        cur_q, cur_a, max_n_seen = {}, {}, 0
         for pg in pages:
             if pg.get("page_type") == "questions":
+                ns = [item.get("n") for item in pg.get("items", []) if item.get("n") is not None]
+                if ns and cur_q and min(ns) <= max_n_seen - 3:
+                    sections.append((cur_q, cur_a))
+                    cur_q, cur_a, max_n_seen = {}, {}, 0
                 for item in pg.get("items", []):
                     n = item.get("n")
                     if n is not None:
-                        q_by_n[n] = item
+                        cur_q[n] = item
+                        max_n_seen = max(max_n_seen, n)
             elif pg.get("page_type") == "answers":
                 for item in pg.get("items", []):
                     n = item.get("n")
                     if n is not None:
-                        a_by_n[n] = item
-        for n, qitem in q_by_n.items():
-            aitem = a_by_n.get(n, {})
-            entries.append({
-                "file": jf.name, "n": n,
-                "stem": qitem.get("stem", ""),
-                "A": qitem.get("A", ""), "B": qitem.get("B", ""), "C": qitem.get("C", ""),
-                "correct": aitem.get("correct"), "expl": aitem.get("expl", ""),
-                "stem_words": sig_words(qitem.get("stem", "")),
-            })
+                        cur_a[n] = item
+        if cur_q or cur_a:
+            sections.append((cur_q, cur_a))
+
+        for q_by_n, a_by_n in sections:
+            for n, qitem in q_by_n.items():
+                aitem = a_by_n.get(n, {})
+                entries.append({
+                    "file": jf.name, "n": n,
+                    "stem": qitem.get("stem", ""),
+                    "A": qitem.get("A", ""), "B": qitem.get("B", ""), "C": qitem.get("C", ""),
+                    "correct": aitem.get("correct"), "expl": aitem.get("expl", ""),
+                    "stem_words": sig_words(qitem.get("stem", "")),
+                })
     return entries
 
 def load_mock_dir(d):

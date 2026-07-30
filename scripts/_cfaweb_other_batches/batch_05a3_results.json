@@ -1,0 +1,45 @@
+[
+ {
+  "cache_name": "AI,_Corporate,_Deriv,_Eco.json",
+  "page_idx": 146,
+  "page_type": "answers",
+  "items": [],
+  "note": "Continuation fragment only (printed page 144). No answer/question header, no qnum visible on this page. Sole legible text: 'currency for a specified foreign currency at a fixed exchange rate, combined with restrictions on the issuing authority to ensure fulfillment of its legal obligation.' This is the tail end of an explanation (likely about a currency board / fixed exchange rate regime) begun on the prior page, which is not part of this batch, so the associated qnum cannot be determined."
+ },
+ {
+  "cache_name": "AI,_Corporate,_Deriv,_Eco.json",
+  "page_idx": 147,
+  "page_type": "answers",
+  "items": [
+   {
+    "qnum": 35,
+    "correct": "A",
+    "expl": "A. Correct because increasing taxes and decreasing spending are indicative of a contractionary fiscal policy. When an economy has full employment and wages and prices are rising too fast—then government spending may be reduced and taxes raised (contractionary fiscal policy).\nB. Incorrect because decreasing taxes and increasing spending are indicative of a budget deficit, which is expansionary. An expansionary policy could take one or more of the following forms cuts in sales (indirect) taxes to lower prices which raises real incomes with the objective of raising consumer demand cuts in corporation (company) taxes to boost business profits, which may raise capital spending, and cuts in tax rates on personal savings to raise disposable income for those with savings, with the objective of raising consumer demand. Expansionary fiscal policy also includes new public spending on social goods and infrastructure, such as hospitals and schools, boosting personal incomes with the objective of raising aggregate demand. An increase in a budget surplus would be associated with contractionary fiscal policy, while a rise in a deficit is an expansionary fiscal policy.\nC. Incorrect because a decrease in taxes is expansionary, while a decrease in spending is contractionary. Without knowing the relative magnitudes, we cannot say whether the policy is expansionary or contractionary. An expansionary policy could take one or more of the following forms cuts in sales (indirect) taxes to lower prices which raises real incomes with the objective of raising consumer demand cuts in corporation (company) taxes to boost business profits, which may raise capital spending, and cuts in tax rates on personal savings to raise disposable income for those with savings, with the objective of raising consumer demand. However, an increase (not decrease) in spending is expansionary. Expansionary fiscal policy also includes new public spending on social goods and infrastructure, such as hospitals and schools, boosting personal incomes with the objective of raising aggregate demand. An increase in a budget surplus would be associated with contractionary fiscal policy, while a rise in a deficit is an expansionary fiscal policy."
+   },
+   {
+    "qnum": 36,
+    "correct": "A",
+    "expl": "A. Correct because indirect taxes can be adjusted almost immediately after they are announced and can influence spending behaviour instantly and generate revenue for the government at little or no cost to the government.\nB. Incorrect because exchange rate targeting is a monetary policy tool, not a fiscal policy tool. Many developing economies choose to operate monetary policy by targeting their currency's exchange rate.\nC. Incorrect because capital spending plans take longer to formulate and implement, typically over a period of years. The slower the impact of a fiscal change, the more likely other exogenous changes will already be influencing the economy before the fiscal change kicks in."
+   },
+   {
+    "qnum": 37,
+    "correct": "A",
+    "expl": "A. Correct because inventories accumulate as sales initially decline and then, once a business adjusts its ordering, become depleted as sales pick up, so this ratio tends to lag the cycle.\nB. Incorrect because this is a leading economic indicator. Stock prices anticipate economic turning points, both up and down, so their movements offer a useful early signal on economic cycles.\nC. Incorrect because this is a leading economic indicator. Businesses cannot wait too [text cut off at bottom of page, continues on page_idx 148]"
+   }
+  ],
+  "note": "Q37 option C explanation is truncated at the bottom of the page ('Businesses cannot wait too'); it continues onto page_idx 148."
+ },
+ {
+  "cache_name": "AI,_Corporate,_Deriv,_Eco.json",
+  "page_idx": 148,
+  "page_type": "answers",
+  "items": [
+   {
+    "qnum": 37,
+    "correct": "A",
+    "expl": "long to meet demands for consumer goods or materials without ordering, so these gauges tend to lead at upturns and downturns. Indirectly, they capture changes in business sentiment as well, which also often leads the cycle."
+   }
+  ],
+  "note": "Page contains only a continuation of Q37's option C explanation (rest of page is blank; printed page number 146). No 'Answer X of 76' header appears on this page itself — qnum 37 is inferred from the immediately preceding page_idx 147, not printed here."
+ }
+]

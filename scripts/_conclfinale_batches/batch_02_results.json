@@ -1,0 +1,127 @@
+[
+ {
+  "id": "19e325ad-91ab-4e5d-95ed-5ae67ebb4fef",
+  "verdict": "stored_is_correct",
+  "reasoning": "Effective tax rate = (500,000-372,000)/500,000 = 25.6% (B), statutory = 23% (C), cash = 114,000/500,000 = 22.8% (A). B is the highest, matching stored. The heuristic's 'detected=A' comes from the explanation's last-computed figure (cash tax rate), which is actually the lowest, not the answer."
+ },
+ {
+  "id": "1a007954-17a0-4b07-b901-bc39d281d4cb",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation states plainly 'In the seed stage... capital is furnished for product development, marketing, and market research,' directly matching the question stem and option B. The last sentence describes the early stage (option C) only to rule it out ('refers to investments made to fund initial commercial production and sales'), a classic rebuttal false positive."
+ },
+ {
+  "id": "1a2df3b7-6615-44ba-a855-66ac2f6d4e44",
+  "verdict": "stored_is_correct",
+  "reasoning": "The explanation says accrual/assumption detail is implicit but 'not specifically explained' in the income statement, while footnotes/MD&A carry that detail and supplementary schedules carry balance-breakdown detail — leaving the income statement (A) as least likely to contain it. The heuristic flagged B because it is discussed last, but that sentence affirms schedules DO contain detail, disqualifying B rather than confirming it."
+ },
+ {
+  "id": "1a4c134f-68b4-46ad-8227-a45c17b8628d",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation states 'Sponsored DR investors have the same voting rights as common shareholders,' directly answering the question about SPONSORED DRs with option B. The final sentence about the depository bank retaining voting rights refers explicitly to UNSPONSORED DRs, a different scenario than asked — classic last-sentence false positive."
+ },
+ {
+  "id": "1a4e1688-39ed-46b9-8bcc-74133efdf72a",
+  "verdict": "stored_is_correct",
+  "reasoning": "The explanation directly diagnoses the scenario as conservatism bias ('the analyst refuses to revise the previous EPS forecast... despite... supply chain disruptions'), matching option A. The final sentences are explicit '(Choice B)' and '(Choice C)' rebuttals of loss aversion and mental accounting, the classic false-positive pattern."
+ },
+ {
+  "id": "1b1f5ed4-0d6f-4bd0-a28a-7ed5f09ee72a",
+  "verdict": "stored_is_correct",
+  "reasoning": "The explanation states both the numerator increases (preferred dividends added back) AND the denominator increases (shares from conversion), matching option B (both). The heuristic keyed on the final clause about the denominator alone, missing that the numerator change was stated first and is equally required."
+ },
+ {
+  "id": "1b3ed913-8757-4bd3-b4d9-17d353b39bab",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation: conservative choices are used 'to understate earnings in periods when a company's operations are performing well' — this is option C, matching stored. The overstatement-when-struggling behavior mentioned last is explicitly attributed to AGGRESSIVE (not conservative) choices, a mismatch the heuristic missed."
+ },
+ {
+  "id": "1b53b891-0321-43af-b6e9-45dac4b0c8b9",
+  "verdict": "stored_is_correct",
+  "reasoning": "Computing portfolio variance: 0.8^2*0.09^2 + 0.2^2*0.10^2 + 2*0.8*0.2*0.6*0.09*0.10 = 0.005184 + 0.0004 + 0.001728 = 0.00731 ≈ 0.0073, matching option A (stored). Option C (0.0855) is explicitly explained as the standard deviation, not the variance — a rebutted distractor, not the answer."
+ },
+ {
+  "id": "1bf567c0-e8b4-4e66-8cdd-423c5ebfecb7",
+  "verdict": "stored_is_correct",
+  "reasoning": "Using the implied SSR=20.601 and SSE=8.326 with correct df(residual)=10: F = 20.601/(8.326/10) = 24.74, matching option A (stored). The text explicitly labels 29.69 (option C) as resulting from an 'incorrectly' computed denominator, a rebutted distractor."
+ },
+ {
+  "id": "1c62861c-d4ef-452b-9037-87b959369630",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation states the true median (sorted, observations 6 and 7 averaged) differs from both the mode (1.6%, option A) and the unsorted year 6/7 average (4.6%, option C), leaving option B (2.7%) as the only remaining candidate and matching stored. Option C is explicitly flagged as a sorting-order error, a rebutted distractor."
+ },
+ {
+  "id": "1ca386fa-6f48-40e8-82b8-0b8fca7c4948",
+  "verdict": "stored_is_correct",
+  "reasoning": "First sentence directly states 'A synthetic CDO is backed by a pool of credit default swaps,' matching option A (stored). The later mention of CDOs backed by other CDOs (option C) describes a different subtype ('structured finance CDOs'), not the synthetic CDO asked about."
+ },
+ {
+  "id": "1d4f6494-d5cf-495d-925c-0adc973c38d5",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation lists geography as one of the valid narrower index foci ('may be on geography, credit quality, sector, or maturity'), matching option A (stored). The final sentence explicitly rules out both coupon rate ranges and equity correlation as unlikely index foci — a rebuttal of option C, not a confirmation."
+ },
+ {
+  "id": "1df384fd-cbbc-408f-8e9a-0d734dc96cd0",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation states derivatives pricing 'assumes the law of one price holds,' matching option B (stored), and explicitly states it does 'not' assume investors are net risk-neutral, directly negating option C in the final clause — classic negation-based false positive."
+ },
+ {
+  "id": "1e084771-193c-4d57-b2a2-6850f89e1672",
+  "verdict": "stored_is_correct",
+  "reasoning": "Applying the given formula: %ΔR ≈ +6% + (-2%) - (+3%) = 1%, matching option A (stored), and the text explicitly says the more precise measure is also ≈1%. Option C (11%) is explicitly labeled as resulting from 'incorrectly treating both... as factors that reinforce' — a rebutted distractor."
+ },
+ {
+  "id": "1e179afa-404f-48f5-9e49-5b122873d597",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation identifies the interest/principal payment promise as 'one type of affirmative covenant,' matching option B (stored, covenants). Option A (collateral) is explicitly rebutted in the final parenthetical as referring to pledged assets, not payment timing promises."
+ },
+ {
+  "id": "1edac211-886c-4405-aefe-a48476fa8403",
+  "verdict": "stored_is_correct",
+  "reasoning": "First sentence: 'A put option gives the holder the right to sell an asset at a specified price on a specific future date,' matching option B (stored) exactly against the question stem. The final sentence about swaps ('an obligation to both parties') rebuts option C rather than confirming it, since the question specifies a right without obligation."
+ },
+ {
+  "id": "1f9b39db-4514-41a2-85c7-17633f64f51f",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation states unrealized gains/losses on AFS securities 'are not reported in the income statement rather they are recognized in equity,' which is a direct, near-verbatim match to option B (stored). Option A ('reported in the income statement') is explicitly negated by the word 'not' — a clear negation-based false positive."
+ },
+ {
+  "id": "1fdd9d0f-0552-4c5c-bf59-6db8b66eaeba",
+  "verdict": "stored_is_correct",
+  "reasoning": "The question's exact scenario (discarding the two smallest and two largest observations before averaging) is defined in the explanation as the trimmed mean, matching option A (stored) word-for-word. The harmonic mean discussion (option B) is a separate '(Choice B)' explanation of a distractor, not the answer."
+ },
+ {
+  "id": "20244570-cfac-4b8a-b47f-27887d34b2d0",
+  "verdict": "stored_is_correct",
+  "reasoning": "First sentence directly answers the question: 'Investors who are less risk averse will have flatter indifference curves,' matching option A (stored). The final sentence about steeper curves (option C) describes MORE risk-averse investors, the opposite of what's asked — a rebutted distractor."
+ },
+ {
+  "id": "20313db0-0bd8-445b-9e05-0b93792cfb99",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation states 'Only in the indirect method is depreciation added back to net income,' matching option C (stored) directly. The final sentence about the direct method explicitly states it does NOT add back depreciation via net income — a negation of option B, not a confirmation."
+ },
+ {
+  "id": "2122151a-6286-46dc-85dd-00eb3db1545b",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation states an economic union adds 'common institutions and economic policy' beyond a common market, matching option B (stored). The final sentence explicitly states neither a common market nor economic union requires a common currency ('characteristic of a monetary union') — a negation of option A, not confirmation."
+ },
+ {
+  "id": "21df0be4-5f5b-4afc-8dcc-6b84eb87a421",
+  "verdict": "stored_is_correct",
+  "reasoning": "First sentence directly defines money market funds as investing in short-term debt securities while maintaining a constant NAV, exactly matching the question stem and option C (stored). The final sentence about balanced funds (option A) describes a different, unrelated fund type."
+ },
+ {
+  "id": "2434d41b-98ab-4275-aa87-971213360506",
+  "verdict": "stored_is_correct",
+  "reasoning": "Field-bleed OCR corruption has shifted a few trailing/leading words between question_en and the options, but reconstructing the text shows option A = 'remove goodwill from balance sheet AND remove any income statement impact,' which the explanation endorses as the most accurate approach ('should be removed... any income statement impact should also be removed'), matching stored=A. Option C ('no adjustments') is explicitly contradicted by the explanation's opening statement that goodwill should be removed."
+ },
+ {
+  "id": "24865724-a81b-4f9b-8f78-3a5e1a05407e",
+  "verdict": "stored_is_correct",
+  "reasoning": "Explanation states arbitrageurs 'provide market liquidity by simultaneously buying a security in one market... and selling the same security in another market,' matching the question stem and option C (stored) exactly. The final sentence on dealers explicitly contrasts them as operating in the SAME market at DIFFERENT times, ruling out option B rather than confirming it."
+ },
+ {
+  "id": "248c1d00-adbf-44e9-9c28-5e0f8242a6a1",
+  "verdict": "stored_is_correct",
+  "reasoning": "The stock (6% std dev) has lower risk than the bond (7% std dev) for the same 4% expected return; preferring the lower-risk asset defines a risk-averse investor, matching option A (stored). The final sentence about risk-seeking investors (option C) describes preferring MORE risk, which is the opposite of what the scenario describes."
+ }
+]

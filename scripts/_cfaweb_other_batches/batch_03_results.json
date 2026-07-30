@@ -1,0 +1,578 @@
+[
+ {
+  "cache_name": "AI,_Corporate,_Deriv,_Eco.json",
+  "page_idx": 96,
+  "page_type": "answers",
+  "items": [
+   {
+    "qnum": 27,
+    "correct": "B",
+    "expl": "A. Incorrect because recall our put–call parity discussion and assume that Investor A creates his protective put in a slightly different manner. Instead of buying the asset, he buys a forward contract and a risk-free bond in which the face value is the forward price. This strategy is a synthetic protective put. Because we showed that the fiduciary call is equivalent to the protective put, a fiduciary call has to be equivalent to a protective put with a forward contract. Therefore, the payoff on a fiduciary call is not equal to the payoff on a portfolio consisting of a long call and a short risk-free bond.\nB. Correct because recall our put–call parity discussion and assume that Investor A creates his protective put in a slightly different manner. Instead of buying the asset, he buys a forward contract and a risk-free bond in which the face value is the forward price. This strategy is a synthetic protective put. Because we showed that the fiduciary call is equivalent to the protective put, a fiduciary call has to be equivalent to a protective put with a forward contract. Therefore, the payoff on a fiduciary call = the payoff on a synthetic protective put, fiduciary call = long call + long risk-free bond = long risk-free bond + long forward contract + long put.\nC. Incorrect because recall our put–call parity discussion and assume that Investor A creates his protective put in a slightly different manner. Instead of buying the asset, he buys a forward contract and a risk-free bond in which the face value is the forward price. This strategy is a synthetic protective put. Because we showed that the fiduciary call is equivalent to the protective put, a fiduciary call has to be equivalent to a protective put with a forward contract. Therefore, the payoff on a fiduciary call is not equal to the payoff on a portfolio consisting of a short call, a long forward contract and a long risk-free bond."
+   },
+   {
+    "qnum": 28,
+    "correct": "C",
+    "expl": "A. Incorrect because OTC and ETD markets differ in several ways, including that ETD contracts are more standardized.\nB. Incorrect because OTC and ETD markets differ in several ways, including that OTC instruments have less transparency, whereas ETD markets have transparency.\nC. Correct because OTC and ETD markets differ in several ways, including that ETD contracts have lower trading and transaction costs."
+   },
+   {
+    "qnum": 29,
+    "correct": "B",
+    "expl": "A. Incorrect because different FRA fixed rates usually exist for different times to maturity. In contrast, a standard interest rate swap has a constant fixed rate over its life, which includes multiple periods.\nB. Correct because similarities between interest rate forwards and swaps include the symmetric payoff profile and the fact that no cash flow is exchanged upfront.\nC. Incorrect because different FRA fixed rates usually exist for different times to maturity. In contrast, a standard interest rate swap has a constant fixed rate over its life, which includes multiple periods and the FRA has a single settlement, which occurs at the beginning of an interest period, while a standard swap has periodic settlements, which occur at the end of each respective period."
+   }
+  ]
+ },
+ {
+  "cache_name": "AI,_Corporate,_Deriv,_Eco.json",
+  "page_idx": 97,
+  "page_type": "answers",
+  "items": [
+   {
+    "qnum": 30,
+    "correct": "A",
+    "expl": "Question restated on answer page: \"The value of a forward contract at initiation is most likely equal to: D. zero. E. the spot price minus the forward price. F. the forward price minus the spot price.\" (options printed as D/E/F in the stem, but the Solution below labels them A/B/C, as printed — preserved verbatim.)\nSolution:\nA. Correct because neither the long nor the short pays anything to the other at the initiation date of a forward contract, the value of a forward contract when initiated is zero.\nB. Incorrect because the value of a forward contract at expiration is the spot price of the underlying minus the forward price agreed to in the contract. Because neither the long nor the short pays anything to the other at the initiation date of a forward contract, the value of a forward contract when initiated is zero. Therefore, the value of a forward contract at initiation is not equal to the spot price minus the forward price.\nC. Incorrect because the value of a forward contract at expiration is the spot price of the underlying minus the forward price agreed to in the contract. Because neither the long nor the short pays anything to the other at the initiation date of a forward contract, the value of a forward contract when initiated is zero. Therefore, the value of a forward contract at initiation is not equal to the forward price minus the spot price."
+   },
+   {
+    "qnum": 31,
+    "correct": "C",
+    "expl": "A. Incorrect because short interest rate futures contracts also gain from a rising market reference rate.\nB. Incorrect because long forward rate agreements also gain from a rising market reference rate.\nC. Correct because realizing a gain on the FRA contract as rates rise. Note that this would be equivalent to taking a short position on a CNY MRR futures contract if one were available. A long FRA (i.e., FRA floating-rate receiver (fixed-rate payer)) position realizes a gain as MRR rises. A short futures contract price is based on (100 – yield), which gains as yield-to-maturity (MRR) rises."
+   },
+   {
+    "qnum": 32,
+    "correct": "A",
+    "expl": "A. Correct because OTC (over-the-counter) derivative markets involve contracts entered between derivatives end users and dealers, or financial intermediaries, such as commercial banks or investment banks.\nB. Incorrect because end users do not generally trade with other end users. OTC derivative markets involve contracts entered between derivatives end users and dealers, or financial intermediaries, such as commercial banks or investment banks.\nC. Incorrect because the central counterparty provides clearing and settlement functions rather than trading derivatives. A central counterparty (CCP) assumes the credit risk between derivative counterparties, one of which is typically a financial intermediary. CCPs provide clearing and settlement for most derivative contracts."
+   },
+   {
+    "qnum": 33,
+    "correct": "A",
+    "expl": "A. Correct because other similarities between interest rate forwards and swaps include the symmetric payoff profile and the fact that no cash flow is exchanged [text cut off at bottom of page]",
+    "note": "Explanation is cut off mid-sentence at the bottom of this page; continues on next page (page_idx 98)."
+   }
+  ]
+ },
+ {
+  "cache_name": "AI,_Corporate,_Deriv,_Eco.json",
+  "page_idx": 98,
+  "page_type": "answers",
+  "items": [
+   {
+    "qnum": 33,
+    "correct": "A",
+    "expl": "[continuation from previous page, page_idx 97] upfront. The symmetric payoff profile of a swap means that the swap has zero value to both parties at contract inception.\nB. Incorrect because other similarities between interest rate forwards and swaps include the symmetric payoff profile and the fact that no cash flow is exchanged upfront.\nC. Incorrect because an FRA (forward rate agreement) has a single settlement, which occurs at the beginning of an interest period, while a standard swap has periodic settlements, which occur at the end of each respective period. So, while a standard swap does have periodic settlements, these occur at the end of the period, not the beginning.",
+    "note": "This is the continuation of Answer 33, whose option A opening appears on the previous page (page_idx 97)."
+   },
+   {
+    "qnum": 34,
+    "correct": "B",
+    "expl": "A. Incorrect because this distractor is the upper bound of a put value and not a call price. The exercise price, X, therefore represents the upper bound on the put value.\nB. Correct because the call buyer will not pay more for the right to purchase an underlying than the price of that underlying, which is the upper bound.\nC. Incorrect because this answer choice represents the lower bound of a call price and not the upper bound. The lower bound of a call price is therefore the underlying's price minus the present value of its exercise price or zero, whichever is greater."
+   },
+   {
+    "qnum": 35,
+    "correct": "A",
+    "expl": "A. Correct because the buyer of a derivative enters a contract whose value changes in a way similar to a long position in the underlying. Thus a short futures position hedges the exposure to the underlying: Use of a derivative to offset or neutralize existing or anticipated exposure to an underlying is referred to as hedging, with the derivative itself commonly described as a hedge of the underlying transaction. In addition, a futures position is a firm commitment: Firm commitments include forward contracts, futures contracts, and swaps involving a periodic exchange of cash flows.\nB. Incorrect because an option is an example of a contingent claim rather than a firm commitment. Firm commitments include forward contracts, futures contracts, and swaps involving a periodic exchange of cash flows. Another type of derivative is a contingent claim, in which one of the counterparties determines whether and when the trade will settle. An option is the primary contingent claim.\nC. Incorrect because a warrant is a type of option and an option is an example of a contingent claim rather than a firm commitment. Firm commitments include forward contracts, futures contracts, and swaps involving a periodic exchange of cash flows. Another type of derivative is a contingent claim, in which one of the counterparties determines whether and when the trade will settle. An option is the primary contingent claim. Companies may also issue warrants, which are options granted to employees or sold to the public that allow holders to purchase shares at a fixed price in the future directly from the issue[r]."
+   },
+   {
+    "qnum": 36,
+    "correct": "C",
+    "expl": "A. Incorrect because forward (not future) contract MTM is not settled until maturity.\nB. Incorrect because the forward price, F0(T), is constant until the contract matures, whereas the futures price, f0(T), fluctuates daily based upon market changes.\nC. [text cut off at bottom of page]",
+    "note": "Option C's explanation is cut off at the bottom of this page; continues on next page (page_idx 99), where it is confirmed as the correct answer."
+   }
+  ]
+ },
+ {
+  "cache_name": "AI,_Corporate,_Deriv,_Eco.json",
+  "page_idx": 99,
+  "page_type": "answers",
+  "items": [
+   {
+    "qnum": 36,
+    "correct": "C",
+    "expl": "[continuation from previous page, page_idx 98] C. Correct because the daily settlement mechanism resets the futures MTM to zero, and variation margin is exchanged to settle the difference, reducing counterparty credit risk.",
+    "note": "Completes Answer 36; options A and B appear on the previous page (page_idx 98)."
+   },
+   {
+    "qnum": 37,
+    "correct": "B",
+    "expl": "A. Incorrect because the risk-free rate and the dividend yield were reversed.\n≠ F0(T) = $50e^(0.03 - 0.05)0.5 = $49.50249 ≈ $49.50.\nB. Correct because the forward price is: F0(T) = S0e^(r-i)T where r is the risk-free rate, i is the dividend yield, and T is the time period.\nF0(T) = $50e^(0.05 - 0.03)0.5 = $50.50251 ≈ $50.50.\nC. Incorrect because the dividend was excluded from the calculation.\n≠ F0(T) = $50e^(0.05)0.5 = $51.26576 ≈ $51.27."
+   },
+   {
+    "qnum": 38,
+    "correct": "B",
+    "expl": "A. Incorrect because when benefits exceed the costs, then the forward transaction would return less than the spot transaction. The formula adjusts the forward price downward by the expression – (γ – θ)(1 + r)^T to reflect this net loss over the spot transaction. In other words, acquiring the asset in the forward market would be cheaper because it forgoes benefits that exceed the costs. Therefore, forward price of a commodity will be less than the commodity's spot price compounded at the risk-free rate over the life of the contract when net cost of carry, (γ – θ), is positive, not when it is zero.\nB. Correct because The forward price of an asset with benefits and/or costs is the spot price compounded at the risk-free rate over the life of the contract minus the future value of those benefits and costs. That is, F0(T) = S0(1+r)^T – (γ – θ)(1+r)^T, where the net cost of carry consists of the benefits, denoted as γ (dividends or interest plus convenience yield), minus the costs, denoted as θ. When net cost of carry is zero, the term (γ – θ) is zero, resulting in (γ – θ)(1+r)^T being zero. Then, Fc(T) = S0(1+r)^T. Hence, the forward price of a commodity is equal to the commodity's spot price compounded at the risk-free rate over the life of the contract when the net cost of carry is zero.\nC. Incorrect because if the costs exceeded the benefits, the forward price would be higher because the forward contract avoids the costs at the expense of the lesser benefits. Then, the term (γ – θ)(1+r)^T will be negative, adding to S0(1+r)T in absolute terms (due to preceding negative sign), resulting in a forward price that is higher than the spot price compounded at the risk-free rate. Therefore, the forward price of a commodity will be greater than the commodity's spot price compounded at the risk-free rate over the life of the contract when the net cost of carry, (γ – θ), is negative, not when it is zero."
+   },
+   {
+    "qnum": 39,
+    "correct": null,
+    "expl": "Header only visible: \"Answer 39 of 65 / Answer / Solution\" — no lettered options are visible on this page.",
+    "note": "Only the header for Answer 39 appears at the bottom of this page; the full solution content continues on the next page (page_idx 100)."
+   }
+  ]
+ },
+ {
+  "cache_name": "AI,_Corporate,_Deriv,_Eco.json",
+  "page_idx": 100,
+  "page_type": "answers",
+  "items": [
+   {
+    "qnum": 39,
+    "correct": "C",
+    "expl": "[continuation from previous page, page_idx 99, header only] A. Incorrect because the different patterns of cash flows for forwards and futures can lead to a difference in the pricing of forwards versus futures and if futures prices are positively correlated with interest rates, long futures contracts are more attractive than long forward positions for the same underlying and maturity. The reason is because rising prices lead to futures profits that are reinvested in periods of rising interest rates, and falling prices lead to losses that occur in periods of falling interest rates the more desirable contract will tend to have the higher price.\nB. Incorrect because the different patterns of cash flows for forwards and futures can lead to a difference in the pricing of forwards versus futures and if futures prices are positively correlated with interest rates, long futures contracts are more attractive than long forward positions for the same underlying and maturity. The reason is because rising prices lead to futures profits that are reinvested in periods of rising interest rates, and falling prices lead to losses that occur in periods of falling interest rates the more desirable contract will tend to have the higher price.\nC. Correct because the different patterns of cash flows for forwards and futures can lead to a difference in the pricing of forwards versus futures and if futures prices are positively correlated with interest rates, long futures contracts are more attractive than long forward positions for the same underlying and maturity. The reason is because rising prices lead to futures profits that are reinvested in periods of rising interest rates, and falling prices lead to losses that occur in periods of falling interest rates the more desirable contract will tend to have the higher price.",
+    "note": "Completes Answer 39, whose header appears alone on the previous page (page_idx 99)."
+   },
+   {
+    "qnum": 40,
+    "correct": "C",
+    "expl": "A. Incorrect because the differential between forward and futures prices is determined by both the correlation between futures prices and interest rates, and by interest rate volatility, as described in the response rationale for the correct answer.\nB. Incorrect because the differential between forward and futures prices is determined by both the correlation between futures prices and interest rates, and by interest rate volatility, as described in the response rationale for the correct answer.\nC. Correct because the different patterns of cash flows for forwards and futures can lead to a difference in the pricing of forwards versus futures. Forward and futures prices are identical under certain conditions, namely: if interest rates are constant, or if futures prices and interest rates are uncorrelated. On the other hand, violations of these assumptions can give rise to differences in pricing between these two contracts. For example, if futures prices are positively correlated with interest rates, long futures contracts are more attractive than long forward positions for the same underlying and maturity. The reason is because rising prices lead to futures profits that are reinvested in periods of rising interest rates, and falling prices lead to losses that occur in periods of falling interest rates. The price differential will also vary with the volatility of interest rates. Therefore, the differential between forward and futures prices is determined by both interest rate volatility and the correlation between futures prices and interest rates."
+   },
+   {
+    "qnum": 41,
+    "correct": null,
+    "expl": "Header only visible: \"Answer 41 of 65 / Answer\" — no Solution content visible on this page.",
+    "note": "Only the header for Answer 41 appears at the bottom of this page; the Solution content continues on the next page (page_idx 101)."
+   }
+  ]
+ },
+ {
+  "cache_name": "AI,_Corporate,_Deriv,_Eco.json",
+  "page_idx": 101,
+  "page_type": "answers",
+  "items": [
+   {
+    "qnum": 41,
+    "correct": "A",
+    "expl": "[continuation from previous page, page_idx 100, header only] Solution:\nA. Correct because the fixed-rate receiver pays the market reference rate and receives the par swap par rate. If the market reference rate increases, they are paying more and the value of the contract decreases to them. Another interpretation of an interest rate swap is that the fixed-rate payer (floating-rate receiver) is long a floating-rate note (FRN) priced at the MRR and short a fixed-rate bond with a coupon equal to the fixed swap rate. Similarly, the fixed-rate receiver (floating-rate payer) is long a fixed-rate bond with a coupon equal to the swap rate and short a floating-rate note priced at the MRR. A rise in the expected forward rates after inception will increase the present value of floating payments, while the fixed-swap rate will remain the same.\nB. Incorrect because the fixed-rate receiver pays the market reference rate and receives the swap par rate. If the market reference rate increases, they are paying more and the value of the contract decreases to them, not stays the same. Another interpretation of an interest rate swap is that the fixed-rate payer (floating-rate receiver) is long a floating-rate note (FRN) priced at the MRR and short a fixed-rate bond with a coupon equal to the fixed swap rate. Similarly, the fixed-rate receiver (floating rate payer) is long a fixed-rate bond with a coupon equal to the swap rate and short a floating-rate note priced at the MRR. A rise in the expected forward rates after inception will increase the present value of floating payments, while the fixed-swap rate will remain the same.\nC. Incorrect because the fixed-rate receiver pays the market reference rate and receives the swap par rate. If the market reference rate increases, they are paying more and the value of the contract decreases, not increases, to them. Another interpretation of an interest rate swap is that the fixed-rate payer (floating-rate receiver) is long a floating-rate note (FRN) priced at the MRR and short a fixed-rate bond with a coupon equal to the fixed swap rate. Similarly, the fixed-rate receiver (floating rate payer) is long a fixed-rate bond with a coupon equal to the swap rate and short a floating-rate note priced at the MRR. A rise in the expected forward rates after inception will increase the present value of floating payments, while the fixed-swap rate will remain the same.",
+    "note": "Header for Answer 41 appears on the previous page (page_idx 100); full solution body is on this page."
+   },
+   {
+    "qnum": 42,
+    "correct": "A",
+    "expl": "A. Correct because the futures price for a commodity with known storage cost amounts may be determined [as ...]: f0(T) = [S0 + PV0(C)] × (1 + r)^T.\nPV0(C) = $5×(1 + 3%)^(-182/365).\nf0(T) = [$120 + $5×(1 + 3%)^(-182/365)]×(1 + 3%)^(182/365) = $126.781768 ≈ $126.78.\nB. Incorrect because it doesn't discount the storage cost from settlement day to today to find its present value since the futures price for a commodity with known storage cost amounts may be determined as: f0(T) = [S0 + PV0(C)] × (1 + r)^T.\nIf no discounting is applied to the storage cost, it would be incorrectly assumed to be PV0(C) = $5.\nf0(T) = [$120 + $5] × (1 + 3%)^(182/365) = $126.856008 ≈ $126.86.\nC. Incorrect because it compounds the storage cost from today to settlement instead of discounting to find its present value since the futures price for a commodity with known storage cost amounts may be determined as: fc(T) = [S0 + PV0(C)] × (1 + r)^T.\nIf compounding is applied to the storage cost, it would be incorrectly assumed to be PV0(C) = $5 × (1 + 3%)^(182/365).\nf0(T) = [$120 + $5 × (1 + 3%)^(182/365)] × (1 + 3%)^(182/365) = $126.931351 ≈ $126.93."
+   },
+   {
+    "qnum": 43,
+    "correct": "B",
+    "expl": "A. Incorrect because the principle of no arbitrage and replication can be used to value and price derivatives. In other words, arbitrage opportunities can be exploited using [text cut off at bottom of page]",
+    "note": "Option A's explanation is cut off at the bottom of this page; continues on next page (page_idx 102)."
+   }
+  ]
+ },
+ {
+  "cache_name": "AI,_Corporate,_Deriv,_Eco.json",
+  "page_idx": 102,
+  "page_type": "answers",
+  "items": [
+   {
+    "qnum": 43,
+    "correct": "B",
+    "expl": "[continuation from previous page, page_idx 101] derivatives, but for the pricing of derivatives the no-arbitrage condition is assumed to hold, i.e., no arbitrage opportunities exist.\nB. Correct because the law of one price can be used to value a derivative security since there is a one-to-one relationship between the derivative and its underlying asset at maturity. Therefore, there exists only one price for each derivative.\nC. Incorrect because the law of one price can be used to value a derivative security since there is a one-to-one relationship between the derivative and its underlying asset at maturity. Further, the one-period binomial model determines the value of a derivative using the underlying's price at t = 0 as an input for the calculation. For example, the price of a call option is \"c0 = h x S0 – V1(1 + r)^-1,\" where c0 is the call option value at t = 0 and S0 is the price of the underlying at t = 0. Therefore, the price of the underlying asset is not inferred when determining the derivative's price. Instead, the price of the underlying asset is considered a given and used as an input in the calculation.",
+    "note": "Completes Answer 43, whose option A opening appears on the previous page (page_idx 101)."
+   },
+   {
+    "qnum": 44,
+    "correct": "A",
+    "expl": "A. Correct because the non-linear payoff profile of an option requires that the replicating transaction be adjusted as this likelihood changes, while the replicating trades for a forward commitment remain constant. Also, as in the case of the call option, the asymmetric payoff profile requires adjustment over time based on the likelihood of exercise.\nB. Incorrect because this is a put option replication strategy if exercised. A call option replication strategy if exercised, requires to sell the underlying and use the proceeds to repay the loan. In order to replicate the call option at contract inception (t = 0), we also must borrow at the risk-free rate, r, and use the proceeds to purchase the underlying at a price of S0. At option expiration (t = T), unlike in the case of the forward commitment, there are two possible replication outcomes:\n· Exercise (ST > X): Sell the underlying for ST and use the proceeds to repay X.\n· No exercise (ST < X): No settlement is required.\nIn order to replicate the put option at contract inception (t = 0), we must sell the underlying short at a price of S0 and lend the proceeds at the risk-free rate, r. At option expiration (t = T), unlike in the case of the forward commitment, there are two possible replication outcomes:\n· Exercise (ST < X): Purchase the underlying for ST from the proceeds of the risk-free loan.\n· No exercise (ST > X): No settlement is required.\nC. Incorrect because a call option replication strategy does not require the long purchase of a forward contract. In order to replicate the call option at contract inception (t = 0), we also must borrow at the risk-free rate, r, and use the proceeds to purchase the underlying at a price of S0."
+   },
+   {
+    "qnum": 45,
+    "correct": "B",
+    "expl": "A. Incorrect because the payoff of a put option following an up move is p1u = Max (0, X – S1u) where X is the exercise price and S1u is the price after an up move. In this case, S1u = €26(1.10) = €28.60. So, p1u = Max(0, €22 - €28.60) = €0, which is less than the payoff of a put option following a down move, as described in the response rationale for the correct answer.\nB. Correct because the payoff of a put option following a down move is p1d = Max (0, X – S1d) where X is the exercise price and S1d is the price after a down move. In this case, S1d = [text cut off at bottom of page]",
+    "note": "Option B's explanation is cut off mid-calculation at the bottom of this page; continues on next page (page_idx 103)."
+   }
+  ]
+ },
+ {
+  "cache_name": "AI,_Corporate,_Deriv,_Eco.json",
+  "page_idx": 103,
+  "page_type": "answers",
+  "items": [
+   {
+    "qnum": 45,
+    "correct": "B",
+    "expl": "[continuation from previous page, page_idx 102] €26(0.75) = €19.50. So, p1d = Max (0, €22 - €19.50) = €2.50, which is greater than the payoffs of other two responses.\nC. Incorrect because the payoff of a call option following an a down move is c1d = Max (0, S1d - X) where X is the exercise price and S1d is the price after a down move. In this case, S1d = €26(0.75) = €19.50. So, c1d = Max (0,€19.50 - €22) = €0, which is less than the payoff of a put option following a down move, as described in the response rationale for the correct answer.",
+    "note": "Completes Answer 45, whose options A and start of B appear on the previous page (page_idx 102)."
+   },
+   {
+    "qnum": 46,
+    "correct": "B",
+    "expl": "A. Incorrect because an average of the first 3 yearly settlement values is used:\n= (MRR – sN) × Notional amount × Period\n≠ ([0.0050 + 0.0115 + 0.0135]/3 – 0.0195) × $10,000,000 × 1\n= (0.0100 – 0.0195) × $10,000,000 × 1 = –$95,000.\nB. Correct because the periodic settlement value = (MRR – sN) × Notional amount × Period. The market reference rate (MMR) for Year 3 is 1.35%, thus:\n= (0.0135 – 0.0195) × $10,000,000 × 1 = –$60,000.\nC. Incorrect because this is the periodic settlement value for the floating-rate payer, not the fixed-rate payer:\n≠ (sN– MRR) × Notional amount × Period\n= (0.0195 – 0.0135) × $10,000,000 × 1 = $60,000."
+   },
+   {
+    "qnum": 47,
+    "correct": "A",
+    "expl": "A. Correct because the put price plus the underlying price equals the call price plus the present value of the exercise price. Rearranged, this is as follows: The present value of the exercise price plus the call price equals the put price plus the underlying price.\nB. Incorrect because, as described in the response rationale for the correct answer, the put–call–forward parity is described as follows: The put price plus the underlying price equals the call price plus the present value of the exercise price.\nThe verbal description of the equation in this answer choice is incorrect as it incorrectly rearranges terms of the put–call–forward parity.\nC. Incorrect because, as described in the response rationale for the correct answer, the put–call–forward parity is described as follows: The put price plus the underlying price equals the call price plus the present value of the exercise price.\nThe verbal description of the equation in this answer choice is incorrect as it incorrectly rearranges terms of the put–call–forward parity."
+   },
+   {
+    "qnum": 48,
+    "correct": "B",
+    "expl": "A. Incorrect because this is the put seller's profit. The put's value at expiration = –pT = –Max(0,X – ST), where pT is the value of the put at expiration, X is the exercise price, and ST is the price of the underlying at expiration. In this case, –Max(0,45 – 41) = –$4. The put seller's profit = Π = –pT + p0 (where p0 is the price of the put at time 0), or –4 + 2 = –$2.\nB. Correct because the put's value at expiration = pT = Max(0,X – ST), where pT is the value of the put at expiration, X is the exercise price, and ST is the price of the underlying at [text cut off at bottom of page]",
+    "note": "Option B's explanation is cut off at the bottom of this page; continues on next page (page_idx 104)."
+   }
+  ]
+ },
+ {
+  "cache_name": "AI,_Corporate,_Deriv,_Eco.json",
+  "page_idx": 104,
+  "page_type": "answers",
+  "items": [
+   {
+    "qnum": 48,
+    "correct": "B",
+    "expl": "[continuation from previous page, page_idx 103] expiration. In this case, Max(0,45 – 41) = $4. The put buyer's profit = Π = pT – p0 (where p0 is the price of the put at time 0), or 4 – 2 = $2.\nC. Incorrect because this is the put's value at expiration. The put's value at expiration = pT = Max(ST – 0,X), where pT is the value of the put at expiration, X is the exercise price, and ST is the price of the underlying at expiration. In this case, Max(0,45 – 41) = $4.",
+    "note": "Completes Answer 48, whose option A and start of B appear on the previous page (page_idx 103)."
+   },
+   {
+    "qnum": 49,
+    "correct": "C",
+    "expl": "A. Incorrect because as described in the rationale for the correct answer, the payoff on a long asset can be mimicked using a long call, short put, and a long bond.\nB. Incorrect because as described in the rationale for the correct answer, the payoff on a long asset can be mimicked using a long call, short put, and a long bond.\nC. Correct because the put-call parity relationship implies S0 = c0 – p0 + X/(1 + r)^T which implies that a long asset = long call, short put, long bond."
+   },
+   {
+    "qnum": 50,
+    "correct": "B",
+    "expl": "A. Incorrect because this is the expected return of an upward price move, i.e. S1u / S0 – 1 = $22/$16 – 1 = 1.375 – 1 = 0.375 ≈ 0.38. Instead, the risk neutral probability is equal to 0.46, as described in the response rationale for the correct answer.\nB. Correct because the risk-neutral probability (π) is the computed probability used in binomial option pricing by which the discounted weighted sum of expected values of the underlying, S1u = RuS0 and S1d = RdS0, equal the current option price. Specifically, this probability is computed using the risk-free rate and assumed up gross return and down gross return of the underlying as in Equation 7.\nπ = 1 + r – Rd / Ru – Rd\nMore specifically, π, is the risk-neutral probability of an increase in the underlying price to S1u = RuS0, and (1 – π) is that of a decrease, S1d = RdS0.\nThus, An increase from $16 to $22 or a decrease from $16 to $12 corresponds to:\nRu = $22/$16 = 1.375 and Rd = $12/$16 = 0.75.\nUsing the risk-neutral probability (π) of a price increase:\nπ = 1 + r – Rd / Ru – Rd = (1 + 0.04 – 0.75) / (1.375 – 0.75) = 0.29/0.625 = 0.464 ≈ 0.46.\nC. Incorrect because this is the risk-neutral probability of a price decrease (1 – π) = 1 – 0.46 = 0.54. Instead, the risk neutral probability is equal to 0.46, as described in the response rationale for the correct answer."
+   },
+   {
+    "qnum": 51,
+    "correct": null,
+    "expl": "A. Incorrect because 0.25 is simply the expected reduction in percent (down move) of the underlying after one year. Instead, the risk-neutral probability (π) is the computed probability used in binomial option pricing with π = (1 + r – Rd) / (Ru – Rd), where π is the risk-neutral probability of an increase in the underlying price, r is the risk-free rate and Rd and Ru represent the underlying asset volatility, i.e., expected up and down moves of the underlying after the period. Here, r = 0.05, Ru is (1 + 0.25) = 1.25 and Rd is (1 – 0.25) = [text cut off at bottom of page]",
+    "note": "Option A's explanation is cut off mid-calculation at the bottom of this page; continues on next page (page_idx 105), which also reveals which option is marked Correct."
+   }
+  ]
+ },
+ {
+  "cache_name": "AI,_Corporate,_Deriv,_Eco.json",
+  "page_idx": 105,
+  "page_type": "answers",
+  "items": [
+   {
+    "qnum": 51,
+    "correct": "B",
+    "expl": "[continuation from previous page, page_idx 104] 0.75. Substituting in yields (1 + 0.05 – 0.75) / (1.25 – 0.75) = 0.60. Since the risk-neutral probability of a decrease in the underlying price is 1 – π we get 1 – 0.60 = 0.40.\nB. Correct because the risk-neutral probability (π) is the computed probability used in binomial option pricing with π = (1 + r – Rd) / (Ru-Rd), where π is the risk-neutral probability of an increase in the underlying price, r is the risk-free rate and Rd and Ru represent the underlying asset volatility, i.e., expected up and down moves of the underlying after the period. Here, r = 0.05, Ru is (1 + 0.25)=1.25 and Rd is (1 – 0.25) = 0.75. Substituting in yields (1 + 0.05 – 0.75) / (1.25 – 0.75) = 0.60. Since the risk-neutral probability of a decrease in the underlying price is 1 – π we get 1 – 0.60 = 0.40.\nC. Incorrect because 0.60 is the risk-neutral probability of an increase in the underlying price, not decrease. The risk-neutral probability (π) is the computed probability used in binomial option pricing with π = (1 + r – Rd) / (Ru-Rd), where π is the risk-neutral probability of an increase in the underlying price, r is the risk-free rate and Rd and Ru represent the underlying asset volatility, i.e., expected up and down moves of the underlying after the period. Here, r = 0.05, Ru is (1 + 0.25)=1.25 and Rd is (1 – 0.25) = 0.75. Substituting in yields (1 + 0.05 – 0.75) / (1.25 – 0.75) = 0.60. Since the risk-neutral probability of a decrease in the underlying price is 1 – π we get 1 – 0.60 = 0.40",
+    "note": "Completes Answer 51; option A's opening appears on the previous page (page_idx 104)."
+   },
+   {
+    "qnum": 52,
+    "correct": "A",
+    "expl": "A. Correct because the value of the call option today, c0, is computed as the expected value of the option at expiration, c1u and c1d, discounted at the risk-free rate, r. Also, this no-arbitrage derivative value established separately from investor views on risk is referred to as risk-neutral pricing.\nB. Incorrect because the value of the call option today, c0, is computed as the expected value of the option at expiration, c1u and c1d, discounted at the risk-free rate, r. Also, this no-arbitrage derivative value established separately from investor views on risk is referred to as risk-neutral pricing.\nC. Incorrect because the value of the call option today, c0, is computed as the expected value of the option at expiration, c1u and c1d, discounted at the risk-free rate, r. Also, only the expected volatility—that is, gross returns Ru and Rd—and not the expected return are required to price an option"
+   },
+   {
+    "qnum": 53,
+    "correct": "B",
+    "expl": "A. Incorrect because futures contracts are forward contracts with standardized sizes, dates, and underlyings that trade on futures exchanges. Therefore, they are inappropriate for the non-standard size and settlement dates required by the end user.\nB. Correct because the terms of OTC (over-the-counter) contracts can be customized to match a desired risk exposure profile. This flexibility is important to end users seeking to hedge a specific existing or anticipated underlying exposure based upon non-standard terms.\nC. Incorrect because ETD (exchange-traded derivative) contracts are more formal and standardized, which facilitates a more liquid and transparent market. Terms and conditions—such as the size of each contract, type, quality, and location of underlying for commodities and maturity date—are set by the exchange."
+   }
+  ]
+ },
+ {
+  "cache_name": "AI,_Corporate,_Deriv,_Eco.json",
+  "page_idx": 106,
+  "page_type": "answers",
+  "items": [
+   {
+    "qnum": 54,
+    "correct": "A",
+    "expl": "A. Correct because the risk-neutral probability (π) is the computed probability used in binomial option pricing by which the discounted weighted sum of expected values of the underlying, S1u = RuS0 and S1d = RdS0, equal the current option price. Specifically, this probability is computed using the risk-free rate and assumed up gross return and down gross return of the underlying as in π= (1+r-Rd)/(Ru-Rd). So, if the up gross return increases in a one-period binomial model, the denominator will increase. Therefore, the risk-neutral probability of an upward price movement of the asset, (π), decreases.\nB. Incorrect because the risk-neutral probability (π) is the computed probability used in binomial option pricing by which the discounted weighted sum of expected values of the underlying, S1u = RuS0 and S1d = RdS0, equal the current option price. Specifically, this probability is computed using the risk-free rate and assumed up gross return and down gross return of the underlying as in π= (1+r-Rd)/(Ru-Rd). So, if the up gross return increases in a one-period binomial model, the denominator will increase. Therefore, the risk-neutral probability of an upward price movement of the asset, (π), decreases.\nC. Incorrect because the risk-neutral probability (π) is the computed probability used in binomial option pricing by which the discounted weighted sum of expected values of the underlying, S1u = RuS0 and S1d = RdS0, equal the current option price. Specifically, this probability is computed using the risk-free rate and assumed up gross return and down gross return of the underlying as in π= (1+r-Rd)/(Ru-Rd). So, if the up gross return increases in a one-period binomial model, the denominator will increase. Therefore, the risk-neutral probability of an upward price movement of the asset, (π), decreases."
+   },
+   {
+    "qnum": 55,
+    "correct": "B",
+    "expl": "A. Incorrect because this is the value at expiration for the buyer:\n= ST – F0(T) = $282 – $285 = –$3.\nHence total value is –$3 × 2,000 shares = –$6,000.\nB. Correct because the value at expiration for the seller:\n= F0(T) – ST = $285 – $282 = $3.\nHence the total value is $3 × 2,000 shares = $6,000.\nC. Incorrect because the spot price at inception is used instead of at settlement:\n≠ F0(T) – S0 = $282 – $275 = $7.\nHence the total value is $7 × 2,000 shares = $14,000."
+   }
+  ]
+ },
+ {
+  "cache_name": "AI,_Corporate,_Deriv,_Eco.json",
+  "page_idx": 107,
+  "page_type": "answers",
+  "items": [
+   {
+    "qnum": 56,
+    "correct": "B",
+    "expl": "A. Incorrect because this represents the value, not the profit, to the call seller, which is –Max(0,$2,450 – $2,400) = –$50, as described in the response rationale for the correct answer.\nB. Correct because the writer of a call is the seller of the call: An option is a derivative contract in which one party, the buyer, pays a sum of money to the other party, the seller or writer, and receives the right to either buy or sell an underlying asset at a fixed price either on a specific expiration date or at any time prior to the expiration date. The profit to the seller of the call is –Max(0,ST – X) + c0, where X is the exercise price, ST is the value of the underlying at expiration and c0 is the call premium received by the seller. Since one point is equal to one dollar the profit to the call seller is: –Max(0,$2,450 – $2,400) + $25 = –$50 + $25 = –$25.\nC. Incorrect because $25 represents the profit to the buyer, not to the seller of the call option. The profit to a call buyer is defined as Max(0,ST – X) – c0, where X is the exercise price, ST is the value of the underlying at expiration and c0 is the call premium paid by the buyer. Therefore, Max(0,$2,450 – $2,400) – $25 = $50 – $25 = $25."
+   },
+   {
+    "qnum": 57,
+    "correct": "C",
+    "expl": "A. Incorrect because $112.20 is the value of the underlying assuming that this was a put option instead of a call option. The \"payoff to the put buyer\" at expiration is pT = Max(0, X – ST), where X is the exercise price and ST is the price of the underlying at expiration. Given the information in the stem we get $17.80 = Max(0,$130 – ST) which yields ST = $130 – $17.80 = $112.20. By contrast, the value or \"payoff to the call buyer\" at expiration is cT = Max(0,ST – X). Given the information in the stem we get $17.80 = Max(0,ST – $130). (p. 407-408) Hence, ST = 130 + 17.80 = 147.80, not $112.20.\nB. Incorrect because $142.05 is the profit from the option position added to the strike price. It is computed as (cT – c0) + X where cT is the value of the option at expiration, c0 is the purchase price of the option and X is the strike price. Given the information in the stem we get ($17.80 – $5.75) + $130 = $142.05. By contrast, the value or \"payoff to the call buyer\" at expiration is cT = Max(0,ST – X) where X is the strike price, ST is the price of the underlying at expiration. Given the information in the stem we get $17.80 = Max(0,ST – $130). Hence, ST =$130 + $17.80 = $147.80, not $142.05.\nC. Correct because the value or \"payoff to the call buyer\" at expiration is cT = Max(0,ST – X) where X is the strike price, ST is the price of the underlying at expiration. Given the information in the stem we get $17.80 = Max(0,ST – $130). Hence, ST =$130 + $17.80 = $147.80."
+   },
+   {
+    "qnum": 58,
+    "correct": "C",
+    "expl": "A. Incorrect because it represents the put price p0 less the difference between the exercise price X and the price of the underlying ST at expiration: 30 – (1,340 – 1,320) = 10. This would be the profit to the seller of a call option, Π = –Max(0,ST – X) + c0, with the same exercise price and the same selling price. By contrast, to the put seller, the profit is Π = – [text cut off at bottom of page]",
+    "note": "Explanation is cut off mid-sentence at the bottom of this page; options B and C continue on next page (page_idx 108)."
+   }
+  ]
+ },
+ {
+  "cache_name": "AI,_Corporate,_Deriv,_Eco.json",
+  "page_idx": 108,
+  "page_type": "answers",
+  "items": [
+   {
+    "qnum": 58,
+    "correct": "C",
+    "expl": "[continuation from previous page, page_idx 107] Max(0,X – ST) + p0. Therefore, Π = –Max(0,(1,320 – 1,340)) + 30 = 30.\nB. Incorrect because it represents the payoff to the call buyer cT = Max(0,ST – X), where ST is the price of the underlying at expiration and X is the exercise price. Therefore, cT = [text cut off at bottom of page]",
+    "note": "Continuation of Answer 58 (option A's ending appears on the previous page, page_idx 107). This page is nearly blank, showing only this fragment; option B's explanation is cut off mid-sentence and continues on next page (page_idx 109)."
+   }
+  ]
+ },
+ {
+  "cache_name": "AI,_Corporate,_Deriv,_Eco.json",
+  "page_idx": 109,
+  "page_type": "answers",
+  "items": [
+   {
+    "qnum": 58,
+    "correct": "C",
+    "expl": "[continuation from previous page, page_idx 108] Max(0,(1,340 – 1,320)) = 20. By contrast, to the put seller, the profit is Π = –Max(0,X – ST) + p0, where p0 is the put price. Therefore, Π = –Max(0,(1,320 – 1,340)) + 30 = 30.\nC. Correct because Π = Max(0,X – ST) – p0 (profit to the put buyer), where ST is the price of the underlying at expiration, X is the strike price and p0 is the option premium. Therefore, Π = -Max(0,X – ST) + p0, where X is the exercise price, ST is the price of the underlying at expiration, and p0 is the put price. Therefore, Π = –Max(0,(1,320 – 1,340)) + 30 = 30.",
+    "note": "Completes Answer 58; option A and start of B appear on the previous two pages (page_idx 107-108)."
+   },
+   {
+    "qnum": 59,
+    "correct": "A",
+    "expl": "A. Correct because both a long forward position and a long call option position will gain from an increase in the underlying price.\nB. Incorrect because a contingent claim that benefits from a rise in the underlying price is the sold put option [not a bought put option].\nC. Incorrect because both a long forward position and a long [not short] call option position will gain from an increase in the underlying price."
+   },
+   {
+    "qnum": 60,
+    "correct": "A",
+    "expl": "A. Correct because the benefit of the dividend reduces the costs associated with carrying the stock. The cost of carry is the net of the costs and benefits related to owning an underlying asset for a specific period. The cost of carry is the opportunity cost plus other costs of ownership less benefits of ownership, and stock dividends or bond coupons are examples of cash flow benefits.\nB. Incorrect because the benefit of the dividend reduces the costs associated with carrying the stock. The cost of carry is the net of the costs and benefits related to owning an underlying asset for a specific period. The cost of carry is the opportunity cost plus other costs of ownership less benefits of ownership, and stock dividends or bond coupons are examples of cash flow benefits.\nC. Incorrect because the benefit of the dividend reduces the costs associated with carrying the stock. The cost of carry is the net of the costs and benefits related to owning an underlying asset for a specific period. The cost of carry is the opportunity cost plus other costs of ownership less benefits of ownership, and stock dividends or bond coupons are examples of cash flow benefits."
+   },
+   {
+    "qnum": 61,
+    "correct": "C",
+    "expl": "A. Incorrect because the profit for the put buyer (Π) is not equal to ST – S0 + Max(0,X – ST) – p0, where S0 is the spot price of the underlying, ST is the price of the underlying at expiration, X is the strike price and p0 is the option premium. Therefore, the incorrect calculation yields: –$19 = $200 – $220 + Max(0,$210 – $200) – $9, which includes the loss of $20 of the underlying. Instead, the correct formula is Π = Max(0,X – ST) – p0 (profit to the put buyer) which yields: $1 = Max(0,$210 – $200) – $9.\nB. Incorrect because the profit for the put buyer is not equal to –p0, the option premium paid, or –$9, since the put option expires in the money. Instead, the correct formula is Π = Max(0,X – ST) – p0 (profit to the put buyer), where ST is the price of the underlying at expiration, X is the strike price and p0 is the option premium. Therefore, the correct calculation yields: $1 = Max(0,$210 – $200) – $9.\nC. Correct because Π = Max(0,X – ST) – p0 (profit to the put buyer), where ST is the price of the underlying at expiration, X is the strike price and p0 is the option premium. Therefore, the Correct calculation yields: $1 = Max(0,$210 – $200) – $9.",
+    "note": "Options A and B appear on this page and the previous page's continuation; option C is completed on the next page (page_idx 110)."
+   }
+  ]
+ },
+ {
+  "cache_name": "AI,_Corporate,_Deriv,_Eco.json",
+  "page_idx": 110,
+  "page_type": "answers",
+  "items": [
+   {
+    "qnum": 61,
+    "correct": "C",
+    "expl": "[continuation from previous page, page_idx 109] C. Correct because Π = Max(0,X – ST) – p0 (profit to the put buyer), where ST is the price of the underlying at expiration, X is the strike price and p0 is the option premium. Therefore, the Correct calculation yields: $1 = Max(0,$210 – $200) – $9.",
+    "note": "Completes Answer 61; options A and B appear on the previous page (page_idx 109)."
+   },
+   {
+    "qnum": 62,
+    "correct": "B",
+    "expl": "A. Incorrect because the discounting feature of the FRA, which is not present in the futures contract, leads to a convexity bias that is greater for longer discounting periods. Since the length of the discounting period depends on the maturity of the underlying market reference rate, 1-month market reference rate results in a shorter discounting period than the 3-month rate. Therefore, it will suffer from a smaller convexity bias.\nB. Correct because the discounting feature of the FRA, which is not present in the futures contract, leads to a convexity bias that is greater for longer discounting periods. Since the length of the discounting period depends on the maturity of the underlying market reference rate, 3-month market reference rate results in a longer discounting period than the 1-month rate.\nC. Incorrect because convexity bias does not exist in interest rate futures contracts since their prices are not based on discounting. The futures contract has a fixed linear payoff profile for a given basis point change. On the other hand, the discounting feature of the FRA, which is not present in the futures contract, leads to a convexity bias that is greater for longer discounting periods."
+   },
+   {
+    "qnum": 63,
+    "correct": "A",
+    "expl": "A. Correct because the upper no-arbitrage bound of a call price is the underlying's spot price.\nB. Incorrect because the lower (not upper) bound of a call price is the underlying's price minus (not plus) the present value of its exercise price or zero, whichever is greater. Instead, the upper no-arbitrage bound of a call price is the underlying's spot price.\nC. Incorrect because the lower (not upper) bound of a call price is the underlying's price minus the present value of its exercise price or zero, whichever is greater. Instead, the upper no-arbitrage bound of a call price is the underlying's spot price."
+   },
+   {
+    "qnum": 64,
+    "correct": "B",
+    "expl": "A. Incorrect, because an option is a derivative contract in which one party, the buyer, pays a sum of money to the other party, the seller or writer, and receives the right to either buy or sell an underlying asset at a fixed price either on a specific expiration date or at any time prior to the expiration date. The right to buy is one type of option, referred to as a call or call option. The buyer of a call option has the right to buy the underlying stock.\nB. Correct, because an option is a derivative contract in which one party, the buyer, pays a sum of money to the other party, the seller or writer, and receives the right to either buy or sell an underlying asset at a fixed price either on a specific expiration date or at any time prior to the expiration date. The right to sell is a (another) type of option, referred to as a put or put option.\nC. Incorrect, because an option is a derivative contract in which one party, the buyer, pays a sum of money to the other party, the seller or writer, and receives the right to either buy or sell an underlying asset at a fixed price either on a specific expiration date or at any [text cut off at bottom of page]",
+    "note": "Option C's explanation is cut off at the bottom of this page; continues on next page (page_idx 111)."
+   }
+  ]
+ },
+ {
+  "cache_name": "AI,_Corporate,_Deriv,_Eco.json",
+  "page_idx": 111,
+  "page_type": "answers",
+  "items": [
+   {
+    "qnum": 64,
+    "correct": "B",
+    "expl": "[continuation from previous page, page_idx 110] time prior to the expiration date. The right to sell is a (another) type of option, referred to as a put or put option. The seller of a put option has the obligation to buy the underlying if the buyer exercises the option",
+    "note": "Completes Answer 64 (option C); options A and B appear on the previous page (page_idx 110)."
+   },
+   {
+    "qnum": 65,
+    "correct": "C",
+    "expl": "A. Incorrect because the higher risk-free rate increases the opportunity cost of a cash position and lowers the present value of the forward price. The present value of the forward price has decreased, increasing the value to the buyer. If St is the spot price of the underlying asset at time t, [the equation] shows the forward contract MTM value at time t, Vt(T), from the long forward position's perspective: Vt(T) = St – F0(T)(1 + r)^-(T-t).\nB. Incorrect because the higher risk-free rate increases the opportunity cost of a cash position and lowers the present value of the forward price. The present value of the forward price has decreased, increasing the value to the buyer. If St is the spot price of the underlying asset at time t, [the equation] shows the forward contract MTM value at time t, Vt(T), from the long forward position's perspective: Vt(T) = St – F0(T)(1 + r)^-(T-t).\nC. Correct because the higher risk-free rate increases the opportunity cost of a cash position and lowers the present value of the forward price. The present value of the forward price has decreased, increasing the value to the buyer. If St is the spot price of the underlying asset at time t, [the equation] shows the forward contract MTM value at time t, Vt(T), from the long forward position's perspective: Vt(T) = St – F0(T)(1 + r)^-(T-t)."
+   }
+  ]
+ },
+ {
+  "cache_name": "AI,_Corporate,_Deriv,_Eco.json",
+  "page_idx": 112,
+  "page_type": "questions",
+  "items": [
+   {
+    "qnum": 1,
+    "stem": "Fiscal policy refers to the government's decisions about:",
+    "A": "taxation only.",
+    "B": "taxation and spending only.",
+    "C": "taxation, spending, and the quantity of money in the economy."
+   },
+   {
+    "qnum": 2,
+    "stem": "Under which of the following market structures is product differentiation most important?",
+    "A": "Monopoly",
+    "B": "Perfect competition",
+    "C": "Monopolistic competition"
+   },
+   {
+    "qnum": 3,
+    "stem": "Which of the following economic policies is most likely directed toward influencing the quantity of credit in an economy?",
+    "A": "Fiscal policy only",
+    "B": "Monetary policy only",
+    "C": "Both fiscal policy and monetary policy"
+   },
+   {
+    "qnum": 4,
+    "stem": "An analyst gathers the following information: Row: USD/AUD spot rate = 0.8027. Row: AUD 1-year interest rate = 3.30%. Row: USD 1-year interest rate = 2.42%. USD/AUD is the amount of USD per 1 AUD. The USD/AUD 1-year forward rate is closest to:",
+    "A": "0.7959.",
+    "B": "0.8096.",
+    "C": "0.8292."
+   },
+   {
+    "qnum": 5,
+    "stem": "With respect to fiscal policy, transfer payments are best described as:",
+    "A": "welfare payments.",
+    "B": "infrastructure spending.",
+    "C": "spending on recurring goods and services."
+   }
+  ],
+  "note": "Page begins a new section titled \"Economics: Practice Pack-Questions\". Question 6 of 76's header appears at the very bottom of the page with no stem/options visible yet; its content continues on the next page (page_idx 113)."
+ },
+ {
+  "cache_name": "AI,_Corporate,_Deriv,_Eco.json",
+  "page_idx": 113,
+  "page_type": "questions",
+  "items": [
+   {
+    "qnum": 6,
+    "stem": "Which of the following economic conditions for a country best supports a well-functioning currency board exchange rate system?",
+    "A": "Flexible domestic prices and wages",
+    "B": "Rapid growth in supply of the global reserve asset",
+    "note_options": "Option C is not visible on this page; it continues on the next page (page_idx 114)."
+   }
+  ],
+  "note": "Question 6's header appeared on the previous page (page_idx 112); this page shows the stem and options A-B only, with option C cut off. Page is otherwise mostly blank. Option C text appears at the top of the next page (page_idx 114): \"Large non-traded sectors of the domestic economy\"."
+ },
+ {
+  "cache_name": "AI,_Corporate,_Deriv,_Eco.json",
+  "page_idx": 114,
+  "page_type": "questions",
+  "items": [
+   {
+    "qnum": 6,
+    "stem": "Which of the following economic conditions for a country best supports a well-functioning currency board exchange rate system?",
+    "A": "Flexible domestic prices and wages",
+    "B": "Rapid growth in supply of the global reserve asset",
+    "C": "Large non-traded sectors of the domestic economy",
+    "note": "Option C appears at the top of this page, completing Question 6 whose stem/A/B are on the previous page (page_idx 113)."
+   },
+   {
+    "qnum": 7,
+    "stem": "Which of the following indexes is most likely considered a leading economic indicator?",
+    "A": "Consumer price index",
+    "B": "Broad stock market index",
+    "C": "Industrial production index"
+   },
+   {
+    "qnum": 8,
+    "stem": "Independence, credibility, and transparency are most likely:",
+    "A": "key objectives of fiscal policy.",
+    "B": "properties of the monetary transmission mechanism.",
+    "C": "qualities that determine the success of an inflation-targeting central bank."
+   },
+   {
+    "qnum": 9,
+    "stem": "With respect to geopolitics, setting standards for the size and shape of containers used for shipping is most likely an example of:",
+    "A": "regulatory cooperation.",
+    "B": "process standardization.",
+    "C": "operational synchronization."
+   },
+   {
+    "qnum": 10,
+    "stem": "A nation that cooperates with a neighboring country is most likely characterized as:",
+    "A": "autarkic.",
+    "B": "bilateral.",
+    "C": "hegemonic."
+   },
+   {
+    "qnum": 11,
+    "stem": "The inflation target of an effective central bank is most likely:",
+    "A": "equal to zero to avoid the risk of deflation.",
+    "B": "sufficiently below zero to maintain high credibility.",
+    "C": "low enough to ensure a significant degree of price stability."
+   },
+   {
+    "qnum": 12,
+    "stem": "Under which of the following conditions is monetary policy most effective? When the:",
+    "A": "demand for money is infinitely elastic.",
+    "B": "central bank targets an exchange rate.",
+    "C": "risk of inflation is greater than deflation."
+   },
+   {
+    "qnum": 13,
+    "stem": "Cyber threats most likely fall into the category of:",
+    "A": "event risk.",
+    "B": "thematic risk.",
+    "note_options": "Option C is not visible on this page; it continues on the next page (page_idx 115)."
+   }
+  ]
+ },
+ {
+  "cache_name": "AI,_Corporate,_Deriv,_Eco.json",
+  "page_idx": 115,
+  "page_type": "questions",
+  "items": [
+   {
+    "qnum": 13,
+    "stem": "Cyber threats most likely fall into the category of:",
+    "A": "event risk.",
+    "B": "thematic risk.",
+    "C": "exogenous risk.",
+    "note": "Option C appears at the top of this otherwise blank page, completing Question 13, whose stem/A/B are on the previous page (page_idx 114)."
+   }
+  ]
+ },
+ {
+  "cache_name": "AI,_Corporate,_Deriv,_Eco.json",
+  "page_idx": 116,
+  "page_type": "questions",
+  "items": [
+   {
+    "qnum": 14,
+    "stem": "Fiat money:",
+    "A": "is not currently used in any major economy.",
+    "B": "can be exchanged for a precious metal at the country's central bank.",
+    "C": "derives its value via government decree and because people accept it for payment."
+   },
+   {
+    "qnum": 15,
+    "stem": "An objective of fiscal policy is to:",
+    "A": "supervise the banking system.",
+    "B": "influence the quantity of credit in an economy.",
+    "C": "distribute income among different segments of the population."
+   },
+   {
+    "qnum": 16,
+    "stem": "A decrease in taxes and an increase in interest rates most likely reflect:",
+    "A": "easy fiscal policy and tight monetary policy.",
+    "B": "tight fiscal policy and easy monetary policy.",
+    "C": "tight fiscal policy and tight monetary policy."
+   },
+   {
+    "qnum": 17,
+    "stem": "With respect to conventional monetary policy, combating inflation is most likely:",
+    "A": "less difficult than combating deflation.",
+    "B": "equally difficult as combating deflation.",
+    "C": "more difficult than combating deflation."
+   },
+   {
+    "qnum": 18,
+    "stem": "With respect to the foreign exchange market, an arbitrage relationship involving countries' relative interest rates serves as the basis for:",
+    "A": "real exchange rates.",
+    "B": "forward exchange rates.",
+    "C": "nominal exchange rates."
+   },
+   {
+    "qnum": 19,
+    "stem": "Which of the following would most likely lead to an increase in globalization? A decrease in:",
+    "A": "soft power.",
+    "B": "nationalism.",
+    "C": "standardization."
+   }
+  ]
+ }
+]

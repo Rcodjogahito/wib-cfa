@@ -1,0 +1,366 @@
+[
+ {
+  "cache_name": "AI,_Corporate,_Deriv,_Eco.json",
+  "page_idx": 159,
+  "page_type": "answers",
+  "items": [
+   {
+    "qnum": 64,
+    "correct": "A",
+    "expl": "A. Correct because when a central bank sells government bonds to a commercial bank the reserves of commercial banks decline, reducing their capacity to make loans (i.e., create credit) to households and corporations and thus causing broad money growth to decline through the money multiplier mechanism.\nB. Incorrect because when a central bank sells government bonds to a commercial bank the reserves of commercial banks decline, reducing their capacity to make loans (i.e., create credit) to households and corporations and thus causing broad money growth to decline through the money multiplier mechanism.\nC. Incorrect because when a central bank sells government bonds to a commercial bank the reserves of commercial banks decline, reducing their capacity to make loans (i.e., create credit) to households and corporations and thus causing broad money growth to decline through the money multiplier mechanism."
+   },
+   {
+    "qnum": 65,
+    "correct": "C",
+    "expl": "A. Incorrect because when a country has a fiscal surplus (T > G) and an excess of private saving over investment (S > I), its exports are greater than [not less than] its imports (X > M).\nB. Incorrect because when a country has a fiscal surplus (T > G) and an excess of private saving over investment (S > I), its exports are greater than [not less than] its imports (X > M).\nC. Correct because using a fundamental identity from macroeconomics, the relationship between the trade balance and expenditure/saving decisions can be expressed as: X– M = (S – I) + (T – G) where X represents exports, M is imports, S is private savings, I is investment in plant and equipment, T is taxes net of transfers, and G is government expenditure. From this relationship, we can see that a trade surplus (X > M) must be reflected in a fiscal surplus (T > G), an excess of private saving over investment (S > I), or both. We can also see that when a country has a fiscal surplus (T > G) and an excess of private saving over investment (S > I), its exports are greater than its imports (X > M)."
+   },
+   {
+    "qnum": 66,
+    "correct": "B",
+    "expl": "A. Incorrect because there are four archetypes of country behavior: autarky, hegemony, multilateralism, and bilateralism, where autarky is situated low on the cooperation spectrum and low (not high) on the globalization spectrum. Autarky describes countries seeking political self-sufficiency with little or no external trade or finance. State-owned enterprises control strategic domestic industries.\nB. Correct because using the two axes we have discussed—political cooperation versus non-cooperation and globalization versus nationalism—investment analysts can assess geopolitical actors and the likelihood of threat to investment outcomes. Specifically, there are four archetypes of country behavior: autarky, hegemony, multilateralism, and bilateralism, where hegemony is situated low on the cooperation spectrum and high on the globalization spectrum. Hegemonic countries tend to be regional or even global leaders, and they use their political or economic influence of others to control resources. State-owned enterprises tend to control key export markets. Examples of hegemonic countries include the United States and Russia.\nC. Incorrect because there are four archetypes of country behavior: autarky, hegemony, multilateralism, and bilateralism, where bilateralism is situated high on the cooperation (not globalization) spectrum and low on the globalization (not cooperation) spectrum. Bilateralism is the conduct of political, economic, financial, or... [continues on next page]",
+    "note": "Option C explanation is cut off at the bottom of this page and continues on page_idx 160."
+   }
+  ]
+ },
+ {
+  "cache_name": "AI,_Corporate,_Deriv,_Eco.json",
+  "page_idx": 160,
+  "page_type": "answers",
+  "items": [
+   {
+    "qnum": 66,
+    "correct": "B",
+    "expl": "[continued from previous page] ...cultural cooperation between two countries. Countries engaging in bilateralism may have relations with many different countries, but they are one-at-a-time agreements without multiple partners.",
+    "note": "This page contains only the tail end of option C's explanation for qnum 66, continued from page_idx 159. Rest of page is blank apart from footer page number '158'."
+   }
+  ]
+ },
+ {
+  "cache_name": "AI,_Corporate,_Deriv,_Eco.json",
+  "page_idx": 161,
+  "page_type": "answers",
+  "items": [
+   {
+    "qnum": 67,
+    "correct": "A",
+    "expl": "A. Correct because when policy rates are above the neutral rate, monetary policy is contractionary; when they are below the neutral rate, monetary policy is expansionary. The calculation of the neutral rate is as follows: Neutral rate = Trend growth + Inflation target. Therefore if monetary policy is contractionary then the policy rate (1.5%) must be greater than the neutral rate. Hence the long-term inflation rate must be less than 1.0% in order for the policy rate to be greater than the neutral rate.\nB. Incorrect because when policy rates are above the neutral rate, monetary policy is contractionary; when they are below the neutral rate, monetary policy is expansionary. The calculation of the neutral rate is as follows: Neutral rate = Trend growth + Inflation target. Therefore if monetary policy is contractionary then the policy rate (1.5%) must be greater than the neutral rate. Hence the long-term inflation rate must be less than 1.0% in order for the policy rate to be greater than the neutral rate.\nC. Incorrect because when policy rates are above the neutral rate, monetary policy is contractionary; when they are below the neutral rate, monetary policy is expansionary. The calculation of the neutral rate is as follows: Neutral rate = Trend growth + Inflation target. Therefore if monetary policy is contractionary then the policy rate (1.5%) must be greater than the neutral rate. Hence the long-term inflation rate must be less than 1.0% in order for the policy rate to be greater than the neutral rate."
+   },
+   {
+    "qnum": 68,
+    "correct": "B",
+    "expl": "A. Incorrect because TR > TVC but < TC. As such the firm will stay in the market in the short run and exit the market in the long run.\nB. Correct because when TR total revenue is enough to cover TVC (total variable costs) but not all of TFC total fixed costs, the firm can continue to produce in the short run but will be unable to maintain financial solvency in the long run. TR is $1,000 which is greater than TVC of $700, but not enough to cover the firm's TFC of $400. Therefore the firm will exit the market in the long run.\nC. Incorrect because TR > TVC but < TC. Therefore, the firm will stay in the market in the short run because TR is enough to cover TVC but not all of TFC, the firm can continue to produce in the short run."
+   },
+   {
+    "qnum": 69,
+    "correct": "A",
+    "expl": "A. Correct because an inflation-targeting framework normally has the following set of features — An independent and credible central bank.\nB. Incorrect because by explaining their views on the economy and by being transparent in decision making, the independent, inflation-targeting central banks seek to gain reputation and credibility, making it easier to influence inflation expectations and hence ultimately easier to meet the inflation target.\nC. Incorrect because credibility — the independence of the central bank and public confidence in it are key in the design of an inflation-targeting regime."
+   }
+  ]
+ },
+ {
+  "cache_name": "AI,_Corporate,_Deriv,_Eco.json",
+  "page_idx": 162,
+  "page_type": "answers",
+  "items": [
+   {
+    "qnum": 70,
+    "correct": "C",
+    "expl": "A. Incorrect because when central banks believe that economic activity is likely to lead to an increase in inflation, they might increase interest rates, thereby reducing liquidity. In these cases, market analysts describe such actions as contractionary.\nB. Incorrect because the neutral rate is that rate of interest that neither spurs on nor slows down the underlying economy. As such, when policy rates are above the neutral rate, monetary policy is contractionary; when they are below the neutral rate, monetary policy is expansionary.\nC. Correct because when the economy is slowing and inflation and monetary trends are weakening, central banks may increase liquidity by cutting their target rate. In these circumstances, monetary policy is said to be expansionary."
+   },
+   {
+    "qnum": 71,
+    "correct": "B",
+    "expl": "A. Incorrect because real exchange rates adjust for the price level in both countries not GDP. Real exchange rates, which are indexes often constructed by economists and other market analysts to assess changes in the relative purchasing power of one currency compared with another. Creating these indexes requires adjusting the nominal exchange rate by using the price levels in each country of the currency pair.\nB. Correct because real exchange rates, which are indexes often constructed by economists and other market analysts to assess changes in the relative purchasing power of one currency compared with another. Creating these indexes requires adjusting the nominal exchange rate by using the price levels in each country of the currency pair.\nC. Incorrect because real exchange rates adjust for the price level in both countries not interest rates. Real exchange rates, which are indexes often constructed by economists and other market analysts to assess changes in the relative purchasing power of one currency compared with another. Creating these indexes requires adjusting the nominal exchange rate by using the price levels in each country of the currency pair."
+   },
+   {
+    "qnum": 72,
+    "correct": "A",
+    "expl": "A. Correct because the opportunity to generate higher profits may motivate companies to globalize. The first way to generate profit is to increase sales. Companies may choose to engage in globalization in order to access new customers for their goods and services. Another way to increase profits is to reduce costs. Globalization allows companies to access lower tax-operating environments, reduce labor costs, or seek other supply chain efficiency gains.\nB. Incorrect because globalization can contribute to income and wealth inequality, as well as differences in opportunity, within and between countries.\nC. Incorrect because companies operating in lower-cost countries often operate in the local standards of those countries. If standards on environmental protection, social benefits, or corporate governance are lower in one country compared to another and companies ultimately reduce their standards of production in that context, then globalization can create a drain on human, administrative, and environmental resources."
+   }
+  ]
+ },
+ {
+  "cache_name": "AI,_Corporate,_Deriv,_Eco.json",
+  "page_idx": 163,
+  "page_type": "answers",
+  "items": [
+   {
+    "qnum": 73,
+    "correct": "C",
+    "expl": "A. Incorrect because event risk evolves around set dates, such as elections, new legislation, or other date-driven milestones, such as holidays or political anniversaries, known in advance.\nB. Incorrect because thematic risks are known risks that evolve and expand over a period of time. Climate change, pattern migration, the rise of populist forces, and the ongoing threat of terrorism fall into this category.\nC. Correct because exogenous risk is a sudden or unanticipated risk that impacts either a country's cooperative stance, the ability of non-state actors to globalize, or both. Examples include sudden uprisings, invasions, or the aftermath of natural disasters."
+   },
+   {
+    "qnum": 74,
+    "correct": "A",
+    "expl": "A. Correct because the velocity of geopolitical risk is the pace at which it impacts an investor portfolio. For the sake of simplicity, we explore short-term or 'high velocity' impacts, medium-term, and long-term or 'low velocity' impacts [...]. In the short term, we may see volatility in the markets affecting entire industries or even the entire market. Exogenous or 'black swan' events tend to fit into this category, causing market volatility and investor flight to quality. A black swan risk is an event that is rare and difficult to predict but has an important impact. Investors with the appropriate time horizon and risk tolerance may make tactical changes to their investment choices as a result of these events. Long-term changes are unlikely to be necessary.\nB. Incorrect because this relates to a medium-term impact of geopolitical risk instead: Risks with a medium-term impact may begin to impair companies' processes, costs, and investment opportunities, resulting in lower valuations. These risks tend to be distributed towards specific sectors, meaning they will impact some companies much more than others.\nC. Incorrect because this relates to a low velocity impact of geopolitical risk instead: The velocity of geopolitical risk is the pace at which it impacts an investor portfolio. For the sake of simplicity, we explore short-term or 'high velocity' impacts, medium-term, and long-term or 'low velocity' impacts. And long-term risks may have important environmental, social, governance, and other impacts. This can impact an investor's asset allocation—including choice of asset classes and investment styles—for a long-term horizon; however, the immediate impact on portfolios is likely to be more limited."
+   },
+   {
+    "qnum": 75,
+    "correct": "A",
+    "expl": "A. Correct because, in the \"recovery\" phase, inflation remains moderate.\nB. Incorrect because, in the \"recovery\" phase, inflation remains moderate and in the \"slowdown\" phase inflation further accelerates.\nC. Incorrect because, in the \"recovery\" phase, inflation remains moderate and in the \"contraction\" phase inflation decelerates but with a lag."
+   }
+  ]
+ },
+ {
+  "cache_name": "AI,_Corporate,_Deriv,_Eco.json",
+  "page_idx": 164,
+  "page_type": "answers",
+  "items": [
+   {
+    "qnum": 76,
+    "correct": "A",
+    "expl": "A. Correct because in calculating the Herfindahl–Hirschman index the market shares of the top N companies are first squared and then added. If one firm controls the whole market (a monopoly), the Herfindahl–Hirschman index (HHI) equals 1. If there are M firms in the industry with equal market shares, then the HHI equals (1/M).\nB. Incorrect because just like the concentration ratio, the HHI does not take the possibility of entry into account, nor does it consider the elasticity of demand.\nC. Incorrect because just like the concentration ratio, the HHI does not take the possibility of entry into account, nor does it consider the elasticity of demand."
+   }
+  ],
+  "note": "This is answer 76 of 76 - the last answer in this document's answer key. Rest of page below is blank."
+ },
+ {
+  "cache_name": "AI,_Corporate,_Deriv,_Eco.json",
+  "page_idx": 165,
+  "page_type": "other",
+  "items": [],
+  "note": "Page is entirely blank - no visible text, question content, or page number."
+ },
+ {
+  "cache_name": "Equity,_Ethics.json",
+  "page_idx": 0,
+  "page_type": "other",
+  "items": [],
+  "note": "Cover page: '2025 CFA / CFA institute CFA Program / CFA Level I / LEVEL I BOOK 2 / Premium Practice Pack / Equity Investment & Ethical and Professional Standards'."
+ },
+ {
+  "cache_name": "Equity,_Ethics.json",
+  "page_idx": 1,
+  "page_type": "other",
+  "items": [],
+  "note": "Page is entirely blank."
+ },
+ {
+  "cache_name": "Equity,_Ethics.json",
+  "page_idx": 2,
+  "page_type": "other",
+  "items": [],
+  "note": "Table of contents page: 'CFA L-1 Premium Practice Pack - 2025 / Volume 2 / Index'. Table: Sr.No 1 = Equity Investment (page 1); Sr.No 2 = Ethical and Professional Standards (page 81)."
+ },
+ {
+  "cache_name": "Equity,_Ethics.json",
+  "page_idx": 3,
+  "page_type": "questions",
+  "items": [
+   {
+    "qnum": null,
+    "stem": "",
+    "A": "growth capital expenditure only.",
+    "B": "maintenance capital expenditure only.",
+    "C": "both growth capital expenditure and maintenance capital expenditure."
+   }
+  ],
+  "note": "Page (printed page '2') contains only the answer choices A/B/C, no question stem or question number visible - the stem and question number are on the preceding page (not included in this batch, presumably already correctly classified). Rest of page is blank."
+ },
+ {
+  "cache_name": "Equity,_Ethics.json",
+  "page_idx": 5,
+  "page_type": "questions",
+  "items": [
+   {
+    "qnum": null,
+    "stem": "",
+    "C": "106."
+   }
+  ],
+  "note": "Page (printed page '15') contains only a single fragment 'C. 106.' - the tail end of a numerical answer-choice list (options A and B and the question stem are on a preceding page not included in this batch). Rest of page is blank."
+ },
+ {
+  "cache_name": "Equity,_Ethics.json",
+  "page_idx": 18,
+  "page_type": "questions",
+  "items": [
+   {
+    "qnum": null,
+    "stem": "",
+    "C": "$31.25."
+   }
+  ],
+  "note": "Page (printed page '23') contains only a single fragment 'C. $31.25.' - the tail end of a numerical answer-choice list (options A and B and the question stem are on a preceding page not included in this batch). Rest of page is blank."
+ },
+ {
+  "cache_name": "Equity,_Ethics.json",
+  "page_idx": 26,
+  "page_type": "questions",
+  "items": [
+   {
+    "qnum": null,
+    "stem": "",
+    "C": "$31.25."
+   }
+  ],
+  "note": "Page (printed page '23') contains only a single fragment 'C. $31.25.' - visually identical in text content to Equity,_Ethics page_idx 18 (also printed page '23'), though the two PNG files have different file hashes. This may indicate a duplicated/rescanned page in the source PDF. Transcribed verbatim as shown; options A and B and the question stem are not visible on this page. Rest of page is blank."
+ },
+ {
+  "cache_name": "Equity,_Ethics.json",
+  "page_idx": 159,
+  "page_type": "answers",
+  "items": [
+   {
+    "qnum": 104,
+    "correct": null,
+    "expl": "[continued from previous page, not in this batch] covered in the exam. Bernod is free to disagree with CFA Institute policies, but he violated VII (A), as described in the justification for the correct answer.",
+    "note": "Only the tail of the explanation for answer 104 is visible on this page; the question, options A/B/C, and which option is marked 'Correct' are on a preceding page not included in this batch, so the correct letter cannot be determined from this page alone."
+   },
+   {
+    "qnum": 105,
+    "correct": "A",
+    "expl": "A. Correct because Professional Conduct inquiries come from a number of sources including the monitoring of online and social media to detect disclosure of confidential exam information.\nB. Incorrect because candidate conduct is monitored by exam proctors who complete reports on candidates suspected to have violated testing rules during the exam and at the exam center.\nC. Incorrect because members and candidates must self-disclose on the annual Professional Conduct Statement all matters that Answer their professional conduct, such as involvement in civil litigation or a criminal investigation or being the subject of a written complaint. Disclosure of confidential exam information will not be found on the annual statement."
+   },
+   {
+    "qnum": 106,
+    "correct": "A",
+    "expl": "A. Correct because receiving a gift, benefit, or consideration from a client can be distinguished from gifts given by entities seeking to influence a member or candidate to the detriment of other clients. In a client relationship, the client has already entered some type of compensation arrangement with the member, candidate, or his or her firm. A gift from a client could be considered supplementary compensation.\nB. Incorrect because compensation arrangements should not link analyst remuneration directly to investment banking assignments in which the analyst may participate as a team member.\nC. Incorrect because portfolio managers have a responsibility to respect and foster the intellectual honesty of sell-side research. Therefore, it is improper for portfolio managers to threaten or engage in retaliatory practices, such as reporting sell-side analysts to the covered company in order to instigate negative corporate reactions."
+   },
+   {
+    "qnum": 107,
+    "correct": "A",
+    "expl": "A. Correct because Regali did not violate Standard II (A), Nonpublic Material Information. The Standards permit the use of industry experts. Members and candidates may provide compensation to individuals [industry experts] for their insights without violating this standard. In this case, the industry experts are unaffiliated with the trials and thus do not have access to inside information on the trials, so their insights can be used to make investment decisions. The Standards also permit the sell-side analysts to distribute material information to only clients. Simply because the public in general would find the conclusions material does not require that the analyst make his or her work public.\nB. Incorrect because distributing the report to only her clients (and not making it public) is not a violation of Standard II (A), Nonpublic Material Information. The Standards permit the sell-side analysts to distribute material information only to clients. Simply because the public in general would find the conclusions material does not require that the analyst make his or her work public.\nC. [continues on next page]",
+    "note": "Option C explanation is cut off at the bottom of this page and continues on page_idx 160."
+   }
+  ]
+ },
+ {
+  "cache_name": "Equity,_Ethics.json",
+  "page_idx": 160,
+  "page_type": "answers",
+  "items": [
+   {
+    "qnum": 107,
+    "correct": "A",
+    "expl": "[continued from previous page] C. Incorrect because Regali did not violate Standard II (A), Nonpublic Material Information. The Standards permit the use of industry experts. Members and candidates may provide compensation to individuals [industry experts] for their insights without violating this standard. In this case, the industry experts are unaffiliated with the trials and thus do not have access to inside information on the trials, so their opinions can be used to make investment decisions.",
+    "note": "This page contains only the tail end of option C's explanation for qnum 107, continued from page_idx 159."
+   },
+   {
+    "qnum": 108,
+    "correct": "A",
+    "expl": "A. Correct because Standard II(A), Material Nonpublic Information, states that Members and Candidates who possess material nonpublic information that could affect the value of an investment must not act or cause others to act on the information. Also, Members and candidates must not use material nonpublic information to influence their investment actions related to derivatives. Therefore, a member analyst buying call option on a company stock after learning from its CEO that the company will report earnings exceeding analyst expectation is a violation of Standard II(A). In contrast, a member analyst buying an oil company stock after speaking to a well-known industry expert who believes oil prices will rise due to geopolitical risk is not a violation of Standard II(A). This is because a well-known industry expert's view is unlikely to be nonpublic information. Therefore, only Action 1 violates Standard II(A).\nB. Incorrect because only Action 1 violates Standard II(A), Material Nonpublic Information as described in the response rationale of the correct answer.\nC. Incorrect because only Action 1 violates Standard II(A), Material Nonpublic Information as described in the response rationale of the correct answer."
+   },
+   {
+    "qnum": 109,
+    "correct": "A",
+    "expl": "A. Correct because Standard III (B), Fair Dealing, states that if the issue is oversubscribed, then the issue should be prorated to all subscribers. In addition, if the investment professional's family-member accounts are managed similarly to the accounts of other clients of the firm, however, the family-member accounts should not be excluded from buying such shares.\nB. Incorrect because Standard III (B), Fair Dealing, states that if the issue is oversubscribed, then the issue should be prorated to all subscribers.\nC. Incorrect because Standard III (B), Fair Dealing, states that if the investment professional's family-member accounts are managed similarly to the accounts of other clients of the firm, however, the family-member accounts should not be excluded from buying such shares"
+   },
+   {
+    "qnum": 110,
+    "correct": "A",
+    "expl": "A. Correct because Standard III (B), Fair Dealing, states: For example, when making investments in new offerings or in secondary financings, members and candidates should distribute the issues to all customers for whom the investments are appropriate in a manner consistent with the policies of the firm for allocating blocks of stock. In addition, if the issue is oversubscribed, members and candidates should forgo any sales to themselves or their immediate families in order to free up additional shares for clients. If the investment professional's family-member accounts are managed similarly to the accounts of other clients of the firm, however, the family-member accounts should not be excluded... [continues on next page]",
+    "note": "Option A explanation is cut off mid-sentence at the bottom of this page and continues on page_idx 161. Options B and C for this question are also on page_idx 161."
+   }
+  ]
+ },
+ {
+  "cache_name": "Equity,_Ethics.json",
+  "page_idx": 161,
+  "page_type": "answers",
+  "items": [
+   {
+    "qnum": 110,
+    "correct": "A",
+    "expl": "[continued from previous page] ...from buying such shares. In this case, Lee's brother has a standard fee-paying, regular account, the IPO is suitable, so Lee should include his brother in the pro-rata allocation of the IPO shares.\nB. Incorrect because Standard III (B), Fair Dealing, states that Lee should have included his brother's account in the IPO allocation, as described in the rationale for the correct answer.\nC. Incorrect because Standard III (C), Suitability, requires that members and candidates who are in an investment advisory relationship with clients consider carefully the needs, circumstances, and objectives of the clients when determining the appropriateness and suitability of a given investment or course of investment action. Lee subscribes to an IPO for those clients for whom he has assessed it is suitable and not for a client for whom the investment is not suitable. Therefore, he has not violated the Standards.",
+    "note": "Continuation of qnum 110 from page_idx 160 (option A completion, plus options B and C in full)."
+   },
+   {
+    "qnum": 111,
+    "correct": "A",
+    "expl": "A. Correct because Standard III (E), Preservation of Confidentiality, requires Members and Candidates must keep information about current, former, and prospective clients confidential. Also, this standard protects the confidentiality of client information even if the person or entity is no longer a client of the member or candidate.\nB. Incorrect because the requirements of Standard III (E) are not intended to prevent members and candidates from cooperating with an investigation by the CFA Institute Professional Conduct Program (PCP).\nC. Incorrect because Members and Candidates must keep information about current, former, and prospective clients confidential unless the client or prospective client permits disclosure of the information."
+   },
+   {
+    "qnum": 112,
+    "correct": "A",
+    "expl": "A. Correct because Standard III (E), Preservation of Confidentiality, requires that members and candidates preserve the confidentiality of information communicated to them by their clients, prospective clients, and former clients. Further, if a client or former client expressly authorizes the member or candidate to disclose information, however, the member or candidate may follow the terms of the authorization and provide the information. The unsolicited stock order from the client is confidential. So, Barr must obtain the original client's authorization before recommending the stock to other clients. Therefore, Barr has violated Standard III (E) by executing without the original's client authorization, a single block trade for the original client as well as other clients for whom the stock is suitable.\nB. Incorrect because according to the recommended procedures for compliance with Standard III (E), Preservation of Confidentiality, the simplest, most conservative, and most effective way to comply with Standard III (E) is to avoid disclosing any information received from a client except to authorized fellow employees who are also working for the client. Barr discusses the order with her firm's analysts to determine how the unsolicited stock order will impact the client's portfolio. As analysts work for the clients, Barr has not violated Standard III (E) by discussing unsolicited client orders with her analysts.\nC. Incorrect because Barr has violated Standard III (E), Preservation of Confidentiality, only by executing a single block trade for the original client as well as other clients for whom the stock is suitable, as described in the response rationale for the correct answer."
+   }
+  ]
+ },
+ {
+  "cache_name": "Equity,_Ethics.json",
+  "page_idx": 162,
+  "page_type": "answers",
+  "items": [
+   {
+    "qnum": 113,
+    "correct": "C",
+    "expl": "A. Incorrect because the member violates Standard I (A), as described in the response rationale for the correct answer.\nB. Incorrect because Standard III (B), Fair Dealing, states that Members and Candidates must deal fairly and objectively with all clients when providing investment analysis, making investment recommendations, taking investment action, or engaging in other professional activities. However, this case is not about fairness related to investment analysis, making investment recommendations, taking investment action on behalf of clients. Instead, the member violates Standard I (A), Knowledge of the Law, as described in the response rationale for the correct answer.\nC. Correct because Standard I (A), Knowledge of the Law, states that Members and Candidates must understand and comply with all applicable laws, rules, and regulations. While Standard III (E), Preservation of Confidentiality, states that When permissible under applicable law, members and candidates shall consider the PCP an extension of themselves when requested to provide information about a client in support of a PCP investigation into their own conduct, this case clearly states that disclosure is not permitted by applicable law. Therefore, the member violates Standard I (A) by disclosing client information."
+   },
+   {
+    "qnum": 114,
+    "correct": "C",
+    "expl": "A. Incorrect because Standard II(A), Material Nonpublic Information, has been violated by both Hadid and Jackson as described in the response rationale of the correct answer.\nB. Incorrect because Standard II(A), Material Nonpublic Information, has been violated by both Hadid and Jackson as described in the response rationale of the correct answer.\nC. Correct because Standard II(A), Material Nonpublic Information, states that Members and Candidates who possess material nonpublic information that could affect the value of an investment must not act or cause others to act on the information. Also, Members and candidates must not use material nonpublic information to influence their investment actions related to derivatives. Hadid caused Jackson to act by telling Jackson about her work on SML. Jackson acts on the information and buys call options on SML. Therefore, both Hadid and Jackson violate Standard II(A)."
+   },
+   {
+    "qnum": 115,
+    "correct": "C",
+    "expl": "A. Incorrect because according to Standard II(B), Market Manipulation, members are prohibited from disseminating false, not verifiable, information to induce trading by others. Market manipulation includes the dissemination of false or misleading information and Information-based manipulation includes spreading false rumors to induce trading by others.\nB. Incorrect because Standard II(B) Market Manipulation allows trading strategies based on perceived market inefficiencies. Standard II(B) is not intended to preclude transactions undertaken on legitimate trading strategies based on perceived market inefficiencies.\nC. Correct because Standard II(B), Market Manipulation, prohibits such activity. Transaction-based manipulation includes, but is not limited to securing a controlling, dominant position in a financial instrument to exploit the price of the underlying asset."
+   }
+  ]
+ },
+ {
+  "cache_name": "Equity,_Ethics.json",
+  "page_idx": 163,
+  "page_type": "answers",
+  "items": [
+   {
+    "qnum": 116,
+    "correct": "C",
+    "expl": "A. Incorrect because Standard III (E), Preservation of Confidentiality, states that this standard protects the confidentiality of client information even if the person or entity is no longer a client of the member or candidate.\nB. Incorrect because Standard III (E), Preservation of Confidentiality, states that if applicable law requires members and candidates to maintain confidentiality, even if the information concerns illegal activities on the part of the client, members and candidates should not disclose such information.\nC. Correct because Standard III (E), Preservation of Confidentiality, states that members must keep information about current, former, and prospective clients confidential unless: the client or prospective client permits disclosure of the information."
+   },
+   {
+    "qnum": 117,
+    "correct": "C",
+    "expl": "A. Incorrect because, as described in the rationale for the correct answer, Lee has violated both Standard III(A) and Standard III(C).\nB. Incorrect because, as described in the rationale for the correct answer, Lee has violated both Standard III(A) and Standard III(C).\nC. Correct because Standard III(C), Suitability, When Members and Candidates are in an advisory relationship with a client, they must determine that an investment is suitable to the client's financial situation and consistent with the client's written objectives, mandates, and constraints before making an investment recommendation or taking investment action. Also, the investment professional's determination of suitability should reflect only the investment recommendations or actions that a prudent person would be willing to undertake. Not every investment opportunity will be suitable for every portfolio, regardless of the potential return being offered. Lee has ignored her client's mandate of an equal-weighted portfolio and is in violation of this standard. Further, according to Standard III(A), Loyalty, Prudence, and Care, Members and Candidates have a duty of loyalty to their clients and must act with reasonable care and exercise prudent judgment. Also, members and candidates must follow any guidelines set by their clients for the management of their assets. Lee's decision not to rebalance the portfolio is a violation of this Standard. So, Lee has violated both Standard III(C) and Standard III(A)."
+   },
+   {
+    "qnum": 118,
+    "correct": "C",
+    "expl": "A. Incorrect because Standard IV (B), Additional Compensation Arrangements, requires members and candidates to obtain permission from their employer before accepting compensation or other benefits from third parties for the services rendered to the employer or for any services that might create a conflict with their employer's interest. Compensation and benefits include direct compensation by the client and any indirect compensation or other benefits received from third parties.\nB. Incorrect because Standard IV (B), Additional Compensation Arrangements, requires members and candidates to obtain permission from their employer before accepting compensation or other benefits from third parties for the services rendered to the employer or for any services that might create a conflict with their employer's interest. Compensation and benefits include direct compensation by the client and any indirect compensation or other benefits received from third parties.\nC. Correct because Standard IV (B), Additional Compensation Arrangements, requires members and candidates to obtain permission from their employer before accepting... [continues on next page]",
+    "note": "Option C explanation is cut off mid-sentence at the bottom of this page and continues on page_idx 164."
+   }
+  ]
+ },
+ {
+  "cache_name": "Equity,_Ethics.json",
+  "page_idx": 164,
+  "page_type": "answers",
+  "items": [
+   {
+    "qnum": 118,
+    "correct": "C",
+    "expl": "[continued from previous page] ...compensation or other benefits from third parties for the services rendered to the employer or for any services that might create a conflict with their employer's interest. Compensation and benefits include direct compensation by the client and any indirect compensation or other benefits received from third parties.",
+    "note": "This page contains only the tail end of option C's explanation for qnum 118, continued from page_idx 163."
+   },
+   {
+    "qnum": 119,
+    "correct": "C",
+    "expl": "A. Inorrect because Taylor violated Standard IV (B), Additional Compensation Arrangements. The standard states that Members and Candidates must not accept gifts, benefits, compensation, or consideration that competes with or might reasonably be expected to create a conflict of interest with their employer's interest unless they obtain consent from all parties involved.Taylor must inform his employer and obtain consent for accepting the front-row ticket to an upcoming sold out match.\nB. Incorrect because Standard III (A), Loyalty, Prudence, and Care, states that Members and Candidates have a duty of loyalty to their clients and must act with reasonable care and exercise prudent judgment. The violation described in this Answer of receiving additional compensation without employer consent does not pertain to Standard III(A).\nC. Correct because Standard IV (B), Additional Compensation Arrangements, states that Members and Candidates must not accept gifts, benefits, compensation, or consideration that competes with or might reasonably be expected to create a conflict of interest with their employer's interest unless they obtain consent from all parties involved.Taylor must inform his employer and obtain consent for accepting the front-row ticket to an upcoming sold out match. Therefore, he has violated this Standard.",
+    "note": "Option A is printed verbatim as 'Inorrect' in the source (apparent typo/scan artifact for 'Incorrect'); transcribed as-is per anti-fabrication rule."
+   },
+   {
+    "qnum": 120,
+    "correct": "C",
+    "expl": "A. Incorrect because Standard V (A), Diligence and Reasonable Basis, states members and candidates who are directly involved with the use of external advisers need to ensure that their firms have standardized criteria for reviewing these selected external advisers and managers. This is not a requirement of Standard III (C), Suitability.\nB. Incorrect because Standard V (A), Diligence and Reasonable Basis, states members and candidates who are directly involved with the use of external advisers need to ensure that their firms have standardized criteria for reviewing these selected external advisers and managers. This is not a requirement of Standard I (B), Independence and Objectivity.\nC. Correct because Standard V (A), Diligence and Reasonable Basis, states members and candidates who are directly involved with the use of external advisers need to ensure that their firms have standardized criteria for reviewing these selected external advisers and managers. Such criteria would include, but would not be limited to, the following: reviewing the adviser's established code of ethics, understanding the adviser's compliance and internal control procedures, assessing the quality of the published return information, and reviewing the adviser's investment process and adherence to its stated strategy.\n\nUnderstanding the managers' compliance procedures is a criteria for selecting external managers."
+   }
+  ]
+ },
+ {
+  "cache_name": "Equity,_Ethics.json",
+  "page_idx": 165,
+  "page_type": "answers",
+  "items": [
+   {
+    "qnum": 121,
+    "correct": "C",
+    "expl": "A. Incorrect because Standard VI(A), Disclosure of Conflicts requires members and candidates to make full and fair disclosure of all matters that could reasonably be expected to impair their independence and objectivity or interfere with respective duties to their clients, prospective clients, and employer and protects investors and employers by requiring members and candidates to fully disclose to clients, potential clients, and employers all actual and potential conflicts of interest. Once a member or candidate has made full disclosure, the member's or candidate's employer, clients, and prospective clients will have the information needed to evaluate the objectivity of the investment advice or action taken on their behalf.\nB. Incorrect because Standard VI(A), Disclosure of Conflicts, makes no requirement or recommendation with respect to fair dealing between and among clients. According to Standard III(B), Fair Dealing, Members and Candidates must deal fairly and objectively with all clients when providing investment analysis, making investment recommendations, taking investment action, or engaging in other professional activities.\nC. Correct because Standard VI(A), Disclosure of Conflicts requires members and candidates to make full and fair disclosure of all matters that could reasonably be expected to impair their independence and objectivity or interfere with respective duties to their clients, prospective clients, and employer and protects investors and employers by requiring members and candidates to fully disclose to clients, potential clients, and employers all actual and potential conflicts of interest. Once a member or candidate has made full disclosure, the member's or candidate's employer, clients, and prospective clients will have the information needed to evaluate the objectivity of the investment advice or action taken on their behalf."
+   },
+   {
+    "qnum": 122,
+    "correct": "A",
+    "expl": "A. Correct because the member has not violated either of the Standards. Standard I (C), Misrepresentation, prohibits members and candidates from guaranteeing clients any specific return on volatile investments. The member is not making a guarantee or implying a future return to the prospective client, and therefore is not in violation of this Standard. Standard III (D), Performance Presentation, states a member or candidate must give a fair and complete presentation of performance information whenever communicating data with respect to the performance history of individual accounts, composites or groups of accounts, or composites of an analyst's or firm's performance results. Furthermore, members and candidates should not state or imply that clients will obtain or benefit from a rate of return that was generated in the past. The member is stating a fact that the composite shows outperformance, gross of fees, and not implying future returns and therefore is not in violation of this Standard.\nB. Incorrect because the member has not guaranteed a rate of future returns and so has not violated Standard I (C), Misrepresentation, as described in the rationale for the correct answer.\nC. Incorrect because the member has properly used a composite return to represent past performance and has not guaranteed a rate of future returns and so has not violated Standard III (D), Performance Presentation, as described in the rationale for the correct answer."
+   }
+  ]
+ }
+]

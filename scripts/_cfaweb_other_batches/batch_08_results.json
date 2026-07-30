@@ -1,0 +1,234 @@
+[
+  {
+    "cache_name": "Portfolio,_Quants.json",
+    "page_idx": 75,
+    "page_type": "questions",
+    "items": [
+      {
+        "qnum": 70,
+        "stem": "An analyst discards the lowest 2.5% and the highest 2.5% of values in a sample, and computes the mean of the remaining 95% of values. The resulting mean is best described as"
+      }
+    ],
+    "note": "Page shows only the question stem at the top; the rest of the page is blank and no answer options (A/B/C) are visible/legible on this page. qnum inferred from sequence: cache page_idx 74 ends at q69 (with q70's own cache entry garbled to stem='71', an OCR artifact of the page-number footer) and page_idx 76 begins at q71, so this page fills the q70 gap. This is a trimmed-mean question; correct classification is 'questions', not 'other'."
+  },
+  {
+    "cache_name": "Portfolio,_Quants.json",
+    "page_idx": 79,
+    "page_type": "questions",
+    "items": [
+      {
+        "qnum": 87,
+        "B": "data are given in ranks.",
+        "C": "data meet distributional assumptions."
+      }
+    ],
+    "note": "This page is a continuation of q87 (stem and option A appear on the preceding page, cache page_idx 78, which reads: 'A nonparametric test is most appropriate when: A. comparing differences between means.'). Only options B and C are visible here; page is otherwise blank. qnum inferred from sequence (page 78 ends at q87 with only option A shown, page 80 begins fresh at q88). Correct classification is 'questions' (option continuation), not 'other'."
+  },
+  {
+    "cache_name": "Portfolio,_Quants.json",
+    "page_idx": 82,
+    "page_type": "answers",
+    "items": [
+      {
+        "qnum": 4,
+        "expl": "(1) when the data we use do not meet distributional assumptions, (2) when there are outliers, (3) when the data are given in ranks or use an ordinal scale, or (4) when the hypotheses we are addressing do not concern a parameter. This is one of the situations"
+      }
+    ],
+    "note": "Explanation text is cut off mid-sentence ('This is one of the situations...'); the rest of the page is blank, so the concluding sentence and the correct-answer letter are not visible on this page. qnum inferred from the second Quantitative Methods answer-key sequence (page_idx 81 = answers 1,2,3; page_idx 83 = answers 6,7), leaving qnum 4 as the gap; content matches q4 of the second Quant question set (page_idx 55: 'For a sample of 50 observations, in which of the following situations is a nonparametric test least likely to be appropriate?'). Correct answer letter could not be determined from this page alone. Correct classification is 'answers', not 'other'."
+  },
+  {
+    "cache_name": "Portfolio,_Quants.json",
+    "page_idx": 84,
+    "page_type": "answers",
+    "items": [
+      {
+        "qnum": 7,
+        "correct": "A",
+        "expl": "B. Incorrect because it is calculated as ln(1 + 0.5/4) - 1 = ln(1.125) - 1 = 0.11778 ≈ 11.8%.\nC. Incorrect because it is calculated as: 50%/4 = 12.5%."
+      }
+    ],
+    "note": "Continuation of q7's explanation (correct='A' already recorded on cache page_idx 83 with expl left blank there); this page supplies the explanations for why B and C are incorrect. Rest of page is blank below the visible text. Correct classification is 'answers', not 'other'."
+  },
+  {
+    "cache_name": "Portfolio,_Quants.json",
+    "page_idx": 86,
+    "page_type": "answers",
+    "items": [
+      {
+        "qnum": 11,
+        "expl": "trained, validated, and tested, the ML model can be used to predict outcomes based on other datasets. ML models also require sufficiently large amounts of data and may not"
+      }
+    ],
+    "note": "Explanation text is cut off mid-sentence; rest of page blank. qnum 11 is inferred as the gap between cache page_idx 85 (answers 8,9,10) and page_idx 87 (answer 12) — q11 is otherwise entirely absent from the cache. No correct-answer letter is visible on this page. Content concerns machine-learning model training/validation/testing, consistent with a Quantitative Methods 'introduction to ML' item. Correct classification is 'answers', not 'other'."
+  },
+  {
+    "cache_name": "Portfolio,_Quants.json",
+    "page_idx": 88,
+    "page_type": "answers",
+    "items": [
+      {
+        "qnum": 12,
+        "correct": "A",
+        "expl": "C. Incorrect because it is the present value of the investment as t = 2 instead of t = 0, and it is an intermediate step in the correct calculation. It computes present value of an"
+      }
+    ],
+    "note": "Continuation of q12's explanation (correct='A' already recorded on cache page_idx 87 with expl left blank there). Text is cut off mid-sentence; rest of page blank. Correct classification is 'answers', not 'other'."
+  },
+  {
+    "cache_name": "Portfolio,_Quants.json",
+    "page_idx": 91,
+    "page_type": "answers",
+    "items": [
+      {
+        "qnum": 19,
+        "correct": "C",
+        "expl": "Correct because if the relationship between the independent variable and the dependent variable is not linear, we can often transform one or both of these variables to convert this relation to a linear form, which then allows the use of simple linear regression."
+      }
+    ],
+    "note": "qnum 19 is entirely absent from the cache (page_idx 90 ends at q18, page_idx 92 begins at q20); this page fills that gap. Unlike most other items in this batch, the correct-answer letter (C) is directly and explicitly visible on this page ('C. Correct because...'), so this is a new, previously-missing data point rather than an inference from context. Correct classification is 'answers', not 'other'."
+  },
+  {
+    "cache_name": "Portfolio,_Quants.json",
+    "page_idx": 93,
+    "page_type": "answers",
+    "items": [
+      {
+        "qnum": 23,
+        "correct": "A",
+        "expl": "not an original sample. The population is divided into clusters, each of which is essentially a mini-representation of the entire populations. Then certain clusters are chosen as a whole using simple random sampling.\nC. Incorrect because in convenience sampling, elements are selected from the"
+      }
+    ],
+    "note": "Continuation of q23's explanation (correct='A' already recorded on cache page_idx 92 with expl left blank there); text is cut off mid-sentence at the bottom, and the top line is also a mid-sentence fragment (likely the tail of a definition/explanation of cluster sampling from the preceding page). Correct classification is 'answers', not 'other'."
+  },
+  {
+    "cache_name": "Portfolio,_Quants.json",
+    "page_idx": 97,
+    "page_type": "answers",
+    "items": [
+      {
+        "qnum": 31,
+        "correct": "A",
+        "expl": "as a risk measure. The safety-first optimal portfolio maximizes the safety-first ratio (SFRatio): SFRatio = [E(RP) – RL]/σP. The quantity E(RP) – RL is the distance from the mean return to the shortfall level. Dividing this distance by σP gives the distance in units of standard deviation. Although not used in Roy's safety-first criterion, semivariance,"
+      }
+    ],
+    "note": "Continuation of q31's explanation (correct='A' already recorded on cache page_idx 96 with expl left blank there); text begins and ends mid-sentence. Correct classification is 'answers', not 'other'."
+  },
+  {
+    "cache_name": "Portfolio,_Quants.json",
+    "page_idx": 101,
+    "page_type": "answers",
+    "items": [
+      {
+        "qnum": 40,
+        "correct": "A",
+        "expl": "The standard deviation of a sample statistic is known as the standard error of the statistic. The sample mean, in addition to being an efficient estimator, is also a consistent estimator of the population mean: As sample size n goes to infinity, its standard error,"
+      }
+    ],
+    "note": "Continuation of q40's explanation (correct='A' already recorded on cache page_idx 100 with expl left blank there); text is cut off mid-sentence at the bottom. Correct classification is 'answers', not 'other'."
+  },
+  {
+    "cache_name": "Portfolio,_Quants.json",
+    "page_idx": 103,
+    "page_type": "answers",
+    "items": [
+      {
+        "qnum": 43,
+        "expl": "distance of the observed dependent variable from the regression line.\nB. Incorrect because it is the coefficient of determination, and not the standard error"
+      }
+    ],
+    "note": "qnum 43 is entirely absent from the cache (page_idx 102 ends at q42, page_idx 104 begins at q44); this page fills that gap. The top line is the tail end of an explanation (likely for option A, describing the standard error of estimate) continued from the preceding page not in this batch; it is followed by the start of an explanation for why B is incorrect, itself also cut off. Because option A's full sentence is not visible, the correct-answer letter is not stated outright on this page — by process of elimination (B and, presumably, C are shown incorrect) it is plausibly 'A', but this is an inference, not a directly transcribed fact, so 'correct' is left unset. Correct classification is 'answers', not 'other'."
+  },
+  {
+    "cache_name": "Portfolio,_Quants.json",
+    "page_idx": 112,
+    "page_type": "answers",
+    "items": [
+      {
+        "qnum": 65,
+        "correct": "B",
+        "expl": "A. Incorrect because the annuity is taken as an ordinary annuity rather than an annuity due, leading to a PV 10 years from today of PV10 = $50,000 × [1 - 1/(1.03)^4]/0.03 = $50,000 × 3.717098 = $185,855. The PV of the annuity today would equal PV0 = $185,855/(1.03)^10 = $138,294. Calculator solution: END mode; N = 4; I/Y = 3%; PMT = 50,000; solve for PV = 185,855. Discounted back 10 years: N = 10; I/Y = 3%; FV = 185,855; solve for PV = 138,294. This is also the result if the PV of the annuity due is discounted back 11 years instead of 10 years: $191,431/(1.03)^11 = $138,294. Calculator solution: BEGIN mode; N = 4; I/Y = 3%; PMT = 50,000; solve for PV = 191,431. Discounted back 11 years: N = 11; I/Y = 3%; FV = 191,431; solve for PV = 138,294.\nB. Correct because the present value (PV) of the annuity due 10 years from today equals PV10 = $50,000 + $50,000 × [1 - 1/(1.03)^3]/0.03 = $50,000 + $50,000 × 2.828611 = $191,431. The PV of the annuity today equals PV0 = $191,431/(1.03)^10 = $142,442. Calculator solution: BEGIN mode; N = 4; I/Y = 3%; PMT = 50,000; solve for PV = 191,431. Discounted back 10 years: N = 10; I/Y = 3%; FV = 191,431; solve for PV = 142,442. Alternatively, the annuity can be treated as an ordinary annuity, with a PV 9 years from today of PV9 = $50,000 × [1 - 1/(1.03)^4]/0.03 = $50,000 × 3.717098 = $185,855. The PV of the annuity today equals PV0 = $185,855/(1.03)^9 = $142,442. Calculator solution: END mode; N = 4; I/Y = 3%; PMT = 50,000; solve for PV = 185,855. Discounted back 9 years: N = 9; I/Y = 3%; FV = 185,855; solve for PV = 142,442.\nC. Incorrect because the PV of the annuity due is discounted back 9 years instead of 10 years: $191,431/(1.03)^9 = $146,716. Calculator solution: BEGIN mode; N = 4; I/Y = 3%; PMT = 50,000; solve for PV = 191,431. Discounted back 9 years: N = 9; I/Y = 3%; FV = 191,431; solve for PV = 146,716. This answer is also closest to the PV of the entire required amount: $200,000/(1.03)^10 = $148,819."
+      },
+      {
+        "qnum": 66,
+        "correct": "B",
+        "expl": "A. Incorrect because it assumes the ordinary annuity starts in Year 5 instead of Year 4. The present value of an ordinary annuity with 7 payments of $10,000 at a 6% discount rate is calculated as follows: PV = A[1 - 1/(1+r)^N]/r; PV4 = $10,000 × [1 - 1/(1+0.06)^7]/0.06; PV4 = $55,823.81. Then the PV of the investment is incorrectly discounted from Year 5 instead of Year 4 such that: PV0 = FV5(1+r)^-N; PV0 = $55,823.81 × (1+0.06)^-5; PV0 = $41,714.80 ≈ $41,715. Calculator solution: (1) END mode; N = 7; I = 6; PMT = -10,000; FV = 0; solve for PV = 55,823.81. (2) END mode; N = 5; I = 6; PMT = 0; FV = -55,823.81; solve for PV = 41,714.80.\nB. Correct because the present value in Year 4 of an ordinary annuity with 7 payments of $10,000 at a 6% discount rate is calculated as follows: PV = A[1 - 1/(1+r)^N]/r; PV4 = $10,000 × [1 - 1/(1+0.06)^7]/0.06; PV4 = $55,823.81",
+        "note": "Explanation for option B is cut off by the bottom of the page and continues onto the next page (page_idx 113, not included in this batch)."
+      }
+    ],
+    "note": "This page was misclassified as 'other' but is in fact a dense, fully legible answers page containing complete explanations for q65 and q66 (each headed 'Answer N of 90 / Answer / Solution' in the source), previously entirely absent from the cache (page_idx 111 ends at q64, page_idx 113 begins at q67). This is the most substantive finding in this batch. The q66/option-B explanation is truncated at the physical page break; its continuation was not captured since the next page was not flagged as 'other' and is outside this batch's scope."
+  },
+  {
+    "cache_name": "Portfolio,_Quants.json",
+    "page_idx": 117,
+    "page_type": "answers",
+    "items": [
+      {
+        "qnum": 79,
+        "expl": "regression is Homoskedasticity: The variance of the regression residuals is the same [and not different] for all observations."
+      }
+    ],
+    "note": "qnum 79 is entirely absent from the cache (page_idx 116 ends at q77, page_idx 118 begins at q78 then jumps straight to q80, skipping 79 as well); this page fills that gap. Text begins mid-sentence ('regression is Homoskedasticity...', the subject noun preceding 'regression' is on the prior page not in this batch) and the correct-answer letter is not visible on this page. Correct classification is 'answers', not 'other'."
+  },
+  {
+    "cache_name": "Portfolio,_Quants.json",
+    "page_idx": 119,
+    "page_type": "answers",
+    "items": [
+      {
+        "qnum": 81,
+        "correct": "B",
+        "expl": "variation of the dependent variable as the independent variable, or the explanatory variable; it is typically denoted by X."
+      }
+    ],
+    "note": "Continuation of q81's explanation (correct='B' already recorded on cache page_idx 118 with expl left blank there); text is a mid-sentence fragment defining the independent/explanatory variable. Correct classification is 'answers', not 'other'."
+  },
+  {
+    "cache_name": "Portfolio,_Quants.json",
+    "page_idx": 121,
+    "page_type": "answers",
+    "items": [
+      {
+        "qnum": 85,
+        "correct": "A",
+        "expl": "mean of np and finite variance of np(1 – p), where n is the number of trials and p is the probability of success, the central limit theorem holds."
+      }
+    ],
+    "note": "Continuation of q85's explanation (correct='A' already recorded on cache page_idx 120 with expl left blank there); text is a mid-sentence fragment about the central limit theorem applied to a binomial distribution. Correct classification is 'answers', not 'other'."
+  },
+  {
+    "cache_name": "Fixed_income,_FSA.json",
+    "page_idx": 0,
+    "page_type": "other",
+    "items": [],
+    "note": "Cover page: '2025 CFA / CFA Institute / CFA Level I / Level I Book 3 / Premium Practice Pack / Fixed Income & Financial Statement Analysis'. Correctly classified as 'other'."
+  },
+  {
+    "cache_name": "Fixed_income,_FSA.json",
+    "page_idx": 1,
+    "page_type": "other",
+    "items": [],
+    "note": "Table-of-contents page: 'CFA L-1 Premium Practice Pack - 2025 / Volume 3 / Index' with a table listing '1. Fixed Income – p.1' and '2. Financial Statement Analysis – p.57'. Correctly classified as 'other'."
+  },
+  {
+    "cache_name": "Fixed_income,_FSA.json",
+    "page_idx": 2,
+    "page_type": "other",
+    "items": [],
+    "note": "Page is blank (no legible text). Correctly classified as 'other'."
+  },
+  {
+    "cache_name": "Fixed_income,_FSA.json",
+    "page_idx": 4,
+    "page_type": "questions",
+    "items": [
+      {
+        "qnum": 7,
+        "stem": "In the event of default, investors in covered bonds most likely have recourse against:",
+        "A": "the issuer only.",
+        "B": "a segregated pool of assets only.",
+        "C": "both the issuer and a segregated pool of assets."
+      }
+    ],
+    "note": "This page was misclassified as 'other' but is a complete, fully legible question with all three options. The page header reads only 'Question' with no visible sequence number (other pages in this file print 'Question N of 106'; the number here is not legible/rendered). qnum inferred as 7 from the cache sequence: page_idx 3 ends at q6, page_idx 5 begins at q8, leaving q7 as the missing item that this page supplies."
+  }
+]

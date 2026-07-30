@@ -1,0 +1,92 @@
+[
+ {
+  "id": "2c893e5e-2b9b-47f8-8a02-d041c502d75a",
+  "verdict": "confirm_cache_correct",
+  "independently_derived_answer": "C",
+  "reasoning": "MM Proposition I with taxes: VL = VU + (tax rate x D), the debt tax shield. Option C states exactly this ('tax rate multiplied by the value of the debt'). The DB's own explanation_en literally recites this formula ('an amount equal to the tax rate multiplied by the value of the debt, the debt tax shield'), which is option C's wording, not option A's ('value of the debt'). DB's stored answer A is inconsistent with its own explanation."
+ },
+ {
+  "id": "3fd8177f-44ae-432c-9aaa-f061cb37a93f",
+  "verdict": "confirm_cache_correct",
+  "independently_derived_answer": "C",
+  "reasoning": "The explanation describes 'analyst's discretionary forecasts' (option C) as the approach 'most common for companies in cyclical industries', directly answering the question stem. Yet the stored correct_answer is B (management guidance), which the same explanation lists as a distinct, less-suited alternative. The explanation text supports C, not B."
+ },
+ {
+  "id": "e3c23a11-a0c4-462d-901c-66f409a1dc2b",
+  "verdict": "confirm_cache_correct",
+  "independently_derived_answer": "A",
+  "reasoning": "The explanation explicitly classifies 'barriers to entry and industry concentration' (options B and C) as internal factors, and social influences (option A) as one of the external factors (macroeconomic, technological, demographic, governmental, social). The question asks for the external influence, so the answer must be A, not B as stored."
+ },
+ {
+  "id": "78c1add2-2b36-48f0-8182-ceee06264925",
+  "verdict": "confirm_cache_correct",
+  "independently_derived_answer": "C",
+  "reasoning": "The explanation states the January effect 'is a time series anomaly and observed pricing anomaly, not a market anomaly like loss aversion or earnings surprise' -- explicitly ruling out options A (loss aversion) and B (earnings surprise), and affirming it is a pricing anomaly, which matches option C ('a market pricing anomaly'). Standard finance classification of the January effect as a calendar/pricing anomaly (distinct from behavioral biases like loss aversion) supports this independently."
+ },
+ {
+  "id": "9d8be10b-5ac7-41eb-9190-20f3ad9fad4c",
+  "verdict": "confirm_cache_correct",
+  "independently_derived_answer": "C",
+  "reasoning": "Porter's five forces are threat of entry, power of suppliers, power of buyers, threat of substitutes, and rivalry among existing competitors -- as the explanation itself lists. The explanation states 'Position in life-cycle stage is not part of Porter's five forces', which is option C, directly answering the 'do not include' question stem. The stored answer A (power of buyers) is one of the five forces and is explicitly included, contradicting the DB's own correct_answer."
+ },
+ {
+  "id": "597bf788-b665-41a3-8232-b31b30ac36df",
+  "verdict": "confirm_cache_correct",
+  "independently_derived_answer": "C",
+  "reasoning": "Cumulative voting lets a shareholder direct all voting power to a single candidate; statutory voting requires votes to be spread evenly across candidates. The explanation says exactly this: 'Cumulative voting allows shareholders to direct their total voting rights to specific candidates, as opposed to statutory voting having to allocate their voting rights evenly.' This matches the question stem to option C (cumulative voting), not the stored B (statutory voting), which the explanation associates with the opposite behavior."
+ },
+ {
+  "id": "9169c359-f316-468d-83c8-cdc2ac97890e",
+  "verdict": "uncertain",
+  "independently_derived_answer": "C",
+  "reasoning": "The explanation only refutes the stored answer A, stating multi-market indexes 'would not be used as a benchmark for a single country ETF' -- directly contradicting db_correct=A. However, it never affirms option B (small-cap growth manager) either, and a small-cap growth mandate is a poor style/cap-size match for a broad multi-market index. Standard usage of multi-market indexes is to serve as a benchmark for calculating beta of a global manager's portfolio (option C), since they span multiple national markets. Neither db_correct (A) nor cache_correct (B) is supported by independent reasoning or by the stored explanation; this looks like a deeper data problem (possibly a third, uncached correct option) warranting manual review against the source PDF rather than a simple DB-fix or cache-dismissal."
+ },
+ {
+  "id": "b66efe4c-4d1a-4a02-b563-79a682e1d509",
+  "verdict": "confirm_cache_correct",
+  "independently_derived_answer": "B",
+  "reasoning": "Perpetuity value = D / r = 1.20 / 0.06 = $20.00, exactly equal to the stated market price of $20. Equal intrinsic value and market price means the share is fairly valued, not undervalued. The explanation itself states 'the market price is equal to the calculated value... its value is not undervalued', directly contradicting the stored answer A (undervalued) and supporting option B (fairly valued)."
+ },
+ {
+  "id": "478b46df-f30f-4549-9c94-002f22eaf184",
+  "verdict": "confirm_cache_correct",
+  "independently_derived_answer": "A",
+  "reasoning": "Ex-date and record date must fall on business days for settlement/registration purposes, while the payment date is simply an administrative disbursement date and can fall on a weekend or holiday. The explanation confirms this precisely: 'The payment date can occur on a weekend or holiday unlike other pertinent dates, such as the ex-date and record date, which occur only on business days.' This supports option A (payment date), not the stored C (ex-date)."
+ },
+ {
+  "id": "33c25142-d8fd-49da-ae3d-72460b603b07",
+  "verdict": "confirm_cache_correct",
+  "independently_derived_answer": "C",
+  "reasoning": "The explanation states a mining company 'will be more likely to raise equity funding than debt funding due to cyclical revenue and cash flows that limit debt capacity' -- i.e., mining uses LESS leverage, directly contradicting the stored answer A. Between the remaining options, shipping companies are capital-intensive and asset-backed (vessels serve as collateral), historically supporting high leverage ratios, whereas software companies are asset-light with low leverage. Shipping (C) is the best fit for 'greatest amount of leverage', matching the cache."
+ },
+ {
+  "id": "ea7c82a5-a25f-4690-8067-21eb6314a31a",
+  "verdict": "confirm_cache_correct",
+  "independently_derived_answer": "C",
+  "reasoning": "The explanation states the pitfall is 'basing investment decisions on EPS, net income, or ROE' (i.e., short-run accounting numbers, option C), and that companies 'should instead focus on after-tax cash flows and opportunity costs' -- meaning options A and B are the recommended practices, not the pitfall. This directly contradicts the stored answer A and supports option C instead."
+ },
+ {
+  "id": "ae7aac0c-6dda-4e3a-a694-94e500375d7d",
+  "verdict": "confirm_cache_correct",
+  "independently_derived_answer": "B",
+  "reasoning": "The explanation states plainly: 'The governance committee, not the risk committee, oversees development of governance policies including conflict of interest policy.' This is a direct, explicit statement that option B (governance committee) is correct and option A (risk committee, the stored answer) is wrong -- one of the clearest explanation/answer mismatches in this batch."
+ },
+ {
+  "id": "ddcef8e5-f803-41b5-8fe4-1edd14c574e2",
+  "verdict": "confirm_cache_correct",
+  "independently_derived_answer": "C",
+  "reasoning": "MM Proposition II without taxes: re = r0 + (r0 - rd)(D/E), a function of the debt-to-EQUITY ratio, not the debt-to-ASSETS ratio as option B states (a subtle wording trap). The explanation's concluding clause -- 'adding lower-cost debt perfectly offsets the increase in cost of equity with no change to overall weighted average cost of capital' -- matches option C's wording ('unchanged overall WACC') exactly and is the single best-known takeaway of MM Prop II without taxes. Option C is the precise, error-free statement."
+ },
+ {
+  "id": "1ba7b8e2-aa98-454f-af55-78b40d19fb03",
+  "verdict": "confirm_cache_correct",
+  "independently_derived_answer": "C",
+  "reasoning": "Pecking order hierarchy: internal financing first, then debt, with public equity as the LAST preference -- not debt as last resort. The explanation states this directly: 'first preference to internally-generated funds and lowest preference to public equity offerings,' which matches option C ('rely on internal financing over new equity'), not the stored A ('issue debt as last resort'), which misstates the hierarchy."
+ },
+ {
+  "id": "ad4ed21e-2b2a-4781-95a3-7061e22f84e5",
+  "verdict": "confirm_cache_correct",
+  "independently_derived_answer": "B",
+  "reasoning": "The explanation explicitly lists 'industrials' under cyclical industries and 'utilities' under non-cyclical industries. The question asks which is most likely cyclical, so the answer must be B (Industrials), directly contradicting the stored answer A (Utilities), which the same explanation places in the non-cyclical category."
+ }
+]

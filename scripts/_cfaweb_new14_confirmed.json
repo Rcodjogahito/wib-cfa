@@ -1,0 +1,86 @@
+[
+ {
+  "id": "2c893e5e-2b9b-47f8-8a02-d041c502d75a",
+  "verdict": "correct_answer_wrong",
+  "field": "correct_answer",
+  "new_value": "C"
+ },
+ {
+  "id": "3fd8177f-44ae-432c-9aaa-f061cb37a93f",
+  "verdict": "correct_answer_wrong",
+  "field": "correct_answer",
+  "new_value": "C"
+ },
+ {
+  "id": "e3c23a11-a0c4-462d-901c-66f409a1dc2b",
+  "verdict": "correct_answer_wrong",
+  "field": "correct_answer",
+  "new_value": "A"
+ },
+ {
+  "id": "78c1add2-2b36-48f0-8182-ceee06264925",
+  "verdict": "correct_answer_wrong",
+  "field": "correct_answer",
+  "new_value": "C"
+ },
+ {
+  "id": "9d8be10b-5ac7-41eb-9190-20f3ad9fad4c",
+  "verdict": "correct_answer_wrong",
+  "field": "correct_answer",
+  "new_value": "C"
+ },
+ {
+  "id": "597bf788-b665-41a3-8232-b31b30ac36df",
+  "verdict": "correct_answer_wrong",
+  "field": "correct_answer",
+  "new_value": "C"
+ },
+ {
+  "id": "b66efe4c-4d1a-4a02-b563-79a682e1d509",
+  "verdict": "correct_answer_wrong",
+  "field": "correct_answer",
+  "new_value": "B"
+ },
+ {
+  "id": "478b46df-f30f-4549-9c94-002f22eaf184",
+  "verdict": "correct_answer_wrong",
+  "field": "correct_answer",
+  "new_value": "A"
+ },
+ {
+  "id": "33c25142-d8fd-49da-ae3d-72460b603b07",
+  "verdict": "correct_answer_wrong",
+  "field": "correct_answer",
+  "new_value": "C"
+ },
+ {
+  "id": "ea7c82a5-a25f-4690-8067-21eb6314a31a",
+  "verdict": "correct_answer_wrong",
+  "field": "correct_answer",
+  "new_value": "C"
+ },
+ {
+  "id": "ae7aac0c-6dda-4e3a-a694-94e500375d7d",
+  "verdict": "correct_answer_wrong",
+  "field": "correct_answer",
+  "new_value": "B"
+ },
+ {
+  "id": "ddcef8e5-f803-41b5-8fe4-1edd14c574e2",
+  "verdict": "correct_answer_wrong",
+  "field": "correct_answer",
+  "new_value": "C"
+ },
+ {
+  "id": "1ba7b8e2-aa98-454f-af55-78b40d19fb03",
+  "verdict": "correct_answer_wrong",
+  "field": "correct_answer",
+  "new_value": "C"
+ },
+ {
+  "id": "ad4ed21e-2b2a-4781-95a3-7061e22f84e5",
+  "verdict": "correct_answer_wrong",
+  "field": "correct_answer",
+  "new_value": "B"
+ }
+]

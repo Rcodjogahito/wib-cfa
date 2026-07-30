@@ -1,0 +1,732 @@
+[
+ {
+  "cache_name": "AI,_Corporate,_Deriv,_Eco.json",
+  "page_idx": 0,
+  "page_type": "other",
+  "items": [],
+  "note": "Cover page: '2025 CFA Level I / CFA Institute CFA Program / Premium Practice Pack - Alternative Investment, Corporate Issuers, Derivatives & Economics / Level I Book 1'. No question/answer content."
+ },
+ {
+  "cache_name": "AI,_Corporate,_Deriv,_Eco.json",
+  "page_idx": 1,
+  "page_type": "other",
+  "items": [],
+  "note": "Blank page."
+ },
+ {
+  "cache_name": "AI,_Corporate,_Deriv,_Eco.json",
+  "page_idx": 2,
+  "page_type": "other",
+  "items": [],
+  "note": "Table of contents ('CFA L-1 Premium Practice Pack - 2025, Volume 1, Index'): Row: Alternative Investments = p.1; Row: Corporate Issuers = p.36; Row: Derivatives = p.71; Row: Economics = p.110. No question/answer content."
+ },
+ {
+  "cache_name": "AI,_Corporate,_Deriv,_Eco.json",
+  "page_idx": 36,
+  "page_type": "answers",
+  "items": [
+   {
+    "qnum": 61,
+    "correct": "C",
+    "expl": "A. Incorrect because a clawback provision refers to reclaiming performance fees, not performance losses themselves. If a general partner (GP) accrues an incentive fee on gains not yet fully realized and then subsequently gives back those gains, limited partner (LPs) may claw back prior incentive fee payments. A clawback provision reflects the right of LPs to reclaim part of the GP's performance fee.\nB. Incorrect because a clawback provision confers rights on the limited partners (LPs), not the general partner (GP). A clawback provision reflects the right of LPs to reclaim part of the GP's performance fee.\nC. Correct because if a general partner (GP) accrues an incentive fee on gains not yet fully realized and then subsequently gives back those gains, a limited partner (LP) may claw back prior incentive fee payments. A clawback provision reflects the right of LPs to reclaim part of the GP's performance fee."
+   },
+   {
+    "qnum": 62,
+    "correct": "A",
+    "expl": "A. Correct because, when market prices or quotes are used for valuation, funds may differ in which price or quote they use (bid price, ask price, average quote, or median quote). A more conservative and accurate approach is to use bid prices for long positions and ask prices for short positions because these are more realistic prices at which the positions could be closed. However, some managers use a simplifying approach whereby they take the average of the bid and the ask; this approach is not as accurate and could be misleading.\nB. Incorrect because, when market prices or quotes are used for valuation, funds may differ in which price or quote they use (bid price, ask price, average quote, or median quote). A more conservative and accurate approach is to use bid prices for long positions and ask prices for short positions because these are more realistic prices at which the positions could be closed. However, some managers use a simplifying approach whereby they take the average of the bid and the ask; this approach is not as accurate and could be misleading.\nC. Incorrect because, when market prices or quotes are used for valuation, funds may differ in which price or quote they use (bid price, ask price, average quote, or median quote). A more conservative and accurate approach is to use bid prices for long positions and ask prices for short positions because these are more realistic prices at which the positions could be closed. However, some managers use a simplifying approach whereby they take the average of the bid and the ask; this approach is not as accurate and could be misleading."
+   }
+  ]
+ },
+ {
+  "cache_name": "AI,_Corporate,_Deriv,_Eco.json",
+  "page_idx": 37,
+  "page_type": "answers",
+  "items": [
+   {
+    "qnum": 63,
+    "correct": "C",
+    "expl": "A. Incorrect because, private debt investments vary in risk and return, with senior private debt providing a steadier yield and moderate risk and mezzanine private debt carrying higher growth potential, equity upside, and higher risk.\nB. Incorrect because, unitranche debt is a blend of secured and unsecured debt. The unitranche loan will usually be structured between senior and subordinated debt in priority ranking. As mezzanine debt refers to private credit subordinated to senior secured debt but senior to equity in the borrower's capital structure, mezzanine debt has more risk than unitranched debt.\nC. Correct because, as a junior form of subordinated debt, mezzanine private debt offers higher growth potential, equity upside, and higher risk, with the comparatively highest returns. Infrastructure debt is senior and poses the lowest risk, as compared to unitranche debt and mezzanine debt."
+   },
+   {
+    "qnum": 64,
+    "correct": "B",
+    "expl": "A. Incorrect because it fails to adjust the incentive fee for the management fee:\n$60 million x 2% = $1.2 million management fee.\n($60 - $50) million x 20% = $2.0 million incentive fee.\nTotal fees = $3.2 million.\nInvestor return = ($60 - $50 - $3.2)/$50 million = 13.60%.\nB. Correct because:\n$60 million x 2% = $1.2 million management fee.\n($60 - $50 - $1.2) million x 20% = $1.76 million incentive fee.\nTotal fees = $2.96 million.\nInvestor return = ($60 - $50 - $2.96)/$50 million = 14.08%.\nC. Incorrect because it calculates the management fee based on beginning-of-year AUM as opposed to end-of-year AUM:\n$50 million x 2% = $1.0 million management fee.\n($60 - $50 - $1) million x 20% = $1.8 million incentive fee.\nTotal fees = $2.8 million.\nInvestor return = ($60 - $50 - $2.8)/$50 million = 14.40%."
+   }
+  ]
+ },
+ {
+  "cache_name": "AI,_Corporate,_Deriv,_Eco.json",
+  "page_idx": 38,
+  "page_type": "questions",
+  "items": [
+   {
+    "qnum": 1,
+    "stem": "If a corporation is financed with both debt and equity, which of the following must the corporation pay?",
+    "A": "Interest only",
+    "B": "Dividends only",
+    "C": "Both interest and dividends"
+   },
+   {
+    "qnum": 2,
+    "stem": "A company that produces goods to be marketed by other firms is best described as having a:",
+    "A": "value added reseller business model.",
+    "B": "licensing arrangement business model.",
+    "C": "contract manufacturer business model."
+   },
+   {
+    "qnum": 3,
+    "stem": "\"Economic\" profit is best described as the return to a firm's owners:",
+    "A": "in the form of retained earnings and distributions to the owners.",
+    "B": "after corporate taxes and taxes on distributions have been paid.",
+    "C": "in excess of what they could have earned elsewhere on different investments."
+   },
+   {
+    "qnum": 4,
+    "stem": "The purchase of which of the following shares most likely requires investors to be accredited?",
+    "A": "Public company shares only",
+    "B": "Private company shares only",
+    "C": "Both public company shares and private company shares"
+   },
+   {
+    "qnum": 5,
+    "stem": "Which best describes business growth that attracts more customers and merchants, contributing to further growth in the business?",
+    "A": "Crowdsourcing",
+    "B": "A one-sided network",
+    "C": "A multi-sided network"
+   },
+   {
+    "qnum": 6,
+    "stem": "Private companies most likely have:",
+    "A": "less share price transparency compared to public companies.",
+    "B": "similar share price transparency as public companies.",
+    "C": "greater share price transparency compared to public companies."
+   },
+   {
+    "qnum": 7,
+    "stem": "The business model of a knowledge aggregation company that allows its users to contribute directly to online content is best referred to as a:",
+    "note": "Options for this question are printed on the next page (page_idx 39)."
+   }
+  ],
+  "note": "Page header: 'Corporate Issuers: Practice Pack- Questions'. Question 7's stem ends at the bottom of this page; its A/B/C options appear on the following page."
+ },
+ {
+  "cache_name": "AI,_Corporate,_Deriv,_Eco.json",
+  "page_idx": 39,
+  "page_type": "questions",
+  "items": [
+   {
+    "qnum": 7,
+    "stem": "(continued from previous page: 'The business model of a knowledge aggregation company that allows its users to contribute directly to online content is best referred to as a:')",
+    "A": "platform business model.",
+    "B": "marketplace business model.",
+    "C": "crowdsourcing business model."
+   }
+  ],
+  "note": "This page contains only the A/B/C options continuing question 7, whose stem is on the previous page (page_idx 38). Remainder of page is blank."
+ },
+ {
+  "cache_name": "AI,_Corporate,_Deriv,_Eco.json",
+  "page_idx": 40,
+  "page_type": "questions",
+  "items": [
+   {
+    "qnum": 8,
+    "stem": "Which of the following would most likely be included on a company's \"financial\" balance sheet?",
+    "A": "Short-term debt obligations",
+    "B": "Relationships with customers",
+    "C": "Relationships with key suppliers"
+   },
+   {
+    "qnum": 9,
+    "stem": "Which of the following is a recommended procedure for complying with the Standard relating to preservation of confidentiality?\nRow: Procedure 1 = Disclose to authorized fellow employees only information that will improve service to the client\nRow: Procedure 2 = Encourage the adoption of standard confidentiality procedures utilized by leading firms in the industry",
+    "A": "tiered pricing.",
+    "B": "dynamic pricing.",
+    "C": "value-based pricing.",
+    "note": "The stem/table content (Procedure 1 / Procedure 2 re: confidentiality) does not match the answer options (pricing models) as printed on the page; transcribed verbatim as it appears."
+   },
+   {
+    "qnum": 10,
+    "stem": "Which of the following is a pull on a company's liquidity?",
+    "A": "Obsolete inventory",
+    "B": "Reduced credit limits",
+    "C": "Uncollected receivables"
+   },
+   {
+    "qnum": 11,
+    "stem": "Which of the following pricing models is most likely used when a firm willingly sacrifices margins to build market share?",
+    "A": "Dynamic pricing",
+    "B": "Freemium pricing",
+    "C": "Penetration pricing"
+   },
+   {
+    "qnum": 12,
+    "stem": "The sequence of processes involved in the creation of a product, both within and external to a firm, is best referred to as a:",
+    "A": "value chain.",
+    "B": "supply chain.",
+    "C": "business model."
+   },
+   {
+    "qnum": 13,
+    "stem": "A company manufacturing and selling a product using someone else's brand name in return for a royalty most likely operates:",
+    "A": "under a franchise model.",
+    "B": "as a contract manufacturer.",
+    "C": "under a licensing arrangement."
+   }
+  ]
+ },
+ {
+  "cache_name": "AI,_Corporate,_Deriv,_Eco.json",
+  "page_idx": 41,
+  "page_type": "questions",
+  "items": [
+   {
+    "qnum": 14,
+    "stem": "When analyzing a company, analysts should:",
+    "A": "ignore the company's business model.",
+    "B": "develop their own understanding of the company's business model.",
+    "C": "rely on management's description of the company's business model."
+   },
+   {
+    "qnum": 15,
+    "stem": "Which of the following is best categorized as a drag on liquidity?",
+    "A": "Insufficient credit lines",
+    "B": "Uncollected receivables",
+    "C": "Early payments to vendors"
+   },
+   {
+    "qnum": 16,
+    "stem": "Which of the following combination of factors most likely increases a company's ability to support debt in its capital structure?",
+    "A": "High revenue, low cash flow volatility, and a low level of fungible assets",
+    "B": "High revenue, low operating leverage, and a high level of fungible assets",
+    "C": "Low cash flow volatility, low operating leverage, and a low level of fungible assets"
+   },
+   {
+    "qnum": 17,
+    "stem": "According to the Modigliani-Miller propositions, if a company's debt-to-equity ratio increases, which of the following costs is most likely to exhibit the largest increase?",
+    "A": "WACC",
+    "B": "Cost of debt",
+    "C": "Cost of equity"
+   },
+   {
+    "qnum": 18,
+    "stem": "At which stage in its life cycle would a typical company most likely have more debt than equity in its capital structure?",
+    "A": "Start-up stage",
+    "B": "Growth stage",
+    "C": "Mature stage"
+   },
+   {
+    "qnum": 19,
+    "stem": "With respect to a publicly listed company, a conflict of interest due to information asymmetry is most likely to occur between shareholders and:",
+    "A": "creditors.",
+    "B": "managers.",
+    "C": "customers."
+   },
+   {
+    "qnum": 20,
+    "stem": "Compared to going concern projects, expansion projects most likely involve:",
+    "A": "greater uncertainty only.",
+    "B": "greater amounts of capital only.",
+    "C": "both greater uncertainty and greater amounts of capital."
+   }
+  ]
+ },
+ {
+  "cache_name": "AI,_Corporate,_Deriv,_Eco.json",
+  "page_idx": 42,
+  "page_type": "questions",
+  "items": [
+   {
+    "qnum": 21,
+    "stem": "From the perspective of a corporate issuer, which of the following is a benefit of issuing debt rather than equity as a source of capital? Debt is most likely:",
+    "A": "cheaper.",
+    "B": "less risky.",
+    "C": "more permanent."
+   },
+   {
+    "qnum": 22,
+    "stem": "An improvement in corporate governance structure most likely results in:",
+    "A": "lower cost of debt borrowing.",
+    "B": "less control by management.",
+    "C": "reduced operational efficiency."
+   },
+   {
+    "qnum": 23,
+    "stem": "An analyst gathers the following information about a company's capital investment:\nRow: Initial cash outlay = $90 million\nRow: Annual before-tax cash flows (year-end) for Year 1 through Year 6 = $50 million\nRow: Marginal tax rate = 15%\nRow: Required rate of return = 12%\nThe net present value of the investment is closest to:",
+    "A": "$85 million.",
+    "B": "$116 million.",
+    "C": "$175 million."
+   },
+   {
+    "qnum": 24,
+    "stem": "Which of the following is most likely a feature of sole proprietorships?",
+    "A": "Existence of a legal identity",
+    "B": "Operational simplicity and flexibility",
+    "C": "Taxation of business profits as corporate income"
+   },
+   {
+    "qnum": 25,
+    "stem": "The source of capital that most likely benefits from a tax shield is:",
+    "A": "debt.",
+    "B": "equity.",
+    "C": "preferred equity."
+   },
+   {
+    "qnum": 26,
+    "stem": "Which of the following mature companies is most likely to use the greatest amount of leverage in its capital structure?",
+    "A": "Mining company",
+    "B": "Software company",
+    "C": "Shipping company"
+   }
+  ]
+ },
+ {
+  "cache_name": "AI,_Corporate,_Deriv,_Eco.json",
+  "page_idx": 43,
+  "page_type": "questions",
+  "items": [
+   {
+    "qnum": 27,
+    "stem": "A company should exercise the abandonment option on an investment if the present value of the cash flows from continuing the investment is:",
+    "A": "lower than the cash flow from abandoning the investment.",
+    "B": "the same as the cash flow from abandoning the investment.",
+    "C": "greater than the cash flow from abandoning the investment."
+   },
+   {
+    "qnum": 28,
+    "stem": "Consider the following information about a company:\nRow: Market value of debt outstanding = £15,000\nRow: Market value of company = £40,000\nRow: Cost of debt = 4.0%\nRow: Unlevered WACC = 9.0%\nRow: Tax rate = 25%\nBased on the Modigliani-Miller propositions, the company's cost of equity is closest to:",
+    "A": "10.4%.",
+    "B": "11.3%.",
+    "C": "12.0%."
+   },
+   {
+    "qnum": 29,
+    "stem": "All else being equal, a company most likely has a reduced debt capacity when its:",
+    "A": "current ratio increases.",
+    "B": "leverage ratio decreases.",
+    "C": "interest coverage ratio decreases."
+   },
+   {
+    "qnum": 30,
+    "stem": "According to the Modigliani-Miller Proposition I without taxes, when a firm increases the proportion of debt in its capital structure, the firm value:",
+    "A": "decreases.",
+    "B": "remains unchanged.",
+    "C": "increases."
+   },
+   {
+    "qnum": 31,
+    "stem": "With respect to liquidity management, which of the following activities most likely provides access to a primary source of liquidity?",
+    "A": "Liquidating obsolete assets",
+    "B": "Creating an effective cash management system",
+    "C": "Negotiating new debt contracts that delay principal repayment"
+   },
+   {
+    "qnum": 32,
+    "stem": "Which of the following company stakeholders is most likely exposed to the greatest information asymmetry when compared to the company's management?",
+    "A": "A bank lender",
+    "B": "A public debtholder",
+    "C": "A member of the board"
+   }
+  ]
+ },
+ {
+  "cache_name": "AI,_Corporate,_Deriv,_Eco.json",
+  "page_idx": 44,
+  "page_type": "questions",
+  "items": [
+   {
+    "qnum": 33,
+    "stem": "According to Modigliani and Miller's Proposition II without taxes:",
+    "A": "the cost of bankruptcy is high.",
+    "B": "a company's cost of equity is a linear function of its debt-to-assets ratio.",
+    "C": "substituting equity with lower-cost debt capital results in an unchanged overall WACC."
+   },
+   {
+    "qnum": 34,
+    "stem": "According to the Modigliani and Miller Proposition I with taxes, the value of a levered company is greater than the value of the unlevered company by an amount equal to the:",
+    "A": "value of the debt.",
+    "B": "after-tax interest paid.",
+    "C": "tax rate multiplied by the value of the debt."
+   },
+   {
+    "qnum": 35,
+    "stem": "In a limited partnership, business operations are the responsibility of:",
+    "A": "the general partner only.",
+    "B": "the limited partners only.",
+    "C": "both the general partner and the limited partners."
+   },
+   {
+    "qnum": 36,
+    "stem": "Which of the following is considered a capital allocation pitfall? Basing investment decisions on:",
+    "A": "opportunity costs.",
+    "B": "after-tax cash flows.",
+    "C": "short-run accounting numbers."
+   },
+   {
+    "qnum": 37,
+    "stem": "Which of the following is defined as the sensitivity of a firm's operating profit to a change in its revenues?",
+    "A": "Total leverage",
+    "B": "Financial leverage",
+    "C": "Operating leverage"
+   },
+   {
+    "qnum": 38,
+    "stem": "Proxy voting is best described as permitting:",
+    "A": "different voting rights for multiple share classes.",
+    "B": "shareholders to cast all of their votes for one board nominee.",
+    "C": "shareholders to vote their shares when absent from meetings."
+   },
+   {
+    "qnum": 39,
+    "stem": "Owners have limited liability in a:",
+    "A": "corporation.",
+    "B": "sole proprietorship.",
+    "C": "general partnership."
+   }
+  ]
+ },
+ {
+  "cache_name": "AI,_Corporate,_Deriv,_Eco.json",
+  "page_idx": 45,
+  "page_type": "questions",
+  "items": [
+   {
+    "qnum": 40,
+    "stem": "Which of the following statements about sources of liquidity is most accurate?",
+    "A": "Filing for bankruptcy is considered a secondary source of liquidity.",
+    "B": "Secondary sources of liquidity have a lower cost than primary sources of liquidity.",
+    "C": "Using a primary source of liquidity impacts the financial and operating positions of a company."
+   },
+   {
+    "qnum": 41,
+    "stem": "Subsequent to making a capital investment, a company reacts to poor financial results from the project by abandoning it. This action alone best exemplifies the exercise of a:",
+    "A": "sizing option.",
+    "B": "timing option.",
+    "C": "flexibility option."
+   },
+   {
+    "qnum": 42,
+    "stem": "A measure of how effectively capital is converted into after-tax operating profits is the:",
+    "A": "hurdle rate.",
+    "B": "cost of capital.",
+    "C": "return on invested capital."
+   },
+   {
+    "qnum": 43,
+    "stem": "Which of the following statements about corporations is most accurate?",
+    "A": "Upside return potential is unlimited for both equity holders and debtholders",
+    "B": "Equity is riskier than debt from the perspective of both investors and issuers",
+    "C": "Losses for both equity holders and debtholders are limited to their initial investment"
+   },
+   {
+    "qnum": 44,
+    "stem": "With respect to ESG implementation, which of the following is most likely a social factor?",
+    "A": "Board composition",
+    "B": "Pollution prevention",
+    "C": "Management of human capital"
+   },
+   {
+    "qnum": 45,
+    "stem": "Double taxation of profits is most likely a concern for owners in:",
+    "A": "corporations.",
+    "B": "limited partnerships.",
+    "C": "general partnerships.",
+    "note": "Option C's 'C.' label is not visible/printed before 'general partnerships' on the scanned page, but it is the third option in sequence."
+   },
+   {
+    "qnum": 46,
+    "stem": "Which of the following is an example of a secondary source of liquidity for a company?",
+    "A": "Short-term funds",
+    "B": "Liquidating assets",
+    "C": "Effective cash management"
+   }
+  ]
+ },
+ {
+  "cache_name": "AI,_Corporate,_Deriv,_Eco.json",
+  "page_idx": 46,
+  "page_type": "questions",
+  "items": [
+   {
+    "qnum": 47,
+    "stem": "Which of the following committees of a board of directors oversees the development of the company's conflict of interest policy?",
+    "A": "Risk committee",
+    "B": "Governance committee",
+    "C": "Remuneration committee"
+   },
+   {
+    "qnum": 48,
+    "stem": "A company with a required rate of return of 12% is considering a capital project with the following cash flows (in millions):\nRow: Initial Outlay = -£150\nRow: Year 1 = £8\nRow: Year 2 = £175\nThe expected IRR for this project is most likely:",
+    "A": "less than 12%.",
+    "B": "equal to 12%.",
+    "C": "greater than 12%."
+   },
+   {
+    "qnum": 49,
+    "stem": "All else being equal, if interest on debt is tax deductible, an increase in the company's marginal tax rate will:",
+    "A": "decrease the company's WACC.",
+    "B": "not affect the company's WACC.",
+    "C": "increase the company's WACC."
+   },
+   {
+    "qnum": 50,
+    "stem": "A company increases its debt from 20% to 60% of its capital structure. Based on the Modigliani and Miller proposition (without taxes) regarding capital structure, the WACC of the company:",
+    "A": "decreases.",
+    "B": "remains the same.",
+    "C": "increases."
+   },
+   {
+    "qnum": 51,
+    "stem": "The NPV of a new project is expected to be -$0.20 million. An incremental investment of $0.40 million would give management the flexibility to switch to a lower cost input in the future. If this option has an estimated value of $0.80 million, the value of the project including the option is:",
+    "A": "$0.20 million.",
+    "B": "$0.40 million.",
+    "C": "$1.00 million."
+   },
+   {
+    "qnum": 52,
+    "stem": "According to the pecking order theory, company managers most likely prefer to:",
+    "A": "issue debt as the last resort.",
+    "B": "raise equity first to preserve cash-flow.",
+    "C": "rely on internal financing over new equity."
+   }
+  ]
+ },
+ {
+  "cache_name": "AI,_Corporate,_Deriv,_Eco.json",
+  "page_idx": 47,
+  "page_type": "questions",
+  "items": [
+   {
+    "qnum": 53,
+    "stem": "Which of the following is most accurate?",
+    "A": "Risk appetites are similar among private lenders",
+    "B": "Staggered boards provide continuous implementation of strategy and oversight",
+    "C": "A company's CEO is responsible for implementing the company's strategy under the oversight of the company's shareholders"
+   },
+   {
+    "qnum": 54,
+    "stem": "The potential for conflict between debtholders and shareholders is:",
+    "A": "lower for long-term debt than for short-term debt.",
+    "B": "the same for long-term debt and short-term debt.",
+    "C": "higher for long-term debt than for short-term debt."
+   },
+   {
+    "qnum": 55,
+    "stem": "A corporation's stakeholders most likely include:",
+    "A": "shareholders only.",
+    "B": "controlling shareholders only.",
+    "C": "all shareholders and all employees."
+   },
+   {
+    "qnum": 56,
+    "stem": "In a corporation, which of the following stakeholder groups is the principal in a principal-agent relationship?",
+    "A": "Shareholders",
+    "B": "Board of directors",
+    "C": "Senior management"
+   },
+   {
+    "qnum": 57,
+    "stem": "Joshua Hu, a research analyst, is initiating coverage on several companies in the ocean freight shipping industry. OldShips is a mature company with high fixed costs and a high capital expenditure to sales ratio because it owns and operates its own fleet of ships. CleanYards is a technologically advanced, sustainable shipyard with a focus on specialized repairs and ship construction. Hu has compiled the following data for the two companies:\nRow: Degree of Financial Leverage (DFL) - OldShips = 2.0, CleanYards = 2.0\nRow: Degree of Operating Leverage (DOL) - OldShips = 1.0, CleanYards = 2.0\nRow: Asset turnover ratio - OldShips = 0.84x, CleanYards = 0.42x\nRow: DSO - OldShips = 27, CleanYards = 98\nRow: DOH - OldShips = 12, CleanYards = 46\nRow: DPO - OldShips = 55, CleanYards = 40\nNewShips, a third company, is a web-based shipping technology platform that connects ship operators such as OldShips with customers in a wide variety of industries who need ocean freight shipping. NewShips' customers place orders online and pay for freight to be placed on a container to any destination in the world. NewShips' partners, like OldShips, provide vessels on both long- and short-term charters.\nIn 2X19, NewShips' platform brokered orders for 900,000 twenty-foot equivalent (TEU) containers in aggregate, with an average gross freight rate of USD3,848 per TEU. On [continues on next page, page_idx 48]",
+    "note": "This vignette (case) continues onto the next page (page_idx 48), where the graded question and answer options appear."
+   }
+  ]
+ },
+ {
+  "cache_name": "AI,_Corporate,_Deriv,_Eco.json",
+  "page_idx": 48,
+  "page_type": "questions",
+  "items": [
+   {
+    "qnum": 57,
+    "stem": "(vignette continued from previous page, ending) '...average, NewShips' commission, which it receives as a broker from the customer, was 6% of the freight rate.' Question: An analyst gathers the following information about a company:\nRow: Bonds - Market Value (Millions) = €60, Before-tax Cost of Capital = 6%\nRow: Preferred stock - Market Value (Millions) = €20, Before-tax Cost of Capital = 8%\nRow: Common stock - Market Value (Millions) = €120, Before-tax Cost of Capital = 15%\nIf the company's marginal tax rate is 40%, its weighted average cost of capital is closest to:",
+    "A": "9.7%.",
+    "B": "10.9%.",
+    "C": "11.6%.",
+    "note": "The graded question (WACC calculation) appears unrelated to the OldShips/CleanYards/NewShips shipping vignette begun on the previous page; transcribed verbatim as printed. The question number '57' is inferred from sequence since no explicit 'Question 57 of 67' label appears on this page (only the word 'Question')."
+   },
+   {
+    "qnum": 58,
+    "stem": "Covenants are most likely to exist between a company and its:",
+    "A": "creditors.",
+    "B": "management.",
+    "C": "board of directors."
+   },
+   {
+    "qnum": 59,
+    "stem": "If a company's debt-to-equity ratio is 0.5, the weight of equity applied in estimating the company's WACC is closest to:",
+    "A": "0.33.",
+    "B": "0.50.",
+    "C": "0.67."
+   },
+   {
+    "qnum": 60,
+    "stem": "Compared to those of public companies, share issuances of private companies most likely:",
+    "A": "raise larger amounts of capital.",
+    "B": "include a larger number of investors.",
+    "C": "include investors with longer holding periods."
+   },
+   {
+    "qnum": 61,
+    "stem": "Tiered pricing is best described as:",
+    "A": "charging different prices at different times.",
+    "B": "charging different prices to different buyers.",
+    "C": "combining a low price on a piece of equipment with high-margin pricing on repeat-purchase consumables."
+   },
+   {
+    "qnum": 62,
+    "stem": "A company is deciding whether to invest in one of two mutually exclusive projects with positive NPVs. If Project 1 has a higher NPV but a lower IRR than Project 2, the company should:",
+    "A": "prefer Project 1.",
+    "B": "prefer Project 2.",
+    "C": "be indifferent between Project 1 and Project 2."
+   }
+  ]
+ },
+ {
+  "cache_name": "AI,_Corporate,_Deriv,_Eco.json",
+  "page_idx": 49,
+  "page_type": "questions",
+  "items": [
+   {
+    "qnum": 63,
+    "stem": "Compared to private corporations, which of the following is a typical characteristic of public corporations?",
+    "A": "A government is a shareholder",
+    "B": "Shares are listed on a stock exchange",
+    "C": "Transfer of ownership between investors is more difficult"
+   },
+   {
+    "qnum": 64,
+    "stem": "When choosing between mutually exclusive projects, an analyst should:",
+    "A": "accept the project with the highest IRR.",
+    "B": "use the opportunity cost of funds as the discount rate.",
+    "C": "accept the projects for which the IRR is greater than the opportunity cost of funds."
+   },
+   {
+    "qnum": 65,
+    "stem": "An electric vehicle manufacturer invests in a new technology to meet new safety standards. This project is best classified as a(n):",
+    "A": "expansion project.",
+    "B": "compliance project.",
+    "C": "going concern project."
+   },
+   {
+    "qnum": 66,
+    "stem": "The flow of finished goods from manufacturer to wholesaler, retailer, and finally to the end customer best describes a(n):",
+    "A": "direct sales strategy.",
+    "B": "omnichannel strategy.",
+    "C": "traditional channel strategy."
+   },
+   {
+    "qnum": 67,
+    "stem": "A company is evaluating the following mutually exclusive capital projects:\nRow: NPV - Project 1 = $180,000, Project 2 = $100,000\nRow: IRR - Project 1 = 10%, Project 2 = 15%\nIf the hurdle rate is 8%, the company should invest in:",
+    "A": "Project 1 only.",
+    "B": "Project 2 only.",
+    "C": "both Project 1 and Project 2."
+   }
+  ]
+ },
+ {
+  "cache_name": "AI,_Corporate,_Deriv,_Eco.json",
+  "page_idx": 50,
+  "page_type": "answers",
+  "items": [
+   {
+    "qnum": 1,
+    "correct": "A",
+    "expl": "A. Correct because debt must be repaid on a pre-specified date in the future with interest.\nB. Incorrect because equity investors (shareholders) have a right to receive any distributions of profits, known as dividends. However, while shareholder have the right to receive dividends, the corporation is not required to pay dividends.\nC. Incorrect because equity investors (shareholders) have a right to receive any distributions of profits, known as dividends. However, while shareholder have the right to receive dividends, they corporation is not required to pay dividends."
+   },
+   {
+    "qnum": 2,
+    "correct": "C",
+    "expl": "A. Incorrect because value added resellers not only distribute a product but also handle more complex aspects of product installation, customization or support.\nB. Incorrect because licensing arrangements are business models in which a company will produce a product using someone else's brand name in return for a royalty.\nC. Correct because contract manufacturers produce goods to be marketed by others."
+   },
+   {
+    "qnum": 3,
+    "correct": "C",
+    "expl": "A. Incorrect because an issuer's income statement distinguishes between its financial income or net income once fixed obligations have been met and its 'economic' profit, or return to a firm's owners in excess of what they could have earned elsewhere on different investments, known as their required rate of return on equity.\nB. Incorrect because an issuer's income statement distinguishes between its financial income or net income once fixed obligations have been met and its 'economic' profit, or return to a firm's owners in excess of what they could have earned elsewhere on different investments, known as their required rate of return on equity.\nC. Correct because an issuer's income statement distinguishes between its financial income or net income once fixed obligations have been met and its 'economic' profit, or return to a firm's owners in excess of what they could have earned elsewhere on different investments, known as their required rate of return on equity"
+   },
+   {
+    "qnum": 4,
+    "correct": "B",
+    "expl": "A. Incorrect because private company investors may be limited to qualified or so-called accredited investors or sophisticated investors, or those deemed to be able and willing by regulatory authorities to assume the greater risk of a non-public offering.\nB. Correct because private company investors may be limited to qualified or so-called accredited investors or sophisticated investors, or those deemed to be able and willing by regulatory authorities to assume the greater risk of a non-public offering.\nC. Incorrect because private company investors may be limited to qualified or so-called accredited investors or sophisticated investors, or those deemed to be able and willing by regulatory authorities to assume the greater risk of a non-public offering."
+   }
+  ],
+  "note": "Page header: 'Corporate Issuers: Practice Pack- Answers'."
+ },
+ {
+  "cache_name": "AI,_Corporate,_Deriv,_Eco.json",
+  "page_idx": 51,
+  "page_type": "answers",
+  "items": [
+   {
+    "qnum": 5,
+    "correct": "C",
+    "expl": "A. Incorrect because crowdsourcing is where users contribute directly to a product or service. These businesses facilitate \"user communities\" that enable voluntary collaboration between users of a product with a small amount of moderation and oversight by the company.\nB. Incorrect because a one-sided network is one where it is only one type of user that is valuable to other users.\nC. Correct because as multi-sided (two-sided) networks grow - more users join the service, which attracts more merchants, which in turn attracts more users - these businesses can grow exponentially."
+   },
+   {
+    "qnum": 6,
+    "correct": "A",
+    "expl": "A. Correct because in contrast to public companies the shares of a private company are not listed (do not trade on an exchange), so no visible company valuation or share price transparency exists.\nB. Incorrect because private companies typically have less share price transparency than public companies.\nC. Incorrect because private companies typically have less share price transparency than public companies."
+   },
+   {
+    "qnum": 7,
+    "correct": "C",
+    "expl": "A. Incorrect because a platform business is based on a network and can be distinguished from a traditional or 'linear' business that adds value to something that is sold to customers in a linear supply chain. Platform business models are not developed specifically to allow users to contribute directly to product, service, or online content.\nB. Incorrect because marketplace businesses create networks of buyers and sellers without taking ownership of the goods during the process. Examples include: Alibaba, eBay, Mercado Libre, and Etsy. Marketplace business models are not developed specifically to allow users to contribute directly to product, service, or online content.\nC. Correct because crowdsourcing business models enable users to contribute directly to a product, service, or online content. Examples include: contests and competitions; online gaming; product development, such as open source software; knowledge aggregation, such as Wikipedia and Waze/Google Maps; fan or hobbyist clubs; and networks of tradespersons or professionals."
+   },
+   {
+    "qnum": 8,
+    "correct": "A",
+    "expl": "A. Correct because short-term debt is included in a company's financial balance sheet.\nB. Incorrect because contracts with customers and other intangible assets are excluded from a company's financial balance sheet but are included on the issuer's broader \"economic\" balance sheet.\nC. [explanation continues on next page, page_idx 52]",
+    "note": "Option C's explanation for Answer 8 is cut off at the bottom of this page and continues on page_idx 52."
+   }
+  ]
+ },
+ {
+  "cache_name": "AI,_Corporate,_Deriv,_Eco.json",
+  "page_idx": 52,
+  "page_type": "answers",
+  "items": [
+   {
+    "qnum": 8,
+    "correct": "A",
+    "expl": "C. Incorrect because agreements with suppliers and other intangible assets are excluded from a company's financial balance sheet but are included on the issuer's broader \"economic\" balance sheet.",
+    "note": "This is the continuation of option C's explanation from the previous page (page_idx 51); options A and B for this question are on that previous page."
+   },
+   {
+    "qnum": 9,
+    "correct": "A",
+    "expl": "A. Correct because tiered pricing is charging different prices to different buyers, often based on volume purchased but also based on product features (e.g., base versus premium trims of vehicles).\nB. Incorrect because dynamic pricing is charging different prices at different times and for different types of customers depending on such variables as available supply levels and demand.\nC. Incorrect because value based pricing is setting prices based on the value received by the customer, which often involves estimating opportunity cost."
+   },
+   {
+    "qnum": 10,
+    "correct": "B",
+    "expl": "A. Incorrect because major drags on receipts involve pressures from credit management and deterioration in other assets and include obsolete inventory. If inventory stands unused for long periods, it might be an indication that it is no longer usable. So, obsolete inventory is a drag (not a pull) on a company's liquidity.\nB. Correct because a pull on liquidity is when disbursements (outflows) are paid too quickly by the company or trade credit availability is limited, requiring companies to expend funds before they receive funds from sales that could cover the liability. Also, major pulls on payments include reduced credit limits. If a company has a history of making late payments, suppliers might cut the amount of credit they will allow to be outstanding at any time. So, reduced credit limits are a pull on a company's liquidity.\nC. Incorrect because major drags on receipts involve pressures from credit management and deterioration in other assets and include uncollected receivables. The longer these are outstanding, the greater the risk that they will not be collected at all. They are indicated by the large number of days of receivables and high levels of bad debt expenses. So, uncollected receivables are a drag (not a pull) on a company's liquidity."
+   },
+   {
+    "qnum": 11,
+    "correct": "C",
+    "expl": "A. Incorrect because penetration pricing, rather than dynamic pricing, is used. Dynamic pricing charges different prices at different times. Specific examples include off-peak pricing (e.g., for hotel rooms, advertising, airline tickets, electricity, or matinee movie tickets), 'surge' pricing, and 'congestion' pricing (e.g., for ride sharing and toll roads).\nB. Incorrect because penetration pricing, rather than freemium pricing, is used. Freemium pricing allows customers a certain level of usage or functionality at no charge - for example, with news content, a software application, or a game. This model is widely used in digital content and services, such as periodicals, video games, software/apps, and cloud storage, where the provider stands to benefit from wide adoption (often via network effects).\nC. Correct because penetration pricing is an example of discount pricing and is used when a firm willingly sacrifices margins in order to build scale and market share."
+   }
+  ]
+ },
+ {
+  "cache_name": "AI,_Corporate,_Deriv,_Eco.json",
+  "page_idx": 53,
+  "page_type": "answers",
+  "items": [
+   {
+    "qnum": 12,
+    "correct": "B",
+    "expl": "A. Incorrect because a firm's value chain is the systems and processes within a firm that create value for its customers. Note that a firm's value chain is different from a supply chain, which refers to the sequence of processes involved in the creation of a product, both within and external to a firm.\nB. Correct because a supply chain refers to the sequence of processes involved in the creation of a product, both within and external to a firm. A supply chain includes all the steps involved in producing and delivering a physical product to the end customer, regardless of whether those steps are performed by a single firm.\nC. Incorrect because there is no precise definition, but a business model essentially describes how a business is organized to deliver value to its customers. A business model makes it clear what the business does, how it operates, and how it generates revenue and profits, as well as how it differs in these respects from its competitors.\nA business model should have a value proposition and a value chain. So, business model is a broader concept, which includes value chain but also other business organization elements."
+   },
+   {
+    "qnum": 13,
+    "correct": "C",
+    "expl": "A. Incorrect because under a franchise model distributers or retailers have a tightly defined and often exclusive relationship with the parent company.\nB. Incorrect because private label or contract manufacturers produce goods to be marketed by others.\nC. Correct because a company will produce a product using someone else's brand name in return for a royalty under a licensing arrangement.",
+    "note": "The page restates the question stem with option labels 'D./E./F.' instead of 'A./B./C.' (apparent scan/formatting anomaly reusing list numbering from elsewhere in the document); the solution paragraph below correctly uses A./B./C. Transcribed verbatim."
+   },
+   {
+    "qnum": 14,
+    "correct": "B",
+    "expl": "A. Incorrect because a clearly described business model helps the analyst understand a business: how it operates, its strategy, target customers, key partners, prospects, risks, and financial profile.\nB. Correct because a clearly described business model helps the analyst understand a business: how it operates, its strategy, target customers, key partners, prospects, risks, and financial profile. Rather than rely on management's description of its business model, analysts should develop their own understanding.\nC. Incorrect because rather than rely on management's description of its business model, analysts should develop their own understanding."
+   }
+  ]
+ }
+]

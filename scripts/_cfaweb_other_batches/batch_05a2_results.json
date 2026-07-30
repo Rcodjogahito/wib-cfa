@@ -1,0 +1,72 @@
+[
+ {
+  "cache_name": "AI,_Corporate,_Deriv,_Eco.json",
+  "page_idx": 142,
+  "page_type": "answers",
+  "items": [],
+  "note": "Page shows only the tail end of a solution explanation in progress: choice A (marked 'Incorrect') discussing the Cournot assumption, cut off mid-sentence at the bottom ('...no need to guess what the other') and continuing onto the next page. No question-number header ('Answer X of 76') or 'Correct' designation appears anywhere on this page, so no complete {qnum, correct, expl} item could be transcribed from it. Based on the sequence of headers on the following pages (Answer 27, 28...), this unlabeled question is very likely 'Answer 26 of 76', but that header itself is not visible in this batch, so it is not asserted as fact."
+ },
+ {
+  "cache_name": "AI,_Corporate,_Deriv,_Eco.json",
+  "page_idx": 143,
+  "page_type": "answers",
+  "items": [
+   {
+    "qnum": 27,
+    "correct": "A",
+    "expl": "Correct because for a central bank there is one overarching objective that most seem to acknowledge explicitly, and that is the objective of maintaining price stability."
+   },
+   {
+    "qnum": 28,
+    "correct": "B",
+    "expl": "Correct because in the long run, if a firm cannot earn at least a zero economic profit, it will not operate because it is not covering the opportunity cost of all of its factors of production, labor, and capital. In the long run, if total revenues equal or exceed total costs the firm should stay in the market. At a selling price of $37.50 each unit will cover $12.50 of variable cost, and contribute $25 (contribution margin) towards fixed costs. $900,000 of fixed costs divided by this $25 equals 36,000 units. At 36,000 units, all variable and fixed costs are covered by total revenues."
+   }
+  ],
+  "note": "The top of the page completes the unlabeled question carried over from the previous page (page_idx 142): '...firm will do to retaliate.' finishes choice A, followed by choice B marked 'Correct' and choice C marked 'Incorrect', both restating the same Cournot-assumption explanation verbatim. That question's number header is not visible anywhere in this batch, so it is omitted from items rather than guessed. Answer 27 of 76 and Answer 28 of 76 are fully self-contained on this page and transcribed above."
+ },
+ {
+  "cache_name": "AI,_Corporate,_Deriv,_Eco.json",
+  "page_idx": 144,
+  "page_type": "answers",
+  "items": [
+   {
+    "qnum": 29,
+    "correct": "B",
+    "expl": "Correct because in the case of an export subsidy, the exporter has the incentive to shift sales from the domestic to the export market because it receives the international price plus the per-unit subsidy for each unit of the good exported. This scenario raises the price in the domestic market by the amount of the subsidy in the small country case (price before subsidy plus subsidy)."
+   },
+   {
+    "qnum": 30,
+    "correct": "C",
+    "expl": "Correct because in perfect competition, the firm's supply schedule is represented by the marginal cost schedule. In monopolistic competition, there is no well-defined supply function. The information used to determine the appropriate level of output is based on the intersection of MC and MR. However, the price that will be charged is based on the market demand schedule. The firm's supply curve should measure the quantity the firm is willing to supply at various prices. That information is not represented by either marginal cost or average cost."
+   },
+   {
+    "qnum": 31,
+    "correct": "C",
+    "expl": "Correct because in the slowdown phase business continue hiring but at a slower rate. The unemployment rate continues to fall but at a decreasing rate."
+   }
+  ]
+ },
+ {
+  "cache_name": "AI,_Corporate,_Deriv,_Eco.json",
+  "page_idx": 145,
+  "page_type": "answers",
+  "items": [
+   {
+    "qnum": 32,
+    "correct": "B",
+    "expl": "Correct because long-term yields express market expectations about the direction of short-term interest rates, and rates ultimately follow the economic cycle up and down, a wider spread, by anticipating short rate increases, also anticipates an economic upswing. Conversely, a narrower spread, by anticipating short rate decreases, also anticipates an economic downturn."
+   },
+   {
+    "qnum": 33,
+    "correct": "A",
+    "expl": "Correct because if the central bank wishes to increase the supply of money, it might buy bonds (usually government bonds) from the banks, with an agreement to sell them back at some time in the future. This transaction is known as a repurchase agreement. The lender in a repurchase agreement is the party that initially buys the bonds and agrees to sell them back at a later point in time. By purchasing bonds from banks, the central bank is increasing the money supply, or increasing liquidity, which is expansionary."
+   },
+   {
+    "qnum": 34,
+    "correct": "A",
+    "expl": "Correct because in case of dollarization the country uses the currency of another nation as its medium of exchange and unit of account."
+   }
+  ],
+  "note": "Choice C's explanation for Answer 34 of 76 is cut off at the bottom of the page ('...a monetary regime based on an explicit legislative commitment to exchange domestic') and continues onto a page not included in this batch; not transcribed since it is not the correct choice and is incomplete."
+ }
+]
