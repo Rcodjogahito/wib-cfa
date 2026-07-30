@@ -1,9 +1,27 @@
 # ETAT ACTUEL — WIB CFA
 > Mis à jour automatiquement à la fin de chaque session Claude Code.
 
-**Date**: 2026-07-30 (session 65 — audit CFA_WEB étendu : bug de parsing des caches Mock corrigé, couverture 160→722/1122, 25 `correct_answer` corrigés)  
-**Commit**: `9fb568b`/`0bb9c11` — Le script d'audit CFA_WEB (session 47) ne savait lire que le format de cache QB (`page_type`/`items`) ; les 12 fichiers de cache Mock (format aplati, déjà fusionné Q+A, 1226 entrées) étaient silencieusement lus comme 0 entrée. C'était la cause réelle des "~962 CFA_WEB non couvertes". Nouveau script `_cfaweb_audit_v2.py` : couverture fiable 160→**722/1122** appariées (400 encore sans cache correspondant = résiduel réel désormais). Sur 32 divergences `correct_answer` détectées : 3 déjà corrigées en session 47 (dump figé), 1 faux positif (options cache nulles), 2 faux positifs de matching (mauvaise sous-question d'un même cas à tableau partagé), 1 calcul DDM re-dérivé confirmant que la BASE avait déjà raison (OCR du cache auto-contradictoire). **25 corrections `correct_answer` appliquées et revérifiées en direct sur Supabase**, chacune confirmée par re-dérivation indépendante depuis le texte `explanation_en` déjà en base (qui décrivait la bonne option en prose alors que la lettre stockée pointait ailleurs).  
+**Date**: 2026-07-30 (session 65, 2e partie — sweep field-bleed Kaplan Ethics : 152/180 corrigés algorithmiquement, 28 cas durs en cours de reconstruction agent)  
+**Commit**: `9786595` — Extension du bug "field-bleed" (session 48) au-delà de l'échantillon de 173 : détection par signal structurel (le stem ne se termine pas par une ponctuation finale) → 180/635 candidats Kaplan Ethics. Découverte clé : le décalage est **purement mécanique et 100% réversible par script** — chaque champ DB = [lignes du vrai champ moins sa 1ère ligne] + [1ère ligne du champ suivant]. Re-parsing déterministe des marqueurs littéraux "A)"/"B)"/"C)" préservés par PyMuPDF dans les PDF sources Kaplan → **152/180 reconstruits et vérifiés par égalité de sac-de-mots** (tolérant le bug de ligature fl/fi/ff déjà connu séparément) puis **patchés sur Supabase et revérifiés en direct (152/152 OK)**. Les 28 résiduels ne se réduisent pas à un simple décalage même après recherche sur tout le PDF — probable contamination croisée avec une autre question (même profil que les cas durs de session 48) — confiés à une reconstruction visuelle dédiée (agent Sonnet 5 en arrière-plan, résultats en attente).  
 **Branch**: master → Streamlit Cloud (auto-deploy) ✅ opérationnelle
+
+---
+
+## Session 65 (2e partie) — Sweep field-bleed Kaplan Ethics : 152/180 corrigés (2026-07-30, commit 9786595)
+
+**Déclencheur** : reprise du chantier laissé ouvert en session 48 ("le bug field-bleed est probablement présent ailleurs dans la banque au-delà de cet échantillon de 173 - non balayé").
+
+**Détection** : 635 questions Kaplan Ethics vivantes en base ; signal structurel = le `question_en` ne se termine pas par une ponctuation finale (`.`, `?`, `:`, etc.) → **180 candidats** flaggés (28% de la population Ethics), confirmant l'hypothèse de concentration du bug sur ce topic.
+
+**Root cause précisée** (via inspection visuelle de plusieurs cas réels) : le décalage suit un schéma parfaitement déterministe — `DB_champ[i]` = (lignes du vrai champ i, sauf sa première ligne) + (première ligne du vrai champ i+1). Autrement dit une frontière de champ retardée d'exactement une ligne PDF, de façon uniforme sur toute la séquence stem→A→B→C. Ce n'est PAS une perte de contenu, juste une réaffectation — donc entièrement réversible sans risque d'hallucination, à condition de retrouver les vraies frontières.
+
+**Méthode de reconstruction** (`scripts/_fieldbleed_reconstruct.py`) : PyMuPDF (`fitz`) préserve les marqueurs littéraux `A)`/`B)`/`C)`/`Explanation` dans le texte extrait des PDF Kaplan "QSTN WITH ANS - Answers.pdf" (contrairement à pdfplumber utilisé à l'import original, qui les avait perdus). Re-parsing direct de ces marqueurs par question → reconstruction exacte du stem/option_a/option_b/option_c. Vérification systématique par égalité du sac-de-mots (mêmes mots, juste réassignés) avant tout patch — avec tolérance pour le bug de ligature fl/fi/ff déjà documenté séparément (pdfplumber avait aussi silencieusement supprimé "fl"/"fi"/"ff" à l'import, ex. DB "conict"=PDF "conflict", DB "le"=PDF "file" — un artefact bénin, sans lien avec le bug de décalage, mais qui aurait autrement produit de faux échecs de vérification).
+
+**Résultat** : 77 reconstructions à égalité exacte + 75 à égalité après normalisation ligature = **152/180 vérifiées et patchées sur Supabase** (pré-check + relecture live, 152/152 confirmées). Seuls `question_en`/`option_a`/`option_b`/`option_c` touchés — `correct_answer`/`explanation_en` non affectés par ce bug (confirmé sur tous les cas examinés, cohérent avec les constats de session 48).
+
+**28 résiduels** : ne se réduisent pas à un simple décalage même après recherche exhaustive sur toutes les pages du PDF résolu (`scripts/_fieldbleed_reconstruct_retry.py`, scores restés <0.9 pour la quasi-totalité) — signature de contamination croisée avec une autre question (profil identique aux cas durs `0c0c9b36`/`ca9a9953` de session 48), nécessitant une lecture visuelle directe des pages sources. Confiés à un agent Sonnet 5 dédié en arrière-plan (`scripts/_fieldbleed_hard28.json` → `_fieldbleed_hard28_results.json` à suivre) plutôt qu'un patch à l'aveugle.
+
+**Détail complet** : `scripts/_fieldbleed_reconstruct_report.json` (180 verdicts), `scripts/_fieldbleed_clean152.json` (152 patchés), `scripts/_fieldbleed_retry_report.json` (28 résiduels).
 
 ---
 
