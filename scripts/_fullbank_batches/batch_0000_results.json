@@ -1,0 +1,112 @@
+[
+ {
+  "id": "ec8f7304-a4b7-4d12-8d14-93e005af09d8",
+  "verdict": "explanation_wrong",
+  "field": "explanation_en",
+  "new_value": "In context of IPOs member or candidates are prohibited from purchasing securities for their own benefit and their duty of loyalty and fairness to clients cannot be overridden by client consent to patently unfair allocation procedure. If the IPO is suitable for clients and is a hot issue he should allocate shares to all his clients on a pro-rata basis.",
+  "evidence": "Solutions section (PDF p.127, printed page 116, item 2, Answer: B) gives the IPO pro-rata allocation explanation quoted above; the DB's stored explanation about risk tolerance/willingness-ability belongs to an unrelated Portfolio Management question."
+ },
+ {
+  "id": "bb401204-4ffb-433f-93e1-f56a68d8cb32",
+  "verdict": "ok",
+  "evidence": "Solutions p.127 item 1: Answer B, explanation verbatim matches the DB record exactly (dissociate from unethical activity / encourage reporting / maintain reference copies)."
+ },
+ {
+  "id": "e92a4747-b9b4-4551-bfaf-09b90d9a28f5",
+  "verdict": "ok",
+  "evidence": "Solutions p.127 item 4: Answer A, explanation verbatim matches the DB record exactly (GIPS compliance does not eliminate need for due diligence)."
+ },
+ {
+  "id": "d603424f-afe0-446e-8576-2cfb4b28846e",
+  "verdict": "explanation_wrong",
+  "field": "explanation_en",
+  "new_value": "Klein will violate Standard IV-A 'Loyalty to employers' because the firm only allows secondary research (research prepared by another employee at the same firm). Using a report prepared by another firm is considered third party research, which is not allowed by McKinney Alpha.",
+  "evidence": "Solutions p.127 item 3 (Answer: B) gives the Klein/McKinney Alpha explanation above; the DB's stored explanation is the SCL/Jensen's alpha regression equation, unrelated to this ethics question."
+ },
+ {
+  "id": "93fa9af1-33d4-49ba-88c6-5e545307e858",
+  "verdict": "explanation_wrong",
+  "field": "explanation_en",
+  "new_value": "According to Standard III-C 'Suitability', when members and candidates are responsible for managing a portfolio to a specific mandate, strategy or style they are not responsible for determining the suitability of the fund as an investment for the investors who may be purchasing shares.",
+  "evidence": "Solutions p.127 item 6 (Answer: A) gives the Suitability/mandate explanation above for the Eleanor Chavez/HBMF question; the DB's stored explanation is about M2 and Sharpe ratio, unrelated to this question."
+ },
+ {
+  "id": "4bb9ccec-16e1-4bec-ab27-936f226a7f70",
+  "verdict": "explanation_wrong",
+  "field": "explanation_en",
+  "new_value": "According to Standard III-D 'Performance Presentation' if the performance information presented by the member or candidate is brief, the member of candidate must make available to client and prospects on request the detailed information supporting the communication. Best practice dictates that the brief presentation include a reference to the limited nature of the information provided.",
+  "evidence": "Solutions p.128 item 9 (Answer: C) reads 'Standard III-D' (visually confirmed on rendered page), matching option B's wording on the question page; the DB record instead says 'Standard I-D', a transcription error."
+ },
+ {
+  "id": "024a3bb7-5555-4c48-86a4-4f85a136ad3c",
+  "verdict": "ok",
+  "evidence": "Solutions p.128 item 8: Answer A, explanation verbatim matches the DB record exactly (reasonable efforts to achieve public dissemination)."
+ },
+ {
+  "id": "195aa816-3a79-46f3-b11d-6040134eb647",
+  "verdict": "explanation_wrong",
+  "field": "explanation_en",
+  "new_value": "Milton did not violate any CFA Institute code or standard because he developed a new model and re-created supporting records by directly gathering information from Indigo Corp.",
+  "evidence": "Solutions p.128 item 7 (Answer: A) gives the explanation above for the Gilbert Love/Indigo Corp question; the DB's stored explanation is about security selection returns/informational efficiency, unrelated to this question."
+ },
+ {
+  "id": "140167b4-a892-4495-8763-ed3d6e8c158e",
+  "verdict": "ok",
+  "evidence": "Solutions p.128 item 10: Answer B, explanation verbatim matches the DB record exactly (friend's opinion, Diligence and Reasonable Basis / Priority of Transactions)."
+ },
+ {
+  "id": "d7736d83-41c4-4ead-9d5b-1036e34ebfff",
+  "verdict": "ok",
+  "evidence": "Solutions p.128 item 11: Answer A, explanation verbatim matches the DB record exactly (Palmer violated Market Manipulation by sharing false information with Fox)."
+ },
+ {
+  "id": "984f58d2-36ec-453c-bd59-f82a58ed77b2",
+  "verdict": "ok",
+  "evidence": "Solutions p.128 item 12: Answer B, explanation verbatim matches the DB record exactly (Alvarado violated Loyalty by rendering services without consent and using records)."
+ },
+ {
+  "id": "d12de00d-e2ec-4389-af8d-514d43899fd1",
+  "verdict": "ok",
+  "evidence": "Solutions p.128 item 13: Answer C, explanation verbatim matches the DB record exactly (both Enrique and Rachael violated Standard VII-A)."
+ },
+ {
+  "id": "8cc808a0-cffb-4432-8eed-0075056affbc",
+  "verdict": "ok",
+  "evidence": "Solutions p.129 item 16: Answer C, explanation verbatim matches the DB record exactly (survivorship bias, varying time periods, representative accounts)."
+ },
+ {
+  "id": "5dd35a14-d1c4-45be-b153-50057524bfde",
+  "verdict": "ok",
+  "evidence": "Solutions p.129 item 15: Answer C, explanation verbatim matches the DB record exactly (immediate written report of the $50,000 cash offer)."
+ },
+ {
+  "id": "d5c5b722-723b-4ba2-a659-ade53a368021",
+  "verdict": "ok",
+  "evidence": "Solutions p.129 item 17: Answer A, explanation verbatim matches the DB record exactly (cannot link non-GIPS performance for periods on/after 1 Jan 2000)."
+ },
+ {
+  "id": "187a5f11-19a9-4451-b714-113856f81a58",
+  "verdict": "ok",
+  "evidence": "Solutions p.128 item 14: Answer B, explanation verbatim matches the DB record exactly (brokerage commission is client asset, disclose if not best execution)."
+ },
+ {
+  "id": "11b074a0-ce60-4093-add5-8e590bb8e84a",
+  "verdict": "ok",
+  "evidence": "Solutions p.129 item 18: Answer C, explanation verbatim matches the DB record exactly (Section 4/3/5 GIPS clarifications)."
+ },
+ {
+  "id": "6f9ed096-7696-4622-94da-2ca5f0c5b105",
+  "verdict": "ok",
+  "evidence": "Solutions p.130 item 21: Answer B, explanation verbatim matches the DB record exactly (Fair Dealing, trade allocation must be equitable regardless of disclosure)."
+ },
+ {
+  "id": "72c64bce-149d-460c-8f6c-ab6e03f819c2",
+  "verdict": "ok",
+  "evidence": "Solutions p.130 item 22: Answer A, explanation verbatim matches the DB record exactly (GIPS verification does not ensure accuracy of specific composite presentations)."
+ },
+ {
+  "id": "da5cf3fc-2305-44c8-b9e5-418fd8a25339",
+  "verdict": "ok",
+  "evidence": "Solutions p.130 item 20: Answer B, explanation verbatim matches the DB record exactly (Nelson should treat family account like any other client account)."
+ }
+]

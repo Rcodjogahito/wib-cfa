@@ -1,0 +1,141 @@
+[
+ {
+  "id": "9fcd5dcf-ee0b-49a9-8669-1a798ac74078",
+  "verdict": "ok",
+  "evidence": "Page 33 (Q36) and solutions page 145 (doc p.134, '36. Answer = A') both confirm option A (sampling distribution of a statistic); stored explanation matches the solutions text verbatim."
+ },
+ {
+  "id": "9a2aee8f-c5f3-417a-9967-29e5ffb83694",
+  "verdict": "ok",
+  "evidence": "Page 33 (Q37) and solutions page 145 ('37. Answer = A') confirm option A (Monte Carlo for 'what if' analysis); stored explanation matches the solutions text verbatim."
+ },
+ {
+  "id": "853c677d-9664-4a79-9273-a8f1763a0c88",
+  "verdict": "ok",
+  "evidence": "Page 33 (Q39) and solutions page 145 ('39. Answer = B') confirm option B (Type II error); stored explanation 'Failure to reject a false null hypothesis is a Type II error.' matches verbatim."
+ },
+ {
+  "id": "d8675ba4-a9d6-4835-a84c-3a51f43c6507",
+  "verdict": "ok",
+  "evidence": "Page 33 (Q38) and solutions page 145 ('38. Answer = C') confirm option C (±1.960); stored explanation matches the solutions text verbatim (z-test, no degrees of freedom, two-sided 0.05)."
+ },
+ {
+  "id": "9229edb7-83ca-46e0-9334-f7a17268eb84",
+  "verdict": "ok",
+  "evidence": "Economics solutions page 151 (doc p.140, question 4, 'Answer: B') confirms option B (income effect > substitution effect); stored explanation matches verbatim."
+ },
+ {
+  "id": "e5f162d2-9d1f-4caa-924e-92555de1f38f",
+  "verdict": "explanation_wrong",
+  "field": "explanation_en",
+  "new_value": "Household saving = Personal disposable income – (consumption expenditures + interest paid by consumers + personal transfer payments to foreigners)\nHousehold saving = $555,790 – ($461,580 + $13,400 + $1,500)\n= $79,310.",
+  "evidence": "This is Economics Q2 on page 42/solutions p.151 (doc p.140, 'Answer: C', household saving calc using disposable income). The stored explanation ('FCFF = CFO + After tax interest-CFInv...') is an unrelated FCFF calculation belonging to a different (FRA) question; correct_answer C is nonetheless right."
+ },
+ {
+  "id": "e5f162d2-9d1f-4caa-924e-92555de1f38f",
+  "verdict": "formatting_missing",
+  "field": "question_en",
+  "new_value": "An analyst gathered the following national data (in millions of U.S dollars) for a country for the year 2013.\n\n**Exhibit:**\n\n| Item | Value | Item | Value |\n|---|---|---|---|\n| Consumer spending (m) | $461,580 | Personal disposable income | $555,790 |\n| Government spending | $392,676 | Interest paid by consumers | $13,400 |\n| Personal Income | $906,230 | Consumer transfers to foreigners | $1,500 |\n\nUsing the data provided in exhibit 1, the household saving (in millions) is closest to:",
+  "evidence": "Page 42 shows a data table ('Exhibit:') with Consumer spending, Government spending, Personal Income, Personal disposable income, Interest paid by consumers, and Consumer transfers to foreigners; question_en omits this table entirely even though the question requires it to compute the answer."
+ },
+ {
+  "id": "8393e6fa-34df-4046-87ce-d2bcbdaeee02",
+  "verdict": "ok",
+  "evidence": "Economics solutions page 151 (question 1, 'Answer: C') confirms sealed bid auction; stored explanation matches verbatim."
+ },
+ {
+  "id": "8d40959b-9603-47bc-b082-ffaa76ab79cc",
+  "verdict": "explanation_wrong",
+  "field": "explanation_en",
+  "new_value": "Ricardian model assumes labor is a variable factor of production. Heckscher-Ohlin model assumes labor and capital are variable factors of production.",
+  "evidence": "Economics solutions page 151, question 3 ('Answer: A') gives this Ricardian/Heckscher-Ohlin explanation. The stored explanation about IOSCO disclosure principles is unrelated and belongs to a different question; correct_answer A is nonetheless right."
+ },
+ {
+  "id": "4b845566-2dd3-42e1-9221-a060f0758e19",
+  "verdict": "explanation_wrong",
+  "field": "explanation_en",
+  "new_value": "Option C is the criticism about neoclassical and Austrian school of thoughts. It is difficult to achieve market equilibrium through reduction in generalized price and wage.\nOptions A and B are practical criticisms of the Keynesian fiscal policy, which takes a short-term perspective.",
+  "evidence": "Economics solutions page 151, question 5 ('Answer: C') gives this explanation. The stored explanation ('A distribution that is more peaked than normal is called leptokurtotic.') is an unrelated statistics fact belonging to a different question; correct_answer C is nonetheless right."
+ },
+ {
+  "id": "e75931bb-a743-4234-b5c9-54804c647086",
+  "verdict": "ok",
+  "evidence": "Economics solutions page 151, question 7 ('Answer: C') confirms leading indicators predict near-term future state; stored explanation matches verbatim."
+ },
+ {
+  "id": "86e1444b-51bd-44d6-9537-da027db9288f",
+  "verdict": "ok",
+  "evidence": "Economics solutions page 152 (doc p.141), question 10 ('Answer = C') confirms HHI = 1/20 = 0.05 for 20 equal firms; stored explanation matches verbatim."
+ },
+ {
+  "id": "7877cff6-0e82-4a10-8bc1-05a29bebeb03",
+  "verdict": "ok",
+  "evidence": "Economics solutions page 152, question 8 ('Answer: A') confirms fiscal policy is less effective/time consuming; stored explanation matches verbatim."
+ },
+ {
+  "id": "e5b8c65a-c7cc-400b-93a0-aa68bfba5dc6",
+  "verdict": "ok",
+  "evidence": "Economics solutions page 152, question 11 ('Answer = A') confirms private saving and investment increase; stored explanation matches verbatim. (Note: option_c has a stray trailing page-number artifact '39' but this does not affect correctness of the question/answer/explanation.)"
+ },
+ {
+  "id": "11a33b9a-b913-4370-bf7b-22cf4e3dd8e6",
+  "verdict": "explanation_wrong",
+  "field": "explanation_en",
+  "new_value": "Economic profit = Accounting profit - Total implicit opportunity costs\nwhere Accounting profit = Total revenue - Total variable costs - Total fixed costs\nand Total opportunity costs = opportunity cost of capital + opportunity cost of labor\n\n| | Calculation | Value |\n|---|---|---|\n| Total revenue | 3,550 x $1,110 | $3,940,500 |\n| Less Total variable costs | 3,550 x $750 | $2,662,500 |\n| Less Total fixed costs | | $300,000 |\n| Accounting profit | | $978,000 |\n| Opportunity cost of capital | $1,550,000 x 0.125 | $193,750 |\n| Opportunity cost of owner's labor | | $125,000 |\n| Total opportunity costs | | $318,750 |\n| Economic profit | | $659,250 |",
+  "evidence": "Economics solutions page 152, question 9 ('Answer = A') shows a worked table computing economic profit = $659,250, matching option A. The stored explanation ('diluted EPS...convertible securities') is unrelated to this question and belongs to an FRA question."
+ },
+ {
+  "id": "11a33b9a-b913-4370-bf7b-22cf4e3dd8e6",
+  "verdict": "formatting_missing",
+  "field": "question_en",
+  "new_value": "The following information applies to a start-up company solely owned by an entrepreneur.\n\n| | Value |\n|---|---|\n| Total units produced | 3,550 |\n| Average revenue | $1,110 |\n| Average variable cost | $750 |\n| Total fixed cost | $300,000 |\n| Total investment | $1,550,000 |\n| Required rate of return | 12.5% |\n| Opportunity cost of owner's labor | $125,000 |\n\nThe company's economic profit is closest to:",
+  "evidence": "Page 43 (Q9) shows a data table (units produced, average revenue, average variable cost, fixed cost, investment, required return, opportunity cost of labor) that is entirely missing from question_en; without it the question is unanswerable."
+ },
+ {
+  "id": "37c6e52f-c5de-4172-aa9b-98b2ca95d644",
+  "verdict": "explanation_wrong",
+  "field": "explanation_en",
+  "new_value": "Veblen goods violate the fundamental axioms of demand theory, whereas Giffen goods do not.",
+  "evidence": "Economics solutions page 152, question 14 ('Answer = C') gives this explanation. The stored explanation is a GIPS disclosure/composite-construction passage belonging to a different (GIPS) question; correct_answer C is nonetheless right."
+ },
+ {
+  "id": "97f2e5ba-29b3-4599-b567-b284bfe4ec0f",
+  "verdict": "explanation_wrong",
+  "field": "explanation_en",
+  "new_value": "Using the expenditures approach:\nGDP = Consumer spending on goods and services + Business gross fixed investment + Change in inventories + Government spending on goods and services + Government gross fixed investment + Exports – Imports + Statistical discrepancy",
+  "evidence": "Economics solutions page 152, question 15 ('Answer = B') gives this expenditures-approach formula. The stored explanation about 'times interest earned' is unrelated and belongs to a different (FRA ratio) question; correct_answer B is nonetheless right."
+ },
+ {
+  "id": "97f2e5ba-29b3-4599-b567-b284bfe4ec0f",
+  "verdict": "formatting_missing",
+  "field": "question_en",
+  "new_value": "The following data apply to a country in its domestic currency units:\n\n| Item | Value | Item | Value |\n|---|---|---|---|\n| Consumer spending on goods and services | 875,060 | Government spending on goods and services | 305,600 |\n| Business gross fixed investment | 286,400 | Government gross fixed investment | 84,120 |\n| Change in inventories | -68,500 | Capital consumption allowance | 8,540 |\n| Transfer payments | 9,300 | Statistical discrepancy | -2,850 |\n| Exports | 219,800 | Imports | 250,980 |\n\nUsing the expenditures approach, the country's GDP is closest to:",
+  "evidence": "Page 44 (Q15) shows a full data table (consumer/government spending, investment, inventories, transfers, exports/imports, discrepancy) that is entirely missing from question_en; without it the question is unanswerable."
+ },
+ {
+  "id": "4d634878-8a85-43ba-bae1-1f4f4182af9b",
+  "verdict": "formatting_missing",
+  "field": "question_en",
+  "new_value": "For a given economy and a given period of time, GDP measures the:\n\n- I. aggregate income earned by all households, all companies, and the government.\n- II. total income earned by all of the country’s citizens, firms, and the government.\n- III. total market value produced of resalable and final goods and services.\n\nThe most appropriate description of what is measured by GDP is given by: 40",
+  "evidence": "Page 44/45 (Q16) presents a I/II/III enumerated list that is squashed into a run-on sentence in question_en; reformatted as a list, wording/numbers unchanged. Note: option_c in the DB record is itself corrupted ('I and II. 17. Based on the table...') — it has bled in the stem of the next question (Q17); this cannot be corrected via the available fields (question_en/correct_answer/explanation_en) so it is only flagged here, not fixed. Also note the source's own solutions page states 'Answer = B' (I only) even though its own explanation describes GDP as both the income definition (I) and output/market-value definition (III), which would support option A — this is an inconsistency in the source material itself, not an import bug, so correct_answer B (which matches the source's stated key) was left unchanged and the explanation (which matches the source verbatim) was also left unchanged."
+ },
+ {
+  "id": "14a7f10e-04cc-4665-81f1-9af77eb5c00f",
+  "verdict": "explanation_wrong",
+  "field": "explanation_en",
+  "new_value": "The sum-of-value-added method involves summing the value added (or income created) at each step in the production and distribution process.",
+  "evidence": "Economics solutions page 152, question 12 ('Answer = C') gives this explanation. The stored explanation is the same GIPS disclosure passage wrongly copied into item 37c6e52f, unrelated to this question; correct_answer C is nonetheless right."
+ },
+ {
+  "id": "fbe0b205-f8bb-49dc-818f-fa79bdffec20",
+  "verdict": "explanation_wrong",
+  "field": "explanation_en",
+  "new_value": "Average weekly initial claims for unemployment insurance is a leading indicator of economic activity. A decrease in these claims is an indicator of rehiring, which signals the start of an economic recovery.",
+  "evidence": "Economics solutions page 154 (doc p.143), question 20 ('Answer = C') gives exactly this explanation. The stored explanation_en contains this correct text but then has ~20 unrelated solutions (items 21 through 40, covering tariffs, structural deficit, Fisher Index, money neutrality, etc.) all concatenated onto the end — a squashing bug. correct_answer C is right."
+ },
+ {
+  "id": "c4d129f4-6b1f-41ed-bbbd-5a49a6a9e19d",
+  "verdict": "ok",
+  "evidence": "Economics solutions page 153 (doc p.142), question 18 ('Answer = A') confirms technology/innovation reduces long-term GDP growth challenges; stored explanation matches verbatim (with a trivial trailing page-number artifact '142' that does not affect content)."
+ }
+]

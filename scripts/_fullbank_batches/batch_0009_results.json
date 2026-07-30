@@ -1,0 +1,110 @@
+[
+ {
+  "id": "428cc4a6-8d0d-4698-9b9a-dd5d71bd7777",
+  "verdict": "explanation_wrong",
+  "field": "explanation_en",
+  "new_value": "Convert D/E to the weight for debt: 1/3 = (D/E)/(1+D/E) = 0.50/(1+0.50).\nThe weight for equity is one minus the weight of debt: 2/3 = 1 - 1/3.\nWACC = Weight of debt x Cost of debt x (1 - Tax rate) + Weight of equity x Cost of equity.\n1/3 x 0.08 x (1 - 0.40) + 2/3 x 0.13 = 0.1026 = 10.3%.",
+  "evidence": "Source is 'EXTRA 700 MCQs.pdf' p.75 (Q12, Corporate Finance chapter) with the matching solutions page at doc index 179 ('12. Answer = C' with a WACC weight-of-debt/equity calculation). The stored explanation is a Treynor ratio definition, completely unrelated to this WACC question; correct_answer C is verified correct both by the answer key and by direct calculation (1/3x8%x0.6 + 2/3x13% = 10.3%)."
+ },
+ {
+  "id": "0f38eb99-d92e-406f-a6b8-8ae9cc2c7d70",
+  "verdict": "ok",
+  "evidence": "Matches Q19 (Corporate Finance chapter) solutions page (doc idx 180): 'Answer = B ... By taking on fixed obligations, such as debt (including debentures) and long-term leases, a company increases its financial risk. Dividends will not increase financial risk.' Answer key and explanation both match the DB record (minor missing-space typo only)."
+ },
+ {
+  "id": "1510e937-9d8c-4f77-ab25-deaa6b696b9b",
+  "verdict": "ok",
+  "evidence": "Matches Q21 (Corporate Finance chapter) solutions page (doc idx 180): 'Answer = A', DTL equation explanation. The garbled equation text in explanation_en ('QuantityPriceVariable cost...') mirrors the source PDF's own broken text-extraction of the embedded DTL formula, not a data-entry error."
+ },
+ {
+  "id": "c52c3582-4614-4e8b-8d0c-0805fca0185d",
+  "verdict": "ok",
+  "evidence": "Matches Q16 (Corporate Finance chapter) solutions page (doc idx 179): 'Answer = B ... Investments related to new products or services expose the company to even more uncertainties than expansion projects...' identical to stored explanation and answer."
+ },
+ {
+  "id": "ea21b1ab-24cc-409b-8085-cbae9f198f6d",
+  "verdict": "ok",
+  "evidence": "Matches Q17 (Corporate Finance chapter) solutions page (doc idx 179): 'Answer = A ... The payment date can occur on a weekend or holiday unlike other pertinent dates, such as the ex-date and record date which occur only on business days.' Matches DB record exactly."
+ },
+ {
+  "id": "2a3c8a53-62be-480d-9152-0dd62e4ec876",
+  "verdict": "ok",
+  "evidence": "Matches Q20 (Corporate Finance chapter) solutions page (doc idx 180): 'Answer = A ... The point at which the marginal cost of capital intersects the investment opportunity schedule is the optimal capital budget.' Matches DB record exactly."
+ },
+ {
+  "id": "6733b13a-3c77-46aa-b075-b9b69649d2f7",
+  "verdict": "ok",
+  "evidence": "Matches Q23 on p.77 (Corporate Finance chapter) solutions page (doc idx 179): 'Answer = A ... The capital asset pricing model uses the firm's equity beta, which is computed from a market model regression...' Matches DB record exactly."
+ },
+ {
+  "id": "daee4dae-79fa-4cd0-8f67-3af77f82cfe2",
+  "verdict": "explanation_wrong",
+  "field": "explanation_en",
+  "new_value": "The pre-repurchase EPS is Net income (NI)/20 million. The EPS after the repurchase is [NI x (1-20%)/15 million]. To connect the two values algebraically:\n(NI/20 million) x X = [NI x (1-20%)/15 million]\nX = (1-20%) x (20 million/15 million) = 1.067\nBecause X is greater than 1, the EPS has increased after the repurchase.",
+  "evidence": "Question is Q24 on p.77 (Corporate Finance chapter); solutions page (doc idx 180) confirms 'Answer = B' and gives this exact reasoning. The stored explanation_en correctly starts with this text but then has ~20 unrelated solutions (numbered 25 through 45, covering discounted payback, corporate governance, share repurchase valuation, etc.) erroneously appended after it -- an import-time squashing bug. Truncated new_value keeps only the paragraph that actually answers this question."
+ },
+ {
+  "id": "c902599d-c202-49eb-adcf-d9385431ce25",
+  "verdict": "ok",
+  "evidence": "Matches Q3 (Equity Investments chapter, p.76) solutions page (doc idx 184): 'Answer: B ... Under a statutory voting, each share represent one vote therefore Smith can cast maximum of 500 votes for each candidate...' Matches DB record exactly."
+ },
+ {
+  "id": "bbdc2bfc-0bfb-40ec-9ecf-c2ee03b3d7e2",
+  "verdict": "ok",
+  "evidence": "Matches Q4 (Equity Investments chapter, p.76) solutions page (doc idx 184): 'Answer: C ... Market orders generally execute immediately... they can be very expensive to execute especially when the order is placed in the market for a thinly traded security...' Matches DB record exactly."
+ },
+ {
+  "id": "230d75d1-bc40-47f1-a8e8-82470a80e49d",
+  "verdict": "ok",
+  "evidence": "Matches Q2 (Equity Investments chapter, p.76) solutions page (doc idx 184): 'Answer: A ... A fundamental weighting method is similar to contrarian investment strategy...' Matches DB record exactly."
+ },
+ {
+  "id": "a9774d29-6cbf-43b4-9a71-3c7c301cf361",
+  "verdict": "ok",
+  "evidence": "Matches Q7 (Equity Investments chapter, p.76) solutions page (doc idx 184-185): 'Answer: B', two-method PV-of-deferred-perpetuity calculation giving 204.07 (~$204). Answer key confirms B. The garbled equation formatting in explanation_en mirrors the source PDF's own broken extraction of the embedded formula image, not a data-entry error. Note: option_c in the DB is '$227. 76' but the source PDF text for this option is only 'C. $227.' (the '76' is the page footer number, not part of the option) -- an option-text pollution artifact outside the scope of the 3 checked fields."
+ },
+ {
+  "id": "d4e27293-1822-4498-aae5-a24b67e76162",
+  "verdict": "ok",
+  "evidence": "Matches Q1 (Equity Investments chapter, p.76) solutions page (doc idx 184): 'Answer: B ... the rebate rate may be very low or even negative... Otherwise rebate rate is usually 10 basis points less than the overnight rate...' Matches DB record (minor missing-space typo only)."
+ },
+ {
+  "id": "f158602f-0c2c-4428-8091-e5e44848b0a0",
+  "verdict": "ok",
+  "evidence": "Matches Q6 (Equity Investments chapter, p.76) solutions page (doc idx 184): 'Answer: C ... It is appropriate to use EV for comparing companies with significantly different capital structures. EV reflects the real economic value... does not have the negative earnings problem...' Matches DB record exactly."
+ },
+ {
+  "id": "df773cb2-42b6-4293-aead-1706cdf7a76c",
+  "verdict": "ok",
+  "evidence": "Matches Q5 (Equity Investments chapter, p.76) solutions page (doc idx 184): 'Answer: B', two-bullet reasoning about future-based returns and roll yield, already reproduced with line breaks in the DB explanation_en. Matches source content."
+ },
+ {
+  "id": "daa7df77-feaf-4f8d-bd12-438326edd769",
+  "verdict": "ok",
+  "evidence": "Matches Q12 (Equity Investments chapter, p.77) solutions page (doc idx 186): 'Answer: B ... calculator inputs r=3.5, n=4, PMT=5, FV=40, PV=53.22 ... fairly valued.' Matches DB record exactly (values squashed onto one line but content unchanged)."
+ },
+ {
+  "id": "7c4ac5cb-355a-408c-ad03-9a7b92507311",
+  "verdict": "explanation_wrong",
+  "field": "explanation_en",
+  "new_value": "The five influences that affect an industry's growth, revenues and profits are:\n- Macroeconomic influences\n- Technological influences\n- Demographic influences\n- Governmental influences\n- Social influences\n\nMacro-economic variables that affect industry growth are:\n- GDP\n- Interest rates\n- Inflation\n- Availability of credit",
+  "evidence": "Question is Q8 (Equity Investments chapter, p.77); solutions page (doc idx 185) confirms 'Answer: C' (technologies is least likely a macroeconomic influence, since technology is itself one of the five distinct influence categories) and gives the five-influences / macro-variables list above. The stored explanation_en is instead an IOSCO issuer-disclosure principles blurb that belongs to a different (Ethics-related) question entirely. Answer letter C itself is correct and unchanged."
+ },
+ {
+  "id": "99048980-388d-48fe-a70e-5461c9fda478",
+  "verdict": "ok",
+  "evidence": "Matches Q10 (Equity Investments chapter, p.77) solutions page (doc idx 185): 'Answer: A ... Asset based valuation models work well for companies that do not have a high proportion of intangibles or off the book assets and that have a high proportion of current assets and current liabilities.' Matches DB record exactly."
+ },
+ {
+  "id": "e770c046-ec81-4aa2-90ab-7304f9f82ef3",
+  "verdict": "explanation_wrong",
+  "field": "explanation_en",
+  "new_value": "Investor's total loss in percentage = (% change in market price x Leverage ratio) + other net change in % (due to dividend, interest and commission): (-6.667 x 1.5) + 1% = -9%.\nTotal purchase price = 500 x 45 = $22,500\nEquity Portion = 1/1.5 x 22,500 = 15,000\nLoan = 22,500 - 15,000 = 7,500\nDividends received = $1 x 500 = 500\nCommission paid = $0.1 x 500 = 50\nInterest paid = 4% x 7,500 = 300\nChange in market price = (42-45)/45 = 6.667%\nOther adjustments (dividend, interest & commission) = 500 - 50 - 300 = 150\nOther adjustments % = other $ adjustments/equity = 150/15,000 = 1%",
+  "evidence": "Question is Q11 (Equity Investments chapter, p.77); solutions pages (doc idx 185-186) confirm 'Answer: B' and this margin-loss calculation, with Equity Portion = 15,000 (not 15,0) and Loan = 7,500 (using the full 15,000). The stored explanation_en has the digits truncated to '15,0' in two places (and a stray page-footer '174' embedded mid-sentence), a data-entry corruption from the same import bug pattern seen elsewhere. Answer letter B is correct and unchanged."
+ },
+ {
+  "id": "be704534-1d8f-4c22-9c42-c385a3b365dc",
+  "verdict": "ok",
+  "evidence": "Matches Q13 (Equity Investments chapter, p.77) solutions page (doc idx 186): 'Answer = C ... Information-motivated traders expect to earn returns in excess of market returns...' Matches DB record exactly. Note: option_c in the DB has a stray trailing '77' (the page footer number bled into the option text during extraction, per the raw PDF text dump), an option-text pollution artifact outside the scope of the 3 checked fields."
+ }
+]

@@ -1,0 +1,112 @@
+[
+ {
+  "id": "63f7a6d1-b858-4ead-aff3-e6b033a65aab",
+  "verdict": "ok",
+  "evidence": "PDF p.103 (doc idx113) Q3 and solutions p.194 '3. Answer: B' with the same i-iv list confirm answer B and explanation_en verbatim."
+ },
+ {
+  "id": "c29e86c4-6355-4754-b917-886a332aeaec",
+  "verdict": "ok",
+  "evidence": "PDF p.103 (doc idx113) Q4 and solutions p.194 '4. Answer: B' confirm answer B and explanation_en text matches ('Later stage financing in venture capital investing is capital provided for major expansion.')."
+ },
+ {
+  "id": "7ca38228-b32f-4f39-ba06-eefd4a080d0a",
+  "verdict": "ok",
+  "evidence": "PDF p.104 (doc idx114) Q8 and solutions p.195 '8. Answer: B' match DB correct_answer and explanation_en verbatim."
+ },
+ {
+  "id": "0dcb2677-0b4e-4aee-836b-6aa3bfdb157e",
+  "verdict": "ok",
+  "evidence": "PDF p.104 Q9 and solutions p.195 '9. Answer: B' match DB correct_answer and explanation_en verbatim."
+ },
+ {
+  "id": "52ab3ce7-5258-4c8b-8360-c3956c33c2b6",
+  "verdict": "ok",
+  "evidence": "PDF p.104 Q10 and solutions p.195 '10. Answer: C' match DB correct_answer and explanation_en verbatim."
+ },
+ {
+  "id": "682a3e0a-8a4a-48b7-a710-ac97fdb441c6",
+  "verdict": "ok",
+  "evidence": "PDF p.104 Q13 and solutions p.195 '13. Answer: A' match DB correct_answer and explanation_en verbatim."
+ },
+ {
+  "id": "8606f114-c8f3-4d5a-968c-2db812bc9cb5",
+  "verdict": "ok",
+  "evidence": "PDF p.104 Q12 and solutions p.195 '12. Answer: C' match DB correct_answer and explanation_en verbatim."
+ },
+ {
+  "id": "6fa7070c-af04-475a-8e34-d63130aea755",
+  "verdict": "explanation_wrong",
+  "field": "explanation_en",
+  "new_value": "Because no two properties are identical, homogeneity is not a feature of an investment in real estate.",
+  "evidence": "Solutions p.195 item 14 explanation is only this single sentence; the DB explanation_en has items 15-34 (unrelated solutions for later questions about PE management fees, fund-of-funds, VaR, fee calculations, etc.) concatenated onto the end. Note: the solutions page literally prints 'Answer: A' next to item 14, which conflicts with its own explanation (homogeneity=option B is what real estate lacks); DB's correct_answer 'B' matches the explanation logic and is kept as-is, only the explanation text is trimmed."
+ },
+ {
+  "id": "3470e592-e172-45ba-9ade-ed167f879275",
+  "verdict": "explanation_wrong",
+  "field": "explanation_en",
+  "new_value": "Once a commitment in a private equity fund has been made, the investor has very limited liquidity options.",
+  "evidence": "Solutions p.195 item 11 ('Answer: A', matching DB correct_answer A) shows the true explanation is only this sentence; the DB explanation_en has an unrelated mock-exam copyright/terms-of-use disclaimer paragraph prepended before it (bled in from a page header/footer notice)."
+ },
+ {
+  "id": "5453a087-fd37-4530-ac10-f36fcaf48056",
+  "verdict": "ok",
+  "evidence": "PDF p.108 (doc idx119) Q1 and solutions p.198 '1. Answer: B' match DB correct_answer and explanation_en verbatim."
+ },
+ {
+  "id": "e42260c3-8e47-4d6c-aee3-b3acd83eabac",
+  "verdict": "ok",
+  "evidence": "PDF p.108 Q2 and solutions p.198 '2. Answer: C' match DB correct_answer and explanation_en verbatim."
+ },
+ {
+  "id": "16465dea-5f39-45d5-b621-c996614e2386",
+  "verdict": "ok",
+  "evidence": "PDF p.108 Q5 and solutions p.198 '5. Answer: B' match DB correct_answer and explanation_en (annualized return formula) verbatim."
+ },
+ {
+  "id": "9fca4e34-f32c-4baa-8ec4-6a5e1c27ea1e",
+  "verdict": "ok",
+  "evidence": "PDF p.108 Q6 and solutions p.198 '6. Answer: A' match DB correct_answer and explanation_en verbatim."
+ },
+ {
+  "id": "859ebc84-d2d6-43ab-b083-9fa156378ce0",
+  "verdict": "ok",
+  "evidence": "PDF p.108 Q3 (SCL intercept) and solutions p.198 '3. Answer: C' match DB correct_answer and explanation_en (SCL equation) verbatim."
+ },
+ {
+  "id": "256879fd-9bc8-4c7d-9bde-7d9d42cd4d7f",
+  "verdict": "ok",
+  "evidence": "PDF p.108 Q4 (endowments) and solutions p.198 '4. Answer: B' match DB correct_answer and explanation_en verbatim."
+ },
+ {
+  "id": "29268ea0-d8bf-40eb-a33c-17a7fda7acc0",
+  "verdict": "option_bleed",
+  "field": "option_c",
+  "new_value": "lower informational efficiency and higher skills of investment managers.",
+  "evidence": "PDF p.108 Q7 option C reads exactly 'lower informational efficiency and higher skills of investment managers.' with no trailing digits; DB option_c has the page footer number ' 108' glued onto the end."
+ },
+ {
+  "id": "98f87180-1fb1-4970-9b16-5a25d066983a",
+  "verdict": "explanation_wrong",
+  "field": "explanation_en",
+  "new_value": "Market’s beta = δ σ /σ = 1 m,m x m m (Any asset’s beta itself is 1, so the beta of market is 1). 0.670.34 Asset’s beta = δ σ/σ = 1.20 i,m x i m 0.19",
+  "evidence": "Solutions PDF page 198 (doc idx209), item 8 'Answer: C', shows the explanation ends at '...= 1.20' (from 0.67x0.34/0.19); the page's footer number '198' is printed directly below and was concatenated onto the end of the DB explanation_en ('...0.19 198'). Trimmed the trailing footer digits; correct_answer C already matches the solutions key."
+ },
+ {
+  "id": "8bbb1f83-70de-4a13-9e28-97d4b6c9fc2f",
+  "verdict": "formatting_missing",
+  "field": "question_en",
+  "new_value": "A correlation matrix of the returns for securities A, B, and C is reported below:\n\n| Security | A | B | C |\n|---|---|---|---|\n| A | 1 | | |\n| B | 0.5 | 1 | |\n| C | 0 | -0.5 | 1 |\n\nAssuming that the expected return and the standard deviation of each security are the same, a portfolio consisting of an equal allocation of which two securities will be most effective for portfolio diversification?",
+  "evidence": "PDF p.109 (doc idx120) Q10 shows a 3x3 correlation matrix table (Security/A/B/C rows: A=1; B=0.5,1; C=0,-0.5,1) between the intro sentence and the closing question sentence; DB question_en jumps straight from 'reported below:' to 'Assuming that...' with the entire table omitted. correct_answer B and explanation_en already match solutions p.199 '10. Answer = B' verbatim, no change needed there."
+ },
+ {
+  "id": "1b7d9fc7-0d22-47da-aa61-b6c3be5cc2f0",
+  "verdict": "ok",
+  "evidence": "PDF p.109 Q11 (FGL Corp CAPM) and solutions p.199 '11. Answer = A' match DB correct_answer and explanation_en verbatim."
+ },
+ {
+  "id": "142d6bd8-4216-4a63-bc0b-a80283388ae8",
+  "verdict": "ok",
+  "evidence": "PDF p.109 Q12 (Treynor ratio) and solutions p.199 '12. Answer = C' match DB correct_answer and explanation_en verbatim."
+ }
+]

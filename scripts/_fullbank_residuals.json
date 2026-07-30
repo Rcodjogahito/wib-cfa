@@ -1,0 +1,110 @@
+[
+ {
+  "id": "27cd938c-e98b-4bab-834f-0463de19d922",
+  "batch": "0003",
+  "issue": "explanation_wrong",
+  "note": "NPV vs IRR question; stored explanation is unrelated SEC/PCAOB/Sarbanes-Oxley text. No worked explanation visible on rendered page (Extra_QB question-only section, no solutions on this page). Needs relocation to the solutions section of the PDF."
+ },
+ {
+  "id": "eefe6eb7-b946-4df5-901a-80ae47aa36b5",
+  "batch": "0003",
+  "issue": "explanation_wrong",
+  "note": "Parametric vs non-parametric test question; stored explanation is unrelated GIPS disclosure text. No worked explanation visible on rendered page. Needs relocation to the solutions section of the PDF."
+ },
+ {
+  "id": "c38f5136-894d-434b-ae93-49bbbe16e63b",
+  "batch": "0003",
+  "issue": "unclear_contaminated_option",
+  "note": "option_b/option_c and correct_answer=B appear to belong to a different, later question (confirmed via crossed-out fragment on page p33). True content spans an un-rendered adjacent page (page_idx 32). Needs full re-render of pages 31-33 and manual reconstruction."
+ },
+ {
+  "id": "4d634878-8a85-43ba-bae1-1f4f4182af9b",
+  "batch": "0004",
+  "issue": "option_bleed",
+  "note": "option_c is contaminated with the bled-in stem of the next question ('I and II. 17. Based on the table...'). question_en formatting already fixed. Needs a visual re-check of the exact option_c boundary (likely just 'I and II.') before patching option_c."
+ },
+ {
+  "id": "2e13a4af-9250-4845-a5cc-50d9c703cad4",
+  "batch": "0006",
+  "issue": "explanation_wrong",
+  "note": "Dividends-declared balance-sheet question; stored explanation is an unrelated 'standard error of the sample mean' text (Quant). No worked explanation found on source pages (question_en formatting already fixed). correct_answer=C independently re-verified as correct by recomputation. Needs relocation of a worked explanation, or leave as a table-only question if none exists in source."
+ },
+ {
+  "id": "a9774d29",
+  "batch": "0009",
+  "issue": "option_bleed",
+  "note": "option_c has a stray page-footer digit ('76') glued onto the end. Cosmetic OCR artifact, not covered by question_en/explanation_en/correct_answer schema. Needs a dedicated option_a/b/c cleanup pass (recurring pattern across many batches)."
+ },
+ {
+  "id": "be704534",
+  "batch": "0009",
+  "issue": "option_bleed",
+  "note": "option_c has a stray page-footer digit ('77') glued onto the end. Same recurring OCR-bleed pattern as a9774d29."
+ },
+ {
+  "id": "d6de1b6f-856b-4bb8-979a-ccf8108a53d1",
+  "batch": "0015",
+  "issue": "explanation_garbled_prefix",
+  "note": "explanation_en was patched to fix a digit-drop (1+0.1 -> 1+0.111), but the new_value still starts with a garbled OCR fragment ('R 0.05 5 10.34810.32210.1110.0141R 1 G 2012') carried over from the original PUA-encoded symbol-font corruption (\\uf03d/\\uf02d artifacts). The readable prose portion from 'Holding period total return...' onward is correct and verified, but the leading formula header needs a proper visual re-transcription from the source page to replace the digit-soup prefix with clean text."
+ },
+ {
+  "id": "73868967",
+  "batch": "0013",
+  "issue": "explanation_wrong_unsourceable",
+  "note": "Mezzanine financing question; stored explanation belongs to a different (hedge-fund correlation) question. The source PDF's own Solutions section itself duplicates the wrong explanation under this question number -- a defect baked into the source material, not an import bug. correct_answer=B independently verified as correct, but no genuine explanation exists anywhere in the PDF to substitute without fabrication."
+ },
+ {
+  "id": "0ed48185-faa4-491b-a350-40ca3f102cbd",
+  "batch": "0013",
+  "issue": "AGENT_MISATTRIBUTION_CAUGHT_AND_REVERTED",
+  "note": "Batch 0013 agent claimed option_c was 'collar. 95' (an FRN floor/collar question) and patched it to 'collar.', but the true manifest content for this id is an unrelated option-free-bond interest-rate-risk question ('The higher the yield, the greater the bond's price sensitivity...'). Caught via _fullbank_verify_applied.py cross-check against the manifest and REVERTED to the correct original text. Lesson: agents occasionally misattribute evidence from a neighboring question on the same multi-question page to the wrong DB id. Run scripts/_fullbank_verify_applied.py after every batch of applies going forward."
+ },
+ {
+  "id": "fa1babd8-e216-47a2-b1dc-49989de8eb5d",
+  "source": "UWorld",
+  "issue": "explanation_mismatched_unrelated_content",
+  "note": "Flagged by deterministic answer_diff audit but verdict uncertain: extracted PDF text is missing its numeric data table (likely an embedded image), and the DB's stored explanation discusses unrelated conceptual content not matching the question stem at all. Independent data-quality bug, separate from the PDF-checkmark diff itself. Needs manual visual page read."
+ },
+ {
+  "id": "f1385d93-3b68-4d49-85d8-90ff201f733c",
+  "source": "UWorld",
+  "issue": "explanation_mismatched_unrelated_content",
+  "note": "Same pattern as fa1babd8: missing data table in extraction (image-based table), explanation doesn't match stem. Needs manual visual page read."
+ },
+ {
+  "id": "a074104e-e223-4b8b-84ba-5f9a11730df5",
+  "source": "UWorld",
+  "issue": "explanation_mismatched_unrelated_content",
+  "note": "Same pattern as fa1babd8: missing data table in extraction (image-based table), explanation doesn't match stem. Needs manual visual page read."
+ },
+ {
+  "id": "cada5032-7b1d-499d-87d2-2c600d7574e4",
+  "source": "UWorld",
+  "issue": "explanation_mismatched_unrelated_content",
+  "note": "Same pattern as fa1babd8: missing data table in extraction (image-based table), explanation doesn't match stem. Needs manual visual page read."
+ },
+ {
+  "id": "25818e19-7854-4b13-b7d8-45403f528e20",
+  "source": "UWorld",
+  "issue": "explanation_wrong_currency_mismatch",
+  "note": "FCF/FCFE/FCFF question with a SGD data table in the stem, but the stored explanation uses entirely different figures in a different currency (KRW) -- clearly mismatched from another question. Independent recomputation from the question's own SGD table gives FCFF as largest (196 vs FCF 181 vs FCFE 176), which matches NEITHER the DB's stored answer (A) nor the PDF-signal's suggestion (B). Needs full manual re-verification against the correct source PDF page, not a blind letter-swap."
+ },
+ {
+  "id": "uworld_textdiff_residual_265",
+  "source": "UWorld",
+  "issue": "batch_marker",
+  "note": "265 UWorld text_diff candidates did NOT word-bag-match cleanly between DB and deterministic PDF extraction (scripts/_uworld_textdiff_report.json, recon_status=='residual') -- genuine content differences requiring page-image visual review (agent-based sweep), same methodology as the Extra_QB/Kaplan hard-residual passes. Not yet started."
+ },
+ {
+  "id": "uworld_no_match_15",
+  "source": "UWorld",
+  "issue": "batch_marker",
+  "note": "15 UWorld questions where the deterministic extractor's word-overlap matcher could not confidently locate the right PDF question (scripts/_uworld_full_diff_report.json, status=='no_match'). Needs manual page relocation, same as the historical 'wrong_page' residuals."
+ },
+ {
+  "id": "kaplan_residuals_108",
+  "source": "Kaplan",
+  "issue": "batch_marker",
+  "note": "Pre-existing from the deterministic Kaplan audit done earlier the same day (commits 961f8ef/e6c7c13, before this session): 15 residual compound cases (scripts/_kaplan_compound_report.json, recon_status=='residual'), 54 residual text_diff cases (scripts/_kaplan_textdiff_report.json, recon_status=='residual'), 39 table_format_flag cases (scripts/_kaplan_full_diff_report.json, status=='table_format_flag') where content is exact but a table exists in the PDF and may not be reproduced in question_en. None of these ~108 have been picked up yet this session."
+ }
+]

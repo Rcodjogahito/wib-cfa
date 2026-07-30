@@ -1,0 +1,102 @@
+[
+ {
+  "id": "b06fa342-5357-43c6-b1a0-58ad91664fb5",
+  "verdict": "ok",
+  "evidence": "Question 23 on printed p.5 (png p7) matches DB stem/options; answer key p.118 (pdf page_idx 130) shows 'Answer = A' with explanation verbatim identical to explanation_en."
+ },
+ {
+  "id": "ede7010a-9f5c-44fe-9116-74ec8769a637",
+  "verdict": "ok",
+  "evidence": "Question 24 on printed p.6 (png p8) matches DB; answer key p.119 shows 'Answer = B' with explanation verbatim identical to explanation_en."
+ },
+ {
+  "id": "a22ae414-f5b7-4c69-9a16-992e179c2231",
+  "verdict": "ok",
+  "evidence": "Question 26 (Leo Peek) on printed p.6 (png p8) matches DB; answer key p.119 shows 'Answer = B' with explanation verbatim identical to explanation_en."
+ },
+ {
+  "id": "7ecb4d31-81fb-4ae1-b6a2-7907c0af796d",
+  "verdict": "ok",
+  "evidence": "Question 27 (Madeline Smith) on printed p.6 (png p8) matches DB; answer key p.119 shows 'Answer = B' with explanation verbatim identical to explanation_en."
+ },
+ {
+  "id": "eb9247db-1d58-49f4-a16f-bb34130316c5",
+  "verdict": "ok",
+  "evidence": "Question 25 (Rules of Procedure) on printed p.6 (png p8) matches DB; answer key p.119 shows 'Answer = B' with explanation verbatim identical to explanation_en."
+ },
+ {
+  "id": "0f579d5d-5dea-4ea9-af74-aff23725df3f",
+  "verdict": "ok",
+  "evidence": "Question 28 (Piedmont) spanning printed p.6-7 (png p8/p9) matches DB; answer key p.119 shows 'Answer = A' with explanation verbatim identical to explanation_en."
+ },
+ {
+  "id": "4e24ea08-5a27-43c0-be4c-42e402e02e45",
+  "verdict": "ok",
+  "evidence": "Question 29 (Kimisaki) on printed p.7 (png p9) matches DB; answer key p.120 shows 'Answer = B' with explanation verbatim identical to explanation_en."
+ },
+ {
+  "id": "a330e397-4cda-4508-a58b-2f7357f18025",
+  "verdict": "ok",
+  "evidence": "Question 30 (Wong/Leung) on printed p.7 (png p9) matches DB; answer key p.120 shows 'Answer = B' with explanation verbatim identical to explanation_en."
+ },
+ {
+  "id": "32d6b9a3-32f8-44d3-9a0a-62d1dedbb474",
+  "verdict": "ok",
+  "evidence": "Question 32 (GIPS compliance claim) on printed p.7 (png p9) matches DB; answer key p.120 shows 'Answer = B' with explanation verbatim identical to explanation_en."
+ },
+ {
+  "id": "0ddaa1ee-102b-4a53-911d-cae3a1bc50a8",
+  "verdict": "ok",
+  "evidence": "Question 33 (Msafari lounge) on printed p.7 (png p9) matches DB; answer key p.120 shows 'Answer = C' with explanation verbatim identical to explanation_en."
+ },
+ {
+  "id": "f9c694ac-aaf9-40c3-ab32-3cff9c904103",
+  "verdict": "ok",
+  "evidence": "Question 31 (GIPS except) on printed p.7 (png p9) matches DB; answer key p.120 shows 'Answer = A' with explanation verbatim identical to explanation_en."
+ },
+ {
+  "id": "e3af6da7-3f23-47b2-94ba-cf93e5270bd4",
+  "verdict": "ok",
+  "evidence": "Question 34 (Dzuya composite) on printed p.8 (png p10) matches DB; answer key p.120 shows 'Answer = A' with explanation verbatim identical to explanation_en."
+ },
+ {
+  "id": "8ec372c9-8606-44da-9a6e-c3bf95affe1a",
+  "verdict": "ok",
+  "evidence": "Question 37 (Cardinal short selling) on printed p.8 (png p10) matches DB; answer key p.121 shows 'Answer = A' with explanation verbatim identical to explanation_en."
+ },
+ {
+  "id": "cc7b985d-a0c9-4830-b1d5-29cd4008744e",
+  "verdict": "ok",
+  "evidence": "Question 35 (Mancini/SVF) on printed p.8 (png p10) matches DB; answer key p.120 shows 'Answer = B' with explanation verbatim identical to explanation_en."
+ },
+ {
+  "id": "181ac272-f4f7-4823-bbff-8181decb7153",
+  "verdict": "ok",
+  "evidence": "Question 36 (GIPS broadest definition) on printed p.8 (png p10) matches DB; answer key p.120 shows 'Answer = C' with explanation verbatim identical to explanation_en."
+ },
+ {
+  "id": "f5effca8-1d3a-49ec-aaab-9d0d9324866f",
+  "verdict": "ok",
+  "evidence": "Question 39 (GIPS credibility) on printed p.9 (png p11) matches DB; answer key p.121 shows 'Answer = B' with explanation verbatim identical to explanation_en."
+ },
+ {
+  "id": "72c6d525-6cf6-43ca-ba92-2a1643b892a1",
+  "verdict": "ok",
+  "evidence": "Question 41 (Zapata/Kawah) on printed p.9 (png p11) matches DB; answer key p.121 shows 'Answer = C' with explanation verbatim identical to explanation_en."
+ },
+ {
+  "id": "63e8520a-334c-4f45-94f7-df1f4aa76c73",
+  "verdict": "ok",
+  "evidence": "Question 38 (Kozniak real estate) on printed p.9 (png p11) matches DB; answer key p.121 shows 'Answer = C' with explanation verbatim identical (long-form) to explanation_en."
+ },
+ {
+  "id": "0f3a2b49-d5b0-402f-bd3b-fef8e3a0c3c8",
+  "verdict": "ok",
+  "evidence": "Question 40 (Gretta draft reports) on printed p.9 (png p11) matches DB; answer key p.121 shows 'Answer = A' with explanation verbatim identical to explanation_en."
+ },
+ {
+  "id": "f40c6bec-4e6a-4f0d-b99a-579155015389",
+  "verdict": "ok",
+  "evidence": "Question 42 (Buffet/Gatabaki) on printed p.10 (png p12) matches DB; answer key p.121 shows 'Answer = B' with explanation verbatim identical to explanation_en."
+ }
+]

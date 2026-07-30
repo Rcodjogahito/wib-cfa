@@ -1,0 +1,2706 @@
+{
+ "batches": [
+  {
+   "batch_id": "0000",
+   "path": "scripts\\_fullbank_batches\\batch_0000.json",
+   "n": 20,
+   "sources": [
+    "Extra_QB"
+   ],
+   "status": "done",
+   "corrections_applied": 5
+  },
+  {
+   "batch_id": "0001",
+   "path": "scripts\\_fullbank_batches\\batch_0001.json",
+   "n": 20,
+   "sources": [
+    "Extra_QB"
+   ],
+   "status": "done",
+   "corrections_applied": 0
+  },
+  {
+   "batch_id": "0002",
+   "path": "scripts\\_fullbank_batches\\batch_0002.json",
+   "n": 20,
+   "sources": [
+    "Extra_QB"
+   ],
+   "status": "done",
+   "corrections_applied": 8
+  },
+  {
+   "batch_id": "0003",
+   "path": "scripts\\_fullbank_batches\\batch_0003.json",
+   "n": 20,
+   "sources": [
+    "Extra_QB"
+   ],
+   "status": "done",
+   "corrections_applied": 4
+  },
+  {
+   "batch_id": "0004",
+   "path": "scripts\\_fullbank_batches\\batch_0004.json",
+   "n": 20,
+   "sources": [
+    "Extra_QB"
+   ],
+   "status": "done",
+   "corrections_applied": 12
+  },
+  {
+   "batch_id": "0005",
+   "path": "scripts\\_fullbank_batches\\batch_0005.json",
+   "n": 20,
+   "sources": [
+    "Extra_QB"
+   ],
+   "status": "done",
+   "corrections_applied": 2
+  },
+  {
+   "batch_id": "0006",
+   "path": "scripts\\_fullbank_batches\\batch_0006.json",
+   "n": 20,
+   "sources": [
+    "Extra_QB"
+   ],
+   "status": "done",
+   "corrections_applied": 6
+  },
+  {
+   "batch_id": "0007",
+   "path": "scripts\\_fullbank_batches\\batch_0007.json",
+   "n": 20,
+   "sources": [
+    "Extra_QB"
+   ],
+   "status": "done",
+   "corrections_applied": 3
+  },
+  {
+   "batch_id": "0008",
+   "path": "scripts\\_fullbank_batches\\batch_0008.json",
+   "n": 20,
+   "sources": [
+    "Extra_QB"
+   ],
+   "status": "done",
+   "corrections_applied": 6
+  },
+  {
+   "batch_id": "0009",
+   "path": "scripts\\_fullbank_batches\\batch_0009.json",
+   "n": 20,
+   "sources": [
+    "Extra_QB"
+   ],
+   "status": "done",
+   "corrections_applied": 4
+  },
+  {
+   "batch_id": "0010",
+   "path": "scripts\\_fullbank_batches\\batch_0010.json",
+   "n": 20,
+   "sources": [
+    "Extra_QB"
+   ],
+   "status": "done",
+   "corrections_applied": 4
+  },
+  {
+   "batch_id": "0011",
+   "path": "scripts\\_fullbank_batches\\batch_0011.json",
+   "n": 20,
+   "sources": [
+    "Extra_QB"
+   ],
+   "status": "done",
+   "corrections_applied": 3
+  },
+  {
+   "batch_id": "0012",
+   "path": "scripts\\_fullbank_batches\\batch_0012.json",
+   "n": 20,
+   "sources": [
+    "Extra_QB"
+   ],
+   "status": "done",
+   "corrections_applied": 5
+  },
+  {
+   "batch_id": "0013",
+   "path": "scripts\\_fullbank_batches\\batch_0013.json",
+   "n": 20,
+   "sources": [
+    "Extra_QB"
+   ],
+   "status": "done",
+   "corrections_applied": 7
+  },
+  {
+   "batch_id": "0014",
+   "path": "scripts\\_fullbank_batches\\batch_0014.json",
+   "n": 20,
+   "sources": [
+    "Extra_QB"
+   ],
+   "status": "done",
+   "corrections_applied": 5
+  },
+  {
+   "batch_id": "0015",
+   "path": "scripts\\_fullbank_batches\\batch_0015.json",
+   "n": 20,
+   "sources": [
+    "Extra_QB",
+    "Kaplan"
+   ],
+   "status": "done",
+   "corrections_applied": 7
+  },
+  {
+   "batch_id": "0016",
+   "path": "scripts\\_fullbank_batches\\batch_0016.json",
+   "n": 20,
+   "sources": [
+    "Kaplan"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0017",
+   "path": "scripts\\_fullbank_batches\\batch_0017.json",
+   "n": 20,
+   "sources": [
+    "Kaplan"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0018",
+   "path": "scripts\\_fullbank_batches\\batch_0018.json",
+   "n": 20,
+   "sources": [
+    "Kaplan"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0019",
+   "path": "scripts\\_fullbank_batches\\batch_0019.json",
+   "n": 20,
+   "sources": [
+    "Kaplan"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0020",
+   "path": "scripts\\_fullbank_batches\\batch_0020.json",
+   "n": 20,
+   "sources": [
+    "Kaplan"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0021",
+   "path": "scripts\\_fullbank_batches\\batch_0021.json",
+   "n": 20,
+   "sources": [
+    "Kaplan"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0022",
+   "path": "scripts\\_fullbank_batches\\batch_0022.json",
+   "n": 20,
+   "sources": [
+    "Kaplan"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0023",
+   "path": "scripts\\_fullbank_batches\\batch_0023.json",
+   "n": 20,
+   "sources": [
+    "Kaplan"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0024",
+   "path": "scripts\\_fullbank_batches\\batch_0024.json",
+   "n": 20,
+   "sources": [
+    "Kaplan"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0025",
+   "path": "scripts\\_fullbank_batches\\batch_0025.json",
+   "n": 20,
+   "sources": [
+    "Kaplan"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0026",
+   "path": "scripts\\_fullbank_batches\\batch_0026.json",
+   "n": 20,
+   "sources": [
+    "Kaplan"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0027",
+   "path": "scripts\\_fullbank_batches\\batch_0027.json",
+   "n": 20,
+   "sources": [
+    "Kaplan"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0028",
+   "path": "scripts\\_fullbank_batches\\batch_0028.json",
+   "n": 20,
+   "sources": [
+    "Kaplan"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0029",
+   "path": "scripts\\_fullbank_batches\\batch_0029.json",
+   "n": 20,
+   "sources": [
+    "Kaplan"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0030",
+   "path": "scripts\\_fullbank_batches\\batch_0030.json",
+   "n": 20,
+   "sources": [
+    "Kaplan"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0031",
+   "path": "scripts\\_fullbank_batches\\batch_0031.json",
+   "n": 20,
+   "sources": [
+    "Kaplan"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0032",
+   "path": "scripts\\_fullbank_batches\\batch_0032.json",
+   "n": 20,
+   "sources": [
+    "Kaplan"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0033",
+   "path": "scripts\\_fullbank_batches\\batch_0033.json",
+   "n": 20,
+   "sources": [
+    "Kaplan"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0034",
+   "path": "scripts\\_fullbank_batches\\batch_0034.json",
+   "n": 20,
+   "sources": [
+    "Kaplan"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0035",
+   "path": "scripts\\_fullbank_batches\\batch_0035.json",
+   "n": 20,
+   "sources": [
+    "Kaplan"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0036",
+   "path": "scripts\\_fullbank_batches\\batch_0036.json",
+   "n": 20,
+   "sources": [
+    "Kaplan"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0037",
+   "path": "scripts\\_fullbank_batches\\batch_0037.json",
+   "n": 20,
+   "sources": [
+    "Kaplan"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0038",
+   "path": "scripts\\_fullbank_batches\\batch_0038.json",
+   "n": 20,
+   "sources": [
+    "Kaplan"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0039",
+   "path": "scripts\\_fullbank_batches\\batch_0039.json",
+   "n": 20,
+   "sources": [
+    "Kaplan"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0040",
+   "path": "scripts\\_fullbank_batches\\batch_0040.json",
+   "n": 20,
+   "sources": [
+    "Kaplan"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0041",
+   "path": "scripts\\_fullbank_batches\\batch_0041.json",
+   "n": 20,
+   "sources": [
+    "Kaplan"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0042",
+   "path": "scripts\\_fullbank_batches\\batch_0042.json",
+   "n": 20,
+   "sources": [
+    "Kaplan"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0043",
+   "path": "scripts\\_fullbank_batches\\batch_0043.json",
+   "n": 20,
+   "sources": [
+    "Kaplan"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0044",
+   "path": "scripts\\_fullbank_batches\\batch_0044.json",
+   "n": 20,
+   "sources": [
+    "Kaplan"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0045",
+   "path": "scripts\\_fullbank_batches\\batch_0045.json",
+   "n": 20,
+   "sources": [
+    "Kaplan"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0046",
+   "path": "scripts\\_fullbank_batches\\batch_0046.json",
+   "n": 20,
+   "sources": [
+    "Kaplan"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0047",
+   "path": "scripts\\_fullbank_batches\\batch_0047.json",
+   "n": 20,
+   "sources": [
+    "Kaplan"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0048",
+   "path": "scripts\\_fullbank_batches\\batch_0048.json",
+   "n": 20,
+   "sources": [
+    "Kaplan"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0049",
+   "path": "scripts\\_fullbank_batches\\batch_0049.json",
+   "n": 20,
+   "sources": [
+    "Kaplan"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0050",
+   "path": "scripts\\_fullbank_batches\\batch_0050.json",
+   "n": 20,
+   "sources": [
+    "Kaplan"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0051",
+   "path": "scripts\\_fullbank_batches\\batch_0051.json",
+   "n": 20,
+   "sources": [
+    "Kaplan"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0052",
+   "path": "scripts\\_fullbank_batches\\batch_0052.json",
+   "n": 20,
+   "sources": [
+    "Kaplan"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0053",
+   "path": "scripts\\_fullbank_batches\\batch_0053.json",
+   "n": 20,
+   "sources": [
+    "Kaplan"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0054",
+   "path": "scripts\\_fullbank_batches\\batch_0054.json",
+   "n": 20,
+   "sources": [
+    "Kaplan"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0055",
+   "path": "scripts\\_fullbank_batches\\batch_0055.json",
+   "n": 20,
+   "sources": [
+    "Kaplan"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0056",
+   "path": "scripts\\_fullbank_batches\\batch_0056.json",
+   "n": 20,
+   "sources": [
+    "Kaplan"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0057",
+   "path": "scripts\\_fullbank_batches\\batch_0057.json",
+   "n": 20,
+   "sources": [
+    "Kaplan"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0058",
+   "path": "scripts\\_fullbank_batches\\batch_0058.json",
+   "n": 20,
+   "sources": [
+    "Kaplan"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0059",
+   "path": "scripts\\_fullbank_batches\\batch_0059.json",
+   "n": 20,
+   "sources": [
+    "Kaplan"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0060",
+   "path": "scripts\\_fullbank_batches\\batch_0060.json",
+   "n": 20,
+   "sources": [
+    "Kaplan"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0061",
+   "path": "scripts\\_fullbank_batches\\batch_0061.json",
+   "n": 20,
+   "sources": [
+    "Kaplan"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0062",
+   "path": "scripts\\_fullbank_batches\\batch_0062.json",
+   "n": 20,
+   "sources": [
+    "Kaplan"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0063",
+   "path": "scripts\\_fullbank_batches\\batch_0063.json",
+   "n": 20,
+   "sources": [
+    "Kaplan"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0064",
+   "path": "scripts\\_fullbank_batches\\batch_0064.json",
+   "n": 20,
+   "sources": [
+    "Kaplan"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0065",
+   "path": "scripts\\_fullbank_batches\\batch_0065.json",
+   "n": 20,
+   "sources": [
+    "Kaplan"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0066",
+   "path": "scripts\\_fullbank_batches\\batch_0066.json",
+   "n": 20,
+   "sources": [
+    "Kaplan"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0067",
+   "path": "scripts\\_fullbank_batches\\batch_0067.json",
+   "n": 20,
+   "sources": [
+    "Kaplan"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0068",
+   "path": "scripts\\_fullbank_batches\\batch_0068.json",
+   "n": 20,
+   "sources": [
+    "Kaplan"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0069",
+   "path": "scripts\\_fullbank_batches\\batch_0069.json",
+   "n": 20,
+   "sources": [
+    "Kaplan"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0070",
+   "path": "scripts\\_fullbank_batches\\batch_0070.json",
+   "n": 20,
+   "sources": [
+    "Kaplan"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0071",
+   "path": "scripts\\_fullbank_batches\\batch_0071.json",
+   "n": 20,
+   "sources": [
+    "Kaplan"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0072",
+   "path": "scripts\\_fullbank_batches\\batch_0072.json",
+   "n": 20,
+   "sources": [
+    "Kaplan"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0073",
+   "path": "scripts\\_fullbank_batches\\batch_0073.json",
+   "n": 20,
+   "sources": [
+    "Kaplan"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0074",
+   "path": "scripts\\_fullbank_batches\\batch_0074.json",
+   "n": 20,
+   "sources": [
+    "Kaplan"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0075",
+   "path": "scripts\\_fullbank_batches\\batch_0075.json",
+   "n": 20,
+   "sources": [
+    "Kaplan"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0076",
+   "path": "scripts\\_fullbank_batches\\batch_0076.json",
+   "n": 20,
+   "sources": [
+    "Kaplan"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0077",
+   "path": "scripts\\_fullbank_batches\\batch_0077.json",
+   "n": 20,
+   "sources": [
+    "Kaplan"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0078",
+   "path": "scripts\\_fullbank_batches\\batch_0078.json",
+   "n": 20,
+   "sources": [
+    "Kaplan"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0079",
+   "path": "scripts\\_fullbank_batches\\batch_0079.json",
+   "n": 20,
+   "sources": [
+    "Kaplan"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0080",
+   "path": "scripts\\_fullbank_batches\\batch_0080.json",
+   "n": 20,
+   "sources": [
+    "Kaplan"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0081",
+   "path": "scripts\\_fullbank_batches\\batch_0081.json",
+   "n": 20,
+   "sources": [
+    "Kaplan"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0082",
+   "path": "scripts\\_fullbank_batches\\batch_0082.json",
+   "n": 20,
+   "sources": [
+    "Kaplan"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0083",
+   "path": "scripts\\_fullbank_batches\\batch_0083.json",
+   "n": 20,
+   "sources": [
+    "Kaplan"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0084",
+   "path": "scripts\\_fullbank_batches\\batch_0084.json",
+   "n": 20,
+   "sources": [
+    "Kaplan"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0085",
+   "path": "scripts\\_fullbank_batches\\batch_0085.json",
+   "n": 20,
+   "sources": [
+    "Kaplan"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0086",
+   "path": "scripts\\_fullbank_batches\\batch_0086.json",
+   "n": 20,
+   "sources": [
+    "Kaplan"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0087",
+   "path": "scripts\\_fullbank_batches\\batch_0087.json",
+   "n": 20,
+   "sources": [
+    "Kaplan"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0088",
+   "path": "scripts\\_fullbank_batches\\batch_0088.json",
+   "n": 20,
+   "sources": [
+    "Kaplan"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0089",
+   "path": "scripts\\_fullbank_batches\\batch_0089.json",
+   "n": 20,
+   "sources": [
+    "Kaplan"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0090",
+   "path": "scripts\\_fullbank_batches\\batch_0090.json",
+   "n": 20,
+   "sources": [
+    "Kaplan"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0091",
+   "path": "scripts\\_fullbank_batches\\batch_0091.json",
+   "n": 20,
+   "sources": [
+    "Kaplan"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0092",
+   "path": "scripts\\_fullbank_batches\\batch_0092.json",
+   "n": 20,
+   "sources": [
+    "Kaplan"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0093",
+   "path": "scripts\\_fullbank_batches\\batch_0093.json",
+   "n": 20,
+   "sources": [
+    "Kaplan"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0094",
+   "path": "scripts\\_fullbank_batches\\batch_0094.json",
+   "n": 20,
+   "sources": [
+    "Kaplan"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0095",
+   "path": "scripts\\_fullbank_batches\\batch_0095.json",
+   "n": 20,
+   "sources": [
+    "Kaplan"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0096",
+   "path": "scripts\\_fullbank_batches\\batch_0096.json",
+   "n": 20,
+   "sources": [
+    "Kaplan"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0097",
+   "path": "scripts\\_fullbank_batches\\batch_0097.json",
+   "n": 20,
+   "sources": [
+    "Kaplan"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0098",
+   "path": "scripts\\_fullbank_batches\\batch_0098.json",
+   "n": 20,
+   "sources": [
+    "Kaplan"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0099",
+   "path": "scripts\\_fullbank_batches\\batch_0099.json",
+   "n": 20,
+   "sources": [
+    "Kaplan"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0100",
+   "path": "scripts\\_fullbank_batches\\batch_0100.json",
+   "n": 20,
+   "sources": [
+    "Kaplan"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0101",
+   "path": "scripts\\_fullbank_batches\\batch_0101.json",
+   "n": 20,
+   "sources": [
+    "Kaplan"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0102",
+   "path": "scripts\\_fullbank_batches\\batch_0102.json",
+   "n": 20,
+   "sources": [
+    "Kaplan"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0103",
+   "path": "scripts\\_fullbank_batches\\batch_0103.json",
+   "n": 20,
+   "sources": [
+    "Kaplan"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0104",
+   "path": "scripts\\_fullbank_batches\\batch_0104.json",
+   "n": 20,
+   "sources": [
+    "Kaplan"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0105",
+   "path": "scripts\\_fullbank_batches\\batch_0105.json",
+   "n": 20,
+   "sources": [
+    "Kaplan"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0106",
+   "path": "scripts\\_fullbank_batches\\batch_0106.json",
+   "n": 20,
+   "sources": [
+    "Kaplan"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0107",
+   "path": "scripts\\_fullbank_batches\\batch_0107.json",
+   "n": 20,
+   "sources": [
+    "Kaplan"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0108",
+   "path": "scripts\\_fullbank_batches\\batch_0108.json",
+   "n": 20,
+   "sources": [
+    "Kaplan"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0109",
+   "path": "scripts\\_fullbank_batches\\batch_0109.json",
+   "n": 20,
+   "sources": [
+    "Kaplan"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0110",
+   "path": "scripts\\_fullbank_batches\\batch_0110.json",
+   "n": 20,
+   "sources": [
+    "Kaplan"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0111",
+   "path": "scripts\\_fullbank_batches\\batch_0111.json",
+   "n": 20,
+   "sources": [
+    "Kaplan"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0112",
+   "path": "scripts\\_fullbank_batches\\batch_0112.json",
+   "n": 20,
+   "sources": [
+    "Kaplan"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0113",
+   "path": "scripts\\_fullbank_batches\\batch_0113.json",
+   "n": 20,
+   "sources": [
+    "Kaplan"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0114",
+   "path": "scripts\\_fullbank_batches\\batch_0114.json",
+   "n": 20,
+   "sources": [
+    "Kaplan"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0115",
+   "path": "scripts\\_fullbank_batches\\batch_0115.json",
+   "n": 20,
+   "sources": [
+    "Kaplan"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0116",
+   "path": "scripts\\_fullbank_batches\\batch_0116.json",
+   "n": 20,
+   "sources": [
+    "Kaplan"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0117",
+   "path": "scripts\\_fullbank_batches\\batch_0117.json",
+   "n": 20,
+   "sources": [
+    "Kaplan"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0118",
+   "path": "scripts\\_fullbank_batches\\batch_0118.json",
+   "n": 20,
+   "sources": [
+    "Kaplan"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0119",
+   "path": "scripts\\_fullbank_batches\\batch_0119.json",
+   "n": 20,
+   "sources": [
+    "Kaplan"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0120",
+   "path": "scripts\\_fullbank_batches\\batch_0120.json",
+   "n": 20,
+   "sources": [
+    "Kaplan"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0121",
+   "path": "scripts\\_fullbank_batches\\batch_0121.json",
+   "n": 20,
+   "sources": [
+    "Kaplan"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0122",
+   "path": "scripts\\_fullbank_batches\\batch_0122.json",
+   "n": 20,
+   "sources": [
+    "Kaplan"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0123",
+   "path": "scripts\\_fullbank_batches\\batch_0123.json",
+   "n": 20,
+   "sources": [
+    "Kaplan"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0124",
+   "path": "scripts\\_fullbank_batches\\batch_0124.json",
+   "n": 20,
+   "sources": [
+    "Kaplan"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0125",
+   "path": "scripts\\_fullbank_batches\\batch_0125.json",
+   "n": 20,
+   "sources": [
+    "Kaplan"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0126",
+   "path": "scripts\\_fullbank_batches\\batch_0126.json",
+   "n": 20,
+   "sources": [
+    "Kaplan"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0127",
+   "path": "scripts\\_fullbank_batches\\batch_0127.json",
+   "n": 20,
+   "sources": [
+    "Kaplan"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0128",
+   "path": "scripts\\_fullbank_batches\\batch_0128.json",
+   "n": 20,
+   "sources": [
+    "Kaplan"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0129",
+   "path": "scripts\\_fullbank_batches\\batch_0129.json",
+   "n": 20,
+   "sources": [
+    "Kaplan"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0130",
+   "path": "scripts\\_fullbank_batches\\batch_0130.json",
+   "n": 20,
+   "sources": [
+    "Kaplan"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0131",
+   "path": "scripts\\_fullbank_batches\\batch_0131.json",
+   "n": 20,
+   "sources": [
+    "Kaplan"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0132",
+   "path": "scripts\\_fullbank_batches\\batch_0132.json",
+   "n": 20,
+   "sources": [
+    "Kaplan"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0133",
+   "path": "scripts\\_fullbank_batches\\batch_0133.json",
+   "n": 20,
+   "sources": [
+    "Kaplan"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0134",
+   "path": "scripts\\_fullbank_batches\\batch_0134.json",
+   "n": 20,
+   "sources": [
+    "Kaplan"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0135",
+   "path": "scripts\\_fullbank_batches\\batch_0135.json",
+   "n": 20,
+   "sources": [
+    "Kaplan"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0136",
+   "path": "scripts\\_fullbank_batches\\batch_0136.json",
+   "n": 20,
+   "sources": [
+    "Kaplan"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0137",
+   "path": "scripts\\_fullbank_batches\\batch_0137.json",
+   "n": 20,
+   "sources": [
+    "Kaplan"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0138",
+   "path": "scripts\\_fullbank_batches\\batch_0138.json",
+   "n": 20,
+   "sources": [
+    "Kaplan"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0139",
+   "path": "scripts\\_fullbank_batches\\batch_0139.json",
+   "n": 20,
+   "sources": [
+    "Kaplan"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0140",
+   "path": "scripts\\_fullbank_batches\\batch_0140.json",
+   "n": 20,
+   "sources": [
+    "Kaplan"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0141",
+   "path": "scripts\\_fullbank_batches\\batch_0141.json",
+   "n": 20,
+   "sources": [
+    "Kaplan"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0142",
+   "path": "scripts\\_fullbank_batches\\batch_0142.json",
+   "n": 20,
+   "sources": [
+    "Kaplan"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0143",
+   "path": "scripts\\_fullbank_batches\\batch_0143.json",
+   "n": 20,
+   "sources": [
+    "Kaplan"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0144",
+   "path": "scripts\\_fullbank_batches\\batch_0144.json",
+   "n": 20,
+   "sources": [
+    "Kaplan"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0145",
+   "path": "scripts\\_fullbank_batches\\batch_0145.json",
+   "n": 20,
+   "sources": [
+    "Kaplan"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0146",
+   "path": "scripts\\_fullbank_batches\\batch_0146.json",
+   "n": 20,
+   "sources": [
+    "Kaplan"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0147",
+   "path": "scripts\\_fullbank_batches\\batch_0147.json",
+   "n": 20,
+   "sources": [
+    "Kaplan"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0148",
+   "path": "scripts\\_fullbank_batches\\batch_0148.json",
+   "n": 20,
+   "sources": [
+    "Kaplan"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0149",
+   "path": "scripts\\_fullbank_batches\\batch_0149.json",
+   "n": 20,
+   "sources": [
+    "Kaplan"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0150",
+   "path": "scripts\\_fullbank_batches\\batch_0150.json",
+   "n": 20,
+   "sources": [
+    "Kaplan"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0151",
+   "path": "scripts\\_fullbank_batches\\batch_0151.json",
+   "n": 20,
+   "sources": [
+    "Kaplan"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0152",
+   "path": "scripts\\_fullbank_batches\\batch_0152.json",
+   "n": 20,
+   "sources": [
+    "Kaplan"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0153",
+   "path": "scripts\\_fullbank_batches\\batch_0153.json",
+   "n": 20,
+   "sources": [
+    "Kaplan"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0154",
+   "path": "scripts\\_fullbank_batches\\batch_0154.json",
+   "n": 20,
+   "sources": [
+    "Kaplan"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0155",
+   "path": "scripts\\_fullbank_batches\\batch_0155.json",
+   "n": 20,
+   "sources": [
+    "Kaplan"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0156",
+   "path": "scripts\\_fullbank_batches\\batch_0156.json",
+   "n": 20,
+   "sources": [
+    "Kaplan"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0157",
+   "path": "scripts\\_fullbank_batches\\batch_0157.json",
+   "n": 20,
+   "sources": [
+    "Kaplan"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0158",
+   "path": "scripts\\_fullbank_batches\\batch_0158.json",
+   "n": 20,
+   "sources": [
+    "Kaplan"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0159",
+   "path": "scripts\\_fullbank_batches\\batch_0159.json",
+   "n": 20,
+   "sources": [
+    "Kaplan"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0160",
+   "path": "scripts\\_fullbank_batches\\batch_0160.json",
+   "n": 20,
+   "sources": [
+    "Kaplan"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0161",
+   "path": "scripts\\_fullbank_batches\\batch_0161.json",
+   "n": 20,
+   "sources": [
+    "Kaplan"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0162",
+   "path": "scripts\\_fullbank_batches\\batch_0162.json",
+   "n": 20,
+   "sources": [
+    "Kaplan"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0163",
+   "path": "scripts\\_fullbank_batches\\batch_0163.json",
+   "n": 20,
+   "sources": [
+    "Kaplan"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0164",
+   "path": "scripts\\_fullbank_batches\\batch_0164.json",
+   "n": 20,
+   "sources": [
+    "Kaplan"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0165",
+   "path": "scripts\\_fullbank_batches\\batch_0165.json",
+   "n": 20,
+   "sources": [
+    "Kaplan"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0166",
+   "path": "scripts\\_fullbank_batches\\batch_0166.json",
+   "n": 20,
+   "sources": [
+    "Kaplan"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0167",
+   "path": "scripts\\_fullbank_batches\\batch_0167.json",
+   "n": 20,
+   "sources": [
+    "Kaplan"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0168",
+   "path": "scripts\\_fullbank_batches\\batch_0168.json",
+   "n": 20,
+   "sources": [
+    "Kaplan"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0169",
+   "path": "scripts\\_fullbank_batches\\batch_0169.json",
+   "n": 20,
+   "sources": [
+    "Kaplan"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0170",
+   "path": "scripts\\_fullbank_batches\\batch_0170.json",
+   "n": 20,
+   "sources": [
+    "Kaplan"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0171",
+   "path": "scripts\\_fullbank_batches\\batch_0171.json",
+   "n": 20,
+   "sources": [
+    "Kaplan"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0172",
+   "path": "scripts\\_fullbank_batches\\batch_0172.json",
+   "n": 20,
+   "sources": [
+    "Kaplan"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0173",
+   "path": "scripts\\_fullbank_batches\\batch_0173.json",
+   "n": 20,
+   "sources": [
+    "Kaplan"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0174",
+   "path": "scripts\\_fullbank_batches\\batch_0174.json",
+   "n": 20,
+   "sources": [
+    "Kaplan"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0175",
+   "path": "scripts\\_fullbank_batches\\batch_0175.json",
+   "n": 20,
+   "sources": [
+    "Kaplan"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0176",
+   "path": "scripts\\_fullbank_batches\\batch_0176.json",
+   "n": 20,
+   "sources": [
+    "Kaplan"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0177",
+   "path": "scripts\\_fullbank_batches\\batch_0177.json",
+   "n": 20,
+   "sources": [
+    "Kaplan"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0178",
+   "path": "scripts\\_fullbank_batches\\batch_0178.json",
+   "n": 20,
+   "sources": [
+    "Kaplan"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0179",
+   "path": "scripts\\_fullbank_batches\\batch_0179.json",
+   "n": 20,
+   "sources": [
+    "Kaplan"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0180",
+   "path": "scripts\\_fullbank_batches\\batch_0180.json",
+   "n": 20,
+   "sources": [
+    "Kaplan"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0181",
+   "path": "scripts\\_fullbank_batches\\batch_0181.json",
+   "n": 20,
+   "sources": [
+    "Kaplan"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0182",
+   "path": "scripts\\_fullbank_batches\\batch_0182.json",
+   "n": 20,
+   "sources": [
+    "Kaplan"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0183",
+   "path": "scripts\\_fullbank_batches\\batch_0183.json",
+   "n": 20,
+   "sources": [
+    "Kaplan"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0184",
+   "path": "scripts\\_fullbank_batches\\batch_0184.json",
+   "n": 20,
+   "sources": [
+    "Kaplan"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0185",
+   "path": "scripts\\_fullbank_batches\\batch_0185.json",
+   "n": 20,
+   "sources": [
+    "Kaplan"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0186",
+   "path": "scripts\\_fullbank_batches\\batch_0186.json",
+   "n": 20,
+   "sources": [
+    "Kaplan"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0187",
+   "path": "scripts\\_fullbank_batches\\batch_0187.json",
+   "n": 20,
+   "sources": [
+    "Kaplan"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0188",
+   "path": "scripts\\_fullbank_batches\\batch_0188.json",
+   "n": 20,
+   "sources": [
+    "Kaplan"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0189",
+   "path": "scripts\\_fullbank_batches\\batch_0189.json",
+   "n": 20,
+   "sources": [
+    "Kaplan"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0190",
+   "path": "scripts\\_fullbank_batches\\batch_0190.json",
+   "n": 20,
+   "sources": [
+    "Kaplan"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0191",
+   "path": "scripts\\_fullbank_batches\\batch_0191.json",
+   "n": 20,
+   "sources": [
+    "Kaplan"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0192",
+   "path": "scripts\\_fullbank_batches\\batch_0192.json",
+   "n": 20,
+   "sources": [
+    "Kaplan"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0193",
+   "path": "scripts\\_fullbank_batches\\batch_0193.json",
+   "n": 20,
+   "sources": [
+    "Kaplan"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0194",
+   "path": "scripts\\_fullbank_batches\\batch_0194.json",
+   "n": 20,
+   "sources": [
+    "Kaplan"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0195",
+   "path": "scripts\\_fullbank_batches\\batch_0195.json",
+   "n": 20,
+   "sources": [
+    "Kaplan"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0196",
+   "path": "scripts\\_fullbank_batches\\batch_0196.json",
+   "n": 20,
+   "sources": [
+    "Kaplan",
+    "Kevin_Mock"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0197",
+   "path": "scripts\\_fullbank_batches\\batch_0197.json",
+   "n": 20,
+   "sources": [
+    "Kevin_Mock"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0198",
+   "path": "scripts\\_fullbank_batches\\batch_0198.json",
+   "n": 20,
+   "sources": [
+    "Kevin_Mock"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0199",
+   "path": "scripts\\_fullbank_batches\\batch_0199.json",
+   "n": 20,
+   "sources": [
+    "Kevin_Mock"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0200",
+   "path": "scripts\\_fullbank_batches\\batch_0200.json",
+   "n": 20,
+   "sources": [
+    "Kevin_Mock"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0201",
+   "path": "scripts\\_fullbank_batches\\batch_0201.json",
+   "n": 20,
+   "sources": [
+    "Kevin_Mock"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0202",
+   "path": "scripts\\_fullbank_batches\\batch_0202.json",
+   "n": 20,
+   "sources": [
+    "Kevin_Mock"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0203",
+   "path": "scripts\\_fullbank_batches\\batch_0203.json",
+   "n": 20,
+   "sources": [
+    "Kevin_Mock"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0204",
+   "path": "scripts\\_fullbank_batches\\batch_0204.json",
+   "n": 20,
+   "sources": [
+    "Kevin_Mock"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0205",
+   "path": "scripts\\_fullbank_batches\\batch_0205.json",
+   "n": 20,
+   "sources": [
+    "Kevin_Mock",
+    "UWorld"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0206",
+   "path": "scripts\\_fullbank_batches\\batch_0206.json",
+   "n": 20,
+   "sources": [
+    "UWorld"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0207",
+   "path": "scripts\\_fullbank_batches\\batch_0207.json",
+   "n": 20,
+   "sources": [
+    "UWorld"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0208",
+   "path": "scripts\\_fullbank_batches\\batch_0208.json",
+   "n": 20,
+   "sources": [
+    "UWorld"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0209",
+   "path": "scripts\\_fullbank_batches\\batch_0209.json",
+   "n": 20,
+   "sources": [
+    "UWorld"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0210",
+   "path": "scripts\\_fullbank_batches\\batch_0210.json",
+   "n": 20,
+   "sources": [
+    "UWorld"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0211",
+   "path": "scripts\\_fullbank_batches\\batch_0211.json",
+   "n": 20,
+   "sources": [
+    "UWorld"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0212",
+   "path": "scripts\\_fullbank_batches\\batch_0212.json",
+   "n": 20,
+   "sources": [
+    "UWorld"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0213",
+   "path": "scripts\\_fullbank_batches\\batch_0213.json",
+   "n": 20,
+   "sources": [
+    "UWorld"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0214",
+   "path": "scripts\\_fullbank_batches\\batch_0214.json",
+   "n": 20,
+   "sources": [
+    "UWorld"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0215",
+   "path": "scripts\\_fullbank_batches\\batch_0215.json",
+   "n": 20,
+   "sources": [
+    "UWorld"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0216",
+   "path": "scripts\\_fullbank_batches\\batch_0216.json",
+   "n": 20,
+   "sources": [
+    "UWorld"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0217",
+   "path": "scripts\\_fullbank_batches\\batch_0217.json",
+   "n": 20,
+   "sources": [
+    "UWorld"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0218",
+   "path": "scripts\\_fullbank_batches\\batch_0218.json",
+   "n": 20,
+   "sources": [
+    "UWorld"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0219",
+   "path": "scripts\\_fullbank_batches\\batch_0219.json",
+   "n": 20,
+   "sources": [
+    "UWorld"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0220",
+   "path": "scripts\\_fullbank_batches\\batch_0220.json",
+   "n": 20,
+   "sources": [
+    "UWorld"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0221",
+   "path": "scripts\\_fullbank_batches\\batch_0221.json",
+   "n": 20,
+   "sources": [
+    "UWorld"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0222",
+   "path": "scripts\\_fullbank_batches\\batch_0222.json",
+   "n": 20,
+   "sources": [
+    "UWorld"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0223",
+   "path": "scripts\\_fullbank_batches\\batch_0223.json",
+   "n": 20,
+   "sources": [
+    "UWorld"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0224",
+   "path": "scripts\\_fullbank_batches\\batch_0224.json",
+   "n": 20,
+   "sources": [
+    "UWorld"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0225",
+   "path": "scripts\\_fullbank_batches\\batch_0225.json",
+   "n": 20,
+   "sources": [
+    "UWorld"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0226",
+   "path": "scripts\\_fullbank_batches\\batch_0226.json",
+   "n": 20,
+   "sources": [
+    "UWorld"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0227",
+   "path": "scripts\\_fullbank_batches\\batch_0227.json",
+   "n": 20,
+   "sources": [
+    "UWorld"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0228",
+   "path": "scripts\\_fullbank_batches\\batch_0228.json",
+   "n": 20,
+   "sources": [
+    "UWorld"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0229",
+   "path": "scripts\\_fullbank_batches\\batch_0229.json",
+   "n": 20,
+   "sources": [
+    "UWorld"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0230",
+   "path": "scripts\\_fullbank_batches\\batch_0230.json",
+   "n": 20,
+   "sources": [
+    "UWorld"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0231",
+   "path": "scripts\\_fullbank_batches\\batch_0231.json",
+   "n": 20,
+   "sources": [
+    "UWorld"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0232",
+   "path": "scripts\\_fullbank_batches\\batch_0232.json",
+   "n": 20,
+   "sources": [
+    "UWorld"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0233",
+   "path": "scripts\\_fullbank_batches\\batch_0233.json",
+   "n": 20,
+   "sources": [
+    "UWorld"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0234",
+   "path": "scripts\\_fullbank_batches\\batch_0234.json",
+   "n": 20,
+   "sources": [
+    "UWorld"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0235",
+   "path": "scripts\\_fullbank_batches\\batch_0235.json",
+   "n": 20,
+   "sources": [
+    "UWorld"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0236",
+   "path": "scripts\\_fullbank_batches\\batch_0236.json",
+   "n": 20,
+   "sources": [
+    "UWorld"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0237",
+   "path": "scripts\\_fullbank_batches\\batch_0237.json",
+   "n": 20,
+   "sources": [
+    "UWorld"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0238",
+   "path": "scripts\\_fullbank_batches\\batch_0238.json",
+   "n": 20,
+   "sources": [
+    "UWorld"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0239",
+   "path": "scripts\\_fullbank_batches\\batch_0239.json",
+   "n": 20,
+   "sources": [
+    "UWorld"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0240",
+   "path": "scripts\\_fullbank_batches\\batch_0240.json",
+   "n": 20,
+   "sources": [
+    "UWorld"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0241",
+   "path": "scripts\\_fullbank_batches\\batch_0241.json",
+   "n": 20,
+   "sources": [
+    "UWorld"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0242",
+   "path": "scripts\\_fullbank_batches\\batch_0242.json",
+   "n": 20,
+   "sources": [
+    "UWorld"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0243",
+   "path": "scripts\\_fullbank_batches\\batch_0243.json",
+   "n": 20,
+   "sources": [
+    "UWorld"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0244",
+   "path": "scripts\\_fullbank_batches\\batch_0244.json",
+   "n": 20,
+   "sources": [
+    "UWorld"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0245",
+   "path": "scripts\\_fullbank_batches\\batch_0245.json",
+   "n": 20,
+   "sources": [
+    "UWorld"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0246",
+   "path": "scripts\\_fullbank_batches\\batch_0246.json",
+   "n": 20,
+   "sources": [
+    "UWorld"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0247",
+   "path": "scripts\\_fullbank_batches\\batch_0247.json",
+   "n": 20,
+   "sources": [
+    "UWorld"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0248",
+   "path": "scripts\\_fullbank_batches\\batch_0248.json",
+   "n": 20,
+   "sources": [
+    "UWorld"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0249",
+   "path": "scripts\\_fullbank_batches\\batch_0249.json",
+   "n": 20,
+   "sources": [
+    "UWorld"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0250",
+   "path": "scripts\\_fullbank_batches\\batch_0250.json",
+   "n": 20,
+   "sources": [
+    "UWorld"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0251",
+   "path": "scripts\\_fullbank_batches\\batch_0251.json",
+   "n": 20,
+   "sources": [
+    "UWorld"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0252",
+   "path": "scripts\\_fullbank_batches\\batch_0252.json",
+   "n": 20,
+   "sources": [
+    "UWorld"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0253",
+   "path": "scripts\\_fullbank_batches\\batch_0253.json",
+   "n": 20,
+   "sources": [
+    "UWorld"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0254",
+   "path": "scripts\\_fullbank_batches\\batch_0254.json",
+   "n": 20,
+   "sources": [
+    "UWorld"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0255",
+   "path": "scripts\\_fullbank_batches\\batch_0255.json",
+   "n": 20,
+   "sources": [
+    "UWorld"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0256",
+   "path": "scripts\\_fullbank_batches\\batch_0256.json",
+   "n": 20,
+   "sources": [
+    "UWorld"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0257",
+   "path": "scripts\\_fullbank_batches\\batch_0257.json",
+   "n": 20,
+   "sources": [
+    "UWorld"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0258",
+   "path": "scripts\\_fullbank_batches\\batch_0258.json",
+   "n": 20,
+   "sources": [
+    "UWorld"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0259",
+   "path": "scripts\\_fullbank_batches\\batch_0259.json",
+   "n": 20,
+   "sources": [
+    "UWorld"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0260",
+   "path": "scripts\\_fullbank_batches\\batch_0260.json",
+   "n": 20,
+   "sources": [
+    "UWorld"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0261",
+   "path": "scripts\\_fullbank_batches\\batch_0261.json",
+   "n": 20,
+   "sources": [
+    "UWorld"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0262",
+   "path": "scripts\\_fullbank_batches\\batch_0262.json",
+   "n": 20,
+   "sources": [
+    "UWorld"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0263",
+   "path": "scripts\\_fullbank_batches\\batch_0263.json",
+   "n": 20,
+   "sources": [
+    "UWorld"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0264",
+   "path": "scripts\\_fullbank_batches\\batch_0264.json",
+   "n": 20,
+   "sources": [
+    "UWorld"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0265",
+   "path": "scripts\\_fullbank_batches\\batch_0265.json",
+   "n": 20,
+   "sources": [
+    "UWorld"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0266",
+   "path": "scripts\\_fullbank_batches\\batch_0266.json",
+   "n": 20,
+   "sources": [
+    "UWorld"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0267",
+   "path": "scripts\\_fullbank_batches\\batch_0267.json",
+   "n": 20,
+   "sources": [
+    "UWorld"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0268",
+   "path": "scripts\\_fullbank_batches\\batch_0268.json",
+   "n": 20,
+   "sources": [
+    "UWorld"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0269",
+   "path": "scripts\\_fullbank_batches\\batch_0269.json",
+   "n": 20,
+   "sources": [
+    "UWorld"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0270",
+   "path": "scripts\\_fullbank_batches\\batch_0270.json",
+   "n": 20,
+   "sources": [
+    "UWorld"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0271",
+   "path": "scripts\\_fullbank_batches\\batch_0271.json",
+   "n": 20,
+   "sources": [
+    "UWorld"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0272",
+   "path": "scripts\\_fullbank_batches\\batch_0272.json",
+   "n": 20,
+   "sources": [
+    "UWorld"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0273",
+   "path": "scripts\\_fullbank_batches\\batch_0273.json",
+   "n": 20,
+   "sources": [
+    "UWorld"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0274",
+   "path": "scripts\\_fullbank_batches\\batch_0274.json",
+   "n": 20,
+   "sources": [
+    "UWorld"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0275",
+   "path": "scripts\\_fullbank_batches\\batch_0275.json",
+   "n": 20,
+   "sources": [
+    "UWorld"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0276",
+   "path": "scripts\\_fullbank_batches\\batch_0276.json",
+   "n": 20,
+   "sources": [
+    "UWorld"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0277",
+   "path": "scripts\\_fullbank_batches\\batch_0277.json",
+   "n": 20,
+   "sources": [
+    "UWorld"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0278",
+   "path": "scripts\\_fullbank_batches\\batch_0278.json",
+   "n": 20,
+   "sources": [
+    "UWorld"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0279",
+   "path": "scripts\\_fullbank_batches\\batch_0279.json",
+   "n": 20,
+   "sources": [
+    "UWorld"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0280",
+   "path": "scripts\\_fullbank_batches\\batch_0280.json",
+   "n": 20,
+   "sources": [
+    "UWorld"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0281",
+   "path": "scripts\\_fullbank_batches\\batch_0281.json",
+   "n": 20,
+   "sources": [
+    "UWorld"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0282",
+   "path": "scripts\\_fullbank_batches\\batch_0282.json",
+   "n": 20,
+   "sources": [
+    "UWorld"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0283",
+   "path": "scripts\\_fullbank_batches\\batch_0283.json",
+   "n": 20,
+   "sources": [
+    "UWorld"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0284",
+   "path": "scripts\\_fullbank_batches\\batch_0284.json",
+   "n": 20,
+   "sources": [
+    "UWorld"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0285",
+   "path": "scripts\\_fullbank_batches\\batch_0285.json",
+   "n": 20,
+   "sources": [
+    "UWorld"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0286",
+   "path": "scripts\\_fullbank_batches\\batch_0286.json",
+   "n": 20,
+   "sources": [
+    "UWorld"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0287",
+   "path": "scripts\\_fullbank_batches\\batch_0287.json",
+   "n": 20,
+   "sources": [
+    "UWorld"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0288",
+   "path": "scripts\\_fullbank_batches\\batch_0288.json",
+   "n": 20,
+   "sources": [
+    "UWorld"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0289",
+   "path": "scripts\\_fullbank_batches\\batch_0289.json",
+   "n": 20,
+   "sources": [
+    "UWorld"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0290",
+   "path": "scripts\\_fullbank_batches\\batch_0290.json",
+   "n": 20,
+   "sources": [
+    "UWorld"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0291",
+   "path": "scripts\\_fullbank_batches\\batch_0291.json",
+   "n": 20,
+   "sources": [
+    "UWorld"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0292",
+   "path": "scripts\\_fullbank_batches\\batch_0292.json",
+   "n": 20,
+   "sources": [
+    "UWorld"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0293",
+   "path": "scripts\\_fullbank_batches\\batch_0293.json",
+   "n": 20,
+   "sources": [
+    "UWorld"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0294",
+   "path": "scripts\\_fullbank_batches\\batch_0294.json",
+   "n": 20,
+   "sources": [
+    "UWorld"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0295",
+   "path": "scripts\\_fullbank_batches\\batch_0295.json",
+   "n": 20,
+   "sources": [
+    "UWorld"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0296",
+   "path": "scripts\\_fullbank_batches\\batch_0296.json",
+   "n": 20,
+   "sources": [
+    "UWorld"
+   ],
+   "status": "pending"
+  },
+  {
+   "batch_id": "0297",
+   "path": "scripts\\_fullbank_batches\\batch_0297.json",
+   "n": 14,
+   "sources": [
+    "UWorld"
+   ],
+   "status": "pending"
+  }
+ ],
+ "total_items": 5954
+}

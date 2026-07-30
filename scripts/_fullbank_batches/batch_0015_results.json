@@ -1,0 +1,121 @@
+[
+  {
+    "id": "788a90a8-5b4f-4a40-8fee-9350d40aff41",
+    "verdict": "option_bleed",
+    "field": "option_c",
+    "new_value": "10.8%.",
+    "evidence": "Source page (Extra QB p.109, Q13) shows option C as simply '10.8%.'; the page footer number '109' printed below the options bled onto the end of option_c in the DB."
+  },
+  {
+    "id": "365a91bf-6c51-46f8-ba71-79df309c3de1",
+    "verdict": "ok",
+    "evidence": "Q9 on p.109 matches: correct answer B, option text and explanation ('borrowed funds at the risk-free rate and invested all available funds...') match the source (only a harmless missing space in 'investedall')."
+  },
+  {
+    "id": "41b6188b-b6f2-420e-ac6b-c84f78372a02",
+    "verdict": "ok",
+    "evidence": "Q16 on p.110 (HCL Corp) confirmed via Solutions section p.199 'Answer = C'; explanation reproduces the same beta/CAPM formula OCR (beta 1.6, expected return 18.8%) as the source solution."
+  },
+  {
+    "id": "252075aa-b5e9-4320-a85d-842db2013a25",
+    "verdict": "ok",
+    "evidence": "Q14 (Stock X/Y systematic risk) on p.110 confirmed via Solutions p.199 'Answer = C'; explanation text matches verbatim."
+  },
+  {
+    "id": "46eccf68-789d-4b54-bb8d-055b422e9a9c",
+    "verdict": "ok",
+    "evidence": "Q15 (IPS appendices) on p.110 confirmed via Solutions p.199 'Answer = B'; explanation matches verbatim."
+  },
+  {
+    "id": "d6de1b6f-856b-4bb8-979a-ccf8108a53d1",
+    "verdict": "formatting_missing",
+    "field": "question_en",
+    "new_value": "An asset management firm generated the following annual returns in their US large-cap equity portfolio:\n\n| Year | Net Return (%) |\n|------|----------------|\n| 2008 | -34.8 |\n| 2009 | 32.2 |\n| 2010 | 11.1 |\n| 2011 | -1.4 |\n\nThe 2012 return needed to achieve a trailing five-year geometric mean annualized return of 5% when calculated at the end of 2012 is closest to:",
+    "evidence": "Q17 on p.110 shows a 'Year / Net Return (%)' table (2008: -34.8, 2009: 32.2, 2010: 11.1, 2011: -1.4) that was entirely omitted from question_en, which currently jumps straight from 'US large-cap equity portfolio:' to 'The 2012 return needed...'."
+  },
+  {
+    "id": "d6de1b6f-856b-4bb8-979a-ccf8108a53d1",
+    "verdict": "explanation_wrong",
+    "field": "explanation_en",
+    "new_value": "R 0.05 5 10.34810.32210.1110.0141R 1 G 2012 Holding period total return (cumulative) factor calculation through 2011: (1–0.348) × (1 + 0.322) × (1 + 0.111) × (1–0.014) = 0.652 × 1.322 × 1.111 × 0.986 = 0.9442. Compound total return(cumulative) factor at 5% per year of 5% for five years: 199 1.055= 1.2763. Return needed in 2012 to achieve a compound annualized return of 5%: 1.2763/0.9442 = 1.3517 = 35.2%. Check: 0.944 × 1.352 = 1.276(1/5)= 1.050 = 5% annualized.",
+    "evidence": "Solutions section (p.199-200, item 17) states the 2010 return factor as '(1 + 0.111)' and the product as '1.322 × 1.111 × 0.986 = 0.9442', matching the table's 2010 return of 11.1%; the DB explanation had dropped a digit, showing '(1 + 0.1)' and '1.322 × 1.1 ×' instead."
+  },
+  {
+    "id": "fe19d435-3cf0-4dc8-8f17-e3a36737ba77",
+    "verdict": "ok",
+    "evidence": "Q18 (security beta 0.67) on p.110 confirmed via Solutions p.200 'Answer = B'; explanation reproduces the same Cov/variance formula (0.06/0.09=0.67)."
+  },
+  {
+    "id": "06128e5b-4b35-4a0f-a1e0-c3048d7beced",
+    "verdict": "ok",
+    "evidence": "Q23 (Investor A/B risk aversion) on p.111 confirmed via Solutions p.200 'Answer = B'; explanation matches verbatim."
+  },
+  {
+    "id": "800cc965-d6e3-4ae7-ae38-96d2c32c9e83",
+    "verdict": "ok",
+    "evidence": "Q21 (wrap account) on p.111 confirmed via Solutions p.199 'Answer = A'; explanation matches verbatim."
+  },
+  {
+    "id": "18eee11d-28d1-4d83-8d48-2f2b1f9a46ac",
+    "verdict": "ok",
+    "evidence": "Q22 (CAPM assumption) on p.111 confirmed via Solutions p.200 'Answer = A'; explanation matches verbatim."
+  },
+  {
+    "id": "e470bab4-d49c-4ed9-9914-6a76a69817e2",
+    "verdict": "option_bleed",
+    "field": "option_c",
+    "new_value": "holding period return.",
+    "evidence": "Q24 on p.111 shows option C as simply 'holding period return.'; the page footer number '111' bled onto the end of option_c in the DB."
+  },
+  {
+    "id": "36d636c5-1a6f-48cd-97cd-ba1f880f0456",
+    "verdict": "ok",
+    "evidence": "Q20 (marketing consultancy client IPS) on p.111 confirmed via Solutions p.199 'Answer = A'; explanation matches verbatim."
+  },
+  {
+    "id": "b59d116f-9e27-469e-a80b-9d96e2310ba7",
+    "verdict": "formatting_missing",
+    "field": "question_en",
+    "new_value": "Based on the following historical data, which is closest to the standard deviation for the two- asset portfolio shown in the table?\n\n| | Asset A | Asset B | Asset A and B |\n|---|---------|---------|----------------|\n| Standard deviation | 4.7% | 7.7% | |\n| Portfolio weight | 0.4 | 0.6 | |\n| Correlation | | | 0.3 |",
+    "evidence": "Q25 on p.112 shows a 3-column data table (Standard deviation 4.7%/7.7%, Portfolio weight 0.4/0.6, Correlation 0.3) that is completely missing from question_en, which only has the intro sentence."
+  },
+  {
+    "id": "b47b19ed-488f-4f56-9d18-411f6091e96e",
+    "verdict": "explanation_wrong",
+    "field": "explanation_en",
+    "new_value": "Endowments have a long investment time horizon and a high level of risk tolerance.",
+    "evidence": "Solutions p.201 shows only '28. Answer = A / Endowments have a long investment time horizon and a high level of risk tolerance.' for this question; the DB explanation_en has that sentence followed by the entire concatenated text of solutions 29 through 48 (unrelated questions about annualized return, risk transfer, CAPM, GIPS-unrelated portfolio topics, etc.) appended onto the end."
+  },
+  {
+    "id": "eab1c355-fbe1-41ab-b067-efeda7f5d11a",
+    "verdict": "ok",
+    "evidence": "Q26 (second investor higher risk aversion / utility) on p.112 confirmed via Solutions p.200 'Answer = B'; explanation matches verbatim (utility function text plus garbled U = E(r) - 1/2*A*variance formula)."
+  },
+  {
+    "id": "d5e4a399-945e-4df7-82a8-a3a6cbbcdeba",
+    "verdict": "formatting_missing",
+    "field": "question_en",
+    "new_value": "To determine the impact of changes in exchange rates on trade balance, the ‘absorption approach’ most likely exhibits the:",
+    "evidence": "Source PDF page 42 (Economics Q6, two-column layout) has the page footer digit '38' printed immediately after this question's truncated text before the next column continues; it bled onto the end of the question stem in the DB. Confirmed correct_answer B and explanation_en both match the Economics Solutions page (printed p.140) 'Answer: B' entry verbatim."
+  },
+  {
+    "id": "a7c06b04-760e-4c50-bad2-cf25d0478dc8",
+    "verdict": "ok",
+    "evidence": "Kaplan Q1 of 18 matches exactly: correct answer A (green check on option A), explanation verbatim including '(Module 78.1, LOS 78.b)' context."
+  },
+  {
+    "id": "36257e4b-f5fe-44cf-9eee-ad2602ef07df",
+    "verdict": "ok",
+    "evidence": "Kaplan Q3 of 18 (Robert Aaron) matches exactly: correct answer C (green check on Fund investing), explanation verbatim."
+  },
+  {
+    "id": "04466a45-38f2-4edb-bcc2-ffd79210f6da",
+    "verdict": "ok",
+    "evidence": "Kaplan Q2 of 18 matches exactly: correct answer B (green check on 'leveraged'), explanation verbatim."
+  },
+  {
+    "id": "bf300764-3401-4833-9622-92f3b5871b3b",
+    "verdict": "ok",
+    "evidence": "Kaplan Q5 of 18 matches exactly: correct answer A (green check on 'Unique legal structures and tax treatments'), explanation verbatim confirmed via PDF text extraction of page 2 (the explanation continues onto the following page)."
+  }
+]

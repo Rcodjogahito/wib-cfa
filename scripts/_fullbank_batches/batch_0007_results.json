@@ -1,0 +1,113 @@
+[
+ {
+  "id": "5e10d59e-dfd1-4db9-a7c3-facc8579a7d3",
+  "verdict": "ok",
+  "evidence": "Source solutions page (PDF p.166, Q42) shows 'Answer = B' with explanation matching DB verbatim ('An effective framework should enhance the transparency...'); question/options match the question page (PDF p.59) exactly."
+ },
+ {
+  "id": "ce6119a8-a5cc-4fee-a165-99bb6e2bbe9e",
+  "verdict": "ok",
+  "evidence": "Solutions page (PDF p.166, Q46) shows 'Answer = A' matching DB, with explanation verbatim identical to DB; question/options match question page (PDF p.60)."
+ },
+ {
+  "id": "7c2b67c5-ce82-45f8-b7df-2827d05ba097",
+  "verdict": "ok",
+  "evidence": "Solutions page (PDF p.166, Q49) shows 'Answer = B' matching DB, explanation verbatim identical; question/options match question page (PDF p.60)."
+ },
+ {
+  "id": "2505a299-7707-4010-94bb-b6b275d8ee8b",
+  "verdict": "ok",
+  "evidence": "Solutions page (PDF p.166, Q47) shows 'Answer = B' matching DB, explanation verbatim identical; question/options match question page (PDF p.60)."
+ },
+ {
+  "id": "27b132aa-2b31-4852-992c-3e9dfe0060a8",
+  "verdict": "ok",
+  "evidence": "Solutions page (PDF p.166, Q48) shows 'Answer = C' matching DB, explanation verbatim identical; question/options match question page (PDF p.60)."
+ },
+ {
+  "id": "221a8663-5565-48aa-9507-8b81c427ceb7",
+  "verdict": "ok",
+  "evidence": "Solutions page (PDF p.167, Q54) shows 'Answer = A' matching DB, explanation matches (minor OCR spacing 'estimatedreturns' vs 'estimated returns', not a data bug); question/options match question page (PDF p.61)."
+ },
+ {
+  "id": "4b8eeb41-56a6-497c-aebd-1030fd96d5f9",
+  "verdict": "ok",
+  "evidence": "Solutions page (PDF p.167, Q55) shows 'Answer = A' matching DB, explanation matches; question/options match question page (PDF p.61)."
+ },
+ {
+  "id": "432dcfdf-bea7-4122-95d6-0c2ee568c15b",
+  "verdict": "ok",
+  "evidence": "Solutions page (PDF p.167, Q51) shows 'Answer = A' matching DB, explanation verbatim identical; question/options match question page (PDF p.61)."
+ },
+ {
+  "id": "1e7a068d-974e-4f99-b29d-433ef347ee5e",
+  "verdict": "ok",
+  "evidence": "Solutions page (PDF p.167, Q52) shows 'Answer = C' matching DB, explanation verbatim identical; question/options match question page (PDF p.61)."
+ },
+ {
+  "id": "0f41968a-f31c-427c-bad0-3226075ed8d1",
+  "verdict": "ok",
+  "evidence": "Solutions page (PDF p.167, Q53) shows 'Answer = C' matching DB, explanation verbatim identical; question/options match question page (PDF p.61)."
+ },
+ {
+  "id": "aebfc478-42d8-4d5a-8e62-cf5fab5c6010",
+  "verdict": "ok",
+  "evidence": "Solutions page (PDF p.167, Q56) shows 'Answer = C' matching DB, explanation verbatim identical (DB question_en has a harmless trailing page-footer '56' artifact, not a substantive error); question/options match question page (PDF p.61)."
+ },
+ {
+  "id": "61359f84-fdbd-4f35-86d9-41d74c46d528",
+  "verdict": "ok",
+  "evidence": "Solutions page (PDF p.167, Q50) shows 'Answer = A' matching DB, explanation opening matches verbatim; question/options match question page (PDF p.61)."
+ },
+ {
+  "id": "3eb1925b-6cb7-40f1-87a9-7f6395304996",
+  "verdict": "ok",
+  "evidence": "Solutions page (PDF p.168, Q57) shows 'Answer = A' matching DB, explanation verbatim identical (DB has a harmless trailing page-footer '157' artifact); question/options match question page (PDF p.62)."
+ },
+ {
+  "id": "868e8c72-29a6-4c65-b1f3-f843061a3cc3",
+  "verdict": "ok",
+  "evidence": "Solutions page (PDF p.169, Q60) shows 'Answer = A' matching DB, explanation matches closely (same content on investment property fair value model); question/options match question page (PDF p.62)."
+ },
+ {
+  "id": "c1bc9dde-9a00-4d71-8341-adf1c945cf76",
+  "verdict": "formatting_missing",
+  "field": "question_en",
+  "new_value": "The following relates to a company's common equity over the course of the year:\n\n| | |\n|---|---|\n| Outstanding shares, at start of the year | 2,000,000 |\n| Stock options outstanding, at start and end of the year (Exercise price: $5) | 100,000 |\n| Shares issued on 1 April | 300,000 |\n| Shares repurchased (treasury shares) on 1 July | 100,000 |\n| Average market price of common shares for the year | $20/share |\n\nIf the company's net income for the year is $5,000,000, its diluted EPS is closest to:",
+  "evidence": "Question page (PDF p.62, Q58) shows a 5-row data table (outstanding shares, stock options, shares issued/repurchased, average market price) that is entirely absent from question_en, which only kept the intro and closing sentence. Answer key (A) and explanation opening verbatim match solutions page (PDF p.169, Q58) and are correct (diluted EPS = $5,000,000/2,250,000 = $2.22)."
+ },
+ {
+  "id": "c1bc9dde-9a00-4d71-8341-adf1c945cf76",
+  "verdict": "formatting_missing",
+  "field": "option_c",
+  "new_value": "$2.17.",
+  "evidence": "DB option_c is contaminated with the stem of the following question 59 ('59. Based on the presented information about a company's trade receivables...'); the source page (PDF p.62) shows option C for Q58 is simply '$2.17.' followed by a separate numbered item 59 that is a different question."
+ },
+ {
+  "id": "d2aa56b4-f2af-4728-b9ca-9145b9f35f8e",
+  "verdict": "formatting_missing",
+  "field": "question_en",
+  "new_value": "The following common-size income statement data and tax rates are available on a company. 57\n\n| Financial Item | Current Year (%) |\n|---|---|\n| Revenues | 100 |\n| Cost of goods sold | 38.6 |\n| Interest expense | 3.1 |\n| Research expenses | 4.4 |\n| Selling and general expenses | 32.9 |\n| Income tax rate | 22% |\n\n**Prior Year's Profitability Ratios**\n\n| | |\n|---|---|\n| Gross profit margin | 60.5% |\n| Operating profit margin | 23.3% |\n| Net profit margin | 15.8% |\n\nThe profitability ratio that had the largest absolute increase in value in the current year is the:",
+  "evidence": "Question spans PDF p.62 (bottom, table header 'Financial Item/Current Year (%)' with Revenues/COGS/Interest expense/Research expenses rows) and p.63 (top, continuing with Selling and general expenses/Income tax rate, then a 'Prior Year's Profitability Ratios' block) - none of this table data appears in question_en. Verified correct_answer B by recomputing: gross margin rises 60.5%->61.4% (+0.9pt), operating margin 23.3%->24.1% (+0.8pt), net margin 15.8%->~16.4% (+0.58pt), so gross profit margin has the largest increase, matching DB and the solutions page (PDF p.169, Q61, 'Answer = B')."
+ },
+ {
+  "id": "fee7646c-92fa-4f5b-83fa-ce988008caee",
+  "verdict": "ok",
+  "evidence": "Solutions page (PDF p.169, Q62) shows 'Answer = B' matching DB, explanation verbatim identical; question/options match question page (PDF p.63)."
+ },
+ {
+  "id": "a8260d74-20a7-46ee-9881-68174e3f02d5",
+  "verdict": "ok",
+  "evidence": "Solutions page (PDF p.170, Q64) shows 'Answer = A' matching DB, explanation verbatim identical; question/options match question page (PDF p.64)."
+ },
+ {
+  "id": "1bc20fa2-ae6d-49cd-92ba-de6d29977d95",
+  "verdict": "ok",
+  "evidence": "Solutions page (PDF p.170, Q66) shows 'Answer = A' matching DB, explanation verbatim identical; question/options match question page (PDF p.64)."
+ },
+ {
+  "id": "9c2b4916-2cf4-4856-81c0-4688e6eb33f6",
+  "verdict": "ok",
+  "evidence": "Solutions page (PDF p.170, Q67) shows 'Answer = A' matching DB, explanation verbatim identical (matches the Conceptual Framework quote); question/options match question page (PDF p.64)."
+ }
+]

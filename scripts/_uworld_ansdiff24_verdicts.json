@@ -1,0 +1,146 @@
+[
+ {
+  "id": "24fd91bb-7534-4305-89e8-ead9addc2e5a",
+  "verdict": "db_already_correct",
+  "independently_derived_answer": "C",
+  "reasoning": "Company Z has lower leverage than Company Y on both debt/capital (67% vs 73%) and debt/EBITDA (1.20 vs 1.30), and higher coverage (EBITDA/interest 8.04 vs 4.71). Z is stronger on all three metrics, so Z's credit rating is higher than Y's, i.e. option C. This confirms prior independent verification of this exact case (session 46) and the low match_score (0.683) explains why the PDF matcher likely grabbed the wrong page."
+ },
+ {
+  "id": "babab75d-84cd-43b0-875a-ff5062922c6c",
+  "verdict": "db_already_correct",
+  "independently_derived_answer": "A",
+  "reasoning": "Using the GGM terminal-value relationship Vn = D(n+1)/(r - gL) with the values actually given in the question table (TV=61.50, D(n+1)=1.23, r=7%): gL = r - D(n+1)/Vn = 0.07 - 1.23/61.50 = 0.07 - 0.02 = 5%, which is option A. The stored explanation text is garbled/templated (references D0=EUR1.00 and different growth rates not in this question's table), but the core numbers given directly solve to 5%, matching the DB's stored answer."
+ },
+ {
+  "id": "fa1babd8-e216-47a2-b1dc-49989de8eb5d",
+  "verdict": "uncertain",
+  "independently_derived_answer": null,
+  "reasoning": "The question stem as extracted contains no data table at all (no EPS, growth rate, or required return needed to compute a Gordon-growth justified P/E or SGD stock value), and the stored explanation discusses an unrelated conceptual topic (asset-based vs. present-value vs. multiplier valuation models and whether they require a growth rate), never referencing SGD 10/20/30. Question and explanation appear to belong to different source items entirely, so no independent numeric derivation is possible from the given text."
+ },
+ {
+  "id": "f1385d93-3b68-4d49-85d8-90ff201f733c",
+  "verdict": "uncertain",
+  "independently_derived_answer": null,
+  "reasoning": "The question asks whether a stock is undervalued/fairly valued/overvalued but supplies no price, intrinsic value, or dividend/growth data to compute an answer. The stored explanation discusses unrelated conceptual points (that present value models require a discount rate and a time horizon), never addressing valuation status. Question and explanation are mismatched, so no independent verdict can be derived."
+ },
+ {
+  "id": "3d950279-5d1a-4b5b-818f-9a3b183ce555",
+  "verdict": "db_already_correct",
+  "independently_derived_answer": "B",
+  "reasoning": "D5 = D0(1.09)^4(1.03) = 1.00 x 1.41158... x 1.03 = 1.4539. V4 = D5/(r-gL) = 1.4539/(0.07-0.03) = 1.4539/0.04 = 36.35, matching option B exactly. The explanation's own step-by-step calculation confirms this arithmetic, so the DB's stored answer is correct."
+ },
+ {
+  "id": "8cee0973-536a-46d2-a019-361dd6e1664d",
+  "verdict": "db_already_correct",
+  "independently_derived_answer": "C",
+  "reasoning": "Payout ratio p = 1 - 0.40 = 0.60. Rearranging justified forward P/E: r = p/(P0/E1) + g = 0.60/12 + 0.04 = 0.05 + 0.04 = 9%, matching option C. The explanation's worked calculation confirms this, so the DB's stored answer is correct and the PDF's suggested A (5%) matches only the distractor calculation explicitly flagged as wrong in the explanation."
+ },
+ {
+  "id": "96b2e751-28aa-40c6-b8a1-83d2ce8bae66",
+  "verdict": "confirm_pdf_correct",
+  "independently_derived_answer": "C",
+  "reasoning": "EV = 25.4 x 10,200 = 259,080. Market cap = EV - preferred - debt + cash + ST investments = 259,080 - 2,050 - 90,500 + 9,000 + 7,500 = 183,030, which is option C, exactly as the explanation's own worked formula concludes ('= 183,030'). The explanation explicitly states that 175,530 (option B, the DB's stored answer) 'results from failing to add in short-term investments' -- i.e. it is explicitly labeled as the wrong/distractor value in the DB's own explanation text. This is a genuine DB error: B should be C."
+ },
+ {
+  "id": "a074104e-e223-4b8b-84ba-5f9a11730df5",
+  "verdict": "uncertain",
+  "independently_derived_answer": null,
+  "reasoning": "The question references Jensen's alpha but supplies no portfolio return, beta, risk-free rate, or market return data needed to compute it. The stored explanation discusses an entirely unrelated topic (the theoretical market portfolio and why it excludes/includes the risk-free asset), never mentioning Jensen's alpha calculation. Question and explanation are mismatched with no usable data, so no independent verdict is possible."
+ },
+ {
+  "id": "537d7da8-156d-414b-a709-620a5514d570",
+  "verdict": "db_already_correct",
+  "independently_derived_answer": "C",
+  "reasoning": "With N=10 semiannual periods, PMT=2.25, FV=100, PV=-97.80, solving for the periodic rate gives approximately 2.5% (verified: at i=2.5%, PV = 2.25 x 8.7521 + 100 x 0.7812 = 19.69 + 78.12 = 97.81, matching the given price of 97.80). Doubling the semiannual rate gives an annual YTM of 5.0%, matching option C, consistent with the DB's stored answer and the explanation's own reasoning."
+ },
+ {
+  "id": "25818e19-7854-4b13-b7d8-45403f528e20",
+  "verdict": "uncertain",
+  "independently_derived_answer": null,
+  "reasoning": "The stored explanation uses entirely different figures than the question's table (NI=660 vs the table's 215, and units in KRW vs the question's SGD), so it clearly belongs to a different question and cannot be used to verify this one. Recomputing directly from the question's own SGD table (FCF = NI+NCC-WCInv-FCInv = 215+5-9-30 = 181; FCFF = FCF+Int(1-t) = 181+15 = 196; FCFE = FCF+Net borrowing = 181-5 = 176) yields FCFF as the largest, which matches neither the DB's stored answer (A, FCF) nor the PDF's suggested answer (B, FCFE). Given the explanation is confirmed mismatched/corrupted and my own recomputation agrees with neither candidate, this needs manual re-verification against the correct source PDF rather than a blind fix to either A or B."
+ },
+ {
+  "id": "be428262-8166-405f-b64e-2d11d0ee6233",
+  "verdict": "db_already_correct",
+  "independently_derived_answer": "A",
+  "reasoning": "Average AR = (3,000+3,500)/2 = 3,250. Daily credit sales = 25,000/365 = 68.49. DSO = 3,250/68.49 = 47.5, matching option A exactly, consistent with the DB's stored answer."
+ },
+ {
+  "id": "15eca81e-9345-4e94-9ee3-8a841a6aaca5",
+  "verdict": "db_already_correct",
+  "independently_derived_answer": "B",
+  "reasoning": "Average AR = (8,000+6,500)/2 = 7,250. AR turnover = credit sales/average AR = 29,000/7,250 = 4.0, matching option B exactly, consistent with the DB's stored answer."
+ },
+ {
+  "id": "23808f3f-5e3f-43c6-ba81-402bb6e09a13",
+  "verdict": "db_already_correct",
+  "independently_derived_answer": "B",
+  "reasoning": "Average inventory = (1,500+1,000)/2 = 1,250. Inventory turnover = COGS/average inventory = 12,000/1,250 = 9.6, matching option B exactly, consistent with the DB's stored answer."
+ },
+ {
+  "id": "9753f54b-9261-41c4-889a-f6af979ca59d",
+  "verdict": "db_already_correct",
+  "independently_derived_answer": "A",
+  "reasoning": "Purchases = COGS + ending inventory - beginning inventory = 8,000+1,800-1,600 = 8,200. Average AP = (950+1,100)/2 = 1,025. DPO = average AP/(purchases/365) = 1,025/(8,200/365) = 1,025/22.466 = 45.6, matching option A exactly, consistent with the DB's stored answer."
+ },
+ {
+  "id": "cada5032-7b1d-499d-87d2-2c600d7574e4",
+  "verdict": "uncertain",
+  "independently_derived_answer": null,
+  "reasoning": "The question stem contains no data table (no cost of debt, cost of equity, tax rate, or capital-structure weights needed to compute WACC), and the stored explanation is purely conceptual/generic with no worked numbers tying to any of 8.2%/9.6%/10.5%. No independent computation is possible from the given text."
+ },
+ {
+  "id": "2e954a34-c93f-4f0a-bee1-6b5c9bdabe52",
+  "verdict": "db_already_correct",
+  "independently_derived_answer": "C",
+  "reasoning": "Using the addition rule: P(A) = P(A or B) - P(B) + P(AB) = 0.46 - 0.23 + 0.17 = 0.40, matching option C exactly, consistent with the DB's stored answer and the explanation's own worked calculation."
+ },
+ {
+  "id": "0aab092e-1232-4ab4-8c86-b6681a627955",
+  "verdict": "db_already_correct",
+  "independently_derived_answer": "B",
+  "reasoning": "Operating profit = Revenue - COGS - Admin expenses - Depreciation = 100,000-75,000-9,000-4,500 = 11,500. Operating margin = 11,500/100,000 = 11.5%, matching option B exactly, consistent with the DB's stored answer and the explanation's own worked calculation."
+ },
+ {
+  "id": "5735fa01-8fbb-487a-82fc-39a0a02af418",
+  "verdict": "confirm_pdf_correct",
+  "independently_derived_answer": "C",
+  "reasoning": "Building the common-size statement: SG&A fell from 30.0% to 27.5% of revenue (-2.5pp), while interest expense fell from 5.3% to 4.5% (-0.8pp) and gross margin improved by only +0.8pp. The 2.5pp SG&A improvement is clearly the largest single contributor to the margin expansion, and the DB's own explanation text explicitly concludes: 'The greatest contributing factor to the company's net profit margin expansion is a decline in the proportion of...SG&A expenses' -- i.e. option C, not the stored answer B (interest expense, which only improved 0.8pp, tied with gross margin). This is a genuine DB error: B should be C."
+ },
+ {
+  "id": "c422ae5b-f619-4cf4-b297-8aed464031aa",
+  "verdict": "db_already_correct",
+  "independently_derived_answer": "B",
+  "reasoning": "Since the bond is callable, effective convexity (using the benchmark curve shift, not the bond's own YTM change) applies: EffCon = [V- + V+ - 2*V0] / (V0 * (delta curve)^2) = [86.47+81.71-2*84.62] / (84.62 * 0.003^2) = -1.06/0.0007616 = -1391.9, matching option B closely, consistent with the DB's stored answer. The PDF's suggested A (-8,493.63) matches only the distractor described in the explanation as reversing the initial and decreased-yield prices."
+ },
+ {
+  "id": "7c52dd3f-34da-43b4-ad67-d728f9b2dea5",
+  "verdict": "confirm_pdf_correct",
+  "independently_derived_answer": "C",
+  "reasoning": "With n=11 observations, L25=(11+1)*0.25=3 and L75=(11+1)*0.75=9, landing exactly on the 3rd and 9th ordered observations with no interpolation needed. The explanation states these values are 2% and 9% respectively, so IQR = Q3-Q1 = 9%-2% = 7%, which is option C, not the DB's stored B (5%). This is a genuine DB error: B should be C."
+ },
+ {
+  "id": "eef04527-ef43-45c3-be28-8e136f6190d7",
+  "verdict": "confirm_pdf_correct",
+  "independently_derived_answer": "C",
+  "reasoning": "Sorting the 7 returns ascending (-3.75, -0.50, 2.25, 4.90, 5.20, 6.00, 6.85) and computing quintile boundaries via (n+1)*p/100 interpolation gives: 20th=-1.80, 40th=2.78, 60th=5.14, 80th=6.34. Stock4 (4.90) falls in the 3rd quintile (2.78,5.14] and Stock2 (5.20) falls in the 4th quintile (5.14,6.34], so both are legitimately in the target range; Stock7 (2.25) falls in the 2nd quintile (-1.80,2.78], making it the stock that does NOT belong -- i.e. the least appropriate choice, option C. The DB's stored answer A (Stock2) is incorrect since Stock2 is actually a valid 4th-quintile pick. This is a genuine DB error: A should be C."
+ },
+ {
+  "id": "e9aca747-cb1c-40b1-b47b-243e7a5afeea",
+  "verdict": "db_already_correct",
+  "independently_derived_answer": "A",
+  "reasoning": "Quick ratio = (Cash+Marketable securities+AR)/Current liabilities. Company X = (680+800+640)/1,200 = 1.77; Company Y = (740+230+210)/750 = 1.57; Company Z = (870+770+30)/1,150 = 1.45. Company X has the largest quick ratio, matching option A exactly, consistent with the DB's stored answer."
+ },
+ {
+  "id": "3233fefb-45b9-4f3d-beb5-df48885fc662",
+  "verdict": "db_already_correct",
+  "independently_derived_answer": "C",
+  "reasoning": "Equity = LT debt / (LT debt-to-equity ratio); Assets = Equity x financial leverage ratio. X: equity=4,000/0.80=5,000, assets=5,000x2.00=10,000. Y: equity=3,000/3.00=1,000, assets=1,000x5.00=5,000. Z: equity=5,000/1.25=4,000, assets=4,000x2.75=11,000. Company Z has the greatest assets (11,000), matching option C exactly, consistent with the DB's stored answer and its own explanation text ('Company Z has the greatest value of assets, with EUR11,000')."
+ },
+ {
+  "id": "a8a0ca92-f097-4363-a223-6905d2e9d85d",
+  "verdict": "confirm_pdf_correct",
+  "independently_derived_answer": "B",
+  "reasoning": "The explanation's main paragraph states plainly: 'The earnings surprise anomaly...is inconsistent with semi-strong form market efficiency,' which is option B. The same explanation explicitly frames the IPO anomaly (option A, the DB's stored answer) and the closed-end fund discount (option C) as NOT inconsistent with semi-strong efficiency ('market prices adjust quickly, supporting semi-strong market efficiency' and 'the discount does not result in abnormal returns'). This is a genuine DB error: A should be B."
+ }
+]

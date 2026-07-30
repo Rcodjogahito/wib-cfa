@@ -1,0 +1,106 @@
+[
+ {
+  "id": "c470a4c7-846b-4936-9c44-04f9699aa801",
+  "verdict": "ok",
+  "evidence": "Question page (p50/printed 45, Q1) matches DB options verbatim; solutions section (page_idx 158, 'FINANCIAL REPORTING AND ANALYSIS', item 1) shows 'Answer: A' and the worked calculation matches explanation_en word for word ($80,498 / $244,502 / $51,158 / $193,344)."
+ },
+ {
+  "id": "62868f2c-ef67-474f-ac06-70dd94a08c1d",
+  "verdict": "ok",
+  "evidence": "Question page (p50, Q2) options match DB; solutions page_idx 158 item 2 shows 'Answer: B' with explanation 'Under IFRS cash receipt of interest can be classified as either an investing or operating activity' identical to explanation_en."
+ },
+ {
+  "id": "1f9b39db-4514-41a2-85c7-17633f64f51f",
+  "verdict": "ok",
+  "evidence": "Question page (p50, Q6) options match DB; solutions page_idx 159 item 6 shows 'Answer: B' and explanation text about 'available for sale' securities matches explanation_en verbatim."
+ },
+ {
+  "id": "d695ea57-068e-4189-9d69-af4889e8c628",
+  "verdict": "ok",
+  "evidence": "Question page (p50, Q5) options match DB; solutions page_idx 158-159 item 5 shows 'Answer: B' and the bullet list (going concern / contingent liabilities / valuation / disclaimer of opinion) matches explanation_en verbatim."
+ },
+ {
+  "id": "be864e82-8bac-48c0-88dd-d5eb6125e051",
+  "verdict": "ok",
+  "evidence": "Question page (p50, Q3, EBB Inc.) options match DB; solutions page_idx 158 item 3 shows 'Answer: B' matching stored correct_answer B, explanation about $0 revenue/inventory increase matches verbatim."
+ },
+ {
+  "id": "ce495e66-f23c-4181-8e6c-d3a0b609fc5f",
+  "verdict": "ok",
+  "evidence": "Question page (p50, Q4, capitalize vs expense) options match DB; solutions page_idx 158 item 4 shows 'Answer: C' matching stored correct_answer C, explanation on total assets/debt-to-equity/cash outflow matches verbatim."
+ },
+ {
+  "id": "1b3ed913-8757-4bd3-b4d9-17d353b39bab",
+  "verdict": "ok",
+  "evidence": "Question page (p51, Q11, earnings smoothing) options match DB; solutions page_idx 159 item 11 shows 'Answer: C' matching DB, explanation matches verbatim."
+ },
+ {
+  "id": "89bcb599-70ec-4e0f-8d63-80fa80c21b1b",
+  "verdict": "ok",
+  "evidence": "Question page (p51, Q10, impairment loss) options match DB; solutions page_idx 159 item 10 shows 'Answer: A' matching DB (options B and C are described as correct, confirming A is the 'least likely' correct statement), explanation matches verbatim."
+ },
+ {
+  "id": "515fd8d7-8588-47fb-b783-3c7dcb96a72a",
+  "verdict": "ok",
+  "evidence": "Question page (p51, Q8, depreciation IFRS/GAAP) options match DB; solutions page_idx 159 item 8 shows 'Answer: C' matching DB, explanation (annual review / component depreciation) matches verbatim."
+ },
+ {
+  "id": "473f25e3-f176-4021-b69b-c86289040594",
+  "verdict": "ok",
+  "evidence": "Question page (p51, Q9, FCFF) options match DB; solutions page_idx 159 item 9 shows 'Answer: A' matching DB, FCFF formula and $5.1 million result match explanation_en verbatim."
+ },
+ {
+  "id": "c8b0e066-e258-47a3-84c9-6dcbef2f6ba5",
+  "verdict": "ok",
+  "evidence": "Question page (p51-52, Q12, IOSCO principles) options match DB; solutions page_idx 159-160 item 12 shows 'Answer: C' matching DB, explanation matches verbatim."
+ },
+ {
+  "id": "9906b69b-37f2-4297-bbf5-1cb7fbc1db9d",
+  "verdict": "ok",
+  "evidence": "Question page (p51, Q7, Gloria Inc.) options match DB; solutions page_idx 159 item 7 shows 'Answer: A' matching DB, explanation ($27,750 AR/revenue, $26,250 inventory/COGS) matches verbatim."
+ },
+ {
+  "id": "fe17cf01-e299-485f-aebc-513757d9600e",
+  "verdict": "ok",
+  "evidence": "Question page (p52, Q14, ending shareholders' equity) already uses markdown bullet list matching the plain data on the page; options match DB; solutions page_idx 160 item 14 shows 'Answer: B' and the $31.5 million calculation matches explanation_en verbatim (topic tag says 'Economics' but that is a metadata label outside the audited fields, not an answer/explanation/formatting issue)."
+ },
+ {
+  "id": "c85e8596-9943-43fa-b30d-be6b4773ec63",
+  "verdict": "ok",
+  "evidence": "Question page (p52, Q13, elements of financial performance) options match DB; solutions page_idx 160 item 13 shows 'Answer: A' matching DB, explanation listing Income/Expenses/Capital maintenance vs Assets/Liabilities/Equity matches verbatim."
+ },
+ {
+  "id": "3c539073-5cc1-453f-87fd-7e1d17c6bd9e",
+  "verdict": "ok",
+  "evidence": "Question page (p52, Q16, financial leverage ratio) options match DB; solutions page_idx 160 item 16 shows 'Answer: C' matching DB, calculation 1.15/0.54=2.13 matches explanation_en verbatim."
+ },
+ {
+  "id": "9a720dfb-9412-41a8-a348-b2694b2f2b83",
+  "verdict": "ok",
+  "evidence": "Question page (p52, Q17, economic vs accounting goodwill) options match DB; solutions page_idx 160 item 17 shows 'Answer: A' matching DB (Q1=Economic, Q2=Accounting), explanation matches verbatim. The two-column 'Question 1:/Question 2:' headers are already reflected in the separately stored options, so no additional table structure is needed in question_en."
+ },
+ {
+  "id": "8b53fb76-3a6f-4310-9cdb-db2bb2f60f24",
+  "verdict": "ok",
+  "evidence": "Question page (p52, Q15, Hunt PAL Inc.) already uses markdown bullet list for the Revenue/Net Income/Assets percentages matching the page; options match DB; solutions page_idx 160 item 15 shows 'Answer: C' matching DB, explanation matches verbatim including 'Option C is the correct.'"
+ },
+ {
+  "id": "7e2dedf2-c847-49d6-b888-672bd3956665",
+  "verdict": "explanation_wrong",
+  "field": "explanation_en",
+  "new_value": "The bonds were issued at a discount and sales proceeds were $9,673,432 (see below). Under the effective interest rate method, interest expense is calculated as: bonds’ carrying value x market interest rate. Sales proceeds (PV of bond issue): N= 6; I/Y = 7.7%; PMT = $700,000; FV = $10,000,000; CPT PV =-$9,673,432 Interest expense for the year ended 2011 is $9,673,432 x 7.7% = $744,854. Interest expense for the year ended 2012 is $9,718,286 x 7.7% = $748,308. Carrying value $9,718,286 in year 2012 is derived as {9,673,432 + ($744,854-$700,000)}.",
+  "evidence": "Solutions page_idx 161 item 22 ('Answer: C', matching DB correct_answer) reads 'PMT = $700,000; FV = $10,000,000' and the closing bracket '($744,854 - $700,000)', but the stored explanation_en has these truncated to '$700,0' and '$10,0,0' respectively -- a digit-dropping data-entry corruption from the import, not a different question's content. Corrected verbatim from the solutions page."
+ },
+ {
+  "id": "a6e56283-3fe1-41cd-a2d7-779411152ed7",
+  "verdict": "ok",
+  "evidence": "Question page (p53, Q18, business segments) options match DB; solutions page_idx 161 item 18 shows 'Answer: A' matching DB, explanation matches verbatim."
+ },
+ {
+  "id": "6a21eb4f-87e6-4322-ae11-a47c03de2c0f",
+  "verdict": "formatting_missing",
+  "field": "question_en",
+  "new_value": "In 2012, the cost of ending inventory reported by T&M, a manufacturer of officeequipment, was $22 million. T&M compiles its financial statements in accordance with IFRS.\n\n**Exhibit 1**\n\n| | |\n|---|---|\n| Replacement cost | $20.5 million |\n| NRV | $21.2 million |\n| NRV less profit margin | $19.7 million |\n\nBased on the data shown in Exhibit 1, T&M would most likely write its inventory down by:",
+  "evidence": "Question page (p53, Q19) shows a visible 'Exhibit 1' table with Replacement cost = $20.5m, NRV = $21.2m, NRV less profit margin = $19.7m, which question_en references by name ('data shown in Exhibit 1') but never reproduces; the table data is squashed/missing entirely. Answer (A) and explanation_en (write-down to $21.2 million NRV, $0.8 million expense) both match solutions page_idx 161 item 19 verbatim, so only formatting needed fixing."
+ }
+]

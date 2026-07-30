@@ -1,0 +1,110 @@
+[
+ {
+  "id": "6f06d0a6-b8cd-43cb-a647-feb31db8b51a",
+  "verdict": "ok",
+  "evidence": "Solutions section (PDF page_idx 187, Q17) shows 'Answer = C' with explanation verbatim matching DB: 'In an informationally efficient market, consistent and superior risk-adjusted returns (net of all expenses) are not achievable.'"
+ },
+ {
+  "id": "52b583db-2a1b-40c4-be38-17b7af469ef1",
+  "verdict": "ok",
+  "evidence": "Solutions section (page_idx 187, Q18) shows 'Answer = A' with explanation matching DB verbatim (short the put / long exposure to the index future)."
+ },
+ {
+  "id": "2f02819d-1275-48b5-8d43-0c3e537bfc4c",
+  "verdict": "ok",
+  "evidence": "Solutions section (page_idx 186, Q14) shows 'Answer = B' with explanation verbatim matching DB (fundamentally weighted indices have a contrarian effect)."
+ },
+ {
+  "id": "b998d7e0-187e-4145-942a-ea3f2b0ac568",
+  "verdict": "ok",
+  "evidence": "Solutions section (page_idx 186, Q15) shows 'Answer = B' with explanation verbatim matching DB (disposition effect)."
+ },
+ {
+  "id": "b041a59a-86ee-43de-8431-d9ff57da2f47",
+  "verdict": "ok",
+  "evidence": "Solutions section (page_idx 187, Q19) shows 'Answer = B' with explanation verbatim matching DB (more analysts -> more efficient market)."
+ },
+ {
+  "id": "fc465f5c-edc3-4a8e-bf2d-8e98ea77f8e9",
+  "verdict": "ok",
+  "evidence": "Solutions section (page_idx 188, Q24) confirms Answer = A, P = 10x$5 = $50, undervalued by $4 => $54, matching DB's correct_answer and explanation (the garbled 'p P E E' formula fragment in DB matches the same broken formula-image text extraction seen in the source solution page, not a data error). Question_en already renders the given data as a bullet list matching the page's bulleted format."
+ },
+ {
+  "id": "71523d64-2d5b-4993-81da-c00ccbc937fe",
+  "verdict": "ok",
+  "evidence": "Solutions section (page_idx 187, Q22) shows 'Answer = A' with explanation verbatim matching DB (index provider adjusts divisor)."
+ },
+ {
+  "id": "1d98e996-c060-4018-bcca-bffd50125c2c",
+  "verdict": "ok",
+  "evidence": "Solutions section (page_idx 187, Q20) shows 'Answer = C' with explanation verbatim matching DB (dealers provide liquidity)."
+ },
+ {
+  "id": "3e630116-40fa-4753-b7e1-f88efe592d62",
+  "verdict": "formatting_missing",
+  "field": "question_en",
+  "new_value": "If the following three stocks are held in a portfolio, the portfolio’s total return on an equal- weighted basis is closest to:\n\n| Stock | Number of Shares Owned | Beginning of Period Price per Share ($) | End of Period Price per Share ($) | Dividend per Share during the Period ($) |\n|---|---|---|---|---|\n| A | 500 | 40 | 37 | 2.00 |\n| B | 320 | 50 | 52 | 1.50 |\n| C | 800 | 30 | 34 | 0.00 |",
+  "evidence": "Page_idx 86 (printed page 79) shows a 5-column table (Stock/Shares/Beginning Price/End Price/Dividend) for stocks A, B, C entirely missing from question_en, which only has the intro sentence. Solution page_idx 187 confirms Answer = B (5.94%), consistent with computing equal-weighted return from this exact table (A: -2.5%, B: 7.00%, C: 13.33%, avg 5.94%)."
+ },
+ {
+  "id": "10a9e001-c1e5-462b-874b-7bb14258bbda",
+  "verdict": "ok",
+  "evidence": "Solutions section (page_idx 187, Q21) shows 'Answer = B' with explanation verbatim matching DB (harder/costlier to replicate fixed-income indices)."
+ },
+ {
+  "id": "d140b766-ba2b-44fe-9cdf-acc11226a29d",
+  "verdict": "ok",
+  "evidence": "Solutions section (page_idx 188, Q28) shows 'Answer = C' with explanation verbatim matching DB (depository bank retains voting rights for unsponsored DRs)."
+ },
+ {
+  "id": "217ee890-7653-4bf6-a440-d98d1766f0c3",
+  "verdict": "ok",
+  "evidence": "Solutions section (page_idx 188, Q29) shows 'Answer = C' with explanation verbatim matching DB (momentum anomaly); trailing stray page-number tokens ('80', '177') in question_en/explanation_en are OCR page-number bleed, not content errors."
+ },
+ {
+  "id": "3ea454f7-d41b-4da7-9b11-a0c616f8f1bb",
+  "verdict": "formatting_missing",
+  "field": "question_en",
+  "new_value": "The following data pertain to a company that can be appropriately valued using the Gordon growth model. Thedividend is expected to grow indefinitely at the existing sustainable growth rate.\n\n| | |\n|---|---|\n| EPS growth rate (three-year average) | 7.50% |\n| Current dividend per share | $3.00 |\n| Return on equity | 15% |\n| Dividend payout ratio | 45% |\n| Investors' required rate of return | 16% |\n\nThe stock’s intrinsic value is closest to:",
+  "evidence": "Page_idx 87 (printed page 80) shows a 2-column data table (EPS growth rate 7.50%, Current dividend $3.00, ROE 15%, Payout ratio 45%, Required return 16%) entirely absent from question_en. Solution page_idx 188 confirms Answer = A and V0=($3×1.0825)÷(0.16−0.0825)=$41.90 using exactly these inputs (g=(1-0.45)×15%=8.25%)."
+ },
+ {
+  "id": "dfa040c1-bf15-4fd3-8b48-735f535bccd9",
+  "verdict": "formatting_missing",
+  "field": "question_en",
+  "new_value": "The following table shows information on three different investment strategies with equivalent systematic risk:\n\n| Strategy | Type of Strategy | Fees and Expenses | Net Return |\n|---|---|---|---|\n| 1 | Passive | 0% | 15% |\n| 2 | Exploits price patterns | 1% | 14% |\n| 3 | Uses fundamental analysis | 2% | |\n\nThe return, gross of fees and expenses that causes Strategy 3 to be most consistent with the strong form of market efficiency is:",
+  "evidence": "Page_idx 87 (printed page 80) shows a table (Strategy/Type/Fees and Expenses/Net Return) for 3 strategies, with Strategy 3's net return left blank (the value being solved for) - entirely missing from question_en. Solution page_idx 188 confirms Answer = C (17%) via Gross return = 15% net (passive) + 2% fees = 17%, matching this table."
+ },
+ {
+  "id": "29ac4bf7-5ebd-4bf2-9f0a-8277684216f7",
+  "verdict": "explanation_wrong",
+  "field": "explanation_en",
+  "new_value": "If markets are strong-form efficient, prices reflect not only private information but also past market data and public information. If markets are weak-form efficient, investment strategies based on fundamental analysis of public information and past market data could achieve abnormal returns. The semi-strong form of market efficiency also encompasses the weak form. Therefore, security prices reflect not only publicly known and available information but also all past market data.",
+  "evidence": "DB's stored explanation discusses GIPS 'Disclosures'/'Composite Construction'/'Presentation and Reporting' sections, which is entirely unrelated to this market-efficiency question (belongs to a different Ethics/GIPS question). Solution page_idx 188 (Q26, Answer = C) gives the correct market-efficiency explanation transcribed verbatim above; the answer letter C itself was already correct."
+ },
+ {
+  "id": "87e538ff-5b8c-4bf7-a5e3-9d27deaab271",
+  "verdict": "ok",
+  "evidence": "Solutions section (page_idx 189, Q31) shows 'Answer = C' with explanation verbatim matching DB (semi-strong form)."
+ },
+ {
+  "id": "b98f46af-859f-4360-bf90-d44ad87e2f06",
+  "verdict": "ok",
+  "evidence": "Solutions section (page_idx 189, Q32) shows 'Answer = A' with the same margin-call calculation as DB, yielding P = $20.57."
+ },
+ {
+  "id": "f020317b-2b68-4635-9d45-727718835df2",
+  "verdict": "ok",
+  "evidence": "Solutions section (page_idx 189, Q33) shows 'Answer = A' with explanation verbatim matching DB (fewer arbitrage opportunities in regulated markets)."
+ },
+ {
+  "id": "938f8517-eebd-4c90-858c-ef6ed6b8fac4",
+  "verdict": "ok",
+  "evidence": "Solutions section (page_idx 189, Q35) shows 'Answer = B' with explanation verbatim matching DB (sell when market value exceeds intrinsic value)."
+ },
+ {
+  "id": "e4ed1c8c-3a66-47a2-8563-0064a43ccbfd",
+  "verdict": "ok",
+  "evidence": "Solutions section (page_idx 189, Q30) shows 'Answer = B' with explanation verbatim matching DB (alpha = active return minus passive return)."
+ }
+]

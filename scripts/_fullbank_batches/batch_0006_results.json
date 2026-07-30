@@ -1,0 +1,120 @@
+[
+ {
+  "id": "b7e4f878-65b6-4325-a154-946ccec8f07d",
+  "verdict": "ok",
+  "evidence": "Page p53 (printed 48) Q20 matches the DB record; official solution page (pdf idx 159, '20. Answer: C') confirms correct_answer C, and the stored explanation matches the source text verbatim (including the source's own '$25,000' vs. question's '$250,000' inconsistency, which is a source-PDF typo, not a DB error)."
+ },
+ {
+  "id": "4c19e1d9-842c-41ae-ad3e-bf770304bfb5",
+  "verdict": "ok",
+  "evidence": "Page p53 Q21 matches the DB record; solution page (pdf idx 159, '21. Answer: C') confirms C and the three-criteria explanation matches the source (the 'i./ii./i.' numbering glitch in the DB is inherited from OCR of the source's i/ii/iii list, not a swap)."
+ },
+ {
+  "id": "73ae7488-4949-4e71-81ee-efb37215b1ff",
+  "verdict": "ok",
+  "evidence": "Page p53 Q23 matches the DB record; solution page (pdf idx 159, '23. Answer: C') confirms C and the explanation is verbatim."
+ },
+ {
+  "id": "30ad916f-34cd-40ed-9766-2852f1c8f987",
+  "verdict": "ok",
+  "evidence": "Page p54 Q24 matches the DB record; solution page (pdf idx 159, '24. Answer: A') confirms A and the explanation matches verbatim, including the stray footer digit '150' embedded mid-sentence in both source and DB."
+ },
+ {
+  "id": "9906ce13-0db6-4a7c-8278-b2bed8e96672",
+  "verdict": "ok",
+  "evidence": "Page p54 Q27 matches the DB record; solution page (pdf idx 162, '27. Answer = C') confirms C and the explanation about accounts receivable vs. lease receivable is verbatim."
+ },
+ {
+  "id": "2ac32d47-6d84-4c8b-a176-e50f6daf6683",
+  "verdict": "explanation_wrong",
+  "field": "explanation_en",
+  "new_value": "The IFRS conditions that should be met to recognize revenue from the sale of goods include that the costs incurred can be reliably measured, that the economic benefits will flow to the entity, and that the significant risks and rewards of ownership have been transferred, which is normally when the goods have been delivered but not always. The actual receipt of any payment is not a condition.",
+  "evidence": "Page p54 Q25 (revenue recognition) matches options and correct_answer C, confirmed by solution page (pdf idx 162, '25. Answer = C'); but the stored explanation ('Relevance and faithful representation...') is actually the solution text for Q44 (pdf idx 167), an unrelated question about qualitative characteristics."
+ },
+ {
+  "id": "cdccd8cf-e6f5-4153-bef8-b15d26835ceb",
+  "verdict": "formatting_missing",
+  "field": "question_en",
+  "new_value": "A company incurs the following costs related to its inventory during the year:\n\n| Cost | ¥ millions |\n|---|---|\n| Purchase price | 100,000 |\n| Trade discounts | 5,000 |\n| Import duties | 20,000 |\n| Shipping of raw materials to manufacturing facility | 10,000 |\n| Manufacturing conversion costs | 50,000 |\n| Abnormal costs as a result of waste material | 8,000 |\n| Storage cost of finished goods prior to shipping to customers | 2,000 |\n\nThe amount charged to inventory cost (in millions) is closest to:",
+  "evidence": "Page p55 Q29 shows a 7-row cost table (Purchase price 100,000 ... Storage cost 2,000) that is entirely missing/squashed from question_en; solution page (pdf idx 163, '29. Answer = C') reproduces the same table and confirms the $175,000 (C) figure and correct_answer."
+ },
+ {
+  "id": "02848d98-35b9-4259-ac61-b61fc27e4a2d",
+  "verdict": "ok",
+  "evidence": "Page p56 Q31 (Matching/Materiality/Accrual basis) matches the DB record; solution page (pdf idx 164, '31. Answer = A') confirms A and the explanation is verbatim."
+ },
+ {
+  "id": "9d651eb2-d76d-48de-bc95-31ec0442e540",
+  "verdict": "formatting_missing",
+  "field": "question_en",
+  "new_value": "The following is selected balance sheet data for a company along with information about its financial and operating lease obligations.\n\n| | As of 31 December 2014 (€ millions) |\n|---|---|\n| Long-term debt | 1,347 |\n| Total shareholder's equity | 11,268 |\n| Total assets | 20,097 |\n\n**Note 18. Financial and Operating Leases**\n**A. Financial Leases**\nThe implicit interest rate on finance leases for 2014 was 6.0%.\n\n**B. Operating Lease Commitments as of 31 December 2014 (€ Millions)**\n\n| | € Millions |\n|---|---|\n| Due 1 January 2015 | 130 |\n| Due 1 January 2016 | 130 |\n| Due 1 January 2017 | 130 |\n| Due 1 January 2018 | 130 |\n| Due 1 January 2019 | 80 |\n| Total of future lease payments thereafter* | 240 |\n| Total commitments | 840 |\n\n*After 2019, all lease payments are assumed to be the same as in 2019.\n\nIf the company were to capitalize its long-term leases, its adjusted long-term debt-to-assets ratio as of the endof December 2014 would be closest to:",
+  "evidence": "Page p56 Q30 shows a balance-sheet table (long-term debt 1,347; equity 11,268; total assets 20,097) plus a Note 18 operating-lease-commitments table, none of which appear in question_en; correct_answer A and the (truncated) stored explanation are confirmed by solution page (pdf idx 163, '30. Answer = A')."
+ },
+ {
+  "id": "8fac116f-2058-4cb7-8910-7c1e2305e1a0",
+  "verdict": "ok",
+  "evidence": "Page p56 Q32 matches the DB record; solution page (pdf idx 164, '32. Answer = B') confirms B verbatim, consistent with a computed temporary difference of $25,000 (accounting NBV $450,000 vs. tax NBV $425,000, so tax base is $425,000 not $500,000)."
+ },
+ {
+  "id": "513fb693-96e6-42f7-b02b-6038436a9b0a",
+  "verdict": "ok",
+  "evidence": "Page p57 Q36 (Relevance/Materiality/Faithful representation) matches the DB record; solution page (pdf idx 165, '36. Answer = B') confirms B and the explanation is verbatim."
+ },
+ {
+  "id": "107ebb78-7ee1-456d-9ecf-ebe2a1e29095",
+  "verdict": "ok",
+  "evidence": "Page p57 Q33 matches the DB record; solution page (pdf idx 164, '33. Answer = B') confirms B and the explanation is verbatim."
+ },
+ {
+  "id": "5b572623-698a-401e-8922-5121d4ec2fd2",
+  "verdict": "ok",
+  "evidence": "Page p57 Q34 (Timeliness/Consistency/Understandability) matches the DB record; solution page (pdf idx 165, '34. Answer = B') confirms B and the explanation is verbatim."
+ },
+ {
+  "id": "ec4b336b-1bf1-46ec-8413-8b63fe9202b3",
+  "verdict": "ok",
+  "evidence": "Page p57/p58 Q37 (double declining balance) matches the DB record; solution page (pdf idx 165, '37. Answer = C') confirms C, consistent with computed year-3 depreciation of $555 limited by the $5,000 residual value floor."
+ },
+ {
+  "id": "e53c04c5-7a61-47cf-80e5-c8823c171b78",
+  "verdict": "ok",
+  "evidence": "Page p58 Q39 (SEC/IFRS reconciliation) matches the DB record; solution page (pdf idx 165-166, '39. Answer = A') confirms A and the explanation is verbatim."
+ },
+ {
+  "id": "4233c5d8-9a0f-444f-89ab-32572f5a4634",
+  "verdict": "formatting_missing",
+  "field": "question_en",
+  "new_value": "During the year, a retailer purchases 1,000 units of inventory at £20.20 per unit. In addition, the following items relate to inventory acquisition and handling during the year.\n\n| Item description | £ '000s |\n|---|---|\n| Volume rebate received | 404 |\n| Import and sales taxes | 2,970 |\n| Transport and transport insurance costs | 325 |\n| Storage costs of finished goods | 1,250 |\n| Warehouse administrative costs | 3,300 |\n\nThe total costs (in thousands) that will be included in inventory are closest to:",
+  "evidence": "Page p58 Q38 shows a 5-row item/cost table (Volume rebate 404 ... Warehouse admin 3,300) missing from question_en; correct_answer A is confirmed by solution page (pdf idx 165, '38. Answer = A'), consistent with the computed $23,091 (20,200 - 404 + 2,970 + 325)."
+ },
+ {
+  "id": "bb728b6b-e483-4e17-8688-35f16316fe27",
+  "verdict": "ok",
+  "evidence": "Page p59 Q44 matches the DB record; solution page (pdf idx 167, '44. Answer = A') confirms A and the explanation is verbatim - this is in fact the genuine source of the explanation that was wrongly duplicated onto item 2ac32d47 (Q25)."
+ },
+ {
+  "id": "e5acfe4f-14bd-4774-b7bf-a15a99bc6dfd",
+  "verdict": "ok",
+  "evidence": "Page p59 Q43 (Specific ID/FIFO/LIFO) matches the DB record; solution page (pdf idx 166, '43. Answer = C') confirms C and the explanation is verbatim."
+ },
+ {
+  "id": "2e13a4af-9250-4845-a5cc-50d9c703cad4",
+  "verdict": "explanation_wrong",
+  "field": "explanation_en",
+  "evidence": "Solution page (pdf idx 166) shows '40. Answer = C' immediately followed by '41. Answer = A' with no worked explanation given in the source for Q40; the stored explanation about the 'standard error of the sample mean' is unrelated (it belongs to a Quantitative Methods question), so no correction can be sourced - new_value omitted per anti-fabrication rule."
+ },
+ {
+  "id": "2e13a4af-9250-4845-a5cc-50d9c703cad4",
+  "verdict": "formatting_missing",
+  "field": "question_en",
+  "new_value": "An analyst has compiled the following information on a company: 53\n\n**Beginning of the year values**\n\n| | £ thousands |\n|---|---|\n| Share capital | 2,000 |\n| Retained earnings | 8,850 |\n\n**During the year**\n\n| | £ thousands |\n|---|---|\n| Revenues | 12,000 |\n| Total expenses | 10,150 |\n| Proceeds from shares issued | 500 |\n\n**End of year values**\n\n| | £ thousands |\n|---|---|\n| Total current assets | 9,200 |\n| Total non-current assets | 12,750 |\n| Investments | 350 |\n| Total liabilities | 9,400 |\n\nThe amount of dividends declared (£ thousands) during the year is closest to:",
+  "evidence": "Pages p58-p59 show a full multi-section table (share capital, retained earnings, revenues, expenses, proceeds from shares, current/non-current assets, investments, liabilities) that is entirely missing from question_en, which only retains a stray footer digit '53'. Correct_answer C (650) is confirmed by solution page (pdf idx 166, '40. Answer = C') and by recomputing: ending equity = (9,200+12,750)-9,400=12,550; ending share capital = 2,000+500=2,500; ending RE = 10,050; dividends = 8,850+1,850-10,050=650."
+ },
+ {
+  "id": "91042b3c-317c-44d2-80cf-65fc4b5c999f",
+  "verdict": "formatting_missing",
+  "field": "question_en",
+  "new_value": "The following information is available on a company for the current year.\n\n| | |\n|---|---|\n| Net income | $1,000,000 |\n| Average number of common shares outstanding | 100,000 |\n\n**Details of convertible securities outstanding:**\n- Convertible preferred shares outstanding: 2,000\n  - Dividend/share: $10\n  - Each preferred share is convertible into five shares of common stock\n- Convertible bonds, $100 face value per bond: $80,000\n  - 8% coupon\n  - Each bond is convertible into 25 shares of common stock\n\n| Corporate tax rate | 40% |\n\nThe company's diluted EPS is closest to:",
+  "evidence": "Page p59 Q41 shows a detailed table (net income, shares outstanding, convertible preferred share and bond terms, tax rate) missing from question_en; correct_answer A and the stored explanation are confirmed verbatim by solution page (pdf idx 166, '41. Answer = A')."
+ }
+]

@@ -1,0 +1,112 @@
+[
+ {
+  "id": "3fbacb81-b126-457f-9433-6e4a69b2d653",
+  "verdict": "ok",
+  "evidence": "Solutions section (PDF page_idx 197, Q2) confirms Answer: C with the same PVBP formula/values (49.85, 51.23, 0.69); options A/B/C match the question page (p101) exactly."
+ },
+ {
+  "id": "8b54fecc-a473-41b4-b42b-47d569cd4fe4",
+  "verdict": "ok",
+  "evidence": "Solutions Q1: 'Answer: B ... senior unsecured debt' matches DB correct_answer B and explanation_en verbatim; options match p101 image."
+ },
+ {
+  "id": "ca5a5ebf-ad37-45ca-9cdc-78f3c57ab6e0",
+  "verdict": "ok",
+  "evidence": "Solutions Q4: 'Answer: C ... difference of par value and purchase price' matches DB exactly; options match p101 image."
+ },
+ {
+  "id": "26fc8459-f671-418f-9b3f-c6e294d60194",
+  "verdict": "option_bleed",
+  "field": "option_c",
+  "new_value": "$23.5.",
+  "evidence": "p101 image shows option C as plain '$23.5.' with the page footer '92' printed below the options block; the DB value '$23.5. 92' has that footer digit glued onto the option. Answer key (A) and explanation both match solutions Q6 otherwise."
+ },
+ {
+  "id": "dd6f7789-bda4-4844-b4ae-d9bf7e600bef",
+  "verdict": "ok",
+  "evidence": "Solutions Q3: 'Answer: B ... cash lender a margin of safety if the collateral's market value declines' matches DB exactly; options match p101 image."
+ },
+ {
+  "id": "1fbf72db-e96d-44fc-a7e5-fe44e6a0152c",
+  "verdict": "formatting_missing",
+  "field": "question_en",
+  "new_value": "An analyst observed the profitability and cash flows of firms A and B and collected the results below.\n\n| | Firm A | Firm B |\n|---|---|---|\n| Earnings before interest and tax | 104 million | 96.5 million |\n| Free cash flow before dividends | -12.5 million | 8.5 million |\n| Free cash flow after dividends | N/A | - 0.5 million |\n\nThe firm(s) not suitable for deleveraging is (are):",
+  "evidence": "p101 image (Q5) shows a two-column comparison table (Firm A vs Firm B) that is squashed into a run-on sentence in question_en; converted to a markdown table preserving the exact original wording/values. Answer (C) and explanation already correct."
+ },
+ {
+  "id": "8e08947f-7767-4e2e-a298-10fbd2d15c44",
+  "verdict": "ok",
+  "evidence": "Solutions Q7: 'Answer: C ... referred to as Benchmark Issue' matches DB exactly; options match p102 image."
+ },
+ {
+  "id": "230a2514-b2f5-4a45-9d62-5cbe4d0ed19f",
+  "verdict": "formatting_missing",
+  "field": "question_en",
+  "new_value": "Current forward curve for one-year rates is given below:\n\n| Time Period | Forward Rate |\n|---|---|\n| 0y1y | 1.90% |\n| 1y1y | 2.25% |\n| 2y1y | 3.50% |\n| 3y1y | 4.41% |\n\nThe three-year implied spot rate is closest to:",
+  "evidence": "p102 image (Q10) shows a two-column Time Period / Forward Rate table squashed into a run-on sentence in question_en; converted to a markdown table with the exact original labels/values. Answer (A) and explanation match solutions Q10 exactly."
+ },
+ {
+  "id": "813a6dd6-1b0b-40d3-bb4d-037bbd65fd54",
+  "verdict": "ok",
+  "evidence": "Solutions Q11: 'Answer: A ... likelihood of default is the primary factor' matches DB exactly; options match p102 image."
+ },
+ {
+  "id": "0b0ba937-79ee-41b5-910c-62910f455c9e",
+  "verdict": "ok",
+  "evidence": "Solutions Q8: 'Answer: C ... buyback their debt often at par or at some premium to par value' matches DB exactly; options match p102 image."
+ },
+ {
+  "id": "9a5c84ad-0159-48a9-ab89-c957f6da0d5f",
+  "verdict": "option_bleed",
+  "field": "option_c",
+  "new_value": "4.5%",
+  "evidence": "p102 image (Q12) shows option C as plain '4.5%' with the page footer '93' printed below; DB value '4.5% 93' has that footer digit glued on. Answer key (C) and explanation (YTM 4.44%) match solutions Q12; question_en already correctly uses a markdown table."
+ },
+ {
+  "id": "90ee3951-9a7c-429b-b762-30034b74b20b",
+  "verdict": "ok",
+  "evidence": "Solutions Q9: 'Answer: A' with the 3.6188% price change / -62.93 bps derivation matches DB explanation_en verbatim; options match p102 image."
+ },
+ {
+  "id": "f3fac848-9c45-40ba-bcc9-b4477b5d2038",
+  "verdict": "ok",
+  "evidence": "Solutions Q13: 'Answer = A ... most recently issued and actively traded government bonds' matches DB exactly; options match p103 image."
+ },
+ {
+  "id": "3bef37e0-2c1d-4f77-8848-fe19fa01df70",
+  "verdict": "ok",
+  "evidence": "Solutions Q14: 'Answer = B ... bid-ask spread ... market liquidity risk' matches DB exactly; options match p103 image."
+ },
+ {
+  "id": "de86625d-349a-427b-9d7b-a6114a7df51d",
+  "verdict": "ok",
+  "evidence": "Solutions Q16: 'Answer = B ... P = 92.89' matches DB correct_answer and explanation; options match p103 image."
+ },
+ {
+  "id": "404c88af-d698-46c3-861a-c0ed768f7fc6",
+  "verdict": "ok",
+  "evidence": "Solutions Q17: 'Answer = B ... agreed on bond price without accrued interest is referred to as the flat price' matches DB exactly; options match p103 image."
+ },
+ {
+  "id": "8f12de0c-d82d-4e7d-b9f7-d59301e869f9",
+  "verdict": "ok",
+  "evidence": "Solutions Q18: 'Answer = B ... spot rate is defined as the yield to maturity on a zero-coupon bond' matches DB exactly; options match p103 image."
+ },
+ {
+  "id": "b09dd546-0b6d-421e-a8a7-edcea3092c84",
+  "verdict": "option_bleed",
+  "field": "option_a",
+  "new_value": "decrease.",
+  "evidence": "p103 image (Q20) shows option A as plain 'decrease.' with the page footer '94' printed below the last option; DB value 'decrease. 94' has that footer digit glued on. Answer key (C) and explanation ('pulled to par') match solutions Q20 exactly."
+ },
+ {
+  "id": "73693218-5027-4194-bc32-a29087f9ae04",
+  "verdict": "ok",
+  "evidence": "Solutions Q15: 'Answer = A' with PVBP computed from 108.59/108.40 giving 0.095 matches DB exactly; options match p103 image."
+ },
+ {
+  "id": "5ea405c9-7be0-4d5b-99d9-7067185f7782",
+  "verdict": "ok",
+  "evidence": "Solutions Q19: 'Answer = C ... repackaged into more complex, not simpler, structures' matches DB exactly; options match p103 image."
+ }
+]

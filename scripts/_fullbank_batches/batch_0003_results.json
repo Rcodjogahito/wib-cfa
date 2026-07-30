@@ -1,0 +1,112 @@
+[
+ {
+  "id": "4632346d-95ad-4242-a9c3-9bffe4249c13",
+  "verdict": "formatting_missing",
+  "field": "question_en",
+  "new_value": "Given below are the sample monthly returns for ATD stocks.\n\n| Month | Return |\n|---|---|\n| January | 18.5% |\n| February | 6.6% |\n| March | -3.5% |\n| April | -11.4% |\n| May | 5.4% |\n| June | -17% |\n\nWith the target return of 6.0%, the target semi-variance is closest to:",
+  "evidence": "Page p28 (Q10) shows a six-row month/return table (Jan 18.5%, Feb 6.6%, Mar -3.5%, Apr -11.4%, May 5.4%, Jun -17%) that is completely absent from question_en. Answer A (184.47) and correct_answer=A are internally consistent with the stored explanation, so only formatting needed fixing."
+ },
+ {
+  "id": "9d2e797a-d718-48c7-9f1f-f3a7bd185c6e",
+  "verdict": "ok",
+  "evidence": "Page p28 (Q15) text matches question_en/options verbatim; explanation's reasoning (sampling error vs. transaction costs/risk/taxes) matches option B and correct_answer=B."
+ },
+ {
+  "id": "27cd938c-e98b-4bab-834f-0463de19d922",
+  "verdict": "explanation_wrong",
+  "field": "explanation_en",
+  "evidence": "Page p28 (Q11) shows an NPV-vs-IRR mutually-exclusive-projects question, but the stored explanation_en ('The SEC is responsible for overseeing the PCAOB under the Sarbanes-Oxley Act of 2002') is entirely unrelated content from a different (Ethics/regulation) question. No worked explanation for this question appears on the rendered page, so no verbatim replacement could be sourced without fabricating one."
+ },
+ {
+  "id": "e2aeb0d4-4ecb-4557-89e2-cc2be3f75b69",
+  "verdict": "ok",
+  "evidence": "Page p28 (Q13) text and options match verbatim; explanation correctly describes point-and-figure charts, consistent with correct_answer=C. (Note: this question is crossed out with a red X on the page, apparently a prior editor's void/duplicate mark, but the text and DB fields are otherwise accurate.)"
+ },
+ {
+  "id": "eefe6eb7-b946-4df5-901a-80ae47aa36b5",
+  "verdict": "explanation_wrong",
+  "field": "explanation_en",
+  "evidence": "Page p28 (Q14) shows a parametric-vs-nonparametric statistical test question, but explanation_en discusses GIPS 'Disclosures'/'Composite Construction'/'Presentation and Reporting' sections, which is unrelated Ethics/GIPS content belonging to a different question. No worked explanation for this question appears on the page, so no verbatim replacement is available without fabricating one."
+ },
+ {
+  "id": "b7ddc781-88ce-4515-bd07-04fe6a28f6f2",
+  "verdict": "ok",
+  "evidence": "Page p29 (Q16) shows options A/B as H0:sigma^2>=0.36% (identical, matching DB) and C as H0:sigma^2<=0.36%; since the question tests whether std dev is 'greater than' 6%, the null must be the <= form, confirming correct_answer=C. Explanation matches this reasoning exactly."
+ },
+ {
+  "id": "b8e62623-7a21-4bb0-b60c-2f7e3925ab3f",
+  "verdict": "ok",
+  "evidence": "Page p29 (Q18) matches verbatim; explanation's arithmetic ($36M-$48M range, $40M breakeven, 33.3%/66.7%) matches the question's own figures and correct_answer=B exactly."
+ },
+ {
+  "id": "d9bf4ba4-3382-4fb7-9ba2-dafd8d50a760",
+  "verdict": "ok",
+  "evidence": "Page p29 (Q17) matches verbatim; explanation ('probability of correctly rejecting the null when it is false') matches option B and correct_answer=B."
+ },
+ {
+  "id": "bb0fc912-ed47-47be-a713-d2385a6ceab0",
+  "verdict": "ok",
+  "evidence": "Page p29 (Q20) matches verbatim including option A = EUR 61,663; explanation's annuity-due calculation (PV = EUR61,662.62) supports correct_answer=A."
+ },
+ {
+  "id": "fa7aca18-f4be-4e28-b913-8f904592acf7",
+  "verdict": "ok",
+  "evidence": "Page p29 (Q19) matches verbatim; explanation's EAR calculation (0.094162 -> 9.42%) matches option C and correct_answer=C."
+ },
+ {
+  "id": "096baf1f-5688-4c22-ad2c-de6f99f1679b",
+  "verdict": "ok",
+  "evidence": "Page p30 (Q22) matches verbatim; explanation correctly describes why positive skew is preferred, consistent with correct_answer=C."
+ },
+ {
+  "id": "3ae59952-6d6a-4d6f-bcb5-dc4c776fead5",
+  "verdict": "formatting_missing",
+  "field": "question_en",
+  "new_value": "Use the following values from a student's t-distribution to establish a 95% confidence interval for the population mean given a sample size of 10, a sample mean of 6.25, and a sample standard deviation of 12. Assume that the population from which the sample is drawn is normally distributed and the population variance is not known.\n\n| Degrees of Freedom | p = 0.10 | p = 0.05 | p = 0.025 | p = 0.01 |\n|---|---|---|---|---|\n| 9 | 1.383 | 1.833 | 2.262 | 2.821 |\n| 10 | 1.372 | 1.812 | 2.228 | 2.764 |\n| 11 | 1.363 | 1.796 | 2.201 | 2.718 |\n\nThe 95% confidence interval is closest to a",
+  "evidence": "Page p30 (Q21) shows a t-distribution table (df 9/10/11 x p=0.10/0.05/0.025/0.01) entirely missing from question_en. The explanation's use of t=2.262 (df=9, p=0.025 in the table) is internally consistent with correct_answer=B, so only the table formatting needed fixing."
+ },
+ {
+  "id": "06889b58-22d2-4a42-9e1c-35206ace8dd2",
+  "verdict": "formatting_missing",
+  "field": "question_en",
+  "new_value": "A discrete uniform distribution consists of the following 12 values:\n\n| -2.5 | 5.3 | 6.7 | 8.8 | -4.6 | 9.2 |\n|---|---|---|---|---|---|\n| 3.3 | 8.2 | 1.4 | 0.8 | -5.3 | 6.9 |\n\nOn a single draw from the distribution, the probability of drawing a value between –2.0 and 2.0 from the distribution is closest to: 27",
+  "evidence": "Page p30 (Q24) shows the 12 data values (-2.5, 5.3, 6.7, 8.8, -4.6, 9.2, 3.3, 8.2, 1.4, 0.8, -5.3, 6.9) as a table; question_en omits them entirely, just saying '12 values:' with nothing listed. Explanation cites 0.8 and 1.4 as the two in-range values, both present in the table, confirming correct_answer=A; only formatting needed fixing."
+ },
+ {
+  "id": "19cd6b88-de6a-4a39-ad05-193a242f1afe",
+  "verdict": "explanation_wrong",
+  "field": "explanation_en",
+  "new_value": "The histogram clearly shows that the return distribution of the index is positively skewed (skewed to the right) and is unimodal (it has one most frequently occurring value). For a positively skewed unimodal distribution, the median is always less than the mean.",
+  "evidence": "Page p30 (Q23) shows the histogram (positively skewed, unimodal shape) matching option A ('smaller') and correct_answer=A. The stored explanation_en is prefixed with an unrelated mock-exam copyright/terms-of-use notice ('By accessing this mock exam, you agree...') that does not belong to this question; the genuine explanation text is the remainder, which was kept verbatim and only the boilerplate contamination was removed."
+ },
+ {
+  "id": "458d987d-a7be-48b1-afde-a63f42c036de",
+  "verdict": "ok",
+  "evidence": "Page p31 (Q27) matches verbatim; explanation directly matches definition of leptokurtotic, consistent with correct_answer=C."
+ },
+ {
+  "id": "c38f5136-894d-434b-ae93-49bbbe16e63b",
+  "verdict": "unclear",
+  "evidence": "Page p31 (Q29) shows only option A and a differently-worded formula for option B (pooled-variance vs. separate-variance t-statistic), and is cut off before a true option C; the page for this question continues onto an un-rendered page (idx 32). DB's option_b ('Data mining') and option_c ('Sample selection') do not match anything on this page at all -- and are confirmed (via the identical crossed-out fragment 'B. Data mining / C. Sample selection' appearing at the very top of page p33, i.e. the tail end of a different, unrelated question) to belong to another question entirely. correct_answer=B therefore points to a contaminated option and cannot be verified or corrected without fabricating a value, since the real option C/true correct letter for this question is not visible on any rendered page."
+ },
+ {
+  "id": "8cae4dc4-4b49-49ec-9c99-4ad9c76890f9",
+  "verdict": "ok",
+  "evidence": "Page p31 (Q25) matches verbatim; explanation ('descriptive measure of a population characteristic is called a parameter') matches option A and correct_answer=A. (Note: this question is crossed out with a red X on the page, apparently a prior editor's void/duplicate mark, but the DB fields are otherwise accurate.)"
+ },
+ {
+  "id": "ec728d1b-6c60-4859-9716-0c245a0ea8b3",
+  "verdict": "ok",
+  "evidence": "Page p31 (Q26) matches verbatim; explanation ('geometric mean is always less than or equal to the arithmetic mean') matches option A and correct_answer=A."
+ },
+ {
+  "id": "f11d4426-d79d-4a1e-b419-1afc77814061",
+  "verdict": "ok",
+  "evidence": "Page p31 (Q28) matches verbatim; explanation matches option A and correct_answer=A directly."
+ },
+ {
+  "id": "6938a61e-ec66-49c2-9270-901c6654a698",
+  "verdict": "ok",
+  "evidence": "Page p33 (Q35) matches verbatim including option order; explanation matches option B and correct_answer=B directly."
+ }
+]

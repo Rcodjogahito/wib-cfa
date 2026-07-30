@@ -1,0 +1,128 @@
+[
+ {
+  "id": "6b8b866d-3f2a-4b13-90a8-0b350d610043",
+  "verdict": "ok",
+  "evidence": "Page 12 (Q44) shows options A and B as identical duplicate text and C as the narrower option, matching the DB verbatim (a quirk of the source PDF itself, not an import error); solution page 116 (item 44) confirms Answer = A and the DB explanation matches word-for-word."
+ },
+ {
+  "id": "29c76466-69c7-46c4-a07d-b3ac3312270b",
+  "verdict": "ok",
+  "evidence": "Page 12 (Q43, Sergio Morales) matches the DB question/options; solution page 122 (item 43) shows Answer = C and the explanation text matches the DB verbatim."
+ },
+ {
+  "id": "a80c092a-c642-4abc-8068-6ca6bc1b8700",
+  "verdict": "ok",
+  "evidence": "Page 12 (Q45, Ellen Miffitt) matches the DB question/options; solution page 122 (item 45) shows Answer = B and the explanation matches the DB verbatim."
+ },
+ {
+  "id": "6baeb843-10eb-4320-9c81-1efb362998cf",
+  "verdict": "ok",
+  "evidence": "Page 13 (Q48, Gabrielle Gabbe) matches the DB question/options; solution page 122 (item 48) shows Answer = A and the explanation matches the DB verbatim."
+ },
+ {
+  "id": "6440aeb6-d8e3-4d6b-9542-52ed3865ec97",
+  "verdict": "ok",
+  "evidence": "Page 13 (Q47, Molly Burnett) matches the DB question/options; solution page 122 (item 47) shows Answer = B and the explanation matches the DB verbatim."
+ },
+ {
+  "id": "6a95902d-c86c-4074-ad9f-177a3e537e86",
+  "verdict": "ok",
+  "evidence": "Page 13 (Q49, Francesca Ndenda) matches the DB question/options; solution page 122 (item 49) shows Answer = B and the explanation matches the DB verbatim."
+ },
+ {
+  "id": "ecef02ef-2b90-4e50-8808-6a4b0e0132a7",
+  "verdict": "ok",
+  "evidence": "Page 12/13 (Q46, Pia Nilsson) matches the DB question/options; solution page 122 (item 46) shows Answer = C and the explanation matches verbatim. Note: the DB question_en contains a stray inserted '10' ('has not paid 10 her CFA Institute...'), a page-footer-number bleed artifact from the original text extraction, but no verdict category in this rubric covers stray-token cleanup so no correction is proposed."
+ },
+ {
+  "id": "81994df1-c680-4d39-b7b7-0460f9fe6582",
+  "verdict": "ok",
+  "evidence": "Page 14 (Q53, James Simone) matches the DB question/options; solution page 123 (item 53) shows Answer = A and the explanation matches the DB verbatim."
+ },
+ {
+  "id": "67dfb958-0274-4f32-8443-e4fa6f4678ef",
+  "verdict": "formatting_missing",
+  "field": "question_en",
+  "new_value": "Chan Liu, CFA, is the new research manager at the Pacific MicroCap Fund. Liu observed the following activities after she published a research report on a thinly traded micro-cap stock that included a \"buy\" recommendation:\n\n- Pacific traders purchased the stock for Pacific's proprietary account and then purchased the same stock for all client accounts; and\n- Pacific marketing department employees disseminated positive, but false, information about the stock in widely read internet forums.\n\nLiu notes the stock's price increased more than 50% within a period of two days and was then sold for Pacific's account. Which of the following steps is most appropriate for Liu to take to avoid violating the CFA Institute Standards of Professional Conduct?",
+  "evidence": "Page 14 (Q51) shows two genuine bulleted list items under the stem, but question_en squashes them into a run-on sentence with only double-spaces where the bullets were, with no newline. Answer (B) and explanation (matches solution page 123-124, item 51) are both correct as stored."
+ },
+ {
+  "id": "e1fa339e-d72a-4226-83b6-5f69398b17ba",
+  "verdict": "ok",
+  "evidence": "Page 14 (Q52, Mariam Musa / Omar Kassim) matches the DB question/options; solution page 124 (item 52) shows Answer = C and the explanation matches the DB verbatim."
+ },
+ {
+  "id": "5c0e48f6-4499-4a8c-b4c8-a0bfba865af9",
+  "verdict": "ok",
+  "evidence": "Page 26 (Q4, efficiency of unbiased estimator) matches the DB question/options; solution page 129 (item 4) shows Answer = A and the explanation matches the DB verbatim."
+ },
+ {
+  "id": "8c374b59-e20c-4e96-8568-0455f6ac6090",
+  "verdict": "explanation_wrong",
+  "field": "explanation_en",
+  "new_value": "From 1 January to 30 June:\nFund's beginning market value = $70 million\nEnding market value of the fund = $82.6 million (1.18 x $70 million)\nFund's holding period return = 18%\n\nFrom 1 July to 31 December:\nAdditional investments = $35 million\nBeginning market value = $117.6 million ($82.6 m + $35 m)\nHolding period return = (134-117.6)/117.6 = 13.95%\n\nFund's time weighted rate of return = 34.46% (1.18 x 1.1395)",
+  "evidence": "Solution page 129 (item 5, time-weighted return question) shows the correct step-by-step computation ending in 34.46% (matches stored correct_answer C), but the DB explanation_en instead contains an unrelated 'Annualized return for investor = (1-0.5%)^52-1 = -22.95%' calculation that belongs to a different (weekly annuity/money-market) question."
+ },
+ {
+  "id": "ad207417-ddcd-4126-9927-2f34ef1bc3be",
+  "verdict": "formatting_missing",
+  "field": "question_en",
+  "new_value": "Three friends Sam, Patricia and Robert will receive equal dollar amounts in two years, however they invested in such a way that:\n\n- the interest rate offered to Patricia and Sam is same but compounding forPatricia is monthly and forSam is quarterly.\n- compounding for Robert and Patricia is same but the interest rate offeredto Robert is higher.\n\nThe present value of whose investment would be the lowest?",
+  "evidence": "Page 26 (Q1) shows two genuine bulleted list items under the stem, but question_en squashes them into a run-on sentence with only double-spaces where the bullets were. Answer (B) and explanation (matches solution page 129, item 1, verbatim) are both correct as stored."
+ },
+ {
+  "id": "05fa78d6-d73b-4047-a8c1-a9012e39c33b",
+  "verdict": "ok",
+  "evidence": "Page 27 (Q9, 68% of outcomes) matches the DB question/options; solution page 130 (item 9) shows Answer = A and the explanation matches the DB verbatim."
+ },
+ {
+  "id": "820ed9ad-5d50-4d09-a1b1-7472351243f9",
+  "verdict": "ok",
+  "evidence": "Page 26 (Q3, hedge fund 99% CI) matches the DB question/options; solution page 129 (item 3) shows Answer = C (0.1024-0.7824) and the DB explanation is this question's own solution (numbers/order are jumbled from formula-to-text extraction but the content and conclusion are correct and not swapped with another question)."
+ },
+ {
+  "id": "2a0eaea8-cc40-40b1-9927-4b59a13476bf",
+  "verdict": "ok",
+  "evidence": "Page 26 (Q2, correlation/covariance properties) matches the DB question/options; solution page 129 (item 2) shows Answer = A and the explanation matches the DB verbatim, including that the false option about covariance importance correctly says 'increases' (not 'decreases')."
+ },
+ {
+  "id": "e42d16aa-6519-4834-b23c-b20f60858357",
+  "verdict": "explanation_wrong",
+  "field": "explanation_en",
+  "new_value": "sigma^2 = sum of (Prob.) x (X - E(X))^2\nsigma^2 = (0.12)x(7.75-5.91)^2 + (0.45)x(6.20-5.91)^2 + (0.33)x(5.5-5.91)^2 + (0.10)x(3.75-5.91)^2\nS.D. sigma = sqrt(sigma^2) = 0.9829",
+  "evidence": "Solution page 129 (item 6, Howe Inc. EPS variance question) shows the standard-deviation calculation ending in 0.9829 (matches stored correct_answer B), but the DB explanation_en instead contains the 99% confidence-interval z-value calculation that is actually the explanation for a different question (Q3, hedge fund CI) on the same page set."
+ },
+ {
+  "id": "e42d16aa-6519-4834-b23c-b20f60858357",
+  "verdict": "formatting_missing",
+  "field": "question_en",
+  "new_value": "An analyst calculated the expected value of Howe Inc.’s EPS as $5.91 based on the probability distribution of Howe’s EPS for the current fiscal year.\n\n| Probability | EPS ($) |\n|---|---|\n| 0.12 | 7.75 |\n| 0.45 | 6.20 |\n| 0.33 | 5.50 |\n| 0.10 | 3.75 |",
+  "evidence": "Page 27 (Q6) shows a genuine two-column probability-distribution table (Probability / EPS $) that is entirely missing from question_en, which only contains the intro sentence with none of the table's four rows of data needed to answer the question."
+ },
+ {
+  "id": "883837ef-43d1-41a1-9814-a204fa0d19f4",
+  "verdict": "explanation_wrong",
+  "field": "explanation_en",
+  "new_value": "Portfolio B is positively skewed. A distribution with frequent small losses and few large gains has positive skew (long tail on the right side). If a distribution is positively skewed with mean greater than its median, then more than half of its deviations from the mean are negative and less than half are positive.\nPortfolio A is less peaked (platykurtic) than normal distribution and is negatively skewed.",
+  "evidence": "Solution page 130 (item 8, portfolio kurtosis/skewness question) shows the correct reasoning about Portfolio B's positive skew (matches stored correct_answer B), but the DB explanation_en instead contains an unrelated FCFF calculation ('FCFF = CFO + After tax interest-CFInv... = $5.1 million') belonging to a Corporate Finance cash-flow question."
+ },
+ {
+  "id": "883837ef-43d1-41a1-9814-a204fa0d19f4",
+  "verdict": "formatting_missing",
+  "field": "question_en",
+  "new_value": "An analyst gathered the following information about return distributions of two portfolios.\n\n| | Kurtosis | Skewness |\n|---|---|---|\n| Portfolio A | 2.5 | -3.7 |\n| Portfolio B | 1.3 | +4.2 |\n\nWhich of the following statements is most likely correct regarding portfolio A and B?",
+  "evidence": "Page 27 (Q8) shows a genuine Kurtosis/Skewness table for Portfolio A and B that is entirely missing from question_en, which only contains the intro sentence with none of the actual data needed to answer the question."
+ },
+ {
+  "id": "7ad6bab6-c453-4e3d-915b-6b062fd67a36",
+  "verdict": "formatting_missing",
+  "field": "question_en",
+  "new_value": "A professor is practicing a new method of teaching and is unsure about its impact on students’ performance. His students generally maintained an average 3.2 GPA throughout the semester. He selects a sample of 25 students with a mean GPA of 3.0 and standard deviation of 0.62. The professor is concerned whether the sample results are consistent with the average GPA results of 3.2.\n\n| df | p = 0.05 | p = 0.10 |\n|---|---|---|\n| 24 | 1.711 | 1.318 |\n| 25 | 1.708 | 1.316 |\n\nDetermine whether the null hypothesis is rejected or not at the 0.10 level of significance.",
+  "evidence": "Page 27 (Q7) shows a genuine critical-t-value table (df 24/25 vs p=0.05/0.10) that is entirely missing from question_en. The stored correct_answer (B) and explanation content are correct (matches solution page 130, item 7) though the explanation's formula numbers are jumbled from OCR extraction, which does not change its meaning."
+ },
+ {
+  "id": "d422aec6-0a2e-4222-b0ac-a1208bbdba03",
+  "verdict": "ok",
+  "evidence": "Page 28 (Q12, lognormal distribution) matches the DB question/options; solution page 130 (item 12) shows Answer = C and the explanation matches the DB verbatim (aside from a trailing stray '130' page-number artifact at the very end, which does not change the content)."
+ }
+]

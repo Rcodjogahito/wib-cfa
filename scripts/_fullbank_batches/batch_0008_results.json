@@ -1,0 +1,114 @@
+[
+ {
+  "id": "9bfb681b-7a14-4539-95eb-e66fb1eeb9dd",
+  "verdict": "ok",
+  "evidence": "Official solutions page (PDF p.170, printed pg.159), item 68: 'Answer = A' with explanation verbatim matching the stored explanation_en about high residual value + long lives minimizing depreciation."
+ },
+ {
+  "id": "a47bd485-2987-41c0-989b-59a59a6b93f3",
+  "verdict": "ok",
+  "evidence": "Official solutions page (PDF p.170, printed pg.159), item 65: 'Answer = C' with explanation verbatim matching stored explanation about US GAAP prohibiting PPE revaluation."
+ },
+ {
+  "id": "c3be4607-8662-4ca5-a93c-6d75bb5eb6de",
+  "verdict": "ok",
+  "evidence": "Official solutions page (PDF p.171, printed pg.160), item 70: 'Answer = C' with explanation verbatim matching stored explanation about IOSCO promoting cross-border cooperation."
+ },
+ {
+  "id": "22950b3c-88e6-4eda-87c3-637494884c69",
+  "verdict": "ok",
+  "evidence": "Official solutions page (PDF p.171, printed pg.160), item 71: 'Answer = C' with explanation matching stored explanation about SEC's 2010 convergence statement."
+ },
+ {
+  "id": "e49d6383-9750-4cdb-958a-0e69c3ac6fdf",
+  "verdict": "explanation_wrong",
+  "field": "explanation_en",
+  "new_value": "Specific identification is the inventory method that results in the matching of the physical flow of the particular items sold and would be most suitable for high-end custom-built motorcycles that are not ordinarily considered interchangeable.",
+  "evidence": "Official solutions page (PDF p.171, printed pg.160), item 72: 'Answer = B' with this exact one-paragraph explanation. The stored explanation_en is contaminated: after the correct paragraph it appends ~25 unrelated solutions (numbered 73 through 100, covering cash return on assets, revenue recognition, bonds, LIFO/FIFO, sustainable growth rate, etc.) that belong to different questions, evidently from an import that failed to detect the solution-entry boundary."
+ },
+ {
+  "id": "a6ffe557-09d5-46ec-ad0c-0813aedb1503",
+  "verdict": "formatting_missing",
+  "field": "question_en",
+  "new_value": "Income statements for two companies (A and B) and the common-size income statement for the industry are provided in the following table:\n\n| ($ thousands) | Company A | Company B | Industry |\n|---|---|---|---|\n| Sales | $10,500 | $8,250 | 100.0% |\n| Cost of goods sold | 6,353 | 5,239 | 62.8% |\n| Selling, general, and administrative expenses | 2,625 | 2,021 | 24.8% |\n| Interest expense | 840 | 536 | 7.0% |\n| Pretax earnings | 683 | 454 | 5.4% |\n| Taxes | 205 | 145 | 1.7% |\n| Net earnings | $478 | $309 | 3.7% |\n\n59 The best conclusion an analyst can make is that:",
+  "evidence": "Source PDF page (p64, printed pg.59) shows a full income-statement table (Sales, COGS, SG&A, Interest expense, Pretax earnings, Taxes, Net earnings for Company A, Company B and Industry %) that is completely absent from question_en, which currently only references 'the following table' without reproducing it. Answer key (C confirmed A) and explanation both check out against official solutions p.170-171."
+ },
+ {
+  "id": "5aa9ec39-541d-4292-bacf-7c2ad9b7cd74",
+  "verdict": "formatting_missing",
+  "field": "question_en",
+  "new_value": "The cash flows of projects A and B are given below:\n\n| Year | Project A | Project B |\n|---|---|---|\n| 0 | -1,500 | -1,500 |\n| 1 | 400 | 500 |\n| 2 | 300 | 500 |\n| 3 | 600 | 500 |\n| 4 | 800 | 500 |\n\nFor a 12% internal rate of return, as compared to project B, the discounted payback period of project A is approximately:",
+  "evidence": "Source PDF page (p73, printed pg.67, question 1 of Corporate Finance chapter) shows a Year/Project A/Project B cash-flow table that is entirely missing from question_en. Answer C and explanation are confirmed correct against official solutions p.177 ('1. Answer: C')."
+ },
+ {
+  "id": "64bff801-5be4-487a-83ab-660102632495",
+  "verdict": "ok",
+  "evidence": "Official solutions page (PDF p.177, printed pg.166), item 3: 'Answer: C' with explanation verbatim matching stored explanation about stock dividends lowering cost per share held."
+ },
+ {
+  "id": "627e2995-0fac-4311-9eb2-56d5d3bfa161",
+  "verdict": "formatting_missing",
+  "field": "question_en",
+  "new_value": "An analyst gathered the following information to estimate the cost of equity for JI Inc. located in Fiji.\n\n| Exhibit 1 | |\n|---|---|\n| Risk free rate | 3.2% |\n| Market risk premium | 5.5% |\n| Beta | 1.3 |\n| U.S. 10-year T-bond yield | 2.84% |\n| Fiji's 10-year dollar denominated Govt. bond yield | 10.81% |\n| Annualized SD of Fiji's stock market | 44% |\n| Annualized SD of Fiji's dollar denominated bond | 37% |\n\nThe sovereign yield spread and JI Inc.'s cost of equity are closest to:",
+  "evidence": "Source PDF page (p73, printed pg.67, question 4) shows an 'Exhibit 1' table with 7 rows of data (risk-free rate, market risk premium, beta, T-bond yield, Fiji bond yield, annualized SDs) that is entirely absent from question_en. Answer C and explanation confirmed correct against official solutions p.177-178 ('4. Answer: C')."
+ },
+ {
+  "id": "f1daaac9-8dce-4f7f-ad42-1c3c9e801c52",
+  "verdict": "ok",
+  "evidence": "Official solutions page (PDF p.177, printed pg.166), item 2: 'Answer: C' with explanation verbatim matching stored explanation about NPV assuming reinvestment at the opportunity cost of capital."
+ },
+ {
+  "id": "c331f831-141f-4520-8c9d-7a29ba3613ca",
+  "verdict": "ok",
+  "evidence": "Official solutions page (PDF p.178, printed pg.167), item 10: 'Answer = B' with WACC=14.33% matching stored explanation and correct_answer B. Question already uses a proper markdown bullet list for the given data."
+ },
+ {
+  "id": "a9ac491c-adca-4d63-9fc8-a7c780cdd58c",
+  "verdict": "ok",
+  "evidence": "Official solutions page (PDF p.178, printed pg.167), item 9: 'Answer = B' matching stored correct_answer and explanation (equity beta decreases when tax rate increases, asset beta unchanged)."
+ },
+ {
+  "id": "38990593-1826-4ae2-9bfd-6c02921c2703",
+  "verdict": "ok",
+  "evidence": "Official solutions page (PDF p.178, printed pg.167), item 5: 'Answer: A' verbatim matching stored explanation about cash-financed share repurchases decreasing assets/equity and increasing leverage."
+ },
+ {
+  "id": "69330bcf-3e35-46ed-b280-d25ef26bf509",
+  "verdict": "formatting_missing",
+  "field": "question_en",
+  "new_value": "An analystgathered the following financial information from Daniel Inc.\n\n| | 2013 | Expected 2014 |\n|---|---|---|\n| Units Sold | 1300 | 1400 |\n| Revenue ($) | 130,000 | 140,000 |\n| Operating income ($) | 38,000 | 52,000 |\n| Interest cost ($) | 12,000 | 12,000 |\n| Other financing cost ($) | 8,000 | 8,000 |\n| Tax ($) | 6300 | 11,200 |\n| Net Income ($) | 11,700 | 20,800 |\n\nThe degree of operating leverage ofDaniel Inc. from 2013 to expected 2014 is closest to:",
+  "evidence": "Source PDF page (p74, printed pg.68, question 8) shows the 2013 vs Expected-2014 financial data as a clearly laid-out table, but question_en squashes all figures into one run-on sentence. Answer C and explanation (DOL=4.78) confirmed correct against official solutions p.178-179 ('8. Answer: C'). Original wording/typos ('analystgathered', 'leverage ofDaniel') preserved verbatim, only markdown table structure added."
+ },
+ {
+  "id": "28c1c80b-6c36-42c7-b0c6-59bb10d23375",
+  "verdict": "ok",
+  "evidence": "Official solutions page (PDF p.178, printed pg.167), item 6: 'Answer: A' verbatim matching stored explanation about matrix pricing."
+ },
+ {
+  "id": "17719e55-7840-4d9d-b29c-0dfbb825750a",
+  "verdict": "ok",
+  "evidence": "Official solutions page (PDF p.178, printed pg.167), item 7: 'Answer: B' with 73.61%/24.69%/48.92% figures matching stored explanation exactly."
+ },
+ {
+  "id": "473a7c2a-957c-4100-8ff4-8386afc9e7f3",
+  "verdict": "ok",
+  "evidence": "Official solutions page (PDF p.179, printed pg.168), item 11: 'Answer = B' verbatim matching stored explanation about the debt-rating approach being used when market prices are unreliable."
+ },
+ {
+  "id": "40a5b89b-5909-45ba-9521-5ba3a0312779",
+  "verdict": "ok",
+  "evidence": "Official solutions page (PDF p.179, printed pg.168), item 15: 'Answer = A' verbatim matching stored explanation that financing costs are excluded from project cash flows."
+ },
+ {
+  "id": "dbdb18ee-21c1-4301-b718-9eab39f9a55b",
+  "verdict": "ok",
+  "evidence": "Official solutions page (PDF p.179, printed pg.168), item 13: 'Answer = B' with YTM=7% and cost of equity=12.00% matching stored explanation exactly."
+ },
+ {
+  "id": "25bec46d-e2de-4bc4-804e-90dff1bded9e",
+  "verdict": "formatting_missing",
+  "field": "question_en",
+  "new_value": "The following data apply to two comparable companies that are in direct competition.\n\n| | Company A | Company B |\n|---|---|---|\n| Times interest earned ratio | 2.50 | 2.50 |\n| Return on equity (ROE) | 10.13% | 16.88% |\n| Return on assets (ROA) | 6.75% | 11.25% |\n| Asset turnover | 1.50 | 2.50 |\n\nWhich of the following statements is most accurate?",
+  "evidence": "Source PDF page (p75, printed pg.69, question 14) shows a 4-row comparison table (times interest earned, ROE, ROA, asset turnover for Company A/B) that is entirely missing from question_en. Answer C and explanation confirmed correct against official solutions p.179 ('14. Answer = C')."
+ }
+]

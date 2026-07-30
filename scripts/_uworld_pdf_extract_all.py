@@ -60,7 +60,7 @@ def extract_pdf_questions(pdf_path):
 
     def join_range(content, start_idx, end_idx, letter):
         lines = [clean_marker(content[start_idx]["text"], letter)] + \
-                [l["text"].strip() for l in content[start_idx + 1:end_idx]]
+                [l["text"].strip() for l in content[start_idx + 1:end_idx] if not l.get("has_check")]
         return " ".join(t for t in lines if t)
 
     results = []
@@ -83,7 +83,7 @@ def extract_pdf_questions(pdf_path):
                 iexpl = i
                 break
 
-        stem = " ".join(l["text"].strip() for l in content[:ia] if l["text"].strip())
+        stem = " ".join(l["text"].strip() for l in content[:ia] if l["text"].strip() and not l.get("has_check"))
         stem = re.sub(r"^\d+\.\s*", "", stem)
         option_a = join_range(content, ia, ib, "A")
         option_b = join_range(content, ib, ic, "B")
@@ -98,6 +98,8 @@ def extract_pdf_questions(pdf_path):
         if iexpl is not None:
             expl_lines = []
             for l in content[iexpl + 1:]:
+                if l.get("has_check"):
+                    continue
                 t = l["text"].strip()
                 if t in ("Things to remember:", "LOS") or t.startswith("Copyright"):
                     break

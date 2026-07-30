@@ -1,0 +1,123 @@
+[
+ {
+  "id": "96d3baed-102d-4e46-a552-0973bc1cad78",
+  "verdict": "ok",
+  "evidence": "Page 104 (printed p.95) Q22 matches option-for-option; solutions page 199 confirms 'Answer = C' and the explanation text verbatim."
+ },
+ {
+  "id": "e929bbbe-cacb-455f-aa83-7e513313a799",
+  "verdict": "ok",
+  "evidence": "Page 104 Q23 matches; solutions page 199 confirms 'Answer = A' and explanation verbatim (DB option_b has a harmless missing-space typo 'couponrate' but no foreign fragment/footer bleed)."
+ },
+ {
+  "id": "0bfcb19c-5eae-40bf-9426-74b9858440e7",
+  "verdict": "ok",
+  "evidence": "Page 104 Q24 matches; solutions page 199 confirms 'Answer = B' and explanation verbatim (option_c has a harmless missing-space typo 'amortizingloans' but no foreign fragment/footer bleed)."
+ },
+ {
+  "id": "0e888c72-1702-4425-aad7-29346bd447a8",
+  "verdict": "ok",
+  "evidence": "Page 104 Q25 matches; solutions page 200 confirms 'Answer = C' and explanation verbatim."
+ },
+ {
+  "id": "0ed48185-faa4-491b-a350-40ca3f102cbd",
+  "verdict": "option_bleed",
+  "field": "option_c",
+  "new_value": "collar.",
+  "evidence": "Page 104 (printed p.95) shows option C as 'collar.' directly above the page-footer number '95'; DB option_c is 'collar. 95' with that footer digit glued onto the end. correct_answer B and the explanation both check out against solutions page 200."
+ },
+ {
+  "id": "471c7e29-cf4c-402a-a8ad-3e1acfe84017",
+  "verdict": "ok",
+  "evidence": "Page 104 Q21 matches; solutions page 199 confirms 'Answer = B' and explanation verbatim."
+ },
+ {
+  "id": "2917a8b7-1744-4863-8f2e-8ff1c6c52b60",
+  "verdict": "ok",
+  "evidence": "Page 105 (printed p.96) Q31 matches; solutions page 200 confirms 'Answer = A' and the (garbled-math but non-fabricated) explanation text matches the source formula content with no extra concatenated solutions."
+ },
+ {
+  "id": "ae0e6168-a146-4846-a1a6-1eef37891e82",
+  "verdict": "ok",
+  "evidence": "Page 105 Q27 matches; solutions page 200 confirms 'Answer = C' and explanation matches the source formula content."
+ },
+ {
+  "id": "637ea942-86ee-4421-a18b-3e1d7205912a",
+  "verdict": "ok",
+  "evidence": "Page 105 Q29 matches; solutions page 200 confirms 'Answer = A' and explanation verbatim."
+ },
+ {
+  "id": "7ab05236-2106-4af0-901c-043e064bbe4a",
+  "verdict": "explanation_wrong",
+  "field": "explanation_en",
+  "new_value": "When interest rates are rising, the put option becomes more valuable to the investor. The ability to sell the bond at par value limits the price depreciation as rates rise. So, the presence of an embedded put option reduces the sensitivity of the bond price to changes in interest rates, resulting in a lower effective duration.",
+  "evidence": "Solutions page 200-201 (printed p.189-190) Q32 text is split across a page break with footer digit '189' printed between 'an' and 'embedded'; the DB explanation absorbed that stray footer number as 'an 189 embedded put option'. correct_answer B is correct."
+ },
+ {
+  "id": "ed4bc5ad-c4db-4d6c-aada-484f441051b8",
+  "verdict": "ok",
+  "evidence": "Page 105 Q28 matches; solutions page 200 confirms 'Answer = A' and explanation verbatim."
+ },
+ {
+  "id": "958a135d-e7dc-4cd4-b4a4-0c5a0690ad86",
+  "verdict": "ok",
+  "evidence": "Page 105 Q30 matches; solutions page 200 confirms 'Answer = C' and explanation verbatim."
+ },
+ {
+  "id": "aaf823ea-87e8-4cbf-8d24-0d9d323ea0f0",
+  "verdict": "formatting_missing",
+  "field": "question_en",
+  "new_value": "Using the following US Treasury forward rates, the value of a 2½-year $100 par value Treasury bond with a 5% coupon rate is closest to:\n\n| Period | Years | Forward Rate |\n|---|---|---|\n| 1 | 0.5 | 1.20% |\n| 2 | 1 | 1.80% |\n| 3 | 1.5 | 2.30% |\n| 4 | 2 | 2.70% |\n| 5 | 2.5 | 3.00% |",
+  "evidence": "Page 106 (printed p.97) Q36 shows a 5-row Period/Years/Forward Rate table that is entirely absent from question_en, which currently contains only the stem sentence."
+ },
+ {
+  "id": "aaf823ea-87e8-4cbf-8d24-0d9d323ea0f0",
+  "verdict": "explanation_wrong",
+  "field": "explanation_en",
+  "new_value": "The value of the bond is 2.5 2.5 2.5   1.012/2 1.012/21.018/2 1.012/21.018/21.023/2 2.5  1.012/21.018/21.023/21.027/2 102.5  $106.83 1.012/21.018/21.023/21.027/21.030/2",
+  "evidence": "DB explanation_en has items 37 (dual-currency bond), 38 (RMBS/GSE credit risk) and 39 (duration-convexity) from the solutions list concatenated onto the end of Q36's own explanation; trimmed to keep only Q36's own (garbled-math) computation, matching the recurring 'extra solutions appended' bug pattern."
+ },
+ {
+  "id": "d41e3004-060e-442b-abed-0fa63752b645",
+  "verdict": "formatting_missing",
+  "field": "question_en",
+  "new_value": "Which of the following 90-day money market instruments most likely offers the investor the highest rate of return?\n\n| Money Market Instrument | Quoted Rate | Quotation Basis | Day Convention |\n|---|---|---|---|\n| Instrument A | 5.78% | 360 | Discount rate |\n| Instrument B | 5.80% | 365 | Discount rate |\n| Instrument C | 5.96% | 365 | Add-on rate |",
+  "evidence": "Page 106 Q35 shows a 4-column table (Instrument/Quoted Rate/Quotation Basis/Day Convention) that is entirely missing from question_en. correct_answer A (Instrument C) and the explanation both check out against solutions page 201."
+ },
+ {
+  "id": "df4efa30-f63f-455c-9916-868ee84723eb",
+  "verdict": "explanation_wrong",
+  "field": "explanation_en",
+  "new_value": "Building blocks of the yield curve are spread (risk premium) and a benchmark (risk-free rate of return). Expected inflation rate and expected real rate are components of the risk-free rate of return (i.e., the benchmark).",
+  "evidence": "DB explanation_en discusses IOSCO issuer-disclosure principles, which belongs to an unrelated Ethics question, not this yield-spread question. Solutions page 201 (printed p.190) Q34 gives this replacement text and confirms correct_answer A already in the DB."
+ },
+ {
+  "id": "a4a77cf5-d0aa-4dc7-a1bb-a5fb2730473f",
+  "verdict": "ok",
+  "evidence": "Page 113 (printed p.103) Q5 matches option-for-option; solutions page 205 confirms 'Answer: B' and the explanation content verbatim (aside from harmless missing-space typos)."
+ },
+ {
+  "id": "25d6336a-ff03-46bf-880d-0e07ffa2d91d",
+  "verdict": "explanation_wrong",
+  "field": "explanation_en",
+  "new_value": "Capital invested in THF = $11.25 m (75% of $15 m)\nProfit earned by THF = $1.9125 m ($11.25 m x 17%)\nTHF Management fees = $0.225 m ($11.25 m x 2%)\nTHF Incentive fees = $0.3825 m ($1.9125 m x 20%)\nReturn to THF investor = ($1.9125 m - $0.225 m - $0.3825 m) / $11.25 m = 11.6%\nProfit earned by EV FOF = $1.305 m ($11.25 m x 11.6%)\nEV FOF Management fees = $0.1125 m ($11.25 m x 1%)\nEV FOF Incentive fees = $0.1305 m ($1.305 m x 10%)\nReturn to EV FOF investor = ($1.305 m - $0.1125 m - $0.1305 m) / $11.25 m = 9.44%",
+  "evidence": "Solutions page 205 (printed p.194) Q6 shows the actual step-by-step fee-waterfall calculation (THF fees then EV FOF fees) reaching 9.44%; the DB's current explanation_en is a generic paraphrase whose own specific wording ('roughly 12% net', etc.) does not appear anywhere in the source and does not reproduce the worked calculation. correct_answer C is correct."
+ },
+ {
+  "id": "1e413255-b91c-4375-9a62-2c3a6a15d477",
+  "verdict": "option_bleed",
+  "field": "option_c",
+  "new_value": "provide higher current income.",
+  "evidence": "Page 113 (printed p.103) shows option C as 'provide higher current income.' directly above the page-footer number '103'; DB option_c is 'provide higher currentincome. 103' with that footer digit glued onto the end. correct_answer B and the explanation both check out against solutions page 205."
+ },
+ {
+  "id": "6833adae-e78e-4622-97ce-c41ccb4ebdf7",
+  "verdict": "ok",
+  "evidence": "Page 113 Q2 matches; solutions page 205 confirms 'Answer: A' and the explanation verbatim."
+ },
+ {
+  "id": "73868967-c379-4129-9243-4c12aaa011e0",
+  "verdict": "explanation_wrong",
+  "evidence": "Solutions page 205 (printed p.194) itself prints the identical hedge-fund-correlation explanation under both Q1 (Mezzanine financing) and Q2 - a defect in the source PDF, not just the DB. correct_answer B matches the source's own answer key for Q1, but no explanation actually addressing mezzanine financing/IPO preparation exists anywhere in the source, so no correct value can be supplied without fabricating one."
+ }
+]

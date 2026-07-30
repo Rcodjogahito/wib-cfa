@@ -1,0 +1,108 @@
+[
+ {
+  "id": "5a1ceb83-56b7-41f8-a2e8-d680110812b0",
+  "verdict": "formatting_missing",
+  "field": "question_en",
+  "new_value": "An investor gathers the following data to estimate the intrinsic value of acompany’s stock using the justified forward price-to-earnings ratio (P/E) approach.\n\n| | |\n|---|---|\n| Next year's earnings per share | $3.00 |\n| Return on equity | 12.5% |\n| Dividend payout ratio | 60% |\n| Required return on shares | 10% |\n\nThe intrinsic value per share is closest to:",
+  "evidence": "Page 88 (printed p.81, question 34) shows a 4-row data table (EPS $3.00, ROE 12.5%, payout 60%, required return 10%) that is entirely absent from question_en, which jumps straight from 'approach.' to 'The intrinsic value...'. Answer (C) and explanation both correctly match the page and the Solutions page (printed p.177, item 34)."
+ },
+ {
+  "id": "0ff54144-387a-485c-8448-2a04d08610e8",
+  "verdict": "explanation_wrong",
+  "field": "explanation_en",
+  "new_value": "The management of a public firm is under pressures to meet shorter-term demands, such as\nmeeting quarterly sales and earnings projections from analysts. Private owners are thus better\nable to focus on longer-term value creation opportunities.",
+  "evidence": "Solutions page (printed p.177-178, item 36) confirms Answer B and this exact first paragraph as the explanation for this question, but the DB's explanation_en has ~20 unrelated solutions (items 37 through 55, covering completely different questions like margin calls, CAPM, index divisors) erroneously appended after it."
+ },
+ {
+  "id": "1e90379f-38c6-4a57-a02d-b4ce36ab6eb0",
+  "verdict": "ok",
+  "evidence": "Page 95 (Derivatives Investments Q3) and Solutions page (printed p.182, item 3) both confirm Answer B with the exact stored explanation; no table/list data is present on this page."
+ },
+ {
+  "id": "e7b0db5c-e6c4-4bd8-907b-a1e1d9688733",
+  "verdict": "ok",
+  "evidence": "Page 95 Q2 and Solutions page item 2 confirm Answer A ($66/$66) with the exact stored explanation text (X-p0 = $72-$6 = $66 for both max profit and breakeven)."
+ },
+ {
+  "id": "4fef84fe-5b90-4d71-9905-6149fb3ccd3e",
+  "verdict": "ok",
+  "evidence": "Page 95 Q1 and Solutions page item 1 confirm Answer B; the stored explanation is truncated mid-sentence ('...the value of the asset minus') but this truncation exists verbatim in the source PDF's own Solutions section, so it is a source defect, not a DB import error, and no full text is recoverable elsewhere to correct it."
+ },
+ {
+  "id": "89d44547-86ea-48b5-8192-431abaa92e0e",
+  "verdict": "ok",
+  "evidence": "Page 95 Q5 and Solutions page item 5 confirm Answer A (collar) with matching explanation text."
+ },
+ {
+  "id": "a44cd6ea-9e7f-4c2a-949d-13e0a519c577",
+  "verdict": "ok",
+  "evidence": "Page 95 Q6 and Solutions page item 6 confirm Answer A (require less capital) with matching explanation text."
+ },
+ {
+  "id": "07aefbd9-9ef6-4c7e-80e0-d8bac4842ba2",
+  "verdict": "ok",
+  "evidence": "Page 95 Q4 and Solutions page item 4 confirm Answer C (credit default swap) with matching explanation text."
+ },
+ {
+  "id": "9f9cc08f-508d-40c0-9cac-d3bdac228f94",
+  "verdict": "ok",
+  "evidence": "Page 95 Q7 and Solutions page item 7 confirm Answer B (long put, long asset, short bond) with matching explanation text."
+ },
+ {
+  "id": "8e97f864-3508-481e-9b14-7bf5694e900f",
+  "verdict": "ok",
+  "evidence": "Page 96 Q9 and Solutions page item 9 (printed p.183) confirm Answer A (market value of the asset for fiduciary call ITM) with matching explanation text."
+ },
+ {
+  "id": "5b5f1482-6229-4fb3-9f9e-1f5cd337d9c8",
+  "verdict": "ok",
+  "evidence": "Page 96 Q12 and Solutions page item 12 confirm Answer C (volatility of the underlying) with matching explanation text."
+ },
+ {
+  "id": "71d3d5a9-632f-4f12-9511-ba1f8d0a850a",
+  "verdict": "ok",
+  "evidence": "Page 96 Q13 and Solutions page item 13 confirm Answer A (variable payment, receive fixed) with matching explanation text."
+ },
+ {
+  "id": "1a013c32-712f-43f4-80af-4a45a2f4902d",
+  "verdict": "ok",
+  "evidence": "Page 96 Q14 and Solutions page item 14 confirm Answer A (forward discounted over remaining term) with matching explanation text."
+ },
+ {
+  "id": "9f280c0c-ff61-4ddf-ae92-174e1b72a186",
+  "verdict": "ok",
+  "evidence": "Page 96 Q15 and Solutions page item 15 confirm Answer B (money market) with matching explanation text."
+ },
+ {
+  "id": "4a3a748e-299f-42f1-9f30-411a7f3f3f21",
+  "verdict": "ok",
+  "evidence": "Page 96 Q10 and Solutions page item 10 (printed p.183) confirm Answer A (commodities) with matching explanation text."
+ },
+ {
+  "id": "d48292bf-3f8b-4a0e-916a-58113f2a16fd",
+  "verdict": "ok",
+  "evidence": "Page 96 Q11 and Solutions page item 11 confirm Answer B (exercise price and forward price discounted at risk-free rate) with matching (equation-garbled but consistent) explanation text."
+ },
+ {
+  "id": "fc287b49-29e0-4943-b240-15aa47fbc8f4",
+  "verdict": "ok",
+  "evidence": "Page 96 Q8 and Solutions page item 8 confirm Answer C (market value of the underlying asset) with matching payoff-derivation explanation text."
+ },
+ {
+  "id": "d9542f5e-2ae8-433c-bccc-108e6fe5afb5",
+  "verdict": "ok",
+  "evidence": "Page 97 Q16 and Solutions page item 16 (printed p.183) confirm Answer B (swap) with matching explanation text."
+ },
+ {
+  "id": "24dfa407-b04c-4dbc-91b5-4f2aebfc3d3b",
+  "verdict": "explanation_wrong",
+  "field": "explanation_en",
+  "new_value": "Forward rate agreements, unlike most other forward contracts, do not have an asset as an\nunderlying. Instead, theunderlying is an interest rate.",
+  "evidence": "Solutions page item 18 (printed p.183) confirms Answer A and this exact two-sentence explanation, but the DB's explanation_en has ~20 unrelated solutions (items 19 through 38, covering European put exercise, forward commitments, replication, etc.) erroneously appended after it."
+ },
+ {
+  "id": "08709d3a-7a38-490e-9686-2cb269c122c6",
+  "verdict": "ok",
+  "evidence": "Page 97 Q17 and Solutions page item 17 confirm Answer B (pricing differences if uncorrelated -> statement is least accurate) with matching explanation text."
+ }
+]
