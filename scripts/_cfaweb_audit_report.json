@@ -1,0 +1,7374 @@
+[
+ {
+  "id": "ff0208a0-cc35-439f-80a1-948fcb23fa1c",
+  "topic": "Corporate Issuers",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "cafbfb2f-b76d-4b65-a66f-52087669fb18",
+  "topic": "Quantitative Methods",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "3355f22c-d1c9-431f-8f60-db906fab96ad",
+  "topic": "Quantitative Methods",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "83b75740-d659-4e89-a5ff-f5853ea90bdb",
+  "topic": "Alternative Investments",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "59899846-919d-48c0-a3d7-457bb6a58da5",
+  "topic": "Quantitative Methods",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "9dd3a4b5-63e9-43eb-8dc7-22a08a1d4723",
+  "topic": "Alternative Investments",
+  "score": 1.0,
+  "status": "matched",
+  "cache_file": "AI,_Corporate,_Deriv,_Eco.json",
+  "cache_correct": "C",
+  "db_correct": "A",
+  "mismatch": true
+ },
+ {
+  "id": "6adcf002-30da-4817-9fb3-418c93e6291d",
+  "topic": "Alternative Investments",
+  "score": 1.0,
+  "status": "matched",
+  "cache_file": "AI,_Corporate,_Deriv,_Eco.json",
+  "cache_correct": "A",
+  "db_correct": "C",
+  "mismatch": true
+ },
+ {
+  "id": "2c893e5e-2b9b-47f8-8a02-d041c502d75a",
+  "topic": "Corporate Issuers",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "092000a3-8bd1-4459-8f8d-d7866269551a",
+  "topic": "Quantitative Methods",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "3989e69d-90ed-41a9-9975-63ccc8001442",
+  "topic": "Financial Statement Analysis",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "de166124-48e6-4ef1-b56c-f5b1fdf50295",
+  "topic": "Quantitative Methods",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "9cea9bbf-8c2e-486d-91c7-4369ec3d031d",
+  "topic": "Quantitative Methods",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "b80da003-4d73-4314-872b-50ab8b4eed0a",
+  "topic": "Quantitative Methods",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "be88652d-ba2b-445f-a300-3d019e9baa0d",
+  "topic": "Corporate Issuers",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "1c4c5d2b-07b4-4784-b7f8-b9fcf05a41e4",
+  "topic": "Corporate Issuers",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "66da5498-a0f7-42be-aac6-cf5d6d55400b",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "3a1c4b88-957c-437b-99d6-2b3afc3ce678",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "a8ba09fa-3557-4001-b3bc-997729ed3dda",
+  "topic": "Fixed Income",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "637e6cd3-da3e-4e6e-b1a6-83d385b50a7a",
+  "topic": "Alternative Investments",
+  "score": 0.857,
+  "status": "matched",
+  "cache_file": "AI,_Corporate,_Deriv,_Eco.json",
+  "cache_correct": "B",
+  "db_correct": "C",
+  "mismatch": true
+ },
+ {
+  "id": "8486b001-653e-4e9a-b394-6de414aca9cf",
+  "topic": "Financial Statement Analysis",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "7df2799f-433f-4fdf-8c4f-54ad67a84f77",
+  "topic": "Fixed Income",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "bb91aac5-d41c-4e35-8f46-e0990220062d",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "7642d48f-6ace-4fd0-a6cd-f9b485c24dbc",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "9134e653-c5bc-46e4-b374-18b7031bc55f",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "25b7841c-5bb4-4e5f-b182-35773f4fc2e8",
+  "topic": "Economics",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "0cd5bce1-b0a4-4539-a6c5-392918bc17b0",
+  "topic": "Financial Statement Analysis",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "8a2d5561-5c82-439b-a8fb-9875c339dbb7",
+  "topic": "Economics",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "f4d35e0a-bcb9-466e-86b1-e2fd383be767",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "3e6c490d-bfad-4795-ab85-d79e922a8cb6",
+  "topic": "Financial Statement Analysis",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "3fd8177f-44ae-432c-9aaa-f061cb37a93f",
+  "topic": "Equity Investments",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "e3c23a11-a0c4-462d-901c-66f409a1dc2b",
+  "topic": "Equity Investments",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "78c1add2-2b36-48f0-8182-ceee06264925",
+  "topic": "Equity Investments",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "9d8be10b-5ac7-41eb-9190-20f3ad9fad4c",
+  "topic": "Equity Investments",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "eb4d9132-830f-4447-b0c6-4ff76d8226b9",
+  "topic": "Financial Statement Analysis",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "6af93ff8-b7a3-4099-ae98-d88c34b31941",
+  "topic": "Financial Statement Analysis",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "597bf788-b665-41a3-8232-b31b30ac36df",
+  "topic": "Equity Investments",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "9169c359-f316-468d-83c8-cdc2ac97890e",
+  "topic": "Equity Investments",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "b66efe4c-4d1a-4a02-b563-79a682e1d509",
+  "topic": "Equity Investments",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "0f2feeab-1787-44b6-8083-3bd572dd5b8e",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "814310a8-69e7-4d2b-af0f-a9d85f0b3451",
+  "topic": "Corporate Issuers",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "c7a30419-61a6-47b9-9a3d-453d9a8a53b0",
+  "topic": "Corporate Issuers",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "60fc7af0-7a8a-4781-85ff-e46935821c76",
+  "topic": "Economics",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "956c7dcf-acc1-4b75-8388-9f0c472d4e84",
+  "topic": "Corporate Issuers",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "b036ce89-9487-42dd-8d18-1ea175029a89",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "a478ab32-3314-4530-a743-031bd96f489d",
+  "topic": "Alternative Investments",
+  "score": 1.0,
+  "status": "matched",
+  "cache_file": "AI,_Corporate,_Deriv,_Eco.json",
+  "cache_correct": "A",
+  "db_correct": "A",
+  "mismatch": false
+ },
+ {
+  "id": "b3a8801d-0e01-4474-b43b-f5fef7dae821",
+  "topic": "Quantitative Methods",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "8bd08a2c-02c2-4160-8055-958cc59a30cb",
+  "topic": "Alternative Investments",
+  "score": 1.0,
+  "status": "matched",
+  "cache_file": "AI,_Corporate,_Deriv,_Eco.json",
+  "cache_correct": "B",
+  "db_correct": "B",
+  "mismatch": false
+ },
+ {
+  "id": "4a71e02e-bd73-417b-831d-520babbccc69",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "8d6b4faa-324d-4394-b3b2-43ad89d45dce",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "64c2370e-1f0d-41d2-9391-fc72c3c8d5cb",
+  "topic": "Corporate Issuers",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "41bde3c8-8b1e-478c-bc89-60053666c348",
+  "topic": "Corporate Issuers",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "53b85c4b-26ed-4013-8d63-097254fa9b4b",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "d16db20d-0273-49b3-a6ce-55466ebb4b81",
+  "topic": "Equity Investments",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "478b46df-f30f-4549-9c94-002f22eaf184",
+  "topic": "Equity Investments",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "442186e6-3d3f-4c88-913b-15eb30f6593f",
+  "topic": "Portfolio Management",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "29f53894-4976-4831-a401-d2efc9546022",
+  "topic": "Derivatives",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "fe41e95b-174f-4751-aa77-c6f452ce4686",
+  "topic": "Economics",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "754f7242-c2e5-4e8e-b87e-e32b62aba819",
+  "topic": "Corporate Issuers",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "d8ba7ba6-7d1b-4603-b46f-a1713bdc8d23",
+  "topic": "Corporate Issuers",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "687bb7d0-78f6-4187-97d3-eb6930f2a7f6",
+  "topic": "Corporate Issuers",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "b00e0a11-c965-43db-9794-828da5922ba4",
+  "topic": "Alternative Investments",
+  "score": 1.0,
+  "status": "matched",
+  "cache_file": "AI,_Corporate,_Deriv,_Eco.json",
+  "cache_correct": "C",
+  "db_correct": "C",
+  "mismatch": false
+ },
+ {
+  "id": "0048bdf3-9d98-4a99-81f1-fa94ab2c39db",
+  "topic": "Alternative Investments",
+  "score": 1.0,
+  "status": "matched",
+  "cache_file": "AI,_Corporate,_Deriv,_Eco.json",
+  "cache_correct": "C",
+  "db_correct": "C",
+  "mismatch": false
+ },
+ {
+  "id": "2a912fcc-55af-43f2-a277-5cb2869e81d3",
+  "topic": "Alternative Investments",
+  "score": 1.0,
+  "status": "matched",
+  "cache_file": "AI,_Corporate,_Deriv,_Eco.json",
+  "cache_correct": "C",
+  "db_correct": "C",
+  "mismatch": false
+ },
+ {
+  "id": "605752cd-c8aa-460a-9f51-720e7e38c3cc",
+  "topic": "Equity Investments",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "80dbf447-c735-4168-a021-669977cdf597",
+  "topic": "Alternative Investments",
+  "score": 1.0,
+  "status": "matched",
+  "cache_file": "AI,_Corporate,_Deriv,_Eco.json",
+  "cache_correct": "A",
+  "db_correct": "A",
+  "mismatch": false
+ },
+ {
+  "id": "8fba7bfd-97d1-4510-8f8a-32deb399c7e6",
+  "topic": "Alternative Investments",
+  "score": 1.0,
+  "status": "matched",
+  "cache_file": "AI,_Corporate,_Deriv,_Eco.json",
+  "cache_correct": "C",
+  "db_correct": "C",
+  "mismatch": false
+ },
+ {
+  "id": "301f02a6-76f9-4b14-9add-966522c2ef3a",
+  "topic": "Alternative Investments",
+  "score": 1.0,
+  "status": "matched",
+  "cache_file": "AI,_Corporate,_Deriv,_Eco.json",
+  "cache_correct": "A",
+  "db_correct": "A",
+  "mismatch": false
+ },
+ {
+  "id": "7b9d9e56-729b-4abe-8a9a-bb8a629fc706",
+  "topic": "Alternative Investments",
+  "score": 1.0,
+  "status": "matched",
+  "cache_file": "AI,_Corporate,_Deriv,_Eco.json",
+  "cache_correct": "A",
+  "db_correct": "A",
+  "mismatch": false
+ },
+ {
+  "id": "fbfafbdd-f203-428e-809a-848bcf5cff90",
+  "topic": "Alternative Investments",
+  "score": 1.0,
+  "status": "matched",
+  "cache_file": "AI,_Corporate,_Deriv,_Eco.json",
+  "cache_correct": "C",
+  "db_correct": "C",
+  "mismatch": false
+ },
+ {
+  "id": "deb21a56-8e19-46f7-87bb-37478090a398",
+  "topic": "Alternative Investments",
+  "score": 1.0,
+  "status": "matched",
+  "cache_file": "AI,_Corporate,_Deriv,_Eco.json",
+  "cache_correct": "A",
+  "db_correct": "A",
+  "mismatch": false
+ },
+ {
+  "id": "2dcf7f82-5643-4aa2-8f40-82c3da4dfa55",
+  "topic": "Alternative Investments",
+  "score": 1.0,
+  "status": "matched",
+  "cache_file": "AI,_Corporate,_Deriv,_Eco.json",
+  "cache_correct": "C",
+  "db_correct": "C",
+  "mismatch": false
+ },
+ {
+  "id": "6858ae71-86f1-4c80-8d16-102e7dc771b2",
+  "topic": "Alternative Investments",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "1235c238-d041-4a10-9c65-8cf16c2f8d0a",
+  "topic": "Alternative Investments",
+  "score": 1.0,
+  "status": "matched",
+  "cache_file": "AI,_Corporate,_Deriv,_Eco.json",
+  "cache_correct": "B",
+  "db_correct": "B",
+  "mismatch": false
+ },
+ {
+  "id": "74a8cb51-618b-4620-ae47-4cbc96f85a45",
+  "topic": "Alternative Investments",
+  "score": 1.0,
+  "status": "matched",
+  "cache_file": "AI,_Corporate,_Deriv,_Eco.json",
+  "cache_correct": "A",
+  "db_correct": "A",
+  "mismatch": false
+ },
+ {
+  "id": "2b6a9f99-8b4c-4ea6-830a-b6cf8a4af813",
+  "topic": "Alternative Investments",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "f32b7c47-4145-413c-ae32-8d40888e3cc4",
+  "topic": "Alternative Investments",
+  "score": 1.0,
+  "status": "matched",
+  "cache_file": "AI,_Corporate,_Deriv,_Eco.json",
+  "cache_correct": "A",
+  "db_correct": "A",
+  "mismatch": false
+ },
+ {
+  "id": "6cc2b54a-cc0f-43c4-bd37-d978a6037cd3",
+  "topic": "Alternative Investments",
+  "score": 1.0,
+  "status": "matched",
+  "cache_file": "AI,_Corporate,_Deriv,_Eco.json",
+  "cache_correct": "C",
+  "db_correct": "C",
+  "mismatch": false
+ },
+ {
+  "id": "41b685e8-1268-472e-9810-3349c087f2e1",
+  "topic": "Alternative Investments",
+  "score": 1.0,
+  "status": "matched",
+  "cache_file": "AI,_Corporate,_Deriv,_Eco.json",
+  "cache_correct": "A",
+  "db_correct": "A",
+  "mismatch": false
+ },
+ {
+  "id": "a4a0ac84-d003-4c73-a756-8c31aeb5d206",
+  "topic": "Alternative Investments",
+  "score": 1.0,
+  "status": "matched",
+  "cache_file": "AI,_Corporate,_Deriv,_Eco.json",
+  "cache_correct": "B",
+  "db_correct": "B",
+  "mismatch": false
+ },
+ {
+  "id": "41b492f2-7345-46c0-b8a5-a89ad05f16e2",
+  "topic": "Alternative Investments",
+  "score": 1.0,
+  "status": "matched",
+  "cache_file": "AI,_Corporate,_Deriv,_Eco.json",
+  "cache_correct": "A",
+  "db_correct": "A",
+  "mismatch": false
+ },
+ {
+  "id": "d4398baf-1cb4-4948-a6c0-26f433ad3deb",
+  "topic": "Alternative Investments",
+  "score": 1.0,
+  "status": "matched",
+  "cache_file": "AI,_Corporate,_Deriv,_Eco.json",
+  "cache_correct": "A",
+  "db_correct": "A",
+  "mismatch": false
+ },
+ {
+  "id": "08c51825-3d50-4328-9c3d-1f61bf6712f8",
+  "topic": "Alternative Investments",
+  "score": 1.0,
+  "status": "matched",
+  "cache_file": "AI,_Corporate,_Deriv,_Eco.json",
+  "cache_correct": "A",
+  "db_correct": "A",
+  "mismatch": false
+ },
+ {
+  "id": "86378957-c210-4749-957b-d25e76fc9ae9",
+  "topic": "Alternative Investments",
+  "score": 1.0,
+  "status": "matched",
+  "cache_file": "AI,_Corporate,_Deriv,_Eco.json",
+  "cache_correct": "B",
+  "db_correct": "B",
+  "mismatch": false
+ },
+ {
+  "id": "312d9561-3e67-4b59-accf-adcf3db8d383",
+  "topic": "Alternative Investments",
+  "score": 1.0,
+  "status": "matched",
+  "cache_file": "AI,_Corporate,_Deriv,_Eco.json",
+  "cache_correct": "B",
+  "db_correct": "B",
+  "mismatch": false
+ },
+ {
+  "id": "f721590f-eea5-40d7-ad7c-05daa8b6cb97",
+  "topic": "Alternative Investments",
+  "score": 1.0,
+  "status": "matched",
+  "cache_file": "AI,_Corporate,_Deriv,_Eco.json",
+  "cache_correct": "A",
+  "db_correct": "A",
+  "mismatch": false
+ },
+ {
+  "id": "416ec217-2bcd-4f04-80f5-204a132d3fcc",
+  "topic": "Corporate Issuers",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "2db7caa1-39fb-4b6e-90a8-d61e99f439cc",
+  "topic": "Alternative Investments",
+  "score": 1.0,
+  "status": "matched",
+  "cache_file": "AI,_Corporate,_Deriv,_Eco.json",
+  "cache_correct": "A",
+  "db_correct": "A",
+  "mismatch": false
+ },
+ {
+  "id": "d000f777-d76e-491f-a33e-d83b911a13a3",
+  "topic": "Alternative Investments",
+  "score": 1.0,
+  "status": "matched",
+  "cache_file": "AI,_Corporate,_Deriv,_Eco.json",
+  "cache_correct": "C",
+  "db_correct": "C",
+  "mismatch": false
+ },
+ {
+  "id": "370b1c9c-9803-4c72-a170-f6cba15fb49e",
+  "topic": "Alternative Investments",
+  "score": 1.0,
+  "status": "matched",
+  "cache_file": "AI,_Corporate,_Deriv,_Eco.json",
+  "cache_correct": "C",
+  "db_correct": "C",
+  "mismatch": false
+ },
+ {
+  "id": "21700a26-7f74-436c-b370-709eabc739d2",
+  "topic": "Alternative Investments",
+  "score": 1.0,
+  "status": "matched",
+  "cache_file": "AI,_Corporate,_Deriv,_Eco.json",
+  "cache_correct": "C",
+  "db_correct": "C",
+  "mismatch": false
+ },
+ {
+  "id": "837995dc-364e-45d5-b648-62637e5db5ae",
+  "topic": "Alternative Investments",
+  "score": 1.0,
+  "status": "matched",
+  "cache_file": "AI,_Corporate,_Deriv,_Eco.json",
+  "cache_correct": "C",
+  "db_correct": "C",
+  "mismatch": false
+ },
+ {
+  "id": "79332423-90f1-45de-8483-7f5ecd807114",
+  "topic": "Alternative Investments",
+  "score": 1.0,
+  "status": "matched",
+  "cache_file": "AI,_Corporate,_Deriv,_Eco.json",
+  "cache_correct": "C",
+  "db_correct": "C",
+  "mismatch": false
+ },
+ {
+  "id": "abd2c540-4616-4710-be62-1e24fe4b4002",
+  "topic": "Alternative Investments",
+  "score": 1.0,
+  "status": "matched",
+  "cache_file": "AI,_Corporate,_Deriv,_Eco.json",
+  "cache_correct": "A",
+  "db_correct": "A",
+  "mismatch": false
+ },
+ {
+  "id": "ee2c9dc9-d1ca-4c15-bd21-1fb7f274bb5c",
+  "topic": "Alternative Investments",
+  "score": 1.0,
+  "status": "matched",
+  "cache_file": "AI,_Corporate,_Deriv,_Eco.json",
+  "cache_correct": "C",
+  "db_correct": "C",
+  "mismatch": false
+ },
+ {
+  "id": "c1ddcfdc-cc83-4979-a597-0b874fa060df",
+  "topic": "Alternative Investments",
+  "score": 1.0,
+  "status": "matched",
+  "cache_file": "AI,_Corporate,_Deriv,_Eco.json",
+  "cache_correct": "C",
+  "db_correct": "C",
+  "mismatch": false
+ },
+ {
+  "id": "f32c64c3-669b-4d82-9d6e-41e82ca3d087",
+  "topic": "Alternative Investments",
+  "score": 1.0,
+  "status": "matched",
+  "cache_file": "AI,_Corporate,_Deriv,_Eco.json",
+  "cache_correct": "B",
+  "db_correct": "B",
+  "mismatch": false
+ },
+ {
+  "id": "e1e53c54-e48b-4cae-8e31-6f3124756f15",
+  "topic": "Alternative Investments",
+  "score": 1.0,
+  "status": "matched",
+  "cache_file": "AI,_Corporate,_Deriv,_Eco.json",
+  "cache_correct": "A",
+  "db_correct": "A",
+  "mismatch": false
+ },
+ {
+  "id": "f1b45711-3259-40be-b3b1-7b7f1b065139",
+  "topic": "Alternative Investments",
+  "score": 1.0,
+  "status": "matched",
+  "cache_file": "AI,_Corporate,_Deriv,_Eco.json",
+  "cache_correct": "A",
+  "db_correct": "A",
+  "mismatch": false
+ },
+ {
+  "id": "fb01e6e3-bae1-4c89-be5c-9ea03bd13acd",
+  "topic": "Alternative Investments",
+  "score": 1.0,
+  "status": "matched",
+  "cache_file": "AI,_Corporate,_Deriv,_Eco.json",
+  "cache_correct": "C",
+  "db_correct": "C",
+  "mismatch": false
+ },
+ {
+  "id": "d138d5de-713b-412d-94cd-33f1521a1b8a",
+  "topic": "Alternative Investments",
+  "score": 1.0,
+  "status": "matched",
+  "cache_file": "AI,_Corporate,_Deriv,_Eco.json",
+  "cache_correct": "B",
+  "db_correct": "B",
+  "mismatch": false
+ },
+ {
+  "id": "b9851bec-003a-4159-bfac-d35737162452",
+  "topic": "Alternative Investments",
+  "score": 1.0,
+  "status": "matched",
+  "cache_file": "AI,_Corporate,_Deriv,_Eco.json",
+  "cache_correct": "A",
+  "db_correct": "A",
+  "mismatch": false
+ },
+ {
+  "id": "537f2b48-26b6-4a75-a1f0-d5e4605784df",
+  "topic": "Alternative Investments",
+  "score": 1.0,
+  "status": "matched",
+  "cache_file": "AI,_Corporate,_Deriv,_Eco.json",
+  "cache_correct": "C",
+  "db_correct": "C",
+  "mismatch": false
+ },
+ {
+  "id": "98180375-ff2c-4340-8f89-c5bb72a4164a",
+  "topic": "Alternative Investments",
+  "score": 1.0,
+  "status": "matched",
+  "cache_file": "AI,_Corporate,_Deriv,_Eco.json",
+  "cache_correct": "A",
+  "db_correct": "A",
+  "mismatch": false
+ },
+ {
+  "id": "3083fedb-7a8c-4b56-add5-6ceb7bf70436",
+  "topic": "Alternative Investments",
+  "score": 1.0,
+  "status": "matched",
+  "cache_file": "AI,_Corporate,_Deriv,_Eco.json",
+  "cache_correct": "B",
+  "db_correct": "B",
+  "mismatch": false
+ },
+ {
+  "id": "f81ef92e-36ce-4084-8bf6-61ca3d6df40d",
+  "topic": "Alternative Investments",
+  "score": 1.0,
+  "status": "matched",
+  "cache_file": "AI,_Corporate,_Deriv,_Eco.json",
+  "cache_correct": "B",
+  "db_correct": "B",
+  "mismatch": false
+ },
+ {
+  "id": "ec915826-f71a-434e-a873-63306ec12028",
+  "topic": "Alternative Investments",
+  "score": 1.0,
+  "status": "matched",
+  "cache_file": "AI,_Corporate,_Deriv,_Eco.json",
+  "cache_correct": "B",
+  "db_correct": "B",
+  "mismatch": false
+ },
+ {
+  "id": "aed675f0-3b6e-4c06-9e6c-442e4ed2a6da",
+  "topic": "Alternative Investments",
+  "score": 1.0,
+  "status": "matched",
+  "cache_file": "AI,_Corporate,_Deriv,_Eco.json",
+  "cache_correct": "C",
+  "db_correct": "C",
+  "mismatch": false
+ },
+ {
+  "id": "8e41dcdc-d92f-4ef3-8ec1-8a38a197177c",
+  "topic": "Alternative Investments",
+  "score": 1.0,
+  "status": "matched",
+  "cache_file": "AI,_Corporate,_Deriv,_Eco.json",
+  "cache_correct": "C",
+  "db_correct": "C",
+  "mismatch": false
+ },
+ {
+  "id": "48c742ae-dd33-4892-8a66-0fcb3679e8b4",
+  "topic": "Alternative Investments",
+  "score": 1.0,
+  "status": "matched",
+  "cache_file": "AI,_Corporate,_Deriv,_Eco.json",
+  "cache_correct": "B",
+  "db_correct": "B",
+  "mismatch": false
+ },
+ {
+  "id": "6dd93100-6826-4b48-829f-8f7411549fc8",
+  "topic": "Alternative Investments",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "eda400c0-6a2f-4d5b-be07-21c59e44a35d",
+  "topic": "Alternative Investments",
+  "score": 1.0,
+  "status": "matched",
+  "cache_file": "AI,_Corporate,_Deriv,_Eco.json",
+  "cache_correct": "B",
+  "db_correct": "B",
+  "mismatch": false
+ },
+ {
+  "id": "4bb77b04-76f6-43c3-a324-e8c65ddf855f",
+  "topic": "Alternative Investments",
+  "score": 1.0,
+  "status": "matched",
+  "cache_file": "AI,_Corporate,_Deriv,_Eco.json",
+  "cache_correct": "C",
+  "db_correct": "C",
+  "mismatch": false
+ },
+ {
+  "id": "308774bf-464c-4c44-afd9-f1ad509b3894",
+  "topic": "Alternative Investments",
+  "score": 1.0,
+  "status": "matched",
+  "cache_file": "AI,_Corporate,_Deriv,_Eco.json",
+  "cache_correct": "B",
+  "db_correct": "B",
+  "mismatch": false
+ },
+ {
+  "id": "4015f9a6-6b0e-4c3e-96b4-e81a4169b184",
+  "topic": "Alternative Investments",
+  "score": 1.0,
+  "status": "matched",
+  "cache_file": "AI,_Corporate,_Deriv,_Eco.json",
+  "cache_correct": "A",
+  "db_correct": "A",
+  "mismatch": false
+ },
+ {
+  "id": "a5eed1ec-296c-43cb-9f9f-c8a3ddf7488a",
+  "topic": "Alternative Investments",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "a237883d-b8f4-4c00-90de-0e51c279310b",
+  "topic": "Alternative Investments",
+  "score": 1.0,
+  "status": "matched",
+  "cache_file": "AI,_Corporate,_Deriv,_Eco.json",
+  "cache_correct": null,
+  "db_correct": "C",
+  "mismatch": false
+ },
+ {
+  "id": "93f29866-d11b-4711-8d6e-fa21ad728caf",
+  "topic": "Alternative Investments",
+  "score": 1.0,
+  "status": "matched",
+  "cache_file": "AI,_Corporate,_Deriv,_Eco.json",
+  "cache_correct": null,
+  "db_correct": "A",
+  "mismatch": false
+ },
+ {
+  "id": "4748ae3b-7d7e-42d1-b4f7-c4c152d789dc",
+  "topic": "Alternative Investments",
+  "score": 1.0,
+  "status": "matched",
+  "cache_file": "AI,_Corporate,_Deriv,_Eco.json",
+  "cache_correct": null,
+  "db_correct": "C",
+  "mismatch": false
+ },
+ {
+  "id": "2a3878b4-adeb-487b-9ef3-71e94b84c896",
+  "topic": "Alternative Investments",
+  "score": 1.0,
+  "status": "matched",
+  "cache_file": "AI,_Corporate,_Deriv,_Eco.json",
+  "cache_correct": null,
+  "db_correct": "B",
+  "mismatch": false
+ },
+ {
+  "id": "b3f012ee-099f-4798-8875-b0777d44e526",
+  "topic": "Corporate Issuers",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "050afa73-e1a8-406a-90d1-144b8cb21785",
+  "topic": "Corporate Issuers",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "cac20892-24f2-410d-92ef-435ca28f07fa",
+  "topic": "Corporate Issuers",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "cee46c83-b412-43ce-8c51-c569e8a3859b",
+  "topic": "Corporate Issuers",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "17efb4b4-59db-464d-9c05-9d5db11271d0",
+  "topic": "Corporate Issuers",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "fcb413c0-e67f-43b2-aacc-a509734fa36d",
+  "topic": "Corporate Issuers",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "cce18491-0d11-4443-a9b7-57ad7577ce62",
+  "topic": "Corporate Issuers",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "70919244-98ac-46a1-bb69-53d02cff8183",
+  "topic": "Corporate Issuers",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "981d9fc6-4917-43e3-9ee4-7495165b713c",
+  "topic": "Corporate Issuers",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "d81656cc-54e9-40db-bf85-e3827f46a922",
+  "topic": "Corporate Issuers",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "b569d025-feeb-4b73-bca7-0f8bfc30a637",
+  "topic": "Corporate Issuers",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "8db38eb7-b137-45a1-b588-93cbef14070d",
+  "topic": "Corporate Issuers",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "8fd0f743-dea4-47fd-b847-5cf9cd48bd8c",
+  "topic": "Corporate Issuers",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "40d23379-3c17-4084-b2da-aa1186d056dd",
+  "topic": "Corporate Issuers",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "408e406f-05b7-4177-826c-1fcacc44ae31",
+  "topic": "Corporate Issuers",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "ca0c647d-c39b-4f83-9685-2ed5c2f06212",
+  "topic": "Corporate Issuers",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "7345c5b1-697e-4b9e-be43-f4b642e82320",
+  "topic": "Corporate Issuers",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "796a98ba-57b1-456f-9855-45dcffd99fd4",
+  "topic": "Corporate Issuers",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "caac29c4-17fc-4777-8666-1851a04ae8a5",
+  "topic": "Corporate Issuers",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "33c25142-d8fd-49da-ae3d-72460b603b07",
+  "topic": "Corporate Issuers",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "af453f09-7171-4f9d-879e-370da4deb55a",
+  "topic": "Corporate Issuers",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "cf2b9163-a872-4dad-b91d-4fa7fc0d5f87",
+  "topic": "Corporate Issuers",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "8220db5b-a356-4fb6-a7df-bc310836f4ab",
+  "topic": "Corporate Issuers",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "1640d2c0-dc90-4b77-9cb6-4691dc431bf5",
+  "topic": "Corporate Issuers",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "3d28d625-7e0b-423a-b412-fb4ec005fded",
+  "topic": "Corporate Issuers",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "c95e3a71-a520-4698-9d3d-7cc657c697c1",
+  "topic": "Corporate Issuers",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "5d2a3e34-3882-40b3-90f6-3d875caa3b5d",
+  "topic": "Corporate Issuers",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "f8daf7a3-6abf-4990-adfc-3550aad1a768",
+  "topic": "Corporate Issuers",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "c07d08ce-244b-4cf5-8982-53051039585a",
+  "topic": "Corporate Issuers",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "ea7c82a5-a25f-4690-8067-21eb6314a31a",
+  "topic": "Corporate Issuers",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "4658db5b-ae4e-4ddc-9f3b-cbab3f7e9bc2",
+  "topic": "Corporate Issuers",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "a45a281e-0389-4cd1-9ce4-02e4b7a8d89f",
+  "topic": "Corporate Issuers",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "70530c69-a587-48ec-a334-c43b00555bb9",
+  "topic": "Corporate Issuers",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "e545b524-dbd2-4590-b331-a2d68a4b4460",
+  "topic": "Corporate Issuers",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "5b0b0033-be68-4529-859f-2b06e762fca0",
+  "topic": "Corporate Issuers",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "dde809df-9dde-4849-90ab-746a0055a397",
+  "topic": "Corporate Issuers",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "1e6de78b-0f69-4fb6-aa95-5ea72bd54c07",
+  "topic": "Corporate Issuers",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "4447a024-ff5a-441d-9496-73b6de21837c",
+  "topic": "Corporate Issuers",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "ae7aac0c-6dda-4e3a-a694-94e500375d7d",
+  "topic": "Corporate Issuers",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "ddcef8e5-f803-41b5-8fe4-1edd14c574e2",
+  "topic": "Corporate Issuers",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "19e0a64b-c387-4222-95cf-c26f74006cb4",
+  "topic": "Corporate Issuers",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "1ba7b8e2-aa98-454f-af55-78b40d19fb03",
+  "topic": "Corporate Issuers",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "bdf98436-25bc-49a7-a159-f146e00a9e8b",
+  "topic": "Corporate Issuers",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "cb856f01-bf6d-4d33-b539-378585ce9b72",
+  "topic": "Corporate Issuers",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "9a4db5d1-9273-487c-aa7e-e7f9b0dd843c",
+  "topic": "Corporate Issuers",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "41ad5b11-5e1f-4d99-a32b-190a680e3f76",
+  "topic": "Corporate Issuers",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "8c8da04b-6227-4d94-b2aa-09d68d46568c",
+  "topic": "Corporate Issuers",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "96bedb58-835b-44a8-a42c-910a8e3cf575",
+  "topic": "Corporate Issuers",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "26c75928-5e77-42a6-b200-fc7deded1c52",
+  "topic": "Corporate Issuers",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "0de9e4dc-a27c-42ff-8bd5-6e6079c809a7",
+  "topic": "Corporate Issuers",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "705879ac-3007-4ba3-a17a-b61db1ac0f6b",
+  "topic": "Corporate Issuers",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "f561d0ae-2969-4860-933d-133c77798e47",
+  "topic": "Corporate Issuers",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "ad73250c-3409-41eb-8320-d34544d1ba79",
+  "topic": "Corporate Issuers",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "94e02b2c-6092-43a0-bad1-3b0eeb3caeb1",
+  "topic": "Corporate Issuers",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "a287fb82-5a92-403f-9f46-27616725cff7",
+  "topic": "Corporate Issuers",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "056d6cc5-ab87-4cc1-8ccd-37bc4c866fd3",
+  "topic": "Quantitative Methods",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "98a185ce-e71f-4ca6-a60e-91ad6dd44eb8",
+  "topic": "Alternative Investments",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "2d095a4b-f545-49ef-9783-8afab9aae4e7",
+  "topic": "Alternative Investments",
+  "score": 1.0,
+  "status": "matched",
+  "cache_file": "AI,_Corporate,_Deriv,_Eco.json",
+  "cache_correct": "A",
+  "db_correct": "A",
+  "mismatch": false
+ },
+ {
+  "id": "a0721491-4d55-4640-ba3f-0fe7c4432943",
+  "topic": "Alternative Investments",
+  "score": 1.0,
+  "status": "matched",
+  "cache_file": "AI,_Corporate,_Deriv,_Eco.json",
+  "cache_correct": "A",
+  "db_correct": "A",
+  "mismatch": false
+ },
+ {
+  "id": "5314b0d4-1674-4a51-89a8-fdb3b6bb8037",
+  "topic": "Alternative Investments",
+  "score": 1.0,
+  "status": "matched",
+  "cache_file": "AI,_Corporate,_Deriv,_Eco.json",
+  "cache_correct": "B",
+  "db_correct": "B",
+  "mismatch": false
+ },
+ {
+  "id": "03226928-c4dd-426b-b358-92d091967105",
+  "topic": "Alternative Investments",
+  "score": 1.0,
+  "status": "matched",
+  "cache_file": "AI,_Corporate,_Deriv,_Eco.json",
+  "cache_correct": "A",
+  "db_correct": "A",
+  "mismatch": false
+ },
+ {
+  "id": "c39d49b9-b79c-4fe4-b773-fb6835be1da2",
+  "topic": "Quantitative Methods",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "e685d1bf-7a20-46d2-8b8d-9235c01284e2",
+  "topic": "Quantitative Methods",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "b2ea9b81-9ea9-42db-8a64-b2332feed818",
+  "topic": "Quantitative Methods",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "c9fc7708-95bc-4de5-9cce-6ad879af167b",
+  "topic": "Quantitative Methods",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "0f69b596-3f5d-442a-bdca-a2c13953202a",
+  "topic": "Quantitative Methods",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "a4453619-c091-443b-80d4-c27f656c505b",
+  "topic": "Quantitative Methods",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "baab6303-a0c4-4bb3-a3bf-c0a61c3f5c53",
+  "topic": "Quantitative Methods",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "dc8a62c2-6319-4c81-ab0f-23b4b2b36908",
+  "topic": "Quantitative Methods",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "de720447-5ae7-46ba-b194-fb2fedfecc23",
+  "topic": "Quantitative Methods",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "c8a2699c-ee0a-41fe-9aba-c57e12d88afa",
+  "topic": "Quantitative Methods",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "468ebb6c-fd96-470e-b031-b65c7fd93021",
+  "topic": "Quantitative Methods",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "e7ae67e5-84a5-4970-ae93-706653cd9a37",
+  "topic": "Quantitative Methods",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "25bba332-04e5-43e1-b5c8-70d11dd6ab0e",
+  "topic": "Quantitative Methods",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "0770617c-23d1-4122-a30f-fafa6c1c83c7",
+  "topic": "Quantitative Methods",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "bcb13583-d96a-4ab3-914e-9d67c9db9c5a",
+  "topic": "Quantitative Methods",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "86932d89-03a3-403a-a584-2b40fa9808f1",
+  "topic": "Quantitative Methods",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "60168cac-f20a-409e-ab64-55bc671a97a1",
+  "topic": "Quantitative Methods",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "316febb8-1767-4768-87a2-472cf28e0dbd",
+  "topic": "Quantitative Methods",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "7d3b40bb-dacb-4e68-b737-ce8f001fd8bb",
+  "topic": "Quantitative Methods",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "2c5f8d19-31d0-4cac-9ccf-4f714af417f0",
+  "topic": "Quantitative Methods",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "05b68da3-b5d0-47ec-9339-7a4a7923e88b",
+  "topic": "Quantitative Methods",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "0dd5d4e8-5e79-482d-adc6-c1ceae11d933",
+  "topic": "Quantitative Methods",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "e85bd18c-d4d9-43f4-9170-1ea3c7d1e950",
+  "topic": "Quantitative Methods",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "581b8449-c846-47c1-92e1-82247e77e236",
+  "topic": "Quantitative Methods",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "344aedfe-b333-4da3-bad0-5ef7f2398d20",
+  "topic": "Quantitative Methods",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "10105220-1f08-42e0-8ff7-455037ba03a8",
+  "topic": "Quantitative Methods",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "948f5276-2a6c-41ca-a0bc-0e90c0fa6629",
+  "topic": "Quantitative Methods",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "1423670b-1878-4384-89d4-901f4f33ab0e",
+  "topic": "Quantitative Methods",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "762277e9-2cf1-4551-991a-6a5c8b3aa73f",
+  "topic": "Quantitative Methods",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "80d62f0a-d731-4137-9619-b221a3969ec4",
+  "topic": "Quantitative Methods",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "ab2a3045-3a3b-4219-a2c0-89fee1590264",
+  "topic": "Quantitative Methods",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "9b7f4274-8454-4e19-b362-5f602dbcc717",
+  "topic": "Quantitative Methods",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "d126a855-a7e7-4cfc-8473-5ffc256bc9c6",
+  "topic": "Quantitative Methods",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "8cb3b8dd-c8a4-4344-aa2d-ac0e03e2b47e",
+  "topic": "Quantitative Methods",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "743c1d5a-2ed3-416a-823e-d47560392262",
+  "topic": "Quantitative Methods",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "33583437-2b09-4a68-8d54-4ef4969bfdea",
+  "topic": "Quantitative Methods",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "3238a638-5d22-47d0-8bc5-a31f7272b7d0",
+  "topic": "Quantitative Methods",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "1b8d31da-16d7-49d1-aac8-c3e37d15e208",
+  "topic": "Quantitative Methods",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "ada0914b-40e8-48fd-8fd8-451b84bc3762",
+  "topic": "Quantitative Methods",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "010d42f7-7966-40b9-89f6-94253167aecc",
+  "topic": "Quantitative Methods",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "be881cf5-32c2-4d00-ae6b-8fca835a5069",
+  "topic": "Quantitative Methods",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "455b7670-657d-480d-aac9-647bf401911a",
+  "topic": "Quantitative Methods",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "21cf9fed-d2d3-4ae7-86cf-44510c041803",
+  "topic": "Quantitative Methods",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "2436adf0-ff3c-4035-972d-2efa6b7d1516",
+  "topic": "Quantitative Methods",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "7034683f-cdaf-4103-851f-eb86c1ea41da",
+  "topic": "Quantitative Methods",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "f440fae0-d76d-4df4-b151-8afb492d605d",
+  "topic": "Quantitative Methods",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "daf77514-27fd-4e95-a27c-01d0e435ca08",
+  "topic": "Quantitative Methods",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "7d57e5b5-20aa-410a-a14e-e7df496b970b",
+  "topic": "Quantitative Methods",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "19ecadab-5be7-4106-831f-c4a93abc9e4b",
+  "topic": "Quantitative Methods",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "90c0d36e-667a-4b39-b514-bc0e6cc79ba9",
+  "topic": "Quantitative Methods",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "b304f5ce-4ec2-47a3-be3d-663de80ced0d",
+  "topic": "Quantitative Methods",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "495ec9ec-b693-48ce-9b1d-9e0c9c980dba",
+  "topic": "Quantitative Methods",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "a0654fbf-f9ec-4adf-a418-0f142fad482a",
+  "topic": "Quantitative Methods",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "fee76be7-756e-4601-8f37-c0d0b579cefa",
+  "topic": "Quantitative Methods",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "83b05195-72c6-4c82-b591-b3d068796d7f",
+  "topic": "Quantitative Methods",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "0b8161bc-2778-4586-a0b8-99fa2d81ba4f",
+  "topic": "Quantitative Methods",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "5727a894-cc05-4a60-86a2-6fb34dad6184",
+  "topic": "Quantitative Methods",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "b3464213-4ef7-4e20-8f7d-693afc6f6a56",
+  "topic": "Quantitative Methods",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "83aa95f5-6d59-43b1-830e-f2e9904676b1",
+  "topic": "Quantitative Methods",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "892bd625-ae88-4a45-b33f-486b83e36078",
+  "topic": "Quantitative Methods",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "a6db15f7-c473-4301-a6ab-cbb7b2f61d53",
+  "topic": "Quantitative Methods",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "f170c855-9fac-4b2f-a3f8-f2e7e5e59a43",
+  "topic": "Quantitative Methods",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "be3c8b55-d38e-4e5c-8e45-fb9d98a512e0",
+  "topic": "Quantitative Methods",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "f6f32259-614c-4707-a191-5f85cb6498c0",
+  "topic": "Quantitative Methods",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "3a1df9b4-bfd6-4a51-a247-12bdc81fb95d",
+  "topic": "Quantitative Methods",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "a75b01c0-26c2-4fd8-bc25-40744459528c",
+  "topic": "Quantitative Methods",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "461093ee-12e3-4611-ac08-43cab74c3be6",
+  "topic": "Quantitative Methods",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "e88702aa-1f30-4827-ba73-eb4b1f1336ad",
+  "topic": "Quantitative Methods",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "3cdb3b34-8cd9-4ed4-ab01-01cfb6548509",
+  "topic": "Quantitative Methods",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "f06a8b56-9bb8-48ba-a84b-2f4b8cb69b9b",
+  "topic": "Quantitative Methods",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "2c60c28f-0ff5-4eb3-bba8-67cc05ffe3e3",
+  "topic": "Quantitative Methods",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "99eea5f7-ced9-4c94-9e03-8b4615fda817",
+  "topic": "Quantitative Methods",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "401ce261-d623-492f-a42c-3835c5ad1491",
+  "topic": "Quantitative Methods",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "5fd85c4d-a57e-4026-9975-0c2106d0cee4",
+  "topic": "Quantitative Methods",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "43fc09d7-01d0-4a21-bb44-f4f065dadf11",
+  "topic": "Quantitative Methods",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "119fb96a-2503-48b9-9003-0871d36d9487",
+  "topic": "Quantitative Methods",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "4a8d5991-f22e-43c9-a16e-99c8083f03b1",
+  "topic": "Quantitative Methods",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "523e5601-4b00-4ae8-a0bf-36edb579530a",
+  "topic": "Quantitative Methods",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "a9947e66-b146-4a77-9335-2c0e2a2ecc45",
+  "topic": "Quantitative Methods",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "a3246ecf-7864-43a9-9b92-7ca2bf79dd1c",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "6444539e-4176-477e-88ea-30ebfbb22162",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "55c7ca32-d78d-44a4-9564-b2af2b313f14",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "09f0a0bf-0efd-44c2-8c30-e66403699b31",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "1fcd5ca2-0080-4e52-a93f-f34d19da86dc",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "d92c6b06-8dba-41c5-a418-698ba8569f27",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "5ac81803-278a-4fa4-b99a-1ba02040e58b",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "c56fea15-2dd0-4cc7-94b3-d96cb198c7ed",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "9241554e-af7a-4bca-bfe8-ff0c74307868",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "34b4ca7d-a517-43b4-ba95-38a71f73999b",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "0b0d6419-97c0-49e0-8a02-d912f492e1f9",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "beb51537-f211-4c88-bb2e-9e644e469eed",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "9cb6b449-aff9-4ef5-ae36-3ff2a50893fc",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "9561a92f-7a30-4969-9c1b-69fecd6efcd2",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "f9e09d59-5bdc-41df-a119-96f65cf38865",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "d5737243-f8d6-4547-b1c1-1844e8cc688b",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "778f9a77-989c-4ea9-8822-b065c94a76f8",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "6231777e-3b96-4f90-b0eb-6b6866e63e03",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "53013b81-cce1-467d-89a5-ac889b513a32",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "c22d046b-fade-4336-a55c-d0448aa6a90b",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "dc9ee544-1be3-48f9-9780-8522062e32d1",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "f7d920e2-587c-42bc-bf36-5439057520b3",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "308a24fd-9df9-4946-9e4e-2cf16efd56e9",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "21451f76-a9f8-4ed6-af9c-659884c661a9",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "3b387824-a675-4313-befa-3e4322fd1121",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "9983ef0c-3e42-496f-acd1-281248a421b4",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "0fac9de4-d9f3-4792-ac9d-c583558e51dd",
+  "topic": "Financial Statement Analysis",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "73d741ec-55bd-45f2-912e-f7c8dbaad14d",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "15fe224c-3ff1-4d69-81ec-2815cffc60e8",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "c4c7bcba-a1ff-4f4c-817a-b735f9cbbd29",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "ce429882-65a1-4610-bc1e-d6fc8756ac62",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "066589ab-860b-4ab3-8e74-674eae5490a9",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "65e613a1-0338-4419-8d4d-5a7856a991af",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "b43fe818-9df2-4fd2-8a05-d8086eb4afe8",
+  "topic": "Fixed Income",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "194a7aee-2238-4dd0-80cb-d575499254bd",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "135c2e4f-7255-46f6-8468-cdafcc589c70",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "229c0424-cb32-48d8-b1f2-bd61c7aa2b27",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "3d7531ad-f417-4b9b-9ff2-8efc6e19f0d7",
+  "topic": "Equity Investments",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "75f6bde4-74d6-4665-9bc3-12ef0e1e5fca",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "e059a3b1-ff97-43d1-957e-e9952b8f4f48",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "d4530760-ca9a-423a-8c04-f38d7aac43be",
+  "topic": "Quantitative Methods",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "c516e39a-8571-47e7-b587-04169fff0968",
+  "topic": "Quantitative Methods",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "2cddf8ec-b6cf-4786-b522-a55611c33e79",
+  "topic": "Economics",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "e116f0c9-267b-46d1-918a-20477d2d77cb",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "8fa1c4b4-b544-413d-b7d1-3b82bf789636",
+  "topic": "Financial Statement Analysis",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "f69cb71b-a5d0-4295-95f5-fe3661818c6b",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "ce645b56-5a95-4a52-9647-d5848c28b81e",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "bacfa405-50f8-444f-9317-4deb4fff19ae",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "6fcbf83b-300e-4b9a-ac73-76a369783d10",
+  "topic": "Economics",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "be7a19ba-ad25-4be8-95dd-c5936fead46c",
+  "topic": "Economics",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "362f2252-0115-4a67-a230-331d7eada5a4",
+  "topic": "Corporate Issuers",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "ebad187d-597e-4e70-9a03-cbf305f9cc2e",
+  "topic": "Corporate Issuers",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "9160b552-9d86-4e6f-8504-a799a4ae54df",
+  "topic": "Economics",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "e981cea4-e7b0-4a72-9965-137fa69625a3",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "57acf6af-2ec7-42c4-8034-8e10036d763b",
+  "topic": "Economics",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "2fa6792d-ea3a-4c6b-87e9-5c9b05f2e0fe",
+  "topic": "Financial Statement Analysis",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "a41df8b5-5a06-48bb-bf5f-fc7b32d37845",
+  "topic": "Financial Statement Analysis",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "500566a9-1333-4761-9b4e-87ca70d288fb",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "569b69c4-e240-4957-8d80-79fe869cab32",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "627d54c2-1dea-4f18-9fa3-882562f22fd6",
+  "topic": "Equity Investments",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "ad488c38-cb4e-4327-86b5-eb1f95c9df7a",
+  "topic": "Economics",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "9d51249e-6e88-4a53-ac5b-7121a5740c3e",
+  "topic": "Economics",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "b3aec1fb-e35f-46d9-856b-d143bc99e987",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "5424cae2-723a-4526-98ca-6abd9ec66bc0",
+  "topic": "Economics",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "a541bc2f-3ed8-4758-9f79-fcd33776fca4",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "3e50f1af-05b9-49d9-9660-e32a069805a0",
+  "topic": "Financial Statement Analysis",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "33b57f88-fda7-4f61-a347-a96a858f131e",
+  "topic": "Financial Statement Analysis",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "11284566-9d17-4fdb-8e2b-ab616c68e1aa",
+  "topic": "Financial Statement Analysis",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "b8078eb7-2826-43b2-ad68-038fc1e19f01",
+  "topic": "Quantitative Methods",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "1c1a5213-8079-4404-86d0-9456c7e38173",
+  "topic": "Quantitative Methods",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "cfbdf566-08bf-48f3-8ed3-7fe992efacf4",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "a0137d30-7cb1-41a1-8b92-3048026b6299",
+  "topic": "Economics",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "0590a0bc-9081-45a1-bfb0-03b0680d8e96",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "6b9e8087-58ac-4479-9dff-0553c77f95fb",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "e43f6fff-b454-4c99-8e16-904f4406f907",
+  "topic": "Quantitative Methods",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "06a6e18e-2a81-48ec-bc44-9c248d3c15ad",
+  "topic": "Corporate Issuers",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "8cf6985d-d9c3-4980-a63c-0afa8896269a",
+  "topic": "Financial Statement Analysis",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "703deb7a-8dff-41a4-8003-8208d8b97430",
+  "topic": "Quantitative Methods",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "88b61c49-f029-4357-bd0d-ebc8c16bab4e",
+  "topic": "Economics",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "360d221b-1e85-4a85-9294-2e5f3811aa4a",
+  "topic": "Financial Statement Analysis",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "ad687a28-61c4-4fbd-83d4-984dd95ca95b",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "eb7d58b9-ab6c-43e7-9760-ab2f65300cd5",
+  "topic": "Derivatives",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "b652bbd1-a3cd-4c51-8cba-cd3dc78bbbc3",
+  "topic": "Portfolio Management",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "3294d832-1d2a-4cdc-a7a5-9b395d0771d8",
+  "topic": "Financial Statement Analysis",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "b8436a49-7206-4a0b-90d0-67c91ed53034",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "560f3291-7ee5-4387-a414-184767dc67ae",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "5e60d0c8-b064-447f-abbd-853eb310fe45",
+  "topic": "Equity Investments",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "8dfd9fa2-5cb9-433a-89a7-1402223310a7",
+  "topic": "Corporate Issuers",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "362f7e5a-0ae8-412b-8952-6d6539ae16eb",
+  "topic": "Derivatives",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "9a2959b2-974c-4d8f-9b87-c490659d48c1",
+  "topic": "Equity Investments",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "1e9e626f-24f7-4491-a8b0-996168d87690",
+  "topic": "Equity Investments",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "1c0e1b95-c9c8-4ab9-b313-a4bc34cb8ec7",
+  "topic": "Equity Investments",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "e834e703-31c9-4945-b67e-de4e6303c5e5",
+  "topic": "Economics",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "da9914b9-1d43-40e2-9f66-ba5b164b1ad7",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "21496a18-1a77-48bd-b408-7c60c24d510a",
+  "topic": "Corporate Issuers",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "7c85eed4-a30d-41d1-bcb4-4294bca919c1",
+  "topic": "Alternative Investments",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "e9c57232-106f-436e-9e65-9de4050b930f",
+  "topic": "Fixed Income",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "1b511e9b-c3ca-4684-8817-9ca034518762",
+  "topic": "Fixed Income",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "bb04e698-ad05-4f89-aeda-0ef216e8afed",
+  "topic": "Fixed Income",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "d549633b-a41f-4daf-9691-526daed97624",
+  "topic": "Derivatives",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "f01d9129-de4a-43b1-bf38-ac4796667bf3",
+  "topic": "Derivatives",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "8260d61c-bb48-45e0-971b-033c8fb3e693",
+  "topic": "Fixed Income",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "8f244ad9-b7fc-4e86-ae61-c4dd57add3b3",
+  "topic": "Fixed Income",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "94729305-5007-46b5-96a7-52fa9c188d42",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "ab173c02-4bee-45ee-812e-d4d9fa5d5a43",
+  "topic": "Alternative Investments",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "bd6ea66f-575c-4bbf-b2a2-61ce61483708",
+  "topic": "Fixed Income",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "a0aa2980-7fa2-4652-a910-e96b9c5d42e5",
+  "topic": "Derivatives",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "a07d4229-0667-41f0-92dc-00a18c89f5e1",
+  "topic": "Fixed Income",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "fff9fce6-a86b-4401-88b8-61a36245a67c",
+  "topic": "Portfolio Management",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "de67fb8f-6eb9-49d3-b7e0-52396e7c5d52",
+  "topic": "Portfolio Management",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "a51fd0c5-fbbf-487a-84e8-ac5dfacceb2d",
+  "topic": "Quantitative Methods",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "08b4f246-671c-4fdc-bc34-755f22de6819",
+  "topic": "Corporate Issuers",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "5d77529c-2e03-40c7-ba49-fa656e4d1b84",
+  "topic": "Fixed Income",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "33d51c4e-5550-4156-9947-2394a8787c6d",
+  "topic": "Fixed Income",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "024eab07-b265-413d-b5db-9583cd53d34e",
+  "topic": "Alternative Investments",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "2ec888b8-cd55-4d85-a520-faf5045595ea",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "f16b4f8c-0921-428c-a172-e11e59a5330f",
+  "topic": "Corporate Issuers",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "bbd923bc-9cb0-455b-bda5-ac3fdbb4204a",
+  "topic": "Fixed Income",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "990840e6-0494-4355-9887-18368d45f440",
+  "topic": "Alternative Investments",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "1628d838-9ec7-40ec-8183-0c7fc821f949",
+  "topic": "Fixed Income",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "5849ded3-d92d-4c34-a5ab-c71cbd217422",
+  "topic": "Portfolio Management",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "40689d4c-6340-470e-8ca8-69e8ac785a37",
+  "topic": "Equity Investments",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "0184f130-5fa4-4566-80c8-9d87f53a122e",
+  "topic": "Equity Investments",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "00310876-1c45-49d1-ad79-18ca18e66378",
+  "topic": "Alternative Investments",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "43099254-2dd9-480f-9694-e55014ec2354",
+  "topic": "Derivatives",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "a379ff38-5171-4ab5-b0be-17f1ec116e13",
+  "topic": "Derivatives",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "7b9ea372-1ddd-46a6-b815-1abfe0bb663c",
+  "topic": "Equity Investments",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "6859918a-e4fe-4ae6-a989-2033625ffe26",
+  "topic": "Equity Investments",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "c3907ade-9d18-499e-8c98-fa3cea8003f3",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "acc80f68-a0ac-486a-9a55-6172d58b7f06",
+  "topic": "Corporate Issuers",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "5b3ff97d-7f93-4c0c-8aeb-16e8a08d9d2c",
+  "topic": "Derivatives",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "1e8a9a84-70ba-4fd3-a61c-bde3b8bd52f4",
+  "topic": "Derivatives",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "02cae57a-2743-4f80-9d33-658815aba2c3",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "643f2776-8792-49d5-92f1-54961475dca8",
+  "topic": "Fixed Income",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "282d49c8-05c3-4a92-8e83-863d5f2d8496",
+  "topic": "Fixed Income",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "c3d7b0c3-ccf9-4746-938d-fb476ca95593",
+  "topic": "Fixed Income",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "466eeb46-b015-4afa-835f-050c79c97bce",
+  "topic": "Fixed Income",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "76793512-f318-420c-8c09-0bd1c800404d",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "a9ad971b-0c3e-4c0f-9574-5d10b41b1b6e",
+  "topic": "Quantitative Methods",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "e65c59f3-1de6-44a7-a781-f7c3f7fbb801",
+  "topic": "Derivatives",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "39396ee0-90f7-4162-be11-b2c73113fbf4",
+  "topic": "Economics",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "cf04b3ce-7008-42f3-bd7a-779e9270bcc9",
+  "topic": "Portfolio Management",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "f5da2d17-d017-4b3f-a4b6-4c4862a8e3ce",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "f16b8fc7-ddf3-4c23-9463-f58e9a2aeb3f",
+  "topic": "Economics",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "45d4eb2f-05d2-41f4-9acb-10303f15332d",
+  "topic": "Fixed Income",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "6c70813c-5f3e-4850-82d0-71dbfe9eddff",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "06e542e6-fa50-4790-a584-0b74ffd2b066",
+  "topic": "Portfolio Management",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "534ed63e-351a-4e78-aac3-f6156032d927",
+  "topic": "Derivatives",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "aa58f414-8d9d-475c-a2e5-5b47693a2026",
+  "topic": "Fixed Income",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "ccee5479-f16f-4f29-b96d-adfdfefb992d",
+  "topic": "Equity Investments",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "3df8f02c-5c93-499f-b625-86317340c010",
+  "topic": "Alternative Investments",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "924b62c4-1668-440e-aa35-07e412ac387f",
+  "topic": "Portfolio Management",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "2c915b08-3811-4124-8900-cb879819527c",
+  "topic": "Derivatives",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "f3551c34-57db-439f-a296-657a4f67ae3f",
+  "topic": "Fixed Income",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "aff894ff-5967-4cca-8571-dc11aa0cab0c",
+  "topic": "Fixed Income",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "d99f5abc-cd86-41c7-b639-7e3e40119fbb",
+  "topic": "Financial Statement Analysis",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "10c5e136-d295-4a55-87a5-14f5493b185a",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "aa32d3f5-a63b-469e-8c6d-267094747038",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "21166afb-c692-473e-bb57-3a6033d3b1c1",
+  "topic": "Financial Statement Analysis",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "8d34c379-531d-434d-8893-febf5605da99",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "88e20923-ab37-47ae-bd94-f8577d9c0b33",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "11c42b57-23ac-44a2-b0c4-4c33ea18530b",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "d545598a-77a5-4a3e-8c9f-b08ead2258c6",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "15468f2d-db58-4f77-b4d9-40141bfb7d9a",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "2f9e999e-6081-4b2e-9e46-5a09974b742d",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "59f1fe0b-da5a-4e26-b551-2d8be79119b1",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "846da607-d7f9-423a-aae3-ce1a6146a1d7",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "34a9bd7c-2e58-4e92-93d2-66541f61bbc4",
+  "topic": "Fixed Income",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "a309cf64-2fbb-4314-b641-6050646c877f",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "56b1062a-99b7-4cbb-9c55-fe318b5781da",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "dcd2f15e-fd30-4c0c-8f12-51fdc3e8652d",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "54e8ad3d-7084-4f4f-a28d-7e080f656536",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "950c161f-d26a-42e9-a930-b95f9a298ecc",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "fa053057-5ef6-40ce-a48e-f7f933ae7389",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "909b01a2-2e0d-4c68-94b7-e6b393456f14",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "f0e83415-b5a6-4cd0-b5a7-2edb5ce85d37",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "36377099-efcf-4b25-9ffe-14883cbf1704",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "3ae69d3d-6620-4490-88c1-c8f04a1e4877",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "432c0a3d-4928-4b3f-845f-822e83a092a4",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "6ad0e4c7-2ad8-464b-8021-e91930444e45",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "51eed978-f4db-41e1-a96c-77947ce0baca",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "e6eba195-737a-4c8b-8913-c6ccbd8f7001",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "40835ae3-1e8e-413d-b948-1c2f98abffdf",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "8b8c733e-83c6-4523-88f9-8798706e6353",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "ec547e64-d6b5-4792-b5d0-379bb7224fde",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "eecd3be8-2102-4f8f-8b74-7028889782ee",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "d154ad0b-6d2a-49a4-8c88-c04567e1d934",
+  "topic": "Economics",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "29add09d-eadb-49fb-9f0f-0a45027dd1bc",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "75fef9a7-623e-4290-aa1a-331aeceeb07e",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "b1f9703c-34ad-4c1b-927e-40327ac5b9fe",
+  "topic": "Quantitative Methods",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "77fd6264-4b3f-4bd7-a7d5-d20af571c77e",
+  "topic": "Financial Statement Analysis",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "30a0e794-1228-4866-9fee-9cb4016ab31c",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "92b62876-9257-436a-9b17-ea42d609e76b",
+  "topic": "Quantitative Methods",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "60e10a1a-ba80-4e82-a64f-18d75f2c6df7",
+  "topic": "Economics",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "ad7b35cf-22be-4e0b-8171-8c3772e19c34",
+  "topic": "Derivatives",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "7d1b630f-bfb1-4bc1-986d-74bfcacbc4e7",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "7308b3bb-3c35-4ad4-87d0-e2a25b2544bc",
+  "topic": "Fixed Income",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "d3c98b1b-2981-4d27-8287-a0777681c661",
+  "topic": "Corporate Issuers",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "a590a2fb-db48-4bf2-9044-6d37da046610",
+  "topic": "Quantitative Methods",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "6f527dc5-109c-4451-873a-b8cc884ab0b9",
+  "topic": "Economics",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "521bde85-dd69-4752-a8b2-b61d19dc4083",
+  "topic": "Fixed Income",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "efd4959b-b847-402c-a53d-2256c91cd759",
+  "topic": "Financial Statement Analysis",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "ee14e1f4-278e-4bc2-b6e8-02aa59404c9e",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "c568ad62-53c5-4410-9897-cc8eac743487",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "705ae7b2-9497-4d3e-8150-0eecdb0df08f",
+  "topic": "Financial Statement Analysis",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "81a66291-8f7c-4b3f-882d-b6f377306697",
+  "topic": "Financial Statement Analysis",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "657b8277-2453-4775-8fcf-36831158679b",
+  "topic": "Quantitative Methods",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "6e29f7e6-d211-40ed-b8aa-03a18d922e6e",
+  "topic": "Economics",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "dc3047fb-2d7a-4541-8cae-3e04f4adbe0e",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "67df8017-4758-4a9a-8be2-67c3d8acca4f",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "b6c613fb-2855-4658-abdc-780b6c5fe9f0",
+  "topic": "Corporate Issuers",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "d7b72545-5fbf-4705-b1ad-e2f86260968a",
+  "topic": "Economics",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "5ffa116a-c773-44e2-9bf3-f2a2a8b393cd",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "8ce143fe-9fcf-4cb0-b80e-8caa3b2ed8ae",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "9f49142b-aa9f-4028-b5b7-c356357deb35",
+  "topic": "Corporate Issuers",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "8bce7662-08de-4c87-b203-2b5aad46321e",
+  "topic": "Economics",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "7d8677c5-eac8-4b5d-99d3-664c74c1f755",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "9486302c-d65a-4f85-9364-a281c4ff8a91",
+  "topic": "Quantitative Methods",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "466bb880-20ab-4179-9588-e527293981e9",
+  "topic": "Equity Investments",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "3a30f7a1-68c8-458e-b189-adb67620678e",
+  "topic": "Corporate Issuers",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "ef5615d3-262f-4d9c-b77c-f9d46d33fbec",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "7e1e2513-dc32-435b-b412-56bd8bafee91",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "4409dc88-e37a-4390-aa30-cfa4cda665ad",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "f7a834d5-b176-44c2-96d1-31f553cf5d1a",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "c645328a-e03b-452c-a05d-708f502bb313",
+  "topic": "Economics",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "0254452d-73b5-4bbd-8035-43f6664ea312",
+  "topic": "Financial Statement Analysis",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "cb7a45cc-e040-4c6c-a86f-e4306a81cafa",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "42940342-11ff-4d34-b33e-57b53d425fd5",
+  "topic": "Economics",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "e17047f1-cb00-4a0c-8aa4-9866910ad1d2",
+  "topic": "Portfolio Management",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "6d3ff2e8-c7b9-4eff-94a3-90a55c9f2394",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "047dcbca-866e-4eaa-9c90-933a9582d74c",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "fb853d26-be7c-439f-bccf-e481cf3eea56",
+  "topic": "Corporate Issuers",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "f411963e-6153-41be-af42-b3556e912f2d",
+  "topic": "Economics",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "8457e54a-c66f-47da-984e-e488ecda9930",
+  "topic": "Financial Statement Analysis",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "d6710650-f5d0-4f1f-b54e-94c9fb6058aa",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "f2589a6d-2c25-412b-b8c8-11d2f8278426",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "4f0f8122-2124-4866-9031-3265008fd236",
+  "topic": "Economics",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "5ea4df32-dbcc-4a20-bcb2-f48cf2148ed5",
+  "topic": "Corporate Issuers",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "63a70e8b-6fda-4fe4-94a2-20874ea44b6b",
+  "topic": "Economics",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "52334949-71fe-445b-8eda-a17cf5794790",
+  "topic": "Financial Statement Analysis",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "6478aad0-6797-491d-be7e-77978efd679e",
+  "topic": "Financial Statement Analysis",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "7b02c20f-259f-40a5-ba73-b0583b64fe41",
+  "topic": "Financial Statement Analysis",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "7b3ed981-eb4f-4ef2-ae05-558e5e87d6ca",
+  "topic": "Financial Statement Analysis",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "4937376f-b31d-41c9-84db-ac52ba6a3bb3",
+  "topic": "Financial Statement Analysis",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "ac56acaf-55cc-4b8e-b361-7be120fc9ab1",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "ee684614-c772-4e13-af6e-983ea5b5d93b",
+  "topic": "Corporate Issuers",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "0e9be665-6df5-4f44-bff1-26b4fd2f946a",
+  "topic": "Financial Statement Analysis",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "1b41cb18-d6ab-44f3-a4c2-44268e471f99",
+  "topic": "Corporate Issuers",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "cc244bc4-e8a6-4114-8aa3-926ae50032a8",
+  "topic": "Financial Statement Analysis",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "1c9bfea3-a7de-4a80-a8d1-d34b4cf89371",
+  "topic": "Financial Statement Analysis",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "7d80485d-21f8-4049-bd4f-dea3e2b1b6bb",
+  "topic": "Derivatives",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "0440e890-fb1a-4cf7-b04b-690684abf5c6",
+  "topic": "Derivatives",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "088cc45b-04c7-46ca-aac2-da1587526cb7",
+  "topic": "Alternative Investments",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "4987ecf2-b108-4b50-bae8-be477d755106",
+  "topic": "Derivatives",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "0636005b-0e88-473e-920a-59eddc3a8862",
+  "topic": "Economics",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "eb8bf37b-afcc-44e1-b811-274ae4599eb0",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "298ad65c-292b-4588-a986-a39a6d3e8a50",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "3f8fa7fc-eddc-4d8c-a19f-3ce94eb3f053",
+  "topic": "Derivatives",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "d96b784a-6608-4480-a945-c423e8216141",
+  "topic": "Equity Investments",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "ecb3d61a-8f6d-4c53-a9dd-df2cbf320843",
+  "topic": "Derivatives",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "bd5515ff-c2b1-4096-b93f-11afe8f15bb4",
+  "topic": "Fixed Income",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "7f25cabc-1072-4e6b-8711-929bb7575c0e",
+  "topic": "Fixed Income",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "1280e5be-ca9a-4a0e-a957-78e3d936cb01",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "1d4b4d44-9a94-4b4d-9d67-bc9277bb4991",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "79a08f72-1197-4bea-9440-af6c43437689",
+  "topic": "Corporate Issuers",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "ce563044-aee3-4110-918f-63da180218c0",
+  "topic": "Portfolio Management",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "8986f018-6c6d-463d-a22b-280bd4319fca",
+  "topic": "Quantitative Methods",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "6532c692-d255-484b-97d5-0b08c1766dde",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "ae5e12b6-5408-4e06-a6ab-aa4db6a506eb",
+  "topic": "Equity Investments",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "cac89c28-f13f-40f2-a728-a72778ceb412",
+  "topic": "Corporate Issuers",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "8304b1dd-e1eb-4a96-9f35-363c0bc8ec7b",
+  "topic": "Equity Investments",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "b5c2062a-480f-43f4-a5f0-9410541381d1",
+  "topic": "Corporate Issuers",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "27d45012-f7bd-4da2-b5cd-3c0f5def605e",
+  "topic": "Portfolio Management",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "403839c1-bb85-4ebd-8d73-f33dc65dc61d",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "6217f83d-e358-4b96-8705-fd1c5035d007",
+  "topic": "Fixed Income",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "9dce90ce-edc2-471c-a35e-af5fef05d6f2",
+  "topic": "Equity Investments",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "7c21d190-5cf1-4a5e-b6bc-37fa260759c6",
+  "topic": "Alternative Investments",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "829fa13b-da62-4772-9c24-46d1336ae75d",
+  "topic": "Fixed Income",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "065dfbfd-120d-4e01-84f3-0b13db61273d",
+  "topic": "Derivatives",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "7f60d69e-b5d0-4707-ac80-8d3b4ba836f7",
+  "topic": "Fixed Income",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "663ebdbb-98ee-414b-9331-8ab2a872518e",
+  "topic": "Derivatives",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "626a1934-fdf6-45c2-802c-c0877637ff6b",
+  "topic": "Fixed Income",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "41eb7951-3c21-41a2-8f9b-f82b71594faa",
+  "topic": "Alternative Investments",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "4d3be322-34be-4861-b0ad-d431c754d3c4",
+  "topic": "Derivatives",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "85164f33-2153-4aae-9a55-239cee3e7c01",
+  "topic": "Derivatives",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "6fd7c381-c857-45e5-ade0-ad3cbff9be57",
+  "topic": "Corporate Issuers",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "4d03a3d5-791e-4cb2-8486-814b342dde71",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "b936da93-9cb9-4c88-b72f-db968034cba8",
+  "topic": "Fixed Income",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "867b91cc-9621-4b07-a84b-04c36eb55355",
+  "topic": "Equity Investments",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "1dc9977a-a16b-4d06-b837-d04bcb4fc213",
+  "topic": "Alternative Investments",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "5d4fd90c-7519-4c21-bb62-13d9951b642c",
+  "topic": "Portfolio Management",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "84372dc4-9ef1-4160-94bc-8e99ca105a94",
+  "topic": "Portfolio Management",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "7d1ee078-b5d0-49c0-84f9-ff7b51d96a57",
+  "topic": "Derivatives",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "8f51c18a-177e-4ef9-abff-ae711df91e17",
+  "topic": "Portfolio Management",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "004a50b3-ee55-4869-91c7-afd57e77415b",
+  "topic": "Equity Investments",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "ef346677-e919-4c4c-9521-ae0848215132",
+  "topic": "Alternative Investments",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "e75a172f-c306-44de-9191-bc00dca40da0",
+  "topic": "Portfolio Management",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "35e38b64-413a-4903-891a-ee631d272939",
+  "topic": "Derivatives",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "220c41b8-832a-4f11-a33c-bcdbcfebf1b5",
+  "topic": "Fixed Income",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "098abdf0-21a0-4e38-9909-e78b6ac9546e",
+  "topic": "Derivatives",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "c8aa6b99-e4e8-42d8-93bc-33c435973c90",
+  "topic": "Equity Investments",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "66f7d625-a606-427f-bf97-cfadb564a1db",
+  "topic": "Portfolio Management",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "8bc81427-49fd-44dc-91ff-fb87734c636c",
+  "topic": "Alternative Investments",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "e317ea9d-6209-4aef-8e89-9bc2ef6cccb9",
+  "topic": "Portfolio Management",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "6d0dae9c-8362-4a2c-8c35-11102d45647d",
+  "topic": "Derivatives",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "e0277b9d-3550-4175-93cc-a4f3801daa73",
+  "topic": "Equity Investments",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "054d856f-d882-4866-a22e-01d910dd3eef",
+  "topic": "Derivatives",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "18de5cfe-5922-4715-9ce6-aa3489dc8a6c",
+  "topic": "Derivatives",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "78be1ee4-a138-47db-8f3f-e14c17d4e170",
+  "topic": "Portfolio Management",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "4a00ecf6-b7cb-41b2-b0e4-12af4247044f",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "f6b8b056-6b69-48fc-875a-67a019965639",
+  "topic": "Corporate Issuers",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "fddfdc18-5b78-47bb-9f88-aa445f1015d6",
+  "topic": "Portfolio Management",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "be296508-f071-4dc8-8ac0-bee71598e91b",
+  "topic": "Financial Statement Analysis",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "8ee2db6d-f897-4c84-89e7-a54f6456ab55",
+  "topic": "Corporate Issuers",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "29ecb966-424c-4ef5-9438-675a1d847c24",
+  "topic": "Equity Investments",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "fba82e96-3fca-487e-b319-01a6fc5bdf0e",
+  "topic": "Equity Investments",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "50355072-6a39-4f34-a934-1fcbf5803e26",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "650d3f3e-5df0-4ee9-8487-377a0f390c0f",
+  "topic": "Equity Investments",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "864610da-e60a-49fb-b482-deabb69df0cb",
+  "topic": "Fixed Income",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "d73ad852-5caf-47ef-8369-2eb39b742c03",
+  "topic": "Alternative Investments",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "398bcf9d-559d-4ce1-a321-94ed4f7dfb5b",
+  "topic": "Quantitative Methods",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "1633dbe0-7b5e-46ad-b8ce-d56cd1c5a649",
+  "topic": "Fixed Income",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "cd4fec2d-8bcd-48e0-8cb2-36e64a79cc8d",
+  "topic": "Fixed Income",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "134dd001-6877-45b0-a762-b6a3a39841c5",
+  "topic": "Fixed Income",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "856d1fe1-968f-46d3-bf70-d1104036ee2e",
+  "topic": "Fixed Income",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "299d117d-e500-45c6-9827-48372225e6d2",
+  "topic": "Fixed Income",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "c3c085a1-a88b-4d7e-a44b-9abb69c0f05f",
+  "topic": "Fixed Income",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "06789b9d-09be-49cb-8f8d-4ab9c0e21afe",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "ea19e1ec-a2ee-47e1-b4ef-1d99881bedf6",
+  "topic": "Portfolio Management",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "40a95f60-1730-4b9e-a582-8573f8b1b883",
+  "topic": "Fixed Income",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "1b483a91-d282-43d4-baac-54520008c809",
+  "topic": "Derivatives",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "87e8b2cc-7442-454c-8034-28a2d7183fbc",
+  "topic": "Portfolio Management",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "bf3db7de-9502-41a9-8e21-939f5ef43acd",
+  "topic": "Fixed Income",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "b063e2ea-cd0c-4dc3-a3f1-9a7461006298",
+  "topic": "Fixed Income",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "9356fcec-5ca5-4fc8-b5bd-77ca446092aa",
+  "topic": "Fixed Income",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "da9bcd77-ab26-41c1-9281-044ae42f7279",
+  "topic": "Equity Investments",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "6087b5d8-def3-4249-a433-90115436b530",
+  "topic": "Derivatives",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "b3b5bbb2-c4e8-481b-807b-f7a4c7d25f80",
+  "topic": "Fixed Income",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "1c2b3744-bde7-4da7-93ab-83f8cfbc2f4e",
+  "topic": "Derivatives",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "9dbd56eb-f1bd-4875-9243-778c288a32ea",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "b7f0281a-7432-4b55-87b1-527181a2bf75",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "fbc41668-d9b2-4dde-8479-fe4fbbf9fd4b",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "b1224dde-0537-423c-af51-393729877f99",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "b2b49afc-60bf-4ee5-ad34-a03617f6fa30",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "b2d7bee7-24bc-4c79-9ff9-160e63be88a9",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "334f55ff-7825-491e-ab00-952baa96e4c0",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "b17cebbb-3c03-413d-8e7e-42dafa0876ba",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.361,
+  "status": "no_match"
+ },
+ {
+  "id": "16677043-216d-49eb-af22-52e3a180c677",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "9c632676-8411-4c46-8b3e-4b9f63854c5d",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "7ebe8112-3a6b-4f67-8f71-864b11f82608",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "ca8d7f19-59d1-44b5-9bb2-6348b7df6e3f",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "785ba605-0522-4e08-afd7-0acdbc90060d",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "4fc014e7-9307-4edb-91e7-2f7c2f2fd4d1",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "c4853771-4128-42de-b19e-df14defa1c21",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "1ca63cd1-6149-40e3-941c-48a34bef8d4a",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "1f24b5c6-56ac-4934-9857-9880a819fe5e",
+  "topic": "Financial Statement Analysis",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "8c3b471d-03ef-4f07-87b4-adfd824bd64f",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "1944f8e2-d633-40c9-93c6-04294f163fcb",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "f0d9f08e-0f55-4afb-955a-a15f26b6d6fc",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "364b2094-4cd4-4f9e-aa37-f31db88d0e31",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "df53b958-9441-488d-92ea-16ceed869bd8",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "9c822ff4-a108-4492-a03a-47cd373bb069",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "8ee5fd93-7f33-4d96-8992-070d8208480b",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "41098f3c-c2d4-4d0e-87a9-b8e3cd87ef2c",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "9e6929ae-85a7-4d6b-a780-e7502e48809b",
+  "topic": "Portfolio Management",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "38c8825c-3074-46c7-b944-b1a9efe78534",
+  "topic": "Financial Statement Analysis",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "ebe90c42-7eff-4013-a64a-067132f561dc",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "feb9dd2b-4936-41a1-9bec-d243396db31c",
+  "topic": "Economics",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "1b7c6f79-c50a-4c35-b7b8-8c01f9a23487",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "bb7c99b2-612c-42df-80bc-8fefe4300d9b",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "79ebbf13-ac9c-46c2-81a8-e3cc9927e29d",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "3fe78f9e-51da-4151-b976-4dbd2526fee3",
+  "topic": "Corporate Issuers",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "ce8db1a0-85a2-4e6e-ab46-a7ff737ee3a5",
+  "topic": "Quantitative Methods",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "41da35fd-a0df-46e1-804a-adcdcc28d381",
+  "topic": "Financial Statement Analysis",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "9174b33b-2445-4135-9b11-5ae470a1be67",
+  "topic": "Economics",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "beb105b1-9d44-4f7e-9909-a06131c4598a",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "45bbd0d9-2e2a-427a-89d6-ba596c0e1ad4",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "7295cb4d-ec5f-4ba5-9d34-64c1577b53ec",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "1fd54026-e820-408a-8ac9-f3fef4fc6757",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "cfbe5363-aa97-41d4-8aad-0965e9f0a9f1",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "380aed5d-33d3-4f56-b2d9-6889b27c7c27",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "b8b004c2-afe2-4987-bcae-da34c0f17481",
+  "topic": "Quantitative Methods",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "386041d7-d9fe-4dcb-8db5-ff31918866ac",
+  "topic": "Economics",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "e9a10569-7ffc-482e-8898-acd16bdd0fd8",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "31d9ef30-ced3-4544-935f-1f4fc64963be",
+  "topic": "Corporate Issuers",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "5af6aa95-0493-439b-9d38-24eeb9b1e9b1",
+  "topic": "Equity Investments",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "adbaaec1-cee1-4abf-8d72-479362cfbf6a",
+  "topic": "Financial Statement Analysis",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "4eddd8b4-5fe6-4ebc-a071-722df5e95d7f",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "383ba62a-a5c2-41e7-be56-4d6be56ad268",
+  "topic": "Financial Statement Analysis",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "df196f79-fbd7-4128-83f9-0d4affd92b53",
+  "topic": "Financial Statement Analysis",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "d9151078-db09-4050-88aa-c42473babbe3",
+  "topic": "Financial Statement Analysis",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "16301924-327c-4a09-941c-40952ff4ef87",
+  "topic": "Economics",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "9d21e67c-348b-44b2-be0d-f4d4c1046ad5",
+  "topic": "Quantitative Methods",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "64b08815-7558-48aa-b55f-398c56d5c191",
+  "topic": "Corporate Issuers",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "f6b71390-4c4a-4cd1-a8ca-af20ed787dc6",
+  "topic": "Economics",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "2550391a-0c9d-4209-8bec-524664e5f9e5",
+  "topic": "Economics",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "07d69b67-d81b-4264-acd8-a51f7ca7ee97",
+  "topic": "Economics",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "1288d8a3-8b10-4475-b09f-36e4ae3c1e14",
+  "topic": "Financial Statement Analysis",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "f2adf9e0-421f-4115-a950-19b71dac45d4",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "1cad2440-02a2-425e-b5f4-bf2915ae2291",
+  "topic": "Financial Statement Analysis",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "eb0326bf-4b36-452f-91c3-633575c25ef4",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "0113d208-ab23-4dd1-9d00-1d90df95d5c4",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "92d6801e-4bf9-4680-88b5-aecae1ea4c47",
+  "topic": "Economics",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "c675f2d2-f449-46c4-9fc6-42728ebe2a4c",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "bc239378-7ad9-4ea8-99b9-77053157f4d5",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "732350ac-d183-4d90-b719-1d67afe537f3",
+  "topic": "Quantitative Methods",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "b049ba07-e97e-474e-97f3-5b0c59239616",
+  "topic": "Quantitative Methods",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "e8032322-f404-4a8c-9d2c-87f89bc0de0f",
+  "topic": "Quantitative Methods",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "6d8747ae-c9ec-43e3-90a6-bd96b9de6c09",
+  "topic": "Quantitative Methods",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "cef8177e-9fd8-482f-94cc-27b6e782995b",
+  "topic": "Economics",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "29211fb9-2670-464b-b885-918cc728b688",
+  "topic": "Derivatives",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "8e638969-ce7d-4520-8973-738b0ad57cfd",
+  "topic": "Financial Statement Analysis",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "038c536e-e02d-4941-8bbf-32fbccdd3cf9",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "405961db-f521-43f6-be44-7a656060ccd0",
+  "topic": "Fixed Income",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "313768c4-8cc9-4c47-982e-6a9c065aa892",
+  "topic": "Derivatives",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "77f91ac7-5f5a-4b26-9eae-f9635201b674",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "aa0510fc-d128-4a00-a73a-900bf551f0c3",
+  "topic": "Corporate Issuers",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "2f171f46-1092-4507-8cd3-5ef491f65fb9",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "7916ff91-ec4a-4a3c-afb3-cfa771a0cee0",
+  "topic": "Financial Statement Analysis",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "81edfcf9-50f3-4dc7-9b0b-7d541eeb60ad",
+  "topic": "Financial Statement Analysis",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "49f5abf1-0128-4c9f-8738-8f1d2034a0a1",
+  "topic": "Financial Statement Analysis",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "a41c3943-166e-4561-a6cd-a7dca492f2b4",
+  "topic": "Quantitative Methods",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "01022c88-0a1b-48cc-991d-48cd3c54243a",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "3aa4a8c4-ccff-4397-9864-d640920442fc",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "5183c42a-3da5-4488-ba8b-5f3cb32412c8",
+  "topic": "Derivatives",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "79030c52-4194-409a-9a64-90e0cb95b0ab",
+  "topic": "Economics",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "dbe024f6-2c70-4105-ad90-3eb62b80abde",
+  "topic": "Fixed Income",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "3365c437-bcab-45ac-a001-165f196766c3",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "5cf7aaac-a3fe-43f4-ab75-089e9a797179",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "438bd276-c03e-4eb9-af47-f0838ea08b36",
+  "topic": "Alternative Investments",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "947fa402-a6ab-4863-a929-cc59656a0650",
+  "topic": "Fixed Income",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "a39444a4-f999-4fd9-bea2-2001a9a6604f",
+  "topic": "Fixed Income",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "5c1a1f43-2a84-42b8-b057-76dd482e63b7",
+  "topic": "Portfolio Management",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "58a5218c-0912-47d9-9fdf-11450a318847",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "cebecb60-849d-4624-bbf4-498e1122e42c",
+  "topic": "Financial Statement Analysis",
+  "score": 0.333,
+  "status": "no_match"
+ },
+ {
+  "id": "4cd57fc5-bf08-47c2-9388-1148bd27339e",
+  "topic": "Economics",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "79d1ca01-74be-4acb-9862-5011581f49d8",
+  "topic": "Portfolio Management",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "75cc608a-7df6-45c8-b3c1-01ed7781ae3c",
+  "topic": "Derivatives",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "92b786a7-608b-4fbb-99e8-c15ae339ef30",
+  "topic": "Financial Statement Analysis",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "a62fc46d-3693-4ed3-85a5-dd6c6e256a29",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "5089373d-ba42-4191-a23a-c282a77ae8a0",
+  "topic": "Financial Statement Analysis",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "39712ee5-0ac7-48e4-afde-d020058e6611",
+  "topic": "Fixed Income",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "86cede65-b26e-4988-b6a8-4e09ccf7d350",
+  "topic": "Fixed Income",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "5841280b-83b8-4dd8-80f6-c550a9bb3fd2",
+  "topic": "Portfolio Management",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "6ea451a8-60a2-45c5-b738-51cbe017c396",
+  "topic": "Portfolio Management",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "a036065a-4255-4cd6-bc35-73f64056ac5f",
+  "topic": "Equity Investments",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "d0afed3d-80ba-4a1e-a17c-bff54dfcf165",
+  "topic": "Economics",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "9d69e7af-075d-4c90-a22c-f7a54fdc6747",
+  "topic": "Financial Statement Analysis",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "d4427505-50e8-4c1b-abe0-6814b5a92332",
+  "topic": "Equity Investments",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "e9ec4c89-e06d-4e46-8793-29c817bbd3fd",
+  "topic": "Equity Investments",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "a98d853b-2c7b-429f-8188-d4257de0ca90",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "e3276ec9-b109-4278-9e88-c2d4451c8c3e",
+  "topic": "Quantitative Methods",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "8e09c5b1-9446-4004-b50e-f8eac3deced8",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "d596353c-45b7-46f8-83dc-81e782a02d4e",
+  "topic": "Corporate Issuers",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "b77aa14c-2601-443e-a110-4417d2fe6afb",
+  "topic": "Derivatives",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "09c1aceb-53f0-4df2-957c-36783d3f3d27",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "9e4e7a7a-1d3f-418f-8393-6b1ad00fd9f8",
+  "topic": "Derivatives",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "1ee6dd47-2ec3-42bb-b540-a1616c8bf62f",
+  "topic": "Portfolio Management",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "b97cc4d6-996c-469d-9707-6bc579086c74",
+  "topic": "Economics",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "6cb7980b-ebd9-4341-878a-3c0ac82e2180",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "06fbbd6f-1657-402d-a8eb-3d778a4d6105",
+  "topic": "Derivatives",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "3cb83622-eb0d-430d-b6d2-eeb79b2547ad",
+  "topic": "Equity Investments",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "8ae73216-a82f-43c7-bc6d-29990c61f1ea",
+  "topic": "Fixed Income",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "2a84f3d4-1890-474d-98d9-75d1ab3e3d90",
+  "topic": "Fixed Income",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "80d097ae-269d-4358-a5b9-84973be3dda3",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "5075192c-8c54-48dd-9d32-6ee96a043c75",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "1fc6d3fc-249d-4e8c-8612-f98560822853",
+  "topic": "Portfolio Management",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "dbd61ac3-e058-47ba-899b-43c0057b6194",
+  "topic": "Derivatives",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "565b8185-49ef-4a1b-8df8-d8b97c046448",
+  "topic": "Economics",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "8db0befc-989d-44e7-a0d5-2af2184320ea",
+  "topic": "Fixed Income",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "61f0b9b7-f257-4fa9-8469-a73102016719",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "83315010-3c91-4bd8-992b-b5a523fd39e6",
+  "topic": "Fixed Income",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "fcc70d83-7b48-4c08-a97e-748282aa9edd",
+  "topic": "Fixed Income",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "74c58512-82f2-437f-923c-53e16687e186",
+  "topic": "Fixed Income",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "7c725e6b-2f97-4f19-ad33-75a512de67b0",
+  "topic": "Derivatives",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "5e174054-066f-423d-b242-f60feb043150",
+  "topic": "Portfolio Management",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "10445b6b-f5e5-43c6-aafa-79afc7b625bc",
+  "topic": "Portfolio Management",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "00a7b851-1840-4615-a909-fe6a20d2cf87",
+  "topic": "Portfolio Management",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "1ba7690a-f4b7-467a-baa2-c746116475b2",
+  "topic": "Corporate Issuers",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "88623326-acfb-49c5-8daa-26b477ce191a",
+  "topic": "Corporate Issuers",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "ba4d95d5-6110-47fd-af3b-ea6b391ba420",
+  "topic": "Economics",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "cbd6ac16-24b7-4d43-80a9-c62ec538cc96",
+  "topic": "Derivatives",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "2fd11461-de53-4ead-986f-ffc837a333d5",
+  "topic": "Fixed Income",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "fabed70b-601b-491f-911d-5f6b135b5eba",
+  "topic": "Fixed Income",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "ae737738-7fcf-4c96-8b42-a52b8cdd2999",
+  "topic": "Alternative Investments",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "c6091756-cc34-4bae-b193-94e831df3ea1",
+  "topic": "Portfolio Management",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "53215d33-9900-44a0-8f1e-707976eabc60",
+  "topic": "Equity Investments",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "dff91760-bde6-4582-978b-4ef35097c947",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "69641fa0-4706-4df0-99e1-07b737117e77",
+  "topic": "Derivatives",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "a68a346a-dd10-4eca-b3b4-3e3f0f5b255c",
+  "topic": "Portfolio Management",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "4b6525c7-92c1-402e-a1d4-d23f9b2258eb",
+  "topic": "Portfolio Management",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "89b39123-57ea-4266-8758-3c9c67e3167b",
+  "topic": "Alternative Investments",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "373bed23-3e0e-44af-be65-fe7a3a7b2552",
+  "topic": "Derivatives",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "335d92b4-b2e7-4c73-88a5-58d090339ef3",
+  "topic": "Equity Investments",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "0bc0c59d-d874-4711-9a92-371a9d8bf90f",
+  "topic": "Fixed Income",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "0a8377b7-0f54-462a-aad7-7818eaea6550",
+  "topic": "Portfolio Management",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "718d6900-cff7-4ad2-83ee-45e877093084",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "e4e4d253-1f43-4f90-b3e6-6e6240b86401",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "d7723a99-959f-4589-8a97-d4b54f09a507",
+  "topic": "Derivatives",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "e8367db0-9d72-4b29-bf71-15fdf8325a92",
+  "topic": "Equity Investments",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "99f10785-cdf1-4845-926d-090ea90d37da",
+  "topic": "Derivatives",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "1aec438a-9084-40ba-81d4-8a3745a9f356",
+  "topic": "Alternative Investments",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "e01da33a-3e78-4fda-892f-2504ea04e132",
+  "topic": "Corporate Issuers",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "1cf0c58c-5420-4306-b10c-99578084796e",
+  "topic": "Derivatives",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "58230c45-c9d1-49f8-9a76-76a230212884",
+  "topic": "Fixed Income",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "bcc67b8a-c90b-4437-a3ec-31b44f46c164",
+  "topic": "Derivatives",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "151e09da-2a50-4618-a4bc-60a4f7f11ee4",
+  "topic": "Fixed Income",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "a3983c4f-5f41-42b8-b85e-6a6793377e6f",
+  "topic": "Derivatives",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "f811704e-4c6c-40da-b02c-4b1181138a70",
+  "topic": "Alternative Investments",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "f9bddd71-146a-4cca-9c4b-68f04987445d",
+  "topic": "Alternative Investments",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "edfe69dd-4cb8-40c3-ae42-3539fa9c46b9",
+  "topic": "Fixed Income",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "8a51fa95-131d-4499-81bc-48f901a1f1ad",
+  "topic": "Financial Statement Analysis",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "8ca47e12-98b9-4f54-a0f2-e0b33c682465",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "a0012cfc-7d93-4b65-b055-8d0c326d73c2",
+  "topic": "Financial Statement Analysis",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "cba366fb-0cf1-47d8-99ba-b140bce5534a",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "df549e86-f726-4345-b3c9-82e1f9973c8c",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "1749b6d5-3b17-4d05-8353-f9806dbb4af9",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "715d7ddf-e7dc-4af1-a83e-55423cb197fe",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "4983cdb3-49d6-43ba-9bb0-286fdf22be59",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "8eea48d0-6ab4-4476-96a3-6c886a5378ac",
+  "topic": "Economics",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "4a03b11d-d5a9-4e7c-816a-223112f89350",
+  "topic": "Portfolio Management",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "a7f18e67-e813-4af0-b943-431964b35bf7",
+  "topic": "Portfolio Management",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "fc1bf615-3fa7-41d2-9e28-7ac49b74e1c4",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "002afaf3-3bed-4e95-9c0e-a8e1038277cd",
+  "topic": "Portfolio Management",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "25f1fc8e-0f99-4bf3-9894-6720015ad1fa",
+  "topic": "Equity Investments",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "56ab02db-8bef-46bc-9d37-f6f61a26efd0",
+  "topic": "Portfolio Management",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "53fed000-cf10-4924-9796-f4e610da1203",
+  "topic": "Portfolio Management",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "c82d1b7c-18aa-405a-8893-c2534aebf1e3",
+  "topic": "Corporate Issuers",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "aaeeb19c-dc5a-4543-85f7-b3bd1083b1c6",
+  "topic": "Fixed Income",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "fe140e25-eda9-48b5-a0b2-0843391ef5da",
+  "topic": "Alternative Investments",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "072b000b-b4a8-4c05-848f-1d018818a658",
+  "topic": "Portfolio Management",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "d80311b5-2907-4645-bd9a-bf18df11139e",
+  "topic": "Equity Investments",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "4e7e1845-cb0c-4791-9b82-6f412bec0109",
+  "topic": "Derivatives",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "f8aa1db1-2c98-41da-b507-c541cb377d74",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "c10b775c-8d6f-4185-8132-f68661cfb198",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "35c98f66-a0ea-4645-a751-aad491ebf1ba",
+  "topic": "Financial Statement Analysis",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "6cc7c924-1540-4afc-a5b4-dcee32e6971c",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "a16e5449-39ff-4f89-ba51-1fdc697155da",
+  "topic": "Quantitative Methods",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "a43c5de8-729f-4c1d-a118-4f4b7f3678f6",
+  "topic": "Fixed Income",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "a4802917-30ca-479c-bf3c-82da4532709f",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "ebd5f23b-71f9-42ff-9b6d-006b3193cddc",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "7cb46747-547e-4253-8f62-c9d34e2ec040",
+  "topic": "Quantitative Methods",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "0b4f87a4-1c8e-43ca-9ad7-cb634bd4ad5d",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "59b809c6-5314-4222-b351-e33f0b7765e7",
+  "topic": "Portfolio Management",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "bae1fda0-b3f7-4435-99c3-b41151f88cc0",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "1c28ec60-a499-40b7-b37d-24b6e3a87296",
+  "topic": "Economics",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "f34625d5-2e71-4efe-b095-1a7e1d17a92d",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "f36813e4-e8b0-409c-8b35-4b20c4941193",
+  "topic": "Financial Statement Analysis",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "0f1206e9-c3f4-44d1-9c6b-5484cf0329ad",
+  "topic": "Quantitative Methods",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "d407cdea-1114-495e-bdce-b04016308e19",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "38514cb5-0e26-4085-872e-967ba427e45a",
+  "topic": "Equity Investments",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "9c315e24-33eb-45c5-8bc0-c71d09f315e1",
+  "topic": "Corporate Issuers",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "f401fdfd-d53f-4ddd-9c16-8417ec49428d",
+  "topic": "Fixed Income",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "3783743b-226b-474f-8ff0-4dc201de52a3",
+  "topic": "Equity Investments",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "28749cde-fd3a-4af5-8168-bdf883921ed6",
+  "topic": "Corporate Issuers",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "1fafda81-7de5-45c5-80c1-4ba2367fbd80",
+  "topic": "Fixed Income",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "2d437dff-f5dd-4322-8dbf-02581b4a7fef",
+  "topic": "Fixed Income",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "f1aad946-4fa3-4b18-949f-1fdc961334df",
+  "topic": "Portfolio Management",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "36a3c6b3-eedd-43cc-a5f5-a83dd9cef9ed",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "ad4ed21e-2b2a-4781-95a3-7061e22f84e5",
+  "topic": "Equity Investments",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "b32debdd-b0d1-481a-b46e-3873b4b8db4e",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "23e2c7d5-6b01-46e2-819e-65a3d345e870",
+  "topic": "Financial Statement Analysis",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "0dd9a2cb-6741-40d0-a248-a7997a66c71f",
+  "topic": "Fixed Income",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "706b5e1c-337f-42ce-ae4c-90665627e809",
+  "topic": "Quantitative Methods",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "ebf3d72b-8ba6-4dae-8a78-6e5b867cf062",
+  "topic": "Quantitative Methods",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "381cdeab-7d96-4800-a15c-110a44020098",
+  "topic": "Equity Investments",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "f844bdaf-3030-4ce4-9c66-8094ad129d5a",
+  "topic": "Financial Statement Analysis",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "4579fbb5-eff6-48cf-91b1-0bed33daf053",
+  "topic": "Corporate Issuers",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "38821cfa-8e96-40f5-b359-c4aae0ed1479",
+  "topic": "Portfolio Management",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "c12a0d71-a752-4af6-854f-321f8f2a2aad",
+  "topic": "Equity Investments",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "b2295600-597f-48b4-9ccc-5066d8c9b522",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "7afe1bb8-fd45-4519-8030-f07dda59446f",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "dcf796af-0ceb-4179-9f04-e7a90eed6c1a",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "ea227676-058b-4952-8a23-18c263e12c3e",
+  "topic": "Equity Investments",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "3cf00b8d-3abf-4f72-8b53-2fe4c8b26dee",
+  "topic": "Fixed Income",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "576007df-33c7-456a-8c8f-e8187fe53a30",
+  "topic": "Equity Investments",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "9767942d-81b5-4f17-ba5f-ba91dd16d7ca",
+  "topic": "Derivatives",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "463dcbed-1c5f-4b13-bb85-522ae1b475e6",
+  "topic": "Corporate Issuers",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "4c695259-68b1-4240-9c63-8df10545e3e2",
+  "topic": "Alternative Investments",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "de833555-021b-4326-bfda-5316b3f960ad",
+  "topic": "Equity Investments",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "39201c37-9c37-4e08-a3e1-70d9ee43f9f8",
+  "topic": "Equity Investments",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "18964646-09a6-4b9b-b63b-698c07529f87",
+  "topic": "Equity Investments",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "c58bf4e6-1506-4ad4-a317-5fc96fb3b258",
+  "topic": "Equity Investments",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "4ed576f9-6715-4641-9527-4022d344a337",
+  "topic": "Equity Investments",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "e6a635fb-676e-40f6-9a59-837135da87cf",
+  "topic": "Equity Investments",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "1a216c65-2f49-4a4f-b8f9-9e5d5f819940",
+  "topic": "Equity Investments",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "291b8880-6f42-4996-9650-c34e083fb40b",
+  "topic": "Equity Investments",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "c1566633-5aba-4391-8cf0-d37d27b7702e",
+  "topic": "Equity Investments",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "20170dbb-6e20-4acd-8adc-1d58f5da20d1",
+  "topic": "Equity Investments",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "e8cd848a-fce5-4100-b6bb-2be9d1f761a0",
+  "topic": "Equity Investments",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "f97addda-2d98-4e85-a2d7-5773c49ed997",
+  "topic": "Equity Investments",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "be49f15e-1d90-4e4a-91e5-4693b3d3f72d",
+  "topic": "Equity Investments",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "b6ddaf7d-46bc-41ce-b8f0-586d1958da8b",
+  "topic": "Equity Investments",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "9ab0f313-f766-49b8-9e7d-d1ca29fa0331",
+  "topic": "Equity Investments",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "dfe98475-7930-47ea-9ed8-18dbd42bfa69",
+  "topic": "Equity Investments",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "23a9a0d7-7e32-41cc-9f00-8b4c68cab19e",
+  "topic": "Equity Investments",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "52f9d81f-7cf9-48a6-88c9-1001c839d8e4",
+  "topic": "Equity Investments",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "aa877702-ad4e-4096-be8e-0551d433cc94",
+  "topic": "Equity Investments",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "1e59354d-0fba-4717-a938-17052997f0b7",
+  "topic": "Equity Investments",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "372bced1-6256-4f5f-964d-bd61ab4ad82f",
+  "topic": "Equity Investments",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "e20f180d-9c9f-40d4-b550-ba489e1875b4",
+  "topic": "Equity Investments",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "ed736fcf-6f80-4a1c-b07c-dd44c15cf1cc",
+  "topic": "Equity Investments",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "9ce63513-d203-47ca-ac5d-5d13d02136c9",
+  "topic": "Equity Investments",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "60765f4f-2920-43b4-8633-cc79e60f7b39",
+  "topic": "Equity Investments",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "8de0c0a8-d7c9-4ded-9cd7-eb6ba9f8f6c8",
+  "topic": "Equity Investments",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "39234ce4-70b1-4e1c-b8ee-91963316a17a",
+  "topic": "Equity Investments",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "f99cffc3-66a5-41f5-afc7-2ad60da6a62c",
+  "topic": "Equity Investments",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "db81a931-f2bd-499e-8b13-296783d53a08",
+  "topic": "Equity Investments",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "99bbaa19-6bd9-4328-bfc9-68cd67534c7d",
+  "topic": "Equity Investments",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "7cb566c4-da9a-46ff-a328-8fe7ad63f561",
+  "topic": "Equity Investments",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "d7a403dc-7a55-48e0-a009-8c9dd517fe71",
+  "topic": "Equity Investments",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "013fb259-f387-45a1-a833-72f3f249dc9b",
+  "topic": "Equity Investments",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "7df88f47-55d1-4881-b32a-d9bbd19a8b00",
+  "topic": "Equity Investments",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "0e4555d7-4d08-4cac-8a28-30cb698e32f4",
+  "topic": "Equity Investments",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "b8c6f670-6871-495d-b0f4-b1aaee1b1b2d",
+  "topic": "Equity Investments",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "3c52d95d-3784-4970-b1c5-4b6635b8c214",
+  "topic": "Equity Investments",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "5c8df7c5-613a-426e-bdde-b2f4b00e0228",
+  "topic": "Equity Investments",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "8d3e9371-bef9-4e35-87de-83f6380b5bad",
+  "topic": "Equity Investments",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "7f02b038-0a52-47b8-b52c-308ab93779fe",
+  "topic": "Equity Investments",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "22230374-8a10-40b8-8b1b-7fa683978b68",
+  "topic": "Equity Investments",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "70b8c477-a522-43b2-a684-5abf207ce12a",
+  "topic": "Equity Investments",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "5cc5ba6f-2db1-4551-9dbb-0c9a509e2cea",
+  "topic": "Equity Investments",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "13170721-8ac2-469d-96df-08b554685f81",
+  "topic": "Equity Investments",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "490813f0-4f94-4f2e-988f-c2cfa9a6f94d",
+  "topic": "Equity Investments",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "3198b13f-97db-4109-b1a5-024a998eed02",
+  "topic": "Equity Investments",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "3505d03d-ad85-4573-90cd-aed3f2801b9b",
+  "topic": "Equity Investments",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "2894cb5e-4398-497c-93f5-b18c7ad2765f",
+  "topic": "Equity Investments",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "45dd2c27-e3c7-4ce4-a150-15291b9a785f",
+  "topic": "Equity Investments",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "d79aaa92-21d8-4390-9616-8ac4b30cc7bf",
+  "topic": "Equity Investments",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "ab65950b-785f-4736-9683-571c68ad2da9",
+  "topic": "Equity Investments",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "1b5956bc-f719-43a0-a3ac-7682be93a26b",
+  "topic": "Equity Investments",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "3515693c-a44e-4b1d-bcdd-911314f3c433",
+  "topic": "Equity Investments",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "0d84421a-364c-4ed9-9756-ebde712503b7",
+  "topic": "Equity Investments",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "b91a05e7-9e36-4dec-bb3f-e4105a8ae042",
+  "topic": "Equity Investments",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "ff189286-e78a-45a6-99b0-e180352aaf18",
+  "topic": "Equity Investments",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "55cd87fa-f669-4663-af70-193437b96d4b",
+  "topic": "Equity Investments",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "3682d3d5-2854-492d-b644-a2f75877e1b1",
+  "topic": "Equity Investments",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "c4211dd2-0db9-4988-bf24-9e9bc1b4015f",
+  "topic": "Equity Investments",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "2ee10944-98c2-4f4a-9d16-b3e08577a1dd",
+  "topic": "Equity Investments",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "4bd4b291-ecb8-4ae6-b708-3e2de286e18d",
+  "topic": "Equity Investments",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "5e8233fa-2f70-4487-91ec-342cd26d92a2",
+  "topic": "Equity Investments",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "86c41d55-a734-46c4-ba86-b889c5cdc5e7",
+  "topic": "Equity Investments",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "9591cb7f-2941-494c-aa62-da2ad983cb16",
+  "topic": "Equity Investments",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "ca5b5ceb-cd4c-4dfb-9faa-d3fceb1dd2b1",
+  "topic": "Equity Investments",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "bd5c59a3-8b82-4439-8687-d3dda62998ae",
+  "topic": "Equity Investments",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "06fb2b58-68c7-468d-9759-695f7cf259c4",
+  "topic": "Equity Investments",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "9d7fe375-f5d7-43d0-9134-3a21f612ac95",
+  "topic": "Equity Investments",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "4c361919-bd1c-4783-a6c2-10d3cb245111",
+  "topic": "Equity Investments",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "cab05c85-d258-4d98-920c-5162fcfaeabf",
+  "topic": "Equity Investments",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "764fc908-7f66-45c8-bdbb-c81df6ec0f57",
+  "topic": "Equity Investments",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "4a753c63-999f-497b-8dab-f0fe75ae2a3a",
+  "topic": "Equity Investments",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "4157ccf7-69f4-4668-bc31-457e43db00f7",
+  "topic": "Equity Investments",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "462b777c-a263-40ee-a2f9-ba53854706d5",
+  "topic": "Equity Investments",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "3812d056-f08f-450b-9ec1-72c81e3f3618",
+  "topic": "Equity Investments",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "1030c5de-9295-4816-a865-56c54e710fd0",
+  "topic": "Equity Investments",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "4529f6fa-87fc-4261-8917-07a484bf83e1",
+  "topic": "Equity Investments",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "826447bf-9ab6-4261-83f4-ee08008fea50",
+  "topic": "Equity Investments",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "27e7be8f-2fe5-47f7-b0c6-59fd3551b7c3",
+  "topic": "Equity Investments",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "4a6aa8ca-8985-4a65-b8bd-a6700778cd7e",
+  "topic": "Equity Investments",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "9f754a90-ae69-4be2-917b-662b2162fa0f",
+  "topic": "Equity Investments",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "55c07752-03c9-40b3-a00c-0ff111b587fe",
+  "topic": "Equity Investments",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "27b68001-357c-4aa0-b31a-b27b82135fb5",
+  "topic": "Equity Investments",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "6e1748b4-c9fa-43f0-992b-651f591b1027",
+  "topic": "Equity Investments",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "1097365e-2083-4c43-b809-871ea1fba0c3",
+  "topic": "Equity Investments",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "3c1eb424-725e-4baa-a27b-8e6540e27404",
+  "topic": "Equity Investments",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "00f68028-a60b-4770-b2ff-5130466d6115",
+  "topic": "Equity Investments",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "29fcd191-99a0-4af8-90e4-44b24e40a815",
+  "topic": "Equity Investments",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "5b494c6e-578c-4bc1-91b7-eb160d4ca8f4",
+  "topic": "Equity Investments",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "c9764ae0-f743-4eb9-94f0-dc17108a8a31",
+  "topic": "Equity Investments",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "4206c7ae-b065-4982-915d-89b3a1d3633e",
+  "topic": "Equity Investments",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "1cd09058-e3ea-46d3-8af9-4178f159d254",
+  "topic": "Equity Investments",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "a7b2dd15-5243-43ff-9394-bdd9f24b7977",
+  "topic": "Equity Investments",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "1b933bd9-1ff5-49ac-8634-9176303b8b36",
+  "topic": "Equity Investments",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "54e3ddc5-159f-493f-b033-009f8ad68f10",
+  "topic": "Equity Investments",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "ffde05c2-880a-4db1-82bf-c1dfc6b750b7",
+  "topic": "Equity Investments",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "930fc6ad-989d-4282-844a-c4949af231ba",
+  "topic": "Equity Investments",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "7dad3742-5c35-408a-b940-8826d3a2ce12",
+  "topic": "Equity Investments",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "0d0c9405-082b-4e68-889e-609d2189c921",
+  "topic": "Equity Investments",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "9798c546-41c1-4759-a3f6-169bca3d44b3",
+  "topic": "Equity Investments",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "cbf09e09-cca6-4bea-a92e-bcdbbedda3e5",
+  "topic": "Equity Investments",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "bd741a72-a38b-4c0b-a049-13fb8b2a21b5",
+  "topic": "Equity Investments",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "2d01b030-e8e6-4c04-a9d6-631f002d882b",
+  "topic": "Equity Investments",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "748be971-3f2d-4bf6-b827-c1e1a03b9d9a",
+  "topic": "Equity Investments",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "e501a21a-8b2d-4a8d-8ace-e382dbc2150a",
+  "topic": "Equity Investments",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "6e9830ba-dea0-4c4e-b6a4-fc8b9454731f",
+  "topic": "Equity Investments",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "7159f2b4-0041-4e2c-9970-55b2619def1a",
+  "topic": "Equity Investments",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "2ffc54b9-73e3-48c6-a0ed-0fd42d6873d4",
+  "topic": "Equity Investments",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "5644f94e-bead-4290-bf65-7c39da8e315f",
+  "topic": "Equity Investments",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "0cc067a4-4b05-4548-8f4f-6e51f5661c03",
+  "topic": "Equity Investments",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "459228be-4468-4da8-99b7-404373ca5ea2",
+  "topic": "Equity Investments",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "709d1240-5c06-46c3-9497-6b2ad0ac5567",
+  "topic": "Equity Investments",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "d360c2b2-d1ab-432d-a503-84499321c1cf",
+  "topic": "Equity Investments",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "52f160a0-fcc9-4bc6-bcf7-9e7d78eef359",
+  "topic": "Equity Investments",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "9d622cd7-044c-4d2b-9dc0-f1e247ec9abd",
+  "topic": "Equity Investments",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "3c92d62f-c56f-416b-8c4d-61723fc4b52e",
+  "topic": "Equity Investments",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "a7dfb094-cf4d-479a-8e8c-75ca1f9c8265",
+  "topic": "Equity Investments",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "8f789303-08ca-49b5-9c42-aa34f2b0b846",
+  "topic": "Equity Investments",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "50dd628f-075c-40c1-80a4-91c80478784d",
+  "topic": "Equity Investments",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "f5918246-3369-46e7-a8aa-0e7634a09611",
+  "topic": "Equity Investments",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "5c8150f1-3469-4e47-bd19-2eabefcb3c4c",
+  "topic": "Equity Investments",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "c9020220-9ab8-4363-a78a-a86758b236cb",
+  "topic": "Equity Investments",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "bbd302c0-3a74-4a78-a746-dc69f38daad8",
+  "topic": "Equity Investments",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "11f79368-16bc-4f89-9205-f906c2953440",
+  "topic": "Equity Investments",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "edcf6d63-c6f6-40dd-ac37-4fbb087a862e",
+  "topic": "Equity Investments",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "01821275-3359-449f-a7f8-607ee680a297",
+  "topic": "Equity Investments",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "b5545370-8844-4cec-9823-9c1313d9e913",
+  "topic": "Equity Investments",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "d5be1a16-748f-4222-b436-9ff072075c2a",
+  "topic": "Equity Investments",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "03d516e4-70f4-4b24-b225-44ec3a4c838e",
+  "topic": "Equity Investments",
+  "score": 1.0,
+  "status": "matched",
+  "cache_file": "Equity,_Ethics.json",
+  "cache_correct": "C",
+  "db_correct": "C",
+  "mismatch": false
+ },
+ {
+  "id": "f645e1b4-cfe0-474e-934c-e661b97123b1",
+  "topic": "Equity Investments",
+  "score": 1.0,
+  "status": "matched",
+  "cache_file": "Equity,_Ethics.json",
+  "cache_correct": "C",
+  "db_correct": "C",
+  "mismatch": false
+ },
+ {
+  "id": "7c4afb3a-2103-4b93-92ce-1f58580cda36",
+  "topic": "Equity Investments",
+  "score": 1.0,
+  "status": "matched",
+  "cache_file": "Equity,_Ethics.json",
+  "cache_correct": "A",
+  "db_correct": "A",
+  "mismatch": false
+ },
+ {
+  "id": "dacf31db-94f9-455d-9b01-41ddd70fa5e5",
+  "topic": "Equity Investments",
+  "score": 1.0,
+  "status": "matched",
+  "cache_file": "Equity,_Ethics.json",
+  "cache_correct": "A",
+  "db_correct": "A",
+  "mismatch": false
+ },
+ {
+  "id": "48762a87-2606-4c14-97f5-7997e661a33a",
+  "topic": "Equity Investments",
+  "score": 1.0,
+  "status": "matched",
+  "cache_file": "Equity,_Ethics.json",
+  "cache_correct": "B",
+  "db_correct": "B",
+  "mismatch": false
+ },
+ {
+  "id": "7611687f-8d66-493c-b36a-3835384e57d5",
+  "topic": "Equity Investments",
+  "score": 1.0,
+  "status": "matched",
+  "cache_file": "Equity,_Ethics.json",
+  "cache_correct": "A",
+  "db_correct": "A",
+  "mismatch": false
+ },
+ {
+  "id": "cb1fd22c-cd43-4aa2-acef-fe46c775400d",
+  "topic": "Ethics & Professional Standards",
+  "score": 1.0,
+  "status": "matched",
+  "cache_file": "Equity,_Ethics.json",
+  "cache_correct": "A",
+  "db_correct": "A",
+  "mismatch": false
+ },
+ {
+  "id": "4fc3eec6-e260-40c2-93e2-7207c1ce8e8f",
+  "topic": "Ethics & Professional Standards",
+  "score": 1.0,
+  "status": "matched",
+  "cache_file": "Equity,_Ethics.json",
+  "cache_correct": "B",
+  "db_correct": "B",
+  "mismatch": false
+ },
+ {
+  "id": "84c2afde-22d2-4239-b565-7a8302624798",
+  "topic": "Ethics & Professional Standards",
+  "score": 1.0,
+  "status": "matched",
+  "cache_file": "Equity,_Ethics.json",
+  "cache_correct": "B",
+  "db_correct": "B",
+  "mismatch": false
+ },
+ {
+  "id": "713e023c-2924-44b0-b399-f3e311b79969",
+  "topic": "Ethics & Professional Standards",
+  "score": 1.0,
+  "status": "matched",
+  "cache_file": "Equity,_Ethics.json",
+  "cache_correct": "A",
+  "db_correct": "A",
+  "mismatch": false
+ },
+ {
+  "id": "48b6708c-ad5b-4cb6-9f9c-99b3be2b4da5",
+  "topic": "Ethics & Professional Standards",
+  "score": 1.0,
+  "status": "matched",
+  "cache_file": "Equity,_Ethics.json",
+  "cache_correct": "A",
+  "db_correct": "A",
+  "mismatch": false
+ },
+ {
+  "id": "b9899dea-158a-40b9-ba0b-074e9508c5d5",
+  "topic": "Ethics & Professional Standards",
+  "score": 1.0,
+  "status": "matched",
+  "cache_file": "Equity,_Ethics.json",
+  "cache_correct": "B",
+  "db_correct": "B",
+  "mismatch": false
+ },
+ {
+  "id": "66c6880b-6bdb-4a81-8cf2-b600245a3041",
+  "topic": "Ethics & Professional Standards",
+  "score": 1.0,
+  "status": "matched",
+  "cache_file": "Equity,_Ethics.json",
+  "cache_correct": "B",
+  "db_correct": "B",
+  "mismatch": false
+ },
+ {
+  "id": "4fddca24-4c14-43ee-8013-4f9d5fede5b4",
+  "topic": "Ethics & Professional Standards",
+  "score": 1.0,
+  "status": "matched",
+  "cache_file": "Equity,_Ethics.json",
+  "cache_correct": "B",
+  "db_correct": "B",
+  "mismatch": false
+ },
+ {
+  "id": "be51da8b-af79-4702-a7c0-10250b070b66",
+  "topic": "Ethics & Professional Standards",
+  "score": 1.0,
+  "status": "matched",
+  "cache_file": "Equity,_Ethics.json",
+  "cache_correct": "B",
+  "db_correct": "B",
+  "mismatch": false
+ },
+ {
+  "id": "73a1abb8-f4ca-4f63-9e90-1c8d159bbc91",
+  "topic": "Ethics & Professional Standards",
+  "score": 1.0,
+  "status": "matched",
+  "cache_file": "Equity,_Ethics.json",
+  "cache_correct": "B",
+  "db_correct": "B",
+  "mismatch": false
+ },
+ {
+  "id": "f2f3e5cc-ef36-4243-82af-f35bfc0f6822",
+  "topic": "Ethics & Professional Standards",
+  "score": 1.0,
+  "status": "matched",
+  "cache_file": "Equity,_Ethics.json",
+  "cache_correct": "B",
+  "db_correct": "B",
+  "mismatch": false
+ },
+ {
+  "id": "c299434a-72ee-44d2-b301-a4fb86ee41fb",
+  "topic": "Ethics & Professional Standards",
+  "score": 1.0,
+  "status": "matched",
+  "cache_file": "Equity,_Ethics.json",
+  "cache_correct": "B",
+  "db_correct": "B",
+  "mismatch": false
+ },
+ {
+  "id": "03fe387f-80d2-4c96-bb54-895a0a4f5071",
+  "topic": "Ethics & Professional Standards",
+  "score": 1.0,
+  "status": "matched",
+  "cache_file": "Equity,_Ethics.json",
+  "cache_correct": "B",
+  "db_correct": "B",
+  "mismatch": false
+ },
+ {
+  "id": "e51c4070-13e6-4272-8b43-0b0f1fd640c1",
+  "topic": "Ethics & Professional Standards",
+  "score": 1.0,
+  "status": "matched",
+  "cache_file": "Equity,_Ethics.json",
+  "cache_correct": "B",
+  "db_correct": "B",
+  "mismatch": false
+ },
+ {
+  "id": "74659842-6321-4c63-8ba8-14204fea9f41",
+  "topic": "Ethics & Professional Standards",
+  "score": 1.0,
+  "status": "matched",
+  "cache_file": "Equity,_Ethics.json",
+  "cache_correct": "B",
+  "db_correct": "B",
+  "mismatch": false
+ },
+ {
+  "id": "4429d307-f6f9-426e-b305-8c35bd276e6b",
+  "topic": "Ethics & Professional Standards",
+  "score": 1.0,
+  "status": "matched",
+  "cache_file": "Equity,_Ethics.json",
+  "cache_correct": "B",
+  "db_correct": "B",
+  "mismatch": false
+ },
+ {
+  "id": "d7b6a6f9-cf2a-420b-9c3f-ab0541e67b78",
+  "topic": "Ethics & Professional Standards",
+  "score": 1.0,
+  "status": "matched",
+  "cache_file": "Equity,_Ethics.json",
+  "cache_correct": "C",
+  "db_correct": "C",
+  "mismatch": false
+ },
+ {
+  "id": "518a2458-35ee-466a-bfb2-b6cd72cc52ff",
+  "topic": "Ethics & Professional Standards",
+  "score": 1.0,
+  "status": "matched",
+  "cache_file": "Equity,_Ethics.json",
+  "cache_correct": "B",
+  "db_correct": "B",
+  "mismatch": false
+ },
+ {
+  "id": "765e6d4e-374c-4bc7-a01c-a676698847db",
+  "topic": "Ethics & Professional Standards",
+  "score": 1.0,
+  "status": "matched",
+  "cache_file": "Equity,_Ethics.json",
+  "cache_correct": "C",
+  "db_correct": "C",
+  "mismatch": false
+ },
+ {
+  "id": "e59fb2ef-5b73-45fe-9725-96935f062562",
+  "topic": "Ethics & Professional Standards",
+  "score": 1.0,
+  "status": "matched",
+  "cache_file": "Equity,_Ethics.json",
+  "cache_correct": "A",
+  "db_correct": "A",
+  "mismatch": false
+ },
+ {
+  "id": "4489445f-1cde-493b-a881-0344dc9a3408",
+  "topic": "Ethics & Professional Standards",
+  "score": 1.0,
+  "status": "matched",
+  "cache_file": "Equity,_Ethics.json",
+  "cache_correct": "A",
+  "db_correct": "A",
+  "mismatch": false
+ },
+ {
+  "id": "7ef94b4f-0591-4f6d-93f3-a3908c383e7c",
+  "topic": "Ethics & Professional Standards",
+  "score": 1.0,
+  "status": "matched",
+  "cache_file": "Equity,_Ethics.json",
+  "cache_correct": "B",
+  "db_correct": "B",
+  "mismatch": false
+ },
+ {
+  "id": "86a8c834-56c3-4ed4-b2e5-19bab1367134",
+  "topic": "Ethics & Professional Standards",
+  "score": 1.0,
+  "status": "matched",
+  "cache_file": "Equity,_Ethics.json",
+  "cache_correct": "A",
+  "db_correct": "A",
+  "mismatch": false
+ },
+ {
+  "id": "116ddd28-c5d8-439f-9d7d-35e7d79466b5",
+  "topic": "Ethics & Professional Standards",
+  "score": 1.0,
+  "status": "matched",
+  "cache_file": "Equity,_Ethics.json",
+  "cache_correct": "B",
+  "db_correct": "B",
+  "mismatch": false
+ },
+ {
+  "id": "d1e23ea3-41ea-4649-9a66-9e2b8e0ea410",
+  "topic": "Ethics & Professional Standards",
+  "score": 1.0,
+  "status": "matched",
+  "cache_file": "Equity,_Ethics.json",
+  "cache_correct": "C",
+  "db_correct": "C",
+  "mismatch": false
+ },
+ {
+  "id": "ea944fe6-f6e8-4744-ad0c-057b8a462c08",
+  "topic": "Ethics & Professional Standards",
+  "score": 1.0,
+  "status": "matched",
+  "cache_file": "Equity,_Ethics.json",
+  "cache_correct": "A",
+  "db_correct": "A",
+  "mismatch": false
+ },
+ {
+  "id": "6ebcd7ad-7a70-41d5-93f6-b45319a82e08",
+  "topic": "Ethics & Professional Standards",
+  "score": 1.0,
+  "status": "matched",
+  "cache_file": "Equity,_Ethics.json",
+  "cache_correct": "B",
+  "db_correct": "B",
+  "mismatch": false
+ },
+ {
+  "id": "0cb125c5-4318-4a40-bcb7-dd8529982981",
+  "topic": "Ethics & Professional Standards",
+  "score": 1.0,
+  "status": "matched",
+  "cache_file": "Equity,_Ethics.json",
+  "cache_correct": "B",
+  "db_correct": "B",
+  "mismatch": false
+ },
+ {
+  "id": "a6e1f879-134f-49ff-bd18-60d712710139",
+  "topic": "Ethics & Professional Standards",
+  "score": 1.0,
+  "status": "matched",
+  "cache_file": "Equity,_Ethics.json",
+  "cache_correct": "B",
+  "db_correct": "B",
+  "mismatch": false
+ },
+ {
+  "id": "3e0dfd72-3741-4653-8e52-724f78617313",
+  "topic": "Ethics & Professional Standards",
+  "score": 1.0,
+  "status": "matched",
+  "cache_file": "Equity,_Ethics.json",
+  "cache_correct": "B",
+  "db_correct": "B",
+  "mismatch": false
+ },
+ {
+  "id": "d688f0a1-a7fc-4677-816e-d7387dda78fd",
+  "topic": "Ethics & Professional Standards",
+  "score": 1.0,
+  "status": "matched",
+  "cache_file": "Equity,_Ethics.json",
+  "cache_correct": "A",
+  "db_correct": "A",
+  "mismatch": false
+ },
+ {
+  "id": "d82e0f66-3fd2-4893-b404-46e3e8628db0",
+  "topic": "Ethics & Professional Standards",
+  "score": 1.0,
+  "status": "matched",
+  "cache_file": "Equity,_Ethics.json",
+  "cache_correct": "C",
+  "db_correct": "C",
+  "mismatch": false
+ },
+ {
+  "id": "9a1ed58c-a3be-44f2-9f26-94fc7fc96d21",
+  "topic": "Ethics & Professional Standards",
+  "score": 1.0,
+  "status": "matched",
+  "cache_file": "Equity,_Ethics.json",
+  "cache_correct": "A",
+  "db_correct": "A",
+  "mismatch": false
+ },
+ {
+  "id": "a18eb894-618e-46e5-a443-6677aefe2235",
+  "topic": "Ethics & Professional Standards",
+  "score": 1.0,
+  "status": "matched",
+  "cache_file": "Equity,_Ethics.json",
+  "cache_correct": "C",
+  "db_correct": "C",
+  "mismatch": false
+ },
+ {
+  "id": "45252296-cd3c-4a57-b0ec-732b8bd4e2ca",
+  "topic": "Ethics & Professional Standards",
+  "score": 1.0,
+  "status": "matched",
+  "cache_file": "Equity,_Ethics.json",
+  "cache_correct": "A",
+  "db_correct": "A",
+  "mismatch": false
+ },
+ {
+  "id": "99f0ee77-eee8-4618-9586-67dbdfa8bb21",
+  "topic": "Ethics & Professional Standards",
+  "score": 1.0,
+  "status": "matched",
+  "cache_file": "Equity,_Ethics.json",
+  "cache_correct": "A",
+  "db_correct": "A",
+  "mismatch": false
+ },
+ {
+  "id": "af33b543-dfff-468a-aec1-9faab0f424a6",
+  "topic": "Ethics & Professional Standards",
+  "score": 1.0,
+  "status": "matched",
+  "cache_file": "Equity,_Ethics.json",
+  "cache_correct": "B",
+  "db_correct": "B",
+  "mismatch": false
+ },
+ {
+  "id": "eebab102-6ed9-4dec-b1d1-4bbed12b08f3",
+  "topic": "Ethics & Professional Standards",
+  "score": 1.0,
+  "status": "matched",
+  "cache_file": "Equity,_Ethics.json",
+  "cache_correct": "A",
+  "db_correct": "A",
+  "mismatch": false
+ },
+ {
+  "id": "fce09bd2-4c36-4596-913c-7818b4024f2c",
+  "topic": "Ethics & Professional Standards",
+  "score": 1.0,
+  "status": "matched",
+  "cache_file": "Equity,_Ethics.json",
+  "cache_correct": "C",
+  "db_correct": "C",
+  "mismatch": false
+ },
+ {
+  "id": "c786778c-9f41-41cf-a700-a3a8a8e33024",
+  "topic": "Ethics & Professional Standards",
+  "score": 1.0,
+  "status": "matched",
+  "cache_file": "Equity,_Ethics.json",
+  "cache_correct": "C",
+  "db_correct": "C",
+  "mismatch": false
+ },
+ {
+  "id": "8d97a4ab-b77a-4530-bc04-62af9ae58974",
+  "topic": "Ethics & Professional Standards",
+  "score": 1.0,
+  "status": "matched",
+  "cache_file": "Equity,_Ethics.json",
+  "cache_correct": "C",
+  "db_correct": "C",
+  "mismatch": false
+ },
+ {
+  "id": "b7d3a6dd-be75-43bc-b09d-2cc0d00fc68a",
+  "topic": "Ethics & Professional Standards",
+  "score": 1.0,
+  "status": "matched",
+  "cache_file": "Equity,_Ethics.json",
+  "cache_correct": "C",
+  "db_correct": "C",
+  "mismatch": false
+ },
+ {
+  "id": "089beb47-9132-4259-9529-dedbcf73170d",
+  "topic": "Ethics & Professional Standards",
+  "score": 1.0,
+  "status": "matched",
+  "cache_file": "Equity,_Ethics.json",
+  "cache_correct": "A",
+  "db_correct": "A",
+  "mismatch": false
+ },
+ {
+  "id": "9949c9bc-5ca0-451e-a7ba-8a6f78fc2edb",
+  "topic": "Ethics & Professional Standards",
+  "score": 1.0,
+  "status": "matched",
+  "cache_file": "Equity,_Ethics.json",
+  "cache_correct": "C",
+  "db_correct": "C",
+  "mismatch": false
+ },
+ {
+  "id": "e36c2573-14a9-4420-8b87-8369f1d43654",
+  "topic": "Ethics & Professional Standards",
+  "score": 1.0,
+  "status": "matched",
+  "cache_file": "Equity,_Ethics.json",
+  "cache_correct": "C",
+  "db_correct": "C",
+  "mismatch": false
+ },
+ {
+  "id": "3c6e29b9-c16d-461d-944e-f3c78a019408",
+  "topic": "Ethics & Professional Standards",
+  "score": 1.0,
+  "status": "matched",
+  "cache_file": "Equity,_Ethics.json",
+  "cache_correct": "C",
+  "db_correct": "C",
+  "mismatch": false
+ },
+ {
+  "id": "f07d6bb9-3eff-4f55-b803-bca7ec036248",
+  "topic": "Ethics & Professional Standards",
+  "score": 1.0,
+  "status": "matched",
+  "cache_file": "Equity,_Ethics.json",
+  "cache_correct": "A",
+  "db_correct": "A",
+  "mismatch": false
+ },
+ {
+  "id": "fdf364ce-9c82-40ec-8d5b-08d202f11fb8",
+  "topic": "Ethics & Professional Standards",
+  "score": 1.0,
+  "status": "matched",
+  "cache_file": "Equity,_Ethics.json",
+  "cache_correct": "C",
+  "db_correct": "C",
+  "mismatch": false
+ },
+ {
+  "id": "28e5b2df-3309-41d1-b2b3-4ae22c8acc28",
+  "topic": "Ethics & Professional Standards",
+  "score": 1.0,
+  "status": "matched",
+  "cache_file": "Equity,_Ethics.json",
+  "cache_correct": "C",
+  "db_correct": "C",
+  "mismatch": false
+ },
+ {
+  "id": "ad766f98-6f12-495b-a71f-fc3836d419cf",
+  "topic": "Ethics & Professional Standards",
+  "score": 1.0,
+  "status": "matched",
+  "cache_file": "Equity,_Ethics.json",
+  "cache_correct": "A",
+  "db_correct": "A",
+  "mismatch": false
+ },
+ {
+  "id": "c2e070ea-2a5d-4616-98c9-2ee9aaa239b2",
+  "topic": "Ethics & Professional Standards",
+  "score": 1.0,
+  "status": "matched",
+  "cache_file": "Equity,_Ethics.json",
+  "cache_correct": "C",
+  "db_correct": "C",
+  "mismatch": false
+ },
+ {
+  "id": "27c0f517-7512-4981-9c4c-d1070062f297",
+  "topic": "Ethics & Professional Standards",
+  "score": 1.0,
+  "status": "matched",
+  "cache_file": "Equity,_Ethics.json",
+  "cache_correct": "A",
+  "db_correct": "A",
+  "mismatch": false
+ },
+ {
+  "id": "53771255-bd97-4e87-9ec7-6a7c797f9166",
+  "topic": "Ethics & Professional Standards",
+  "score": 1.0,
+  "status": "matched",
+  "cache_file": "Equity,_Ethics.json",
+  "cache_correct": "B",
+  "db_correct": "B",
+  "mismatch": false
+ },
+ {
+  "id": "98ae6d29-b12d-4698-81fd-d9e77d461646",
+  "topic": "Ethics & Professional Standards",
+  "score": 1.0,
+  "status": "matched",
+  "cache_file": "Equity,_Ethics.json",
+  "cache_correct": "B",
+  "db_correct": "B",
+  "mismatch": false
+ },
+ {
+  "id": "8a955d0b-6cd5-44fc-bd44-d7e7f814409a",
+  "topic": "Ethics & Professional Standards",
+  "score": 1.0,
+  "status": "matched",
+  "cache_file": "Equity,_Ethics.json",
+  "cache_correct": "C",
+  "db_correct": "C",
+  "mismatch": false
+ },
+ {
+  "id": "2c994951-876f-474d-9918-39d75c45e21a",
+  "topic": "Ethics & Professional Standards",
+  "score": 1.0,
+  "status": "matched",
+  "cache_file": "Equity,_Ethics.json",
+  "cache_correct": "A",
+  "db_correct": "A",
+  "mismatch": false
+ },
+ {
+  "id": "55f0b70a-11cd-4083-b119-abb6715dfe2d",
+  "topic": "Ethics & Professional Standards",
+  "score": 1.0,
+  "status": "matched",
+  "cache_file": "Equity,_Ethics.json",
+  "cache_correct": "A",
+  "db_correct": "A",
+  "mismatch": false
+ },
+ {
+  "id": "60a817cd-8f0d-4da6-b50d-65d5146e2624",
+  "topic": "Ethics & Professional Standards",
+  "score": 1.0,
+  "status": "matched",
+  "cache_file": "Equity,_Ethics.json",
+  "cache_correct": "A",
+  "db_correct": "A",
+  "mismatch": false
+ },
+ {
+  "id": "a1c9f818-d91d-4a9f-8142-5dedbc420357",
+  "topic": "Ethics & Professional Standards",
+  "score": 1.0,
+  "status": "matched",
+  "cache_file": "Equity,_Ethics.json",
+  "cache_correct": "C",
+  "db_correct": "C",
+  "mismatch": false
+ },
+ {
+  "id": "a3ac4634-09d7-4db0-8d6e-1b32222fd602",
+  "topic": "Ethics & Professional Standards",
+  "score": 1.0,
+  "status": "matched",
+  "cache_file": "Equity,_Ethics.json",
+  "cache_correct": "C",
+  "db_correct": "C",
+  "mismatch": false
+ },
+ {
+  "id": "1b6bb080-0fdd-4e76-9d79-16bcd31de68f",
+  "topic": "Ethics & Professional Standards",
+  "score": 1.0,
+  "status": "matched",
+  "cache_file": "Equity,_Ethics.json",
+  "cache_correct": "C",
+  "db_correct": "C",
+  "mismatch": false
+ },
+ {
+  "id": "de2b2567-564a-4110-ae24-52acfa015e55",
+  "topic": "Ethics & Professional Standards",
+  "score": 1.0,
+  "status": "matched",
+  "cache_file": "Equity,_Ethics.json",
+  "cache_correct": "C",
+  "db_correct": "C",
+  "mismatch": false
+ },
+ {
+  "id": "d503cfe9-0fb9-44ba-9191-e4d8096a2c47",
+  "topic": "Ethics & Professional Standards",
+  "score": 1.0,
+  "status": "matched",
+  "cache_file": "Equity,_Ethics.json",
+  "cache_correct": "A",
+  "db_correct": "A",
+  "mismatch": false
+ },
+ {
+  "id": "4af1a089-67b9-4d9c-961c-4ddc6c3a51a8",
+  "topic": "Ethics & Professional Standards",
+  "score": 1.0,
+  "status": "matched",
+  "cache_file": "Equity,_Ethics.json",
+  "cache_correct": "C",
+  "db_correct": "C",
+  "mismatch": false
+ },
+ {
+  "id": "a9367b9e-e805-4a7f-9722-bc6db9fc538f",
+  "topic": "Ethics & Professional Standards",
+  "score": 1.0,
+  "status": "matched",
+  "cache_file": "Equity,_Ethics.json",
+  "cache_correct": "A",
+  "db_correct": "A",
+  "mismatch": false
+ },
+ {
+  "id": "f61255b8-b680-469d-bf5b-e4ebdd55bdd4",
+  "topic": "Ethics & Professional Standards",
+  "score": 1.0,
+  "status": "matched",
+  "cache_file": "Equity,_Ethics.json",
+  "cache_correct": "A",
+  "db_correct": "A",
+  "mismatch": false
+ },
+ {
+  "id": "1156ec44-9626-4659-b9b4-3ab803e89ed9",
+  "topic": "Ethics & Professional Standards",
+  "score": 1.0,
+  "status": "matched",
+  "cache_file": "Equity,_Ethics.json",
+  "cache_correct": "C",
+  "db_correct": "C",
+  "mismatch": false
+ },
+ {
+  "id": "880b15a0-d205-4f68-a3f9-c5e345a22116",
+  "topic": "Ethics & Professional Standards",
+  "score": 1.0,
+  "status": "matched",
+  "cache_file": "Equity,_Ethics.json",
+  "cache_correct": "A",
+  "db_correct": "A",
+  "mismatch": false
+ },
+ {
+  "id": "9eaa0420-be2d-480e-a85a-57ebd4003c01",
+  "topic": "Ethics & Professional Standards",
+  "score": 1.0,
+  "status": "matched",
+  "cache_file": "Equity,_Ethics.json",
+  "cache_correct": "A",
+  "db_correct": "A",
+  "mismatch": false
+ },
+ {
+  "id": "d72553d7-9884-44d2-8c19-35fb5a482ead",
+  "topic": "Ethics & Professional Standards",
+  "score": 1.0,
+  "status": "matched",
+  "cache_file": "Equity,_Ethics.json",
+  "cache_correct": "A",
+  "db_correct": "A",
+  "mismatch": false
+ },
+ {
+  "id": "f7d0bd9d-3f4e-4e93-aa1b-9ef463acf897",
+  "topic": "Ethics & Professional Standards",
+  "score": 1.0,
+  "status": "matched",
+  "cache_file": "Equity,_Ethics.json",
+  "cache_correct": "B",
+  "db_correct": "B",
+  "mismatch": false
+ },
+ {
+  "id": "aa42dfc8-63ca-48af-8df4-4ad91454b216",
+  "topic": "Ethics & Professional Standards",
+  "score": 1.0,
+  "status": "matched",
+  "cache_file": "Equity,_Ethics.json",
+  "cache_correct": "A",
+  "db_correct": "A",
+  "mismatch": false
+ },
+ {
+  "id": "1fbe8754-05de-44eb-8e58-d43befa79612",
+  "topic": "Ethics & Professional Standards",
+  "score": 1.0,
+  "status": "matched",
+  "cache_file": "Equity,_Ethics.json",
+  "cache_correct": "A",
+  "db_correct": "A",
+  "mismatch": false
+ },
+ {
+  "id": "01ad3839-a231-4ad5-9b4d-cd5761188762",
+  "topic": "Ethics & Professional Standards",
+  "score": 1.0,
+  "status": "matched",
+  "cache_file": "Equity,_Ethics.json",
+  "cache_correct": "A",
+  "db_correct": "A",
+  "mismatch": false
+ },
+ {
+  "id": "ab496d81-3d3d-4dce-acc3-4364b9fe87e5",
+  "topic": "Ethics & Professional Standards",
+  "score": 1.0,
+  "status": "matched",
+  "cache_file": "Equity,_Ethics.json",
+  "cache_correct": "C",
+  "db_correct": "C",
+  "mismatch": false
+ },
+ {
+  "id": "fd1f5d01-b4fa-4bca-9b97-501c305829d1",
+  "topic": "Ethics & Professional Standards",
+  "score": 1.0,
+  "status": "matched",
+  "cache_file": "Equity,_Ethics.json",
+  "cache_correct": "A",
+  "db_correct": "A",
+  "mismatch": false
+ },
+ {
+  "id": "3819ef01-ea85-4d6f-9d79-32a8a62a6254",
+  "topic": "Ethics & Professional Standards",
+  "score": 1.0,
+  "status": "matched",
+  "cache_file": "Equity,_Ethics.json",
+  "cache_correct": "A",
+  "db_correct": "A",
+  "mismatch": false
+ },
+ {
+  "id": "76433898-15f2-4269-abce-da29e02fdf42",
+  "topic": "Ethics & Professional Standards",
+  "score": 1.0,
+  "status": "matched",
+  "cache_file": "Equity,_Ethics.json",
+  "cache_correct": "A",
+  "db_correct": "A",
+  "mismatch": false
+ },
+ {
+  "id": "c3dea083-40cd-452f-9e5f-fe62c7d81d25",
+  "topic": "Ethics & Professional Standards",
+  "score": 1.0,
+  "status": "matched",
+  "cache_file": "Equity,_Ethics.json",
+  "cache_correct": "C",
+  "db_correct": "C",
+  "mismatch": false
+ },
+ {
+  "id": "d7ac5c35-1835-4484-9898-2b8e8b7d8aae",
+  "topic": "Ethics & Professional Standards",
+  "score": 1.0,
+  "status": "matched",
+  "cache_file": "Equity,_Ethics.json",
+  "cache_correct": "C",
+  "db_correct": "C",
+  "mismatch": false
+ },
+ {
+  "id": "14e42eac-f109-4fd3-895d-17179e5980ca",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "9dd44f82-7f5d-4d6e-834a-966ec9201443",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "e5b3a4fa-c9be-41b5-b0a8-a9842a3365cd",
+  "topic": "Ethics & Professional Standards",
+  "score": 1.0,
+  "status": "matched",
+  "cache_file": "Equity,_Ethics.json",
+  "cache_correct": "B",
+  "db_correct": "B",
+  "mismatch": false
+ },
+ {
+  "id": "d9fc898f-c06e-495b-848d-5eb2887cea1a",
+  "topic": "Ethics & Professional Standards",
+  "score": 1.0,
+  "status": "matched",
+  "cache_file": "Equity,_Ethics.json",
+  "cache_correct": "A",
+  "db_correct": "A",
+  "mismatch": false
+ },
+ {
+  "id": "718a29e8-fa92-464b-a7a9-f61eb6420676",
+  "topic": "Ethics & Professional Standards",
+  "score": 1.0,
+  "status": "matched",
+  "cache_file": "Equity,_Ethics.json",
+  "cache_correct": "C",
+  "db_correct": "C",
+  "mismatch": false
+ },
+ {
+  "id": "319e1f6d-f710-42e8-a16b-b8b965bb0315",
+  "topic": "Ethics & Professional Standards",
+  "score": 1.0,
+  "status": "matched",
+  "cache_file": "Equity,_Ethics.json",
+  "cache_correct": "B",
+  "db_correct": "B",
+  "mismatch": false
+ },
+ {
+  "id": "3c1cd456-452b-4983-9eab-332fff02cdb4",
+  "topic": "Ethics & Professional Standards",
+  "score": 1.0,
+  "status": "matched",
+  "cache_file": "Equity,_Ethics.json",
+  "cache_correct": "B",
+  "db_correct": "B",
+  "mismatch": false
+ },
+ {
+  "id": "491c28b0-0fb9-42d9-a743-7ec8f3655175",
+  "topic": "Ethics & Professional Standards",
+  "score": 1.0,
+  "status": "matched",
+  "cache_file": "Equity,_Ethics.json",
+  "cache_correct": "A",
+  "db_correct": "A",
+  "mismatch": false
+ },
+ {
+  "id": "23974449-69d2-4e10-a042-ffdc87f3ffe4",
+  "topic": "Ethics & Professional Standards",
+  "score": 1.0,
+  "status": "matched",
+  "cache_file": "Equity,_Ethics.json",
+  "cache_correct": "B",
+  "db_correct": "B",
+  "mismatch": false
+ },
+ {
+  "id": "fd9b045d-5b29-47f0-866a-533dec5436e8",
+  "topic": "Ethics & Professional Standards",
+  "score": 1.0,
+  "status": "matched",
+  "cache_file": "Equity,_Ethics.json",
+  "cache_correct": "A",
+  "db_correct": "A",
+  "mismatch": false
+ },
+ {
+  "id": "e34bcdb6-47aa-4a59-b6ee-39df8fd32b86",
+  "topic": "Ethics & Professional Standards",
+  "score": 1.0,
+  "status": "matched",
+  "cache_file": "Equity,_Ethics.json",
+  "cache_correct": "C",
+  "db_correct": "C",
+  "mismatch": false
+ },
+ {
+  "id": "b5f339b4-51a7-4a29-b668-9cf969df7a1a",
+  "topic": "Ethics & Professional Standards",
+  "score": 1.0,
+  "status": "matched",
+  "cache_file": "Equity,_Ethics.json",
+  "cache_correct": "B",
+  "db_correct": "B",
+  "mismatch": false
+ },
+ {
+  "id": "a479d3b8-5f84-4073-99da-cf82509c6443",
+  "topic": "Ethics & Professional Standards",
+  "score": 1.0,
+  "status": "matched",
+  "cache_file": "Equity,_Ethics.json",
+  "cache_correct": "B",
+  "db_correct": "B",
+  "mismatch": false
+ },
+ {
+  "id": "fa2d5519-8b65-460a-8692-e5cea9fbf0fa",
+  "topic": "Ethics & Professional Standards",
+  "score": 1.0,
+  "status": "matched",
+  "cache_file": "Equity,_Ethics.json",
+  "cache_correct": "B",
+  "db_correct": "B",
+  "mismatch": false
+ },
+ {
+  "id": "5833d1e9-7aaa-4295-83ca-04ecb05e9924",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "187c6569-3972-448f-8f9a-f4dd480dda7e",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "985322f4-6d22-48e7-b122-3e567ff6208b",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "28a30476-6873-4a22-b989-6001c6d62b66",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "59823fe2-7fc0-43f7-8aa1-a74f583038ee",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "59befb9f-94ab-4566-bf17-33b67aa3bb68",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "8a2f7099-3354-402e-aef3-78ffc27d9cff",
+  "topic": "Corporate Issuers",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "45e710db-178d-473b-bc3f-625e28dd4981",
+  "topic": "Financial Statement Analysis",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "06513e2d-5175-4fcc-8f11-4df657af3730",
+  "topic": "Financial Statement Analysis",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "995571e0-0e86-4a01-82b2-74dcd30ce4a9",
+  "topic": "Financial Statement Analysis",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "d9d83b85-7a20-4b77-a50f-4e491991bd84",
+  "topic": "Economics",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "799d2ef7-d7ca-46d8-94e0-2beb1a0b2789",
+  "topic": "Corporate Issuers",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "a5115bdd-1482-4211-963f-9f9074d94745",
+  "topic": "Financial Statement Analysis",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "77b0c1ed-e381-4b51-bb90-72f731f4c9a0",
+  "topic": "Financial Statement Analysis",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "b9ae74aa-cdda-4b53-ac43-2ae01e9dac47",
+  "topic": "Corporate Issuers",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "3c306a3a-206c-4e68-ba80-c6b8c566706b",
+  "topic": "Financial Statement Analysis",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "6cec19ac-d37f-4eb3-a262-db2a8625d551",
+  "topic": "Corporate Issuers",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "f6165bdd-2de6-490c-88d3-8e4a5c7536a2",
+  "topic": "Quantitative Methods",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "e79fd089-6d65-4ca2-ab08-42cc79bca7fc",
+  "topic": "Derivatives",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "6e193135-8232-410a-8477-5c27ae0a3cc7",
+  "topic": "Financial Statement Analysis",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "7d9e9aea-354d-4046-b1bc-ebf73c25212d",
+  "topic": "Equity Investments",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "8aa419fc-a659-4455-8566-1ea2b5f888e9",
+  "topic": "Fixed Income",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "85d63283-3eaa-4abd-9a93-9f2e93ca2c99",
+  "topic": "Alternative Investments",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "264c2afc-da7f-499e-8651-470a78fce553",
+  "topic": "Fixed Income",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "d7e9fd9e-676f-4eaf-8352-ff3ca99f3a0d",
+  "topic": "Portfolio Management",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "b66f7381-a1cb-47af-a6e4-75733a955dde",
+  "topic": "Equity Investments",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "d8d5d7ac-29e2-408b-8bc1-09a1152929dc",
+  "topic": "Financial Statement Analysis",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "e4b16d55-0903-4d58-af13-02110db36f67",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "1bbfa9e1-cc14-4b61-8aa4-5152bc4aad1d",
+  "topic": "Financial Statement Analysis",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "5afc9de0-d5ff-4e8f-8e1a-e2e21d332a6f",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "06db83ac-c2aa-4b0c-97d6-f0ac5a5ab4c2",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "6d11989c-ea9d-46a9-9d0e-8d3f34294dd4",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "694ca00d-cd37-4031-9da5-1dda390ec1b1",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "24ee225a-fef7-4cc2-80cd-2037486e7c6c",
+  "topic": "Corporate Issuers",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "6e62117c-c557-49ec-92fe-10fa8711c991",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "e26066f5-8c93-4ae3-a1c4-ddb7f4d83ea3",
+  "topic": "Quantitative Methods",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "a29a9b02-0dff-466b-9759-c0e93c21e4c4",
+  "topic": "Corporate Issuers",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "eafac730-450c-436e-994b-733573c8e37e",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "7cdbd505-11b5-433a-91cc-c71aca3a70f8",
+  "topic": "Financial Statement Analysis",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "6aa828dc-9d1e-43da-a5d7-5293902a13d3",
+  "topic": "Derivatives",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "8b9ac59e-e4f0-4ba1-b282-3830680519d3",
+  "topic": "Derivatives",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "27296fee-2b75-40f6-89b1-5483ed8e86b4",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "5b568192-3ed5-4143-894e-32ba319876bd",
+  "topic": "Equity Investments",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "12ed3ef3-0625-4fec-9c56-b4aa79f18e96",
+  "topic": "Equity Investments",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "fbad3c1c-6c54-4fd2-b3a8-eec2d6288308",
+  "topic": "Corporate Issuers",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "8d423df2-9fa9-45ab-ad7b-3ebcdb66345e",
+  "topic": "Derivatives",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "c34b116e-92a3-4c6c-8635-53fe10884bd3",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "eefba779-eb8b-4a8a-977b-b4114f801840",
+  "topic": "Equity Investments",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "24465f56-7f10-4419-9e74-7412d569a1f6",
+  "topic": "Corporate Issuers",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "2b50d495-bceb-4343-be3c-8232ea96a388",
+  "topic": "Fixed Income",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "7335c524-b3d0-45a6-b8ad-9f9e52109d48",
+  "topic": "Portfolio Management",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "8ffb4659-1001-4a55-b88d-4dc26fc698ac",
+  "topic": "Quantitative Methods",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "e2e6a9a3-a772-471c-b929-461d2c0419ad",
+  "topic": "Ethics & Professional Standards",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "774d263e-def6-4f68-8add-22467c9cec9e",
+  "topic": "Derivatives",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "93e5fd73-9cad-4a17-a56e-51b60fe882de",
+  "topic": "Economics",
+  "score": 0.0,
+  "status": "no_match"
+ },
+ {
+  "id": "2b1cfa17-b68f-469b-b5f2-096da3a23ac8",
+  "topic": "Alternative Investments",
+  "score": 0.0,
+  "status": "no_match"
+ }
+]
