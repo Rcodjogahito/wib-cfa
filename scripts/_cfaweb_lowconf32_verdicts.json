@@ -1,0 +1,194 @@
+[
+ {
+  "id": "0770617c-23d1-4122-a30f-fafa6c1c83c7",
+  "verdict": "db_already_correct",
+  "correct_letter": "B",
+  "reasoning": "For a unimodal negatively skewed distribution the standard ordering is mean < median < mode, so mode has the highest value. Option B (Mode) matches this and the DB's own explanation states the identical ordering. Independently confirmed."
+ },
+ {
+  "id": "14e42eac-f109-4fd3-895d-17179e5980ca",
+  "verdict": "db_already_correct",
+  "correct_letter": "B",
+  "reasoning": "GIPS compliance does not eliminate investors' need for due diligence, but it does let the firm compete for business against other GIPS-compliant firms, matching option B exactly and consistent with the explanation. Note cache_stem is actually a different GIPS question (local regulations vs GIPS conflicts) - a stem mismatch - but that does not affect verification of the DB's own question/options/explanation."
+ },
+ {
+  "id": "21cf9fed-d2d3-4ae7-86cf-44510c041803",
+  "verdict": "uncertain",
+  "correct_letter": null,
+  "reasoning": "question_en omits the joint probability table needed to compute covariance directly (only E(X)=14%, E(Y)=9% are given), and the DB's own explanation_en describes an unrelated lin-log regression model, not covariance - an internal stem/explanation mismatch. The partial table visible in cache_stem is garbled/incomplete, so there is not enough reliable data to independently recompute covariance and confirm or refute db_correct='B'."
+ },
+ {
+  "id": "2ec888b8-cd55-4d85-a520-faf5045595ea",
+  "verdict": "db_already_correct",
+  "correct_letter": "C",
+  "reasoning": "The CFA risk taxonomy classifies solvency risk as a non-financial risk (arising from internal/relationship sources), while credit and market risk are classified as financial risks. Option C (Solvency risk) is correct, matching db_correct and the explanation."
+ },
+ {
+  "id": "316febb8-1767-4768-87a2-472cf28e0dbd",
+  "verdict": "db_already_correct",
+  "correct_letter": "C",
+  "reasoning": "Fintech in its broadest sense is defined in the CFA curriculum as technological innovation in the design and delivery of financial services and products, matching option C exactly, which is db_correct."
+ },
+ {
+  "id": "344aedfe-b333-4da3-bad0-5ef7f2398d20",
+  "verdict": "db_already_correct",
+  "correct_letter": "C",
+  "reasoning": "At 8%: Option 2 (ordinary annuity, 30x$12,000) PV = $135,093; Option 3 (annuity due, 20x$13,000) PV = $137,847; Option 1 = $136,000 flat. Option 3 has the highest PV, matching option C = db_correct, consistent with the explanation's figures."
+ },
+ {
+  "id": "3a30f7a1-68c8-458e-b189-adb67620678e",
+  "verdict": "db_already_correct",
+  "correct_letter": "C",
+  "reasoning": "Financial leverage ratio = average total assets / average total equity. Equity = 50 - 30 = 20, so ratio = 50/20 = 2.5, matching option C = db_correct. cache_stem describes an unrelated revaluation question with different figures (a cache mismatch), but the DB's own numbers (50/30) independently confirm 2.5."
+ },
+ {
+  "id": "461093ee-12e3-4611-ac08-43cab74c3be6",
+  "verdict": "db_already_correct",
+  "correct_letter": "A",
+  "reasoning": "PV = 10,000,000 x (1.025)^-30 (semiannual compounding: 2.5% per period, 30 periods) = $4,767,427, matching option A = db_correct exactly."
+ },
+ {
+  "id": "581b8449-c846-47c1-92e1-82247e77e236",
+  "verdict": "db_already_correct",
+  "correct_letter": "B",
+  "reasoning": "Standard error of the estimate = sqrt(SSE/(n-2)) = sqrt(280/28) = sqrt(10) = 3.16 approx 3.2, matching option B = db_correct."
+ },
+ {
+  "id": "59899846-919d-48c0-a3d7-457bb6a58da5",
+  "verdict": "db_error_confirmed",
+  "correct_letter": "C",
+  "reasoning": "If continuously compounded returns are normally distributed, the future stock price is lognormally distributed (standard CFA fact) - option C. The DB's own explanation_en states this verbatim ('the future stock price is necessarily lognormally distributed'), yet db_correct is recorded as A ('normally distributed'), directly contradicting its own explanation. Genuine DB error; correct letter is C, which also matches the cache's letter."
+ },
+ {
+  "id": "5fd85c4d-a57e-4026-9975-0c2106d0cee4",
+  "verdict": "db_already_correct",
+  "correct_letter": "C",
+  "reasoning": "Duplicate of the annuity-options question (id 344aedfe): Option 3 (annuity due, 20x$13,000) has the highest PV at 8%, ~$137,847, versus $136,000 and $135,093 for the other two. Matches option C = db_correct."
+ },
+ {
+  "id": "75f6bde4-74d6-4665-9bc3-12ef0e1e5fca",
+  "verdict": "db_already_correct",
+  "correct_letter": "C",
+  "reasoning": "Bootstrap resampling treats the drawn sample as if it were the population, uses no analytical formula, and does not guarantee every item appears in a resample - matching option C exactly, consistent with db_correct and the explanation."
+ },
+ {
+  "id": "80d62f0a-d731-4137-9619-b221a3969ec4",
+  "verdict": "db_already_correct",
+  "correct_letter": "B",
+  "reasoning": "The 19th of 75 observations sits at roughly the 25.3rd percentile, which falls in the 2nd quintile (20%-40% band); it would be the 3rd decile (20%-30%) rather than the 2nd, and quartile boundaries don't match as cleanly. Option B (quintile) matches db_correct and the explanation's stated logic."
+ },
+ {
+  "id": "83aa95f5-6d59-43b1-830e-f2e9904676b1",
+  "verdict": "db_already_correct",
+  "correct_letter": "A",
+  "reasoning": "d = X-Y ranks: -1,-1,-1,3; d^2 = 1,1,1,9, sum d^2 = 12. rs = 1 - 6(12)/(4x15) = 1 - 1.2 = -0.2, matching option A = db_correct."
+ },
+ {
+  "id": "8e638969-ce7d-4520-8973-738b0ad57cfd",
+  "verdict": "db_already_correct",
+  "correct_letter": "B",
+  "reasoning": "Under IFRS, reversal of a prior inventory write-down is recognized as a reduction in cost of sales (not other income, and not prohibited - prohibition is the US GAAP rule for a different scenario). Option B matches db_correct and the explanation."
+ },
+ {
+  "id": "948f5276-2a6c-41ca-a0bc-0e90c0fa6629",
+  "verdict": "db_already_correct",
+  "correct_letter": "C",
+  "reasoning": "Probability sampling gives every population member a known chance of selection, producing a more representative sample than non-probability (subjective/convenience) sampling. Option C matches db_correct."
+ },
+ {
+  "id": "9a2959b2-974c-4d8f-9b87-c490659d48c1",
+  "verdict": "db_already_correct",
+  "correct_letter": "A",
+  "reasoning": "The value effect (value stocks with low P/E, low P/B, high dividend yield outperforming growth stocks) is a cross-sectional anomaly, not identified via time series only (rules out B), and value - not growth - stocks are the outperformers, the opposite of option C. By elimination and definition it contradicts semi-strong efficiency, matching option A = db_correct."
+ },
+ {
+  "id": "9b7f4274-8454-4e19-b362-5f602dbcc717",
+  "verdict": "db_already_correct",
+  "correct_letter": "B",
+  "reasoning": "The CLT does not require the population to be normal (ruling out A - that is the whole point of the theorem) and does not concern products of random variables (ruling out C). As n grows the sampling-distribution variance sigma^2/n shrinks toward zero, so the sample mean converges to the population mean, i.e. it is a consistent estimator - matching option B = db_correct."
+ },
+ {
+  "id": "9cea9bbf-8c2e-486d-91c7-4369ec3d031d",
+  "verdict": "db_error_confirmed",
+  "correct_letter": "C",
+  "reasoning": "The measure quantifying risk per unit of mean return is, by definition, the coefficient of variation (CV = std dev / mean). The DB's own explanation_en describes exactly this and states CV 'measures the amount of risk... per unit of mean return,' yet db_correct is recorded as B (Standard deviation), contradicting the definition and its own explanation. Genuine DB error; correct letter is C, also matching the cache's letter."
+ },
+ {
+  "id": "9dd44f82-7f5d-4d6e-834a-966ec9201443",
+  "verdict": "db_already_correct",
+  "correct_letter": "B",
+  "reasoning": "Same GIPS competitive-bidding fact as the near-duplicate item 14e42eac: compliance lets firms compete for business against other GIPS-compliant firms, matching option B = db_correct and the explanation."
+ },
+ {
+  "id": "a29a9b02-0dff-466b-9759-c0e93c21e4c4",
+  "verdict": "db_already_correct",
+  "correct_letter": "C",
+  "reasoning": "Duplicate of the leverage-ratio question (id 3a30f7a1): equity = 50 - 30 = 20, leverage ratio = 50/20 = 2.5, matching option C = db_correct."
+ },
+ {
+  "id": "ab2a3045-3a3b-4219-a2c0-89fee1590264",
+  "verdict": "db_already_correct",
+  "correct_letter": "C",
+  "reasoning": "Sampling error is defined as the difference between an observed sample statistic and the population parameter it is intended to estimate, matching option C = db_correct and the explanation exactly."
+ },
+ {
+  "id": "baab6303-a0c4-4bb3-a3bf-c0a61c3f5c53",
+  "verdict": "db_already_correct",
+  "correct_letter": "C",
+  "reasoning": "With equal maturity and default risk, the opportunity cost of choosing CD1 (2.2%) is the return forgone from the best alternative, CD3 (4.4%): 4.4% - 2.2% = 2.2%, matching option C = db_correct."
+ },
+ {
+  "id": "bcb13583-d96a-4ab3-914e-9d67c9db9c5a",
+  "verdict": "db_already_correct",
+  "correct_letter": "C",
+  "reasoning": "Using cache_stem's table (Portfolio 1: 23%/15%, Portfolio 2: 12%/6%, Portfolio 3: 15%/8% return/SD) and RL=5% (withdraw 5,000 of 100,000 without invading capital), Roy's safety-first ratios are P1=(23-5)/15=1.20, P2=(12-5)/6=1.17, P3=(15-5)/8=1.25. Portfolio 3 has the highest SFRatio, matching option C = db_correct."
+ },
+ {
+  "id": "bf3db7de-9502-41a9-8e21-939f5ef43acd",
+  "verdict": "db_already_correct",
+  "correct_letter": "B",
+  "reasoning": "A forward contract is priced at initiation so no arbitrage exists and neither party pays the other, meaning its initiation value is zero - matching option B = db_correct."
+ },
+ {
+  "id": "c39d49b9-b79c-4fe4-b773-fb6835be1da2",
+  "verdict": "db_already_correct",
+  "correct_letter": "B",
+  "reasoning": "This is a deferred ordinary annuity (5 payments of $1,000, first at t=3). Its value one period before the first payment (t=2) is 1000x[1-(1.06)^-5]/0.06 = $4,212, then discounted back 2 more years: 4212/(1.06)^2 = $3,749, matching option B = db_correct (option C, $4,212, is the intermediate t=2 value, a natural distractor)."
+ },
+ {
+  "id": "c82d1b7c-18aa-405a-8893-c2534aebf1e3",
+  "verdict": "db_already_correct",
+  "correct_letter": "C",
+  "reasoning": "Short sellers must compensate the security lender for dividends the lender's shares would have earned while borrowed - payments-in-lieu of dividends - matching option C = db_correct."
+ },
+ {
+  "id": "dff91760-bde6-4582-978b-4ef35097c947",
+  "verdict": "uncertain",
+  "correct_letter": null,
+  "reasoning": "The DB's own question_en/stem is missing entirely ('question text not provided'), cache_stem is likewise blank, and cache options describe an unrelated target-semideviation problem, so there is no real question data to independently recompute a Gordon Growth valuation. The only signal is that option_a's text is self-labeled 'Correct because...' while B and C are self-labeled 'Incorrect because...', internally consistent with db_correct=A, but this is not an independent financial derivation given the missing stem and inputs. Marked uncertain due to insufficient underlying data."
+ },
+ {
+  "id": "e85bd18c-d4d9-43f4-9170-1ea3c7d1e950",
+  "verdict": "db_already_correct",
+  "correct_letter": "C",
+  "reasoning": "Nominal risk-free rate = real risk-free rate + inflation premium (1%+2%=3%); opportunity cost of not buying the T-bill is the foregone nominal return, i.e. 3%, matching option C = db_correct."
+ },
+ {
+  "id": "eb7d58b9-ab6c-43e7-9760-ab2f65300cd5",
+  "verdict": "db_already_correct",
+  "correct_letter": "A",
+  "reasoning": "For the seller (writer) of a put, profit = premium received - payoff owed = p0 - Max(0, X - S_T) = 4.50 - Max(0,105-100) = 4.50 - 5.00 = -$0.50, matching option A = db_correct."
+ },
+ {
+  "id": "ec547e64-d6b5-4792-b5d0-379bb7224fde",
+  "verdict": "db_already_correct",
+  "correct_letter": "C",
+  "reasoning": "Per the GIPS standards, GIPS reports provided to prospective clients must be updated to include information through the most recent annual period within 12 months of that period end, matching option C = db_correct exactly (the other options misstate the 5-year terminated-composite rule and invent a 7-year initial-compliance rule)."
+ },
+ {
+  "id": "fee76be7-756e-4601-8f37-c0d0b579cefa",
+  "verdict": "db_error_confirmed",
+  "correct_letter": "B",
+  "reasoning": "Demand for corn explains (predicts) supply of wheat, so demand for corn is the independent/explanatory variable and supply of wheat is the dependent/explained variable. The DB's own explanation_en states exactly this ('supply of wheat [is] the dependent variable'), yet db_correct is recorded as C ('independent variable'), directly contradicting its own explanation. Genuine DB error; correct letter is B ('explained variable' = dependent variable), also matching the cache's letter."
+ }
+]

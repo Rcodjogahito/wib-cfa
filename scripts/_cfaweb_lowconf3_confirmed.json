@@ -1,0 +1,20 @@
+[
+ {
+  "id": "59899846-919d-48c0-a3d7-457bb6a58da5",
+  "verdict": "correct_answer_wrong",
+  "field": "correct_answer",
+  "new_value": "C"
+ },
+ {
+  "id": "9cea9bbf-8c2e-486d-91c7-4369ec3d031d",
+  "verdict": "correct_answer_wrong",
+  "field": "correct_answer",
+  "new_value": "C"
+ },
+ {
+  "id": "fee76be7-756e-4601-8f37-c0d0b579cefa",
+  "verdict": "correct_answer_wrong",
+  "field": "correct_answer",
+  "new_value": "B"
+ }
+]

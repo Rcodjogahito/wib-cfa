@@ -1,0 +1,50 @@
+[
+  {
+    "id": "27cd938c-e98b-4bab-834f-0463de19d922",
+    "verdict": "resolved",
+    "field": "explanation_en",
+    "new_value": "Option A is correct. NPV rule is based on external market determined discount rates because it assumes reinvestment at opportunity cost of capital.\n\nThe NPV rule's assumption about reinvestment rates is more realistic and more economically relevant because it incorporates market determined opportunity cost of capital as a discount rate.\n\nIRR assumes that cash flows are reinvested at IRR and thus IRR rankings are not affected by any external interest rate or discount rate.",
+    "evidence": "Question is item 11 on question page (pdf idx 28 / printed page 25, questions 10-15). Solutions section located via PyMuPDF full-text search for the distinctive phrase 'IRR ranking assumes reinvestment' -> pdf idx 141 (printed page 130). That page contains solutions 7-12 in the same order/content as the question page (Q10 semivariance=184.47 matches, Q12 lognormal matches), confirming alignment. Q11 = Answer A with the explanation above. Verified visually via 200dpi render of pdf idx 141 (verify_p141.png), text matches exactly."
+  },
+  {
+    "id": "eefe6eb7-b946-4df5-901a-80ae47aa36b5",
+    "verdict": "resolved",
+    "field": "explanation_en",
+    "new_value": "Parametric tests are relatively unaffected by violations of assumptions.\n\nIn nonparametric tests, generally observations are converted into ranks according to their magnitude.\n\nNonparametric tests are considered distribution-free methods because they do not rely on any underlying distribution assumption.",
+    "evidence": "Question is item 14 on same question page as 27cd938c (pdf idx 28 / printed page 25, questions 10-15). Solutions section located via PyMuPDF search for 'Nonparametric tests are considered' -> pdf idx 142 (printed page 131), which continues the same solutions run (13-20) as pdf idx 141 used for 27cd938c. Q14 = Answer C with the explanation above (each bullet restates/corrects one of the three answer options, which is this source's normal explanation style for this question - it is genuinely not a discursive paragraph). Verified visually via 200dpi render of pdf idx 142 (verify_p142.png), text matches exactly."
+  },
+  {
+    "id": "c38f5136-894d-434b-ae93-49bbbe16e63b",
+    "verdict": "resolved",
+    "field": ["question_en", "option_a", "option_b", "option_c", "correct_answer"],
+    "new_value": {
+      "question_en": "Samples of size n1, n2 are drawn respectively from two populations X1, X2 with associated sample means and standard deviations of X̄1, X̄2 and S1, S2, and associated population means and standard deviations of U1, U2 and σ1, σ2, where σ1 ≠ σ2. In addition, d̄ is the sample mean of X1 - X2 with a standard error of s_d̄ and a population mean of u_d0, and S_p² is a pooled estimator of the common variance.\n\nThe most appropriate test statistic to determine the equality of the two population means, assuming X1 and X2 are independent and normally distributed, is:",
+      "option_a": "t = [(X̄1 - X̄2) - (μ2 - μ2)] / [(S_p²/n1 + S_p²/n2)^0.5]",
+      "option_b": "t = [(X̄1 - X̄2) - (μ1 - μ2)] / [(s1²/n1 + s2²/n2)^0.5]",
+      "option_c": "t = (d̄ - μ_d0) / S_d̄",
+      "correct_answer": "B"
+    },
+    "evidence": "Question is item 29 on the question page (pdf idx 31, printed page 28). Rendered pdf idx 31 and 32 at 400dpi and transcribed the stem and all three options directly from the images (crops saved as c38f5136_stem_zoom.png, c38f5136_optA_super_zoom.png, c38f5136_optC_zoom.png). Note: the stem itself uses 'U' (not mu) for population means - this is how it is actually printed in the source, transcribed verbatim rather than 'corrected' to mu. Option A genuinely reads '(mu2 - mu2)' in the source (an apparent typo in the original material, but that is what is printed - transcribed verbatim since it is a distractor, not the correct answer). Solutions section located via PyMuPDF search for 'The most appropriate test statistic for the difference between two population means' -> pdf idx 144 (printed page 133): '29. Answer = B / The most appropriate test statistic for the difference between two population means (unequal and unknown population variances) is' - this matches option B (uses separate s1²/s2², not pooled Sp²) and matches the existing (already-correct, unchanged) explanation_en and correct_answer='B' in the manifest. Confirmed via direct text extraction of pdf idx 144."
+  },
+  {
+    "id": "4d634878-8a85-43ba-bae1-1f4f4182af9b",
+    "verdict": "resolved",
+    "field": "option_c",
+    "new_value": "I and II.",
+    "evidence": "Question 16 (GDP measures) on pdf idx 44 (printed page 40), options continue onto pdf idx 45 (printed page 41). Viewed the image directly: option C reads exactly 'I and II.' followed immediately by a paragraph break and the start of unrelated question 17 (currency appreciation table). Confirms the prior pass's guess was correct - the clean boundary for option_c is precisely 'I and II.' with nothing else bleeding in."
+  },
+  {
+    "id": "2e13a4af-9250-4845-a5cc-50d9c703cad4",
+    "verdict": "resolved",
+    "field": "explanation_en",
+    "new_value": "Total assets = Current assets + Non-current assets = 9,200 + 12,750 → Total assets = £21,950 thousand.\n\nAssets = Liabilities + Equity → 21,950 = 9,400 + Equity → Equity = £12,550 thousand.\n\nEquity = Share capital + Retained earnings → 12,550 = (2,000 + 500) + Retained earnings → Retained earnings = £10,050 thousand.\n\nRetained earnings = Beginning retained earnings + Net income − Dividends → 10,050 = 8,850 + (12,000 − 10,150) − Dividends → Dividends = £650 thousand.",
+    "evidence": "Question is item 40 on the question page (pdf idx 58/59, printed page 53-54, question numbering 38-44 matches surrounding context). Solutions section located via PyMuPDF search for '8,850' and '9,400' -> pdf idx 166 (printed page 155). Plain get_text() extraction of pdf idx 166 initially showed only '40. Answer = C' with no explanation text (because the explanation is laid out as a table/graphic, which the text layer did not capture in reading order). Rendered pdf idx 166 at 200dpi (d6de1b6f... actually saved as 2e13a4af_solpage_p166.png) and transcribed the table directly: confirms correct_answer C (£650 thousand) and gives the four-step balance-sheet/retained-earnings derivation above, replacing the unrelated 'standard error of sample mean' text. question_en (already containing the markdown table from a prior pass) was left unchanged as instructed."
+  },
+  {
+    "id": "d6de1b6f-856b-4bb8-979a-ccf8108a53d1",
+    "verdict": "resolved",
+    "field": "explanation_en",
+    "new_value": "R̄_G = 0.05 = ⁵√[(1 − 0.348)(1 + 0.322)(1 + 0.111)(1 − 0.014)(1 + R_2012)] − 1\n\nHolding period total return (cumulative) factor calculation through 2011: (1 – 0.348) × (1 + 0.322) × (1 + 0.111) × (1 – 0.014) = 0.652 × 1.322 × 1.111 × 0.986 = 0.9442.\n\nCompound total return (cumulative) factor at 5% per year for five years: 1.05⁵ = 1.2763.\n\nReturn needed in 2012 to achieve a compound annualized return of 5%: 1.2763 / 0.9442 = 1.3517 = 35.2%.\n\nCheck: 0.944 × 1.352 = 1.276^(1/5) = 1.050 = 5% annualized.",
+    "evidence": "Question is item 17 on the question page (pdf idx 121, printed page 110). Solutions section located via PyMuPDF search for 'Holding period total return' -> pdf idx 210-211 (printed pages 199-200), solutions run 9-25. Rendered both pages at 200dpi (d6de1b6f_sol_p210.png, d6de1b6f_sol_p211.png). The garbled OCR fragment 'R 0.05 5 10.34810.32210.1110.0141R 1 G 2012' in the old explanation is confirmed to be a scrambled text-extraction of the formula image 'R̄_G = 0.05 = fifth-root[(1-0.348)(1+0.322)(1+0.111)(1-0.014)(1+R_2012)] - 1' shown at the top of pdf idx 210's item 17. Also fixed a second, smaller corruption further down (old text '199 1.055= 1.2763' merges a page-footer '199' with a lost superscript; the clean source reads '1.05⁵ = 1.2763' at the top of pdf idx 211). The rest of the prose (already present in the manifest) was verified verbatim against the images and is correct."
+  }
+]

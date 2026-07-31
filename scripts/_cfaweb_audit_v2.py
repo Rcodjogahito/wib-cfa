@@ -102,11 +102,21 @@ def best_match(q, cache_entries):
         _ratio(q.get("option_c"), best.get("C")),
     ]
     if min(opt_ratios) < 0.8:
+        # Some cache entries have their 3 options garbled/merged into one
+        # field by an imperfect Vision transcription (e.g. option_a literally
+        # containing "B. C. <textA>. <textB>. <textC>."). A near-perfect STEM
+        # match (>=0.85) is still strong evidence of the right question even
+        # when the option-level comparison can't be trusted -- surface it
+        # with a low-confidence flag instead of silently discarding a
+        # otherwise-correct match, so it can still be reviewed for
+        # correct_answer/explanation drift.
+        if best_score >= 0.85:
+            return best, -best_score  # negative sentinel = low-confidence stem-only match
         return None, 0.0
     return best, best_score
 
 def main():
-    data = json.loads(Path("scripts/_full_dump_audit.json").read_text(encoding="utf-8"))
+    data = json.loads(Path("scripts/_full_dump_fresh_20260731.json").read_text(encoding="utf-8"))
     cfaweb = [q for q in data if q.get("source") == "CFA_WEB"]
     print(f"CFA_WEB questions: {len(cfaweb)}")
 
@@ -119,7 +129,19 @@ def main():
     for i, q in enumerate(cfaweb):
         match, score = best_match(q, all_entries)
         r = {"id": q["id"], "topic": q.get("topic"), "score": round(score, 3)}
-        if match and score >= 0.5:
+        if match and score < 0:
+            r["status"] = "low_confidence_match"
+            r["cache_file"] = match["file"]
+            r["cache_n"] = match["n"]
+            r["cache_correct"] = match["correct"]
+            r["db_correct"] = q.get("correct_answer")
+            r["db_stem"] = q.get("question_en")
+            r["cache_stem"] = match["stem"]
+            r["db_expl"] = q.get("explanation_en")
+            r["cache_expl"] = match["expl"]
+            r["cache_A"], r["cache_B"], r["cache_C"] = match.get("A"), match.get("B"), match.get("C")
+            r["mismatch"] = (match["correct"] is not None and match["correct"] != q.get("correct_answer"))
+        elif match and score >= 0.5:
             r["status"] = "matched"
             r["cache_file"] = match["file"]
             r["cache_n"] = match["n"]

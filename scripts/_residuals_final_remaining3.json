@@ -1,0 +1,23 @@
+[
+ {
+  "id": "4d634878-8a85-43ba-bae1-1f4f4182af9b",
+  "verdict": "resolved",
+  "field": "option_c",
+  "new_value": "I and II.",
+  "evidence": "Question 16 (GDP measures) on pdf idx 44 (printed page 40), options continue onto pdf idx 45 (printed page 41). Viewed the image directly: option C reads exactly 'I and II.' followed immediately by a paragraph break and the start of unrelated question 17 (currency appreciation table). Confirms the prior pass's guess was correct - the clean boundary for option_c is precisely 'I and II.' with nothing else bleeding in."
+ },
+ {
+  "id": "2e13a4af-9250-4845-a5cc-50d9c703cad4",
+  "verdict": "resolved",
+  "field": "explanation_en",
+  "new_value": "Total assets = Current assets + Non-current assets = 9,200 + 12,750 → Total assets = £21,950 thousand.\n\nAssets = Liabilities + Equity → 21,950 = 9,400 + Equity → Equity = £12,550 thousand.\n\nEquity = Share capital + Retained earnings → 12,550 = (2,000 + 500) + Retained earnings → Retained earnings = £10,050 thousand.\n\nRetained earnings = Beginning retained earnings + Net income − Dividends → 10,050 = 8,850 + (12,000 − 10,150) − Dividends → Dividends = £650 thousand.",
+  "evidence": "Question is item 40 on the question page (pdf idx 58/59, printed page 53-54, question numbering 38-44 matches surrounding context). Solutions section located via PyMuPDF search for '8,850' and '9,400' -> pdf idx 166 (printed page 155). Plain get_text() extraction of pdf idx 166 initially showed only '40. Answer = C' with no explanation text (because the explanation is laid out as a table/graphic, which the text layer did not capture in reading order). Rendered pdf idx 166 at 200dpi (d6de1b6f... actually saved as 2e13a4af_solpage_p166.png) and transcribed the table directly: confirms correct_answer C (£650 thousand) and gives the four-step balance-sheet/retained-earnings derivation above, replacing the unrelated 'standard error of sample mean' text. question_en (already containing the markdown table from a prior pass) was left unchanged as instructed."
+ },
+ {
+  "id": "d6de1b6f-856b-4bb8-979a-ccf8108a53d1",
+  "verdict": "resolved",
+  "field": "explanation_en",
+  "new_value": "R̄_G = 0.05 = ⁵√[(1 − 0.348)(1 + 0.322)(1 + 0.111)(1 − 0.014)(1 + R_2012)] − 1\n\nHolding period total return (cumulative) factor calculation through 2011: (1 – 0.348) × (1 + 0.322) × (1 + 0.111) × (1 – 0.014) = 0.652 × 1.322 × 1.111 × 0.986 = 0.9442.\n\nCompound total return (cumulative) factor at 5% per year for five years: 1.05⁵ = 1.2763.\n\nReturn needed in 2012 to achieve a compound annualized return of 5%: 1.2763 / 0.9442 = 1.3517 = 35.2%.\n\nCheck: 0.944 × 1.352 = 1.276^(1/5) = 1.050 = 5% annualized.",
+  "evidence": "Question is item 17 on the question page (pdf idx 121, printed page 110). Solutions section located via PyMuPDF search for 'Holding period total return' -> pdf idx 210-211 (printed pages 199-200), solutions run 9-25. Rendered both pages at 200dpi (d6de1b6f_sol_p210.png, d6de1b6f_sol_p211.png). The garbled OCR fragment 'R 0.05 5 10.34810.32210.1110.0141R 1 G 2012' in the old explanation is confirmed to be a scrambled text-extraction of the formula image 'R̄_G = 0.05 = fifth-root[(1-0.348)(1+0.322)(1+0.111)(1-0.014)(1+R_2012)] - 1' shown at the top of pdf idx 210's item 17. Also fixed a second, smaller corruption further down (old text '199 1.055= 1.2763' merges a page-footer '199' with a lost superscript; the clean source reads '1.05⁵ = 1.2763' at the top of pdf idx 211). The rest of the prose (already present in the manifest) was verified verbatim against the images and is correct."
+ }
+]

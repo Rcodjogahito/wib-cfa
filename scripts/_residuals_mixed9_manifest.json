@@ -1,0 +1,101 @@
+[
+ {
+  "id": "2adb4d48-da12-40c6-8953-442e61902595",
+  "source": "Kaplan",
+  "subtopic": "Reading 30 Analyzing Income Statements",
+  "question_en": "Securities are considered to be dilutive to earnings per share if:",
+  "option_a": "they can be converted to common shares now or at any time in the future.",
+  "option_b": "converting them to common shares would actually reduce earnings per share, compared to basic earnings per share.",
+  "option_c": "converting them to common shares would decrease earnings available to common shareholders.",
+  "correct_answer": "B",
+  "explanation_en": "Securities are dilutive if they would decrease EPS (compared to basic EPS) if they are exercised or converted to common stock. Potentially dilutive securities include any that can be converted to common shares now or at any time in the future. Assuming conversion of securities such as convertible bonds or convertible preferred stock typically increases earnings available to common shareholders; these securities are dilutive to EPS if they increase common shares relatively more than they increase earnings available to common."
+ },
+ {
+  "id": "36a3c6b3-eedd-43cc-a5f5-a83dd9cef9ed",
+  "source": "CFA_WEB",
+  "subtopic": null,
+  "question_en": "Question stem not fully visible in provided image",
+  "option_a": "378",
+  "option_b": "378",
+  "option_c": "819",
+  "correct_answer": "B",
+  "explanation_en": "The correct covariance is 378 (% squared), calculated by properly weighting the products of deviations with their joint probabilities: 0.6(-10% - 4%)(-15% - 3%) + 0.4(25% - 4%)(30% - 3%) = 378."
+ },
+ {
+  "id": "4798f2a0-6af6-4e9a-85c7-4f2864da624e",
+  "source": "Kaplan",
+  "subtopic": "Reading 86 Basics of Portfolio Planning and Construction",
+  "question_en": "Which of the following statements about the importance of risk and return in the investment objective is least accurate?",
+  "option_a": "The return objective may be stated in dollar amounts even if the risk objective is stated in percentages.",
+  "option_b": "Expressing investment goals in terms of risk is more appropriate than expressing goals in terms of return.",
+  "option_c": "The investor’s risk tolerance is likely to determine what level of return will be feasible.",
+  "correct_answer": "B",
+  "explanation_en": "Expressing investment goals in terms of risk is not more appropriate than expressing goals in terms of return. The investment objectives should be stated in terms of both risk and return. Risk tolerance will likely help determine what level of expected return is feasible."
+ },
+ {
+  "id": "487f7133-3bb0-4cd8-ace0-a0ccd3b65df4",
+  "source": "UWorld",
+  "subtopic": "5.09 Analysis of Income Taxes",
+  "question_en": "An analyst gathers the following information about a company reporting under US GAAP:\n\n| ($ millions) | Fiscal Year End 20X1 |\n|---|---|\n| Total deferred tax assets | 1,100 |\n| Valuation allowance | (700) |\n| Total deferred tax assets after valuation allowance | 400 |\n| Total deferred tax liabilities | (1,500) |\n| Net deferred tax liabilities | (1,100) |\n\nAll else being equal, an increase in the statutory tax rate from 20% to 25% would most likely increase:",
+  "option_a": "total assets.",
+  "option_b": "total liabilities.",
+  "option_c": "taxable income.",
+  "correct_answer": "B",
+  "explanation_en": "Deferred tax assets (DTA) and deferred tax liabilities (DTL) result from temporary differences between taxable income (based on tax reporting) and accounting profit (based on financial reporting). These differences create future tax benefits (ie, DTA) or obligations (ie, DTL).\n\nDTA and DTL are reassessed at the end of each fiscal year, based on the tax rates that will be applied in the future when the temporary differences reverse, and DTA is recovered, or DTL is settled. If future income is taxed at higher (lower) rates:\n- the company's tax obligations increase (decrease), resulting in an increased (decreased) DTL, and\n- the benefit of future deductions increases (decreases), resulting in an increased (decreased) DTA.\n\nDTA and DTL are netted and reported as a single item on the balance sheet. In this case, since DTL > DTA, there are no deferred taxes reported as an asset on the balance sheet.\n\n| | 20% rate | 25% rate | Difference |\n|---|---|---|---|\n| Total DTA | 1,100 | 1,375 | 275 |\n| Total DTL | (1,500) | (1,875) | (375) |\n| Net effect | (400) | (500) | (100) |\n\nAn increase in the statutory tax rate increases both DTL and DTA, so in this scenario the net effect is an increase in net DTL. Therefore, total liabilities will increase and the tax rate change will not affect total assets.\n\nNote: No calculation is necessary to answer this question."
+ },
+ {
+  "id": "4d1cab6e-f40e-414b-949a-a8709f009492",
+  "source": "Kevin_Mock",
+  "subtopic": null,
+  "question_en": "Which one of the following is not one of the two main components of credit risk?",
+  "option_a": "Default risk",
+  "option_b": "Business risk",
+  "option_c": "Spread risk",
+  "correct_answer": "B",
+  "explanation_en": "Credit risk is the risk that the bondholder will not receive all of the promised cash flows on the agreed time frame. This includes two main components: default risk and loss severity. Risk measures related to credit risk include spread risk, downgrade risk, and liquidity risk."
+ },
+ {
+  "id": "4ef46725-1e8b-49ae-910f-740e2f33385d",
+  "source": "Kaplan",
+  "subtopic": "Mock Exam 5",
+  "question_en": "Which of the following statements is most accurate regarding the impact on a public company and its stakeholders from issuing additional equity rather than debt?",
+  "option_a": "The company must retire debt to fund the equity issuance.",
+  "option_b": "The additional shares will have an initial negative impact on earnings per share.",
+  "option_c": "The cost of capital for the new equity issuance will be lower than the cost of capital for debt.",
+  "correct_answer": "B",
+  "explanation_en": "Issuing additional equity will increase the number of common shares outstanding, which will decrease earnings per share. A company does not have to retire debt to fund an equity issuance. The cost of capital for equity is higher than the cost of capital for debt because debt is less risky and because interest payments are tax deductible."
+ },
+ {
+  "id": "9753f54b-9261-41c4-889a-f6af979ca59d",
+  "source": "UWorld",
+  "subtopic": "4.04 Working Capital and Liquidity",
+  "question_en": "An analyst gathers the following data for a company:\n\n| Selected Financial Data | (ZAR millions) |\n|---|---|\n| Credit sales | 10,000 |\n| Cost of goods sold | 8,000 |\n| Inventory: beginning balance | 1,600 |\n| Inventory: ending balance | 1,800 |\n| Accounts payable: beginning balance | 950 |\n| Accounts payable: ending balance | 1,100 |\n\nBased on this information, days payable outstanding (DPO) is closest to:",
+  "option_a": "45.6",
+  "option_b": "46.8",
+  "option_c": "49.0",
+  "correct_answer": "A",
+  "explanation_en": "Days payable outstanding (DPO), also called number of day's payables, is one of several activity ratios used to measure operational efficiency. DPO is used to measure the average number of days it takes a company to pay its suppliers, which is one indicator of the company's effectiveness in managing its suppliers, cash disbursements, and operating cycle. A larger DPO, resulting from slower payments to suppliers, is desirable since it enhances liquidity. DPO, like all activity ratios, is most useful when comparing against peers or an industry benchmark. DPO is the ratio of average accounts payable to average daily purchases. Average daily purchases is calculated as (COGS + Ending inventory – Beginning inventory) / 365. (Choice B) 46.8 results from dividing average accounts payable by COGS. (Choice C) 49.0 results from using ending payables instead of average payables."
+ },
+ {
+  "id": "b0a3b73b-2fc6-43ac-9715-347bc9779768",
+  "source": "Kaplan",
+  "subtopic": "Reading 48 Equity Valuation- Concepts and Basic Tools",
+  "question_en": "Which of the following is least likely an advantage of using price-to-book value (PBV) multiples in stock valuation?",
+  "option_a": "Book value is often positive, even when earnings are negative.",
+  "option_b": "Book values are highly useful measures for firms in service industries.",
+  "option_c": "PBV ratios can be compared across similar firms if accounting standards are consistent.",
+  "correct_answer": "B",
+  "explanation_en": "Book values tend not to be useful valuation measures for firms in service industries because they typically have fewer tangible assets on their balance sheets than firms in other industries. Two of the advantages of using P/BV ratios for equity valuation are that P/BV ratios can be compared across similar firms if accounting standards are consistent, and that book value is typically positive even when earnings are negative and P/E ratios are not meaningful."
+ },
+ {
+  "id": "9169c359-f316-468d-83c8-cdc2ac97890e",
+  "source": "CFA_WEB",
+  "subtopic": null,
+  "question_en": "A multi-market index is most appropriately used as a benchmark:",
+  "option_a": "for a single country ETF.",
+  "option_b": "for a small-capitalization growth stock manager.",
+  "option_c": "to calculate beta for the portfolio of a global stock manager.",
+  "correct_answer": "A",
+  "explanation_en": "Multi-market indexes comprise indexes from different countries and represent multiple security markets across multiple national markets, geographic regions, and economic development groups; they would not be used as a benchmark for a single country ETF."
+ }
+]

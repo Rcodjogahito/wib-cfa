@@ -1,0 +1,14 @@
+[
+ {
+  "id": "a9774d29-6cbf-43b4-9a71-3c7c301cf361",
+  "verdict": "option_bleed",
+  "field": "option_c",
+  "new_value": "$227."
+ },
+ {
+  "id": "be704534-1d8f-4c22-9c42-c385a3b365dc",
+  "verdict": "option_bleed",
+  "field": "option_c",
+  "new_value": "expect to earn excess returns."
+ }
+]

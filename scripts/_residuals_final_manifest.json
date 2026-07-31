@@ -1,0 +1,104 @@
+[
+ {
+  "id": "27cd938c-e98b-4bab-834f-0463de19d922",
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\7. EXTRA QB-700MCQs\\EXTRA 700 MCQs.pdf",
+  "page_idx_hint": 28,
+  "pngs_adjacent": [
+   "scripts\\_residuals_final_png\\27cd938c-e98b-4bab-834f-0463de19d922_p27.png",
+   "scripts\\_residuals_final_png\\27cd938c-e98b-4bab-834f-0463de19d922_p28.png",
+   "scripts\\_residuals_final_png\\27cd938c-e98b-4bab-834f-0463de19d922_p29.png",
+   "scripts\\_residuals_final_png\\27cd938c-e98b-4bab-834f-0463de19d922_p30.png"
+  ],
+  "question_en": "Which of the following best describes the reason for choosing the NPV rule over the IRR rule when dealing with mutually exclusive projects?",
+  "option_a": "NPV rankings are affected by external interest rates or discount rates.",
+  "option_b": "The reinvestment rates used by NPV are more conservative and therefore are economically more relevant.",
+  "option_c": "IRR ranking assumes reinvestment at opportunity cost of capital that is less realistic and economically less relevant.",
+  "correct_answer": "A",
+  "explanation_en": "The SEC is responsible for overseeing the PCAOB under the Sarbanes-Oxley Act of 2002."
+ },
+ {
+  "id": "eefe6eb7-b946-4df5-901a-80ae47aa36b5",
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\7. EXTRA QB-700MCQs\\EXTRA 700 MCQs.pdf",
+  "page_idx_hint": 28,
+  "pngs_adjacent": [
+   "scripts\\_residuals_final_png\\eefe6eb7-b946-4df5-901a-80ae47aa36b5_p27.png",
+   "scripts\\_residuals_final_png\\eefe6eb7-b946-4df5-901a-80ae47aa36b5_p28.png",
+   "scripts\\_residuals_final_png\\eefe6eb7-b946-4df5-901a-80ae47aa36b5_p29.png",
+   "scripts\\_residuals_final_png\\eefe6eb7-b946-4df5-901a-80ae47aa36b5_p30.png"
+  ],
+  "question_en": "Which of the following statements is most likely correct regarding parametric and non- parametric tests?",
+  "option_a": "Parametrictests are relatively unaffected by violations of assumptions.",
+  "option_b": "In a parametric test observations are converted into ranks according totheir magnitude.",
+  "option_c": "Nonparametric tests are considered distribution-free methods because they do not rely on any underlyingdistribution assumption.",
+  "correct_answer": "C",
+  "explanation_en": "According to Section 4 ‘Disclosures’, firms are not required to make negative assurance\ndisclosures i.e. if the firm does not use leverage, no disclosure of the use of leverage isrequired.\nAccording to Section 3’Composite Construction’, the composite return is the asset-weighted\naverage of the performance of all portfolios in the composite.\nAccording to section 5 ‘Presentation and Reporting’, when appropriate, firms have the\nresponsibility to include in GIPS-compliant presentations information not addressed by the\nGIPS standards."
+ },
+ {
+  "id": "c38f5136-894d-434b-ae93-49bbbe16e63b",
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\7. EXTRA QB-700MCQs\\EXTRA 700 MCQs.pdf",
+  "page_idx_hint": 31,
+  "pngs_adjacent": [
+   "scripts\\_residuals_final_png\\c38f5136-894d-434b-ae93-49bbbe16e63b_p30.png",
+   "scripts\\_residuals_final_png\\c38f5136-894d-434b-ae93-49bbbe16e63b_p31.png",
+   "scripts\\_residuals_final_png\\c38f5136-894d-434b-ae93-49bbbe16e63b_p32.png",
+   "scripts\\_residuals_final_png\\c38f5136-894d-434b-ae93-49bbbe16e63b_p33.png"
+  ],
+  "question_en": "Samples of size n ,n are drawn respectively from two populations X ,X with associated 1 2 1 2     sample means and standard deviations of X ,X and S ,S and associated population means 1 2 1 2 and standard deviations of  U ,U  and  σ ,σ  where σ σ .In addition, d 1 2 1 2 1 2 X X s u Sis 2 the sample 1 2 d d o P mean of with a standard error of and a population mean of and is a pooled The most appropriate test statisic to determine the equality of the two population means estimator of the common variance. assuming X and X are independent and normally distributed is 1 2  X X  μ μ ",
+  "option_a": "t 1 2 2 2 0.5 s2 s2   P  P  n n  1 2  X X  μ μ ",
+  "option_b": "Data mining",
+  "option_c": "Sample selection",
+  "correct_answer": "B",
+  "explanation_en": "The most appropriate test statistic for the difference between two population means (unequal\nandunknown population variances) is"
+ },
+ {
+  "id": "4d634878-8a85-43ba-bae1-1f4f4182af9b",
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\7. EXTRA QB-700MCQs\\EXTRA 700 MCQs.pdf",
+  "page_idx_hint": 44,
+  "pngs_adjacent": [
+   "scripts\\_residuals_final_png\\4d634878-8a85-43ba-bae1-1f4f4182af9b_p43.png",
+   "scripts\\_residuals_final_png\\4d634878-8a85-43ba-bae1-1f4f4182af9b_p44.png",
+   "scripts\\_residuals_final_png\\4d634878-8a85-43ba-bae1-1f4f4182af9b_p45.png",
+   "scripts\\_residuals_final_png\\4d634878-8a85-43ba-bae1-1f4f4182af9b_p46.png"
+  ],
+  "question_en": "For a given economy and a given period of time, GDP measures the:\n\n- I. aggregate income earned by all households, all companies, and the government.\n- II. total income earned by all of the country’s citizens, firms, and the government.\n- III. total market value produced of resalable and final goods and services.\n\nThe most appropriate description of what is measured by GDP is given by: 40",
+  "option_a": "I and III.",
+  "option_b": "I only.",
+  "option_c": "I and II. 17. Based on the table, the appreciation of which of the following currencies is mostlikely to occur?",
+  "correct_answer": "B",
+  "explanation_en": "Gross domestic product (GDP) can be defined in term of either output or income:  it is the marketvalue of all final goods and services produced within the economy in a given period of time (output definition) or, equivalently,  it is the aggregate income earned by all households, all companies, and the government within the economy in a given period of time (income definition)."
+ },
+ {
+  "id": "2e13a4af-9250-4845-a5cc-50d9c703cad4",
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\7. EXTRA QB-700MCQs\\EXTRA 700 MCQs.pdf",
+  "page_idx_hint": 59,
+  "pngs_adjacent": [
+   "scripts\\_residuals_final_png\\2e13a4af-9250-4845-a5cc-50d9c703cad4_p58.png",
+   "scripts\\_residuals_final_png\\2e13a4af-9250-4845-a5cc-50d9c703cad4_p59.png",
+   "scripts\\_residuals_final_png\\2e13a4af-9250-4845-a5cc-50d9c703cad4_p60.png",
+   "scripts\\_residuals_final_png\\2e13a4af-9250-4845-a5cc-50d9c703cad4_p61.png"
+  ],
+  "question_en": "An analyst has compiled the following information on a company: 53\n\n**Beginning of the year values**\n\n| | £ thousands |\n|---|---|\n| Share capital | 2,000 |\n| Retained earnings | 8,850 |\n\n**During the year**\n\n| | £ thousands |\n|---|---|\n| Revenues | 12,000 |\n| Total expenses | 10,150 |\n| Proceeds from shares issued | 500 |\n\n**End of year values**\n\n| | £ thousands |\n|---|---|\n| Total current assets | 9,200 |\n| Total non-current assets | 12,750 |\n| Investments | 350 |\n| Total liabilities | 9,400 |\n\nThe amount of dividends declared (£ thousands) during the year is closest to:",
+  "option_a": "300",
+  "option_b": "150",
+  "option_c": "650",
+  "correct_answer": "C",
+  "explanation_en": "The standard error of the sample mean, when the sample standard deviation is known, is:\ns 15\ns  In this case, s  3.00\nx x\nn 25"
+ },
+ {
+  "id": "d6de1b6f-856b-4bb8-979a-ccf8108a53d1",
+  "pdf": "D:\\CLAUDE\\Projet CFA\\CFA L1\\7. EXTRA QB-700MCQs\\EXTRA 700 MCQs.pdf",
+  "page_idx_hint": 121,
+  "pngs_adjacent": [
+   "scripts\\_residuals_final_png\\d6de1b6f-856b-4bb8-979a-ccf8108a53d1_p120.png",
+   "scripts\\_residuals_final_png\\d6de1b6f-856b-4bb8-979a-ccf8108a53d1_p121.png",
+   "scripts\\_residuals_final_png\\d6de1b6f-856b-4bb8-979a-ccf8108a53d1_p122.png",
+   "scripts\\_residuals_final_png\\d6de1b6f-856b-4bb8-979a-ccf8108a53d1_p123.png"
+  ],
+  "question_en": "An asset management firm generated the following annual returns in their US large-cap equity portfolio:\n\n| Year | Net Return (%) |\n|------|----------------|\n| 2008 | -34.8 |\n| 2009 | 32.2 |\n| 2010 | 11.1 |\n| 2011 | -1.4 |\n\nThe 2012 return needed to achieve a trailing five-year geometric mean annualized return of 5% when calculated at the end of 2012 is closest to:",
+  "option_a": "17.9%.",
+  "option_b": "27.6%.",
+  "option_c": "35.2%.",
+  "correct_answer": "C",
+  "explanation_en": "R 0.05 5 10.34810.32210.1110.0141R 1 G 2012 Holding period total return (cumulative) factor calculation through 2011: (1–0.348) × (1 + 0.322) × (1 + 0.111) × (1–0.014) = 0.652 × 1.322 × 1.111 × 0.986 = 0.9442. Compound total return(cumulative) factor at 5% per year of 5% for five years: 199 1.055= 1.2763. Return needed in 2012 to achieve a compound annualized return of 5%: 1.2763/0.9442 = 1.3517 = 35.2%. Check: 0.944 × 1.352 = 1.276(1/5)= 1.050 = 5% annualized."
+ }
+]
