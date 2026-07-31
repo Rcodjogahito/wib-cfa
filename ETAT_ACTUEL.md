@@ -1,9 +1,28 @@
 # ETAT ACTUEL — WIB CFA
 > Mis à jour automatiquement à la fin de chaque session Claude Code.
 
-**Date**: 2026-07-31 (session 67, partie 3 — CLÔTURE DÉFINITIVE de l'audit exhaustif de toute la banque de 7249 questions)  
-**Commit**: voir détail ci-dessous. **Grand total sur les 3 parties de la session 67 : ~1175 corrections** (583 partie 1 + ~547 partie 2 + ~29 partie 3 individuelles + 20 CFA_WEB no_match).  
-**Branch**: master → Streamlit Cloud (auto-deploy) ✅ opérationnelle
+**Date**: 2026-07-31 (session 67, partie 4 — bug réel de rendu des explications trouvé et corrigé, déployé et vérifié en direct)  
+**Commit**: `5d177b2` (HEAD). **Grand total sur les 4 parties de la session 67 : ~1175 corrections de données** + 1 correctif de rendu affectant l'affichage de TOUTES les explications de la banque.  
+**Branch**: master → Streamlit Cloud (auto-deploy) ✅ opérationnelle et VÉRIFIÉE VISUELLEMENT (Playwright, 2026-07-31)
+
+---
+
+## Session 67 (partie 4) — Vérification visuelle du site en direct : 2 bugs de rendu réels trouvés et corrigés (2026-07-31, commits e3bcaf3, 5d177b2)
+
+**Déclencheur** : demande explicite de l'utilisateur de vérifier visuellement, sur le site déployé, que toutes les explications s'affichent correctement — pas seulement que les données en base sont correctes.
+
+**Outillage** : aucun outil navigateur/capture d'écran n'était disponible nativement dans la session. Installé **Playwright + Chromium** localement (`pip install playwright && playwright install chromium`) pour pouvoir charger et scréenshoter le site réel. Découverte au passage : `WebFetch` seul boucle indéfiniment sur la redirection cookie de Streamlit Cloud (`share.streamlit.io/-/auth/app`) car il ne conserve pas de cookies entre appels — un vrai navigateur passe cette étape silencieusement. L'app réelle est chargée dans un iframe (`~/+/`), les sélecteurs Playwright doivent cibler cette frame, pas la page top-level.
+
+**2 bugs de rendu réels trouvés** (jamais détectés auparavant car jamais vérifiés visuellement en conditions réelles) en testant le rendu exact de `render_explanation` localement avec du vrai contenu corrigé cette session (la question "leveraged investment", `2b1cfa17`) :
+
+1. **Corruption LaTeX des montants en dollar** : `explanation_en` n'était JAMAIS échappé pour le signe `$` avant rendu (contrairement à `question_en`, qui l'était déjà via `render_question()`). Résultat : Streamlit interprétait les `$` comme des délimiteurs de mode mathématique LaTeX, produisant des nombres corrompus — ex. `$600,000 x 5% = $30,000` s'affichait `600,000x530,000`.
+2. **Espacement excessif** : la CSS `.explanation-box { white-space: pre-wrap; }` doublait l'espacement chaque fois que le texte contenait une ligne vide (saut de paragraphe) — exactement le motif utilisé par les tableaux markdown et les explications multi-paragraphes, créant un vide énorme entre le texte et le tableau.
+
+**Correctif** (`src/styles.py`, commit `e3bcaf3`) : nouvelle fonction `render_explanation()` (miroir de `render_question()`), qui échappe `$`→`\$`, convertit les sauts de ligne simples isolés en sauts durs markdown explicites (`  \n`), force une ligne vide juste après la balise `<div>` d'ouverture (sinon la règle CommonMark des blocs HTML bruts avale tout le contenu comme texte inerte, empêchant même les sauts durs de fonctionner), et supprime la règle CSS `white-space: pre-wrap`. Câblé dans les 4 emplacements de rendu (`streamlit_app.py`, `pages/2_Quiz.py` ×2, `pages/5_Exam_Simulator.py`). Testé et vérifié localement (3 scénarios : tableau markdown, texte simple à sauts de ligne isolés, EN+FR combiné) avant déploiement.
+
+**⚠️ Incident de déploiement** : après le push (`e3bcaf3`), le site entier est tombé en panne — `ImportError: cannot import name 'render_explanation' from 'src.styles'` sur TOUTES les pages, alors que le contenu sur GitHub était confirmé correct (vérifié via `gh api`, aucun `__pycache__`/`.pyc` committé pouvant faire écran). Un **reboot manuel via le dashboard Streamlit Cloud n'a PAS résolu le problème** (identique après plusieurs minutes d'attente) — Streamlit Cloud semble avoir gardé un worker figé sur un ancien `src/styles.py` malgré le reboot. **Résolu en appliquant le "cache bust pattern" déjà documenté dans ce même fichier CLAUDE.md** : bump de `pytz>=2025.4` → `pytz>=2026.1` dans `requirements.txt` (commit `5d177b2`), forçant un vrai rebuild complet de l'environnement (réinstallation des dépendances) plutôt qu'un simple redémarrage de processus. **Leçon reconfirmée** : en cas de code correct sur GitHub mais comportement figé en production sur Streamlit Cloud, le bump de version `requirements.txt` est plus fiable qu'un "Reboot app" simple.
+
+**Vérification finale en direct** (Playwright, après le rebuild) : site de nouveau opérationnel, connexion réussie (clé composite Sam/to), navigation Diagnostic → réponse à une question → explication affichée correctement (compacte, sans espace excessif). Le rendu exact (même fonction, même contenu réel corrigé cette session) avait déjà été confirmé en local avant déploiement.
 
 ---
 
