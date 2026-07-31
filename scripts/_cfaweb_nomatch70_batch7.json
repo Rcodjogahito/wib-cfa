@@ -1,0 +1,102 @@
+[
+ {
+  "id": "df549e86-f726-4345-b3c9-82e1f9973c8c",
+  "topic": "Ethics & Professional Standards",
+  "question_en": "A CFA charterholder named Chung works for an investment advisory firm and is analyzing ATC stock for a client. Based on his analysis, Chung believes the stock is overvalued. However, Chung states \"ATC is scheduled to announce a substantial stock repurchase program and its stock price will increase significantly.\" without clarifying that this statement is based on his opinion. Has Chung violated any CFA Institute Standards of Professional Conduct?",
+  "option_a": "Incorrect because Standard V(B) is the only standard violated, as Chung failed to distinguish between fact and opinion when communicating with clients about investment models.",
+  "option_b": "Incorrect because Standard I(C), Misrepresentation, prohibits members and candidates from guaranteeing clients any specific return on volatile investments, and Chung's statement about the stock price increase is misleading.",
+  "option_c": "Correct because according to Standard I(C), Misrepresentation, prohibits members and candidates from guaranteeing clients any specific return on volatile investments, and Chung has violated both Standard I(C) and Standard V(B) by making a statement about stock price increases without clarifying it is based on his opinion.",
+  "correct_answer": "C",
+  "explanation_en": "Chung violated both Standard I(C) by misrepresenting facts and Standard V(B) by failing to explicitly distinguish between fact and opinion when communicating with clients about investment analysis and outcomes."
+ },
+ {
+  "id": "e8032322-f404-4a8c-9d2c-87f89bc0de0f",
+  "topic": "Quantitative Methods",
+  "question_en": "With respect to a simple linear regression, the F-distributed test statistic is most appropriate to use when testing if:",
+  "option_a": "the intercept is significantly different from zero.",
+  "option_b": "the independent and dependent variables are significantly positively correlated.",
+  "option_c": "there is a significant linear relationship between the dependent and independent variables.",
+  "correct_answer": "C",
+  "explanation_en": "The F-distributed test statistic in simple linear regression tests whether the slope is equal to zero, which is equivalent to testing whether there is a significant linear relationship between the dependent and independent variables."
+ },
+ {
+  "id": "eb4d9132-830f-4447-b0c6-4ff76d8226b9",
+  "topic": "Financial Statement Analysis",
+  "question_en": "An analyst has gathered the following balance sheet data for two companies:\n\n| Item | Company X | Company Y |\n|------|-----------|----------|\n| Current assets | 1,350 | 1,650 |\n| Inventories | 500 | 500 |\n| Current liabilities | 1,000 | 1,000 |\n\nWhich company has the higher quick ratio?",
+  "option_a": "Company X",
+  "option_b": "Company Y",
+  "option_c": "Company Z",
+  "correct_answer": "B",
+  "explanation_en": "The quick ratio = (Current assets - Inventories) / Current liabilities. Company X: (1,350 - 500) / 1,000 = 850 / 1,000 = 0.85. Company Y: (1,650 - 500) / 1,000 = 1,150 / 1,000 = 1.15. Company Y has a higher quick ratio (1.15 vs 0.85), indicating stronger short-term liquidity excluding inventory. Company X is incorrect because its quick ratio is below 1.0; the equal-ratio option is incorrect because the companies have different current asset levels."
+ },
+ {
+  "id": "ebf3d72b-8ba6-4dae-8a78-6e5b867cf062",
+  "topic": "Quantitative Methods",
+  "question_en": "Which statement correctly describes hypothesis testing in regression analysis?",
+  "option_a": "Incorrect because a t-statistic tests if the intercept is statistically different from zero.",
+  "option_b": "Incorrect because a t-statistic tests if there is a positive correlation between the dependent and independent variables, that is, whether the slope coefficient of the linear regression is greater than zero. We can use the F-statistic to test for the significance of the slope coefficient (that is, whether it is significantly different from zero), but we also may want to perform other hypothesis tests for the slope coefficient—for example, testing whether the population slope is different from a specific value or whether the slope is positive. We can use a t-distributed test statistic to test such hypotheses about a regression coefficient.",
+  "option_c": "Correct because in regression analysis, we can use an F-distributed test statistic to test whether the slopes in a regression are equal to zero, with the slopes designated as b₁, against the alternative hypothesis that at least one slope is not equal to zero: H₀: b₁ = b₂ = b₃ = ... = bₖ = 0. Hₐ: At least one bᵢ is not equal to zero. For simple linear regression, these hypotheses simplify to H₀: b₁ = 0. Hₐ: b₁ ≠ 0. If we fail to reject the null hypothesis that the slope is 0, it implies that there is a linear relationship between the dependent and independent variables.",
+  "correct_answer": "C",
+  "explanation_en": "Option C correctly explains that F-distributed and t-distributed test statistics can be used to test hypotheses about regression slopes, with proper null and alternative hypotheses formulated for testing whether slopes are significantly different from zero."
+ },
+ {
+  "id": "ecb3d61a-8f6d-4c53-a9dd-df2cbf320843",
+  "topic": "Derivatives",
+  "question_en": "In derivatives pricing:\nA. investors are assumed to be risk averse.\nB. a portfolio consisting of the underlying and the derivative must earn the risk-free rate.\nC. expected payoffs of the derivative are discounted at the risk-free rate plus a risk premium.",
+  "option_a": "investors are assumed to be risk averse.",
+  "option_b": "a portfolio consisting of the underlying and the derivative must earn the risk-free rate.",
+  "option_c": "expected payoffs of the derivative are discounted at the risk-free rate plus a risk premium.",
+  "correct_answer": "B",
+  "explanation_en": "The derivative price is the price that guarantees the risk-free combination of the derivative and the underlying produces a risk-free return; risk-neutral pricing uses the fact that arbitrage opportunities guarantee that a risk-free portfolio consisting of the underlying and the derivative must earn the risk-free rate."
+ },
+ {
+  "id": "edfe69dd-4cb8-40c3-ae42-3539fa9c46b9",
+  "topic": "Fixed Income",
+  "question_en": "Which of the following is an underlying assumption of yield to maturity as a measure of expected return for a bond?",
+  "option_a": "The credit quality of the issuer remains the same",
+  "option_b": "The bond is sold at the same price as the purchase price",
+  "option_c": "Coupons are reinvested at the same rate as the yield to maturity at purchase",
+  "correct_answer": "C",
+  "explanation_en": "Yield to maturity assumes the investor holds the bond to maturity, there is no default by the issuer, and coupon interest payments are reinvested at the same rate of interest (the YTM rate)."
+ },
+ {
+  "id": "f2adf9e0-421f-4115-a950-19b71dac45d4",
+  "topic": "Ethics & Professional Standards",
+  "question_en": "Question 63 of 90",
+  "option_a": "¥28,798 million.",
+  "option_b": "¥29,258 million.",
+  "option_c": "¥29,718 million.",
+  "correct_answer": "C",
+  "explanation_en": "FCFE is the cash flow available to common stockholders after all operating expenses and borrowing costs have been paid and necessary investments in working capital and fixed capital have been made, calculated as FCFE = CFO – FCapEx + net borrowing = ¥28,808 – ¥1,300 + ¥1,750 – ¥470 + ¥930 = ¥29,718."
+ },
+ {
+  "id": "f36813e4-e8b0-409c-8b35-4b20c4941193",
+  "topic": "Financial Statement Analysis",
+  "question_en": "Which statement is correct regarding the impact of an inventory write-down on financial ratios?",
+  "option_a": "Incorrect because the quick ratio does not include inventory and is therefore unaffected by changes in the inventory carrying amount. Quick ratio = (Cash + Short-term marketable investments + Receivables) ÷ Current liabilities.",
+  "option_b": "Correct because the Current ratio decreases as a result of an inventory write down. The Current ratio = Current assets ÷ Current liabilities. Inventory is classified as current assets, among the current assets' required line items are cash and cash equivalents, trade and other receivables, inventories, and financial assets (with short maturities). In the event that the value of inventory declines below the carrying amount on the balance sheet, the inventory carrying amount must be written down to its net realisable value and the loss (reduction in value) recognised as an expense on the income statement. This expense may be included as part of cost of sales or reported separately. The numerator in the Current ratio is reduced by an inventory write-down and the denominator is unaffected, therefore the current ratio would decrease.",
+  "option_c": "Incorrect because an inventory write-down would result in either an increase or unchanged payables turnover ratio, depending on where the write-down expense was recognized, instead of a decrease. In the event that the value of inventory declines below the carrying amount on the balance sheet, the inventory carrying amount must be written down to its net realisable value and the loss (reduction in value) recognised as an expense on the income statement. This expense may be included as part of cost of sales or reported separately. When the inventory write down is included in cost of goods sold and cost of goods sold is used as a proxy of purchases, payables turnover would increase. Payables turnover = Purchases ÷ Average trade payables. While payables are not impacted by an inventory write-down, the numerator increases when COGS is used as an approximation. Note that when calculating payables turnover, cost of goods sold is sometimes used as an approximation of purchases. When the inventory write down is reported separately and does not from cost of goods sold, there would be no impact on the payables turnover ratio.",
+  "correct_answer": "B",
+  "explanation_en": "An inventory write-down reduces current assets on the balance sheet, thereby decreasing the current ratio since the numerator (current assets) decreases while the denominator (current liabilities) remains unchanged."
+ },
+ {
+  "id": "f6b71390-4c4a-4cd1-a8ca-af20ed787dc6",
+  "topic": "Economics",
+  "question_en": "Credit cycles:",
+  "option_a": "can amplify business cycles.",
+  "option_b": "are defined as fluctuations in real GDP.",
+  "option_c": "tend to be shorter than business cycles.",
+  "correct_answer": "A",
+  "explanation_en": "Credit cycles can amplify business cycles through financial frictions, with changes in access to external financing causing deeper recessions and more extensive expansions, with the duration and magnitude of these cycles often shaped by linkages between business and credit cycles."
+ },
+ {
+  "id": "f844bdaf-3030-4ce4-9c66-8094ad129d5a",
+  "topic": "Financial Statement Analysis",
+  "question_en": "Compared with Year 1, the Year 2 common-size income statement may indicate:",
+  "option_a": "a lower tax rate.",
+  "option_b": "sale of a new, differentiated product.",
+  "option_c": "cost cutting in selling, general and administration.",
+  "correct_answer": "B",
+  "explanation_en": "The gross profit margin improved from 33.3% to 35.6%, suggesting improved operational efficiency or the sale of higher-margin products, which may indicate a new, differentiated product offering."
+ }
+]

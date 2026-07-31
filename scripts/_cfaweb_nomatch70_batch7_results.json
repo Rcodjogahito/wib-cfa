@@ -1,0 +1,84 @@
+[
+ {
+  "id": "df549e86-f726-4345-b3c9-82e1f9973c8c",
+  "verdict": "resolved",
+  "results": [
+   {
+    "field": "question_en",
+    "new_value": "Dennis Chung, CFA, manages an equity fund for his firm's clients. Chung does comprehensive analysis and concludes that Advance Technology Company (ATC) could announce a substantial stock repurchase program. Chung informs his clients about the analysis by phone, and states \"ATC is scheduled to announce a substantial stock repurchase program and its stock price will increase significantly.\" Chung has violated the Standard(s) relating to:"
+   },
+   {
+    "field": "option_a",
+    "new_value": "misrepresentation only."
+   },
+   {
+    "field": "option_b",
+    "new_value": "communication with clients and prospective clients only."
+   },
+   {
+    "field": "option_c",
+    "new_value": "misrepresentation as well as communication with clients and prospective clients."
+   }
+  ],
+  "evidence": "MOCK 1 SS1 ANS.pdf (cache MOCK_1_SS1_ANS.json), question 20 of 90, spanning rendered pages page_idx 21-22 (200dpi). The DB's question_en ('A CFA charterholder named Chung... Chung believes the stock is overvalued...') and its three option texts (which read like standalone explanatory paragraphs, e.g. 'Incorrect because Standard V(B) is the only standard violated...') do not match the source at all. The real question is short: 'Dennis Chung, CFA, manages an equity fund... Chung has violated the Standard(s) relating to: A. misrepresentation only. B. communication with clients and prospective clients only. C. misrepresentation as well as communication with clients and prospective clients.' correct_answer C is already right in the DB, and explanation_en ('Chung violated both Standard I(C)... and Standard V(B)...') is substantively consistent with the source's solution text, so it was left unchanged."
+ },
+ {
+  "id": "e8032322-f404-4a8c-9d2c-87f89bc0de0f",
+  "verdict": "no_source_found",
+  "results": [],
+  "evidence": "Searched cache and rendered the only hit for 'F-distributed' across all QB+Mock caches: QB Portfolio,_Quants.json page_idx 62 (n=26, rendered as pages/pq_p62.png from 'Portfolio, Quants.pdf'), which reads 'The null hypothesis for the F-distributed test statistic in a simple linear regression model tests whether the: A. slope is equal to zero. B. intercept is equal to zero. C. slope is not equal to zero.' (answer key page_idx 95 confirms correct=A). This is a different question from the DB's ('...is most appropriate to use when testing if: A. intercept significantly different from zero / B. independent and dependent variables significantly positively correlated / C. significant linear relationship...', correct C) - different option wording and a different correct answer to a different framing of the question. Also searched exact DB option phrases ('significantly positively correlated', 'intercept is significantly different from zero') with zero hits anywhere in either cache. No genuine source match found in QB or the 12 Mock caches."
+ },
+ {
+  "id": "eb4d9132-830f-4447-b0c6-4ff76d8226b9",
+  "verdict": "no_source_found",
+  "results": [],
+  "evidence": "Searched cache for the DB's specific balance-sheet figures (1,350 / 1,650 / 500 / 1,000) and for 'Company X'+'Company Y' combinations - no page reproduces this exact two-company table. The only quick-ratio questions found were: (1) MOCK_4_SS1_ANS.json qnum 31 (rendered pages/q3_p34.png, 'MOCK 4 SS1 ANS.pdf' page_idx 34), a 3-company (X/Y/Z) common-size percentage balance sheet - different data and different structure; (2) MOCK_1_SS1_ANS.json qnum 67, a single-company quick-ratio computation with different figures (Cash 800, STMS 400, Receivables 200, Inventories 700, CL 500). Neither matches the DB's two-company (X, Y) dollar-figure table. No genuine source match found."
+ },
+ {
+  "id": "ebf3d72b-8ba6-4dae-8a78-6e5b867cf062",
+  "verdict": "no_source_found",
+  "results": [],
+  "evidence": "Searched cache for distinctive phrases from the DB's elaborate option C ('at least one bi is not equal to zero', 'population slope is different from a specific value', 'test for the significance of the slope coefficient', 'fail to reject the null hypothesis that the slope') - zero hits in QB or Mock caches. Also browsed all 25 cache entries containing 'regression' (QB Portfolio,_Quants.json pages 55-117 and various Mock pages) - none match this question's stem or elaborate 'Correct because...' option-C wording. No genuine source match found. Note (not corrected, since no source to verify against): the DB's own option C is internally self-contradictory - it states 'If we fail to reject the null hypothesis that the slope is 0, it implies that there is a linear relationship,' which inverts the correct logic (failing to reject H0: slope=0 implies no evidence of a linear relationship) - but per the anti-fabrication rule this cannot be corrected without a source page to verify against."
+ },
+ {
+  "id": "ecb3d61a-8f6d-4c53-a9dd-df2cbf320843",
+  "verdict": "resolved",
+  "results": [],
+  "evidence": "MOCK 4 SS2 ANS.pdf (cache MOCK_4_SS2_ANS.json), question 8 of 90, rendered page_idx 7 (pages/derivq_p7.png) at 200dpi. Question stem, all three options, correct_answer (B), and explanation_en all match the source verbatim/in substance. No changes needed."
+ },
+ {
+  "id": "edfe69dd-4cb8-40c3-ae42-3539fa9c46b9",
+  "verdict": "no_source_found",
+  "results": [],
+  "evidence": "Searched cache extensively for this question: 'underlying assumption of yield to maturity', 'Coupons are reinvested at the same rate as the yield to maturity', 'credit quality of the issuer remains', 'sold at the same price as the purchase price', and combinations of 'yield to maturity'+'assumption'. Also manually reviewed all 24 cache entries containing 'yield to maturity' across QB Fixed_income,_FSA.json and the Mock caches - all are numeric/computational YTM questions (convexity, duration, price changes, realized horizon yield, etc.), none asks about the assumptions underlying YTM as an expected-return measure. No genuine source match found."
+ },
+ {
+  "id": "f2adf9e0-421f-4115-a950-19b71dac45d4",
+  "verdict": "no_source_found",
+  "results": [],
+  "evidence": "The DB's question_en is itself corrupted, containing only the page-navigation label 'Question 63 of 90' rather than an actual stem - a known ingestion artifact separate from these caches. Searched cache for the FCFE computation's specific figures (28,808 / 1,300 / 1,750 / 470 / 930 / 28,798 / 29,258 / 29,718, with and without commas) and for 'yen'+'FCFE' - zero matches. Also checked every mock's qnum=63 entry (12 files) - none involve FCFE or yen figures; they cover unrelated topics (Modigliani-Miller, liquidity pulls, short selling, kurtosis, arbitrage/derivatives, defined-contribution pensions, interest coverage, CAL, real exchange rates, margin leverage). No genuine source match found."
+ },
+ {
+  "id": "f36813e4-e8b0-409c-8b35-4b20c4941193",
+  "verdict": "resolved",
+  "results": [
+   {
+    "field": "question_en",
+    "new_value": "As a result of an inventory write-down, which of the following financial ratios most likely decreases?"
+   }
+  ],
+  "evidence": "MOCK 4 SS1 ANS.pdf (cache MOCK_4_SS1_ANS.json), question 89 of 90, rendered page_idx 100-101 (pages/invwd_p100.png, pages/invwd_p101.png) at 200dpi. All three options (A/B/C), correct_answer (B), and explanation_en already match the source verbatim. Only the question_en stem was paraphrased in the DB ('Which statement is correct regarding the impact of an inventory write-down on financial ratios?') versus the source's actual stem ('As a result of an inventory write-down, which of the following financial ratios most likely decreases?') - corrected to match source exactly."
+ },
+ {
+  "id": "f6b71390-4c4a-4cd1-a8ca-af20ed787dc6",
+  "verdict": "no_source_found",
+  "results": [],
+  "evidence": "The only 'credit cycle(s)' hit in either cache is MOCK_4_SS1_ANS.json qnum 37 (rendered from 'MOCK 4 SS1 ANS.pdf' page_idx 42): 'Credit cycles are most likely: A. shorter and shallower than business cycles. B. of equal length and depth as business cycles. C. longer and deeper than business cycles.' (correct C) - a different question (length/depth comparison) with entirely different options from the DB's ('can amplify business cycles' / 'defined as fluctuations in real GDP' / 'tend to be shorter than business cycles', correct A). Searched 'amplify' and 'amplify business cycles' across all caches with zero hits, and browsed all 'business cycle' hits in the Economics-tagged QB/Mock pages - no match for an amplification-themed credit-cycle question. No genuine source match found."
+ },
+ {
+  "id": "f844bdaf-3030-4ce4-9c66-8094ad129d5a",
+  "verdict": "no_source_found",
+  "results": [],
+  "evidence": "Searched cache for 'common-size income statement', 'Compared with Year 1', 'gross profit margin' (all hits reviewed), '33.3'/'35.6', 'differentiated product', 'cost cutting in selling', and 'sale of a new' - none reproduce this question's stem, its Year 1/Year 2 comparison framing, or its specific 33.3%->35.6% gross margin figures. No genuine source match found in QB or the 12 Mock caches."
+ }
+]

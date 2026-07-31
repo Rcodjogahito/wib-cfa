@@ -1,0 +1,71 @@
+[
+ {
+  "id": "35c98f66-a0ea-4645-a751-aad491ebf1ba",
+  "verdict": "resolved",
+  "results": [
+   {
+    "field": "question_en",
+    "new_value": "Use the following common-size balance sheet information to answer the question below.\n\n| | Company X | Company Y | Company Z |\n|---|---|---|---|\n| **Assets** | | | |\n| Cash and cash equivalents | 15.6% | 12.0% | 2.0% |\n| Marketable securities | 3.4% | 5.1% | 12.0% |\n| Trade and other receivables | 10.9% | 12.7% | 4.8% |\n| Other non-financial assets | 14.3% | 11.7% | 7.4% |\n| Total current assets | 44.2% | 41.5% | 26.2% |\n| Goodwill | 1.6% | 2.2% | 28.8% |\n| Intangible assets | 17.6% | 7.0% | 24.0% |\n| Property, plant, and equipment | 17.7% | 25.3% | 8.2% |\n| Other financial assets | 12.4% | 24.0% | 9.6% |\n| Other non-financial assets | 0.3% | 0.0% | 2.1% |\n| Deferred tax assets | 6.2% | 0.0% | 1.1% |\n| Total non-current assets | 55.8% | 58.5% | 73.8% |\n| Total assets | 100.0% | 100.0% | 100.0% |\n| **Liabilities and shareholders' equity** | | | |\n| Trade and other payables | 3.4% | 3.5% | 2.1% |\n| Bank loans and other financial liabilities | 8.4% | 3.2% | 6.0% |\n| Other non-financial liabilities | 5.0% | 11.7% | 9.0% |\n| Deferred income | 11.8% | 9.8% | 0.0% |\n| Total current liabilities | 28.6% | 28.2% | 17.1% |\n| Financial liabilities | 18.4% | 18.3% | 17.4% |\n| Other non-financial liabilities | 12.8% | 5.7% | 7.9% |\n| Deferred tax liabilities | 2.5% | 4.2% | 18.6% |\n| Total non-current liabilities | 33.7% | 27.5% | 43.9% |\n| Total liabilities | 62.3% | 55.7% | 61.0% |\n| Total shareholders' equity | 37.7% | 44.3% | 39.0% |\n| Total liabilities and shareholders' equity | 100.0% | 100.0% | 100.0% |\n\nBased solely on the quick ratio, which company is most liquid?"
+   },
+   {
+    "field": "explanation_en",
+    "new_value": "The quick ratio is calculated as (Cash + Marketable securities + Receivables) / Current liabilities, using the common-size percentages given. Company X: (15.6% + 3.4% + 10.9%) / 28.6% = 29.9% / 28.6% = 1.045. Company Y: (12.0% + 5.1% + 12.7%) / 28.2% = 29.8% / 28.2% = 1.057. Company Z: (2.0% + 12.0% + 4.8%) / 17.1% = 18.8% / 17.1% = 1.099. Company Z has the highest quick ratio, making it the most liquid of the three companies based solely on this measure."
+   }
+  ],
+  "evidence": "MOCK 4 SS1 ANS.pdf (D:\\CLAUDE\\Projet CFA\\CFA L1\\9. CFA WEB MOCKS-900 MCQs\\), 'Question 31 of 90'. Question vignette + answer options span rendered pages page_idx 33-34 (a common-size % balance sheet for Company X/Y/Z, question 'Based solely on the quick ratio, which company is most liquid?', options A. Company X / B. Company Y / C. Company Z). Solution on page_idx 35 shows quick ratio = (Cash+Marketable securities+Receivables)/Current liabilities, with a table giving Quick (acid test) ratio of 1.045 (X), 1.057 (Y), 1.099 (Z), correct answer C. The DB's current question_en fabricated a different, fictional absolute-dollar table (Current assets/Inventories/Current liabilities) that was never in the source - the source uses a percentage-based common-size balance sheet. The correct_answer (C) and option labels (Company X/Y/Z) already matched the source and were left unchanged; only question_en and explanation_en were corrected to reflect the real source table and calculation method."
+ },
+ {
+  "id": "3aa4a8c4-ccff-4397-9864-d640920442fc",
+  "verdict": "no_source_found",
+  "results": [],
+  "evidence": "Searched both QB and Mock caches for this question (topic: working capital financing strategies) using many distinct anchor phrases from question_en, options, and explanation_en: 'reduces the need to access capital markets', 'opportunity to borrow only as needed', 'working capital needs most likely', 'long-term debt or equity', 'capital markets in times of stress', 'reduces the cost of financing working capital', 'conservative approach'+'working capital', 'financing working capital', 'aggressive'+'working capital', 'matching strategy', 'borrow only as needed', 'short-term financing', 'opportunity to borrow'. No matches of any kind in either cache. No plausible candidate to visually verify against; concluding the question is not present in these CFA_WEB QB/Mock source PDFs (or is too garbled in wording to leave any distinctive trace)."
+ },
+ {
+  "id": "41bde3c8-8b1e-478c-bc89-60053666c348",
+  "verdict": "no_source_found",
+  "results": [],
+  "evidence": "Searched both caches for this WACC problem using: 'market value of debt'+'150 million', 'Book value of debt', 'WACC' (22 generic hits reviewed, none matching this scenario), '6.16', '6.51', 'Cost of equity: 7', 'market value weights of the current capital structure', 'debt weight of 0.20', '600 million'+'150 million', '80 million'+'cost of debt'. No matches with the specific figures ($80M book debt, $150M market debt, $60 share price, 10M shares, 7% cost of equity, 4% cost of debt, 30% tax). Concluding not present in the source PDFs as searchable text/cache content."
+ },
+ {
+  "id": "4579fbb5-eff6-48cf-91b1-0bed33daf053",
+  "verdict": "no_source_found",
+  "results": [],
+  "evidence": "Searched both caches using: 'Net profit margin: 4', 'Return on average assets', '625,000', '2,500,000', 'total asset turnover is 4', 'financial leverage ratio is 4', 'average shareholders' (3 hits reviewed, none matching this DuPont-style scenario with net profit margin 4%/ROA 8%/ROE 16%/revenue €2,500,000). No matches found; concluding not present in the source PDFs."
+ },
+ {
+  "id": "468ebb6c-fd96-470e-b031-b65c7fd93021",
+  "verdict": "resolved",
+  "results": [],
+  "evidence": "QB file 'Portfolio, Quants.pdf' (D:\\CLAUDE\\Projet CFA\\CFA L1\\3. QB CFA WEB PAID-1000 MCQs\\), 'Question 14 of 90' (Quantitative Methods section). Rendered page_idx 58 (200dpi) shows: 'To test whether a population's mean, μ, is greater than zero, the alternative hypothesis should be formulated as: A. μ ≤ 0. B. μ ≥ 0. C. μ > 0.' -- identical wording and options to the DB's current question_en/option_a/b/c. Rendered page_idx 89 (Answer 14 of 90) confirms correct answer is C, with rationale: alternative hypothesis uses the 'suspected' condition (μ > 0), null hypothesis tested at the point of equality (θ = θ0). DB's current correct_answer (C) and explanation_en accurately paraphrase this; no discrepancy found. No changes made."
+ },
+ {
+  "id": "49f5abf1-0128-4c9f-8738-8f1d2034a0a1",
+  "verdict": "no_source_found",
+  "results": [],
+  "evidence": "Searched both caches using: 'receivables turnover ratio is equal to', 'cash conversion cycle is equal to', 'receivables turnover'+'payables turnover' (3 hits reviewed - a numeric CCC calculation question and an unrelated 'decrease in payables turnover' question, neither matching this DSO=DPO conceptual question), 'equal to its number of days of', 'cash conversion cycle'+'equal to its', 'days of inventory on hand'+'cash conversion' (2 hits reviewed, not matching), 'cancel out', 'number of days of'+'outstanding', 'receivables turnover ratio'+'payables turnover ratio'. No match found; concluding not present in the source PDFs."
+ },
+ {
+  "id": "5089373d-ba42-4191-a23a-c282a77ae8a0",
+  "verdict": "no_source_found",
+  "results": [],
+  "evidence": "Searched both caches using: 'purchases, at a premium', 'hold until maturity', 'measured on the balance sheet at', 'bonds that it expects to hold', 'amortized cost'+'premium', 'held to maturity' (1 hit reviewed, an unrelated realized-horizon-yield bond question), 'fair value.'+'historical cost.'+'amortized cost.', 'bonds that it expects', 'at a premium' (5 hits reviewed, none about held-to-maturity measurement basis), 'solely of principal and interest', 'IFRS'+'amortized cost'. No match found; concluding not present in the source PDFs."
+ },
+ {
+  "id": "5183c42a-3da5-4488-ba8b-5f3cb32412c8",
+  "verdict": "no_source_found",
+  "results": [],
+  "evidence": "Searched both caches using: 'start-up costs', 'tax base at the end of Year 1', 'fully amortized over five years', 'tax base' (7 hits reviewed - all generic deferred-tax-asset/liability conceptual questions, none matching this specific €10 million start-up cost scenario), '10 million'+'5', 'expensed for accounting', 'future economic benefits' (1 hit reviewed, an unrelated depreciation-rate deferred tax question). No match found; concluding not present in the source PDFs. (Note: this question is also mislabeled topic 'Derivatives' in the DB, which is itself a strong signal of data corruption, but no source page could be located to correct it against.)"
+ },
+ {
+  "id": "521bde85-dd69-4752-a8b2-b61d19dc4083",
+  "verdict": "resolved",
+  "results": [],
+  "evidence": "MOCK 4 SS1 ANS.pdf (D:\\CLAUDE\\Projet CFA\\CFA L1\\9. CFA WEB MOCKS-900 MCQs\\), 'Question 38 of 90'. Rendered page_idx 43 shows the data table (Net income $200,000, Tax rate 15%, Weighted average common shares outstanding 125,000, 12% bond convertible into 3,000 common shares $60,000) and question 'Given this information, the diluted EPS of the company is closest to:' with options A. $1.51 / B. $1.60 / C. $1.61 -- identical to DB's current question_en/options. Rendered page_idx 44 confirms correct answer B ($1.60): basic EPS = ($200,000-$0)/125,000 = $1.60; if-converted diluted EPS computes to $1.61 but since diluted EPS cannot exceed basic EPS by definition, reported diluted EPS = $1.60. DB's correct_answer (B) and explanation_en are accurate. No changes made."
+ },
+ {
+  "id": "53b85c4b-26ed-4013-8d63-097254fa9b4b",
+  "verdict": "no_source_found",
+  "results": [],
+  "evidence": "Searched both caches using: '9,200,000', '1,600,000'+'convertible', '6,000,000'+'4,000,000'+'10,000,000', 'reported diluted EPS is closest' (3 hits reviewed - none matching these figures), '0.93'+'0.98', 'Interest expense on convertible debt', 'shares issued on 31 March', 'shares outstanding on 1 January' (2 hits reviewed, unrelated stock-split EPS questions), 'convertible into 2,000,000' (1 hit: MOCK_6_SS1_ANS_2.json qnum 60, page_idx 65). This last hit was rendered and visually verified (MOCK 6 SS1 ANS (2).pdf, 'Question 60 of 90') but is a different question entirely: net income £45,000,000, preferred dividends £5,000,000, convertible bonds £40,000,000 at 10% interest, weighted average shares 12,000,000, tax rate 25%, options £2.93/£3.07/£3.43 (correct B, £3.07) -- only the coincidental phrase 'convertible into 2,000,000 common shares' matched; all underlying figures differ from the DB's question (which has a mid-year share issuance on 31 March and different net income/share counts). No genuine match found; concluding not present in the source PDFs."
+ }
+]

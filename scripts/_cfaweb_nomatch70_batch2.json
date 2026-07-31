@@ -1,0 +1,102 @@
+[
+ {
+  "id": "1288d8a3-8b10-4475-b09f-36e4ae3c1e14",
+  "topic": "Financial Statement Analysis",
+  "question_en": "An analyst gathers the following fiscal year information (in ¥ millions) for a company:\n\nCash flow from operating activities: 28,808\nPurchase of equipment: 1,300\nSale of equipment: 1,750\nLong-term debt repayment: 470\nIncrease in short-term borrowing: 930\n\nQ. FCFE is closest to:",
+  "option_a": "¥28,798 million.",
+  "option_b": "¥29,258 million.",
+  "option_c": "¥29,718 million.",
+  "correct_answer": "C",
+  "explanation_en": "FCFE = CFO − FCInv + net borrowing = 28,808 − (1,300 − 1,750) + (930 − 470) = 28,808 − (−450) + 460 = 29,718 million, representing the cash available to common stockholders after all operating expenses, investments, and debt payments."
+ },
+ {
+  "id": "1bbfa9e1-cc14-4b61-8aa4-5152bc4aad1d",
+  "topic": "Financial Statement Analysis",
+  "question_en": "An analyst has gathered the following balance sheet data for three companies:\n\n| Item | Company X | Company Y | Company Z |\n|------|-----------|-----------|----------|\n| Current assets | 3,090 | 3,114 | 3,198 |\n| Inventories | 1,000 | 1,000 | 1,000 |\n| Current liabilities | 2,000 | 2,000 | 2,000 |\n\nWhich company has the highest quick ratio?",
+  "option_a": "Company X",
+  "option_b": "Company Y",
+  "option_c": "Company Z",
+  "correct_answer": "C",
+  "explanation_en": "Quick ratio = (Current assets - Inventories) / Current liabilities. Company X: (3,090 - 1,000) / 2,000 = 1.045. Company Y: (3,114 - 1,000) / 2,000 = 1.057. Company Z: (3,198 - 1,000) / 2,000 = 1.099. Company Z has the highest quick ratio (1.099). The quick ratio measures a company's ability to meet short-term obligations using liquid assets (excluding inventories, which may not be quickly convertible to cash). Companies X and Y have progressively lower current assets, resulting in lower quick ratios."
+ },
+ {
+  "id": "1c9bfea3-a7de-4a80-a8d1-d34b4cf89371",
+  "topic": "Financial Statement Analysis",
+  "question_en": "Which of the following statements about the effect of an inventory write-down on financial ratios is correct?",
+  "option_a": "Payables turnover ratio",
+  "option_b": "Current ratio",
+  "option_c": "Payables turnover ratio",
+  "correct_answer": "B",
+  "explanation_en": "The current ratio decreases as a result of an inventory write-down because inventory is a current asset, and the write-down reduces both current assets and the current ratio, while payables turnover would either increase or remain unchanged depending on how the write-down expense is recognized."
+ },
+ {
+  "id": "1cad2440-02a2-425e-b5f4-bf2915ae2291",
+  "topic": "Financial Statement Analysis",
+  "question_en": "An analyst gathers the following information for a company's fiscal year beginning 1 January:\n\nNet income: €9,200,000\nInterest expense on convertible debt: €1,600,000\nCommon shares outstanding on 1 January: 6,000,000\nCommon shares issued on 31 March: 4,000,000\nCommon shares outstanding on 31 December: 10,000,000\nIncome tax rate: 35%\n\nIf the convertible debt was outstanding for the entire year and is convertible into 2,000,000 common shares, reported diluted EPS is closest to:",
+  "option_a": "€0.93",
+  "option_b": "€0.98",
+  "option_c": "€1.02",
+  "correct_answer": "A",
+  "explanation_en": "Diluted EPS adjusts net income by adding back the after-tax interest expense on convertible debt (€1,600,000 × (1 - 0.35) = €1,040,000) and increases the denominator by the shares from conversion (2,000,000), plus a weighted average calculation of the new shares issued in March (4,000,000 × 10/12 months), resulting in approximately €0.93 per share."
+ },
+ {
+  "id": "2550391a-0c9d-4209-8bec-524664e5f9e5",
+  "topic": "Economics",
+  "question_en": "If a company raises its prices to consumers, which of the following is most likely to result in an increase in total revenue of the company?",
+  "option_a": "The company's products are price elastic",
+  "option_b": "The company is in a competitive industry",
+  "option_c": "The company has a fragmented consumer base",
+  "correct_answer": "C",
+  "explanation_en": "In a fragmented consumer base, consumers have less bargaining power, making it easier for companies to pass on higher costs to consumers without significant volume loss, thus increasing total revenue."
+ },
+ {
+  "id": "29211fb9-2670-464b-b885-918cc728b688",
+  "topic": "Derivatives",
+  "question_en": "In monopolistic competition, the level of output that minimizes average cost is:",
+  "option_a": "less than the actual level of output in the long run.",
+  "option_b": "equal to the actual level of output in the long run.",
+  "option_c": "greater than the actual level of output in the long run.",
+  "correct_answer": "C",
+  "explanation_en": "In monopolistic competition, firms in long-run equilibrium operate at a point where average cost is higher than its minimum because they produce less output than the level that minimizes average cost, resulting in excess capacity."
+ },
+ {
+  "id": "2f171f46-1092-4507-8cd3-5ef491f65fb9",
+  "topic": "Ethics & Professional Standards",
+  "question_en": "An analyst is reviewing the property, plant, and equipment disclosure related to a company's warehouse. Under the revaluation model, the analyst would least likely be able to determine:",
+  "option_a": "the original date of acquisition.",
+  "option_b": "how the fair value was obtained.",
+  "option_c": "the carrying amount under the cost model.",
+  "correct_answer": "A",
+  "explanation_en": "IFRS does not require disclosure of the original date of acquisition under the revaluation model, making it the item the analyst would least likely be able to determine."
+ },
+ {
+  "id": "313768c4-8cc9-4c47-982e-6a9c065aa892",
+  "topic": "Derivatives",
+  "question_en": "Which of the following changes to compensation packages would most likely result in management becoming more risk averse in its corporate decision making?",
+  "option_a": "Decreasing the length of management tenure",
+  "option_b": "Eliminating stock grants and options from management compensation",
+  "option_c": "Tying management compensation to the size of the company's business",
+  "correct_answer": "B",
+  "explanation_en": "Eliminating stock grants and options removes equity-based incentives that tie management compensation to upside share price movements, causing managers without meaningful equity stake to become more risk averse in protecting their positions and long-term engagement with the company."
+ },
+ {
+  "id": "33583437-2b09-4a68-8d54-4ef4969bfdea",
+  "topic": "Quantitative Methods",
+  "question_en": "If the covariance between two positively correlated random variables remains the samebut the variance of both variables increases, the correlation between the two variables:",
+  "option_a": "decreases.",
+  "option_b": "stays the same.",
+  "option_c": "increases.",
+  "correct_answer": "A",
+  "explanation_en": "The correlation between two random variables is defined as ρ(Ri,Rj) = Cov(Ri,Rj)/[σ(Ri)σ(Rj)], where the standard deviation appears in the denominator, so an increase in variance (hence standard deviation) of either variable will decrease the correlation."
+ },
+ {
+  "id": "3365c437-bcab-45ac-a001-165f196766c3",
+  "topic": "Ethics & Professional Standards",
+  "question_en": "Private contracts, such as bank loan agreements, are most likely to provide an effective disciplinary mechanism to ensure high financial reporting quality because:",
+  "option_a": "lenders monitor managers and pay close attention to the firm's financial reports.",
+  "option_b": "loan covenants require the firm to meet specific financial ratios in order to renew the loan.",
+  "option_c": "loan covenants may allow the lender to recover all or part of their investment if certain financial conditions are triggered.",
+  "correct_answer": "A",
+  "explanation_en": "The monitoring role of lenders is most likely to ensure high-quality financial reports because lenders inspect financial reports carefully to ensure they are not manipulated, whereas meeting specific ratios may actually motivate manipulation and avoiding financial triggers may also motivate manipulation."
+ }
+]

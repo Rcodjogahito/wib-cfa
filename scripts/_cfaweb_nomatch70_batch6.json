@@ -1,0 +1,102 @@
+[
+ {
+  "id": "ab173c02-4bee-45ee-812e-d4d9fa5d5a43",
+  "topic": "Alternative Investments",
+  "question_en": "An investor invests $100 million in a hedge fund. The fund grows to $112 million. The fund charges a 1% management fee on assets under management and a 10% incentive fee on returns net of management fees. What is the investor's net return?",
+  "option_a": "9.68%",
+  "option_b": "9.79%",
+  "option_c": "10.88%",
+  "correct_answer": "B",
+  "explanation_en": "The correct answer properly calculates the incentive fee as 10% of returns net of the management fee ($1.088 million), resulting in a fund value of $109.792 million and a net investor return of 9.79%, whereas option A incorrectly treats the incentive fee as a flat 10% of the initial fund value, and option C ignores the incentive fee entirely."
+ },
+ {
+  "id": "ada0914b-40e8-48fd-8fd8-451b84bc3762",
+  "topic": "Quantitative Methods",
+  "question_en": "An analyst gathers the following information about a portfolio's returns:\n\n- **Year 1:** 6%,\n- **Year 2:** 7%,\n- **Year 3:** 3%,\n- **Year 4:** 2%,\n- **Year 5:** 4%.\n\nIf the target return is 5%, the target downside deviation is closest to:",
+  "option_a": "1.7%.",
+  "option_b": "1.9%.",
+  "option_c": "2.2%.",
+  "correct_answer": "B",
+  "explanation_en": "The formula for target downside deviation is [Σ(Xi - B)²/(n - 1)]^(1/2), where X is the return for the period, B is the target return and n is the total number of sample observations, and the summation is taken over only those observations (Xi) that are less than or equal to the target B."
+ },
+ {
+  "id": "b049ba07-e97e-474e-97f3-5b0c59239616",
+  "topic": "Quantitative Methods",
+  "question_en": "An investment consists of a payment of $10,000 today (t = 0) and an ordinary annuity of $10,000 per year for 9 years, where the first payment occurs one year from today. What is the present value of this investment at a 6% discount rate?",
+  "option_a": "$73,600.87",
+  "option_b": "$78,106.92",
+  "option_c": "$78,016.92",
+  "correct_answer": "C",
+  "explanation_en": "The correct answer separates the investment into two components: an immediate $10,000 payment at t=0 and a 9-payment ordinary annuity of $10,000, which when combined using the present value formula for ordinary annuities yields $78,016.92 (or approximately $78,017)."
+ },
+ {
+  "id": "bc239378-7ad9-4ea8-99b9-77053157f4d5",
+  "topic": "Ethics & Professional Standards",
+  "question_en": "In the capital allocation process, companies should:",
+  "option_a": "assume no new competition in the marketplace.",
+  "option_b": "incorporate sunk costs in the investment analysis.",
+  "option_c": "ignore the impact of an investment on short-term accounting numbers.",
+  "correct_answer": "C",
+  "explanation_en": "NPV should be used to evaluate projects instead of short-term accounting numbers; investments with strong NPVs may not increase short-term EPS or ROE, and focusing too much on short-term accounting metrics can lead to suboptimal long-run decisions for shareholders."
+ },
+ {
+  "id": "c10b775c-8d6f-4185-8132-f68661cfb198",
+  "topic": "Ethics & Professional Standards",
+  "question_en": "According to the CFA Institute Code of Ethics and Standards of Professional Conduct, which of the following statements best describes the conduct requirements regarding reference to CFA Institute, the CFA designation, and the CFA program?",
+  "option_a": "conduct as participants in CFA Institute programs and reference to CFA Institute, the CFA designation, and the CFA program only",
+  "option_b": "both conduct as participants in CFA Institute programs and reference to CFA Institute, the CFA designation, and the CFA program",
+  "option_c": "reference to CFA Institute, the CFA designation, and the CFA program only",
+  "correct_answer": "A",
+  "explanation_en": "Standard VII(A) is violated when candidates sitting for an exam disclose information about exam content such as the absence of calculation questions on derivatives, while Standard VII(B) is not violated because Shah did not misrepresent or exaggerate the meaning of CFA Institute membership or designation."
+ },
+ {
+  "id": "c675f2d2-f449-46c4-9fc6-42728ebe2a4c",
+  "topic": "Ethics & Professional Standards",
+  "question_en": "A company has convertible debt outstanding. During a 12-month period, the company had net income of €9,200,000 and 9,000,000 weighted average shares outstanding. The convertible debt has a face value of €1,500,000 and pays interest at 7,500,000 annually. If converted, an additional 2,000,000 common shares would be issued. Which statement regarding the diluted earnings per share is correct?",
+  "option_a": "The reported diluted EPS is €0.93 because the convertible debt is anti-dilutive.",
+  "option_b": "The reported diluted EPS is €0.98 because the tax effect on the interest on the convertible debt is neglected in the calculation.",
+  "option_c": "The reported diluted EPS is €1.024 ≈ €1.02 because it incorrectly calculates average shares outstanding.",
+  "correct_answer": "A",
+  "explanation_en": "The diluted EPS of €0.93 is lower than basic EPS of €1.02, making the convertible debt anti-dilutive, so the diluted EPS reported equals the basic EPS of €0.93."
+ },
+ {
+  "id": "cac89c28-f13f-40f2-a728-a72778ceb412",
+  "topic": "Corporate Issuers",
+  "question_en": "This question is not fully visible in the provided image. The page shows only the solution section for Question 17 of 90, displaying three answer options (A, B, C) with explanations, but the original question stem is not included in the visible portion of the page.",
+  "option_a": "Correct. In float-adjusted market-capitalization weighting, the weight on each constituent security is determined by adjusting its market capitalization for its market float. As the following computations show, the ending value of the index equals 102.06 (322,500/316,000).",
+  "option_b": "Incorrect. It ignores the float and simply computes the index on the basis of market-capitalization weighting.",
+  "option_c": "Incorrect. It does make adjustment for the market float but makes the mistake of including dividends in the ending",
+  "correct_answer": "A",
+  "explanation_en": "The correct answer explains that float-adjusted market-capitalization weighting properly adjusts each security's market capitalization by its market float to determine index weights, resulting in the correct ending index value of 102.06."
+ },
+ {
+  "id": "cef8177e-9fd8-482f-94cc-27b6e782995b",
+  "topic": "Economics",
+  "question_en": "Which of the following factors is most likely to lead to economies of scale?",
+  "option_a": "Supply constraints",
+  "option_b": "Duplication of product lines",
+  "option_c": "Specialization by workers",
+  "correct_answer": "C",
+  "explanation_en": "Specialization by workers can increase their proficiency, leading to lower average costs when the firm is large enough to allow specialization."
+ },
+ {
+  "id": "cfbdf566-08bf-48f3-8ed3-7fe992efacf4",
+  "topic": "Ethics & Professional Standards",
+  "question_en": "Based on the given annual returns data with a 4% target, what is the target semideviation?",
+  "option_a": "Incorrect because it wrongly uses n, not n - 1, as denominator in calculating the target semideviation. Hence, target semideviation = sqrt(0.00374) = 0.0304 ≈ 3.0%.",
+  "option_b": "Correct because the target downside deviation, also referred to as the target semideviation, is a measure of dispersion of the observations (here, returns) below the target. The target semideviation, s_target, is: s_target = sqrt[Σ_for all X_i>B^# (X_i - B)^2 / (n - 1)].",
+  "option_c": "Incorrect because it is the standard deviation, not the target semideviation. The mean is (5% + (−2%) + 3% + 8%)/4 = 3.5%. The standard deviation is sqrt[(5% − 3.5%)^2 + (−2% − 3.5%)^2 + (3% − 3.5%)^2 + (8% − 3.5%)^2]/3) = sqrt(0.0053/3) = 0.0420 ≈ 4.2%.",
+  "correct_answer": "B",
+  "explanation_en": "The target semideviation measures downside dispersion below a target return, using only negative deviations and dividing by (n-1), yielding 3.5%."
+ },
+ {
+  "id": "d407cdea-1114-495e-bdce-b04016308e19",
+  "topic": "Ethics & Professional Standards",
+  "question_en": "An analyst forecasts different outcomes for a company next year: Sales (in € millions) of 280, 350, or 400; EBITDA margin (%) of 10, 18, or 25; and Debt to capital (%) of 75, 60, or 55. This forecast table is best described as:",
+  "option_a": "scenario analysis.",
+  "option_b": "sensitivity analysis.",
+  "option_c": "point estimate forecast.",
+  "correct_answer": "A",
+  "explanation_en": "Scenario analysis involves incorporating the possibility of different outcomes based on key risk factors and judging their likelihood of occurrence, which is exactly what this forecast table does by presenting three distinct scenarios (Bear, Base, and Bull cases) with varying values across multiple metrics."
+ }
+]

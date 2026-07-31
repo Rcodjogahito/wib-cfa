@@ -1,0 +1,82 @@
+[
+ {
+  "id": "01022c88-0a1b-48cc-991d-48cd3c54243a",
+  "verdict": "no_source_found",
+  "results": [],
+  "evidence": "Searched both caches (_cache_cfaweb_qb and _cache_cfaweb_mocks) for 'lognormal', 'lognormally distributed', 'random variable Y', 'Y = exp', 'exp(X)', 'usefully accurate', 'financial assets', 'skewed to the left', 'many financial', 'prices for many' — no entry combines a Y=exp(X) lognormal-distribution stem with 'used to model stock prices' / 'mean equal to exp(mu)' options. The only 'lognormal distribution' question found is QB Portfolio,_Quants.pdf page_idx=76 (rendered and visually confirmed, 'Question 74 of 90'): 'The lognormal distribution: A. is unbounded. B. is asymmetrical. C. has the same mean as that of its associated normal distribution.' — a completely different question (different stem and options) from the DB's Y=exp(X) question. No plausible source page found in either QB or the 12 available Mock ANS caches after multiple keyword angles; concluding the question is not present in these source PDFs."
+ },
+ {
+  "id": "0113d208-ab23-4dd1-9d00-1d90df95d5c4",
+  "verdict": "no_source_found",
+  "results": [],
+  "evidence": "Searched for 'Herfindahl', 'new entrants into an industry', 'possibility of new entrants', 'neither the concentration ratio', 'considered in the calculation', and combos of 'concentration ratio'+'entrant'. Found three related-but-distinct HHI/concentration-ratio questions in QB AI,_Corporate,_Deriv,_Eco.pdf (page_idx 129/164, n=76: 'The Herfindahl-Hirschman index is calculated based on:' with options market shares/elasticity/probability of new entry, correct A) and in MOCK_3_SS1_ANS.json page_idx=99 (qnum 85: 'HHI is more responsive than the concentration ratio to:' options elasticity/potential entrants/mergers, correct C) — visually confirmed page_idx 129 and 164 of AI,_Corporate,_Deriv,_Eco.pdf. None of these match the DB's exact stem ('The possibility of new entrants...is considered in the calculation of:' with options concentration ratio / HHI / neither) or its 3-option structure. Also note: the DB's own correct_answer (A = 'the concentration ratio') internally contradicts its own explanation_en, which states neither index accounts for new entrants (implying C, 'neither', should be correct) — a self-inconsistent DB row, but no source page was found to resolve which (if either) is right, so left as no_source_found rather than guessing."
+ },
+ {
+  "id": "0184f130-5fa4-4566-80c8-9d87f53a122e",
+  "verdict": "resolved",
+  "results": [
+   {"field": "question_en", "new_value": "An investor gathers the following information about a company:\n\n| | |\n|---|---|\n| Current dividend per share | $3 |\n| Historical annual dividend growth rate | 4% |\n| Expected annual dividend growth rate for the next three years | 8% |\n| Expected stock value per share at the end of Year 3 | $33 |\n\nIf the investors' required rate of return is 15%, the current estimate of the intrinsic value per share is closest to:"},
+   {"field": "option_a", "new_value": "$28.36."},
+   {"field": "option_b", "new_value": "$29.08."},
+   {"field": "option_c", "new_value": "$29.65."},
+   {"field": "explanation_en", "new_value": "Option C is correct because it applies the two-stage dividend discount model using the analyst's forecasted growth rate of 8% for the next three years and discounts each dividend plus the Year 3 terminal stock price of $33 back to the present at the 15% required return: V0 = $3×(1.08)/(1.15) + $3×(1.08)²/(1.15)² + $3×(1.08)³/(1.15)³ + $33/(1.15)³ = $2.82 + $2.65 + $2.48 + $21.70 = $29.65. Option A incorrectly applies the constant (Gordon) growth model with the historical growth rate of 4%: V0 = $3×(1.04)/(0.15-0.04) = $28.36. Option B uses the historical growth rate of 4% instead of the forecasted 8% within the two-stage model: V0 = $2.71 + $2.45 + $2.22 + $21.70 = $29.08."}
+  ],
+  "evidence": "MOCK_3_SS2_ANS.json qnum 54 (page_idx 63-64), source file 'MOCK 3 SS2 ANS.pdf' pages 63-64 (0-indexed), rendered with fitz at 200dpi and visually confirmed. The DB's question_en was a generic paraphrase missing the entire data table (current dividend $3, historical growth 4%, forecast growth 8%, Year-3 price $33, required return 15%); option_a/b/c had explanation text bled into the option values instead of clean dollar figures. correct_answer 'C' was already correct and unchanged."
+ },
+ {
+  "id": "038c536e-e02d-4941-8bbf-32fbccdd3cf9",
+  "verdict": "resolved",
+  "results": [
+   {"field": "question_en", "new_value": "At which stage in its life cycle would a typical company most likely have more debt than equity in its capital structure?"},
+   {"field": "option_a", "new_value": "Start-up stage"},
+   {"field": "option_b", "new_value": "Growth stage"},
+   {"field": "option_c", "new_value": "Mature stage"}
+  ],
+  "evidence": "QB AI,_Corporate,_Deriv,_Eco.pdf, question page_idx=41 (n=18, 'Question 18 of 67'): 'At which stage in its life cycle would a typical company most likely have more debt than equity in its capital structure? A. Start-up stage B. Growth stage C. Mature stage'; answer page_idx=55: 'C. Correct because at the mature stage, the company becomes able to support low-cost debt, often on an unsecured basis...' Both pages rendered and visually confirmed. DB's question_en was a paraphrase ('Debt as a proportion of total capital is most likely greatest...') that changes the tested concept from 'more debt than equity' to 'greatest proportion of total capital'; corrected to the verbatim source wording and exact option labels. correct_answer 'C' and explanation_en (already an accurate paraphrase of the source's answer C rationale, no factual errors) left unchanged."
+ },
+ {
+  "id": "07d69b67-d81b-4264-acd8-a51f7ca7ee97",
+  "verdict": "no_source_found",
+  "results": [],
+  "evidence": "Searched for 'oversee the payments system', 'central bank is least likely', 'payments system', 'foreign currency reserves', 'implement fiscal policy', and 'fiscal policy'+'payments', plus 'central bank'+'least likely'. Found only unrelated central-bank questions: QB AI,_Corporate,_Deriv,_Eco.json page_idx=128 ('To be effective in targeting inflation a central bank is least likely to need: government oversight / transparency / credibility'), MOCK_2_SS1_ANS_1.json page_idx=56 ('One of the key roles played by central banks is: regulating the payments system / ...'), and MOCK_3_SS1_ANS.json page_idx=69 ('A central bank most likely: ...does not manage a country's foreign currency reserves.'). None matches the DB's exact 3-option combination (implement fiscal policy / oversee payments system / manage foreign currency reserves). No plausible source page found after multiple keyword searches."
+ },
+ {
+  "id": "08b4f246-671c-4fdc-bc34-755f22de6819",
+  "verdict": "resolved",
+  "results": [
+   {"field": "question_en", "new_value": "A market index has the following information:\n\n| Period | Quarterly Price Returns (%) | Dividend Income (%) | Value of Index |\n|---|---|---|---|\n| At the beginning of the year | --- | --- | 1,000.00 (Base) |\n| Quarter 1 | 3.0% | 1.5% | --- |\n| Quarter 2 | 2.0% | --- | --- |\n| Quarter 3 | −5.0% | --- | --- |\n\nBy the end of Quarter 3, which of the following statements is most accurate?"},
+   {"field": "option_a", "new_value": "The price return is 1.26%."},
+   {"field": "option_b", "new_value": "The value of the price return index is 998.1."},
+   {"field": "option_c", "new_value": "The value of the total return index is below 1,000."},
+   {"field": "correct_answer", "new_value": "B"},
+   {"field": "explanation_en", "new_value": "B is correct. The value of the price return index at the end of Q3 is found by geometrically linking the quarterly price returns: V(PRI,T) = V(PRI,0) × (1 + PR1)(1 + PR2)(1 + PR3) = 1,000 × (1.03)(1.02)(0.95) = 998.07 ≈ 998.1. A is incorrect because by the end of Q3 the total return is 1.26% while the price return is actually (0.2%), the reverse of what the statement implies. C is incorrect because the value of the total return index at the end of Q3, V(TRI,T) = V(TRI,0) × (1 + TR1)(1 + TR2)(1 + TR3) = 1,000 × (1.045)(1.02)(0.95) = 1,012.61, is above 1,000, not below it."}
+  ],
+  "evidence": "MOCK_3_SS2_ANS.json qnum 43 (page_idx 49-51), source file 'MOCK 3 SS2 ANS.pdf' pages 49-51 (0-indexed), rendered with fitz at 200dpi and visually confirmed. Source Q43 ('A market index has the following information...By the end of Quarter 3, which of the following statements is most accurate?') has options A: price return is 1.26%, B: price return index value is 998.1 (CORRECT), C: total return index value is below 1,000 (incorrect — it's actually 1,012.61, above 1,000). The DB's current row had a fabricated/garbled question stem, options that didn't match any of the three real options (option_a talked about a '1,045.00' total-return figure that appears nowhere as an answer choice; option_b conflated the total-return index label with the price-return index's 998.07 value), and crucially had correct_answer='C' when the source's actual correct answer is B. This was the most significant discrepancy found in this batch: a wrong correct-answer letter plus corrupted options and stem."
+ },
+ {
+  "id": "0cd5bce1-b0a4-4539-a6c5-392918bc17b0",
+  "verdict": "no_source_found",
+  "results": [],
+  "evidence": "Searched for 'unaudited', 'Unaudited financial statements', 'proxy statement', 'interim reports', 'condensed notes', 'annual report' across both caches. Only one 'unaudited' hit (MOCK_2_SS1_ANS_1.json page_idx=60, qnum 50: 'An audit disclaimer of opinion is most likely issued when: ...management commentary is unaudited...') — an unrelated question about audit disclaimers, not about which report type contains unaudited statements. No entry mentions annual report / quarterly report / proxy statement as answer choices together. No plausible source page found."
+ },
+ {
+  "id": "0dd9a2cb-6741-40d0-a248-a7997a66c71f",
+  "verdict": "no_source_found",
+  "results": [],
+  "evidence": "Searched for the DB's distinctive numbers and terms: '9,200,000', '20,000,000', '9,000,000', '1,600,000', '10,800,000', '8,000,000', 'anti-dilutive', '€0.98', '€1.02' (found only in an unrelated preferred-share EPS question, Fixed_income,_FSA.json page_idx=87 n=121), and 'convertible debt' generally (4 hits, all different scenarios/numbers: QB Fixed_income,_FSA n=72 conceptual question; MOCK_2_SS1_ANS_1 qnum 86 simple-vs-complex capital structure question; MOCK_4_SS1_ANS qnum 38 with $200,000 net income / 125,000 shares / $60,000 interest, diluted EPS $1.60; MOCK_6_SS1_ANS_2 qnum 60 with a €2,000,000-share conversion but different net income/EPS figures). None matches the DB's specific facts (€9,200,000 net income, 9,000,000 weighted shares, 5% coupon on €20,000,000 principal, 25% tax, 2,000,000 convertible shares, €0.93 diluted EPS anti-dilutive). No plausible source page found after extensive numeric-anchor searching."
+ },
+ {
+  "id": "0f69b596-3f5d-442a-bdca-a2c13953202a",
+  "verdict": "resolved",
+  "results": [],
+  "evidence": "QB Portfolio,_Quants.pdf, question page_idx=57 (n=7, 'Question 7 of 90'): 'A company estimates its revenue will be 50% higher than today in four years' time. The compound annual growth rate is closest to: A. 10.7%. B. 11.8%. C. 12.5%.'; answer page_idx=83 (n=7, correct='A'): 'A. Correct because a growth rate (g) is calculated as g = (FVN/PV)^(1/N) - 1... g = (1.5/1)^(1/4) - 1 = 0.10668 ≈ 10.7%.' Both pages rendered and visually confirmed. The DB's question_en, option_a/b/c, correct_answer ('A'), and explanation_en all match the source exactly, word-for-word and number-for-number. Nothing to fix."
+ },
+ {
+  "id": "1280e5be-ca9a-4a0e-a957-78e3d936cb01",
+  "verdict": "resolved",
+  "results": [
+   {"field": "question_en", "new_value": "An analyst forecasts different outcomes for a company next year:\n\n| | Bear Case | Base Case | Bull Case |\n|---|---|---|---|\n| Sales (in € millions) | 280 | 350 | 400 |\n| EBITDA margin (%) | 10 | 18 | 25 |\n| Debt to capital (%) | 75 | 60 | 55 |\n\nThis forecast table is best described as:"}
+  ],
+  "evidence": "MOCK_4_SS2_ANS.json qnum 11 (page_idx 10), source file 'MOCK 4 SS2 ANS.pdf' page 10 (0-indexed, 'Question 11 of 90'), rendered with fitz at 200dpi and visually confirmed: table with rows Sales (in € millions) 280/350/400, EBITDA margin (%) 10/18/25, Debt to capital (%) 75/60/55 for Bear/Base/Bull Case columns, options 'scenario analysis.' / 'sensitivity analysis.' / 'point estimate forecast.', correct A. All of the DB's option_a/b/c, correct_answer ('A'), and explanation_en already match the source content correctly — only the question_en table was stored as a non-standard bracketed description instead of a proper markdown table, so it was reformatted to a GitHub-flavored markdown table with the exact source numbers/labels."
+ }
+]

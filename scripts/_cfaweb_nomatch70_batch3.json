@@ -1,0 +1,102 @@
+[
+ {
+  "id": "35c98f66-a0ea-4645-a751-aad491ebf1ba",
+  "topic": "Financial Statement Analysis",
+  "question_en": "An analyst has gathered the following balance sheet data for three companies:\n\n| Item | Company X | Company Y | Company Z |\n|------|-----------|-----------|----------|\n| Current assets | 3,090 | 3,114 | 3,198 |\n| Inventories | 1,000 | 1,000 | 1,000 |\n| Current liabilities | 2,000 | 2,000 | 2,000 |\n\nWhich company has the highest quick ratio?",
+  "option_a": "Company X",
+  "option_b": "Company Y",
+  "option_c": "Company Z",
+  "correct_answer": "C",
+  "explanation_en": "Quick ratio = (Current assets - Inventories) / Current liabilities. Company X: (3,090 - 1,000) / 2,000 = 1.045. Company Y: (3,114 - 1,000) / 2,000 = 1.057. Company Z: (3,198 - 1,000) / 2,000 = 1.099. Company Z has the highest quick ratio (1.099), indicating superior short-term liquidity after excluding inventories. Options A and B are incorrect because Companies X and Y have lower current assets, resulting in lower quick ratios."
+ },
+ {
+  "id": "3aa4a8c4-ccff-4397-9864-d640920442fc",
+  "topic": "Ethics & Professional Standards",
+  "question_en": "Using long-term debt or equity to finance working capital needs most likely:",
+  "option_a": "reduces the cost of financing working capital.",
+  "option_b": "provides the opportunity to borrow only as needed.",
+  "option_c": "reduces the need to access capital markets in times of stress.",
+  "correct_answer": "C",
+  "explanation_en": "A conservative approach to working capital management using long-term debt and equity reduces reliance on short-term financing and thus decreases the need to access capital markets during periods of market stress."
+ },
+ {
+  "id": "41bde3c8-8b1e-478c-bc89-60053666c348",
+  "topic": "Corporate Issuers",
+  "question_en": "An analyst gathers the following information about a company:\n\n- Book value of debt: $80 million\n- Market value of debt: $150 million\n- Share price: $60\n- Shares outstanding: 10 million\n- Cost of equity: 7%\n- Cost of debt: 4%\n- Tax rate: 30%\n\nBased on this information, the company's WACC is closest to:",
+  "option_a": "6.16%.",
+  "option_b": "6.40%.",
+  "option_c": "6.51%.",
+  "correct_answer": "A",
+  "explanation_en": "The correct answer uses market value weights of the current capital structure (debt weight of 0.20 and equity weight of 0.80) to calculate WACC, with the market value of equity calculated as $60 × 10 million = $600 million."
+ },
+ {
+  "id": "4579fbb5-eff6-48cf-91b1-0bed33daf053",
+  "topic": "Corporate Issuers",
+  "question_en": "An analyst collects the following information about a company:\n\n- Net profit margin: 4%\n- Return on average assets: 8%\n- Return on average equity: 16%\n- Revenue: €2,500,000\n\nThe company's:",
+  "option_a": "total asset turnover is 4.",
+  "option_b": "financial leverage ratio is 4.",
+  "option_c": "average shareholders' equity is €625,000.",
+  "correct_answer": "C",
+  "explanation_en": "The company had net profit of €100,000 (€2,500,000 × 4%), and using the formula Return on equity = Net profit ÷ Average shareholders' equity, average shareholders' equity = €100,000 ÷ 16% = €625,000."
+ },
+ {
+  "id": "468ebb6c-fd96-470e-b031-b65c7fd93021",
+  "topic": "Quantitative Methods",
+  "question_en": "To test whether a population's mean, μ, is greater than zero, the alternative hypothesis should be formulated as:",
+  "option_a": "μ ≤ 0.",
+  "option_b": "μ ≥ 0.",
+  "option_c": "μ > 0.",
+  "correct_answer": "C",
+  "explanation_en": "The null hypothesis is tested at the point of equality (θ = θ₀), and the alternative hypothesis represents the suspected condition that the population's mean is greater than zero (μ > 0)."
+ },
+ {
+  "id": "49f5abf1-0128-4c9f-8738-8f1d2034a0a1",
+  "topic": "Financial Statement Analysis",
+  "question_en": "If a company's receivables turnover ratio is equal to its payables turnover ratio, the company's cash conversion cycle is equal to its number of days of:",
+  "option_a": "payables.",
+  "option_b": "sales outstanding.",
+  "option_c": "inventory on hand.",
+  "correct_answer": "C",
+  "explanation_en": "When receivables turnover equals payables turnover (DSO = DPO), the cash conversion cycle equals DOH + DSO - DPO, which simplifies to DOH (days of inventory on hand) since DSO and DPO cancel out."
+ },
+ {
+  "id": "5089373d-ba42-4191-a23a-c282a77ae8a0",
+  "topic": "Financial Statement Analysis",
+  "question_en": "If a company purchases, at a premium, bonds that it expects to hold until maturity, they are most likely measured on the balance sheet at:",
+  "option_a": "fair value.",
+  "option_b": "historical cost.",
+  "option_c": "amortized cost.",
+  "correct_answer": "A",
+  "explanation_en": "Under IFRS, financial assets held to maturity with cash flows consisting solely of principal and interest are subsequently measured at amortized cost, not fair value or historical cost."
+ },
+ {
+  "id": "5183c42a-3da5-4488-ba8b-5f3cb32412c8",
+  "topic": "Derivatives",
+  "question_en": "A company spends €10 million on start-up costs that are expensed for accounting purposes and fully amortized over five years using the straight-line method for tax purposes. If the start-up costs will result in future economic benefits, the tax base at the end of Year 1 is:",
+  "option_a": "€0 million.",
+  "option_b": "€8 million.",
+  "option_c": "€10 million.",
+  "correct_answer": "B",
+  "explanation_en": "Using the straight-line method, the company deducts 1/5 of the €10 million cost for taxes in Year 1 (€10 / 5 = €2), leaving a tax base of €10 - €2 = €8 million, which represents the amount at which the asset is valued for tax purposes, distinct from the carrying amount of €0 used for financial reporting."
+ },
+ {
+  "id": "521bde85-dd69-4752-a8b2-b61d19dc4083",
+  "topic": "Fixed Income",
+  "question_en": "Selected year-end financial data for a company is as follows:\n\nNet income: $200,000\nTax rate: 15%\nWeighted average number of common shares outstanding: 125,000\n12% bond convertible into 3,000 common shares (potentially dilutive): $60,000\n\nGiven this information, the diluted EPS of the company is closest to:",
+  "option_a": "$1.51",
+  "option_b": "$1.60",
+  "option_c": "$1.61",
+  "correct_answer": "B",
+  "explanation_en": "The correct diluted EPS is $1.60, calculated by first determining basic EPS and then adjusting for the dilutive effect of the convertible bond using the if-converted method, properly accounting for the after-tax interest benefit of the convertible debt."
+ },
+ {
+  "id": "53b85c4b-26ed-4013-8d63-097254fa9b4b",
+  "topic": "Ethics & Professional Standards",
+  "question_en": "An analyst gathers the following information for a company's fiscal year beginning 1 January:\n\n- Net income: €9,200,000\n- Interest expense on convertible debt: €1,600,000\n- Common shares outstanding on 1 January: 6,000,000\n- Common shares issued on 31 March: 4,000,000\n- Common shares outstanding on 31 December: 10,000,000\n- Income tax rate: 35%\n\nIf the convertible debt was outstanding for the entire year and is convertible into 2,000,000 common shares, reported diluted EPS is closest to:",
+  "option_a": "€0.93",
+  "option_b": "€0.98",
+  "option_c": "€1.02",
+  "correct_answer": "A",
+  "explanation_en": "Diluted EPS adjusts net income by adding back after-tax interest expense on convertible debt and increases the denominator by the shares that would be issued upon conversion, calculated as (€9,200,000 + €1,600,000 × (1 - 0.35)) ÷ (weighted average shares + 2,000,000 conversion shares)."
+ }
+]

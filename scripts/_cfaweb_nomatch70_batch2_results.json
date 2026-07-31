@@ -1,0 +1,80 @@
+[
+ {
+  "id": "1288d8a3-8b10-4475-b09f-36e4ae3c1e14",
+  "verdict": "no_source_found",
+  "results": [],
+  "evidence": "Searched both caches extensively for the FCFE (yen millions) numeric problem: exact figures '28,808', '29,718', '1,750', '1,300', '930', '470' (all 0 hits); phrases 'short-term borrowing', 'debt repayment', 'Purchase of equipment', 'Sale of equipment', 'yen', 'million'+CFO/operating-activities context. The only FCFE-related hits in the corpus are a purely conceptual (non-numeric) FCFE definition MCQ at QB Equity,_Ethics.json n=61 (page_idx 15/52: 'FCFE = CFO - FCInv + Net borrowing') and unrelated numeric FCFF/FCFE problems in Fixed_income,_FSA.json (n=44, thousands not millions, different figures) and MOCK_6_SS1_ANS_2 (EUR millions, different figures/answer). None match the DB's yen-denominated data set. No plausible source page located in either QB or Mock PDFs after multi-angle search; concluding the question is not present in this source material."
+ },
+ {
+  "id": "1bbfa9e1-cc14-4b61-8aa4-5152bc4aad1d",
+  "verdict": "resolved",
+  "results": [
+   {
+    "field": "question_en",
+    "new_value": "An analyst gathers the following common-size balance sheet information for three companies:\n\n| Item | Company X | Company Y | Company Z |\n|------|-----------|-----------|-----------|\n| Cash and cash equivalents | 15.6% | 12.0% | 2.0% |\n| Marketable securities | 3.4% | 5.1% | 12.0% |\n| Trade and other receivables | 10.9% | 12.7% | 4.8% |\n| Total current liabilities | 28.6% | 28.2% | 17.1% |\n\nQ. Based solely on the quick ratio, which company is most liquid?"
+   },
+   {
+    "field": "explanation_en",
+    "new_value": "Quick ratio = (Cash and cash equivalents + Marketable securities + Trade and other receivables) / Current liabilities. Company X: (15.6% + 3.4% + 10.9%) / 28.6% = 29.9% / 28.6% = 1.045. Company Y: (12.0% + 5.1% + 12.7%) / 28.2% = 29.8% / 28.2% = 1.057. Company Z: (2.0% + 12.0% + 4.8%) / 17.1% = 18.8% / 17.1% = 1.099. Company Z has the highest quick ratio and is therefore the most liquid based solely on this measure."
+   }
+  ],
+  "evidence": "MOCK 4 SS1 ANS.pdf (source file for cache MOCK_4_SS1_ANS.json), 0-indexed pages 33-35 (displayed as 'Question 31 of 90'). Page 33-34 shows a full common-size balance sheet (percentages, not absolute dollar amounts) for Company X/Y/Z with the question 'Based solely on the quick ratio, which company is most liquid?' and options A. Company X / B. Company Y / C. Company Z. Page 35 (solution) computes quick ratio = (Cash+Marketable securities+Receivables)/Current liabilities = 1.045 / 1.057 / 1.099 for X/Y/Z respectively, correct answer C (Company Z), which exactly matches the DB's current explanation_en figures (1.045, 1.057, 1.099) and correct_answer 'C' -- confirming this is the true source, but the DB's question_en table (absolute figures 'Current assets 3,090/3,114/3,198', 'Inventories 1,000/1,000/1,000', 'Current liabilities 2,000/2,000/2,000') does not match the source at all: the source uses common-size PERCENTAGES with no 'Inventories' line (the balance sheet has no inventory; the excluded item is 'Other non-financial assets', not inventory). DB's option_a/b/c (Company X/Y/Z) and correct_answer 'C' were already correct and are unchanged; only question_en (rebuilt as a markdown table with the real percentages/labels from the image) and explanation_en (recalculated per the real formula/data) were corrected."
+ },
+ {
+  "id": "1c9bfea3-a7de-4a80-a8d1-d34b4cf89371",
+  "verdict": "resolved",
+  "results": [
+   {
+    "field": "question_en",
+    "new_value": "As a result of an inventory write-down, which of the following financial ratios most likely decreases?"
+   },
+   {
+    "field": "option_a",
+    "new_value": "Quick ratio"
+   }
+  ],
+  "evidence": "MOCK 4 SS1 ANS.pdf (cache MOCK_4_SS1_ANS.json, qnum 89), 0-indexed page 100 ('Question 89 of 90'). Exact question on page: 'As a result of an inventory write-down, which of the following financial ratios most likely decreases? A. Quick ratio B. Current ratio C. Payables turnover ratio', correct answer B (Current ratio), with explanation confirming quick ratio is unaffected (excludes inventory) and payables turnover would increase or stay the same. DB's question_en was garbled ('Which of the following statements about the effect of an inventory write-down on financial ratios is correct?' -- a statement-style stem that doesn't match its own answer-choice format) and option_a was corrupted to a duplicate of option_c ('Payables turnover ratio' appeared twice, with the real option A 'Quick ratio' missing entirely). option_b ('Current ratio'), option_c ('Payables turnover ratio'), correct_answer ('B'), and explanation_en (already substantively correct: 'current ratio decreases... payables turnover would either increase or remain unchanged') required no changes."
+ },
+ {
+  "id": "1cad2440-02a2-425e-b5f4-bf2915ae2291",
+  "verdict": "no_source_found",
+  "results": [],
+  "evidence": "Searched both caches for the diluted EPS convertible-debt problem: exact figures '9,200,000', '1,600,000', '10,000,000'+'6,000,000', '31 March' (all 0 hits); phrases 'convertible debt', 'diluted EPS', 'interest expense on convertible', 'issued on 31', and the answer '0.93' (4 hits, none relevant -- one near-miss at MOCK_6_SS1_ANS_2 page_idx 65/qnum 60 also involves '2,000,000 common shares' and EUR, but its full data table (net income £45,000,000 / £45m, preferred dividends £5,000,000, £40,000,000 convertible bonds at 10% interest, 12,000,000 shares, 25% tax, answer £3.07) is entirely different from the DB's figures (€9.2m net income, €1.6m interest expense given directly, 35% tax, shares issued mid-year, answer €0.93) -- confirmed by rendering MOCK 6 SS1 ANS (2).pdf page_idx 65, a different, unrelated question. No plausible source page located after multi-angle search."
+ },
+ {
+  "id": "2550391a-0c9d-4209-8bec-524664e5f9e5",
+  "verdict": "no_source_found",
+  "results": [],
+  "evidence": "Searched both caches for the pricing/total-revenue Economics question: phrases 'fragmented consumer base' (0 hits), 'fragmented' (1 unrelated hit re: algorithmic trading venues), 'price elastic' (2 hits, unrelated numeric elasticity problem in Fixed_income,_FSA.json n=11), 'bargaining power' (3 hits, none about a company raising prices/total revenue), 'raises its prices', 'increase in total revenue', 'competitive industry'+'revenue', 'pricing power' (2 hits, both about monopolistic competition market structure, not this question). No plausible source page located after multi-angle search. Note: DB topic tag 'Economics' but this batch entry was separately mis-tagged 'Derivatives' in one sibling record (id 29211fb9) -- not in scope to fix (topic field not covered by allowed corrections)."
+ },
+ {
+  "id": "29211fb9-2670-464b-b885-918cc728b688",
+  "verdict": "no_source_found",
+  "results": [],
+  "evidence": "Searched both caches for the monopolistic-competition average-cost question: phrases 'minimizes average cost', 'excess capacity', 'actual level of output', 'level of output that', 'monopolistic competition'+'long run', 'produce less output' (all 0 hits or irrelevant). The only 'monopolistic competition'+'average cost' co-occurrences found (QB AI,_Corporate,_Deriv,_Eco.json page_idx 119/144) concern a firm's supply curve, not the long-run output/average-cost-minimization question in the DB. No plausible source page located after multi-angle search. Note: DB topic tag is 'Derivatives' though the content is clearly Economics (monopolistic competition) -- a pre-existing mistagging, not in scope for this field-limited correction task."
+ },
+ {
+  "id": "2f171f46-1092-4507-8cd3-5ef491f65fb9",
+  "verdict": "no_source_found",
+  "results": [],
+  "evidence": "Searched both caches for the PP&E revaluation-model disclosure question: phrases 'original date of acquisition', 'carrying amount under the cost model', 'fair value was obtained', 'least likely be able to determine', 'warehouse' (all 0 hits). Broader search on 'revaluation model' returned 8 hits, all about different sub-topics (effect of revaluation on financial-leverage ratio, quick ratio, revaluation surplus calculation, US GAAP vs IFRS disclosure of depreciable-asset classes) -- none asking what an analyst 'would least likely be able to determine' about acquisition date/fair value basis/cost-model carrying amount. No plausible source page located after multi-angle search."
+ },
+ {
+  "id": "313768c4-8cc9-4c47-982e-6a9c065aa892",
+  "verdict": "no_source_found",
+  "results": [],
+  "evidence": "Searched both caches for the management-compensation/risk-aversion question: phrases 'stock grants and options', 'compensation packages', 'management tenure', 'equity-based' (1 unrelated hit re: forecasted EPS), 'more risk averse'+'management' (0 hits). Broader 'risk averse' search (5 hits) found only unrelated content (investor risk aversion in CAL/indifference-curve theory, debtholder risk aversion, derivatives risk-neutral pricing). No plausible source page located after multi-angle search. Note: DB topic tag 'Derivatives' though content is Corporate Issuers/governance -- pre-existing mistagging, not in scope."
+ },
+ {
+  "id": "33583437-2b09-4a68-8d54-4ef4969bfdea",
+  "verdict": "no_source_found",
+  "results": [],
+  "evidence": "Searched both caches for the covariance/correlation quant question: phrases 'covariance between two', 'Cov(Ri,Rj)', 'correlation between the two variables', 'covariance'+'remains the same' (all 0 hits). Broader 'correlation'+'variance' search (7 hits) found only unrelated portfolio-variance and CAPM/regression questions, none stating 'if covariance stays the same but variance of both variables increases, correlation...'. No plausible source page located after multi-angle search."
+ },
+ {
+  "id": "3365c437-bcab-45ac-a001-165f196766c3",
+  "verdict": "no_source_found",
+  "results": [],
+  "evidence": "Searched both caches for the private-contracts/loan-covenant financial-reporting-quality question: phrases 'loan covenants' (1 hit, unrelated Debt/EBITDA credit-analysis content), 'disciplinary mechanism', 'bank loan agreements', 'private contracts', 'renew the loan', 'recover all or part', 'effective disciplinary' (all 0 hits). Broader 'financial reporting quality' search (2 hits) and 'monitoring'+'lenders' search (2 hits) found only unrelated questions (lowest-reporting-quality company identification, IFRS low-quality-event identification, public vs. private debtholder information-access questions). No plausible source page located after multi-angle search."
+ }
+]

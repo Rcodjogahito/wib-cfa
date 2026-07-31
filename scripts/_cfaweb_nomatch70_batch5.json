@@ -1,0 +1,102 @@
+[
+ {
+  "id": "7916ff91-ec4a-4a3c-afb3-cfa771a0cee0",
+  "topic": "Financial Statement Analysis",
+  "question_en": "Which of the following types of financial ratios is most likely to be positively affected by an inventory write-down compared to if the write-down had not occurred?",
+  "option_a": "Activity ratios",
+  "option_b": "Liquidity ratios",
+  "option_c": "Solvency ratios",
+  "correct_answer": "A",
+  "explanation_en": "Activity ratios (such as inventory turnover) are positively affected by an inventory write-down because the asset base (denominator) is reduced, increasing the ratio, whereas profitability, liquidity, and solvency ratios are all negatively affected."
+ },
+ {
+  "id": "81edfcf9-50f3-4dc7-9b0b-7d541eeb60ad",
+  "topic": "Financial Statement Analysis",
+  "question_en": "The following table summarizes income statement data for a manufacturing company (in € thousands):\n\n[Income statement with Year 2 and Year 1 data for: Net revenue, Cost of goods sold, Gross profit, Selling/general administrative expense, Operating income, Interest expense, Pre-tax income, Income tax, Net income]\n\nCompared with Year 1, the Year 2 common-size income statement may indicate:",
+  "option_a": "a lower tax rate.",
+  "option_b": "sale of a new, differentiated product.",
+  "option_c": "cost cutting in selling, general and administration.",
+  "correct_answer": "B",
+  "explanation_en": "Gross profit margin improved from 33.3% (€775/€2,325) to 35.6% (€930/€2,611), indicating better profitability per unit of sales, which may be due to the sale of a new, differentiated product that commands higher margins."
+ },
+ {
+  "id": "8d34c379-531d-434d-8893-febf5605da99",
+  "topic": "Ethics & Professional Standards",
+  "question_en": "Should a member communicate investment performance information to her clients in accordance with the GIPS standards?",
+  "option_a": "Incorrect because complying with the GIPS standards is voluntary. Compliance with the GIPS standards is not typically required by legal or regulatory authorities. Therefore, the member is not required to communicate investment performance information to her clients in accordance with the GIPS standards.",
+  "option_b": "Correct because Standard III(D), Performance Presentation, for members and candidates who are showing the performance history of the assets they manage, compliance with the GIPS standards is the best method to meet their obligations under Standard III(D). Members and candidates should encourage their firms to comply with the GIPS standards. Clearly then, Standard III(D) does not require a member to comply with the GIPS standards; complying with the GIPS Standards is only encouraged. Also, according to Standard I(A), Knowledge of the Law, members and candidates must understand and comply with all applicable laws, rules, and regulations (including the CFA Institute Code of Ethics and Standards of Professional Conduct) of any government, regulatory organization, licensing agency, or professional association governing their professional activities. Therefore, the member must communicate investment performance information to her clients in accordance with the Code and Standards, especially Standard III(D). If the country where the member works were to have a regulation relating to investment performance standards, the member would be required to follow the stricter of the Standards and the local regulation.",
+  "option_c": "Incorrect because complying with the GIPS standards is voluntary. Compliance with the GIPS standards is not typically required by legal or regulatory authorities. Also, according to Standard I(A), Knowledge of the Law, if applicable law is stricter than the requirements of the Code and Standards, members and candidates must adhere to applicable law; otherwise, they must adhere to the Code and Standards. Because compliance with the GIPS standards is not required under applicable law, the member is not required to communicate investment performance information to her clients in accordance with stricter of the GIPS standards and the Code and Standards.",
+  "correct_answer": "B",
+  "explanation_en": "The correct answer is B because Standard III(D) requires members to communicate investment performance information in accordance with the Code and Standards, which recommend GIPS compliance as the best method to fulfill this obligation, and Standard I(A) requires compliance with all applicable laws and regulations governing professional conduct."
+ },
+ {
+  "id": "8e638969-ce7d-4520-8973-738b0ad57cfd",
+  "topic": "Financial Statement Analysis",
+  "question_en": "The reversal of a prior fiscal year inventory write-down is:",
+  "option_a": "prohibited.",
+  "option_b": "recognized as a reduction in cost of sales.",
+  "option_c": "recognized as an increase in other operating income.",
+  "correct_answer": "B",
+  "explanation_en": "The reversal of any write-down of inventories is recognized as a reduction in cost of sales (reduction in the amount of inventories recognized as an expense)."
+ },
+ {
+  "id": "8ee2db6d-f897-4c84-89e7-a54f6456ab55",
+  "topic": "Corporate Issuers",
+  "question_en": "Question stem not fully visible in image - appears to ask about changes in interest coverage ratio and credit quality assessment",
+  "option_a": "deteriorated.",
+  "option_b": "remained unchanged.",
+  "option_c": "improved.",
+  "correct_answer": "C",
+  "explanation_en": "The interest coverage ratio increased from 4.04x to 5.84x over the period, indicating the company is better positioned to service its debt and has higher credit quality."
+ },
+ {
+  "id": "92d6801e-4bf9-4680-88b5-aecae1ea4c47",
+  "topic": "Economics",
+  "question_en": "A form of economic integration that allows free movement of goods, services, and factors of production among member countries and has a common trade policy against non-members best describes a:",
+  "option_a": "free trade area.",
+  "option_b": "customs union.",
+  "option_c": "common market.",
+  "correct_answer": "B",
+  "explanation_en": "A common market is the next level of economic integration that incorporates all aspects of a customs union (free movement of goods and services, and common trade policy against non-members) and extends it by allowing free movement of factors of production among members."
+ },
+ {
+  "id": "9c315e24-33eb-45c5-8bc0-c71d09f315e1",
+  "topic": "Corporate Issuers",
+  "question_en": "An analyst gathers the following information about a three-stock market index:\n\nStock A: 5,000 shares outstanding, beginning price $40, ending price $45\nStock B: 2,000 shares outstanding, beginning price $68, ending price $60\n\nIf the index is float-adjusted market-capitalization weighted and 90% of Stock A and 100% of Stock B shares are in the public float, what is the ending index value? (Beginning index value = 100)",
+  "option_a": "Correct. The index is float-adjusted market-cap weighted, so the weights are based on float-adjusted market capitalizations.",
+  "option_b": "Incorrect. It ignores the float and simply computes the index on the basis of market-capitalization weighting.",
+  "option_c": "Incorrect. It does make adjustment for the market float but makes the mistake of including dividends in the ending price of the stock.",
+  "correct_answer": "A",
+  "explanation_en": "The correct answer properly accounts for the float adjustment in market capitalization weighting, calculating the beginning float-adjusted market cap as $336,000 and ending float-adjusted market cap as $345,000, resulting in an index value of 102.68."
+ },
+ {
+  "id": "a41c3943-166e-4561-a6cd-a7dca492f2b4",
+  "topic": "Quantitative Methods",
+  "question_en": "In contrast to non-probability sampling, probability sampling:",
+  "option_a": "depends on factors other than probability considerations.",
+  "option_b": "has a high risk of generating a non-representative sample.",
+  "option_c": "gives every member of the population an equal chance of being selected.",
+  "correct_answer": "C",
+  "explanation_en": "Probability sampling gives every member of the population an equal chance of being selected, which distinguishes it from non-probability sampling that depends on factors other than probability and carries significant risk of generating non-representative samples."
+ },
+ {
+  "id": "a43c5de8-729f-4c1d-a118-4f4b7f3678f6",
+  "topic": "Fixed Income",
+  "question_en": "Selected year-end financial data for a company is as follows:\n\n- Net income: $200,000\n- Tax rate: 15%\n- Weighted average number of common shares outstanding: 125,000\n- 12% bond convertible into 3,000 common shares (potentially dilutive): $60,000\n\nGiven this information, the diluted EPS of the company is closest to:",
+  "option_a": "$1.51",
+  "option_b": "$1.60",
+  "option_c": "$1.61",
+  "correct_answer": "B",
+  "explanation_en": "The correct diluted EPS is $1.60, calculated by first determining basic EPS and then adjusting for the dilutive effect of the convertible bond by adding back the after-tax interest expense to net income and increasing the share count by the convertible shares, rather than mistakenly subtracting the after-tax interest as shown in option A."
+ },
+ {
+  "id": "aa0510fc-d128-4a00-a73a-900bf551f0c3",
+  "topic": "Corporate Issuers",
+  "question_en": "An analyst collects the following information about a company:\n\nNet profit margin: 4%\nReturn on average assets: 8%\nReturn on average equity: 16%\nRevenue: €2,500,000\n\nThe company's:",
+  "option_a": "total asset turnover is 4.",
+  "option_b": "financial leverage ratio is 4.",
+  "option_c": "average shareholders' equity is €625,000.",
+  "correct_answer": "C",
+  "explanation_en": "The company had net profit of €100,000 (€2,500,000 × 4%), and using the formula Return on equity = Net profit ÷ Average shareholders' equity, average shareholders' equity = €100,000 ÷ 16% = €625,000."
+ }
+]

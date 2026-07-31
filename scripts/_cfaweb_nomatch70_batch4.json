@@ -1,0 +1,102 @@
+[
+ {
+  "id": "560f3291-7ee5-4387-a414-184767dc67ae",
+  "topic": "Ethics & Professional Standards",
+  "question_en": "The underlying assets of an asset-backed security are directly owned by the:",
+  "option_a": "originator.",
+  "option_b": "special purpose vehicle.",
+  "option_c": "investors in the asset-backed securities.",
+  "correct_answer": "A",
+  "explanation_en": "In the securitization process, assets are legally transferred to the SPV, which becomes the legal owner of the assets; the originator and investors do not directly own the underlying assets."
+ },
+ {
+  "id": "5cf7aaac-a3fe-43f4-ab75-089e9a797179",
+  "topic": "Ethics & Professional Standards",
+  "question_en": "An intangible asset with an indefinite useful life is:",
+  "option_a": "not subjected to impairment testing.",
+  "option_b": "tested at least annually for impairment.",
+  "option_c": "only tested for impairment if there is an indication of impairment.",
+  "correct_answer": "B",
+  "explanation_en": "An intangible asset with an indefinite useful life is not amortised but must be tested at least annually for impairment to ensure its carrying amount does not exceed its fair value."
+ },
+ {
+  "id": "65e613a1-0338-4419-8d4d-5a7856a991af",
+  "topic": "Ethics & Professional Standards",
+  "question_en": "A CFA Institute member named Chan spreads false and misleading information on social media about a company's new medicine for heart disease to push up the stock price of WPC. Which of the following statements is correct regarding Chan's violations of the CFA Institute Code of Ethics and Standards of Professional Conduct?",
+  "option_a": "Incorrect because Chan has violated Standard II(B), Market Manipulation. Standard II(B) states that CFA Institute members and candidates uphold market integrity by prohibiting market manipulation. Market manipulation includes practices that distort security prices or trading volume with the intent to deceive people or entities that rely on information in the market. Information-based manipulation includes, but is not limited to, spreading false rumors to induce trading by others. Chan spreads the false and misleading information to push up WPC's stock price. Therefore, Chan has also violated Standard II(B).",
+  "option_b": "Incorrect because Chan has also violated Standard I(C), Misrepresentation. Standard I(C) states that CFA Institute members and candidates must not knowingly make any misrepresentation relating to professional or investment activities. Chan's post was based on prediction and contrary to the facts. Chan knew or should have known that his statements were false and misleading. The online or interactive aspects of social media do not remove the need to be open and honest about the information being distributed. Chan disseminates the news of launching a new medicine for heart disease on social media. This is false and misleading information. Therefore, Chan has also violated Standard I(C).",
+  "option_c": "Correct because Standard I(C), Misrepresentation, states that CFA Institute members and candidates must not knowingly make any misrepresentation relating to professional or investment activities. Chan's post was based on prediction and contrary to the facts. Chan knew or should have known that his statements were false and misleading. The online or interactive aspects of social media do not remove the need to be open and honest about the information being distributed. Chan disseminates the news of launching a new medicine for heart disease on social media. This is false and misleading information. Therefore, Chan has violated Standard I(C). In addition, Standard II(B), Market Manipulation, requires that members and candidates uphold market integrity by prohibiting market manipulation. Market manipulation includes practices that distort security prices or trading volume with the intent to deceive people or entities that rely on information in the market. Information-based manipulation includes, but is not limited to, spreading false rumors to induce trading by others. Chan spreads the false and misleading information to push up WPC's stock price. Therefore, Chan has violated Standard II(B).",
+  "correct_answer": "C",
+  "explanation_en": "Chan violated both Standard I(C) by knowingly making misrepresentations about the medicine launch and Standard II(B) by spreading false information to manipulate the stock price."
+ },
+ {
+  "id": "6af93ff8-b7a3-4099-ae98-d88c34b31941",
+  "topic": "Financial Statement Analysis",
+  "question_en": "An analyst has gathered the following balance sheet data for three companies:\n\n| Item | Company X | Company Y | Company Z |\n|------|-----------|-----------|----------|\n| Current assets | 3,090 | 3,114 | 3,198 |\n| Inventories | 1,000 | 1,000 | 1,000 |\n| Current liabilities | 2,000 | 2,000 | 2,000 |\n\nWhich company has the highest quick ratio?",
+  "option_a": "Company X",
+  "option_b": "Company Y",
+  "option_c": "Company Z",
+  "correct_answer": "C",
+  "explanation_en": "Quick ratio = (Current assets - Inventories) / Current liabilities. Company X: (3,090 - 1,000) / 2,000 = 2,090 / 2,000 = 1.045. Company Y: (3,114 - 1,000) / 2,000 = 2,114 / 2,000 = 1.057. Company Z: (3,198 - 1,000) / 2,000 = 2,198 / 2,000 = 1.099. Company Z has the highest quick ratio at 1.099, reflecting its highest level of liquid current assets relative to current liabilities. Companies X and Y have lower ratios due to lower current assets."
+ },
+ {
+  "id": "6d8747ae-c9ec-43e3-90a6-bd96b9de6c09",
+  "topic": "Quantitative Methods",
+  "question_en": "Question 69 of 90",
+  "option_a": "Incorrect because a t-statistic tests if the intercept is statistically different from zero.",
+  "option_b": "Incorrect because a t-statistic tests if there is a positive correlation between the dependent and independent variables, that is, whether the slope coefficient of the linear regression is greater than zero. We can use the F-statistic to test for the significance of the slope coefficient (that is, whether it is significantly different from zero), but we also may want to perform other hypothesis tests for the slope coefficient—for example, testing whether the population slope is different from a specific value or whether the slope is positive. We can use a t-distributed test statistic to test such hypotheses about a regression coefficient.",
+  "option_c": "Correct because in regression analysis, we can use an F-distributed test statistic to test whether the slopes in a regression are equal to zero, with the slopes designated as bᵢ, against the alternative hypothesis that at least one slope is not equal to zero: H₀: b₁ = b₂ = b₃ = . . . = bₖ = 0. Hₐ: At least one bᵢ is not equal to zero. For simple linear regression, these hypotheses simplify to H₀: b₁ = 0. Hₐ: b₁ ≠ 0. If we fail to reject the null hypothesis that the slope is 0, it implies that there is a linear relationship between the dependent and independent variables.",
+  "correct_answer": "C",
+  "explanation_en": "The correct answer is C because it properly identifies that an F-distributed test statistic can be used to test whether regression slopes are equal to zero, and correctly specifies the null and alternative hypotheses for both multiple and simple linear regression."
+ },
+ {
+  "id": "706b5e1c-337f-42ce-ae4c-90665627e809",
+  "topic": "Quantitative Methods",
+  "question_en": "An investment consists of a series of annual payments, where the first payment occurs at t=0. The investment represents an annuity due with 10 payments. What is the present value of this investment at a 6% discount rate with $10,000 annual payments?",
+  "option_a": "$73,600.87",
+  "option_b": "$68,106.92",
+  "option_c": "$78,016.92",
+  "correct_answer": "C",
+  "explanation_en": "The investment is an annuity due with 10 payments (first at t=0), which can be solved using a financial calculator in BGN mode with N=10, I/Y=6, PMT=10,000, FV=0, yielding CPT PV = $78,016.92."
+ },
+ {
+  "id": "732350ac-d183-4d90-b719-1d67afe537f3",
+  "topic": "Quantitative Methods",
+  "question_en": "An investment makes ten payments of $10,000 per year, with the first payment today. If the annual discount rate is 6%, the present value of the investment is closest to:",
+  "option_a": "$72,098.",
+  "option_b": "$73,601.",
+  "option_c": "$78,017.",
+  "correct_answer": "A",
+  "explanation_en": "The correct answer is A because the investment represents an annuity due with 10 payments, and since the first payment occurs at t=0, it can be separated into an immediate $10,000 received today plus an ordinary annuity of $10,000 for 8 years, yielding PV = $10,000 + $62,097.94 = $72,098."
+ },
+ {
+  "id": "743c1d5a-2ed3-416a-823e-d47560392262",
+  "topic": "Quantitative Methods",
+  "question_en": "The correlation coefficient:",
+  "option_a": "ranges from 0 to 1.",
+  "option_b": "is not affected by outliers.",
+  "option_c": "indicates the strength of the linear relationship between two random variables.",
+  "correct_answer": "C",
+  "explanation_en": "The correlation coefficient expresses the strength of the linear relationship between two random variables, and it ranges from -1 to +1."
+ },
+ {
+  "id": "77f91ac7-5f5a-4b26-9eae-f9635201b674",
+  "topic": "Ethics & Professional Standards",
+  "question_en": "Members of a company's board of directors are most likely required to:",
+  "option_a": "report to the company's CEO.",
+  "option_b": "display loyalty to the company.",
+  "option_c": "work for the company or the industry in which the company operates.",
+  "correct_answer": "B",
+  "explanation_en": "Directors are required under law to display a high standard of prudence, care, and loyalty to the company."
+ },
+ {
+  "id": "79030c52-4194-409a-9a64-90e0cb95b0ab",
+  "topic": "Economics",
+  "question_en": "In an economy with long-run expected inflation of 3% and a real trend rate of growth of 2%, the neutral policy rate is closest to:",
+  "option_a": "1%.",
+  "option_b": "3%.",
+  "option_c": "5%.",
+  "correct_answer": "C",
+  "explanation_en": "The neutral policy rate equals the sum of the real trend rate of growth (2%) and the long-run expected inflation (3%), which equals 5%."
+ }
+]

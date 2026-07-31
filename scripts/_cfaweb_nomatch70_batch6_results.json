@@ -1,0 +1,148 @@
+[
+ {
+  "id": "ab173c02-4bee-45ee-812e-d4d9fa5d5a43",
+  "verdict": "resolved",
+  "results": [
+   {
+    "field": "question_en",
+    "new_value": "| Initial investment capital | $100 million |\n|---|---|\n| Return at the end of one year | 12% |\n| Management fee based on assets under management | 1% |\n| Incentive fee based on the return net of the management fee | 10% |\n\nAssume management fees are calculated using end-of-period valuation. The investor's net return given this fee structure is closest to:"
+   }
+  ],
+  "evidence": "MOCK 3 SS2 ANS.pdf, page_idx 40 (0-indexed, PDF page 41), 'Question 35 of 90'. The rendered page shows a fee-structure table (Initial investment capital $100 million; Return at end of one year 12%; Management fee 1%; Incentive fee 10% net of management fee) followed by the question 'Assume management fees are calculated using end-of-period valuation. The investor's net return given this fee structure is closest to:' with options A. 9.68% B. 9.79% C. 10.88%. Solution on the same page and page_idx 41 confirms B is correct (fund value $109.792 million, return 9.79%), matching the DB's options, correct_answer (B), and explanation_en exactly. Only question_en was a prose paraphrase instead of the source's table+question wording, so it was replaced with the literal source text/table."
+ },
+ {
+  "id": "ada0914b-40e8-48fd-8fd8-451b84bc3762",
+  "verdict": "resolved",
+  "results": [],
+  "evidence": "QB 'Portfolio, Quants.pdf', question page_idx 66 ('Question 44 of 90') and answer page_idx 104 ('Answer 44 of 90'). Rendered pages show the exact table (Year 1-5 returns 6%, 7%, 3%, 2%, 4%; target return 5%) with options A. 1.7% B. 1.9% C. 2.2%, correct answer B, and the solution states the formula '[Σ(Xi-B)²/(n-1)]^0.5, where Xi is the return for the period, B is the target return and n is the total number of sample observations, and the summation is taken over only those observations (Xi) that are less than or equal to the target B.' This matches the DB's question_en, options, correct_answer, and explanation_en verbatim/near-verbatim. No corrections needed."
+ },
+ {
+  "id": "b049ba07-e97e-474e-97f3-5b0c59239616",
+  "verdict": "no_source_found",
+  "results": [],
+  "evidence": "Extensive keyword search across all QB and Mock cache files (_cache_cfaweb_qb/*.json, _cache_cfaweb_mocks/*.json) for this question's distinctive terms — exact option values ('78,016.92', '78,106.92', '73,600.87', '78016', '78106', '73600', '68,016'), phrase fragments ('ordinary annuity of $10,000 per year for 9 years', 'annuity of', 'payment of $10,000', '$10,000 per year', '$10,000 today', '10,000 today', 'nine years', 'investment consists'), and combinations of generic terms ('9 years'+'10,000'+'6%', 'annuity'+'today', '$10,000'+'6%') — returned zero matches for this specific fact pattern (an immediate $10,000 payment plus a 9-year ordinary annuity of $10,000 at 6%). The only annuity-related hits in the corpus concern different problems (7-payment annuities starting in year 4 or 5, a $50,000 annuity due, a 40-year retirement savings problem, a 10-year $10,000 contribution problem) — none match. Verified the DB's own math is internally consistent (PV = 10,000*(1-1.06^-9)/0.06 + 10,000 = $78,016.92, matching option C/correct_answer), but the question could not be located in either the QB or Mock source PDFs after genuine multi-angle searching."
+ },
+ {
+  "id": "bc239378-7ad9-4ea8-99b9-77053157f4d5",
+  "verdict": "resolved",
+  "results": [
+   {
+    "field": "question_en",
+    "new_value": "Which of the following is considered a capital allocation pitfall? Basing investment decisions on:"
+   },
+   {
+    "field": "option_a",
+    "new_value": "opportunity costs."
+   },
+   {
+    "field": "option_b",
+    "new_value": "after-tax cash flows."
+   },
+   {
+    "field": "option_c",
+    "new_value": "short-run accounting numbers."
+   },
+   {
+    "field": "explanation_en",
+    "new_value": "Correct because one common pitfall is basing investment decisions on EPS, net income, or ROE: companies sometimes have incentives to boost earnings per share, net income, or return on equity. Many investments, even those with strong NPVs, do not increase these accounting numbers in the short run and may even reduce them. Paying too much attention to short-run accounting numbers can result in a company choosing investments that are not in the long-run economic interests of its shareholders."
+   }
+  ],
+  "evidence": "QB 'AI, Corporate, Deriv, Eco.pdf', question page_idx 44 ('Question 36 of 67') and answer page_idx 61 ('Answer 36 of 67'). The rendered question page shows: 'Which of the following is considered a capital allocation pitfall? Basing investment decisions on: A. opportunity costs. B. after-tax cash flows. C. short-run accounting numbers.' with C marked Correct in the solution, explained via the EPS/net income/ROE short-run-accounting-numbers pitfall. The DB's prior question_en/options ('In the capital allocation process, companies should: assume no new competition... / incorporate sunk costs... / ignore the impact... on short-term accounting numbers') did not match this source question at all — only the explanation_en had survived roughly intact from this source, while the stem and options were corrupted/fabricated. correct_answer (C) was already correct and unchanged."
+ },
+ {
+  "id": "c10b775c-8d6f-4185-8132-f68661cfb198",
+  "verdict": "resolved",
+  "results": [
+   {
+    "field": "question_en",
+    "new_value": "Vanraj Shah has just finished taking the Level II CFA exam for the second time. To protect the integrity of the exam, Gupta is careful not to discuss the exam questions with other candidates. Shah calls his friend, a member, and contrasts his two attempts by highlighting that there were many calculation questions on derivatives in the first instance and none in the second. Later, in a public blog on investment education, Shah shares his strong disagreement regarding CFA Institute shifting to computer-based testing. Shah has violated the Standard(s) relating to:"
+   },
+   {
+    "field": "option_a",
+    "new_value": "conduct as participants in CFA Institute programs only."
+   },
+   {
+    "field": "option_b",
+    "new_value": "reference to CFA Institute, the CFA designation, and the CFA program only."
+   },
+   {
+    "field": "option_c",
+    "new_value": "both conduct as participants in CFA Institute programs and reference to CFA Institute, the CFA designation, and the CFA program."
+   },
+   {
+    "field": "explanation_en",
+    "new_value": "Correct because according to Standard VII(A), Conduct as Participants in CFA Institute Programs, examples of information that cannot be disclosed by candidates sitting for an exam include but are not limited to broad topical areas and formulas tested or not tested on the exam. Shah has violated Standard VII(A) by mentioning that there were no calculation questions on derivatives. Also according to Standard VII(B) relating to Reference to CFA Institute, the CFA designation, and the CFA program, when referring to CFA Institute, CFA Institute membership, the CFA designation, or candidacy in the CFA Program, Members and Candidates must not misrepresent or exaggerate the meaning or implications of membership in CFA Institute, holding the CFA designation, or candidacy in the CFA Program. Shah has not done this and hence Standard VII(B) is not violated. Only Standard VII(A) is violated."
+   }
+  ],
+  "evidence": "MOCK 4 SS1 ANS.pdf, page_idx 28-29 ('Question 27 of 90' / solution continuing onto next page). The rendered pages show the full Vanraj Shah vignette question with options A. conduct as participants in CFA Institute programs only. B. reference to CFA Institute, the CFA designation, and the CFA program only. C. both conduct as participants... and reference to..., with A marked Correct. The DB's prior question_en was a generic, vignette-free rephrasing, and its options were scrambled versions of the real A/B/C (DB option A did not correspond to any real source option; DB options B and C were actually the source's C and B respectively). correct_answer (A) happened to already be right by coincidence of letter but the option text under 'A' was wrong, so it is corrected here along with the full vignette stem."
+ },
+ {
+  "id": "c675f2d2-f449-46c4-9fc6-42728ebe2a4c",
+  "verdict": "no_source_found",
+  "results": [],
+  "evidence": "Searched all QB and Mock cache files for distinctive terms from this question: exact figures ('9,200,000', '7,500,000', '1,500,000'), option values ('0.93', '0.98', '1.024', '1.02'), and concept phrases ('convertible debt'+'anti-dilutive', 'anti-dilutive'+'diluted', 'antidilutive', 'diluted EPS'+'convertible'). The only 'antidilutive' hit in the whole corpus is an unrelated qualitative question about capital structure (MOCK_2_SS1_ANS_1.json qnum 86). Several diluted-EPS/convertible-debt questions exist in the corpus (QB Fixed_income,_FSA n=39/72/120/121, MOCK_4_SS1_ANS qnum 38, MOCK_6_SS1_ANS_2 qnum 60) but none match this fact pattern (net income €9,200,000, 9,000,000 weighted avg shares, €1,500,000 face value convertible debt paying '7,500,000 annually' interest, 2,000,000 additional shares on conversion). Note the DB's own figures are internally implausible (annual interest of €7,500,000 on a €1,500,000 face-value bond is a >500% coupon), suggesting the underlying question text itself may be corrupted beyond the point of being locatable. No plausible source page was found after genuine multi-angle searching."
+ },
+ {
+  "id": "cac89c28-f13f-40f2-a728-a72778ceb412",
+  "verdict": "resolved",
+  "results": [
+   {
+    "field": "question_en",
+    "new_value": "The data for two stocks in an index are as follows:\n\n| Stock | Shares Outstanding | Percent of Shares in Market Float | Beginning of Period Price ($) | End of Period Price ($) | Dividends per Share ($) |\n|---|---|---|---|---|---|\n| A | 5,000 | 90 | 40 | 45 | 1.00 |\n| B | 2,000 | 100 | 68 | 60 | 0.50 |\n\nAssuming the beginning value of the float-adjusted market-capitalization-weighted equity index is 100, the ending value is closest to:"
+   },
+   {
+    "field": "option_a",
+    "new_value": "102.06."
+   },
+   {
+    "field": "option_b",
+    "new_value": "102.68."
+   },
+   {
+    "field": "option_c",
+    "new_value": "103.80."
+   }
+  ],
+  "evidence": "MOCK 4 SS2 ANS.pdf, page_idx 16-17 ('Question 17 of 90'). The rendered page shows the full two-stock data table and the question 'Assuming the beginning value of the float-adjusted market-capitalization-weighted equity index is 100, the ending value is closest to: A. 102.06. B. 102.68. C. 103.80.' with A marked Correct (computed as 322,500/316,000 = 102.06). The DB's prior question_en was a placeholder note stating the question stem was not visible, and option_a/b/c actually contained the solution's explanatory prose ('Correct. In float-adjusted market-cap weighting...' etc.) instead of the real numeric answer choices — a case of explanation text bleeding into the option fields. correct_answer (A) and explanation_en were already correct and left unchanged."
+ },
+ {
+  "id": "cef8177e-9fd8-482f-94cc-27b6e782995b",
+  "verdict": "no_source_found",
+  "results": [],
+  "evidence": "Searched all QB and Mock cache files for 'economies of scale' (2 unrelated hits: an external-factors-affecting-industry-growth question, and a free-trade question mentioning economies of scale in passing), plus option/explanation terms ('Duplication of product lines', 'Supply constraints', 'Specialization by workers', 'specialization'+'proficiency', 'increase their proficiency', 'workers'+'proficiency', 'lead to economies of scale') — all zero matches. No question resembling 'Which of the following factors is most likely to lead to economies of scale? A. Supply constraints B. Duplication of product lines C. Specialization by workers' was found in either QB or Mock source material after a genuine multi-term search effort."
+ },
+ {
+  "id": "cfbdf566-08bf-48f3-8ed3-7fe992efacf4",
+  "verdict": "resolved",
+  "results": [
+   {
+    "field": "question_en",
+    "new_value": "An analyst gathers the following annual returns on a stock:\n\n| Year | Return |\n|---|---|\n| 1 | 5% |\n| 2 | -2% |\n| 3 | 3% |\n| 4 | 8% |\n\nIf the annual target return is 4%, the sample target semideviation of returns is closest to:"
+   },
+   {
+    "field": "option_a",
+    "new_value": "3.0%."
+   },
+   {
+    "field": "option_b",
+    "new_value": "3.5%."
+   },
+   {
+    "field": "option_c",
+    "new_value": "4.2%."
+   }
+  ],
+  "evidence": "MOCK 1 SS1 ANS.pdf, page_idx 72-73 ('Question 64 of 90', Level I CFA Program - February 2025 mock). The rendered question page shows the return table (Year 1: 5%, Year 2: -2%, Year 3: 3%, Year 4: 8%) and 'If the annual target return is 4%, the sample target semideviation of returns is closest to: A. 3.0%. B. 3.5%. C. 4.2%.' with B marked Correct (sqrt(0.0037/3) = 0.0351 ≈ 3.5%). The DB's prior question_en was a generic placeholder ('Based on the given annual returns data with a 4% target, what is the target semideviation?') missing the actual data table, and option_a/b/c contained the solution's explanatory prose instead of the real numeric choices (same explanation-bleed pattern as the float-adjusted-index question in this batch). Also noted for completeness but not corrected (explanation_en already conveys the right idea, so left as-is): the source formula uses 'Xi ≤ B' (less than or equal to the target) in the summation, not the '>' shown in the raw cache OCR text. correct_answer (B) was already correct."
+   },
+ {
+  "id": "d407cdea-1114-495e-bdce-b04016308e19",
+  "verdict": "resolved",
+  "results": [
+   {
+    "field": "question_en",
+    "new_value": "An analyst forecasts different outcomes for a company next year:\n\n| | Bear Case | Base Case | Bull Case |\n|---|---|---|---|\n| Sales (in € millions) | 280 | 350 | 400 |\n| EBITDA margin (%) | 10 | 18 | 25 |\n| Debt to capital (%) | 75 | 60 | 55 |\n\nThis forecast table is best described as a:"
+   }
+  ],
+  "evidence": "MOCK 4 SS2 ANS.pdf, page_idx 10 ('Question 11 of 90'). The rendered page shows the exact Bear/Base/Bull Case table (Sales 280/350/400, EBITDA margin 10/18/25, Debt to capital 75/60/55) and 'This forecast table is best described as a: A. scenario analysis. B. sensitivity analysis. C. point estimate forecast.' with A marked Correct. The DB's numeric values, options, correct_answer, and explanation_en all already matched the source; only question_en was a prose paraphrase of the table rather than reproducing it as a table, so it was replaced with the literal source table/question wording."
+ }
+]

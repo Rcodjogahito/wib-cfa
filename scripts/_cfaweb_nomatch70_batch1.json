@@ -1,0 +1,102 @@
+[
+ {
+  "id": "01022c88-0a1b-48cc-991d-48cd3c54243a",
+  "topic": "Ethics & Professional Standards",
+  "question_en": "A random variable Y = exp(X) is lognormally distributed, where X is normally distributed. The distribution of Y:",
+  "option_a": "is skewed to the left.",
+  "option_b": "is often used to model stock prices.",
+  "option_c": "has a mean equal to exp(μ), where μ is the mean of X.",
+  "correct_answer": "B",
+  "explanation_en": "The lognormal distribution is correct because it has been found to be a usefully accurate description of the distribution of prices for many financial assets, which includes stocks."
+ },
+ {
+  "id": "0113d208-ab23-4dd1-9d00-1d90df95d5c4",
+  "topic": "Ethics & Professional Standards",
+  "question_en": "The possibility of new entrants into an industry is considered in the calculation of:",
+  "option_a": "the concentration ratio.",
+  "option_b": "the Herfindahl–Hirschman index.",
+  "option_c": "neither the concentration ratio nor the Herfindahl–Hirschman index.",
+  "correct_answer": "A",
+  "explanation_en": "Neither the concentration ratio nor the Herfindahl–Hirschman index accounts for the possibility of new entrants into an industry; both measures only reflect current market concentration."
+ },
+ {
+  "id": "0184f130-5fa4-4566-80c8-9d87f53a122e",
+  "topic": "Equity Investments",
+  "question_en": "What is the intrinsic value of an equity security using a two-stage dividend discount model with the given cash flows and discount rates?",
+  "option_a": "V₀ = 3 × (1 + 0.04)(0.15-0.04), V₀ = $28.36",
+  "option_b": "It uses the historical growth rate rather than an analyst's growth forecast, V₀ = $29.08",
+  "option_c": "The value equals the present value of future cash flows over the next three years, plus the expected stock price in three years (discounted back to present value), V₀ = $29.65",
+  "correct_answer": "C",
+  "explanation_en": "Option C is correct because it properly applies the two-stage dividend discount model by discounting all future dividends plus the terminal value back to present value using the analyst's forecasted growth rate of 8%, whereas option B incorrectly uses historical growth rates instead of forecasted rates."
+ },
+ {
+  "id": "038c536e-e02d-4941-8bbf-32fbccdd3cf9",
+  "topic": "Ethics & Professional Standards",
+  "question_en": "Debt as a proportion of total capital is most likely greatest in which of the following life-cycle stages of a company?",
+  "option_a": "Start-up",
+  "option_b": "Growth",
+  "option_c": "Mature",
+  "correct_answer": "C",
+  "explanation_en": "At the maturity stage, the company becomes able to support low-cost debt, often on an unsecured basis, making debt financing more attractive than higher-cost equity financing."
+ },
+ {
+  "id": "07d69b67-d81b-4264-acd8-a51f7ca7ee97",
+  "topic": "Economics",
+  "question_en": "A central bank is least likely to:",
+  "option_a": "implement fiscal policy.",
+  "option_b": "oversee the payments system.",
+  "option_c": "manage foreign currency reserves.",
+  "correct_answer": "A",
+  "explanation_en": "Central banks are responsible for monetary policy, not fiscal policy, which is a government function involving taxation and spending decisions."
+ },
+ {
+  "id": "08b4f246-671c-4fdc-bc34-755f22de6819",
+  "topic": "Corporate Issuers",
+  "question_en": "Based on the quarterly price returns and dividend income shown in the table, which statement about the value of the total return index at the end of Q3 is correct?",
+  "option_a": "Correct because the value of the total return index at the end of Q3 is 1,045.00 which is above 1,000.",
+  "option_b": "The value of the total return index at the end of Q3 is 998.07 which is below 1,000.",
+  "option_c": "Incorrect because the value of the total return index at the end of Q3 is 1,012.61 which is above 1,000.",
+  "correct_answer": "C",
+  "explanation_en": "The cumulative value of the total return index at the end of Q3 is calculated as 1,000(1.045)(1.02)(0.95) = 1,012.61, which is above the base value of 1,000."
+ },
+ {
+  "id": "0cd5bce1-b0a4-4539-a6c5-392918bc17b0",
+  "topic": "Financial Statement Analysis",
+  "question_en": "Unaudited financial statements are most likely presented in a(n):",
+  "option_a": "annual report.",
+  "option_b": "quarterly report.",
+  "option_c": "proxy statement.",
+  "correct_answer": "A",
+  "explanation_en": "Interim reports (quarterly or semiannual) present unaudited financial statements with condensed notes, whereas annual reports and proxy statements provide audited financial statements or other non-financial information respectively."
+ },
+ {
+  "id": "0dd9a2cb-6741-40d0-a248-a7997a66c71f",
+  "topic": "Fixed Income",
+  "question_en": "A company has convertible debt outstanding. During the year, the company reported net income of €9,200,000 and had 9,000,000 weighted average shares outstanding. The convertible debt has a coupon rate of 5% and a principal amount of €20,000,000. The company's tax rate is 25%. There are 12 months in a year. The convertible debt would result in the issuance of 2,000,000 additional common shares if converted. Which of the following statements regarding the diluted earnings per share (diluted EPS) is correct?",
+  "option_a": "The reported diluted EPS is €0.93, as the convertible debt is anti-dilutive.",
+  "option_b": "Incorrect because instead the tax effect on the interest on the convertible debt is neglected and therefore the pre-tax interest expense is used in the calculation = €1,600,000. This leads to Basic EPS = €9,200,000 + €1,000,000 = €1.02 and to Diluted EPS = (€9,200,000 + €1,600,000) ÷ (9,000,000 + 2,000,000) = €10,800,000 ÷ 11,000,000 = €0.98.",
+  "option_c": "Incorrect because it calculates the average shares outstanding as (shares outstanding at beginning of year + shares outstanding at end of year) ÷ 2 = 8,000,000. This leads to Basic EPS = €9,200,000 ÷ 8,000,000 = €1.15 and Diluted EPS = (€9,200,000 + €1,040,000) ÷ (8,000,000 + 2,000,000) = €10,240,000 ÷ 10,000,000 = €1.024 ≈ €1.02. It is also the correct basic EPS.",
+  "correct_answer": "A",
+  "explanation_en": "The diluted EPS of €0.93 is lower than the basic EPS of €1.02, making the convertible debt anti-dilutive; therefore, it is not included in the diluted EPS calculation and the reported diluted EPS remains €0.93."
+ },
+ {
+  "id": "0f69b596-3f5d-442a-bdca-a2c13953202a",
+  "topic": "Quantitative Methods",
+  "question_en": "A company estimates its revenue will be 50% higher than today in four years' time. The compound annual growth rate is closest to:",
+  "option_a": "10.7%.",
+  "option_b": "11.8%.",
+  "option_c": "12.5%.",
+  "correct_answer": "A",
+  "explanation_en": "A growth rate is calculated as g = (FV/PV)^(1/N) - 1, where FV is future value, PV is present value, and N is the number of periods; here g = (1.5/1)^(1/4) - 1 = 0.10668 ≈ 10.7%."
+ },
+ {
+  "id": "1280e5be-ca9a-4a0e-a957-78e3d936cb01",
+  "topic": "Ethics & Professional Standards",
+  "question_en": "An analyst forecasts different outcomes for a company next year:\n\n[Table with Bear Case, Base Case, Bull Case showing:\nSales (in € millions): 280, 350, 400\nEBITDA margin (%): 10, 18, 25\nDebt to capital (%): 75, 60, 55]\n\nThis forecast table is best described as:",
+  "option_a": "scenario analysis.",
+  "option_b": "sensitivity analysis.",
+  "option_c": "point estimate forecast.",
+  "correct_answer": "A",
+  "explanation_en": "Scenario analysis involves incorporating the possibility of different outcomes based on key risk factors and their likelihood of occurrence, with multiple forecast scenarios varying based on different outcomes with respect to key risk factors, rather than developing single point estimate forecasts or testing sensitivity to one variable at a time."
+ }
+]

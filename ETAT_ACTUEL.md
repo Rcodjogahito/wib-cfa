@@ -1,9 +1,39 @@
 # ETAT ACTUEL — WIB CFA
 > Mis à jour automatiquement à la fin de chaque session Claude Code.
 
-**Date**: 2026-07-31 (session 67, suite et clôture — TOUS les chantiers résiduels de l'audit exhaustif traités : Kevin_Mock, 108 résidus Kaplan, 285 résidus UWorld, reconstruction CFA_WEB, 588 candidats "conclusion finale")  
-**Commit**: `3e81b27` — Voir détail complet ci-dessous. **Grand total cette session (les deux parties) : environ 1130 corrections** (583 partie 1 + ~547 partie 2 : 68 Kevin_Mock + 129 Kaplan résidus + 344 UWorld résidus + 14 CFA_WEB nouveaux + 39 CFA_WEB reconstruction − 0 conclusion-finale).  
+**Date**: 2026-07-31 (session 67, partie 3 — CLÔTURE DÉFINITIVE de l'audit exhaustif de toute la banque de 7249 questions)  
+**Commit**: voir détail ci-dessous. **Grand total sur les 3 parties de la session 67 : ~1175 corrections** (583 partie 1 + ~547 partie 2 + ~29 partie 3 individuelles + 20 CFA_WEB no_match).  
 **Branch**: master → Streamlit Cloud (auto-deploy) ✅ opérationnelle
+
+---
+
+## Session 67 (partie 3) — Clôture définitive : derniers résidus individuels + 70 CFA_WEB no_match (2026-07-31)
+
+**Contexte** : à la 2e demande "Continue, et finis TOUT", reprise des tout derniers items non résolus : les 2 nouveaux mismatches surfacés par le matcher CFA_WEB amélioré, les 9 résidus mixtes (Kaplan/UWorld/Kevin_Mock/CFA_WEB), les 5 UWorld "explanation_mismatched" (déjà résolus par un lot antérieur mais jamais retirés du tracker), 2 fuites de numéro de page cosmétiques, et enfin un sweep visuel complet des 70 dernières questions CFA_WEB `no_match`.
+
+### Amélioration de l'algorithme de matching CFA_WEB
+`best_match()` scorait uniquement sur les mots du stem — de vrais stems courts et complets ("Accrued interest:") tombaient sous le seuil minimum. Réécrit pour scorer sur stem+options combinés. Résultat avant nouveau sweep : **942→962 appariées, 93→70 non-appariées**.
+
+### 9 résidus individuels vérifiés/corrigés (visuellement, page source rendue à 200dpi)
+- **`bdf98436`** (Corporate Issuers) : `correct_answer` C→B + explication réécrite — l'ancienne explication ("pecking order theory") était totalement hors-sujet, bug de contamination croisée.
+- **`f34625d5`** : `question_en` tronqué à "closest to:" (tout l'énoncé NPV/cash-flows manquant) — reconstruit intégralement depuis MOCK 4 SS1 ANS p.93, tableau markdown.
+- **`21cf9fed`** (Quantitative Methods) : **vraie erreur de réponse** B→C trouvée et confirmée par calcul indépendant ET par la solution source (QB Portfolio,Quants p.108) — covariance jointe = 14, pas 5. `question_en` reconstruit avec le tableau de probabilité conjointe 3×3.
+- **`dff91760`** : `question_en` était "question text not provided" — reconstruit intégralement (tableau Gordon Growth 3 sociétés) depuis MOCK 5 SS2 ANS p.59-60.
+- **`2b1cfa17`** : explication vague/paraphrasée remplacée par le tableau détaillé complet (3 options A/B/C) de la solution source.
+- **`36a3c6b3`**, **`9169c359`** : résolus via agent (résidus mixtes) — `9169c359` avait un signal contradictoire (DB=A, cache=B, source réelle=C) : la vraie page solution confirme C.
+- **`a9774d29`**, **`be704534`** : fuites de numéro de page en fin d'`option_c` (ex. "$227. 76" → "$227.") supprimées.
+- 5 items UWorld (`fa1babd8`, `f1385d93`, `a074104e`, `cada5032`, `25818e19`) marqués "à investiguer" dans le tracker : recalcul indépendant confirme qu'ils sont **déjà corrects et cohérents** (contenu corrigé par un lot antérieur, tracker jamais nettoyé).
+- `9cea9bbf`, `004a50b3`, `de166124` : signaux de mismatch confirmés **faux positifs** (page source vérifiée, le DB était déjà correct).
+
+### Sweep final des 70 CFA_WEB `no_match` — 7 agents parallèles, recherche + rendu visuel systématique
+Chaque question introuvable par le matcher automatique a été recherchée par mots-clés distinctifs dans le cache Vision (numéros, termes rares tirés de l'explication plutôt que du stem, souvent corrompu), puis la page source correspondante rendue à 200dpi et lue visuellement avant toute correction. **20 corrections confirmées et appliquées** (reconstructions de `question_en` tronqué/fabriqué, options contaminées par du texte d'explication, 1 **vraie erreur de correct_answer** `08b4f246` C→B). **50 confirmées absentes du matériel source** après recherche multi-angles honnête (pas de fabrication) — plancher de couverture réel, documenté par question avec preuve (fichier PDF + page).
+
+Note opérationnelle : 2 des 7 agents (lots 4 et 6) ont été interrompus par la **limite de dépense mensuelle Claude** de l'utilisateur, mais ont réussi à écrire leur JSON de résultats complet juste avant l'arrêt — aucune perte de travail, mais **aucun nouvel agent ne doit être lancé ce mois-ci sans relever la limite** (claude.ai/settings/usage).
+
+**Résultat final CFA_WEB** : 974 appariées (0 mismatch réel restant), 90 low_confidence (toutes revues), 58 no_match (plancher de couverture honnête et documenté).
+
+### `_fullbank_residuals.json` — nettoyé, ne contient plus qu'1 résidu permanent
+Tous les items résolus cette session retirés. Reste uniquement `73868967` (Extra_QB, explication de solution PDF elle-même dupliquée depuis une question sans rapport — défaut du matériel source, non corrigeable sans fabrication).
 
 ---
 

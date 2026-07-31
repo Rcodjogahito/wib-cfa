@@ -1,0 +1,74 @@
+[
+ {
+  "id": "2adb4d48-da12-40c6-8953-442e61902595",
+  "verdict": "resolved",
+  "results": [],
+  "evidence": "Kaplan, Reading 30 Analyzing Income Statements - Answers.pdf, page 75 (1-indexed) / page index 74, 'Question #116 of 130' (Question ID: 1573467). Question stem, all three options, correct_answer (B, marked with green check in source), and explanation_en match the manifest verbatim. No changes needed."
+ },
+ {
+  "id": "36a3c6b3-eedd-43cc-a5f5-a83dd9cef9ed",
+  "verdict": "resolved",
+  "results": [
+   {
+    "field": "question_en",
+    "new_value": "A portfolio manager considers the following joint probability function:\n\n| Return on Foreign Currency | Return on Foreign Portfolio: Rp = -10% | Return on Foreign Portfolio: Rp = 25% |\n|---|---|---|\n| Rc = -15% | 0.6 | 0 |\n| Rc = 30% | 0 | 0.4 |\n\nThe covariance (in % squared) between the returns on the foreign portfolio and the foreign currency is closest to:"
+   },
+   {
+    "field": "option_a",
+    "new_value": "294"
+   }
+  ],
+  "evidence": "CFA_WEB mock, found in D:\\CLAUDE\\Projet CFA\\CFA L1\\9. CFA WEB MOCKS-900 MCQs\\MOCK 5 SS1.pdf, Q46 of 90 (page index 8, 'Level I CFA Program - February 2025', topic 'Portfolio Mathematics'), and its solution in MOCK 5 SS1 ANS.pdf, 'Question 46 of 90' spanning page index 45-46. Full source question: 'A portfolio manager considers the following joint probability function' with a 2x2 table (Rc=-15%/Rp=-10% -> 0.6, Rc=-15%/Rp=25% -> 0, Rc=30%/Rp=-10% -> 0, Rc=30%/Rp=25% -> 0.4). Options in source: A. 294, B. 378, C. 819 - correct answer is B (378), confirmed by the source's own worked solution: Expected return on foreign portfolio = 0.6(-10%)+0.4(25%)=4%; Expected return on foreign currency = 0.6(-15%)+0.4(30%)=3%; Covariance = 0.6(-10%-4%)(-15%-3%)+0.4(25%-4%)(30%-3%)=378. The manifest's question_en was a placeholder ('Question stem not fully visible') and option_a was a duplicate of option_b (both '378') - a data entry bug; the real option_a is 294 (this is the variance of the foreign portfolio return, a common wrong-answer distractor per the source). correct_answer (B) and explanation_en already matched the source and needed no change."
+ },
+ {
+  "id": "4798f2a0-6af6-4e9a-85c7-4f2864da624e",
+  "verdict": "resolved",
+  "results": [],
+  "evidence": "Kaplan, Reading 86 Basics of Portfolio Planning and Construction - Answers.pdf, page index 3 (printed page 4), 'Question #9 of 32' (Question ID: 1574572). Question stem, all three options, correct_answer (B, marked with green check in source), and explanation_en match the manifest verbatim. No changes needed."
+ },
+ {
+  "id": "487f7133-3bb0-4cd8-ace0-a0ccd3b65df4",
+  "verdict": "resolved",
+  "results": [],
+  "evidence": "UWorld, 5.09 Analysis of Income Taxes - Answers.pdf, page index 31, question #32 (deferred tax asset/liability table). Question stem (including the exhibit table with Total deferred tax assets 1,100 / Valuation allowance (700) / etc.), all three options, correct_answer (B, marked with green checkmark glyph in source), and explanation_en (including the 20%/25% rate comparison table) match the manifest verbatim. No changes needed."
+ },
+ {
+  "id": "4d1cab6e-f40e-414b-949a-a8709f009492",
+  "verdict": "resolved",
+  "results": [],
+  "evidence": "Kevin_Mock, D:\\CLAUDE\\Projet CFA\\CFA L1\\11. KEVIN SIR_s MOCK\\SESSION 2 MOCK-Q.pdf page index 2, question 16 ('Which one of the following is not one of the two main components of credit risk?'), and SESSION 2 MOCK-A.pdf page index 2, answer '16. B' with explanation 'Credit risk is the risk that the bondholder will not receive all of the promised cash flows on the agreed time frame. This includes two main components: default risk and loss severity. Risk measures related to credit risk include spread risk, downgrade risk, and liquidity risk.' Question stem, options, correct_answer (B), and explanation_en match the manifest verbatim. No changes needed."
+ },
+ {
+  "id": "4ef46725-1e8b-49ae-910f-740e2f33385d",
+  "verdict": "resolved",
+  "results": [],
+  "evidence": "Kaplan, D:\\CLAUDE\\Projet CFA\\CFA L1\\8. KAPLAN MOCK-1100 MCQs\\Mock Exam 5 - Answers.pdf, page index 1, 'Question #3 of 180' (Question ID: 1612126). Question stem, all three options, correct_answer (B, marked with green check in source), and explanation_en match the manifest verbatim. No changes needed."
+ },
+ {
+  "id": "9753f54b-9261-41c4-889a-f6af979ca59d",
+  "verdict": "resolved",
+  "results": [],
+  "evidence": "UWorld, 4.04 Working Capital and Liquidity - Answers.pdf, page index 9, question #10, with the 'Selected Financial Data (ZAR millions)' exhibit table (Credit sales 10,000; COGS 8,000; Inventory beginning 1,600 / ending 1,800; Accounts payable beginning 950 / ending 1,100). Question stem, all three options, correct_answer (A, marked with green checkmark glyph in source, worked as 45.6 = [(950+1100)/2] / [(8000+1800-1600)/365]), and explanation_en match the manifest verbatim. No changes needed."
+ },
+ {
+  "id": "b0a3b73b-2fc6-43ac-9715-347bc9779768",
+  "verdict": "resolved",
+  "results": [],
+  "evidence": "Kaplan, Reading 48 Equity Valuation- Concepts and Basic Tools - Answers.pdf, page index 45, 'Question #86 of 140' (Question ID: 1574136). Question stem, all three options, correct_answer (B, marked with green check in source), and explanation_en match the manifest verbatim. No changes needed."
+ },
+ {
+  "id": "9169c359-f316-468d-83c8-cdc2ac97890e",
+  "verdict": "resolved",
+  "results": [
+   {
+    "field": "correct_answer",
+    "new_value": "C"
+   },
+   {
+    "field": "explanation_en",
+    "new_value": "A is incorrect because multi-market indexes usually comprise indexes from different countries and are designed to represent multiple security markets; a multi-market index would not be used as a benchmark for a single country ETF. B is incorrect because a small-capitalization growth index is a style index, not a multi-market index. C is correct because indexes also serve as market proxies when measuring risk-adjusted performance; the beta of an actively managed portfolio allows investors to form a passive alternative with the same level of systematic risk, and in this case multi-market indexes, which usually comprise indexes from different countries, would serve as benchmarks to calculate beta for the portfolios of global stock managers."
+   }
+  ],
+  "evidence": "CFA_WEB QB, D:\\CLAUDE\\Projet CFA\\CFA L1\\3. QB CFA WEB PAID-1000 MCQs\\Equity, Ethics.pdf. Question found at page index 18 ('Question 80 of 154': 'A multi-market index is most appropriately used as a benchmark: A. for a single country ETF. B. for a small-capitalization growth stock manager. C. to calculate beta for the portfolio of a global stock manager.') - question stem and all three options match the manifest verbatim. The worked solution 'Answer 80 of 154' spans page index 58-59: option A is explicitly marked Incorrect ('A multi-market index would not be used as a benchmark for a single country ETF'), option B is explicitly marked Incorrect ('a small cap growth index is a style index, not a multi-market index'), and option C is explicitly marked Correct ('multi-market indexes usually comprise indexes from different countries would serve as benchmarks to calculate beta for the portfolios of global stock managers'). This directly contradicts the DB's stored answer (A) and the earlier automated signal (B) - the source unambiguously marks C as correct."
+ }
+]

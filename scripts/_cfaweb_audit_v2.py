@@ -81,42 +81,64 @@ def _ratio(a, b):
     return difflib.SequenceMatcher(None, (a or "").lower().strip(), (b or "").lower().strip()).ratio()
 
 def best_match(q, cache_entries):
-    qw = sig_words(q.get("question_en", ""))
-    if not qw or sum(qw.values()) < 4:
+    # Some genuine source stems are very short (eg. "Accrued interest:") and
+    # were unmatchable on stem words alone even though the full question+
+    # options text is highly distinctive. Score on stem+options combined,
+    # falling back gracefully -- this recovers short-stem items without
+    # weakening the option-agreement check below.
+    qw = sig_words(" ".join([
+        q.get("question_en") or "", q.get("option_a") or "",
+        q.get("option_b") or "", q.get("option_c") or "",
+    ]))
+    if not qw or sum(qw.values()) < 3:
         return None, 0.0
-    best, best_score = None, 0.0
+    total = sum(qw.values())
+    scored = []
     for e in cache_entries:
-        ew = e["stem_words"]
+        ew = sig_words(" ".join([e.get("stem") or "", e.get("A") or "", e.get("B") or "", e.get("C") or ""]))
         if not ew:
             continue
         overlap = sum(min(qw[w], ew.get(w, 0)) for w in qw)
-        total = sum(qw.values())
         score = overlap / total if total else 0.0
-        if score > best_score:
-            best_score, best = score, e
-    if best is None:
+        if score > 0:
+            scored.append((score, e))
+    if not scored:
         return None, 0.0
-    opt_ratios = [
-        _ratio(q.get("option_a"), best.get("A")),
-        _ratio(q.get("option_b"), best.get("B")),
-        _ratio(q.get("option_c"), best.get("C")),
-    ]
-    if min(opt_ratios) < 0.8:
-        # Some cache entries have their 3 options garbled/merged into one
-        # field by an imperfect Vision transcription (e.g. option_a literally
-        # containing "B. C. <textA>. <textB>. <textC>."). A near-perfect STEM
-        # match (>=0.85) is still strong evidence of the right question even
-        # when the option-level comparison can't be trusted -- surface it
-        # with a low-confidence flag instead of silently discarding a
-        # otherwise-correct match, so it can still be reviewed for
-        # correct_answer/explanation drift.
-        if best_score >= 0.85:
-            return best, -best_score  # negative sentinel = low-confidence stem-only match
-        return None, 0.0
-    return best, best_score
+    scored.sort(key=lambda x: -x[0])
+    top_score = scored[0][0]
+
+    def opt_ok(e):
+        opt_ratios = [
+            _ratio(q.get("option_a"), e.get("A")),
+            _ratio(q.get("option_b"), e.get("B")),
+            _ratio(q.get("option_c"), e.get("C")),
+        ]
+        return min(opt_ratios) >= 0.8
+
+    # Short/generic stems can tie or nearly-tie across several cache entries
+    # (eg. "A limit order is an example of a(n):") -- trying only the single
+    # top-scored candidate meant a genuinely correct match could be missed
+    # if IT happened to have garbled options while a slightly-lower-scored
+    # sibling entry (or even a same-score one later in iteration order) had
+    # clean options. Check every candidate within 90% of the top score.
+    for score, e in scored:
+        if score < top_score * 0.9:
+            break
+        if opt_ok(e):
+            return e, score
+
+    # None of the near-top candidates have clean options. Some cache entries
+    # have their 3 options garbled/merged into one field by an imperfect
+    # Vision transcription. A near-perfect STEM match (>=0.85) is still
+    # strong evidence of the right question even when option-level
+    # comparison can't be trusted -- surface it with a low-confidence flag
+    # instead of silently discarding an otherwise-correct match.
+    if top_score >= 0.85:
+        return scored[0][1], -top_score  # negative sentinel = low-confidence stem-only match
+    return None, 0.0
 
 def main():
-    data = json.loads(Path("scripts/_full_dump_fresh_20260731.json").read_text(encoding="utf-8"))
+    data = json.loads(Path("scripts/_full_dump_fresh_20260731b.json").read_text(encoding="utf-8"))
     cfaweb = [q for q in data if q.get("source") == "CFA_WEB"]
     print(f"CFA_WEB questions: {len(cfaweb)}")
 

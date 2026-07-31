@@ -1,0 +1,83 @@
+[
+ {
+  "id": "560f3291-7ee5-4387-a414-184767dc67ae",
+  "verdict": "no_source_found",
+  "results": [],
+  "evidence": "Searched both caches (scripts/_cache_cfaweb_qb/*.json, scripts/_cache_cfaweb_mocks/*.json) with keyword scans for 'asset-backed', 'special purpose vehicle', 'SPV', 'originator', 'directly owned', 'legal title', 'bankruptcy remote', 'own the underlying', 'securitization'. The only nearby QB hits are Fixed_income,_FSA.json n=8 ('In the securitization process, the trustee most likely: sells/owns/holds the underlying collateral' - different question, different options) and n=11 ('the purchase agreement between the seller of the collateral and the special purpose entity most likely provides...' - different question). No page in either QB or Mock source material asks 'The underlying assets of an asset-backed security are directly owned by the: originator/SPV/investors'. Note the DB topic tag ('Ethics & Professional Standards') does not match the FI/securitization subject matter of the question itself, suggesting this item may not originate from these particular source PDFs at all. No source page found after genuine multi-term search; content not fabricated."
+ },
+ {
+  "id": "5cf7aaac-a3fe-43f4-ab75-089e9a797179",
+  "verdict": "no_source_found",
+  "results": [],
+  "evidence": "Searched both caches for 'indefinite useful life', 'indefinite life', 'impairment testing', 'tested at least annually', 'intangible asset', 'amortised', 'not amortized', 'recoverable amount', 'carrying amount does not exceed'. Closest QB hit is Fixed_income,_FSA.json n=92 (page_idx 80 of 'Fixed income, FSA.pdf', visually confirmed by rendering): 'A company acquires a 5-year license for a product it plans to continue selling for the foreseeable future. The license can be renewed at minimal cost. The license should be: A) carried on the balance sheet at historical cost B) amortised using the straight-line method... C) amortised using the units-of-production method...' - this is a different question (about license classification/amortization method, not about impairment-testing frequency for indefinite-life intangibles) with completely different answer options. No page in either source directly states the DB's question text or options. Marked no_source_found rather than reusing the license question, since options do not match."
+ },
+ {
+  "id": "65e613a1-0338-4419-8d4d-5a7856a991af",
+  "verdict": "resolved",
+  "results": [],
+  "evidence": "Found in scripts/_cache_cfaweb_mocks/MOCK_1_SS1_ANS.json, qnum 27, page_idx 31-32, source PDF 'D:\\CLAUDE\\Projet CFA\\CFA L1\\9. CFA WEB MOCKS-900 MCQs\\MOCK 1 SS1 ANS.pdf' pages 31-32 (0-indexed), rendered at 200dpi and visually confirmed. Question 27 of 90 (Level I CFA Program - February 2025): 'Brian Chan, CFA, is the CEO of Wholecare Pharmaceutical (WPC). WPC is in its final stages of clinical trials for developing a medicine for treating heart disease. Chan posts on social media that WPC is launching a new medicine for heart disease, knowing that the news will have a positive impact on WPC's stock price. Chan has violated the Standard(s) relating: A) only to misrepresentation B) only to market manipulation C) both to misrepresentation and to market manipulation' with correct answer C, and a per-option Solution section giving detailed reasoning (Standard I(C) Misrepresentation and Standard II(B) Market Manipulation) that is nearly verbatim source for the DB's elaborate option A/B/C texts. The DB stores this in a restructured self-contained format (folding the vignette + short options into an elaborate 'Which of the following statements is correct...' stem with full solution reasoning embedded as options A/B/C), but the substantive content - correct answer C, the Standard I(C) and Standard II(B) violations, the Chan/WPC/heart-disease facts, and each option's reasoning - matches the source almost word-for-word (only trivial paraphrase, e.g. 'states that' vs 'requires that'). No factual errors, wrong answer, or content bleed found. Nothing to fix."
+ },
+ {
+  "id": "6af93ff8-b7a3-4099-ae98-d88c34b31941",
+  "verdict": "resolved",
+  "results": [
+   {
+    "field": "question_en",
+    "new_value": "Use the following common-size balance sheet information to answer the question below.\n\n| | Company X | Company Y | Company Z |\n|---|---|---|---|\n| **Assets** | | | |\n| Cash and cash equivalents | 15.6% | 12.0% | 2.0% |\n| Marketable securities | 3.4% | 5.1% | 12.0% |\n| Trade and other receivables | 10.9% | 12.7% | 4.8% |\n| Other non-financial assets | 14.3% | 11.7% | 7.4% |\n| Total current assets | 44.2% | 41.5% | 26.2% |\n| Goodwill | 1.6% | 2.2% | 28.8% |\n| Intangible assets | 17.6% | 7.0% | 24.0% |\n| Property, plant, and equipment | 17.7% | 25.3% | 8.2% |\n| Other financial assets | 12.4% | 24.0% | 9.6% |\n| Other non-financial assets | 0.3% | 0.0% | 2.1% |\n| Deferred tax assets | 6.2% | 0.0% | 1.1% |\n| Total non-current assets | 55.8% | 58.5% | 73.8% |\n| Total assets | 100.0% | 100.0% | 100.0% |\n| **Liabilities and shareholders' equity** | | | |\n| Trade and other payables | 3.4% | 3.5% | 2.1% |\n| Bank loans and other financial liabilities | 8.4% | 3.2% | 6.0% |\n| Other non-financial liabilities | 5.0% | 11.7% | 9.0% |\n| Deferred income | 11.8% | 9.8% | 0.0% |\n| Total current liabilities | 28.6% | 28.2% | 17.1% |\n| Financial liabilities | 18.4% | 18.3% | 17.4% |\n| Other non-financial liabilities | 12.8% | 5.7% | 7.9% |\n| Deferred tax liabilities | 2.5% | 4.2% | 18.6% |\n| Total non-current liabilities | 33.7% | 27.5% | 43.9% |\n| Total liabilities | 62.3% | 55.7% | 61.0% |\n| Total shareholders' equity | 37.7% | 44.3% | 39.0% |\n| Total liabilities and shareholders' equity | 100.0% | 100.0% | 100.0% |\n\nBased solely on the quick ratio, which company is most liquid?"
+   },
+   {
+    "field": "option_a",
+    "new_value": "Company X"
+   },
+   {
+    "field": "option_b",
+    "new_value": "Company Y"
+   },
+   {
+    "field": "option_c",
+    "new_value": "Company Z"
+   },
+   {
+    "field": "explanation_en",
+    "new_value": "The quick ratio = (Cash + Marketable securities + Trade and other receivables) / Current liabilities, all as a percentage of total assets in this common-size format. Company X: (15.6% + 3.4% + 10.9%) / 28.6% = 29.9% / 28.6% = 1.045. Company Y: (12.0% + 5.1% + 12.7%) / 28.2% = 29.8% / 28.2% = 1.057. Company Z: (2.0% + 12.0% + 4.8%) / 17.1% = 18.8% / 17.1% = 1.099. Company Z has the highest quick ratio and is therefore the most liquid based solely on this measure."
+   }
+  ],
+  "evidence": "Found in scripts/_cache_cfaweb_mocks/MOCK_4_SS1_ANS.json, qnum 31, page_idx 34-35, source PDF 'D:\\CLAUDE\\Projet CFA\\CFA L1\\9. CFA WEB MOCKS-900 MCQs\\MOCK 4 SS1 ANS.pdf' pages 33-35 (0-indexed), rendered at 200dpi and visually confirmed. Question 31 of 90: 'Use the following common-size balance sheet information to answer the question below' followed by a full common-size balance sheet for Company X/Y/Z (percent-of-total-assets format, transcribed above), then 'Based solely on the quick ratio, which company is most liquid? A) Company X B) Company Y C) Company Z'. Solution page confirms correct answer C with a recap table showing Cash/Marketable securities/Receivables/Total/Current liabilities/Quick ratio = 1.045 (X), 1.057 (Y), 1.099 (Z). The DB's correct_answer 'C' was already correct, and its final numeric explanation (1.045/1.057/1.099, and 'Company Z has the highest quick ratio') was already numerically correct - these were derived by back-solving from the real answer. However, the DB's question_en presented a fabricated/invented simplified table (Current assets 3,090/3,114/3,198; Inventories 1,000/1,000/1,000; Current liabilities 2,000/2,000/2,000 for X/Y/Z) that does NOT appear anywhere in the source; the real source question uses a large common-size (percentage) balance sheet with many line items, not these absolute dollar figures. option_a/b/c were also generic ('Company X'/'Company Y'/'Company Z' - already correct, restated here for completeness). Replaced question_en with the actual source table and question text, and rewrote explanation_en using the source's real percentage figures instead of the fabricated dollar figures."
+ },
+ {
+  "id": "6d8747ae-c9ec-43e3-90a6-bd96b9de6c09",
+  "verdict": "no_source_found",
+  "results": [],
+  "evidence": "question_en in the DB is corrupted, containing only 'Question 69 of 90' (a page-header fragment, not an actual question stem) - this itself confirms the question is broken/mis-extracted somewhere in the DB's ingestion pipeline. Searched both caches extensively using distinctive terms from the options: 'F-distributed test statistic' (1 hit, but a different/simpler QB question - Portfolio,_Quants.json n=26, 'The null hypothesis for the F-distributed test statistic in a simple linear regression model tests whether the: slope is equal to zero/intercept is equal to zero/slope is not equal to zero', correct=A - a related but structurally different question, not a multi-slope H0: b1=b2=...=bk=0 hypothesis-testing item), 'slope coefficient of the linear regression', 'b1 = b2 = b3', 't-statistic tests', 'positive correlation between the dependent', 'intercept is statistically different from zero', 't-distributed test statistic', 'Ha: At least one', 'significance of the slope coefficient', 'slopes in a regression', 'regression coefficient', 'F-statistic', 'hypotheses for a regression', 'simple linear regression, these hypotheses'. None produced a matching item. No source page found for this specific compound multiple/simple-regression F-test hypothesis question after genuine multi-term search."
+ },
+ {
+  "id": "706b5e1c-337f-42ce-ae4c-90665627e809",
+  "verdict": "no_source_found",
+  "results": [],
+  "evidence": "Searched both caches for '78,016', '72,098', '68,106', 'ten payments of $10,000', 'annuity due', 'first payment occurs at t=0', 'first payment today', '10,000 per year', 'BGN mode', 'makes ten payments', 'series of annual payments', 'N=10 PMT=10,000', 'investment makes ten'. No matching item found in either the QB cache (Portfolio,_Quants.json - the only QB file covering annuity/TVM topics) or any of the 12 Mock caches. The only annuity-related QB hit ('An annuity makes seven annual payments of $10,000 each, with the first payment occurring five years from today...') is a different question (7 payments, deferred start, different answer choices). No source page found after genuine search; this question and its near-duplicate sibling (id 732350ac, same $10,000/6%/10-payment annuity-due setup) do not appear to exist verbatim in these source PDFs."
+ },
+ {
+  "id": "732350ac-d183-4d90-b719-1d67afe537f3",
+  "verdict": "no_source_found",
+  "results": [],
+  "evidence": "Same search effort as sibling question 706b5e1c-337f-42ce-ae4c-90665627e809 (identical $10,000/6%/10-payment annuity-due scenario, phrased slightly differently and with a different, mutually-inconsistent correct answer/explanation). No matching item found in either cache after searching '72,098', '78,016', '68,106', 'annuity due', '10,000 per year', 'BGN mode', 'series of annual payments', 'investment makes ten', 'makes ten payments'. Note for context only (not used as a basis for any correction, per the anti-fabrication rule): this question's own explanation is internally inconsistent - it treats the investment as '$10,000 today plus an ordinary annuity of $10,000 for 8 years' when 10 total payments with the first at t=0 leaves 9 (not 8) remaining ordinary-annuity payments; correctly computed this would yield the same $78,016.92 as the sibling question 706b5e1c, not $72,098. However, since no source page could be located to visually confirm what the correct content should be, this is marked no_source_found rather than corrected from first-principles math, per the anti-fabrication rule."
+ },
+ {
+  "id": "743c1d5a-2ed3-416a-823e-d47560392262",
+  "verdict": "no_source_found",
+  "results": [],
+  "evidence": "Searched both caches for 'strength of the linear relationship', 'correlation coefficient' + 'outliers', 'ranges from 0 to 1', 'linear relationship between two', and a broad 'correlation coefficient' scan (6 hits, all unrelated: portfolio diversification correlation-coefficient question, Spearman rank correlation questions, a correlation/portfolio-risk numeric question, a t-test-for-correlation numeric question). None match the DB's basic definitional stem 'The correlation coefficient: ranges from 0 to 1 / is not affected by outliers / indicates the strength of the linear relationship between two random variables.' No source page found after genuine search effort."
+ },
+ {
+  "id": "77f91ac7-5f5a-4b26-9eae-f9635201b674",
+  "verdict": "no_source_found",
+  "results": [],
+  "evidence": "Searched both caches for 'board of directors' + 'loyalty' (0 hits), 'prudence, care, and loyalty', 'high standard of prudence', \"members of a company's board\", 'display loyalty', 'required under law', and a broad 'board of directors' scan (15 hits - all about board committees, principal-agent relationships, covenants, governance structure, staggered boards, stakeholder groups - none asking what board members are 'most likely required to' do with these specific three options). Also searched 'duty of loyalty' (8 hits, all Ethics Standard III(A) client-loyalty questions about portfolio managers/fund managers, not board-of-directors corporate-governance duties). No source page found after genuine search. Note the DB's topic tag ('Ethics & Professional Standards') does not match the Corporate Issuers/governance subject matter of the question, again suggesting it may not originate from these source PDFs."
+ },
+ {
+  "id": "79030c52-4194-409a-9a64-90e0cb95b0ab",
+  "verdict": "no_source_found",
+  "results": [],
+  "evidence": "Searched both caches for 'neutral policy rate' and 'real trend rate of growth'. Found the conceptual/definitional twin of this question in QB AI,_Corporate,_Deriv,_Eco.json, n=56 (page_idx 124 questions / page_idx 155 answers): 'The neutral policy rate is equal to: A) long-run expected inflation B) the real trend rate of growth of the underlying economy C) long-run expected inflation plus the real trend rate of growth of the underlying economy', correct=C, with explanation 'Neutral rate = Trend growth + Inflation target.' This confirms the underlying formula the DB's Q10 applies is correct and sourced from this deck, but the DB's specific numeric application ('long-run expected inflation of 3%... real trend rate of growth of 2%... neutral policy rate is closest to: 1%/3%/5%') does not itself appear anywhere in either cache - searched 'neutral policy rate' + 'closest to', 'trend rate of growth of 2%', 'inflation of 3%', 'long-run expected inflation of', and 'neutral'+'3%'+'2%' combined, all with 0 hits. Since the exact numeric variant could not be visually verified on any rendered source page (only the generic definitional version exists), marked no_source_found rather than treating the definitional question as a substitute."
+ }
+]

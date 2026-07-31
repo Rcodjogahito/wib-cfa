@@ -1,0 +1,78 @@
+[
+ {
+  "id": "7916ff91-ec4a-4a3c-afb3-cfa771a0cee0",
+  "verdict": "resolved",
+  "results": [],
+  "evidence": "QB 'Fixed income, FSA.pdf' (source QB Fixed_income,_FSA.json cache, page_idx 73, printed page 71, 'Question 63 of 130'): 'Which of the following ratios would most likely be positively affected by an inventory write-down compared to its value absent the write-down? A. Activity B. Liquidity C. Solvency.' Answer page_idx 111 (printed p.109): 'A. Correct because ... activity ratios (for example, inventory turnover and total asset turnover) will be positively affected by a write-down because the asset base (denominator) is reduced. B/C. Incorrect ... negative effect on profitability, liquidity, and solvency ratios.' DB content is a faithful paraphrase with correct_answer A matching; no factual errors found, so nothing to fix."
+ },
+ {
+  "id": "81edfcf9-50f3-4dc7-9b0b-7d541eeb60ad",
+  "verdict": "no_source_found",
+  "results": [],
+  "evidence": "Searched both caches extensively for this common-size income statement / 'differentiated product' question: numeric anchors from the DB's own explanation (33.3, 35.6, 775, 930, 2325/2,325, 2611/2,611) returned zero hits anywhere in _cache_cfaweb_qb or _cache_cfaweb_mocks; phrase anchors ('differentiated product', 'cost cutting', 'sale of a new', 'common-size income statement', 'Compared with Year 1' + income statement) also returned no plausible match. The nearest structurally-similar items (QB Fixed_income,_FSA.json page_idx 63 n=21, single-year SG&A percentage question; QB page_idx 66 n=36, two-company comparison) have different numbers/questions entirely. The DB's own question_en field already contains a bracketed placeholder ('[Income statement with Year 2 and Year 1 data for: ...]') indicating the table was never actually captured, consistent with this question not existing in the searched source PDFs. No source page could be located after genuine effort."
+ },
+ {
+  "id": "8d34c379-531d-434d-8893-febf5605da99",
+  "verdict": "resolved",
+  "results": [
+   {"field": "question_en", "new_value": "A member works in a country where there is no regulation relating to investment performance standards. In the absence of any regulatory guidance, the member is required to communicate investment performance information to her clients in accordance with:"},
+   {"field": "option_a", "new_value": "the GIPS standards."},
+   {"field": "option_b", "new_value": "the Code and Standards."},
+   {"field": "option_c", "new_value": "stricter of the GIPS standards and the Code and Standards."},
+   {"field": "explanation_en", "new_value": "Standard III(D), Performance Presentation, states that for members and candidates presenting the performance history of assets they manage, compliance with the GIPS standards is the best method to meet their obligations under Standard III(D) -- it does not itself require GIPS compliance, only encourages it. However, Standard I(A), Knowledge of the Law, requires members and candidates to understand and comply with all applicable laws, rules, and regulations, including the Code and Standards. Because this country has no regulation governing investment performance standards, the member must communicate performance information to her clients in accordance with the Code and Standards, especially Standard III(D). If the country had a stricter local regulation on investment performance standards, the member would be required to follow the stricter of the Standards and that regulation."}
+  ],
+  "evidence": "MOCK_4_SS1_ANS.pdf, page_idx 1-2 (rendered), 'Question 2 of 90'. The DB's stored question_en ('Should a member communicate investment performance information...') is a fabricated/garbled stem, and option_a/b/c contain the SOLUTION explanation text (A/B/C paragraphs from the answer key) instead of the real short answer choices. The actual stem and choices are as given above; correct_answer B was already right and is unchanged. Full source text: 'Q. A member works in a country where there is no regulation relating to investment performance standards. In the absence of any regulatory guidance, the member is required to communicate investment performance information to her clients in accordance with: A. the GIPS standards. B. the Code and Standards. C. stricter of the GIPS standards and the Code and Standards.' with B marked Correct."
+ },
+ {
+  "id": "8e638969-ce7d-4520-8973-738b0ad57cfd",
+  "verdict": "no_source_found",
+  "results": [],
+  "evidence": "Searched both caches for 'reversal of a prior fiscal year inventory write-down' with options (A) prohibited, (B) recognized as a reduction in cost of sales, (C) recognized as an increase in other operating income. The phrase 'other operating income' and 'increase in cost of sales' return only one related-but-different item: MOCK_6_SS1_ANS_2.json page_idx 101, n=90 ('For a manufacturing company, the reversal of an inventory write-down from prior periods is: A. prohibited. B. recognized as an increase in cost of sales. C. limited to the amount of the original write-down.', correct=C) -- verified by rendering MOCK 6 SS1 ANS (2).pdf page 101 ('Question 90 of 90'). This is a different question with different distractor options (no 'other operating income' option, no reversal-limited-to-original-writedown wording anywhere matches the DB's option C). Since the DB's exact question/option set does not appear verbatim on any rendered page, and using the near-miss question's answer key (C) would misattribute content from a different question, this is marked no_source_found rather than fabricating a fix. Note: the DB's existing content (correct_answer B, reduction in cost of sales) is independently consistent with standard IFRS inventory guidance, so even though unverified against this specific source pool, it is not flagged as an error."
+ },
+ {
+  "id": "8ee2db6d-f897-4c84-89e7-a54f6456ab55",
+  "verdict": "resolved",
+  "results": [
+   {"field": "question_en", "new_value": "An analyst gathers the following information about a company (in $ thousands):\n\n| | Year 1 | Year 2 |\n|---|---|---|\n| Operating income | 255 | 234 |\n| Depreciation and amortization | 432 | 677 |\n| Interest expense | 170 | 156 |\n\nBased on the interest coverage ratio using EBITDA, the company's creditworthiness has:"}
+  ],
+  "evidence": "MOCK_4_SS2_ANS.pdf, page_idx 70-71 (rendered), 'Question 63 of 90'. The DB's question_en was a placeholder ('Question stem not fully visible in image...'). The actual question includes a data table (Operating income, Depreciation and amortization, Interest expense for Year 1/Year 2) reproduced above. Options (A. deteriorated / B. remained unchanged / C. improved) and correct_answer C, and explanation content (interest coverage ratio increased from 4.04x to 5.84x) already matched the source exactly -- only question_en needed fixing."
+ },
+ {
+  "id": "92d6801e-4bf9-4680-88b5-aecae1ea4c47",
+  "verdict": "unclear",
+  "results": [],
+  "evidence": "Could not locate this exact question ('A form of economic integration that allows free movement of goods, services, and factors of production among member countries and has a common trade policy against non-members best describes a:') verbatim in either cache despite searching 'customs union', 'common trade policy', 'against non-members', 'factors of production among', 'free movement of goods', and 'best describes a' -- closest related items (QB AI,_Corporate,_Deriv,_Eco.json page_idx 123/153 n=48; MOCK_1_SS1_ANS.json page_idx 66 n=58; MOCK_3_SS1_ANS.json page_idx 34 n=30) all test the same economic-integration hierarchy but with different stems/options, none an exact match. Flagging for review rather than 'no_source_found' because the DB's OWN current data is internally self-contradictory: the question stem's definition (free movement of goods, services, AND factors of production, plus a common trade policy against non-members) is the textbook definition of a 'common market' (option C), which is exactly what the DB's own explanation_en text describes ('A common market is the next level of economic integration that incorporates all aspects of a customs union... and extends it by allowing free movement of factors of production among members') -- yet correct_answer is marked B (customs union), not C. A customs union by definition does NOT include free movement of factors of production, only free movement of goods/services plus a common external trade policy. This strongly suggests correct_answer should be C, but since no source page could be visually verified for this exact question, no correction is made per the anti-fabrication rule -- surfacing for human review instead."
+ },
+ {
+  "id": "9c315e24-33eb-45c5-8bc0-c71d09f315e1",
+  "verdict": "resolved",
+  "results": [
+   {"field": "question_en", "new_value": "The data for two stocks in an index are as follows:\n\n| Stock | Shares Outstanding | Percent of Shares in Market Float | Beginning of Period Price ($) | End of Period Price ($) | Dividends per Share ($) |\n|---|---|---|---|---|---|\n| A | 5,000 | 90 | 40 | 45 | 1.00 |\n| B | 2,000 | 100 | 68 | 60 | 0.50 |\n\nAssuming the beginning value of the float-adjusted market-capitalization-weighted equity index is 100, the ending value is closest to:"},
+   {"field": "option_a", "new_value": "102.06."},
+   {"field": "option_b", "new_value": "102.68."},
+   {"field": "option_c", "new_value": "103.80."},
+   {"field": "explanation_en", "new_value": "In float-adjusted market-capitalization weighting, each constituent's weight is based on its market capitalization adjusted for its market float. Stock A: beginning float-adjusted market cap = 5,000 shares x 90% x $40 = $180,000, giving 4,500 shares in the index; ending value = 4,500 x $45 = $202,500. Stock B: beginning float-adjusted market cap = 2,000 shares x 100% x $68 = $136,000; ending value = 2,000 x $60 = $120,000. Total beginning value = $316,000; total ending value = $322,500. Ending index value = 100 x ($322,500 / $316,000) = 102.06. (Option B, 102.68, incorrectly ignores the float adjustment and weights by full market capitalization instead; option C, 103.80, incorrectly includes the per-share dividends in the ending price.)"}
+  ],
+  "evidence": "MOCK_4_SS2_ANS.pdf, page_idx 16-17 (rendered), 'Question 17 of 90'. The DB's stem incorrectly said 'three-stock market index' and only listed 2 of the needed data columns (omitting the 'Dividends per Share' column, which is needed because option C's error hinges on it) -- the source is actually a TWO-stock index. The DB's option_a/b/c also contained solution-explanation prose ('Correct. The index is float-adjusted...', 'Incorrect. It ignores the float...') instead of the real numeric choices 102.06/102.68/103.80. correct_answer A was already right and is unchanged. Verified via the full worked table on page_idx 17 (beginning total float-adj. market cap $316,000, ending $322,500, index 102.06)."
+ },
+ {
+  "id": "a41c3943-166e-4561-a6cd-a7dca492f2b4",
+  "verdict": "no_source_found",
+  "results": [],
+  "evidence": "Searched both caches for this probability-sampling definition question ('In contrast to non-probability sampling, probability sampling: ... gives every member of the population an equal chance of being selected') using phrases 'non-probability sampling', 'equal chance of being selected', 'known probability of selection', 'each/every member of the population', and 'factors other than probability' -- no exact match found. Two topically related but textually different QB items exist (QB Portfolio,_Quants.json page_idx 63 n=32: 'when compared to non-probability sampling, probability sampling most likely yields: a less/equally/more representative sample'; page_idx 76 n=72: an unrelated stock-selection sampling-method question), neither matching the DB's stem or options. Marked no_source_found after genuine multi-angle search."
+ },
+ {
+  "id": "a43c5de8-729f-4c1d-a118-4f4b7f3678f6",
+  "verdict": "resolved",
+  "results": [
+   {"field": "explanation_en", "new_value": "Basic EPS = (Net income - Preferred dividends) / Weighted average shares outstanding = ($200,000 - $0) / 125,000 = $1.60. Using the if-converted method for the 12% convertible bond, diluted EPS = [Net income + After-tax interest on the convertible debt] / [Weighted average shares + additional shares from conversion] = [$200,000 + ($60,000 x 0.12 x (1 - 0.15))] / (125,000 + 3,000) = $206,120 / 128,000 = $1.61. Because this if-converted result ($1.61) is greater than basic EPS ($1.60), the convertible bond is antidilutive; by definition diluted EPS can never exceed basic EPS, so the reported diluted EPS is $1.60. (Option A's $1.51 results from mistakenly subtracting, instead of adding, the after-tax interest on the debt: [$200,000 - $6,120] / 128,000 = $1.51.)"}
+  ],
+  "evidence": "MOCK_4_SS1_ANS.pdf, page_idx 43-44 (rendered), 'Question 38 of 90'. Question stem, all three financial data rows (Net income $200,000, Tax rate 15%, Weighted average shares 125,000, 12% bond convertible into 3,000 shares $60,000), the three options ($1.51/$1.60/$1.61), and correct_answer B all matched the DB exactly -- no changes needed there. However the DB's explanation_en was factually misleading: it implied the if-converted (add-back) calculation directly produces $1.60, when the source shows the if-converted calculation actually produces $1.61 (page_idx 44, worked formula), which EXCEEDS basic EPS ($1.60); per the antidilutive-security rule (diluted EPS cannot exceed basic EPS), the reported diluted EPS is capped at basic EPS $1.60. This antidilution mechanic was missing/misstated in the DB explanation and has been corrected."
+ },
+ {
+  "id": "aa0510fc-d128-4a00-a73a-900bf551f0c3",
+  "verdict": "no_source_found",
+  "results": [],
+  "evidence": "Searched both caches for this DuPont-style question (Net profit margin 4%, ROA 8%, ROE 16%, Revenue EUR2,500,000, asking about total asset turnover / financial leverage ratio / average shareholders' equity EUR625,000) using anchors 'Net profit margin: 4%', 'Return on average assets', '625,000', '2,500,000', 'average shareholders' equity is', 'total asset turnover is', and combined '8%'+'16%' / '4%'+'Revenue' scans -- no match in either cache. The only structurally similar item found, MOCK_1_SS1_ANS.json page_idx 35-36 n=30 (ROE 6%, ROA 4%, Average total assets EUR600,000, asking for average shareholders' equity/liabilities), uses entirely different figures and is a distinct question. Marked no_source_found after genuine multi-angle search."
+ }
+]

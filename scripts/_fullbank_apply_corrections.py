@@ -60,11 +60,28 @@ def main():
             skipped.append(qid)
             continue
         before = cur[0].get(field)
-        pr = requests.patch(f"{url}/rest/v1/questions", headers=dict(headers, Prefer="return=minimal"),
-                             params={"id": f"eq.{qid}"}, json={field: new_val}, timeout=30)
-        pr.raise_for_status()
-        after_r = requests.get(f"{url}/rest/v1/questions", headers=headers,
-                                params={"id": f"eq.{qid}", "select": field}, timeout=30).json()
+        for attempt in range(4):
+            try:
+                pr = requests.patch(f"{url}/rest/v1/questions", headers=dict(headers, Prefer="return=minimal"),
+                                     params={"id": f"eq.{qid}"}, json={field: new_val}, timeout=30)
+                pr.raise_for_status()
+                break
+            except requests.exceptions.RequestException as e:
+                if attempt == 3:
+                    print(f"  [FAIL-NETWORK] {qid} field={field}: {e}")
+                    skipped.append(qid)
+                    pr = None
+                    break
+        if pr is None:
+            continue
+        for attempt in range(4):
+            try:
+                after_r = requests.get(f"{url}/rest/v1/questions", headers=headers,
+                                        params={"id": f"eq.{qid}", "select": field}, timeout=30).json()
+                break
+            except requests.exceptions.RequestException:
+                if attempt == 3:
+                    after_r = []
         after = after_r[0].get(field) if after_r else None
         ok = after == new_val
         print(f"  {'[OK]' if ok else '[FAIL]'} {qid} field={field} before={str(before)[:40]!r} -> after={str(after)[:40]!r}")
