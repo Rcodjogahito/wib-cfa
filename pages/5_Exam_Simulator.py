@@ -14,7 +14,7 @@ from src.auth import get_current_user, logout, require_auth
 from src.database import get_db
 from src.styles import (
     inject_styles, metric_card, question_first_line,
-    render_page_header, render_question, render_sidebar_brand, render_sidebar_user,
+    render_page_header, render_question, render_explanation, render_sidebar_brand, render_sidebar_user,
     fix_ligature_artifacts,
 )
 
@@ -392,13 +392,7 @@ if state.get("exam_submitted"):
                 _parts.append(f'<b>[EN]</b>\n{_expl_en}' if _has_both else _expl_en)
             if _expl_fr:
                 _parts.append(f'<b>[FR]</b>\n{_expl_fr}')
-            if _parts:
-                st.markdown('<div class="explanation-label">Explanation</div>',
-                            unsafe_allow_html=True)
-                st.markdown(
-                    f'<div class="explanation-box">{chr(10).join(_parts)}</div>',
-                    unsafe_allow_html=True,
-                )
+            render_explanation(_parts)
 
     btn1, btn2, btn3 = st.columns(3)
     if btn1.button("Restart same exam", use_container_width=True):

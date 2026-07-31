@@ -11,7 +11,7 @@ import streamlit as st
 from src.adaptive import get_weighted_questions
 from src.auth import CFA_TOPICS, get_current_user, logout, require_auth
 from src.database import get_db
-from src.styles import inject_styles, render_page_header, render_sidebar_brand, render_sidebar_user, render_question, question_first_line, fix_ligature_artifacts
+from src.styles import inject_styles, render_page_header, render_sidebar_brand, render_sidebar_user, render_question, render_explanation, question_first_line, fix_ligature_artifacts
 
 st.set_page_config(page_title="Quiz — WIB CFA", page_icon="🎯", layout="wide", initial_sidebar_state="collapsed")
 inject_styles()
@@ -270,9 +270,7 @@ if idx >= total:
                     expl_parts.append(f'<b>[EN]</b>\n{r["explanation_en"]}' if _has_both else r["explanation_en"])
                 if r.get("explanation_fr"):
                     expl_parts.append(f'<b>[FR]</b>\n{r["explanation_fr"]}')
-                if expl_parts:
-                    st.markdown('<div class="explanation-label">Explanation</div>', unsafe_allow_html=True)
-                    st.markdown(f'<div class="explanation-box">{chr(10).join(expl_parts)}</div>', unsafe_allow_html=True)
+                render_explanation(expl_parts)
 
     col1, col2, col3 = st.columns(3)
     if col1.button("Restart", use_container_width=True):
@@ -437,9 +435,7 @@ if answered:
         expl_parts.append(f'<b>[EN]</b>\n{q["explanation_en"]}' if _has_both else q["explanation_en"])
     if q.get("explanation_fr"):
         expl_parts.append(f'<b>[FR]</b>\n{q["explanation_fr"]}')
-    if expl_parts:
-        st.markdown('<div class="explanation-label">Explanation</div>', unsafe_allow_html=True)
-        st.markdown(f'<div class="explanation-box">{chr(10).join(expl_parts)}</div>', unsafe_allow_html=True)
+    render_explanation(expl_parts)
     st.markdown("")
     _next_label_inline = "View results →" if idx == total - 1 else "Next question →"
     if st.button(_next_label_inline, key="qnav_next_inline", type="primary", use_container_width=True):

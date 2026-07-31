@@ -3,6 +3,8 @@ WIB CFA — Global CSS styles injection.
 Call inject_styles() at the top of every page.
 """
 
+import re
+
 import streamlit as st
 import streamlit.components.v1 as _components
 
@@ -62,6 +64,33 @@ def render_question(question_text: str) -> None:
             st.markdown(rest)
     else:
         st.markdown(f"**{safe}**")
+
+
+def _prep_explanation_text(text: str) -> str:
+    """Escape $ (avoid LaTeX math-mode misrendering of dollar amounts, same as
+    render_question) and turn bare single newlines into explicit Markdown hard
+    breaks. Needed because the explanation box used to rely on CSS
+    white-space:pre-wrap to preserve line breaks, which double-inflates
+    spacing wherever a real paragraph break (blank line) is present -- and
+    explanations increasingly contain blank-line-separated Markdown tables.
+    Blank lines (real paragraph breaks) are left untouched."""
+    text = fix_ligature_artifacts(text).replace('$', r'\$')
+    return re.sub(r'(?<!\n)\n(?!\n)', '  \n', text)
+
+
+def render_explanation(parts: list) -> None:
+    """Render one or more explanation blocks (EN/FR) with full Markdown
+    support (tables, etc.), mirroring render_question's $ escaping."""
+    if not parts:
+        return
+    processed = [_prep_explanation_text(p) for p in parts if p]
+    joined = "\n\n".join(processed)
+    st.markdown('<div class="explanation-label">Explanation</div>', unsafe_allow_html=True)
+    # A blank line must immediately follow the opening <div> so CommonMark's
+    # raw-HTML-block rule (which otherwise swallows everything up to the next
+    # blank line as unparsed text) terminates right away -- letting the actual
+    # content behave as normal Markdown (hard breaks, tables) instead of inert text.
+    st.markdown(f'<div class="explanation-box">\n\n{joined}\n\n</div>', unsafe_allow_html=True)
 
 
 def question_first_line(question_text: str, max_chars: int = 120) -> str:
@@ -605,8 +634,16 @@ def inject_styles():
             font-size: 0.86rem;
             line-height: 1.68;
             color: var(--gray-600);
-            white-space: pre-wrap;
             word-wrap: break-word;
+        }
+        .explanation-box table {
+            border-collapse: collapse;
+            margin: 0.5rem 0;
+        }
+        .explanation-box th, .explanation-box td {
+            border: 1px solid var(--gray-100);
+            padding: 0.35rem 0.6rem;
+            text-align: left;
         }
         .explanation-label {
             font-size: 0.68rem;

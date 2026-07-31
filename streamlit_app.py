@@ -21,7 +21,7 @@ try:
     from src.auth import CFA_TOPICS, get_current_user, logout, require_auth
     from src.database import get_db
     from src.progress import compute_mastery_map, readiness_score, weak_topics
-    from src.styles import inject_styles, metric_card, render_hero, render_page_header, render_sidebar_brand, render_sidebar_user, render_ticker, render_question, fix_ligature_artifacts
+    from src.styles import inject_styles, metric_card, render_hero, render_page_header, render_sidebar_brand, render_sidebar_user, render_ticker, render_question, render_explanation, fix_ligature_artifacts
 except Exception as _e:
     st.error(f"**Erreur d'import — {type(_e).__name__}:** `{_e}`")
     st.code(_tb.format_exc())
@@ -181,8 +181,7 @@ def _run_diagnostic():
                 unsafe_allow_html=True,
             )
         if q.get("explanation_en"):
-            st.markdown('<div class="explanation-label">Explanation</div>', unsafe_allow_html=True)
-            st.markdown(f'<div class="explanation-box">{q["explanation_en"]}</div>', unsafe_allow_html=True)
+            render_explanation([q["explanation_en"]])
         st.markdown("")
         next_q = next((i for i in range(total) if i not in answered_set), None)
         if next_q is not None:
